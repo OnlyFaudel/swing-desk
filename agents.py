@@ -126,6 +126,11 @@ class Desk:
             pass
         cost = self._charge(role, model, resp.usage, searches)
         text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text")
+        if not text.strip() or getattr(resp, "stop_reason", "") == "max_tokens":  # ran out of room: one retry with more
+            kw["max_tokens"] = int(max_tokens * 2.5)
+            resp = self.client.messages.create(**kw)
+            cost += self._charge(role, model, resp.usage, 0)
+            text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text") or text
         out = parse_json(text)
         out["_cost"] = round(cost, 4)
         feed.post_agent(role, out, to)

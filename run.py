@@ -803,7 +803,7 @@ def _dayret(df):
     return float(c.iloc[-1] / c.iloc[-2] - 1) if len(c) > 2 else 0.0
 
 
-def panic_check(st, ex, data, prices, today, brk_state, now, force=False):
+def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
     """Market falls 2%+, a stock falls 3%+ and sits 15%+ under its 20-day high: buy near the close, sell 6 sessions later.
     Tested 2019-2026 on 61 such days: +5.3% average over 6 days, up 70% of the time; loses 15-21% when the panic is the
     start of a crash (Mar 2020, May 2022) and stops didn't help, so the protection is position size."""
@@ -828,8 +828,30 @@ def panic_check(st, ex, data, prices, today, brk_state, now, force=False):
             if len(px):
                 e["result"] = round((float(px.iloc[-1]) / e["price"] - 1) * 100, 2)
                 feed.post("researcher", f"Panic-day rebound result: {e['ticker']} picked on {e['date']} at ${e['price']}, "
-                          f"{e['result']:+.2f}% after {cfg.get('hold_sessions', 6)} sessions" + (" (we bought it)." if e.get("bought") else " (practice, not bought)."),
+                          f"{e['result']:+.2f}% after {cfg.get('hold_sessions', 6)} sessions" + (" (we bought it)." if e.get("bought") else " (practice, not bought).")
+                          + (f" The PM had said {e['pm_view']}" + (f" ({e['pm_why']})" if e.get("pm_why") else "") + "." if e.get("pm_view") else ""),
                           [e["ticker"]], kind="learn")
+    held = {t: l["panic"] for t, l in book["lots"].items() if l.get("panic", {}).get("qty", 0) > 1e-6 and l["panic"].get("opened") != str(today)}
+    if held and late and not st["flags"].get(f"panic_check:{today}"):
+        st["flags"][f"panic_check:{today}"] = True
+        rows = {t: {"bought": round(L["cost"] / L["qty"], 2), "now": round(prices.get(t, 0), 2),
+                    "pct": round((prices.get(t, 0) / (L["cost"] / L["qty"]) - 1) * 100, 2), "sell_on": L.get("exit_on")} for t, L in held.items()}
+        with feed.thread(f"Panic trades check-in {today:%b %d}", list(held), kind="huddle"):
+            feed.say("exec", "Where the panic-day trades stand: " + "; ".join(f"{t} {v['pct']:+.1f}% (bought ${v['bought']}, now ${v['now']}, sells {v['sell_on']})"
+                     for t, v in rows.items()) + f". Rule: sell at +{cfg.get('take_profit_pct', 10)}% near a close, otherwise on the sell date.", to="team")
+            if desk.available:
+                ctx = {"panic_trades": rows, "market_today_pct": round(_dayret(data["SPY"]) * 100, 2) if "SPY" in data else None,
+                       "recent_headlines": [f"{f['ticker']}: {f['title']}" for f in st.get("news_feed", [])[-12:]], "local_intel": intel_brief(5)}
+                try:
+                    desk.ask("macro", "fast", "Macro Analyst, daily check on the panic-day rebound trades: is the market calming (rebound "
+                             "on track) or is this turning into a real crash? Name what you see. 1-2 sentences. "
+                             '{"say":"","to":"team"}', ctx, max_tokens=250)
+                    desk.ask("risk", "fast", "Risk Manager, daily check on the panic-day trades: anything that changes the risk (news on one "
+                             "stock, the selloff spreading)? The rule sells on the date or at +10%; you can't change it, but say if "
+                             "you'd want the owner to know something. 1-2 sentences. "
+                             '{"say":"","to":"team"}', ctx, max_tokens=250)
+                except Exception as e:
+                    feed.say("system", f"Agents unavailable: {e}"[:150])
     if not (force or (dt.time(15, 30) <= now.time() <= dt.time(15, 58))) or st["flags"].get(f"panic:{today}") or "SPY" not in data:
         return
     st["flags"][f"panic:{today}"] = True
@@ -860,6 +882,28 @@ def panic_check(st, ex, data, prices, today, brk_state, now, force=False):
         feed.say("chief", f"Panic day: the market is {spy * 100:+.1f}% and {len(hits)} of our stocks fit the rebound setup: "
                  + ", ".join(f"{t} {r * 100:+.1f}% today, {dd * 100:.0f}% under its high" for r, dd, t in hits)
                  + f". History on 61 days like this: +5.3% average over 6 sessions, up 70% of the time.", to="team")
+        views = {}
+        if desk.available:
+            ctx = {"market_today_pct": round(spy * 100, 2), "setups": [{"ticker": t, "today_pct": round(r * 100, 2), "under_20d_high_pct": round(dd * 100, 1)}
+                   for r, dd, t in hits], "rule_picks": [t for _, _, t in hits[: cfg.get("max_names", 3)]],
+                   "history": {"all_61_panic_days_6d_avg_pct": 5.3, "up_share": 0.70, "market_down_3pct_plus_days_avg_pct": 1.9,
+                               "market_down_2_to_3pct_days_avg_pct": 7.6, "worst_days": "-15% to -21% (Mar 2020, May 2022)",
+                               "sector_only_panics": "no edge"},
+                   "recent_headlines": [f"{f['ticker']}: {f['title']}" for f in st.get("news_feed", [])[-15:]], "local_intel": intel_brief(6)}
+            try:
+                desk.ask("macro", "fast", "Macro Analyst. It's a market panic day and the panic-day rebound rule is about to buy near the "
+                         "close. Why is the market falling today (what's driving it), and does it look like a one-off scare or the "
+                         "start of something bigger? 2 sentences. " '{"say":"","to":"team"}', ctx, max_tokens=300)
+                desk.ask("investigator", "fast", "News Investigator. For the rule's picks, is any of them falling for its OWN bad news "
+                         "(earnings, offering, accident) rather than with the market? That matters: the rebound is about "
+                         "market-wide selling. 2 sentences. " '{"say":"","to":"team"}', ctx, max_tokens=300)
+                pmv = desk.ask("pm", "fast", "Portfolio Manager. The rules buy the picks no matter what (that's what was tested). Give your "
+                               "own view anyway so we can score your judgment against the result later: for each pick, would you buy or "
+                               "skip, and why in a few words. " '{"say":"","to":"team","views":[{"ticker":"","view":"buy|skip","why":""}]}',
+                               ctx, max_tokens=400)
+                views = {v.get("ticker"): v for v in (pmv or {}).get("views") or [] if isinstance(v, dict)}
+            except Exception as e:
+                feed.say("system", f"Agents unavailable: {e}"[:150])
         feed.say("risk", "The danger is the day this is the start of a crash (March 2020, May 2022: -15% to -21%) and a stop "
                  f"won't save us, so size is the protection: {cfg.get('size_pct_each', 15)}% per stock, "
                  f"{cfg.get('max_total_pct', 45)}% total at most. We sell at +{cfg.get('take_profit_pct', 10)}% near a close, or on {exit_on} no matter what.", to="chief")
@@ -867,7 +911,8 @@ def panic_check(st, ex, data, prices, today, brk_state, now, force=False):
             dollars = min(eq * cfg.get("size_pct_each", 15) / 100, room, cash)
             L = account.lot(book, t, "panic")
             rec = {"date": str(today), "ticker": t, "price": round(prices[t], 2), "day_pct": round(r * 100, 2), "below_high_pct": round(dd * 100, 1),
-                   "market_pct": round(spy * 100, 2), "exit_on": exit_on, "result": None, "bought": False}
+                   "market_pct": round(spy * 100, 2), "exit_on": exit_on, "result": None, "bought": False,
+                   "pm_view": (views.get(t) or {}).get("view"), "pm_why": (views.get(t) or {}).get("why")}
             if blocked or L["qty"] > 1e-6 or dollars < 5:
                 rec["skipped"] = "brakes" if blocked else ("already holding" if L["qty"] > 1e-6 else "no cash left")
             else:
@@ -940,6 +985,16 @@ def intel_tick(st, today, force=False):
         collector.view(st)
     except Exception as e:
         print("intel view failed", e)
+    try:  # page views that don't need a price download: the long-term memory and the research log
+        ev = desk_memory.events()
+        mv = st.setdefault("memory_view", {})
+        mv.update({"events": len(ev), "with_outcomes": sum(e.get("r20") is not None for e in ev), "watch": desk_memory.watch_all()[-60:],
+                   "recent": [{k: e.get(k) for k in ("date", "ticker", "title", "type", "r0", "r5", "r20")} for e in sorted(ev, key=lambda e: e["date"])[-40:]]})
+        mv.setdefault("playbooks", desk_memory.all_playbooks(list(T)))
+        L = json.load(open(os.path.join(ROOT, "research", "trial_ledger.json")))
+        st["research_log"] = [{"name": k, "trials": v.get("trials"), "verdict": v.get("verdict")} for k, v in L.get("strategies", {}).items()]
+    except Exception as e:
+        print("memory/research view failed", e)
 
 
 def intel_brief(n=8):
@@ -1491,7 +1546,7 @@ def cycle(st, desk, br, ex, force=()):
         manage_open(st, ex, prices, today, brk_state)
         process_fills(st, br, ex, today)
         try:
-            panic_check(st, ex, data, prices, today, brk_state, now, force="panic" in force)
+            panic_check(st, desk, ex, data, prices, today, brk_state, now, force="panic" in force)
             process_fills(st, br, ex, today)
         except Exception as e:
             traceback.print_exc()

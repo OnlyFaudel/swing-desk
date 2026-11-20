@@ -150,9 +150,12 @@ def teammates():
 def post_agent(role, out, to=None):
     if not isinstance(out, dict):
         return
+    out = {k: v for k, v in out.items() if not str(k).startswith("_") or (k == "_raw" and v)}  # cost/debug fields stay out of the chat
+    if not out or (set(out) == {"_raw"} and not str(out["_raw"]).strip()):
+        return  # an empty answer is not posted (never show raw code in the chat)
     if CUR is not None:  # inside a discussion: it is a chat message (+ the agent's own notes), not a public post
-        notes = "\n".join(_flatten({k: v for k, v in out.items() if k not in ("say", "to")}))[:900]
-        say(role, out.get("say") or notes[:600] or json.dumps(out, default=str)[:300], to=out.get("to") or to or "team",
+        notes = "\n".join(_flatten({k: v for k, v in out.items() if k not in ("say", "to", "_raw")}))[:900]
+        say(role, out.get("say") or notes[:600] or str(out.get("_raw", ""))[:300], to=out.get("to") or to or "team",
             notes=notes if out.get("say") else None)
         return
     if role == "scout" and not any((i.get("materiality") or 0) >= 7 for i in (out.get("items") or []) if isinstance(i, dict)):
