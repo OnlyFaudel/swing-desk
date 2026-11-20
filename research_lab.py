@@ -102,7 +102,8 @@ def session(st, desk, max_ideas=10):
                "by_group": pd.DataFrame(with_feats).groupby("group").R.agg(["count", "mean"]).round(3).to_dict(),
                "features": FEATURES, "already_tested": sorted(tested)[-60:],
                "recent_notes": [{k: n.get(k) for k in ("key", "verdict", "note", "next")} for n in nb[-12:]],
-               "learn_report": st.get("learn_report")}
+               "learn_report": st.get("learn_report"),
+               "owner_questions": [q["q"] for q in st.get("research_queue", [])][-5:]}
     results = []
     with feed.thread(f"Research session {dt.date.today():%a %b %d}", [], kind="research"):
         feed.say("chief", f"Research time. {len(with_feats):,} practice trades on file, average {summary['avgR']:+.3f}R. "
@@ -110,7 +111,7 @@ def session(st, desk, max_ideas=10):
         prop = desk.ask("researcher", "fast",
                         "Research Lead. Propose as many NEW ideas as you have a real reason for (often 1-3, never filler; an empty list is fine) that might make Patient Levels trades better or worse, each a "
                         "test on one feature of the practice trades. Use only the listed features and ops (<, >, ==). Don't "
-                        "repeat anything in already_tested. Prefer ideas with an economic reason (a sector selloff breaks "
+                        "repeat anything in already_tested. If owner_questions is not empty, your boss asked these: turn them into tests first. Prefer ideas with an economic reason (a sector selloff breaks "
                         "supports; a jumpy stock blows through tight stops). "
                         '{"say":"","to":"Risk Manager","ideas":[{"feature":"","op":"<|>|==","value":"","claim":"better|worse","why":""}]}',
                         summary, max_tokens=700)
@@ -143,6 +144,7 @@ def session(st, desk, max_ideas=10):
             nb.append({"t": feed._now().strftime("%Y-%m-%d %H:%M"), "key": k, "idea": h, "result": r, "verdict": r["verdict"],
                        "note": nn.get("note") or h.get("why", ""), "next": nn.get("next", "")})
     del nb[:-300]
+    st["research_queue"] = []
     for h, r in results:
         good = r["verdict"] == "promising"
         feed.post("researcher", f"Tested: {_key(h)} ({h.get('claim')}). Verdict: {r['verdict']}. "

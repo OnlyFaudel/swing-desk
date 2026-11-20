@@ -91,6 +91,9 @@ class Desk:
         return cost
 
     def ask(self, role, tier, system, payload, web_search=0, max_tokens=900, to=None):
+        notes = [n for n in self.state.get("boss_notes", []) if n.get("date", "") >= str(dt.date.today() - dt.timedelta(days=7))]
+        if notes and isinstance(payload, dict):
+            payload = {**payload, "owner_standing_instructions": [n["note"] for n in notes][-5:]}
         mates = feed.teammates()
         if mates:
             payload = ({**payload, "teammates_said": mates} if isinstance(payload, dict)
@@ -374,7 +377,7 @@ def mock_answer(role, user):
                 "ideas": [{"feature": "group_up", "op": "==", "value": "false", "claim": "worse", "why": "a falling sector breaks supports"},
                           {"feature": "ret5d_pct", "op": "<", "value": -6, "claim": "worse", "why": "buying into a hard week catches falling knives"}],
                 "notes": []}
-    if role == "pm" and "owner_post" in user:
+    if role == "pm" and ("owner_post" in user or "boss_post" in user):
         return {"say": "Practice line. Live, I answer your post: what the scan found, what we'll do, and what would change it.",
                 "to": "You", "post": "Practice: scan done.", "_cost": 0}
     if role == "risk" and "pm_decision" in user:

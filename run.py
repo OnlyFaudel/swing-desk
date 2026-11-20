@@ -630,6 +630,12 @@ def huddle_reasons(st, prices, now, hawk):
     if n_tr != st.get("huddle_trade_count", n_tr):
         r.append("a trade opened or closed since the last huddle")
     st["huddle_trade_count"] = n_tr
+    for t, until in (st.get("boss_watch") or {}).items():
+        if str(now.date()) <= until and t in prices:
+            last_px = st.setdefault("boss_watch_px", {}).get(t)
+            if last_px and abs(prices[t] / last_px - 1) >= 0.01:
+                r.append(f"{t} (you asked us to watch it) moved {(prices[t] / last_px - 1) * 100:+.1f}% since we last looked")
+            st["boss_watch_px"][t] = prices[t]
     hh, mm = map(int, hc["midday"].split(":"))
     if now.time() >= dt.time(hh, mm) and st["flags"].get(f"midday:{now.date()}") is None:
         st["flags"][f"midday:{now.date()}"] = True
@@ -768,7 +774,7 @@ def owner_scan(st, desk, ex, data, prices, today, brk_state, text):
     feed.post("owner", text, [t for t in T if t in words] + extra, kind="owner")
     with feed.thread(f"You asked: {text[:70]}", list(T) + extra, kind="owner"):
         feed.say("owner", text, to="team")
-        feed.say("chief", "On it. Re-scanning all three stocks for a support setup right now, ignoring the usual 30-minute wait."
+        feed.say("chief", f"Heard you, boss. Everyone stop and read this. Re-scanning all {len(T)} stocks for a support setup right now."
                  + (f" I'll also check {', '.join(extra)} for you, for information only, since they're not in our trio." if extra else ""), to="owner")
         st.setdefault("last_scan", {}).clear()
         before = set(st["candidates"])
@@ -796,16 +802,57 @@ def owner_scan(st, desk, ex, data, prices, today, brk_state, text):
             feed.say("exec", "Placed: " + ", ".join(f"{t} buy at ${st['armed'][t]['entry']}" for t in new if t in st["armed"]), to="owner", outcome=True)
         elif new:
             feed.say("exec", "The market is closed, so these buys go in at the next open: " + ", ".join(new), to="owner", outcome=True)
-        ans = None
+        ans, done = None, []
         if desk.available:
+            ctx = {"boss_post": text, "setups_found": found, "why_no_setup": why, "info_only": info, "market_open": is_open,
+                   "nowcast": st.get("nowcast"), "prices": {t: prices.get(t) for t in T}, "open_trades": {t: account.lot(st["book"], t, "trade")
+                   for t in T if account.lot(st["book"], t, "trade")["qty"] > 1e-6}, "resting_buys": st["armed"],
+                   "recent_headlines": [f["title"] for f in st["news_feed"]][-10:], "research_notebook": research_lab.highlights(st)}
+            # everyone hears the boss: each specialist answers from their own seat
+            for role, seat in (("macro", "the market and sector mood"), ("whale", "options, short volume and insider moves"),
+                               ("crowd", "what retail traders and analysts are saying"), ("risk", "what could go wrong with what the boss wants")):
+                try:
+                    desk.ask(role, "fast", f"The OWNER (your boss) just posted to the team. Answer him directly from your seat ({seat}): "
+                             "what it means for his request and what you'd do. 1-3 plain sentences. Loyal but honest: if what he wants "
+                             "would break the rules (buys only at support with a stop), say so and offer the closest thing that doesn't. "
+                             '{"say":"","to":"You"}', ctx, max_tokens=260)
+                except Exception as e:
+                    feed.say("system", f"{role} couldn't answer: {e}"[:150]); break
             try:
-                ans = desk.answer_owner({"owner_post": text, "setups_found": found, "why_no_setup": why, "info_only": info,
-                                         "market_open": is_open, "nowcast": st.get("nowcast"), "prices": {t: prices.get(t) for t in T}})
+                ans = desk.ask("pm", "fast",
+                               "Portfolio Manager. The OWNER (your boss) posted; the team has answered. Turn his post into action. "
+                               "Allowed actions: cancel_buy (drop a waiting/resting buy), exit (sell an open trade), watch (focus a "
+                               "ticker: the team checks it in every meeting for 5 days), research (queue a question for the Research "
+                               "Lab), remember (a standing instruction the whole team keeps for 7 days), none. You can never buy "
+                               "outside a support setup. Then answer him in plain English: what the team found and exactly what you did. "
+                               '{"say":"","to":"You","post":"one-line headline of what the team is doing",'
+                               '"actions":[{"type":"cancel_buy|exit|watch|research|remember|none","ticker":"","text":""}]}',
+                               ctx, max_tokens=600, to="owner")
             except Exception as e:
                 print("owner answer failed", e)
+            for a in (ans or {}).get("actions") or []:
+                if not isinstance(a, dict):
+                    continue
+                typ, t, txt = str(a.get("type", "")).lower(), str(a.get("ticker") or "").upper(), str(a.get("text") or "")[:300]
+                if typ == "cancel_buy" and t in st["candidates"]:
+                    st["candidates"].pop(t); ex_cancel(st, t); done.append(f"canceled the buy on {t}")
+                elif typ == "exit" and t in T and account.lot(st["book"], t, "trade")["qty"] > 1e-6:
+                    if is_open:
+                        ex.exit_trade(t, prices[t], "owner's call: " + txt[:100]); done.append(f"sold {t}")
+                    else:
+                        account.lot(st["book"], t, "trade")["exit_next_open"] = "owner's call: " + txt[:100]; done.append(f"{t} will be sold at the open")
+                elif typ == "watch" and t:
+                    st.setdefault("boss_watch", {})[t] = sessions_after(str(today), 5); done.append(f"watching {t} closely for 5 days")
+                elif typ == "research" and txt:
+                    st.setdefault("research_queue", []).append({"q": txt, "date": str(today)}); done.append("queued a research question")
+                elif typ == "remember" and txt:
+                    st.setdefault("boss_notes", []).append({"note": txt, "date": str(today)}); del st["boss_notes"][:-20]
+                    done.append("the team will keep your instruction in mind for a week")
+            if done:
+                feed.say("exec", "Done: " + "; ".join(done) + ".", outcome=True, to="owner")
         headline = (ans or {}).get("post") or (f"Found {len(found)} setup{'s' if len(found) != 1 else ''}" if found else "Nothing safe to buy yet")
-        feed.post("pm", (ans or {}).get("say") or "\n".join(lines), list(found) or T, kind="answer",
-                  art={"big": headline[:60], "sub": "Answer to your post"})
+        feed.post("pm", ((ans or {}).get("say") or "\n".join(lines)) + (("\n\nDone: " + "; ".join(done) + ".") if done else ""),
+                  list(found) or T, kind="answer", art={"big": headline[:60], "sub": "The team's answer to your post"})
     notify("Team answered your post", headline, tags="speech_balloon", who="pm")
 
 
