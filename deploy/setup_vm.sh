@@ -12,6 +12,7 @@ sudo -u desk /home/desk/venv/bin/pip install -r /home/desk/swing-desk/requiremen
 sudo tee /etc/swingdesk.env >/dev/null <<'ENV'
 ANTHROPIC_API_KEY=paste-here
 NTFY_TOPIC=paste-here
+NTFY_TOKEN=paste-here-or-leave-empty
 ALPACA_KEY=paste-here
 ALPACA_SECRET=paste-here
 ALPACA_PAPER=true

@@ -49,8 +49,10 @@ def notify(title, body, tags="chart_with_upwards_trend", priority="default", who
     if not topic or MOCK:
         return
     try:
-        req = urllib.request.Request(f"https://ntfy.sh/{topic}", data=body.encode(),
-                                     headers={"Title": title.encode("ascii", "ignore").decode(), "Tags": tags, "Priority": priority})
+        h = {"Title": title.encode("ascii", "ignore").decode(), "Tags": tags, "Priority": priority}
+        if os.environ.get("NTFY_TOKEN", "").strip():  # your own ntfy account: limits are yours, not the shared GitHub machine's
+            h["Authorization"] = "Bearer " + os.environ["NTFY_TOKEN"].strip()
+        req = urllib.request.Request(f"https://ntfy.sh/{topic}", data=body.encode(), headers=h)
         urllib.request.urlopen(req, timeout=15)
     except Exception as e:
         print("notify failed", e)
@@ -1129,7 +1131,12 @@ def main():
         print(f"Sending to topic: {t[:3]}{'*' * max(len(t) - 3, 0)} ({len(t)} characters)")
         notify("Swing Desk connected", "Phone alerts work: lineup, armed orders, fills, news, morning brief, daily review.")
         if NOTIFY_ERR:
-            print("Sending failed:", NOTIFY_ERR[-1]); sys.exit(1)
+            e_ = NOTIFY_ERR[-1]
+            print("Sending failed:", e_)
+            if "429" in e_:
+                print("ntfy.sh's free limit for this shared GitHub machine is used up. Fix: make a free ntfy.sh account, "
+                      "create an access token, and add it as the GitHub secret NTFY_TOKEN.")
+            sys.exit(1)
         print("Sent. If your phone got nothing, the ntfy app is subscribed to a different name (names are case-sensitive).")
         return
     elif args[0] == "test-agents":

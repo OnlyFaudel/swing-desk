@@ -23,7 +23,10 @@ def poll(since="24h"):
     if not tp:
         return list(LOCAL)
     url = f"https://ntfy.sh/{tp}/json?poll=1&since={since}"
-    raw = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "swing-desk"}), timeout=15).read()
+    h = {"User-Agent": "swing-desk"}
+    if os.environ.get("NTFY_TOKEN", "").strip():
+        h["Authorization"] = "Bearer " + os.environ["NTFY_TOKEN"].strip()
+    raw = urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=15).read()
     out = []
     for line in raw.decode("utf-8", "ignore").splitlines():
         try:
