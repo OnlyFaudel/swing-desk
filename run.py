@@ -1251,7 +1251,8 @@ def cycle(st, desk, br, ex, force=()):
         del ei[:-4000]
     if is_open:
         if (st["flags"].get("morning_done") != str(today) and now.time() >= dt.time(9, 31)) or "morning" in force:
-            st["flags"]["morning_done"] = str(today)
+            if now.time() >= dt.time(9, 31) and market.market_open():  # a forced test meeting before the open must not use up the real one
+                st["flags"]["morning_done"] = str(today)
             morning(st, desk, br, ex, data, prices, today, brk_state)
             process_fills(st, br, ex, today)
         manage_open(st, ex, prices, today, brk_state)
