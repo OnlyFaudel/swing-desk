@@ -6,3 +6,4 @@ feedparser>=6.0
 alpaca-py>=0.40
 exchange_calendars>=4.5
 convertdate>=2.4
+scipy>=1.11
