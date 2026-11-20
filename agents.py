@@ -78,7 +78,8 @@ class Desk:
             self.spend["day"], self.spend["day_usd"] = today, 0.0
         if self.spend["month"] != month:
             self.spend["month"], self.spend["month_usd"] = month, 0.0
-        if self.spend["day_usd"] >= self.cfg["budget_daily_usd"] or self.spend["month_usd"] >= self.cfg["budget_monthly_usd"]:
+        day_cap = self.cfg.get("budget_daily_usd")
+        if (day_cap is not None and self.spend["day_usd"] >= day_cap) or self.spend["month_usd"] >= self.cfg["budget_monthly_usd"]:
             raise Budget(f"Agent budget reached (today ${self.spend['day_usd']:.2f}, month ${self.spend['month_usd']:.2f})")
 
     def _charge(self, role, model, usage, searches=0):

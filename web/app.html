@@ -386,7 +386,7 @@ function stockState(t){
     long:`A ${money(a.dollars)} buy order is waiting at ${money(a.entry)}, just above support at ${money(a.zone)}. It only fills if ${t} dips there by ${a.valid_until}. If it fills, the stop is ${money(a.stop)} and the target ${money(a.target)}.`};
   const hold=C.sync&&C.sync.pulse_filter&&S.sync&&S.sync.pulse_up===false;
   if(c) return hold?{k:"",short:`Setup at ${money(c.entry)}, on hold: sector falling.`,long:`There's a setup at ${money(c.entry)}, but the whole nuclear basket is falling, so new buys wait until it turns up.`}
-    :{k:"",short:`Setup ready at ${money(c.entry)}, no free slot yet.`,long:`There's a setup at ${money(c.entry)}, but all 3 trade slots or the settled cash are in use.`};
+    :{k:"",short:`Setup ready at ${money(c.entry)}, no free slot yet.`,long:`There's a setup at ${money(c.entry)}, but the settled cash is already in other trades.`};
   return {k:"",short:"Waiting for a support level.",long:`No buy yet: ${why||"the bot hasn't scanned it yet today"}.`};
 }
 

@@ -38,8 +38,8 @@
   "news_analyst_web_searches": 2,
   "materiality_to_convene_desk": 7,
   "desk_cooldown_minutes": 120,
-  "budget_daily_usd": 0.4,
-  "budget_monthly_usd": 6.0,
+  "budget_daily_usd": null,
+  "budget_monthly_usd": 15.0,
   "poll_seconds": 120,
   "notify": {
     "trades": true,
@@ -398,5 +398,10 @@
     "enabled": true,
     "daily": true,
     "note": "After each daily review and Saturday 10am: agents propose ideas, code tests them on practice trades in two halves, critic reviews, notes saved. Never changes trading by itself."
+  },
+  "paper_unleashed": {
+    "enabled": true,
+    "trade_size_pct": 20,
+    "note": "Paper only (switches off automatically on a LIVE broker): no fixed number of trades (as many as setups and cash allow, each ~20% of the account), no sector filter, huddles and research whenever there's something new, no daily agent cap. The only number left is the monthly $ ceiling, because it's real money."
   }
 }

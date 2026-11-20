@@ -28,6 +28,12 @@ BROKER, DESK = {}, {}
 
 
 # ======================================================================= plumbing
+def unleashed():
+    """Paper-only freedom: true unless the broker is a LIVE account (then every limit is back on)."""
+    b = BROKER.get("b")
+    return bool(CFG.get("paper_unleashed", {}).get("enabled")) and not (b and b.name.upper().endswith("LIVE"))
+
+
 def ntfy_topic():
     """Accepts the bare name or a pasted link like https://ntfy.sh/name; strips spaces."""
     t = (os.environ.get("NTFY_TOPIC") or "").strip()
@@ -234,7 +240,7 @@ def weekly_rank(st, force=False):
         st["active"] = list(CFG["tickers"])
         st["ranking"] = {"week": wk, "date": str(dt.date.today()), "scores": r, "active": st["active"], "mode": "fixed"}
         if old != st["active"]:
-            notify("Lineup", f"The nuclear fuel chain, 3 trades at a time: {', '.join(st['active'])}. "
+            notify("Lineup", f"The nuclear fuel chain{' (paper: as many trades as setups and cash allow)' if unleashed() else ', 3 trades at a time'}: {', '.join(st['active'])}. "
                    "Practice trades keep running on 52 stocks.", tags="trophy")
         return
     st["active"] = list(CFG["always_include"]) + picks
@@ -360,14 +366,18 @@ def arm(st, ex, prices, today, brk_state):
             ex_cancel(st, t)
         return
     open_trades = [t for t in traded(st) if account.lot(book, t, "trade")["qty"] > 1e-6]
-    free = CFG["slots"] - len(open_trades)
     eq = brk_state["equity"]
-    slot_usd = min(eq / CFG["slots"], eq * CFG["max_position_pct"] / 100) * learning.mult(st, "patient_level") * brk_state["risk_mult"]
+    if unleashed():  # no fixed number of trades: every setup gets an order while settled cash lasts
+        free = len(T)
+        slot_usd = eq * CFG["paper_unleashed"]["trade_size_pct"] / 100 * learning.mult(st, "patient_level") * brk_state["risk_mult"]
+    else:
+        free = CFG["slots"] - len(open_trades)
+        slot_usd = min(eq / CFG["slots"], eq * CFG["max_position_pct"] / 100) * learning.mult(st, "patient_level") * brk_state["risk_mult"]
     try:
         st["sync"] = sync_state(st, market.fetch_hourly(T))
     except Exception as e:
         st["sync"] = {"mult": {}, "error": str(e)[:120]}
-    if CFG["sync"].get("pulse_filter") and st["sync"].get("pulse_up") is False:
+    if CFG["sync"].get("pulse_filter") and not unleashed() and st["sync"].get("pulse_up") is False:
         for t in list(st["armed"]):
             ex_cancel(st, t)
         if not st["flags"].get(f"pulsehold:{today}"):
@@ -637,10 +647,20 @@ def huddle(st, desk, ex, data, prices, today, brk_state, hawk):
         return
     last = st.get("huddle_last", 0)
     n_today = sum(1 for d in st.get("huddle_log", []) if d == str(today))
-    if time.time() - last < hc["min_minutes_between"] * 60 and not any(x.startswith("fast move") for x in reasons):
-        return
-    if n_today >= hc["max_per_day"]:
-        return
+    if unleashed():  # as needed: talk about anything NEW; never re-discuss the same thing in the same hour
+        seen = st.setdefault("huddle_seen", {})
+        reasons = [r for r in reasons if time.time() - seen.get(r, 0) > 3600]
+        if not reasons:
+            return
+        for r in reasons:
+            seen[r] = time.time()
+        for k in [k for k, v in seen.items() if time.time() - v > 86400]:
+            del seen[k]
+    else:
+        if time.time() - last < hc["min_minutes_between"] * 60 and not any(x.startswith("fast move") for x in reasons):
+            return
+        if n_today >= hc["max_per_day"]:
+            return
     st["huddle_last"] = time.time()
     st.setdefault("huddle_log", []).append(str(today)); del st["huddle_log"][:-50]
     tickers = sorted({t for t in T if any(t in x for x in reasons)}) or list(T)
@@ -698,7 +718,7 @@ def handle_owner_posts(st, desk, ex, data, prices, today, brk_state):
         if m["id"] in seen:
             continue
         seen.append(m["id"]); del seen[:-300]
-        if done_today >= cfg.get("max_per_day", 8):
+        if done_today >= cfg.get("max_per_day", 8) and not unleashed():
             feed.post("chief", f"Got your post, but that's {done_today} today, the daily cap. We'll pick it up tomorrow if it still matters.")
             continue
         done_today += 1
@@ -1129,6 +1149,13 @@ def cycle(st, desk, br, ex, force=()):
     if is_open:
         process_fills(st, br, ex, today)
     brk_state = account.brakes(book, prices, CFG, today)
+    if unleashed() and (brk_state.get("killed") or brk_state.get("risk_mult", 1) < 1):
+        # paper keeps learning through a bad stretch; the drop still counts against the promotion gate
+        if brk_state.get("killed"):
+            notify_once(st, "paper_kill", "Paper account down 20%+",
+                        "On real money this would stop all trading. On paper it keeps going so the team keeps learning; "
+                        "the drop still counts against the promotion gate.")
+        brk_state["killed"], brk_state["risk_mult"] = False, 1.0
     if not ops.check(st, CFG, notify, prices, brk_state["equity"], book["lots"], market.INTRADAY, market.market_open()):
         brk_state["no_new_today"], brk_state["ops_halt"] = True, True
     if not gate.live_entries_allowed(st, CFG, br.name):

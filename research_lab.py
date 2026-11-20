@@ -89,7 +89,7 @@ def _trial(n=1):
 
 
 # ------------------------------------------------------------------ one session
-def session(st, desk, max_ideas=2):
+def session(st, desk, max_ideas=10):
     trades = (st.get("shadow_desk") or {}).get("trades", [])
     with_feats = [t for t in trades if "ret5d_pct" in t]
     nb = st.setdefault("notebook", [])
@@ -108,7 +108,7 @@ def session(st, desk, max_ideas=2):
         feed.say("chief", f"Research time. {len(with_feats):,} practice trades on file, average {summary['avgR']:+.3f}R. "
                  "Research Lead, what should we test? Ideas must be checkable on the practice trades.", to="researcher")
         prop = desk.ask("researcher", "fast",
-                        "Research Lead. Propose up to 2 NEW ideas that might make Patient Levels trades better or worse, each a "
+                        "Research Lead. Propose as many NEW ideas as you have a real reason for (often 1-3, never filler; an empty list is fine) that might make Patient Levels trades better or worse, each a "
                         "test on one feature of the practice trades. Use only the listed features and ops (<, >, ==). Don't "
                         "repeat anything in already_tested. Prefer ideas with an economic reason (a sector selloff breaks "
                         "supports; a jumpy stock blows through tight stops). "
