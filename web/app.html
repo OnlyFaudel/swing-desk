@@ -422,7 +422,7 @@ function stockState(t){
   const nm=w=>w==="team"?"the team":(PP[w]||{}).name||w, ini=w=>w==="owner"?"You":nm(w).split(/\s+/).map(x=>x[0]).join("").slice(0,2).toUpperCase(), col=w=>(PP[w]||{}).c||8;
   const AV=(w,cls="")=>`<span class="av c${col(w)} ${cls}" aria-hidden="true">${esc(ini(w))}</span>`;
   const parseT=t=>{const d=new Date(String(t).replace(" ","T"));return isNaN(d)?null:d};
-  const ago=t=>{const d=parseT(t); if(!d) return esc(t); const m=(Date.now()-d)/6e4; return m<1?"now":m<60?Math.round(m)+"m":m<1440?Math.round(m/60)+"h":d.toLocaleDateString(undefined,{month:"short",day:"numeric"});};
+  const ago=t=>{const d=parseT(t); if(!d) return esc(t); const m=(Date.now()-d)/6e4; if(m<-2) return esc(String(t).slice(11,16)); return m<1?"now":m<60?Math.round(m)+"m":m<1440?Math.round(m/60)+"h":d.toLocaleDateString(undefined,{month:"short",day:"numeric"});};
   const ls={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
   // live dot
   const lc=parseT((S.last_cycle||"").replace(" ET","")), mins=lc?(Date.now()-lc)/6e4:1e9;

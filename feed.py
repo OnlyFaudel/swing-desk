@@ -1,6 +1,14 @@
 """The Feed: every agent and every code role posts here in plain words, like a social timeline.
 Posts are buffered in memory during a cycle and flushed into state["feed"] at the end (cheap: no extra calls)."""
 import datetime as dt, json
+from zoneinfo import ZoneInfo
+
+ET = ZoneInfo("America/New_York")
+
+
+def _now():
+    """Eastern time, whatever clock the machine running the bot uses (GitHub runs on UTC)."""
+    return dt.datetime.now(ET)
 
 BUF = []
 THREADS = []
@@ -55,7 +63,7 @@ def post(who, text, tickers=(), kind="note", title=None, art=None):
     """A public announcement on the main feed. art = {"big": "...", "sub": "..."} for the picture block."""
     if who not in PEOPLE:
         PEOPLE[who] = (who.replace("_", " ").title(), "", 8)
-    BUF.append({"t": dt.datetime.now().strftime("%Y-%m-%d %H:%M"), "who": who, "kind": kind, "title": title,
+    BUF.append({"t": _now().strftime("%Y-%m-%d %H:%M"), "who": who, "kind": kind, "title": title,
                 "text": str(text)[:1200], "tickers": sorted(set(tickers)), "art": art,
                 "thread": CUR["id"] if CUR is not None else None})
 
@@ -102,8 +110,8 @@ def _flatten(obj, depth=0):
 class thread:
     """Group chat for one decision: every agent call and code role inside it becomes a message."""
     def __init__(self, title, tickers=(), kind="decision"):
-        self.t = {"id": dt.datetime.now().strftime("%Y%m%d%H%M%S%f"), "title": title, "tickers": sorted(set(tickers)),
-                  "kind": kind, "start": dt.datetime.now().strftime("%Y-%m-%d %H:%M"), "msgs": [], "practice": PRACTICE}
+        self.t = {"id": _now().strftime("%Y%m%d%H%M%S%f"), "title": title, "tickers": sorted(set(tickers)),
+                  "kind": kind, "start": _now().strftime("%Y-%m-%d %H:%M"), "msgs": [], "practice": PRACTICE}
 
     def __enter__(self):
         global CUR
@@ -115,7 +123,7 @@ class thread:
         global CUR
         CUR = self.prev
         if CUR is None or CUR is not self.t:
-            self.t["end"] = dt.datetime.now().strftime("%H:%M")
+            self.t["end"] = _now().strftime("%H:%M")
 
 
 def say(who, text, outcome=False, to="team", notes=None):
@@ -124,7 +132,7 @@ def say(who, text, outcome=False, to="team", notes=None):
     if who not in PEOPLE:
         PEOPLE[who] = (who.replace("_", " ").title(), "", 8)
     to = norm_who(to)
-    m = {"t": dt.datetime.now().strftime("%H:%M"), "who": who, "to": to if to != who else "team",
+    m = {"t": _now().strftime("%H:%M"), "who": who, "to": to if to != who else "team",
          "text": str(text)[:900], "outcome": outcome}
     if notes:
         m["notes"] = str(notes)[:900]

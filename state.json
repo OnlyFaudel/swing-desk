@@ -53815,73 +53815,73 @@
     "VST"
    ],
    "kind": "morning",
-   "start": "2026-11-20 11:24",
+   "start": "2026-11-20 06:24",
    "msgs": [
     {
-     "t": "11:24",
+     "t": "06:24",
      "who": "chief",
      "to": "team",
      "text": "Morning, team. Lineup CCJ, NXE, UEC, DNN, UUUU, LEU, BWXT, CEG, VST, TLN. Account $1,000.00, +0.00% this week. Open trades: none. Nowcast first, then macro, whales and the crowd; the Level Analyst decides which buys to rest.",
      "outcome": false
     },
     {
-     "t": "11:24",
+     "t": "06:24",
      "who": "nowcast",
      "to": "team",
      "text": "Asia's close points to these opens: CCJ -1.4%, NXE -1.3%, UEC -1.9%, DNN -1.6%, UUUU -1.4%, LEU -2.1%, BWXT -1.0%, CEG -1.1%, VST -1.6%, TLN -1.6%. That's already priced in at 9:30, so treat it as context, not a trade.",
      "outcome": false
     },
     {
-     "t": "11:24",
+     "t": "06:24",
      "who": "macro",
      "to": "team",
      "text": "{\"_raw\": \"\", \"_cost\": 0.0006}",
      "outcome": false
     },
     {
-     "t": "11:24",
+     "t": "06:24",
      "who": "whale",
      "to": "team",
      "text": "{\"_raw\": \"\", \"_cost\": 0.0015}",
      "outcome": false
     },
     {
-     "t": "11:24",
+     "t": "06:24",
      "who": "crowd",
      "to": "team",
      "text": "{\"_raw\": \"\", \"_cost\": 0.0008}",
      "outcome": false
     },
     {
-     "t": "11:24",
+     "t": "06:24",
      "who": "level",
      "to": "team",
      "text": "{\"_raw\": \"{\\\"setups\\\":{\\\"BWXT\\\":{\\\"decision\\\":\\\"SKIP\\\",\\\"reason\\\":\\\"The stop sits about 1.6% below entry, but BWXT's typical daily sw\", \"_cost\": 0.0005}",
      "outcome": false
     },
     {
-     "t": "11:24",
+     "t": "06:24",
      "who": "level",
      "to": "team",
      "text": "{\"_raw\": \"\", \"_cost\": 0.0005}",
      "outcome": false
     },
     {
-     "t": "11:24",
+     "t": "06:24",
      "who": "level",
      "to": "team",
      "text": "{\"_raw\": \"\", \"_cost\": 0.0005}",
      "outcome": false
     },
     {
-     "t": "11:24",
+     "t": "06:24",
      "who": "risk",
      "to": "team",
      "text": "Pausing new buys: the basket is below its 10-day average.",
      "outcome": false
     },
     {
-     "t": "11:24",
+     "t": "06:24",
      "who": "chief",
      "to": "team",
      "text": "Morning brief. Lineup CCJ, NXE, UEC, DNN, UUUU, LEU, BWXT, CEG, VST, TLN | risk n/a | armed: none | waiting: BWXT, CEG, TLN | Asia says open: CCJ -1.4%, NXE -1.3%, UEC -1.9%, DNN -1.6%, UUUU -1.4%, LEU -2.1%, BWXT -1.0%, CEG -1.1%, VST -1.6%, TLN -1.6%",
@@ -53889,7 +53889,7 @@
     }
    ],
    "practice": false,
-   "end": "11:24"
+   "end": "06:24"
   },
   {
    "id": "20261120112522134620",
@@ -53907,31 +53907,31 @@
     "VST"
    ],
    "kind": "review",
-   "start": "2026-11-20 11:25",
+   "start": "2026-11-20 06:25",
    "msgs": [
     {
-     "t": "11:25",
+     "t": "06:25",
      "who": "officer",
      "to": "team",
      "text": "Numbers for the reviewer: account $1,000.00 vs $1,000 start, +0.00% this week; the S&P buy-and-hold would be at $1,000.00. 0 trade(s) closed today. Settled cash $1,000.00.",
      "outcome": false
     },
     {
-     "t": "11:25",
+     "t": "06:25",
      "who": "review",
      "to": "team",
      "text": "{\"_raw\": \"{\\\"to\\\":\\\"team\\\",\\\"say\\\":\\\"Nothing traded today, so the account is flat at $1,000, tied with the S&P buy-and-hold. I agree with the Account Officer's numbers, and I'm flagging that one waiting order's expiry date of Nov 26 looks like Thanksgiving, when the market is closed.\\\",\\\"headline\\\":",
      "outcome": false
     },
     {
-     "t": "11:25",
+     "t": "06:25",
      "who": "auditor",
      "to": "team",
      "text": "{\"_raw\": \"{\\\"to\\\":\\\"Reviewer\\\",\\\"say\\\":\\\"Nothing traded, so there is no real result to grade yet: 0 trades, $0 P&L, flat with the S&P. I agree with your flat-account read, but your message came through as broken text (cut off mid-sentence), so please resend it cleanly. Your Nov 26 flag is worth chec",
      "outcome": false
     },
     {
-     "t": "11:25",
+     "t": "06:25",
      "who": "strategist",
      "to": "review",
      "text": "Reviewer, I agree your Nov 26 flag is likely right: it's Thanksgiving and the market is closed, so that order's expiry should be counted in trading sessions (Nov 27 is only a half day). I have no thesis this week. Search was unavailable, so I couldn't check for new policy news. The option-market readings are thin and today is expiry day, so I'd treat them as noise, and the Account Officer's flat $1,000 is a fine place to wait.",
@@ -53940,12 +53940,12 @@
     }
    ],
    "practice": false,
-   "end": "11:25"
+   "end": "06:25"
   }
  ],
  "feed": [
   {
-   "t": "2026-11-20 11:24",
+   "t": "2026-11-20 06:24",
    "who": "chief",
    "kind": "alert",
    "title": "Lineup",
@@ -53955,7 +53955,7 @@
    "thread": null
   },
   {
-   "t": "2026-11-20 11:24",
+   "t": "2026-11-20 06:24",
    "who": "nowcast",
    "kind": "data",
    "title": null,
@@ -53979,7 +53979,7 @@
    "thread": "20261120112405884443"
   },
   {
-   "t": "2026-11-20 11:24",
+   "t": "2026-11-20 06:24",
    "who": "risk",
    "kind": "alert",
    "title": null,
@@ -53992,7 +53992,7 @@
    "thread": "20261120112405884443"
   },
   {
-   "t": "2026-11-20 11:24",
+   "t": "2026-11-20 06:24",
    "who": "chief",
    "kind": "alert",
    "title": "Morning brief",
@@ -54013,7 +54013,7 @@
    "thread": "20261120112405884443"
   },
   {
-   "t": "2026-11-20 11:25",
+   "t": "2026-11-20 06:25",
    "who": "shadow",
    "kind": "data",
    "title": null,
@@ -54026,7 +54026,7 @@
    "thread": null
   },
   {
-   "t": "2026-11-20 11:25",
+   "t": "2026-11-20 06:25",
    "who": "shadow",
    "kind": "learn",
    "title": null,
@@ -54039,7 +54039,7 @@
    "thread": null
   },
   {
-   "t": "2026-11-20 11:25",
+   "t": "2026-11-20 06:25",
    "who": "drift",
    "kind": "data",
    "title": null,
@@ -54052,7 +54052,7 @@
    "thread": null
   },
   {
-   "t": "2026-11-20 11:25",
+   "t": "2026-11-20 06:25",
    "who": "review",
    "kind": "alert",
    "title": "Daily review",
