@@ -566,12 +566,99 @@ def hawk_stream(st, wake):
 def hawk_events(st):
     """Called each cycle: a fast move makes the whole news net (slow lane too) run right now."""
     if not HAWK_EVENTS:
-        return
+        return []
     ev = list(dict.fromkeys(HAWK_EVENTS)); HAWK_EVENTS.clear()
     st["news_slow_at"] = 0
     feed.post("chief", "Hawk alert: " + "; ".join(ev) + ". Checking every news channel for a reason right now.",
               [t for t in T if any(e.startswith(t) for e in ev)], kind="alert",
               art={"big": ev[0], "sub": "Live price alert. The team is checking the news."})
+    return ev
+
+
+# ======================================================================= huddle: the team talks when something changed
+HUDDLE_ROLES = {"level": "Level Analyst: is the support level near the price still clean, or is it about to break?",
+                "whale": "Whale Watcher: what do options, short volume and insider activity say right now?",
+                "macro": "Macro Analyst: is this a market-wide or sector-wide move, or just this stock?",
+                "investigator": "News Investigator: is there news behind this, and is it new or already priced in?",
+                "risk": "Risk Manager: argue against whatever the team leans toward if there is a concrete reason.",
+                "pm": "Portfolio Manager: close the huddle with one decision."}
+
+
+def huddle_reasons(st, prices, now, hawk):
+    r = []
+    r += [f"fast move: {e}" for e in hawk]
+    hc = CFG["huddle"]
+    for t, c in st["candidates"].items():
+        if t in prices and t not in st["armed"] and 0 <= prices[t] / c["entry"] - 1 <= hc["near_entry_pct"] / 100:
+            r.append(f"{t} is within {hc['near_entry_pct']}% of its buy zone ${c['entry']} but no order is resting")
+    for t in st["armed"]:
+        if t in prices and prices[t] / st["armed"][t]["entry"] - 1 <= hc["near_entry_pct"] / 100:
+            r.append(f"{t} is about to reach its resting buy at ${st['armed'][t]['entry']}")
+    n_tr = len(st["book"]["trades"]) + sum(1 for t in traded(st) if account.lot(st["book"], t, "trade")["qty"] > 1e-6)
+    if n_tr != st.get("huddle_trade_count", n_tr):
+        r.append("a trade opened or closed since the last huddle")
+    st["huddle_trade_count"] = n_tr
+    hh, mm = map(int, hc["midday"].split(":"))
+    if now.time() >= dt.time(hh, mm) and st["flags"].get(f"midday:{now.date()}") is None:
+        st["flags"][f"midday:{now.date()}"] = True
+        r.append("midday check-in")
+    return r
+
+
+def huddle(st, desk, ex, data, prices, today, brk_state, hawk):
+    hc = CFG.get("huddle", {})
+    if not (hc.get("enabled") and desk.available and market.market_open()):
+        return
+    now = market.now_et()
+    reasons = huddle_reasons(st, prices, now, hawk)
+    if not reasons:
+        return
+    last = st.get("huddle_last", 0)
+    n_today = sum(1 for d in st.get("huddle_log", []) if d == str(today))
+    if time.time() - last < hc["min_minutes_between"] * 60 and not any(x.startswith("fast move") for x in reasons):
+        return
+    if n_today >= hc["max_per_day"]:
+        return
+    st["huddle_last"] = time.time()
+    st.setdefault("huddle_log", []).append(str(today)); del st["huddle_log"][:-50]
+    tickers = sorted({t for t in T if any(t in x for x in reasons)}) or list(T)
+    snap = {t: {"price": round(prices[t], 2), "waiting_buy": st["candidates"].get(t), "resting_order": st["armed"].get(t),
+                "holding": account.lot(st["book"], t, "trade") if account.lot(st["book"], t, "trade")["qty"] > 1e-6 else None,
+                "why_no_setup": (st.get("setup_status") or {}).get(t)} for t in tickers if t in prices}
+    ctx = {"why_we_are_talking": reasons, "stocks": snap, "sector_pulse": {k: (st.get("sync") or {}).get(k) for k in ("pulse_up", "basket_vs_avg_pct")},
+           "nowcast": st.get("nowcast"), "recent_headlines": [f["title"] for f in st["news_feed"] if f["ticker"] in tickers][-8:]}
+    order = (["level"] if any("buy" in x for x in reasons) else []) + (["investigator"] if any("fast move" in x for x in reasons) else []) \
+        + ["macro", "risk"]
+    order = list(dict.fromkeys(order))[: max(1, hc["max_turns"] - 1)]
+    with feed.thread("Huddle: " + reasons[0][:70], tickers, kind="huddle"):
+        feed.say("chief", "Quick huddle. Why: " + "; ".join(reasons) + ".", to="team")
+        asked = []
+        for role in order:
+            try:
+                out = desk.ask(role, "fast", HUDDLE_ROLES[role] + " Speak only if you add something; keep it to 1-3 sentences. "
+                               "If you need a specific teammate's view, name them in \"ask\". "
+                               '{"say":"","to":"","ask":""}', ctx, max_tokens=300)
+            except Exception as e:
+                feed.say("system", f"{role} couldn't answer: {e}"[:150]); break
+            a = feed.norm_who(out.get("ask"))
+            if a in HUDDLE_ROLES and a not in order and a != "pm" and len(asked) < 1:
+                asked.append(a); order.append(a)
+        try:
+            d = desk.ask("pm", "fast", HUDDLE_ROLES["pm"] + " Allowed actions only: none; skip (cancel a waiting buy); exit (sell an "
+                         "open trade on clear bad news). You can never buy. Default is none. "
+                         '{"say":"","to":"team","action":"none|skip|exit","tickers":[],"reason":""}', ctx, max_tokens=300)
+        except Exception as e:
+            feed.say("system", f"PM couldn't answer: {e}"[:150]); return
+        act, tks = str(d.get("action", "none")).lower(), [t for t in (d.get("tickers") or []) if t in T]
+        done = []
+        for t in tks:
+            if act == "skip" and t in st["candidates"]:
+                st["candidates"].pop(t); ex_cancel(st, t); done.append(f"canceled the waiting buy on {t}")
+            elif act == "exit" and account.lot(st["book"], t, "trade")["qty"] > 1e-6:
+                ex.exit_trade(t, prices[t], "huddle: " + str(d.get("reason", ""))[:100]); done.append(f"sold {t}")
+        feed.say("exec", ("Done: " + "; ".join(done)) if done else "No action. Everything stays as it is.", outcome=True, to="team")
+    if done:
+        notify("Huddle decision", "; ".join(done) + ". " + str(d.get("reason", ""))[:200], tags="speech_balloon", who="pm")
 
 
 # ======================================================================= owner posts (the owner asks the team to look now)
@@ -1043,7 +1130,11 @@ def cycle(st, desk, br, ex, force=()):
             process_fills(st, br, ex, today)
         except Exception as e:
             traceback.print_exc()
-    hawk_events(st)
+    hawk = hawk_events(st)
+    try:
+        huddle(st, desk, ex, data, prices, today, brk_state, hawk)
+    except Exception as e:
+        print("huddle failed", e)
     handle_owner_posts(st, desk, ex, data, prices, today, brk_state)
     handle_news(st, desk, ex, data, prices, today, brk_state)
     if ((now.weekday() < 5 and dt.time(15, 40) <= now.time() <= dt.time(15, 58)) or "close" in force) \

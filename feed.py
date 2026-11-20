@@ -49,7 +49,7 @@ TITLE_WHO = [("ARMED", "exec"), ("FILLED", "exec"), ("BOUGHT", "exec"), ("SOLD",
              ("Order", "exec"), ("EXIT", "exec"), ("News ", "scout"), ("Desk on", "pm"), ("Morning brief", "chief"), ("Lineup", "chief"),
              ("Daily review", "review"), ("Open watch", "nowcast"), ("Signal drift", "drift"),
              ("Promotion gate", "gate"), ("Live buys blocked", "gate"), ("KILL", "officer"), ("Books", "officer"),
-             ("Strategist", "strategist"), ("Radar", "options"), ("Options", "options"), ("Agent desk", "system")]
+             ("Strategist", "strategist"), ("Huddle", "pm"), ("Radar", "options"), ("Options", "options"), ("Agent desk", "system")]
 
 
 def who_for_title(title):

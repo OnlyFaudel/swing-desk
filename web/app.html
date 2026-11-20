@@ -537,7 +537,7 @@ function stockState(t){
   };
 
   /* ----- DM panel */
-  const KIND={morning:"Morning meeting",news:"News decision",review:"Daily review",postmortem:"Trade postmortem",owner:"Your post",decision:"Decision"};
+  const KIND={morning:"Morning meeting",news:"News decision",review:"Daily review",postmortem:"Trade postmortem",owner:"Your post",huddle:"Team huddle",decision:"Decision"};
   let stack=[];
   function openDM(view){$("dm").hidden=false; document.body.style.overflow="hidden";
     stack=view.v==="group"?[{v:"inbox"},{v:"groups"},view]:view.v==="agent"?[{v:"inbox"},view]:[view]; render(); ls.set(seenKey,MS.length?MS.map(m=>m.ts).sort().pop():""); $("dmcount").textContent="";}

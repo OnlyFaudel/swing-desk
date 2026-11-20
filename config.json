@@ -384,5 +384,14 @@
       "NXE",
       "VST"
     ]
+  },
+  "huddle": {
+    "enabled": true,
+    "min_minutes_between": 45,
+    "max_per_day": 8,
+    "max_turns": 6,
+    "near_entry_pct": 1.0,
+    "midday": "12:30",
+    "note": "Free talk, but only when something changed (fast move, price near a waiting buy, a fill or exit, big news) plus one midday check. Cheapest model only; daily $ cap still applies. Talk can skip a waiting buy or exit on bad news; it can never buy."
   }
 }
