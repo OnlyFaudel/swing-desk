@@ -17,7 +17,7 @@ THE PREPARATION:
 import json, os, sys, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -591,7 +591,7 @@ def hawk_events(st):
 
 # ======================================================================= desk memory (long-term)
 def memory_daily(st, data=None):
-    if not desk_memory.events():
+    if not any(e.get("source") == "SEC (backfill)" for e in desk_memory.events()):  # not "if empty": news events can arrive first
         n = desk_memory.backfill_sec(list(T))
         feed.post("researcher", f"Loaded {n:,} company events from SEC filings since 2019 into the desk's long-term memory "
                   "(contracts, earnings, share offerings, leadership changes), with what each stock did afterwards.", kind="learn",
@@ -757,7 +757,8 @@ def premarket(st, desk, prices, today):
         if desk.available:
             ctx = {"overnight_headlines": heads, "nowcast": st.get("nowcast"), "waiting_setups": st["candidates"],
                    "coming_up_from_memory": desk_memory.watch_due(today, 7),
-                   "last_prices": {t: prices.get(t) for t in T}, "research_notebook": research_lab.highlights(st)}
+                   "last_prices": {t: prices.get(t) for t in T}, "research_notebook": research_lab.highlights(st),
+                   "local_intel_overnight": intel_brief()}
             try:
                 desk.ask("macro", "fast", "Macro Analyst at the pre-market check-in: what matters before the open today (futures mood, "
                          "calendar, overnight sector news)? 2-3 sentences. " '{"say":"","to":""}', ctx, max_tokens=300)
@@ -769,6 +770,63 @@ def premarket(st, desk, prices, today):
     feed.post("chief", "Pre-market check-in done: " + (("Asia points to " + ", ".join(g) + ". ") if g else "")
               + (f"Setups waiting on {', '.join(waiting)}." if waiting else "No setups waiting yet.") + " Morning meeting at 9:31.",
               list(waiting), kind="alert", art={"big": "Good morning", "sub": "Pre-market check-in. Open the conversation to see the plan."})
+
+
+# ======================================================================= intel collector (free, no AI)
+def intel_tick(st, today, force=False):
+    """Every ~30 min: local + official news by place, tagged by rules. Once a day: every reactor's power level."""
+    cfg = CFG.get("intel", {})
+    if not cfg.get("enabled", True):
+        return
+    now = market.now_et()
+    if force or time.time() - st.get("intel_at", 0) >= cfg.get("every_minutes", 30) * 60:
+        st["intel_at"] = time.time()
+        try:
+            new = collector.run(tcfg(st), st)
+            print(f"intel: {len(new)} new items")
+        except Exception as e:
+            print("intel collector failed", e)
+        for b in collector.bursts(today):
+            key = f"burst:{b['place']}:{today}"
+            if st["flags"].get(key):
+                continue
+            st["flags"][key] = True
+            tk = [t for t in b["tickers"] if t in T]
+            for t in tk[:3]:
+                desk_memory.add_event(t, f"News burst: {b['place']} ({b['today']} stories today vs {b['normal']} normally)", "news_burst", today, "Intel collector")
+            feed.post("crowd", f"{b['place']} is suddenly in the news: {b['today']} separate stories today, versus about {b['normal']} on a "
+                      "normal day. Something may be happening there; the news desk is reading the stories now.", tk, kind="alert",
+                      art={"big": f"{b['place']}: {b['today']} stories today", "sub": f"Normal day: {b['normal']}. Local news collector"})
+    if (force or (now.time() >= dt.time(8, 30) and st["flags"].get(f"reactors:{today}") is None)):
+        st["flags"][f"reactors:{today}"] = True
+        try:
+            if not os.path.exists(reactors.HIST):
+                n = reactors.backfill()
+                feed.post("researcher", f"Reactor watch is on. Loaded every day of power output since 2019 for the 33 reactors CEG, VST "
+                          f"and TLN own, and {n} outages into the long-term memory with what each stock did afterwards. Tested: a single "
+                          "outage has not moved CEG (116 cases) and the VST/TLN numbers are too few and too mixed to trade. It stays as context.",
+                          ["CEG", "VST", "TLN"], kind="learn", art={"big": f"{n} reactor outages remembered", "sub": "NRC daily power, 2019 to today"})
+            snap, new = reactors.run()
+            for o in new:
+                tk = [o["owner"]] if o["owner"] in T else []
+                feed.post("macro", f"Reactor watch: {o['unit']} ({o['owner']}) dropped to low power in today's NRC report. "
+                          f"{o['owner']} fleet now {snap['owners'][o['owner']]['fleet_running_pct']}% running. History: one unit going "
+                          "offline hasn't moved these stocks on its own; it matters if several go down or a restart drags on.", tk,
+                          kind="alert", art={"big": f"{o['unit']} offline", "sub": f"{o['owner']} reactor, NRC daily power report"})
+        except Exception as e:
+            print("reactor watch failed", e)
+    try:
+        collector.view(st)
+    except Exception as e:
+        print("intel view failed", e)
+
+
+def intel_brief(n=8):
+    try:
+        d = collector.digest(days=3, top=n)
+        return {"top_local_items": d["top_items"], "bursts_today": d["bursts_today"], "reactors": d["reactors"]}
+    except Exception as e:
+        return {"error": str(e)[:100]}
 
 
 # ======================================================================= owner posts (the owner asks the team to look now)
@@ -800,8 +858,14 @@ def owner_scan(st, desk, ex, data, prices, today, brk_state, text):
     words = set(re.findall(r"[A-Z]{2,5}", text.upper()))
     extra = sorted(w for w in words if w in shadow.GROUP and w not in T)[:3]
     feed.post("owner", text, [t for t in T if t in words] + extra, kind="owner")
+    dump = "intel collector" in text.lower()
     with feed.thread(f"You asked: {text[:70]}", list(T) + extra, kind="owner"):
         feed.say("owner", text, to="team")
+        if dump:
+            d = collector.digest(days=7, top=40)
+            feed.say("chief", f"The boss sent us everything the collector gathered: {d['stories']} separate stories in 7 days from "
+                     f"{len(d['stories_by_place'])} places, plus the reactor report. Everyone read it from your seat. Anything with a date "
+                     "goes in the reminders (\"watch\"), and anything worth testing goes to the Research Lab.", to="team")
         feed.say("chief", f"Heard you, boss. Everyone stop and read this. Re-scanning all {len(T)} stocks for a support setup right now."
                  + (f" I'll also check {', '.join(extra)} for you, for information only, since they're not in our trio." if extra else ""), to="owner")
         st.setdefault("last_scan", {}).clear()
@@ -836,6 +900,7 @@ def owner_scan(st, desk, ex, data, prices, today, brk_state, text):
                    "nowcast": st.get("nowcast"), "prices": {t: prices.get(t) for t in T}, "open_trades": {t: account.lot(st["book"], t, "trade")
                    for t in T if account.lot(st["book"], t, "trade")["qty"] > 1e-6}, "resting_buys": st["armed"],
                    "recent_headlines": [f["title"] for f in st["news_feed"]][-10:], "research_notebook": research_lab.highlights(st)}
+            ctx["local_intel"] = collector.digest(days=7, top=40) if dump else intel_brief()
             # everyone hears the boss: each specialist answers from their own seat
             for role, seat in (("macro", "the market and sector mood"), ("whale", "options, short volume and insider moves"),
                                ("crowd", "what retail traders and analysts are saying"), ("risk", "what could go wrong with what the boss wants")):
@@ -887,6 +952,11 @@ def owner_scan(st, desk, ex, data, prices, today, brk_state, text):
 # ======================================================================= news (agents: veto + exits)
 def handle_news(st, desk, ex, data, prices, today, brk_state):
     fresh = news.new_items(tcfg(st), st)
+    try:
+        ic = CFG.get("intel", {})
+        fresh += collector.handoff(st, ic.get("handoff_per_run", 5), ic.get("handoff_min_score", 4.5))
+    except Exception as e:
+        print("intel handoff failed", e)
     if not fresh:
         return
     scored = {}
@@ -1306,6 +1376,7 @@ def cycle(st, desk, br, ex, force=()):
         premarket(st, desk, prices, today)
     except Exception as e:
         print("premarket failed", e)
+    intel_tick(st, today, force="intel" in force)
     hawk = hawk_events(st)
     try:
         huddle(st, desk, ex, data, prices, today, brk_state, hawk)
@@ -1406,6 +1477,11 @@ def main():
         except Exception as e:
             print("desk memory failed", e)
         research_run(st, desk)
+    elif args[0] == "intel":
+        T[:] = st.get("active") or CFG["tickers"]
+        intel_tick(st, market.now_et().date(), force=True)
+        v = st.get("intel_view") or {}
+        print(v.get("week"), "stories this week;", "failed sources:", (v.get("health") or {}).get("failed"))
     elif args[0] == "test-notify":
         t = ntfy_topic()
         if not t:

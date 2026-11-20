@@ -403,5 +403,12 @@
     "enabled": true,
     "trade_size_pct": 20,
     "note": "Paper only (switches off automatically on a LIVE broker): no fixed number of trades (as many as setups and cash allow, each ~20% of the account), no sector filter, huddles and research whenever there's something new, no daily agent cap. The only number left is the monthly $ ceiling, because it's real money."
+  },
+  "intel": {
+    "enabled": true,
+    "every_minutes": 30,
+    "handoff_per_run": 5,
+    "handoff_min_score": 4.5,
+    "_note": "Free local + official news collector (collector.py) and NRC reactor watch (reactors.py). No AI. Reddit only if REDDIT_CLIENT_ID and REDDIT_SECRET secrets exist."
   }
 }
