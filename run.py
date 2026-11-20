@@ -28,8 +28,20 @@ BROKER, DESK = {}, {}
 
 
 # ======================================================================= plumbing
+def ntfy_topic():
+    """Accepts the bare name or a pasted link like https://ntfy.sh/name; strips spaces."""
+    t = (os.environ.get("NTFY_TOPIC") or "").strip()
+    for pre in ("https://", "http://", "ntfy.sh/"):
+        if t.startswith(pre):
+            t = t[len(pre):]
+    return t.strip("/ ") or None
+
+
+NOTIFY_ERR = []
+
+
 def notify(title, body, tags="chart_with_upwards_trend", priority="default", who=None):
-    topic = os.environ.get("NTFY_TOPIC")
+    topic = ntfy_topic()
     print(f"[notify] {title} | {body}")
     w = who or feed.who_for_title(title)
     feed.post(w, body, [t for t in T if t in f"{title} {body}"], kind="alert", title=title)
@@ -42,6 +54,7 @@ def notify(title, body, tags="chart_with_upwards_trend", priority="default", who
         urllib.request.urlopen(req, timeout=15)
     except Exception as e:
         print("notify failed", e)
+        NOTIFY_ERR.append(str(e))
 
 
 def notify_once(st, key, title, body):
@@ -1110,7 +1123,14 @@ def main():
             wake.wait(CFG.get("daemon_poll_seconds", 60) if active else 300)
             wake.clear()
     elif args[0] == "test-notify":
+        t = ntfy_topic()
+        if not t:
+            print("NTFY_TOPIC secret is empty or missing."); sys.exit(1)
+        print(f"Sending to topic: {t[:3]}{'*' * max(len(t) - 3, 0)} ({len(t)} characters)")
         notify("Swing Desk connected", "Phone alerts work: lineup, armed orders, fills, news, morning brief, daily review.")
+        if NOTIFY_ERR:
+            print("Sending failed:", NOTIFY_ERR[-1]); sys.exit(1)
+        print("Sent. If your phone got nothing, the ntfy app is subscribed to a different name (names are case-sensitive).")
         return
     elif args[0] == "test-agents":
         print(desk.ask("technical", "fast", 'Reply {"ok":true}', "ping", max_tokens=30))

@@ -7,7 +7,11 @@ import json, os, urllib.request
 
 
 def topic():
-    t = os.environ.get("NTFY_TOPIC")
+    t = (os.environ.get("NTFY_TOPIC") or "").strip()
+    for pre in ("https://", "http://", "ntfy.sh/"):
+        if t.startswith(pre):
+            t = t[len(pre):]
+    t = t.strip("/ ")
     return f"{t}-inbox" if t else None
 
 
