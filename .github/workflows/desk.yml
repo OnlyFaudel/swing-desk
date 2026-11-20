@@ -55,4 +55,4 @@ jobs:
           for p in state.json docs orders data; do if [ -e "$p" ]; then git add -A "$p"; fi; done
           git diff --cached --quiet && exit 0
           git commit -m "desk $(date -u +%F_%H%M)"
-          git pull --rebase && git push
+          git pull --rebase --autostash && git push
