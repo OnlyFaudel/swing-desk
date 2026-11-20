@@ -554,12 +554,18 @@ function stockState(t){
     if(V.v==="inbox"){
       const NB=S.notebook||[];
       h=top("Messages",false)+`<button class="row2" data-go="groups"><span class="av c1" aria-hidden="true">#</span><div><b>Group chats</b><span>${CH.length} conversation${CH.length===1?"":"s"}: meetings, huddles, news calls, research</span></div><small></small></button>`+
-        `<button class="row2" data-go="notebook"><span class="av c5" aria-hidden="true">✎</span><div><b>Research notebook</b><span>${NB.length} idea${NB.length===1?"":"s"} tested, ${NB.filter(n=>n.verdict==="promising").length} promising</span></div><small></small></button><div class="sect">The team</div>`+
+        `<button class="row2" data-go="notebook"><span class="av c5" aria-hidden="true">✎</span><div><b>Research notebook</b><span>${NB.length} idea${NB.length===1?"":"s"} tested, ${NB.filter(n=>n.verdict==="promising").length} promising</span></div><small></small></button>`+`<button class="row2" data-go="memory"><span class="av c3" aria-hidden="true">◷</span><div><b>Desk memory</b><span>${(S.memory_view||{}).events||0} past events remembered, ${((S.memory_view||{}).watch||[]).filter(w=>!w.surfaced).length} reminders ahead</span></div><small></small></button><div class="sect">The team</div>`+
         people.filter(w=>act[w]).map(w=>{const last=MS.filter(m=>m.who===w).pop(); return `<button class="row2" data-agent="${esc(w)}">${AV(w)}<div><b>${esc(nm(w))}</b><span>${last?esc(last.text):esc((PP[w]||{}).bio||"")}</span></div><small>${act[w]?ago(act[w]):""}</small></button>`}).join("");
     } else if(V.v==="notebook"){
       const NB=(S.notebook||[]).slice().reverse();
       h=top("Research notebook",true)+`<p class="note" style="margin:0 0 12px">Ideas the agents proposed and the code tested on the practice trades, older half and newer half separately. "Promising" means it held up in both; it still never changes trading by itself.</p>`+
         (NB.length?NB.map(n=>{const r=n.result||{},o=r.older||{},w=r.newer||{};return `<div class="notecard"><small>${esc(n.t)}, ${esc(n.verdict)}</small><b>${esc(n.key)}</b> (${esc((n.idea||{}).claim||"")})\n${esc(n.note||"")}${o.n!=null?`\nOlder half: ${o.avgR_match}R vs ${o.avgR_rest}R (n=${o.n}). Newer half: ${w.avgR_match}R vs ${w.avgR_rest}R (n=${w.n}).`:""}${n.next?`\nNext: ${esc(n.next)}`:""}</div>`}).join(""):`<p class="empty">No research yet. The first session runs after today's close.</p>`);
+    } else if(V.v==="memory"){
+      const MV=S.memory_view||{}, W=(MV.watch||[]).slice().reverse(), PB=MV.playbooks||{}, nice=k=>k.replace(/_/g," ");
+      h=top("Desk memory",true)+`<p class="note" style="margin:0 0 12px">Long-term memory: ${MV.events||0} events since 2019 (SEC filings plus every big headline), each with what the stock did afterwards. Reminders come back in the pre-market check-in when they're due.</p>`+
+        `<div class="sect">Reminders for the future</div>`+(W.length?W.map(w=>`<div class="notecard"><small>${esc(w.date)}${w.ticker?", "+esc(w.ticker):""} · noted ${esc(w.written)} by ${esc(nm(w.by))}${w.surfaced?", done":""}</small>${esc(w.what)}</div>`).join(""):`<p class="empty">None yet. When an agent reads about a future date (a regulator decision, a contract award, guidance), it writes it here.</p>`)+
+        `<div class="sect">What each kind of event did before</div>`+(Object.keys(PB).length?Object.entries(PB).filter(([k,v])=>v.n>=3).map(([k,v])=>`<div class="notecard"><small>${esc(nice(k))}, ${v.n} times</small>First day: ${v.first_day_median_pct}% (median). Next 20 days: ${v.next_20d_median_pct}%, ${v.next_20d_vs_basket_median_pct}% vs the nuclear basket; up ${Math.round((v.share_up_20d||0)*100)}% of the time.</div>`).join(""):`<p class="empty">Loading after the next daily review.</p>`)+
+        `<div class="sect">Latest events remembered</div>`+((MV.recent||[]).slice().reverse().slice(0,20).map(e=>`<div class="notecard"><small>${esc(e.date)}, ${esc(e.ticker)}, ${esc(nice(e.type||""))}</small>${esc(e.title)}${e.r20!=null?`\nAfter: day ${e.r0}%, 5 days ${e.r5}%, 20 days ${e.r20}%`:""}</div>`).join("")||`<p class="empty">Nothing yet.</p>`);
     } else if(V.v==="groups"){
       h=top("Group chats",true)+(CH.length?CH.slice().reverse().map(c=>{const ws=[...new Set(c.msgs.map(m=>m.who))];return `<button class="row2" data-group="${esc(c.id)}">${AV(ws[0])}<div><b>${esc(c.title)}</b><span>${esc(KIND[c.kind]||"Discussion")}, ${c.msgs.length} messages, ${ws.length} people${c.practice?", practice":""}</span></div><small>${ago(c.start)}</small></button>`}).join(""):`<p class="empty">No group chats yet.</p>`);
     } else if(V.v==="agent"){
@@ -583,6 +589,7 @@ function stockState(t){
     $("dmbody").querySelectorAll("[data-act=close]").forEach(b=>b.onclick=close);
     $("dmbody").querySelectorAll("[data-go=groups]").forEach(b=>b.onclick=()=>go({v:"groups"}));
     $("dmbody").querySelectorAll("[data-go=notebook]").forEach(b=>b.onclick=()=>go({v:"notebook"}));
+    $("dmbody").querySelectorAll("[data-go=memory]").forEach(b=>b.onclick=()=>go({v:"memory"}));
     $("dmbody").querySelectorAll("[data-agent]").forEach(b=>b.onclick=()=>go({v:"agent",w:b.dataset.agent}));
     $("dmbody").querySelectorAll("[data-pair]").forEach(b=>b.onclick=()=>go({v:"pair",k:b.dataset.pair}));
     $("dmbody").querySelectorAll("[data-notes]").forEach(b=>b.onclick=()=>go({v:"notes",w:b.dataset.notes}));

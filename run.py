@@ -17,7 +17,7 @@ THE PREPARATION:
 import json, os, sys, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -307,6 +307,9 @@ def refresh_candidates(st, desk, data, prices, today, brk_state, force=False):
                                                 "morning_intel": {k: (st.get("morning") or {}).get(k) for k in ("whale", "crowd", "macro")},
                                                 "chart": market.snapshot(data[t], prices[t]), "lessons_from_past_trades": lessons(st),
                                                 "research_notebook": research_lab.highlights(st),
+                                                "this_stock_recent_events": [e for e in desk_memory.events() if e["ticker"] == t
+                                                                             and e["date"] >= str(today - dt.timedelta(days=45))][-6:],
+                                                "what_share_offerings_did_before": desk_memory.playbook("offering_dilution", list(T)),
                                                 "desk_memory_playbook": memory.playbook(st, t), "active_theses": active_theses(st, t),
                                                 "recent_headlines": [f["title"] for f in st["news_feed"] if f["ticker"] == t][-8:]})
                 v = (lv.get("setups") or {}).get(t, {})
@@ -586,6 +589,24 @@ def hawk_events(st):
     return ev
 
 
+# ======================================================================= desk memory (long-term)
+def memory_daily(st, data=None):
+    if not desk_memory.events():
+        n = desk_memory.backfill_sec(list(T))
+        feed.post("researcher", f"Loaded {n:,} company events from SEC filings since 2019 into the desk's long-term memory "
+                  "(contracts, earnings, share offerings, leadership changes), with what each stock did afterwards.", kind="learn",
+                  art={"big": f"{n:,} past events remembered", "sub": "Long-term memory loaded from SEC filings since 2019"})
+    import yfinance as yf
+    px = yf.download(list(T), start="2018-12-01", auto_adjust=True, progress=False)["Close"]
+    px["_basket"] = (px[list(T)].pct_change().mean(axis=1).fillna(0) + 1).cumprod()
+    desk_memory.fill(px)
+    ev = desk_memory.events()
+    st["memory_view"] = {"events": len(ev), "with_outcomes": sum(e.get("r20") is not None for e in ev),
+                         "playbooks": desk_memory.all_playbooks(list(T)), "watch": desk_memory.watch_all()[-60:],
+                         "recent": [{k: e.get(k) for k in ("date", "ticker", "title", "type", "r0", "r5", "r20")}
+                                    for e in sorted(ev, key=lambda e: e["date"])[-40:]]}
+
+
 # ======================================================================= research lab (evenings + Saturday)
 def research_run(st, desk):
     if not CFG.get("research_lab", {}).get("enabled", True) or not desk.available:
@@ -722,13 +743,20 @@ def premarket(st, desk, prices, today):
     g = [f"{t} {v['expected_gap_pct']:+.1f}%" for t, v in (st.get("nowcast") or {}).items() if isinstance(v, dict) and v.get("expected_gap_pct") is not None]
     heads = [f"{f['ticker']}: {f['title']}" for f in st.get("news_feed", [])[-12:]]
     waiting = {t: c["entry"] for t, c in st["candidates"].items()}
+    due = desk_memory.watch_mark(today)
+    for x in due:
+        feed.post(x.get("by") or "chief", f"Reminder written {x['written']}: {x['what']}", [x["ticker"]] if x.get("ticker") in T else [],
+                  kind="alert", art={"big": f"Today: {x['what'][:50]}", "sub": f"Noted by the team on {x['written']}"})
     with feed.thread(f"Pre-market check-in {today:%a %b %d}", T, kind="morning"):
+        if due:
+            feed.say("chief", "From the memory, due now: " + "; ".join(f"{x['what']} (noted {x['written']})" for x in due), to="team")
         feed.say("chief", f"Morning, team. Market opens at 9:30. Watching {len(T)} stocks; setups waiting on "
                  f"{', '.join(f'{t} at ${p}' for t, p in waiting.items()) or 'none yet'}. Nowcast, what did Asia say?", to="nowcast")
         feed.say("nowcast", ("Asia's close points to these opens: " + ", ".join(g) + ". That gets priced in at 9:30, so it's context, not a trade.")
                  if g else "No fresh Asia close to read yet.", to="chief")
         if desk.available:
             ctx = {"overnight_headlines": heads, "nowcast": st.get("nowcast"), "waiting_setups": st["candidates"],
+                   "coming_up_from_memory": desk_memory.watch_due(today, 7),
                    "last_prices": {t: prices.get(t) for t in T}, "research_notebook": research_lab.highlights(st)}
             try:
                 desk.ask("macro", "fast", "Macro Analyst at the pre-market check-in: what matters before the open today (futures mood, "
@@ -877,6 +905,11 @@ def handle_news(st, desk, ex, data, prices, today, brk_state):
                      **{k: s.get(k) for k in ("materiality", "novelty", "direction", "event_type", "why")}})
         if (s.get("materiality") or 0) >= 6 and it["ticker"] in prices:
             memory.remember(st, {**it, **s}, prices[it["ticker"]])
+            try:
+                desk_memory.add_event(it["ticker"], it["title"], s.get("event_type"), source=it.get("source", ""),
+                                      materiality=s.get("materiality"), direction=s.get("direction"), price=prices[it["ticker"]])
+            except Exception as e:
+                print("desk memory add failed", e)
     del feed[:-250]
     groups = {}
     for it in fresh:
@@ -914,6 +947,8 @@ def _convene_news(st, desk, ex, data, prices, today, t, mat):
         ctx = {"ticker": t, "held_trade": held, "armed_or_waiting_buy": st["candidates"].get(t),
                "investigator": entry["investigator"], "filings": entry.get("filings"), "chart": ch,
                "desk_memory_playbook": memory.playbook(st, t), "active_theses": active_theses(st, t),
+               "similar_past_events": desk_memory.similar(mat[0]["title"], t),
+               "what_this_kind_of_event_did_before": desk_memory.playbook(mat[0].get("event_type") or "other", list(T)),
                "rules": "You may SELL an open trade on clearly bad durable news, or SKIP to cancel a waiting buy. "
                         "BUY is not allowed: entries only happen at support levels."}
         entry["pm"] = desk.pm(ctx, "event")
@@ -1127,6 +1162,10 @@ def review(st, desk, data, prices, today, brk_state):
             feed.post("shadow", "No practice trades closed today.", kind="data")
     except Exception as e:
         feed.post("system", f"Shadow desk failed: {e}"[:200])
+    try:
+        memory_daily(st, data)
+    except Exception as e:
+        print("desk memory daily failed", e)
     if CFG.get("research_lab", {}).get("daily", True):
         research_run(st, desk)
     if today.weekday() == 4:
@@ -1355,12 +1394,17 @@ def main():
                 if time.time() - last_dash > 300:
                     dashboard.build(st, CFG); last_dash = time.time()
                 if os.environ.get("AUTO_GIT") == "1" and time.time() - last_push > 900:
-                    os.system(f"cd {ROOT} && for p in state.json docs orders data; do [ -e \"$p\" ] && git add -A \"$p\"; done; "
+                    os.system(f"cd {ROOT} && for p in state.json docs orders data memory research/trial_ledger.json; do [ -e \"$p\" ] && git add -A \"$p\"; done; "
                               f"git commit -qm 'desk {now:%F %H:%M}' >/dev/null 2>&1; git pull -q --rebase --autostash >/dev/null 2>&1; git push -q >/dev/null 2>&1")
                     last_push = time.time()
             wake.wait(CFG.get("daemon_poll_seconds", 60) if active else 300)
             wake.clear()
     elif args[0] == "research":
+        T[:] = st.get("active") or CFG["tickers"]
+        try:
+            memory_daily(st)
+        except Exception as e:
+            print("desk memory failed", e)
         research_run(st, desk)
     elif args[0] == "test-notify":
         t = ntfy_topic()

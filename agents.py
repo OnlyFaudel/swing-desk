@@ -48,7 +48,9 @@ HOUSE = ("You work on a small, long-only trading desk ($1,000-scale account, no 
          "1-3 plain-English sentences, first person, to your teammates, explaining your reasoning so a beginner could follow "
          "(no jargon without a short explanation). If 'teammates_said' is in your input, name the teammate you agree or "
          "disagree with and why. Also include \"to\": the one teammate you are mainly answering (their job title, e.g. \"Risk Manager\"), "
-         "or \"team\" if no one in particular. Reply with JSON only, no prose outside JSON.")
+         "or \"team\" if no one in particular. If you learn of a FUTURE dated event that could move our stocks (a regulator "
+         "decision, a contract award date, guidance, a vote, an auction), add \"watch\": [{\"date\":\"YYYY-MM-DD\",\"ticker\":\"\",\"what\":\"\"}] "
+         "so the desk remembers it for months. Reply with JSON only, no prose outside JSON.")
 
 
 class Budget(Exception):
@@ -127,6 +129,12 @@ class Desk:
         out = parse_json(text)
         out["_cost"] = round(cost, 4)
         feed.post_agent(role, out, to)
+        if out.get("watch"):
+            try:
+                import desk_memory
+                desk_memory.watch_add(out["watch"], role)
+            except Exception:
+                pass
         return out
 
     def record(self, entry):
