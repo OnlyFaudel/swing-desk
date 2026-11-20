@@ -44,6 +44,16 @@ _DAILY = {"t": 0, "key": None, "data": None}
 LIVE = {}  # ticker -> (price, epoch seconds) from the real-time stream (hawk mode)
 
 
+def _one(raw, t):
+    try:
+        if raw is None or raw.empty:
+            return pd.DataFrame()
+        df = raw.xs(t, axis=1, level=1) if isinstance(raw.columns, pd.MultiIndex) else raw
+        return df.dropna()
+    except (KeyError, ValueError):
+        return pd.DataFrame()
+
+
 def fetch(tickers):
     """Daily history (cached 3 hours) + today's bar rebuilt from 5-minute data (Yahoo leaves it blank).
     In hawk mode a cycle runs every minute, so the 2-year history is not re-downloaded each time."""
@@ -52,23 +62,40 @@ def fetch(tickers):
     key = tuple(sorted(allt))
     if _DAILY["data"] is None or _DAILY["key"] != key or time.time() - _DAILY["t"] > 3 * 3600:
         raw = yf.download(allt, period="2y", auto_adjust=True, progress=False)
-        _DAILY.update(t=time.time(), key=key, data={t: raw.xs(t, axis=1, level=1).dropna()[["Open", "High", "Low", "Close", "Volume"]] for t in allt})
+        old = _DAILY["data"] or {}
+        got = {}
+        for t in allt:
+            df = _one(raw, t)
+            for _ in range(2):  # Yahoo sometimes drops one ticker ("database is locked"): retry it alone
+                if not df.empty:
+                    break
+                time.sleep(1.5)
+                df = _one(yf.download(t, period="2y", auto_adjust=True, progress=False, threads=False, multi_level_index=True), t)
+            if df.empty and t in old:
+                df = old[t]  # keep the last good copy rather than crash
+            if not df.empty:
+                got[t] = df[["Open", "High", "Low", "Close", "Volume"]]
+            else:
+                print("no daily data for", t)
+        _DAILY.update(t=time.time(), key=key, data=got)
     data = {t: df.copy() for t, df in _DAILY["data"].items()}
-    intra = yf.download(allt, period="1d", interval="5m", auto_adjust=True, progress=False)
+    try:
+        intra = yf.download(allt, period="1d", interval="5m", auto_adjust=True, progress=False)
+    except Exception as e:
+        print("intraday download failed", e); intra = pd.DataFrame()
     INTRADAY.clear()
     last = {}
     for t in allt:
-        try:
-            b = intra.xs(t, axis=1, level=1).dropna()
-        except KeyError:
-            b = pd.DataFrame()
+        b = _one(intra, t)
+        if t not in data:
+            if b.empty:
+                continue  # nothing at all for this ticker this cycle: it is skipped, the rest keep running
+            data[t] = pd.DataFrame(columns=["Open", "High", "Low", "Close", "Volume"], dtype=float)
         if not b.empty:
             INTRADAY[t] = b
             day = pd.Timestamp(b.index[-1].date())
             row = [b.Open.iloc[0], b.High.max(), b.Low.min(), b.Close.iloc[-1], b.Volume.sum()]
-            if day > data[t].index[-1]:
-                data[t].loc[day] = row
-            elif day == data[t].index[-1]:
+            if data[t].empty or day >= data[t].index[-1]:
                 data[t].loc[day] = row
             last[t] = float(b.Close.iloc[-1])
         else:

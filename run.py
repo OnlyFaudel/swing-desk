@@ -1449,7 +1449,10 @@ def cycle(st, desk, br, ex, force=()):
     T[:] = st["active"]
     tick = traded(st)
     data, prices = market.fetch(tick + ["SPY"])
-    st["last_prices"], st["last_cycle"] = {t: round(prices[t], 2) for t in tick + ["SPY"]}, now.strftime("%Y-%m-%d %H:%M ET")
+    for t in tick + ["SPY"]:  # a ticker Yahoo failed to send keeps its last known price
+        if t not in prices and (st.get("last_prices") or {}).get(t):
+            prices[t] = st["last_prices"][t]
+    st["last_prices"], st["last_cycle"] = {t: round(prices[t], 2) for t in tick + ["SPY"] if t in prices}, now.strftime("%Y-%m-%d %H:%M ET")
     book = st["book"]
     is_open = market.market_open() or "close" in force or "morning" in force
     if is_open:
