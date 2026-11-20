@@ -246,8 +246,16 @@ def weekly_rank(st, force=False):
 
 # ======================================================================= candidates + arming (the one strategy)
 def sessions_after(d0, n):
-    import numpy as np
-    return str(np.busday_offset(d0, n, roll="forward"))
+    """n trading sessions after d0, skipping weekends AND market holidays (Thanksgiving, Christmas...)."""
+    try:
+        import exchange_calendars as xc
+        import pandas as pd
+        cal = xc.get_calendar("XNYS")
+        start = cal.date_to_session(pd.Timestamp(d0), direction="next")
+        return str(cal.sessions_window(start, n + 1)[-1].date())
+    except Exception:
+        import numpy as np
+        return str(np.busday_offset(d0, n, roll="forward"))
 
 
 def refresh_candidates(st, desk, data, prices, today, brk_state, force=False):

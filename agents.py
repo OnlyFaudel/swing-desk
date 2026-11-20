@@ -299,13 +299,25 @@ class Desk:
 
 
 def parse_json(text):
-    m = re.search(r"\{.*\}", text, re.S)
-    if not m:
-        return {"_raw": text[:500]}
-    try:
-        return json.loads(m.group(0))
-    except json.JSONDecodeError:
-        return {"_raw": text[:500]}
+    """Model JSON -> dict. Tolerates code fences and raw newlines inside strings; if the JSON is still broken
+    (e.g. cut off), rescue the readable fields so the team chat shows words, not code."""
+    t = re.sub(r"^```(?:json)?\s*|\s*```$", "", (text or "").strip())
+    m = re.search(r"\{.*\}", t, re.S)
+    if m:
+        for strict in (True, False):
+            try:
+                return json.loads(m.group(0), strict=strict)
+            except json.JSONDecodeError:
+                pass
+    out = {"_raw": (text or "")[:1500]}
+    for k in ("say", "to", "headline", "review_markdown", "summary", "post", "market_note", "risk_level"):
+        mm = re.search(r'"%s"\s*:\s*"((?:[^"\\]|\\.)*)' % k, t, re.S)
+        if mm:
+            try:
+                out[k] = json.loads('"' + mm.group(1) + '"', strict=False)
+            except Exception:
+                out[k] = mm.group(1).replace('\\"', '"')
+    return out
 
 
 def mock_answer(role, user):
