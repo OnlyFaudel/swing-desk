@@ -89,7 +89,8 @@
  "flags": {
   "morning_done": "2026-11-20",
   "pulsehold:2026-11-20": true,
-  "review_done": "2026-11-20"
+  "review_done": "2026-11-20",
+  "premarket:2026-11-20": true
  },
  "benchmark": {
   "shares": {
@@ -878,6 +879,150 @@
    "title": "What Project Is NexGen Energy Ltd (TSX:NXE) Developing In The Athabasca Basin? - Kalkine Media",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYjUyRUxGU2M1bGQwTE1JNmhRZ3JKN29rQXhfWlk1dXRMOXV3ZG1LSktPaDZNUzItSHZheGlGc0V6SnRtZmlzckdGRHNfWmwxckdnQ2ppMGFhMERKc3FHTGY3VnVKRmoxS0JEWUFDbURKdzBRaE8tNjRGV0VTaGxIUmxGRWY0OFlSMk1EWGZoZE1TX1BMcTJrVl9Ya0RkR1FlbVgyYjRYbEpIMF9ZOHZzTE1iX096R00?oc=5",
    "ts": 1795045440,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News",
+   "title": "Goldman Sachs Adjusts Price Target on Vistra to $183 From $200 - marketscreener.com",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSFR1RFdYb3B0TTJBYk9TRFIzc2oxeG9RRDI3UUt1N01WR25tdlU5YXhyZHd3M0RFTEdJWmdLUTBBSDJYZm5NUFpiY3AxNzZPNmhLczFqTXhTN0FzS19KUmQ1TnJxSDQ1TTZvMmFGdXduSXY1SldWX3FrZE0weWgwZjNsMTVOQmVEdDV0ZGZRVEQ1V0tnT2VDc2NDSVAxVXFaNjYwcVEtYlY1UWY4bmQ2bDNiZw?oc=5",
+   "ts": 1795176043,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News: \"Talen Energy\"",
+   "title": "Oppenheimer raises Talen Energy stock price target on power demand - Investing.com",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPS0Q4azJrdWthb3J3dS1oV0ZNRUt1MlJLTktleGg3MTVUMWJYZ1NsalVFMHdwUG1HVkRwX3FfaW5qTDUyMXVhTUNfcmNtZjdqcmxfdGRrMG9tM1FNb1VyM0ZDdFlwb3NEckxWbDg4QkI5VnlRX3cxTW1tNDRBXzNZZTJaUS1lenJTZklfSkY3RnlQNnpMSDFnLXhORGxicGRIRlhJNF85SUdFX1FhcGlWZVUyWFpjeV9DdGVDbFA2ejFKNXd0?oc=5",
+   "ts": 1795175887,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "DNN",
+   "source": "Google News: \"Denison Mines\"",
+   "title": "Denison Mine Corp (NYSEAMERICAN:DNN) Stock Has Consensus Price Target of $5.38 - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWnVIWXdJZ2QyTXQ4c3pGeC0zc0JXX21Lb1VBWjMwNjI2NkVwNzhiMkZPSFJPMzVrRTd1N0ExOHhVMEpRdGJTUnVoT3E2bjdxOUVsZ1RUTHdkNjd6QnBhUHZzZERZbkpxVXFtbTJxYi1Jb01JWWJKTTRRSUlab2VRV3lFOUZzTldKVUpKUGZXSWRyajE3djF6SFZ4cVM4VU1IQjRyR1MyVVRRNlEtRU5FbXQwZFIxZjU2VGpGazNlcnhSQ1FLSC00VkI4U0xpOGdzaDdpQw?oc=5",
+   "ts": 1795175235,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News: Constellation Energy nuclear",
+   "title": "NY Power Authority Shortlists Ten Firms to Build New Nuclear Plants - Engineering News-Record",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZkdOTlU0TGZ0MnlBbURsVGQwZnFGNUVhY1ZtdGNXb0lMN0E4R2RYOGVLcksyc3lQTGFJdWNaMEo4MTdNWTNZSk1CU2FZTzRfSk1BUU1qWUVSUHFxZWhnZ2VJY0Noa0F3MW5VRHpidWxTNWFNdTMwQzhWOV9VWWExMEdnemJTaXNFUXJ3MFBieDdqejRBR0ZrVTM0amxQOEw0eFJmdg?oc=5",
+   "ts": 1795172636,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News: \"Talen Energy\"",
+   "title": "Talen Energy SVP Edward Casulli sells $1.28M in common stock - Investing.com UK",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOU0FEdXdCZFhVX2hzbngtSEpMSnpQenNRYjdGWkpqOW03SE85MlhzNHRORkVURGJlNV8tSU40SmI3V3BGUlFCNEV6N0F0NFpVQ2g2clRsVWZQRDlua3JkRVplZ1lXRGNfdHFWNzJvTG5UeEFGZGVTczZVZk5KSHRRbjhDald6dFlUX05NOXUybGdCczhwa3VaSEducmQtYjJPSXExUjAxXzRYZkRDZmZSX0QxTktKU1RUei1R?oc=5",
+   "ts": 1795172520,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News: Constellation Energy nuclear",
+   "title": "How Will Nuclear Expansion Shape Constellation Energy (NASDAQ:CEG)? - Kalkine Media",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQR2ZYblN4eDFVbjZkOWlqOHhlSHRVSUFXRkU3UjJtTTJrVzB6UVVRellLb2NXRV9NLUxPbG5JWWVNcE5VeDRmcmJfd29lUlFoWGpzNExqTGNRQ0xmaGhoalBLYkw0aGpWQ0NhRjJsM3RJcHNNYkg3OWN1N2VaVzUxRUl1YTRKMTlpdU1QYXJfdnZuc055ci1WUm1aOEozZDJJWGdZcVRIcmltQQ?oc=5",
+   "ts": 1795170540,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Westinghouse reactor",
+   "title": "PEJ Pushes Nuclear Contract Signing With Westinghouse and Bechtel to 2027 - energynews.pro",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMnIxNHF1SC13ZFNvemU1WDNiUVZ2LVZnaS1odmdCX0lONlJLZ0sxSzFRbHVtN01OSDNxQjZiMkViN1laNnAxMVptdERSb0RnOVNJdmYzSzV6a0hEclZEajZvdVFmX1BmWTVndGlCbjdwbFZ3bGdkOURkQU9PU1dFM3oyLWE4bmxNYW5BT3NnTG00MjdfaGxaVDN2bXlDdzQ3?oc=5",
+   "ts": 1795168110,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Chamber of Mines is optimistic about uranium tax talks ahead of 2027 - Namibia Economist",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPR19xd2pJeXM3X2diNnM2YzFtMUo0aW5RTFJIT3ZMa0EtOFd3aHl2dkdtbmxuRjFzUGhiQy1xVTZkVDFCUHZ0aDNIaHFyTVVkVWJ4LWFNM2NaSURGVml2R2pKUUZ3TWVneW1qZG5pR2JpaUFCNG5kakVZOEZUVE9uMVlLTXc5c0twUVNjTGdzelEtbS1LeWtEYXdR?oc=5",
+   "ts": 1795167728,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News: Vistra nuclear",
+   "title": "Vistra (VST) Q3 2026 Earnings Call Transcript - Fortune",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1nenhrNmVSTWtubUY5ZVc0bEZqR1ZWSmoxc3gyWWJJSHR2ZW85TlF0bGVFaUpKZ29ndU44Y3RpNC1ZVC1iekVmcTNrdGhiVVlxWnhNUS1iM0JXRGE2WGRXSDRYYWxGZTc1OEs0?oc=5",
+   "ts": 1795164890,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News: Constellation Energy nuclear",
+   "title": "Constellation Energy (CEG) Following Its Earnings Beat And Guidance Hike Looks Cheap Versus Fair Value - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU2Jsel9kcC0zeWdldFQyMDd6MDRteU01RENwN2tSV0F6bmhrdDFUckFkdTJPcjQxc1dIUkJiWk9wUDZzMVFHMUs1WEN2Q2kxeDA5dXdUVW91ZVV4LWt2eXVCREp1QktCcVpQejAwUEtGSVFYUE50Y0twVVhJazcwaFIyVmVoaVIxQTNNMFVTTms2LTdYdjBySE1UVVhrSnpxZkdKLXhHdGtrc280?oc=5",
+   "ts": 1795119045,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News: Constellation Energy nuclear",
+   "title": "What Constellation Energy Holders Got Wrong Before The Slide - Simply Wall St",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPWFhqRTVFZzFacXRiYXJmZmdZX0FPekpaUTB6YlM2Y2NreUZpVVpXSml1cDl6WkYwZnlJWV9PZTNVcEFEWTlYM0xfUHVvWU9vMjA1RFlyNFE3OEJhTlBsc0lzRUd5RENpbGdFUkdkUjFMN2hQVHpJNi1EdmthdmRBd0dkTGRZNDFsa2RkZmJiNkNaMWVtRkV5ZUJmcmJOQ3RETHlZYVZqSkRGOEhBcVFIeTBEVDR0SUloTWdYdGZoRzBMbTJ6cTgyWVpsMWVrdTFlYk95YjVB0gHbAUFVX3lxTE9QV1phbF8tX3hmSUxBOEZzcl9TUFJxUTVEd0RoSzFwQkFSUWlEZVNEd3Z0OFd2ZG5kSktXVUFHUVlpdFRNdUNxRnRSSVhkaDMyUUNraDZsYlJoYUFBN1VFX2JnYjV5SGc5alI5cjRmVEtYM1gxM21qdUtpZGRPdnQxWjRjM2RrVmJ5MURVU0NiaWR3cU5KYlNqbjhxRnZhN01SdUZxOVVrb1k1cU1XTXo3ZWJTVHhVN0tjZ0JMUUo1NGN5N2JxTDJneG1lQzhpWXJPSm52T3dacUJsbw?oc=5",
+   "ts": 1795101457,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News: Constellation Energy nuclear",
+   "title": "Google and Constellation Energy near $1 billion nuclear power deal - scanx.trade",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMW5QUmJ3MnBSbnhoS3hyZnFEenBhYkN0TTJMMS1MX0RKWE9HN1hwZlJJQ0tsMXYyakJVY3JmUG1EZ19kdW04bjljTnlxb29fbl8yc0ZjR3J4TUpZbWlnQXZleHhpczZ1aWJDNEM5NWprTHBrSDhZTXFJandqcXRKOERCVG81QTJiQWU5UE9rM2RQbHZ0NEkzU2N4alFfYW10c1BYTWtZNVJaUkoxOC1scnFJS3pvWm5sa1E?oc=5",
+   "ts": 1795058639,
    "materiality": null,
    "novelty": null,
    "direction": null,
@@ -2041,19 +2186,21 @@
  },
  "spend": {
   "day": "2026-11-20",
-  "day_usd": 0.1159,
+  "day_usd": 0.12262,
   "month": "2026-11",
-  "month_usd": 0.1159,
-  "total_usd": 0.1159,
+  "month_usd": 0.12262,
+  "total_usd": 0.12262,
   "by_role": {
-   "macro": 0.00061,
-   "whale": 0.00146,
-   "crowd": 0.00084,
+   "macro": 0.00189,
+   "whale": 0.00234,
+   "crowd": 0.00172,
    "level": 0.00144,
-   "scout": 0.0015,
+   "scout": 0.00264,
    "review": 0.01668,
    "auditor": 0.01318,
-   "strategist": 0.08019
+   "strategist": 0.08019,
+   "pm": 0.00166,
+   "risk": 0.00088
   }
  },
  "desk_log": [],
@@ -2072,7 +2219,7 @@
   "TLN": 355.64,
   "SPY": 715.78
  },
- "last_cycle": "2026-11-20 06:23 ET",
+ "last_cycle": "2026-11-20 07:17 ET",
  "ops": {
   "rejects": [],
   "orders": [],
@@ -2081,7 +2228,7 @@
   "events": []
  },
  "brakes": {
-  "equity": 1000,
+  "equity": 1000.0,
   "day_pct": 0.0,
   "week_pct": 0.0,
   "drawdown_pct": 0.0,
@@ -44640,16 +44787,13 @@
   }
  },
  "last_scan": {
-  "CCJ": 1795173884.7046564,
-  "NXE": 1795173884.71288,
-  "UEC": 1795173884.7207203,
-  "DNN": 1795173884.7285502,
-  "UUUU": 1795173884.7362928,
-  "LEU": 1795173884.7439182,
-  "BWXT": 1795173884.7514396,
-  "CEG": 1795173887.8656871,
-  "VST": 1795173891.4227161,
-  "TLN": 1795173891.4307935
+  "CCJ": 1795177060.554225,
+  "NXE": 1795177060.5626035,
+  "UEC": 1795177060.5701568,
+  "DNN": 1795177060.5776448,
+  "UUUU": 1795177060.5865986,
+  "LEU": 1795177060.5943286,
+  "VST": 1795177060.6018062
  },
  "setup_status": {
   "CCJ": "no confirmed support level below the price (it has been falling through them)",
@@ -46411,67 +46555,82 @@
   "time": "2026-11-20 06:24"
  },
  "gap_flags": {},
- "inbox_seen": [],
+ "inbox_seen": [
+  "IdKicBM1HfMP",
+  "VfvfIHsPWZaM"
+ ],
  "seen_news": [
-  "4317a926c756f33f",
-  "d1c7122c048b2ed9",
-  "e00ac0592374a28e",
-  "67c5ac967df665b9",
-  "e15990dac5b8bec2",
-  "1179c30a7f3faefa",
-  "3e8dd4ce58da4a9b",
+  "bfa4d042201cf513",
   "0ec3c23071785cfd",
-  "a9e4ab3bdf07e0a2",
-  "c4bedc144af05ef5",
-  "2d3f6639ab9cea68",
-  "a0cdbf7102008a59",
+  "1715e61816aa5619",
+  "834bd992b1a75cdd",
+  "dcba7d8fd3be8fd0",
+  "08d8363ed1ddeb47",
+  "d315dfa4e1149d87",
+  "4627bda8dfc98062",
+  "04dd9aeafd90d9b4",
+  "67c5ac967df665b9",
+  "4317a926c756f33f",
+  "7ee1ad6e6041b23e",
+  "ac86fb04e7eb798b",
+  "2e25691d89c6bf03",
+  "1179c30a7f3faefa",
+  "fcee5932b3cdffea",
   "42e4688c154f3e5b",
+  "e00ac0592374a28e",
+  "22ca80b609e8130c",
+  "5c4b59b788680232",
+  "3e8dd4ce58da4a9b",
+  "c7fdc4969083b831",
+  "085f836ba2eae79d",
+  "991c698e5a396dd1",
+  "009c12e19cf7cb10",
+  "40da66ea723efc8f",
+  "537b32f5b2133213",
+  "aa4831603d62a7e7",
+  "44041d56f140e1b4",
+  "418a91931047cecc",
+  "2f0e6fcd07e9c356",
+  "8d0283e176b666a8",
+  "2d3f6639ab9cea68",
+  "a7bb0474e61a7894",
+  "7a634663fcf720f5",
+  "a9e4ab3bdf07e0a2",
+  "15d6f9963fcdf41e",
+  "813ce322cba7c1e5",
+  "a38730433f855a68",
   "f309be7c357c35cc",
+  "92c36fef260edb24",
+  "b1e399ca01445ae4",
+  "2c25658f7d8bb1d4",
+  "aa4b40fcca57bfea",
+  "d377bf4c00b3bccf",
+  "c4bedc144af05ef5",
+  "a0cdbf7102008a59",
+  "6903f08684a06b0c",
+  "302ff446725f4916",
+  "b36ee151c6da4ebf",
+  "d1c7122c048b2ed9",
+  "e5b877975a222845",
+  "f8916dca48bd9f43",
   "7f7a05be6b3ac1f5",
   "17b21557a779a003",
-  "40da66ea723efc8f",
-  "ac86fb04e7eb798b",
-  "04dd9aeafd90d9b4",
-  "085f836ba2eae79d",
-  "a7bb0474e61a7894",
-  "6903f08684a06b0c",
-  "d377bf4c00b3bccf",
-  "537b32f5b2133213",
-  "bfa4d042201cf513",
-  "4627bda8dfc98062",
-  "dcba7d8fd3be8fd0",
-  "2f0e6fcd07e9c356",
-  "08d8363ed1ddeb47",
-  "92c36fef260edb24",
-  "a38730433f855a68",
-  "aa4831603d62a7e7",
-  "1715e61816aa5619",
-  "22ca80b609e8130c",
-  "b36ee151c6da4ebf",
-  "418a91931047cecc",
-  "813ce322cba7c1e5",
-  "991c698e5a396dd1",
-  "302ff446725f4916",
-  "2e25691d89c6bf03",
-  "44041d56f140e1b4",
-  "aa4b40fcca57bfea",
-  "e5b877975a222845",
-  "5c4b59b788680232",
-  "7a634663fcf720f5",
-  "c7fdc4969083b831",
-  "7ee1ad6e6041b23e",
-  "8d0283e176b666a8",
-  "009c12e19cf7cb10",
-  "834bd992b1a75cdd",
-  "b1e399ca01445ae4",
-  "fcee5932b3cdffea",
-  "15d6f9963fcdf41e",
+  "e15990dac5b8bec2",
   "a139bb0be8a41b23",
-  "2c25658f7d8bb1d4",
-  "f8916dca48bd9f43",
-  "d315dfa4e1149d87"
+  "db05240fe85a29ac",
+  "fa5187062c587fa6",
+  "d0cdede57b2eba62",
+  "0235abc0565d5130",
+  "586a3a3d084eb114",
+  "23858b9754409f40",
+  "0d77f1d2373bb03d",
+  "00667c7b98791b66",
+  "29dae386e051dd8c",
+  "4720f4810691bed4",
+  "cdc78121c1406bce",
+  "7cabb45f8b0c2778"
  ],
- "news_slow_at": 1795173897.24344,
+ "news_slow_at": 1795177072.4729192,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -53941,6 +54100,212 @@
    ],
    "practice": false,
    "end": "06:25"
+  },
+  {
+   "id": "20261120071722988339",
+   "title": "Pre-market check-in Fri Nov 20",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "kind": "morning",
+   "start": "2026-11-20 07:17",
+   "msgs": [
+    {
+     "t": "07:17",
+     "who": "chief",
+     "to": "nowcast",
+     "text": "Morning, team. Market opens at 9:30. Watching 10 stocks; setups waiting on BWXT at $116.58, CEG at $247.99, TLN at $346.08. Nowcast, what did Asia say?",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "nowcast",
+     "to": "chief",
+     "text": "Asia's close points to these opens: CCJ -1.4%, NXE -1.3%, UEC -1.9%, DNN -1.6%, UUUU -1.4%, LEU -2.1%, BWXT -1.0%, CEG -1.1%, VST -1.6%, TLN -1.6%. That gets priced in at 9:30, so it's context, not a trade.",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "macro",
+     "to": "team",
+     "text": "{\"_raw\": \"\", \"_cost\": 0.0004}",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "pm",
+     "to": "team",
+     "text": "{\"_raw\": \"\", \"_cost\": 0.0004}",
+     "outcome": false
+    }
+   ],
+   "practice": false,
+   "end": "07:17"
+  },
+  {
+   "id": "20261120071727472556",
+   "title": "You asked: what are we thinking for market open today?",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "kind": "owner",
+   "start": "2026-11-20 07:17",
+   "msgs": [
+    {
+     "t": "07:17",
+     "who": "owner",
+     "to": "team",
+     "text": "what are we thinking for market open today?",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "chief",
+     "to": "owner",
+     "text": "Heard you, boss. Everyone stop and read this. Re-scanning all 10 stocks for a support setup right now.",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "level",
+     "to": "owner",
+     "text": "Scan results:\nBWXT: buy zone $116.58 (support $116.12), stop $114.73, target $119.41\nCEG: buy zone $247.99 (support $247.0), stop $244.04, target $256.79\nTLN: buy zone $346.08 (support $344.7), stop $340.56, target $364.4\nCCJ: nothing yet, no confirmed support level below the price (it has been falling through them)\nNXE: nothing yet, no confirmed support level below the price (it has been falling through them)\nUEC: nothing yet, no confirmed support level below the price (it has been falling through them)\nDNN: nothing yet, no confirmed support level below the price (it has been falling through them)\nUUUU: nothing yet, no confirmed support level below the price (it has been falling through them)\nLEU: nothing yet, no confirmed support level below the price (it has been falling through them)\nVST: nothing yet, no confirmed support level below the price (it has been falling through them)",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "macro",
+     "to": "team",
+     "text": "{\"_raw\": \"\", \"_cost\": 0.0004}",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "whale",
+     "to": "team",
+     "text": "{\"_raw\": \"\", \"_cost\": 0.0004}",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "crowd",
+     "to": "team",
+     "text": "{\"_raw\": \"\", \"_cost\": 0.0004}",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "risk",
+     "to": "team",
+     "text": "{\"_raw\": \"\", \"_cost\": 0.0004}",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "pm",
+     "to": "owner",
+     "text": "{\"_raw\": \"\", \"_cost\": 0.0006}",
+     "outcome": false
+    }
+   ],
+   "practice": false,
+   "end": "07:17"
+  },
+  {
+   "id": "20261120071740554152",
+   "title": "You asked: what are we thinking for market open today?",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "kind": "owner",
+   "start": "2026-11-20 07:17",
+   "msgs": [
+    {
+     "t": "07:17",
+     "who": "owner",
+     "to": "team",
+     "text": "what are we thinking for market open today?",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "chief",
+     "to": "owner",
+     "text": "Heard you, boss. Everyone stop and read this. Re-scanning all 10 stocks for a support setup right now.",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "level",
+     "to": "owner",
+     "text": "Scan results:\nBWXT: buy zone $116.58 (support $116.12), stop $114.73, target $119.41\nCEG: buy zone $247.99 (support $247.0), stop $244.04, target $256.79\nTLN: buy zone $346.08 (support $344.7), stop $340.56, target $364.4\nCCJ: nothing yet, no confirmed support level below the price (it has been falling through them)\nNXE: nothing yet, no confirmed support level below the price (it has been falling through them)\nUEC: nothing yet, no confirmed support level below the price (it has been falling through them)\nDNN: nothing yet, no confirmed support level below the price (it has been falling through them)\nUUUU: nothing yet, no confirmed support level below the price (it has been falling through them)\nLEU: nothing yet, no confirmed support level below the price (it has been falling through them)\nVST: nothing yet, no confirmed support level below the price (it has been falling through them)",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "macro",
+     "to": "team",
+     "text": "{\"_raw\": \"\", \"_cost\": 0.0004}",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "whale",
+     "to": "team",
+     "text": "{\"_raw\": \"\", \"_cost\": 0.0004}",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "crowd",
+     "to": "team",
+     "text": "{\"_raw\": \"\", \"_cost\": 0.0004}",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "risk",
+     "to": "team",
+     "text": "{\"_raw\": \"\", \"_cost\": 0.0004}",
+     "outcome": false
+    },
+    {
+     "t": "07:17",
+     "who": "pm",
+     "to": "owner",
+     "text": "{\"_raw\": \"\", \"_cost\": 0.0006}",
+     "outcome": false
+    }
+   ],
+   "practice": false,
+   "end": "07:17"
   }
  ],
  "feed": [
@@ -54057,6 +54422,97 @@
    "kind": "alert",
    "title": "Daily review",
    "text": "Account $1000.00 (+0.00% this week) | week +0.00% vs +5% goal | SPY hold $1000.00",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-20 07:17",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Pre-market check-in done: Asia points to CCJ -1.4%, NXE -1.3%, UEC -1.9%, DNN -1.6%, UUUU -1.4%, LEU -2.1%, BWXT -1.0%, CEG -1.1%, VST -1.6%, TLN -1.6%. Setups waiting on BWXT, CEG, TLN. Morning meeting at 9:31.",
+   "tickers": [
+    "BWXT",
+    "CEG",
+    "TLN"
+   ],
+   "art": {
+    "big": "Good morning",
+    "sub": "Pre-market check-in. Open the conversation to see the plan."
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-20 07:17",
+   "who": "owner",
+   "kind": "owner",
+   "title": null,
+   "text": "what are we thinking for market open today?",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-20 07:17",
+   "who": "pm",
+   "kind": "answer",
+   "title": null,
+   "text": "BWXT: buy zone $116.58 (support $116.12), stop $114.73, target $119.41\nCEG: buy zone $247.99 (support $247.0), stop $244.04, target $256.79\nTLN: buy zone $346.08 (support $344.7), stop $340.56, target $364.4\nCCJ: nothing yet, no confirmed support level below the price (it has been falling through them)\nNXE: nothing yet, no confirmed support level below the price (it has been falling through them)\nUEC: nothing yet, no confirmed support level below the price (it has been falling through them)\nDNN: nothing yet, no confirmed support level below the price (it has been falling through them)\nUUUU: nothing yet, no confirmed support level below the price (it has been falling through them)\nLEU: nothing yet, no confirmed support level below the price (it has been falling through them)\nVST: nothing yet, no confirmed support level below the price (it has been falling through them)",
+   "tickers": [
+    "BWXT",
+    "CEG",
+    "TLN"
+   ],
+   "art": {
+    "big": "Found 3 setups",
+    "sub": "The team's answer to your post"
+   },
+   "thread": "20261120071727472556"
+  },
+  {
+   "t": "2026-11-20 07:17",
+   "who": "pm",
+   "kind": "alert",
+   "title": "Team answered your post",
+   "text": "Found 3 setups",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-20 07:17",
+   "who": "owner",
+   "kind": "owner",
+   "title": null,
+   "text": "what are we thinking for market open today?",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-20 07:17",
+   "who": "pm",
+   "kind": "answer",
+   "title": null,
+   "text": "BWXT: buy zone $116.58 (support $116.12), stop $114.73, target $119.41\nCEG: buy zone $247.99 (support $247.0), stop $244.04, target $256.79\nTLN: buy zone $346.08 (support $344.7), stop $340.56, target $364.4\nCCJ: nothing yet, no confirmed support level below the price (it has been falling through them)\nNXE: nothing yet, no confirmed support level below the price (it has been falling through them)\nUEC: nothing yet, no confirmed support level below the price (it has been falling through them)\nDNN: nothing yet, no confirmed support level below the price (it has been falling through them)\nUUUU: nothing yet, no confirmed support level below the price (it has been falling through them)\nLEU: nothing yet, no confirmed support level below the price (it has been falling through them)\nVST: nothing yet, no confirmed support level below the price (it has been falling through them)",
+   "tickers": [
+    "BWXT",
+    "CEG",
+    "TLN"
+   ],
+   "art": {
+    "big": "Found 3 setups",
+    "sub": "The team's answer to your post"
+   },
+   "thread": "20261120071740554152"
+  },
+  {
+   "t": "2026-11-20 07:17",
+   "who": "pm",
+   "kind": "alert",
+   "title": "Team answered your post",
+   "text": "Found 3 setups",
    "tickers": [],
    "art": null,
    "thread": null
@@ -54183,10 +54639,27 @@
    "bio": "why a trade won or lost",
    "c": 3
   },
+  "researcher": {
+   "name": "Research Lead",
+   "bio": "proposes ideas and writes the notebook",
+   "c": 5
+  },
   "system": {
    "name": "System",
    "bio": "plumbing and errors",
    "c": 8
   }
- }
+ },
+ "owner_posts": [
+  {
+   "date": "2026-11-20",
+   "id": "IdKicBM1HfMP",
+   "text": "what are we thinking for market open today?"
+  },
+  {
+   "date": "2026-11-20",
+   "id": "VfvfIHsPWZaM",
+   "text": "what are we thinking for market open today?"
+  }
+ ]
 }
