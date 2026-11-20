@@ -1,10 +1,11 @@
 """Account Officer (code). The bot's own books, independent of how big the broker account is
 (Alpaca paper starts at $100k; the bot only ever uses capital_cap).
 
-Each ticker has two lots: 'core' (long-term) and 'trade' (one active swing trade at a time).
+Each ticker has up to three lots: 'core' (long-term), 'trade' (one support-level swing trade at a time) and
+'panic' (the panic-day rebound strategy: bought near the close of a market selloff, sold 6 sessions later).
 Every order carries a tag in its client_order_id so fills are booked to the right lot:
   core / coreadj    core buys/sells        lvl / dip / news   trade entries
-  stop / tp / exit  trade exits
+  stop / tp / exit  trade exits        pr / prx  panic-rebound buy / sell
 Also: settled cash (T+1, no good-faith violations in a cash account), loss brakes,
 wash-sale flags, short-term gains estimate.
 """
@@ -62,7 +63,7 @@ def apply_fill(book, f, today, meta=None):
     """Book one broker fill. Returns a closed-trade record if a trade lot was closed."""
     t, side, q, px = f["symbol"], f["side"], float(f["qty"]), float(f["fill_price"])
     tag = tag_of(f.get("client_id"))
-    kind = "core" if tag.startswith("core") else "trade"
+    kind = "core" if tag.startswith("core") else ("panic" if tag in ("pr", "prx") else "trade")
     L = lot(book, t, kind)
     if side == "buy":
         book["cash"] -= q * px
@@ -70,7 +71,7 @@ def apply_fill(book, f, today, meta=None):
         L["cost"] += q * px
         book["buys_log"].append([t, str(today), kind])
         book["buys_log"] = book["buys_log"][-200:]
-        if kind == "trade" and meta:
+        if kind in ("trade", "panic") and meta:
             L.update({k: v for k, v in meta.items() if k not in ("qty", "cost")})
             L.setdefault("opened", str(today))
             L.setdefault("entry_time", f.get("filled_at"))
@@ -87,7 +88,7 @@ def apply_fill(book, f, today, meta=None):
     L["qty"] = round(L["qty"] - q, 6)
     L["cost"] = max(0.0, L["cost"] - avg * q)
     rec = None
-    if kind == "trade":
+    if kind in ("trade", "panic"):
         rec = {"ticker": t, "setup": L.get("setup", "?"), "by": L.get("by", "?"), "entry_time": L.get("entry_time"),
                "entry": round(avg, 2), "exit_time": f.get("filled_at"), "exit": round(px, 2), "dollars": round(avg * q, 2),
                "pnl": round(pnl, 2), "ret": round((px / avg - 1) * 100, 2), "why_in": L.get("why", ""),
@@ -96,7 +97,7 @@ def apply_fill(book, f, today, meta=None):
                "stop": L.get("stop"), "target": L.get("target"), "zone": L.get("zone")}
         book["trades"].append(rec)
         if L["qty"] <= 1e-6:
-            book["lots"][t]["trade"] = {"qty": 0.0, "cost": 0.0}
+            book["lots"][t][kind] = {"qty": 0.0, "cost": 0.0}
     # wash sale: a loss with a buy of the same stock within 30 days (core buys count too)
     if pnl < 0:
         recent = [b for b in book["buys_log"] if b[0] == t and (today - dt.date.fromisoformat(b[1])).days <= 30

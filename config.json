@@ -410,5 +410,16 @@
     "handoff_per_run": 5,
     "handoff_min_score": 4.5,
     "_note": "Free local + official news collector (collector.py) and NRC reactor watch (reactors.py). No AI. Reddit only if REDDIT_CLIENT_ID and REDDIT_SECRET secrets exist."
+  },
+  "panic_rebound": {
+    "enabled": true,
+    "market_drop_pct": 2,
+    "stock_drop_pct": 3,
+    "below_high_pct": 15,
+    "hold_sessions": 6,
+    "size_pct_each": 15,
+    "max_total_pct": 45,
+    "max_names": 3,
+    "_note": "Strategy #2. Buys between 3:30 and 3:58 pm ET on a market panic day; needs a run in that window (the always-on computer). On a LIVE broker it obeys the promotion gate and loss brakes."
   }
 }

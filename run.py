@@ -101,7 +101,7 @@ def tcfg(st):
 
 def traded(st):
     """Tickers the bot must manage: this week's lineup plus anything still held or armed."""
-    held = [t for t, l in st["book"]["lots"].items() if l.get("trade", {}).get("qty", 0) > 1e-6]
+    held = [t for t, l in st["book"]["lots"].items() if l.get("trade", {}).get("qty", 0) > 1e-6 or l.get("panic", {}).get("qty", 0) > 1e-6]
     return list(dict.fromkeys(T + held + list(st["armed"])))
 
 
@@ -120,6 +120,27 @@ class Exec:
         self.st["pending_meta"][o["client_id"]] = meta
         log_order(self.st, o, note)
         return o
+
+    def buy_market(self, t, notional, price, tag, meta, note):
+        try:
+            o = self.br.market_buy(t, notional, price, tag)
+        except Exception as e:
+            ops.note_reject(self.st, CFG, notify, f"{t} {tag}: {e}")
+            return None
+        ops.note_order(self.st, CFG, notify)
+        self.st["pending_meta"][o["client_id"]] = meta
+        log_order(self.st, o, note)
+        return o
+
+    def exit_panic(self, t, price, reason):
+        L = account.lot(self.st["book"], t, "panic")
+        if L["qty"] <= 1e-6 or L.get("selling") == str(dt.date.today()):
+            return
+        L["exit_reason"], L["selling"] = reason, str(dt.date.today())
+        try:
+            log_order(self.st, self.br.market_sell(t, L["qty"], price, "prx"), reason)
+        except Exception as e:
+            notify(f"EXIT FAILED {t}", f"{reason}: {str(e)[:150]}", tags="rotating_light", priority="high")
 
     def place_stop(self, t, stop):
         L = account.lot(self.st["book"], t, "trade")
@@ -172,6 +193,10 @@ def process_fills(st, br, ex, today):
                 notify(f"BOUGHT {f['symbol']} at support",
                        f"{f['qty']:.4f} sh @ ${f['fill_price']:.2f} = ${f['qty'] * f['fill_price']:.2f} | stop ${L['stop']:.2f} | "
                        f"target ${L['target']:.2f} | {L.get('why', '')[:90]}", tags="large_blue_circle")
+        elif tag == "pr" and f["side"] == "buy" and CFG["notify"]["trades"]:
+            L = account.lot(book, f["symbol"], "panic")
+            notify(f"BOUGHT {f['symbol']} (panic-day rebound)", f"{f['qty']:.4f} sh @ ${f['fill_price']:.2f} = ${f['qty'] * f['fill_price']:.2f} | "
+                   f"sell near the close on {L.get('exit_on')} | {L.get('why', '')[:90]}", tags="zap")
         elif tag.startswith("core") and CFG["notify"]["trades"]:
             notify(f"CORE {f['side'].upper()} {f['symbol']}", f"{f['qty']:.4f} sh @ ${f['fill_price']:.2f}", tags="moneybag")
         if rec:
@@ -772,6 +797,97 @@ def premarket(st, desk, prices, today):
               list(waiting), kind="alert", art={"big": "Good morning", "sub": "Pre-market check-in. Open the conversation to see the plan."})
 
 
+# ======================================================================= panic-day rebound (strategy #2, paper first)
+def _dayret(df):
+    c = df.Close.dropna()
+    return float(c.iloc[-1] / c.iloc[-2] - 1) if len(c) > 2 else 0.0
+
+
+def panic_check(st, ex, data, prices, today, brk_state, now, force=False):
+    """Market falls 2%+, a stock falls 3%+ and sits 15%+ under its 20-day high: buy near the close, sell 6 sessions later.
+    Tested 2019-2026 on 61 such days: +5.3% average over 6 days, up 70% of the time; loses 15-21% when the panic is the
+    start of a crash (Mar 2020, May 2022) and stops didn't help, so the protection is position size."""
+    cfg = CFG.get("panic_rebound", {})
+    if not cfg.get("enabled"):
+        return
+    book = st["book"]
+    late = now.time() >= dt.time(15, 38)
+    for t, lots in list(book["lots"].items()):  # exits: 6 sessions later, near the close (or the first run after)
+        L = lots.get("panic") or {}
+        if L.get("qty", 0) > 1e-6 and L.get("exit_on") and (str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late)):
+            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"panic-day rebound: held {cfg.get('hold_sessions', 6)} sessions")
+    for e in st.get("panic_log", []):  # practice record: every trigger is tracked, bought or not
+        if e.get("result") is None and str(today) > e["exit_on"] and e["ticker"] in data:
+            c = data[e["ticker"]].Close
+            px = c[c.index <= pd_ts(e["exit_on"])]
+            if len(px):
+                e["result"] = round((float(px.iloc[-1]) / e["price"] - 1) * 100, 2)
+                feed.post("researcher", f"Panic-day rebound result: {e['ticker']} picked on {e['date']} at ${e['price']}, "
+                          f"{e['result']:+.2f}% after {cfg.get('hold_sessions', 6)} sessions" + (" (we bought it)." if e.get("bought") else " (practice, not bought)."),
+                          [e["ticker"]], kind="learn")
+    if not (force or (dt.time(15, 30) <= now.time() <= dt.time(15, 58))) or st["flags"].get(f"panic:{today}") or "SPY" not in data:
+        return
+    st["flags"][f"panic:{today}"] = True
+    spy = _dayret(data["SPY"])
+    if spy > -cfg.get("market_drop_pct", 2) / 100 and not force:
+        return
+    hits = []
+    for t in T:
+        if t not in data or len(data[t]) < 25:
+            continue
+        r, c = _dayret(data[t]), data[t].Close
+        dd = float(c.iloc[-1] / c.iloc[-20:].max() - 1)
+        if r <= -cfg.get("stock_drop_pct", 3) / 100 and dd <= -cfg.get("below_high_pct", 15) / 100:
+            hits.append((r, dd, t))
+    if not hits:
+        if spy <= -0.02:
+            feed.post("chief", f"The market is down {spy * 100:.1f}% today, but none of our stocks is beaten down enough for the panic-day "
+                      "rebound (needs -3% today and 15%+ under its 20-day high). No buys.", kind="alert")
+        return
+    hits.sort()
+    exit_on = sessions_after(str(today), cfg.get("hold_sessions", 6))
+    eq = brk_state["equity"]
+    room = max(0.0, eq * cfg.get("max_total_pct", 45) / 100 - sum(l.get("panic", {}).get("qty", 0) * prices.get(t, 0) for t, l in book["lots"].items()))
+    cash = account.settled_cash(book, today) - sum(a.get("dollars", 0) for a in st["armed"].values())
+    blocked = brk_state.get("no_new_today") and not unleashed()
+    bought = []
+    with feed.thread(f"Panic day {today:%b %d}: market {spy * 100:+.1f}%", [t for _, _, t in hits], kind="huddle"):
+        feed.say("chief", f"Panic day: the market is {spy * 100:+.1f}% and {len(hits)} of our stocks fit the rebound setup: "
+                 + ", ".join(f"{t} {r * 100:+.1f}% today, {dd * 100:.0f}% under its high" for r, dd, t in hits)
+                 + f". History on 61 days like this: +5.3% average over 6 sessions, up 70% of the time.", to="team")
+        feed.say("risk", "The danger is the day this is the start of a crash (March 2020, May 2022: -15% to -21%) and a stop "
+                 f"won't save us, so size is the protection: {cfg.get('size_pct_each', 15)}% per stock, "
+                 f"{cfg.get('max_total_pct', 45)}% total at most, sold on {exit_on} no matter what.", to="chief")
+        for r, dd, t in hits[: cfg.get("max_names", 3)]:
+            dollars = min(eq * cfg.get("size_pct_each", 15) / 100, room, cash)
+            L = account.lot(book, t, "panic")
+            rec = {"date": str(today), "ticker": t, "price": round(prices[t], 2), "day_pct": round(r * 100, 2), "below_high_pct": round(dd * 100, 1),
+                   "market_pct": round(spy * 100, 2), "exit_on": exit_on, "result": None, "bought": False}
+            if blocked or L["qty"] > 1e-6 or dollars < 5:
+                rec["skipped"] = "brakes" if blocked else ("already holding" if L["qty"] > 1e-6 else "no cash left")
+            else:
+                meta = {"setup": "panic_rebound", "by": "rules", "exit_on": exit_on, "stop": None, "target": None,
+                        "why": f"market {spy * 100:+.1f}%, {t} {r * 100:+.1f}% today and {dd * 100:.0f}% under its 20-day high"}
+                if ex.buy_market(t, dollars, prices[t], "pr", meta, "panic-day rebound buy near the close"):
+                    rec["bought"], rec["dollars"] = True, round(dollars, 2)
+                    room -= dollars; cash -= dollars; bought.append(f"{t} ${dollars:.0f}")
+            st.setdefault("panic_log", []).append(rec)
+        st["panic_log"] = st["panic_log"][-300:]
+        feed.say("exec", ("Bought near the close: " + ", ".join(bought) + f". Selling on {exit_on}.") if bought
+                 else "No buys placed (" + ", ".join(sorted({x.get("skipped", "") for x in st["panic_log"][-len(hits[: cfg.get("max_names", 3)]):] if x.get("skipped")})) + "); tracked as practice.",
+                 to="team", outcome=True)
+    feed.post("chief", f"Panic-day rebound: market {spy * 100:+.1f}%. " + (f"Bought {', '.join(bought)}, selling {exit_on}." if bought
+              else "Setup found, nothing bought; tracking it as practice."), [t for _, _, t in hits], kind="alert",
+              art={"big": f"Panic day: {len(hits)} rebound setup{'s' if len(hits) != 1 else ''}", "sub": f"Market {spy * 100:+.1f}%. Hold 6 sessions"})
+    notify("Panic-day rebound", (f"Bought {', '.join(bought)} near the close; selling {exit_on}." if bought else
+           f"{len(hits)} setups, nothing bought."), tags="zap")
+
+
+def pd_ts(d):
+    import pandas as pd
+    return pd.Timestamp(d)
+
+
 # ======================================================================= intel collector (free, no AI)
 def intel_tick(st, today, force=False):
     """Every ~30 min: local + official news by place, tagged by rules. Once a day: every reactor's power level."""
@@ -1366,6 +1482,11 @@ def cycle(st, desk, br, ex, force=()):
             process_fills(st, br, ex, today)
         manage_open(st, ex, prices, today, brk_state)
         process_fills(st, br, ex, today)
+        try:
+            panic_check(st, ex, data, prices, today, brk_state, now, force="panic" in force)
+            process_fills(st, br, ex, today)
+        except Exception as e:
+            traceback.print_exc()
         try:
             refresh_candidates(st, desk, data, prices, today, brk_state)
             arm(st, ex, prices, today, brk_state)
