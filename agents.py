@@ -367,6 +367,12 @@ def mock_answer(role, user):
     TO = {"macro": "Nowcast", "whale": "Macro Analyst", "crowd": "Whale Watcher", "level": "Macro Analyst",
           "investigator": "News Scout", "filings": "News Investigator", "pm": "News Investigator", "review": "Account Officer",
           "auditor": "Reviewer", "strategist": "Auditor", "postmortem": "Execution Trader"}
+    if role == "researcher":
+        return {"say": "Practice line. Live, I propose ideas the code can test on our practice trades, then write up what we learned.",
+                "to": "Risk Manager", "_cost": 0,
+                "ideas": [{"feature": "group_up", "op": "==", "value": "false", "claim": "worse", "why": "a falling sector breaks supports"},
+                          {"feature": "ret5d_pct", "op": "<", "value": -6, "claim": "worse", "why": "buying into a hard week catches falling knives"}],
+                "notes": []}
     if role == "pm" and "owner_post" in user:
         return {"say": "Practice line. Live, I answer your post: what the scan found, what we'll do, and what would change it.",
                 "to": "You", "post": "Practice: scan done.", "_cost": 0}

@@ -6,10 +6,12 @@ on:
     # on their own between runs. This keeps a private repo inside GitHub's 2,000 free minutes a month
     # (about 36 runs x 2 min x 21 days = ~1,500 min). Public repos are free either way.
     - cron: "*/15 13-21 * * 1-5"
+    # Saturday 10am ET: weekend research session (the agents test ideas on the practice trades)
+    - cron: "0 15 * * 6"
   workflow_dispatch:
     inputs:
       mode:
-        description: "loop | once | first-run | test-notify | test-agents | test-broker | force-morning | force-review"
+        description: "loop | once | first-run | research | test-notify | test-agents | test-broker | force-morning | force-review"
         default: "once"
 permissions:
   contents: write
@@ -38,6 +40,7 @@ jobs:
           ALPACA_PAPER: ${{ vars.ALPACA_PAPER || 'true' }}
         run: |
           MODE="${{ github.event.inputs.mode }}"
+          if [ "${{ github.event.schedule }}" = "0 15 * * 6" ]; then MODE=research; fi
           case "$MODE" in
             "") python run.py once ;;
             loop) python run.py loop --minutes 13 ;;

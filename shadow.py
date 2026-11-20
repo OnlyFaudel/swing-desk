@@ -18,12 +18,12 @@ UNIVERSE = {
 GROUP = {t: g for g, ts in UNIVERSE.items() for t in ts}
 
 
-def _bars(tickers):
+def _bars(tickers, period="60d"):
     import yfinance as yf
     out = {}
     for i in range(0, len(tickers), 20):
         ch = tickers[i:i + 20]
-        d = yf.download(ch, period="60d", interval="1h", auto_adjust=True, progress=False, group_by="ticker", threads=True)
+        d = yf.download(ch, period=period, interval="1h", auto_adjust=True, progress=False, group_by="ticker", threads=True)
         for t in ch:
             try:
                 h = d[t][["Open", "High", "Low", "Close"]].dropna().copy()
@@ -36,16 +36,51 @@ def _bars(tickers):
     return out
 
 
-def run_daily(st, bars=None):
-    """Record newly closed shadow trades. Returns a short summary dict for the feed."""
+def _group_up(bars):
+    """Per group: was the equal-weight group basket above its 70-hour (~10 day) average? (series by timestamp)"""
+    out = {}
+    for g, ts in UNIVERSE.items():
+        C = pd.DataFrame({t: bars[t].Close for t in ts if t in bars}).ffill().dropna(how="all")
+        if C.empty:
+            continue
+        b = (C / C.bfill().iloc[0]).mean(axis=1)
+        out[g] = (b > b.rolling(70).mean())
+    return out
+
+
+def _features(h, i, gup, grp):
+    """What the market looked like just before the buy (only data known at that moment: bar i-1 and earlier)."""
+    C = h.Close.values
+    j = i - 1
+    f = {"hour": int(h.index[i].hour)}
+    if j >= 35:
+        f["ret5d_pct"] = round(float((C[j] / C[j - 35] - 1) * 100), 2)
+    if j >= 70:
+        f["dist_avg_pct"] = round(float((C[j] / C[j - 69:j + 1].mean() - 1) * 100), 2)
+    a = h.atr.values[j] if "atr" in h else np.nan
+    if a == a:
+        f["vol_pct"] = round(float(a / C[j] * 100), 3)
+    s = gup.get(grp)
+    if s is not None:
+        v = s.asof(h.index[j]) if len(s) else None
+        f["group_up"] = bool(v) if v is not None and v == v else None
+    return f
+
+
+def run_daily(st, bars=None, rebuild=False):
+    """Record newly closed shadow trades (with the market context at entry). Returns a short summary for the feed."""
     sh = st.setdefault("shadow_desk", {"seen": {}, "trades": []})
+    if rebuild:
+        sh["seen"], sh["trades"] = {}, []
     first = not sh["seen"]
-    bars = bars or _bars(list(GROUP))
+    bars = bars or _bars(list(GROUP), "729d" if rebuild else "60d")  # a rebuild replays ~2 years for the research lab
+    gup = _group_up(bars)
     new = []
     for t, h in bars.items():
         last_bar = h.index[-1]
         seen = sh["seen"].get(t, "")
-        for f, x, ret, R in patient.simulate(patient.prep(h), patient.LIVE):
+        hp = patient.prep(h)
+        for f, x, ret, R in patient.simulate(hp, patient.LIVE):
             if abs(R) > 10:              # a bad print or split in the data, not a trade
                 continue
             if x >= last_bar:            # still open (or closed by running out of data): not a result yet
@@ -55,7 +90,7 @@ def run_daily(st, bars=None):
                 continue
             new.append({"tk": t, "group": GROUP.get(t, "?"), "entry": key, "exit": x.strftime("%Y-%m-%d %H:%M"),
                         "ret_pct": round(ret * 100, 3), "R": round(R, 3), "weekday": f.strftime("%a"),
-                        "open_fill": f.hour == 9})
+                        "open_fill": f.hour == 9, **_features(hp, hp.index.get_loc(f), gup, GROUP.get(t))})
         done = [n["entry"] for n in new if n["tk"] == t]
         if done:
             sh["seen"][t] = max(done + [seen])

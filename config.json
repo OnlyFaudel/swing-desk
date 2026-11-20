@@ -393,5 +393,10 @@
     "near_entry_pct": 1.0,
     "midday": "12:30",
     "note": "Free talk, but only when something changed (fast move, price near a waiting buy, a fill or exit, big news) plus one midday check. Cheapest model only; daily $ cap still applies. Talk can skip a waiting buy or exit on bad news; it can never buy."
+  },
+  "research_lab": {
+    "enabled": true,
+    "daily": true,
+    "note": "After each daily review and Saturday 10am: agents propose ideas, code tests them on practice trades in two halves, critic reviews, notes saved. Never changes trading by itself."
   }
 }

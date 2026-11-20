@@ -537,7 +537,7 @@ function stockState(t){
   };
 
   /* ----- DM panel */
-  const KIND={morning:"Morning meeting",news:"News decision",review:"Daily review",postmortem:"Trade postmortem",owner:"Your post",huddle:"Team huddle",decision:"Decision"};
+  const KIND={morning:"Morning meeting",news:"News decision",review:"Daily review",postmortem:"Trade postmortem",owner:"Your post",huddle:"Team huddle",research:"Research session",decision:"Decision"};
   let stack=[];
   function openDM(view){$("dm").hidden=false; document.body.style.overflow="hidden";
     stack=view.v==="group"?[{v:"inbox"},{v:"groups"},view]:view.v==="agent"?[{v:"inbox"},view]:[view]; render(); ls.set(seenKey,MS.length?MS.map(m=>m.ts).sort().pop():""); $("dmcount").textContent="";}
@@ -552,8 +552,14 @@ function stockState(t){
   function render_(){
     const V=stack[stack.length-1]; let h="";
     if(V.v==="inbox"){
-      h=top("Messages",false)+`<button class="row2" data-go="groups"><span class="av c1" aria-hidden="true">#</span><div><b>Group chats</b><span>${CH.length} conversation${CH.length===1?"":"s"}: meetings, news calls, reviews</span></div><small></small></button><div class="sect">The team</div>`+
+      const NB=S.notebook||[];
+      h=top("Messages",false)+`<button class="row2" data-go="groups"><span class="av c1" aria-hidden="true">#</span><div><b>Group chats</b><span>${CH.length} conversation${CH.length===1?"":"s"}: meetings, huddles, news calls, research</span></div><small></small></button>`+
+        `<button class="row2" data-go="notebook"><span class="av c5" aria-hidden="true">✎</span><div><b>Research notebook</b><span>${NB.length} idea${NB.length===1?"":"s"} tested, ${NB.filter(n=>n.verdict==="promising").length} promising</span></div><small></small></button><div class="sect">The team</div>`+
         people.filter(w=>act[w]).map(w=>{const last=MS.filter(m=>m.who===w).pop(); return `<button class="row2" data-agent="${esc(w)}">${AV(w)}<div><b>${esc(nm(w))}</b><span>${last?esc(last.text):esc((PP[w]||{}).bio||"")}</span></div><small>${act[w]?ago(act[w]):""}</small></button>`}).join("");
+    } else if(V.v==="notebook"){
+      const NB=(S.notebook||[]).slice().reverse();
+      h=top("Research notebook",true)+`<p class="note" style="margin:0 0 12px">Ideas the agents proposed and the code tested on the practice trades, older half and newer half separately. "Promising" means it held up in both; it still never changes trading by itself.</p>`+
+        (NB.length?NB.map(n=>{const r=n.result||{},o=r.older||{},w=r.newer||{};return `<div class="notecard"><small>${esc(n.t)}, ${esc(n.verdict)}</small><b>${esc(n.key)}</b> (${esc((n.idea||{}).claim||"")})\n${esc(n.note||"")}${o.n!=null?`\nOlder half: ${o.avgR_match}R vs ${o.avgR_rest}R (n=${o.n}). Newer half: ${w.avgR_match}R vs ${w.avgR_rest}R (n=${w.n}).`:""}${n.next?`\nNext: ${esc(n.next)}`:""}</div>`}).join(""):`<p class="empty">No research yet. The first session runs after today's close.</p>`);
     } else if(V.v==="groups"){
       h=top("Group chats",true)+(CH.length?CH.slice().reverse().map(c=>{const ws=[...new Set(c.msgs.map(m=>m.who))];return `<button class="row2" data-group="${esc(c.id)}">${AV(ws[0])}<div><b>${esc(c.title)}</b><span>${esc(KIND[c.kind]||"Discussion")}, ${c.msgs.length} messages, ${ws.length} people${c.practice?", practice":""}</span></div><small>${ago(c.start)}</small></button>`}).join(""):`<p class="empty">No group chats yet.</p>`);
     } else if(V.v==="agent"){
@@ -576,6 +582,7 @@ function stockState(t){
     $("dmbody").querySelectorAll("[data-act=back]").forEach(b=>b.onclick=back);
     $("dmbody").querySelectorAll("[data-act=close]").forEach(b=>b.onclick=close);
     $("dmbody").querySelectorAll("[data-go=groups]").forEach(b=>b.onclick=()=>go({v:"groups"}));
+    $("dmbody").querySelectorAll("[data-go=notebook]").forEach(b=>b.onclick=()=>go({v:"notebook"}));
     $("dmbody").querySelectorAll("[data-agent]").forEach(b=>b.onclick=()=>go({v:"agent",w:b.dataset.agent}));
     $("dmbody").querySelectorAll("[data-pair]").forEach(b=>b.onclick=()=>go({v:"pair",k:b.dataset.pair}));
     $("dmbody").querySelectorAll("[data-notes]").forEach(b=>b.onclick=()=>go({v:"notes",w:b.dataset.notes}));

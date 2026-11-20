@@ -42,6 +42,7 @@ PEOPLE = {
     "auditor":   ("Auditor", "weekly scorecard", 1),
     "strategist": ("Strategist", "weekly theses", 2),
     "postmortem": ("Postmortem", "why a trade won or lost", 3),
+    "researcher": ("Research Lead", "proposes ideas and writes the notebook", 5),
     "system":    ("System", "plumbing and errors", 8),
 }
 

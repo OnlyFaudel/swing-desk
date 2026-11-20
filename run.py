@@ -17,7 +17,7 @@ THE PREPARATION:
 import json, os, sys, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -300,6 +300,7 @@ def refresh_candidates(st, desk, data, prices, today, brk_state, force=False):
                 lv = desk.level_trader({t: s}, {"strategy": "Patient Levels: order rests up to 5 sessions, max hold 3 days",
                                                 "morning_intel": {k: (st.get("morning") or {}).get(k) for k in ("whale", "crowd", "macro")},
                                                 "chart": market.snapshot(data[t], prices[t]), "lessons_from_past_trades": lessons(st),
+                                                "research_notebook": research_lab.highlights(st),
                                                 "desk_memory_playbook": memory.playbook(st, t), "active_theses": active_theses(st, t),
                                                 "recent_headlines": [f["title"] for f in st["news_feed"] if f["ticker"] == t][-8:]})
                 v = (lv.get("setups") or {}).get(t, {})
@@ -493,7 +494,7 @@ def morning(st, desk, br, ex, data, prices, today, brk_state):
         mo = {"date": str(today)}
         if desk.available:
             try:
-                mo["macro"] = desk.macro(b.get("market"), b.get("calendar"))
+                mo["macro"] = desk.macro({**(b.get("market") or {}), "research_notebook": research_lab.highlights(st)}, b.get("calendar"))
                 mo["whale"] = desk.whale_watcher({t: {k: b["tickers"][t].get(k) for k in ("price", "options", "short_volume", "insiders", "fundamentals")} for t in T})
                 twits = {}
                 if CFG.get("news_sources", {}).get("stocktwits"):
@@ -573,6 +574,27 @@ def hawk_events(st):
               [t for t in T if any(e.startswith(t) for e in ev)], kind="alert",
               art={"big": ev[0], "sub": "Live price alert. The team is checking the news."})
     return ev
+
+
+# ======================================================================= research lab (evenings + Saturday)
+def research_run(st, desk):
+    if not CFG.get("research_lab", {}).get("enabled", True) or not desk.available:
+        return
+    have = sum(1 for t in (st.get("shadow_desk") or {}).get("trades", []) if "ret5d_pct" in t)
+    if have < 120:  # practice trades recorded before the lab existed have no market context: replay them once
+        try:
+            sh = shadow.run_daily(st, rebuild=True)
+            feed.post("shadow", f"Rebuilt the practice-trade record with market context for research: {sh.get('new', 0):,} trades.", kind="data")
+        except Exception as e:
+            feed.post("system", f"Shadow rebuild failed: {e}"[:200]); return
+    try:
+        res = research_lab.session(st, desk)
+    except Exception as e:
+        feed.post("system", f"Research session stopped: {e}"[:200]); return
+    good = [research_lab._key(h) for h, r in res if r["verdict"] == "promising"]
+    if res:
+        notify("Research notes", f"Tested {len(res)} idea(s)." + (f" Promising: {', '.join(good)}." if good else " Nothing held up this time.")
+               + " Notes are in Team chat.", tags="microscope", who="researcher")
 
 
 # ======================================================================= huddle: the team talks when something changed
@@ -1004,6 +1026,8 @@ def review(st, desk, data, prices, today, brk_state):
             feed.post("shadow", "No practice trades closed today.", kind="data")
     except Exception as e:
         feed.post("system", f"Shadow desk failed: {e}"[:200])
+    if CFG.get("research_lab", {}).get("daily", True):
+        research_run(st, desk)
     if today.weekday() == 4:
         try:
             lr = shadow.learn_report(st)
@@ -1223,6 +1247,8 @@ def main():
                     last_push = time.time()
             wake.wait(CFG.get("daemon_poll_seconds", 60) if active else 300)
             wake.clear()
+    elif args[0] == "research":
+        research_run(st, desk)
     elif args[0] == "test-notify":
         t = ntfy_topic()
         if not t:
