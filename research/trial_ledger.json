@@ -40,6 +40,11 @@
    "trials": 6,
    "verdict": "2026-11-20: 10-stock fuel chain ~3x trades/week vs trio but lower R/trade and drawdowns to -46% unfiltered; pulse filter (basket above 70h avg) cut drawdowns to -14%/-20% but year-2 return fell (+21.8% -> +6.5%). Mixed; paper-test only.",
    "source": "research/lineup_sim (inline, bars_wide.pkl)"
+  },
+  "safety_nets": {
+   "trials": 29,
+   "verdict": "2026-11-20: on the nuclear basket's worst 10% of days (avg -4.7%), only VIX futures (+5.1%, but -46%/yr when held), inverse Nasdaq (+1.7%, -14.6%/yr) and inverse S&P (+1.3%, -11.8%/yr) rose; dollar/Treasuries ~0; gold, utilities, energy, defense, gas, coal, bitcoin all FELL. Basket-level switches (cash or 50% inverse when sector falling) did not reduce the worst drop (-50% to -55%) and cut returns. Trade-level stops + no buys in a falling sector remain the working safety net (-46% -> -14% in the trade backtest).",
+   "source": "research/hedge_tail_study.csv + inline test"
   }
  }
 }
