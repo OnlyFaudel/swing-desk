@@ -4539,5 +4539,116 @@
 "reflects",
 "vistra"
 ]
+},
+{
+"id": "ee06c0fe142dd18e",
+"date": "2026-11-18",
+"ts": 1794975741,
+"title": "Atlas Metals to explore Namibian lithium, tin, and tantalum",
+"summary": "",
+"outlet": "Mining.com.au",
+"link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQWtNSHRSQXdmdG80eDBjVGdkWmtRVmxLQzNkMlozZ2VhendMY2I3dzdpX01HTFZpX3RsNFh3VnJZUGR4ZUlvNTJIWHh1dDNacGVvQmx2enRZSTJZNjBtd3MzSUVFQkpqek5OczgxVlhpQXBjUGNEbGlfdFByRUZWazl1TWJjSDQ?oc=5",
+"place": "Namibia",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.94,
+"score": 4.38,
+"echo_of": null,
+"w": [
+"atlas",
+"explore",
+"lithium",
+"metals",
+"namibian",
+"tantalum",
+"tin"
+]
+},
+{
+"id": "16c92e554028e149",
+"date": "2026-11-18",
+"ts": 1794998750,
+"title": "Rosatom Chief Says US Could Need More Russian Uranium",
+"summary": "",
+"outlet": "Mezha.net",
+"link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1iUjNyQVFQeEtVeDUtMzNXYVFzcnpVcjF4MUdoLWRsX0JlTXNtd0FQbS1ZSk5rX1VkaDRBdUpOSDlkbzhiejVFblBmWThDeThHS09waGVWNTNnSEp4M0xnMTkwZmp4QkRfY0E?oc=5",
+"place": "Russia supply",
+"tickers": [
+"LEU",
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.6,
+"score": 3.7,
+"echo_of": null,
+"w": [
+"chief",
+"need",
+"rosatom",
+"russian",
+"uranium"
+]
+},
+{
+"id": "89a786ac772dd035",
+"date": "2026-11-20",
+"ts": 1795163973,
+"title": "R\u00f6ssing Uranium opens youth incubation centre",
+"summary": "",
+"outlet": "New Era",
+"link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB2bGdiaHlrVG5aVllUWUhvbUE0dkVmS05Rb3RjS2pOOWQ3a25SN0s4TU9jdjY4V2IydDdqZlpqMnU4ZWlSbEpRRmJpZ1J2QzNJOTliYzNWdHBEVDUtM1ZUZ0tXa2FoOVpBTGgzLTFQeVl5MC12a2Zj?oc=5",
+"place": "Namibia",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.9,
+"score": 4.3,
+"echo_of": null,
+"w": [
+"centre",
+"incubation",
+"opens",
+"ssing",
+"uranium",
+"youth"
+]
+},
+{
+"id": "7269a326a498bd44",
+"date": "2026-11-20",
+"ts": 1795206805,
+"title": "Blykalla and Urenco agree to enrich HALEU for the SEALER reactor",
+"summary": "",
+"outlet": "Inspenet",
+"link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5WTkFZMzBTbDgwT1BsY0E5bXNyaW13SEhTNzV4TGFlWTV2b1RUdml3MTVxZmxrVDVPaEVTRTRJNjI2Ty1yc1E1Z19HSWxXUFZhMmZuNFJRZHhqbzcwVjRXOVo4b04xc3J0WUNvSm9xMThOYU83S0UwN1l3?oc=5",
+"place": "HALEU",
+"tickers": [
+"LEU",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.62,
+"score": 3.74,
+"echo_of": null,
+"w": [
+"agree",
+"blykalla",
+"enrich",
+"haleu",
+"reactor",
+"sealer",
+"urenco"
+]
 }
 ]
