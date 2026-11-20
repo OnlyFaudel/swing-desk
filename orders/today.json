@@ -1,5 +1,26 @@
 {
  "date": "2026-11-20",
  "broker": "alpaca-paper",
- "orders": []
+ "orders": [
+  {
+   "time": "2026-11-20 13:20",
+   "symbol": "CEG",
+   "side": "buy",
+   "kind": "limit",
+   "qty": 0.451631,
+   "price": 247.99,
+   "status": "pending_new",
+   "note": "Patient Levels buy above $247.0"
+  },
+  {
+   "time": "2026-11-20 13:20",
+   "symbol": "CEG",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.451631,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "no stop could be placed"
+  }
+ ]
 }
