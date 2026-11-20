@@ -703,6 +703,40 @@ def huddle(st, desk, ex, data, prices, today, brk_state, hawk):
         notify("Huddle decision", "; ".join(done) + ". " + str(d.get("reason", ""))[:200], tags="speech_balloon", who="pm")
 
 
+# ======================================================================= pre-market check-in (7:00-9:25 ET)
+def premarket(st, desk, prices, today):
+    now = market.now_et()
+    if now.weekday() >= 5 or not (dt.time(7, 0) <= now.time() <= dt.time(9, 25)) or st["flags"].get(f"premarket:{today}"):
+        return
+    st["flags"][f"premarket:{today}"] = True
+    try:
+        st["nowcast"] = signals.nowcast(T)
+    except Exception as e:
+        st["nowcast"] = {"error": str(e)[:100]}
+    g = [f"{t} {v['expected_gap_pct']:+.1f}%" for t, v in (st.get("nowcast") or {}).items() if isinstance(v, dict) and v.get("expected_gap_pct") is not None]
+    heads = [f"{f['ticker']}: {f['title']}" for f in st.get("news_feed", [])[-12:]]
+    waiting = {t: c["entry"] for t, c in st["candidates"].items()}
+    with feed.thread(f"Pre-market check-in {today:%a %b %d}", T, kind="morning"):
+        feed.say("chief", f"Morning, team. Market opens at 9:30. Watching {len(T)} stocks; setups waiting on "
+                 f"{', '.join(f'{t} at ${p}' for t, p in waiting.items()) or 'none yet'}. Nowcast, what did Asia say?", to="nowcast")
+        feed.say("nowcast", ("Asia's close points to these opens: " + ", ".join(g) + ". That gets priced in at 9:30, so it's context, not a trade.")
+                 if g else "No fresh Asia close to read yet.", to="chief")
+        if desk.available:
+            ctx = {"overnight_headlines": heads, "nowcast": st.get("nowcast"), "waiting_setups": st["candidates"],
+                   "last_prices": {t: prices.get(t) for t in T}, "research_notebook": research_lab.highlights(st)}
+            try:
+                desk.ask("macro", "fast", "Macro Analyst at the pre-market check-in: what matters before the open today (futures mood, "
+                         "calendar, overnight sector news)? 2-3 sentences. " '{"say":"","to":""}', ctx, max_tokens=300)
+                desk.ask("pm", "fast", "Portfolio Manager closing the pre-market check-in: the plan for the open in 1-2 sentences "
+                         "(which waiting setups matter, what would make us cancel one). You can't buy before 9:30. "
+                         '{"say":"","to":"team"}', ctx, max_tokens=250)
+            except Exception as e:
+                feed.say("system", f"Agents unavailable: {e}"[:150])
+    feed.post("chief", "Pre-market check-in done: " + (("Asia points to " + ", ".join(g) + ". ") if g else "")
+              + (f"Setups waiting on {', '.join(waiting)}." if waiting else "No setups waiting yet.") + " Morning meeting at 9:31.",
+              list(waiting), kind="alert", art={"big": "Good morning", "sub": "Pre-market check-in. Open the conversation to see the plan."})
+
+
 # ======================================================================= owner posts (the owner asks the team to look now)
 def handle_owner_posts(st, desk, ex, data, prices, today, brk_state):
     cfg = CFG.get("owner_posts", {})
@@ -1181,6 +1215,10 @@ def cycle(st, desk, br, ex, force=()):
             process_fills(st, br, ex, today)
         except Exception as e:
             traceback.print_exc()
+    try:
+        premarket(st, desk, prices, today)
+    except Exception as e:
+        print("premarket failed", e)
     hawk = hawk_events(st)
     try:
         huddle(st, desk, ex, data, prices, today, brk_state, hawk)

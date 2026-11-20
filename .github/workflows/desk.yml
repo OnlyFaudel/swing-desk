@@ -1,11 +1,13 @@
 name: swing-desk
 on:
   schedule:
-    # Every 15 min, about 8am-5pm ET on weekdays (13-21 UTC covers the session in both EST and EDT).
-    # Each scheduled run is ONE quick pass (~2 min). Buy orders and stops rest at the broker and fill
-    # on their own between runs. This keeps a private repo inside GitHub's 2,000 free minutes a month
-    # (about 36 runs x 2 min x 21 days = ~1,500 min). Public repos are free either way.
-    - cron: "*/15 13-21 * * 1-5"
+    # Every 15 min, about 6am-7pm ET on weekdays (public repo: GitHub Actions minutes are free).
+    # Each run is ONE quick pass (~2 min). Buy orders and stops rest at the broker and fill on their own between runs.
+    # If you ever make the repo private, cut this back: private repos get 2,000 free minutes a month.
+    - cron: "*/15 11-23 * * 1-5"
+    # overnight and weekends: hourly, so your posts get answered and news is still read
+    - cron: "7 0-10 * * 1-5"
+    - cron: "7 */2 * * 0,6"
     # Saturday 10am ET: weekend research session (the agents test ideas on the practice trades)
     - cron: "0 15 * * 6"
   workflow_dispatch:
