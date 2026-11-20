@@ -1,0 +1,56 @@
+{
+  "updated": "2026-11-20",
+  "rules": {
+    "statuses": [
+      "research",
+      "shadow",
+      "live",
+      "retired"
+    ],
+    "promote_to_shadow": "BH-FDR q<=0.10 on 2019-2022 AND same sign with p<0.05 on 2023-2026 AND an economic reason",
+    "promote_to_live": "promotion gate: DSR>=0.95 with N from trial_ledger, positive net of 0.2% in both halves, max drawdown >= -20%, >=60 trading days in shadow/paper",
+    "retire": "weekly drift status 'broken' 3 weeks in a row, or 'weakening' 8 weeks in a row",
+    "trials": "every variant tried (new signal, new threshold, new target) adds 1 to its family in trial_ledger.json"
+  },
+  "signals": {
+    "asia_gap_nowcast": {
+      "status": "live",
+      "use": "information only: expected opening gap, flags a resting buy that the open would fill or break. Never places or sizes trades.",
+      "kind": "gap_nowcast",
+      "targets": [
+        "CCJ",
+        "LEU",
+        "CEG"
+      ],
+      "window_days": 120,
+      "discovery_corr": 0.4,
+      "confirmation_corr": 0.3,
+      "decay_floor": 0.5,
+      "evidence": "research/ccj_leadlag.py: N225, KOSPI, Hang Seng, ASX 200 residual closes -> CCJ gap, BH-confirmed; open->close not significant"
+    },
+    "crypto_weekend_gap": {
+      "status": "shadow",
+      "use": "information only: Friday-to-Sunday-evening ETH/BTC move as a hint for Monday's gap",
+      "kind": "info",
+      "evidence": "ETH confirmed (corr 0.25 -> 0.37), BTC failed discovery FDR; Monday open->close not significant"
+    },
+    "patient_levels": {
+      "status": "live",
+      "kind": "strategy",
+      "expect": {
+        "avg_R": 0.271,
+        "win_rate": 0.382,
+        "min_trades": 20
+      },
+      "evidence": "research/incumbent_dsr.py after the gap-through-stop fix: test half +24%/yr, Sharpe 1.56, maxDD -11%, DSR 0.67 (N=30) | fuel-chain trio CCJ/LEU/CEG backtest (lab 2.8y): 626 trades, +0.44%/trade, avg 0.267R | 2026-11-20 lineup = 10-stock fuel chain + pulse filter (2y, 3 slots): avg 0.271R, 929 trades"
+    }
+  },
+  "rejected": {
+    "relative_value_trio": "not cointegrated (research/relative_value_report.md)",
+    "asia_open_to_close": "22 tests; no survivor; sign flipped between periods",
+    "prior_session_cross_asset": "48 tests; only ETN prior-day passed discovery, failed confirmation",
+    "ccj_vs_physical_uranium_reversion": "4 tests; none passed",
+    "idiosyncratic_gap_fade": "fade |gap not explained by Asia| > 1.5%: -0.26%/trade net (2019-22), -0.27% (2023-26)",
+    "asia_overlay_on_patient_levels": "trade outcome vs pre-open Asia: Spearman 0.005, halves disagree"
+  }
+}

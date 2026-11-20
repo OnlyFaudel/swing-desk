@@ -1,0 +1,15 @@
+[Unit]
+Description=Swing Desk trading bot (always-on)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=desk
+WorkingDirectory=/home/desk/swing-desk
+EnvironmentFile=/etc/swingdesk.env
+ExecStart=/home/desk/venv/bin/python run.py daemon
+Restart=always
+RestartSec=20
+
+[Install]
+WantedBy=multi-user.target

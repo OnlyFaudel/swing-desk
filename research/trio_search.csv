@@ -1,0 +1,22 @@
+t,group,h_n,h_avg,h_y1,h_y2,d_n,d_15_20,d_21_26,dollar_vol_m,robust
+CCJ,uranium/nuclear,249,0.129,0.237,0.026,215,0.01,0.67,289,True
+UEC,uranium/nuclear,327,-0.041,0.007,-0.084,326,0.43,0.52,87,False
+NXE,uranium/nuclear,282,0.061,0.082,0.045,279,3.24,0.59,45,True
+LEU,uranium/nuclear,323,0.077,0.117,0.044,329,0.7,0.39,105,True
+CEG,uranium/nuclear,206,-0.0,0.274,-0.254,86,,0.28,973,False
+VST,uranium/nuclear,257,0.134,0.491,-0.137,172,0.31,0.34,882,False
+TLN,uranium/nuclear,214,0.129,0.201,0.063,54,,1.94,344,True
+BWXT,uranium/nuclear,189,-0.132,-0.172,-0.109,152,0.97,-0.43,170,False
+OKLO,uranium/nuclear,313,-0.039,0.282,-0.309,66,,0.1,332,False
+SMR,uranium/nuclear,371,0.139,0.433,-0.086,122,,-0.29,245,False
+GEV,uranium/nuclear,0,,,,64,,0.04,2631,False
+VRT,AI power infra,274,0.28,0.273,0.287,123,-0.85,0.58,1441,False
+ETN,AI power infra,167,0.364,0.471,0.291,149,0.58,0.12,984,True
+PWR,AI power infra,193,0.213,0.227,0.201,164,0.05,0.03,731,True
+NRG,AI power infra,203,-0.034,-0.02,-0.045,196,0.18,0.29,327,False
+NVDA,AI chips,194,0.279,0.394,0.135,173,0.91,0.08,32369,True
+MU,AI chips,222,0.353,0.928,-0.109,224,0.51,0.64,25594,False
+AVGO,AI chips,207,0.417,0.727,0.143,170,0.83,0.42,8948,True
+AMD,AI chips,255,-0.045,-0.227,0.129,254,0.43,0.01,14353,False
+TSM,AI chips,182,0.611,0.703,0.524,167,0.53,0.19,5116,True
+PLTR,other,239,0.286,0.538,0.059,113,,0.1,4507,True

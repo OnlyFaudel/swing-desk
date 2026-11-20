@@ -1,0 +1,95 @@
+{
+ "filters": [
+  {
+   "name": "base",
+   "p1": {
+    "cagr": 7.5,
+    "dd": -40.4,
+    "sharpe": 0.54
+   },
+   "p2": {
+    "cagr": 16.0,
+    "dd": -31.1,
+    "sharpe": 0.63
+   }
+  },
+  {
+   "name": "market uptrend (SPY>200d)",
+   "p1": {
+    "cagr": 8.0,
+    "dd": -38.4,
+    "sharpe": 0.57
+   },
+   "p2": {
+    "cagr": 19.5,
+    "dd": -25.0,
+    "sharpe": 0.77
+   }
+  },
+  {
+   "name": "VIX < 25",
+   "p1": {
+    "cagr": 5.4,
+    "dd": -39.6,
+    "sharpe": 0.42
+   },
+   "p2": {
+    "cagr": 16.5,
+    "dd": -31.1,
+    "sharpe": 0.65
+   }
+  },
+  {
+   "name": "VIX contango",
+   "p1": {
+    "cagr": 6.9,
+    "dd": -31.5,
+    "sharpe": 0.51
+   },
+   "p2": {
+    "cagr": 16.0,
+    "dd": -31.1,
+    "sharpe": 0.63
+   }
+  },
+  {
+   "name": "beats its sector (3mo)",
+   "p1": {
+    "cagr": 5.6,
+    "dd": -32.1,
+    "sharpe": 0.45
+   },
+   "p2": {
+    "cagr": 19.5,
+    "dd": -25.0,
+    "sharpe": 0.79
+   }
+  },
+  {
+   "name": "turn of month",
+   "p1": {
+    "cagr": 10.3,
+    "dd": -22.1,
+    "sharpe": 0.79
+   },
+   "p2": {
+    "cagr": 9.7,
+    "dd": -31.1,
+    "sharpe": 0.57
+   }
+  },
+  {
+   "name": "volatility-scaled sizing",
+   "p1": {
+    "cagr": 5.9,
+    "dd": -32.8,
+    "sharpe": 0.5
+   },
+   "p2": {
+    "cagr": 10.4,
+    "dd": -21.0,
+    "sharpe": 0.64
+   }
+  }
+ ]
+}

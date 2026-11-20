@@ -1,0 +1,388 @@
+{
+  "sec_contact_email": "",
+  "broker": "alpaca",
+  "starting_cash": 1000,
+  "capital_cap": 1000,
+  "core_pct": 0,
+  "trading_pct": 100,
+  "min_order_usd": 5,
+  "dip_enabled": false,
+  "news_trades_enabled": false,
+  "exit_trading_before_earnings_days": 1,
+  "no_entry_days_before_earnings": 2,
+  "max_agent_trades_per_day": 2,
+  "brakes": {
+    "day_loss_pct": null,
+    "week_loss_pct": null,
+    "halve_risk_drawdown_pct": -10.0,
+    "kill_drawdown_pct": -20.0
+  },
+  "resume_after_kill": false,
+  "weekly_goal_pct": 5.0,
+  "agents_enabled": true,
+  "models": {
+    "fast": "claude-haiku-5-5",
+    "smart": "claude-sonnet-5-5"
+  },
+  "price_per_mtok": {
+    "claude-haiku-5-5": [
+      0.1,
+      0.5
+    ],
+    "claude-sonnet-5-5": [
+      2.0,
+      10.0
+    ]
+  },
+  "web_search_per_call": 0.01,
+  "news_analyst_web_searches": 2,
+  "materiality_to_convene_desk": 7,
+  "desk_cooldown_minutes": 120,
+  "budget_daily_usd": 0.4,
+  "budget_monthly_usd": 6.0,
+  "poll_seconds": 120,
+  "notify": {
+    "trades": true,
+    "orders_armed": true,
+    "material_news": true,
+    "morning_brief": true,
+    "daily_review": true,
+    "postmortems": true
+  },
+  "learning": {
+    "enabled": true,
+    "prior_trades": 25,
+    "min_mult": 0.5,
+    "max_mult": 1.5,
+    "max_weekly_change": 0.25,
+    "postmortems": true
+  },
+  "runner": "github",
+  "daemon_poll_seconds": 60,
+  "skew_veto": {
+    "enabled": true,
+    "min_history": 40,
+    "percentile": 90
+  },
+  "shadow_setups": {
+    "enabled": true,
+    "gap_down_pct": -2.0,
+    "relative_pullback_pct": -5.0,
+    "sector": {
+      "MU": "SMH",
+      "CCJ": "URNM",
+      "PLTR": "IGV",
+      "LEU": "URNM",
+      "CEG": "XLU",
+      "TSM": "SMH",
+      "ETN": "XLI"
+    }
+  },
+  "ops": {
+    "max_orders_per_hour": 15,
+    "max_rejects_per_hour": 3,
+    "stale_minutes": 20
+  },
+  "ops_resume": false,
+  "min_trade_usd": 50,
+  "context_tickers": {
+    "CCJ": [
+      "SRUUF",
+      "URNM",
+      "NXE",
+      "CEG",
+      "LEU"
+    ],
+    "TLN": [],
+    "MU": [
+      "NVDA"
+    ],
+    "LEU": [
+      "CCJ",
+      "BWXT",
+      "SRUUF",
+      "URNM"
+    ],
+    "CEG": [
+      "VST",
+      "TLN",
+      "CCJ",
+      "XLU"
+    ]
+  },
+  "options_radar": {
+    "enabled": true,
+    "days_before_earnings": 10,
+    "cheap_ratio": 0.85,
+    "max_alert_cost_usd": 150
+  },
+  "strategy": "patient_levels",
+  "watchlist": [
+    "CCJ",
+    "TLN",
+    "CEG",
+    "VST",
+    "LEU",
+    "NXE",
+    "UEC",
+    "BWXT",
+    "OKLO",
+    "SMR",
+    "VRT",
+    "ETN",
+    "PWR",
+    "NRG",
+    "TSM",
+    "NVDA",
+    "MU",
+    "AVGO",
+    "AMD",
+    "PLTR"
+  ],
+  "always_include": [
+    "CCJ"
+  ],
+  "picks_n": 4,
+  "slots": 3,
+  "rank_weeks": 26,
+  "patient": {
+    "valid_sessions": 5,
+    "max_days": 3,
+    "front_run_pct": 0.4,
+    "stop_below_zone_pct": 1.2,
+    "min_reward_risk": 1.5,
+    "scan_minutes": 30,
+    "last_entry_time": "15:30"
+  },
+  "core_tickers": [
+    "CCJ"
+  ],
+  "max_position_pct": 50,
+  "lineup_mode": "fixed",
+  "tickers": [
+    "CCJ",
+    "NXE",
+    "UEC",
+    "DNN",
+    "UUUU",
+    "LEU",
+    "BWXT",
+    "CEG",
+    "VST",
+    "TLN"
+  ],
+  "sync": {
+    "enabled": true,
+    "pulse_hours": 70,
+    "pulse_up_mult": 1.2,
+    "pulse_down_mult": 0.8,
+    "partner_hours": 14,
+    "partners_up_mult": 1.15,
+    "partners_selloff_pct": -2.0,
+    "partners_selloff_mult": 0.7,
+    "min_mult": 0.5,
+    "max_mult": 1.4,
+    "pulse_filter": true,
+    "pulse_filter_note": "No NEW buys while the 10-stock basket is below its 70-hour average (research: drawdowns -46%->-14% yr1, -32%->-20% yr2, but yr2 return +21.8%->+6.5%). Open trades and stops unaffected."
+  },
+  "promotion_gate": {
+    "enabled": true,
+    "strategy": "patient_levels",
+    "min_dsr": 0.95,
+    "max_drawdown_pct": -20.0,
+    "min_days": 60,
+    "require_for_live": true
+  },
+  "live_override": false,
+  "trio_note": "Lineup since 2026-11-20: the nuclear fuel chain, 10 stocks, 3 trades at a time. Mine: CCJ NXE UEC DNN UUUU. Enrich: LEU. Build/fuel parts: BWXT. Burn: CEG VST TLN.",
+  "owner_posts": {
+    "enabled": true,
+    "max_per_day": 8,
+    "note": "Owner posts arrive on ntfy topic <NTFY_TOPIC>-inbox. They make the team scan now; they never bypass the support/stop rules."
+  },
+  "news_sources": {
+    "industry": [
+      [
+        "World Nuclear News",
+        "https://www.world-nuclear-news.org/rss"
+      ],
+      [
+        "NRC (US nuclear regulator)",
+        "https://www.nrc.gov/public-involve/rss?feed=news"
+      ],
+      [
+        "American Nuclear Society",
+        "https://www.ans.org/news/feed/"
+      ],
+      [
+        "Federal Register: uranium",
+        "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bterm%5D=uranium"
+      ],
+      [
+        "Federal Register: nuclear fuel",
+        "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bterm%5D=%22nuclear+fuel%22"
+      ],
+      [
+        "Cameco press releases",
+        "https://www.cameco.com/rss/news"
+      ],
+      [
+        "PR Newswire energy",
+        "https://www.prnewswire.com/rss/energy-latest-news/energy-latest-news-list.rss"
+      ]
+    ],
+    "topics": {
+      "CCJ": [
+        "uranium price",
+        "Kazatomprom",
+        "\"Sprott Physical Uranium\"",
+        "Westinghouse reactor",
+        "\"McArthur River\" OR \"Cigar Lake\" uranium"
+      ],
+      "LEU": [
+        "\"Centrus Energy\"",
+        "HALEU fuel",
+        "\"uranium enrichment\" United States",
+        "\"Russian uranium\" ban OR waiver"
+      ],
+      "CEG": [
+        "Constellation Energy nuclear",
+        "nuclear plant restart",
+        "nuclear power data center deal",
+        "NRC license renewal"
+      ],
+      "NXE": [
+        "\"NexGen Energy\""
+      ],
+      "DNN": [
+        "\"Denison Mines\""
+      ],
+      "UEC": [
+        "\"Uranium Energy Corp\""
+      ],
+      "UUUU": [
+        "\"Energy Fuels\" uranium"
+      ],
+      "BWXT": [
+        "\"BWX Technologies\""
+      ],
+      "VST": [
+        "Vistra nuclear"
+      ],
+      "TLN": [
+        "\"Talen Energy\""
+      ]
+    },
+    "keywords": {
+      "CCJ": [
+        "cameco",
+        "ccj",
+        "uranium",
+        "kazatomprom",
+        "sprott",
+        "westinghouse",
+        "mcarthur",
+        "cigar lake",
+        "athabasca",
+        "u3o8",
+        "yellowcake",
+        "inkai"
+      ],
+      "LEU": [
+        "centrus",
+        "leu ",
+        "haleu",
+        "enrichment",
+        "enriched uranium",
+        "piketon",
+        "russian uranium",
+        "tenex",
+        "rosatom",
+        "urenco",
+        "orano"
+      ],
+      "CEG": [
+        "constellation",
+        "crane clean",
+        "three mile island",
+        "calvert cliffs",
+        "nuclear plant",
+        "reactor restart",
+        "nuclear fleet",
+        "license renewal",
+        "data center power",
+        "power purchase agreement"
+      ],
+      "NXE": [
+        "nexgen",
+        "rook i",
+        "arrow deposit"
+      ],
+      "UEC": [
+        "uranium energy corp",
+        "uec ",
+        "christensen ranch",
+        "burke hollow"
+      ],
+      "DNN": [
+        "denison",
+        "wheeler river",
+        "phoenix project"
+      ],
+      "UUUU": [
+        "energy fuels",
+        "white mesa",
+        "rare earth"
+      ],
+      "BWXT": [
+        "bwx",
+        "bwxt",
+        "naval reactor",
+        "trisO",
+        "triso"
+      ],
+      "VST": [
+        "vistra",
+        "comanche peak"
+      ],
+      "TLN": [
+        "talen",
+        "susquehanna"
+      ]
+    },
+    "max_items_per_run": 60,
+    "stocktwits": true,
+    "exclude": [
+      "iran",
+      "north korea",
+      "pyongyang",
+      "flightradar",
+      "stock price, news, quote",
+      "quote & history",
+      "stock quote",
+      "form 144"
+    ],
+    "per_source_cap": 6,
+    "fast_industry": [
+      "Cameco press releases"
+    ],
+    "slow_lane_minutes": 10
+  },
+  "hawk": {
+    "enabled": true,
+    "stream_prices": true,
+    "move_alert_pct": 1.5,
+    "move_window_min": 10,
+    "note": "Always-on VM only: live trades from Alpaca's free data feed wake the bot on a target touch, a stop-zone touch or a fast move; news fast lane every minute, slow lane every 10."
+  },
+  "options_recorder": {
+    "enabled": true,
+    "tickers": [
+      "CCJ",
+      "LEU",
+      "CEG",
+      "NXE",
+      "VST"
+    ]
+  }
+}

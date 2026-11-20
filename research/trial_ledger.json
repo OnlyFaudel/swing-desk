@@ -1,0 +1,45 @@
+{
+ "updated": "2026-11-20",
+ "note": "Every rule variant ever backtested counts as a trial. Add to it whenever research tests something new.",
+ "strategies": {
+  "patient_levels": {
+   "trials": 30,
+   "sr_var_daily": 0.0011407750552069407,
+   "source": "research/incumbent_dsr.py (test half, 0.20% costs)",
+   "backtest_test_half": {
+    "dsr": 0.668,
+    "sharpe": 1.56,
+    "ann_pct": 24,
+    "maxdd_pct": -11,
+    "note": "2026-11-20: re-run after fixing gap-through-stop bug (engine booked exit at the stop when the open was already below it); ~12% of backtest P&L was fake"
+   },
+   "previous_backtest_test_half": {
+    "dsr": 0.798,
+    "sharpe": 1.75,
+    "ann_pct": 27,
+    "maxdd_pct": -10
+   }
+  },
+  "relative_value": {
+   "trials": 16,
+   "sr_var_daily": 0.000305,
+   "verdict": "rejected 2026-11-20: basket not cointegrated; no trial reached DSR 0.95",
+   "source": "research/rv_lab.py"
+  },
+  "ccj_cross_asset": {
+   "trials": 88,
+   "verdict": "2026-11-20: no tradable survivor. 10 gap-only (information) survivors -> asia_gap_nowcast (info). See signals_registry.json",
+   "source": "research/ccj_corr.py, ccj_leadlag.py, ccj_overlay.py"
+  },
+  "patient_levels_universe": {
+   "trials": 52,
+   "verdict": "2026-11-20: stock picking does not persist (half1 rank vs half2 result Spearman -0.08); top-5 picks 0.27%/trade in half 2 vs 0.29% for all",
+   "source": "research/universe_wide.py"
+  },
+  "patient_levels_lineup": {
+   "trials": 6,
+   "verdict": "2026-11-20: 10-stock fuel chain ~3x trades/week vs trio but lower R/trade and drawdowns to -46% unfiltered; pulse filter (basket above 70h avg) cut drawdowns to -14%/-20% but year-2 return fell (+21.8% -> +6.5%). Mixed; paper-test only.",
+   "source": "research/lineup_sim (inline, bars_wide.pkl)"
+  }
+ }
+}

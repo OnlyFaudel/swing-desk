@@ -1,0 +1,8 @@
+yfinance>=0.2.50
+pandas>=2.0
+numpy
+anthropic>=0.40
+feedparser>=6.0
+alpaca-py>=0.40
+exchange_calendars>=4.5
+convertdate>=2.4

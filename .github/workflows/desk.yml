@@ -1,0 +1,56 @@
+name: swing-desk
+on:
+  schedule:
+    # Every 15 min, about 8am-5pm ET on weekdays (13-21 UTC covers the session in both EST and EDT).
+    # Each scheduled run is ONE quick pass (~2 min). Buy orders and stops rest at the broker and fill
+    # on their own between runs. This keeps a private repo inside GitHub's 2,000 free minutes a month
+    # (about 36 runs x 2 min x 21 days = ~1,500 min). Public repos are free either way.
+    - cron: "*/15 13-21 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "loop | once | first-run | test-notify | test-agents | test-broker | force-morning | force-review"
+        default: "once"
+permissions:
+  contents: write
+concurrency:
+  group: swing-desk
+  cancel-in-progress: false
+jobs:
+  run:
+    # Hawk mode on the always-on VM: set the repo variable RUNNER=vm and scheduled runs stop here (no minutes used).
+    if: github.event_name != 'schedule' || vars.RUNNER != 'vm'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - name: Run desk
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          ALPACA_KEY: ${{ secrets.ALPACA_KEY }}
+          ALPACA_SECRET: ${{ secrets.ALPACA_SECRET }}
+          ALPACA_PAPER: ${{ vars.ALPACA_PAPER || 'true' }}
+        run: |
+          MODE="${{ github.event.inputs.mode }}"
+          case "$MODE" in
+            "") python run.py once ;;
+            loop) python run.py loop --minutes 13 ;;
+            once) python run.py once ;;
+            first-run) python run.py once --force-rank --force-morning --force-review ;;
+            force-morning) python run.py once --force-morning ;;
+            force-review) python run.py once --force-review ;;
+            *) python run.py "$MODE" ;;
+          esac
+      - name: Save state + dashboard
+        if: always()
+        run: |
+          git config user.name "swing-desk"
+          git config user.email "swing-desk@users.noreply.github.com"
+          git add -A state.json docs orders data 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "desk $(date -u +%F_%H%M)"
+          git pull --rebase && git push
