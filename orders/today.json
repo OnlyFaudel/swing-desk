@@ -21,6 +21,36 @@
    "price": 0.0,
    "status": "pending_new",
    "note": "no stop could be placed"
+  },
+  {
+   "time": "2026-11-20 15:34",
+   "symbol": "UUUU",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "panic-day rebound buy near the close"
+  },
+  {
+   "time": "2026-11-20 15:34",
+   "symbol": "LEU",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "panic-day rebound buy near the close"
+  },
+  {
+   "time": "2026-11-20 15:34",
+   "symbol": "VST",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "panic-day rebound buy near the close"
   }
  ]
 }
