@@ -4483,5 +4483,61 @@
 "extension",
 "patrick"
 ]
+},
+{
+"id": "4f78ef7c6c65a768",
+"date": "2026-11-18",
+"ts": 1795038300,
+"title": "Vistra Closed at $125 After a Record Quarter: Buy the Buyback, or Wait for Texas?",
+"summary": "",
+"outlet": "TIKR.com",
+"link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUHpiMTZJczZYaXE2eHFLamRGY3UtYTNLVUQ0YlY4Q2poUWpvRTVqclZwankzUlh3TTBQeWw0MzZQdnY0aXYxSWp1RzhhdVBlVXpPYkgxVUpQenQxb1A3a0dkREh3a0trS2w5N0RISmk0bEZnZE5LTUVDVllTU3c5YW96YVdqY296WXJ4UWZEWEZXbXVnN3p0MEswNVFOSjhkZXAxOFdn?oc=5",
+"place": "Comanche Peak",
+"tickers": [
+"VST"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "b0d47e428f75395f",
+"w": [
+"125",
+"buy",
+"buyback",
+"closed",
+"quarter",
+"record",
+"texas",
+"vistra",
+"wait"
+]
+},
+{
+"id": "7bfa83a63debfd77",
+"date": "2026-11-20",
+"ts": 1795194190,
+"title": "Vistra CEO Reflects on Energy's Opportunity",
+"summary": "",
+"outlet": "D Magazine",
+"link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNnhOVF9abmZXU01nVEM0bjE2cEU5VkV4dzFIU0U3NEpRNllHYkZra210cjFnVUE5T3pBVjBocFBON19rdzV6c0FSNTBEejlVQlRzajFDZTBwdmdlOFhDMTJWc1ZtTFJlUFpTT2V4ZmlaY2ZmRmdhUHlXQjcxWXN3c1Rqc2lxdW96WC1LX3hNTUVwZ0xWa25GTzNpaGNvSGtsTlpF?oc=5",
+"place": "Comanche Peak",
+"tickers": [
+"VST"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.83,
+"score": 4.16,
+"echo_of": null,
+"w": [
+"ceo",
+"energy",
+"opportunity",
+"reflects",
+"vistra"
+]
 }
 ]
