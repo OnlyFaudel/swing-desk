@@ -49,6 +49,14 @@
   "reactor_outages": {
    "trials": 32,
    "verdict": "2026-11-20: 174 reactor outages at CEG/VST/TLN units since listing (NRC daily power 2019-2026; outage = >=80% to <=30%). Stock vs peers on report day, +1, +5, +10 days: CEG (25 units, n=116) ~0 everywhere (p>0.19). VST n=49 / TLN n=9 show +0.5 to +4.9% but driven by VST's 2024 run vs peers and tiny TLN sample; 32 tests, nothing survives. Verdict: a single outage is not a tradable signal. Keep as context (fleet % running, open outages) and re-test when a big multi-unit or long unplanned outage happens."
+  },
+  "big_move_followthrough": {
+   "trials": 36,
+   "verdict": "2026-11-20: 1,094 big days (|move|>=2.5 sd or 8%) in the 10 stocks since 2019 (research/big_moves.csv), split market / sector / company-only. Company-only UP spikes fade: -0.7% next day, -1.5% over 5 days, -2.0% over 20 vs the basket (n=370, p<0.02, both halves; 7 of 10 stocks, strongest DNN/NXE/UEC/UUUU/CCJ). Use: don't buy right after a lone spike, let it come back to support. Other buckets: nothing that holds in both halves."
+  },
+  "panic_day_rebound": {
+   "trials": 23,
+   "verdict": "2026-11-20 PROMISING (not proven): buy at the close when the market (SPY) falls 2%+, the stock falls 3%+ and is 15%+ below its 20-day high (CCJ Nov 5 2026 type). 61 distinct days since 2019: hold 4 days +3.6% avg / +3.3% median, up 62%; hold 6 days +5.3% / +6.2%, up 70% (p=0.001 by day), positive every year. Risk: when the panic is the start of a crash (Feb-Mar 2020, May 2022) it loses 15-21% and stops don't help (gaps). Buying next morning instead of the close keeps much less (+0.9% over 2 days). ~23 variants tried, so treat as a candidate for paper testing."
   }
  }
 }
