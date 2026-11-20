@@ -1119,7 +1119,7 @@ def main():
                 if time.time() - last_dash > 300:
                     dashboard.build(st, CFG); last_dash = time.time()
                 if os.environ.get("AUTO_GIT") == "1" and time.time() - last_push > 900:
-                    os.system(f"cd {ROOT} && git add -A state.json docs orders data >/dev/null 2>&1 && "
+                    os.system(f"cd {ROOT} && for p in state.json docs orders data; do [ -e \"$p\" ] && git add -A \"$p\"; done; "
                               f"git commit -qm 'desk {now:%F %H:%M}' >/dev/null 2>&1; git push -q >/dev/null 2>&1")
                     last_push = time.time()
             wake.wait(CFG.get("daemon_poll_seconds", 60) if active else 300)
