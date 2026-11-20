@@ -814,8 +814,13 @@ def panic_check(st, ex, data, prices, today, brk_state, now, force=False):
     late = now.time() >= dt.time(15, 38)
     for t, lots in list(book["lots"].items()):  # exits: 6 sessions later, near the close (or the first run after)
         L = lots.get("panic") or {}
-        if L.get("qty", 0) > 1e-6 and L.get("exit_on") and (str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late)):
-            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"panic-day rebound: held {cfg.get('hold_sessions', 6)} sessions")
+        if L.get("qty", 0) <= 1e-6 or not L.get("exit_on"):
+            continue
+        px, avg = prices.get(t, L["cost"] / L["qty"]), L["cost"] / L["qty"]
+        if str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late):
+            ex.exit_panic(t, px, f"panic-day rebound: held {cfg.get('hold_sessions', 6)} sessions")
+        elif late and L.get("opened") != str(today) and px >= avg * (1 + cfg.get("take_profit_pct", 10) / 100):
+            ex.exit_panic(t, px, f"panic-day rebound: up {(px / avg - 1) * 100:.1f}%, took the profit early")
     for e in st.get("panic_log", []):  # practice record: every trigger is tracked, bought or not
         if e.get("result") is None and str(today) > e["exit_on"] and e["ticker"] in data:
             c = data[e["ticker"]].Close
@@ -857,7 +862,7 @@ def panic_check(st, ex, data, prices, today, brk_state, now, force=False):
                  + f". History on 61 days like this: +5.3% average over 6 sessions, up 70% of the time.", to="team")
         feed.say("risk", "The danger is the day this is the start of a crash (March 2020, May 2022: -15% to -21%) and a stop "
                  f"won't save us, so size is the protection: {cfg.get('size_pct_each', 15)}% per stock, "
-                 f"{cfg.get('max_total_pct', 45)}% total at most, sold on {exit_on} no matter what.", to="chief")
+                 f"{cfg.get('max_total_pct', 45)}% total at most. We sell at +{cfg.get('take_profit_pct', 10)}% near a close, or on {exit_on} no matter what.", to="chief")
         for r, dd, t in hits[: cfg.get("max_names", 3)]:
             dollars = min(eq * cfg.get("size_pct_each", 15) / 100, room, cash)
             L = account.lot(book, t, "panic")

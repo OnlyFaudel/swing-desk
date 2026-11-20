@@ -420,6 +420,7 @@
     "size_pct_each": 15,
     "max_total_pct": 45,
     "max_names": 3,
-    "_note": "Strategy #2. Buys between 3:30 and 3:58 pm ET on a market panic day; needs a run in that window (the always-on computer). On a LIVE broker it obeys the promotion gate and loss brakes."
+    "_note": "Strategy #2. Buys between 3:30 and 3:58 pm ET on a market panic day; needs a run in that window (the always-on computer). On a LIVE broker it obeys the promotion gate and loss brakes.",
+    "take_profit_pct": 10
   }
 }
