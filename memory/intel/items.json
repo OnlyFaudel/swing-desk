@@ -5521,5 +5521,71 @@
 "staff",
 "war"
 ]
+},
+{
+"id": "418f0eccd8c55712",
+"date": "2026-11-18",
+"ts": 1794997206,
+"title": "Russia says US, despite current sanctions, will likely need more of its uranium in future",
+"summary": "",
+"outlet": "Tacoma News Tribune",
+"link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOX1Z3c0JnSVhMbVFqVUFSMGx0REVRVlJJclY4WDZrN3RMemM0b1RsNzhMSm5nQUNXTWtRVWlSREU4MWtRUGJ4TGxpQ3R6WTl1ZVFUOE1PMjNSR2htN3A0SG5rM2tPQlpEVDB2bVBjOHkzSUF3b1FmVDYyNVRSQlo0ell3?oc=5",
+"place": "Russia supply",
+"tickers": [
+"LEU",
+"CCJ"
+],
+"tags": [
+"regulation"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 4.0,
+"echo_of": "c63f6071a88d0ce4",
+"w": [
+"current",
+"despite",
+"future",
+"likely",
+"need",
+"russia",
+"sanctions",
+"uranium"
+]
+},
+{
+"id": "88813f2311f7a1b2",
+"date": "2026-11-20",
+"ts": 1795180644,
+"title": "Niger: WFP approves $772.66 million plan for 2027-2031",
+"summary": "",
+"outlet": "B\u00e9nin Web TV",
+"link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUnhCdmNVWkZUb1dfSmRoUDhXZFNxUG5yQlV3VURnX0FOR0hleDBTV1BWNmlfUzZSeTk5MTBBZnMwUkN6d3lTVnAxZVg2Y2pMRWtRQ3FiNm5BTEJ5a3V6M1lCa2JwNzlqSVpyQjRsZUwzTXlFdmVubTJTWXFtWFFqS3ZXZVQ?oc=5",
+"place": "Niger",
+"tickers": [
+"CCJ",
+"UEC"
+],
+"tags": [
+"regulation"
+],
+"numbers": [
+"$772.66 million"
+],
+"local": true,
+"novelty": 0.92,
+"score": 6.34,
+"echo_of": null,
+"w": [
+"2027",
+"2031",
+"772",
+"approves",
+"million",
+"niger",
+"plan",
+"wfp"
+]
 }
 ]
