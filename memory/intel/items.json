@@ -4770,5 +4770,197 @@
 "season",
 "shoulder"
 ]
+},
+{
+"id": "918373cd65addb50",
+"date": "2026-11-19",
+"ts": 1795098600,
+"title": "Blast Resources More Than Doubles Athabasca Basin Land Package with Acquisition of Eight Uranium Claims",
+"summary": "",
+"outlet": "TradingView",
+"link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPbE0zVHpCRlVtbHNGX2RBLW9hXzd0RS0tX2xVS0RKWE5fbTlRNng4T2JuWjI5VVFJb29iWlBJZXFyWkV3TmlXcE90WnJoaF9jdTQtRHhpSEhQVEkzNGZ2OERoZzBCWW5LV0M0dzRuVEQyOWd3R093M1dPZWVUUG5ZeVV3SjZXbmVYMDFEUy1CTDluMi1wbWhOdlJXTUhfSTQtZDhqVU9lSXJFMWltamxGdEgtdGNkMDlLRml2MWo4c1JvYm1XU0JybXpmLUN1T1loOS0xN3NBTFVYc2ptdktzQzl5MVJacWgwLXljcnp0a3FnR3pjdTdabA?oc=5",
+"place": "Athabasca Basin",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 1.5,
+"echo_of": "9226bdf6d5f1a8d7",
+"w": [
+"acquisition",
+"athabasca",
+"basin",
+"blast",
+"claims",
+"doubles",
+"eight",
+"land",
+"package",
+"resources",
+"uranium"
+]
+},
+{
+"id": "3db9604ecdda9e64",
+"date": "2026-11-20",
+"ts": 1795211893,
+"title": "ERCOT Sees Surge in Power Demand by 2030s Amid Data Center Growth",
+"summary": "",
+"outlet": "EnergyNow.com",
+"link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOM191RzRRSjZTN2R1X2Z3cTkzTW50U1VOUXd3VmYtS0N6Z2lsWHhTUzl4ZjEwR0UyRmk3SUF0WDJlcEtYZm1oMGFxM0V3cmlXbzFqV2hadnJjcWxQUWVNTGM4OVB1VkRyMThoZzIzR2x0SzdoSFRLc25mRVlIQkN6VjNvY0VjWlFQQ2tubF9JcXk5b214MGhRc2NLUHY?oc=5",
+"place": "ERCOT grid",
+"tickers": [
+"VST"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.88,
+"score": 4.26,
+"echo_of": null,
+"w": [
+"2030s",
+"amid",
+"center",
+"data",
+"demand",
+"ercot",
+"growth",
+"power",
+"sees",
+"surge"
+]
+},
+{
+"id": "2c7a3976a5596853",
+"date": "2026-11-20",
+"ts": 1795212685,
+"title": "ERCOT approves CEO Pablo Vegas\u2019 contract months after backlash",
+"summary": "",
+"outlet": "San Antonio Express-News",
+"link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUDlpa2hmUXVSb2k4MkpJa2t1b1FxR1Nqb3p1OUVaNUVhdjNFQV9XUFdGbEEyNWZaVTVuVDNTN0J2cThVR2NYRGJLM0ZXdnd2RFE1RnNQRm82TWl6WGtud1o4MEFlSGFHRTVCNWlmLWg1QWxOVkNwZjZPMnp1T1p5ZjV4WnlYZXcwa0Q2NjJjVXhvS1V1TGRFN3dlcW1zZG4xYloySFo3TQ?oc=5",
+"place": "ERCOT grid",
+"tickers": [
+"VST"
+],
+"tags": [
+"regulation",
+"contract"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.71,
+"score": 6.72,
+"echo_of": null,
+"w": [
+"approves",
+"backlash",
+"ceo",
+"contract",
+"ercot",
+"months",
+"pablo",
+"vegas"
+]
+},
+{
+"id": "28eaa442b6a19a6f",
+"date": "2026-11-20",
+"ts": 1795212879,
+"title": "Controversial Pay Agreement for ERCOT CEO Finalized",
+"summary": "",
+"outlet": "Texas Scorecard",
+"link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRDE5andYTmpPdTV3SGxqYnpnRWxHelVNRXd4aG5pTzJ2MjY0VzF2cEduWmhpSG9sM0liTjIyY3A3NjRtWm5NSGNMWjBWV2F3WEFkMngzbHg2MWpkUElmWDVKU0d4RWtWaHRDUWNxZTRsVXpVYmplQVFzOWp4VjhnX1dhZ3R0dkpnSkswTGdB?oc=5",
+"place": "ERCOT grid",
+"tickers": [
+"VST"
+],
+"tags": [
+"contract"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.82,
+"score": 5.44,
+"echo_of": null,
+"w": [
+"agreement",
+"ceo",
+"controversial",
+"ercot",
+"finalized",
+"pay"
+]
+},
+{
+"id": "9d0cef749e9a05fd",
+"date": "2026-11-21",
+"ts": 1795219492,
+"title": "Can Energy Fuels Sustain Its Expansion Plans Amid Cash Outflows?",
+"summary": "",
+"outlet": "The Globe and Mail",
+"link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPQ0pzRXNpT2JVeV9MZy1CQnVlSVlISnZBVmljcURZNWxMMDE3cXpKU2t2NGxJbk9Zbjd3b3BRZXRZdmpPZDdDbm01SklmR2ZJRU90QjMzdnVfYmhqa0FmNDRyQ3plSUZqMWRaYy05dUxYd1lhb1pDQXhQT0gtaE1oTXI4LXljWXl0TVBoa1dBMEM4dEIzZkFyck1iUGFxUWpEeVdCemh6UGViNGhJaFpmTk9pMTdtR2RSTnZmYm96QjJQUFBwdkVrVElnQUFhRUYyVXRSZmpweE13bEhIOXFzZDhn?oc=5",
+"place": "Rare earths (Energy Fuels)",
+"tickers": [
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 1.5,
+"echo_of": "bae0a5a2c8f95c79",
+"w": [
+"amid",
+"can",
+"cash",
+"energy",
+"expansion",
+"fuels",
+"outflows",
+"plans",
+"sustain"
+]
+},
+{
+"id": "575f4b31b8c0d7bb",
+"date": "2026-11-21",
+"ts": 1795220220,
+"title": "Talen Energy (TLN) Locks In Long Term PJM Deals With Valuation Still In Focus",
+"summary": "",
+"outlet": "Yahoo Finance",
+"link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNd3RzUUJJcHFQVm1rcFJPdmhkNmoyRFhnYi1SVmRiTFF1YTlCTnRoeW1KN1BkYmtaN25EZ1RhQmloYjg0ODhTcUtfX3Y0bWpkWDJzQjF0Wkx3Q0dWYnpzVEVOQXRDRndwUFEweFNmTTJlWmJfTEdPTjZBNFZMX2JxdEZWc1lIZmdOQnJFMg?oc=5",
+"place": "PJM grid",
+"tickers": [
+"CEG",
+"TLN",
+"VST"
+],
+"tags": [
+"market_chatter"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.81,
+"score": 1.62,
+"echo_of": null,
+"w": [
+"deals",
+"energy",
+"focus",
+"locks",
+"long",
+"pjm",
+"still",
+"talen",
+"term",
+"tln",
+"valuation"
+]
 }
 ]

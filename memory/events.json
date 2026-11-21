@@ -695,5 +695,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "VST",
+"date": "2026-11-20",
+"title": "ERCOT approves CEO Pablo Vegas\u2019 contract months after backlash",
+"type": "intel_regulation",
+"source": "Intel: San Antonio Express-News",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "VST",
+"date": "2026-11-20",
+"title": "Controversial Pay Agreement for ERCOT CEO Finalized",
+"type": "intel_contract",
+"source": "Intel: Texas Scorecard",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]
