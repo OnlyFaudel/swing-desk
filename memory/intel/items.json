@@ -5587,5 +5587,138 @@
 "plan",
 "wfp"
 ]
+},
+{
+"id": "a315ce80c9423004",
+"date": "2026-11-18",
+"ts": 1794999836,
+"title": "Russia says US, despite current sanctions, will likely need more of its uranium in future",
+"summary": "",
+"outlet": "WKZO",
+"link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPOGhFbFJtbV9lQ3hpbURoOTlfRDJuMFFzOEk5eEpxVVFQdXZNQjlKblltbFhVZkQ5TXRhWDdieS1JeEtqNklfQVVfcXNwR2xhTWd5czVFMURudzRQYl8tcnZzMTBmckhwN2tuTVNEVW9EMno1YVlmR29TWWhTNzNVZVU4bDlWbUJING9VREdFUVB6X1gxR2M5TlFtXzBFaWJiTmRLeFh4Q0w4Y0VTVG1Dc1BwNFRPdkk?oc=5",
+"place": "Russia supply",
+"tickers": [
+"LEU",
+"CCJ"
+],
+"tags": [
+"regulation"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 4.0,
+"echo_of": "c63f6071a88d0ce4",
+"w": [
+"current",
+"despite",
+"future",
+"likely",
+"need",
+"russia",
+"sanctions",
+"uranium"
+]
+},
+{
+"id": "7908d2b630649992",
+"date": "2026-11-21",
+"ts": 1795248000,
+"title": "Curtiss-Wright awarded contracts valued more than $225 million to support critical U.S. Navy aircraft carrier and submarine platforms",
+"summary": "",
+"outlet": "Defense and Munitions",
+"link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNc0pNY0Y1bTgxazdGNzdwMmtXMzREYkdKWjJvT0xCSi1KNlEtazUxUHVaR0FEbTJLRHZkdnUwdl9pbVBhMmtnMTJsVC13YVV5WkQ4bGZhbF9FVS1GbUxseC1HTklwUWFha09tNzExWHZZSERUUWNMMk1xZEM3c0ZCQ1BQZEwzbm9aNjcweUQ2TFNqWTJmR0x3YUNqcy1TZlhGTG8tdlZwU2RpdmtYS0l4MmFadlR0WERjYUtwV1NsbVRGdG9YT2JEQk5idHpBSG9JdzhuY3NWdkEwNXgyNTlJbzNPcm1OSEFEODlpSFVMclBOZnVmeFpTZS1SOGpRYkI0dXp4U3FDNDQ3bDBp?oc=5",
+"place": "Naval reactors",
+"tickers": [
+"BWXT"
+],
+"tags": [
+"contract"
+],
+"numbers": [
+"$225 million"
+],
+"local": true,
+"novelty": 0.95,
+"score": 6.2,
+"echo_of": null,
+"w": [
+"225",
+"aircraft",
+"awarded",
+"carrier",
+"contracts",
+"critical",
+"curtiss",
+"million",
+"navy",
+"platforms",
+"submarine",
+"support",
+"valued",
+"wright"
+]
+},
+{
+"id": "09bd7b0e348df04b",
+"date": "2026-11-21",
+"ts": 1795251988,
+"title": "Cameco Stock Slides 22% Over 7 Straight Down Days",
+"summary": "",
+"outlet": "Trefis",
+"link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNY2ZMb3Mzamxsb29xZU56OFNOWmxkUTJja1Y1NWxubzNFU2tzaVdmd0tCUWlWdWJoMFdCTGFENUxEWURrbnY3Tk5GU2d3aWtVeUNQaVh2ODA0VkdhTmI0Mm1tWHAtSlcyRVhWQmRzZkl5SVFJWVF1Umw5am9KTHB2Q1g3d3dzUTE4NzR4VnhkR29aU2Ffd2NJT2M5R0FjUXRwWVA5T0UzaUZRWC1L?oc=5",
+"place": "Workers and jobs",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [
+"22%"
+],
+"local": true,
+"novelty": 0.9,
+"score": 4.8,
+"echo_of": null,
+"w": [
+"cameco",
+"days",
+"down",
+"slides",
+"stock",
+"straight"
+]
+},
+{
+"id": "eb0139f21af40690",
+"date": "2026-11-21",
+"ts": 1795252332,
+"title": "Why Is Energy Fuels (TSX:EFR) Pushing Deeper Into Rare Earths Now?",
+"summary": "",
+"outlet": "Yahoo Finance",
+"link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSlV2TDVQUExjRmZpUjlkUU8wbzdOVFo2bXc4cV84Ynl6VVVuSlFwcURUWC1rOXNHN1NLQmlDbnRWem5hbmRwdmxvU1ZXTVNjVUJRZzkwbGg5c19SNDRHNklydGgxVE9kLXBpZnZKbG9kOHRyXzVhMzNjdWpOTzRFaFpaRlJlM2ZH?oc=5",
+"place": "Rare earths (Energy Fuels)",
+"tickers": [
+"UUUU"
+],
+"tags": [
+"market_chatter"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.76,
+"score": 1.52,
+"echo_of": null,
+"w": [
+"deeper",
+"earths",
+"efr",
+"energy",
+"fuels",
+"now",
+"pushing",
+"rare",
+"tsx",
+"why"
+]
 }
 ]
