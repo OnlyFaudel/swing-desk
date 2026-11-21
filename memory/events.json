@@ -21095,5 +21095,22 @@
 "r60": 42.78,
 "x5": 6.99,
 "x20": 24.4
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-21",
+"title": "At Kashiwazaki-Kariwa on Japan's coast, a 1,356 megawatt reactor shut down hours into its January restart, then returned in April to end a 14 year silence",
+"type": "intel_disruption",
+"source": "Intel: Energies Media",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]

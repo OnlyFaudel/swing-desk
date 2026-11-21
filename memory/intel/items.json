@@ -5977,5 +5977,47 @@
 "stock",
 "value"
 ]
+},
+{
+"id": "dbd18bd6c4654ec8",
+"date": "2026-11-21",
+"ts": 1795287000,
+"title": "At Kashiwazaki-Kariwa on Japan's coast, a 1,356 megawatt reactor shut down hours into its January restart, then returned in April to end a 14 year silence",
+"summary": "",
+"outlet": "Energies Media",
+"link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1scnlHdWQxWDlJWGRnZk5yZEhBUV9mbmtfcTNEWkNWNDFPX2lJYThHNUFGMDFiSWdhSXFXd0pMUXNxRzkwd283MU8zLXVVZFl5bUtlWlBMMEw0YmRpZGdhSGtkY1Z2MWdRSmp6NUJFTDlod29RSUE?oc=5",
+"place": "Japan restarts",
+"tickers": [
+"CCJ"
+],
+"tags": [
+"disruption",
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.91,
+"score": 7.02,
+"echo_of": null,
+"w": [
+"356",
+"april",
+"coast",
+"down",
+"end",
+"hours",
+"january",
+"japan",
+"kariwa",
+"kashiwazaki",
+"megawatt",
+"reactor",
+"restart",
+"returned",
+"shut",
+"silence",
+"then",
+"year"
+]
 }
 ]
