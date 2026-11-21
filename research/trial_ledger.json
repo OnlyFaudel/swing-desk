@@ -65,6 +65,10 @@
   "panic_rebound_calls_estimate": {
    "trials": 4,
    "verdict": "2026-11-20 ESTIMATE (Black-Scholes, implied vol = 1.3x recent vol on entry, 1.05x on exit, ~5% spread each way; no real historical option prices): 2-week calls on the panic-day picks turn the stock's +5.2% into about +5% (at the money) or 0% (5% out of the money) on average, median -9% to -16%, winning on <50% of days, losing 80%+ on 11-15%. Fear makes options expensive exactly on panic days. Shares beat calls for this setup. Re-test with the options recorder's real chains once enough panic days are recorded. Today's real CCJ chain: IV ~60%, $65 Dec-4 call 0.65/0.97 (40% spread)."
+  },
+  "shadow_patterns": {
+   "trials": 3,
+   "verdict": "background research lab"
   }
  }
 }
