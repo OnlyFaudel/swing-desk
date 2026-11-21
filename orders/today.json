@@ -1,56 +1,5 @@
 {
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "broker": "alpaca-paper",
- "orders": [
-  {
-   "time": "2026-11-20 13:20",
-   "symbol": "CEG",
-   "side": "buy",
-   "kind": "limit",
-   "qty": 0.451631,
-   "price": 247.99,
-   "status": "pending_new",
-   "note": "Patient Levels buy above $247.0"
-  },
-  {
-   "time": "2026-11-20 13:20",
-   "symbol": "CEG",
-   "side": "sell",
-   "kind": "market",
-   "qty": 0.451631,
-   "price": 0.0,
-   "status": "pending_new",
-   "note": "no stop could be placed"
-  },
-  {
-   "time": "2026-11-20 15:34",
-   "symbol": "UUUU",
-   "side": "buy",
-   "kind": "market",
-   "qty": 0.0,
-   "price": 0.0,
-   "status": "pending_new",
-   "note": "panic-day rebound buy near the close"
-  },
-  {
-   "time": "2026-11-20 15:34",
-   "symbol": "LEU",
-   "side": "buy",
-   "kind": "market",
-   "qty": 0.0,
-   "price": 0.0,
-   "status": "pending_new",
-   "note": "panic-day rebound buy near the close"
-  },
-  {
-   "time": "2026-11-20 15:34",
-   "symbol": "VST",
-   "side": "buy",
-   "kind": "market",
-   "qty": 0.0,
-   "price": 0.0,
-   "status": "pending_new",
-   "note": "panic-day rebound buy near the close"
-  }
- ]
+ "orders": []
 }

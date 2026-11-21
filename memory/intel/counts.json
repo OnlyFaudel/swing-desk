@@ -29,7 +29,7 @@
 "Westinghouse": 1
 },
 "2026-11-19": {
-"Comanche Peak": 1,
+"Comanche Peak": 2,
 "Kazakhstan": 2,
 "World Nuclear News": 5,
 "Workers and jobs": 1,
@@ -43,7 +43,8 @@
 "PJM grid": 4,
 "Namibia": 1,
 "HALEU": 1,
-"White Mesa / Utah": 1
+"White Mesa / Utah": 1,
+"Westinghouse": 1
 },
 "2026-11-20": {
 "PJM grid": 3,
@@ -66,6 +67,11 @@
 "HALEU": 1
 },
 "2026-11-21": {
-"PJM grid": 1
+"PJM grid": 1,
+"Susquehanna": 1,
+"Piketon": 1
+},
+"2026-11-23": {
+"Federal Register (nuclear)": 3
 }
 }
