@@ -4650,5 +4650,125 @@
 "sealer",
 "urenco"
 ]
+},
+{
+"id": "e524221003b333dd",
+"date": "2026-11-18",
+"ts": 1794961440,
+"title": "Energy Fuels (UUUU) grants new director Jeffrey Olsen 2,078 restricted stock units.",
+"summary": "",
+"outlet": "Stock Titan",
+"link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPR1hrS2kwSGRjUzQ3Y05Md3BBcE1PVHgzN1ZSaTN3eVR6a3NWdmFjNFpwc05IZHI5eTF2OExFR1A1MUs1RGtTRTJ6WXMxSlRCOWY1eHlOTUZ6dXEyX05MNl9UbThJYUtDSWpzN2hfZW8tMDJBM3JORHNUcFpWTzNaMFpJNzlyQlJjLWhhbk1CcmlDUnZyeW1xMHBIZ2o5ZnRDaEFxeUUtVHY2bmpubktB?oc=5",
+"place": "Workers and jobs",
+"tickers": [
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.81,
+"score": 4.12,
+"echo_of": null,
+"w": [
+"078",
+"director",
+"energy",
+"fuels",
+"grants",
+"jeffrey",
+"olsen",
+"restricted",
+"stock",
+"units",
+"uuuu"
+]
+},
+{
+"id": "4ef1ea97f50a5753",
+"date": "2026-11-18",
+"ts": 1794975360,
+"title": "Form 4 Energy Fuels Inc: Jeffrey Olsen (Director) For: 3 November",
+"summary": "",
+"outlet": "Investing.com UK",
+"link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQazZIVWxNQ3VyZ1lrOFpEZkFXczVaTVdmdldyQWFYcVk0RVBrVUk4R0pudHhoQ1JFYTd3U0JVdGVTdUdSODlFNVlFSGM4MEE5VHVjQVptYUlsbWpBMnpPZ1MweFJWdjU2N2ZEOWZmdTZFclZWdExic1c0RUdiN0IyYWJlcFIzMXJhNDN4a044TUI3cVpENG0yWGN6a3VVWXpZOW14RnY0X3FBb0pNQndYdnFMZEQxc2pQUWtndTVGbw?oc=5",
+"place": "Workers and jobs",
+"tickers": [
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.62,
+"score": 2.74,
+"echo_of": null,
+"w": [
+"director",
+"energy",
+"form",
+"fuels",
+"jeffrey",
+"november",
+"olsen"
+]
+},
+{
+"id": "3107ac7858cece80",
+"date": "2026-11-19",
+"ts": 1795049228,
+"title": "Centrus Energy Corp (LEU) Stock News Today",
+"summary": "",
+"outlet": "TradingKey",
+"link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE92S2I0UW12bG1Bdng5VVV5dW1tQ1ZvX0h6ZVVKV3FkTmlzV3ZKUFZDTERFUHJocE9xajg1WHZXcUVKb2IzSW9GVHVlenpwRm5NdlpnLXMxU19GNEdGbkV3QnJEVWZPV3lHYkF5RWRYSW5RQVc5V0Yw?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.43,
+"score": 3.36,
+"echo_of": null,
+"w": [
+"centrus",
+"energy",
+"leu",
+"news",
+"stock",
+"today"
+]
+},
+{
+"id": "789dc99945c275fb",
+"date": "2026-11-20",
+"ts": 1795207793,
+"title": "PJM Finds Diminishing Respite as Shoulder-Season Prices Reach Record Highs",
+"summary": "",
+"outlet": "FactSet Insight",
+"link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcHJnYktMTG85VWlMZjZRNm4ybEVySWtEbVNlQWt2VWlQT0hXam51bWZEQUJiWG95aU8xdHZWcy1yODJRMGhHNGk1TlR3cklWOF9FckVqSEhlZ093X1JUQi00WG5heGd0ZzhEYU90OGhoV2pDdVhxNUNxaG5SWFBOc1JXNVJVcWhzQVF0Q3YyU1hyUTJQNjgxUVItdW14RXg2ejlfV9IBtAFBVV95cUxQNmVpTkVIcXR1Z3NGYWtuN0RURmx2b3RjTmRiYVl4SWtmM1UwbGlLam9jX0FhUzZSU2N3WE5xOTNOeWwtaE5WTWlEbGQzRkpid1BVdmRCaUxpZFJIMkFydTVGRklNUE9EREh1STdnMVVRLVZKTVdjN3JCZ01OMG9QYjl1TkJkU2psNmpLQ1VxQzRzTzNlQ2EyMkFnZ3NtekxRTjBoOUlzVWlGdnRyY3NZelBoa0U?oc=5",
+"place": "PJM grid",
+"tickers": [
+"CEG",
+"TLN",
+"VST"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.94,
+"score": 4.38,
+"echo_of": null,
+"w": [
+"diminishing",
+"finds",
+"highs",
+"pjm",
+"prices",
+"reach",
+"record",
+"respite",
+"season",
+"shoulder"
+]
 }
 ]
