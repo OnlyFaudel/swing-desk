@@ -6420,5 +6420,140 @@
 "leu",
 "remains"
 ]
+},
+{
+"id": "4d1420e11b5f1f78",
+"date": "2026-11-20",
+"ts": 1795145998,
+"title": "Valuation Update for Independent Power Producers Post-Election and Earnings: Recent Preference for PJM over ERCOT",
+"summary": "",
+"outlet": "\u5bcc\u9014\u725b\u725b",
+"link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZWZkQ0UyYXVRWDJTdHVndll6REQzaWY5SWpNQ2VGeEpGVzBKMHR2alZrWkl3TlpmbTZRSl9FSkhQMElRdWZ4Ni1zNnZ2UVpvNk1DYVJGS3ZMVTlVdEJoWEdnWFdEMEVwQzhDOGdQbndYT0pSVnBDVl9CNWtRRzNvZEVWVnNSSk9jZFphbC1SVV9HMDAwR3dqc1c5TEZmamxCRDBGSWY2R0wtZTM0RnhUZXJNeklNMnVEWGc?oc=5",
+"place": "PJM grid",
+"tickers": [
+"CEG",
+"TLN",
+"VST"
+],
+"tags": [
+"politics",
+"market_chatter"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.89,
+"score": 3.78,
+"echo_of": null,
+"w": [
+"earnings",
+"election",
+"ercot",
+"independent",
+"pjm",
+"post",
+"power",
+"preference",
+"producers",
+"recent",
+"update",
+"valuation"
+]
+},
+{
+"id": "3e0a74a4e6213119",
+"date": "2026-11-20",
+"ts": 1795161600,
+"title": "NexGen Energy Ltd. (NXE) Stock Price, News & Analysis",
+"summary": "",
+"outlet": "Stock Titan",
+"link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5Famp0X3JZMnIxeHlycUlBMkNfUG1FOUpPV0pLcEJKNVBZem5KVVlKYUVGb19NYnlVX2F5SmE2OTdoYUJQXzlnYzBlWDdLRjJOZEE?oc=5",
+"place": "Rook I / Arrow",
+"tickers": [
+"NXE"
+],
+"tags": [
+"market_chatter"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.67,
+"score": 2.34,
+"echo_of": null,
+"w": [
+"analysis",
+"energy",
+"ltd",
+"news",
+"nexgen",
+"nxe",
+"price",
+"stock"
+]
+},
+{
+"id": "c91ed023b5e665c3",
+"date": "2026-11-20",
+"ts": 1795214949,
+"title": "Uranium Energy Stock Price Forecast. Should You Buy UEC?",
+"summary": "",
+"outlet": "StockInvest.us",
+"link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE04U2VYY1A5UHZ4V01nR2JRcFhTVGgzZ09pbUtQQmtUOHY5ZnhGcXp0MHNoTXE4VVktRHBxTzBNWFlaV3NoSGYw?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [
+"market_chatter"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.69,
+"score": 2.38,
+"echo_of": null,
+"w": [
+"buy",
+"energy",
+"forecast",
+"price",
+"should",
+"stock",
+"uec",
+"uranium",
+"you"
+]
+},
+{
+"id": "c10f62c3161fa59d",
+"date": "2026-11-22",
+"ts": 1795379046,
+"title": "ERCOT\u2019s Vegas to Receive Hefty Pay Package After Delay",
+"summary": "",
+"outlet": "RTO Insider",
+"link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbEYtX003UDFOaE9LM21OakdtSFN5UE40OFZQbGFQWkFpVjFHRjc3R1hJTU84T05oWGZlemVmSnh3SnZaODRjaF94blRJZUhNZ0VLNm05bmtVdVJrV2xGVkN4WVJNNzNqTUM3NVlZU2pzYnhJeEF3RnhvbEpKSlNnQm5GTFJTQ3Vs?oc=5",
+"place": "ERCOT grid",
+"tickers": [
+"VST"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.82,
+"score": 6.14,
+"echo_of": null,
+"w": [
+"delay",
+"ercot",
+"hefty",
+"package",
+"pay",
+"receive",
+"vegas"
+]
 }
 ]

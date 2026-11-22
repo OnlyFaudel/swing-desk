@@ -47,7 +47,7 @@
 "Westinghouse": 1
 },
 "2026-11-20": {
-"PJM grid": 3,
+"PJM grid": 4,
 "Westinghouse": 2,
 "Piketon": 4,
 "Japan restarts": 1,
@@ -55,7 +55,7 @@
 "Federal Register (nuclear)": 1,
 "Comanche Peak": 2,
 "Susquehanna": 4,
-"Uranium price": 7,
+"Uranium price": 8,
 "Namibia": 4,
 "World Nuclear News": 6,
 "Wheeler River / Phoenix": 1,
@@ -65,7 +65,8 @@
 "Workers and jobs": 1,
 "Athabasca Basin": 2,
 "HALEU": 1,
-"Niger": 1
+"Niger": 1,
+"Rook I / Arrow": 1
 },
 "2026-11-21": {
 "PJM grid": 1,
@@ -79,5 +80,8 @@
 },
 "2026-11-23": {
 "Federal Register (nuclear)": 3
+},
+"2026-11-22": {
+"ERCOT grid": 1
 }
 }
