@@ -6327,5 +6327,98 @@
 "train",
 "workers"
 ]
+},
+{
+"id": "4d9c84e2e7673172",
+"date": "2026-11-20",
+"ts": 1795161600,
+"title": "Talen Energy (NasdaqGS:TLN) Stock Forecast & Analyst Predictions",
+"summary": "",
+"outlet": "Simply Wall St",
+"link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5uZE1ocEFKSUhoX0x3MHVhRldUNkhqNVprUVliNkRsa2Q4T2ozTzNObFZZXzZ2S29PbWZXXzhfdEtfNXJacHBvQjlNYjI3WlpmX3h4cUYwY2dzNjF2U3UydVVDRUVuM1RoOFFHWE1YVXBTSzByby02Q0QyTU4?oc=5",
+"place": "Susquehanna",
+"tickers": [
+"TLN"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.55,
+"score": 2.6,
+"echo_of": null,
+"w": [
+"analyst",
+"energy",
+"forecast",
+"nasdaqgs",
+"predictions",
+"stock",
+"talen",
+"tln"
+]
+},
+{
+"id": "db717c49c87232b4",
+"date": "2026-11-20",
+"ts": 1795188074,
+"title": "US Signs $725 Million Loan Pact with Energy Fuels to Boost Domestic Rare Earth Production",
+"summary": "",
+"outlet": "EnergyNow.com",
+"link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONjRaeWl2N3NFSjZkenN2MjVYSmFXbF9hOS04QzFNV0hRVl9KNzhYWUQzbkZUY0Ewa0plSUpSdVh6Vk9MYW5Gc3VhRE5EbkxFQzhiel84bHFyVzQ1WmFIbnh5Y09FVHoyNERvUVE3RzRlZWdaLXZWYzN4eldxNHZKeGZGN3h5MF9jbEQwcTZCYjAxRDFEMkJiUE8zek1jR0M4OHM0akRRbE9FRUhmOE1lZFFqZWVvekhTdHo4?oc=5",
+"place": "Rare earths (Energy Fuels)",
+"tickers": [
+"UUUU"
+],
+"tags": [
+"production"
+],
+"numbers": [
+"$725 Million"
+],
+"local": true,
+"novelty": 0.84,
+"score": 5.48,
+"echo_of": null,
+"w": [
+"725",
+"boost",
+"domestic",
+"earth",
+"energy",
+"fuels",
+"loan",
+"million",
+"pact",
+"production",
+"rare",
+"signs"
+]
+},
+{
+"id": "dce4cce47213c16f",
+"date": "2026-11-21",
+"ts": 1795264567,
+"title": "Guggenheim Remains a Buy on Centrus Energy (LEU)",
+"summary": "",
+"outlet": "The Globe and Mail",
+"link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObXpEQWkyUTBaX0ZObmtQYWxrQmloOFFaSW1yUFVEbmFSd3NlVktSVEw3OVJnX2Fva013THFGRXFkQ1JSeXZOa1VGa2dHcjR4RGNCTTBsNDJfT2otNkM5bG4xNmV0bXpBRllnTUdxY3R5akxJcHU0M2JVV2tma1RSMmc1eTBVX2ZKS2pjWW9VdmFZZUpEak1PWkJKbWlyRUVaQ1R1dTdoUGJWNjc1SmpWVG4xRFlBZ1FXaWV4bEJPTjV4ekhhVFhvTHBtR3M?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 1.5,
+"echo_of": "91d21b21da9289e4",
+"w": [
+"buy",
+"centrus",
+"energy",
+"guggenheim",
+"leu",
+"remains"
+]
 }
 ]
