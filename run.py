@@ -324,6 +324,15 @@ def refresh_candidates(st, desk, data, prices, today, brk_state, force=False):
         if not s:
             why[t] = patient.why_no_setup(h)
             continue
+        vp = patient.volume_profile(h, s["entry"])
+        if vp:
+            s["volume"] = vp
+            if vp["skip"] and P.get("volume_filter", True):
+                why[t] = (f"a level at ${s['zone']} but it sits {'below where most shares traded' if vp['position'] == 'below value' else 'in a thin, low-volume zone'} "
+                          "over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out")
+                st.setdefault("vp_skipped", []).append({"date": str(today), "ticker": t, **{k: s[k] for k in ("zone", "entry", "stop", "target")}, "vp": vp})
+                del st["vp_skipped"][:-200]
+                continue
         why[t] = "setup found"
         decision, reason = "ARM", "rules (agents off)"
         if desk.available:

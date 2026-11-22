@@ -152,7 +152,9 @@
     "stop_below_zone_pct": 1.2,
     "min_reward_risk": 1.5,
     "scan_minutes": 30,
-    "last_entry_time": "15:30"
+    "last_entry_time": "15:30",
+    "volume_filter": true,
+    "_volume_filter_note": "Skip levels below the 20-session value area or in a thin volume zone (research 2026-11-22: +0.007R vs +0.331R on 9,877 practice trades, both halves, 85% of tickers)."
   },
   "core_tickers": [
     "CCJ"
