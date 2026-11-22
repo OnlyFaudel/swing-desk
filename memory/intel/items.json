@@ -6019,5 +6019,106 @@
 "then",
 "year"
 ]
+},
+{
+"id": "6aa5374ecbed273a",
+"date": "2026-11-20",
+"ts": 1795161600,
+"title": "Why Uranium Stocks Have Halved While Spot Holds Near US$90/lb",
+"summary": "",
+"outlet": "Discovery Alert",
+"link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOGd4NElsTEpkWW9RcHE0N1NRVFE3UV90b0J1R09HZVgyXzR5aUtQZ3p1X1ZWdTFoeFYwVE1Gd0NRc1EwWlpVTk8tVW9rVkl5OHJ0LTZJSnhJUFlKLV9jOFFmUjdmMUZrYlR4ODFXT0UwUDdXMU9Sa3RicWh0U3hoYWQ4eTRsX3J6Q2hQaQ?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [
+"price"
+],
+"numbers": [
+"US$90/lb"
+],
+"local": true,
+"novelty": 0.77,
+"score": 5.34,
+"echo_of": null,
+"w": [
+"halved",
+"holds",
+"near",
+"spot",
+"stocks",
+"uranium",
+"while",
+"why"
+]
+},
+{
+"id": "fa5187062c587fa6",
+"date": "2026-11-20",
+"ts": 1795175887,
+"title": "Oppenheimer raises Talen Energy stock price target on power demand",
+"summary": "",
+"outlet": "Investing.com",
+"link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPS0Q4azJrdWthb3J3dS1oV0ZNRUt1MlJLTktleGg3MTVUMWJYZ1NsalVFMHdwUG1HVkRwX3FfaW5qTDUyMXVhTUNfcmNtZjdqcmxfdGRrMG9tM1FNb1VyM0ZDdFlwb3NEckxWbDg4QkI5VnlRX3cxTW1tNDRBXzNZZTJaUS1lenJTZklfSkY3RnlQNnpMSDFnLXhORGxicGRIRlhJNF85SUdFX1FhcGlWZVUyWFpjeV9DdGVDbFA2ejFKNXd0?oc=5",
+"place": "Susquehanna",
+"tickers": [
+"TLN"
+],
+"tags": [
+"financing",
+"market_chatter"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.64,
+"score": 2.48,
+"echo_of": null,
+"w": [
+"demand",
+"energy",
+"oppenheimer",
+"power",
+"price",
+"raises",
+"stock",
+"talen",
+"target"
+]
+},
+{
+"id": "4abce8dfecf110ac",
+"date": "2026-11-21",
+"ts": 1795277580,
+"title": "Uranium Supply Shortfall: Can Cameco, NexGen and Denison Deliver?",
+"summary": "",
+"outlet": "Discovery Alert",
+"link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUENRb2owaVUxTFdsekFacXVWbzVjTkY1S1pFQXZmRm1Dbk1HT2UwV3F5amJsNDQ5dlFwajRDTzdGZDBJWlNTb1ZjcmhEUUlqNUNSakJENlNDaDFTZnU4UEtCTGY2dmhFSllBOGppcGx3b3ltNUhmNUJUcVJNY2MyQnNzUFpOQ2JNbnE5b2w5RmdGRlE5a0huLXhTWHNCUQ?oc=5",
+"place": "Wheeler River / Phoenix",
+"tickers": [
+"DNN",
+"CCJ",
+"NXE"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.79,
+"score": 4.08,
+"echo_of": null,
+"w": [
+"cameco",
+"can",
+"deliver",
+"denison",
+"nexgen",
+"shortfall",
+"supply",
+"uranium"
+]
 }
 ]
