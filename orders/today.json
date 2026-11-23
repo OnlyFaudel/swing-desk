@@ -31,6 +31,16 @@
    "price": 115.83,
    "status": "pending_new",
    "note": "Patient Levels buy above $115.37"
+  },
+  {
+   "time": "2026-11-23 15:52",
+   "symbol": "SPY",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "parked $519 idle cash in the S&P"
   }
  ]
 }
