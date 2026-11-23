@@ -10348,5 +10348,123 @@
 "qualification",
 "westinghouse"
 ]
+},
+{
+"id": "3cc5d05653b85bbd",
+"date": "2026-11-20",
+"ts": 1795193449,
+"title": "Romania secures Cernavod\u0103 funding",
+"summary": "",
+"outlet": "Nuclear Engineering International",
+"link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5FQnBocFh5emNFbG9nMlJBUnpBT05YSFlUVXVsNDFWOEphOE90clFYcF85eXVFSmdEVTk2YmNuT1FtSV9QaFZKYlg3OUJDRElrRVFEZC0tOTVaelRLUHdXLWNzTDk5NmFzX0c3OTIzU2NONzUyZGc?oc=5",
+"place": "Europe new builds",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.9,
+"score": 4.3,
+"echo_of": null,
+"w": [
+"cernavod",
+"funding",
+"romania",
+"secures"
+]
+},
+{
+"id": "2155a3c24fe371de",
+"date": "2026-11-23",
+"ts": 1795439219,
+"title": "Korean, Slovakian partnership for financing nuclear projects",
+"summary": "Korea Trade Insurance Corporation has signed a memorandum of understanding with Export-Import Bank of Slovakia to support power and utility projects - including nuclear power plants - and the strengthening of related supply chains.",
+"outlet": "World Nuclear News",
+"link": "https://www.world-nuclear-news.org/articles/korean-slovakian-partnership-for-financing-nuclear-projects",
+"place": "World Nuclear News",
+"tickers": [],
+"tags": [
+"regulation",
+"contract",
+"financing",
+"politics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.8,
+"score": 7.6,
+"echo_of": null,
+"w": [
+"financing",
+"korean",
+"nuclear",
+"partnership",
+"projects",
+"slovakian"
+]
+},
+{
+"id": "2db7198144766352",
+"date": "2026-11-23",
+"ts": 1795439673,
+"title": "INL Computing Facility becomes DOE-NE user facility, launches Arco",
+"summary": "",
+"outlet": "American Nuclear Society",
+"link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcXpGYWZGQ3pSbVhOLTVzTGt1b0Q0TjVodnI3amRSdGtQbHlTSEtZbjk0NzNUeEtlVjBWLTlRNkdTcFAwR3FDb1hyS3k1bjY1Nl9KaE55NlptcGJGbzhQOVVYZjVjdlkxY2dqOUoxbUxqOTcxTldNZFYxckx3UURBNHQ2MXJBWlJ5ekpla2R5VGtqeno5REcwNUdzQWJ5Ym9iRmxjcXFn?oc=5",
+"place": "Energy Department",
+"tickers": [
+"LEU",
+"BWXT",
+"CCJ",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.92,
+"score": 4.34,
+"echo_of": null,
+"w": [
+"arco",
+"becomes",
+"computing",
+"doe",
+"facility",
+"inl",
+"launches",
+"user"
+]
+},
+{
+"id": "11145b715ac0216e",
+"date": "2026-11-23",
+"ts": 1795440299,
+"title": "Westinghouse, BWXT Canada partner on AP1000 reactor components",
+"summary": "",
+"outlet": "Investing.com Canada",
+"link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZ0V0UWp1N0dERW5SbjRETEpCUGFYTGRxZjNCdnFOdjQ5SkEtY3lSb19fZDRIN2k4aE5lQW9MOTlXTnd0c0wxR2RlUXBDZjVxQS11cTFWRUtYV2ZMSy1ubmU5U0tidDktbU15NThhdFowajd0UUpFX2FyQ2RiY1N5Z0F4ZXBjNHV3UXZDTFJta24zMHhLY3BWcTBKbFJONDVoak92VzlJQ0RKUFA4ckEwVDFyT25ydGlIRzJDMTlLbw?oc=5",
+"place": "Westinghouse",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.64,
+"score": 2.78,
+"echo_of": null,
+"w": [
+"ap1000",
+"bwxt",
+"canada",
+"components",
+"partner",
+"reactor",
+"westinghouse"
+]
 }
 ]

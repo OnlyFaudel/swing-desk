@@ -295,30 +295,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Standard Uranium Closes Final Tranche of LIFE Offering - Investing News Network",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRW9ETlJMRklGX0R0OG1QMDZqc1Jha0pRaEl0a2NwM0p1NkJtUHdrQUx0SnVlZFlhY1kxWEY5VmdxWXBRTU5DYjViaWRzRm1xMk5DR1plRG5XQjFKdURtMVFkMW1MUHdWT2JEUFhFQWFXV0NPdVBMZDRVTTRnQlp6M3lDWXdkQm44?oc=5",
-   "ts": 1795094637,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "LEU",
-   "source": "Google News: \"Centrus Energy\"",
-   "title": "Oklo and Centrus lock in nuclear fuel supply for up to five Aurora reactors in Ohio - Energies Media",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE12WVktbFBZSm5OMlRxTDJIbGFrRFNUZ09wMFRtTXhUei1PRmhKQUVmRlkwODhLdDJidHVSdWIwbmdvdGdYd3IyQmFoLTNTcml6QlNablRkTEdFY3RMS1VtMlpXaWdRVV9hdC1QclJWQkJHWVNGNXVwZmg5Vmo?oc=5",
-   "ts": 1795091433,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
    "ticker": "LEU",
    "source": "Yahoo (BWXT, related to LEU)",
    "title": "Can BWXT's Cambridge Expansion Support Nuclear Reactor Growth?",
@@ -3293,6 +3269,30 @@
    "direction": "neutral",
    "event_type": "contract_deal",
    "why": "Reactor parts partnership; indirect, minor demand signal for uranium"
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News: \"BWX Technologies\"",
+   "title": "BWXT Canada Qualified to Manufacture AP1000 Components to Westinghouse Specifications - www.marketscreener.com",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQU0YxWFVNRWVnMlYxMVBZMDk3c0hKUExoVWVLaTl2bWtVVGxnYzZpYzdHQnhTclRCc1NlbzV5cmIxNmRsUFVFQy1tY3laVnNsUW1nQ2NoSlVhQTJVSVBNcHI2SHFzM05scEJKUEs1VTdDU0pTUGVjRUNXZ2pmVUNteTZJTGdRd0hFM21IX1BKU2dTNk1XRVdnUlNKU0Nvb1JJalF4Zm1VX2RUbVVNM3dyVGdVWnRISC1ndEtSWldFYTlDYTBVOTBVUDBpeHFBb1FHTWdRVw?oc=5",
+   "ts": 1795440496,
+   "materiality": 5,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Qualification to make AP1000 parts is real but modest, and may be a rehash of earlier news."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Westinghouse reactor",
+   "title": "Westinghouse, BWXT Canada partner on AP1000 reactor components - Investing.com Canada",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZ0V0UWp1N0dERW5SbjRETEpCUGFYTGRxZjNCdnFOdjQ5SkEtY3lSb19fZDRIN2k4aE5lQW9MOTlXTnd0c0wxR2RlUXBDZjVxQS11cTFWRUtYV2ZMSy1ubmU5U0tidDktbU15NThhdFowajd0UUpFX2FyQ2RiY1N5Z0F4ZXBjNHV3UXZDTFJta24zMHhLY3BWcTBKbFJONDVoak92VzlJQ0RKUFA4ckEwVDFyT25ydGlIRzJDMTlLbw?oc=5",
+   "ts": 1795440299,
+   "materiality": 3,
+   "novelty": "follow_up",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Related BWXT supplier story; AP1000 parts deal says little about uranium demand for CCJ."
   }
  ],
  "reviews": [
@@ -4502,16 +4502,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.01363,
+  "day_usd": 0.01387,
   "month": "2026-11",
-  "month_usd": 0.27712,
-  "total_usd": 0.27712,
+  "month_usd": 0.27736,
+  "total_usd": 0.27736,
   "by_role": {
    "macro": 0.0037,
    "whale": 0.00304,
    "crowd": 0.0032,
    "level": 0.00144,
-   "scout": 0.03315,
+   "scout": 0.03339,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -4578,7 +4578,7 @@
   "TLN": 333.24,
   "SPY": 690.91
  },
- "last_cycle": "2026-11-23 08:30 ET",
+ "last_cycle": "2026-11-23 08:40 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -48975,7 +48975,9 @@
   "a0cdbf7102008a59",
   "44041d56f140e1b4",
   "a9e4ab3bdf07e0a2",
+  "11145b715ac0216e",
   "dce4cce47213c16f",
+  "21512a406503e470",
   "537b32f5b2133213",
   "009c12e19cf7cb10",
   "fa31367a940baeaa",
@@ -49196,7 +49198,7 @@
   "88d39974add2ff27",
   "f16660c269a6613c"
  ],
- "news_slow_at": 1795440391.0863903,
+ "news_slow_at": 1795441008.027503,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197899,64 +197901,64 @@
    "lesson": null
   }
  ],
- "intel_at": 1795439092.3760796,
+ "intel_at": 1795440895.9516127,
  "intel_health": {
-  "at": "2026-11-23 08:05",
+  "at": "2026-11-23 08:35",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 3,
-   "Athabasca Basin": 6,
+   "Athabasca Basin": 5,
    "Saskatchewan wildfires": 0,
    "Rook I / Arrow": 1,
-   "Wheeler River / Phoenix": 3,
+   "Wheeler River / Phoenix": 4,
    "Port Hope / Blind River": 0,
-   "Westinghouse": 9,
+   "Westinghouse": 7,
    "Kazakhstan": 0,
-   "Niger": 5,
-   "Namibia": 7,
+   "Niger": 4,
+   "Namibia": 8,
    "Russia supply": 1,
    "Piketon": 10,
-   "HALEU": 10,
-   "Wyoming ISR": 15,
+   "HALEU": 9,
+   "Wyoming ISR": 16,
    "South Texas ISR": 1,
    "White Mesa / Utah": 6,
    "Rare earths (Energy Fuels)": 9,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 5,
+   "Naval reactors": 4,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 5,
    "Comanche Peak": 3,
-   "PJM grid": 9,
-   "ERCOT grid": 6,
+   "PJM grid": 8,
+   "ERCOT grid": 7,
    "Data-center nuclear deals": 9,
    "Japan restarts": 5,
-   "China new builds": 7,
-   "Congress and laws": 22,
+   "China new builds": 6,
+   "Congress and laws": 24,
    "NRC decisions": 7,
-   "Energy Department": 32,
-   "White House and executive orders": 18,
+   "Energy Department": 46,
+   "White House and executive orders": 19,
    "Tariffs and trade": 1,
    "India": 16,
-   "South Korea": 99,
-   "Europe new builds": 28,
-   "France and UK": 8,
+   "South Korea": 76,
+   "Europe new builds": 29,
+   "France and UK": 7,
    "Middle East": 9,
-   "Asia newcomers": 22,
+   "Asia newcomers": 23,
    "Canada SMRs": 3,
-   "Big tech power deals": 26,
+   "Big tech power deals": 27,
    "Iran": 28,
-   "North Korea": 73,
-   "War zones": 13,
+   "North Korea": 76,
+   "War zones": 14,
    "AUKUS and navies": 23,
    "Weapons programs": 6,
    "Stockpiles and reserves": 6,
-   "Sprott trust": 3,
-   "Uranium price": 25,
+   "Sprott trust": 4,
+   "Uranium price": 23,
    "US policy": 0,
    "Lawsuits and investigations": 33,
    "Workers and jobs": 14,
    "CBC Saskatchewan": 20,
-   "World Nuclear News": 48,
+   "World Nuclear News": 49,
    "Federal Register (uranium)": 6,
    "Federal Register (nuclear)": 23,
    "NRC event reports": 7
@@ -197964,14 +197966,14 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 08:30",
-  "total": 318,
-  "week": 278,
+  "updated": "2026-11-23 08:40",
+  "total": 322,
+  "week": 282,
   "places": {
    "Uranium price": 31,
-   "World Nuclear News": 23,
+   "World Nuclear News": 24,
    "Piketon": 21,
-   "Europe new builds": 19,
+   "Europe new builds": 20,
    "AUKUS and navies": 15,
    "PJM grid": 12,
    "South Korea": 12,
@@ -197983,62 +197985,62 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-23 08:05",
+   "at": "2026-11-23 08:35",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 3,
-    "Athabasca Basin": 6,
+    "Athabasca Basin": 5,
     "Saskatchewan wildfires": 0,
     "Rook I / Arrow": 1,
-    "Wheeler River / Phoenix": 3,
+    "Wheeler River / Phoenix": 4,
     "Port Hope / Blind River": 0,
-    "Westinghouse": 9,
+    "Westinghouse": 7,
     "Kazakhstan": 0,
-    "Niger": 5,
-    "Namibia": 7,
+    "Niger": 4,
+    "Namibia": 8,
     "Russia supply": 1,
     "Piketon": 10,
-    "HALEU": 10,
-    "Wyoming ISR": 15,
+    "HALEU": 9,
+    "Wyoming ISR": 16,
     "South Texas ISR": 1,
     "White Mesa / Utah": 6,
     "Rare earths (Energy Fuels)": 9,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 5,
+    "Naval reactors": 4,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 5,
     "Comanche Peak": 3,
-    "PJM grid": 9,
-    "ERCOT grid": 6,
+    "PJM grid": 8,
+    "ERCOT grid": 7,
     "Data-center nuclear deals": 9,
     "Japan restarts": 5,
-    "China new builds": 7,
-    "Congress and laws": 22,
+    "China new builds": 6,
+    "Congress and laws": 24,
     "NRC decisions": 7,
-    "Energy Department": 32,
-    "White House and executive orders": 18,
+    "Energy Department": 46,
+    "White House and executive orders": 19,
     "Tariffs and trade": 1,
     "India": 16,
-    "South Korea": 99,
-    "Europe new builds": 28,
-    "France and UK": 8,
+    "South Korea": 76,
+    "Europe new builds": 29,
+    "France and UK": 7,
     "Middle East": 9,
-    "Asia newcomers": 22,
+    "Asia newcomers": 23,
     "Canada SMRs": 3,
-    "Big tech power deals": 26,
+    "Big tech power deals": 27,
     "Iran": 28,
-    "North Korea": 73,
-    "War zones": 13,
+    "North Korea": 76,
+    "War zones": 14,
     "AUKUS and navies": 23,
     "Weapons programs": 6,
     "Stockpiles and reserves": 6,
-    "Sprott trust": 3,
-    "Uranium price": 25,
+    "Sprott trust": 4,
+    "Uranium price": 23,
     "US policy": 0,
     "Lawsuits and investigations": 33,
     "Workers and jobs": 14,
     "CBC Saskatchewan": 20,
-    "World Nuclear News": 48,
+    "World Nuclear News": 49,
     "Federal Register (uranium)": 6,
     "Federal Register (nuclear)": 23,
     "NRC event reports": 7
@@ -198097,6 +198099,22 @@
     "numbers": [],
     "score": 8.12,
     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5BTnlRVkdycFZRT3JnR2ktbDZ5RGVvdzJsRkR4M3BCV2Z4aDdVbU5fMGJ0TnUyUEs3TXBPeGZNMVZHV25uemNSS3pjbjZSem9DV2xTYjVYU0plOWE4Q0VGLWVB?oc=5"
+   },
+   {
+    "date": "2026-11-23",
+    "title": "Korean, Slovakian partnership for financing nuclear projects",
+    "outlet": "World Nuclear News",
+    "place": "World Nuclear News",
+    "tickers": [],
+    "tags": [
+     "regulation",
+     "contract",
+     "financing",
+     "politics"
+    ],
+    "numbers": [],
+    "score": 7.6,
+    "link": "https://www.world-nuclear-news.org/articles/korean-slovakian-partnership-for-financing-nuclear-projects"
    },
    {
     "date": "2026-11-19",
@@ -198572,21 +198590,6 @@
     "numbers": [],
     "score": 5.88,
     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1UczZWcGlHZnFZRTdHOGoyUlR4cWxkYmxNWWZzb2lWSTFkZFhVS3drVW9nREFaVVkxa1FIbzdLamQtVjBLMmNrVV9FT3NubEdVbnY1MHNhNm55ajQxMWdyMzlhY1JkWjQ?oc=5"
-   },
-   {
-    "date": "2026-11-19",
-    "title": "New nuclear projects offer economic advantages for Ontario",
-    "outlet": "World Nuclear News",
-    "place": "World Nuclear News",
-    "tickers": [],
-    "tags": [
-     "regulation",
-     "politics",
-     "restart"
-    ],
-    "numbers": [],
-    "score": 5.86,
-    "link": "https://www.world-nuclear-news.org/articles/new-nuclear-projects-offer-economic-advantages-for-ontario"
    }
   ]
  },
@@ -199452,7 +199455,7 @@
    }
   ]
  },
- "dossier_at": 1795439133.763641,
+ "dossier_at": 1795440937.5343604,
  "sector_prices": {
   "_at": 1795421580.0402806,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -199510,85 +199513,85 @@
    "name": "Cameco",
    "price": 57.96,
    "week_pct": -18.05,
-   "built": "2026-11-23 08:05"
+   "built": "2026-11-23 08:35"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.41,
    "week_pct": -17.33,
-   "built": "2026-11-23 08:05"
+   "built": "2026-11-23 08:35"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.31,
    "week_pct": -20.3,
-   "built": "2026-11-23 08:05"
+   "built": "2026-11-23 08:35"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.69,
    "week_pct": -17.96,
-   "built": "2026-11-23 08:05"
+   "built": "2026-11-23 08:35"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 4.95,
    "week_pct": -24.81,
-   "built": "2026-11-23 08:05"
+   "built": "2026-11-23 08:35"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 81.56,
    "week_pct": -21.41,
-   "built": "2026-11-23 08:05"
+   "built": "2026-11-23 08:35"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 108.59,
    "week_pct": -11.49,
-   "built": "2026-11-23 08:05"
+   "built": "2026-11-23 08:35"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 237.44,
    "week_pct": -15.13,
-   "built": "2026-11-23 08:05"
+   "built": "2026-11-23 08:35"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 115.22,
    "week_pct": -13.37,
-   "built": "2026-11-23 08:05"
+   "built": "2026-11-23 08:35"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 333.24,
    "week_pct": -11.37,
-   "built": "2026-11-23 08:05"
+   "built": "2026-11-23 08:35"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-23 08:05"
+   "built": "2026-11-23 08:35"
   }
  ],
- "heartbeat": "2026-11-23 08:30",
+ "heartbeat": "2026-11-23 08:40",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 72,
+ "_pushed_feed": 73,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
