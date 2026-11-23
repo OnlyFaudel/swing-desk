@@ -12830,5 +12830,105 @@
 "saudi",
 "serve"
 ]
+},
+{
+"id": "7c01726b721c2e49",
+"date": "2026-11-21",
+"ts": 1795291260,
+"title": "Attack on Zaporizhzhia: Child Injured, Bridges Closed \u1409 News from Fakti.bg - World",
+"summary": "",
+"outlet": "Fakti.bg",
+"link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQX1ZKNVRWRW5TSnRpN0ZXVm9PcVRMUTNHN1RkOXNMNjdOVkktUzZtWVhzYkltTGVnTGtGWGpTaEVjV3FWX1ZDY0RBVGxnX2o1ZHlyWWVhaWkxNUR0amNMU0NhRU5GaVp5Z1pwMmRsc1l4cUpVNV9lclhPTG9SM1JTanZyMHZ6bjdVRTZ5ekh6TkRBcnc?oc=5",
+"place": "War zones",
+"tickers": [
+"CCJ",
+"CEG"
+],
+"tags": [
+"disruption",
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.8,
+"score": 7.4,
+"echo_of": null,
+"w": [
+"attack",
+"bridges",
+"child",
+"closed",
+"fakti",
+"injured",
+"news",
+"world",
+"zaporizhzhia"
+]
+},
+{
+"id": "dd69a7c047abb2b3",
+"date": "2026-11-22",
+"ts": 1795362683,
+"title": "Emergency power outages affect parts of Zaporizhzhia region",
+"summary": "",
+"outlet": "finway.com.ua",
+"link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE42MEx5Y3ZkSkkyTVc4aEJoX0Z3VWZtRE1KWXFpMWJGMHNnM3ljOG9jejRTMjNfY05RbllidHotZndMd01oX0RqQ2FtYkJJRnkwaHc1aVdXQ0Z6cmtHRnNycEE4NDRZSVhxSWR3Z0gzblpsMnhpQXEw?oc=5",
+"place": "War zones",
+"tickers": [
+"CCJ",
+"CEG"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.85,
+"score": 6.2,
+"echo_of": null,
+"w": [
+"affect",
+"emergency",
+"outages",
+"parts",
+"power",
+"region",
+"zaporizhzhia"
+]
+},
+{
+"id": "1087f7fcf3d3190a",
+"date": "2026-11-23",
+"ts": 1795473420,
+"title": "'Very Odd' Cyber Breach Halts Operations, Stock Trading At Wyoming Uranium Mine",
+"summary": "",
+"outlet": "Cowboy State Daily",
+"link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcC00blMxMXkzdWRZSzlCdVh4RnZJTjJTRUxJcm9JU1Y2bHVFenlfREZTTnZkVWFMbnl5cmR0V0FkUmhBdmxvdjFzQ2dleWQ5MEdONHF3dldqNk1Gbk1QMGduSm1jNWlnYnVqcmVEemhRRi1VSm9wdm5yUE9VVGRrYWFaVGFYUVlxRFdsMmh5Xy1QUERfaXFENF85QTBDVEQxRXFvME45dU5mU3RWZjI3M2g3cm4xQQ?oc=5",
+"place": "Wyoming ISR",
+"tickers": [
+"UEC",
+"CCJ"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.79,
+"score": 6.08,
+"echo_of": null,
+"w": [
+"breach",
+"cyber",
+"halts",
+"mine",
+"odd",
+"operations",
+"stock",
+"trading",
+"uranium",
+"very",
+"wyoming"
+]
 }
 ]
