@@ -128,6 +128,38 @@
 "surfaced": false
 },
 {
+"date": "2026-12-01",
+"ticker": "VST",
+"what": "Planned exit of panic-rebound trade; check market calm before selling",
+"by": "macro",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "LEU",
+"what": "Planned exit of panic-rebound trade",
+"by": "macro",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "UUUU",
+"what": "Planned exit of panic-rebound trade; White Mesa Mill campaign start",
+"by": "macro",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "VST",
+"what": "Planned sell date for panic-rebound trade; sell at +10% near a close if hit earlier, otherwise on this date",
+"by": "risk",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
 "date": "2026-12-08",
 "ticker": "UEC",
 "what": "Q1 earnings report; a known catalyst that falls after the next few sessions and could break a resting-buy plan.",
