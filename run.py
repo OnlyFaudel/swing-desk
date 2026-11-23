@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -1021,6 +1021,12 @@ def intel_tick(st, today, force=False):
                           art={"big": f"{ch['country']}: {ch['to']:.0f} {ch['what']}", "sub": "World Nuclear Association table"})
         except Exception as e:
             print("world watch failed", e)
+    if now.time() >= dt.time(7, 0) and not st["flags"].get(f"uprice:{today}"):
+        st["flags"][f"uprice:{today}"] = True
+        try:
+            st["uranium_price"] = uprice.run()
+        except Exception as e:
+            print("uranium price failed", e)
     if now.time() >= dt.time(7, 0) and not st["flags"].get(f"jobs:{today}"):
         st["flags"][f"jobs:{today}"] = True
         try:

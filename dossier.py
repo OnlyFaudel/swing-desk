@@ -22,7 +22,7 @@ import datetime as dt, json, os, statistics, time
 
 import numpy as np
 
-import collector, desk_memory, jobs, world
+import collector, desk_memory, jobs, world, uprice
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIR = os.path.join(ROOT, "memory", "dossiers")
@@ -226,7 +226,7 @@ def build_sector(st):
         by_place.setdefault(i["place"], []).append(i)
     disc = _load(os.path.join(ROOT, "research", "discoveries.json"), {})
     return {"ticker": "SECTOR", "name": "The nuclear sector", "built": dt.datetime.now().strftime("%Y-%m-%d %H:%M"), "sections": {
-        "Uranium market": {"prices": {k: v for k, v in _market(st).items() if k != "_at"},
+        "Uranium market": {"uranium_price_per_lb": uprice.summary(), "funds_and_markets": {k: v for k, v in _market(st).items() if k != "_at"},
                            "latest": (by_place.get("Uranium price", []) + by_place.get("Sprott trust", []))[:15]},
         "Government and laws": {"latest": [i for i in _items(None, 60, tags=["regulation", "politics"])][:25]},
         "Countries": {"who_runs_builds_and_needs_uranium": world.summary(),
@@ -269,7 +269,9 @@ def for_agent(t, k=6):
     S = d.get("sections", {})
     if not S:
         return None
+    up = uprice.summary()
     return {"business": S.get("Business", {}).get("what_it_does"), "snapshot": S.get("Snapshot"),
+            "uranium_price": {k: {"usd_per_lb": v.get("usd_per_lb"), "12m_change_pct": v.get("12m_change_pct")} for k, v in up.items() if isinstance(v, dict)},
             "reactors": S.get("Places and operations", {}).get("reactors"),
             "local_news": [i["title"] for i in S.get("Places and operations", {}).get("latest_local", [])[:k]],
             "government": [i["title"] for i in S.get("Government and laws", {}).get("latest", [])[:4]],

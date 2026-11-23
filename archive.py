@@ -48,6 +48,10 @@ def _save(p, o):
 def topics():
     out = {f"co:{t}": (q, t) for t, q in COMPANIES.items()}
     out.update({f"sector:{k}": (q, "_basket") for k, q in SECTOR.items()})
+    part = os.environ.get("ARCHIVE_PART")  # "i/n": this process reads every n-th topic (parallel catch-up runs)
+    if part:
+        i, n = map(int, part.split("/"))
+        out = {k: v for j, (k, v) in enumerate(sorted(out.items())) if j % n == i}
     return out
 
 
