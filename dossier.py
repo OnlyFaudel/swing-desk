@@ -22,7 +22,7 @@ import datetime as dt, json, os, statistics, time
 
 import numpy as np
 
-import collector, desk_memory
+import collector, desk_memory, jobs
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIR = os.path.join(ROOT, "memory", "dossiers")
@@ -135,7 +135,11 @@ def build_one(t, st, data=None):
         if i["title"] not in seen:
             seen.add(i["title"]); gl.append(i)
     S["Government and laws"] = {"latest": gl[:20]}
-    S["Workers and jobs"] = {"latest": _items(t, 90, tags=["jobs"])[:15]}
+    js = jobs.summary(ticker=t)
+    S["Workers and jobs"] = {"news": _items(t, 90, tags=["jobs"])[:15],
+                             "own_job_board": {"open_jobs": (js.get("open_jobs_by_company") or {}).get("Constellation")} if t == "CEG" and js else None,
+                             "sector_hiring": {k: js.get(k) for k in ("as_of", "sector_open_jobs", "change_vs_30_days_ago", "open_jobs_by_company", "new_postings_30d_by_theme")} if js else None,
+                             "new_postings": (js.get("latest_new_postings") or [])[:8]}
     tw = (st.get("stocktwits") or {}).get(t) or {}
     S["Crowd"] = {"stocktwits": {k: tw.get(k) for k in ("messages", "bullish", "bearish")}, "latest_posts": (tw.get("latest") or [])[:10]}
     br = ((st.get("brief") or {}).get("tickers") or {}).get(t) or {}
@@ -197,6 +201,7 @@ def build_sector(st):
         "Uranium market": {"latest": (by_place.get("Uranium price", []) + by_place.get("Sprott trust", []))[:15]},
         "Government and laws": {"latest": [i for i in _items(None, 60, tags=["regulation", "politics"])][:25]},
         "Supply countries": {p: by_place.get(p, [])[:6] for p in ("Kazakhstan", "Niger", "Namibia", "Russia supply")},
+        "Workers and jobs": jobs.summary(),
         "Reactors and power": {"us_fleet_running_pct": rs.get("us_fleet_running_pct"), "report_date": rs.get("date"),
                                "owners": rs.get("owners"), "open_outages": rs.get("open_outages"),
                                "grid_news": (by_place.get("PJM grid", []) + by_place.get("ERCOT grid", []) + by_place.get("Data-center nuclear deals", []))[:12]},

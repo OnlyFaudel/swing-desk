@@ -106,6 +106,9 @@ def step(budget_s=240, pause=1.3):
             _save(path, hl)
             cur[k] = str(b)
             reads += 1
+            if reads % 20 == 0:  # save progress often, so a stopped run loses almost nothing
+                _save(EVENTS, ev)
+                _save(os.path.join(DIR, "cursor.json"), cur)
             time.sleep(pause)
     _save(EVENTS, ev)
     _save(os.path.join(DIR, "cursor.json"), cur)

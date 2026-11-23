@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -1007,6 +1007,12 @@ def intel_tick(st, today, force=False):
             print("reactor watch failed", e)  # the NRC site blocks some cloud servers: try again in an hour, not tomorrow
             st["flags"].pop(f"reactors:{today}", None)
             st["reactor_retry_at"] = time.time() + 3600
+    if now.time() >= dt.time(7, 0) and not st["flags"].get(f"jobs:{today}"):
+        st["flags"][f"jobs:{today}"] = True
+        try:
+            st["jobs_view"] = jobs.run()
+        except Exception as e:
+            print("jobs tracker failed", e)
     try:
         collector.view(st)
     except Exception as e:
