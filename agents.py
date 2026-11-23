@@ -101,6 +101,8 @@ class Desk:
             payload = {**payload, "owner_standing_instructions": [n["note"] for n in notes][-5:]}
         import notes
         system, payload = notes.attach(role, system, payload)
+        system += (' Always also add "why": 1-2 plain sentences on the reasoning behind your message (what you checked and '
+                   'what decided it). It is shown to the owner as your notes.')
         offered = notes.ASK in system
         mates = feed.teammates()
         if mates:

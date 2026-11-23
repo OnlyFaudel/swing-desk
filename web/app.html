@@ -699,17 +699,18 @@ function stockState(t){
     } else if(V.v==="groups"){
       h=top("Group chats",true)+(CH.length?CH.slice().reverse().map(c=>{const ws=[...new Set(c.msgs.map(m=>m.who))];return `<button class="row2" data-group="${esc(c.id)}">${AV(ws[0])}<div><b>${esc(c.title)}</b><span>${esc(KIND[c.kind]||"Discussion")}, ${c.msgs.length} messages, ${ws.length} people${c.practice?", practice":""}</span></div><small>${ago(c.start)}</small></button>`}).join(""):`<p class="empty">No group chats yet.</p>`);
     } else if(V.v==="agent"){
-      const w=V.w, ps=partners(w), notes=MS.filter(m=>m.who===w&&m.notes), groups=CH.filter(c=>c.msgs.some(m=>m.who===w));
+      const w=V.w, ps=partners(w), notes=MS.filter(m=>m.who===w&&m.notes), groups=CH.filter(c=>c.msgs.some(m=>m.who===w)), posts=(S.feed||[]).filter(q=>q.who===w);
       h=top(nm(w),true)+`<div class="prof">${AV(w)}<b>${esc(nm(w))}</b><span>${esc((PP[w]||{}).bio||"")}</span></div>`+
         `<button class="row2" data-notes="${esc(w)}"><span class="av c${col(w)}" aria-hidden="true">✎</span><div><b>${w==="owner"?"Your posts":"Own notes"}</b><span>${w==="owner"?"what you asked the team":notes.length+" note"+(notes.length===1?"":"s")+": the reasoning behind each message"}</span></div><small></small></button>`+
         `<div class="sect">Direct messages</div>`+(ps.length?ps.map(p=>{const lm=p.msgs[p.msgs.length-1];return `<button class="row2" data-pair="${esc(w)}|${esc(p.other)}">${AV(p.other)}<div><b>${esc(nm(p.other))}</b><span>${esc(nm(lm.who))}: ${esc(lm.text)}</span></div><small>${ago(lm.ts)}</small></button>`}).join(""):`<p class="empty">No one-on-one messages yet.</p>`)+
+        `<div class="sect">Posts</div>`+(posts.length?posts.slice(-12).reverse().map(q=>`<details class="notecard" style="cursor:pointer"><summary style="list-style:none"><small>${esc(ago(q.t))}${q.title?", "+esc(q.title):""}</small><br>${esc(String(q.text||"").slice(0,110))}${String(q.text||"").length>110?"…":""}</summary><p style="margin:8px 0 0;white-space:pre-wrap">${esc(q.text||"")}</p></details>`).join(""):`<p class="empty">No posts yet.</p>`)+
         `<div class="sect">Group chats</div>`+(groups.length?groups.slice().reverse().map(c=>`<button class="row2" data-group="${esc(c.id)}"><span class="av c1" aria-hidden="true">#</span><div><b>${esc(c.title)}</b><span>${esc(KIND[c.kind]||"Discussion")}, ${c.msgs.length} messages</span></div><small>${ago(c.start)}</small></button>`).join(""):`<p class="empty">Not in any yet.</p>`);
     } else if(V.v==="pair"){
       const [a,b]=V.k.split("|"), msgs=pairs[[a,b].sort().join("|")]||[];
       h=top(`${nm(a)} and ${nm(b)}`,true)+msgs.map(m=>bubble(m,m.who===a)).join("");
     } else if(V.v==="notes"){
       const w=V.w, L=w==="owner"?(S.feed||[]).filter(p=>p.who==="owner").map(p=>({ts:p.t,title:"Your post",notes:p.text})):MS.filter(m=>m.who===w&&m.notes).map(m=>({ts:m.ts,title:m.c.title,notes:m.notes}));
-      h=top(w==="owner"?"Your posts":`${nm(w)}: notes`,true)+(L.length?L.slice().reverse().map(n=>`<div class="notecard"><small>${esc(n.title)}, ${esc(n.ts)}</small>${esc(n.notes)}</div>`).join(""):`<p class="empty">No notes yet. Notes are the structured reasoning an agent writes alongside each message (levels, bias, risks). They appear once the Claude key is connected.</p>`);
+      h=top(w==="owner"?"Your posts":`${nm(w)}: notes`,true)+(L.length?L.slice().reverse().map(n=>`<div class="notecard"><small>${esc(n.title)}, ${esc(n.ts)}</small>${esc(n.notes)}</div>`).join(""):`<p class="empty">No notes yet. Each new message comes with its reasoning and the stock files it used; they show up here from now on.</p>`);
     } else if(V.v==="group"){
       const c=CH.find(x=>x.id===V.id); if(!c){h=top("Conversation",true)+`<p class="empty">This conversation is no longer stored.</p>`;}
       else h=top(c.title,true)+`<p class="note" style="margin:0 0 12px">${esc(KIND[c.kind]||"Discussion")}, ${esc(c.start)}</p>${c.practice?`<p class="verdict warn" style="font-size:13.5px">Practice run: the agents' lines are placeholders until the Claude key is connected.</p>`:""}`+c.msgs.map(m=>bubble(m,m.who==="owner")).join("");

@@ -113,6 +113,7 @@ def record(state, role, out, offered):
             n = str(n)[:60]
             r["notes"][n] = r["notes"].get(n, 0) + 1
         out["_notes_used"] = used[:8]
+        out["files_read"] = ", ".join(str(x) for x in used[:8])  # shows in the agent's notes on the page
 
 
 def report(state, min_asked=3):
