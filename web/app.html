@@ -707,14 +707,18 @@ function stockState(t){
     const lastQ=(S.questions||[]).slice(-1)[0];
     const lv=(S.license_view||{}).projects||[], ew=(S.event_watch||[]).slice(-3).reverse();
     const lic=lv.map(p=>`<div class="kv" title="${esc(p.why_it_matters||"")}"><span><b style="color:var(--ink)">${esc(p.project)}</b><br><small>${esc(p.status)} Next: ${esc(p.next)} (${esc(p.window)})</small></span><b>${esc((p.tickers||[]).slice(0,2).join(" "))}</b></div>`).join("");
-    const evs=ew.map(e=>`<div class="kv"><span><small>${esc(fd(e.date))}</small> ${esc(String(e.title||"").slice(0,90))}</span><b class="${e.kind==="supply"?"neg":""}">${e.kind==="supply"?"supply":"NRC"}</b></div>`).join("");
-    const rs=S.radar_score||{};
+    const evs=ew.map(e=>`<div class="kv"><span><small>${esc(fd(e.date))}</small> ${esc(String(e.title||"").slice(0,90))}</span><b class="${e.kind==="supply"?"neg":""}">${({supply:"supply",license:"NRC",deal:"deal",policy:"Russia"})[e.kind]||e.kind}</b></div>`).join("");
+    const rs=S.radar_score||{}, dv=S.deals_view||{};
+    const dls=(dv.deals||[]).slice(0,5).map(d=>`<div class="kv" title="${esc(d.what)}"><span><b style="color:var(--ink)">${esc(d.seller)}</b> with ${esc(d.buyer)} <small>${esc(fd(d.date))}</small><br><small>${esc(d.what)}</small></span><b class="${d.day0_pct>=0?"pos":"neg"}">${d.day0_pct>=0?"+":""}${d.day0_pct}%</b></div>`).join("");
+    const pol=(dv.policy||[]).map(p=>`<div class="kv"><span><b style="color:var(--ink)">${esc(p.item)}</b><br><small>${esc(p.status)}</small></span><b>${esc((p.tickers||[]).join(" "))}</b></div>`).join("");
     el.innerHTML=`<div class="bcard"><h3>Nuclear board</h3><p class="sub">Today's move and the last 30 days. Tap a stock for its file.</p>${rows}</div>
       <div class="bcard"><h3>Mover radar</h3><p class="sub">Where +20% swings (up or down) were 5-7x more likely. The team checks why.</p>${movers}</div>
       <div class="bcard"><h3>Uranium</h3>${uran}</div>
       <div class="bcard"><h3>Plants</h3>${plants}</div>
       ${lic?`<div class="bcard"><h3>New reactor licenses</h3><p class="sub">Where each project stands with the NRC. ${esc((S.license_view||{}).rule||"")}</p>${lic}</div>`:""}
-      ${evs?`<div class="bcard"><h3>Supply and licensing alerts</h3>${evs}</div>`:""}
+      ${dls?`<div class="bcard"><h3>Power deals</h3><p class="sub">Big tech buying nuclear power. The % is the seller's move that day.</p>${dls}</div>`:""}
+      ${pol?`<div class="bcard"><h3>Russian uranium ban</h3>${pol}</div>`:""}
+      ${evs?`<div class="bcard"><h3>Supply, licensing and deal alerts</h3>${evs}</div>`:""}
       ${rs.resolved?`<div class="bcard"><h3>Earnings options check</h3><div class="kv"><span>Options turned out cheap</span><b>${esc(rs.options_were_cheap)}</b></div><div class="kv"><span>Average straddle return</span><b class="${(rs.avg_straddle_return_pct||0)>=0?"pos":"neg"}">${rs.avg_straddle_return_pct!=null?(rs.avg_straddle_return_pct>=0?"+":"")+rs.avg_straddle_return_pct+"%":"—"}</b></div><div class="kv"><span>When the radar said cheap</span><b>${esc(rs.when_radar_said_cheap)}</b></div></div>`:""}
       <div class="bcard"><h3>Power weather</h3>${ex.length?ex.join(""):`<p class="mut" style="font-size:13px;margin:0">No heat waves or cold snaps in the next 7 days for Texas or the mid-Atlantic.</p>`}</div>
       ${lastQ?`<div class="bcard"><h3>Latest question</h3><p style="margin:0;font-size:14px"><b>${esc(lastQ.question)}</b></p><p class="mut" style="font-size:13px;margin:6px 0 0">${esc(lastQ.verdict||"")}: ${esc(String(lastQ.answer||"").slice(0,180))}</p></div>`:""}`;

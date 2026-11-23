@@ -118,6 +118,11 @@ class Desk:
         if role in ("engineer", "investigator", "strategist") and isinstance(payload, dict) and self.state.get("license_view"):
             payload = {**payload, "nrc_license_tracker": [f"{p['project']}: {p['status']} Next: {p['next']} ({p['window']})"
                                                          for p in self.state["license_view"]["projects"]]}
+        if role in ("engineer", "investigator", "strategist", "pm") and isinstance(payload, dict) and self.state.get("deals_view"):
+            dv = self.state["deals_view"]
+            payload = {**payload, "power_deals_and_fuel_policy": {
+                "deals": [f"{d['date']}: {d['seller']} with {d['buyer']}, {d['size_mw']} MW ({d['day0_pct']:+.0f}% that day)" for d in dv["deals"]],
+                "how_stocks_reacted": dv["history"], "fuel_policy": [f"{p['item']}: {p['status']}" for p in dv["policy"]]}}
         les = [x["lesson"] for x in self.state.get("lessons", []) if x.get("lesson")][-6:]
         if les and isinstance(payload, dict):  # what the desk learned from its own mistakes, in every agent's head
             payload = {**payload, "desk_lessons_from_our_mistakes": les}

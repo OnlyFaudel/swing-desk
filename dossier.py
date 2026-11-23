@@ -153,7 +153,8 @@ def build_one(t, st, data=None):
         e["type"] in ("contract_deal", "acquisition", "contract_end") or (e["type"] in ("news_contract", "intel_contract") and named(e.get("title"))))]
     S["Deals and contracts"] = {"count_on_file": len(deals), "latest": [{k: e.get(k) for k in ("date", "title", "type", "r5", "r20", "x20")}
                                                                        for e in sorted(deals, key=lambda e: e["date"])[-25:][::-1]],
-                                "what_deals_did_before": desk_memory.playbook("contract_deal", [t])}
+                                "what_deals_did_before": desk_memory.playbook("contract_deal", [t]),
+                                "power_deals_and_fuel_policy": __import__("deals").for_ticker(t)}
     week = {p: n for p, n in ((st.get("intel_view") or {}).get("places") or {}).items() if p in places}
     po = {"stories_this_week_by_place": week, "latest_local": _items(t, 14, places=places)[:12]}
     rs = _load(os.path.join(ROOT, "memory", "intel", "reactor_status.json"), {})

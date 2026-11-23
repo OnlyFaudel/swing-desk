@@ -141,6 +141,22 @@
   "license_events_2026": {
    "trials": 2,
    "verdict": "2026-11-23 (3 NRC approvals in 2026, 7 nuclear stocks): Kemmerer construction permit (Mar 4) day-1 0% to +4%, 5-day mostly negative; AP1000 update + Palisades amendment (Oct 14) fell 3-11% on a market-wide selloff day; X-energy Long Mott permit (Nov 9) day-1 +6% to +14% (OKLO +14%, LEU +12%), but 5-day -2% to -16%. First-day pops faded within a week. Only 3 events: context for the team (licenses.py), not a trading rule."
+  },
+  "news_pop_fade": {
+   "trials": 6,
+   "verdict": "2026-11-23 (15 nuclear stocks, 1999-2026, 400 stock-specific jumps of +8%+ on 2x volume with SPY under +2%, one per 10 days): all pops: median 5d -0.8%, 20d -3.0%, 43% up after 20 days, but averages near normal (fat right tail) and the halves disagree (pre-2019 faded, 2019+ didn't). Jumps of +15%+ (n=129): 5d median -3.5% older / -1.4% newer, 20d median -8.6% / -5.1%, both halves agree. 8-15% jumps: halves disagree. 2026: 14 of 20 pops lower 20 days later. Related universe (63 stocks, 1,222 events) shows no fade. Adopted: no conviction buys within 5 sessions of a +15% one-day jump (pop_guard). Not adopted: shorting/puts after pops (mean 20d return +0.3%, the right tail makes it a losing bet on average)."
+  },
+  "open_order_timing": {
+   "trials": 4,
+   "verdict": "2026-11-23 (13 nuclear stocks, hourly bars Dec 2023-Nov 2026, 9,158 stock-days): the first hour is weak on average (-0.2 to -0.3%) on every gap size except gap-downs of 2%+ (+0.3%, halves disagree). Its low sits 2-3% under the open. Limit buys 1-3% under the open: ~80% of first-hour fills trade at the limit again after 10:30 anyway, and the ~20% that only fill in the first hour are the best trades (+4.5% to +5.2% by the close). So waiting until 10:30 gets no better price and drops the best fills. Kept: orders go in at 9:31 after the open prints (setups the open already broke are dropped first). Not adopted: orders before the bell (they fill at the open even when the stock gaps through support)."
+  },
+  "power_deal_events": {
+   "trials": 2,
+   "verdict": "2026-11-23 (7 big-tech nuclear power deals, Mar 2024-Oct 2026: AWS-Talen x2, Microsoft/Meta/Amazon/Google-Constellation, Meta-Vistra): the stock that signed rose +8.8% on the day (median +10.5%), rivals CEG/VST/TLN +5.0%, SPY +0.1%. Buying after the announcement-day close: 5 days later -7% to +18%; 20 days later -12% to +10%, and every 2026 deal was lower 20 days later except one. The move happens on the day; too few deals for a rule. Adopted as alerts + context (deals.py), with the no-chase guard covering +15% days."
+  },
+  "group_exposure_caps": {
+   "trials": 9,
+   "verdict": "2026-11-23 (panic rule as live: nuclear first + related fill, VIX/drop sizing, +10% close exit or 6 sessions, Jan 2019-Nov 2026, 192 trades): baseline $1,000 -> $5,942, 25.3%/yr, worst drop -34.7% (Aug 2019-Mar 12 2020; the other 20%+ drop was 2022 Q2). Total caps 75/60/50%: 20.8/17.4/14.6%/yr with worst drops -30.6/-26.4/-23.4%: return per unit of drop gets worse (0.73 -> 0.68/0.66/0.62). Max 1 per group: 19.3%/yr, -36.2%; max 2 per group: 23.5%/yr, -34.9%. Correlation-triggered caps (picks' 60-day correlation 0.6-0.7+ -> 40-60%): 19.6-23.5%/yr, worst drop unchanged at -34.7%. The big drops are market-wide crashes where everything falls together, not picks that resemble each other, so diversifying picks doesn't help. Not adopted; VIX-based sizing stays the protection."
   }
  }
 }

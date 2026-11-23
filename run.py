@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, re, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, earnings, weekly, weather, shocks, licenses, radarlog, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, earnings, weekly, weather, shocks, licenses, deals, radarlog, watchdog, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -1638,6 +1638,7 @@ def intel_tick(st, today, force=False):
     if not st.get("sput_view"):
         st["sput_view"] = sput.summary()
     st["license_view"] = licenses.summary()
+    st["deals_view"] = deals.summary()
     if now.time() >= dt.time(17, 45) and today.weekday() < 5 and not st["flags"].get(f"radarres:{today}"):
         st["flags"][f"radarres:{today}"] = True  # did options into earnings turn out cheap or expensive?
         try:
@@ -1894,7 +1895,8 @@ def event_watch(st, items, today):
             break
         text = f"{it.get('title', '')} {it.get('summary', '')}"
         sh, lic = shocks.is_supply_shock(text), licenses.is_license_news(text)
-        if not (sh or lic):
+        dl = None if (sh or lic) else deals.is_deal_news(text)
+        if not (sh or lic or dl):
             continue
         key = "ev:" + hashlib.sha1((it.get("title") or "")[:80].lower().encode()).hexdigest()[:12]
         if st["flags"].get(key):
@@ -1908,6 +1910,12 @@ def event_watch(st, items, today):
                     f"{h['other_miners_5d_avg_pct']:+.1f}% over 5 days and {h['other_miners_20d_avg_pct']:+.1f}% over 20 days, but only "
                     f"{h['up_after_20d']} went up. {h['note']} Watching {', '.join(who)}.")
             kind, tick, title = "supply", who, f"SUPPLY SHOCK? {sh['site'].title()}"
+        elif dl:
+            who = deals.tickers_for(text) if dl == "deal" else ["LEU", "CCJ"]
+            body = (f"Power deal news: {it.get('title')}. {deals.HISTORY}" if dl == "deal" else
+                    f"Fuel policy news: {it.get('title')}. The US ban on Russian enriched uranium allows exceptions only until Jan 1 2028; "
+                    "Centrus (LEU) gets well over half its supply through 2027 from Russia.")
+            kind, tick, title = dl, who, ("POWER DEAL NEWS" if dl == "deal" else "RUSSIAN URANIUM NEWS")
         else:
             who = licenses.tickers_for(text)
             body = f"Licensing news: {it.get('title')}. {licenses.HISTORY}"
@@ -1919,7 +1927,8 @@ def event_watch(st, items, today):
                                   "plain sentences: what physically changes (pounds of uranium, a reactor's timeline) and which of our "
                                   "stocks it really affects. Say plainly if it is minor or already known. "
                                   '{"say":"","to":"team"}', {"headline": it.get("title"), "summary": it.get("summary", "")[:300],
-                                                            "history": shocks.HISTORY if sh else licenses.HISTORY,
+                                                            "history": shocks.HISTORY if sh else (deals.HISTORY if dl else licenses.HISTORY),
+                                                            "power_deals_and_fuel_policy": deals.summary() if dl else None,
                                                             "license_tracker": licenses.summary() if lic else None,
                                                             "plants_now": plant.snapshot(st)}, max_tokens=350)
                 rd = r.get("say") or ""
@@ -1927,7 +1936,7 @@ def event_watch(st, items, today):
                 print("event watch engineer", e)
         feed.post("engineer", body + (f"\n\nPlant Engineer: {rd}" if rd else ""), [t for t in tick if t][:4], kind="alert",
                   art={"big": title, "sub": (it.get("title") or "")[:90]})
-        notify(title, (it.get("title") or "")[:160] + (f" | {rd[:200]}" if rd else ""), tags="warning" if sh else "scroll", priority="high", who="engineer")
+        notify(title, (it.get("title") or "")[:160] + (f" | {rd[:200]}" if rd else ""), tags="warning" if sh else ("handshake" if dl else "scroll"), priority="high", who="engineer")
         sent.append({"date": str(today), "kind": kind, "title": it.get("title"), "tickers": tick[:4]})
     del sent[:-60]
 
@@ -2144,6 +2153,21 @@ def conviction_record(st):
     return {"closed_trades": n, "avg_return_pct": avg, "wins": sum(1 for x in tr if x["ret"] > 0), "size_multiplier": round(mult, 2)}
 
 
+def pop_guard(st, t, price, today):
+    """No chasing big pops. Nuclear stocks after a +15% one-day jump (1999-2026, 129 cases): median -3.5% (older half)
+    and -1.4% (newer half) over the next 5 days, -8.6% / -5.1% over 20 days; both halves agree (research/trial_ledger.json:
+    news_pop_fade). Smaller 8-15% pops: the halves disagree, so no rule there."""
+    s = [c for _, c in (st.get("spark") or {}).get(t, [])]
+    sp = (st.get("spark") or {}).get(t, [])
+    if sp and sp[-1][0] != str(today) and price:
+        s = s + [price]
+    jumps = [s[i] / s[i - 1] - 1 for i in range(max(1, len(s) - 5), len(s)) if s[i - 1]]
+    big = max(jumps or [0])
+    if big >= 0.15:
+        return f"{t} jumped {big * 100:+.0f}% in one day within the last 5 sessions; big pops in our stocks usually give some back (median -3.5% / -1.4% the next week)"
+    return None
+
+
 def conviction_buy(st, ex, prices, today, t, d, headline):
     cfg = CFG.get("conviction", {})
     conv = int(d.get("conviction") or d.get("confidence") or 0)
@@ -2153,6 +2177,9 @@ def conviction_buy(st, ex, prices, today, t, d, headline):
         return f"BUY wanted but conviction {conv}/10 is under {cfg.get('min_conviction', 7)}"
     if not market.market_open() or t not in prices:
         return "BUY wanted but the market is closed"
+    pg = pop_guard(st, t, prices.get(t), today)
+    if pg:
+        return "BUY wanted but not chasing: " + pg
     book = st["book"]
     if account.lot(book, t, "auto")["qty"] > 1e-6:
         return "already holding a conviction or discovery trade in it"
@@ -2730,6 +2757,12 @@ def cycle(st, desk, br, ex, force=()):
         except Exception as e:
             traceback.print_exc()
     intel_tick(st, today, force="intel" in force)
+    try:  # did every scheduled job run? (alerts + one automatic retry)
+        watchdog.check(st, now, market.cclock, market.is_holiday,
+                       lambda title, body: notify(title, body, tags="rotating_light", priority="high", who="watchdog"),
+                       lambda msg: feed.post("watchdog", msg, [], kind="alert", art={"big": "Missed job", "sub": msg[:90]}))
+    except Exception as e:
+        print("watchdog", e)
     if time.time() - st.get("dossier_at", 0) >= 1800 or "intel" in force:
         st["dossier_at"] = time.time()
         try:
