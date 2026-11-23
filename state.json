@@ -453,6 +453,31 @@
    "decision": "ARM",
    "reason": "",
    "evaluated": false
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "BWXT",
+   "setup": "patient_level",
+   "zone": 115.37,
+   "entry": 115.83,
+   "stop": 113.99,
+   "target": 119.41,
+   "reward_risk": 1.94,
+   "dist_to_entry_pct": 0.48,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 114.46,
+    "value_high": 134.11,
+    "heaviest_price": 117.21,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 1.32,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The price is up 7% today and sits about 15% below its 20-day high and 12% below its 50-day average, so the stock is still in a downtrend. The basket is also still below its 10-day average, which block",
+   "evaluated": false
   }
  ],
  "cooldown": {
@@ -460,18 +485,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "UUUU",
-   "source": "Google News: \"Energy Fuels\" uranium",
-   "title": "New Congress, New Rare Earths Policy? - ChinaTalk | Jordan Schneider",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9GelVJWm04dWNxeWdndi0ydHZUUEw5V3BnajZQQ0NTTEdJN1dMTTdkNXJIeVVwWjJxZDkyOUQ2bzJKZ2Fyck04US1RdkVNR0REdjlZUVBtc0lseEZkZERhUWltOWhXeEFRaHRkX1BGUkNDTzA?oc=5",
-   "ts": 1795089388,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "policy_tariff",
-   "why": "General rare-earths policy commentary, not specific to UUUU."
-  },
   {
    "ticker": "DNN",
    "source": "Google News: \"Denison Mines\"",
@@ -3459,6 +3472,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Job posting for a data analyst intern; no company-specific market information."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News",
+   "title": "Energy Fuels Stock Jumps on Uranium Production Plans, 35% Sales Growth Forecast - Benzinga",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQaWxoVnI1NVJteHhMdlBKSWVjQmlmeTBYbG9GWW5lTVd5LXdnZjk4MlYxUk80Mlp3b0wyYk8ya1BPSzY2WmdzREFCTURwa1VpMEdfRWp4dzVFWV9nbHpDYUc1WHE3MjRKUVBJQWJFbldyNjJPanlJY0RRdGpLRHAwaUVFSG9YQTJ0UE8tcEpZQnpxNkYxTmJPaEpqUlAyLWFqWnFBN1ZONElxLVVYWlZhLUhFY3AybGZ1WHlMZUREUTZCd281RnVBQ1F4UlE4dlVfenlnXw?oc=5",
+   "ts": 1795454553,
+   "materiality": 4,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Price-jump recap on a plan already known; sales forecast is a rehash."
   }
  ],
  "reviews": [
@@ -4787,16 +4812,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.1007,
+  "day_usd": 0.10242,
   "month": "2026-11",
-  "month_usd": 0.36419,
-  "total_usd": 0.36419,
+  "month_usd": 0.36591,
+  "total_usd": 0.36591,
   "by_role": {
    "macro": 0.01055,
    "whale": 0.00861,
    "crowd": 0.00751,
-   "level": 0.00931,
-   "scout": 0.04477,
+   "level": 0.01055,
+   "scout": 0.04525,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -4900,19 +4925,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.56,
-  "NXE": 6.82,
-  "UEC": 5.8,
+  "CCJ": 61.69,
+  "NXE": 6.84,
+  "UEC": 5.83,
   "DNN": 1.8,
-  "UUUU": 5.34,
-  "LEU": 88.07,
-  "BWXT": 116.43,
-  "CEG": 250.82,
-  "VST": 124.89,
-  "TLN": 363.39,
-  "SPY": 722.42
+  "UUUU": 5.35,
+  "LEU": 88.18,
+  "BWXT": 116.58,
+  "CEG": 250.7,
+  "VST": 124.91,
+  "TLN": 363.55,
+  "SPY": 722.62
  },
- "last_cycle": "2026-11-23 12:23 ET",
+ "last_cycle": "2026-11-23 12:28 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4937,10 +4962,10 @@
   ]
  },
  "brakes": {
-  "equity": 1036.63,
-  "day_pct": 3.61,
-  "week_pct": 3.61,
-  "drawdown_pct": -1.69,
+  "equity": 1037.3,
+  "day_pct": 3.68,
+  "week_pct": 3.68,
+  "drawdown_pct": -1.62,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -5566,6 +5591,26 @@
   [
    "2026-11-23 12:23",
    1036.63
+  ],
+  [
+   "2026-11-23 12:24",
+   1036.87
+  ],
+  [
+   "2026-11-23 12:25",
+   1037.78
+  ],
+  [
+   "2026-11-23 12:26",
+   1037.85
+  ],
+  [
+   "2026-11-23 12:27",
+   1037.75
+  ],
+  [
+   "2026-11-23 12:28",
+   1037.3
   ]
  ],
  "nowcast": {
@@ -48200,15 +48245,15 @@
   }
  },
  "last_scan": {
-  "CCJ": 1795453120.230995,
-  "NXE": 1795453120.4843392,
-  "UEC": 1795453120.556395,
-  "DNN": 1795453120.6267226,
-  "UUUU": 1795453120.710787,
-  "LEU": 1795453120.782655,
-  "BWXT": 1795453120.8961508,
-  "CEG": 1795453123.7219024,
-  "VST": 1795453123.7992864,
+  "CCJ": 1795454938.9655027,
+  "NXE": 1795454939.2208757,
+  "UEC": 1795454939.348084,
+  "DNN": 1795454939.4327953,
+  "UUUU": 1795454939.5111156,
+  "LEU": 1795454939.582911,
+  "BWXT": 1795454939.6601217,
+  "CEG": 1795454943.1090143,
+  "VST": 1795454943.2414963,
   "TLN": 1795453123.8777497
  },
  "setup_status": {
@@ -48218,7 +48263,7 @@
   "DNN": "no confirmed support level below the price (it has been falling through them)",
   "UUUU": "no confirmed support level below the price (it has been falling through them)",
   "LEU": "no confirmed support level below the price (it has been falling through them)",
-  "BWXT": "the Level Analyst skipped the setup: BWXT has been falling and sits well below its 50-day and 200-day averages, so there is no confirmed support level beneath the price, and the zone at 115 is more of",
+  "BWXT": "the Level Analyst skipped the setup: The price is up 7% today and sits about 15% below its 20-day high and 12% below its 50-day average, so the stock is still in a downtrend. The basket is also still ",
   "CEG": "no confirmed support level below the price (it has been falling through them)",
   "VST": "no confirmed support level below the price (it has been falling through them)",
   "TLN": "setup found"
@@ -49968,7 +50013,7 @@
     0.9424
    ]
   },
-  "time": "2026-11-23 12:23"
+  "time": "2026-11-23 12:29"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -50046,7 +50091,6 @@
   "693301ddca2bc8c2",
   "dce4cce47213c16f",
   "12fc0c7a240e4fef",
-  "7f1ab1d7e538b600",
   "0235abc0565d5130",
   "b78da0f7db285dc2",
   "19fb88d62a25326f",
@@ -50078,7 +50122,6 @@
   "db05240fe85a29ac",
   "dfaa19a96155f693",
   "6a0cc1c1f8babcd3",
-  "5ca17a18c47750da",
   "618c084e327573c8",
   "6ae4fd45dc301c0d",
   "f800ab709c11fba9",
@@ -50106,6 +50149,7 @@
   "e00ac0592374a28e",
   "2d5c6f3b4f1c4c83",
   "844065448a881248",
+  "5ca17a18c47750da",
   "4317a926c756f33f",
   "fa31367a940baeaa",
   "5152638d88885c07",
@@ -50116,7 +50160,6 @@
   "7ee1ad6e6041b23e",
   "ad40fc2d9e504d93",
   "32d10c819f70dc10",
-  "717c47c79d590a65",
   "47c56c7f6c4b5614",
   "4b634efdcf500ae7",
   "063170773d4b14a2",
@@ -50151,6 +50194,7 @@
   "a2a8ee32597c7b50",
   "d677eaa6f8d45c1c",
   "126369127a97f018",
+  "5d0c7240e494c5f9",
   "a00037110572bad0",
   "08d8363ed1ddeb47",
   "982258a10913aaf8",
@@ -50191,6 +50235,7 @@
   "6c0f0f111a586f76",
   "f16660c269a6613c",
   "4627bda8dfc98062",
+  "82a0f9c44d82898b",
   "6709ae4e03dfb11b",
   "e3886df4b9b8827c",
   "21512a406503e470",
@@ -50212,7 +50257,6 @@
   "2f0e6fcd07e9c356",
   "17b21557a779a003",
   "4720f4810691bed4",
-  "cdc78121c1406bce",
   "23858b9754409f40",
   "238b8e6cc65235f2",
   "14550cc72dba894e",
@@ -50231,6 +50275,7 @@
   "04dd9aeafd90d9b4",
   "537b32f5b2133213",
   "05ad7d5a34131c8c",
+  "717c47c79d590a65",
   "11145b715ac0216e",
   "8aff877e2dd1884c",
   "dcba7d8fd3be8fd0",
@@ -50240,9 +50285,10 @@
   "a4aac5316a0eb878",
   "d7c07a39ed1d0a97",
   "ad6bb6ac1dcb6674",
-  "5d0c7240e494c5f9",
-  "82a0f9c44d82898b",
-  "a3dd031817a4feeb"
+  "7f1ab1d7e538b600",
+  "cdc78121c1406bce",
+  "a3dd031817a4feeb",
+  "7ffa38b48cb85fdf"
  ],
  "news_slow_at": 1795454535.9601917,
  "officer": {
@@ -200038,6 +200084,16 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-23 12:29",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "BWXT looks like a sharp one-day bounce inside a downtrend, not a proven support level, and the basket is still below its 10-day average, which blocks new buys. I agree with the Macro Analyst that this rally should not be chased. Skipping this setup keeps us out of a bounce that could fade.\n\nWhy: The desk rule blocks new buys while the basket is below its 10-day average, and BWXT is still well under its 50-day average after a one-day 7% spike. The historical read on this kind of company news and the bounce's weak follow-through both argue against entering now.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -200471,7 +200527,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 12:23",
+  "updated": "2026-11-23 12:29",
   "total": 345,
   "week": 302,
   "places": {
@@ -202215,7 +202271,7 @@
    "built": "2026-11-23 12:11"
   }
  ],
- "heartbeat": "2026-11-23 12:23",
+ "heartbeat": "2026-11-23 12:28",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -202327,19 +202383,19 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 116.43000030517578,
-  "TLN": 363.3900146484375
+  "BWXT": 116.585,
+  "TLN": 363.55
  },
  "notes_audit": {
   "scout": {
-   "asked": 19,
-   "used": 18,
+   "asked": 20,
+   "used": 19,
    "notes": {
     "TLN Deals and contracts": 1,
     "CCJ Deals and contracts": 4,
     "BWXT Deals and contracts": 8,
     "SECTOR Government and laws": 6,
-    "UUUU Deals and contracts": 3,
+    "UUUU Deals and contracts": 4,
     "SECTOR Countries": 6,
     "CEG Deals and contracts": 2,
     "NXE Legal": 1,
@@ -202347,13 +202403,14 @@
     "DNN Deals and contracts": 1,
     "BWXT Legal": 1,
     "LEU Deals and contracts": 1,
-    "UEC Deals and contracts": 1
+    "UEC Deals and contracts": 1,
+    "UUUU Legal": 1
    },
    "since": "2026-11-23"
   },
   "level": {
-   "asked": 5,
-   "used": 4,
+   "asked": 6,
+   "used": 5,
    "notes": {
     "TLN Snapshot": 3,
     "TLN Price behavior": 3,
@@ -202365,11 +202422,11 @@
     "desk_notes intel: PJM capacity auction delay": 1,
     "TLN intel_disruption (PJM auction delay)": 1,
     "SECTOR macro: market regime": 1,
-    "BWXT Snapshot": 1,
+    "BWXT Snapshot": 2,
     "BWXT What history says": 1,
-    "BWXT Price behavior": 1,
+    "BWXT Price behavior": 2,
     "SECTOR Uranium market": 1,
-    "BWXT Our trades": 1
+    "BWXT Our trades": 2
    },
    "since": "2026-11-23"
   },
@@ -202572,7 +202629,7 @@
    ],
    [
     "2026-11-23",
-    61.56
+    61.72
    ]
   ],
   "NXE": [
@@ -202694,7 +202751,7 @@
    ],
    [
     "2026-11-23",
-    6.82
+    6.84
    ]
   ],
   "UEC": [
@@ -202816,7 +202873,7 @@
    ],
    [
     "2026-11-23",
-    5.8
+    5.82
    ]
   ],
   "DNN": [
@@ -202938,7 +202995,7 @@
    ],
    [
     "2026-11-23",
-    1.8
+    1.81
    ]
   ],
   "UUUU": [
@@ -203182,7 +203239,7 @@
    ],
    [
     "2026-11-23",
-    88.07
+    88.38
    ]
   ],
   "BWXT": [
@@ -203304,7 +203361,7 @@
    ],
    [
     "2026-11-23",
-    116.43
+    116.59
    ]
   ],
   "CEG": [
@@ -203426,7 +203483,7 @@
    ],
    [
     "2026-11-23",
-    250.82
+    250.75
    ]
   ],
   "VST": [
@@ -203548,7 +203605,7 @@
    ],
    [
     "2026-11-23",
-    124.89
+    124.9
    ]
   ],
   "TLN": [
@@ -203670,7 +203727,7 @@
    ],
    [
     "2026-11-23",
-    363.39
+    363.58
    ]
   ]
  },
@@ -203684,6 +203741,26 @@
    "date": "2026-11-23",
    "price": 5.8,
    "result": null
+  },
+  {
+   "role": "level",
+   "ticker": "BWXT",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-23",
+   "price": 116.58,
+   "result": null,
+   "why": "The desk rule blocks new buys while the basket is below its 10-day average, and BWXT is still well under its 50-day average after a one-day 7% spike. The historical read on this kind of company news a"
+  },
+  {
+   "role": "scout",
+   "ticker": "UUUU",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-23",
+   "price": 5.35,
+   "result": null,
+   "why": "The headline reads like a recap of a move that already happened, with no new hard numbers I can verify. Desk notes show deal-driven spikes in UUUU historically faded (median next-20-day move slightly "
   }
  ],
  "after_sale": [],
