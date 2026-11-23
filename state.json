@@ -305,18 +305,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Google News: Kazatomprom",
-   "title": "Uranium Market to Reach US$ 13.59 Billion by 2033 at 4.86% CAGR; - openPR.com",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTHJ5bVRwWEZKdkpBSmRjb1llTzQ2dHlJWkZza2duOEMxWGJ3czlmWmtORF9qMkZYYzhPYlUzVVVTeGZuSkJHTFAxdTR3ZFJzc3pCZzJHaGlydEpIX0tBWjdzOC1jdTFVSGJjNXR4QkhtOGlRWHhrdmxSdEtFWnkzVnV3MmtPTlJRQzJrdjhMZGVGY3pRRlk4SFFRR1JTZw?oc=5",
-   "ts": 1795069759,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
    "ticker": "NXE",
    "source": "Google News: \"NexGen Energy\"",
    "title": "Is NexGen Energy (TSX:NXE) Fairly Valued As Rook I Progresses? - Simply Wall St",
@@ -3303,6 +3291,18 @@
    "direction": "neutral",
    "event_type": "policy_tariff",
    "why": "Safety paperwork for another company's fuel plants; procedural, not a direct LEU catalyst"
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Energy Fuels Surges 8% on Plan to Produce 1 Million Pounds of Uranium; Oklo Climbs 7%, NuScale Power Gains 6% - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdXE5LXpPWEpDeVBKUUtWWDFfN0lKdVdYSG1aeVhsTEJGcDRza0doX0o3b2NnWnlSOW8yMDY2cTVqTWMzSWVGVW9nWE5SdUxqcTRLRVVadWNqbDBhZm03VDZDdHk5TFJKb0ZqczVMT3BvQVBHVVJ0UklOMnkzQk9iYlVMNzBtdUhGRGlV?oc=5",
+   "ts": 1795442994,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Price-recap headline about other companies' moves; Energy Fuels plan is peer news."
   }
  ],
  "reviews": [
@@ -4621,22 +4621,22 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.02662,
+  "day_usd": 0.02926,
   "month": "2026-11",
-  "month_usd": 0.29011,
-  "total_usd": 0.29011,
+  "month_usd": 0.29275,
+  "total_usd": 0.29275,
   "by_role": {
-   "macro": 0.0061,
+   "macro": 0.00665,
    "whale": 0.00639,
    "crowd": 0.00536,
    "level": 0.00144,
-   "scout": 0.03539,
+   "scout": 0.03562,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
-   "pm": 0.01383,
-   "risk": 0.00411,
-   "investigator": 0.10413,
+   "pm": 0.01453,
+   "risk": 0.00473,
+   "investigator": 0.10467,
    "postmortem": 0.00035,
    "researcher": 0.00295
   }
@@ -4685,19 +4685,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 62.29,
+  "CCJ": 62.3,
   "NXE": 6.91,
-  "UEC": 5.88,
-  "DNN": 1.84,
-  "UUUU": 5.51,
-  "LEU": 91.26,
-  "BWXT": 113.75,
-  "CEG": 253.18,
-  "VST": 122.3,
-  "TLN": 354.36,
-  "SPY": 715.32
+  "UEC": 5.86,
+  "DNN": 1.82,
+  "UUUU": 5.49,
+  "LEU": 90.21,
+  "BWXT": 112.46,
+  "CEG": 253.56,
+  "VST": 122.28,
+  "TLN": 357.53,
+  "SPY": 716.36
  },
- "last_cycle": "2026-11-23 09:40 ET",
+ "last_cycle": "2026-11-23 09:42 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4722,10 +4722,10 @@
   ]
  },
  "brakes": {
-  "equity": 1044.45,
-  "day_pct": 4.39,
-  "week_pct": 4.39,
-  "drawdown_pct": -0.94,
+  "equity": 1041.88,
+  "day_pct": 4.13,
+  "week_pct": 4.13,
+  "drawdown_pct": -1.19,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -4783,6 +4783,14 @@
   [
    "2026-11-23 09:40",
    1044.45
+  ],
+  [
+   "2026-11-23 09:41",
+   1043.13
+  ],
+  [
+   "2026-11-23 09:42",
+   1041.88
   ]
  ],
  "nowcast": {
@@ -49184,7 +49192,7 @@
     0.9428
    ]
   },
-  "time": "2026-11-23 09:40"
+  "time": "2026-11-23 09:42"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -49430,9 +49438,10 @@
   "ac86fb04e7eb798b",
   "a38730433f855a68",
   "88d39974add2ff27",
-  "f16660c269a6613c"
+  "f16660c269a6613c",
+  "f21913021e43c03f"
  ],
- "news_slow_at": 1795444815.4584122,
+ "news_slow_at": 1795444928.3825066,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197529,6 +197538,121 @@
    ],
    "practice": false,
    "end": "09:40"
+  },
+  {
+   "id": "20261123094102986108",
+   "title": "Huddle: fast move: NXE moved -1.6% in 9 min",
+   "tickers": [
+    "BWXT",
+    "NXE"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-23 09:41",
+   "msgs": [
+    {
+     "t": "09:41",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: NXE moved -1.6% in 9 min; BWXT (you asked us to watch it) moved -1.1% since we last looked.",
+     "outcome": false
+    },
+    {
+     "t": "09:41",
+     "who": "investigator",
+     "to": "chief",
+     "text": "Desk Chief opened the huddle on the NXE drop and BWXT move, and I agree with them that nothing here is new: the headlines are old Westinghouse qualification contracts and AUKUS defense stories, and the 1.6% NXE drop in 9 minutes is consistent with a sector-wide selloff (basket is 6.4% below its 10-day average) rather than company news. Public news is priced in within minutes, so I see no fresh catalyst to act on. Nothing to add beyond that.",
+     "outcome": false
+    },
+    {
+     "t": "09:41",
+     "who": "macro",
+     "to": "investigator",
+     "text": "I agree with the News Investigator: the basket is 6.4% below its 10-day average and NXE's 1.6% drop fits a sector-wide selloff, not company news. The basket-down rule blocks new buys anyway, and nothing in the headlines is new. Nothing here changes the plan.",
+     "outcome": false
+    },
+    {
+     "t": "09:41",
+     "who": "risk",
+     "to": "team",
+     "text": "I agree with News Investigator and Macro Analyst: the basket is 6.4% below its 10-day average, which triggers our no-new-buys rule, and both stocks already have no support level to buy near. The headlines are old contract and AUKUS news, so nothing here justifies acting. I'd add a risk flag: the nowcast shows no Asia signal, so we have no edge on the open either.",
+     "outcome": false,
+     "notes": "ask: Desk Chief: are we logging the NXE drop as sector noise, or do we want to re-check the basket once it's back above its 10-day average?"
+    },
+    {
+     "t": "09:41",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with Risk Manager and Macro Analyst: the whole nuclear basket is 6.4% below its 10-day average, so our no-new-buys rule is active, and neither NXE nor BWXT has a confirmed support level to buy near. The headlines are old contract and AUKUS news, and the 1.6% NXE drop in 9 minutes looks like a sector-wide move, not company news. We hold nothing in either name, so there is nothing to cancel or sell, and waiting is the right call.",
+     "outcome": false,
+     "notes": "action: none\nreason: No open positions or waiting buys in NXE or BWXT, no fresh company-specific catalyst, and the basket-down rule blocks new buys. Default action is none."
+    },
+    {
+     "t": "09:41",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:41"
+  },
+  {
+   "id": "20261123094201985591",
+   "title": "Huddle: fast move: DNN moved -1.9% in 9 min",
+   "tickers": [
+    "DNN"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-23 09:42",
+   "msgs": [
+    {
+     "t": "09:42",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: DNN moved -1.9% in 9 min.",
+     "outcome": false
+    },
+    {
+     "t": "09:42",
+     "who": "investigator",
+     "to": "chief",
+     "text": "The headlines on DNN are all price-action commentary (below moving averages, sustained seller pressure, a consensus target of $5.38) rather than any new company event, so this drop looks like momentum selling, not news. Nothing here is new information that would justify a different read than the desk's existing view that the basket is weak and we should not buy into it. I agree with the Desk Chief that there is no setup on DNN right now.",
+     "outcome": false
+    },
+    {
+     "t": "09:42",
+     "who": "macro",
+     "to": "investigator",
+     "text": "I agree with the News Investigator: the DNN headlines are just price commentary, not a company event, and the basket is 6.4% below its 10-day average, so this looks like a sector-wide selloff rather than something specific to DNN. Asia data is missing for every name, so I can't predict the open, and the uranium group is moving together (CCJ, NXE, UEC, UUUU all sit near their lows), so I see nothing to add beyond staying out.",
+     "outcome": false
+    },
+    {
+     "t": "09:42",
+     "who": "risk",
+     "to": "team",
+     "text": "I agree with the team that there's no setup on DNN and no buy while the basket is below its 10-day average (it's about 6.4% below). The one thing I'd push on is that DNN is falling through its supports, so even a 'support' that looks cheap today isn't confirmed; we should not place a resting buy on a name that hasn't found a floor. Staying flat is the right call.",
+     "outcome": false,
+     "notes": "ask: Desk Chief: do we have any evidence the basket has stabilized (a day closing back above its 10-day average) before we consider reopening buys?"
+    },
+    {
+     "t": "09:42",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with the team: DNN is falling through its support levels, the whole uranium basket is about 6.4% below its 10-day average, and the headlines are just price commentary, not new company news. We hold no DNN position and have no waiting buy, so there is nothing to cancel or sell. Staying flat and not buying into a falling basket is the disciplined move.",
+     "outcome": false,
+     "notes": "action: none\nreason: No open trade or waiting buy on DNN, so no skip or exit is possible or needed. The basket is below its 10-day average, which blocks new buys, and DNN has no confirmed support. The recent headlines are price-action commentary with no new company event."
+    },
+    {
+     "t": "09:42",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:42"
   }
  ],
  "feed": [
@@ -198280,6 +198404,36 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 09:41",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: NXE moved -1.6% in 9 min. Checking every news channel for a reason right now.",
+   "tickers": [
+    "NXE"
+   ],
+   "art": {
+    "big": "NXE moved -1.6% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 09:42",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: DNN moved -1.9% in 9 min. Checking every news channel for a reason right now.",
+   "tickers": [
+    "DNN"
+   ],
+   "art": {
+    "big": "DNN moved -1.9% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -198436,11 +198590,16 @@
   "fast move: BWXT moved -1.5% in 5 min": 1795444651.6639452,
   "fast move: CCJ moved -1.5% in 6 min": 1795444651.6639457,
   "fast move: CEG moved -1.6% in 9 min": 1795444774.8832722,
-  "fast move: UEC moved -1.5% in 9 min": 1795444809.2604573
+  "fast move: UEC moved -1.5% in 9 min": 1795444809.2604573,
+  "fast move: NXE moved -1.6% in 9 min": 1795444862.9860013,
+  "BWXT (you asked us to watch it) moved -1.1% since we last looked": 1795444862.9860015,
+  "fast move: DNN moved -1.9% in 9 min": 1795444921.9854822
  },
- "huddle_last": 1795444809.2604594,
+ "huddle_last": 1795444921.9854865,
  "huddle_log": [
   "2026-11-20",
+  "2026-11-23",
+  "2026-11-23",
   "2026-11-23",
   "2026-11-23",
   "2026-11-23"
@@ -198621,7 +198780,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 09:40",
+  "updated": "2026-11-23 09:42",
   "total": 331,
   "week": 289,
   "places": {
@@ -200268,12 +200427,12 @@
    "built": "2026-11-23 09:37"
   }
  ],
- "heartbeat": "2026-11-23 09:40",
+ "heartbeat": "2026-11-23 09:42",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 88,
+ "_pushed_feed": 86,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -200380,7 +200539,7 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 113.75,
-  "TLN": 354.36
+  "BWXT": 112.46,
+  "TLN": 357.53
  }
 }
