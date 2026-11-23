@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, earnings, weekly, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -1221,6 +1221,71 @@ def mistakes_review(st, desk, today, now):
         print("mistakes review", e)
 
 
+def read_results(st, desk, t, f):
+    """Read one results release: numbers, guidance, and every dated promise, which goes on the calendar to be checked."""
+    with feed.thread(f"{t} results, {f['date']}", [t], kind="news"):
+        out = desk.ask("investigator", "fast", "News Investigator reading a company's official RESULTS release (filed with the SEC). "
+                       "If this is not actually the quarterly/annual results, set is_results false and stop. Otherwise pull out: the "
+                       "key numbers that matter for the stock (production, revenue, profit, cash, contracts), the guidance, and every "
+                       "concrete PROMISE management made with a date or deadline (production targets, restarts, licenses, contracts, "
+                       "construction milestones), so we can check later if they delivered. Then say in 2 plain sentences what it means "
+                       "for the stock. "
+                       '{"say":"","to":"team","is_results":true,"numbers":[""],"guidance":[""],'
+                       '"promises":[{"promise":"","due":"YYYY-MM-DD (end of the period if only a quarter/year is given)"}],"tone":"better|same|worse"}',
+                       {"ticker": t, "form": f["form"], "filed": f["date"], "release_text": f["text"]}, max_tokens=1500)
+    if not out.get("is_results", True):
+        return
+    pr = [p for p in (out.get("promises") or []) if isinstance(p, dict) and p.get("promise")]
+    rec = {"ticker": t, "filed": f["date"], "numbers": out.get("numbers"), "guidance": out.get("guidance"), "promises": pr, "tone": out.get("tone"),
+           "summary": out.get("say")}
+    st.setdefault("results_notes", {}).setdefault(t, []).append(rec)
+    st["results_notes"][t] = st["results_notes"][t][-8:]
+    desk_memory.watch_add([{"date": p.get("due"), "ticker": t, "what": f"Did {t} deliver? They promised on {f['date']}: {p['promise']}"[:200]}
+                           for p in pr], "investigator")
+    feed.post("investigator", (out.get("say") or f"{t} reported results.")
+              + ("\n\nKey numbers: " + "; ".join(str(x) for x in (out.get("numbers") or [])[:5]) if out.get("numbers") else "")
+              + ("\nGuidance: " + "; ".join(str(x) for x in (out.get("guidance") or [])[:3]) if out.get("guidance") else "")
+              + ("\nPromises we'll check: " + "; ".join(f"{p['promise']} (by {p.get('due', '?')})" for p in pr[:4]) if pr else ""),
+              [t], kind="data", art={"big": f"{t} results", "sub": f"Read from the SEC filing, {f['date']}. {len(pr)} promises tracked"})
+
+
+def nuclear_weekly(st, desk, prices, today, now, force=False):
+    """Friday after the close: the one-page Nuclear Weekly note, published on the site and posted to the feed."""
+    if not st["flags"].get("weekly_first") and desk.available:  # the very first issue goes out right away
+        st["flags"]["weekly_first"] = True
+        force = True
+    if not force and (not (now.weekday() == 4 and now.time() >= dt.time(17, 0)) or st["flags"].get(f"weekly:{today}")):
+        return
+    if not desk.available:
+        return
+    st["flags"][f"weekly:{today}"] = True
+    week = str(today - dt.timedelta(days=7))
+    book = st["book"]
+    eqs = [e for e in book.get("equity", []) if e[0] >= week]
+    pack = {"uranium_price": uprice.summary(), "sprott_trust": sput.summary(), "plants": plant.snapshot(st),
+            "big_news_this_week": [f"{p.get('title') or ''} {str(p.get('text') or '')[:220]}" for p in st.get("feed", [])
+                                   if p.get("t", "") >= week and p.get("kind") in ("alert", "data", "learn") and p.get("who") not in ("chief",)][-40:],
+            "results_this_week": {t: [x for x in v if x["filed"] >= week] for t, v in (st.get("results_notes") or {}).items()},
+            "trades_closed": [x for x in book["trades"] if str(x.get("exit_time", "")) >= week],
+            "open_positions": {t: {k: round(v.get("qty", 0) * prices.get(t, 0), 2) for k, v in l.items() if v.get("qty", 0) > 1e-6}
+                               for t, l in book["lots"].items()},
+            "account": {"now": round(account.equity(book, prices), 2), "start": CFG["capital_cap"], "week_start": eqs[0][1] if eqs else None},
+            "coming_up": st.get("catalysts", [])[:8], "lessons": [x["lesson"] for x in st.get("lessons", []) if x.get("lesson")][-5:],
+            "congress": (st.get("congress_view") or {}).get("latest", [])[:5], "jobs": st.get("jobs_view")}
+    out = desk.ask("review", "smart", "Write this week's NUCLEAR WEEKLY: a one-page research note on the nuclear and uranium markets that a "
+                   "finance professional would respect. Clear, specific, no hype, plain English, numbers where they matter. Sections: "
+                   "'The week in nuclear' (what actually happened and why it matters), 'Uranium and the fuel chain', 'Plants and power', "
+                   "'Policy and deals', 'What the desk did' (our trades and why, honest about losses), 'What we're watching next'. "
+                   "Give 3-4 headline stats. Only use facts in the data. "
+                   '{"headline":"","summary":"2-3 sentences","stats":[{"label":"","value":"","tone":"pos|neg|"}],'
+                   '"sections":[{"title":"","paragraphs":[""],"bullets":[""]}]}', pack, max_tokens=3000)
+    if not out.get("sections"):
+        return
+    path = weekly.publish(out, today)
+    feed.post("review", f"This week's Nuclear Weekly is out: {out.get('headline', '')}. {out.get('summary', '')}\n\nRead it: {path}",
+              [], kind="learn", art={"big": "Nuclear Weekly", "sub": out.get("headline", "")[:80]})
+
+
 def red_team(st, desk, prices, today, now):
     """Sunday evening: replay the real nuclear/uranium shocks on what we hold, then the Risk Manager plays attacker."""
     if not (now.weekday() == 6 and now.time() >= dt.time(17, 0)) or st["flags"].get(f"redteam:{today}") or not desk.available:
@@ -1421,6 +1486,25 @@ def intel_tick(st, today, force=False):
                           art={"big": "Plant report", "sub": f"Reactors, mines and fuel, {today:%b %d}"})
         except Exception as e:
             print("plant report", e)
+    if now.time() >= dt.time(17, 30) and not st["flags"].get(f"earnread:{today}") and DESK.get("d") and DESK["d"].available:
+        st["flags"][f"earnread:{today}"] = True  # read new results releases; the first run catches up on the last 40 days
+        first = not st["flags"].get("earnread_backfill")
+        st["flags"]["earnread_backfill"] = True
+        done = st.setdefault("earnings_read", [])
+        for t in T:
+            try:
+                fs = earnings.results_filings(t, since_days=40 if first else 5)
+            except Exception as e:
+                print("earnings", t, e); continue
+            for f in fs:
+                if f["accession"] in done:
+                    continue
+                done.append(f["accession"])
+                try:
+                    read_results(st, DESK["d"], t, f)
+                except Exception as e:
+                    print("read results", t, e)
+        del done[:-200]
     if not st["flags"].get(f"catalysts:{today}"):  # the catalyst calendar, refreshed once a day
         st["flags"][f"catalysts:{today}"] = True
         try:
@@ -2213,6 +2297,7 @@ def cycle(st, desk, br, ex, force=()):
         del ei[:-4000]
     try:  # weekly reviews run after the close / on the weekend, so they sit outside the market-hours block
         mistakes_review(st, desk, today, now)
+        nuclear_weekly(st, desk, prices, today, now)
         red_team(st, desk, prices, today, now)
     except Exception as e:
         traceback.print_exc()
