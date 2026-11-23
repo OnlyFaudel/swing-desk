@@ -22,7 +22,7 @@ import datetime as dt, json, os, statistics, time
 
 import numpy as np
 
-import collector, desk_memory, jobs
+import collector, desk_memory, jobs, world
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIR = os.path.join(ROOT, "memory", "dossiers")
@@ -191,6 +191,34 @@ def build_one(t, st, data=None):
     return d
 
 
+MARKET = {"SRUUF": "Sprott Physical Uranium Trust (follows the uranium spot price)", "URA": "Global X Uranium ETF",
+          "URNM": "Sprott Uranium Miners ETF", "NLR": "VanEck Uranium and Nuclear ETF", "^VIX": "VIX fear gauge", "SPY": "S&P 500"}
+
+
+def _market(st):
+    """Daily refresh (cached): how the uranium market and the broad market are moving."""
+    c = st.get("sector_prices") or {}
+    if c and time.time() - c.get("_at", 0) < 6 * 3600:
+        return c
+    try:
+        import yfinance as yf
+        px = yf.download(list(MARKET), period="1y", auto_adjust=True, progress=False)["Close"]
+        out = {"_at": time.time()}
+        for t, name in MARKET.items():
+            s = px[t].dropna()
+            if len(s) < 30:
+                continue
+            p = float(s.iloc[-1])
+            out[name] = {"last": round(p, 2), "day_pct": round((p / float(s.iloc[-2]) - 1) * 100, 2),
+                         "week_pct": round((p / float(s.iloc[-6]) - 1) * 100, 2), "month_pct": round((p / float(s.iloc[-22]) - 1) * 100, 2),
+                         "year_pct": round((p / float(s.iloc[0]) - 1) * 100, 1), "under_1y_high_pct": round((p / float(s.max()) - 1) * 100, 1)}
+        st["sector_prices"] = out
+        return out
+    except Exception as e:
+        print("sector prices failed", e)
+        return c
+
+
 def build_sector(st):
     rs = _load(os.path.join(ROOT, "memory", "intel", "reactor_status.json"), {})
     by_place = {}
@@ -198,9 +226,15 @@ def build_sector(st):
         by_place.setdefault(i["place"], []).append(i)
     disc = _load(os.path.join(ROOT, "research", "discoveries.json"), {})
     return {"ticker": "SECTOR", "name": "The nuclear sector", "built": dt.datetime.now().strftime("%Y-%m-%d %H:%M"), "sections": {
-        "Uranium market": {"latest": (by_place.get("Uranium price", []) + by_place.get("Sprott trust", []))[:15]},
+        "Uranium market": {"prices": {k: v for k, v in _market(st).items() if k != "_at"},
+                           "latest": (by_place.get("Uranium price", []) + by_place.get("Sprott trust", []))[:15]},
         "Government and laws": {"latest": [i for i in _items(None, 60, tags=["regulation", "politics"])][:25]},
+        "Countries": {"who_runs_builds_and_needs_uranium": world.summary(),
+                      "latest_by_country": {p: by_place.get(p, [])[:5] for p in ("China new builds", "India", "Japan restarts", "South Korea", "Europe new builds",
+                                                                                "France and UK", "Middle East", "Asia newcomers", "Canada SMRs")}},
         "Supply countries": {p: by_place.get(p, [])[:6] for p in ("Kazakhstan", "Niger", "Namibia", "Russia supply")},
+        "Defense and geopolitics": {p: by_place.get(p, [])[:6] for p in ("Iran", "North Korea", "War zones", "AUKUS and navies", "Weapons programs", "Stockpiles and reserves")},
+        "Big tech power deals": (by_place.get("Big tech power deals", []) + by_place.get("Data-center nuclear deals", []))[:12],
         "Workers and jobs": jobs.summary(),
         "Reactors and power": {"us_fleet_running_pct": rs.get("us_fleet_running_pct"), "report_date": rs.get("date"),
                                "owners": rs.get("owners"), "open_outages": rs.get("open_outages"),

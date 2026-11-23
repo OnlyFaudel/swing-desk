@@ -76,8 +76,8 @@ def run(min_n=30, min_half=10):
             test(f"{ty} (all our stocks)", stock, m)
             for g, tks in GROUPS.items():
                 test(f"{ty} ({g})", [e for e in stock if e["ticker"] in tks], m)
-        for m in ("r5", "r20"):
-            test(f"{ty} (sector/government news, whole basket)", basket, m)
+        for m in ("r1", "r5", "r20"):
+            test(f"{ty} (sector/government/peer news, whole basket)", basket, m)
 
     ok = _bh([t["p"] for t in tests])
     for t, k in zip(tests, ok):

@@ -28,6 +28,8 @@ SECTOR = {  # these land on the whole basket ("_basket")
     "Kazakhstan and supply": 'Kazatomprom OR "Kazakhstan uranium" OR Niger uranium OR Orano',
     "Sprott and funds": '"Sprott Physical Uranium" OR "uranium ETF" OR "Yellow Cake"',
     "AI power and reactors": 'nuclear ("data center" OR SMR OR "small modular" OR restart)',
+    "world new builds": 'nuclear reactor (China OR India OR Korea OR Poland OR Saudi OR Turkey OR Egypt) (approves OR construction OR plan)',
+    "defense and geopolitics": '(Iran OR "North Korea" OR Zaporizhzhia OR AUKUS OR NNSA) (uranium OR nuclear)',
 }
 
 
@@ -50,10 +52,15 @@ def topics():
 
 
 def _weeks_left(cur):
-    """Next week to read for a topic: we walk forward from 2019 to last week."""
+    """Next window to read for a topic: we walk forward from 2019 to last week."""
     last = dt.date.today() - dt.timedelta(days=7)
     d = dt.date.fromisoformat(cur) if cur else START
     return d if d <= last else None
+
+
+def _span(d):
+    """Older history in month-long windows (old news is thin and each search takes seconds), the last 6 months by week."""
+    return 7 if d >= dt.date.today() - dt.timedelta(days=183) else 28
 
 
 def step(budget_s=240, pause=1.3):
@@ -72,7 +79,7 @@ def step(budget_s=240, pause=1.3):
                 break
             wk = _weeks_left(cur.get(k))
             q, tk = T[k]
-            a, b = wk, wk + dt.timedelta(days=7)
+            a, b = wk, wk + dt.timedelta(days=_span(wk))
             url = "https://news.google.com/rss/search?" + urllib.parse.urlencode(
                 {"q": f"{q} after:{a} before:{b}", "hl": "en-US", "gl": "US", "ceid": "US:en"})
             try:
@@ -84,7 +91,7 @@ def step(budget_s=240, pause=1.3):
                 continue
             path = os.path.join(DIR, "headlines", k.replace(":", "_").replace(" ", "_").replace("(", "").replace(")", "") + ".json")
             hl = _load(path, [])
-            for e in ents[:40]:
+            for e in ents[:100]:
                 title = collector._clean(e.get("title"), 220)
                 title = title.rsplit(" - ", 1)[0] if " - " in title else title
                 pub = e.get("published_parsed")
@@ -113,8 +120,8 @@ def step(budget_s=240, pause=1.3):
     _save(EVENTS, ev)
     _save(os.path.join(DIR, "cursor.json"), cur)
     done = sum(1 for k in T if not _weeks_left(cur.get(k)))
-    total_weeks = (dt.date.today() - START).days // 7
-    pct = sum(min(total_weeks, (dt.date.fromisoformat(cur[k]) - START).days // 7) if cur.get(k) else 0 for k in T) / (total_weeks * len(T))
+    total = (dt.date.today() - START).days
+    pct = sum(min(total, (dt.date.fromisoformat(cur[k]) - START).days) if cur.get(k) else 0 for k in T) / (total * len(T))
     return {"reads": reads, "events_added": added, "events_total": len(ev), "topics_done": done, "topics": len(T), "progress_pct": round(pct * 100, 1)}
 
 

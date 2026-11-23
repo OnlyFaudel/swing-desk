@@ -68,6 +68,31 @@ PLACES = {  # place: (search, stocks it touches, must-mention: any one entry; an
                                          [("executive order", "@nuke"), ("white house", "@nuke")]),
     "Tariffs and trade": ('uranium tariff OR "critical minerals" uranium OR uranium imports', ["CCJ", "UEC", "UUUU", "NXE", "DNN"],
                           [("tariff", "uranium"), ("critical mineral", "uranium"), ("import", "uranium")]),
+    # --- the world: who is building, restarting and buying
+    "India": ('India nuclear power OR NPCIL reactor OR India uranium', ["CCJ"], [("india", "@nuke"), ("npcil",)]),
+    "South Korea": ('South Korea nuclear OR KHNP OR "Korea Hydro"', ["CCJ", "BWXT"], [("korea", "@nuke"), ("khnp",)]),
+    "Europe new builds": ('nuclear reactor (Poland OR Czech OR Sweden OR Netherlands OR Romania OR Bulgaria OR Slovakia)', ["CCJ", "BWXT"],
+                          [("poland", "@nuke"), ("czech", "@nuke"), ("sweden", "@nuke"), ("netherlands", "@nuke"), ("romania", "@nuke"), ("bulgaria", "@nuke"), ("slovakia", "@nuke")]),
+    "France and UK": ('EDF nuclear OR "Sizewell C" OR "Hinkley Point" OR "Rolls-Royce SMR"', ["CCJ"],
+                      [("edf", "@nuke"), ("sizewell",), ("hinkley",), ("rolls-royce", "smr"), ("france", "reactor")]),
+    "Middle East": ('Saudi nuclear OR Barakah OR Akkuyu OR "El Dabaa"', ["CCJ", "LEU"],
+                    [("saudi", "@nuke"), ("barakah",), ("akkuyu",), ("dabaa",), ("emirates", "@nuke")]),
+    "Asia newcomers": ('nuclear power plan (Philippines OR Vietnam OR Indonesia OR Thailand OR Malaysia)', ["CCJ"],
+                       [("philippines", "@nuke"), ("vietnam", "@nuke"), ("indonesia", "@nuke"), ("thailand", "@nuke"), ("malaysia", "@nuke")]),
+    "Canada SMRs": ('Darlington SMR OR "Ontario Power Generation" nuclear OR "Bruce Power"', ["CCJ", "BWXT"],
+                    [("darlington",), ("ontario power generation",), ("bruce power",)]),
+    "Big tech power deals": ('(Microsoft OR Google OR Amazon OR Meta) nuclear deal', ["CEG", "VST", "TLN", "CCJ"],
+                             [("microsoft", "@nuke"), ("google", "@nuke"), ("amazon", "@nuke"), ("meta", "nuclear")]),
+    # --- defense and hostile uses: what can jolt the whole market
+    "Iran": ('Iran uranium enrichment OR IAEA Iran', ["CCJ", "LEU"], [("iran", "@nuke")]),
+    "North Korea": ('"North Korea" uranium OR "North Korea" nuclear', ["CCJ"], [("north korea", "@nuke")]),
+    "War zones": ('Zaporizhzhia nuclear OR nuclear plant attack OR drone nuclear plant', ["CCJ", "CEG"],
+                  [("zaporizhzhia",), ("chernobyl",), ("nuclear plant", "attack"), ("nuclear plant", "drone")]),
+    "AUKUS and navies": ('AUKUS submarine OR nuclear submarine', ["BWXT"], [("aukus",), ("submarine", "nuclear")]),
+    "Weapons programs": ('NNSA OR "nuclear weapons" OR plutonium pits OR "nuclear arsenal"', ["BWXT", "LEU"],
+                         [("nnsa",), ("nuclear weapon",), ("plutonium",), ("nuclear arsenal",), ("warhead",)]),
+    "Stockpiles and reserves": ('uranium reserve OR uranium stockpile OR "strategic uranium"', ["CCJ", "UEC", "UUUU"],
+                                [("uranium", "reserve"), ("uranium", "stockpile")]),
     "Workers and jobs": ('(Cameco OR NexGen OR Denison OR Centrus OR "Energy Fuels" OR "Uranium Energy" OR BWXT) '
                          '(hiring OR layoffs OR jobs OR workers OR union OR strike)', [],
                          [("cameco",), ("nexgen",), ("denison",), ("centrus",), ("energy fuels",), ("uranium energy",), ("bwxt",)]),
@@ -108,11 +133,13 @@ TAGS = {
     "production": ("production", "output", "guidance", "pounds", "tonnes", "mined", "milled", "ramp"),
     "price": ("spot price", "term price", "per pound", "/lb", "price of uranium", "uranium price"),
     "restart": ("restart", "new reactor", "smr", "construction", "build", "relicens"),
+    "defense": ("military", "navy", "submarine", "weapon", "missile", "nnsa", "aukus", "defense", "defence", "warhead", "pentagon"),
+    "geopolitics": ("war", "attack", "invasion", "enrichment", "iaea", "nonproliferation", "sanction", "drone strike", "ceasefire"),
     "opposition": ("protest", "lawsuit", "court", "appeal", "opposition", "oppose", "challenge"),
 }
 WEIGHT = {"disruption": 2.0, "regulation": 1.5, "contract": 1.3, "financing": 1.2, "politics": 1.0, "production": 0.8,
-          "price": 0.8, "restart": 0.7, "opposition": 0.7, "jobs": 0.6}
-MEMORY_TAGS = ("disruption", "regulation", "contract", "financing", "politics", "production", "opposition")
+          "price": 0.8, "restart": 0.7, "opposition": 0.7, "jobs": 0.6, "defense": 1.0, "geopolitics": 1.3}
+MEMORY_TAGS = ("disruption", "regulation", "contract", "financing", "politics", "production", "opposition", "defense", "geopolitics")
 BIG_OUTLETS = ("reuters", "bloomberg", "yahoo", "cnbc", "marketwatch", "seeking alpha", "motley fool", "zacks", "tradingview",
                "investing.com", "benzinga", "kalkine", "ad-hoc-news", "blockchain news", "mlq", "devdiscourse", "marketbeat", "stocktitan", "tipranks", "insidermonkey", "globe and mail", "financial post", "barron", "msn", "nasdaq", "simply wall")
 NUM = re.compile(r"(?:US)?\$?\d[\d,]*(?:\.\d+)?\s?(?:%|percent|million|billion|mlbs|lbs|pounds|tonnes|tons|tu\b|mw\b|gw\b|/lb|per pound)", re.I)
@@ -208,7 +235,8 @@ def _tags(text):
 def collect(cfg, max_age_days=4):
     """Fetch every source once. Returns (raw items, source health)."""
     raw, health = [], {}
-    for place, (q, base, must) in PLACES.items():
+    generic = ("Uranium price", "US policy", "Sprott trust", "Workers and jobs")  # broad searches last: specific places keep their stories
+    for place, (q, base, must) in sorted(PLACES.items(), key=lambda kv: kv[0] in generic):
         ents = _feed(_gnews(q))
         health[place] = None if ents is None else len(ents)
         for e in ents or []:

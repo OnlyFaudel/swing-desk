@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -636,6 +636,10 @@ def memory_daily(st, data=None):
     px = yf.download(list(T), start="2018-12-01", auto_adjust=True, progress=False)["Close"]
     px["_basket"] = (px[list(T)].pct_change().mean(axis=1).fillna(0) + 1).cumprod()
     desk_memory.fill(px)
+    try:
+        peers.run()  # related companies' filings (Oklo, NuScale...) as events on our whole basket
+    except Exception as e:
+        print("peer events failed", e)
     desk_memory.fill(px, archive.EVENTS)
     try:  # the discovery engine: test every kind of event on everything collected, every night
         res, new = discovery.run()
@@ -1007,6 +1011,16 @@ def intel_tick(st, today, force=False):
             print("reactor watch failed", e)  # the NRC site blocks some cloud servers: try again in an hour, not tomorrow
             st["flags"].pop(f"reactors:{today}", None)
             st["reactor_retry_at"] = time.time() + 3600
+    if now.time() >= dt.time(7, 0) and not st["flags"].get(f"world:{today:%G-W%V}"):  # weekly: the country table
+        st["flags"][f"world:{today:%G-W%V}"] = True
+        try:
+            wsum, changes = world.run()
+            for ch in changes[:5]:
+                feed.post("macro", f"World watch: {ch['country']} now has {ch['to']:.0f} reactors {ch['what']} (was {ch['from']:.0f}). "
+                          "More reactors anywhere means more uranium demand later.", kind="alert",
+                          art={"big": f"{ch['country']}: {ch['to']:.0f} {ch['what']}", "sub": "World Nuclear Association table"})
+        except Exception as e:
+            print("world watch failed", e)
     if now.time() >= dt.time(7, 0) and not st["flags"].get(f"jobs:{today}"):
         st["flags"][f"jobs:{today}"] = True
         try:
