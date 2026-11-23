@@ -1533,6 +1533,7 @@ def intel_tick(st, today, force=False):
                           "outage has not moved CEG (116 cases) and the VST/TLN numbers are too few and too mixed to trade. It stays as context.",
                           ["CEG", "VST", "TLN"], kind="learn", art={"big": f"{n} reactor outages remembered", "sub": "NRC daily power, 2019 to today"})
             snap, new = reactors.run()
+            st["reactor_view"] = {"date": snap.get("date"), "us_fleet_running_pct": snap.get("us_fleet_running_pct"), "owners": snap.get("owners")}
             for o in new:
                 tk = [o["owner"]] if o["owner"] in T else []
                 feed.post("macro", f"Reactor watch: {o['unit']} ({o['owner']}) dropped to low power in today's NRC report. "
@@ -1596,6 +1597,14 @@ def intel_tick(st, today, force=False):
                               art={"big": f"{e['kind'].title()} ahead: {region.split(' (')[0]}", "sub": f"{e['date']}, power markets"})
         except Exception as e:
             print("weather", e)
+    if not st.get("reactor_view"):  # the page's Plants card: use the last saved reactor report until the next one runs
+        try:
+            snap = json.load(open(reactors.STATUS))
+            st["reactor_view"] = {"date": snap.get("date"), "us_fleet_running_pct": snap.get("us_fleet_running_pct"), "owners": snap.get("owners")}
+        except Exception:
+            pass
+    if not st.get("sput_view"):
+        st["sput_view"] = sput.summary()
     if not st["flags"].get(f"catalysts:{today}"):  # the catalyst calendar, refreshed once a day
         st["flags"][f"catalysts:{today}"] = True
         try:

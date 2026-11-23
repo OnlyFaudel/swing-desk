@@ -336,16 +336,27 @@ button.act:hover{filter:brightness(1.08)}
 /* three columns on big screens: account | feed | messages (docked, always open) */
 @media (min-width:1480px){
   .wrap{max-width:1640px}.shell{max-width:1640px}
-  .cols{grid-template-columns:380px minmax(0,620px) 420px;gap:48px;justify-content:center}
+  .cols{grid-template-columns:380px minmax(0,620px) 340px;gap:48px;justify-content:center}
   .dm.docked{position:sticky;top:64px;inset:auto;z-index:1;align-self:start;height:calc(100vh - 80px)}
   .dm.docked .dmscrim{display:none}
   .dm.docked .dmpanel{position:static;width:auto;height:100%;border:1px solid var(--hair);border-radius:16px;background:var(--sheet);
     overflow:auto;scrollbar-width:thin;scrollbar-color:#2B3035 transparent;animation:none;padding:12px 14px 24px}
   .dm.docked .dmpanel::-webkit-scrollbar{width:6px}.dm.docked .dmpanel::-webkit-scrollbar-thumb{background:#2B3035;border-radius:6px}
   .dm.docked .row2:hover{background:var(--sheet2)}
-  .dmbtn{display:none}
   .dm.docked [data-act=close]{display:none}
 }
+
+/* nuclear board: third column on big screens, bottom of the left column otherwise */
+.board{display:grid;gap:12px;align-content:start}
+@media (min-width:1480px){.board{position:sticky;top:64px;align-self:start;max-height:calc(100vh - 80px);overflow:auto;scrollbar-width:none}.board::-webkit-scrollbar{display:none}}
+.bcard{background:var(--sheet);border:1px solid var(--hair);border-radius:14px;padding:14px 16px}
+.bcard h3{font-family:"Newsreader",Georgia,serif;font-weight:500;font-size:19px;margin:0 0 8px}
+.bcard .sub{font-size:12px;color:var(--ink2);margin:-4px 0 8px}
+.wl{display:grid;grid-template-columns:52px 1fr 66px 58px;align-items:center;gap:6px;width:100%;font:inherit;color:var(--ink);background:none;border:0;border-top:1px solid var(--hair);padding:8px 0;cursor:pointer;text-align:left}
+.wl:first-of-type{border-top:0}.wl:hover{background:var(--sheet2)}
+.wl b{font-size:13.5px}.wl .px{font-size:13.5px;text-align:right}.wl .ch{font-size:12.5px;text-align:right}
+.kv{display:flex;justify-content:space-between;gap:10px;font-size:13.5px;padding:6px 0;border-top:1px solid var(--hair)}.kv:first-of-type{border-top:0}
+.kv span{color:var(--ink2)}
 </style></head>
 <body><div class="wrap">
 __BANNER__
@@ -374,6 +385,7 @@ __BANNER__
       </form>
       <div id="posts"></div>
     </main>
+    <aside class="board" id="board" aria-label="Nuclear board"></aside>
   </div>
 </div>
 <div class="dm" id="dm" hidden><div class="dmscrim" id="dmscrim"></div><div class="dmpanel" role="dialog" aria-modal="true" aria-label="Team messages"><div id="dmbody"></div></div></div>
@@ -570,7 +582,7 @@ function stockState(t){
   $("dmcount").textContent=unread?(unread>99?"99+":unread):"";
 
   /* ----- stories */
-  $("stories").innerHTML=people.filter(w=>w!=="owner").map(w=>{const on=act[w]&&act[w].slice(0,10)===latest.slice(0,10);return `<button class="story${on?" on":""}" data-w="${esc(w)}" aria-label="${esc(nm(w))}${on?", active today":""}"><div class="ring"><span><b class="av c${col(w)}">${esc(ini(w))}</b></span></div><small>${esc(nm(w).split(" ")[0])}</small></button>`}).join("");
+  $("stories").innerHTML=people.filter(w=>w!=="owner").map(w=>{const on=act[w]&&act[w].slice(0,10)===latest.slice(0,10);return `<button class="story${on?" on":""}" data-w="${esc(w)}" aria-label="${esc(nm(w))}${on?", active today":""}"><div class="ring"><span><b class="av c${col(w)}">${esc(ini(w))}</b></span></div><small>${esc(nm(w).replace(/^The /,"").split(" ")[0])}</small></button>`}).join("");
   document.querySelectorAll(".story").forEach(b=>b.onclick=()=>openDM({v:"agent",w:b.dataset.w}));
   (()=>{const el=$("stories"); if(!el||el.dataset.drag) return; el.dataset.drag=1; let down=false,x0=0,s0=0,moved=0;
     el.addEventListener("pointerdown",e=>{if(e.pointerType!=="mouse") return; down=true; moved=0; x0=e.clientX; s0=el.scrollLeft;});
@@ -672,6 +684,33 @@ function stockState(t){
     cv.addEventListener("pointerup",e=>{if(e.pointerType!=="mouse"&&R!=="cal") draw();});
     cv.style.touchAction="pan-y"; cv.style.cursor="crosshair";})();
 
+  /* ----- nuclear board */
+  (function board(){
+    const el=$("board"); if(!el) return;
+    const SP=S.spark||{}, td=ymd(new Date());
+    const rows=lineupT.map(t=>{const s=(SP[t]||[]), cl=s.map(x=>x[1]); const last=s.length?s[s.length-1]:null;
+      const prev=last?(last[0]===td?(s[s.length-2]||[])[1]:last[1]):null, now=P[t]??(last&&last[1]);
+      const ch=prev&&now?(now/prev-1)*100:null; const ser=cl.concat(now&&last&&last[0]!==td?[now]:[]);
+      let sv=""; if(ser.length>2){const lo=Math.min(...ser),hi=Math.max(...ser),W=66,H=22; const up=ser[ser.length-1]>=ser[0];
+        sv=`<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" aria-hidden="true"><polyline fill="none" stroke="${up?"#8CC6A0":"#E3877E"}" stroke-width="1.4" points="${ser.map((v,i)=>(i*(W-2)/(ser.length-1)+1).toFixed(1)+","+(H-2-(v-lo)/((hi-lo)||1)*(H-4)).toFixed(1)).join(" ")}"/></svg>`;}
+      return `<button class="wl" data-file="${esc(t)}"><b>${esc(t)}</b>${sv||"<span></span>"}<span class="px">${now!=null?money(now):"—"}</span><span class="ch ${ch>=0?"pos":"neg"}">${ch!=null?(ch>=0?"+":"")+ch.toFixed(2)+"%":""}</span></button>`;}).join("");
+    const up=(S.uranium_price||{}), sp=up.spot||{}, lt=up.long_term||{}, sv_=S.sput_view;
+    const uran=`<div class="kv"><span>Spot uranium (${esc(sp.month||"")})</span><b>${sp.usd_per_lb!=null?"$"+sp.usd_per_lb+"/lb":"—"} <small class="${(sp["1m_change_pct"]||0)>=0?"pos":"neg"}">${sp["1m_change_pct"]!=null?(sp["1m_change_pct"]>=0?"+":"")+sp["1m_change_pct"]+"%":""}</small></b></div>
+      <div class="kv"><span>Long-term contract price</span><b>${lt.usd_per_lb!=null?"$"+lt.usd_per_lb+"/lb":"—"}</b></div>
+      <div class="kv"><span>Sprott trust vs its uranium</span><b class="${sv_&&sv_.premium_pct>=0?"pos":"neg"}">${sv_&&sv_.premium_pct!=null?(sv_.premium_pct>=0?"+":"")+sv_.premium_pct.toFixed(1)+"%":"updates tonight"}</b></div>`;
+    const rv=S.reactor_view||{}, own=rv.owners||{};
+    const plants=Object.keys(own).length?Object.entries(own).map(([t,o])=>`<div class="kv"><span>${esc(t)}: ${o.units-(o.down||[]).length} of ${o.units} reactors running</span><b class="${(o.down||[]).length?"neg":"pos"}">${(o.down||[]).length?esc(o.down.join(", "))+" down":"all up"}</b></div>`).join("")+(rv.us_fleet_running_pct!=null?`<div class="kv"><span>All US reactors (${esc(rv.date||"")})</span><b>${rv.us_fleet_running_pct}%</b></div>`:""):`<p class="mut" style="font-size:13px;margin:0">Fills in after the next morning reactor report.</p>`;
+    const wx=S.weather_view||{}, ex=[].concat(...Object.entries(wx).map(([r,v])=>(v.extremes||[]).map(e=>`<div class="kv"><span>${esc(r.split(" (")[0])}, ${esc(fd(e.date))}</span><b class="neg">${esc(e.kind)} ${e.kind==="heat"?e.high_f:e.low_f}&deg;F</b></div>`)));
+    const lastQ=(S.questions||[]).slice(-1)[0];
+    el.innerHTML=`<div class="bcard"><h3>Nuclear board</h3><p class="sub">Today's move and the last 30 days. Tap a stock for its file.</p>${rows}</div>
+      <div class="bcard"><h3>Uranium</h3>${uran}</div>
+      <div class="bcard"><h3>Plants</h3>${plants}</div>
+      <div class="bcard"><h3>Power weather</h3>${ex.length?ex.join(""):`<p class="mut" style="font-size:13px;margin:0">No heat waves or cold snaps in the next 7 days for Texas or the mid-Atlantic.</p>`}</div>
+      ${lastQ?`<div class="bcard"><h3>Latest question</h3><p style="margin:0;font-size:14px"><b>${esc(lastQ.question)}</b></p><p class="mut" style="font-size:13px;margin:6px 0 0">${esc(lastQ.verdict||"")}: ${esc(String(lastQ.answer||"").slice(0,180))}</p></div>`:""}`;
+    el.querySelectorAll("[data-file]").forEach(b=>b.onclick=()=>{openDM({v:"inbox"}); go({v:"files"}); go({v:"file",t:b.dataset.file});});
+    const place=()=>{const side=document.querySelector(".side"); if(matchMedia("(min-width:1480px)").matches){ if(el.parentNode!==document.querySelector(".cols")) document.querySelector(".cols").appendChild(el);} else if(el.parentNode!==side) side.appendChild(el);};
+    place(); matchMedia("(min-width:1480px)").addEventListener("change",place);
+  })();
   /* ----- right-now sentence + trades */
   const st_=lineupT.map(t=>[t,stockState(t)]), held_=st_.filter(z=>z[1].k==="held"), arm_=st_.filter(z=>z[1].k==="armed");
   const other_=Object.keys(B.lots||{}).filter(t=>["panic","auto"].some(k=>lot(t,k).qty>1e-6));
@@ -830,7 +869,7 @@ function stockState(t){
   let stack=[];
   /* wide screens: messages live in a third column instead of a sliding overlay */
   const WIDE=matchMedia("(min-width:1480px)");
-  const docked=()=>WIDE.matches;
+  const docked=()=>false;  /* messages always slide in from the right (the owner's choice); the third column is the nuclear board */
   function placeDM(){const dm=$("dm"), cols=document.querySelector(".cols");
     if(docked()){ if(dm.parentNode!==cols) cols.appendChild(dm); dm.hidden=false; dm.classList.add("docked"); document.body.style.overflow=""; if(!stack.length){stack=[{v:"inbox"}]; render();} }
     else { if(dm.parentNode===cols) document.body.appendChild(dm); dm.classList.remove("docked"); if(dm.dataset.open!=="1") dm.hidden=true; }}
