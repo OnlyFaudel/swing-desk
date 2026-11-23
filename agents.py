@@ -111,6 +111,9 @@ class Desk:
                 payload = {**payload, "teammates_track_record": {k: f"right {v['right']} of {v['calls']} calls" for k, v in tr.items()},
                            "how_to_use_track_record": "Lean on teammates whose calls have been right; question the ones who've been wrong."}
         offered = notes.ASK in system
+        les = [x["lesson"] for x in self.state.get("lessons", []) if x.get("lesson")][-6:]
+        if les and isinstance(payload, dict):  # what the desk learned from its own mistakes, in every agent's head
+            payload = {**payload, "desk_lessons_from_our_mistakes": les}
         mates = feed.teammates()
         if mates:
             payload = ({**payload, "teammates_said": mates} if isinstance(payload, dict)
@@ -173,7 +176,7 @@ class Desk:
                 day = str(dt.date.today())
                 if px and not any(x["role"] == role and x["ticker"] == t and x["date"] == day for x in calls):
                     calls.append({"role": role, "ticker": t, "direction": c["direction"].lower(), "days": max(1, min(10, int(c.get("days") or 5))),
-                                  "date": day, "price": px, "result": None})
+                                  "date": day, "price": px, "result": None, "why": str(out.get("why") or out.get("say") or "")[:200]})
                     del calls[:-600]
         except Exception as e:
             print("call record", e)

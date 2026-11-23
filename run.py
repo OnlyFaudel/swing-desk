@@ -239,6 +239,8 @@ def process_fills(st, br, ex, today):
                        f"P&L {'+' if rec['pnl'] >= 0 else '-'}${abs(rec['pnl']):.2f} | {rec['why_out']}",
                        tags="green_circle" if rec["pnl"] >= 0 else "red_circle")
             postmortem(st, rec)
+            st.setdefault("after_sale", []).append({"ticker": rec["ticker"], "exit": rec["exit"], "date": str(today),
+                                                   "pnl": rec["pnl"], "why_out": rec.get("why_out"), "setup": rec.get("setup")})
 
 
 def postmortem(st, rec):
@@ -258,6 +260,9 @@ def postmortem(st, rec):
              **{k: pm.get(k) for k in ("verdict", "decision_quality", "what_happened", "lesson")}}
     st.setdefault("postmortems", []).append(entry)
     del st["postmortems"][:-150]
+    if pm.get("lesson") and str(pm["lesson"]).lower() != "none":
+        st.setdefault("lessons", []).append({"date": entry["date"], "kind": "closed_trade", "title": f"{rec['ticker']} trade {rec['pnl']:+.2f}",
+                                             "lesson": pm["lesson"], "cause": pm.get("verdict")})
     if CFG["notify"].get("postmortems") and rec["pnl"] < 0:
         notify(f"Why {rec['ticker']} lost: {pm.get('verdict', '?')}", f"{pm.get('what_happened', '')[:180]} Lesson: {pm.get('lesson', 'none')}", tags="mag")
 
@@ -336,7 +341,7 @@ def refresh_candidates(st, desk, data, prices, today, brk_state, force=False):
         if str(today) > c["valid_until"] or t not in T or broke:
             st["candidates"].pop(t)
             if t in st["armed"]:
-                ex_cancel(st, t)
+                ex_cancel(st, t, "expired")
             if broke:
                 st.setdefault("setup_status", {})[t] = (f"its support at ${c['zone']} broke (now ${prices[t]:.2f}, under the "
                                                         f"${c['stop']} stop), so that setup was dropped; waiting for a new level")
@@ -430,8 +435,12 @@ def sync_state(st, hourly):
     return out
 
 
-def ex_cancel(st, t):
+def ex_cancel(st, t, why="rule"):
     a = st["armed"].pop(t, None)
+    if a and why != "expired":  # a buy a rule or the team canceled: watched to see if it would have won
+        st.setdefault("cancels", []).append({"ticker": t, "entry": a.get("entry"), "stop": a.get("stop"), "target": a.get("target"),
+                                             "date": str(market.now_et().date()), "valid_until": a.get("valid_until") or str(market.now_et().date()),
+                                             "why": why})
     if a:
         BROKER["b"].cancel(a["order_id"])
 
@@ -441,7 +450,7 @@ def arm(st, ex, prices, today, brk_state):
     book = st["book"]
     if brk_state["killed"] or brk_state.get("ops_halt") or brk_state["no_new_today"] or brk_state["no_new_week"]:
         for t in list(st["armed"]):
-            ex_cancel(st, t)
+            ex_cancel(st, t, "loss brakes")
         return
     open_trades = [t for t in traded(st) if account.lot(book, t, "trade")["qty"] > 1e-6]
     eq = brk_state["equity"]
@@ -457,7 +466,7 @@ def arm(st, ex, prices, today, brk_state):
         st["sync"] = {"mult": {}, "error": str(e)[:120]}
     if CFG["sync"].get("pulse_filter") and not unleashed() and st["sync"].get("pulse_up") is False:
         for t in list(st["armed"]):
-            ex_cancel(st, t)
+            ex_cancel(st, t, "falling-sector rule")
         if not st["flags"].get(f"pulsehold:{today}"):
             st["flags"][f"pulsehold:{today}"] = True
             b_ = st["sync"].get("basket_vs_avg_pct")
@@ -475,7 +484,7 @@ def arm(st, ex, prices, today, brk_state):
     want = [t for c, t in cands][:max(free, 0)]
     for t in list(st["armed"]):
         if t not in want:
-            ex_cancel(st, t)
+            ex_cancel(st, t, "ranking (a better setup took the slot)")
     cash = spendable(st, today)
     for c, t in cands:
         if t not in want or t in st["armed"]:
@@ -859,7 +868,7 @@ def huddle(st, desk, ex, data, prices, today, brk_state, hawk):
         done = []
         for t in tks:
             if act == "skip" and t in st["candidates"]:
-                st["candidates"].pop(t); ex_cancel(st, t); done.append(f"canceled the waiting buy on {t}")
+                st["candidates"].pop(t); ex_cancel(st, t, "team huddle"); done.append(f"canceled the waiting buy on {t}")
             elif act == "exit" and account.lot(st["book"], t, "trade")["qty"] > 1e-6:
                 ex.exit_trade(t, prices[t], "huddle: " + str(d.get("reason", ""))[:100]); done.append(f"sold {t}")
         feed.say("exec", ("Done: " + "; ".join(done)) if done else "No action. Everything stays as it is.", outcome=True, to="team")
@@ -933,6 +942,15 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
             ex.exit_panic(t, px, f"panic-day rebound: held {cfg.get('hold_sessions', 6)} sessions")
         elif late and L.get("opened") != str(today) and px >= avg * (1 + cfg.get("take_profit_pct", 10) / 100):
             ex.exit_panic(t, px, f"panic-day rebound: up {(px / avg - 1) * 100:.1f}%, took the profit early")
+        elif late and L.get("opened") != str(today) and t in data and not st["flags"].get(f"missedexit:{t}:{today}"):
+            hi = float(data[t].High.iloc[-1]); tp = avg * (1 + cfg.get("take_profit_pct", 10) / 100)
+            if hi >= tp > px:
+                st["flags"][f"missedexit:{t}:{today}"] = True
+                instant_review(st, "missed_exit", f"{t} touched +10% today but closed below, so we didn't sell",
+                               {"ticker": t, "bought": round(avg, 2), "high_today": round(hi, 2), "now": round(px, 2), "target": round(tp, 2),
+                                "rule": "sell near a close at +10% or on the sell date",
+                                "history": "Of 153 past panic trades, 62 touched +10% intraday and closed below; they still finished +10.7% avg, 92% up."},
+                               [t])
     for e in st.get("panic_log", []):  # practice record: every trigger is tracked, bought or not
         if e.get("result") is None and str(today) > e["exit_on"] and e["ticker"] in data:
             c = data[e["ticker"]].Close
@@ -1078,9 +1096,73 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
            f"{len(hits)} setups, nothing bought."), tags="zap")
 
 
+def instant_review(st, kind, title, facts, tickers=()):
+    """Review a mistake the moment it happens: what went wrong, the lesson, and a fix to test. Lessons go into every
+    agent's prompt from then on; fixes go to Saturday's research session. Capped per day to keep the cost tiny."""
+    desk = DESK.get("d")
+    today = str(market.now_et().date())
+    n = sum(1 for x in st.get("lessons", []) if x.get("date") == today)
+    if not (desk and desk.available) or n >= CFG.get("learning", {}).get("instant_reviews_per_day", 8):
+        st.setdefault("lessons", []).append({"date": today, "kind": kind, "title": title, "lesson": None, "facts": facts})
+        return
+    try:
+        with feed.thread(f"Instant review: {title}"[:90], list(tickers), kind="postmortem"):
+            out = desk.ask("review", "fast", "Reviewer doing an INSTANT review of something that just went wrong or cost money. "
+                           "In plain words: what happened, whether it was bad luck or a bad rule/decision (be honest: one bad "
+                           "outcome isn't proof a rule is wrong), the lesson in one sentence the whole team should remember, and "
+                           "a fix worth testing on history (or 'none' if it's normal noise). "
+                           '{"say":"","to":"team","lesson":"","bad_luck_or_bad_rule":"luck|rule|decision","fix":""}',
+                           {"what": kind, "facts": facts, "past_lessons": [x["lesson"] for x in st.get("lessons", []) if x.get("lesson")][-8:]},
+                           max_tokens=600)
+    except Exception as e:
+        print("instant review", e); return
+    rec = {"date": today, "kind": kind, "title": title, "lesson": out.get("lesson"), "cause": out.get("bad_luck_or_bad_rule"), "fix": out.get("fix")}
+    st.setdefault("lessons", []).append(rec)
+    del st["lessons"][:-120]
+    fix = str(out.get("fix") or "")
+    if fix and fix.lower() not in ("none", "n/a", ""):
+        st.setdefault("research_queue", []).append({"q": f"Instant review fix ({kind}): {fix}", "date": today})
+    feed.post("review", (out.get("say") or title) + (f"\n\nLesson: {out['lesson']}" if out.get("lesson") else "")
+              + (f"\nFix to test Saturday: {fix}" if fix and fix.lower() not in ("none", "n/a") else ""),
+              list(tickers), kind="learn", art={"big": title[:60], "sub": "Instant review: the team learns from it right away"})
+
+
+def watch_mistakes(st, prices, data, today, now):
+    """Spot the mistakes as they happen: sold too early, a rule's skipped buy that would have won."""
+    keep = []
+    for a in st.get("after_sale", []):  # sold too early: the stock ran 5%+ above our exit within 3 sessions
+        if sessions_after(a["date"], 3) < str(today) or a["ticker"] not in prices:
+            continue
+        if not a.get("flagged") and prices[a["ticker"]] >= a["exit"] * 1.05:
+            a["flagged"] = True
+            instant_review(st, "sold_too_early", f"{a['ticker']} ran {(prices[a['ticker']] / a['exit'] - 1) * 100:+.1f}% after we sold",
+                           a, [a["ticker"]])
+        keep.append(a)
+    st["after_sale"] = keep[-40:]
+    keep = []
+    for c in st.get("cancels", []):  # a waiting buy the rules canceled: would it have filled and hit its target?
+        t = c["ticker"]
+        if t not in prices or str(today) > sessions_after(c["valid_until"], 3):
+            continue
+        px = prices[t]
+        if not c.get("would_fill") and px <= c["entry"]:
+            c["would_fill"] = str(today)
+        if c.get("would_fill") and not c.get("done"):
+            if c.get("stop") and px <= c["stop"]:
+                c["done"] = "rule saved us"
+                st.setdefault("lessons", []).append({"date": str(today), "kind": "rule_saved", "title": f"Skipping {t} avoided a stop-out",
+                                                     "lesson": f"The {c.get('why', 'rule')} that canceled {t} avoided a loss.", "facts": c})
+            elif c.get("target") and px >= c["target"]:
+                c["done"] = "rule cost us"
+                instant_review(st, "rule_cost", f"Canceled {t} buy would have hit its target", c, [t])
+        keep.append(c)
+    st["cancels"] = keep[-40:]
+
+
 def score_calls(st, prices, today):
     """Every agent prediction ("CCJ up within 5 days") is checked when its time is up; the tally is each agent's track record."""
     tr = st.setdefault("track", {})
+    wrong = []
     for c in st.get("calls", []):
         if c.get("result") is not None or c["ticker"] not in prices:
             continue
@@ -1093,6 +1175,12 @@ def score_calls(st, prices, today):
         t["calls"] += 1
         t["right"] += c["result"] == "right"
         t["last"] = (t["last"] + [f"{c['ticker']} {c['direction']} {c['days']}d: {c['move_pct']:+.1f}% ({c['result']})"])[-8:]
+        if c["result"] == "wrong":
+            wrong.append(c)
+    if wrong:
+        instant_review(st, "wrong_calls", f"{len(wrong)} wrong prediction{'s' if len(wrong) > 1 else ''} by the team",
+                       [{k: c.get(k) for k in ("role", "ticker", "direction", "days", "move_pct", "why")} for c in wrong],
+                       sorted({c["ticker"] for c in wrong}))
 
 
 def mistakes_review(st, desk, today, now):
@@ -1477,7 +1565,7 @@ def owner_scan(st, desk, ex, data, prices, today, brk_state, text):
                     continue
                 typ, t, txt = str(a.get("type", "")).lower(), str(a.get("ticker") or "").upper(), str(a.get("text") or "")[:300]
                 if typ == "cancel_buy" and t in st["candidates"]:
-                    st["candidates"].pop(t); ex_cancel(st, t); done.append(f"canceled the buy on {t}")
+                    st["candidates"].pop(t); ex_cancel(st, t, "owner/team answer"); done.append(f"canceled the buy on {t}")
                 elif typ == "exit" and t in T and account.lot(st["book"], t, "trade")["qty"] > 1e-6:
                     if is_open:
                         ex.exit_trade(t, prices[t], "owner's call: " + txt[:100]); done.append(f"sold {t}")
@@ -1652,7 +1740,7 @@ def _convene_news(st, desk, ex, data, prices, today, t, mat):
             result = "exit queued for the open"
     elif action in ("SKIP", "SELL") and t in st["candidates"]:
         st["candidates"].pop(t)
-        ex_cancel(st, t)
+        ex_cancel(st, t, "team's news call")
         result = "canceled waiting buy"
     elif action == "BUY":
         result = conviction_buy(st, ex, prices, today, t, d, mat[0]["title"])
@@ -1988,6 +2076,7 @@ def cycle(st, desk, br, ex, force=()):
             park_check(st, ex, prices, today, now)
             process_fills(st, br, ex, today)
             score_calls(st, prices, today)
+            watch_mistakes(st, prices, data, today, now)
             mistakes_review(st, desk, today, now)
         except Exception as e:
             traceback.print_exc()
