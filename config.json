@@ -57,7 +57,7 @@
     "max_weekly_change": 0.25,
     "postmortems": true
   },
-  "runner": "github",
+  "runner": "vm",
   "daemon_poll_seconds": 60,
   "skew_veto": {
     "enabled": true,
