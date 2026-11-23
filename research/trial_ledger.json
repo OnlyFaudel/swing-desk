@@ -129,6 +129,10 @@
   "power_weather": {
    "trials": 8,
    "verdict": "2026-11-23 (Open-Meteo history 2019-2026, first day of each extreme streak, next 5 days vs group): PJM heat 93F+ 3 days ahead CEG/TLN/VST +1.36% (69% beat, n=26, halves +0.3/+2.5); day-of +0.6%; Texas heat 100F+ VST -1.0%/-1.7% (n=18); Texas cold <=25F VST -3.0%/-0.9% (n=7); PJM cold ~0. Context only (forecast watch + alerts); no trade."
+  },
+  "big_move_precursors": {
+   "trials": 13,
+   "verdict": "2026-11-23 (10 nuclear + ~74 related, daily, mid-2019 to Nov 2026, 138k stock-days; event = a +20% high within 10 days, base rate 5.1%): 20-day volatility >70%/yr 27.5% (5.4x) but also 6.9% fall 20%+; down 30%+ from 60-day high 28.0% (5.5x); up 15%+ in 5 days 27.0%; down 15%+ in 5 days 27.5% (9.4% fall 20%+); volume 3x 14.4% (2.9x); high vol + volume 3x 36.6% (7.2x), avg 10-day +7.4%, 9.8% fall 20%+ (n=276 overlapping days); both halves agree. Big runs come from volatile names in motion, in both directions; low volatility almost never (0.8%). Overlapping rows and survivorship (names picked after their run) inflate averages. Not a trade yet: a proper rule test with cooldowns and costs is next."
   }
  }
 }
