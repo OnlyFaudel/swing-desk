@@ -213,6 +213,29 @@ def _reddit():
     return out
 
 
+def _x_posts():
+    """X (Twitter) recent posts about the sector. Needs X_BEARER_TOKEN (a paid X API plan); skipped without it."""
+    tok = os.environ.get("X_BEARER_TOKEN")
+    if not tok:
+        return []
+    q = urllib.parse.urlencode({"query": "(uranium OR \"nuclear power\" OR $CCJ OR $LEU OR $CEG OR Kazatomprom) lang:en -is:retweet",
+                                "max_results": 50, "tweet.fields": "created_at,public_metrics,author_id"})
+    try:
+        d = json.load(urllib.request.urlopen(urllib.request.Request(f"https://api.x.com/2/tweets/search/recent?{q}",
+                                                                    headers={"Authorization": f"Bearer {tok}"}), timeout=20))
+    except Exception as e:
+        print("X failed", e); return []
+    out = []
+    for p in d.get("data", []):
+        likes = (p.get("public_metrics") or {}).get("like_count", 0)
+        if likes < 5:  # only posts people engaged with
+            continue
+        ts = int(dt.datetime.fromisoformat(p["created_at"].replace("Z", "+00:00")).timestamp())
+        out.append({"title": _clean(p.get("text"), 220), "summary": "", "link": f"https://x.com/i/web/status/{p['id']}", "ts": ts,
+                    "outlet": "X", "place": "X (Twitter)"})
+    return out
+
+
 def _route(text, cfg, base):
     low = f" {text.lower()} "
     kw = (cfg.get("news_sources") or {}).get("keywords", {})
@@ -255,6 +278,10 @@ def collect(cfg, max_age_days=4):
             if local and not any(k in (title + " " + summ).lower() for k in LOCAL_FILTER):
                 continue
             raw.append({"title": title, "outlet": name, "summary": summ, "link": e.get("link"), "ts": _ts(e), "place": name, "base": []})
+    xs = _x_posts()
+    if xs:
+        health["X"] = len(xs)
+        raw += [dict(r, base=[]) for r in xs]
     rd = _reddit()
     if rd:
         health["Reddit"] = len(rd)

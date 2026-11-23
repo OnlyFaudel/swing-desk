@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -1027,6 +1027,15 @@ def intel_tick(st, today, force=False):
             st["uranium_price"] = uprice.run()
         except Exception as e:
             print("uranium price failed", e)
+    if os.environ.get("CONGRESS_API_KEY") and now.time() >= dt.time(7, 0) and not st["flags"].get(f"congress:{today}"):
+        st["flags"][f"congress:{today}"] = True
+        try:
+            cs = congress.run()
+            st["congress_view"] = cs
+            for b in [b for b in (cs or {}).get("latest", []) if b.get("changed")][:3]:
+                feed.post("macro", f"Congress: {b['title'][:120]}. Latest: {b['latest_action'][:140]} ({b['action_date']}).", kind="alert")
+        except Exception as e:
+            print("congress failed", e)
     if now.time() >= dt.time(7, 0) and not st["flags"].get(f"jobs:{today}"):
         st["flags"][f"jobs:{today}"] = True
         try:
