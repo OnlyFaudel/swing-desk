@@ -5114,12 +5114,12 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.19689,
+  "day_usd": 0.20277,
   "month": "2026-11",
-  "month_usd": 0.46037,
-  "total_usd": 0.46037,
+  "month_usd": 0.46625,
+  "total_usd": 0.46625,
   "by_role": {
-   "macro": 0.01625,
+   "macro": 0.01693,
    "whale": 0.00861,
    "crowd": 0.00751,
    "level": 0.03344,
@@ -5127,12 +5127,12 @@
    "review": 0.05504,
    "auditor": 0.01318,
    "strategist": 0.08019,
-   "pm": 0.03524,
-   "risk": 0.01551,
-   "investigator": 0.13026,
+   "pm": 0.03676,
+   "risk": 0.01622,
+   "investigator": 0.13173,
    "postmortem": 0.00035,
    "researcher": 0.00484,
-   "engineer": 0.00068,
+   "engineer": 0.00218,
    "questioner": 0.00393
   }
  },
@@ -5228,19 +5228,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.49,
+  "CCJ": 61.43,
   "NXE": 6.79,
-  "UEC": 5.8,
+  "UEC": 5.82,
   "DNN": 1.79,
-  "UUUU": 5.25,
-  "LEU": 87.36,
-  "BWXT": 116.29,
-  "CEG": 251.35,
-  "VST": 125.19,
-  "TLN": 364.53,
-  "SPY": 723.8
+  "UUUU": 5.26,
+  "LEU": 87.38,
+  "BWXT": 116.25,
+  "CEG": 251.66,
+  "VST": 125.22,
+  "TLN": 364.7,
+  "SPY": 723.97
  },
- "last_cycle": "2026-11-23 15:15 ET",
+ "last_cycle": "2026-11-23 15:16 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -5265,10 +5265,10 @@
   ]
  },
  "brakes": {
-  "equity": 1033.12,
-  "day_pct": 3.26,
-  "week_pct": 3.26,
-  "drawdown_pct": -2.02,
+  "equity": 1033.51,
+  "day_pct": 3.3,
+  "week_pct": 3.3,
+  "drawdown_pct": -1.98,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -6486,6 +6486,14 @@
   [
    "2026-11-23 15:15",
    1033.12
+  ],
+  [
+   "2026-11-23 15:16",
+   1033.51
+  ],
+  [
+   "2026-11-23 15:16",
+   1033.51
   ]
  ],
  "nowcast": {
@@ -50888,7 +50896,7 @@
     0.9389
    ]
   },
-  "time": "2026-11-23 15:15"
+  "time": "2026-11-23 15:16"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -51186,7 +51194,7 @@
   "a139bb0be8a41b23",
   "f61fff1c8e93929e"
  ],
- "news_slow_at": 1795464665.0730028,
+ "news_slow_at": 1795465026.1403177,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -200170,6 +200178,73 @@
    ],
    "practice": false,
    "end": "14:00"
+  },
+  {
+   "id": "20261123151650885387",
+   "title": "Huddle: fast move: UEC moved +1.7% in 9 min",
+   "tickers": [
+    "UEC"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-23 15:16",
+   "msgs": [
+    {
+     "t": "15:16",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: UEC moved +1.7% in 9 min.",
+     "outcome": false
+    },
+    {
+     "t": "15:16",
+     "who": "investigator",
+     "to": "team",
+     "text": "UEC is up about 9% on the day, but the news behind it is a supply deal signed Nov 5 and a uranium refining development story, both already in the price. The stock is still down 21% over the month and 56% over the quarter, so this looks like a rebound inside a downtrend, not new information. I see nothing that justifies a buy here, and I'd rather not chase a bounce on recycled news.",
+     "outcome": false,
+     "notes": "why: Checked the UEC news log and the recent headline: the Nov 5 utility supply deal and the refining development story are older or already reflected in a 9% move. The trend and the desk's note that deal-driven moves usually fade over the next week both point to caution.\ndate: 2026-12-08\nticker: UEC\nwhat: UEC Q1 earnings; typically moves the stock about 4-5% either way on the day\nticker: UEC\ndirection: down\ndays: 5\nfiles read: UEC Snapshot, UEC Deals and contracts, SECTOR Uranium market"
+    },
+    {
+     "t": "15:16",
+     "who": "engineer",
+     "to": "investigator",
+     "text": "I agree with the News Investigator: the UEC bounce is a rebound inside a downtrend, not fresh news, and nothing in the plant data changes that for UEC. The only plant items are routine refueling outages at CEG and VST, which the desk notes say rarely move these stocks. UEC has no resting order and its $5.29 level is below where most shares traded lately, so I see no setup here.",
+     "outcome": false,
+     "notes": "why: I checked the plant outage list, the uranium price (spot about $91.55, up 14% over 12 months) and the Sprott trust premium, which is at -20% and signals weak uranium investor demand. None of them point to a UEC-specific catalyst before the December 8 earnings report.\ndate: 2026-12-08\nticker: UEC\nwhat: Q1 earnings report; typically moves the stock about 4-5% either way on the day\nfiles read: SECTOR Reactors and power, UEC Deals and contracts, UEC Places and operations"
+    },
+    {
+     "t": "15:17",
+     "who": "macro",
+     "to": "team",
+     "text": "This looks like a sector bounce rather than a UEC-specific move: the whole basket is still down over the month and quarter, and the uranium spot price is only slightly up. The basket is well below its 10-day average, so no new buys are allowed anyway, and I agree with the News Investigator and Plant Engineer that there's no setup worth chasing here.",
+     "outcome": false,
+     "notes": "why: The basket is down 6.4% versus its average, the VIX fell sharply (suggesting a broad relief rally), and the uranium spot price moved only about 2% over the month. That points to a market-wide bounce, not a sector re-rating, so I'm staying out.\nfiles read: SECTOR Uranium market, SECTOR Government and laws"
+    },
+    {
+     "t": "15:17",
+     "who": "risk",
+     "to": "team",
+     "text": "I agree with the team: UEC's 9% bounce is a rebound inside a downtrend on recycled news, and the basket is below its 10-day average, so no new buys are allowed. Chasing this would be buying strength on stale information, which the desk's research says tends to reverse. Nothing here adds a risk the team hasn't already covered, so I'll stay quiet beyond that.",
+     "outcome": false,
+     "notes": "why: The desk's rule blocks new buys while the basket trades below its 10-day average, and UEC is down 29% versus its 50-day average, so the bounce is a poor entry. The research note that moves on stale news tend to reverse within a week also argues against chasing.\nfiles read: UEC Snapshot, UEC Leadership and insiders, SECTOR Uranium market"
+    },
+    {
+     "t": "15:17",
+     "who": "pm",
+     "to": "team",
+     "text": "I agree with the team: UEC's 9% bounce is a rebound inside a downtrend built on stale news, and the basket is below its 10-day average, so no new buys are allowed. There's no open UEC trade or waiting buy to cancel, so there's nothing to skip or exit. Doing nothing is the right call.",
+     "outcome": false,
+     "notes": "action: none\nreason: No open position or waiting buy in UEC to act on, and the basket is below its 10-day average so new buys are blocked. The bounce is on recycled news that the desk's research says tends to reverse.\nwhy: UEC is up 9% on the day but down 21% over the month and 56% over the quarter, with the basket below its 10-day average. The team found no fresh catalyst, so I'm holding off.\nticker: UEC\ndirection: down\ndays: 5\ndate: 2026-12-08\nticker: UEC\nwhat: UEC earnings; expect a 4-5% move either way on the day\nfiles read: UEC Snapshot, UEC Leadership and insiders, SECTOR Uranium market"
+    },
+    {
+     "t": "15:17",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "15:17"
   }
  ],
  "feed": [
@@ -201479,6 +201554,21 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-23 15:16",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: UEC moved +1.7% in 9 min. Checking the news for a reason.",
+   "tickers": [
+    "UEC"
+   ],
+   "art": {
+    "big": "UEC moved +1.7% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -201667,11 +201757,13 @@
   "TLN (you asked us to watch it) moved +1.1% since we last looked": 1795445678.9622285,
   "midday check-in": 1795455014.8306127,
   "BWXT is about to reach its resting buy at $115.83": 1795458641.9432895,
-  "BWXT is within 1.0% of its buy zone $115.83 but no order is resting": 1795459394.4680073
+  "BWXT is within 1.0% of its buy zone $115.83 but no order is resting": 1795459394.4680073,
+  "fast move: UEC moved +1.7% in 9 min": 1795465010.8841233
  },
- "huddle_last": 1795459394.4680135,
+ "huddle_last": 1795465010.8841622,
  "huddle_log": [
   "2026-11-20",
+  "2026-11-23",
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
@@ -201923,7 +202015,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 15:15",
+  "updated": "2026-11-23 15:16",
   "total": 378,
   "week": 332,
   "places": {
@@ -203877,7 +203969,7 @@
    "built": "2026-11-23 15:14"
   }
  ],
- "heartbeat": "2026-11-23 15:15",
+ "heartbeat": "2026-11-23 15:16",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -203989,8 +204081,8 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 116.29,
-  "TLN": 364.53
+  "BWXT": 116.25,
+  "TLN": 364.7
  },
  "notes_audit": {
   "scout": {
@@ -204049,47 +204141,54 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 1,
-   "used": 1,
+   "asked": 2,
+   "used": 2,
    "notes": {
     "BWXT Deals and contracts": 1,
     "BWXT Snapshot": 1,
     "BWXT What history says": 1,
-    "BWXT Leadership and insiders": 1
+    "BWXT Leadership and insiders": 1,
+    "UEC Snapshot": 1,
+    "UEC Deals and contracts": 1,
+    "SECTOR Uranium market": 1
    },
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 5,
-   "used": 5,
+   "asked": 6,
+   "used": 6,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 3,
     "BWXT Leadership and insiders": 1,
     "TLN Snapshot": 1,
-    "SECTOR Uranium market": 4,
-    "BWXT Discoveries": 2
+    "SECTOR Uranium market": 5,
+    "BWXT Discoveries": 2,
+    "UEC Snapshot": 1,
+    "UEC Leadership and insiders": 1
    },
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 1,
-   "used": 1,
+   "asked": 2,
+   "used": 2,
    "notes": {
-    "SECTOR Reactors and power": 1,
-    "CEG Places and operations": 1
+    "SECTOR Reactors and power": 2,
+    "CEG Places and operations": 1,
+    "UEC Deals and contracts": 1,
+    "UEC Places and operations": 1
    },
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 5,
-   "used": 5,
+   "asked": 6,
+   "used": 6,
    "notes": {
-    "SECTOR Uranium market": 5,
+    "SECTOR Uranium market": 6,
     "BWXT Snapshot": 3,
     "CCJ Snapshot": 1,
     "UUUU Snapshot": 1,
-    "SECTOR Government and laws": 2,
+    "SECTOR Government and laws": 3,
     "TLN Snapshot": 1
    },
    "since": "2026-11-23"
@@ -204119,18 +204218,20 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 5,
-   "used": 5,
+   "asked": 6,
+   "used": 6,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 1,
     "BWXT Snapshot": 2,
-    "SECTOR Uranium market": 2,
+    "SECTOR Uranium market": 3,
     "TLN Snapshot": 1,
     "TLN Legal": 1,
     "BWXT Legal": 1,
     "BWXT Leadership and insiders": 1,
-    "BWXT Discoveries": 2
+    "BWXT Discoveries": 2,
+    "UEC Snapshot": 1,
+    "UEC Leadership and insiders": 1
    },
    "since": "2026-11-23"
   },
@@ -204291,7 +204392,7 @@
    ],
    [
     "2026-11-23",
-    61.5
+    61.53
    ]
   ],
   "NXE": [
@@ -204535,7 +204636,7 @@
    ],
    [
     "2026-11-23",
-    5.8
+    5.81
    ]
   ],
   "DNN": [
@@ -204901,7 +205002,7 @@
    ],
    [
     "2026-11-23",
-    87.31
+    87.35
    ]
   ],
   "BWXT": [
@@ -205023,7 +205124,7 @@
    ],
    [
     "2026-11-23",
-    116.3
+    116.29
    ]
   ],
   "CEG": [
@@ -205145,7 +205246,7 @@
    ],
    [
     "2026-11-23",
-    251.29
+    251.69
    ]
   ],
   "VST": [
@@ -205267,7 +205368,7 @@
    ],
    [
     "2026-11-23",
-    125.08
+    125.15
    ]
   ],
   "TLN": [
@@ -205389,7 +205490,7 @@
    ],
    [
     "2026-11-23",
-    364.56
+    364.48
    ]
   ]
  },
@@ -205553,6 +205654,26 @@
    "price": 124.91,
    "result": null,
    "why": "The setup is a support-level bounce, but the trend and the desk's own note say no confirmed support is below price, so the zone is unlikely to hold. The only positive evidence is the sector rally, whi"
+  },
+  {
+   "role": "investigator",
+   "ticker": "UEC",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-23",
+   "price": 5.82,
+   "result": null,
+   "why": "Checked the UEC news log and the recent headline: the Nov 5 utility supply deal and the refining development story are older or already reflected in a 9% move. The trend and the desk's note that deal-"
+  },
+  {
+   "role": "pm",
+   "ticker": "UEC",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-23",
+   "price": 5.82,
+   "result": null,
+   "why": "UEC is up 9% on the day but down 21% over the month and 56% over the quarter, with the basket below its 10-day average. The team found no fresh catalyst, so I'm holding off."
   }
  ],
  "after_sale": [],
@@ -206038,5 +206159,13 @@
     "skip": true
    }
   }
+ ],
+ "hawk_cool": {},
+ "hawk_recent": [
+  [
+   1795465010.8834999,
+   "UEC",
+   1
+  ]
  ]
 }
