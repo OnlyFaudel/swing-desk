@@ -295,30 +295,6 @@
  "news_feed": [
   {
    "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "The Uranium Price Paradox: 5 Investments Facing Very Different Tests in 2027 - MarketBeat",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYWJfdC1hSjgwU0FPQUpaRThpbHJXUXVEX1p5WXptRm01enZkbEpXTExGT3Nva2VsMFBGUDU1YmVOSEt6U3NGMlR2MGtPT0dJbnZHeFVZRFFzOWN0RTI0VzBCZ0Q1bXVzMGpFLWdjX1l2ejZ5VkdBeWxBaG14aDZleHZFeTZOM3lwSWliX0NoanpEUldLU05iS1FzcEZxS1NvNFRuYVpUTXE1Q05XMERWMW5n?oc=5",
-   "ts": 1795102275,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: \"McArthur River\" OR \"Cigar Lake\" uranium",
-   "title": "Saskatchewan\u2019s big uranium and nuclear energy plans, explained - The Narwhal",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5hZlpZYU1mZjRlSUhqejM5Zk5aWkNyMmtkdUJWcjdhQzJDZTk0R3RmVFAwUnQ0LTZ4S3NvTEttQjVBdVJLNFZFT0cxV0FkSnRaOFVrSGNxSlUzNGFmazVRRUw1N081VmhkcmVZdnR1VEQ0SnJHR0tz?oc=5",
-   "ts": 1795100400,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CCJ",
    "source": "Yahoo Finance",
    "title": "Sprott Asset Management's Jacob White on uranium stocks sell-off and the case for a recovery",
    "link": "https://finance.yahoo.com/video/sprott-asset-managements-jacob-white-143733002.html?.tsrc=rss",
@@ -3292,6 +3268,30 @@
    "direction": "up",
    "event_type": "contract_deal",
    "why": "New Westinghouse manufacturing qualification contracts; a real but modest-sized award"
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "Cameco Corporation: Contracted Nuclear Demand Supports Long-Term Growth Amid Near-Term Cost Pressures - kalkine.co.uk",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSFg2WVZRbTdYY2dURkIxSy14N2JKSGJiLTBtQ2hiX2JVeXh0UFY1ek04cEpQS1E0MHhlWVhuc1FoMHh4LTFMMXFjaGRzVl9PQmF4Uy00T1pDTWlIaDlEdTFFT1JCUEhfUE1DVG0wOVFXMEZpR0F6WWtGZzVnczlnVXZEN282d2M1TG8tNXVUWmxKYVZmV0ZuWmZaRE04dHFfUlpiVUo4dzZMSVZXVWRSQ3htSFE1YWZpLWdzZUlqbkU5RkVIYkdWQkRfVUtOb3BNYVNySg?oc=5",
+   "ts": 1795439459,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Generic outlook piece on contracted demand; nothing new, rehashes known thesis"
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News",
+   "title": "Westinghouse\u2019s reactor design has 14 units under construction. BWXT is qualifying to make parts. - Stock Titan",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQcUszOUtmMVYtT0xZOVl4bW4yWEowczVQdUtrTEZJVjhrU0wtdUJWWU1RSXk3cFhqb25PQmtCQkc4WUdWa2s1YzY1aE5ENTVua29DcUw0ZVBaaVYzNzV3SkpuWlk0aThVU2NoYWFNWmxVLWVJck5UTDZleUl6M3JldVV5d2p4bjVRQjYwX3gweUdNTDRERWNkM1dBdW9NUnlwR044X2xZSjlhQmVOUU9VNFBRZ3lKUHVnRXptbXV3?oc=5",
+   "ts": 1795438800,
+   "materiality": 4,
+   "novelty": "follow_up",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Parts qualification for Westinghouse units is a real but incremental, multi-year step"
   }
  ],
  "reviews": [
@@ -4501,16 +4501,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.01284,
+  "day_usd": 0.01314,
   "month": "2026-11",
-  "month_usd": 0.27633,
-  "total_usd": 0.27633,
+  "month_usd": 0.27663,
+  "total_usd": 0.27663,
   "by_role": {
    "macro": 0.0037,
    "whale": 0.00304,
    "crowd": 0.0032,
    "level": 0.00144,
-   "scout": 0.03237,
+   "scout": 0.03267,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -4577,7 +4577,7 @@
   "TLN": 333.24,
   "SPY": 690.91
  },
- "last_cycle": "2026-11-23 08:10 ET",
+ "last_cycle": "2026-11-23 08:20 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -48978,6 +48978,7 @@
   "537b32f5b2133213",
   "009c12e19cf7cb10",
   "fa31367a940baeaa",
+  "b78da0f7db285dc2",
   "d315dfa4e1149d87",
   "7269a326a498bd44",
   "cdc78121c1406bce",
@@ -49019,8 +49020,8 @@
   "1005c86f35a3d1c3",
   "5d22d1b6e3da5fb6",
   "4627bda8dfc98062",
-  "c56ca4f4b89e4d32",
   "8010bdf39626577f",
+  "c56ca4f4b89e4d32",
   "d39dc266a3b4dae2",
   "e6c12a1e5998666c",
   "00dd4e324f5b633b",
@@ -49046,6 +49047,7 @@
   "c7fdc4969083b831",
   "9199257f37a8ba75",
   "8fbc143ff931bed5",
+  "238b8e6cc65235f2",
   "269219f13ec4aa2f",
   "7f7a05be6b3ac1f5",
   "e5b877975a222845",
@@ -49154,6 +49156,7 @@
   "a2a8ee32597c7b50",
   "08783bea5ba109b0",
   "67c5ac967df665b9",
+  "6a0cc1c1f8babcd3",
   "17dc2073115cbcc7",
   "9850b181472b7c24",
   "5e042fd73e80d40b",
@@ -49188,10 +49191,9 @@
   "ac86fb04e7eb798b",
   "a38730433f855a68",
   "88d39974add2ff27",
-  "f16660c269a6613c",
-  "b78da0f7db285dc2"
+  "f16660c269a6613c"
  ],
- "news_slow_at": 1795439137.1548777,
+ "news_slow_at": 1795439770.2868083,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197930,7 +197932,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 08:10",
+  "updated": "2026-11-23 08:20",
   "total": 318,
   "week": 278,
   "places": {
@@ -198627,7 +198629,7 @@
   }
  ],
  "memory_view": {
-  "events": 1315,
+  "events": 1316,
   "with_outcomes": 1162,
   "playbooks": {
    "acquisition": {
@@ -198727,15 +198729,6 @@
    }
   ],
   "recent": [
-   {
-    "date": "2026-11-22",
-    "ticker": "BWXT",
-    "title": "Australia's Defence Minister Richard Marles denies report AUKUS deal would 'diminish US Navy'",
-    "type": "intel_politics",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
    {
     "date": "2026-11-22",
     "ticker": "BWXT",
@@ -199083,6 +199076,15 @@
     "ticker": "UUUU",
     "title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales - TradingView",
     "type": "earnings",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "BWXT",
+    "title": "BWX Technologies awarded manufacturing qualification contracts by Westinghouse - TipRanks",
+    "type": "contract_deal",
     "r0": null,
     "r5": null,
     "r20": null
@@ -199522,7 +199524,7 @@
    "built": "2026-11-23 08:05"
   }
  ],
- "heartbeat": "2026-11-23 08:10",
+ "heartbeat": "2026-11-23 08:20",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
