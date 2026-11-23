@@ -481,6 +481,31 @@
    "decision": "SKIP",
    "reason": "Stock jumped 7.5% today on the AP1000 deal and sits well above its 50-day and 200-day averages; a resting buy just above the support zone is unlikely to fill cleanly while the basket is still shaky, a",
    "evaluated": false
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "TLN",
+   "setup": "patient_level",
+   "zone": 354.24,
+   "entry": 355.66,
+   "stop": 349.99,
+   "target": 369.46,
+   "reward_risk": 2.44,
+   "dist_to_entry_pct": 2.28,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 312.55,
+    "value_high": 366.37,
+    "heaviest_price": 360.99,
+    "position": "inside value",
+    "node": "thick",
+    "node_ratio": 1.85,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The zone sits inside a thick volume node (value area 312.55-366.37, with the heaviest-volume price at 360.99), so the level is a crowded trading area rather than clean support. Recent PJM capacity-auc",
+   "evaluated": false
   }
  ],
  "cooldown": {
@@ -4815,15 +4840,15 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.14909,
+  "day_usd": 0.15038,
   "month": "2026-11",
-  "month_usd": 0.41258,
-  "total_usd": 0.41258,
+  "month_usd": 0.41387,
+  "total_usd": 0.41387,
   "by_role": {
    "macro": 0.01129,
    "whale": 0.00861,
    "crowd": 0.00751,
-   "level": 0.01454,
+   "level": 0.01583,
    "scout": 0.04568,
    "review": 0.05504,
    "auditor": 0.01318,
@@ -4928,19 +4953,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.62,
-  "NXE": 6.82,
-  "UEC": 5.82,
+  "CCJ": 61.59,
+  "NXE": 6.83,
+  "UEC": 5.81,
   "DNN": 1.81,
-  "UUUU": 5.35,
-  "LEU": 88.07,
-  "BWXT": 116.76,
-  "CEG": 250.65,
-  "VST": 125.03,
-  "TLN": 363.25,
-  "SPY": 722.17
+  "UUUU": 5.34,
+  "LEU": 88.08,
+  "BWXT": 116.86,
+  "CEG": 250.79,
+  "VST": 125.14,
+  "TLN": 363.83,
+  "SPY": 722.33
  },
- "last_cycle": "2026-11-23 12:59 ET",
+ "last_cycle": "2026-11-23 13:00 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4965,10 +4990,10 @@
   ]
  },
  "brakes": {
-  "equity": 1037.26,
-  "day_pct": 3.67,
-  "week_pct": 3.67,
-  "drawdown_pct": -1.63,
+  "equity": 1037.11,
+  "day_pct": 3.66,
+  "week_pct": 3.66,
+  "drawdown_pct": -1.64,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -5722,6 +5747,10 @@
   [
    "2026-11-23 12:59",
    1037.26
+  ],
+  [
+   "2026-11-23 13:00",
+   1037.11
   ]
  ],
  "nowcast": {
@@ -48365,7 +48394,7 @@
   "BWXT": 1795456782.5600936,
   "CEG": 1795456785.163869,
   "VST": 1795456785.1767538,
-  "TLN": 1795455032.9905071
+  "TLN": 1795456853.9909437
  },
  "setup_status": {
   "CCJ": "no confirmed support level below the price (it has been falling through them)",
@@ -48377,7 +48406,7 @@
   "BWXT": "the Level Analyst skipped the setup: Stock jumped 7.5% today on the AP1000 deal and sits well above its 50-day and 200-day averages; a resting buy just above the support zone is unlikely to fill clean",
   "CEG": "no confirmed support level below the price (it has been falling through them)",
   "VST": "no confirmed support level below the price (it has been falling through them)",
-  "TLN": "the Level Analyst skipped the setup: The zone sits inside a volume value area and the stock just rallied 8.6% in one day, so the 354 support is untested and could be a bounce that fades. Consumer-advo"
+  "TLN": "the Level Analyst skipped the setup: The zone sits inside a thick volume node (value area 312.55-366.37, with the heaviest-volume price at 360.99), so the level is a crowded trading area rather than c"
  },
  "sync": {
   "pulse_up": false,
@@ -50124,7 +50153,7 @@
     0.9422
    ]
   },
-  "time": "2026-11-23 12:59"
+  "time": "2026-11-23 13:00"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -50136,7 +50165,6 @@
  "seen_news": [
   "23858b9754409f40",
   "f7fb21429d8dfc22",
-  "af6eb78442aeb47e",
   "0235abc0565d5130",
   "7aa8997d91d8e2dc",
   "717c47c79d590a65",
@@ -50146,9 +50174,9 @@
   "313a0e04a5719e86",
   "68b8d7111ead5bfd",
   "6e7dff52f6fd70fc",
-  "9f80c9fee3eed575",
-  "dcba7d8fd3be8fd0",
   "126369127a97f018",
+  "dcba7d8fd3be8fd0",
+  "9f80c9fee3eed575",
   "97e9eff63229f754",
   "91d21b21da9289e4",
   "5ca17a18c47750da",
@@ -50178,6 +50206,7 @@
   "21512a406503e470",
   "302ff446725f4916",
   "1e6d0eb0e2b54116",
+  "a74aab1c387c2b31",
   "ceb6205483ccef34",
   "269219f13ec4aa2f",
   "8fbc143ff931bed5",
@@ -50198,15 +50227,15 @@
   "b3d0414ef4889ee9",
   "22ca80b609e8130c",
   "898bce48a6f14aa6",
-  "9289aefa04c45318",
-  "32d10c819f70dc10",
+  "7c221cf76c2854cd",
   "3540271e126c026c",
   "9850b181472b7c24",
-  "7c221cf76c2854cd",
-  "b4c005bc018874b7",
+  "9289aefa04c45318",
   "e4d002d912973043",
-  "a38730433f855a68",
   "70ec56bf0ac9a6fb",
+  "b4c005bc018874b7",
+  "a38730433f855a68",
+  "32d10c819f70dc10",
   "92ab279e132dea09",
   "e250b8758ee96ae8",
   "418a91931047cecc",
@@ -50366,7 +50395,6 @@
   "c014dc203c86d5d1",
   "9b6ee47aa4a5262e",
   "15d6f9963fcdf41e",
-  "a139bb0be8a41b23",
   "0f1f809a37df564a",
   "8a429bbe4d25ae7d",
   "b2e981fc7a2e7302",
@@ -50380,6 +50408,7 @@
   "88d39974add2ff27",
   "7f1ab1d7e538b600",
   "7c5af14d321efc0e",
+  "87e89d05178171d2",
   "c4bedc144af05ef5",
   "844469477dae7bae",
   "832a5e88c8693db1",
@@ -50396,8 +50425,8 @@
   "9199257f37a8ba75",
   "6c319586d5fd38f0",
   "d315dfa4e1149d87",
-  "a74aab1c387c2b31",
-  "87e89d05178171d2",
+  "af6eb78442aeb47e",
+  "a139bb0be8a41b23",
   "92c36fef260edb24",
   "009c12e19cf7cb10",
   "991c698e5a396dd1"
@@ -200321,6 +200350,16 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-23 13:00",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping TLN. The support zone sits inside a heavy-volume trading area, so it's not a clean floor, and the stock just jumped 9% on a day when the market is shaky. I agree with the Risk Manager that we shouldn't add new buys into a bounce, and the PJM auction-delay news is a live risk that could break the level.\n\nWhy: The volume profile shows the zone is inside a thick node, which makes it a weak support test, and the one-day 9% rally with a shaky market means the setup is buying a bounce. Recent PJM news about auction delays is unresolved event risk.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -200756,7 +200795,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 12:59",
+  "updated": "2026-11-23 13:00",
   "total": 348,
   "week": 305,
   "places": {
@@ -201384,9 +201423,9 @@
   ]
  },
  "intel_handed": [
+  "06c0ff00fa161dd2",
   "c73b8f1be49ed29e",
   "9ab8af08e105ecd6",
-  "06c0ff00fa161dd2",
   "c10f62c3161fa59d",
   "71bc1051aa67e316",
   "0ad3ea7bae8b611c",
@@ -201397,10 +201436,10 @@
   "4bcec70e5161a23d",
   "f2cc6e74f1bd9dd4",
   "c71238280e152d73",
+  "5298ad87eeddc34f",
   "020569e75e7d456e",
   "53627f4c0e7162ee",
   "37e85b7a7ce58612",
-  "7908d2b630649992",
   "49be13755057758d",
   "eb9266fa4c912b94",
   "0d77f1d2373bb03d",
@@ -201442,7 +201481,7 @@
   "30a860e8617961c8",
   "42e4688c154f3e5b",
   "33461799e841c77f",
-  "5298ad87eeddc34f",
+  "7908d2b630649992",
   "83fcaa3c1c926472",
   "03c5d2773ef94a7b",
   "8a7a925eda752f82"
@@ -201692,6 +201731,14 @@
     "date": "2026-12-09",
     "ticker": "TLN",
     "what": "FOMC rate decision; broad risk-off or risk-on move that can drive the nuclear and power names with it.",
+    "by": "level",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-09",
+    "ticker": "TLN",
+    "what": "FOMC rate decision and PJM December capacity auction timing; both can move power-producer stocks sharply.",
     "by": "level",
     "written": "2026-11-23",
     "surfaced": false
@@ -202531,12 +202578,12 @@
    "built": "2026-11-23 12:41"
   }
  ],
- "heartbeat": "2026-11-23 12:59",
+ "heartbeat": "2026-11-23 13:00",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 114,
+ "_pushed_feed": 115,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -202643,8 +202690,8 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 116.76,
-  "TLN": 363.255
+  "BWXT": 116.86,
+  "TLN": 363.835
  },
  "notes_audit": {
   "scout": {
@@ -202669,13 +202716,13 @@
    "since": "2026-11-23"
   },
   "level": {
-   "asked": 8,
-   "used": 7,
+   "asked": 9,
+   "used": 8,
    "notes": {
-    "TLN Snapshot": 4,
-    "TLN Price behavior": 4,
+    "TLN Snapshot": 5,
+    "TLN Price behavior": 5,
     "TLN Discoveries": 3,
-    "TLN Our trades": 3,
+    "TLN Our trades": 4,
     "VST Snapshot": 2,
     "VST Price behavior": 1,
     "TLN What history says": 3,
@@ -202685,7 +202732,7 @@
     "BWXT Snapshot": 3,
     "BWXT What history says": 2,
     "BWXT Price behavior": 3,
-    "SECTOR Uranium market": 1,
+    "SECTOR Uranium market": 2,
     "BWXT Our trades": 3
    },
    "since": "2026-11-23"
@@ -202903,7 +202950,7 @@
    ],
    [
     "2026-11-23",
-    61.62
+    61.59
    ]
   ],
   "NXE": [
@@ -203025,7 +203072,7 @@
    ],
    [
     "2026-11-23",
-    6.82
+    6.84
    ]
   ],
   "UEC": [
@@ -203147,7 +203194,7 @@
    ],
    [
     "2026-11-23",
-    5.82
+    5.8
    ]
   ],
   "DNN": [
@@ -203513,7 +203560,7 @@
    ],
    [
     "2026-11-23",
-    88.19
+    88.17
    ]
   ],
   "BWXT": [
@@ -203635,7 +203682,7 @@
    ],
    [
     "2026-11-23",
-    116.86
+    116.96
    ]
   ],
   "CEG": [
@@ -203757,7 +203804,7 @@
    ],
    [
     "2026-11-23",
-    250.71
+    250.79
    ]
   ],
   "VST": [
@@ -204001,7 +204048,7 @@
    ],
    [
     "2026-11-23",
-    363.45
+    364.28
    ]
   ]
  },
