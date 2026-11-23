@@ -17,6 +17,7 @@ import desk_memory
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, "research", "discoveries.json")
 ARCHIVE = os.path.join(ROOT, "memory", "archive_events.json")
+PRICE = os.path.join(ROOT, "memory", "price_events.json")
 GROUPS = {"miners": ["CCJ", "NXE", "UEC", "DNN", "UUUU"], "fuel and tech": ["LEU", "BWXT"], "power": ["CEG", "VST", "TLN"]}
 PLAIN = {"x1": "vs normal, the next day", "x5": "vs the basket (or its normal trend) over the next 5 days", "x20": "vs the basket (or its normal trend) over the next 20 days",
          "r5": "over the next 5 days", "r20": "over the next 20 days", "r1": "the next day"}
@@ -30,7 +31,7 @@ def _load(p, d):
 
 
 def _events():
-    ev = desk_memory.events() + _load(ARCHIVE, [])
+    ev = desk_memory.events() + _load(ARCHIVE, []) + _load(PRICE, [])
     one = {}
     for e in ev:  # the same kind of event on the same stock and day counts once
         one.setdefault((e["ticker"], e["date"], e["type"]), e)

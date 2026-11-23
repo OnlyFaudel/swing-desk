@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -442,6 +442,9 @@ def arm(st, ex, prices, today, brk_state):
         if t not in want or t in st["armed"]:
             continue
         sm = st["sync"].get("mult", {}).get(t, 1.0)
+        fv = st.get("favor", {}).get(t, {})
+        if fv.get("until", "") >= str(today):
+            sm *= fv.get("mult", 1.0)  # a discovery favors this stock for a few days
         dollars = min(slot_usd * sm, eq * CFG["max_position_pct"] / 100, cash)
         if dollars < CFG["min_trade_usd"]:
             continue
@@ -643,6 +646,11 @@ def memory_daily(st, data=None):
     except Exception as e:
         print("peer events failed", e)
     desk_memory.fill(px, archive.EVENTS)
+    try:  # price action as events (rebuilt each day from prices), outcomes filled the same way
+        price_events.build(list(T))
+        desk_memory.fill(px, price_events.PATH)
+    except Exception as e:
+        print("price events failed", e)
     try:  # the discovery engine: test every kind of event on everything collected, every night
         res, new = discovery.run()
         st["discovery"] = {k: res[k] for k in ("run_at", "events", "tests_tonight", "tests_ever")} | {"survivors": len(res["survivors"])}
@@ -975,6 +983,7 @@ def _rules():
         ty, grp = s["event"].split(" (", 1)[0], s["event"].split(" (", 1)[1].rstrip(")")
         tks = (list(T) if grp.startswith("all our") or "basket" in grp else discovery.GROUPS.get(grp, []))
         out.append({"type": ty.replace("intel_", "news_"), "tickers": tks, "basket": "basket" in grp, "up": s["avg_pct"] > 0,
+                    "relative": s["metric"].startswith("x") and "basket" not in grp,  # vs the basket: a tilt, not a reason to buy outright
                     "days": {"x1": 1, "x5": 5, "x20": 20, "r1": 1, "r5": 5, "r20": 20}.get(s["metric"], 5), "pattern": s})
     return out
 
@@ -995,7 +1004,14 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
     if not rules:
         return
     todays = [e for e in desk_memory.events() + archive._load(archive.EVENTS, []) if e.get("date") == str(today)]
+    try:
+        todays += price_events.today(data, list(T))
+    except Exception as e:
+        print("live price events failed", e)
     acted = []
+    common = {}
+    for e in todays:
+        common[e["type"]] = common.get(e["type"], 0) + 1
     for e in todays:
         ty = e["type"].replace("intel_", "news_")
         for ru in [r for r in rules if r["type"] == ty and (e["ticker"] == "_basket") == r["basket"]]:
@@ -1003,6 +1019,14 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
             targets = [t for t in targets if t in ru["tickers"] and t in T and t in prices]
             p = ru["pattern"]
             for t in targets:
+                if ru["up"] and ru["relative"] and common.get(e["type"], 0) > len(T) / 2:
+                    continue  # half the group did the same thing today: nothing stands out (that's a market move, not this stock)
+                if ru["up"] and ru["relative"]:  # beats its group, not necessarily up: favor it (bigger size on its next support buy)
+                    until = sessions_after(str(today), ru["days"])
+                    st.setdefault("favor", {})[t] = {"until": until, "mult": cfg.get("favor_mult", 1.5),
+                                                     "why": f"{e['title'][:80]} ({p['event']}: {p['avg_pct']:+.2f}% vs the basket)"}
+                    acted.append(f"favor {t} until {until}")
+                    continue
                 if not ru["up"]:
                     until = sessions_after(str(today), ru["days"])
                     st.setdefault("avoid", {})[t] = {"until": until, "why": f"{e['title'][:80]} ({p['event']}: {p['avg_pct']:+.2f}% {discovery.PLAIN.get(p['metric'], '')})"}
