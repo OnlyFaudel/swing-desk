@@ -290,24 +290,37 @@
    "decision": "SKIP",
    "reason": "Price sits about 6.6% below its 20-day high and the stock is in a downtrend. The 'support' zone is the 354 volume node, but the recent move was a bounce inside weakness (VST and TLN up today after fal",
    "evaluated": false
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "TLN",
+   "setup": "patient_level",
+   "zone": 354.24,
+   "entry": 355.66,
+   "stop": 349.99,
+   "target": 365.74,
+   "reward_risk": 1.78,
+   "dist_to_entry_pct": 1.67,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 312.55,
+    "value_high": 366.37,
+    "heaviest_price": 360.99,
+    "position": "inside value",
+    "node": "thick",
+    "node_ratio": 1.85,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "Zone sits at 354 but the stock is still in a downtrend against its 20-day high, and the basket is still weak after a one-day bounce. Recent news (PJM consumer advocates urging delay of the December ca",
+   "evaluated": false
   }
  ],
  "cooldown": {
   "CCJ": 1795198855.6822214
  },
  "news_feed": [
-  {
-   "ticker": "CCJ",
-   "source": "Google News: Westinghouse reactor",
-   "title": "PEJ Pushes Nuclear Contract Signing With Westinghouse and Bechtel to 2027 - energynews.pro",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMnIxNHF1SC13ZFNvemU1WDNiUVZ2LVZnaS1odmdCX0lONlJLZ0sxSzFRbHVtN01OSDNxQjZiMkViN1laNnAxMVptdERSb0RnOVNJdmYzSzV6a0hEclZEajZvdVFmX1BmWTVndGlCbjdwbFZ3bGdkOURkQU9PU1dFM3oyLWE4bmxNYW5BT3NnTG00MjdfaGxaVDN2bXlDdzQ3?oc=5",
-   "ts": 1795168110,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
   {
    "ticker": "CCJ",
    "source": "Google News: uranium price",
@@ -3295,6 +3308,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic small-cap watchlist piece with no new company information"
+  },
+  {
+   "ticker": "DNN",
+   "source": "Google News: \"Denison Mines\"",
+   "title": "TSX Composite Mid-Cap Growth: Denison Mines Corp. (TSX:DML) Enters Focus as Investors Track the Next Catalyst - kalkine.ca",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRV9MOXRJLUg3MVRkUFpRLVBZTVlKTWZma3FzX2RNd3lXOG43ZW4xU3NrNXd5bF9QNjVVcDhEVExGemlGeWI3TzI2dHlNdldHLTFkVGNESGVfVzRRMmpoY204WHBLUFNKSFVUT0pHNWdzY0ctZERfcGQ5aWpZMmFGa1QxR3hhel9yRDk0Z1dtZDhIUEcxdmVycDZxMjZVZFg3V1VsU0NIMFItUFdZLTBOaXFibTRKYUZzZm1tdjJnVTQwLUVSc09JZE15MTh3OExZ?oc=5",
+   "ts": 1795449600,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Kalkine 'investors track catalyst' piece, no new company information"
   }
  ],
  "reviews": [
@@ -4613,16 +4638,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.04228,
+  "day_usd": 0.04394,
   "month": "2026-11",
-  "month_usd": 0.30577,
-  "total_usd": 0.30577,
+  "month_usd": 0.30743,
+  "total_usd": 0.30743,
   "by_role": {
    "macro": 0.00843,
    "whale": 0.00639,
    "crowd": 0.00536,
-   "level": 0.00274,
-   "scout": 0.03963,
+   "level": 0.00402,
+   "scout": 0.04001,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -4677,19 +4702,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 62.11,
-  "NXE": 6.85,
-  "UEC": 5.83,
-  "DNN": 1.81,
+  "CCJ": 62.04,
+  "NXE": 6.86,
+  "UEC": 5.84,
+  "DNN": 1.82,
   "UUUU": 5.38,
-  "LEU": 89.1,
-  "BWXT": 115.78,
-  "CEG": 251.78,
-  "VST": 125.59,
-  "TLN": 364.69,
-  "SPY": 724.28
+  "LEU": 89.01,
+  "BWXT": 116.31,
+  "CEG": 251.44,
+  "VST": 125.47,
+  "TLN": 364.41,
+  "SPY": 724.31
  },
- "last_cycle": "2026-11-23 11:17 ET",
+ "last_cycle": "2026-11-23 11:26 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4714,10 +4739,10 @@
   ]
  },
  "brakes": {
-  "equity": 1040.64,
-  "day_pct": 4.01,
-  "week_pct": 4.01,
-  "drawdown_pct": -1.3,
+  "equity": 1040.33,
+  "day_pct": 3.98,
+  "week_pct": 3.98,
+  "drawdown_pct": -1.33,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -5119,6 +5144,38 @@
   [
    "2026-11-23 11:17",
    1040.64
+  ],
+  [
+   "2026-11-23 11:18",
+   1040.84
+  ],
+  [
+   "2026-11-23 11:20",
+   1041.01
+  ],
+  [
+   "2026-11-23 11:21",
+   1040.08
+  ],
+  [
+   "2026-11-23 11:22",
+   1040.61
+  ],
+  [
+   "2026-11-23 11:23",
+   1041.35
+  ],
+  [
+   "2026-11-23 11:24",
+   1041.38
+  ],
+  [
+   "2026-11-23 11:25",
+   1041.41
+  ],
+  [
+   "2026-11-23 11:26",
+   1040.33
   ]
  ],
  "nowcast": {
@@ -47762,7 +47819,7 @@
   "CEG": 1795450144.5063415,
   "VST": 1795450144.5792527,
   "BWXT": 1795450144.4249,
-  "TLN": 1795449367.2137835
+  "TLN": 1795451217.3243396
  },
  "setup_status": {
   "CCJ": "no confirmed support level below the price (it has been falling through them)",
@@ -47774,27 +47831,27 @@
   "BWXT": "no confirmed support level below the price (it has been falling through them)",
   "CEG": "no confirmed support level below the price (it has been falling through them)",
   "VST": "no confirmed support level below the price (it has been falling through them)",
-  "TLN": "the Level Analyst skipped the setup: Price sits about 6.6% below its 20-day high and the stock is in a downtrend. The 'support' zone is the 354 volume node, but the recent move was a bounce inside wea"
+  "TLN": "the Level Analyst skipped the setup: Zone sits at 354 but the stock is still in a downtrend against its 20-day high, and the basket is still weak after a one-day bounce. Recent news (PJM consumer advo"
  },
  "sync": {
   "pulse_up": false,
-  "basket_vs_avg_pct": -6.2,
+  "basket_vs_avg_pct": -6.28,
   "partners_pct": {
-   "CCJ": -2.27,
-   "NXE": -2.02,
-   "UEC": -2.0,
-   "DNN": -2.17,
-   "UUUU": -1.73,
-   "LEU": -2.06,
-   "BWXT": -2.2,
-   "CEG": -2.03,
-   "VST": -2.21,
-   "TLN": -2.34
+   "CCJ": -2.38,
+   "NXE": -2.14,
+   "UEC": -2.21,
+   "DNN": -2.32,
+   "UUUU": -1.86,
+   "LEU": -2.16,
+   "BWXT": -2.44,
+   "CEG": -2.18,
+   "VST": -2.43,
+   "TLN": -2.56
   },
   "mult": {
    "CCJ": 0.56,
    "NXE": 0.56,
-   "UEC": 0.8,
+   "UEC": 0.56,
    "DNN": 0.56,
    "UUUU": 0.8,
    "LEU": 0.56,
@@ -47804,16 +47861,16 @@
    "TLN": 0.56
   },
   "own_pct": {
-   "CCJ": -0.6,
-   "NXE": -2.83,
-   "UEC": -3.05,
-   "DNN": -1.52,
-   "UUUU": -5.43,
-   "LEU": -2.5,
-   "BWXT": -1.25,
-   "CEG": -2.75,
-   "VST": -1.11,
-   "TLN": 0.05
+   "CCJ": -1.27,
+   "NXE": -3.38,
+   "UEC": -2.8,
+   "DNN": -1.79,
+   "UUUU": -5.96,
+   "LEU": -3.27,
+   "BWXT": -0.71,
+   "CEG": -3.04,
+   "VST": -0.84,
+   "TLN": 0.4
   },
   "series": {
    "CCJ": [
@@ -47956,7 +48013,7 @@
     0.7348,
     0.7316,
     0.7936,
-    0.7891
+    0.7838
    ],
    "NXE": [
     1.0,
@@ -48098,7 +48155,7 @@
     0.7791,
     0.7743,
     0.834,
-    0.8327
+    0.828
    ],
    "UEC": [
     1.0,
@@ -48240,7 +48297,7 @@
     0.716,
     0.7098,
     0.7782,
-    0.7776
+    0.7796
    ],
    "DNN": [
     1.0,
@@ -48382,7 +48439,7 @@
     0.7768,
     0.7745,
     0.8364,
-    0.8364
+    0.8341
    ],
    "UUUU": [
     1.0,
@@ -48524,7 +48581,7 @@
     0.6485,
     0.6498,
     0.7115,
-    0.7075
+    0.7036
    ],
    "LEU": [
     1.0,
@@ -48666,7 +48723,7 @@
     0.8058,
     0.8069,
     0.8845,
-    0.8881
+    0.8811
    ],
    "BWXT": [
     1.0,
@@ -48808,7 +48865,7 @@
     0.8379,
     0.8321,
     0.8874,
-    0.8858
+    0.8906
    ],
    "CEG": [
     1.0,
@@ -48950,7 +49007,7 @@
     0.9432,
     0.9329,
     0.9877,
-    0.9912
+    0.9882
    ],
    "VST": [
     1.0,
@@ -49092,7 +49149,7 @@
     0.8094,
     0.8054,
     0.8729,
-    0.8745
+    0.8769
    ],
    "TLN": [
     1.0,
@@ -49234,7 +49291,7 @@
     0.9713,
     0.9733,
     1.0561,
-    1.0624
+    1.0661
    ],
    "basket": [
     1.0,
@@ -49376,7 +49433,7 @@
     0.8204,
     0.8171,
     0.8827,
-    0.8834
+    0.8826
    ],
    "avg": [
     1.0493,
@@ -49521,7 +49578,7 @@
     0.9418
    ]
   },
-  "time": "2026-11-23 11:17"
+  "time": "2026-11-23 11:27"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -49604,6 +49661,7 @@
   "2e25691d89c6bf03",
   "b2e981fc7a2e7302",
   "717c47c79d590a65",
+  "844469477dae7bae",
   "68b8d7111ead5bfd",
   "7c221cf76c2854cd",
   "f5de3767d3f1b3c9",
@@ -49630,6 +49688,7 @@
   "c40403c1e5b7035d",
   "cb12badf9a3dbea8",
   "cdc78121c1406bce",
+  "e12d3a4edb7295a2",
   "bfa4d042201cf513",
   "537b32f5b2133213",
   "1c8b73cd5ee7949f",
@@ -49718,6 +49777,7 @@
   "e6d38cd330fc098a",
   "59c6f6be8bf3e5a9",
   "063170773d4b14a2",
+  "ad40fc2d9e504d93",
   "269219f13ec4aa2f",
   "91d21b21da9289e4",
   "0d77f1d2373bb03d",
@@ -49779,11 +49839,9 @@
   "17b21557a779a003",
   "a4aac5316a0eb878",
   "c014dc203c86d5d1",
-  "cab53e09b478cbb5",
-  "ad40fc2d9e504d93",
-  "844469477dae7bae"
+  "cab53e09b478cbb5"
  ],
- "news_slow_at": 1795450062.849993,
+ "news_slow_at": 1795450735.2000422,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -199260,6 +199318,16 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-23 11:27",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping the Talen setup. The price is only bouncing after a sharp one-day rally inside a weaker trend, and the consumer-advocate news pushing to delay the PJM auction is a real risk to the thesis, so I don't trust the 354 zone to hold. I agree with the Macro Analyst that today's bounce should not be treated as clean support.\n\nTLN: decision: SKIP; reason: Zone sits at 354 but the stock is still in a downtrend against its 20-day high, and the basket is still weak after a one-day bounce. Recent news (PJM consumer advocates urging delay of the December capacity auction) is a risk to the thesis, and the heaviest volume node is abo\nto: Macro Analyst\ndate: 2026-12-09\nticker: TLN\nwhat: FOMC rate decision and any PJM capacity auction delay ruling; a delay or adverse PJM outcome could break the nuclear-power demand thesis.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -199654,7 +199722,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 11:17",
+  "updated": "2026-11-23 11:27",
   "total": 339,
   "week": 296,
   "places": {
@@ -200383,7 +200451,7 @@
   }
  ],
  "memory_view": {
-  "events": 1502,
+  "events": 1503,
   "with_outcomes": 1162,
   "playbooks": {
    "acquisition": {
@@ -200514,6 +200582,14 @@
     "surfaced": false
    },
    {
+    "date": "2026-12-09",
+    "ticker": "TLN",
+    "what": "FOMC rate decision and any PJM capacity auction delay ruling; a delay or adverse PJM outcome could break the nuclear-power demand thesis.",
+    "by": "level",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
     "date": "2027-01-01",
     "ticker": "CCJ",
     "what": "Poland plans to sign first nuclear plant construction contract in early 2027 (European new-build demand)",
@@ -200523,15 +200599,6 @@
    }
   ],
   "recent": [
-   {
-    "date": "2026-11-22",
-    "ticker": "BWXT",
-    "title": "US and Poland Issue Seventh P-TEC Ministerial Joint Statement on Civil Nuclear and Grid Cooperation",
-    "type": "intel_politics",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
    {
     "date": "2026-11-22",
     "ticker": "CCJ",
@@ -200878,6 +200945,15 @@
     "date": "2026-11-23",
     "ticker": "BWXT",
     "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal - Investing.com",
+    "type": "contract_deal",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "BWXT",
+    "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com India",
     "type": "contract_deal",
     "r0": null,
     "r5": null,
@@ -201323,7 +201399,7 @@
    "built": "2026-11-23 11:09"
   }
  ],
- "heartbeat": "2026-11-23 11:17",
+ "heartbeat": "2026-11-23 11:26",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -201435,13 +201511,13 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 115.77999877929688,
-  "TLN": 364.69000244140625
+  "BWXT": 116.30999755859375,
+  "TLN": 364.4100036621094
  },
  "notes_audit": {
   "scout": {
-   "asked": 8,
-   "used": 8,
+   "asked": 9,
+   "used": 9,
    "notes": {
     "TLN Deals and contracts": 1,
     "CCJ Deals and contracts": 2,
@@ -201451,20 +201527,23 @@
     "SECTOR Countries": 3,
     "CEG Deals and contracts": 1,
     "NXE Legal": 1,
-    "NXE Deals and contracts": 1
+    "NXE Deals and contracts": 1,
+    "DNN Deals and contracts": 1
    },
    "since": "2026-11-23"
   },
   "level": {
-   "asked": 1,
-   "used": 1,
+   "asked": 2,
+   "used": 2,
    "notes": {
-    "TLN Snapshot": 1,
-    "TLN Price behavior": 1,
-    "TLN Discoveries": 1,
-    "TLN Our trades": 1,
+    "TLN Snapshot": 2,
+    "TLN Price behavior": 2,
+    "TLN Discoveries": 2,
+    "TLN Our trades": 2,
     "VST Snapshot": 1,
-    "VST Price behavior": 1
+    "VST Price behavior": 1,
+    "TLN What history says": 1,
+    "desk_notes intel: PJM capacity auction delay": 1
    },
    "since": "2026-11-23"
   }
