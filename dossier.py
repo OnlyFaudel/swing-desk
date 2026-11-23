@@ -22,7 +22,7 @@ import datetime as dt, json, os, statistics, time
 
 import numpy as np
 
-import collector, desk_memory, jobs, world, uprice, congress
+import collector, desk_memory, jobs, world, uprice, congress, people
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIR = os.path.join(ROOT, "memory", "dossiers")
@@ -51,7 +51,7 @@ PROFILE = {
     "TLN": ("Talen Energy", "Owns the Susquehanna nuclear plant in Pennsylvania, with a power deal for an Amazon data-center campus next "
             "to it. Driven by PJM capacity prices and data-center contracts."),
 }
-SECTIONS = ["Snapshot", "Business", "Places and operations", "News", "Filings and company events", "Government and laws",
+SECTIONS = ["Snapshot", "Business", "Leadership and insiders", "Ownership and analysts", "Financials", "Legal", "Deals and contracts", "Places and operations", "News", "Filings and company events", "Government and laws",
             "Workers and jobs", "Crowd", "Options and big money", "What history says", "Price behavior", "Discoveries",
             "Our trades", "Team notes"]
 
@@ -106,6 +106,18 @@ def _items(t=None, days=30, tags=None, places=None):
     return sorted(out, key=lambda x: (x["date"], x.get("score") or 0), reverse=True)
 
 
+NAME_KEYS = {"CCJ": ("cameco",), "NXE": ("nexgen",), "UEC": ("uranium energy", "uec"), "DNN": ("denison",), "UUUU": ("energy fuels",),
+             "LEU": ("centrus",), "BWXT": ("bwx",), "CEG": ("constellation",), "VST": ("vistra",), "TLN": ("talen",)}
+
+
+def people_hist(t):
+    """Everything older or outside the live memory for this stock: SEC filings since 1998, news archives, insider and analyst events."""
+    out = []
+    for p in ("history_events.json", "archive_events.json", "people_events.json"):
+        out += [e for e in _load(os.path.join(ROOT, "memory", p), []) if e.get("ticker") == t]
+    return out
+
+
 def build_one(t, st, data=None):
     places = [p for p, v in collector.PLACES.items() if t in v[1]]
     d = {"ticker": t, "name": PROFILE.get(t, (t, ""))[0], "built": dt.datetime.now().strftime("%Y-%m-%d %H:%M"), "sections": {}}
@@ -115,6 +127,33 @@ def build_one(t, st, data=None):
     if vp:
         S["Snapshot"]["volume_profile"] = vp
     S["Business"] = {"what_it_does": PROFILE.get(t, ("", "Not profiled yet."))[1], "places_it_depends_on": places}
+    pp = people.load(t)
+    if pp:
+        S["Business"]["company_description"] = pp.get("about")
+        S["Business"]["headquarters"] = pp.get("hq")
+        ins = pp.get("insiders_last_12m") or {}
+        S["Leadership and insiders"] = {
+            "scorecard": pp.get("scorecard"), "bosses": pp.get("bosses"), "ceo": pp.get("ceo"),
+            "insiders_last_12_months": ins if (pp.get("insider_trades") or t not in ("CCJ", "NXE", "DNN")) else
+                {"note": "Canadian company: its insiders report trades in Canada (SEDI), which this source doesn't cover yet."},
+            "recent_insider_trades": [x for x in pp.get("insider_trades", []) if x.get("kind") in ("buy", "sell")][:15],
+            "governance_risk_1_low_10_high": pp.get("governance_risk_1_low_10_high"),
+            "leadership_changes": [{k: e.get(k) for k in ("date", "title", "r20")} for e in desk_memory.events() + people_hist(t)
+                                   if e["ticker"] == t and e["type"] == "leadership_change"][-10:]}
+        S["Ownership and analysts"] = {"top_holders": pp.get("top_holders"), "analysts": pp.get("analysts")}
+        S["Financials"] = {**(pp.get("financials") or {}), "as_of": pp.get("updated")}
+    keys = NAME_KEYS.get(t, (t.lower(),))
+    named = lambda s: any(k in (s or "").lower() for k in keys)
+    S["Legal"] = {"news": [x for x in _items(t, 365, tags=["legal"]) if named(x.get("title"))][:20],
+                  "history": [{k: e.get(k) for k in ("date", "title", "type", "r20")} for e in people_hist(t)
+                              if e["type"] in ("news_legal", "intel_legal") or (e["type"].startswith("news") and named(e.get("title")) and any(
+                                  w in (e.get("title") or "").lower() for w in collector.TAGS["legal"]))][-15:],
+                  "how_to_read": "Only items that name the company itself. Shareholder-lawyer 'alerts' are common after big drops and usually go nowhere; regulator fines, tax cases and court rulings matter more."}
+    deals = [e for e in desk_memory.events() + people_hist(t) if e["ticker"] == t and (
+        e["type"] in ("contract_deal", "acquisition", "contract_end") or (e["type"] in ("news_contract", "intel_contract") and named(e.get("title"))))]
+    S["Deals and contracts"] = {"count_on_file": len(deals), "latest": [{k: e.get(k) for k in ("date", "title", "type", "r5", "r20", "x20")}
+                                                                       for e in sorted(deals, key=lambda e: e["date"])[-25:][::-1]],
+                                "what_deals_did_before": desk_memory.playbook("contract_deal", [t])}
     week = {p: n for p, n in ((st.get("intel_view") or {}).get("places") or {}).items() if p in places}
     po = {"stories_this_week_by_place": week, "latest_local": _items(t, 14, places=places)[:12]}
     rs = _load(os.path.join(ROOT, "memory", "intel", "reactor_status.json"), {})

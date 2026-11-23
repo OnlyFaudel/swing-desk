@@ -1,0 +1,620 @@
+{
+"ticker": "UEC",
+"updated": "2026-11-23 04:07",
+"name": "Uranium Energy Corp.",
+"about": "Uranium Energy Corp., together with its subsidiaries, engages in the exploration, pre-extraction, extraction, and processing of uranium and titanium concentrates properties in the United States, Canada, and the Republic of Paraguay. Its principal projects are located in Wyoming and Texas in the United States, as well as in Saskatchewan, Canada. The company was formerly known as Carlin Gold Inc. and changed its name to Uranium Energy Corp. in January 2005. The company was incorporated in 2003 and is headquartered in Corpus Christi, Texas.",
+"website": "https://www.uraniumenergy.com",
+"hq": "Corpus Christi, TX, United States",
+"bosses": [
+{
+"name": "Mr. Amir  Adnani",
+"title": "President, CEO & Director",
+"age": 47,
+"totalPay": 2400000,
+"yearBorn": 1978
+},
+{
+"name": "Ms. Josephine  Man",
+"title": "Secretary, Treasurer, CFO & Principal Accounting Officer",
+"age": 51,
+"totalPay": 510960,
+"yearBorn": 1974
+},
+{
+"name": "Mr. Scott Eric Melbye",
+"title": "Executive Vice President",
+"age": 63,
+"totalPay": 765922,
+"yearBorn": 1962
+},
+{
+"name": "Mr. Brent D. Berg",
+"title": "Senior Vice President of U.S. Operations",
+"age": 53,
+"totalPay": 579638,
+"yearBorn": 1972
+},
+{
+"name": "Ms. Donna Lynn Wichers",
+"title": "Senior Vice President of Production Growth",
+"age": 71,
+"totalPay": null,
+"yearBorn": 1954
+}
+],
+"ceo": {
+"name": "Mr. Amir  Adnani",
+"title": "President, CEO & Director",
+"age": 47,
+"totalPay": 2400000,
+"yearBorn": 1978
+},
+"governance_risk_1_low_10_high": {
+"audit": 5,
+"board": 2,
+"pay": 1,
+"shareholder rights": 2,
+"overall": 1
+},
+"insiders_last_12m": {
+"sold_usd": 0,
+"bought_usd": 0,
+"net_usd": 0,
+"sellers": []
+},
+"insider_trades": [
+{
+"date": "2026-07-31",
+"who": "ADNANI AMIR",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 185000,
+"value_usd": 0.0,
+"what": "Stock Gift at price 0.00 per share."
+},
+{
+"date": "2026-07-31",
+"who": "BERG BRENT",
+"role": "Officer",
+"kind": "award/other",
+"shares": 10389,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-07-31",
+"who": "MAN JOSEPHINE",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 16098,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-07-31",
+"who": "DELLA VOLPE VINCENT",
+"role": "Director",
+"kind": "award/other",
+"shares": 10740,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-07-31",
+"who": "KONG DAVID",
+"role": "Director",
+"kind": "award/other",
+"shares": 10740,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-07-31",
+"who": "CANTY TRECIA M",
+"role": "Director",
+"kind": "award/other",
+"shares": 10740,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-07-31",
+"who": "BALLESTA MOYA GLORIA L",
+"role": "Director",
+"kind": "award/other",
+"shares": 10740,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-07-31",
+"who": "MELBYE SCOTT ERIC",
+"role": "Officer",
+"kind": "award/other",
+"shares": 133302,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-07-31",
+"who": "ADNANI AMIR",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 796826,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-07-31",
+"who": "ABRAHAM EDWARD SPENCER",
+"role": "Director",
+"kind": "award/other",
+"shares": 26800,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-11-20",
+"who": "MELBYE SCOTT ERIC",
+"role": "Officer",
+"kind": "award/other",
+"shares": 125000,
+"value_usd": 117762.0,
+"what": "Conversion of Exercise of derivative security at price 0.94 per share."
+},
+{
+"date": "2025-10-01",
+"who": "MAN JOSEPHINE",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 5368,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-08-06",
+"who": "KONG DAVID",
+"role": "Director",
+"kind": "sell",
+"shares": 50800,
+"value_usd": 488691.0,
+"what": "Sale at price 9.62 per share."
+},
+{
+"date": "2025-08-06",
+"who": "KONG DAVID",
+"role": "Director",
+"kind": "award/other",
+"shares": 75000,
+"value_usd": 68250.0,
+"what": "Conversion of Exercise of derivative security at price 0.91 per share."
+},
+{
+"date": "2025-07-31",
+"who": "DELLA VOLPE VINCENT",
+"role": "Director",
+"kind": "award/other",
+"shares": 12236,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-07-31",
+"who": "KONG DAVID",
+"role": "Director",
+"kind": "award/other",
+"shares": 13074,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-07-31",
+"who": "CANTY TRECIA M",
+"role": "Director",
+"kind": "award/other",
+"shares": 8467,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-07-31",
+"who": "BALLESTA MOYA GLORIA L",
+"role": "Director",
+"kind": "award/other",
+"shares": 12656,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-07-31",
+"who": "MELBYE SCOTT ERIC",
+"role": "Officer",
+"kind": "award/other",
+"shares": 93087,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-07-31",
+"who": "ADNANI AMIR",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 448308,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-07-31",
+"who": "ADNANI AMIR",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 448308,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-07-31",
+"who": "ABRAHAM EDWARD SPENCER",
+"role": "Director",
+"kind": "award/other",
+"shares": 29335,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-07-29",
+"who": "BERG BRENT",
+"role": "Officer",
+"kind": "award/other",
+"shares": 4007,
+"value_usd": null,
+"what": ""
+}
+],
+"top_holders": [
+{
+"index": 0,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Price (T.Rowe) Associates Inc",
+"pctHeld": 0.1434,
+"Shares": 71087960,
+"Value": 376766201,
+"pctChange": -0.0538
+},
+{
+"index": 1,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Blackrock Inc.",
+"pctHeld": 0.078600004,
+"Shares": 38960635,
+"Value": 206491372,
+"pctChange": -0.0401
+},
+{
+"index": 2,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Mirae Asset Global ETFs Holdings Ltd.",
+"pctHeld": 0.0664,
+"Shares": 32921947,
+"Value": 174486325,
+"pctChange": -0.0511
+},
+{
+"index": 3,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "State Street Corporation",
+"pctHeld": 0.0634,
+"Shares": 31401974,
+"Value": 166430468,
+"pctChange": -0.0033000002
+},
+{
+"index": 4,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Van Eck Associates Corporation",
+"pctHeld": 0.050100002,
+"Shares": 24829240,
+"Value": 131594976,
+"pctChange": -0.14479999
+},
+{
+"index": 5,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Vanguard Portfolio Management LLC",
+"pctHeld": 0.047199998,
+"Shares": 23386996,
+"Value": 123951083,
+"pctChange": -0.0239
+},
+{
+"index": 6,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Vanguard Capital Management LLC",
+"pctHeld": 0.0446,
+"Shares": 22091616,
+"Value": 117085569,
+"pctChange": -0.0011
+},
+{
+"index": 7,
+"Date Reported": "2026-06-30T00:00:00.000",
+"Holder": "NORGES BANK",
+"pctHeld": 0.0353,
+"Shares": 17499619,
+"Value": 92747984,
+"pctChange": 0.73190004
+},
+{
+"index": 8,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Geode Capital Management, LLC",
+"pctHeld": 0.0249,
+"Shares": 12340686,
+"Value": 65405638,
+"pctChange": -0.0044
+},
+{
+"index": 9,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Alps Advisors Inc.",
+"pctHeld": 0.0227,
+"Shares": 11242054,
+"Value": 59582888,
+"pctChange": 0.1437
+}
+],
+"analysts": {
+"latest": [
+{
+"date": "2026-10-02",
+"firm": "RBC Capital",
+"action": "init",
+"from": "",
+"to": "Sector Perform",
+"target": 10.0
+},
+{
+"date": "2026-09-30",
+"firm": "HC Wainwright & Co.",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 26.75
+},
+{
+"date": "2026-09-03",
+"firm": "Jefferies",
+"action": "init",
+"from": "",
+"to": "Hold",
+"target": 11.5
+},
+{
+"date": "2026-06-10",
+"firm": "HC Wainwright & Co.",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 26.75
+},
+{
+"date": "2026-05-20",
+"firm": "HC Wainwright & Co.",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 26.75
+},
+{
+"date": "2026-03-11",
+"firm": "TD Securities",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 21.0
+},
+{
+"date": "2026-03-11",
+"firm": "HC Wainwright & Co.",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 26.75
+},
+{
+"date": "2025-12-11",
+"firm": "Roth Capital",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 16.0
+},
+{
+"date": "2025-09-26",
+"firm": "Goldman Sachs",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 17.0
+},
+{
+"date": "2025-09-25",
+"firm": "Roth Capital",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 16.0
+},
+{
+"date": "2025-09-25",
+"firm": "HC Wainwright & Co.",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 19.75
+},
+{
+"date": "2025-09-25",
+"firm": "BMO Capital",
+"action": "down",
+"from": "Outperform",
+"to": "Market Perform",
+"target": 14.0
+},
+{
+"date": "2025-09-03",
+"firm": "Roth Capital",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 11.5
+},
+{
+"date": "2025-08-06",
+"firm": "HC Wainwright & Co.",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 12.75
+},
+{
+"date": "2025-06-03",
+"firm": "BMO Capital",
+"action": "init",
+"from": "",
+"to": "Outperform",
+"target": 7.75
+},
+{
+"date": "2025-03-13",
+"firm": "HC Wainwright & Co.",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 12.25
+},
+{
+"date": "2024-12-09",
+"firm": "HC Wainwright & Co.",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 11.0
+},
+{
+"date": "2024-10-23",
+"firm": "Roth MKM",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 10.25
+},
+{
+"date": "2024-09-25",
+"firm": "Roth MKM",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 9.5
+},
+{
+"date": "2024-09-24",
+"firm": "HC Wainwright & Co.",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 10.25
+},
+{
+"date": "2024-08-14",
+"firm": "Roth MKM",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 9.0
+},
+{
+"date": "2024-08-14",
+"firm": "HC Wainwright & Co.",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 10.25
+},
+{
+"date": "2024-06-11",
+"firm": "HC Wainwright & Co.",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 10.25
+},
+{
+"date": "2024-03-12",
+"firm": "HC Wainwright & Co.",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 10.25
+},
+{
+"date": "2024-01-18",
+"firm": "HC Wainwright & Co.",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 9.75
+}
+],
+"upgrades_12m": 0,
+"downgrades_12m": 0,
+"target_mean": 15.84545,
+"rating": "buy",
+"count": 11
+},
+"financials": {
+"marketCap": 2626598912,
+"enterpriseValue": 2134085760,
+"totalRevenue": 37250000,
+"grossMargins": -1.8396201,
+"operatingMargins": -3.57442,
+"profitMargins": 0.0,
+"ebitda": -126226000,
+"totalCash": 495460000,
+"totalDebt": 2947000,
+"debtToEquity": 0.214,
+"freeCashflow": -71672872,
+"operatingCashflow": -98558000,
+"forwardPE": -71.62162,
+"priceToBook": 1.90991,
+"sharesOutstanding": 495584665,
+"floatShares": 487432297,
+"shortPercentOfFloat": 0.16790001,
+"shortRatio": 6.92,
+"heldPercentInsiders": 0.01816,
+"heldPercentInstitutions": 0.86636,
+"targetMeanPrice": 15.84545,
+"targetHighPrice": 26.75,
+"targetLowPrice": 10.0,
+"recommendationKey": "buy",
+"numberOfAnalystOpinions": 11,
+"beta": 1.371,
+"fullTimeEmployees": 257,
+"dividendYield": 0.0,
+"earningsTimestamp": 1790685000
+},
+"scorecard": {
+"ceo": "Mr. Amir  Adnani",
+"ceo_pay_usd": 2400000,
+"top_team_pay_usd": 4256520,
+"stock_1y_pct": -52.0,
+"group_1y_pct": -30.9,
+"group_3y_pct": 39.5,
+"vs_group_1y_pts": -21.1,
+"stock_3y_pct": -21.8,
+"vs_group_3y_pts": -61.3,
+"insiders_net_usd_12m": 0,
+"verdict_1y": "behind the group",
+"how_to_read": "Positive 'vs group' means the stock beat the typical (middle) nuclear name we follow. Heavy insider selling while the stock lags is the warning sign."
+}
+}

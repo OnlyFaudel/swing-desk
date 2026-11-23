@@ -1,0 +1,596 @@
+{
+"ticker": "NXE",
+"updated": "2026-11-23 04:07",
+"name": "NexGen Energy Ltd.",
+"about": "NexGen Energy Ltd., an exploration and development stage company, engages in the acquisition, exploration, evaluation, and development of uranium properties in Canada. The company holds a 100% interest in the Rook I project that consists of 32 contiguous mineral claims totaling an area of approximately 35,065 hectares located in the southwestern Athabasca Basin of Saskatchewan. NexGen Energy Ltd. was founded in 2011 and is headquartered in Vancouver, Canada.",
+"website": "https://www.nexgenenergy.ca",
+"hq": "Vancouver, BC, Canada",
+"bosses": [
+{
+"name": "Mr. Leigh Robert Curyer ACA, BA (Acc)",
+"title": "Founder, President, CEO & Director",
+"age": 53,
+"totalPay": 2046144,
+"yearBorn": 1972
+},
+{
+"name": "Ms. Monica  Kras",
+"title": "Vice President of Corporate Development",
+"age": null,
+"totalPay": 547834,
+"yearBorn": null
+},
+{
+"name": "Mr. Travis G. McPherson C.F.A.",
+"title": "Chief Commercial Officer",
+"age": null,
+"totalPay": 928218,
+"yearBorn": null
+},
+{
+"name": "Mr. Luke  Moger",
+"title": "Vice President of Environment, Permitting & Licensing",
+"age": null,
+"totalPay": 403961,
+"yearBorn": null
+},
+{
+"name": "Mr. Ryan  Podrasky",
+"title": "Chief Financial Officer",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Mr. Jason  Craven",
+"title": "Vice President of Exploration",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Chris  Copley",
+"title": "Project Director",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Dylan  Smart",
+"title": "Vice President of Regional Development",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Neil  Chiles",
+"title": "Director of Information Technology",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+}
+],
+"ceo": {
+"name": "Mr. Leigh Robert Curyer ACA, BA (Acc)",
+"title": "Founder, President, CEO & Director",
+"age": 53,
+"totalPay": 2046144,
+"yearBorn": 1972
+},
+"governance_risk_1_low_10_high": {
+"audit": 7,
+"board": 9,
+"pay": 10,
+"shareholder rights": 6,
+"overall": 10
+},
+"insiders_last_12m": {
+"sold_usd": 0,
+"bought_usd": 0,
+"net_usd": 0,
+"sellers": []
+},
+"insider_trades": [
+{
+"date": "2026-07-03",
+"who": "Wall (Bradley John)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 45000,
+"value_usd": 432945,
+"what": "Disposition by gift at price 9.62 per share."
+},
+{
+"date": "2026-06-09",
+"who": "Gilman (Warren Philip)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 300000,
+"value_usd": 1256100,
+"what": "Exercise of options at price 4.19 per share."
+},
+{
+"date": "2026-06-09",
+"who": "Wall (Bradley John)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 3000,
+"value_usd": 29577,
+"what": "Acquisition in the public market at price 9.86 per share."
+},
+{
+"date": "2026-06-02",
+"who": "Wall (Bradley John)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 25000,
+"value_usd": 299700,
+"what": "Disposition in the public market at price 11.99 per share."
+},
+{
+"date": "2026-05-29",
+"who": "Patricio (Richard J)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 300000,
+"value_usd": 1269900,
+"what": "Exercise of options at price 4.23 per share."
+},
+{
+"date": "2026-05-29",
+"who": "Patricio (Richard J)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 200000,
+"value_usd": 2344400,
+"what": "Disposition in the public market at price 11.72 per share."
+},
+{
+"date": "2026-05-28",
+"who": "Curyer (Leigh Robert)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 3000000,
+"value_usd": 35238000,
+"what": "Disposition in the public market at price 11.75 per share."
+},
+{
+"date": "2026-05-28",
+"who": "Howlett (Karri Lynn)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 172847,
+"value_usd": 2030260,
+"what": "Disposition in the public market at price 11.75 per share."
+},
+{
+"date": "2026-05-28",
+"who": "Mcfadden (Christopher Walter)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 270000,
+"value_usd": 3171420,
+"what": "Disposition in the public market at price 11.75 per share."
+},
+{
+"date": "2026-05-28",
+"who": "Veenman (Sybil Elsa)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 161109,
+"value_usd": 1892386,
+"what": "Disposition in the public market at price 11.75 per share."
+},
+{
+"date": "2026-05-26",
+"who": "Wall (Bradley John)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 300000,
+"value_usd": 1268700,
+"what": "Exercise of options at price 4.23 per share."
+},
+{
+"date": "2026-05-14",
+"who": "Curyer (Leigh Robert)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 2666667,
+"value_usd": 11352001,
+"what": "Exercise of options at price 4.26 per share."
+},
+{
+"date": "2026-05-14",
+"who": "Howlett (Karri Lynn)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 200000,
+"value_usd": 851400,
+"what": "Exercise of options at price 4.26 per share."
+},
+{
+"date": "2026-05-14",
+"who": "Mcfadden (Christopher Walter)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 200000,
+"value_usd": 851400,
+"what": "Exercise of options at price 4.26 per share."
+},
+{
+"date": "2026-05-14",
+"who": "Veenman (Sybil Elsa)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 200000,
+"value_usd": 851400,
+"what": "Exercise of options at price 4.26 per share."
+},
+{
+"date": "2026-05-12",
+"who": "Curyer (Leigh Robert)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 1333333,
+"value_usd": 5686665,
+"what": "Exercise of options at price 4.26 per share."
+},
+{
+"date": "2026-05-12",
+"who": "Howlett (Karri Lynn)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 100000,
+"value_usd": 426500,
+"what": "Exercise of options at price 4.26 per share."
+},
+{
+"date": "2026-05-12",
+"who": "Mcfadden (Christopher Walter)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 100000,
+"value_usd": 426500,
+"what": "Exercise of options at price 4.26 per share."
+},
+{
+"date": "2026-05-12",
+"who": "Veenman (Sybil Elsa)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 100000,
+"value_usd": 426500,
+"what": "Exercise of options at price 4.26 per share."
+},
+{
+"date": "2026-01-16",
+"who": "Benjamin (Salter Blair)",
+"role": "Senior Officer of Issuer",
+"kind": "award/other",
+"shares": 200000,
+"value_usd": 781800,
+"what": "Exercise of options at price 3.91 per share."
+},
+{
+"date": "2026-01-16",
+"who": "Benjamin (Salter Blair)",
+"role": "Senior Officer of Issuer",
+"kind": "award/other",
+"shares": 75000,
+"value_usd": 286200,
+"what": "Exercise of options at price 3.82 per share."
+},
+{
+"date": "2026-01-16",
+"who": "Benjamin (Salter Blair)",
+"role": "Senior Officer of Issuer",
+"kind": "award/other",
+"shares": 100000,
+"value_usd": 400300,
+"what": "Exercise of options at price 4.00 per share."
+},
+{
+"date": "2026-01-16",
+"who": "Benjamin (Salter Blair)",
+"role": "Senior Officer of Issuer",
+"kind": "award/other",
+"shares": 375000,
+"value_usd": 4495125,
+"what": "Disposition in the public market at price 11.99 per share."
+},
+{
+"date": "2025-12-09",
+"who": "Gilman (Warren Philip)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 250000,
+"value_usd": 585000,
+"what": "Exercise of options at price 2.34 per share."
+},
+{
+"date": "2025-12-05",
+"who": "Patricio (Richard J)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 36100,
+"value_usd": 346776,
+"what": "Disposition in the public market at price 9.61 per share."
+},
+{
+"date": "2025-12-03",
+"who": "Patricio (Richard J)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 250000,
+"value_usd": 580750,
+"what": "Exercise of options at price 2.32 per share."
+},
+{
+"date": "2025-12-03",
+"who": "Patricio (Richard J)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 73000,
+"value_usd": 655905,
+"what": "Disposition in the public market at price 8.98 per share."
+},
+{
+"date": "2025-12-03",
+"who": "Patricio (Richard J)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 40900,
+"value_usd": 375584,
+"what": "Disposition in the public market at price 9.18 per share."
+},
+{
+"date": "2025-12-03",
+"who": "Wall (Bradley John)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 100000,
+"value_usd": 908800,
+"what": "Disposition in the public market at price 9.09 per share."
+},
+{
+"date": "2025-12-02",
+"who": "Curyer (Leigh Robert)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 2000000,
+"value_usd": 4640000,
+"what": "Exercise of options at price 2.32 per share."
+},
+{
+"date": "2025-12-02",
+"who": "Curyer (Leigh Robert)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 1500000,
+"value_usd": 13783500,
+"what": "Disposition in the public market at price 9.19 per share."
+},
+{
+"date": "2025-12-02",
+"who": "Howlett (Karri Lynn)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 250000,
+"value_usd": 580000,
+"what": "Exercise of options at price 2.32 per share."
+},
+{
+"date": "2025-12-02",
+"who": "Howlett (Karri Lynn)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 119700,
+"value_usd": 1092382,
+"what": "Disposition in the public market at price 9.13 per share."
+},
+{
+"date": "2025-12-02",
+"who": "Mcfadden (Christopher Walter)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 250000,
+"value_usd": 580000,
+"what": "Exercise of options at price 2.32 per share."
+},
+{
+"date": "2025-12-02",
+"who": "Mcfadden (Christopher Walter)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 240000,
+"value_usd": 2212560,
+"what": "Disposition in the public market at price 9.22 per share."
+},
+{
+"date": "2025-12-02",
+"who": "Veenman (Sybil Elsa)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 250000,
+"value_usd": 580000,
+"what": "Exercise of options at price 2.32 per share."
+},
+{
+"date": "2025-12-02",
+"who": "Veenman (Sybil Elsa)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 115000,
+"value_usd": 1046730,
+"what": "Disposition in the public market at price 9.10 per share."
+},
+{
+"date": "2025-12-02",
+"who": "Wall (Bradley John)",
+"role": "Director of Issuer",
+"kind": "award/other",
+"shares": 250000,
+"value_usd": 580000,
+"what": "Exercise of options at price 2.32 per share."
+}
+],
+"top_holders": [
+{
+"index": 0,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Mirae Asset Global ETFs Holdings Ltd.",
+"pctHeld": 0.0627,
+"Shares": 41944302,
+"Value": 268443536,
+"pctChange": -0.0344
+},
+{
+"index": 1,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "L1 Capital Pty Ltd",
+"pctHeld": 0.060700003,
+"Shares": 40640733,
+"Value": 260100695,
+"pctChange": 0.16139999
+},
+{
+"index": 2,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Van Eck Associates Corporation",
+"pctHeld": 0.0579,
+"Shares": 38732836,
+"Value": 247890154,
+"pctChange": -0.028299998
+},
+{
+"index": 3,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Alps Advisors Inc.",
+"pctHeld": 0.0416,
+"Shares": 27879166,
+"Value": 178426665,
+"pctChange": 0.1301
+},
+{
+"index": 4,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Hancock Prospecting Pty Ltd",
+"pctHeld": 0.028800001,
+"Shares": 19280959,
+"Value": 123398139,
+"pctChange": 1.1238999
+},
+{
+"index": 5,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Vanguard Capital Management LLC",
+"pctHeld": 0.026800001,
+"Shares": 17968754,
+"Value": 115000027,
+"pctChange": 0.0017
+},
+{
+"index": 6,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Ameriprise Financial, Inc.",
+"pctHeld": 0.013200001,
+"Shares": 8846504,
+"Value": 56617626,
+"pctChange": 0.0038
+},
+{
+"index": 7,
+"Date Reported": "2026-06-30T00:00:00.000",
+"Holder": "NORGES BANK",
+"pctHeld": 0.012,
+"Shares": 8057932,
+"Value": 51570765,
+"pctChange": 0.0255
+},
+{
+"index": 8,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Grantham, Mayo, Van Otterloo & Co. LLC",
+"pctHeld": 0.0119,
+"Shares": 7997531,
+"Value": 51184199,
+"pctChange": 0.053400002
+},
+{
+"index": 9,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Royal Bank of Canada",
+"pctHeld": 0.0093,
+"Shares": 6198791,
+"Value": 39672262,
+"pctChange": 0.1541
+}
+],
+"analysts": {
+"latest": [
+{
+"date": "2026-11-11",
+"firm": "JP Morgan",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 12.0
+},
+{
+"date": "2026-09-21",
+"firm": "JP Morgan",
+"action": "init",
+"from": "",
+"to": "Overweight",
+"target": 14.0
+}
+],
+"upgrades_12m": 0,
+"downgrades_12m": 0,
+"target_mean": 15.336629,
+"rating": "buy",
+"count": 2
+},
+"financials": {
+"marketCap": 4403422720,
+"enterpriseValue": 4096728576,
+"grossMargins": 0.0,
+"operatingMargins": 0.0,
+"profitMargins": 0.0,
+"ebitda": -134374000,
+"totalCash": 821569984,
+"totalDebt": 514876000,
+"debtToEquity": 26.62,
+"freeCashflow": -354626752,
+"operatingCashflow": -75992000,
+"forwardPE": -51.358597,
+"priceToBook": 3.1458712,
+"sharesOutstanding": 688034761,
+"floatShares": 633590570,
+"shortRatio": 9.18,
+"heldPercentInsiders": 0.07706,
+"heldPercentInstitutions": 0.54395,
+"targetMeanPrice": 15.336629,
+"targetHighPrice": 18.771338,
+"targetLowPrice": 11.90192,
+"recommendationKey": "buy",
+"numberOfAnalystOpinions": 2,
+"beta": 1.659,
+"fullTimeEmployees": 142,
+"dividendYield": 0.0
+},
+"scorecard": {
+"ceo": "Mr. Leigh Robert Curyer ACA, BA (Acc)",
+"ceo_pay_usd": 2046144,
+"top_team_pay_usd": 3926157,
+"stock_1y_pct": -16.6,
+"group_1y_pct": -33.3,
+"group_3y_pct": 39.5,
+"vs_group_1y_pts": 16.7,
+"stock_3y_pct": -7.4,
+"vs_group_3y_pts": -46.9,
+"insiders_net_usd_12m": 0,
+"verdict_1y": "ahead of the group",
+"how_to_read": "Positive 'vs group' means the stock beat the typical (middle) nuclear name we follow. Heavy insider selling while the stock lags is the warning sign."
+}
+}

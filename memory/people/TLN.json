@@ -1,0 +1,813 @@
+{
+"ticker": "TLN",
+"updated": "2026-11-23 04:07",
+"name": "Talen Energy Corporation",
+"about": "Talen Energy Corporation, an independent power producer and infrastructure company, produces and sells electricity, capacity, and ancillary services into wholesale power markets in the United States. The company's plants generate power using a variety of fuels, such as nuclear, fossil, oil, natural gas, and coal power plants. It owns and operates approximately 13.1 GW of power infrastructure. Talen Energy Corporation was incorporated in 2014 and is headquartered in Houston, Texas.",
+"website": "https://www.talenenergy.com",
+"hq": "Houston, TX, United States",
+"bosses": [
+{
+"name": "Mr. Mark Allen McFarland",
+"title": "CEO & Director",
+"age": 56,
+"totalPay": 4233661,
+"yearBorn": 1969
+},
+{
+"name": "Mr. Terry L. Nutt",
+"title": "President",
+"age": 48,
+"totalPay": 1649251,
+"yearBorn": 1977
+},
+{
+"name": "Mr. Brad L. Berryman",
+"title": "Chief Operating Officer",
+"age": 55,
+"totalPay": 1361607,
+"yearBorn": 1970
+},
+{
+"name": "Mr. Andrew M. Wright J.D.",
+"title": "Chief Administrative Officer",
+"age": 58,
+"totalPay": 1337201,
+"yearBorn": 1967
+},
+{
+"name": "Mr. Cole  Muller J.D.",
+"title": "Chief Financial Officer",
+"age": 44,
+"totalPay": 2910249,
+"yearBorn": 1981
+},
+{
+"name": "Mr. Anthony J. Plagens",
+"title": "Senior VP & Chief Accounting Officer",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Mr. William J. Appicelli C.F.A.",
+"title": "Senior Vice President of Investor Relations",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Mr. Daniel Jude Kelly",
+"title": "General Counsel & Corporate Secretary",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Ms. Taryne  Williams",
+"title": "Director of Corporate Communications",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Mr. Dale E. Lebsack Jr.",
+"title": "Chief Asset Development Officer",
+"age": 49,
+"totalPay": null,
+"yearBorn": 1976
+}
+],
+"ceo": {
+"name": "Mr. Mark Allen McFarland",
+"title": "CEO & Director",
+"age": 56,
+"totalPay": 4233661,
+"yearBorn": 1969
+},
+"governance_risk_1_low_10_high": {
+"audit": 6,
+"board": 3,
+"pay": 4,
+"shareholder rights": 2,
+"overall": 2
+},
+"insiders_last_12m": {
+"sold_usd": 23357456,
+"bought_usd": 0,
+"net_usd": -23357456,
+"sellers": [
+"ABBAS GIZMAN I.",
+"BERRYMAN BRAD",
+"CASULLI EDWARD T."
+]
+},
+"insider_trades": [
+{
+"date": "2026-11-17",
+"who": "BERRYMAN BRAD",
+"role": "Chief Operating Officer",
+"kind": "sell",
+"shares": 56091,
+"value_usd": 19828300.0,
+"what": "Sale at price 345.44 - 364.56 per share."
+},
+{
+"date": "2026-11-17",
+"who": "CASULLI EDWARD T.",
+"role": "Officer",
+"kind": "sell",
+"shares": 3602,
+"value_usd": 1276981.0,
+"what": "Sale at price 354.52 per share."
+},
+{
+"date": "2026-11-11",
+"who": "CASULLI EDWARD T.",
+"role": "Officer",
+"kind": "sell",
+"shares": 3303,
+"value_usd": 1264175.0,
+"what": "Sale at price 382.74 per share."
+},
+{
+"date": "2026-11-11",
+"who": "CASULLI EDWARD T.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 300,
+"value_usd": 0.0,
+"what": "Stock Gift at price 0.00 per share."
+},
+{
+"date": "2026-07-15",
+"who": "NUTT TERRY L",
+"role": "President",
+"kind": "award/other",
+"shares": 8312,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-06-15",
+"who": "ABBAS GIZMAN I.",
+"role": "Director",
+"kind": "sell",
+"shares": 2600,
+"value_usd": 988000.0,
+"what": "Sale at price 380.00 per share."
+},
+{
+"date": "2026-05-22",
+"who": "OLAGUES DARREN J",
+"role": "Officer",
+"kind": "award/other",
+"shares": 7395,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "ABBAS GIZMAN I.",
+"role": "Director",
+"kind": "award/other",
+"shares": 4133,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "HORTON ANTHONY R",
+"role": "Director",
+"kind": "award/other",
+"shares": 4133,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "NUTT TERRY L",
+"role": "President",
+"kind": "award/other",
+"shares": 90826,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "MCFARLAND MARK ALLEN",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 354865,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "NIGRO JOSEPH",
+"role": "Director",
+"kind": "award/other",
+"shares": 4133,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "SCHAEFER STEPHEN JAMES",
+"role": "Director",
+"kind": "award/other",
+"shares": 22482,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "SCHWARTZSTEIN CHRISTINE BENSON",
+"role": "Director",
+"kind": "award/other",
+"shares": 4133,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "HYDE KAREN T",
+"role": "Director",
+"kind": "award/other",
+"shares": 4133,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "MORICE CHRISTOPHER E",
+"role": "Officer",
+"kind": "award/other",
+"shares": 67031,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "LEBSACK DALE E JR.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 85618,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "WRIGHT ANDREW M.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 95533,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "BERRYMAN BRAD",
+"role": "Chief Operating Officer",
+"kind": "award/other",
+"shares": 99138,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "MULLER COLE",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 62862,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "PLAGENS ANTHONY J.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 5668,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "CASULLI EDWARD T.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 6376,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-07-18",
+"who": "NUTT TERRY L",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 20779,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-27",
+"who": "RUBRIC CAPITAL MANAGEMENT L.P.",
+"role": "Beneficial Owner of more than 10% of a Class of Security",
+"kind": "sell",
+"shares": 388530,
+"value_usd": 114091990.0,
+"what": "Sale at price 288.55 - 298.14 per share."
+},
+{
+"date": "2025-06-27",
+"who": "WANDER JOHN C",
+"role": "General Counsel",
+"kind": "award/other",
+"shares": 20779,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "ABBAS GIZMAN I.",
+"role": "Director",
+"kind": "award/other",
+"shares": 4132,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "HORTON ANTHONY R",
+"role": "Director",
+"kind": "award/other",
+"shares": 4132,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "MCFARLAND MARK ALLEN",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 74380,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "NIGRO JOSEPH",
+"role": "Director",
+"kind": "award/other",
+"shares": 4132,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "SCHAEFER STEPHEN JAMES",
+"role": "Director",
+"kind": "award/other",
+"shares": 4132,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "SCHWARTZSTEIN CHRISTINE BENSON",
+"role": "Director",
+"kind": "award/other",
+"shares": 4132,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "HYDE KAREN T",
+"role": "Director",
+"kind": "award/other",
+"shares": 4132,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "MORICE CHRISTOPHER E",
+"role": "Officer",
+"kind": "award/other",
+"shares": 14050,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "LEBSACK DALE E JR.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 17946,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "WRIGHT ANDREW M.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 20024,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "BERRYMAN BRAD",
+"role": "Officer",
+"kind": "award/other",
+"shares": 20779,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "MULLER COLE",
+"role": "Officer",
+"kind": "award/other",
+"shares": 13176,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "PLAGENS ANTHONY J.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 5667,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-03-06",
+"who": "HORTON ANTHONY R",
+"role": "Director",
+"kind": "buy",
+"shares": 1000,
+"value_usd": 190588.0,
+"what": "Purchase at price 187.96 - 192.59 per share."
+},
+{
+"date": "2024-12-13",
+"who": "RUBRIC CAPITAL MANAGEMENT L.P.",
+"role": "Beneficial Owner of more than 10% of a Class of Security",
+"kind": "sell",
+"shares": 4893507,
+"value_usd": 999999900.0,
+"what": "Sale at price 204.35 per share."
+}
+],
+"top_holders": [
+{
+"index": 0,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Blackrock Inc.",
+"pctHeld": 0.073,
+"Shares": 4312006,
+"Value": 1435553095,
+"pctChange": -0.0101
+},
+{
+"index": 1,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Rubric Capital Management LP",
+"pctHeld": 0.061,
+"Shares": 3602171,
+"Value": 1199234817,
+"pctChange": 0.0
+},
+{
+"index": 2,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "MFN Partners Management, LP",
+"pctHeld": 0.055,
+"Shares": 3249121,
+"Value": 1081697406,
+"pctChange": 0.083000004
+},
+{
+"index": 3,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "ECP ControlCo, LLC",
+"pctHeld": 0.040700004,
+"Shares": 2399998,
+"Value": 799007366,
+"pctChange": 0.0
+},
+{
+"index": 4,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Vanguard Portfolio Management LLC",
+"pctHeld": 0.0378,
+"Shares": 2234227,
+"Value": 743818882,
+"pctChange": 0.031
+},
+{
+"index": 5,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Vanguard Capital Management LLC",
+"pctHeld": 0.0359,
+"Shares": 2117079,
+"Value": 704817969,
+"pctChange": 0.031
+},
+{
+"index": 6,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Fred Alger Management, LLC",
+"pctHeld": 0.0301,
+"Shares": 1776393,
+"Value": 591396781,
+"pctChange": 0.1487
+},
+{
+"index": 7,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Reaves (W.H.) & Company, Inc.",
+"pctHeld": 0.024400001,
+"Shares": 1438042,
+"Value": 478752961,
+"pctChange": -0.026199998
+},
+{
+"index": 8,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "State Street Corporation",
+"pctHeld": 0.0233,
+"Shares": 1378301,
+"Value": 458863987,
+"pctChange": -0.0011999999
+},
+{
+"index": 9,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Sachem Head Capital Management, LP",
+"pctHeld": 0.0196,
+"Shares": 1157500,
+"Value": 385354915,
+"pctChange": -0.1551
+}
+],
+"analysts": {
+"latest": [
+{
+"date": "2026-11-04",
+"firm": "Evercore ISI Group",
+"action": "main",
+"from": "Outperform",
+"to": "Outperform",
+"target": 515.0
+},
+{
+"date": "2026-10-28",
+"firm": "CIBC",
+"action": "main",
+"from": "Outperformer",
+"to": "Outperformer",
+"target": 493.0
+},
+{
+"date": "2026-10-28",
+"firm": "Wells Fargo",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 479.0
+},
+{
+"date": "2026-10-27",
+"firm": "Barclays",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 387.0
+},
+{
+"date": "2026-10-22",
+"firm": "TD Cowen",
+"action": "init",
+"from": "",
+"to": "Buy",
+"target": 475.0
+},
+{
+"date": "2026-10-22",
+"firm": "HSBC",
+"action": "init",
+"from": "",
+"to": "Buy",
+"target": 444.3
+},
+{
+"date": "2026-10-21",
+"firm": "Morgan Stanley",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 504.0
+},
+{
+"date": "2026-10-16",
+"firm": "CIBC",
+"action": "init",
+"from": "",
+"to": "Outperformer",
+"target": 499.0
+},
+{
+"date": "2026-09-18",
+"firm": "Morgan Stanley",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 514.0
+},
+{
+"date": "2026-08-24",
+"firm": "Mizuho",
+"action": "init",
+"from": "",
+"to": "Outperform",
+"target": 405.0
+},
+{
+"date": "2026-08-21",
+"firm": "Morgan Stanley",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 503.0
+},
+{
+"date": "2026-08-06",
+"firm": "Wells Fargo",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 501.0
+},
+{
+"date": "2026-07-28",
+"firm": "Barclays",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 408.0
+},
+{
+"date": "2026-07-27",
+"firm": "Wells Fargo",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 482.0
+},
+{
+"date": "2026-07-20",
+"firm": "Jefferies",
+"action": "main",
+"from": "Hold",
+"to": "Hold",
+"target": 422.0
+},
+{
+"date": "2026-07-15",
+"firm": "Scotiabank",
+"action": "main",
+"from": "Sector Perform",
+"to": "Sector Perform",
+"target": 470.0
+},
+{
+"date": "2026-06-18",
+"firm": "Goldman Sachs",
+"action": "init",
+"from": "",
+"to": "Buy",
+"target": 499.0
+},
+{
+"date": "2026-05-19",
+"firm": "Barclays",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 411.0
+},
+{
+"date": "2026-05-06",
+"firm": "Wells Fargo",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 477.0
+},
+{
+"date": "2026-04-21",
+"firm": "Barclays",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 408.0
+},
+{
+"date": "2026-03-19",
+"firm": "JP Morgan",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 421.0
+},
+{
+"date": "2026-02-11",
+"firm": "Barclays",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 425.0
+},
+{
+"date": "2026-01-20",
+"firm": "Wells Fargo",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 506.0
+},
+{
+"date": "2026-01-16",
+"firm": "Morgan Stanley",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 470.0
+},
+{
+"date": "2026-01-09",
+"firm": "Barclays",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 457.0
+}
+],
+"upgrades_12m": 0,
+"downgrades_12m": 0,
+"target_mean": 452.65,
+"rating": "strong_buy",
+"count": 20
+},
+"financials": {
+"marketCap": 14483788800,
+"enterpriseValue": 23736788992,
+"totalRevenue": 4480999936,
+"revenueGrowth": 0.961,
+"grossMargins": 0.42668998,
+"operatingMargins": 0.03325,
+"profitMargins": -0.05668,
+"ebitda": 674000000,
+"totalCash": 339000000,
+"totalDebt": 9569000448,
+"debtToEquity": 596.943,
+"freeCashflow": 941625024,
+"operatingCashflow": 770000000,
+"forwardPE": 10.345556,
+"priceToBook": 9.970054,
+"sharesOutstanding": 43505312,
+"floatShares": 33520843,
+"shortPercentOfFloat": 0.1086,
+"shortRatio": 3.88,
+"heldPercentInsiders": 0.0136,
+"heldPercentInstitutions": 1.14658,
+"targetMeanPrice": 452.65,
+"targetHighPrice": 560.0,
+"targetLowPrice": 307.0,
+"recommendationKey": "strong_buy",
+"numberOfAnalystOpinions": 20,
+"beta": 1.579,
+"fullTimeEmployees": 1880,
+"dividendYield": 0.0,
+"earningsTimestamp": 1793712600
+},
+"scorecard": {
+"ceo": "Mr. Mark Allen McFarland",
+"ceo_pay_usd": 4233661,
+"top_team_pay_usd": 11491969,
+"stock_1y_pct": -9.8,
+"group_1y_pct": -33.3,
+"group_3y_pct": 29.2,
+"vs_group_1y_pts": 23.5,
+"stock_3y_pct": 466.7,
+"vs_group_3y_pts": 437.5,
+"insiders_net_usd_12m": -23357456,
+"verdict_1y": "ahead of the group",
+"how_to_read": "Positive 'vs group' means the stock beat the typical (middle) nuclear name we follow. Heavy insider selling while the stock lags is the warning sign."
+}
+}

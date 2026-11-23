@@ -93,6 +93,9 @@ PLACES = {  # place: (search, stocks it touches, must-mention: any one entry; an
                          [("nnsa",), ("nuclear weapon",), ("plutonium",), ("nuclear arsenal",), ("warhead",)]),
     "Stockpiles and reserves": ('uranium reserve OR uranium stockpile OR "strategic uranium"', ["CCJ", "UEC", "UUUU"],
                                 [("uranium", "reserve"), ("uranium", "stockpile")]),
+    "Lawsuits and investigations": ('(Cameco OR NexGen OR "Uranium Energy" OR Denison OR "Energy Fuels" OR Centrus OR BWXT OR "Constellation Energy" OR Vistra OR "Talen Energy") '
+                                    '(lawsuit OR sued OR "class action" OR settlement OR investigation OR subpoena OR fined OR "court ruling" OR "tax dispute")', [],
+                                    [("cameco",), ("nexgen",), ("uranium energy",), ("denison",), ("energy fuels",), ("centrus",), ("bwxt",), ("constellation",), ("vistra",), ("talen",)]),
     "Workers and jobs": ('(Cameco OR NexGen OR Denison OR Centrus OR "Energy Fuels" OR "Uranium Energy" OR BWXT) '
                          '(hiring OR layoffs OR jobs OR workers OR union OR strike)', [],
                          [("cameco",), ("nexgen",), ("denison",), ("centrus",), ("energy fuels",), ("uranium energy",), ("bwxt",)]),
@@ -135,11 +138,13 @@ TAGS = {
     "restart": ("restart", "new reactor", "smr", "construction", "build", "relicens"),
     "defense": ("military", "navy", "submarine", "weapon", "missile", "nnsa", "aukus", "defense", "defence", "warhead", "pentagon"),
     "geopolitics": ("war", "attack", "invasion", "enrichment", "iaea", "nonproliferation", "sanction", "drone strike", "ceasefire"),
+    "legal": ("lawsuit", "sued", "sues", "class action", "settlement", "subpoena", "fined", "penalty", "indict", "litigation",
+              "securities fraud", "shareholder alert", "investigation", "tax dispute", "court ruling", "appeal"),
     "opposition": ("protest", "lawsuit", "court", "appeal", "opposition", "oppose", "challenge"),
 }
 WEIGHT = {"disruption": 2.0, "regulation": 1.5, "contract": 1.3, "financing": 1.2, "politics": 1.0, "production": 0.8,
-          "price": 0.8, "restart": 0.7, "opposition": 0.7, "jobs": 0.6, "defense": 1.0, "geopolitics": 1.3}
-MEMORY_TAGS = ("disruption", "regulation", "contract", "financing", "politics", "production", "opposition", "defense", "geopolitics")
+          "price": 0.8, "restart": 0.7, "opposition": 0.7, "jobs": 0.6, "defense": 1.0, "geopolitics": 1.3, "legal": 1.5}
+MEMORY_TAGS = ("disruption", "regulation", "contract", "financing", "politics", "production", "opposition", "defense", "geopolitics", "legal")
 BIG_OUTLETS = ("reuters", "bloomberg", "yahoo", "cnbc", "marketwatch", "seeking alpha", "motley fool", "zacks", "tradingview",
                "investing.com", "benzinga", "kalkine", "ad-hoc-news", "blockchain news", "mlq", "devdiscourse", "marketbeat", "stocktitan", "tipranks", "insidermonkey", "globe and mail", "financial post", "barron", "msn", "nasdaq", "simply wall")
 NUM = re.compile(r"(?:US)?\$?\d[\d,]*(?:\.\d+)?\s?(?:%|percent|million|billion|mlbs|lbs|pounds|tonnes|tons|tu\b|mw\b|gw\b|/lb|per pound)", re.I)
@@ -258,7 +263,7 @@ def _tags(text):
 def collect(cfg, max_age_days=4):
     """Fetch every source once. Returns (raw items, source health)."""
     raw, health = [], {}
-    generic = ("Uranium price", "US policy", "Sprott trust", "Workers and jobs")  # broad searches last: specific places keep their stories
+    generic = ("Uranium price", "US policy", "Sprott trust", "Workers and jobs", "Lawsuits and investigations")  # broad searches last: specific places keep their stories
     for place, (q, base, must) in sorted(PLACES.items(), key=lambda kv: kv[0] in generic):
         ents = _feed(_gnews(q))
         health[place] = None if ents is None else len(ents)

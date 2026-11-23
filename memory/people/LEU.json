@@ -1,0 +1,658 @@
+{
+"ticker": "LEU",
+"updated": "2026-11-23 04:07",
+"name": "Centrus Energy Corp.",
+"about": "Centrus Energy Corp. supplies nuclear fuel components for the nuclear power industry in the United States, Japan, the Netherlands, and internationally. The company operates through two segments: Low-Enriched Uranium (LEU) and Technical Solutions. The LEU segment sells separative work units (SWU) components of LEU; natural uranium hexafluoride, uranium concentrates, and uranium conversion; and enriched uranium products to utilities that operate nuclear power plants. The Technical Solutions segment offers technical, manufacturing, engineering, and operations services to public and private sector customers. It also operates as a equipment manufacturing and engineering firm focused primarily on the energy sector. Additionally, it manufactures and ships centrifuges to Oak Ridge to support a major expansion of its uranium enrichment capacity in Ohio. The company was formerly known as USEC Inc. and changed its name to Centrus Energy Corp. in September 2014. Centrus Energy Corp. was incorporated in 1998 and is headquartered in Bethesda, Maryland.",
+"website": "https://www.centrusenergy.com",
+"hq": "Bethesda, MD, United States",
+"bosses": [
+{
+"name": "Mr. Amir V. Vexler",
+"title": "President, CEO & Director",
+"age": 52,
+"totalPay": 1904361,
+"yearBorn": 1973
+},
+{
+"name": "Mr. Todd M. Tinelli",
+"title": "CFO, Senior VP & Treasurer",
+"age": 44,
+"totalPay": 590262,
+"yearBorn": 1981
+},
+{
+"name": "Mr. Neal K. Nagarajan",
+"title": "Senior VP & Head of Investor Relations",
+"age": 40,
+"totalPay": 638442,
+"yearBorn": 1985
+},
+{
+"name": "Mr. John M. A. Donelson",
+"title": "Senior VP & Chief Marketing Officer",
+"age": 60,
+"totalPay": 779304,
+"yearBorn": 1965
+},
+{
+"name": "Mr. Patrick S. Brown",
+"title": "Senior Vice President of Field Operations",
+"age": 45,
+"totalPay": 684187,
+"yearBorn": 1980
+},
+{
+"name": "Mr. Richard V. Rowland",
+"title": "VP & Chief Human Resource Officer",
+"age": 76,
+"totalPay": null,
+"yearBorn": 1949
+}
+],
+"ceo": {
+"name": "Mr. Amir V. Vexler",
+"title": "President, CEO & Director",
+"age": 52,
+"totalPay": 1904361,
+"yearBorn": 1973
+},
+"governance_risk_1_low_10_high": {
+"audit": 5,
+"board": 4,
+"pay": 6,
+"shareholder rights": 10,
+"overall": 8
+},
+"insiders_last_12m": {
+"sold_usd": 62286,
+"bought_usd": 0,
+"net_usd": -62286,
+"sellers": [
+"TINELLI TODD M"
+]
+},
+"insider_trades": [
+{
+"date": "2026-08-11",
+"who": "TINELLI TODD M",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 456,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-08-11",
+"who": "TINELLI TODD M",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 456,
+"value_usd": 86271.0,
+"what": "Conversion of Exercise of derivative security at price 189.19 per share."
+},
+{
+"date": "2026-06-18",
+"who": "ROTHROCK RAY A",
+"role": "Director",
+"kind": "award/other",
+"shares": 757,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-06-18",
+"who": "MADIA WILLIAM J",
+"role": "Director",
+"kind": "award/other",
+"shares": 757,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-06-18",
+"who": "JONAS TINA W",
+"role": "Director",
+"kind": "award/other",
+"shares": 757,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-06-18",
+"who": "DONALD KIRKLAND H",
+"role": "Director",
+"kind": "award/other",
+"shares": 757,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-06-18",
+"who": "WILLIAMS MIKEL H",
+"role": "Director",
+"kind": "award/other",
+"shares": 757,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-05-11",
+"who": "TINELLI TODD M",
+"role": "Chief Financial Officer",
+"kind": "sell",
+"shares": 306,
+"value_usd": 62286.0,
+"what": "Sale at price 203.55 per share."
+},
+{
+"date": "2026-04-21",
+"who": "BROWN PATRICK SIDNEY",
+"role": "Officer",
+"kind": "award/other",
+"shares": 1596,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-04-21",
+"who": "BROWN PATRICK SIDNEY",
+"role": "Officer",
+"kind": "award/other",
+"shares": 1596,
+"value_usd": 305714.0,
+"what": "Conversion of Exercise of derivative security at price 191.55 per share."
+},
+{
+"date": "2026-03-13",
+"who": "DONELSON JOHN M.A.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 2777,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-12-04",
+"who": "VEXLER AMIR VADIM",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 4000,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-08-11",
+"who": "TINELLI TODD M",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 456,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-06-20",
+"who": "O'SULLIVAN STEPHANIE L.",
+"role": "Director",
+"kind": "award/other",
+"shares": 684,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-06-20",
+"who": "ROTHROCK RAY A",
+"role": "Director",
+"kind": "award/other",
+"shares": 684,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-06-20",
+"who": "MADIA WILLIAM J",
+"role": "Director",
+"kind": "award/other",
+"shares": 684,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-06-20",
+"who": "JONAS TINA W",
+"role": "Director",
+"kind": "award/other",
+"shares": 684,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-06-20",
+"who": "DONALD KIRKLAND H",
+"role": "Director",
+"kind": "award/other",
+"shares": 684,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-06-20",
+"who": "WILLIAMS MIKEL H",
+"role": "Director",
+"kind": "award/other",
+"shares": 684,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-05-30",
+"who": "HARRILL KEVIN J.",
+"role": "Chief Financial Officer",
+"kind": "sell",
+"shares": 1728,
+"value_usd": 217728.0,
+"what": "Sale at price 126.00 per share."
+},
+{
+"date": "2025-05-13",
+"who": "DONELSON JOHN M.A.",
+"role": "Officer",
+"kind": "sell",
+"shares": 3732,
+"value_usd": 359429.0,
+"what": "Sale at price 96.31 per share."
+},
+{
+"date": "2025-03-31",
+"who": "CUTLIP LARRY B",
+"role": "Officer",
+"kind": "award/other",
+"shares": 3165,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-03-31",
+"who": "HARRILL KEVIN J.",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 2473,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-03-31",
+"who": "DONELSON JOHN M.A.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 3520,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-02-12",
+"who": "CUTLIP LARRY B",
+"role": "Officer",
+"kind": "sell",
+"shares": 4000,
+"value_usd": 481240.0,
+"what": "Sale at price 120.31 per share."
+},
+{
+"date": "2024-12-04",
+"who": "VEXLER AMIR VADIM",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 4000,
+"value_usd": null,
+"what": ""
+}
+],
+"top_holders": [
+{
+"index": 0,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Blackrock Inc.",
+"pctHeld": 0.13069999,
+"Shares": 2601167,
+"Value": 211813029,
+"pctChange": 0.6806
+},
+{
+"index": 1,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "State Street Corporation",
+"pctHeld": 0.0738,
+"Shares": 1468662,
+"Value": 119593147,
+"pctChange": -0.1041
+},
+{
+"index": 2,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Van Eck Associates Corporation",
+"pctHeld": 0.066,
+"Shares": 1313489,
+"Value": 106957409,
+"pctChange": -0.2049
+},
+{
+"index": 3,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Mirae Asset Global ETFs Holdings Ltd.",
+"pctHeld": 0.0639,
+"Shares": 1271452,
+"Value": 103534336,
+"pctChange": 0.0106
+},
+{
+"index": 4,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Vanguard Capital Management LLC",
+"pctHeld": 0.0427,
+"Shares": 850087,
+"Value": 69222584,
+"pctChange": 0.0505
+},
+{
+"index": 5,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Morgan Stanley",
+"pctHeld": 0.0248,
+"Shares": 492973,
+"Value": 40142791,
+"pctChange": 0.6242
+},
+{
+"index": 6,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Geode Capital Management, LLC",
+"pctHeld": 0.0239,
+"Shares": 474838,
+"Value": 38666058,
+"pctChange": 0.0
+},
+{
+"index": 7,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Vanguard Portfolio Management LLC",
+"pctHeld": 0.0221,
+"Shares": 440479,
+"Value": 35868205,
+"pctChange": 0.8933
+},
+{
+"index": 8,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Heights Capital Management, Inc                          ",
+"pctHeld": 0.0221,
+"Shares": 439329,
+"Value": 35774560,
+"pctChange": 1.0
+},
+{
+"index": 9,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "UBS Group AG",
+"pctHeld": 0.0212,
+"Shares": 422540,
+"Value": 34407432,
+"pctChange": 1.2312
+}
+],
+"analysts": {
+"latest": [
+{
+"date": "2026-11-07",
+"firm": "JP Morgan",
+"action": "main",
+"from": "Neutral",
+"to": "Neutral",
+"target": 100.0
+},
+{
+"date": "2026-11-06",
+"firm": "Barclays",
+"action": "main",
+"from": "Equal-Weight",
+"to": "Equal-Weight",
+"target": 149.0
+},
+{
+"date": "2026-11-06",
+"firm": "Roth Capital",
+"action": "up",
+"from": "Neutral",
+"to": "Buy",
+"target": 115.0
+},
+{
+"date": "2026-10-28",
+"firm": "B. Riley Securities",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 188.0
+},
+{
+"date": "2026-10-26",
+"firm": "JP Morgan",
+"action": "main",
+"from": "Neutral",
+"to": "Neutral",
+"target": 120.0
+},
+{
+"date": "2026-10-26",
+"firm": "TD Cowen",
+"action": "init",
+"from": "",
+"to": "Hold",
+"target": 120.0
+},
+{
+"date": "2026-10-23",
+"firm": "UBS",
+"action": "main",
+"from": "Neutral",
+"to": "Neutral",
+"target": 120.0
+},
+{
+"date": "2026-10-23",
+"firm": "Barclays",
+"action": "main",
+"from": "Equal-Weight",
+"to": "Equal-Weight",
+"target": 150.0
+},
+{
+"date": "2026-10-22",
+"firm": "Truist Securities",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 178.0
+},
+{
+"date": "2026-10-21",
+"firm": "HC Wainwright & Co.",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 300.0
+},
+{
+"date": "2026-10-20",
+"firm": "Needham",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 206.0
+},
+{
+"date": "2026-10-08",
+"firm": "Guggenheim",
+"action": "init",
+"from": "",
+"to": "Buy",
+"target": 167.0
+},
+{
+"date": "2026-09-03",
+"firm": "Jefferies",
+"action": "init",
+"from": "",
+"to": "Hold",
+"target": 169.0
+},
+{
+"date": "2026-08-25",
+"firm": "Stifel",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 216.0
+},
+{
+"date": "2026-08-19",
+"firm": "UBS",
+"action": "main",
+"from": "Neutral",
+"to": "Neutral",
+"target": 185.0
+},
+{
+"date": "2026-08-18",
+"firm": "Barclays",
+"action": "init",
+"from": "",
+"to": "Equal-Weight",
+"target": 207.0
+},
+{
+"date": "2026-08-07",
+"firm": "JP Morgan",
+"action": "main",
+"from": "Neutral",
+"to": "Neutral",
+"target": 180.0
+},
+{
+"date": "2026-08-07",
+"firm": "Needham",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 262.0
+},
+{
+"date": "2026-08-07",
+"firm": "Evercore ISI Group",
+"action": "main",
+"from": "Outperform",
+"to": "Outperform",
+"target": 337.0
+},
+{
+"date": "2026-07-29",
+"firm": "JP Morgan",
+"action": "main",
+"from": "Neutral",
+"to": "Neutral",
+"target": 178.0
+},
+{
+"date": "2026-07-14",
+"firm": "Truist Securities",
+"action": "init",
+"from": "",
+"to": "Buy",
+"target": 215.0
+},
+{
+"date": "2026-07-09",
+"firm": "B of A Securities",
+"action": "main",
+"from": "Neutral",
+"to": "Neutral",
+"target": 205.0
+},
+{
+"date": "2026-07-09",
+"firm": "Needham",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 264.0
+},
+{
+"date": "2026-06-22",
+"firm": "Roth Capital",
+"action": "main",
+"from": "Neutral",
+"to": "Neutral",
+"target": 195.0
+},
+{
+"date": "2026-06-16",
+"firm": "UBS",
+"action": "main",
+"from": "Neutral",
+"to": "Neutral",
+"target": 170.0
+}
+],
+"upgrades_12m": 1,
+"downgrades_12m": 0,
+"target_mean": 180.25,
+"rating": "buy",
+"count": 20
+},
+"financials": {
+"marketCap": 1678960384,
+"enterpriseValue": 621660352,
+"totalRevenue": 454500000,
+"revenueGrowth": -0.259,
+"grossMargins": 0.23278,
+"operatingMargins": -0.02772,
+"profitMargins": 0.16766001,
+"ebitda": -2800000,
+"totalCash": 2236100096,
+"totalDebt": 1178800000,
+"debtToEquity": 106.669,
+"freeCashflow": -233300000,
+"operatingCashflow": -59500000,
+"trailingPE": 24.163206,
+"forwardPE": 18.408958,
+"priceToBook": 1.5070978,
+"sharesOutstanding": 19899250,
+"floatShares": 19849794,
+"shortPercentOfFloat": 0.2958,
+"shortRatio": 6.59,
+"heldPercentInsiders": 0.01056,
+"heldPercentInstitutions": 0.94282997,
+"targetMeanPrice": 180.25,
+"targetHighPrice": 300.0,
+"targetLowPrice": 100.0,
+"recommendationKey": "buy",
+"numberOfAnalystOpinions": 20,
+"beta": 1.407,
+"fullTimeEmployees": 467,
+"dividendYield": 0.0,
+"earningsTimestamp": 1793826000
+},
+"scorecard": {
+"ceo": "Mr. Amir V. Vexler",
+"ceo_pay_usd": 1904361,
+"top_team_pay_usd": 4596556,
+"stock_1y_pct": -66.3,
+"group_1y_pct": -30.9,
+"group_3y_pct": 29.2,
+"vs_group_1y_pts": -35.4,
+"stock_3y_pct": 67.0,
+"vs_group_3y_pts": 37.8,
+"insiders_net_usd_12m": -62286,
+"verdict_1y": "behind the group",
+"how_to_read": "Positive 'vs group' means the stock beat the typical (middle) nuclear name we follow. Heavy insider selling while the stock lags is the warning sign."
+}
+}

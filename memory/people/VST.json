@@ -1,0 +1,1177 @@
+{
+"ticker": "VST",
+"updated": "2026-11-23 04:07",
+"name": "Vistra Corp.",
+"about": "Vistra Corp., together with its subsidiaries, operates as an integrated retail electricity and power generation company in the United States. The company operates through five segments: Retail, Texas, East, West, and Asset Closure. The company retails electricity and natural gas to residential, commercial, and industrial customers across states in the United States and the District of Columbia. It is also involved in electricity generation, wholesale energy purchases and sales, commodity risk management, fuel procurement, and fuel logistics management activities. In addition, the company engages in decommissioning and reclamation of retired generation facilities, including mines, and battery removal and remediation activities. It serves approximately 5 million customers with a generation capacity of approximately 44,000 megawatts with a portfolio of natural gas, nuclear, coal, solar, and battery energy storage facilities. The company was formerly known as Vistra Energy Corp. and changed its name to Vistra Corp. in July 2020. Vistra Corp. was founded in 1882 and is based in Irving, Texas.",
+"website": "https://vistracorp.com",
+"hq": "Irving, TX, United States",
+"bosses": [
+{
+"name": "Mr. Kristopher E. Moldovan",
+"title": "Executive VP & CFO",
+"age": 53,
+"totalPay": 1512241,
+"yearBorn": 1972
+},
+{
+"name": "Ms. Stephanie Zapata Moore",
+"title": "Executive VP, General Counsel & Chief Compliance Officer",
+"age": 52,
+"totalPay": 1352023,
+"yearBorn": 1973
+},
+{
+"name": "Ms. Stacey H. Dore J.D.",
+"title": "Chief Strategy and Sustainability Officer & Executive VP of Public Affairs",
+"age": 52,
+"totalPay": 1560472,
+"yearBorn": 1973
+},
+{
+"name": "Mr. Scott A. Hudson",
+"title": "Executive VP & President of Retail",
+"age": 61,
+"totalPay": 1530478,
+"yearBorn": 1964
+},
+{
+"name": "Ms. Margaret M. Montemayor",
+"title": "Senior VP, Chief Accounting Officer & Controller",
+"age": 47,
+"totalPay": null,
+"yearBorn": 1978
+},
+{
+"name": "Mr. Tom  Farrah",
+"title": "Senior VP & CIO",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Mr. Eric  Micek C.F.A.",
+"title": "Vice President of Investor Relations",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Ms. Amanda  DonCarlos",
+"title": "Senior VP & Chief Human Resources Officer",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Ms. Sano  Blocker",
+"title": "Senior Vice President of Government Affairs",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Mr. Steven  van Tuijl",
+"title": "Regional Managing Director of Continental Europe",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+}
+],
+"ceo": {
+"name": null,
+"note": "The data source doesn't list this company's chief executive right now; check the latest filings."
+},
+"governance_risk_1_low_10_high": {
+"audit": 4,
+"board": 1,
+"pay": 2,
+"shareholder rights": 5,
+"overall": 1
+},
+"insiders_last_12m": {
+"sold_usd": 36118217,
+"bought_usd": 1173069,
+"net_usd": -34945148,
+"sellers": [
+"ACOSTA ARCILIA C",
+"BARBAS PAUL M",
+"BURKE JAMES A.",
+"HELM SCOTT BRADFORD",
+"HUDSON SCOTT A",
+"MOLDOVAN KRISTOPHER E.",
+"MONTEMAYOR MARGARET M.",
+"MOORE STEPHANIE ZAPATA",
+"SULT JOHN R"
+]
+},
+"insider_trades": [
+{
+"date": "2026-10-07",
+"who": "MOLDOVAN KRISTOPHER E.",
+"role": "Officer",
+"kind": "sell",
+"shares": 20000,
+"value_usd": 3300000,
+"what": "Sale at price 165.00 per share."
+},
+{
+"date": "2026-10-06",
+"who": "HUDSON SCOTT A",
+"role": "Officer",
+"kind": "sell",
+"shares": 22222,
+"value_usd": 3558631,
+"what": "Sale at price 160.14 per share."
+},
+{
+"date": "2026-09-08",
+"who": "MOLDOVAN KRISTOPHER E.",
+"role": "Chief Financial Officer",
+"kind": "sell",
+"shares": 20000,
+"value_usd": 3020600,
+"what": "Sale at price 151.03 per share."
+},
+{
+"date": "2026-09-08",
+"who": "HUDSON SCOTT A",
+"role": "Officer",
+"kind": "sell",
+"shares": 44444,
+"value_usd": 6747545,
+"what": "Sale at price 150.97 - 152.56 per share."
+},
+{
+"date": "2026-09-01",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "buy",
+"shares": 6665,
+"value_usd": 903069,
+"what": "Purchase at price 135.25 - 135.99 per share."
+},
+{
+"date": "2026-08-24",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "buy",
+"shares": 2000,
+"value_usd": 270000,
+"what": "Purchase at price 135.00 per share."
+},
+{
+"date": "2026-06-18",
+"who": "ACOSTA ARCILIA C",
+"role": "Director",
+"kind": "sell",
+"shares": 15000,
+"value_usd": 2512800,
+"what": "Sale at price 165.04 - 170.00 per share."
+},
+{
+"date": "2026-06-18",
+"who": "SULT JOHN R",
+"role": "Director",
+"kind": "sell",
+"shares": 6500,
+"value_usd": 1105000,
+"what": "Sale at price 170.00 per share."
+},
+{
+"date": "2026-06-16",
+"who": "HELM SCOTT BRADFORD",
+"role": "Director",
+"kind": "sell",
+"shares": 25000,
+"value_usd": 4000000,
+"what": "Sale at price 160.00 per share."
+},
+{
+"date": "2026-06-15",
+"who": "BARBAS PAUL M",
+"role": "Director",
+"kind": "sell",
+"shares": 488,
+"value_usd": 73427,
+"what": "Sale at price 147.93 - 153.00 per share."
+},
+{
+"date": "2026-06-02",
+"who": "MONTEMAYOR MARGARET M.",
+"role": "Officer",
+"kind": "sell",
+"shares": 4600,
+"value_usd": 736000,
+"what": "Sale at price 160.00 per share."
+},
+{
+"date": "2026-05-27",
+"who": "MONTEMAYOR MARGARET M.",
+"role": "Officer",
+"kind": "sell",
+"shares": 5000,
+"value_usd": 824800,
+"what": "Sale at price 164.96 per share."
+},
+{
+"date": "2026-05-15",
+"who": "PITESA JOHN WILLIAM",
+"role": "Director",
+"kind": "award/other",
+"shares": 1268,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-05-15",
+"who": "WALTERS ROBERT C.",
+"role": "Director",
+"kind": "award/other",
+"shares": 1268,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-05-15",
+"who": "LAGACY JULIE A.",
+"role": "Director",
+"kind": "award/other",
+"shares": 1268,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-05-15",
+"who": "ACKERMANN HILARY E",
+"role": "Director",
+"kind": "award/other",
+"shares": 1268,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-05-15",
+"who": "BAIERA GAVIN R",
+"role": "Director",
+"kind": "award/other",
+"shares": 1268,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-05-15",
+"who": "ACOSTA ARCILIA C",
+"role": "Director",
+"kind": "award/other",
+"shares": 1268,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-05-15",
+"who": "HELM SCOTT BRADFORD",
+"role": "Director",
+"kind": "award/other",
+"shares": 2008,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-05-15",
+"who": "BARBAS PAUL M",
+"role": "Director",
+"kind": "award/other",
+"shares": 1268,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-05-15",
+"who": "SULT JOHN R",
+"role": "Director",
+"kind": "award/other",
+"shares": 1268,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-05-15",
+"who": "CRUTCHFIELD LISA",
+"role": "Director",
+"kind": "award/other",
+"shares": 1268,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-03-09",
+"who": "MOORE STEPHANIE ZAPATA",
+"role": "General Counsel",
+"kind": "sell",
+"shares": 10000,
+"value_usd": 1603100,
+"what": "Sale at price 160.31 per share."
+},
+{
+"date": "2026-03-05",
+"who": "MOLDOVAN KRISTOPHER E.",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 10712,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-03-05",
+"who": "HUDSON SCOTT A",
+"role": "Officer",
+"kind": "award/other",
+"shares": 6106,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-03-05",
+"who": "MONTEMAYOR MARGARET M.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 1989,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-03-05",
+"who": "DORE STACEY H.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 12855,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-03-05",
+"who": "MOORE STEPHANIE ZAPATA",
+"role": "General Counsel",
+"kind": "award/other",
+"shares": 5356,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-03-05",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 28281,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-02-24",
+"who": "MOLDOVAN KRISTOPHER E.",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 136888,
+"value_usd": 23492719,
+"what": "Stock Award(Grant) at price 171.62 per share."
+},
+{
+"date": "2026-02-24",
+"who": "HUDSON SCOTT A",
+"role": "Officer",
+"kind": "award/other",
+"shares": 117332,
+"value_usd": 20136518,
+"what": "Stock Award(Grant) at price 171.62 per share."
+},
+{
+"date": "2026-02-24",
+"who": "DORE STACEY H.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 134444,
+"value_usd": 23073279,
+"what": "Stock Award(Grant) at price 171.62 per share."
+},
+{
+"date": "2026-02-24",
+"who": "KIRBY CARRIE LEE",
+"role": "Officer",
+"kind": "award/other",
+"shares": 79444,
+"value_usd": 13634179,
+"what": "Stock Award(Grant) at price 171.62 per share."
+},
+{
+"date": "2026-02-24",
+"who": "MOORE STEPHANIE ZAPATA",
+"role": "General Counsel",
+"kind": "award/other",
+"shares": 79444,
+"value_usd": 13634179,
+"what": "Stock Award(Grant) at price 171.62 per share."
+},
+{
+"date": "2026-02-24",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 320000,
+"value_usd": 54918400,
+"what": "Stock Award(Grant) at price 171.62 per share."
+},
+{
+"date": "2025-12-12",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 50000,
+"value_usd": 701500,
+"what": "Conversion of Exercise of derivative security at price 14.03 per share."
+},
+{
+"date": "2025-12-12",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 50000,
+"value_usd": 701500,
+"what": "Conversion of Exercise of derivative security at price 14.03 per share."
+},
+{
+"date": "2025-12-11",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 22251,
+"value_usd": 3605775,
+"what": "Sale at price 162.05 per share."
+},
+{
+"date": "2025-12-11",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 22251,
+"value_usd": 3605775,
+"what": "Sale at price 162.05 per share."
+},
+{
+"date": "2025-12-11",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 27745,
+"value_usd": 0,
+"what": "Stock Gift at price 0.00 per share."
+},
+{
+"date": "2025-12-11",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 27745,
+"value_usd": 0,
+"what": "Stock Gift at price 0.00 per share."
+},
+{
+"date": "2025-11-28",
+"who": "MOORE STEPHANIE ZAPATA",
+"role": "General Counsel",
+"kind": "award/other",
+"shares": 3602,
+"value_usd": 0,
+"what": "Stock Gift at price 0.00 per share."
+},
+{
+"date": "2025-11-24",
+"who": "MOORE STEPHANIE ZAPATA",
+"role": "General Counsel",
+"kind": "sell",
+"shares": 8219,
+"value_usd": 1424764,
+"what": "Sale at price 173.35 per share."
+},
+{
+"date": "2025-11-14",
+"who": "HUDSON SCOTT A",
+"role": "Officer",
+"kind": "award/other",
+"shares": 56000,
+"value_usd": 1102080,
+"what": "Conversion of Exercise of derivative security at price 19.68 per share."
+},
+{
+"date": "2025-11-14",
+"who": "KIRBY CARRIE LEE",
+"role": "Officer",
+"kind": "award/other",
+"shares": 58275,
+"value_usd": 1339160,
+"what": "Conversion of Exercise of derivative security at price 22.98 per share."
+},
+{
+"date": "2025-11-14",
+"who": "KIRBY CARRIE LEE",
+"role": "Officer",
+"kind": "sell",
+"shares": 58275,
+"value_usd": 10183556,
+"what": "Sale at price 174.75 per share."
+},
+{
+"date": "2025-11-14",
+"who": "HUDSON SCOTT A",
+"role": "Officer",
+"kind": "sell",
+"shares": 56000,
+"value_usd": 9456160,
+"what": "Sale at price 168.86 per share."
+},
+{
+"date": "2025-11-12",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 50000,
+"value_usd": 701500,
+"what": "Conversion of Exercise of derivative security at price 14.03 per share."
+},
+{
+"date": "2025-11-11",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 21935,
+"value_usd": 4091536,
+"what": "Sale at price 186.53 per share."
+},
+{
+"date": "2025-11-11",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 27893,
+"value_usd": 0,
+"what": "Stock Gift at price 0.00 per share."
+},
+{
+"date": "2025-10-29",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 9641,
+"value_usd": 189735,
+"what": "Conversion of Exercise of derivative security at price 19.68 per share."
+},
+{
+"date": "2025-10-29",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 9641,
+"value_usd": 1853964,
+"what": "Sale at price 192.30 per share."
+},
+{
+"date": "2025-10-27",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 22011,
+"value_usd": 433176,
+"what": "Conversion of Exercise of derivative security at price 19.68 per share."
+},
+{
+"date": "2025-10-27",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 20473,
+"value_usd": 4169122,
+"what": "Sale at price 203.64 per share."
+},
+{
+"date": "2025-10-24",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 44000,
+"value_usd": 865920,
+"what": "Conversion of Exercise of derivative security at price 19.68 per share."
+},
+{
+"date": "2025-10-24",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 39213,
+"value_usd": 7520634,
+"what": "Sale at price 186.00 - 196.46 per share."
+},
+{
+"date": "2025-10-22",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 26400,
+"value_usd": 519552,
+"what": "Conversion of Exercise of derivative security at price 19.68 per share."
+},
+{
+"date": "2025-10-22",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 21617,
+"value_usd": 4080205,
+"what": "Sale at price 188.30 - 193.15 per share."
+},
+{
+"date": "2025-10-20",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 48000,
+"value_usd": 944640,
+"what": "Conversion of Exercise of derivative security at price 19.68 per share."
+},
+{
+"date": "2025-10-20",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 42738,
+"value_usd": 8808937,
+"what": "Sale at price 204.57 - 207.66 per share."
+},
+{
+"date": "2025-10-16",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 48000,
+"value_usd": 944640,
+"what": "Conversion of Exercise of derivative security at price 19.68 per share."
+},
+{
+"date": "2025-10-16",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 42718,
+"value_usd": 9068012,
+"what": "Sale at price 209.34 - 216.58 per share."
+},
+{
+"date": "2025-10-14",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 120000,
+"value_usd": 2079100,
+"what": "Conversion of Exercise of derivative security at price 14.03 - 19.68 per share."
+},
+{
+"date": "2025-10-14",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 84160,
+"value_usd": 17211819,
+"what": "Sale at price 201.12 - 209.76 per share."
+},
+{
+"date": "2025-10-13",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 27893,
+"value_usd": 0,
+"what": "Stock Gift at price 0.00 per share."
+},
+{
+"date": "2025-10-09",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 46000,
+"value_usd": 905280,
+"what": "Conversion of Exercise of derivative security at price 19.68 per share."
+},
+{
+"date": "2025-10-09",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 40961,
+"value_usd": 8381573,
+"what": "Sale at price 200.13 - 207.55 per share."
+},
+{
+"date": "2025-10-07",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 48000,
+"value_usd": 944640,
+"what": "Conversion of Exercise of derivative security at price 19.68 per share."
+},
+{
+"date": "2025-10-07",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 42744,
+"value_usd": 8728944,
+"what": "Sale at price 201.49 - 206.94 per share."
+},
+{
+"date": "2025-10-03",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 48000,
+"value_usd": 944640,
+"what": "Conversion of Exercise of derivative security at price 19.68 per share."
+},
+{
+"date": "2025-10-03",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 42742,
+"value_usd": 8738255,
+"what": "Sale at price 204.06 - 205.73 per share."
+},
+{
+"date": "2025-10-01",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 44000,
+"value_usd": 865920,
+"what": "Conversion of Exercise of derivative security at price 19.68 per share."
+},
+{
+"date": "2025-10-01",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 39201,
+"value_usd": 7724187,
+"what": "Sale at price 192.87 - 199.30 per share."
+},
+{
+"date": "2025-09-29",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 48000,
+"value_usd": 944640,
+"what": "Conversion of Exercise of derivative security at price 19.68 per share."
+},
+{
+"date": "2025-09-29",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 42754,
+"value_usd": 8617418,
+"what": "Sale at price 199.70 - 202.19 per share."
+},
+{
+"date": "2025-09-25",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 48000,
+"value_usd": 771456,
+"what": "Conversion of Exercise of derivative security at price 14.03 - 19.68 per share."
+},
+{
+"date": "2025-09-25",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 42750,
+"value_usd": 8629458,
+"what": "Sale at price 199.00 - 203.82 per share."
+},
+{
+"date": "2025-09-23",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 48000,
+"value_usd": 727680,
+"what": "Conversion of Exercise of derivative security at price 14.03 - 19.68 per share."
+},
+{
+"date": "2025-09-23",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 42722,
+"value_usd": 8993908,
+"what": "Sale at price 210.00 - 212.11 per share."
+},
+{
+"date": "2025-09-19",
+"who": "BURKE JAMES A.",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 48000,
+"value_usd": 727680,
+"what": "Conversion of Exercise of derivative security at price 14.03 - 19.68 per share."
+}
+],
+"top_holders": [
+{
+"index": 0,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Blackrock Inc.",
+"pctHeld": 0.0847,
+"Shares": 28759577,
+"Value": 3314541249,
+"pctChange": -0.0105
+},
+{
+"index": 1,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Vanguard Capital Management LLC",
+"pctHeld": 0.0629,
+"Shares": 21339832,
+"Value": 2459415638,
+"pctChange": -0.0025
+},
+{
+"index": 2,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "State Street Corporation",
+"pctHeld": 0.051,
+"Shares": 17325257,
+"Value": 1996735869,
+"pctChange": 0.028199999
+},
+{
+"index": 3,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Vanguard Portfolio Management LLC",
+"pctHeld": 0.0499,
+"Shares": 16939727,
+"Value": 1952303536,
+"pctChange": 0.0
+},
+{
+"index": 4,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "FMR, LLC",
+"pctHeld": 0.0353,
+"Shares": 11980078,
+"Value": 1380703989,
+"pctChange": -0.154
+},
+{
+"index": 5,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Morgan Stanley",
+"pctHeld": 0.0279,
+"Shares": 9465737,
+"Value": 1090926189,
+"pctChange": 0.0659
+},
+{
+"index": 6,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Geode Capital Management, LLC",
+"pctHeld": 0.026700001,
+"Shares": 9076089,
+"Value": 1046019257,
+"pctChange": 0.0043
+},
+{
+"index": 7,
+"Date Reported": "2026-06-30T00:00:00.000",
+"Holder": "NORGES BANK",
+"pctHeld": 0.0171,
+"Shares": 5811201,
+"Value": 669740915,
+"pctChange": 0.2555
+},
+{
+"index": 8,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "UBS Group AG",
+"pctHeld": 0.0162,
+"Shares": 5483360,
+"Value": 631957240,
+"pctChange": 0.015700001
+},
+{
+"index": 9,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Bank of America Corporation",
+"pctHeld": 0.0114,
+"Shares": 3885897,
+"Value": 447849629,
+"pctChange": 0.3161
+}
+],
+"analysts": {
+"latest": [
+{
+"date": "2026-11-09",
+"firm": "Scotiabank",
+"action": "main",
+"from": "Sector Outperform",
+"to": "Sector Outperform",
+"target": 169.0
+},
+{
+"date": "2026-11-06",
+"firm": "Bernstein",
+"action": "reit",
+"from": "Outperform",
+"to": "Outperform",
+"target": 181.0
+},
+{
+"date": "2026-11-04",
+"firm": "Keybanc",
+"action": "down",
+"from": "Overweight",
+"to": "Sector Weight",
+"target": 0.0
+},
+{
+"date": "2026-10-28",
+"firm": "CIBC",
+"action": "main",
+"from": "Outperformer",
+"to": "Outperformer",
+"target": 181.0
+},
+{
+"date": "2026-10-28",
+"firm": "Scotiabank",
+"action": "main",
+"from": "Sector Outperform",
+"to": "Sector Outperform",
+"target": 189.0
+},
+{
+"date": "2026-10-28",
+"firm": "Wells Fargo",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 198.0
+},
+{
+"date": "2026-10-27",
+"firm": "B of A Securities",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 194.0
+},
+{
+"date": "2026-10-22",
+"firm": "HSBC",
+"action": "init",
+"from": "",
+"to": "Buy",
+"target": 190.0
+},
+{
+"date": "2026-10-21",
+"firm": "Morgan Stanley",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 226.0
+},
+{
+"date": "2026-10-16",
+"firm": "CIBC",
+"action": "init",
+"from": "",
+"to": "Outperformer",
+"target": 201.0
+},
+{
+"date": "2026-10-05",
+"firm": "BMO Capital",
+"action": "main",
+"from": "Outperform",
+"to": "Outperform",
+"target": 210.0
+},
+{
+"date": "2026-10-01",
+"firm": "Bernstein",
+"action": "reit",
+"from": "Outperform",
+"to": "Outperform",
+"target": 181.0
+},
+{
+"date": "2026-08-24",
+"firm": "Mizuho",
+"action": "init",
+"from": "",
+"to": "Outperform",
+"target": 169.0
+},
+{
+"date": "2026-08-21",
+"firm": "Morgan Stanley",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 227.0
+},
+{
+"date": "2026-08-19",
+"firm": "TD Cowen",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 221.0
+},
+{
+"date": "2026-07-28",
+"firm": "UBS",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 227.0
+},
+{
+"date": "2026-07-28",
+"firm": "Morgan Stanley",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 212.0
+},
+{
+"date": "2026-07-27",
+"firm": "TD Cowen",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 222.0
+},
+{
+"date": "2026-07-15",
+"firm": "Scotiabank",
+"action": "main",
+"from": "Sector Outperform",
+"to": "Sector Outperform",
+"target": 298.0
+},
+{
+"date": "2026-06-16",
+"firm": "Bernstein",
+"action": "init",
+"from": "",
+"to": "Outperform",
+"target": 181.0
+},
+{
+"date": "2026-05-04",
+"firm": "TD Cowen",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 230.0
+},
+{
+"date": "2026-04-30",
+"firm": "JP Morgan",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 231.0
+},
+{
+"date": "2026-03-19",
+"firm": "JP Morgan",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 240.0
+},
+{
+"date": "2026-02-27",
+"firm": "Wells Fargo",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 234.0
+},
+{
+"date": "2026-02-10",
+"firm": "Jefferies",
+"action": "up",
+"from": "Hold",
+"to": "Buy",
+"target": 203.0
+}
+],
+"upgrades_12m": 1,
+"downgrades_12m": 1,
+"target_mean": 197.18262,
+"rating": "strong_buy",
+"count": 23
+},
+"financials": {
+"marketCap": 39115239424,
+"enterpriseValue": 60772237312,
+"totalRevenue": 20587999232,
+"revenueGrowth": 0.277,
+"grossMargins": 0.41519,
+"operatingMargins": 0.22999,
+"profitMargins": 0.13148,
+"ebitda": 7863000064,
+"totalCash": 2744000000,
+"totalDebt": 21767999488,
+"debtToEquity": 336.81,
+"freeCashflow": 904124992,
+"operatingCashflow": 5761999872,
+"trailingPE": 15.574324,
+"forwardPE": 11.814284,
+"priceToBook": 10.073421,
+"sharesOutstanding": 339394683,
+"floatShares": 316777421,
+"shortPercentOfFloat": 0.0352,
+"shortRatio": 1.38,
+"heldPercentInsiders": 0.00765,
+"heldPercentInstitutions": 0.8844,
+"targetMeanPrice": 197.18262,
+"targetHighPrice": 270.0,
+"targetLowPrice": 106.0,
+"recommendationKey": "strong_buy",
+"numberOfAnalystOpinions": 23,
+"beta": 1.375,
+"fullTimeEmployees": 6390,
+"dividendYield": 0.8,
+"earningsTimestamp": 1793971800
+},
+"scorecard": {
+"ceo": null,
+"ceo_pay_usd": null,
+"top_team_pay_usd": 5955214,
+"stock_1y_pct": -33.3,
+"group_1y_pct": -30.9,
+"group_3y_pct": 29.2,
+"vs_group_1y_pts": -2.4,
+"stock_3y_pct": 220.6,
+"vs_group_3y_pts": 191.4,
+"insiders_net_usd_12m": -34945148,
+"verdict_1y": "in line with the group",
+"how_to_read": "Positive 'vs group' means the stock beat the typical (middle) nuclear name we follow. Heavy insider selling while the stock lags is the warning sign."
+}
+}

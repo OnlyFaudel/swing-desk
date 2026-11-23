@@ -1,0 +1,954 @@
+{
+"ticker": "CEG",
+"updated": "2026-11-23 04:07",
+"name": "Constellation Energy Corporation",
+"about": "Constellation Energy Corporation produces and sells energy products and services in the United States. The company operates through five segments: Mid-Atlantic, Midwest, New York, ERCOT, and Other Power Regions. It offers electricity, natural gas, energy-related products, and sustainable solutions. The company has approximately 31,676 megawatts of generating capacity consisting of nuclear, wind, solar, natural gas, and hydroelectric assets. It serves distribution utilities, municipalities, cooperatives, and commercial, industrial, public sector, and residential customers. The company was incorporated in 2021 and is headquartered in Baltimore, Maryland.",
+"website": "https://www.constellationenergy.com",
+"hq": "Baltimore, MD, United States",
+"bosses": [
+{
+"name": "Mr. Joseph  Dominguez",
+"title": "President, CEO & Chairman",
+"age": 61,
+"totalPay": 4509312,
+"yearBorn": 1964
+},
+{
+"name": "Mr. Bryan Craig Hanson",
+"title": "Senior Executive VP & Chief Generation Officer",
+"age": 59,
+"totalPay": 2010791,
+"yearBorn": 1966
+},
+{
+"name": "Mr. Daniel L. Eggers C.F.A.",
+"title": "Senior Executive Vice President of Finance & Data Economy",
+"age": 49,
+"totalPay": 1695562,
+"yearBorn": 1976
+},
+{
+"name": "Mr. James  McHugh",
+"title": "Senior Executive VP & Chief Commercial Officer",
+"age": 53,
+"totalPay": 1551328,
+"yearBorn": 1972
+},
+{
+"name": "Mr. Shane P. Smith",
+"title": "Executive VP & CFO",
+"age": 45,
+"totalPay": null,
+"yearBorn": 1980
+},
+{
+"name": "Mr. Michael R. Koehler",
+"title": "Executive VP & Chief Administration Officer",
+"age": 58,
+"totalPay": 2129471,
+"yearBorn": 1967
+},
+{
+"name": "Tim  Flottemesch",
+"title": "Vice President of Investor Relations",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Mr. Matthew  Price",
+"title": "Executive VP, Chief Legal Officer & General Counsel",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Ms. Susie  Kutansky",
+"title": "Executive VP & Chief Human Resources Officer",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Mr. Christopher H. Mudrick",
+"title": "Chief Nuclear Officer",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+}
+],
+"ceo": {
+"name": "Mr. Joseph  Dominguez",
+"title": "President, CEO & Chairman",
+"age": 61,
+"totalPay": 4509312,
+"yearBorn": 1964
+},
+"governance_risk_1_low_10_high": {
+"audit": 4,
+"board": 8,
+"pay": 3,
+"shareholder rights": 8,
+"overall": 7
+},
+"insiders_last_12m": {
+"sold_usd": 0,
+"bought_usd": 417931,
+"net_usd": 417931,
+"sellers": []
+},
+"insider_trades": [
+{
+"date": "2026-08-11",
+"who": "CRANDALL ROGER W",
+"role": "Director",
+"kind": "buy",
+"shares": 1500,
+"value_usd": 417931.0,
+"what": "Purchase at price 278.62 per share."
+},
+{
+"date": "2026-08-04",
+"who": "CRANDALL ROGER W",
+"role": "Director",
+"kind": "award/other",
+"shares": 462,
+"value_usd": 123470.0,
+"what": "Stock Award(Grant) at price 267.25 per share."
+},
+{
+"date": "2026-04-28",
+"who": "RICHARDSON JOHN M",
+"role": "Director",
+"kind": "award/other",
+"shares": 556,
+"value_usd": 169975.0,
+"what": "Stock Award(Grant) at price 305.71 per share."
+},
+{
+"date": "2026-04-28",
+"who": "PATERSON EILEEN PATRICIA",
+"role": "Director",
+"kind": "award/other",
+"shares": 556,
+"value_usd": 169975.0,
+"what": "Stock Award(Grant) at price 305.71 per share."
+},
+{
+"date": "2026-04-28",
+"who": "LAWLESS ROBERT J",
+"role": "Director",
+"kind": "award/other",
+"shares": 556,
+"value_usd": 169975.0,
+"what": "Stock Award(Grant) at price 305.71 per share."
+},
+{
+"date": "2026-04-28",
+"who": "DE BALMANN YVES C",
+"role": "Director",
+"kind": "award/other",
+"shares": 556,
+"value_usd": 169975.0,
+"what": "Stock Award(Grant) at price 305.71 per share."
+},
+{
+"date": "2026-04-28",
+"who": "ASHISH KHANDPUR K",
+"role": "Director",
+"kind": "award/other",
+"shares": 556,
+"value_usd": 169975.0,
+"what": "Stock Award(Grant) at price 305.71 per share."
+},
+{
+"date": "2026-04-28",
+"who": "RIMMER NNEKA LOUISE",
+"role": "Director",
+"kind": "award/other",
+"shares": 556,
+"value_usd": 169975.0,
+"what": "Stock Award(Grant) at price 305.71 per share."
+},
+{
+"date": "2026-04-28",
+"who": "JAMIL DHIAA M",
+"role": "Director",
+"kind": "award/other",
+"shares": 556,
+"value_usd": 169975.0,
+"what": "Stock Award(Grant) at price 305.71 per share."
+},
+{
+"date": "2026-04-28",
+"who": "HARRINGTON CHARLES L",
+"role": "Director",
+"kind": "award/other",
+"shares": 556,
+"value_usd": 169975.0,
+"what": "Stock Award(Grant) at price 305.71 per share."
+},
+{
+"date": "2026-04-28",
+"who": "HALVERSON BRADLEY M.",
+"role": "Director",
+"kind": "award/other",
+"shares": 556,
+"value_usd": 169975.0,
+"what": "Stock Award(Grant) at price 305.71 per share."
+},
+{
+"date": "2026-04-28",
+"who": "HOLZRICHTER JULIE",
+"role": "Director",
+"kind": "award/other",
+"shares": 556,
+"value_usd": 169975.0,
+"what": "Stock Award(Grant) at price 305.71 per share."
+},
+{
+"date": "2026-02-27",
+"who": "KOEHLER MICHAEL",
+"role": "Officer",
+"kind": "award/other",
+"shares": 44055,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-09",
+"who": "DOMINGUEZ JOSEPH",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 191817,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-09",
+"who": "HANSON BRYAN CRAIG",
+"role": "Officer",
+"kind": "award/other",
+"shares": 53507,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-09",
+"who": "MCHUGH JAMES",
+"role": "Officer",
+"kind": "award/other",
+"shares": 34537,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-09",
+"who": "EGGERS DANIEL L.",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 44601,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-09",
+"who": "BAUER MATTHEW N",
+"role": "Officer",
+"kind": "award/other",
+"shares": 8088,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-09",
+"who": "DARDIS DAVID O",
+"role": "General Counsel",
+"kind": "award/other",
+"shares": 31011,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-09",
+"who": "SMITH SHANE PATRICK",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 5243,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-01-07",
+"who": "NOVOTNY ANDREW R",
+"role": "Officer",
+"kind": "award/other",
+"shares": 298853,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-10-29",
+"who": "BARRON KATHLEEN",
+"role": "Officer",
+"kind": "award/other",
+"shares": 23084,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-04-29",
+"who": "PATERSON EILEEN PATRICIA",
+"role": "Director",
+"kind": "award/other",
+"shares": 993,
+"value_usd": 224865.0,
+"what": "Stock Award(Grant) at price 226.45 per share."
+},
+{
+"date": "2025-04-29",
+"who": "LAWLESS ROBERT J",
+"role": "Director",
+"kind": "award/other",
+"shares": 993,
+"value_usd": 224865.0,
+"what": "Stock Award(Grant) at price 226.45 per share."
+},
+{
+"date": "2025-04-29",
+"who": "DE BALMANN YVES C",
+"role": "Director",
+"kind": "award/other",
+"shares": 993,
+"value_usd": 224865.0,
+"what": "Stock Award(Grant) at price 226.45 per share."
+},
+{
+"date": "2025-04-29",
+"who": "ASHISH KHANDPUR K",
+"role": "Director",
+"kind": "award/other",
+"shares": 993,
+"value_usd": 224865.0,
+"what": "Stock Award(Grant) at price 226.45 per share."
+},
+{
+"date": "2025-04-29",
+"who": "RIMMER NNEKA LOUISE",
+"role": "Director",
+"kind": "award/other",
+"shares": 993,
+"value_usd": 224865.0,
+"what": "Stock Award(Grant) at price 226.45 per share."
+},
+{
+"date": "2025-04-29",
+"who": "RICHARDSON JOHN M",
+"role": "Director",
+"kind": "award/other",
+"shares": 993,
+"value_usd": 224865.0,
+"what": "Stock Award(Grant) at price 226.45 per share."
+},
+{
+"date": "2025-04-29",
+"who": "JAMIL DHIAA M",
+"role": "Director",
+"kind": "award/other",
+"shares": 993,
+"value_usd": 224865.0,
+"what": "Stock Award(Grant) at price 226.45 per share."
+},
+{
+"date": "2025-04-29",
+"who": "HARRINGTON CHARLES L",
+"role": "Director",
+"kind": "award/other",
+"shares": 993,
+"value_usd": 224865.0,
+"what": "Stock Award(Grant) at price 226.45 per share."
+},
+{
+"date": "2025-04-29",
+"who": "OPPENHEIMER PETER C.",
+"role": "Director",
+"kind": "award/other",
+"shares": 993,
+"value_usd": 224865.0,
+"what": "Stock Award(Grant) at price 226.45 per share."
+},
+{
+"date": "2025-04-29",
+"who": "HALVERSON BRADLEY M.",
+"role": "Director",
+"kind": "award/other",
+"shares": 993,
+"value_usd": 224865.0,
+"what": "Stock Award(Grant) at price 226.45 per share."
+},
+{
+"date": "2025-04-29",
+"who": "HOLZRICHTER JULIE",
+"role": "Director",
+"kind": "award/other",
+"shares": 993,
+"value_usd": 224865.0,
+"what": "Stock Award(Grant) at price 226.45 per share."
+},
+{
+"date": "2025-04-04",
+"who": "MCHUGH JAMES",
+"role": "Officer",
+"kind": "award/other",
+"shares": 23391,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-20",
+"who": "BAUER MATTHEW N",
+"role": "Officer",
+"kind": "award/other",
+"shares": 1600,
+"value_usd": 0.0,
+"what": "Stock Gift at price 0.00 per share."
+},
+{
+"date": "2025-02-20",
+"who": "BAUER MATTHEW N",
+"role": "Officer",
+"kind": "sell",
+"shares": 4000,
+"value_usd": 1241581.0,
+"what": "Sale at price 310.38 - 311.21 per share."
+},
+{
+"date": "2025-02-10",
+"who": "DOMINGUEZ JOSEPH",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 236558,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-10",
+"who": "HANSON BRYAN CRAIG",
+"role": "Officer",
+"kind": "award/other",
+"shares": 102850,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-10",
+"who": "MCHUGH JAMES",
+"role": "Officer",
+"kind": "award/other",
+"shares": 51721,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-10",
+"who": "EGGERS DANIEL L.",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 55669,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-10",
+"who": "KOEHLER MICHAEL",
+"role": "Officer",
+"kind": "award/other",
+"shares": 36802,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-10",
+"who": "BAUER MATTHEW N",
+"role": "Officer",
+"kind": "award/other",
+"shares": 10200,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-10",
+"who": "BARRON KATHLEEN",
+"role": "Officer",
+"kind": "award/other",
+"shares": 41579,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-10",
+"who": "DARDIS DAVID O",
+"role": "General Counsel",
+"kind": "award/other",
+"shares": 37362,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2024-12-31",
+"who": "PATERSON EILEEN PATRICIA",
+"role": "Director",
+"kind": "award/other",
+"shares": 29,
+"value_usd": 7355.0,
+"what": "Stock Award(Grant) at price 253.63 per share."
+},
+{
+"date": "2024-12-31",
+"who": "LAWLESS ROBERT J",
+"role": "Director",
+"kind": "award/other",
+"shares": 168,
+"value_usd": 42610.0,
+"what": "Stock Award(Grant) at price 253.63 per share."
+},
+{
+"date": "2024-12-31",
+"who": "DE BALMANN YVES C",
+"role": "Director",
+"kind": "award/other",
+"shares": 168,
+"value_usd": 42610.0,
+"what": "Stock Award(Grant) at price 253.63 per share."
+},
+{
+"date": "2024-12-31",
+"who": "ASHISH KHANDPUR K",
+"role": "Director",
+"kind": "award/other",
+"shares": 168,
+"value_usd": 42610.0,
+"what": "Stock Award(Grant) at price 253.63 per share."
+},
+{
+"date": "2024-12-31",
+"who": "RIMMER NNEKA LOUISE",
+"role": "Director",
+"kind": "award/other",
+"shares": 168,
+"value_usd": 42610.0,
+"what": "Stock Award(Grant) at price 253.63 per share."
+},
+{
+"date": "2024-12-31",
+"who": "RICHARDSON JOHN M",
+"role": "Director",
+"kind": "award/other",
+"shares": 168,
+"value_usd": 42610.0,
+"what": "Stock Award(Grant) at price 253.63 per share."
+},
+{
+"date": "2024-12-31",
+"who": "JAMIL DHIAA M",
+"role": "Director",
+"kind": "award/other",
+"shares": 168,
+"value_usd": 42610.0,
+"what": "Stock Award(Grant) at price 253.63 per share."
+},
+{
+"date": "2024-12-31",
+"who": "HARRINGTON CHARLES L",
+"role": "Director",
+"kind": "award/other",
+"shares": 168,
+"value_usd": 42610.0,
+"what": "Stock Award(Grant) at price 253.63 per share."
+},
+{
+"date": "2024-12-31",
+"who": "BRLAS MARY LAURIE",
+"role": "Director",
+"kind": "award/other",
+"shares": 168,
+"value_usd": 42610.0,
+"what": "Stock Award(Grant) at price 253.63 per share."
+},
+{
+"date": "2024-12-31",
+"who": "OPPENHEIMER PETER C.",
+"role": "Director",
+"kind": "award/other",
+"shares": 29,
+"value_usd": 7355.0,
+"what": "Stock Award(Grant) at price 253.63 per share."
+},
+{
+"date": "2024-12-31",
+"who": "HALVERSON BRADLEY M.",
+"role": "Director",
+"kind": "award/other",
+"shares": 168,
+"value_usd": 42610.0,
+"what": "Stock Award(Grant) at price 253.63 per share."
+},
+{
+"date": "2024-12-31",
+"who": "HOLZRICHTER JULIE",
+"role": "Director",
+"kind": "award/other",
+"shares": 168,
+"value_usd": 42610.0,
+"what": "Stock Award(Grant) at price 253.63 per share."
+}
+],
+"top_holders": [
+{
+"index": 0,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Blackrock Inc.",
+"pctHeld": 0.0736,
+"Shares": 25882851,
+"Value": 6144847750,
+"pctChange": 0.054
+},
+{
+"index": 1,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Vanguard Capital Management LLC",
+"pctHeld": 0.062,
+"Shares": 21803968,
+"Value": 5176480122,
+"pctChange": 0.0364
+},
+{
+"index": 2,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "State Street Corporation",
+"pctHeld": 0.058000002,
+"Shares": 20405215,
+"Value": 4844402167,
+"pctChange": 0.0512
+},
+{
+"index": 3,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Vanguard Portfolio Management LLC",
+"pctHeld": 0.0466,
+"Shares": 16382645,
+"Value": 3889403809,
+"pctChange": 0.0348
+},
+{
+"index": 4,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Capital International Investors",
+"pctHeld": 0.040999997,
+"Shares": 14414771,
+"Value": 3422210835,
+"pctChange": 0.1389
+},
+{
+"index": 5,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "ECP ControlCo, LLC",
+"pctHeld": 0.0403,
+"Shares": 14183722,
+"Value": 3367357491,
+"pctChange": 0.0
+},
+{
+"index": 6,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Invesco Ltd.",
+"pctHeld": 0.0308,
+"Shares": 10839412,
+"Value": 2573384842,
+"pctChange": -0.024300002
+},
+{
+"index": 7,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Morgan Stanley",
+"pctHeld": 0.0269,
+"Shares": 9472726,
+"Value": 2248919914,
+"pctChange": 0.0466
+},
+{
+"index": 8,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Geode Capital Management, LLC",
+"pctHeld": 0.0222,
+"Shares": 7816576,
+"Value": 1855733336,
+"pctChange": 0.04
+},
+{
+"index": 9,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "FMR, LLC",
+"pctHeld": 0.0179,
+"Shares": 6303287,
+"Value": 1496463389,
+"pctChange": -0.036
+}
+],
+"analysts": {
+"latest": [
+{
+"date": "2026-10-30",
+"firm": "Morgan Stanley",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 391.0
+},
+{
+"date": "2026-10-28",
+"firm": "CIBC",
+"action": "main",
+"from": "Outperformer",
+"to": "Outperformer",
+"target": 343.0
+},
+{
+"date": "2026-10-28",
+"firm": "Wells Fargo",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 352.0
+},
+{
+"date": "2026-10-27",
+"firm": "TD Cowen",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 374.0
+},
+{
+"date": "2026-10-27",
+"firm": "Barclays",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 345.0
+},
+{
+"date": "2026-10-22",
+"firm": "HSBC",
+"action": "init",
+"from": "",
+"to": "Buy",
+"target": 335.0
+},
+{
+"date": "2026-10-21",
+"firm": "Morgan Stanley",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 378.0
+},
+{
+"date": "2026-10-16",
+"firm": "CIBC",
+"action": "init",
+"from": "",
+"to": "Outperformer",
+"target": 358.0
+},
+{
+"date": "2026-10-06",
+"firm": "Bernstein",
+"action": "reit",
+"from": "Outperform",
+"to": "Outperform",
+"target": 296.0
+},
+{
+"date": "2026-09-18",
+"firm": "Morgan Stanley",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 369.0
+},
+{
+"date": "2026-08-21",
+"firm": "Morgan Stanley",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 364.0
+},
+{
+"date": "2026-08-11",
+"firm": "Argus Research",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 325.0
+},
+{
+"date": "2026-07-28",
+"firm": "UBS",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 380.0
+},
+{
+"date": "2026-07-28",
+"firm": "Barclays",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 324.0
+},
+{
+"date": "2026-07-27",
+"firm": "TD Cowen",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 368.0
+},
+{
+"date": "2026-07-27",
+"firm": "Wells Fargo",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 362.0
+},
+{
+"date": "2026-07-01",
+"firm": "Citigroup",
+"action": "main",
+"from": "Neutral",
+"to": "Neutral",
+"target": 297.0
+},
+{
+"date": "2026-06-18",
+"firm": "Goldman Sachs",
+"action": "init",
+"from": "Buy",
+"to": "Neutral",
+"target": 305.0
+},
+{
+"date": "2026-06-17",
+"firm": "Bernstein",
+"action": "init",
+"from": "",
+"to": "Outperform",
+"target": 296.0
+},
+{
+"date": "2026-05-12",
+"firm": "Mizuho",
+"action": "main",
+"from": "Neutral",
+"to": "Neutral",
+"target": 310.0
+},
+{
+"date": "2026-05-04",
+"firm": "TD Cowen",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 381.0
+},
+{
+"date": "2026-04-29",
+"firm": "Scotiabank",
+"action": "main",
+"from": "Sector Outperform",
+"to": "Sector Outperform",
+"target": 441.0
+},
+{
+"date": "2026-04-28",
+"firm": "Barclays",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 358.0
+},
+{
+"date": "2026-04-21",
+"firm": "Morgan Stanley",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 360.0
+},
+{
+"date": "2026-04-06",
+"firm": "Barclays",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 360.0
+}
+],
+"upgrades_12m": 0,
+"downgrades_12m": 0,
+"target_mean": 340.37564,
+"rating": "buy",
+"count": 23
+},
+"financials": {
+"marketCap": 83475374080,
+"enterpriseValue": 106586374144,
+"totalRevenue": 34250000384,
+"revenueGrowth": 0.454,
+"grossMargins": 0.25241,
+"operatingMargins": 0.17944999,
+"profitMargins": 0.12759,
+"ebitda": 9477000192,
+"totalCash": 603000000,
+"totalDebt": 23387000832,
+"debtToEquity": 70.786,
+"freeCashflow": -5374000128,
+"operatingCashflow": 5784000000,
+"trailingPE": 19.084406,
+"forwardPE": 17.740519,
+"priceToBook": 2.5518079,
+"sharesOutstanding": 351608504,
+"floatShares": 350427099,
+"shortPercentOfFloat": 0.0334,
+"shortRatio": 2.53,
+"heldPercentInsiders": 0.00347,
+"heldPercentInstitutions": 0.85024,
+"targetMeanPrice": 340.37564,
+"targetHighPrice": 399.0,
+"targetLowPrice": 240.0,
+"recommendationKey": "buy",
+"numberOfAnalystOpinions": 23,
+"beta": 1.127,
+"fullTimeEmployees": 15291,
+"dividendYield": 0.72,
+"earningsTimestamp": 1794231000
+},
+"scorecard": {
+"ceo": "Mr. Joseph  Dominguez",
+"ceo_pay_usd": 4509312,
+"top_team_pay_usd": 11896464,
+"stock_1y_pct": -30.9,
+"group_1y_pct": -33.3,
+"group_3y_pct": 29.2,
+"vs_group_1y_pts": 2.4,
+"stock_3y_pct": 108.2,
+"vs_group_3y_pts": 79.0,
+"insiders_net_usd_12m": 417931,
+"verdict_1y": "in line with the group",
+"how_to_read": "Positive 'vs group' means the stock beat the typical (middle) nuclear name we follow. Heavy insider selling while the stock lags is the warning sign."
+}
+}

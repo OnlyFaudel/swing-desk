@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -652,6 +652,7 @@ def memory_daily(st, data=None):
         print("peer events failed", e)
     desk_memory.fill(px, archive.EVENTS)
     desk_memory.fill(px, discovery.HISTORY)
+    desk_memory.fill(px, discovery.PEOPLE)
     try:  # price action as events (rebuilt each day from prices), outcomes filled the same way
         price_events.build(list(T))
         desk_memory.fill(px, price_events.PATH)
@@ -1115,6 +1116,17 @@ def intel_tick(st, today, force=False):
                           art={"big": f"{ch['country']}: {ch['to']:.0f} {ch['what']}", "sub": "World Nuclear Association table"})
         except Exception as e:
             print("world watch failed", e)
+    if now.time() >= dt.time(6, 30) and not st["flags"].get(f"people:{today:%G-W%V}"):  # weekly: bosses, insiders, owners, analysts
+        st["flags"][f"people:{today:%G-W%V}"] = True
+        try:
+            pv, n = people.run(list(T))
+            st["people_view"] = pv
+            big = [(t, v["net_insider_usd_12m"]) for t, v in pv.items() if abs(v.get("net_insider_usd_12m") or 0) >= 5_000_000]
+            if big:
+                feed.post("investigator", "Insider check (bosses trading their own stock, last 12 months): " + "; ".join(
+                    f"{t} insiders net {'bought' if v > 0 else 'sold'} ${abs(v) / 1e6:.1f}M" for t, v in big) + ". It's in each stock file.", kind="learn")
+        except Exception as e:
+            print("people failed", e)
     if now.time() >= dt.time(7, 0) and not st["flags"].get(f"uprice:{today}"):
         st["flags"][f"uprice:{today}"] = True
         try:

@@ -1,0 +1,1040 @@
+{
+"ticker": "BWXT",
+"updated": "2026-11-23 04:07",
+"name": "BWX Technologies, Inc.",
+"about": "BWX Technologies, Inc. manufactures and sells nuclear components in the United States, Canada, and internationally. The company operates through two segments, Government Operations and Commercial Operations. It manufactures precision naval nuclear components, reactors, and nuclear fuel; close-tolerance and high-quality equipment for nuclear applications; critical nuclear components, fuels and assemblies for government and limited other uses; down blend government stockpiles of uranium; and fabricate fuel-bearing precision components. The company also supplies proprietary and sole-source valves, manifolds, and fittings to naval and commercial shipping customers; research reactor fuel elements for colleges, universities, and national laboratories; and components for defense applications. In addition, it manufactures commercial nuclear steam generators, nuclear fuel, fuel handling systems, pressure vessels, reactor components, heat exchangers, tooling delivery systems; and containers for the storage of nuclear fuel and other high-level nuclear waste. Further, the company supplies nuclear fuel, fuel handling systems, tooling delivery systems, nuclear-grade materials and precisely machined components; and manufactures medical radioisotopes, radiopharmaceuticals, and medical devices. Additionally, it provides specialized engineering services that include structural component design, 3-D thermal-hydraulic engineering analysis, weld and robotic process development, electrical and con",
+"website": "https://www.bwxt.com",
+"hq": "Lynchburg, VA, United States",
+"bosses": [
+{
+"name": "Mr. Rex D. Geveden",
+"title": "President, CEO & Director",
+"age": 63,
+"totalPay": 3547374,
+"yearBorn": 1962
+},
+{
+"name": "Mr. Michael T. Fitzgerald",
+"title": "Senior VP & CFO",
+"age": 40,
+"totalPay": 975765,
+"yearBorn": 1985
+},
+{
+"name": "Mr. Robert L. Duffy",
+"title": "Senior VP & Chief Administrative Officer",
+"age": 58,
+"totalPay": 1073166,
+"yearBorn": 1967
+},
+{
+"name": "Mr. Gonzalo R. Cajade",
+"title": "Senior VP & CHRO",
+"age": 49,
+"totalPay": 829281,
+"yearBorn": 1976
+},
+{
+"name": "Mr. Joseph K. Miller",
+"title": "President of Government Operations",
+"age": 45,
+"totalPay": 881399,
+"yearBorn": 1980
+},
+{
+"name": "Mr. Kevin M. McCoy",
+"title": "Chief Nuclear Officer",
+"age": 68,
+"totalPay": 777862,
+"yearBorn": 1957
+},
+{
+"name": "Ms. Suzanne  Maddux",
+"title": "Senior Vice President of Operations",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Mr. Kevin  Gorman",
+"title": "Corporate Controller & Chief Accounting Officer",
+"age": 50,
+"totalPay": null,
+"yearBorn": 1975
+},
+{
+"name": "Mr. Chase  Jacobson",
+"title": "Vice President of Investor Relations & Strategic Finance",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Mr. Toby W. Smith",
+"title": "Senior VP General Counsel, Chief Compliance Officer & Corporate Secretary",
+"age": 51,
+"totalPay": null,
+"yearBorn": 1974
+}
+],
+"ceo": {
+"name": "Mr. Rex D. Geveden",
+"title": "President, CEO & Director",
+"age": 63,
+"totalPay": 3547374,
+"yearBorn": 1962
+},
+"governance_risk_1_low_10_high": {
+"audit": 5,
+"board": 2,
+"pay": 3,
+"shareholder rights": 4,
+"overall": 2
+},
+"insiders_last_12m": {
+"sold_usd": 7013699,
+"bought_usd": 0,
+"net_usd": -7013699,
+"sellers": [
+"BURBACH GERHARD F",
+"FITZGERALD MICHAEL THOMAS",
+"GEVEDEN REX D",
+"GORMAN KEVIN JAMES"
+]
+},
+"insider_trades": [
+{
+"date": "2026-09-01",
+"who": "MILLER JOSEPH KIRWAN",
+"role": "Officer",
+"kind": "award/other",
+"shares": 3379,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-08-12",
+"who": "GEVEDEN REX D",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 10000,
+"value_usd": 1725007.0,
+"what": "Sale at price 171.21 - 174.22 per share."
+},
+{
+"date": "2026-07-01",
+"who": "MILLER JOSEPH KIRWAN",
+"role": "Officer",
+"kind": "award/other",
+"shares": 237,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-07-01",
+"who": "CAJADE GONZALO RAUL",
+"role": "Officer",
+"kind": "award/other",
+"shares": 332,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-12",
+"who": "GEVEDEN REX D",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 10000,
+"value_usd": 2048124.0,
+"what": "Sale at price 203.78 - 207.13 per share."
+},
+{
+"date": "2026-05-11",
+"who": "FITZGERALD MICHAEL THOMAS",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 2417,
+"value_usd": 248918.0,
+"what": "Conversion of Exercise of derivative security at price 100.83 - 106.64 per share."
+},
+{
+"date": "2026-05-11",
+"who": "FITZGERALD MICHAEL THOMAS",
+"role": "Chief Financial Officer",
+"kind": "sell",
+"shares": 2417,
+"value_usd": 505757.0,
+"what": "Sale at price 209.25 per share."
+},
+{
+"date": "2026-05-06",
+"who": "FITZGERALD MICHAEL THOMAS",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 2826,
+"value_usd": 174364.0,
+"what": "Conversion of Exercise of derivative security at price 61.70 per share."
+},
+{
+"date": "2026-04-30",
+"who": "KRIEG KENNETH J",
+"role": "Director",
+"kind": "award/other",
+"shares": 762,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-04-30",
+"who": "NILAND BARBARA A",
+"role": "Director",
+"kind": "award/other",
+"shares": 762,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-03-02",
+"who": "MACQUARRIE JOHN R.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 2302,
+"value_usd": 142033.0,
+"what": "Conversion of Exercise of derivative security at price 61.70 per share."
+},
+{
+"date": "2026-03-02",
+"who": "GORMAN KEVIN JAMES",
+"role": "Officer",
+"kind": "sell",
+"shares": 1344,
+"value_usd": 288574.0,
+"what": "Sale at price 214.71 per share."
+},
+{
+"date": "2026-02-27",
+"who": "FITZGERALD MICHAEL THOMAS",
+"role": "Officer",
+"kind": "award/other",
+"shares": 3241,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-27",
+"who": "MILLER JOSEPH KIRWAN",
+"role": "Officer",
+"kind": "award/other",
+"shares": 2149,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-27",
+"who": "GORMAN KEVIN JAMES",
+"role": "Officer",
+"kind": "award/other",
+"shares": 159,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-27",
+"who": "MACQUARRIE JOHN R.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 7969,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-27",
+"who": "GEVEDEN REX D",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 59294,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-27",
+"who": "GORMAN KEVIN JAMES",
+"role": "Officer",
+"kind": "award/other",
+"shares": 1742,
+"value_usd": 0.0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-02-26",
+"who": "FITZGERALD MICHAEL THOMAS",
+"role": "Officer",
+"kind": "award/other",
+"shares": 234,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-26",
+"who": "MILLER JOSEPH KIRWAN",
+"role": "Officer",
+"kind": "award/other",
+"shares": 156,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-26",
+"who": "GORMAN KEVIN JAMES",
+"role": "Officer",
+"kind": "award/other",
+"shares": 150,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-26",
+"who": "BENDER KURT A",
+"role": "Officer",
+"kind": "award/other",
+"shares": 100,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-26",
+"who": "MACQUARRIE JOHN R.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 503,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-26",
+"who": "GEVEDEN REX D",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 3718,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-02-25",
+"who": "BURBACH GERHARD F",
+"role": "Director",
+"kind": "sell",
+"shares": 1983,
+"value_usd": 413677.0,
+"what": "Sale at price 208.61 per share."
+},
+{
+"date": "2026-02-12",
+"who": "GEVEDEN REX D",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 10000,
+"value_usd": 2032560.0,
+"what": "Sale at price 199.71 - 205.03 per share."
+},
+{
+"date": "2026-01-05",
+"who": "MEGUID OMAR FATHI",
+"role": "Officer",
+"kind": "award/other",
+"shares": 2931,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-11-12",
+"who": "GEVEDEN REX D",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 10000,
+"value_usd": 1979005.0,
+"what": "Sale at price 195.08 - 199.37 per share."
+},
+{
+"date": "2025-10-24",
+"who": "FITZGERALD MICHAEL THOMAS",
+"role": "Officer",
+"kind": "award/other",
+"shares": 1795,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-08-11",
+"who": "WHITFORD RONALD OWEN JR.",
+"role": "General Counsel",
+"kind": "award/other",
+"shares": 2092,
+"value_usd": 129076.0,
+"what": "Conversion of Exercise of derivative security at price 61.70 per share."
+},
+{
+"date": "2025-08-11",
+"who": "MELVIN LELAND D.",
+"role": "Director",
+"kind": "sell",
+"shares": 600,
+"value_usd": 106959.0,
+"what": "Sale at price 178.26 per share."
+},
+{
+"date": "2025-08-11",
+"who": "WHITFORD RONALD OWEN JR.",
+"role": "General Counsel",
+"kind": "sell",
+"shares": 2092,
+"value_usd": 371192.0,
+"what": "Sale at price 177.43 per share."
+},
+{
+"date": "2025-08-06",
+"who": "MEGUID OMAR FATHI",
+"role": "Officer",
+"kind": "sell",
+"shares": 2261,
+"value_usd": 406618.0,
+"what": "Sale at price 179.84 per share."
+},
+{
+"date": "2025-08-06",
+"who": "GEVEDEN REX D",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 25000,
+"value_usd": 4475098.0,
+"what": "Sale at price 178.99 - 179.69 per share."
+},
+{
+"date": "2025-05-02",
+"who": "RICHARDSON JOHN M",
+"role": "Director",
+"kind": "award/other",
+"shares": 1465,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-05-02",
+"who": "KRIEG KENNETH J",
+"role": "Director",
+"kind": "award/other",
+"shares": 1465,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-05-02",
+"who": "NILAND BARBARA A",
+"role": "Director",
+"kind": "award/other",
+"shares": 1465,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-03-05",
+"who": "DUFFY ROBERT L",
+"role": "Officer",
+"kind": "sell",
+"shares": 6000,
+"value_usd": 624161.0,
+"what": "Sale at price 104.03 per share."
+},
+{
+"date": "2025-02-28",
+"who": "FITZGERALD MICHAEL THOMAS",
+"role": "Officer",
+"kind": "award/other",
+"shares": 215,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-28",
+"who": "MEGUID OMAR FATHI",
+"role": "Officer",
+"kind": "award/other",
+"shares": 264,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-28",
+"who": "WHITFORD RONALD OWEN JR.",
+"role": "General Counsel",
+"kind": "award/other",
+"shares": 430,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-28",
+"who": "LEMASTERS ROBB A.",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 760,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-28",
+"who": "MCCOY KEVIN M",
+"role": "Officer",
+"kind": "award/other",
+"shares": 496,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-28",
+"who": "GEVEDEN REX D",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 3432,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-28",
+"who": "DUFFY ROBERT L",
+"role": "Officer",
+"kind": "award/other",
+"shares": 25,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-27",
+"who": "FITZGERALD MICHAEL THOMAS",
+"role": "Officer",
+"kind": "award/other",
+"shares": 243,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-27",
+"who": "MEGUID OMAR FATHI",
+"role": "Officer",
+"kind": "award/other",
+"shares": 411,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-27",
+"who": "WHITFORD RONALD OWEN JR.",
+"role": "General Counsel",
+"kind": "award/other",
+"shares": 540,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-27",
+"who": "LEMASTERS ROBB A.",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 1162,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-27",
+"who": "MCCOY KEVIN M",
+"role": "Officer",
+"kind": "award/other",
+"shares": 648,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-27",
+"who": "GEVEDEN REX D",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 4538,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-27",
+"who": "DUFFY ROBERT L",
+"role": "Officer",
+"kind": "award/other",
+"shares": 91,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-27",
+"who": "WHITFORD RONALD OWEN JR.",
+"role": "General Counsel",
+"kind": "sell",
+"shares": 2000,
+"value_usd": 209850.0,
+"what": "Sale at price 104.92 per share."
+},
+{
+"date": "2025-02-26",
+"who": "GEVEDEN REX D",
+"role": "Chief Executive Officer",
+"kind": "sell",
+"shares": 45625,
+"value_usd": 4900233.0,
+"what": "Sale at price 107.13 - 107.91 per share."
+},
+{
+"date": "2025-02-21",
+"who": "WHITFORD RONALD OWEN JR.",
+"role": "General Counsel",
+"kind": "award/other",
+"shares": 3615,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-21",
+"who": "LEMASTERS ROBB A.",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 14457,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-21",
+"who": "MCCOY KEVIN M",
+"role": "Officer",
+"kind": "award/other",
+"shares": 7229,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-21",
+"who": "GEVEDEN REX D",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 72283,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-18",
+"who": "WHITFORD RONALD OWEN JR.",
+"role": "General Counsel",
+"kind": "award/other",
+"shares": 532,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-18",
+"who": "LEMASTERS ROBB A.",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 2129,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-18",
+"who": "MCCOY KEVIN M",
+"role": "Officer",
+"kind": "award/other",
+"shares": 1064,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-18",
+"who": "GEVEDEN REX D",
+"role": "Chief Executive Officer",
+"kind": "award/other",
+"shares": 9772,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-01-03",
+"who": "MEGUID OMAR FATHI",
+"role": "Officer",
+"kind": "award/other",
+"shares": 2931,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2024-12-10",
+"who": "BERTSCH JAN ANNETTE",
+"role": "Director",
+"kind": "award/other",
+"shares": 99,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2024-11-29",
+"who": "BERTSCH JAN ANNETTE",
+"role": "Director",
+"kind": "award/other",
+"shares": 1942,
+"value_usd": null,
+"what": ""
+}
+],
+"top_holders": [
+{
+"index": 0,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Blackrock Inc.",
+"pctHeld": 0.122,
+"Shares": 11182315,
+"Value": 1213728480,
+"pctChange": -0.0777
+},
+{
+"index": 1,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Vanguard Portfolio Management LLC",
+"pctHeld": 0.0511,
+"Shares": 4679960,
+"Value": 507962862,
+"pctChange": -0.015800001
+},
+{
+"index": 2,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Vanguard Capital Management LLC",
+"pctHeld": 0.045100003,
+"Shares": 4129182,
+"Value": 448181418,
+"pctChange": -0.0027
+},
+{
+"index": 3,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "State Street Corporation",
+"pctHeld": 0.0434,
+"Shares": 3972923,
+"Value": 431221066,
+"pctChange": 0.045700002
+},
+{
+"index": 4,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "JPMORGAN CHASE & CO",
+"pctHeld": 0.0257,
+"Shares": 2358439,
+"Value": 255984971,
+"pctChange": -0.1114
+},
+{
+"index": 5,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "First Trust Advisors LP",
+"pctHeld": 0.0251,
+"Shares": 2298507,
+"Value": 249479951,
+"pctChange": 0.1074
+},
+{
+"index": 6,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Franklin Templeton, Inc.",
+"pctHeld": 0.020599999,
+"Shares": 1883880,
+"Value": 204476336,
+"pctChange": -0.024
+},
+{
+"index": 7,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Geode Capital Management, LLC",
+"pctHeld": 0.0201,
+"Shares": 1841134,
+"Value": 199836686,
+"pctChange": -0.0106
+},
+{
+"index": 8,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Alkeon Capital Management LLC",
+"pctHeld": 0.02,
+"Shares": 1832748,
+"Value": 198926469,
+"pctChange": -0.0939
+},
+{
+"index": 9,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Select Equity Group LP",
+"pctHeld": 0.019199999,
+"Shares": 1755692,
+"Value": 190562811,
+"pctChange": 0.030299999
+}
+],
+"analysts": {
+"latest": [
+{
+"date": "2026-10-13",
+"firm": "JP Morgan",
+"action": "main",
+"from": "Overweight",
+"to": "Overweight",
+"target": 190.0
+},
+{
+"date": "2026-10-06",
+"firm": "Truist Securities",
+"action": "main",
+"from": "Hold",
+"to": "Hold",
+"target": 182.0
+},
+{
+"date": "2026-09-30",
+"firm": "Northland Capital Markets",
+"action": "main",
+"from": "Outperform",
+"to": "Outperform",
+"target": 220.0
+},
+{
+"date": "2026-09-30",
+"firm": "B of A Securities",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 210.0
+},
+{
+"date": "2026-09-30",
+"firm": "Guggenheim",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 192.0
+},
+{
+"date": "2026-09-30",
+"firm": "BTIG",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 235.0
+},
+{
+"date": "2026-09-24",
+"firm": "BNP Paribas",
+"action": "main",
+"from": "Neutral",
+"to": "Neutral",
+"target": 165.0
+},
+{
+"date": "2026-09-15",
+"firm": "Guggenheim",
+"action": "init",
+"from": "",
+"to": "Buy",
+"target": 192.0
+},
+{
+"date": "2026-09-03",
+"firm": "Jefferies",
+"action": "init",
+"from": "",
+"to": "Buy",
+"target": 181.0
+},
+{
+"date": "2026-08-27",
+"firm": "Wells Fargo",
+"action": "up",
+"from": "Underweight",
+"to": "Equal-Weight",
+"target": 170.0
+},
+{
+"date": "2026-08-14",
+"firm": "Truist Securities",
+"action": "main",
+"from": "Hold",
+"to": "Hold",
+"target": 202.0
+},
+{
+"date": "2026-08-04",
+"firm": "BTIG",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 235.0
+},
+{
+"date": "2026-07-27",
+"firm": "JP Morgan",
+"action": "init",
+"from": "",
+"to": "Overweight",
+"target": 230.0
+},
+{
+"date": "2026-06-18",
+"firm": "Seaport Global",
+"action": "up",
+"from": "Neutral",
+"to": "Buy",
+"target": 245.0
+},
+{
+"date": "2026-05-15",
+"firm": "Deutsche Bank",
+"action": "up",
+"from": "Hold",
+"to": "Buy",
+"target": 255.0
+},
+{
+"date": "2026-05-11",
+"firm": "Truist Securities",
+"action": "main",
+"from": "Hold",
+"to": "Hold",
+"target": 212.0
+},
+{
+"date": "2026-04-01",
+"firm": "Wells Fargo",
+"action": "init",
+"from": "",
+"to": "Underweight",
+"target": 200.0
+},
+{
+"date": "2026-03-25",
+"firm": "B of A Securities",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 250.0
+},
+{
+"date": "2026-03-12",
+"firm": "TD Securities",
+"action": "init",
+"from": "",
+"to": "Buy",
+"target": 230.0
+},
+{
+"date": "2026-02-26",
+"firm": "BTIG",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 235.0
+},
+{
+"date": "2026-01-20",
+"firm": "Seaport Global",
+"action": "down",
+"from": "Buy",
+"to": "Neutral",
+"target": 0.0
+},
+{
+"date": "2025-11-13",
+"firm": "B of A Securities",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 230.0
+},
+{
+"date": "2025-11-07",
+"firm": "BTIG",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 225.0
+},
+{
+"date": "2025-11-04",
+"firm": "Truist Securities",
+"action": "main",
+"from": "Hold",
+"to": "Hold",
+"target": 200.0
+},
+{
+"date": "2025-10-15",
+"firm": "Truist Securities",
+"action": "main",
+"from": "Hold",
+"to": "Hold",
+"target": 173.0
+}
+],
+"upgrades_12m": 3,
+"downgrades_12m": 1,
+"target_mean": 199.19438,
+"rating": "buy",
+"count": 16
+},
+"financials": {
+"marketCap": 9944998912,
+"enterpriseValue": 11398295552,
+"totalRevenue": 3600655872,
+"revenueGrowth": 0.1,
+"grossMargins": 0.22610001,
+"operatingMargins": 0.10419,
+"profitMargins": 0.104090005,
+"ebitda": 497099008,
+"totalCash": 568526016,
+"totalDebt": 2021883008,
+"debtToEquity": 142.557,
+"freeCashflow": 289066624,
+"operatingCashflow": 578713024,
+"trailingPE": 26.668304,
+"forwardPE": 20.850702,
+"priceToBook": 7.011628,
+"sharesOutstanding": 91625197,
+"floatShares": 91241287,
+"shortPercentOfFloat": 0.050300002,
+"shortRatio": 3.11,
+"heldPercentInsiders": 0.0035899999,
+"heldPercentInstitutions": 0.92656,
+"targetMeanPrice": 199.19438,
+"targetHighPrice": 250.0,
+"targetLowPrice": 140.0,
+"recommendationKey": "buy",
+"numberOfAnalystOpinions": 16,
+"beta": 0.725,
+"fullTimeEmployees": 10400,
+"dividendYield": 1.0,
+"earningsTimestamp": 1793653200
+},
+"scorecard": {
+"ceo": "Mr. Rex D. Geveden",
+"ceo_pay_usd": 3547374,
+"top_team_pay_usd": 8084847,
+"stock_1y_pct": -37.7,
+"group_1y_pct": -30.9,
+"group_3y_pct": 29.2,
+"vs_group_1y_pts": -6.8,
+"stock_3y_pct": 39.5,
+"vs_group_3y_pts": 10.3,
+"insiders_net_usd_12m": -7013699,
+"verdict_1y": "in line with the group",
+"how_to_read": "Positive 'vs group' means the stock beat the typical (middle) nuclear name we follow. Heavy insider selling while the stock lags is the warning sign."
+}
+}

@@ -1,0 +1,447 @@
+{
+"ticker": "CCJ",
+"updated": "2026-11-23 04:07",
+"name": "Cameco Corporation",
+"about": "Cameco Corporation provides uranium for the generation of electricity in the Americas, Europe, and Asia. It operates in three segments: Uranium, Fuel Services, and Westinghouse. The Uranium segment engages in the exploration for, mining, milling, purchase, and sale of uranium concentrate. Its Fuel Services segment is involved in the refining, conversion, and fabrication of uranium concentrate, as well as purchase and sale of conversion services. The Westinghouse segment operates as a nuclear reactor technology original equipment manufacturer and a provider of products and services to commercial utilities and government agencies. It also provides outage and maintenance, engineering support, instrumentation and controls equipment, and plant modification services, as well as components and parts to nuclear reactors. The company sells its uranium and fuel products and services to nuclear utilities. Cameco Corporation was incorporated in 1987 and is headquartered in Saskatoon, Canada.",
+"website": "https://www.cameco.com",
+"hq": "Saskatoon, SK, Canada",
+"bosses": [
+{
+"name": "Mr. Timothy S. Gitzel",
+"title": "CEO & Director",
+"age": 62,
+"totalPay": 2772840,
+"yearBorn": 1963
+},
+{
+"name": "Dr. Grant E. Isaac Ph.D.",
+"title": "President & COO",
+"age": null,
+"totalPay": 1899117,
+"yearBorn": null
+},
+{
+"name": "Ms. Heidi  Shockey",
+"title": "Senior VP & CFO",
+"age": null,
+"totalPay": 780677,
+"yearBorn": null
+},
+{
+"name": "Ms. Rachelle  Girard",
+"title": "Senior VP & Chief Corporate Officer",
+"age": null,
+"totalPay": 677188,
+"yearBorn": null
+},
+{
+"name": "Mr. C. Scott Bishop P. Eng.",
+"title": "Director of Technical Services",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Mr. Cory  Kos",
+"title": "Vice-President of Investor Relations",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Mr. Ronald Liam Mooney",
+"title": "Senior VP & Chief Legal Officer",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Ms. Lisa Lorene Aitken",
+"title": "Senior VP & Chief Marketing Officer",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Mr. Dominic  Kieran",
+"title": "Global Managing Director for Cameco UK Ltd",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+},
+{
+"name": "Ms. Leah  Hipperson",
+"title": "Manager of Treasury & Insurance",
+"age": null,
+"totalPay": null,
+"yearBorn": null
+}
+],
+"ceo": {
+"name": "Mr. Timothy S. Gitzel",
+"title": "CEO & Director",
+"age": 62,
+"totalPay": 2772840,
+"yearBorn": 1963
+},
+"governance_risk_1_low_10_high": {
+"audit": 2,
+"board": 1,
+"pay": 1,
+"shareholder rights": 9,
+"overall": 1
+},
+"insiders_last_12m": {
+"sold_usd": 0,
+"bought_usd": 0,
+"net_usd": 0,
+"sellers": []
+},
+"insider_trades": [],
+"top_holders": [
+{
+"index": 0,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Mirae Asset Global ETFs Holdings Ltd.",
+"pctHeld": 0.0353,
+"Shares": 15357576,
+"Value": 890739408,
+"pctChange": -0.0124
+},
+{
+"index": 1,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Capital World Investors",
+"pctHeld": 0.0296,
+"Shares": 12893567,
+"Value": 747826886,
+"pctChange": -0.0353
+},
+{
+"index": 2,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Vanguard Capital Management LLC",
+"pctHeld": 0.0278,
+"Shares": 12087604,
+"Value": 701081032,
+"pctChange": 0.006
+},
+{
+"index": 3,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Royal Bank of Canada",
+"pctHeld": 0.026199998,
+"Shares": 11396637,
+"Value": 661004946,
+"pctChange": 0.0446
+},
+{
+"index": 4,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Bank of Montreal /CAN/",
+"pctHeld": 0.018099999,
+"Shares": 7903994,
+"Value": 458431652,
+"pctChange": 0.0734
+},
+{
+"index": 5,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Bank of America Corporation",
+"pctHeld": 0.0174,
+"Shares": 7561574,
+"Value": 438571292,
+"pctChange": 0.047199998
+},
+{
+"index": 6,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Van Eck Associates Corporation",
+"pctHeld": 0.0173,
+"Shares": 7524883,
+"Value": 436443214,
+"pctChange": -0.0022
+},
+{
+"index": 7,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "FIL LTD",
+"pctHeld": 0.014099999,
+"Shares": 6127818,
+"Value": 355413444,
+"pctChange": -0.2734
+},
+{
+"index": 8,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "FMR, LLC",
+"pctHeld": 0.0128999995,
+"Shares": 5621877,
+"Value": 326068866,
+"pctChange": -0.2952
+},
+{
+"index": 9,
+"Date Reported": "2026-09-30T00:00:00.000",
+"Holder": "Geode Capital Management, LLC",
+"pctHeld": 0.0126,
+"Shares": 5478174,
+"Value": 317734092,
+"pctChange": 0.1325
+}
+],
+"analysts": {
+"latest": [
+{
+"date": "2026-11-02",
+"firm": "Barclays",
+"action": "main",
+"from": "Equal-Weight",
+"to": "Equal-Weight",
+"target": 89.0
+},
+{
+"date": "2026-10-22",
+"firm": "Truist Securities",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 125.0
+},
+{
+"date": "2026-10-19",
+"firm": "Barclays",
+"action": "main",
+"from": "Equal-Weight",
+"to": "Equal-Weight",
+"target": 95.0
+},
+{
+"date": "2026-08-12",
+"firm": "Truist Securities",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 130.0
+},
+{
+"date": "2026-08-04",
+"firm": "Barclays",
+"action": "main",
+"from": "Equal-Weight",
+"to": "Equal-Weight",
+"target": 97.0
+},
+{
+"date": "2026-07-16",
+"firm": "Barclays",
+"action": "main",
+"from": "Equal-Weight",
+"to": "Equal-Weight",
+"target": 104.0
+},
+{
+"date": "2026-07-14",
+"firm": "Truist Securities",
+"action": "init",
+"from": "",
+"to": "Buy",
+"target": 129.0
+},
+{
+"date": "2026-07-09",
+"firm": "B of A Securities",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 140.0
+},
+{
+"date": "2026-06-29",
+"firm": "RBC Capital",
+"action": "main",
+"from": "Outperform",
+"to": "Outperform",
+"target": 175.0
+},
+{
+"date": "2026-05-22",
+"firm": "Barclays",
+"action": "init",
+"from": "",
+"to": "Equal-Weight",
+"target": 108.0
+},
+{
+"date": "2026-04-20",
+"firm": "William Blair",
+"action": "init",
+"from": "",
+"to": "Outperform",
+"target": 0.0
+},
+{
+"date": "2026-02-18",
+"firm": "GLJ Research",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 171.2
+},
+{
+"date": "2026-02-17",
+"firm": "RBC Capital",
+"action": "main",
+"from": "Outperform",
+"to": "Outperform",
+"target": 160.0
+},
+{
+"date": "2025-11-13",
+"firm": "RBC Capital",
+"action": "main",
+"from": "Outperform",
+"to": "Outperform",
+"target": 150.0
+},
+{
+"date": "2025-11-10",
+"firm": "UBS",
+"action": "init",
+"from": "",
+"to": "Neutral",
+"target": 140.0
+},
+{
+"date": "2025-10-31",
+"firm": "RBC Capital",
+"action": "main",
+"from": "Outperform",
+"to": "Outperform",
+"target": 160.0
+},
+{
+"date": "2025-10-29",
+"firm": "Goldman Sachs",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 109.0
+},
+{
+"date": "2025-09-09",
+"firm": "CLSA",
+"action": "init",
+"from": "",
+"to": "Outperform",
+"target": 102.0
+},
+{
+"date": "2025-08-01",
+"firm": "RBC Capital",
+"action": "main",
+"from": "Outperform",
+"to": "Outperform",
+"target": 110.0
+},
+{
+"date": "2025-06-20",
+"firm": "RBC Capital",
+"action": "main",
+"from": "Outperform",
+"to": "Outperform",
+"target": 100.0
+},
+{
+"date": "2025-06-12",
+"firm": "GLJ Research",
+"action": "reit",
+"from": "Buy",
+"to": "Buy",
+"target": 75.27
+},
+{
+"date": "2025-06-11",
+"firm": "Goldman Sachs",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 78.0
+},
+{
+"date": "2025-05-20",
+"firm": "Goldman Sachs",
+"action": "init",
+"from": "",
+"to": "Buy",
+"target": 65.0
+},
+{
+"date": "2025-03-12",
+"firm": "GLJ Research",
+"action": "main",
+"from": "Buy",
+"to": "Buy",
+"target": 75.68
+},
+{
+"date": "2025-03-04",
+"firm": "RBC Capital",
+"action": "reit",
+"from": "Outperform",
+"to": "Outperform",
+"target": 90.0
+}
+],
+"upgrades_12m": 0,
+"downgrades_12m": 0,
+"target_mean": 115.37423,
+"rating": "buy",
+"count": 9
+},
+"financials": {
+"marketCap": 25260912640,
+"enterpriseValue": 25410166784,
+"totalRevenue": 3479130880,
+"revenueGrowth": 0.007,
+"grossMargins": 0.33833,
+"operatingMargins": 0.12888,
+"profitMargins": 0.11432999,
+"ebitda": 778331008,
+"totalCash": 859820032,
+"totalDebt": 1009043968,
+"debtToEquity": 13.949,
+"freeCashflow": 197079248,
+"operatingCashflow": 789369024,
+"trailingPE": 87.878784,
+"forwardPE": 33.85505,
+"priceToBook": 4.9040594,
+"sharesOutstanding": 435532978,
+"floatShares": 434483345,
+"shortRatio": 2.74,
+"heldPercentInsiders": 0.0014200001,
+"heldPercentInstitutions": 0.68818,
+"targetMeanPrice": 115.37423,
+"targetHighPrice": 168.23103,
+"targetLowPrice": 81.82865,
+"recommendationKey": "buy",
+"numberOfAnalystOpinions": 9,
+"beta": 1.126,
+"dividendYield": 0.29,
+"earningsTimestamp": 1793363400
+},
+"scorecard": {
+"ceo": "Mr. Timothy S. Gitzel",
+"ceo_pay_usd": 2772840,
+"top_team_pay_usd": 6129822,
+"stock_1y_pct": -29.1,
+"group_1y_pct": -33.3,
+"group_3y_pct": 39.5,
+"vs_group_1y_pts": 4.2,
+"stock_3y_pct": 29.2,
+"vs_group_3y_pts": -10.3,
+"insiders_net_usd_12m": 0,
+"verdict_1y": "in line with the group",
+"how_to_read": "Positive 'vs group' means the stock beat the typical (middle) nuclear name we follow. Heavy insider selling while the stock lags is the warning sign."
+}
+}
