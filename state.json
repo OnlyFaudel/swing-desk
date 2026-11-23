@@ -200,7 +200,8 @@
   "weekly:2026-11-23": true,
   "catalysts:2026-11-23": true,
   "weather:2026-11-23": true,
-  "questioner:2026-11-23:6": true
+  "questioner:2026-11-23:6": true,
+  "armednote:BWXT:2026-11-23": true
  },
  "benchmark": {
   "shares": {
@@ -231,10 +232,70 @@
    "max_days": 3,
    "by": "agents",
    "why": "support $354.24 (R:R 2.44). "
+  },
+  "desk-pl-7dd6fb585e": {
+   "setup": "patient_level",
+   "stop": 113.99,
+   "target": 119.41,
+   "zone": 115.37,
+   "max_days": 3,
+   "by": "agents",
+   "why": "support $115.37 (R:R 1.94). "
   }
  },
- "armed": {},
- "candidates": {},
+ "armed": {
+  "BWXT": {
+   "setup": "patient_level",
+   "zone": 115.37,
+   "entry": 115.83,
+   "stop": 113.99,
+   "target": 119.41,
+   "reward_risk": 1.94,
+   "dist_to_entry_pct": 0.65,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 114.46,
+    "value_high": 134.11,
+    "heaviest_price": 117.21,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 1.38,
+    "skip": "False"
+   },
+   "created": "2026-11-23",
+   "valid_until": "2026-11-30",
+   "reason": "",
+   "qty": 1.431477,
+   "dollars": 165.81,
+   "order_id": "24d11658-9fd8-47d8-9839-c860b5543618"
+  }
+ },
+ "candidates": {
+  "BWXT": {
+   "setup": "patient_level",
+   "zone": 115.37,
+   "entry": 115.83,
+   "stop": 113.99,
+   "target": 119.41,
+   "reward_risk": 1.94,
+   "dist_to_entry_pct": 0.65,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 114.46,
+    "value_high": 134.11,
+    "heaviest_price": 117.21,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 1.38,
+    "skip": "False"
+   },
+   "created": "2026-11-23",
+   "valid_until": "2026-11-30",
+   "reason": ""
+  }
+ },
  "setup_log": [
   {
    "date": "2026-11-20",
@@ -508,6 +569,31 @@
    "decision": "SKIP",
    "reason": "The zone sits inside a thick volume node (value area 312.55-366.37, with the heaviest-volume price at 360.99), so the level is a crowded trading area rather than clean support. Recent PJM capacity-auc",
    "evaluated": false
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "BWXT",
+   "setup": "patient_level",
+   "zone": 115.37,
+   "entry": 115.83,
+   "stop": 113.99,
+   "target": 119.41,
+   "reward_risk": 1.94,
+   "dist_to_entry_pct": 0.65,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 114.46,
+    "value_high": 134.11,
+    "heaviest_price": 117.21,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 1.38,
+    "skip": "False"
+   },
+   "decision": "ARM",
+   "reason": "",
+   "evaluated": false
   }
  ],
  "cooldown": {
@@ -515,18 +601,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "UUUU",
-   "source": "Google News: \"Energy Fuels\" uranium",
-   "title": "Can Energy Fuels Sustain Its Expansion Plans Amid Cash Outflows? - Yahoo Finance",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZnMydWdCRDMxdmE2S1dwZXlOUklPRmRvSW8ybWlYdFJ4N0xBa3BBM2p4dGMzUDJiVnlNR25XdE5jSU9kaTRYYVlMR2JDS01DNDhHY3dXSkU3Y09lejh2eVprZUtQbVZhYkNONmQzekdKZEdDZFdwQ3dOUE9Yd2VOTGp0OWdzajN0X2stb0NrSFVVRkVXOC12Nw?oc=5",
-   "ts": 1795186500,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
   {
    "ticker": "CCJ",
    "source": "Yahoo (LEU, related to CCJ)",
@@ -3514,6 +3588,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic comparison article of CCJ vs DNN; opinion with no new facts."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: \"McArthur River\" OR \"Cigar Lake\" uranium",
+   "title": "Cameco vs. Denison: Which Uranium Stock Offers Better Opportunity Today? - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxORC1UaWFhQ2QwdWd4UVRVWEFCU3JXN3lsUXp5ZmpWcUprYnUzX2p4MWo1MUFaOHZlYVI5S2NheTl6UEF6bUdYb1pWN2JVVkdIRW9zS1NNOGVVV2dQWWttLWFGcWxxTWRwWDZpU3BBbjZyUFNrV29GdjJpcUYwc3VSM19zaG1vUmFxQ29nQ1dfRmpsN1Q1NTBuSkZONzQ?oc=5",
+   "ts": 1795453140,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Generic Cameco vs Denison comparison piece; no new company-specific information."
   }
  ],
  "reviews": [
@@ -4707,6 +4793,16 @@
    "price": 355.66,
    "status": "pending_new",
    "note": "Patient Levels buy above $354.24"
+  },
+  {
+   "time": "2026-11-23 13:30",
+   "symbol": "BWXT",
+   "side": "buy",
+   "kind": "limit",
+   "qty": 1.431477,
+   "price": 115.83,
+   "status": "pending_new",
+   "note": "Patient Levels buy above $115.37"
   }
  ],
  "active": [
@@ -4842,21 +4938,21 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.15736,
+  "day_usd": 0.16534,
   "month": "2026-11",
-  "month_usd": 0.42085,
-  "total_usd": 0.42085,
+  "month_usd": 0.42883,
+  "total_usd": 0.42883,
   "by_role": {
-   "macro": 0.01318,
+   "macro": 0.01472,
    "whale": 0.00861,
    "crowd": 0.00751,
-   "level": 0.01583,
-   "scout": 0.047,
+   "level": 0.01846,
+   "scout": 0.04744,
    "review": 0.05504,
    "auditor": 0.01318,
    "strategist": 0.08019,
-   "pm": 0.0319,
-   "risk": 0.01222,
+   "pm": 0.03359,
+   "risk": 0.0139,
    "investigator": 0.13026,
    "postmortem": 0.00035,
    "researcher": 0.00295,
@@ -4956,26 +5052,26 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.56,
-  "NXE": 6.84,
-  "UEC": 5.81,
-  "DNN": 1.81,
-  "UUUU": 5.33,
-  "LEU": 88.18,
-  "BWXT": 117.18,
-  "CEG": 251.11,
-  "VST": 125.61,
-  "TLN": 366.64,
-  "SPY": 724.64
+  "CCJ": 61.41,
+  "NXE": 6.82,
+  "UEC": 5.8,
+  "DNN": 1.8,
+  "UUUU": 5.32,
+  "LEU": 87.83,
+  "BWXT": 116.97,
+  "CEG": 250.8,
+  "VST": 125.45,
+  "TLN": 366.07,
+  "SPY": 723.92
  },
- "last_cycle": "2026-11-23 13:24 ET",
+ "last_cycle": "2026-11-23 13:30 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
    1795198824.5144107
   ],
   "orders": [
-   1795453131.2588346
+   1795458641.6784863
   ],
   "halted": false,
   "reason": "",
@@ -4993,10 +5089,10 @@
   ]
  },
  "brakes": {
-  "equity": 1037.6,
-  "day_pct": 3.71,
-  "week_pct": 3.71,
-  "drawdown_pct": -1.59,
+  "equity": 1036.3,
+  "day_pct": 3.58,
+  "week_pct": 3.58,
+  "drawdown_pct": -1.72,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -5838,6 +5934,26 @@
   [
    "2026-11-23 13:24",
    1037.6
+  ],
+  [
+   "2026-11-23 13:25",
+   1037.1
+  ],
+  [
+   "2026-11-23 13:27",
+   1036.93
+  ],
+  [
+   "2026-11-23 13:28",
+   1036.97
+  ],
+  [
+   "2026-11-23 13:29",
+   1037.03
+  ],
+  [
+   "2026-11-23 13:30",
+   1036.3
   ]
  ],
  "nowcast": {
@@ -48472,15 +48588,15 @@
   }
  },
  "last_scan": {
-  "CCJ": 1795456782.487747,
-  "NXE": 1795456782.500119,
-  "UEC": 1795456782.5116909,
-  "DNN": 1795456782.52347,
-  "UUUU": 1795456782.5354006,
-  "LEU": 1795456782.5483289,
-  "BWXT": 1795456782.5600936,
-  "CEG": 1795456785.163869,
-  "VST": 1795456785.1767538,
+  "CCJ": 1795458638.1605043,
+  "NXE": 1795458638.4160073,
+  "UEC": 1795458638.4875414,
+  "DNN": 1795458638.5941954,
+  "UUUU": 1795458638.6748421,
+  "LEU": 1795458638.7472982,
+  "BWXT": 1795458638.8649702,
+  "CEG": 1795458641.4941723,
+  "VST": 1795458641.5709035,
   "TLN": 1795456853.9909437
  },
  "setup_status": {
@@ -48490,7 +48606,7 @@
   "DNN": "no confirmed support level below the price (it has been falling through them)",
   "UUUU": "no confirmed support level below the price (it has been falling through them)",
   "LEU": "no confirmed support level below the price (it has been falling through them)",
-  "BWXT": "the Level Analyst skipped the setup: Stock jumped 7.5% today on the AP1000 deal and sits well above its 50-day and 200-day averages; a resting buy just above the support zone is unlikely to fill clean",
+  "BWXT": "setup found",
   "CEG": "no confirmed support level below the price (it has been falling through them)",
   "VST": "no confirmed support level below the price (it has been falling through them)",
   "TLN": "the Level Analyst skipped the setup: The zone sits inside a thick volume node (value area 312.55-366.37, with the heaviest-volume price at 360.99), so the level is a crowded trading area rather than c"
@@ -50240,7 +50356,7 @@
     0.9422
    ]
   },
-  "time": "2026-11-23 13:24"
+  "time": "2026-11-23 13:30"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -50264,8 +50380,8 @@
   "717c47c79d590a65",
   "ac86fb04e7eb798b",
   "17b21557a779a003",
-  "04dd9aeafd90d9b4",
   "2d3f6639ab9cea68",
+  "04dd9aeafd90d9b4",
   "8df7edb48605a27d",
   "70ec56bf0ac9a6fb",
   "8d0283e176b666a8",
@@ -50315,11 +50431,12 @@
   "1c7e8600a30c74ce",
   "b36ee151c6da4ebf",
   "88d39974add2ff27",
+  "ad6bb6ac1dcb6674",
   "22706e6619f0e685",
   "844469477dae7bae",
   "608a6c7d81d54f47",
-  "563c0572b10f43bc",
   "66abfa595ddf0659",
+  "563c0572b10f43bc",
   "991c698e5a396dd1",
   "59c6f6be8bf3e5a9",
   "41ed20a8cec5e591",
@@ -50356,13 +50473,12 @@
   "6ae4fd45dc301c0d",
   "6903f08684a06b0c",
   "11145b715ac0216e",
-  "888d96e0923cd600",
+  "d315dfa4e1149d87",
   "8010bdf39626577f",
   "898bce48a6f14aa6",
   "bb6d0befac06c212",
   "d0cdede57b2eba62",
   "68b8d7111ead5bfd",
-  "d315dfa4e1149d87",
   "22a45a3c7284120a",
   "09bd7b0e348df04b",
   "cdf09ab4dc83c609",
@@ -50445,6 +50561,7 @@
   "d8b87592a8671135",
   "418a91931047cecc",
   "1e6d0eb0e2b54116",
+  "db0be8d85f3d8c6d",
   "eb0139f21af40690",
   "0939c76270a70008",
   "a139bb0be8a41b23",
@@ -50465,7 +50582,6 @@
   "f61fff1c8e93929e",
   "6a0cc1c1f8babcd3",
   "4c474a21ada49911",
-  "de4d277c2d827d97",
   "adaf4137e3446cd1",
   "c928dcc41ecc5a41",
   "32d10c819f70dc10",
@@ -50504,6 +50620,7 @@
   "a38730433f855a68",
   "05752eb0e8aadb3e",
   "009c12e19cf7cb10",
+  "e7f494cb247bf154",
   "a00037110572bad0",
   "6c0f0f111a586f76",
   "0ec3c23071785cfd",
@@ -50517,11 +50634,11 @@
   "693301ddca2bc8c2",
   "7aa8997d91d8e2dc",
   "aa4b40fcca57bfea",
-  "e7f494cb247bf154",
+  "de4d277c2d827d97",
   "9289aefa04c45318",
-  "ad6bb6ac1dcb6674"
+  "888d96e0923cd600"
  ],
- "news_slow_at": 1795457697.755425,
+ "news_slow_at": 1795458356.247671,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -199352,6 +199469,65 @@
    ],
    "practice": false,
    "end": "13:13"
+  },
+  {
+   "id": "20261123133041944575",
+   "title": "Huddle: BWXT is about to reach its resting buy at $115.83",
+   "tickers": [
+    "BWXT"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-23 13:30",
+   "msgs": [
+    {
+     "t": "13:30",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: BWXT is about to reach its resting buy at $115.83.",
+     "outcome": false
+    },
+    {
+     "t": "13:30",
+     "who": "level",
+     "to": "chief",
+     "text": "BWXT sits just above its buy zone and the last trading day was a big up day on a Westinghouse deal headline, which is already priced in. The volume profile shows heavy trading around 117, so the 115 zone looks reasonably clean, but a fresh news-driven spike like this tends to fade and retest lower levels. I have no strong view that it breaks, so I'd let the resting order stand rather than chase.",
+     "outcome": false,
+     "notes": "why: Checked the 115.37 zone against the volume profile (heaviest trade near 117, normal node) and the recent news. The stock jumped 7.7% on public AP1000 headlines, and our notes say news-driven pops often reverse within a week, which argues against trusting a bounce from above but doesn't by itself break the level.\nticker: BWXT\ndirection: down\ndays: 5\nfiles read: BWXT Snapshot, BWXT Price behavior, BWXT What history says, BWXT Our trades"
+    },
+    {
+     "t": "13:30",
+     "who": "macro",
+     "to": "level",
+     "text": "This is a sector-wide move, not just BWXT. The whole nuclear basket is down about 6% versus its 10-day average, the uranium ETFs are down 10-15% over the month, and the big up day in BWXT came from a Westinghouse deal headline that is already priced in. I agree with the Level Analyst that the resting order should stand, but I'd note that a weak sector backdrop makes a fill at 115.83 more likely to be followed by further downside.",
+     "outcome": false,
+     "notes": "why: Checked sector pulse (basket -6% vs 10-day average, which blocks new buys under the desk rule), the uranium and miner ETF moves, and the BWXT headline. The desk notes show the day's spike came from news, which tends to reverse.\nticker: BWXT\ndirection: down\ndays: 5\nfiles read: SECTOR Uranium market, BWXT Snapshot"
+    },
+    {
+     "t": "13:30",
+     "who": "risk",
+     "to": "macro",
+     "text": "I'm Risk Manager and I think the resting buy should stand but I'm skeptical of the setup. The basket is down about 6% versus its 10-day average, and the Westinghouse headline that spiked BWXT is already priced in and tends to fade, so a fill at 115.83 could easily be followed by a retest of the 114 stop zone. I agree with the Level Analyst to leave the order alone rather than chase, and I'd agree with the Macro Analyst that the weak sector makes a fill more likely to go against us.",
+     "outcome": false,
+     "notes": "ask: Level Analyst: what is the chance the 113.99 stop gets hit before the 119.41 target, given the fade pattern after news spikes?\nwhy: BWXT's 5-day returns after its own up days averaged +1.18% vs basket, but the big recent day was a market-wide drop (-7.28% on 2026-11-20), and the sector pulse is negative. The resting order is only $166, and the desk notes show news-driven spikes fade, so the risk is real but small in dollar terms.\nticker: BWXT\ndirection: down\ndays: 3\ndate: 2026-11-30\nticker: BWXT\nwhat: Resting buy at $115.83 expires if not filled; re-check support zone at $115.37\nfiles read: BWXT Price behavior, BWXT Snapshot, BWXT Legal, BWXT Leadership and insiders, BWXT Discoveries"
+    },
+    {
+     "t": "13:30",
+     "who": "pm",
+     "to": "risk",
+     "text": "The resting buy at $115.83 is still valid and the stop sits just under the zone, so I'm not cancelling it. Level Analyst and Risk Manager both want to leave the order alone, and I agree: the Westinghouse headline is already priced in, but the setup itself is fine and an exit would be a reaction to noise, not to bad news. The basket being weak is a reason for caution on sizing, not a reason to skip a valid plan.",
+     "outcome": false,
+     "notes": "action: none\nreason: The resting order on BWXT is valid, sized at about $166, with a 1.94 reward-to-risk and a stop at $113.99. There is no clear bad news to justify an exit or a skip. The up-day move is headline-driven and tends to fade, which argues for not chasing, not for cancelling a plan that sits lower.\nwhy: I checked the resting order levels, the basket being below its 10-day average, and the deal history. The deal history shows BWXT's 20-day return after past deals was negative and underperformed the basket, which is a real caution, but it does not invalidate the level.\nticker: BWXT\ndirection: down\ndays: 5\nfiles read: BWXT Snapshot, BWXT Deals and contracts, BWXT Discoveries, SECTOR Uranium market"
+    },
+    {
+     "t": "13:30",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "13:30"
   }
  ],
  "feed": [
@@ -200511,6 +200687,28 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 13:30",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping BWXT. Today's jump came from the AP1000 manufacturing news, and news-driven pops in this name have tended to fade rather than hold support. I agree with the Macro Analyst that the regime is shaky, so I don't want to buy a bounce we only got from headlines.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 13:30",
+   "who": "exec",
+   "kind": "alert",
+   "title": "ARMED BWXT: buy $115.83",
+   "text": "$166 resting above support $115.37 (now $116.97, +0.7% away). Stop $113.99, target $119.41, 1.94x. Valid to 2026-11-30. Trio sync size 0.80x (pulse down).",
+   "tickers": [
+    "BWXT"
+   ],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -200697,11 +200895,13 @@
   "fast move: UEC moved -1.8% in 9 min": 1795445510.1153774,
   "fast move: UUUU moved -1.6% in 9 min": 1795445602.482174,
   "TLN (you asked us to watch it) moved +1.1% since we last looked": 1795445678.9622285,
-  "midday check-in": 1795455014.8306127
+  "midday check-in": 1795455014.8306127,
+  "BWXT is about to reach its resting buy at $115.83": 1795458641.9432895
  },
- "huddle_last": 1795455014.8306193,
+ "huddle_last": 1795458641.9432967,
  "huddle_log": [
   "2026-11-20",
+  "2026-11-23",
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
@@ -200951,7 +201151,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 13:24",
+  "updated": "2026-11-23 13:30",
   "total": 351,
   "week": 308,
   "places": {
@@ -201592,13 +201792,12 @@
   "95cbeeb9e5e1fd0d",
   "ac86fb04e7eb798b",
   "96bd0f50c9b41d81",
-  "9072aaac75f7221f",
   "7f7a05be6b3ac1f5",
-  "33461799e841c77f",
   "c10f62c3161fa59d",
+  "73c8ecdc752b197b",
+  "33461799e841c77f",
   "26652cf90e01656a",
   "f3ccd7a260e2d594",
-  "73c8ecdc752b197b",
   "0d77f1d2373bb03d",
   "e0f8d77a6373bf31",
   "36cbbee89c76a1f7",
@@ -201606,6 +201805,7 @@
   "b2e981fc7a2e7302",
   "710e26d86c88952c",
   "49be13755057758d",
+  "29f141fd08778bc3",
   "020569e75e7d456e",
   "eb9266fa4c912b94",
   "9e331cf926161f76",
@@ -201638,7 +201838,7 @@
   "83fcaa3c1c926472",
   "d4097d0d8db37e23",
   "a7baf61adc01832c",
-  "29f141fd08778bc3",
+  "9072aaac75f7221f",
   "515517f776442fe4",
   "0c3ada20fae5f894",
   "c73b8f1be49ed29e"
@@ -202773,7 +202973,7 @@
    "built": "2026-11-23 13:11"
   }
  ],
- "heartbeat": "2026-11-23 13:24",
+ "heartbeat": "2026-11-23 13:30",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -202885,16 +203085,16 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 117.17500305175781,
-  "TLN": 366.6449890136719
+  "BWXT": 116.965,
+  "TLN": 366.07
  },
  "notes_audit": {
   "scout": {
-   "asked": 24,
-   "used": 23,
+   "asked": 25,
+   "used": 24,
    "notes": {
     "TLN Deals and contracts": 1,
-    "CCJ Deals and contracts": 7,
+    "CCJ Deals and contracts": 8,
     "BWXT Deals and contracts": 8,
     "SECTOR Government and laws": 6,
     "UUUU Deals and contracts": 5,
@@ -202911,8 +203111,8 @@
    "since": "2026-11-23"
   },
   "level": {
-   "asked": 9,
-   "used": 8,
+   "asked": 11,
+   "used": 9,
    "notes": {
     "TLN Snapshot": 5,
     "TLN Price behavior": 5,
@@ -202924,11 +203124,11 @@
     "desk_notes intel: PJM capacity auction delay": 1,
     "TLN intel_disruption (PJM auction delay)": 1,
     "SECTOR macro: market regime": 1,
-    "BWXT Snapshot": 3,
-    "BWXT What history says": 2,
-    "BWXT Price behavior": 3,
+    "BWXT Snapshot": 4,
+    "BWXT What history says": 3,
+    "BWXT Price behavior": 4,
     "SECTOR Uranium market": 2,
-    "BWXT Our trades": 3
+    "BWXT Our trades": 4
    },
    "since": "2026-11-23"
   },
@@ -202944,14 +203144,15 @@
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 3,
-   "used": 3,
+   "asked": 4,
+   "used": 4,
    "notes": {
-    "BWXT Deals and contracts": 1,
-    "BWXT Snapshot": 1,
+    "BWXT Deals and contracts": 2,
+    "BWXT Snapshot": 2,
     "BWXT Leadership and insiders": 1,
     "TLN Snapshot": 1,
-    "SECTOR Uranium market": 2
+    "SECTOR Uranium market": 3,
+    "BWXT Discoveries": 1
    },
    "since": "2026-11-23"
   },
@@ -202965,11 +203166,11 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 3,
-   "used": 3,
+   "asked": 4,
+   "used": 4,
    "notes": {
-    "SECTOR Uranium market": 3,
-    "BWXT Snapshot": 1,
+    "SECTOR Uranium market": 4,
+    "BWXT Snapshot": 2,
     "CCJ Snapshot": 1,
     "UUUU Snapshot": 1,
     "SECTOR Government and laws": 2,
@@ -203002,15 +203203,18 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 3,
-   "used": 3,
+   "asked": 4,
+   "used": 4,
    "notes": {
-    "BWXT Price behavior": 1,
+    "BWXT Price behavior": 2,
     "CCJ Snapshot": 1,
-    "BWXT Snapshot": 1,
+    "BWXT Snapshot": 2,
     "SECTOR Uranium market": 1,
     "TLN Snapshot": 1,
-    "TLN Legal": 1
+    "TLN Legal": 1,
+    "BWXT Legal": 1,
+    "BWXT Leadership and insiders": 1,
+    "BWXT Discoveries": 1
    },
    "since": "2026-11-23"
   },
@@ -203158,7 +203362,7 @@
    ],
    [
     "2026-11-23",
-    61.56
+    61.42
    ]
   ],
   "NXE": [
@@ -203280,7 +203484,7 @@
    ],
    [
     "2026-11-23",
-    6.84
+    6.82
    ]
   ],
   "UEC": [
@@ -203402,7 +203606,7 @@
    ],
    [
     "2026-11-23",
-    5.81
+    5.8
    ]
   ],
   "DNN": [
@@ -203524,7 +203728,7 @@
    ],
    [
     "2026-11-23",
-    1.81
+    1.8
    ]
   ],
   "UUUU": [
@@ -203646,7 +203850,7 @@
    ],
    [
     "2026-11-23",
-    5.33
+    5.32
    ]
   ],
   "LEU": [
@@ -203768,7 +203972,7 @@
    ],
    [
     "2026-11-23",
-    88.18
+    87.84
    ]
   ],
   "BWXT": [
@@ -203890,7 +204094,7 @@
    ],
    [
     "2026-11-23",
-    117.18
+    116.96
    ]
   ],
   "CEG": [
@@ -204012,7 +204216,7 @@
    ],
    [
     "2026-11-23",
-    251.11
+    250.84
    ]
   ],
   "VST": [
@@ -204134,7 +204338,7 @@
    ],
    [
     "2026-11-23",
-    125.61
+    125.46
    ]
   ],
   "TLN": [
@@ -204256,7 +204460,7 @@
    ],
    [
     "2026-11-23",
-    366.64
+    365.83
    ]
   ]
  },
@@ -204320,6 +204524,36 @@
    "price": 363.8,
    "result": null,
    "why": "TLN jumped 9.3% on a sector bounce while the basket is still below its 10-day average, and the resting buy no longer lines up with the current price. The PJM capacity decision is listed as an open wat"
+  },
+  {
+   "role": "macro",
+   "ticker": "BWXT",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-23",
+   "price": 116.97,
+   "result": null,
+   "why": "Checked sector pulse (basket -6% vs 10-day average, which blocks new buys under the desk rule), the uranium and miner ETF moves, and the BWXT headline. The desk notes show the day's spike came from ne"
+  },
+  {
+   "role": "risk",
+   "ticker": "BWXT",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-23",
+   "price": 116.97,
+   "result": null,
+   "why": "BWXT's 5-day returns after its own up days averaged +1.18% vs basket, but the big recent day was a market-wide drop (-7.28% on 2026-11-20), and the sector pulse is negative. The resting order is only "
+  },
+  {
+   "role": "pm",
+   "ticker": "BWXT",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-23",
+   "price": 116.97,
+   "result": null,
+   "why": "I checked the resting order levels, the basket being below its 10-day average, and the deal history. The deal history shows BWXT's 20-day return after past deals was negative and underperformed the ba"
   }
  ],
  "after_sale": [],
