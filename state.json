@@ -265,6 +265,31 @@
    "decision": "ARM",
    "reason": "",
    "evaluated": false
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "TLN",
+   "setup": "patient_level",
+   "zone": 354.24,
+   "entry": 355.66,
+   "stop": 349.99,
+   "target": 365.74,
+   "reward_risk": 1.78,
+   "dist_to_entry_pct": 1.67,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 312.55,
+    "value_high": 366.37,
+    "heaviest_price": 360.99,
+    "position": "inside value",
+    "node": "thick",
+    "node_ratio": 1.85,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "Price sits about 6.6% below its 20-day high and the stock is in a downtrend. The 'support' zone is the 354 volume node, but the recent move was a bounce inside weakness (VST and TLN up today after fal",
+   "evaluated": false
   }
  ],
  "cooldown": {
@@ -4588,15 +4613,15 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.03885,
+  "day_usd": 0.04015,
   "month": "2026-11",
-  "month_usd": 0.30233,
-  "total_usd": 0.30233,
+  "month_usd": 0.30363,
+  "total_usd": 0.30363,
   "by_role": {
    "macro": 0.00843,
    "whale": 0.00639,
    "crowd": 0.00536,
-   "level": 0.00144,
+   "level": 0.00274,
    "scout": 0.0375,
    "review": 0.01668,
    "auditor": 0.01318,
@@ -4652,19 +4677,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 62.29,
-  "NXE": 6.88,
-  "UEC": 5.78,
-  "DNN": 1.81,
+  "CCJ": 62.49,
+  "NXE": 6.9,
+  "UEC": 5.8,
+  "DNN": 1.83,
   "UUUU": 5.39,
-  "LEU": 89.08,
-  "BWXT": 115.2,
-  "CEG": 251.04,
-  "VST": 124.73,
-  "TLN": 359.86,
-  "SPY": 723.89
+  "LEU": 89.75,
+  "BWXT": 115.18,
+  "CEG": 250.96,
+  "VST": 124.35,
+  "TLN": 362.0,
+  "SPY": 723.58
  },
- "last_cycle": "2026-11-23 10:50 ET",
+ "last_cycle": "2026-11-23 10:56 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4689,10 +4714,10 @@
   ]
  },
  "brakes": {
-  "equity": 1039.79,
-  "day_pct": 3.93,
-  "week_pct": 3.93,
-  "drawdown_pct": -1.39,
+  "equity": 1040.68,
+  "day_pct": 4.02,
+  "week_pct": 4.02,
+  "drawdown_pct": -1.3,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -5002,6 +5027,26 @@
   [
    "2026-11-23 10:50",
    1039.79
+  ],
+  [
+   "2026-11-23 10:51",
+   1039.86
+  ],
+  [
+   "2026-11-23 10:52",
+   1039.8
+  ],
+  [
+   "2026-11-23 10:53",
+   1039.67
+  ],
+  [
+   "2026-11-23 10:54",
+   1039.34
+  ],
+  [
+   "2026-11-23 10:56",
+   1040.68
   ]
  ],
  "nowcast": {
@@ -47645,7 +47690,7 @@
   "CEG": 1795448313.8649235,
   "VST": 1795448313.9527025,
   "BWXT": 1795448313.7592828,
-  "TLN": 1795447534.3877406
+  "TLN": 1795449367.2137835
  },
  "setup_status": {
   "CCJ": "no confirmed support level below the price (it has been falling through them)",
@@ -47657,7 +47702,7 @@
   "BWXT": "no confirmed support level below the price (it has been falling through them)",
   "CEG": "no confirmed support level below the price (it has been falling through them)",
   "VST": "no confirmed support level below the price (it has been falling through them)",
-  "TLN": "no confirmed support level below the price (it has been falling through them)"
+  "TLN": "the Level Analyst skipped the setup: Price sits about 6.6% below its 20-day high and the stock is in a downtrend. The 'support' zone is the 354 volume node, but the recent move was a bounce inside wea"
  },
  "sync": {
   "pulse_up": false,
@@ -49404,7 +49449,7 @@
     0.9418
    ]
   },
-  "time": "2026-11-23 10:50"
+  "time": "2026-11-23 10:56"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -49444,7 +49489,6 @@
   "adaf4137e3446cd1",
   "8a429bbe4d25ae7d",
   "13880e66390f270d",
-  "cab53e09b478cbb5",
   "c56ca4f4b89e4d32",
   "6e7dff52f6fd70fc",
   "27cae87b69d8c12f",
@@ -49467,11 +49511,11 @@
   "88d39974add2ff27",
   "fa31367a940baeaa",
   "618c084e327573c8",
-  "4b634efdcf500ae7",
   "7eeff7845b171edb",
+  "4b634efdcf500ae7",
   "db05240fe85a29ac",
-  "c79f8cf2af696337",
   "2afc300bcf16d7fc",
+  "c79f8cf2af696337",
   "313a0e04a5719e86",
   "a82f81d0eb01a7ed",
   "085f836ba2eae79d",
@@ -49637,6 +49681,7 @@
   "7ee1ad6e6041b23e",
   "5d22d1b6e3da5fb6",
   "40da66ea723efc8f",
+  "d6fca5435e577b9f",
   "9b6ee47aa4a5262e",
   "61b82697d913613b",
   "19fb88d62a25326f",
@@ -49657,7 +49702,7 @@
   "17b21557a779a003",
   "a4aac5316a0eb878",
   "c014dc203c86d5d1",
-  "d6fca5435e577b9f"
+  "cab53e09b478cbb5"
  ],
  "news_slow_at": 1795448808.5884418,
  "officer": {
@@ -199126,6 +199171,16 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-23 10:56",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping TLN because the basket is still below its 10-day average and this bounce looks like a relief rally inside a downtrend, which our rules say not to buy into. The PJM capacity-auction delay fight is an open event risk that could break the zone, and heavy put buying with a put wall at 310 suggests the stop would get run. I agree with the Macro Analyst's caution about chasing today's bounce.\n\nTLN: decision: SKIP; reason: Price sits about 6.6% below its 20-day high and the stock is in a downtrend. The 'support' zone is the 354 volume node, but the recent move was a bounce inside weakness (VST and TLN up today after falling over five days), and the basket is still below its 10-day average, whic\nto: Macro Analyst\ndate: 2026-12-09\nticker: TLN\nwhat: Watch the PJM capacity auction timing and whether the delay request is granted; a ruling either way can move TLN and VST sharply.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -199496,7 +199551,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 10:50",
+  "updated": "2026-11-23 10:56",
   "total": 338,
   "week": 295,
   "places": {
@@ -200126,8 +200181,8 @@
  "intel_handed": [
   "53627f4c0e7162ee",
   "ac86fb04e7eb798b",
-  "efb09be793d6460a",
   "29f141fd08778bc3",
+  "efb09be793d6460a",
   "fe223bd03cfc6370",
   "f88ba68b2c94d1a7",
   "f2cc6e74f1bd9dd4",
@@ -200138,8 +200193,8 @@
   "4039fa58057275ae",
   "dbd18bd6c4654ec8",
   "b2e981fc7a2e7302",
-  "0d77f1d2373bb03d",
   "498180393c058995",
+  "0d77f1d2373bb03d",
   "73c8ecdc752b197b",
   "0ad3ea7bae8b611c",
   "7f7a05be6b3ac1f5",
@@ -200344,6 +200399,14 @@
     "ticker": "CCJ",
     "what": "FOMC rate decision; broad risk-off or risk-on move that can drive the uranium and nuclear names with it.",
     "by": "macro",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-09",
+    "ticker": "TLN",
+    "what": "Watch the PJM capacity auction timing and whether the delay request is granted; a ruling either way can move TLN and VST sharply.",
+    "by": "level",
     "written": "2026-11-23",
     "surfaced": false
    },
@@ -201157,7 +201220,7 @@
    "built": "2026-11-23 10:39"
   }
  ],
- "heartbeat": "2026-11-23 10:50",
+ "heartbeat": "2026-11-23 10:56",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -201269,8 +201332,8 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 115.19999694824219,
-  "TLN": 359.8599853515625
+  "BWXT": 115.18499755859375,
+  "TLN": 362.0
  },
  "notes_audit": {
   "scout": {
@@ -201282,6 +201345,19 @@
     "BWXT Deals and contracts": 1,
     "SECTOR Government and laws": 2,
     "UUUU Deals and contracts": 1
+   },
+   "since": "2026-11-23"
+  },
+  "level": {
+   "asked": 1,
+   "used": 1,
+   "notes": {
+    "TLN Snapshot": 1,
+    "TLN Price behavior": 1,
+    "TLN Discoveries": 1,
+    "TLN Our trades": 1,
+    "VST Snapshot": 1,
+    "VST Price behavior": 1
    },
    "since": "2026-11-23"
   }
