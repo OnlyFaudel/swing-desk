@@ -385,23 +385,23 @@ __BANNER__
   <div class="row mut" style="font-size:13px"><span id="weektxt"></span></div>
   <div class="meter" aria-hidden="true"><i id="weekbar"></i></div>
   <div class="ladders" id="ladders"></div>
-  <div class="panel" style="margin-top:14px"><h2>Trio in sync</h2><div id="syncTxt" class="feed"></div><canvas id="syncChart" height="170"></canvas>
-  <p class="note">The three stocks are one system. When the trio as a whole is above its 10-day average, every level trade gets a bigger slot; below it, a smaller one. A stock that dips while its two partners rise gets more; one that dips with its partners all selling off gets less. Never zero: the bot always keeps trading. (Tested: better in 4 of 4 tune/test checks across two trios.)</p></div>
+  <div class="panel" style="margin-top:14px"><h2>The nuclear group in sync</h2><div id="syncTxt" class="feed"></div><canvas id="syncChart" height="170"></canvas>
+  <p class="note">All 10 nuclear stocks move as one group. When the group is above its 10-day average, support buys go ahead (a stock that dips while its partners rise gets a bigger slot); when it is below, there are no new support buys at all, because tested on 2,698 practice trades, buys in a falling group lost money.</p></div>
   <div class="grid2">
-    <div class="panel"><h2>Account over time</h2><canvas id="eqchart" height="190"></canvas><p class="note" id="eqnote"></p></div>
-    <div class="panel"><h2>Latest review</h2><div id="review" class="feed"></div></div>
+    <div class="panel" style="display:none"><h2>Account over time</h2><canvas id="eqchart" height="190"></canvas><p class="note" id="eqnote"></p></div>
+    <div class="panel" style="display:none"><h2>Latest review</h2><div id="review" class="feed"></div></div>
     <div class="panel"><h2>Trades</h2><div style="overflow-x:auto"><table id="trades"></table></div></div>
     <div class="panel"><h2>Orders sent</h2><div style="overflow-x:auto"><table id="orders"></table></div></div>
   </div>
 </section>
 
-<section id="charts" hidden>
+<section id="charts" hidden style="display:none">
   <div class="row"><select id="chartT" aria-label="Stock"></select><span class="mut" id="chartInfo"></span></div>
   <div class="panel" style="margin-top:10px"><canvas id="candles" height="420"></canvas>
   <p class="note">Hourly candles. Blue band: the support zone. Solid blue: the resting buy. Dashed red: stop. Dashed green: target. Dots: past trades the rule would have made (green won, red lost).</p></div>
 </section>
 
-<section id="lab" hidden>
+<section id="lab" hidden style="display:none">
   <p class="status">Change the rule and watch it re-run on about 2.8 years of hourly data. The first half tunes; the second half is the honest test. If a setting only shines in the first half, it's luck.</p>
   <div class="panel">
     <div class="chips" id="labT"></div>
@@ -428,15 +428,15 @@ __BANNER__
 
 <section id="desk" hidden>
   <div class="grid2">
-    <div class="panel"><h2>Watchlist scoreboard</h2><div style="overflow-x:auto"><table id="rank"></table></div><p class="note">Scoreboard, for reference: how the rule worked on each watchlist stock over the last 26 weeks, pulled toward average. The bot trades the fixed trio; change it in Settings if a partner keeps lagging for months.</p></div>
+    <div class="panel"><h2>Health</h2><div id="health" class="note"></div></div>
+    <div class="panel" style="display:none"><h2>Watchlist scoreboard</h2><div style="overflow-x:auto"><table id="rank"></table></div><p class="note">Scoreboard, for reference: how the rule worked on each watchlist stock over the last 26 weeks, pulled toward average. The bot trades the fixed trio; change it in Settings if a partner keeps lagging for months.</p></div>
     <div class="panel"><h2>What the agents decided</h2><div id="deskLog" class="feed"></div></div>
     <div class="panel"><h2>Strategist theses</h2><div id="theses" class="feed"></div></div>
     <div class="panel"><h2>Options radar</h2><div id="radar" class="feed"></div></div>
     <div class="panel"><h2>Post-mortems</h2><div id="pms" class="feed"></div></div>
-    <div class="panel"><h2>Memory</h2><div id="mem"></div></div>
+    <div class="panel" style="display:none"><h2>Memory</h2><div id="mem"></div></div>
     <div class="panel"><h2>Positioning intel</h2><div style="overflow-x:auto"><table id="intel"></table></div></div>
-    <div class="panel"><h2>Headlines</h2><div id="news" class="feed"></div></div>
-    <div class="panel"><h2>Health</h2><div id="health" class="note"></div></div>
+    <div class="panel" style="display:none"><h2>Headlines</h2><div id="news" class="feed"></div></div>
   </div>
 </section>
 
@@ -451,10 +451,8 @@ __BANNER__
 <footer class="hood"><details><summary>Under the hood</summary>
   <p class="note">For checking the bot's work. You don't need these day to day.</p>
   <div class="hoodbtns">
-    <button role="tab" aria-selected="false" data-tab="today">Levels<span>where each buy, stop and target sits</span></button>
-    <button role="tab" aria-selected="false" data-tab="charts">Charts<span>price charts with the levels drawn on</span></button>
-    <button role="tab" aria-selected="false" data-tab="lab">Lab<span>change the rules and re-test them on 2.8 years of data</span></button>
-    <button role="tab" aria-selected="false" data-tab="desk">Desk<span>agent costs, scoreboard, raw logs</span></button>
+    <button role="tab" aria-selected="false" data-tab="today">Support buys<span>each stock's waiting buy, stop and target, and why there isn't one</span></button>
+    <button role="tab" aria-selected="false" data-tab="desk">Health and logs<span>costs, the real-money gate, agent decisions, options and positioning</span></button>
   </div></details></footer>
 <script>__ENGINE__</script>
 <script>
@@ -989,13 +987,13 @@ function ladder(t){
 const rankL=t=>held.includes(t)?0:armed.includes(t)?1:(S.candidates||{})[t]?2:3;
 $("ladders").innerHTML=[...new Set([...held,...lineup])].sort((a,b)=>rankL(a)-rankL(b)).map(ladder).join("");
 /* trio sync */
-(function(){const Y=S.sync||{}; if(!Y.mult||!Object.keys(Y.mult).length){$("syncTxt").innerHTML='<p class="mut">The trio pulse appears after the first market-hours run.</p>';$("syncChart").style.display="none";return}
+(function(){const Y=S.sync||{}; if(!Y.mult||!Object.keys(Y.mult).length){$("syncTxt").innerHTML='<p class="mut">The group pulse appears after the first market-hours run.</p>';$("syncChart").style.display="none";return}
   const up=Y.pulse_up; const rows=Object.keys(Y.mult).map(t=>`<div><b>${t}</b> · own move (2 days) <span class="${cls(Y.own_pct?.[t])}">${pct(Y.own_pct?.[t])}</span> · partners <span class="${cls(Y.partners_pct?.[t])}">${pct(Y.partners_pct?.[t])}</span> → next buy slot <b>${(+Y.mult[t]).toFixed(2)}×</b></div>`).join("");
-  $("syncTxt").innerHTML=`<p><b class="${up?"pos":"neg"}">Trio pulse ${up?"UP":"DOWN"}</b>: the basket is ${pct(Y.basket_vs_avg_pct)} versus its 10-day average · ${esc(Y.time||"")}</p>`+rows;
+  $("syncTxt").innerHTML=`<p><b class="${up?"pos":"neg"}">Group pulse ${up?"UP":"DOWN"}</b>: the basket is ${pct(Y.basket_vs_avg_pct)} versus its 10-day average · ${esc(Y.time||"")}</p>`+rows;
   const se=Y.series||{}; const cols={basket:"#111",avg:"#999"}; const pal=["#CDB16A","#9BB7C4","#8CC6A0"];
   const lines=Object.keys(se).filter(k=>k!=="basket"&&k!=="avg").map((t,i)=>({v:se[t],c:pal[i%3]})); if(se.basket) lines.push({v:se.basket,c:cols.basket}); if(se.avg) lines.push({v:se.avg.map(v=>v??NaN),c:cols.avg});
   line($("syncChart"),lines,{base:1,fmt:v=>((v-1)*100).toFixed(0)+"%"});
-  $("syncTxt").innerHTML+=`<p class="mut" style="font-size:12px">Chart (last ~20 sessions, start = 0%): ${Object.keys(se).filter(k=>k!=="basket"&&k!=="avg").map((t,i)=>`<span style="color:${pal[i%3]}">■ ${t}</span>`).join(" ")} <span>■ trio basket</span> <span class="mut">■ its 10-day average</span></p>`;})();
+  $("syncTxt").innerHTML+=`<p class="mut" style="font-size:12px">Chart (last ~20 sessions, start = 0%): ${Object.keys(se).filter(k=>k!=="basket"&&k!=="avg").map((t,i)=>`<span style="color:${pal[i%3]}">■ ${t}</span>`).join(" ")} <span>■ group basket</span> <span class="mut">■ its 10-day average</span></p>`;})();
 
 /* line chart helper */
 function line(cv,series,opts={}){
