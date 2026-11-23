@@ -26,6 +26,16 @@ def _rows(df, n=200):
     return json.loads(df.to_json(orient="records", date_format="iso"))
 
 
+def _short(info):
+    """How heavily the stock is bet against. High short interest + good news can force short sellers to buy back fast (a squeeze)."""
+    pct = info.get("shortPercentOfFloat"); dtc = info.get("shortRatio"); now, prev = info.get("sharesShort"), info.get("sharesShortPriorMonth")
+    pct = round(pct * 100, 1) if isinstance(pct, (int, float)) else None
+    level = None if pct is None else ("very high" if pct >= 20 else "high" if pct >= 12 else "normal" if pct >= 4 else "low")
+    return {"pct_of_float": pct, "days_to_cover": dtc, "level": level,
+            "change_vs_last_month_pct": round((now / prev - 1) * 100, 1) if now and prev else None,
+            "squeeze_watch": bool((pct is not None and pct >= 12) or (dtc or 0) >= 5)}
+
+
 CANADA = {"CCJ": "CCO.TO", "NXE": "NXE.TO", "DNN": "DML.TO"}
 
 
@@ -83,7 +93,8 @@ def one(t):
             "analysts": {"latest": analysts[:25], "upgrades_12m": sum(1 for a in analysts if a["date"] >= year_ago and (a["action"] or "").lower() == "up"),
                          "downgrades_12m": sum(1 for a in analysts if a["date"] >= year_ago and (a["action"] or "").lower() == "down"),
                          "target_mean": info.get("targetMeanPrice"), "rating": info.get("recommendationKey"), "count": info.get("numberOfAnalystOpinions")},
-            "financials": {k: info.get(k) for k in FIN if info.get(k) is not None}}, trades, analysts
+            "financials": {k: info.get(k) for k in FIN if info.get(k) is not None},
+            "short_interest": _short(info)}, trades, analysts
 
 
 def run(tickers):

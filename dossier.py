@@ -140,7 +140,7 @@ def build_one(t, st, data=None):
             "governance_risk_1_low_10_high": pp.get("governance_risk_1_low_10_high"),
             "leadership_changes": [{k: e.get(k) for k in ("date", "title", "r20")} for e in desk_memory.events() + people_hist(t)
                                    if e["ticker"] == t and e["type"] == "leadership_change"][-10:]}
-        S["Ownership and analysts"] = {"top_holders": pp.get("top_holders"), "analysts": pp.get("analysts")}
+        S["Ownership and analysts"] = {"top_holders": pp.get("top_holders"), "analysts": pp.get("analysts"), "short_interest": pp.get("short_interest")}
         S["Financials"] = {**(pp.get("financials") or {}), "as_of": pp.get("updated")}
     keys = NAME_KEYS.get(t, (t.lower(),))
     named = lambda s: any(k in (s or "").lower() for k in keys)

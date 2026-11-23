@@ -14,7 +14,7 @@ TICKERS = ("CCJ", "NXE", "UEC", "DNN", "UUUU", "LEU", "BWXT", "CEG", "VST", "TLN
 SEATS = {
     "macro":        {"stock": ["Snapshot"], "sector": ["Uranium market", "Government and laws", "Countries", "Defense and geopolitics",
                                                        "Big tech power deals", "Discoveries"]},
-    "whale":        {"stock": ["Snapshot", "Leadership and insiders", "Ownership and analysts", "Options and big money"], "sector": []},
+    "whale":        {"stock": ["Snapshot", "Ownership and analysts", "Leadership and insiders", "Options and big money"], "sector": []},
     "crowd":        {"stock": ["Snapshot", "Crowd", "News"], "sector": []},
     "level":        {"stock": ["Snapshot", "Price behavior", "What history says", "Discoveries", "Our trades"], "sector": []},
     "technical":    {"stock": ["Snapshot", "Price behavior", "What history says"], "sector": []},

@@ -1618,6 +1618,14 @@ def intel_tick(st, today, force=False):
         try:
             pv, n = people.run(list(T))
             st["people_view"] = pv
+            sq = [(t, (people.load(t) or {}).get("short_interest") or {}) for t in pv]
+            sq = [(t, s) for t, s in sq if s.get("squeeze_watch")]
+            if sq:
+                feed.post("whale", "Short squeeze watch (stocks heavily bet against; good news can force short sellers to buy back fast): "
+                          + "; ".join((f"{t} {s['pct_of_float']}% of shares sold short, " if s.get("pct_of_float") is not None else f"{t} ") + f"{s.get('days_to_cover') or '?'} days to cover"
+                                      + (f" ({s['change_vs_last_month_pct']:+.0f}% vs last month)" if s.get("change_vs_last_month_pct") is not None else "")
+                                      for t, s in sq) + ".", [t for t, _ in sq], kind="data",
+                          art={"big": "Short squeeze watch", "sub": f"{len(sq)} heavily shorted stock{'s' if len(sq) > 1 else ''}"})
             big = [(t, v["net_insider_usd_12m"]) for t, v in pv.items() if abs(v.get("net_insider_usd_12m") or 0) >= 5_000_000]
             if big:
                 feed.post("investigator", "Insider check (bosses trading their own stock, last 12 months): " + "; ".join(
@@ -2013,6 +2021,8 @@ def _convene_news(st, desk, ex, data, prices, today, t, mat):
             entry["filings"] = desk.filings(t, sec)
         ctx = {"ticker": t, "held_trade": held, "armed_or_waiting_buy": st["candidates"].get(t),
                "investigator": entry["investigator"], "plant_engineer": entry.get("engineer"), "filings": entry.get("filings"), "chart": ch,
+               "short_interest": (people.load(t) or {}).get("short_interest"),
+               "short_squeeze_note": "If short interest is high and this news is clearly good and new, short sellers may be forced to buy back fast; that can add to a move (not tested on history yet, use judgment).",
                "desk_memory_playbook": memory.playbook(st, t), "active_theses": active_theses(st, t),
                "similar_past_events": desk_memory.similar(mat[0]["title"], t),
                "what_this_kind_of_event_did_before": desk_memory.playbook(mat[0].get("event_type") or "other", list(T)),
