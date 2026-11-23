@@ -507,7 +507,13 @@ function stockState(t){
   }
   let R="day";
   function draw(){
-    const pts=series(R), first=R==="all"?start:pts[0][1], d=v-first, pc=first?d/first*100:0, up=d>=0;
+    const pts=series(R);
+    let first=R==="all"?start:pts[0][1];
+    if(R==="day"){  /* today = change since the LAST CLOSE before today (like any brokerage app), not since this morning's first tick */
+      const tk=ymd(new Date()), prior=Object.keys(closes).filter(k=>k<tk).sort(), pc0=prior.length?closes[prior[prior.length-1]]:start;
+      first=pc0; if(pts.length&&Math.abs(pts[0][1]-pc0)>0.005) pts.unshift([new Date(+pts[0][0]-60e3),pc0]);
+    }
+    const d=v-first, pc=first?d/first*100:0, up=d>=0;
     $("chg").innerHTML=`<span class="${up?"pos":"neg"}">${up?"+":"−"}$${Math.abs(d).toFixed(2)} (${up?"+":"−"}${Math.abs(pc).toFixed(2)}%)</span> ${{day:"today",week:"this week",all:"since the start"}[R]}`;
     const cv=$("pchart"), dpr=window.devicePixelRatio||1, W=cv.clientWidth||360, H=190; cv.width=W*dpr; cv.height=H*dpr;
     const x=cv.getContext("2d"); x.scale(dpr,dpr); x.clearRect(0,0,W,H);
