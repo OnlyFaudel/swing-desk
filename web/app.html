@@ -149,6 +149,24 @@ nav.more button{font-weight:500;font-size:13.5px;padding:6px 10px;border-bottom-
 .rng{display:flex;gap:4px;margin:8px 0 0}
 .rng button{font:inherit;font-size:13px;font-weight:600;color:var(--ink2);background:none;border:0;border-radius:99px;padding:5px 12px;cursor:pointer}
 .rng button[aria-pressed=true]{color:var(--ink);background:var(--sheet2)}
+.cal{margin:12px 0 4px}
+.cal .yr{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:12px 14px;background:var(--sheet);border-radius:var(--r2);margin-bottom:12px}
+.cal .yr b{font-stretch:75%;font-size:26px;line-height:1}
+.cal .yr span{font-size:13px;color:var(--ink2)}
+.cal .yr span.pos{color:var(--gain)}.cal .yr span.neg{color:var(--loss)}
+.cal .mh{display:flex;align-items:center;justify-content:space-between;margin:0 0 8px}
+.cal .mh strong{font-size:15px}
+.cal .mh em{font-style:normal;font-size:13px}
+.cal .mh button{font:inherit;font-size:18px;color:var(--ink);background:none;border:1px solid var(--hair);border-radius:99px;width:34px;height:34px;cursor:pointer}
+.cal .mh button:disabled{opacity:.3;cursor:default}
+.cal .g{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.cal .dw{font-size:11px;color:var(--ink2);text-align:center;padding-bottom:2px}
+.cal .d{min-height:54px;border-radius:6px;background:var(--sheet);padding:4px 3px;display:flex;flex-direction:column;align-items:center;gap:1px;font-size:10.5px;line-height:1.15}
+.cal .d i{font-style:normal;font-size:11px;color:var(--ink2);align-self:flex-start;padding-left:2px}
+.cal .d b{font-size:11.5px;font-weight:700}
+.cal .d.up{background:rgba(61,220,151,.14)}.cal .d.dn{background:rgba(255,122,112,.14)}
+.cal .d.off{background:none}.cal .d.today{outline:1.5px solid var(--glow)}
+.cal .foot{font-size:12px;color:var(--ink2);margin:8px 2px 0}
 .now{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);margin:16px 0 0;padding:14px 2px}
 .now p{margin:0;font-size:16.5px;line-height:1.45}
 .now details{margin-top:8px}
@@ -255,7 +273,8 @@ __BANNER__
         <div class="val" id="val">—</div>
         <div class="chg" id="chg"></div>
         <div class="chartbox"><canvas id="pchart" height="190" aria-label="Portfolio value chart"></canvas><p class="chartnote" id="chartnote"></p></div>
-        <div class="rng" id="rng"><button data-r="day" aria-pressed="true">Today</button><button data-r="week" aria-pressed="false">Week</button><button data-r="all" aria-pressed="false">All</button></div>
+        <div class="rng" id="rng"><button data-r="day" aria-pressed="true">Today</button><button data-r="week" aria-pressed="false">Week</button><button data-r="all" aria-pressed="false">All</button><button data-r="cal" aria-pressed="false">Calendar</button></div>
+        <div class="cal" id="cal" hidden></div>
       </div>
       <div class="now"><p id="now"></p><details><summary>Explain everything</summary><div class="ex" id="exbody"></div></details></div>
       <div id="minebody"></div>
@@ -503,12 +522,50 @@ function stockState(t){
     const lp=pts[pts.length-1]; x.fillStyle=c; x.beginPath(); x.arc(X(lp[0]),Y(lp[1]),4,0,7); x.fill();
     $("chartnote").textContent=ys.every(y=>Math.abs(y-ys[0])<0.005)?(intr.length>1?"No change yet: the money is in cash, waiting for a buy.":"The line starts moving once the bot runs during market hours."):"";
   }
-  document.querySelectorAll("#rng button").forEach(b=>b.onclick=()=>{R=b.dataset.r;document.querySelectorAll("#rng button").forEach(y=>y.setAttribute("aria-pressed",y===b));draw();});
+  /* ----- calendar: every day's gain or loss, the month, and the year so far */
+  const closes={};
+  intr.forEach(([t,val])=>{closes[ymd(t)]=val;});
+  daily.forEach(([t,val])=>{closes[ymd(t)]=val;});
+  closes[ymd(new Date())]=v;
+  function ymd(t){return `${t.getFullYear()}-${String(t.getMonth()+1).padStart(2,"0")}-${String(t.getDate()).padStart(2,"0")}`;}
+  const days=Object.keys(closes).sort(), chgs={};
+  days.forEach((d,i)=>{const prev=i?closes[days[i-1]]:start; chgs[d]={usd:closes[d]-prev,pct:prev?(closes[d]-prev)/prev*100:0};});
+  const sgn=(n,dp=2)=>`${n>=0?"+":"−"}${Math.abs(n).toFixed(dp)}`;
+  let CM=new Date(); CM=new Date(CM.getFullYear(),CM.getMonth(),1);
+  function calendar(){
+    const y=CM.getFullYear(), now=new Date(), thisY=now.getFullYear();
+    const before=days.filter(d=>d<`${thisY}-01-01`), base=before.length?closes[before[before.length-1]]:start;
+    const ytd=v-base, ytdp=base?ytd/base*100:0;
+    const mkey=`${y}-${String(CM.getMonth()+1).padStart(2,"0")}`, mdays=days.filter(d=>d.startsWith(mkey));
+    const mUsd=mdays.reduce((a,d)=>a+chgs[d].usd,0), prevM=days.filter(d=>d<mkey+"-01"), mBase=prevM.length?closes[prevM[prevM.length-1]]:start;
+    const first=new Date(y,CM.getMonth(),1), n=new Date(y,CM.getMonth()+1,0).getDate(), lead=first.getDay();
+    const minM=days.length?days[0].slice(0,7):mkey, maxM=ymd(now).slice(0,7);
+    let cells="";
+    for(let i=0;i<lead;i++) cells+=`<div class="d off" aria-hidden="true"></div>`;
+    for(let dd=1;dd<=n;dd++){
+      const key=`${mkey}-${String(dd).padStart(2,"0")}`, c=chgs[key], isT=key===ymd(now);
+      const moved=c&&Math.abs(c.usd)>=0.005;
+      cells+=`<div class="d${moved?(c.usd>=0?" up":" dn"):""}${isT?" today":""}" aria-label="${key}${c?`: ${sgn(c.pct)}%, ${sgn(c.usd)} dollars`:": no data"}"><i>${dd}</i>${c?`<b class="${moved?(c.usd>=0?"pos":"neg"):"mut"}">${sgn(c.pct,1)}%</b><span class="${moved?(c.usd>=0?"pos":"neg"):"mut"}">${c.usd>=0?"+":"−"}$${Math.abs(c.usd)<10?Math.abs(c.usd).toFixed(2):Math.abs(c.usd).toFixed(0)}</span>`:""}</div>`;
+    }
+    $("cal").innerHTML=`<div class="yr"><div><span>${thisY} so far</span><br><b class="${ytd>=0?"pos":"neg"}">${sgn(ytdp)}%</b></div><span class="${ytd>=0?"pos":"neg"}" style="font-size:17px;font-weight:700">${ytd>=0?"+":"−"}$${Math.abs(ytd).toFixed(2)}</span></div>
+      <div class="mh"><button type="button" id="calp" aria-label="Previous month" ${mkey<=minM?"disabled":""}>‹</button><div style="text-align:center"><strong>${first.toLocaleString(undefined,{month:"long",year:"numeric"})}</strong><br><em class="${mUsd>=0?"pos":"neg"}">${mdays.length?`${mUsd>=0?"+":"−"}$${Math.abs(mUsd).toFixed(2)} (${sgn(mBase?mUsd/mBase*100:0)}%) this month`:"No trading days yet"}</em></div><button type="button" id="caln" aria-label="Next month" ${mkey>=maxM?"disabled":""}>›</button></div>
+      <div class="g">${["S","M","T","W","T","F","S"].map(x=>`<div class="dw">${x}</div>`).join("")}${cells}</div>
+      <p class="foot">Each day: change in the whole account from the day before's close (today is live). Started with $${start.toLocaleString()} on ${days[0]||"day one"}.</p>`;
+    $("calp").onclick=()=>{CM=new Date(CM.getFullYear(),CM.getMonth()-1,1);calendar();};
+    $("caln").onclick=()=>{CM=new Date(CM.getFullYear(),CM.getMonth()+1,1);calendar();};
+  }
+  document.querySelectorAll("#rng button").forEach(b=>b.onclick=()=>{R=b.dataset.r;document.querySelectorAll("#rng button").forEach(y=>y.setAttribute("aria-pressed",y===b));
+    const isCal=R==="cal"; $("cal").hidden=!isCal; document.querySelector(".chartbox").hidden=isCal;
+    if(isCal){calendar(); const now=new Date(), b0=days.filter(d=>d<`${now.getFullYear()}-01-01`), base=b0.length?closes[b0[b0.length-1]]:start, d=v-base;
+      $("chg").innerHTML=`<span class="${d>=0?"pos":"neg"}">${d>=0?"+":"−"}$${Math.abs(d).toFixed(2)} (${sgn(base?d/base*100:0)}%)</span> this year`;}
+    else draw();});
   draw(); window.addEventListener("resize",draw);
 
   /* ----- right-now sentence + trades */
   const st_=lineupT.map(t=>[t,stockState(t)]), held_=st_.filter(z=>z[1].k==="held"), arm_=st_.filter(z=>z[1].k==="armed");
-  $("now").innerHTML=held_.length?`Holding ${held_.map(z=>z[0]).join(" and ")}. ${esc(held_[0][1].short)}`
+  const other_=Object.keys(B.lots||{}).filter(t=>["panic","auto"].some(k=>lot(t,k).qty>1e-6));
+  $("now").innerHTML=(!held_.length&&other_.length)?`Holding ${other_.join(", ")} from ${other_.some(t=>lot(t,"panic").qty>1e-6)?"the panic-day rebound":"team trades"}; each sells on its own date or target. ${(C.sync&&C.sync.pulse_filter&&S.sync&&S.sync.pulse_up===false)?"No new support buys while the nuclear basket is falling.":""}`
+    :held_.length?`Holding ${held_.map(z=>z[0]).join(" and ")}. ${esc(held_[0][1].short)}`
     :arm_.length?`Waiting to buy ${arm_.map(z=>`${z[0]} at ${money((S.armed||{})[z[0]].entry)}`).join(", ")}. It only buys if the price dips to support.`
     :(C.sync&&C.sync.pulse_filter&&S.sync&&S.sync.pulse_up===false)?`Holding cash. The nuclear basket is falling, so no new buys until it turns up. Watching ${lineupT.length} stocks.`
     :`Holding cash. None of the ${lineupT.length} stocks is at a safe place to buy yet.`;
