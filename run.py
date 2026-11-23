@@ -1799,6 +1799,11 @@ def main():
             active = weekday and dt.time(8, 0) <= now.time() <= dt.time(19, 0)  # every minute while it matters
             # off-hours it still wakes: overnight news, your posts, the collector (every 10 min weeknights, 30 min weekends)
             due = active or time.time() - last_cycle >= (600 if weekday else 1800)
+            if not due:  # your posts never wait: check the inbox every minute, day or night, and run at once if you wrote
+                try:
+                    due = any(m["id"] not in st.get("inbox_seen", []) for m in inbox.poll("2h"))
+                except Exception:
+                    pass
             if due:
                 last_cycle = time.time()
                 try:

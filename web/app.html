@@ -337,7 +337,7 @@ __BANNER__
 </section>
 
 <section id="settings" hidden>
-  <p class="status">Change the bot's settings here, download the file, and replace config.json in your GitHub repo. The bot picks it up on its next run.</p>
+  <p class="status">Change the bot's settings here, download the file, and replace config.json in your GitHub repo. The bot picks it up within the hour.</p>
   <div class="panel"><div class="ctl" id="setForm"></div>
   <div class="row" style="margin-top:14px"><button class="act" id="dlCfg">Download config.json</button><button class="sec" id="cpCfg">Copy settings</button><span class="note" id="cfgMsg">Every trade keeps a stop no matter what you set here.</span></div>
   <textarea id="cfgOut" rows="10" style="width:100%;margin-top:10px;font:12px/1.4 ui-monospace,Menlo,monospace;display:none" readonly aria-label="config.json contents"></textarea></div>
@@ -356,6 +356,33 @@ __BANNER__
 <script>__ENGINE__</script>
 <script>
 const S=__STATE__, C=__CFG__; let LAB=__LAB__;
+/* Plain English everywhere: no code, raw errors or long decimals reach the screen (old messages are cleaned too). */
+const FEAT={vol_pct:"jumpy stocks (hourly swings)",open_fill:"buys filled right at the open",weekday:"day of the week",hour:"hour of the fill",
+  ret5d_pct:"the stock's last 5 days",dist_avg_pct:"distance from its average",group_up:"its group rising",gap_pct:"the opening gap"};
+const DAYS={Mon:"Monday",Tue:"Tuesday",Wed:"Wednesday",Thu:"Thursday",Fri:"Friday"};
+function human(t){
+  t=String(t??"").trim(); if(!t) return "";
+  if(t[0]==="{"){ // an agent reply that arrived as raw data
+    try{const o=JSON.parse(t); let r=o.say||o.summary||o.headline||""; if(!r&&o._raw){try{const i=JSON.parse(o._raw);r=i.say||i.summary||"";}catch(e){const m=/"say"\s*:\s*"([^"]+)/.exec(o._raw);r=m?m[1]:"";}} t=r;}
+    catch(e){const m=/"say"\s*:\s*"([^"]+)/.exec(t); t=m?m[1]:"";}
+    if(!t) return "";
+  }
+  if(/^Error code: 401|invalid x-api-key/.test(t)) return "The agents couldn't connect (the Claude key was rejected). The trading rules kept running.";
+  if(/^Error code: \d+/.test(t)) return "The agents hit a connection problem and sat this one out. The trading rules kept running.";
+  t=t.replace(/\b(weekday)\s*==\s*(Mon|Tue|Wed|Thu|Fri)\b/g,(_,a,d)=>DAYS[d]+" buys")
+     .replace(/\b([a-z]+_[a-z_]+|hour)\s*(==|>=|<=|>|<)\s*(True|False|[\d.]+)/g,(_,f,op,v)=>{const n=FEAT[f]||f.replace(/_/g," ");
+        return v==="True"?n:v==="False"?"not "+n:`${n} ${op.includes(">")?"above":"below"} ${v}${/pct$/.test(f)?"%":""}`;})
+     .replace(/\bweekday = (Mon|Tue|Wed|Thu|Fri)\b/g,(_,d)=>DAYS[d]+" buys")
+     .replace(/,?\s*(with\s+)?p\s*[=≈~]\s*\d[\d.]*/g,"").replace(/\s*\(R = what one trade risks\)/g,"").replace(/\s*\(n\s*=\s*([\d,]+)\)/g," ($1 trades)").replace(/\bn=([\d,]+)/g,"$1 trades")
+     .replace(/(\d+\.\d{2})\d+/g,"$1")             // at most 2 decimals
+     .replace(/(\d+\.\d+) sh\b/g,(_,q)=>(+q).toFixed(2)+" shares")
+     .replace(/\bR:R\b/g,"reward/risk").replace(/([+−-]?\d+(?:\.\d+)?)R\b/g,"$1x risk")
+     .replace(/\b[a-z]+_[a-z_]+\b/g,w=>FEAT[w]||w.replace(/_/g," "))
+     .replace(/\.\.(\s)/g,".$1").replace(/\s+,/g,",").replace(/\s{2,}/g," ");
+  return t;
+}
+(S.feed||[]).forEach(p=>{p.text=human(p.text);}); S.feed=(S.feed||[]).filter(p=>p.text||p.art);
+(S.chats||[]).forEach(c=>{(c.msgs||[]).forEach(m=>{m.text=human(m.text); if(m.notes) m.notes=human(m.notes);}); c.msgs=(c.msgs||[]).filter(m=>m.text);});
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const usd=x=>x==null||isNaN(x)?"—":(x<0?"−":"")+"$"+Math.abs(x).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -521,7 +548,7 @@ function stockState(t){
     return `<article class="ig${pending?" pending":""}"><header><span class="ringsm">${AV(p.who)}</span><div><b>${esc(nm(p.who))}</b><br><span>${pending?"sending to the team":ago(p.t)}</span></div></header>
       <div class="art k-${k} ${tone(p)}"><div class="big">${esc(a.big)}</div>${a.sub?`<div class="sub">${esc(a.sub)}</div>`:""}</div>
       ${cap?`<div class="cap"><b>${esc(nm(p.who))}</b>${esc(cap)}</div>`:""}
-      <div class="igfoot">${p.thread&&CH.some(c=>c.id===p.thread)?`<button class="vc" data-th="${esc(p.thread)}">View the conversation</button>`:""}${(p.tickers||[]).map(t=>`<span class="ptk">${esc(t)}</span>`).join("")}${pending?`<span class="note">The team answers at its next run (about every 15 minutes in market hours).</span>`:""}</div></article>`;
+      <div class="igfoot">${p.thread&&CH.some(c=>c.id===p.thread)?`<button class="vc" data-th="${esc(p.thread)}">View the conversation</button>`:""}${(p.tickers||[]).map(t=>`<span class="ptk">${esc(t)}</span>`).join("")}${pending?`<span class="note">The team answers within about a minute.</span>`:""}</div></article>`;
   }
   const F=(S.feed||[]).slice().reverse();
   $("posts").innerHTML=pend.slice().reverse().map(p=>postHTML(p,true)).join("")+(F.length?F.slice(0,150).map(p=>postHTML(p,false)).join(""):`<p class="empty">No posts yet. After setup, the first run posts the morning meeting, the practice-trade replay and the daily review.</p>`);
