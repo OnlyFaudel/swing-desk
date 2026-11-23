@@ -22,7 +22,7 @@ import datetime as dt, json, os, statistics, time
 
 import numpy as np
 
-import collector, desk_memory, jobs, world, uprice, congress, people
+import collector, desk_memory, jobs, world, uprice, congress, people, sput
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIR = os.path.join(ROOT, "memory", "dossiers")
@@ -268,7 +268,7 @@ def build_sector(st):
         by_place.setdefault(i["place"], []).append(i)
     disc = _load(os.path.join(ROOT, "research", "discoveries.json"), {})
     return {"ticker": "SECTOR", "name": "The nuclear sector", "built": dt.datetime.now().strftime("%Y-%m-%d %H:%M"), "sections": {
-        "Uranium market": {"uranium_price_per_lb": uprice.summary(), "funds_and_markets": {k: v for k, v in _market(st).items() if k != "_at"},
+        "Uranium market": {"uranium_price_per_lb": uprice.summary(), "sprott_trust_premium": sput.summary(), "funds_and_markets": {k: v for k, v in _market(st).items() if k != "_at"},
                            "latest": (by_place.get("Uranium price", []) + by_place.get("Sprott trust", []))[:15]},
         "Government and laws": {"bills_in_congress": congress.summary(), "latest": [i for i in _items(None, 60, tags=["regulation", "politics"])][:25]},
         "Countries": {"who_runs_builds_and_needs_uranium": world.summary(),

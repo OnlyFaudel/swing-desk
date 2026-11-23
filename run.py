@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -1388,6 +1388,26 @@ def intel_tick(st, today, force=False):
                           art={"big": "Plant report", "sub": f"Reactors, mines and fuel, {today:%b %d}"})
         except Exception as e:
             print("plant report", e)
+    if now.time() >= dt.time(18, 15) and today.weekday() < 5 and not st["flags"].get(f"sput:{today}"):  # Sprott publishes NAV ~6pm
+        st["flags"][f"sput:{today}"] = True
+        try:
+            snap, hist = sput.run()
+            s = sput.summary(hist)
+            st["sput_view"] = s
+            prev = hist[-2]["premium_pct"] if len(hist) > 1 else None
+            if s and s.get("premium_pct") is not None:
+                crossed = prev is not None and (prev < 0) != (s["premium_pct"] < 0)
+                big = s.get("change_1w_pts") is not None and abs(s["change_1w_pts"]) >= 3
+                if crossed or big:
+                    feed.post("macro", f"Sprott uranium trust: {s['premium_pct']:+.1f}% vs its asset value"
+                              + (f" ({s['change_1w_pts']:+.1f} points this week)" if s.get("change_1w_pts") is not None else "") + ". "
+                              + ("It's back ABOVE its value, so it can raise money and buy uranium again, which usually supports spot and the miners."
+                                 if crossed and s["premium_pct"] >= 0 else
+                                 "It slipped below its value, so it can't buy uranium for now." if crossed else
+                                 "A big swing in investor demand for uranium."), ["CCJ", "UEC", "NXE", "DNN", "UUUU"], kind="data",
+                              art={"big": f"Sprott trust {s['premium_pct']:+.1f}%", "sub": "Premium/discount to the uranium it holds"})
+        except Exception as e:
+            print("sput", e)
     if now.time() >= dt.time(7, 0) and not st["flags"].get(f"world:{today:%G-W%V}"):  # weekly: the country table
         st["flags"][f"world:{today:%G-W%V}"] = True
         try:
@@ -1682,15 +1702,38 @@ def options_call(st, desk, t, mat, today):
     """A proven bearish event (share offering) on one of our stocks: price the real put and let the Options Specialist decide."""
     if not CFG.get("options_spec", {}).get("enabled", True) or any(p["ticker"] == t and not p.get("closed") for p in st.get("options_book", [])):
         return
+    eq = account.equity(st["book"], st.get("last_prices") or {})
+    cap, scap = eq * optspec.MAX_PCT / 100, eq * optspec.SPREAD_MAX_PCT / 100
     try:
+        moves = optspec.history_moves()
         q = optspec.quote_put(t)
-        ev = optspec.evaluate(q, optspec.history_moves())
+        ev = optspec.evaluate(q, moves)
+        sp = optspec.best_spread(t, moves, scap)
     except Exception as e:
         print("options quote", e); return
     if not q or not ev:
         return
-    eq = account.equity(st["book"], st.get("last_prices") or {})
-    cap = eq * optspec.MAX_PCT / 100
+    if sp and (ev["avg_return_pct"] <= 0 or q["ask"] * 100 > cap):  # the put doesn't pay or doesn't fit: the spread is the trade
+        s, sev = sp
+        out = desk.ask("optspec", "fast", "Options Specialist. A possible share offering (dilution) just hit this stock. First: is this "
+                       "really the company selling new shares (not a product 'offering' or old news)? A single put is too expensive or "
+                       "doesn't pay here, so judge this bear put SPREAD (buy the higher put, sell the lower one; most it can lose is "
+                       "what it costs). BUY only if the replay is positive and the news is real. "
+                       '{"say":"","to":"team","real_offering":true,"decision":"BUY|SKIP","spreads":1,"why":""}',
+                       {"ticker": t, "news": [m.get("title") for m in mat][:5], "spread": s, "replay_of_past_offerings": sev,
+                        "single_put_for_comparison": {"put": q, "replay": ev}, "max_dollars": round(scap, 2)}, max_tokens=500)
+        n = min(int(out.get("spreads") or 0), int(scap // (s["debit"] * 100)))
+        if str(out.get("decision", "")).upper() == "BUY" and out.get("real_offering") and n >= 1:
+            pos = {"kind": "spread", "ticker": t, "long": s["long"], "short": s["short"], "k_long": s["k_long"], "k_short": s["k_short"],
+                   "expiry": s["expiry"], "qty": n, "paid": s["debit"], "date": str(today), "exit_on": sessions_after(str(today), 5),
+                   "last_bid": s["mid_debit"], "why": str(out.get("why") or "")[:200], "news": mat[0].get("title")}
+            st.setdefault("options_book", []).append(pos)
+            feed.post("optspec", f"Practice put spread on {t}: buy the ${s['k_long']:g} put, sell the ${s['k_short']:g} put, expiring "
+                      f"{s['expiry']}, {n} x ${s['debit']:.2f} (${s['debit'] * 100 * n:.0f}, the most it can lose). Best case "
+                      f"+${sev['max_gain_usd'] * n:.0f}. Why: {out.get('why', '')} Replay of {sev['events_replayed']} past offerings: "
+                      f"paid off {sev['paid_off_pct']}%, {sev['avg_return_pct']:+.0f}% average. Sells on {pos['exit_on']}, at 2x, or at half.",
+                      [t], kind="alert", art={"big": f"Practice put spread: {t}", "sub": "Options Specialist, after a share offering"})
+        return
     out = desk.ask("optspec", "fast", "Options Specialist. A possible share offering (dilution) just hit this stock. First: is this really "
                    "the company selling new shares (not a product 'offering' or old news)? Then use the real put price and the replay of "
                    "past offerings to decide: BUY puts only if the replay shows the put paying off on average after the spread, and "
@@ -1724,7 +1767,7 @@ def options_mark(st, today, now):
         if p.get("closed"):
             continue
         try:
-            bid = optspec.mark(p["contract"], p["ticker"])
+            bid = optspec.mark_spread(p) if p.get("kind") == "spread" else optspec.mark(p["contract"], p["ticker"])
         except Exception as e:
             print("option mark", e); continue
         if bid is None:

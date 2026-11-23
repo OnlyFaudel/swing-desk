@@ -87,12 +87,20 @@
    "verdict": "2026-11-23: where to keep cash between panic-day trades (adaptive panic rule, 2019-2026, $1,000): cash $5,880 (25.2%/yr, worst drop -23.2%); T-bills $7,169 (28.4%, -23.2%); S&P/SPY $12,120 (37.2%, -31.2%, every year positive); uranium ETF $9,010 (-55.5%, worst year -32.9%); our 10 stocks $30,728 (54%/yr but -54.6% and picked with hindsight: they are the names that boomed); CCJ $14,538 (-54.4%). ADOPTED SPY: sold on demand to fund any trade. Our-10-stocks result is hindsight (we chose these names after their run), so not used."
   },
   "options_puts_on_offerings": {
-   "trials": 3,
-   "verdict": "2026-11-23: 51 past offerings in our stocks: next 5d avg -4.5% (median -4.65%), 69% down; 20d 73% down. Replaying those moves on today's real put prices (Black-Scholes at the quoted IV, ask in, fair value out minus half the spread): CCJ 62 put (11d, ask $2.99, IV 61%) +55% avg, pays 63%; UUUU (IV 102%, spread 20%) -8%; LEU (IV 93%, spread 18%) -5%. Cheap-volatility names only; one CCJ contract ($299) is above the 10%-of-account cap at $1k. Options Specialist built as a practice book; buys only when the replay is positive after the spread."
+   "trials": 7,
+   "verdict": "2026-11-23: 51 past offerings in our stocks: next 5d avg -4.5% (median -4.65%), 69% down; 20d 73% down. Replaying those moves on today's real put prices (Black-Scholes at the quoted IV, ask in, fair value out minus half the spread): CCJ 62 put (11d, ask $2.99, IV 61%) +55% avg, pays 63%; UUUU (IV 102%, spread 20%) -8%; LEU (IV 93%, spread 18%) -5%. Cheap-volatility names only; one CCJ contract ($299) is above the 10%-of-account cap at $1k. Options Specialist built as a practice book; buys only when the replay is positive after the spread. | 2026-11-23 bear put spreads (long ATM..-6%, short 5-15% lower; ask in, bid out, replay of 51 offerings): CCJ 59/50 $172 +36.5% avg (45% paid); VST 120/100 $292 +67%; CEG 245/220 $610 +58%; LEU/UEC/UUUU/BWXT/TLN negative or thin. Spread cap set at 20% of account (max loss = cost)."
   },
   "downtrend_continuation": {
    "trials": 5,
    "verdict": "2026-11-23: nuclear basket 2019-2026: below its 10-day avg -> next 5d +1.04% (44% down) vs +0.90% any day; below 10 and 50-day +0.72%; down 15%+ from 20-day high +1.90% (38% down), both halves positive. Downtrends did NOT continue: buying puts on the trend alone loses. Deep-drawdown rebound is a candidate second strategy (survivorship caveat: these 10 names were picked after their run)."
+  },
+  "drawdown_rebound": {
+   "trials": 7,
+   "verdict": "2026-11-23: buy the 3 deepest names when the nuclear basket is 15%+ under its 20-day high (not a market panic day), sell at +10% on a close or day 6, 0.1% cost: 138 trades, +2.08% avg, 55% up, worst -29.5%. Baseline with the same exits on ANY day: +1.59%, 55% up (these names trended up, so any dip-buy looks good). Edge over baseline only +0.5%, same win rate; -12% and -20% variants flip between halves/years. NOT ADOPTED as its own strategy."
+  },
+  "sprott_premium": {
+   "trials": 2,
+   "verdict": "2026-11-23 monthly proxy (SRUUF price vs 0.2374 lb/unit x Cameco monthly spot, Jul 2021-Oct 2026, 64 months): premium rising 3+ pts -> miners next month +6.2% (n=11); falling 3+ pts -> -0.8% (n=20); deep discount < -10% -> -5.9% (n=3). Too few months to trade; daily tracker started 2026-11-23 (first reading -20.3%, NAV $21.60, price $17.22)."
   }
  }
 }
