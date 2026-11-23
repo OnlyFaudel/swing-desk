@@ -812,18 +812,6 @@
  "news_feed": [
   {
    "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Cameco Corp (Derivatives) price today, CCJ to USD live price, marketcap and chart - CoinMarketCap",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE96V3RyQ1N0ak53YnQwZ010aVVQNGRRa3RFWW5IVkIzUkl1eWFFa0diQktGajVXNlh2ZURVcWtqWXgwQWkzc2d5MzZkc2g5WXJ1V09mTjFlOU1YbHpCcWNVaUxNYXA4dWo0OXRWZlVR?oc=5",
-   "ts": 1795202939,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CCJ",
    "source": "Yahoo (CEG, related to CCJ)",
    "title": "45% Upside for Constellation Energy? Barclays Thinks So, and Here\u2019s How",
    "link": "https://www.tikr.com/blog/45-upside-for-constellation-energy-barclays-thinks-so-and-heres-how?ref=yahoofinance&tlnk=yf-261120-x635426w&.tsrc=rss",
@@ -3809,6 +3797,18 @@
    "direction": "up",
    "event_type": "supply",
    "why": "Processing 1M lbs at Utah mill is a real operational step but modest in scale; 'shares jump' is already priced."
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News",
+   "title": "Exelon Or Vistra: Which Fits Your Power Demand Bet? - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPc3JyM1pyZDNPWEFUaFpEUkxNZkVBVWFHZ0VhUGxsODNfbTZGZ0pBWTVtLXdldXktTlpXdTNBdDR5RzFPUTE0cW1HZ1V3SlN6UkJSWU1aYjJBT2Z4ZXQ2dDNNZjZ2RUhOSDdsaVNmRGxJMXFfRDIzemRnZS1mSnZrZVdKelNoOVpnRC1TV0pfc25vdw?oc=5",
+   "ts": 1795466329,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Yahoo comparison piece asking which utility fits a power demand bet; no new company info."
   }
  ],
  "reviews": [
@@ -5331,16 +5331,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.28699,
+  "day_usd": 0.28736,
   "month": "2026-11",
-  "month_usd": 0.55047,
-  "total_usd": 0.55047,
+  "month_usd": 0.55084,
+  "total_usd": 0.55084,
   "by_role": {
    "macro": 0.02284,
    "whale": 0.00861,
    "crowd": 0.00751,
    "level": 0.03344,
-   "scout": 0.05899,
+   "scout": 0.05936,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5458,7 +5458,7 @@
   "TLN": 365.03,
   "SPY": 722.39
  },
- "last_cycle": "2026-11-23 16:58 ET",
+ "last_cycle": "2026-11-23 17:09 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51284,6 +51284,7 @@
   "9289aefa04c45318",
   "33f4fae5acefd642",
   "5c4b59b788680232",
+  "43902d6121194e02",
   "ed1aa0f23535adaa",
   "1005c86f35a3d1c3",
   "9cee24c18c288d5e",
@@ -51311,6 +51312,7 @@
   "d315dfa4e1149d87",
   "52950daaafc92008",
   "b8175e38a640e7c2",
+  "59ef25447c180fa9",
   "1715e61816aa5619",
   "236832db131afa54",
   "67ae0f09ed3add32",
@@ -51336,8 +51338,8 @@
   "cdf09ab4dc83c609",
   "d677eaa6f8d45c1c",
   "2cbbc694a2695e84",
-  "693301ddca2bc8c2",
   "db0be8d85f3d8c6d",
+  "693301ddca2bc8c2",
   "dcba7d8fd3be8fd0",
   "c7fdc4969083b831",
   "4317a926c756f33f",
@@ -51359,6 +51361,7 @@
   "898bce48a6f14aa6",
   "ad40fc2d9e504d93",
   "e6c12a1e5998666c",
+  "0d77f1d2373bb03d",
   "0ec3c23071785cfd",
   "f21913021e43c03f",
   "a3dd031817a4feeb",
@@ -51382,6 +51385,7 @@
   "8b6a4af8fda47884",
   "313a0e04a5719e86",
   "af6eb78442aeb47e",
+  "702ca5529e4f7aeb",
   "5d22d1b6e3da5fb6",
   "92c36fef260edb24",
   "498180393c058995",
@@ -51417,7 +51421,6 @@
   "1ed195cb4396cbe7",
   "6e29a5daa673e380",
   "bcc1a41f243d6952",
-  "4653461d7ed88855",
   "d4097d0d8db37e23",
   "618c084e327573c8",
   "e12d3a4edb7295a2",
@@ -51425,7 +51428,6 @@
   "c71238280e152d73",
   "f61fff1c8e93929e",
   "08d8363ed1ddeb47",
-  "21512a406503e470",
   "32cfd9ef3704009d",
   "8df7edb48605a27d",
   "6c0f0f111a586f76",
@@ -51531,7 +51533,6 @@
   "020569e75e7d456e",
   "c56ca4f4b89e4d32",
   "4720f4810691bed4",
-  "3cb7c6d262ed9f5f",
   "22a45a3c7284120a",
   "c40403c1e5b7035d",
   "29dae386e051dd8c",
@@ -51555,12 +51556,12 @@
   "05ad7d5a34131c8c",
   "a00037110572bad0",
   "db05240fe85a29ac",
-  "0d77f1d2373bb03d",
-  "59ef25447c180fa9",
+  "21512a406503e470",
+  "4653461d7ed88855",
   "5ca17a18c47750da",
-  "702ca5529e4f7aeb"
+  "3cb7c6d262ed9f5f"
  ],
- "news_slow_at": 1795470657.9991703,
+ "news_slow_at": 1795471273.352107,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -203234,7 +203235,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 16:58",
+  "updated": "2026-11-23 17:09",
   "total": 393,
   "week": 340,
   "places": {
@@ -203878,16 +203879,16 @@
   "c5a7aa4d347cef23",
   "a3f7ee9bb9023700",
   "7f7a05be6b3ac1f5",
-  "23f0910e96eb7de3",
+  "dfc77f4fe94ea6ba",
   "5298ad87eeddc34f",
+  "23f0910e96eb7de3",
   "37e85b7a7ce58612",
   "26652cf90e01656a",
-  "33461799e841c77f",
   "97e33afa5909ea24",
+  "33461799e841c77f",
   "38d326870f86784b",
-  "0d77f1d2373bb03d",
   "06c0ff00fa161dd2",
-  "c73b8f1be49ed29e",
+  "fe223bd03cfc6370",
   "09bd7b0e348df04b",
   "515517f776442fe4",
   "36cbbee89c76a1f7",
@@ -203940,9 +203941,9 @@
   "0ad3ea7bae8b611c",
   "29f141fd08778bc3",
   "6c752481de5345ed",
-  "dfc77f4fe94ea6ba",
+  "0d77f1d2373bb03d",
   "d4097d0d8db37e23",
-  "fe223bd03cfc6370"
+  "c73b8f1be49ed29e"
  ],
  "panic_log": [
   {
@@ -205407,7 +205408,7 @@
    "built": "2026-11-23 16:45"
   }
  ],
- "heartbeat": "2026-11-23 16:58",
+ "heartbeat": "2026-11-23 17:09",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -205524,8 +205525,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 49,
-   "used": 46,
+   "asked": 50,
+   "used": 47,
    "notes": {
     "TLN Deals and contracts": 1,
     "CCJ Deals and contracts": 15,
@@ -205544,7 +205545,7 @@
     "SECTOR Uranium market": 1,
     "CCJ Legal": 1,
     "CEG Legal": 1,
-    "VST Deals and contracts": 2
+    "VST Deals and contracts": 3
    },
    "since": "2026-11-23"
   },
@@ -208000,5 +208001,5 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-23 16:58"
+ "watchdog_last": "2026-11-23 17:09"
 }
