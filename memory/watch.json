@@ -16,6 +16,14 @@
 "surfaced": true
 },
 {
+"date": "2026-11-20",
+"ticker": "CEG",
+"what": "Confirm Salem 1 restart; it is 47 days into an outage that started 2026-10-04, so a further delay would be a bigger signal",
+"by": "engineer",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
 "date": "2026-11-23",
 "ticker": "CCJ",
 "what": "Czech National Assembly review of KHNP Dukovany contract termination (date unconfirmed; verify from source)",
