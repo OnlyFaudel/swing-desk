@@ -305,18 +305,6 @@
  },
  "news_feed": [
   {
-   "ticker": "NXE",
-   "source": "Google News: \"NexGen Energy\"",
-   "title": "Is NexGen Energy (TSX:NXE) Fairly Valued As Rook I Progresses? - Simply Wall St",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTWRrWmlFNFRNRDRQTU1HeDBfQm5XZ19tMkVHTHgxRjRQQk5WN1c3MTkyb2htMlBmT2l1cFE5Yy1KTFhFV2FQZ3pOVG5aY0JDVnNzemNjaTVXOE9GX0piOVRRR2lBd2N4YkZpRDFQZ2xIbWJUMUhGaWVRNmhhUjd1eHJXbUJ4ZFp0ZEVHNTZYVVVOd19BcU1rNGtiOU9YcmFfdVhPUmFaekhYSHlVeW5Fd2ZrVk0tRzVvMHVjbXJzRWk3cWlJbEI1a3Rzb9IB0AFBVV95cUxPZG1scXVqQjIxYjJXLUtDOGpGNVVqbDZtSVhrOFRrd2JlZnczN3B5MjhEUmtDejAyMXlHUmtVd25qazhGTUt6VHZtcGRpMlhONVBrQ1JPN2R0WTdCZ0lNR0dEV2hBc210c1lEUFo3TV9XMHdwdmtab3pDTUZxeUJfTXQ5OW5ORjczaGZtbktndFpraVFidWhyWlZoNmZvUnhTeWdhbXdzZjJJSFB2aG9rcDVvbGVzR2hocDdjeHVjazVYUXNLZFBacE1iZjdBVjF4?oc=5",
-   "ts": 1795068931,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
    "ticker": "CEG",
    "source": "Google News: nuclear plant restart",
    "title": "Rostekhnadzor Reviews Operating Licence for Unit 3 at Zaporizhzhia Nuclear Plant - energynews.pro",
@@ -3303,6 +3291,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Price-recap headline about other companies' moves; Energy Fuels plan is peer news."
+  },
+  {
+   "ticker": "DNN",
+   "source": "Google News: \"Denison Mines\"",
+   "title": "Denison Mines stock rises around 8.5% as short-term buying drives rebound despite weak technicals - Traders Union",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORUx6cFJKNk12V1JZaGI1VUlidThsai1YRG9fRUVRQlNMd3pVMVN2WnhjOEhQOVZCNmtRMmk3UHJBb1pXMFJ5eEgyUUhoXzNnQkJScDNfQmJEbUlGb05YaWQ5OE93ZXpiRFVrbEdTWXdYS2NZMWVUeU1YdElpbVVhdDN6cnpXdUw1MDFLMjdvMA?oc=5",
+   "ts": 1795423867,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "up",
+   "event_type": "other",
+   "why": "Price recap of a move, driven by short-term buying; no company news"
   }
  ],
  "reviews": [
@@ -4621,22 +4621,22 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.03419,
+  "day_usd": 0.03569,
   "month": "2026-11",
-  "month_usd": 0.29768,
-  "total_usd": 0.29768,
+  "month_usd": 0.29918,
+  "total_usd": 0.29918,
   "by_role": {
-   "macro": 0.0078,
+   "macro": 0.0081,
    "whale": 0.00639,
    "crowd": 0.00536,
    "level": 0.00144,
-   "scout": 0.03562,
+   "scout": 0.03583,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
-   "pm": 0.01593,
-   "risk": 0.00593,
-   "investigator": 0.10585,
+   "pm": 0.0163,
+   "risk": 0.00625,
+   "investigator": 0.10615,
    "postmortem": 0.00035,
    "researcher": 0.00295
   }
@@ -4685,19 +4685,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.87,
+  "CCJ": 61.9,
   "NXE": 6.85,
-  "UEC": 5.76,
+  "UEC": 5.74,
   "DNN": 1.81,
-  "UUUU": 5.42,
-  "LEU": 89.05,
-  "BWXT": 112.89,
-  "CEG": 249.19,
-  "VST": 121.67,
+  "UUUU": 5.38,
+  "LEU": 88.01,
+  "BWXT": 112.84,
+  "CEG": 248.48,
+  "VST": 121.66,
   "TLN": 355.49,
-  "SPY": 717.82
+  "SPY": 717.35
  },
- "last_cycle": "2026-11-23 09:51 ET",
+ "last_cycle": "2026-11-23 09:53 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4722,10 +4722,10 @@
   ]
  },
  "brakes": {
-  "equity": 1036.67,
-  "day_pct": 3.61,
-  "week_pct": 3.61,
-  "drawdown_pct": -1.68,
+  "equity": 1033.83,
+  "day_pct": 3.33,
+  "week_pct": 3.33,
+  "drawdown_pct": -1.95,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -4831,6 +4831,14 @@
   [
    "2026-11-23 09:51",
    1036.67
+  ],
+  [
+   "2026-11-23 09:53",
+   1033.98
+  ],
+  [
+   "2026-11-23 09:53",
+   1033.83
   ]
  ],
  "nowcast": {
@@ -49232,7 +49240,7 @@
     0.9428
    ]
   },
-  "time": "2026-11-23 09:51"
+  "time": "2026-11-23 09:53"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -49479,9 +49487,10 @@
   "ac86fb04e7eb798b",
   "a38730433f855a68",
   "88d39974add2ff27",
-  "f16660c269a6613c"
+  "f16660c269a6613c",
+  "26652cf90e01656a"
  ],
- "news_slow_at": 1795445516.1092784,
+ "news_slow_at": 1795445608.25238,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197923,6 +197932,62 @@
    ],
    "practice": false,
    "end": "09:51"
+  },
+  {
+   "id": "20261123095322482269",
+   "title": "Huddle: fast move: UUUU moved -1.6% in 9 min",
+   "tickers": [
+    "UUUU"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-23 09:53",
+   "msgs": [
+    {
+     "t": "09:53",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: UUUU moved -1.6% in 9 min.",
+     "outcome": false
+    },
+    {
+     "t": "09:53",
+     "who": "investigator",
+     "to": "chief",
+     "text": "The headlines are mostly a premarket pop from the Energy Fuels production target and a 2027 sales outlook, which is a company announcement already in the price, so I see nothing new behind today's -1.6% move. The shareholder-investigation notice is routine law-firm advertising, not a fresh fundamental event, and the sector is weak (basket 6.4% below its 10-day average), so the desk's no-new-buys rule applies. I agree with the Desk Chief that there is no setup to trade here.",
+     "outcome": false
+    },
+    {
+     "t": "09:53",
+     "who": "macro",
+     "to": "chief",
+     "text": "This looks like a sector-wide weakness, not a UUUU-specific story. The whole nuclear basket is 6.4% below its 10-day average, and UUUU's -1.6% move is in line with the group rather than a stock-specific shock. I agree with the News Investigator that the premarket headlines are already-priced company news and the shareholder-investigation notice is routine, so I see no reason to act here.",
+     "outcome": false
+    },
+    {
+     "t": "09:53",
+     "who": "risk",
+     "to": "team",
+     "text": "I agree with the News Investigator and Macro Analyst: UUUU has no confirmed support level below its price, and the whole basket is 6.4% below its 10-day average, so our no-new-buys rule applies. The premarket headlines are company news already in the price, and the investor-investigation notice is routine law-firm advertising. One risk to note: the stock is falling through support rather than sitting on it, so any future setup needs a clear floor before we even consider a resting bid.",
+     "outcome": false
+    },
+    {
+     "t": "09:53",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with the Risk Manager, Macro Analyst, and News Investigator: UUUU has no confirmed support level and is falling with a basket that sits 6.4% below its 10-day average, so our no-new-buys rule applies. The premarket headlines are old company news already priced in, and the shareholder-investigation notice is routine law-firm advertising. There is nothing to cancel or sell, so the right call is to do nothing.",
+     "outcome": false,
+     "notes": "action: none\nreason: No waiting buy or open position exists for UUUU, the basket is below its 10-day average so new buys are blocked, and the news is already priced in."
+    },
+    {
+     "t": "09:53",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:53"
   }
  ],
  "feed": [
@@ -198764,6 +198829,21 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 09:53",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: UUUU moved -1.6% in 9 min. Checking every news channel for a reason right now.",
+   "tickers": [
+    "UUUU"
+   ],
+   "art": {
+    "big": "UUUU moved -1.6% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -198927,11 +199007,13 @@
   "fast move: LEU moved -1.5% in 2 min": 1795444962.2797282,
   "fast move: UUUU moved -1.5% in 3 min": 1795444998.8496578,
   "fast move: LEU moved -1.8% in 7 min": 1795445431.5653675,
-  "fast move: UEC moved -1.8% in 9 min": 1795445510.1153774
+  "fast move: UEC moved -1.8% in 9 min": 1795445510.1153774,
+  "fast move: UUUU moved -1.6% in 9 min": 1795445602.482174
  },
- "huddle_last": 1795445510.1154494,
+ "huddle_last": 1795445602.4821794,
  "huddle_log": [
   "2026-11-20",
+  "2026-11-23",
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
@@ -199118,7 +199200,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 09:51",
+  "updated": "2026-11-23 09:53",
   "total": 331,
   "week": 289,
   "places": {
@@ -200773,12 +200855,12 @@
    "built": "2026-11-23 09:37"
   }
  ],
- "heartbeat": "2026-11-23 09:51",
+ "heartbeat": "2026-11-23 09:53",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 91,
+ "_pushed_feed": 92,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -200885,7 +200967,7 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 112.885,
-  "TLN": 355.49
+  "BWXT": 112.84,
+  "TLN": 355.485
  }
 }
