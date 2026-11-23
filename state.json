@@ -295,30 +295,6 @@
  },
  "news_feed": [
   {
-   "ticker": "LEU",
-   "source": "Yahoo (BWXT, related to LEU)",
-   "title": "Can BWXT's Cambridge Expansion Support Nuclear Reactor Growth?",
-   "link": "https://finance.yahoo.com/energy/articles/bwxts-cambridge-expansion-support-nuclear-122000896.html?.tsrc=rss",
-   "ts": 1795090800,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Yahoo (CEG, related to CCJ)",
-   "title": "Will Buyers Defend Constellation Energy Stock At $263?",
-   "link": "https://www.trefis.com/stock/ceg/articles/626738/will-buyers-defend-constellation-energy-stock-at-263/2026-11-19?.tsrc=rss",
-   "ts": 1795090084,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
    "ticker": "CCJ",
    "source": "Yahoo (CEG, related to CCJ)",
    "title": "Capital Group Div Value (CGDV) Adds Home Depot and Constellation on Nov. 17",
@@ -3293,6 +3269,30 @@
    "direction": "neutral",
    "event_type": "contract_deal",
    "why": "Related BWXT supplier story; AP1000 parts deal says little about uranium demand for CCJ."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News",
+   "title": "BWXT6577415 Bond Yield and Price \u2014 FINRA:BWXT6577415 - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBMaUd2QWphQ3N0SDFQQl9Gb2NVc0ttY3o2RjhZaXZxN3dMWHd6WXRkRkJzam9LN0dxeURDeHppS0ZGWHdVQlZlUWJCcTBXSXAtd01KVFRqTkVxa0NkOGtuY1hhRU4?oc=5",
+   "ts": 1795438613,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic bond quote page; no new company information"
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News",
+   "title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales - Asianet Newsable",
+   "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPNWt4bUJvR3Z6NktHWnFySWIycWJLcVFIdjhtLWFVZ29JckFGdzBIY2h4OHVqREVjQUtpVnhpNmdhWVhJdm42UE55U3I4R3p2S1I3MVpYYXVqbjg5R2tpQ201Ql85ZHBvbDc5WkhwSUhnM1hXLXBwYmROUmgwcFB5SEFUYkE1cGNfN2l2ZVBJMTd4TEQwd0hNTS1hQ3VwSWg3TUFsWkpWcTR5TmhBdmxvTlBQck0yNHJ4eExYUXhpYlQyWkFWM2V1ck1CcUhDbGUtaDNRVlNRc1NfemNvODlSLWJpNl9OLXhwMUh3UmxCNi1CQ29uNG1ma1p1NGswZWR5ME16YWtJemdkbFhWaEFHVEhHcG3SAZoCQVVfeXFMUG8zZ2lkTDBmVF9JM0c3NGo5Q01RdUlLdUxNT2xCOUIyalQtY3ZVN3ZBSkxheDAzclVsNWd5eTV0dmtxcDF3SUI5SENEdTdwR1U5WFhyQ0ZpbHNOUF9ZdWtOYzVZaUNWX1owRENDT1dOemtHeTFTejZQV1ozSU5ERDlLX2ZCSWM1bDJ0VVUxSm1SMXo4dy1xc3lma1V1T1pfSUZXSkkweGR0aVlTXzlic0RJSnk5TjRLM05sUzRWR3BqOHNjT1NTNFBBZk9haEJFRG95LTd5SFVEeVMtdDVWMzlfREhBUW41ZnNIVGViUUJnSVd0Slp5LTdkVkJpZ3BoZ3ZydzJRdTZZdWw5S3dkNkVHVjBBTEVzSnV3?oc=5",
+   "ts": 1795441502,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "earnings",
+   "why": "Company production target and 2027 sales growth guidance, a real company-specific update."
   }
  ],
  "reviews": [
@@ -4502,16 +4502,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.01387,
+  "day_usd": 0.01433,
   "month": "2026-11",
-  "month_usd": 0.27736,
-  "total_usd": 0.27736,
+  "month_usd": 0.27782,
+  "total_usd": 0.27782,
   "by_role": {
    "macro": 0.0037,
    "whale": 0.00304,
    "crowd": 0.0032,
    "level": 0.00144,
-   "scout": 0.03339,
+   "scout": 0.03385,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -4573,12 +4573,12 @@
   "UUUU": 4.95,
   "LEU": 81.56,
   "BWXT": 108.59,
-  "CEG": 237.44,
+  "CEG": 245.94,
   "VST": 115.22,
   "TLN": 333.24,
   "SPY": 690.91
  },
- "last_cycle": "2026-11-23 08:40 ET",
+ "last_cycle": "2026-11-23 08:51 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -49023,8 +49023,8 @@
   "1005c86f35a3d1c3",
   "5d22d1b6e3da5fb6",
   "4627bda8dfc98062",
-  "8010bdf39626577f",
   "c56ca4f4b89e4d32",
+  "8010bdf39626577f",
   "d39dc266a3b4dae2",
   "e6c12a1e5998666c",
   "00dd4e324f5b633b",
@@ -49032,6 +49032,7 @@
   "fcee5932b3cdffea",
   "1c8b73cd5ee7949f",
   "e62333d1078d965b",
+  "608a6c7d81d54f47",
   "717c47c79d590a65",
   "22ca80b609e8130c",
   "cb12badf9a3dbea8",
@@ -49070,6 +49071,7 @@
   "8b9f115784388b61",
   "888d96e0923cd600",
   "adaf4137e3446cd1",
+  "7aa8997d91d8e2dc",
   "8d0283e176b666a8",
   "4b634efdcf500ae7",
   "ceb6205483ccef34",
@@ -49198,7 +49200,7 @@
   "88d39974add2ff27",
   "f16660c269a6613c"
  ],
- "news_slow_at": 1795441008.027503,
+ "news_slow_at": 1795441661.625875,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197886,6 +197888,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "UUUU",
+   "type": "earnings",
+   "title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales - Asianet N",
+   "date": "2026-11-23",
+   "price": 4.95,
+   "materiality": 6,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -197966,7 +197980,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 08:40",
+  "updated": "2026-11-23 08:51",
   "total": 322,
   "week": 282,
   "places": {
@@ -198691,7 +198705,7 @@
   }
  ],
  "memory_view": {
-  "events": 1490,
+  "events": 1491,
   "with_outcomes": 1162,
   "playbooks": {
    "acquisition": {
@@ -198791,15 +198805,6 @@
    }
   ],
   "recent": [
-   {
-    "date": "2026-11-22",
-    "ticker": "BWXT",
-    "title": "Australia criticises US report saying AUKUS will shrink submarine fleet",
-    "type": "intel_defense",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
    {
     "date": "2026-11-22",
     "ticker": "BWXT",
@@ -199147,6 +199152,15 @@
     "ticker": "BWXT",
     "title": "BWX Technologies awarded manufacturing qualification contracts by Westinghouse - TipRanks",
     "type": "contract_deal",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "UUUU",
+    "title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales - Asianet Newsable",
+    "type": "earnings",
     "r0": null,
     "r5": null,
     "r20": null
@@ -199586,7 +199600,7 @@
    "built": "2026-11-23 08:35"
   }
  ],
- "heartbeat": "2026-11-23 08:40",
+ "heartbeat": "2026-11-23 08:51",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
