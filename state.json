@@ -4621,12 +4621,12 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.0331,
+  "day_usd": 0.03419,
   "month": "2026-11",
-  "month_usd": 0.29659,
-  "total_usd": 0.29659,
+  "month_usd": 0.29768,
+  "total_usd": 0.29768,
   "by_role": {
-   "macro": 0.00756,
+   "macro": 0.0078,
    "whale": 0.00639,
    "crowd": 0.00536,
    "level": 0.00144,
@@ -4634,9 +4634,9 @@
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
-   "pm": 0.01561,
-   "risk": 0.00565,
-   "investigator": 0.1056,
+   "pm": 0.01593,
+   "risk": 0.00593,
+   "investigator": 0.10585,
    "postmortem": 0.00035,
    "researcher": 0.00295
   }
@@ -4685,19 +4685,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 62.27,
-  "NXE": 6.89,
-  "UEC": 5.83,
-  "DNN": 1.82,
-  "UUUU": 5.45,
-  "LEU": 88.33,
-  "BWXT": 113.18,
-  "CEG": 249.43,
-  "VST": 121.95,
-  "TLN": 355.68,
-  "SPY": 718.93
+  "CCJ": 61.87,
+  "NXE": 6.85,
+  "UEC": 5.76,
+  "DNN": 1.81,
+  "UUUU": 5.42,
+  "LEU": 89.05,
+  "BWXT": 112.89,
+  "CEG": 249.19,
+  "VST": 121.67,
+  "TLN": 355.49,
+  "SPY": 717.82
  },
- "last_cycle": "2026-11-23 09:50 ET",
+ "last_cycle": "2026-11-23 09:51 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4722,10 +4722,10 @@
   ]
  },
  "brakes": {
-  "equity": 1036.77,
-  "day_pct": 3.62,
-  "week_pct": 3.62,
-  "drawdown_pct": -1.67,
+  "equity": 1036.67,
+  "day_pct": 3.61,
+  "week_pct": 3.61,
+  "drawdown_pct": -1.68,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -4827,6 +4827,10 @@
   [
    "2026-11-23 09:50",
    1036.77
+  ],
+  [
+   "2026-11-23 09:51",
+   1036.67
   ]
  ],
  "nowcast": {
@@ -49228,7 +49232,7 @@
     0.9428
    ]
   },
-  "time": "2026-11-23 09:50"
+  "time": "2026-11-23 09:51"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -49294,8 +49298,8 @@
   "1005c86f35a3d1c3",
   "5d22d1b6e3da5fb6",
   "4627bda8dfc98062",
-  "c56ca4f4b89e4d32",
   "8010bdf39626577f",
+  "c56ca4f4b89e4d32",
   "d39dc266a3b4dae2",
   "e6c12a1e5998666c",
   "00dd4e324f5b633b",
@@ -49477,7 +49481,7 @@
   "88d39974add2ff27",
   "f16660c269a6613c"
  ],
- "news_slow_at": 1795445438.382695,
+ "news_slow_at": 1795445516.1092784,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197861,6 +197865,64 @@
    ],
    "practice": false,
    "end": "09:50"
+  },
+  {
+   "id": "20261123095150115563",
+   "title": "Huddle: fast move: UEC moved -1.8% in 9 min",
+   "tickers": [
+    "UEC"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-23 09:51",
+   "msgs": [
+    {
+     "t": "09:51",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: UEC moved -1.8% in 9 min.",
+     "outcome": false
+    },
+    {
+     "t": "09:51",
+     "who": "investigator",
+     "to": "chief",
+     "text": "I searched the input for news behind UEC's -1.8% move in 9 minutes and found no headlines at all, so there's nothing to call new or priced-in. Sector context is that the whole basket is about -6.4% below its 10-day average, so this looks like sector-wide selling rather than a company-specific story. I'd sit out; with no news, a quick unexplained drop is noise and no support level exists yet.",
+     "outcome": false,
+     "notes": "ask: Risk Manager: do you agree we should take no action on UEC while the basket is below its 10-day average?"
+    },
+    {
+     "t": "09:51",
+     "who": "macro",
+     "to": "investigator",
+     "text": "This looks like a sector-wide slide rather than something specific to UEC: the whole nuclear fuel basket is about 6.4% below its 10-day average, and UEC's 1.8% drop came with no headlines behind it. I agree with the News Investigator that we should sit out, since the basket is falling and UEC has no confirmed support level yet, so there is nothing to buy.",
+     "outcome": false
+    },
+    {
+     "t": "09:51",
+     "who": "risk",
+     "to": "macro",
+     "text": "I agree with the News Investigator and Macro Analyst: sit out. The rule already blocks new buys while the basket is below its 10-day average, and it's at -6.4%, and UEC has no support level to rest a bid under. The one thing I'd add is that a sector-wide slide with no news can keep going, so a 'cheap' entry here is just a falling knife with no stop we can trust.",
+     "outcome": false,
+     "notes": "ask: Desk Chief: if the basket stabilizes back above its 10-day average, do we have a support level for UEC ready, or would we be starting from scratch?"
+    },
+    {
+     "t": "09:51",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with the News Investigator, Macro Analyst, and Risk Manager: nothing is wrong with UEC specifically, the whole nuclear fuel basket is down about 6.4% below its 10-day average, and there are no headlines explaining the move. We have no buy and no holding on UEC, so there is nothing to cancel or sell, and the basket rule blocks new buys anyway. The right call is to do nothing and wait for a real support level.",
+     "outcome": false,
+     "notes": "action: none\nreason: No open buy or position in UEC, the basket is below its 10-day average so new buys are blocked, UEC has no confirmed support level, and a -1.8% move with no news is noise rather than a reason to exit."
+    },
+    {
+     "t": "09:51",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:51"
   }
  ],
  "feed": [
@@ -198687,6 +198749,21 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 09:51",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: UEC moved -1.8% in 9 min. Checking every news channel for a reason right now.",
+   "tickers": [
+    "UEC"
+   ],
+   "art": {
+    "big": "UEC moved -1.8% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -198849,11 +198926,13 @@
   "fast move: DNN moved -1.9% in 9 min": 1795444921.9854822,
   "fast move: LEU moved -1.5% in 2 min": 1795444962.2797282,
   "fast move: UUUU moved -1.5% in 3 min": 1795444998.8496578,
-  "fast move: LEU moved -1.8% in 7 min": 1795445431.5653675
+  "fast move: LEU moved -1.8% in 7 min": 1795445431.5653675,
+  "fast move: UEC moved -1.8% in 9 min": 1795445510.1153774
  },
- "huddle_last": 1795445431.5653734,
+ "huddle_last": 1795445510.1154494,
  "huddle_log": [
   "2026-11-20",
+  "2026-11-23",
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
@@ -199039,7 +199118,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 09:50",
+  "updated": "2026-11-23 09:51",
   "total": 331,
   "week": 289,
   "places": {
@@ -200694,12 +200773,12 @@
    "built": "2026-11-23 09:37"
   }
  ],
- "heartbeat": "2026-11-23 09:50",
+ "heartbeat": "2026-11-23 09:51",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 90,
+ "_pushed_feed": 91,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -200806,7 +200885,7 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 113.18,
-  "TLN": 355.68
+  "BWXT": 112.885,
+  "TLN": 355.49
  }
 }
