@@ -177,7 +177,9 @@ def build_one(t, st, data=None):
                         "closest_misses": [s for s in disc.get("closest_misses", []) if rel(s)][:6]}
     sh = [x for x in (st.get("shadow_desk") or {}).get("trades", []) if x.get("tk") == t]
     R = [x["R"] for x in sh]
-    S["Our trades"] = {"setup_status": (st.get("setup_status") or {}).get(t), "open": (st.get("book") or {}).get("lots", {}).get(t),
+    S["Our trades"] = {"setup_status": (st.get("setup_status") or {}).get(t), "no_new_buys_until": (st.get("avoid") or {}).get(t),
+                       "discovery_actions": [a for a in st.get("auto_log", []) if t in a.get("targets", [])][-8:],
+                       "open": (st.get("book") or {}).get("lots", {}).get(t),
                        "closed": [x for x in (st.get("book") or {}).get("trades", []) if x.get("ticker") == t][-10:],
                        "practice_trades": {"n": len(R), "avg_R": round(statistics.mean(R), 3) if R else None,
                                            "win_rate": round(float(np.mean([r > 0 for r in R])), 2) if R else None}}
@@ -242,6 +244,11 @@ def build_sector(st):
         "New builds and restarts": {p: by_place.get(p, [])[:6] for p in ("Japan restarts", "China new builds", "Crane / Three Mile Island", "Westinghouse", "HALEU")},
         "Discoveries": {"holding_up": disc.get("survivors", [])[:12], "closest_misses": disc.get("closest_misses", [])[:8],
                         "tests_ever": disc.get("tests_ever"), "events_tested": disc.get("events")},
+        "Rules the bot follows from its discoveries": {"active_patterns": disc.get("survivors", []), "no_new_buys": st.get("avoid", {}),
+                                                       "recent_actions": st.get("auto_log", [])[-15:],
+                                                       "how": "A pattern must hold in the older AND newer half of the history after correcting for the number of tests. "
+                                                              "Up-patterns buy near the close of the news day (10% each, 3 at most) and sell after the pattern's horizon; "
+                                                              "down-patterns pause support-level buys in that stock."},
         "Research log": st.get("research_log", []),
         "Panic-day record": st.get("panic_log", [])[-20:]}}
 

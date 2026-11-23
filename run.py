@@ -101,7 +101,7 @@ def tcfg(st):
 
 def traded(st):
     """Tickers the bot must manage: this week's lineup plus anything still held or armed."""
-    held = [t for t, l in st["book"]["lots"].items() if l.get("trade", {}).get("qty", 0) > 1e-6 or l.get("panic", {}).get("qty", 0) > 1e-6]
+    held = [t for t, l in st["book"]["lots"].items() if any(l.get(k, {}).get("qty", 0) > 1e-6 for k in ("trade", "panic", "auto"))]
     return list(dict.fromkeys(T + held + list(st["armed"])))
 
 
@@ -132,13 +132,13 @@ class Exec:
         log_order(self.st, o, note)
         return o
 
-    def exit_panic(self, t, price, reason):
-        L = account.lot(self.st["book"], t, "panic")
+    def exit_panic(self, t, price, reason, kind="panic", tag="prx"):
+        L = account.lot(self.st["book"], t, kind)
         if L["qty"] <= 1e-6 or L.get("selling") == str(dt.date.today()):
             return
         L["exit_reason"], L["selling"] = reason, str(dt.date.today())
         try:
-            log_order(self.st, self.br.market_sell(t, L["qty"], price, "prx"), reason)
+            log_order(self.st, self.br.market_sell(t, L["qty"], price, tag), reason)
         except Exception as e:
             notify(f"EXIT FAILED {t}", f"{reason}: {str(e)[:150]}", tags="rotating_light", priority="high")
 
@@ -431,6 +431,8 @@ def arm(st, ex, prices, today, brk_state):
                    key=lambda x: prices[x[1]] / x[0]["entry"] - 1)  # closest to filling first
     # a price already at/below the stop means the level broke: a fill there is an instant stop-out, so don't rest it
     cands = [(c, t) for c, t in cands if prices[t] > c["stop"]]
+    av = st.get("avoid", {})  # a discovery says this kind of news hurts this stock: no support-level buys until the date
+    cands = [(c, t) for c, t in cands if av.get(t, {}).get("until", "") < str(today)]
     want = [t for c, t in cands][:max(free, 0)]
     for t in list(st["armed"]):
         if t not in want:
@@ -963,6 +965,68 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
 def pd_ts(d):
     import pandas as pd
     return pd.Timestamp(d)
+
+
+# ======================================================================= discoveries -> action (the bot adjusts itself)
+def _rules():
+    """Patterns that passed the discovery engine, turned into rules: which event type, which stocks, which way, how long."""
+    out = []
+    for s in discovery._load(discovery.OUT, {}).get("survivors", []):
+        ty, grp = s["event"].split(" (", 1)[0], s["event"].split(" (", 1)[1].rstrip(")")
+        tks = (list(T) if grp.startswith("all our") or "basket" in grp else discovery.GROUPS.get(grp, []))
+        out.append({"type": ty.replace("intel_", "news_"), "tickers": tks, "basket": "basket" in grp, "up": s["avg_pct"] > 0,
+                    "days": {"x1": 1, "x5": 5, "x20": 20, "r1": 1, "r5": 5, "r20": 20}.get(s["metric"], 5), "pattern": s})
+    return out
+
+
+def auto_check(st, desk, ex, data, prices, today, brk_state, now):
+    cfg = CFG.get("auto_trade", {})
+    if not cfg.get("enabled"):
+        return
+    book, late = st["book"], now.time() >= dt.time(15, 30)
+    for t, lots in list(book["lots"].items()):  # exits on the pattern's own horizon
+        L = lots.get("auto") or {}
+        if L.get("qty", 0) > 1e-6 and L.get("exit_on") and (str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late)):
+            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"discovery trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
+    if not (dt.time(15, 30) <= now.time() <= dt.time(15, 58)) or st["flags"].get(f"auto:{today}"):
+        return
+    st["flags"][f"auto:{today}"] = True
+    rules = _rules()
+    if not rules:
+        return
+    todays = [e for e in desk_memory.events() + archive._load(archive.EVENTS, []) if e.get("date") == str(today)]
+    acted = []
+    for e in todays:
+        ty = e["type"].replace("intel_", "news_")
+        for ru in [r for r in rules if r["type"] == ty and (e["ticker"] == "_basket") == r["basket"]]:
+            targets = (["CCJ"] if ru["basket"] else [e["ticker"]]) if ru["up"] else (list(T) if ru["basket"] else [e["ticker"]])
+            targets = [t for t in targets if t in ru["tickers"] and t in T and t in prices]
+            p = ru["pattern"]
+            for t in targets:
+                if not ru["up"]:
+                    until = sessions_after(str(today), ru["days"])
+                    st.setdefault("avoid", {})[t] = {"until": until, "why": f"{e['title'][:80]} ({p['event']}: {p['avg_pct']:+.2f}% {discovery.PLAIN.get(p['metric'], '')})"}
+                    acted.append(f"no new buys in {t} until {until}")
+                    continue
+                L = account.lot(book, t, "auto")
+                open_n = sum(1 for l in book["lots"].values() if l.get("auto", {}).get("qty", 0) > 1e-6)
+                cash = account.settled_cash(book, today) - sum(a.get("dollars", 0) for a in st["armed"].values())
+                dollars = min(brk_state["equity"] * cfg.get("size_pct", 10) / 100, cash)
+                if L["qty"] > 1e-6 or open_n >= cfg.get("max_open", 3) or dollars < 5 or (brk_state.get("no_new_today") and not unleashed()):
+                    continue
+                exit_on = sessions_after(str(today), ru["days"])
+                meta = {"setup": "discovery", "by": "discovery engine", "exit_on": exit_on, "days": ru["days"],
+                        "why": f"{e['title'][:90]} -> {p['event']} averaged {p['avg_pct']:+.2f}% ({p['n']} cases, both halves)"}
+                if ex.buy_market(t, dollars, prices[t], "au", meta, "discovery trade"):
+                    acted.append(f"bought {t} ${dollars:.0f}, selling {exit_on}")
+            st.setdefault("auto_log", []).append({"date": str(today), "event": e["title"][:120], "type": ty, "pattern": p["event"],
+                                                  "metric": p["metric"], "avg_pct": p["avg_pct"], "targets": targets, "up": ru["up"]})
+    st["auto_log"] = st.get("auto_log", [])[-300:]
+    if acted:
+        feed.post("researcher", "Acting on what the discovery engine proved: " + "; ".join(acted[:6]) + ". These are patterns that held in "
+                  "both halves of the history after correcting for how many were tested.", kind="alert",
+                  art={"big": "Discovery in action", "sub": acted[0][:60]})
+        notify("Discovery in action", "; ".join(acted[:4]), tags="bulb")
 
 
 # ======================================================================= intel collector (free, no AI)
@@ -1608,6 +1672,7 @@ def cycle(st, desk, br, ex, force=()):
         process_fills(st, br, ex, today)
         try:
             panic_check(st, desk, ex, data, prices, today, brk_state, now, force="panic" in force)
+            auto_check(st, desk, ex, data, prices, today, brk_state, now)
             process_fills(st, br, ex, today)
         except Exception as e:
             traceback.print_exc()

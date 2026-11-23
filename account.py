@@ -63,7 +63,7 @@ def apply_fill(book, f, today, meta=None):
     """Book one broker fill. Returns a closed-trade record if a trade lot was closed."""
     t, side, q, px = f["symbol"], f["side"], float(f["qty"]), float(f["fill_price"])
     tag = tag_of(f.get("client_id"))
-    kind = "core" if tag.startswith("core") else ("panic" if tag in ("pr", "prx") else "trade")
+    kind = "core" if tag.startswith("core") else ("panic" if tag in ("pr", "prx") else ("auto" if tag in ("au", "aux") else "trade"))
     L = lot(book, t, kind)
     if side == "buy":
         book["cash"] -= q * px
@@ -71,7 +71,7 @@ def apply_fill(book, f, today, meta=None):
         L["cost"] += q * px
         book["buys_log"].append([t, str(today), kind])
         book["buys_log"] = book["buys_log"][-200:]
-        if kind in ("trade", "panic") and meta:
+        if kind in ("trade", "panic", "auto") and meta:
             L.update({k: v for k, v in meta.items() if k not in ("qty", "cost")})
             L.setdefault("opened", str(today))
             L.setdefault("entry_time", f.get("filled_at"))
@@ -88,7 +88,7 @@ def apply_fill(book, f, today, meta=None):
     L["qty"] = round(L["qty"] - q, 6)
     L["cost"] = max(0.0, L["cost"] - avg * q)
     rec = None
-    if kind in ("trade", "panic"):
+    if kind in ("trade", "panic", "auto"):
         rec = {"ticker": t, "setup": L.get("setup", "?"), "by": L.get("by", "?"), "entry_time": L.get("entry_time"),
                "entry": round(avg, 2), "exit_time": f.get("filled_at"), "exit": round(px, 2), "dollars": round(avg * q, 2),
                "pnl": round(pnl, 2), "ret": round((px / avg - 1) * 100, 2), "why_in": L.get("why", ""),

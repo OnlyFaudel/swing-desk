@@ -426,5 +426,11 @@
     "take_profit_pct": 10
   },
   "budget_total_usd": 4.5,
-  "_budget_note": "budget_total_usd = prepaid Claude credit minus a safety margin ($5 loaded Nov 2026). When it is reached the agents go quiet and the rules keep trading. Raise it when credit is added."
+  "_budget_note": "budget_total_usd = prepaid Claude credit minus a safety margin ($5 loaded Nov 2026). When it is reached the agents go quiet and the rules keep trading. Raise it when credit is added.",
+  "auto_trade": {
+    "enabled": true,
+    "size_pct": 10,
+    "max_open": 3,
+    "_note": "Paper: patterns that pass the discovery engine act on their own. Up-patterns buy near the close of the event day and sell after the pattern's horizon; down-patterns block support-level buys in that stock for the horizon."
+  }
 }
