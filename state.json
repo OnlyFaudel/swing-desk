@@ -295,18 +295,6 @@
  },
  "news_feed": [
   {
-   "ticker": "DNN",
-   "source": "Google News: \"Denison Mines\"",
-   "title": "Denison Mines stock drops amid continued seller dominance and negative momentum signals - Traders Union",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOczdIdnZka1RNSWV5VDJaYzR5SGZEbEw3elZxbWwtRUpiampxVzExX2dJQ05XRERFMU1ibFJKVDFUaTY0WjRrblYtMW94WVZHUlA0c0stSVhnS2kwZFNEeTltMWFVODdDNFVDNVF5QUQzN25YYTFWZktJR09POHR1aHpibVFVd2pkTlRjNWtR?oc=5",
-   "ts": 1795078167,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
    "ticker": "CCJ",
    "source": "Yahoo (CEG, related to CCJ)",
    "title": "Vistra Just Dropped 16% in a Month, but Its Plans Always Had \u201ca More Conservative View of the AI Build-Out\u201d",
@@ -3293,6 +3281,18 @@
    "direction": "up",
    "event_type": "supply",
    "why": "Concrete 1M lb production plan is new, but the 8% move already happened"
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Energy Fuels Targets Additional One Million Pounds of Low-Cost U.S. Uranium Production in Upcoming Processing Campaign; Advances Additional Uranium Ramp-Ups - PR Newswire",
+   "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxNN1dOOVRhSnRuaHdrM0oxdUoxam9Wd093TW85dW10WUlQUXNPelNQRUNaa01PUllHTVcxRlNWMml0cFZWMnFmaFg2UXBrVmhiNmR2NHlwMkFQQUdMajR2UmlENzRYT21Vb0J0VVpCVjhiLVNicTkxQnZ6YjVYNEFIVC1Vdm1BbURpSlRfMWFobDYweFFkUmpvZks5OE5tX3I2YkpqTkQxRERfWkNLYVo0ZlltdEpNZXNQYWJqVEpRZXJwUEdGeGFyS0RiQ3lrNG5VbzZpRFhHLWMwY2hZbTFFSWNkc1Z1UWZBdHJTbmlOTW9lNHhqWEI3Nnk0VW8tSktjN2t1YnROSkFHODFiZWUzUk9CbXVCcl9NUVMwVElESTB6LTJRUFpza1pJbllCc082TFpz?oc=5",
+   "ts": 1795432500,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "supply",
+   "why": "Energy Fuels is a rival miner; a production target is mildly bearish for CCJ"
   }
  ],
  "reviews": [
@@ -4502,16 +4502,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.01538,
+  "day_usd": 0.01563,
   "month": "2026-11",
-  "month_usd": 0.27887,
-  "total_usd": 0.27887,
+  "month_usd": 0.27912,
+  "total_usd": 0.27912,
   "by_role": {
    "macro": 0.0037,
    "whale": 0.00304,
    "crowd": 0.0032,
    "level": 0.00144,
-   "scout": 0.0349,
+   "scout": 0.03515,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -4566,17 +4566,17 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 63.23,
-  "NXE": 7.0,
-  "UEC": 5.97,
-  "DNN": 1.85,
-  "UUUU": 5.62,
-  "LEU": 93.15,
-  "BWXT": 114.3,
-  "CEG": 256.94,
-  "VST": 123.94,
-  "TLN": 359.19,
-  "SPY": 720.1
+  "CCJ": 63.38,
+  "NXE": 7.03,
+  "UEC": 5.98,
+  "DNN": 1.86,
+  "UUUU": 5.58,
+  "LEU": 92.89,
+  "BWXT": 114.52,
+  "CEG": 255.17,
+  "VST": 123.69,
+  "TLN": 357.7,
+  "SPY": 718.77
  },
  "last_cycle": "2026-11-23 09:34 ET",
  "ops": {
@@ -4605,10 +4605,10 @@
   ]
  },
  "brakes": {
-  "equity": 1053.26,
-  "day_pct": 5.27,
-  "week_pct": 5.27,
-  "drawdown_pct": -0.11,
+  "equity": 1051.38,
+  "day_pct": 5.08,
+  "week_pct": 5.08,
+  "drawdown_pct": -0.29,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -49024,8 +49024,8 @@
   "1005c86f35a3d1c3",
   "5d22d1b6e3da5fb6",
   "4627bda8dfc98062",
-  "8010bdf39626577f",
   "c56ca4f4b89e4d32",
+  "8010bdf39626577f",
   "d39dc266a3b4dae2",
   "e6c12a1e5998666c",
   "00dd4e324f5b633b",
@@ -49203,9 +49203,10 @@
   "ac86fb04e7eb798b",
   "a38730433f855a68",
   "88d39974add2ff27",
-  "f16660c269a6613c"
+  "f16660c269a6613c",
+  "7eeff7845b171edb"
  ],
- "news_slow_at": 1795444343.3508017,
+ "news_slow_at": 1795444498.0231655,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197691,6 +197692,21 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 09:34",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: TLN moved -1.6% in 4 min. Checking every news channel for a reason right now.",
+   "tickers": [
+    "TLN"
+   ],
+   "art": {
+    "big": "TLN moved -1.6% in 4 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -199661,7 +199677,7 @@
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 74,
+ "_pushed_feed": 75,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
