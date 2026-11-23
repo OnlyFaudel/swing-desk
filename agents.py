@@ -113,6 +113,11 @@ class Desk:
         offered = notes.ASK in system
         if role in ("pm", "risk", "macro", "engineer", "optspec", "investigator") and isinstance(payload, dict) and self.state.get("catalysts"):
             payload = {**payload, "coming_up": [f"{c['date']}: {c['what']}" for c in self.state["catalysts"][:10]]}
+        if role in ("optspec", "whale") and isinstance(payload, dict) and (self.state.get("radar_score") or {}).get("resolved"):
+            payload = {**payload, "earnings_options_scorebook": self.state["radar_score"]}
+        if role in ("engineer", "investigator", "strategist") and isinstance(payload, dict) and self.state.get("license_view"):
+            payload = {**payload, "nrc_license_tracker": [f"{p['project']}: {p['status']} Next: {p['next']} ({p['window']})"
+                                                         for p in self.state["license_view"]["projects"]]}
         les = [x["lesson"] for x in self.state.get("lessons", []) if x.get("lesson")][-6:]
         if les and isinstance(payload, dict):  # what the desk learned from its own mistakes, in every agent's head
             payload = {**payload, "desk_lessons_from_our_mistakes": les}

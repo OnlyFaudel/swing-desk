@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, re, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, earnings, weekly, weather, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, earnings, weekly, weather, shocks, licenses, radarlog, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -558,6 +558,10 @@ def run_radar(st, prices, earnings):
                        f"Capped-loss call spread {r['call_spread']} ${r['call_spread_cost_usd']}. Alert only; max loss = what you pay.",
                        tags="crystal_ball", priority="high")
     st["radar"] = {"date": str(dt.date.today()), "results": res}
+    try:
+        radarlog.log(res, prices)
+    except Exception as e:
+        print("radar log", e)
 
 
 # ======================================================================= morning
@@ -1407,9 +1411,13 @@ def seasonal_check(st, ex, data, prices, today, now):
                       "the 3 worst names of the year rose 13.9% on average from late December to mid-January, up in 15 of 19 years.",
                       [b.split()[0] for b in bought], kind="alert", art={"big": "Year-end bounce", "sub": "Seasonal trade, sells mid-January"})
     up = uprice.summary() or {}
-    sp = up.get("spot") or {}
+    sp = dict(up.get("spot") or {})
     mon = sp.get("month")
-    if mon and (sp.get("1m_change_pct") or 0) >= 5 and not st["flags"].get(f"spotmom:{mon}"):
+    dm = sput.spot_momentum()  # daily uranium price from the Sprott trust's books, once a month of history exists
+    if dm:
+        sp = {"1m_change_pct": dm["change_pct"]}
+        mon = f"daily-{dm['as_of'][:7]}"  # at most one trade per calendar month either way
+    if mon and (sp.get("1m_change_pct") or 0) >= 5 and not st["flags"].get(f"spotmom:{mon}") and not st["flags"].get(f"spotmom:{(dm or {}).get('as_of', '')[:7]}"):
         st["flags"][f"spotmom:{mon}"] = True
         bought = []
         for t in ("CCJ", "UEC", "DNN", "UUUU", "NXE"):
@@ -1419,6 +1427,8 @@ def seasonal_check(st, ex, data, prices, today, now):
                     "why": f"spot uranium rose {sp['1m_change_pct']:+.1f}% in {mon}; miners have followed strong spot months"}
             if ex.buy_market(t, eq * 0.04, prices[t], "au", meta, "uranium momentum buy"):
                 bought.append(t)
+        if dm:
+            st["flags"][f"spotmom:{dm['as_of'][:7]}"] = True
         if bought:
             st["uranium_momentum"] = {"month": mon, "change": sp["1m_change_pct"], "until": sessions_after(str(today), 20)}
             feed.post("chief", f"Uranium spot rose {sp['1m_change_pct']:+.1f}% in {mon}, so the miners trade is on: bought {', '.join(bought)}, "
@@ -1509,6 +1519,7 @@ def intel_tick(st, today, force=False):
         try:
             new = collector.run(tcfg(st), st)
             print(f"intel: {len(new)} new items")
+            event_watch(st, new, today)
         except Exception as e:
             print("intel collector failed", e)
         for b in collector.bursts(today):
@@ -1605,10 +1616,24 @@ def intel_tick(st, today, force=False):
             pass
     if not st.get("sput_view"):
         st["sput_view"] = sput.summary()
+    st["license_view"] = licenses.summary()
+    if now.time() >= dt.time(17, 45) and today.weekday() < 5 and not st["flags"].get(f"radarres:{today}"):
+        st["flags"][f"radarres:{today}"] = True  # did options into earnings turn out cheap or expensive?
+        try:
+            for r in radarlog.resolve():
+                feed.post("optspec", f"Earnings options check, {r['ticker']}: before earnings the options priced a move of about "
+                          f"±{r['implied_move_pct']}% by {r['expiry']}. The stock really moved {r['actual_move_pct']}%"
+                          + (f" (earnings day {r['earnings_jump_pct']:+.1f}%)" if r.get("earnings_jump_pct") is not None else "")
+                          + f", so the options were {r['options_were']}."
+                          + (f" Buying the straddle would have returned {r['straddle_return_pct']:+d}%." if r.get("straddle_return_pct") is not None else ""),
+                          [r["ticker"]], kind="data", art={"big": f"Options were {r['options_were']}", "sub": f"{r['ticker']} earnings {r['earnings']}"})
+            st["radar_score"] = radarlog.summary()
+        except Exception as e:
+            print("radar resolve", e)
     if not st["flags"].get(f"catalysts:{today}"):  # the catalyst calendar, refreshed once a day
         st["flags"][f"catalysts:{today}"] = True
         try:
-            st["catalysts"] = catalysts.upcoming(list(T))
+            st["catalysts"] = sorted(catalysts.upcoming(list(T)) + licenses.dated(), key=lambda x: x["date"])
         except Exception as e:
             print("catalysts", e)
     if now.time() >= dt.time(18, 15) and today.weekday() < 5 and not st["flags"].get(f"sput:{today}"):  # Sprott publishes NAV ~6pm
@@ -1837,6 +1862,55 @@ def owner_scan(st, desk, ex, data, prices, today, brk_state, text):
     notify("Team answered your post", headline, tags="speech_balloon", who="pm")
 
 
+# ======================================================================= supply-shock and licensing headlines
+def event_watch(st, items, today):
+    """Big producer cuts (Kazatomprom, Cameco...) and NRC licensing news get their own alert with history attached."""
+    import hashlib
+    sent = st.setdefault("event_watch", [])
+    n_today = sum(1 for e in sent if e.get("date") == str(today))
+    for it in items:
+        if n_today >= 4:
+            break
+        text = f"{it.get('title', '')} {it.get('summary', '')}"
+        sh, lic = shocks.is_supply_shock(text), licenses.is_license_news(text)
+        if not (sh or lic):
+            continue
+        key = "ev:" + hashlib.sha1((it.get("title") or "")[:80].lower().encode()).hexdigest()[:12]
+        if st["flags"].get(key):
+            continue
+        st["flags"][key] = True
+        n_today += 1
+        if sh:
+            who = shocks.beneficiaries(sh["site"], T)
+            h = shocks.HISTORY
+            body = (f"Supply shock watch: {it.get('title')}. In the last {h['events']} big producer cuts, the other miners averaged "
+                    f"{h['other_miners_5d_avg_pct']:+.1f}% over 5 days and {h['other_miners_20d_avg_pct']:+.1f}% over 20 days, but only "
+                    f"{h['up_after_20d']} went up. {h['note']} Watching {', '.join(who)}.")
+            kind, tick, title = "supply", who, f"SUPPLY SHOCK? {sh['site'].title()}"
+        else:
+            who = licenses.tickers_for(text)
+            body = f"Licensing news: {it.get('title')}. {licenses.HISTORY}"
+            kind, tick, title = "license", who, "NRC LICENSING NEWS"
+        rd = ""
+        if DESK.get("d") and DESK["d"].available:
+            try:
+                r = DESK["d"].ask("engineer", "fast", "Plant Engineer: a headline just hit about uranium supply or reactor licensing. In 2 short "
+                                  "plain sentences: what physically changes (pounds of uranium, a reactor's timeline) and which of our "
+                                  "stocks it really affects. Say plainly if it is minor or already known. "
+                                  '{"say":"","to":"team"}', {"headline": it.get("title"), "summary": it.get("summary", "")[:300],
+                                                            "history": shocks.HISTORY if sh else licenses.HISTORY,
+                                                            "license_tracker": licenses.summary() if lic else None,
+                                                            "plants_now": plant.snapshot(st)}, max_tokens=350)
+                rd = r.get("say") or ""
+            except Exception as e:
+                print("event watch engineer", e)
+        feed.post("engineer", body + (f"\n\nPlant Engineer: {rd}" if rd else ""), [t for t in tick if t][:4], kind="alert",
+                  art={"big": title, "sub": (it.get("title") or "")[:90]})
+        notify(title, (it.get("title") or "")[:160] + (f" | {rd[:200]}" if rd else ""), tags="warning" if sh else "scroll", priority="high", who="engineer")
+        sent.append({"date": str(today), "kind": kind, "title": it.get("title"), "tickers": tick[:4]})
+    del sent[:-60]
+
+
 # ======================================================================= news (agents: veto + exits)
 def handle_news(st, desk, ex, data, prices, today, brk_state):
     fresh = news.new_items(tcfg(st), st)
@@ -1869,6 +1943,10 @@ def handle_news(st, desk, ex, data, prices, today, brk_state):
             except Exception as e:
                 print("desk memory add failed", e)
     del feed[:-250]
+    try:
+        event_watch(st, fresh, today)
+    except Exception as e:
+        print("event watch", e)
     groups = {}
     for it in fresh:
         s = scored.get(it["id"], {})

@@ -697,6 +697,7 @@ function stockState(t){
     const up=(S.uranium_price||{}), sp=up.spot||{}, lt=up.long_term||{}, sv_=S.sput_view;
     const uran=`<div class="kv"><span>Spot uranium (${esc(sp.month||"")})</span><b>${sp.usd_per_lb!=null?"$"+sp.usd_per_lb+"/lb":"—"} <small class="${(sp["1m_change_pct"]||0)>=0?"pos":"neg"}">${sp["1m_change_pct"]!=null?(sp["1m_change_pct"]>=0?"+":"")+sp["1m_change_pct"]+"%":""}</small></b></div>
       <div class="kv"><span>Long-term contract price</span><b>${lt.usd_per_lb!=null?"$"+lt.usd_per_lb+"/lb":"—"}</b></div>
+      <div class="kv"><span>Daily price from Sprott's books</span><b>${sv_&&sv_.implied_spot_usd_lb?"$"+sv_.implied_spot_usd_lb+"/lb":"updates tonight"}${sv_&&sv_.spot_momentum_1m?` <small class="${sv_.spot_momentum_1m.change_pct>=0?"pos":"neg"}">${sv_.spot_momentum_1m.change_pct>=0?"+":""}${sv_.spot_momentum_1m.change_pct}% 1m</small>`:""}</b></div>
       <div class="kv"><span>Sprott trust vs its uranium</span><b class="${sv_&&sv_.premium_pct>=0?"pos":"neg"}">${sv_&&sv_.premium_pct!=null?(sv_.premium_pct>=0?"+":"")+sv_.premium_pct.toFixed(1)+"%":"updates tonight"}</b></div>`;
     const rv=S.reactor_view||{}, own=rv.owners||{};
     const plants=Object.keys(own).length?Object.entries(own).map(([t,o])=>`<div class="kv"><span>${esc(t)}: ${o.units-(o.down||[]).length} of ${o.units} reactors running</span><b class="${(o.down||[]).length?"neg":"pos"}">${(o.down||[]).length?esc(o.down.join(", "))+" down":"all up"}</b></div>`).join("")+(rv.us_fleet_running_pct!=null?`<div class="kv"><span>All US reactors (${esc(rv.date||"")})</span><b>${rv.us_fleet_running_pct}%</b></div>`:""):`<p class="mut" style="font-size:13px;margin:0">Fills in after the next morning reactor report.</p>`;
@@ -704,10 +705,17 @@ function stockState(t){
     const mv=((S.movers||{}).list||[]).slice(0,8);
     const movers=mv.length?mv.map(m=>`<div class="kv"><span><b style="color:var(--ink)">${esc(m.ticker)}</b>${m.core?"":" <small>(related)</small>"}: ${esc(m.why.join(", "))}</span><b>${money(m.price)}</b></div>`).join(""):`<p class="mut" style="font-size:13px;margin:0">No stock is in a big-move setup right now.</p>`;
     const lastQ=(S.questions||[]).slice(-1)[0];
+    const lv=(S.license_view||{}).projects||[], ew=(S.event_watch||[]).slice(-3).reverse();
+    const lic=lv.map(p=>`<div class="kv" title="${esc(p.why_it_matters||"")}"><span><b style="color:var(--ink)">${esc(p.project)}</b><br><small>${esc(p.status)} Next: ${esc(p.next)} (${esc(p.window)})</small></span><b>${esc((p.tickers||[]).slice(0,2).join(" "))}</b></div>`).join("");
+    const evs=ew.map(e=>`<div class="kv"><span><small>${esc(fd(e.date))}</small> ${esc(String(e.title||"").slice(0,90))}</span><b class="${e.kind==="supply"?"neg":""}">${e.kind==="supply"?"supply":"NRC"}</b></div>`).join("");
+    const rs=S.radar_score||{};
     el.innerHTML=`<div class="bcard"><h3>Nuclear board</h3><p class="sub">Today's move and the last 30 days. Tap a stock for its file.</p>${rows}</div>
       <div class="bcard"><h3>Mover radar</h3><p class="sub">Where +20% swings (up or down) were 5-7x more likely. The team checks why.</p>${movers}</div>
       <div class="bcard"><h3>Uranium</h3>${uran}</div>
       <div class="bcard"><h3>Plants</h3>${plants}</div>
+      ${lic?`<div class="bcard"><h3>New reactor licenses</h3><p class="sub">Where each project stands with the NRC. ${esc((S.license_view||{}).rule||"")}</p>${lic}</div>`:""}
+      ${evs?`<div class="bcard"><h3>Supply and licensing alerts</h3>${evs}</div>`:""}
+      ${rs.resolved?`<div class="bcard"><h3>Earnings options check</h3><div class="kv"><span>Options turned out cheap</span><b>${esc(rs.options_were_cheap)}</b></div><div class="kv"><span>Average straddle return</span><b class="${(rs.avg_straddle_return_pct||0)>=0?"pos":"neg"}">${rs.avg_straddle_return_pct!=null?(rs.avg_straddle_return_pct>=0?"+":"")+rs.avg_straddle_return_pct+"%":"—"}</b></div><div class="kv"><span>When the radar said cheap</span><b>${esc(rs.when_radar_said_cheap)}</b></div></div>`:""}
       <div class="bcard"><h3>Power weather</h3>${ex.length?ex.join(""):`<p class="mut" style="font-size:13px;margin:0">No heat waves or cold snaps in the next 7 days for Texas or the mid-Atlantic.</p>`}</div>
       ${lastQ?`<div class="bcard"><h3>Latest question</h3><p style="margin:0;font-size:14px"><b>${esc(lastQ.question)}</b></p><p class="mut" style="font-size:13px;margin:6px 0 0">${esc(lastQ.verdict||"")}: ${esc(String(lastQ.answer||"").slice(0,180))}</p></div>`:""}`;
     el.querySelectorAll("[data-file]").forEach(b=>b.onclick=()=>{openDM({v:"inbox"}); go({v:"files"}); go({v:"file",t:b.dataset.file});});

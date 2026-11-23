@@ -35,6 +35,8 @@ def run():
     if snap.get("premium_pct") is None and snap.get("nav") and snap.get("price"):
         snap["premium_pct"] = round((snap["price"] / snap["nav"] - 1) * 100, 2)
     snap["date"] = str(dt.date.today())
+    if snap.get("nav") and snap.get("units") and snap.get("lbs"):  # what the trust's own books say a pound of uranium is worth today
+        snap["implied_spot_usd_lb"] = round(snap["nav"] * snap["units"] / snap["lbs"], 2)
     if snap.get("premium_pct") is not None:
         hist = [h for h in hist if h["date"] != snap["date"]] + [snap]
         os.makedirs(os.path.dirname(PATH), exist_ok=True)
@@ -49,6 +51,16 @@ def load():
         return []
 
 
+def spot_momentum(hist=None, days=21):
+    """Daily uranium price change over ~a month (21 trading days), from the trust's NAV per pound.
+    None until there's a month of daily history."""
+    h = [x for x in (hist or load()) if x.get("implied_spot_usd_lb")]
+    if len(h) < days + 1:
+        return None
+    return {"now": h[-1]["implied_spot_usd_lb"], "month_ago": h[-1 - days]["implied_spot_usd_lb"],
+            "change_pct": round((h[-1]["implied_spot_usd_lb"] / h[-1 - days]["implied_spot_usd_lb"] - 1) * 100, 2), "as_of": h[-1]["date"]}
+
+
 def summary(hist=None):
     h = hist or load()
     if not h:
@@ -57,6 +69,7 @@ def summary(hist=None):
     wk = [x for x in h if x["date"] <= str(dt.date.fromisoformat(last["date"]) - dt.timedelta(days=7))]
     ch = round(last["premium_pct"] - wk[-1]["premium_pct"], 2) if wk and wk[-1].get("premium_pct") is not None else None
     return {"premium_pct": last.get("premium_pct"), "change_1w_pts": ch, "nav": last.get("nav"), "price": last.get("price"),
+            "implied_spot_usd_lb": last.get("implied_spot_usd_lb"), "spot_momentum_1m": spot_momentum(h),
             "pounds_held": last.get("lbs"), "as_of": last.get("as_of") or last["date"],
             "what_it_means": ("At a premium the trust can raise money and buy uranium (supports spot and miners); at a discount it can't, "
                               "and a widening discount means investors are leaving uranium. Rising premium months were followed by "
