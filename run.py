@@ -1027,7 +1027,7 @@ def intel_tick(st, today, force=False):
             st["uranium_price"] = uprice.run()
         except Exception as e:
             print("uranium price failed", e)
-    if os.environ.get("CONGRESS_API_KEY") and now.time() >= dt.time(7, 0) and not st["flags"].get(f"congress:{today}"):
+    if os.environ.get("CONGRESS_API_KEY") and (force or (now.time() >= dt.time(7, 0) and not st["flags"].get(f"congress:{today}"))):
         st["flags"][f"congress:{today}"] = True
         try:
             cs = congress.run()
@@ -1764,6 +1764,9 @@ def main():
         intel_tick(st, market.now_et().date(), force=True)
         v = st.get("intel_view") or {}
         print(v.get("week"), "stories this week;", "failed sources:", (v.get("health") or {}).get("failed"))
+        cv = st.get("congress_view")
+        print("congress key:", "set" if os.environ.get("CONGRESS_API_KEY") else "MISSING",
+              "| bills tracked:", (cv or {}).get("tracked"), "|", [b["title"][:70] for b in (cv or {}).get("latest", [])[:3]])
     elif args[0] == "test-notify":
         t = ntfy_topic()
         if not t:
