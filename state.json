@@ -4621,12 +4621,12 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.0318,
+  "day_usd": 0.0331,
   "month": "2026-11",
-  "month_usd": 0.29529,
-  "total_usd": 0.29529,
+  "month_usd": 0.29659,
+  "total_usd": 0.29659,
   "by_role": {
-   "macro": 0.00724,
+   "macro": 0.00756,
    "whale": 0.00639,
    "crowd": 0.00536,
    "level": 0.00144,
@@ -4634,9 +4634,9 @@
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
-   "pm": 0.01526,
-   "risk": 0.00532,
-   "investigator": 0.1053,
+   "pm": 0.01561,
+   "risk": 0.00565,
+   "investigator": 0.1056,
    "postmortem": 0.00035,
    "researcher": 0.00295
   }
@@ -4685,19 +4685,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 62.16,
-  "NXE": 6.88,
+  "CCJ": 62.27,
+  "NXE": 6.89,
   "UEC": 5.83,
   "DNN": 1.82,
   "UUUU": 5.45,
-  "LEU": 89.62,
-  "BWXT": 113.09,
-  "CEG": 252.62,
-  "VST": 122.07,
-  "TLN": 356.96,
-  "SPY": 715.97
+  "LEU": 88.33,
+  "BWXT": 113.18,
+  "CEG": 249.43,
+  "VST": 121.95,
+  "TLN": 355.68,
+  "SPY": 718.93
  },
- "last_cycle": "2026-11-23 09:43 ET",
+ "last_cycle": "2026-11-23 09:50 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4722,10 +4722,10 @@
   ]
  },
  "brakes": {
-  "equity": 1039.16,
-  "day_pct": 3.86,
-  "week_pct": 3.86,
-  "drawdown_pct": -1.45,
+  "equity": 1036.77,
+  "day_pct": 3.62,
+  "week_pct": 3.62,
+  "drawdown_pct": -1.67,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -4799,6 +4799,34 @@
   [
    "2026-11-23 09:43",
    1039.16
+  ],
+  [
+   "2026-11-23 09:44",
+   1041.61
+  ],
+  [
+   "2026-11-23 09:45",
+   1041.11
+  ],
+  [
+   "2026-11-23 09:46",
+   1042.14
+  ],
+  [
+   "2026-11-23 09:48",
+   1040.4
+  ],
+  [
+   "2026-11-23 09:49",
+   1038.46
+  ],
+  [
+   "2026-11-23 09:50",
+   1038.12
+  ],
+  [
+   "2026-11-23 09:50",
+   1036.77
   ]
  ],
  "nowcast": {
@@ -49200,7 +49228,7 @@
     0.9428
    ]
   },
-  "time": "2026-11-23 09:43"
+  "time": "2026-11-23 09:50"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -49266,8 +49294,8 @@
   "1005c86f35a3d1c3",
   "5d22d1b6e3da5fb6",
   "4627bda8dfc98062",
-  "8010bdf39626577f",
   "c56ca4f4b89e4d32",
+  "8010bdf39626577f",
   "d39dc266a3b4dae2",
   "e6c12a1e5998666c",
   "00dd4e324f5b633b",
@@ -49449,7 +49477,7 @@
   "88d39974add2ff27",
   "f16660c269a6613c"
  ],
- "news_slow_at": 1795445004.762444,
+ "news_slow_at": 1795445438.382695,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197774,6 +197802,65 @@
    ],
    "practice": false,
    "end": "09:43"
+  },
+  {
+   "id": "20261123095031565475",
+   "title": "Huddle: fast move: LEU moved -1.8% in 7 min",
+   "tickers": [
+    "LEU"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-23 09:50",
+   "msgs": [
+    {
+     "t": "09:50",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: LEU moved -1.8% in 7 min.",
+     "outcome": false
+    },
+    {
+     "t": "09:50",
+     "who": "investigator",
+     "to": "chief",
+     "text": "The LEU move is a -1.8% drift in 7 minutes, and the headlines are mostly old or recycled: a fair-value cut, a slightly delayed Orano license review, and a generic market-size report. Public news is priced in within minutes, so there's nothing new here that I can see that would give us an edge. I agree with the Desk Chief that there's no setup, since LEU is falling through support and the basket is below its 10-day average.",
+     "outcome": false,
+     "notes": "ask: Risk Manager: can you confirm the basket-below-average rule blocks any new LEU buy today, and should we set a watch for the Orano IKE license review date if it's firm?"
+    },
+    {
+     "t": "09:50",
+     "who": "macro",
+     "to": "team",
+     "text": "Macro view: this looks sector-wide, not LEU-specific. The nuclear basket is 6.43% below its 10-day average and the pulse is down, and LEU's correlations with the rest of the chain (about 0.45 with CCJ, BWXT, and TLN) suggest it moves with the group. I agree with the News Investigator that the headlines are stale and there's no new edge, and with the Desk Chief that there's no setup while the basket is falling.",
+     "outcome": false,
+     "notes": "ask: Risk Manager: do you want the basket-below-10-day-average rule to stay a hard block, or should we track when the basket reclaims its average as the trigger to start looking at setups again?"
+    },
+    {
+     "t": "09:50",
+     "who": "risk",
+     "to": "macro",
+     "text": "I agree with the team that LEU has no setup: it's falling through its supports, and the whole basket is 6.4% below its 10-day average, so no new buys. My concern is the opposite trap: the headlines are stale, but a fair-value cut plus a basket-wide selloff is exactly the setup where a 'buy the dip' idea gets tempting, and we have no evidence yet that this drop is done. We should stay flat and not chase a bounce.",
+     "outcome": false,
+     "notes": "ask: News Investigator: since you flagged the headlines as recycled, can you confirm whether any of the Orano or Standard Nuclear items have a dated catalyst we should log on the watch list?"
+    },
+    {
+     "t": "09:50",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with the Risk Manager and the News Investigator: LEU has no confirmed support to rest a buy above, the whole nuclear basket is 6.4% below its 10-day average, and the headlines are stale news that is already priced in. We have no open LEU order or position, so there is nothing to cancel or sell. The right move is to do nothing and stay flat rather than try to catch a falling knife.",
+     "outcome": false,
+     "notes": "action: none\nreason: No waiting buy or open position in LEU, so skip and exit do not apply. Basket below its 10-day average blocks new buys, and the recent headlines are old or recycled, so there is no new information to act on."
+    },
+    {
+     "t": "09:50",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:50"
   }
  ],
  "feed": [
@@ -198585,6 +198672,21 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 09:50",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: LEU moved -1.8% in 7 min. Checking every news channel for a reason right now.",
+   "tickers": [
+    "LEU"
+   ],
+   "art": {
+    "big": "LEU moved -1.8% in 7 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -198746,11 +198848,13 @@
   "BWXT (you asked us to watch it) moved -1.1% since we last looked": 1795444862.9860015,
   "fast move: DNN moved -1.9% in 9 min": 1795444921.9854822,
   "fast move: LEU moved -1.5% in 2 min": 1795444962.2797282,
-  "fast move: UUUU moved -1.5% in 3 min": 1795444998.8496578
+  "fast move: UUUU moved -1.5% in 3 min": 1795444998.8496578,
+  "fast move: LEU moved -1.8% in 7 min": 1795445431.5653675
  },
- "huddle_last": 1795444998.849663,
+ "huddle_last": 1795445431.5653734,
  "huddle_log": [
   "2026-11-20",
+  "2026-11-23",
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
@@ -198935,7 +199039,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 09:43",
+  "updated": "2026-11-23 09:50",
   "total": 331,
   "week": 289,
   "places": {
@@ -200590,12 +200694,12 @@
    "built": "2026-11-23 09:37"
   }
  ],
- "heartbeat": "2026-11-23 09:43",
+ "heartbeat": "2026-11-23 09:50",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 88,
+ "_pushed_feed": 90,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -200702,7 +200806,7 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 113.09,
-  "TLN": 356.965
+  "BWXT": 113.18,
+  "TLN": 355.68
  }
 }
