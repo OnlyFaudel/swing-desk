@@ -4621,12 +4621,12 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.02926,
+  "day_usd": 0.0318,
   "month": "2026-11",
-  "month_usd": 0.29275,
-  "total_usd": 0.29275,
+  "month_usd": 0.29529,
+  "total_usd": 0.29529,
   "by_role": {
-   "macro": 0.00665,
+   "macro": 0.00724,
    "whale": 0.00639,
    "crowd": 0.00536,
    "level": 0.00144,
@@ -4634,9 +4634,9 @@
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
-   "pm": 0.01453,
-   "risk": 0.00473,
-   "investigator": 0.10467,
+   "pm": 0.01526,
+   "risk": 0.00532,
+   "investigator": 0.1053,
    "postmortem": 0.00035,
    "researcher": 0.00295
   }
@@ -4685,19 +4685,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 62.3,
-  "NXE": 6.91,
-  "UEC": 5.86,
+  "CCJ": 62.16,
+  "NXE": 6.88,
+  "UEC": 5.83,
   "DNN": 1.82,
-  "UUUU": 5.49,
-  "LEU": 90.21,
-  "BWXT": 112.46,
-  "CEG": 253.56,
-  "VST": 122.28,
-  "TLN": 357.53,
-  "SPY": 716.36
+  "UUUU": 5.45,
+  "LEU": 89.62,
+  "BWXT": 113.09,
+  "CEG": 252.62,
+  "VST": 122.07,
+  "TLN": 356.96,
+  "SPY": 715.97
  },
- "last_cycle": "2026-11-23 09:42 ET",
+ "last_cycle": "2026-11-23 09:43 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4722,10 +4722,10 @@
   ]
  },
  "brakes": {
-  "equity": 1041.88,
-  "day_pct": 4.13,
-  "week_pct": 4.13,
-  "drawdown_pct": -1.19,
+  "equity": 1039.16,
+  "day_pct": 3.86,
+  "week_pct": 3.86,
+  "drawdown_pct": -1.45,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -4791,6 +4791,14 @@
   [
    "2026-11-23 09:42",
    1041.88
+  ],
+  [
+   "2026-11-23 09:42",
+   1041.78
+  ],
+  [
+   "2026-11-23 09:43",
+   1039.16
   ]
  ],
  "nowcast": {
@@ -49192,7 +49200,7 @@
     0.9428
    ]
   },
-  "time": "2026-11-23 09:42"
+  "time": "2026-11-23 09:43"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -49402,6 +49410,7 @@
   "08783bea5ba109b0",
   "67c5ac967df665b9",
   "6a0cc1c1f8babcd3",
+  "f21913021e43c03f",
   "17dc2073115cbcc7",
   "9850b181472b7c24",
   "5e042fd73e80d40b",
@@ -49438,10 +49447,9 @@
   "ac86fb04e7eb798b",
   "a38730433f855a68",
   "88d39974add2ff27",
-  "f16660c269a6613c",
-  "f21913021e43c03f"
+  "f16660c269a6613c"
  ],
- "news_slow_at": 1795444928.3825066,
+ "news_slow_at": 1795445004.762444,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197653,6 +197661,119 @@
    ],
    "practice": false,
    "end": "09:42"
+  },
+  {
+   "id": "20261123094242279854",
+   "title": "Huddle: fast move: LEU moved -1.5% in 2 min",
+   "tickers": [
+    "LEU"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-23 09:42",
+   "msgs": [
+    {
+     "t": "09:42",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: LEU moved -1.5% in 2 min.",
+     "outcome": false
+    },
+    {
+     "t": "09:42",
+     "who": "investigator",
+     "to": "chief",
+     "text": "Looking at the headlines, the LEU drop doesn't map to any fresh news: the Fair Value Cut and 'Fell 70%' pieces are old commentary, and the Orano license delay is a minor, already-known procedural slip. A -1.5% move in 2 minutes with no new catalyst looks like noise, and the basket is already below its 10-day average, so I agree with the Desk Chief that there's nothing to act on here.",
+     "outcome": false,
+     "notes": "ask: Risk Manager: can you confirm the basket-below-average rule blocks any LEU buy today, so we don't need to revisit it?\ndate: 2025-01-01\nticker: LEU\nwhat: Placeholder only: no confirmed dated regulatory or contract event found in headlines; Orano Project IKE license review date not specified, so no real watch date can be set yet"
+    },
+    {
+     "t": "09:42",
+     "who": "macro",
+     "to": "investigator",
+     "text": "I agree with the News Investigator: this looks like a stock-specific wobble inside a weak basket, not a sector-wide shift. The basket is 6.4% below its 10-day average and the pulse is down, so the market tone is negative, but nothing in the Asia data (no overnight signal) suggests a macro driver behind a 2-minute -1.5% move in LEU. I'd treat this as noise and make no new buys while the basket stays below its average.",
+     "outcome": false
+    },
+    {
+     "t": "09:42",
+     "who": "risk",
+     "to": "team",
+     "text": "I agree with the team that this is noise: LEU's -1.5% in 2 minutes has no fresh catalyst, and the basket is 6.4% below its 10-day average, which blocks new buys anyway. The bigger risk is that LEU has no confirmed support below price, so any buy we'd place now would be a guess at a floor, not a Patient Levels setup. Nothing to add beyond staying flat.",
+     "outcome": false
+    },
+    {
+     "t": "09:42",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with the News Investigator, Macro Analyst, and Risk Manager: the LEU move is a 2-minute wobble with no fresh news (the headlines are old commentary or a minor procedural slip), and the basket is 6.4% below its 10-day average, so new buys are blocked anyway. LEU also has no confirmed support level, so there is no waiting buy to cancel and no holding to exit. Staying flat is the right call.",
+     "outcome": false,
+     "notes": "action: none\nreason: No open position or waiting buy in LEU, no fresh bad news to justify an exit, and the basket is below its 10-day average so no new buys are allowed. Default is none."
+    },
+    {
+     "t": "09:42",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:42"
+  },
+  {
+   "id": "20261123094318849765",
+   "title": "Huddle: fast move: UUUU moved -1.5% in 3 min",
+   "tickers": [
+    "UUUU"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-23 09:43",
+   "msgs": [
+    {
+     "t": "09:43",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: UUUU moved -1.5% in 3 min.",
+     "outcome": false
+    },
+    {
+     "t": "09:43",
+     "who": "investigator",
+     "to": "chief",
+     "text": "The headlines about UUUU are a mix: a production target and a 2027 growth plan, but these are old-style company guidance and the same story is repeating across outlets, so it's mostly recycled and already priced in. The -1.5% move in 3 minutes is noise, and the basket is 6.4% below its 10-day average, so there's no reason to act. I agree with the Desk Chief that there's no setup here, and I'd flag the Robbins LLP shareholder-investigation notice as a reason for caution, not a trade signal.",
+     "outcome": false
+    },
+    {
+     "t": "09:43",
+     "who": "macro",
+     "to": "investigator",
+     "text": "I agree with the News Investigator: the basket is 6.4% below its 10-day average and falling, and UUUU's -1.5% in 3 minutes is noise. This looks like a sector-wide weakness rather than anything specific to UUUU, since the correlations to the basket are only about 0.4-0.5 and the Asia signals are empty. Nothing here changes the no-buy stance until the basket recovers above its average.",
+     "outcome": false
+    },
+    {
+     "t": "09:43",
+     "who": "risk",
+     "to": "investigator",
+     "text": "I agree with the team: no buy. The basket is 6.4% below its 10-day average, UUUU has no confirmed support below the price, and the Robbins LLP investigation notice is a reason to be more cautious, not less. The rally headlines are recycled production-target news, so I'd treat them as priced in and not a reason to chase.",
+     "outcome": false
+    },
+    {
+     "t": "09:43",
+     "who": "pm",
+     "to": "team",
+     "text": "I agree with the team: nothing to do here. UUUU has no waiting buy, no holding, and no confirmed support level, and the basket is 6.4% below its 10-day average, so we can't buy anyway. The -1.5% move in 3 minutes is noise, and the recycled production-target headlines are already priced in. I'm not exiting anything because we hold nothing, and I'm not skipping anything because nothing is waiting.",
+     "outcome": false,
+     "notes": "action: none\nreason: No open position or waiting buy in UUUU, so no exit or skip is applicable. Basket is below its 10-day average, which blocks new buys, and no support setup exists. Headlines are recycled and the Robbins LLP investigation notice is a caution flag, not a sell trigger we have a position to act on."
+    },
+    {
+     "t": "09:43",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:43"
   }
  ],
  "feed": [
@@ -198434,6 +198555,36 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 09:42",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: LEU moved -1.5% in 2 min. Checking every news channel for a reason right now.",
+   "tickers": [
+    "LEU"
+   ],
+   "art": {
+    "big": "LEU moved -1.5% in 2 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 09:43",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: UUUU moved -1.5% in 3 min. Checking every news channel for a reason right now.",
+   "tickers": [
+    "UUUU"
+   ],
+   "art": {
+    "big": "UUUU moved -1.5% in 3 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -198593,11 +198744,15 @@
   "fast move: UEC moved -1.5% in 9 min": 1795444809.2604573,
   "fast move: NXE moved -1.6% in 9 min": 1795444862.9860013,
   "BWXT (you asked us to watch it) moved -1.1% since we last looked": 1795444862.9860015,
-  "fast move: DNN moved -1.9% in 9 min": 1795444921.9854822
+  "fast move: DNN moved -1.9% in 9 min": 1795444921.9854822,
+  "fast move: LEU moved -1.5% in 2 min": 1795444962.2797282,
+  "fast move: UUUU moved -1.5% in 3 min": 1795444998.8496578
  },
- "huddle_last": 1795444921.9854865,
+ "huddle_last": 1795444998.849663,
  "huddle_log": [
   "2026-11-20",
+  "2026-11-23",
+  "2026-11-23",
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
@@ -198780,7 +198935,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 09:42",
+  "updated": "2026-11-23 09:43",
   "total": 331,
   "week": 289,
   "places": {
@@ -199582,6 +199737,14 @@
    }
   },
   "watch": [
+   {
+    "date": "2025-01-01",
+    "ticker": "LEU",
+    "what": "Placeholder only: no confirmed dated regulatory or contract event found in headlines; Orano Project IKE license review date not specified, so no real watch date can be set yet",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
    {
     "date": "2025-12-31",
     "ticker": "CCJ",
@@ -200427,12 +200590,12 @@
    "built": "2026-11-23 09:37"
   }
  ],
- "heartbeat": "2026-11-23 09:42",
+ "heartbeat": "2026-11-23 09:43",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 86,
+ "_pushed_feed": 88,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -200539,7 +200702,7 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 112.46,
-  "TLN": 357.53
+  "BWXT": 113.09,
+  "TLN": 356.965
  }
 }
