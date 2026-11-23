@@ -14,7 +14,7 @@ THE PREPARATION:
   python run.py loop --minutes 13 | daemon | once [--force-morning --force-close --force-review --force-rank]
   python run.py test-notify | test-agents | test-broker
 """
-import sys, json, os, time, traceback, datetime as dt
+import sys, json, os, re, time, traceback, datetime as dt
 import urllib.request
 
 import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, earnings, weekly, weather, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
@@ -393,7 +393,9 @@ def refresh_candidates(st, desk, data, prices, today, brk_state, force=False):
                                                 "everything_we_know": dossier.for_agent(t), "discoveries": discovery.brief(5),
                                                 "recent_headlines": [f["title"] for f in st["news_feed"] if f["ticker"] == t][-8:]})
                 v = (lv.get("setups") or {}).get(t, {})
-                decision, reason = str(v.get("decision", "ARM")).upper(), v.get("reason", "")
+                said = str(lv.get("say") or "")
+                d0 = v.get("decision") or lv.get("decision") or ("SKIP" if re.search(r"\bskip", said, re.I) else "ARM")
+                decision, reason = str(d0).upper(), v.get("reason") or lv.get("reason") or said[:200]
             except Exception as e:
                 print("level trader failed", e)
         st["setup_log"].append({"date": str(today), "ticker": t, **s, "decision": decision, "reason": reason[:200], "evaluated": False})
@@ -464,7 +466,7 @@ def arm(st, ex, prices, today, brk_state):
         st["sync"] = sync_state(st, market.fetch_hourly(T))
     except Exception as e:
         st["sync"] = {"mult": {}, "error": str(e)[:120]}
-    if CFG["sync"].get("pulse_filter") and not unleashed() and st["sync"].get("pulse_up") is False:
+    if CFG["sync"].get("pulse_filter") and st["sync"].get("pulse_up") is False:  # applies on paper too: tested 2026-11-23, buys in a falling sector lose
         for t in list(st["armed"]):
             ex_cancel(st, t, "falling-sector rule")
         if not st["flags"].get(f"pulsehold:{today}"):
