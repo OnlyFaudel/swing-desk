@@ -9367,5 +9367,82 @@
 "review",
 "termination"
 ]
+},
+{
+"id": "30a860e8617961c8",
+"date": "2026-11-23",
+"ts": 1795427783,
+"title": "58546 - Salem",
+"summary": "",
+"outlet": "NRC event reports",
+"link": "https://www.nrc.gov/documents-reports/document-collections/events-reports-associated-with/event-notification-reports/en#en58546",
+"place": "NRC event reports",
+"tickers": [
+"CEG"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 1.0,
+"score": 4.5,
+"echo_of": null,
+"w": [
+"58546",
+"salem"
+]
+},
+{
+"id": "38d326870f86784b",
+"date": "2026-11-23",
+"ts": 1795427783,
+"title": "58547 - Ginna",
+"summary": "",
+"outlet": "NRC event reports",
+"link": "https://www.nrc.gov/documents-reports/document-collections/events-reports-associated-with/event-notification-reports/en#en58547",
+"place": "NRC event reports",
+"tickers": [
+"CEG"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 1.0,
+"score": 4.5,
+"echo_of": null,
+"w": [
+"58547",
+"ginna"
+]
+},
+{
+"id": "b78034b55889b8f9",
+"date": "2026-11-20",
+"ts": 1795182678,
+"title": "NEK and two firms to study the option of small modular reactors in Bulgaria",
+"summary": "",
+"outlet": "BurgasMedia",
+"link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONzlhVTRSdzdYbGt2bHAtWUxua0wzZFN6cW1yeVhVVFpvN01XaGJOcGIybXRGckRWRUZaSnUwOUhGc3JlelB0elJrMFZtLVB6ZEhYMWZiQ3hHaDlWTUtFdUlzdEpyQjB2ZUdJc2ZjeWViS1VhRHhyX3QxRmZNT3F5VHRBeF9vaXA2X1hhWUM3bFNoOUZUNFFOSGkySW5JaDlzdkRUbDc4WUNrVGozSkJxUE52T3BudEZLMkln0gHAAUFVX3lxTFBGVFhLRHhMbGNELXRiUWVBZ3JMX1lrQ2FqcnFrMGVkZDF1cFFMSXVxQm96eEUzLVpOUERWWHVrU0NmWGZGVjVLbWtqam1ZSWRnYmhfbnZJQVkxUERQMVk4dlNRQXFKdXBEaWJLVHg4bjV1ckNUcHoxSHFNS3FyLWs3TTZWQWl5cVVBbEZITkJsS01GXzIwWXZkRnJET2p1Vmc4Tzg0dktCX01vWUh2NnFJVzNKeW5rWkhadjhadFZPQw?oc=5",
+"place": "Europe new builds",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "ab7817057b5482af",
+"w": [
+"bulgaria",
+"firms",
+"modular",
+"nek",
+"option",
+"reactors",
+"small",
+"study",
+"two"
+]
 }
 ]
