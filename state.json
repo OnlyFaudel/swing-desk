@@ -194,7 +194,8 @@
   "armednote:TLN:2026-11-20": true,
   "plantrep:2026-11-23": true,
   "armednote:TLN:2026-11-23": true,
-  "git_push:2026-11-23": true
+  "git_push:2026-11-23": true,
+  "midday:2026-11-23": true
  },
  "benchmark": {
   "shares": {
@@ -227,59 +228,8 @@
    "why": "support $354.24 (R:R 2.44). "
   }
  },
- "armed": {
-  "TLN": {
-   "setup": "patient_level",
-   "zone": 354.24,
-   "entry": 355.66,
-   "stop": 349.99,
-   "target": 369.46,
-   "reward_risk": 2.44,
-   "dist_to_entry_pct": 2.43,
-   "max_days": 3,
-   "valid_sessions": 5,
-   "volume": {
-    "value_low": 312.55,
-    "value_high": 366.37,
-    "heaviest_price": 360.99,
-    "position": "inside value",
-    "node": "thick",
-    "node_ratio": 1.85,
-    "skip": "False"
-   },
-   "created": "2026-11-23",
-   "valid_until": "2026-11-30",
-   "reason": "",
-   "qty": 0.326717,
-   "dollars": 116.2,
-   "order_id": "27fc700b-9ede-40f4-a6d2-32a78db0e5b1"
-  }
- },
- "candidates": {
-  "TLN": {
-   "setup": "patient_level",
-   "zone": 354.24,
-   "entry": 355.66,
-   "stop": 349.99,
-   "target": 369.46,
-   "reward_risk": 2.44,
-   "dist_to_entry_pct": 2.43,
-   "max_days": 3,
-   "valid_sessions": 5,
-   "volume": {
-    "value_low": 312.55,
-    "value_high": 366.37,
-    "heaviest_price": 360.99,
-    "position": "inside value",
-    "node": "thick",
-    "node_ratio": 1.85,
-    "skip": "False"
-   },
-   "created": "2026-11-23",
-   "valid_until": "2026-11-30",
-   "reason": ""
-  }
- },
+ "armed": {},
+ "candidates": {},
  "setup_log": [
   {
    "date": "2026-11-20",
@@ -477,6 +427,31 @@
    },
    "decision": "SKIP",
    "reason": "The price is up 7% today and sits about 15% below its 20-day high and 12% below its 50-day average, so the stock is still in a downtrend. The basket is also still below its 10-day average, which block",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "TLN",
+   "setup": "patient_level",
+   "zone": 354.24,
+   "entry": 355.66,
+   "stop": 349.99,
+   "target": 369.46,
+   "reward_risk": 2.44,
+   "dist_to_entry_pct": 2.43,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 312.55,
+    "value_high": 366.37,
+    "heaviest_price": 360.99,
+    "position": "inside value",
+    "node": "thick",
+    "node_ratio": 1.85,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The zone sits inside a volume value area and the stock just rallied 8.6% in one day, so the 354 support is untested and could be a bounce that fades. Consumer-advocate calls to delay the PJM capacity ",
    "evaluated": false
   }
  ],
@@ -4812,21 +4787,21 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.10242,
+  "day_usd": 0.10906,
   "month": "2026-11",
-  "month_usd": 0.36591,
-  "total_usd": 0.36591,
+  "month_usd": 0.37255,
+  "total_usd": 0.37255,
   "by_role": {
-   "macro": 0.01055,
+   "macro": 0.01129,
    "whale": 0.00861,
    "crowd": 0.00751,
-   "level": 0.01055,
+   "level": 0.0133,
    "scout": 0.04525,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
-   "pm": 0.03027,
-   "risk": 0.00887,
+   "pm": 0.0319,
+   "risk": 0.01039,
    "investigator": 0.13026,
    "postmortem": 0.00035,
    "researcher": 0.00295,
@@ -4925,19 +4900,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.69,
+  "CCJ": 61.73,
   "NXE": 6.84,
   "UEC": 5.83,
-  "DNN": 1.8,
+  "DNN": 1.81,
   "UUUU": 5.35,
-  "LEU": 88.18,
-  "BWXT": 116.58,
-  "CEG": 250.7,
+  "LEU": 88.14,
+  "BWXT": 116.74,
+  "CEG": 250.78,
   "VST": 124.91,
-  "TLN": 363.55,
-  "SPY": 722.62
+  "TLN": 364.12,
+  "SPY": 723.22
  },
- "last_cycle": "2026-11-23 12:28 ET",
+ "last_cycle": "2026-11-23 12:30 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4962,10 +4937,10 @@
   ]
  },
  "brakes": {
-  "equity": 1037.3,
-  "day_pct": 3.68,
-  "week_pct": 3.68,
-  "drawdown_pct": -1.62,
+  "equity": 1037.23,
+  "day_pct": 3.67,
+  "week_pct": 3.67,
+  "drawdown_pct": -1.63,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -5611,6 +5586,14 @@
   [
    "2026-11-23 12:28",
    1037.3
+  ],
+  [
+   "2026-11-23 12:30",
+   1037.23
+  ],
+  [
+   "2026-11-23 12:30",
+   1037.23
   ]
  ],
  "nowcast": {
@@ -48254,7 +48237,7 @@
   "BWXT": 1795454939.6601217,
   "CEG": 1795454943.1090143,
   "VST": 1795454943.2414963,
-  "TLN": 1795453123.8777497
+  "TLN": 1795455032.9905071
  },
  "setup_status": {
   "CCJ": "no confirmed support level below the price (it has been falling through them)",
@@ -48266,7 +48249,7 @@
   "BWXT": "the Level Analyst skipped the setup: The price is up 7% today and sits about 15% below its 20-day high and 12% below its 50-day average, so the stock is still in a downtrend. The basket is also still ",
   "CEG": "no confirmed support level below the price (it has been falling through them)",
   "VST": "no confirmed support level below the price (it has been falling through them)",
-  "TLN": "setup found"
+  "TLN": "the Level Analyst skipped the setup: The zone sits inside a volume value area and the stock just rallied 8.6% in one day, so the 354 support is untested and could be a bounce that fades. Consumer-advo"
  },
  "sync": {
   "pulse_up": false,
@@ -50013,7 +49996,7 @@
     0.9424
    ]
   },
-  "time": "2026-11-23 12:29"
+  "time": "2026-11-23 12:30"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -50221,6 +50204,7 @@
   "e12d3a4edb7295a2",
   "d944f1045c86ab02",
   "9d0cef749e9a05fd",
+  "7ffa38b48cb85fdf",
   "888d96e0923cd600",
   "32cfd9ef3704009d",
   "4653461d7ed88855",
@@ -50287,8 +50271,7 @@
   "ad6bb6ac1dcb6674",
   "7f1ab1d7e538b600",
   "cdc78121c1406bce",
-  "a3dd031817a4feeb",
-  "7ffa38b48cb85fdf"
+  "a3dd031817a4feeb"
  ],
  "news_slow_at": 1795454535.9601917,
  "officer": {
@@ -199026,6 +199009,66 @@
    ],
    "practice": false,
    "end": "11:59"
+  },
+  {
+   "id": "20261123123014831785",
+   "title": "Huddle: midday check-in",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-23 12:30",
+   "msgs": [
+    {
+     "t": "12:30",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: midday check-in.",
+     "outcome": false
+    },
+    {
+     "t": "12:30",
+     "who": "macro",
+     "to": "team",
+     "text": "Basket is down about 6.5% versus its 10-day average, and the sector pulse is negative, so this is a sector-wide weak tape rather than a single-name problem. The TLN setup stands on its own, but I'd treat it as a stock-specific bounce inside a weak group, not a sector turn. VIX fell sharply today with the S&P up 4%, which suggests broad risk-on that hasn't reached nuclear names yet.",
+     "outcome": false,
+     "notes": "why: Checked sector pulse (basket -6.54% vs average, pulse_up false), uranium spot up 14% year over year but the ETFs down 30%+ over the year, and today's S&P rally. Signal conflict is real, so I'm not making a directional call.\nfiles read: SECTOR Uranium market, SECTOR Government and laws"
+    },
+    {
+     "t": "12:30",
+     "who": "risk",
+     "to": "macro",
+     "text": "I agree with the Macro Analyst that the basket is weak, and I'm not comfortable with the TLN resting buy as a sector-free bounce. The basket sits about 6.5% below its 10-day average, and the TLN setup is only 2.4% above its entry, so a small move against us hits the stop quickly. I'd want the basket to recover above its 10-day average before we add exposure, and I'd rather see the order cancelled than left resting into a falling tape.",
+     "outcome": false,
+     "notes": "ask: Desk Chief: does the rule against buying while the whole basket is below its 10-day average already cover this, given the basket is down 6.5%? If so, the TLN order should be cancelled.\nwhy: The basket is about 6.5% below its 10-day average and the sector pulse is negative, while TLN's setup is only a 2.4% distance to entry with a tight stop. Our rules bar new buys while the basket is falling, and the TLN order is already resting.\nticker: TLN\ndirection: down\ndays: 3\nfiles read: SECTOR Uranium market"
+    },
+    {
+     "t": "12:30",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with the Risk Manager: the basket is about 6.5% below its 10-day average and the sector pulse is negative, and the desk rule says no new buys while the whole basket is falling. We have a resting TLN buy at 355.66 that was placed before this weak tape, so I'm cancelling it rather than letting it fill into a falling basket. The setup itself isn't broken, so it can be re-evaluated once the basket is back above its 10-day average.",
+     "outcome": false,
+     "notes": "action: skip\nTLN\nreason: Basket is below its 10-day average with a negative sector pulse, and our rule blocks new buys in that condition. The TLN order was resting into the weakness with only about 2.4% of room to its entry and a tight stop.\nwhy: I checked the basket versus its 10-day average (-6.5%) and the sector pulse (negative), both of which block new buys under desk rules. The TLN level was valid on its own terms, so the cancel is about timing, not the setup.\nfiles read: SECTOR Uranium market"
+    },
+    {
+     "t": "12:30",
+     "who": "exec",
+     "to": "team",
+     "text": "Done: canceled the waiting buy on TLN",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "12:30"
   }
  ],
  "feed": [
@@ -200094,6 +200137,28 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-23 12:30",
+   "who": "pm",
+   "kind": "alert",
+   "title": "Huddle decision",
+   "text": "canceled the waiting buy on TLN. Basket is below its 10-day average with a negative sector pulse, and our rule blocks new buys in that condition. The TLN order was resting into the weakness with only about 2.4% of room to its entry a",
+   "tickers": [
+    "TLN"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 12:30",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping the TLN setup. The stock jumped nearly 9% today, so the 354 support level hasn't been tested and this could be a bounce that fades back down. I agree with the Macro Analyst that the market regime is shaky, and I'd rather not put a resting buy into a relief rally.\n\nWhy: Price is a one-day 8.6% spike, support is untested, and the market regime is weak, so a resting buy here is more likely to be chasing a bounce than catching a real support hold. The PJM auction delay news and heavy put flow add event and hedging risk I can't quantify from our data.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -200274,11 +200339,13 @@
   "fast move: LEU moved -1.8% in 7 min": 1795445431.5653675,
   "fast move: UEC moved -1.8% in 9 min": 1795445510.1153774,
   "fast move: UUUU moved -1.6% in 9 min": 1795445602.482174,
-  "TLN (you asked us to watch it) moved +1.1% since we last looked": 1795445678.9622285
+  "TLN (you asked us to watch it) moved +1.1% since we last looked": 1795445678.9622285,
+  "midday check-in": 1795455014.8306127
  },
- "huddle_last": 1795445678.9622343,
+ "huddle_last": 1795455014.8306193,
  "huddle_log": [
   "2026-11-20",
+  "2026-11-23",
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
@@ -200527,7 +200594,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 12:29",
+  "updated": "2026-11-23 12:30",
   "total": 345,
   "week": 302,
   "places": {
@@ -201452,6 +201519,14 @@
     "surfaced": false
    },
    {
+    "date": "2026-12-09",
+    "ticker": "TLN",
+    "what": "FOMC rate decision; broad risk-off or risk-on move that can drive the nuclear and power names with it.",
+    "by": "level",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
     "date": "2027-01-01",
     "ticker": "CCJ",
     "what": "Poland plans to sign first nuclear plant construction contract in early 2027 (European new-build demand)",
@@ -202271,12 +202346,12 @@
    "built": "2026-11-23 12:11"
   }
  ],
- "heartbeat": "2026-11-23 12:28",
+ "heartbeat": "2026-11-23 12:30",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 110,
+ "_pushed_feed": 111,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -202383,8 +202458,8 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 116.585,
-  "TLN": 363.55
+  "BWXT": 116.74,
+  "TLN": 364.125
  },
  "notes_audit": {
   "scout": {
@@ -202409,16 +202484,16 @@
    "since": "2026-11-23"
   },
   "level": {
-   "asked": 6,
-   "used": 5,
+   "asked": 7,
+   "used": 6,
    "notes": {
-    "TLN Snapshot": 3,
-    "TLN Price behavior": 3,
-    "TLN Discoveries": 2,
+    "TLN Snapshot": 4,
+    "TLN Price behavior": 4,
+    "TLN Discoveries": 3,
     "TLN Our trades": 3,
-    "VST Snapshot": 1,
+    "VST Snapshot": 2,
     "VST Price behavior": 1,
-    "TLN What history says": 2,
+    "TLN What history says": 3,
     "desk_notes intel: PJM capacity auction delay": 1,
     "TLN intel_disruption (PJM auction delay)": 1,
     "SECTOR macro: market regime": 1,
@@ -202442,14 +202517,14 @@
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 2,
-   "used": 2,
+   "asked": 3,
+   "used": 3,
    "notes": {
     "BWXT Deals and contracts": 1,
     "BWXT Snapshot": 1,
     "BWXT Leadership and insiders": 1,
     "TLN Snapshot": 1,
-    "SECTOR Uranium market": 1
+    "SECTOR Uranium market": 2
    },
    "since": "2026-11-23"
   },
@@ -202463,13 +202538,14 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 1,
-   "used": 1,
+   "asked": 2,
+   "used": 2,
    "notes": {
-    "SECTOR Uranium market": 1,
+    "SECTOR Uranium market": 2,
     "BWXT Snapshot": 1,
     "CCJ Snapshot": 1,
-    "UUUU Snapshot": 1
+    "UUUU Snapshot": 1,
+    "SECTOR Government and laws": 1
    },
    "since": "2026-11-23"
   },
@@ -202498,12 +202574,13 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 1,
-   "used": 1,
+   "asked": 2,
+   "used": 2,
    "notes": {
     "BWXT Price behavior": 1,
     "CCJ Snapshot": 1,
-    "BWXT Snapshot": 1
+    "BWXT Snapshot": 1,
+    "SECTOR Uranium market": 1
    },
    "since": "2026-11-23"
   }
@@ -202629,7 +202706,7 @@
    ],
    [
     "2026-11-23",
-    61.72
+    61.73
    ]
   ],
   "NXE": [
@@ -203117,7 +203194,7 @@
    ],
    [
     "2026-11-23",
-    5.34
+    5.36
    ]
   ],
   "LEU": [
@@ -203239,7 +203316,7 @@
    ],
    [
     "2026-11-23",
-    88.38
+    88.17
    ]
   ],
   "BWXT": [
@@ -203361,7 +203438,7 @@
    ],
    [
     "2026-11-23",
-    116.59
+    116.69
    ]
   ],
   "CEG": [
@@ -203605,7 +203682,7 @@
    ],
    [
     "2026-11-23",
-    124.9
+    124.96
    ]
   ],
   "TLN": [
@@ -203727,7 +203804,7 @@
    ],
    [
     "2026-11-23",
-    363.58
+    364.1
    ]
   ]
  },
@@ -203761,8 +203838,38 @@
    "price": 5.35,
    "result": null,
    "why": "The headline reads like a recap of a move that already happened, with no new hard numbers I can verify. Desk notes show deal-driven spikes in UUUU historically faded (median next-20-day move slightly "
+  },
+  {
+   "role": "risk",
+   "ticker": "TLN",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-23",
+   "price": 363.76,
+   "result": null,
+   "why": "The basket is about 6.5% below its 10-day average and the sector pulse is negative, while TLN's setup is only a 2.4% distance to entry with a tight stop. Our rules bar new buys while the basket is fal"
+  },
+  {
+   "role": "level",
+   "ticker": "TLN",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-23",
+   "price": 364.12,
+   "result": null,
+   "why": "Price is a one-day 8.6% spike, support is untested, and the market regime is weak, so a resting buy here is more likely to be chasing a bounce than catching a real support hold. The PJM auction delay "
   }
  ],
  "after_sale": [],
- "cancels": []
+ "cancels": [
+  {
+   "ticker": "TLN",
+   "entry": 355.66,
+   "stop": 349.99,
+   "target": 369.46,
+   "date": "2026-11-23",
+   "valid_until": "2026-11-30",
+   "why": "team huddle"
+  }
+ ]
 }
