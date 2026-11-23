@@ -332,6 +332,20 @@ button.act:hover{filter:brightness(1.08)}
 .stories{cursor:grab;user-select:none}.stories.drag{cursor:grabbing}.stories.drag *{pointer-events:none}
 .trk{margin:12px auto 0;max-width:330px;background:var(--sheet);border:1px solid var(--hair);border-radius:12px;padding:10px 12px;text-align:left}
 .trk b{display:block;font-size:14px;margin-bottom:4px}.trk span{display:block;font-size:12.5px;color:var(--ink2);line-height:1.5}
+
+/* three columns on big screens: account | feed | messages (docked, always open) */
+@media (min-width:1480px){
+  .wrap{max-width:1640px}.shell{max-width:1640px}
+  .cols{grid-template-columns:380px minmax(0,620px) 420px;gap:48px;justify-content:center}
+  .dm.docked{position:sticky;top:64px;inset:auto;z-index:1;align-self:start;height:calc(100vh - 80px)}
+  .dm.docked .dmscrim{display:none}
+  .dm.docked .dmpanel{position:static;width:auto;height:100%;border:1px solid var(--hair);border-radius:16px;background:var(--sheet);
+    overflow:auto;scrollbar-width:thin;scrollbar-color:#2B3035 transparent;animation:none;padding:12px 14px 24px}
+  .dm.docked .dmpanel::-webkit-scrollbar{width:6px}.dm.docked .dmpanel::-webkit-scrollbar-thumb{background:#2B3035;border-radius:6px}
+  .dm.docked .row2:hover{background:var(--sheet2)}
+  .dmbtn{display:none}
+  .dm.docked [data-act=close]{display:none}
+}
 </style></head>
 <body><div class="wrap">
 __BANNER__
@@ -813,13 +827,21 @@ function stockState(t){
   /* ----- DM panel */
   const KIND={morning:"Morning meeting",news:"News decision",review:"Daily review",postmortem:"Trade postmortem",owner:"Your post",huddle:"Team huddle",research:"Research session",decision:"Decision"};
   let stack=[];
-  function openDM(view){$("dm").hidden=false; document.body.style.overflow="hidden";
-    stack=view.v==="group"?[{v:"inbox"},{v:"groups"},view]:view.v==="agent"?[{v:"inbox"},view]:[view]; render(); ls.set(seenKey,MS.length?MS.map(m=>m.ts).sort().pop():""); $("dmcount").textContent="";}
-  function close(){$("dm").hidden=true; document.body.style.overflow=""; stack=[];}
+  /* wide screens: messages live in a third column instead of a sliding overlay */
+  const WIDE=matchMedia("(min-width:1480px)");
+  const docked=()=>WIDE.matches;
+  function placeDM(){const dm=$("dm"), cols=document.querySelector(".cols");
+    if(docked()){ if(dm.parentNode!==cols) cols.appendChild(dm); dm.hidden=false; dm.classList.add("docked"); document.body.style.overflow=""; if(!stack.length){stack=[{v:"inbox"}]; render();} }
+    else { if(dm.parentNode===cols) document.body.appendChild(dm); dm.classList.remove("docked"); if(dm.dataset.open!=="1") dm.hidden=true; }}
+  function openDM(view){$("dm").hidden=false; $("dm").dataset.open="1"; if(!docked()) document.body.style.overflow="hidden";
+    stack=view.v==="group"?[{v:"inbox"},{v:"groups"},view]:view.v==="agent"?[{v:"inbox"},view]:[view]; render(); ls.set(seenKey,MS.length?MS.map(m=>m.ts).sort().pop():""); $("dmcount").textContent="";
+    if(docked()) $("dm").scrollTop=0;}
+  function close(){ if(docked()){stack=[{v:"inbox"}]; render(); return;} $("dm").hidden=true; $("dm").dataset.open=""; document.body.style.overflow=""; stack=[];}
   function go(view){stack.push(view); render();}
   function back(){stack.pop(); stack.length?render():close();}
   $("dmbtn").onclick=()=>openDM({v:"inbox"}); $("dmscrim").onclick=close;
   document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("dm").hidden) close();});
+  setTimeout(()=>{placeDM(); WIDE.addEventListener("change",placeDM);},0);
   const top=(title,canBack)=>(canBack=canBack&&stack.length>1,0)||`<div class="dmtop">${canBack?`<button data-act="back" aria-label="Back">←</button>`:""}<h2>${esc(title)}</h2><button data-act="close" aria-label="Close">✕</button></div>`;
   const bubble=(m,me)=>`<div class="bb${me?" me":""}">${me?"":AV(m.who)}<div class="bub" style="margin-left:${me?0:8}px"><div class="who"><b>${esc(nm(m.who))}</b>${m.to&&m.to!=="team"?` to ${esc(nm(m.to))}`:""} ${esc(m.t)}</div><div class="txt">${esc(m.text)}</div>${m.c?`<div class="ctx">${esc(m.c.title)}</div>`:""}</div></div>`;
   function render(){try{render_()}catch(e){$("dmbody").innerHTML=top("Something went wrong",true)+`<p class="empty">${esc(e.message)}</p>`;$("dmbody").querySelectorAll("[data-act=back]").forEach(b=>b.onclick=back);$("dmbody").querySelectorAll("[data-act=close]").forEach(b=>b.onclick=close);}}
