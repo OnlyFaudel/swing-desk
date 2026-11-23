@@ -1994,7 +1994,9 @@ def main():
             threading.Thread(target=stream, daemon=True).start()
             if CFG.get("hawk", {}).get("stream_prices"):
                 threading.Thread(target=hawk_stream, args=(st, wake), daemon=True).start()
-        notify("Swing Desk online", f"Always-on mode started ({br.name}). Hawk mode: live prices, news every minute.", tags="green_heart")
+        if time.time() - st.get("online_at", 0) > 6 * 3600:  # restarts after code updates happen often: announce only real starts
+            notify("Swing Desk online", f"Always-on mode started ({br.name}). Hawk mode: live prices, news every minute.", tags="green_heart")
+        st["online_at"] = time.time()
         last_cycle = 0
         while True:
             now = market.now_et()
