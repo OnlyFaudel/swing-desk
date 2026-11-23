@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -766,6 +766,8 @@ def research_run(st, desk):
 HUDDLE_ROLES = {"level": "Level Analyst: is the support level near the price still clean, or is it about to break?",
                 "whale": "Whale Watcher: what do options, short volume and insider activity say right now?",
                 "macro": "Macro Analyst: is this a market-wide or sector-wide move, or just this stock?",
+                "engineer": "Plant Engineer: what is physically going on at the plants, mines, mills or enrichment behind this "
+                            "(outage, refueling, permit, fuel supply, power prices), which company it really affects and for how long?",
                 "investigator": "News Investigator: is there news behind this, and is it new or already priced in?",
                 "risk": "Risk Manager: argue against whatever the team leans toward if there is a concrete reason.",
                 "pm": "Portfolio Manager: close the huddle with one decision."}
@@ -829,9 +831,10 @@ def huddle(st, desk, ex, data, prices, today, brk_state, hawk):
                 "holding": account.lot(st["book"], t, "trade") if account.lot(st["book"], t, "trade")["qty"] > 1e-6 else None,
                 "why_no_setup": (st.get("setup_status") or {}).get(t)} for t in tickers if t in prices}
     ctx = {"why_we_are_talking": reasons, "stocks": snap, "sector_pulse": {k: (st.get("sync") or {}).get(k) for k in ("pulse_up", "basket_vs_avg_pct")},
-           "nowcast": st.get("nowcast"), "recent_headlines": [f["title"] for f in st["news_feed"] if f["ticker"] in tickers][-8:]}
+           "nowcast": st.get("nowcast"), "recent_headlines": [f["title"] for f in st["news_feed"] if f["ticker"] in tickers][-8:],
+           "plants_now": plant.snapshot(st)}
     order = (["level"] if any("buy" in x for x in reasons) else []) + (["investigator"] if any("fast move" in x for x in reasons) else []) \
-        + ["macro", "risk"]
+        + (["engineer"] if any("fast move" in x or "sector move" in x for x in reasons) else []) + ["macro", "risk"]
     order = list(dict.fromkeys(order))[: max(1, hc["max_turns"] - 1)]
     with feed.thread("Huddle: " + reasons[0][:70], tickers, kind="huddle"):
         feed.say("chief", "Quick huddle. Why: " + "; ".join(reasons) + ".", to="team")
@@ -1227,6 +1230,21 @@ def intel_tick(st, today, force=False):
             print("reactor watch failed", e)  # the NRC site blocks some cloud servers: try again in an hour, not tomorrow
             st["flags"].pop(f"reactors:{today}", None)
             st["reactor_retry_at"] = time.time() + 3600
+    if (now.time() >= dt.time(8, 35) and st["flags"].get(f"reactors:{today}") and not st["flags"].get(f"plantrep:{today}")
+            and DESK.get("d") and DESK["d"].available):  # the Plant Engineer's morning report, once the NRC numbers are in
+        st["flags"][f"plantrep:{today}"] = True
+        try:
+            with feed.thread(f"Plant report {today:%b %d}", ["CEG", "VST", "TLN", "CCJ", "LEU"], kind="research"):
+                rep = DESK["d"].ask("engineer", "fast", "Plant Engineer, morning plant report for the team and the owner. From "
+                                    "plants_now: which of our companies' reactors are down or back, whether that's routine "
+                                    "(refueling season) or a surprise, anything at mines, mills or enrichment, and what it means "
+                                    "for which stock today. 3 short plain sentences, no jargon without explaining it. "
+                                    '{"say":"","to":"team"}', plant.context(st), max_tokens=500)
+            if rep.get("say"):
+                feed.post("engineer", rep["say"], ["CEG", "VST", "TLN"], kind="data",
+                          art={"big": "Plant report", "sub": f"Reactors, mines and fuel, {today:%b %d}"})
+        except Exception as e:
+            print("plant report", e)
     if now.time() >= dt.time(7, 0) and not st["flags"].get(f"world:{today:%G-W%V}"):  # weekly: the country table
         st["flags"][f"world:{today:%G-W%V}"] = True
         try:
@@ -1532,11 +1550,20 @@ def _convene_news(st, desk, ex, data, prices, today, t, mat):
         ch = market.snapshot(data[t], prices[t]) if t in data else {}
         material = [{k: m.get(k) for k in ("title", "summary", "source", "link", "materiality", "direction", "novelty", "event_type")} for m in mat]
         entry["investigator"] = desk.investigator(t, material, [f["title"] for f in st["news_feed"] if f["ticker"] == t][-15:], ch)
+        try:
+            entry["engineer"] = desk.ask("engineer", "fast", "Plant Engineer: the team's expert on how nuclear plants, mines, mills, "
+                                         "enrichment and power markets physically work. Using how_it_works and plants_now, explain to the "
+                                         "traders what this news means in the real world: what actually changes, for which company, how "
+                                         "big, and for how long (days, months, years). Say if it's routine (e.g. a planned refueling). "
+                                         "2-4 plain sentences. " '{"say":"","to":"team","real_effect":"","lasts":"days|weeks|months|years","routine":false}',
+                                         {"ticker": t, "news": material, **plant.context(st)}, max_tokens=500)
+        except Exception as e:
+            entry["engineer"] = {"error": str(e)[:100]}
         sec = [m for m in material if m["source"] == "SEC filing"]
         if sec:
             entry["filings"] = desk.filings(t, sec)
         ctx = {"ticker": t, "held_trade": held, "armed_or_waiting_buy": st["candidates"].get(t),
-               "investigator": entry["investigator"], "filings": entry.get("filings"), "chart": ch,
+               "investigator": entry["investigator"], "plant_engineer": entry.get("engineer"), "filings": entry.get("filings"), "chart": ch,
                "desk_memory_playbook": memory.playbook(st, t), "active_theses": active_theses(st, t),
                "similar_past_events": desk_memory.similar(mat[0]["title"], t),
                "what_this_kind_of_event_did_before": desk_memory.playbook(mat[0].get("event_type") or "other", list(T)),
