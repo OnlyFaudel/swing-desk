@@ -9128,5 +9128,103 @@
 "warning",
 "weaken"
 ]
+},
+{
+"id": "dc017bf19b7c4b8d",
+"date": "2026-11-20",
+"ts": 1795187009,
+"title": "Radiation Exposure Compensation Act pays uranium workers $100,000",
+"summary": "",
+"outlet": "Canon City Daily Record",
+"link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZXdxRnc2UE9nOWR0aGo5d3o4LVpjemctMThSYy05cUhHcUh6TThNU3BHbUtmSkNLVDF3eXYzYTN5azU5RE1SRkhhY0VYb3FJLTZ2TlBPYUsxQWQ5UnBQSjBwTHhRV1Y3VU1obGFPdGJ4V01KeElBWk4zbFJwMkpCdzBEVTJOclRzczJvcEpMY2o4QzdvMklkaUlLSVdmUG9kR2FtY0t3UXNPSUNlaWI3NDFn?oc=5",
+"place": "Congress and laws",
+"tickers": [
+"CCJ",
+"LEU",
+"CEG",
+"UEC",
+"UUUU"
+],
+"tags": [
+"jobs"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.87,
+"score": 4.84,
+"echo_of": null,
+"w": [
+"000",
+"100",
+"act",
+"compensation",
+"exposure",
+"pays",
+"radiation",
+"uranium",
+"workers"
+]
+},
+{
+"id": "95cbeeb9e5e1fd0d",
+"date": "2026-11-23",
+"ts": 1795412224,
+"title": "Romania\u2019s Nuclearelectrica posts loss in Q3 on Cernavoda NPP shutdown",
+"summary": "",
+"outlet": "Romania Insider",
+"link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPejJlY2laMEhmMlRMbEZlV1M3VmQwS0J5RGdTemdUNG9lVy00bEpoakpTX2w2cDlJamRCYTJQcDdmVUozNEhQNGhicVpBYWdISTlhUVAybzQ5T1k5SEh1V1Z1VmlYZDJqS1lVa1FMRFc4YUFWSHIyVXBOeHV1VjRsS0RFOUg4b29QR0huVXVQWTJaaUZ3TUtIemFySGZjLXVOYVpqYU9B?oc=5",
+"place": "Europe new builds",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.92,
+"score": 6.34,
+"echo_of": null,
+"w": [
+"cernavoda",
+"loss",
+"npp",
+"nuclearelectrica",
+"posts",
+"romania",
+"shutdown"
+]
+},
+{
+"id": "5298ad87eeddc34f",
+"date": "2026-11-23",
+"ts": 1795416180,
+"title": "3 experts suspend participation in Korea's nuclear power deliberations",
+"summary": "",
+"outlet": "Chosunbiz",
+"link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbWpBTUxIcEk2dVk2ZF9FOE45a1RQdF9CY1NDd0Y0Y0FPMHV1aGZSWkl5SE9MMGFsRW5PY0JFcG9CT0E2Q3dWZ0VyVlF5N2N3bWtrMXZJT2JiZUp6aXNleGY0NUthSi1fOURfaDRnQU52a0NxS2NMVnBRZzllZy0yQk130gGWAUFVX3lxTE1veDhJM250b3RTUkNzUmZBWFE1eEpSeWgxWFlsRmtES2tvbk1BUHlLRlducWlfWVlHVjR0ZDFac3RPckxmYl9KbEhiZnVDeVpwekVaeEtGejY2eGFnQnVwY01zSUctSG5mY2ZNYnRPWElNZnZ1VkV3bnlFVlJCc1JyZzNoVzltRF9vZFR4Mzc5eXZJSERqZw?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.79,
+"score": 6.08,
+"echo_of": null,
+"w": [
+"deliberations",
+"experts",
+"korea",
+"nuclear",
+"participation",
+"power",
+"suspend"
+]
 }
 ]
