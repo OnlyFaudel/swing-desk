@@ -627,10 +627,41 @@ def hawk_events(st):
     """Called each cycle: a fast move makes the whole news net (slow lane too) run right now."""
     if not HAWK_EVENTS:
         return []
-    ev = list(dict.fromkeys(HAWK_EVENTS)); HAWK_EVENTS.clear()
+    import re
+    raw = list(dict.fromkeys(HAWK_EVENTS)); HAWK_EVENTS.clear()
     st["news_slow_at"] = 0
-    feed.post("chief", "Hawk alert: " + "; ".join(ev) + ". Checking every news channel for a reason right now.",
-              [t for t in T if any(e.startswith(t) for e in ev)], kind="alert",
+    now, et = time.time(), market.now_et()
+    thr = CFG["hawk"]["move_alert_pct"]
+    mine = set(traded(st)) | set(st.get("armed") or {})  # stocks we hold or have an order on: always worth a look
+    recent = [x for x in st.get("hawk_recent", []) if now - x[0] < 900]
+    cool = st.setdefault("hawk_cool", {})
+    opening = dt.time(9, 30) <= et.time() < dt.time(9, 45)  # the first 15 minutes are always jumpy: only big moves count
+    ev = []
+    for e in raw:
+        m = re.match(r"(\w+) moved ([+-][\d.]+)%", e)
+        if not m:
+            ev.append(e); continue  # target touches and anything else always pass
+        t, pct = m.group(1), float(m.group(2))
+        recent.append((now, t, 1 if pct > 0 else -1))
+        big = abs(pct) >= 2 * thr
+        if t in mine or big:
+            ev.append(e); continue
+        if opening or now < st.get("hawk_sector_until", 0) or now - cool.get(t, 0) < 1200:
+            continue
+        cool[t] = now
+        ev.append(e)
+    st["hawk_recent"] = recent
+    for sign in (1, -1):
+        names = sorted({t for _, t, s in recent if s == sign})
+        if len(names) >= 4 and now >= st.get("hawk_sector_until", 0):
+            st["hawk_sector_until"] = now + 1800
+            word = "up" if sign > 0 else "down"
+            msg = f"sector move: {len(names)} of our nuclear stocks moving {word} together ({', '.join(names)})"
+            ev = [x for x in ev if not any(x.startswith(t + " moved") for t in names if t not in mine)] + [msg]
+    if not ev:
+        return []
+    feed.post("chief", "Hawk alert: " + "; ".join(ev) + ". Checking the news for a reason.",
+              [t for t in T if any(t in e for e in ev)], kind="alert",
               art={"big": ev[0], "sub": "Live price alert. The team is checking the news."})
     return ev
 
