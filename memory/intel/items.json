@@ -9226,5 +9226,146 @@
 "power",
 "suspend"
 ]
+},
+{
+"id": "b3d0414ef4889ee9",
+"date": "2026-11-23",
+"ts": 1795422677,
+"title": "Talen Energy Corporation $TLN Stock: Boston Partners Cuts Holdings",
+"summary": "",
+"outlet": "MarketBeat",
+"link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPc2N3NUFKdExmRVBGWUxxZF9FNkp0eVFiVWpwN0lkdHhSbDlLaUExZElyNFc2bmpkVC1OV0lZQ2dlalB4RXRSMl9uVnhicFZTSG1jTEhlUWdDMnM1SXd5OVd6eVJhTEpHWUhRRTlrZWZEUks1ZmdEaDhQeXpLUmZNWUVmLVJGa242MkEyYldZeGduVnMzSW9XYlJKQUVsNkxaQUg0WEtCelZIQl9UZ0hRVkRqSDVWenJWSDQ4QVlBd0tGMHM?oc=5",
+"place": "Susquehanna",
+"tickers": [
+"TLN"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.54,
+"score": 2.58,
+"echo_of": null,
+"w": [
+"boston",
+"corporation",
+"cuts",
+"energy",
+"holdings",
+"partners",
+"stock",
+"talen",
+"tln"
+]
+},
+{
+"id": "53acee667b837b0c",
+"date": "2026-11-20",
+"ts": 1795184077,
+"title": "Romania Plans to Double Cernavoda Nuclear Plant Capacity and Raise Nuclear Energy Share Above 35%",
+"summary": "",
+"outlet": "BGNES",
+"link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNHUwYTNXN2VrMm9Rc3hyTEdoWEJ5UVNqNlJyeTA5MU1TUGs1RExGeWtJRFhfTTFCRkNfUUs0cEpYVTNpX3h1Yk1iaTVMbEpqdXFsWDlmcUczdzg2dVI0a3dlMUNkdTRJZmVGNG5PWm1adnZnVkZQNGUtUTBXLXlVNU5VcUZWcWVvMUNKbkNVcnpUMjJOU0lKQVVXSEdpc1o2RllIMFM2T1pHdFdqVGtiSDVNWVBsMkt4UUYzbDZmdEtSRllX?oc=5",
+"place": "Europe new builds",
+"tickers": [
+"CCJ",
+"BWXT",
+"CEG"
+],
+"tags": [],
+"numbers": [
+"35%"
+],
+"local": true,
+"novelty": 0.8,
+"score": 4.6,
+"echo_of": null,
+"w": [
+"above",
+"capacity",
+"cernavoda",
+"double",
+"energy",
+"nuclear",
+"plans",
+"plant",
+"raise",
+"romania",
+"share"
+]
+},
+{
+"id": "c32754af84ade34a",
+"date": "2026-11-21",
+"ts": 1795289856,
+"title": "Explosions were heard in Zaporizhzhia; traffic across the Dnipro Hydroelectric Power Plant was completely halted",
+"summary": "",
+"outlet": "UA.NEWS",
+"link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPeFRmMDFkREN6YUJoN25ZODV2Zk5RQy1iQUx2UHRNd3ZZaHdNYWp1WkU1YUhxanRVODBndTNRRGVsYUhIdndPdVJyZFd6SGhHUXNQQVA2dHdrZmE5LVAyVXNJY0d6NFVnSkdmT193dDlqTk5iVHBzc2JZSVE1bkRZWWgyQkJpRG8xT2NHR0l5UmZHaVpDTEpFckRGMDdhWGNYUFUw?oc=5",
+"place": "War zones",
+"tickers": [
+"CCJ",
+"CEG"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.82,
+"score": 6.14,
+"echo_of": null,
+"w": [
+"across",
+"completely",
+"dnipro",
+"explosions",
+"halted",
+"heard",
+"hydroelectric",
+"plant",
+"power",
+"traffic",
+"were",
+"zaporizhzhia"
+]
+},
+{
+"id": "9e7ebdf62031eeaf",
+"date": "2026-11-23",
+"ts": 1795407600,
+"title": "KHNP Presses Ahead With Termination of Czech Nuclear Plant Construction Agreement... 'Controversy' Ahead of National Assembly Review",
+"summary": "",
+"outlet": "\ud30c\uc774\ub0b8\uc15c\ub274\uc2a4",
+"link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAzUDVUcjVrUFhTdUxLYVV2b0M3azlMLV92SG9vOFVMRXQ2UllabFk4bVR3RlA1VTB4RzNHQnk2S2d6WXhNVWJoMmVhQWhBTUxkN3ppNmVCR0E?oc=5",
+"place": "Europe new builds",
+"tickers": [
+"CCJ",
+"BWXT",
+"CEG"
+],
+"tags": [
+"contract",
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.8,
+"score": 6.1,
+"echo_of": null,
+"w": [
+"agreement",
+"ahead",
+"assembly",
+"construction",
+"controversy",
+"czech",
+"khnp",
+"national",
+"nuclear",
+"plant",
+"presses",
+"review",
+"termination"
+]
 }
 ]
