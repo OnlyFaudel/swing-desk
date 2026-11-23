@@ -72,6 +72,22 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "BWXT",
+"what": "Patient Levels buy window expires; check whether the basket has recovered above its 10-day average before any order",
+"by": "risk",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "BWXT",
+"what": "Setup valid_until expires; re-check basket vs 10-day average and whether the zone $113.99-$117.21 still holds before any new entry.",
+"by": "pm",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
