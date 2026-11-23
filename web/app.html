@@ -373,7 +373,7 @@ function human(t){
      .replace(/\b([a-z]+_[a-z_]+|hour)\s*(==|>=|<=|>|<)\s*(True|False|[\d.]+)/g,(_,f,op,v)=>{const n=FEAT[f]||f.replace(/_/g," ");
         return v==="True"?n:v==="False"?"not "+n:`${n} ${op.includes(">")?"above":"below"} ${v}${/pct$/.test(f)?"%":""}`;})
      .replace(/\bweekday = (Mon|Tue|Wed|Thu|Fri)\b/g,(_,d)=>DAYS[d]+" buys")
-     .replace(/,?\s*(with\s+)?p\s*[=≈~]\s*\d[\d.]*/g,"").replace(/\s*\(R = what one trade risks\)/g,"").replace(/\s*\(n\s*=\s*([\d,]+)\)/g," ($1 trades)").replace(/\bn=([\d,]+)/g,"$1 trades")
+     .replace(/,?\s*(with\s+)?p\s*[=≈~]\s*\d+(?:\.\d+)?/g,"").replace(/\s*\(R = what one trade risks\)/g,"").replace(/\s*\(n\s*=\s*([\d,]+)\)/g," ($1 trades)").replace(/\bn=([\d,]+)/g,"$1 trades")
      .replace(/(\d+\.\d{2})\d+/g,"$1")             // at most 2 decimals
      .replace(/(\d+\.\d+) sh\b/g,(_,q)=>(+q).toFixed(2)+" shares")
      .replace(/\bR:R\b/g,"reward/risk").replace(/([+−-]?\d+(?:\.\d+)?)R\b/g,"$1x risk")
