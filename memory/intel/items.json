@@ -13056,5 +13056,137 @@
 "targets",
 "uranium"
 ]
+},
+{
+"id": "3b9505558ff12bd0",
+"date": "2026-11-22",
+"ts": 1795387839,
+"title": "Koba Receives Up to $257,500 for Everest Uranium Exploration",
+"summary": "",
+"outlet": "TipRanks",
+"link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVy1xWUp1UF8yRTI0RnRpX2llR3FULThZMWJLVVNZRGw4anlsSXZDMEtPSFhOcWxoZTZZUUtCaS04ZnkxdWNIaTh6bWU2YmpVQkxvOHltX0Q2SlNBSGJhZDUzZ2IyaTl1VUZaSEVlaWNNbkhkbnZyemVZM1plTmVUT2xRci1zdnktUE8zUkdCOUNOd21iMG52VUlhTTFESlFQaGhNUnZlMGxPRjJfYnZv?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.82,
+"score": 3.14,
+"echo_of": null,
+"w": [
+"257",
+"500",
+"everest",
+"exploration",
+"koba",
+"receives",
+"uranium"
+]
+},
+{
+"id": "c2987c10404bf5fc",
+"date": "2026-11-23",
+"ts": 1795443622,
+"title": "Generation Uranium Appoints Director, Updates Activities and Grants Stock Options",
+"summary": "",
+"outlet": "Investing News Network",
+"link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPd01GdXZSOWlBdWl2M3hhU1RzQVVFRjBSckhFa0w3VlFpdEprM0d5RU9nRnpZX1RwdnJxWVFzUS1kVzhFT3Rpa1ZFVVFHUHhSZ1ltSFVjYkt1cEZEbEw5bTBZWHdON19JNTdGQVpWbm1JRzRvX3NhdTNWQ2tqb3RvRnVFeVgwWmdHUGotaXJHWjg3SkVZQmx6VnZuX2otU0VxbG50XzdiSmpOLWc?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "87e89d05178171d2",
+"w": [
+"activities",
+"appoints",
+"director",
+"generation",
+"grants",
+"options",
+"stock",
+"updates",
+"uranium"
+]
+},
+{
+"id": "c928dcc41ecc5a41",
+"date": "2026-11-23",
+"ts": 1795446714,
+"title": "Uranium stocks rally as Huang returns to Nvidia",
+"summary": "",
+"outlet": "The Northern Miner",
+"link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWnU2bUxLb2NvTG5rajhzVlR2Z0NXWFdsMFhMc05hRTZsOXBMUTNYMEc5cmJ1Vm5ENnhyUDBTQkFmbW5xak51eW5pam9lZVFEeWJnMWVCRm13Mnpjc3Q2NC1XLTU0V1JuVnlmLVhmTTliUW9KQi1pSFU0YTNSNF9jWmozNEJ4dFBhMVZTRnZEZVJORFNNM3U0ZEhn?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "9cee24c18c288d5e",
+"w": [
+"huang",
+"nvidia",
+"rally",
+"returns",
+"stocks",
+"uranium"
+]
+},
+{
+"id": "a89aac9260f9e117",
+"date": "2026-11-23",
+"ts": 1795476382,
+"title": "Czech Ambulance Bases Planned Near Jihlava and Dukovany Nuclear Plant After Record Call-Outs",
+"summary": "",
+"outlet": "Tech Times",
+"link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRDRBN242NXN3clBqM0trYVRuUUZpUVhtSUp0Q1ZsX1VObFdfcVZIbEZ6OEJxUm4zQUJhWGdBTkV1UVJmVEhPX3B3UE9WTWhHMjdKSVE3VmVzTGFILUtrSDFrYXVJbEJoLWFoaFFZdDNJRWRyVElNOGhOeUhQTTdKZXBlTS0wNV83VzBVXzdCQ3ZBa3dzLTFYTW8xZDFfNjB4VV91OVo0cVp2QzczQTBqakg2ZUZKU19nZV8xdUN5aHc2Y3JXNC1QVEZtSkhIM3MxeTNzY3hVQlJWR0E?oc=5",
+"place": "Europe new builds",
+"tickers": [
+"CCJ",
+"BWXT",
+"CEG"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.79,
+"score": 4.08,
+"echo_of": null,
+"w": [
+"ambulance",
+"bases",
+"call",
+"czech",
+"dukovany",
+"jihlava",
+"near",
+"nuclear",
+"outs",
+"planned",
+"plant",
+"record"
+]
 }
 ]
