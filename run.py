@@ -1045,19 +1045,13 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
                                "sector_only_panics": "no edge"},
                    "recent_headlines": [f"{f['ticker']}: {f['title']}" for f in st.get("news_feed", [])[-15:]], "local_intel": intel_brief(6)}
             try:
-                desk.ask("macro", "fast", "Macro Analyst. It's a market panic day and the panic-day rebound rule is about to buy near the "
-                         "close. Why is the market falling today (what's driving it), and does it look like a one-off scare or the "
-                         "start of something bigger? 2 sentences. " '{"say":"","to":"team"}', ctx, max_tokens=300)
-                desk.ask("investigator", "fast", "News Investigator. For the rule's picks, is any of them falling for its OWN bad news "
-                         "(earnings, offering, accident) rather than with the market? That matters: the rebound is about "
-                         "market-wide selling. 2 sentences. " '{"say":"","to":"team"}', ctx, max_tokens=300)
-                pmv = desk.ask("pm", "fast", "Portfolio Manager. The rules buy the picks (that's what was tested) and set a size for each from "
-                               "the VIX and how hard the stock fell (rule_size_pct). You decide the final size: keep it, or move it ONE step up "
-                               "or down on size_steps_pct, using what the Macro Analyst and News Investigator just said (a stock falling on its "
-                               "own bad news or a crash starting = down; a clean market-wide flush = up). Your sizing is scored against the "
-                               "rule's after every trade. Also say buy or skip as your own view. "
-                               '{"say":"","to":"team","views":[{"ticker":"","view":"buy|skip","size":"up|same|down","why":""}]}',
-                               ctx, max_tokens=450)
+                pmv = team_debate(st, desk, "It's a market panic day and the panic-day rebound rule is about to buy the picks near the close. "
+                                  "Is this a one-off scare or the start of a crash? Is any pick falling on its OWN bad news? How big should each bet be?",
+                                  ctx, "The rules buy the picks (that's what was tested) and set a size for each (rule_size_pct). You decide the "
+                                  "final size: keep it, or move it ONE step up or down on size_steps_pct, based on the debate. Your sizing is "
+                                  "scored against the rule's. Also say buy or skip as your own view. "
+                                  '{"say":"","to":"team","views":[{"ticker":"","view":"buy|skip","size":"up|same|down","why":""}]}',
+                                  max_tokens=700)
                 views = {v.get("ticker"): v for v in (pmv or {}).get("views") or [] if isinstance(v, dict)}
             except Exception as e:
                 feed.say("system", f"Agents unavailable: {e}"[:150])
@@ -1856,6 +1850,61 @@ def handle_news(st, desk, ex, data, prices, today, brk_state):
         convene_news(st, desk, ex, data, prices, today, t, mat)
 
 
+DEBATE_SEATS = {
+    "macro": "Macro Analyst: the market, rates, the sector's trend and what the uranium price and Sprott trust say.",
+    "engineer": "Plant Engineer: what is physically going on (plants, mines, enrichment, power prices, weather) and for how long.",
+    "investigator": "News Investigator: the facts in the news and filings, what's new vs already known, lawsuits, deals, promises.",
+    "whale": "Whale Watcher: options, short interest, insiders, big holders, analysts.",
+    "crowd": "Crowd Reader: what retail and chatter are doing, and whether the move is already crowded.",
+    "level": "Level Analyst: the chart, support and resistance, how this stock behaves after moves like this.",
+    "risk": "Risk Manager: what could go wrong, the worst case in dollars, and whether the size is right.",
+}
+
+
+def team_debate(st, desk, question, ctx, decide_prompt, extra=(), max_tokens=700):
+    """The whole team on one decision: every seat gives its view from its own files, then everyone reads everyone else,
+    challenges what they disagree with or think was misread, and updates. The Portfolio Manager decides last, having
+    heard all of it. Returns the PM's decision (dict in the format decide_prompt asks for)."""
+    seats = dict(DEBATE_SEATS)
+    for e in extra:
+        if e == "optspec":
+            seats["optspec"] = "Options Specialist: what the options market prices in, and whether an options trade beats buying the stock."
+    feed.say("chief", f"Full-team debate: {question} Everyone gives a view from their own files first, then we argue it out.", to="team")
+    first = {}
+    for role, seat in seats.items():
+        try:
+            o = desk.ask(role, "fast", f"{seat} ROUND 1 of a full-team debate on: {question} Give your honest view from your seat, using the "
+                         "facts in your desk_notes and the context (name the specific fact). Say for, against or unsure. 2-4 sentences. "
+                         '{"say":"","to":"team","stance":"for|against|unsure","key_fact":""}', ctx, max_tokens=450)
+            first[role] = {"stance": o.get("stance"), "said": o.get("say"), "key_fact": o.get("key_fact")}
+        except Exception as e:
+            print("debate r1", role, e)
+    second = {}
+    for role, seat in seats.items():
+        if role not in first:
+            continue
+        try:
+            o = desk.ask(role, "fast", f"{seat} ROUND 2. You've now heard every teammate (round_1). Challenge at least one teammate BY NAME "
+                         "where you disagree or think they misread a fact (check it against the files), say what you learned from "
+                         "the others, and give your final stance. 2-4 sentences. "
+                         '{"say":"","to":"","stance":"for|against|unsure","changed_mind":false}',
+                         {**ctx, "round_1": {feed.PEOPLE.get(k, (k,))[0]: v for k, v in first.items()}}, max_tokens=450)
+            second[role] = {"stance": o.get("stance"), "said": o.get("say"), "changed_mind": o.get("changed_mind")}
+        except Exception as e:
+            print("debate r2", role, e)
+    tally = {s: sum(1 for v in second.values() if v.get("stance") == s) for s in ("for", "against", "unsure")}
+    feed.say("chief", f"Debate done: {tally['for']} for, {tally['against']} against, {tally['unsure']} unsure. Portfolio Manager decides.", to="pm")
+    out = desk.ask("pm", "fast", "Portfolio Manager closing a full-team debate. Weigh the arguments, not the headcount: who brought facts, who "
+                   "was corrected, what nobody could answer. " + decide_prompt,
+                   {**ctx, "round_1": {feed.PEOPLE.get(k, (k,))[0]: v for k, v in first.items()},
+                    "round_2": {feed.PEOPLE.get(k, (k,))[0]: v for k, v in second.items()}, "tally": tally}, max_tokens=max_tokens)
+    out["_debate"] = {"tally": tally}
+    st.setdefault("debates", []).append({"t": feed._now().strftime("%Y-%m-%d %H:%M"), "question": question[:160], "tally": tally,
+                                         "decision": {k: v for k, v in out.items() if not str(k).startswith("_")}})
+    del st["debates"][:-60]
+    return out
+
+
 def conviction_record(st):
     """The team's own calls (not a tested rule): how they have done, and how much money that earns them."""
     tr = [x for x in st["book"]["trades"] if x.get("setup") == "conviction"]
@@ -1927,6 +1976,12 @@ def options_call(st, desk, t, mat, today):
                         "single_put_for_comparison": {"put": q, "replay": ev}, "max_dollars": round(scap, 2)}, max_tokens=500)
         n = min(int(out.get("spreads") or 0), int(scap // (s["debit"] * 100)))
         if str(out.get("decision", "")).upper() == "BUY" and out.get("real_offering") and n >= 1:
+            fin = team_debate(st, desk, f"The Options Specialist wants a practice put spread on {t} after a share offering ({mat[0].get('title', '')[:100]}). Should we?",
+                              {"ticker": t, "spread": s, "replay": sev, "specialist": out}, "Final call: BUY or SKIP the put spread. "
+                              '{"say":"","to":"team","decision":"BUY|SKIP","why":""}', extra=("optspec",))
+            if str(fin.get("decision", "")).upper() != "BUY":
+                feed.post("optspec", f"{t}: the team debated the put spread and said no. {fin.get('why') or fin.get('say') or ''}", [t], kind="data")
+                return
             pos = {"kind": "spread", "ticker": t, "long": s["long"], "short": s["short"], "k_long": s["k_long"], "k_short": s["k_short"],
                    "expiry": s["expiry"], "qty": n, "paid": s["debit"], "date": str(today), "exit_on": sessions_after(str(today), 5),
                    "last_bid": s["mid_debit"], "why": str(out.get("why") or "")[:200], "news": mat[0].get("title")}
@@ -1947,6 +2002,12 @@ def options_call(st, desk, t, mat, today):
                     "history": optspec.TRIGGERS["offering_dilution"]["history"], "max_dollars": round(cap, 2)}, max_tokens=500)
     n = int(out.get("contracts") or 0)
     if str(out.get("decision", "")).upper() == "BUY" and out.get("real_offering") and n > 0 and ev["avg_return_pct"] > 0:
+        fin = team_debate(st, desk, f"The Options Specialist wants practice puts on {t} after a share offering ({mat[0].get('title', '')[:100]}). Should we?",
+                          {"ticker": t, "put": q, "replay": ev, "specialist": out}, "Final call: BUY or SKIP the puts. "
+                          '{"say":"","to":"team","decision":"BUY|SKIP","why":""}', extra=("optspec",))
+        if str(fin.get("decision", "")).upper() != "BUY":
+            feed.post("optspec", f"{t}: the team debated the puts and said no. {fin.get('why') or fin.get('say') or ''}", [t], kind="data")
+            return
         n = min(n, int(cap // (q["ask"] * 100)))
         if n < 1:
             feed.post("optspec", f"{t}: a put would make sense but one contract (${q['ask'] * 100:.0f}) is over the {optspec.MAX_PCT}% "
@@ -2059,7 +2120,19 @@ def _convene_news(st, desk, ex, data, prices, today, t, mat):
         ex_cancel(st, t, "team's news call")
         result = "canceled waiting buy"
     elif action == "BUY":
-        result = conviction_buy(st, ex, prices, today, t, d, mat[0]["title"])
+        try:
+            fin = team_debate(st, desk, f"Should we make a conviction BUY of {t} on this news: \"{mat[0]['title'][:120]}\"? The PM proposed "
+                              f"{d.get('conviction', '?')}/10.", {**ctx, "pm_proposal": d},
+                              "Final call on the conviction buy: BUY or HOLD, with conviction 1-10 (7+ to buy), target_pct, stop_pct, days. "
+                              '{"say":"","to":"team","action":"BUY|HOLD","conviction":0,"target_pct":10,"stop_pct":8,"days":5,"reason":""}')
+            if str(fin.get("action", "")).upper() != "BUY":
+                result = f"debate said no ({fin.get('_debate', {}).get('tally')})"
+                d = fin
+            else:
+                d = {**d, **{k: v for k, v in fin.items() if not str(k).startswith("_")}}
+                result = conviction_buy(st, ex, prices, today, t, d, mat[0]["title"])
+        except Exception as e:
+            result = f"debate failed, no buy: {e}"[:120]
     entry["result"] = result
     desk.record(entry)
     notify(f"Desk on {t}: {action} ({result})", (d.get("reason") or "")[:300], tags="brain")
