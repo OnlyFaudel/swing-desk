@@ -296,30 +296,6 @@
  "news_feed": [
   {
    "ticker": "CCJ",
-   "source": "Yahoo (CEG, related to CCJ)",
-   "title": "Capital Group Div Value (CGDV) Adds Home Depot and Constellation on Nov. 17",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/capital-group-div-value-cgdv-110403334.html?.tsrc=rss",
-   "ts": 1795086243,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Yahoo (CEG, related to CCJ)",
-   "title": "ETFs Are Buying Constellation Energy (CEG) on Tuesday",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/etfs-buying-constellation-energy-ceg-110051815.html?.tsrc=rss",
-   "ts": 1795086051,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CCJ",
    "source": "Google News: Kazatomprom",
    "title": "KASE pulled back, Kazatomprom refreshed its lows - Freedom Broker",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbS1qYTZWbVJpOXNjcmFTdHBqaU5UU25qbGtrb3VxYTg1bWdNUWw2cGR4cTFVTUNYN2FyTkQ2WnB2bVB0RUJXZFEwdHBtbkV6Uk4ydkZhSExpNlF6clFZRVFzWXBzVXRnVXJ2LWtzbXhYUGpwU05iWE5KVDlzNzNMejhCTlBOc1R4c2V6cGc4cUNoM1NQNVVHUFRzMDlmaUlMUDdMRQ?oc=5",
@@ -3293,6 +3269,30 @@
    "direction": "up",
    "event_type": "earnings",
    "why": "Company production target and 2027 sales growth guidance, a real company-specific update."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Generation Uranium Appoints Director, Updates Activities and Grants Stock Options - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPS1d2NTBzMS1FTFVJblI5MVJuN05ya2UwT3AxZHdKNGZNam0zWWl4YnlsVy1wVVpyOXpvd3FJcVlicEJ1WjJGNzc1OXg2M0w4VVFmVVJjeG9QeXJoWmVuQ0cwOU5vREd1VEJjNURjMUpwanVTSlhsdlBsZk9FRk8xbkZJaXFfWmdXN3ltR2RSSGUxcnhITElBbEJiUlJ5M3J6WVJ1SkNJSERzQXZyOEs0RTBObDc2YWVjdVZEQks0c3NNSG1acnU4Z1g3a3RoaDBGdjBlMXVvamVaN3VNMWNvUVFHYzA5Tnc4bE1xZg?oc=5",
+   "ts": 1795440605,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Headline concerns a different, unrelated junior explorer's director appointment, not Cameco."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News: \"Energy Fuels\" uranium",
+   "title": "Energy Fuels rises on White Mesa uranium plans, 1.25M-pound growth pipeline - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQRFlfRThTZ0tUUllMZGhpRVF2bnJsbkM1Mnl2N01ob2FkRUJkcm9nRDN3RktjUVprRVRnUTJaZ1RzSlNBQXVqQ185cTdPRnhJNV91aFFyRjZqbmphV25sSzdlN01YaVZ1NWRLb1kxVExKTUFrNE1xOC01WU9MNEJrSTkwS0c2MkJVM2piemFjRzd1OTlHc1o2LWRfVXRwVmpVZWQwMTV2QVNyVHdaZ2tVLWptVVNYRTQtTF9mRlQ2ODhXbFd5WlhtZ1NGQ2w2UkhMT0hZ?oc=5",
+   "ts": 1795437131,
+   "materiality": 5,
+   "novelty": "follow_up",
+   "direction": "up",
+   "event_type": "other",
+   "why": "Plan to expand White Mesa mill and pipeline is real but recycled, likely already known."
   }
  ],
  "reviews": [
@@ -4502,16 +4502,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.01433,
+  "day_usd": 0.01456,
   "month": "2026-11",
-  "month_usd": 0.27782,
-  "total_usd": 0.27782,
+  "month_usd": 0.27805,
+  "total_usd": 0.27805,
   "by_role": {
    "macro": 0.0037,
    "whale": 0.00304,
    "crowd": 0.0032,
    "level": 0.00144,
-   "scout": 0.03385,
+   "scout": 0.03408,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -4573,12 +4573,12 @@
   "UUUU": 4.95,
   "LEU": 81.56,
   "BWXT": 108.59,
-  "CEG": 245.94,
+  "CEG": 237.44,
   "VST": 115.22,
   "TLN": 333.24,
   "SPY": 690.91
  },
- "last_cycle": "2026-11-23 08:51 ET",
+ "last_cycle": "2026-11-23 09:01 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -49023,8 +49023,8 @@
   "1005c86f35a3d1c3",
   "5d22d1b6e3da5fb6",
   "4627bda8dfc98062",
-  "c56ca4f4b89e4d32",
   "8010bdf39626577f",
+  "c56ca4f4b89e4d32",
   "d39dc266a3b4dae2",
   "e6c12a1e5998666c",
   "00dd4e324f5b633b",
@@ -49032,7 +49032,6 @@
   "fcee5932b3cdffea",
   "1c8b73cd5ee7949f",
   "e62333d1078d965b",
-  "608a6c7d81d54f47",
   "717c47c79d590a65",
   "22ca80b609e8130c",
   "cb12badf9a3dbea8",
@@ -49087,6 +49086,7 @@
   "418a91931047cecc",
   "90b74f3afa03852f",
   "503a7ef14b3cb3d2",
+  "32cfd9ef3704009d",
   "47c56c7f6c4b5614",
   "5c4b59b788680232",
   "306dc38d51c88387",
@@ -49102,6 +49102,7 @@
   "6e7dff52f6fd70fc",
   "0d77f1d2373bb03d",
   "fa5187062c587fa6",
+  "87e89d05178171d2",
   "313a0e04a5719e86",
   "9dd14dae753c141a",
   "cab53e09b478cbb5",
@@ -49168,6 +49169,7 @@
   "5e042fd73e80d40b",
   "d0cdede57b2eba62",
   "13880e66390f270d",
+  "608a6c7d81d54f47",
   "f309be7c357c35cc",
   "063170773d4b14a2",
   "a3dd031817a4feeb",
@@ -49200,7 +49202,7 @@
   "88d39974add2ff27",
   "f16660c269a6613c"
  ],
- "news_slow_at": 1795441661.625875,
+ "news_slow_at": 1795442279.2458107,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197980,7 +197982,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 08:51",
+  "updated": "2026-11-23 09:01",
   "total": 322,
   "week": 282,
   "places": {
@@ -199600,7 +199602,7 @@
    "built": "2026-11-23 08:35"
   }
  ],
- "heartbeat": "2026-11-23 08:51",
+ "heartbeat": "2026-11-23 09:01",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
