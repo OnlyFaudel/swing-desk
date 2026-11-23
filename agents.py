@@ -99,6 +99,9 @@ class Desk:
         notes = [n for n in self.state.get("boss_notes", []) if n.get("date", "") >= str(dt.date.today() - dt.timedelta(days=7))]
         if notes and isinstance(payload, dict):
             payload = {**payload, "owner_standing_instructions": [n["note"] for n in notes][-5:]}
+        import notes
+        system, payload = notes.attach(role, system, payload)
+        offered = notes.ASK in system
         mates = feed.teammates()
         if mates:
             payload = ({**payload, "teammates_said": mates} if isinstance(payload, dict)
@@ -148,6 +151,10 @@ class Desk:
             text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text") or text
         out = parse_json(text)
         out["_cost"] = round(cost, 4)
+        try:
+            notes.record(self.state, role, out, offered)
+        except Exception as e:
+            print("note check", e)
         feed.post_agent(role, out, to)
         if out.get("watch"):
             try:

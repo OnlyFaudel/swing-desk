@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -1191,6 +1191,18 @@ def intel_tick(st, today, force=False):
                     f"{t} insiders net {'bought' if v > 0 else 'sold'} ${abs(v) / 1e6:.1f}M" for t, v in big) + ". It's in each stock file.", kind="learn")
         except Exception as e:
             print("people failed", e)
+    if now.time() >= dt.time(16, 15) and not st["flags"].get(f"notecheck:{today}"):  # note checker: who reads the stock files
+        st["flags"][f"notecheck:{today}"] = True
+        rows = notes.report(st)
+        if rows:
+            NAMES = {"pm": "Portfolio Manager", "macro": "Macro Analyst", "whale": "Whale Watcher", "crowd": "Crowd Reader",
+                     "level": "Level Analyst", "investigator": "News Investigator", "risk": "Risk Manager", "scout": "Scout",
+                     "review": "Reviewer", "auditor": "Auditor", "strategist": "Strategist", "postmortem": "Postmortem",
+                     "technical": "Chart Reader", "researcher": "Researcher"}
+            lazy = [NAMES.get(r, r) for r, s, n, _ in rows if s < 0.5]
+            feed.post("auditor", "Note check (does each teammate use the stock files?): " + "; ".join(
+                f"{NAMES.get(r, r)} used them in {s * 100:.0f}% of {n} answers" + (f" (mostly {', '.join(top[:2])})" if top else "")
+                for r, s, n, top in rows) + (f". Not reading enough: {', '.join(lazy)}." if lazy else ". Everyone is using them."), kind="learn")
     if now.time() >= dt.time(7, 0) and not st["flags"].get(f"uprice:{today}"):
         st["flags"][f"uprice:{today}"] = True
         try:
