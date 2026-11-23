@@ -131,7 +131,7 @@
     0.0
    ]
   ],
-  "peak": 1049.739509807559,
+  "peak": 1054.400551051144,
   "unsettled": [
    [
     110.14015523200001,
@@ -4566,19 +4566,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 63.03,
+  "CCJ": 63.23,
   "NXE": 7.0,
-  "UEC": 5.94,
-  "DNN": 1.83,
-  "UUUU": 5.61,
-  "LEU": 91.64,
-  "BWXT": 114.45,
-  "CEG": 255.73,
-  "VST": 123.49,
-  "TLN": 361.31,
-  "SPY": 722.98
+  "UEC": 5.97,
+  "DNN": 1.85,
+  "UUUU": 5.62,
+  "LEU": 93.15,
+  "BWXT": 114.3,
+  "CEG": 256.94,
+  "VST": 123.94,
+  "TLN": 359.19,
+  "SPY": 720.1
  },
- "last_cycle": "2026-11-23 09:31 ET",
+ "last_cycle": "2026-11-23 09:34 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4605,10 +4605,10 @@
   ]
  },
  "brakes": {
-  "equity": 1049.74,
-  "day_pct": 4.92,
-  "week_pct": 4.92,
-  "drawdown_pct": 0.0,
+  "equity": 1053.26,
+  "day_pct": 5.27,
+  "week_pct": 5.27,
+  "drawdown_pct": -0.11,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -49205,7 +49205,7 @@
   "88d39974add2ff27",
   "f16660c269a6613c"
  ],
- "news_slow_at": 1795444290.044769,
+ "news_slow_at": 1795444343.3508017,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197676,6 +197676,21 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 09:32",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: LEU moved +2.0% in 1 min. Checking every news channel for a reason right now.",
+   "tickers": [
+    "LEU"
+   ],
+   "art": {
+    "big": "LEU moved +2.0% in 1 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -198012,7 +198027,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 09:31",
+  "updated": "2026-11-23 09:34",
   "total": 326,
   "week": 286,
   "places": {
@@ -199641,12 +199656,12 @@
    "built": "2026-11-23 09:05"
   }
  ],
- "heartbeat": "2026-11-23 09:31",
+ "heartbeat": "2026-11-23 09:34",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 73,
+ "_pushed_feed": 74,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
