@@ -1078,6 +1078,61 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
            f"{len(hits)} setups, nothing bought."), tags="zap")
 
 
+def score_calls(st, prices, today):
+    """Every agent prediction ("CCJ up within 5 days") is checked when its time is up; the tally is each agent's track record."""
+    tr = st.setdefault("track", {})
+    for c in st.get("calls", []):
+        if c.get("result") is not None or c["ticker"] not in prices:
+            continue
+        if sessions_after(c["date"], c["days"]) > str(today):
+            continue
+        move = prices[c["ticker"]] / c["price"] - 1
+        c["move_pct"] = round(move * 100, 2)
+        c["result"] = "right" if (move > 0) == (c["direction"] == "up") and abs(move) > 0.002 else "wrong"
+        t = tr.setdefault(c["role"], {"calls": 0, "right": 0, "last": []})
+        t["calls"] += 1
+        t["right"] += c["result"] == "right"
+        t["last"] = (t["last"] + [f"{c['ticker']} {c['direction']} {c['days']}d: {c['move_pct']:+.1f}% ({c['result']})"])[-8:]
+
+
+def mistakes_review(st, desk, today, now):
+    """Friday after the close: the team lists the week's mistakes (losses, missed winners, wrong calls, rules that cost money),
+    and proposes ONE fix. The fix goes to Saturday's research session to be tested before anything changes."""
+    if not (now.weekday() == 4 and now.time() >= dt.time(16, 30)) or st["flags"].get(f"mistakes:{today}") or not desk.available:
+        return
+    st["flags"][f"mistakes:{today}"] = True
+    week = str(today - dt.timedelta(days=7))
+    book = st["book"]
+    pack = {"closed_trades_this_week": [x for x in book["trades"] if str(x.get("exit_time", "")) >= week],
+            "panic_results_this_week": [e for e in st.get("panic_log", []) if e.get("result") is not None and e.get("exit_on", "") >= week],
+            "agent_calls_scored_this_week": [c for c in st.get("calls", []) if c.get("result") and c["date"] >= week],
+            "track_records": st.get("track"), "why_no_buys": st.get("setup_status"),
+            "pm_sizing_score": st.get("pm_size_score"), "conviction_record": conviction_record(st),
+            "notes_audit": st.get("notes_audit"), "recent_team_decisions": [c["title"] for c in st.get("chats", [])[-25:]],
+            "owner_posts_this_week": [p["text"] for p in st.get("feed", []) if p.get("who") == "owner" and p.get("t", "") >= week]}
+    try:
+        with feed.thread(f"Mistakes review, week of {today - dt.timedelta(days=4):%b %d}", [], kind="research"):
+            out = desk.ask("review", "smart", "Reviewer running the weekly MISTAKES review. Be specific and honest: list this week's "
+                           "mistakes (losing trades and why, winners we missed or sold too early/late, agent calls that were wrong, "
+                           "rules that cost money, anything the owner had to point out). Put a dollar or % cost on each when you can. "
+                           "Then propose exactly ONE fix, written as a testable rule (what to change and what result would prove it). "
+                           "It will be tested on history before anything changes. "
+                           '{"say":"","to":"team","mistakes":[{"what":"","cost":"","lesson":""}],"fix":{"rule":"","test":""}}',
+                           pack, max_tokens=1200)
+        fix = (out.get("fix") or {}) if isinstance(out.get("fix"), dict) else {}
+        st.setdefault("mistakes_log", []).append({"date": str(today), "mistakes": out.get("mistakes"), "fix": fix})
+        del st["mistakes_log"][:-30]
+        if fix.get("rule"):
+            st.setdefault("research_queue", []).append({"q": f"Mistakes review fix: {fix['rule']} Test: {fix.get('test', '')}", "date": str(today)})
+        ms = [m for m in (out.get("mistakes") or []) if isinstance(m, dict)]
+        feed.post("review", (out.get("say") or "Weekly mistakes review.") + ("\n\n" + "\n".join(
+            f"- {m.get('what')}" + (f" (cost: {m.get('cost')})" if m.get("cost") else "") + (f". Lesson: {m.get('lesson')}" if m.get("lesson") else "")
+            for m in ms[:6]) if ms else "") + (f"\n\nProposed fix (tested Saturday before anything changes): {fix['rule']}" if fix.get("rule") else ""),
+                  kind="learn", art={"big": "Mistakes review", "sub": f"{len(ms)} mistake{'s' if len(ms) != 1 else ''} found, 1 fix to test"})
+    except Exception as e:
+        print("mistakes review", e)
+
+
 def park_check(st, ex, prices, today, now):
     """Never let cash sit: near the close, whatever no strategy is using goes into the S&P 500 (SPY).
     Tested 2019-2026 with the panic rule: $1,000 -> $12,120 (37%/yr, worst drop -31%) vs $5,880 leaving it in cash."""
@@ -1932,6 +1987,8 @@ def cycle(st, desk, br, ex, force=()):
             process_fills(st, br, ex, today)
             park_check(st, ex, prices, today, now)
             process_fills(st, br, ex, today)
+            score_calls(st, prices, today)
+            mistakes_review(st, desk, today, now)
         except Exception as e:
             traceback.print_exc()
         try:

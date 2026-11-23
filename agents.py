@@ -103,6 +103,13 @@ class Desk:
         system, payload = notes.attach(role, system, payload)
         system += (' Always also add "why": 1-2 plain sentences on the reasoning behind your message (what you checked and '
                    'what decided it). It is shown to the owner as your notes.')
+        system += (' If you have a real view on where one of our stocks goes next, add "call": {"ticker":"CCJ","direction":"up|down",'
+                   '"days":1-10}. Calls are scored against what the stock actually does and shown on your profile; skip it if unsure.')
+        if role in ("pm", "risk", "review", "strategist", "auditor") and isinstance(payload, dict):
+            tr = {k: v for k, v in (self.state.get("track") or {}).items() if v.get("calls", 0) >= 3}
+            if tr:
+                payload = {**payload, "teammates_track_record": {k: f"right {v['right']} of {v['calls']} calls" for k, v in tr.items()},
+                           "how_to_use_track_record": "Lean on teammates whose calls have been right; question the ones who've been wrong."}
         offered = notes.ASK in system
         mates = feed.teammates()
         if mates:
@@ -157,6 +164,19 @@ class Desk:
             notes.record(self.state, role, out, offered)
         except Exception as e:
             print("note check", e)
+        try:  # record a scored prediction if the agent made one
+            c = out.get("call")
+            if isinstance(c, dict) and str(c.get("direction", "")).lower() in ("up", "down"):
+                t = str(c.get("ticker", "")).upper()
+                px = (self.state.get("last_prices") or {}).get(t)
+                calls = self.state.setdefault("calls", [])
+                day = str(dt.date.today())
+                if px and not any(x["role"] == role and x["ticker"] == t and x["date"] == day for x in calls):
+                    calls.append({"role": role, "ticker": t, "direction": c["direction"].lower(), "days": max(1, min(10, int(c.get("days") or 5))),
+                                  "date": day, "price": px, "result": None})
+                    del calls[:-600]
+        except Exception as e:
+            print("call record", e)
         feed.post_agent(role, out, to)
         if out.get("watch"):
             try:

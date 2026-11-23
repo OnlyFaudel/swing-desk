@@ -325,6 +325,13 @@ button.act:hover{filter:brightness(1.08)}
 .hcbox dl{display:grid;grid-template-columns:78px 1fr;gap:6px 10px;margin:4px 0}
 .hcbox dt{color:var(--ink2);font-size:12.5px}.hcbox dd{margin:0;line-height:1.45}
 @media (prefers-reduced-motion:no-preference){.hcbox:not([hidden]){animation:hcin .14s ease-out}@keyframes hcin{from{opacity:0;transform:translateY(4px)}}}
+
+.dayhd{font-size:12.5px;color:var(--ink2);padding:18px 2px 0;font-weight:600}
+.more{padding:18px 0 30px;text-align:center}
+.more .sec{border-radius:99px;padding:9px 18px}
+.stories{cursor:grab;user-select:none}.stories.drag{cursor:grabbing}.stories.drag *{pointer-events:none}
+.trk{margin:12px auto 0;max-width:330px;background:var(--sheet);border:1px solid var(--hair);border-radius:12px;padding:10px 12px;text-align:left}
+.trk b{display:block;font-size:14px;margin-bottom:4px}.trk span{display:block;font-size:12.5px;color:var(--ink2);line-height:1.5}
 </style></head>
 <body><div class="wrap">
 __BANNER__
@@ -554,6 +561,12 @@ function stockState(t){
   /* ----- stories */
   $("stories").innerHTML=people.filter(w=>w!=="owner").map(w=>{const on=act[w]&&act[w].slice(0,10)===latest.slice(0,10);return `<button class="story${on?" on":""}" data-w="${esc(w)}" aria-label="${esc(nm(w))}${on?", active today":""}"><div class="ring"><span><b class="av c${col(w)}">${esc(ini(w))}</b></span></div><small>${esc(nm(w).split(" ")[0])}</small></button>`}).join("");
   document.querySelectorAll(".story").forEach(b=>b.onclick=()=>openDM({v:"agent",w:b.dataset.w}));
+  (()=>{const el=$("stories"); if(!el||el.dataset.drag) return; el.dataset.drag=1; let down=false,x0=0,s0=0,moved=0;
+    el.addEventListener("pointerdown",e=>{if(e.pointerType!=="mouse") return; down=true; moved=0; x0=e.clientX; s0=el.scrollLeft;});
+    window.addEventListener("pointermove",e=>{if(!down) return; const dx=e.clientX-x0; if(Math.abs(dx)>4){moved=dx; el.classList.add("drag");} el.scrollLeft=s0-dx;});
+    window.addEventListener("pointerup",()=>{if(!down) return; down=false; setTimeout(()=>el.classList.remove("drag"),0);});
+    el.addEventListener("click",e=>{if(Math.abs(moved)>4){e.stopPropagation();e.preventDefault();moved=0;}},true);
+    el.addEventListener("wheel",e=>{if(Math.abs(e.deltaY)>Math.abs(e.deltaX)&&el.scrollWidth>el.clientWidth){e.preventDefault(); el.scrollLeft+=e.deltaY;}},{passive:false});})();
 
   /* ----- value + chart */
   const v=eqNow, cents=Math.round((v%1)*100);
@@ -571,7 +584,8 @@ function stockState(t){
     return pts;
   }
   let R="day";
-  function draw(){
+  let HV=null;  /* hover/drag point on the chart */
+  function draw(hx){
     const pts=series(R);
     let first=R==="all"?start:pts[0][1];
     if(R==="day"){  /* today = change since the LAST CLOSE before today (like any brokerage app), not since this morning's first tick */
@@ -583,7 +597,7 @@ function stockState(t){
     const cv=$("pchart"), dpr=window.devicePixelRatio||1, W=cv.clientWidth||360, H=190; cv.width=W*dpr; cv.height=H*dpr;
     const x=cv.getContext("2d"); x.scale(dpr,dpr); x.clearRect(0,0,W,H);
     const ys=pts.map(p=>p[1]), lo=Math.min(...ys,first), hi=Math.max(...ys,first), pad=Math.max((hi-lo)*0.15,v*0.002);
-    const t0=+pts[0][0], t1=+pts[pts.length-1][0], X=t=>((+t-t0)/((t1-t0)||1))*(W-8)+4, Y=y=>H-14-((y-(lo-pad))/((hi+pad)-(lo-pad)))*(H-28);
+    const ti=new Map(pts.map((q,i)=>[+q[0],i])), X=t=>(ti.get(+t)??0)/((pts.length-1)||1)*(W-8)+4, Y=y=>H-14-((y-(lo-pad))/((hi+pad)-(lo-pad)))*(H-28);
     const c=up?"#8CC6A0":"#E3877E";
     x.setLineDash([2,6]); x.strokeStyle="#3A3F44"; x.lineWidth=1; x.beginPath(); x.moveTo(0,Y(first)); x.lineTo(W,Y(first)); x.stroke(); x.setLineDash([]);
     const g=x.createLinearGradient(0,0,0,H); g.addColorStop(0,up?"rgba(140,198,160,.16)":"rgba(227,135,126,.15)"); g.addColorStop(1,"rgba(17,19,21,0)");
@@ -591,6 +605,15 @@ function stockState(t){
     x.shadowBlur=0; x.strokeStyle=c; x.lineWidth=1.8; x.lineJoin="round";
     x.beginPath(); pts.forEach((p,i)=>i?x.lineTo(X(p[0]),Y(p[1])):x.moveTo(X(p[0]),Y(p[1]))); x.stroke(); x.shadowBlur=0;
     const lp=pts[pts.length-1]; x.fillStyle=c; x.beginPath(); x.arc(X(lp[0]),Y(lp[1]),4,0,7); x.fill();
+    HV={pts,X,Y,W,H,first,c};
+    if(hx!=null){  /* scrub: line + dot at the nearest point, value and time in the header */
+      const i=Math.max(0,Math.min(pts.length-1,Math.round((hx-4)/((W-8)||1)*(pts.length-1)))), q=pts[i], xx=X(q[0]);
+      x.strokeStyle="rgba(236,232,223,.35)"; x.lineWidth=1; x.beginPath(); x.moveTo(xx,6); x.lineTo(xx,H-8); x.stroke();
+      x.fillStyle="#111315"; x.beginPath(); x.arc(xx,Y(q[1]),6,0,7); x.fill(); x.fillStyle=c; x.beginPath(); x.arc(xx,Y(q[1]),4,0,7); x.fill();
+      const vv=q[1], cc=Math.round((vv%1)*100), dd=vv-first, pp=first?dd/first*100:0;
+      $("val").innerHTML=`$${Math.floor(vv).toLocaleString()}<small>.${String(cc).padStart(2,"0")}</small>`;
+      $("chg").innerHTML=`<span class="${dd>=0?"pos":"neg"}">${dd>=0?"+":"−"}$${Math.abs(dd).toFixed(2)} (${dd>=0?"+":"−"}${Math.abs(pp).toFixed(2)}%)</span> ${q[0].toLocaleString(undefined,R==="day"?{hour:"numeric",minute:"2-digit"}:{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})}`;
+    } else $("val").innerHTML=`$${Math.floor(v).toLocaleString()}<small>.${String(cents).padStart(2,"0")}</small>`;
     $("chartnote").textContent=ys.every(y=>Math.abs(y-ys[0])<0.005)?(intr.length>1?"No change yet: the money is in cash, waiting for a buy.":"The line starts moving once the bot runs during market hours."):"";
   }
   /* ----- calendar: every day's gain or loss, the month, and the year so far */
@@ -630,7 +653,13 @@ function stockState(t){
     if(isCal){calendar(); const now=new Date(), b0=days.filter(d=>d<`${now.getFullYear()}-01-01`), base=b0.length?closes[b0[b0.length-1]]:start, d=v-base;
       $("chg").innerHTML=`<span class="${d>=0?"pos":"neg"}">${d>=0?"+":"−"}$${Math.abs(d).toFixed(2)} (${sgn(base?d/base*100:0)}%)</span> this year`;}
     else draw();});
-  draw(); window.addEventListener("resize",draw);
+  draw(); window.addEventListener("resize",()=>draw());
+  (()=>{const cv=$("pchart"); const at=e=>{const r=cv.getBoundingClientRect(); return (e.touches?e.touches[0].clientX:e.clientX)-r.left;};
+    cv.addEventListener("pointermove",e=>{if(R!=="cal") draw(at(e));});
+    cv.addEventListener("pointerdown",e=>{if(R!=="cal") draw(at(e));});
+    cv.addEventListener("pointerleave",()=>{if(R!=="cal") draw();});
+    cv.addEventListener("pointerup",e=>{if(e.pointerType!=="mouse"&&R!=="cal") draw();});
+    cv.style.touchAction="pan-y"; cv.style.cursor="crosshair";})();
 
   /* ----- right-now sentence + trades */
   const st_=lineupT.map(t=>[t,stockState(t)]), held_=st_.filter(z=>z[1].k==="held"), arm_=st_.filter(z=>z[1].k==="armed");
@@ -745,9 +774,29 @@ function stockState(t){
       ${cap?`<div class="cap"><b>${esc(nm(p.who))}</b>${esc(cap)}</div>`:""}
       <div class="igfoot">${p.thread&&CH.some(c=>c.id===p.thread)?`<button class="vc" data-th="${esc(p.thread)}">View the conversation</button>`:""}${(p.tickers||[]).map(t=>`<span class="ptk">${esc(t)}</span>`).join("")}${pending?`<span class="note">The team answers within about a minute.</span>`:""}</div></article>`;
   }
-  const F=(S.feed||[]).slice().reverse();
-  $("posts").innerHTML=pend.slice().reverse().map(p=>postHTML(p,true)).join("")+(F.length?F.slice(0,150).map(p=>postHTML(p,false)).join(""):`<p class="empty">No posts yet. After setup, the first run posts the morning meeting, the practice-trade replay and the daily review.</p>`);
-  document.querySelectorAll(".vc").forEach(b=>b.onclick=()=>openDM({v:"group",id:b.dataset.th}));
+  /* every post is kept; the page shows them 20 at a time with a day header, older ones load on demand */
+  let F=(S.feed||[]).slice().reverse(), shown=0, archLoaded=false; const PAGE=20;
+  const dayOf=t=>{const d=parseT(t); if(!d) return ""; const k=ymd(d), tk=ymd(new Date()), yk=ymd(new Date(Date.now()-864e5));
+    return k===tk?"Today":k===yk?"Yesterday":d.toLocaleDateString(undefined,{weekday:"long",month:"long",day:"numeric"});};
+  function morePosts(){
+    const chunk=F.slice(shown,shown+PAGE); let lastDay=shown?dayOf(F[shown-1].t):"", h="";
+    chunk.forEach(p=>{const dd=dayOf(p.t); if(dd&&dd!==lastDay){h+=`<div class="dayhd">${esc(dd)}</div>`; lastDay=dd;} h+=postHTML(p,false);});
+    shown+=chunk.length;
+    const box=$("postsMore"); if(box) box.remove();
+    $("posts").insertAdjacentHTML("beforeend",h+`<div id="postsMore" class="more">${shown<F.length||!archLoaded?`<button type="button" class="sec" id="moreBtn">Show older posts</button>`:`<p class="empty">That's every post since the start.</p>`}</div>`);
+    document.querySelectorAll(".vc:not([data-w])").forEach(b=>{b.dataset.w=1;b.onclick=()=>openDM({v:"group",id:b.dataset.th});});
+    const mb=$("moreBtn"); if(mb) mb.onclick=()=>{
+      if(shown<F.length) return morePosts();
+      mb.textContent="Loading older posts…"; mb.disabled=true;
+      fetch(`feed_archive.json?${Date.now()}`).then(r=>r.ok?r.json():[]).catch(()=>[]).then(a=>{
+        archLoaded=true; const have=new Set(F.map(p=>p.t+p.who+(p.text||"").slice(0,40)));
+        const older=(a||[]).map(p=>({...p,text:human(p.text)})).filter(p=>(p.text||p.art)&&!have.has(p.t+p.who+(p.text||"").slice(0,40))).reverse();
+        F=F.concat(older); morePosts();});
+    };
+  }
+  $("posts").innerHTML=pend.slice().reverse().map(p=>postHTML(p,true)).join("")+(F.length?"":`<p class="empty">No posts yet. After setup, the first run posts the morning meeting, the practice-trade replay and the daily review.</p>`);
+  if(F.length) morePosts();
+  document.querySelectorAll(".vc").forEach(b=>{b.dataset.w=1;b.onclick=()=>openDM({v:"group",id:b.dataset.th});});
 
   /* ----- composer: post to the team (ntfy topic <NTFY_TOPIC>-inbox) */
   const topic=()=>ls.get("pl_topic");
@@ -832,7 +881,8 @@ function stockState(t){
       h=top("Group chats",true)+(CH.length?CH.slice().reverse().map(c=>{const ws=[...new Set(c.msgs.map(m=>m.who))];return `<button class="row2" data-group="${esc(c.id)}">${AV(ws[0])}<div><b>${esc(c.title)}</b><span>${esc(KIND[c.kind]||"Discussion")}, ${c.msgs.length} messages, ${ws.length} people${c.practice?", practice":""}</span></div><small>${ago(c.start)}</small></button>`}).join(""):`<p class="empty">No group chats yet.</p>`);
     } else if(V.v==="agent"){
       const w=V.w, ps=partners(w), notes=MS.filter(m=>m.who===w&&m.notes), groups=CH.filter(c=>c.msgs.some(m=>m.who===w)), posts=(S.feed||[]).filter(q=>q.who===w);
-      h=top(nm(w),true)+`<div class="prof">${AV(w)}<b>${esc(nm(w))}</b><span>${esc((PP[w]||{}).bio||"")}</span></div>`+
+      const tk_=(S.track||{})[w];
+      h=top(nm(w),true)+`<div class="prof">${AV(w)}<b>${esc(nm(w))}</b><span>${esc((PP[w]||{}).bio||"")}</span>${tk_&&tk_.calls?`<div class="trk"><b class="${tk_.right/tk_.calls>=.5?"pos":"neg"}">Right ${tk_.right} of ${tk_.calls} calls (${Math.round(tk_.right/tk_.calls*100)}%)</b>${(tk_.last||[]).slice().reverse().map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:`<div class="trk"><span>No scored calls yet. Each prediction this agent makes is checked against what the stock actually does.</span></div>`}</div>`+
         `<button class="row2" data-notes="${esc(w)}"><span class="av c${col(w)}" aria-hidden="true">✎</span><div><b>${w==="owner"?"Your posts":"Own notes"}</b><span>${w==="owner"?"what you asked the team":notes.length+" note"+(notes.length===1?"":"s")+": the reasoning behind each message"}</span></div><small></small></button>`+
         `<div class="sect">Direct messages</div>`+(ps.length?ps.map(p=>{const lm=p.msgs[p.msgs.length-1];return `<button class="row2" data-pair="${esc(w)}|${esc(p.other)}">${AV(p.other)}<div><b>${esc(nm(p.other))}</b><span>${esc(nm(lm.who))}: ${esc(lm.text)}</span></div><small>${ago(lm.ts)}</small></button>`}).join(""):`<p class="empty">No one-on-one messages yet.</p>`)+
         `<div class="sect">Posts</div>`+(posts.length?posts.slice(-12).reverse().map(q=>`<details class="notecard" style="cursor:pointer"><summary style="list-style:none"><small>${esc(ago(q.t))}${q.title?", "+esc(q.title):""}</small><br>${esc(String(q.text||"").slice(0,110))}${String(q.text||"").length>110?"…":""}</summary><p style="margin:8px 0 0;white-space:pre-wrap">${esc(q.text||"")}</p></details>`).join(""):`<p class="empty">No posts yet.</p>`)+

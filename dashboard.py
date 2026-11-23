@@ -19,6 +19,7 @@ def slim(state):
 
 
 def build(state, cfg, embed_lab=None, out=None, banner=None):
+    full_feed = (state.get("feed") or [])[:-200]  # the page embeds the newest 200; the rest go to the archive file
     state = slim(state)
     html = open(os.path.join(ROOT, "web", "app.html")).read()
     engine = open(os.path.join(ROOT, "web", "engine.js")).read()
@@ -28,6 +29,10 @@ def build(state, cfg, embed_lab=None, out=None, banner=None):
             .replace("__LAB__", json.dumps(embed_lab, separators=(",", ":")) if embed_lab else "null")
             .replace("__BANNER__", f'<div class="verdict warn" style="margin:0 0 14px">{banner}</div>' if banner else ""))
     out = out or os.path.join(ROOT, "docs", "index.html")
+    try:  # every post ever kept (up to the state cap), loaded only when the owner scrolls past the newest 200
+        json.dump(full_feed, open(os.path.join(os.path.dirname(out), "feed_archive.json"), "w"), default=str, separators=(",", ":"))
+    except Exception as e:
+        print("feed archive", e)
     os.makedirs(os.path.dirname(out), exist_ok=True)
     open(out, "w").write(html)
     return out
