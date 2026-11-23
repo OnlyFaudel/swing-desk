@@ -1354,6 +1354,59 @@ def _rules():
     return out
 
 
+def seasonal_check(st, ex, data, prices, today, now):
+    """Two calendar trades that passed their tests (paper):
+    - Year-end bounce: around Dec 18 buy the 3 worst year-to-date names (10% each), sell mid-January
+      (2007-2025: +13.9% avg, up 15 of 19 years).
+    - Uranium spot momentum: after a month where spot uranium rose 5%+, buy the 5 miners (4% each) for 20 sessions
+      (miners' next month +6.5% vs +1.7% normally, both halves positive)."""
+    if not (dt.time(15, 30) <= now.time() <= dt.time(15, 58)) or st["flags"].get(f"seasonal:{today}"):
+        return
+    st["flags"][f"seasonal:{today}"] = True
+    book = st["book"]
+    eq = account.equity(book, prices)
+    bought = []
+    if today.month == 12 and today.day >= 18 and not st["flags"].get(f"yearend:{today.year}"):
+        st["flags"][f"yearend:{today.year}"] = True
+        ytd = {}
+        for t in T:
+            c = data[t].Close.dropna() if t in data else None
+            if c is None or t not in prices:
+                continue
+            c0 = c[c.index >= f"{today.year}-01-01"]
+            if len(c0) > 150:
+                ytd[t] = prices[t] / float(c0.iloc[0]) - 1
+        for t in sorted(ytd, key=ytd.get)[:3]:
+            if account.lot(book, t, "auto")["qty"] > 1e-6:
+                continue
+            meta = {"setup": "year_end", "by": "rules", "exit_on": f"{today.year + 1}-01-13", "days": "mid-January",
+                    "why": f"year-end bounce: {t} is {ytd[t] * 100:+.0f}% this year, among the 3 worst of our stocks"}
+            if ex.buy_market(t, eq * 0.10, prices[t], "au", meta, "year-end bounce buy"):
+                bought.append(f"{t} ({ytd[t] * 100:+.0f}% this year)")
+        if bought:
+            feed.post("chief", "Year-end bounce: bought " + ", ".join(bought) + ", 10% each, selling around Jan 13. History (2007-2025): "
+                      "the 3 worst names of the year rose 13.9% on average from late December to mid-January, up in 15 of 19 years.",
+                      [b.split()[0] for b in bought], kind="alert", art={"big": "Year-end bounce", "sub": "Seasonal trade, sells mid-January"})
+    up = uprice.summary() or {}
+    sp = up.get("spot") or {}
+    mon = sp.get("month")
+    if mon and (sp.get("1m_change_pct") or 0) >= 5 and not st["flags"].get(f"spotmom:{mon}"):
+        st["flags"][f"spotmom:{mon}"] = True
+        bought = []
+        for t in ("CCJ", "UEC", "DNN", "UUUU", "NXE"):
+            if t not in prices or account.lot(book, t, "auto")["qty"] > 1e-6:
+                continue
+            meta = {"setup": "uranium_momentum", "by": "rules", "exit_on": sessions_after(str(today), 20), "days": 20,
+                    "why": f"spot uranium rose {sp['1m_change_pct']:+.1f}% in {mon}; miners have followed strong spot months"}
+            if ex.buy_market(t, eq * 0.04, prices[t], "au", meta, "uranium momentum buy"):
+                bought.append(t)
+        if bought:
+            st["uranium_momentum"] = {"month": mon, "change": sp["1m_change_pct"], "until": sessions_after(str(today), 20)}
+            feed.post("chief", f"Uranium spot rose {sp['1m_change_pct']:+.1f}% in {mon}, so the miners trade is on: bought {', '.join(bought)}, "
+                      "4% each, for 20 sessions. After +5% spot months the miners rose 6.5% the next month on average (2007-2026).",
+                      bought, kind="alert", art={"big": "Uranium momentum", "sub": f"Spot {sp['1m_change_pct']:+.1f}% last month"})
+
+
 def auto_check(st, desk, ex, data, prices, today, brk_state, now):
     cfg = CFG.get("auto_trade", {})
     if not cfg.get("enabled"):
@@ -1368,7 +1421,7 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
             if L.get("target") and px >= L["target"]:
                 ex.exit_panic(t, px, f"conviction trade: target ${L['target']} hit", kind="auto", tag="aux"); continue
         if L.get("qty", 0) > 1e-6 and L.get("exit_on") and (str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late)):
-            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{'conviction' if L.get('setup') == 'conviction' else 'discovery'} trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
+            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{ {'conviction': 'conviction', 'year_end': 'year-end bounce', 'uranium_momentum': 'uranium momentum'}.get(L.get('setup'), 'discovery') } trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
     if not (dt.time(15, 30) <= now.time() <= dt.time(15, 58)) or st["flags"].get(f"auto:{today}"):
         return
     st["flags"][f"auto:{today}"] = True
@@ -2312,6 +2365,7 @@ def cycle(st, desk, br, ex, force=()):
         try:
             panic_check(st, desk, ex, data, prices, today, brk_state, now, force="panic" in force)
             auto_check(st, desk, ex, data, prices, today, brk_state, now)
+            seasonal_check(st, ex, data, prices, today, now)
             process_fills(st, br, ex, today)
             park_check(st, ex, prices, today, now)
             process_fills(st, br, ex, today)

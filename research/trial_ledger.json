@@ -105,6 +105,26 @@
   "earnings_drift": {
    "trials": 8,
    "verdict": "2026-11-23: 442 earnings 2010-2026 in our 10 stocks: reaction day moves 4.5% avg either way; next 5 days vs group -0.17% overall; +5% reactions faded -1.6% (older -0.3, newer -2.3: halves disagree); -5% reactions -0.4%; beats/misses ~0; beat+pop -0.7% (older +1.3, newer -1.8); no pre-earnings run-up (-0.26%, 48% up). No tradable drift. Keep stepping aside before earnings; earnings dates now in the catalyst calendar."
+  },
+  "year_end_bounce": {
+   "trials": 3,
+   "verdict": "2026-11-23: buy the 3 worst year-to-date names among our 10 around Dec 18-24, sell around Jan 12-20, 2007-2025 (19 years): losers +13.9% avg (median ~+10.8%), up in 15 of 19 years; the whole group +11.1% avg (median ~+6.7%); best YTD names +7.5%; SPY +1.6%. Losers beat the group in 11 of 19 (the edge is mostly the group's year-end strength). 2008 (+98%) inflates the average. ADOPTED on paper: 3 losers, 10% each, Dec 18 -> mid-Jan."
+  },
+  "hyperscaler_earnings": {
+   "trials": 2,
+   "verdict": "2026-11-23: 64 MSFT/AMZN/GOOGL/META earnings since 2023: CEG/VST/TLN move 2.5% on the reaction day vs 2.0% normal, avg +0.6% (MSFT +2.0%, GOOGL -0.5%), next 5 days +1.15%. Context for the calendar, not a trade."
+  },
+  "index_rebalance": {
+   "trials": 2,
+   "verdict": "2026-11-23: S&P quarterly rebalance (third Friday Mar/Jun/Sep/Dec), 67 since 2010: nuclear basket week before -0.25%, week after -0.40% (44% up both) vs +0.55% any week. Mild weakness; calendar context only."
+  },
+  "uranium_term_spot_gap": {
+   "trials": 4,
+   "verdict": "2026-11-23: term-minus-spot gap buckets (monthly, 2007-2026): no clean pattern (+4.1%/-1.4%/+2.0%/+1.3% next month). Not used."
+  },
+  "uranium_spot_momentum": {
+   "trials": 2,
+   "verdict": "2026-11-23: month where spot uranium rose 5%+: miners (CCJ, UEC, DNN, UUUU, NXE) next month +6.5% avg (older +3.1, newer +8.8) vs +1.7% any month, n=50; spot fell 5%+: ~0. ADOPTED on paper: after a +5% spot month, buy the 5 miners at 4% each for 20 sessions, and tell the team to favor miners."
   }
  }
 }
