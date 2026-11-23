@@ -105,12 +105,44 @@ def traded(st):
     return list(dict.fromkeys(T + held + list(st["armed"])))
 
 
+def spy_px(st):
+    live = market.LIVE.get("SPY")
+    return (live[0] if live and time.time() - live[1] < 600 else None) or (st.get("last_prices") or {}).get("SPY")
+
+
+def free_cash(st, today):
+    return account.settled_cash(st["book"], today) - sum(a.get("dollars", 0) for a in st["armed"].values())
+
+
+def spendable(st, today):
+    """Cash we can put into a trade right now: free cash plus the parked S&P shares (sold on demand)."""
+    px = spy_px(st)
+    return free_cash(st, today) + (account.park_value(st["book"], {"SPY": px}) if px else 0)
+
+
 # ======================================================================= execution trader (code)
 class Exec:
     def __init__(self, st, br):
         self.st, self.br = st, br
 
+    def ensure_cash(self, need):
+        """Idle money sits in the S&P (SPY). When a trade needs it, sell just enough SPY first."""
+        today = market.now_et().date()
+        short = need - free_cash(self.st, today)
+        L = self.st["book"]["lots"].get("SPY", {}).get("park", {})
+        px = spy_px(self.st)
+        if short <= 0 or not L.get("qty") or not px:
+            return
+        qty = min(L["qty"], round(short * 1.01 / px, 6))
+        try:
+            log_order(self.st, self.br.market_sell("SPY", qty, px, "pkx"), f"sold ${qty * px:.0f} of parked S&P to fund a trade")
+            time.sleep(0 if self.br.name == "sim" else 2)
+            process_fills(self.st, self.br, self, today)
+        except Exception as e:
+            ops.note_reject(self.st, CFG, notify, f"SPY parking sale: {e}")
+
     def buy_limit(self, t, qty, limit, tag, meta, note):
+        self.ensure_cash(qty * limit)
         try:
             o = self.br.limit_buy(t, qty, limit, tag)
         except Exception as e:
@@ -122,6 +154,8 @@ class Exec:
         return o
 
     def buy_market(self, t, notional, price, tag, meta, note):
+        if tag != "pk":
+            self.ensure_cash(notional)
         try:
             o = self.br.market_buy(t, notional, price, tag)
         except Exception as e:
@@ -442,7 +476,7 @@ def arm(st, ex, prices, today, brk_state):
     for t in list(st["armed"]):
         if t not in want:
             ex_cancel(st, t)
-    cash = account.settled_cash(book, today) - sum(a["dollars"] for a in st["armed"].values())
+    cash = spendable(st, today)
     for c, t in cands:
         if t not in want or t in st["armed"]:
             continue
@@ -971,7 +1005,7 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
     exit_on = sessions_after(str(today), cfg.get("hold_sessions", 6))
     eq = brk_state["equity"]
     room = max(0.0, eq * cfg.get("max_total_pct", 45) / 100 - sum(l.get("panic", {}).get("qty", 0) * prices.get(t, 0) for t, l in book["lots"].items()))
-    cash = account.settled_cash(book, today) - sum(a.get("dollars", 0) for a in st["armed"].values())
+    cash = spendable(st, today)
     blocked = brk_state.get("no_new_today") and not unleashed()
     bought = []
     with feed.thread(f"Panic day {today:%b %d}: market {spy * 100:+.1f}%", [t for _, _, t in hits], kind="huddle"):
@@ -1039,6 +1073,23 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
               art={"big": f"Panic day: {len(hits)} rebound setup{'s' if len(hits) != 1 else ''}", "sub": f"Market {spy * 100:+.1f}%. Hold 6 sessions"})
     notify("Panic-day rebound", (f"Bought {', '.join(bought)} near the close; selling {exit_on}." if bought else
            f"{len(hits)} setups, nothing bought."), tags="zap")
+
+
+def park_check(st, ex, prices, today, now):
+    """Never let cash sit: near the close, whatever no strategy is using goes into the S&P 500 (SPY).
+    Tested 2019-2026 with the panic rule: $1,000 -> $12,120 (37%/yr, worst drop -31%) vs $5,880 leaving it in cash."""
+    cfg = CFG.get("parking", {})
+    if not cfg.get("enabled") or not (dt.time(15, 52) <= now.time() <= dt.time(15, 58)) or st["flags"].get(f"park:{today}"):
+        return
+    st["flags"][f"park:{today}"] = True
+    if "SPY" not in prices:
+        return
+    eq = account.equity(st["book"], prices)
+    idle = free_cash(st, today) - eq * cfg.get("keep_cash_pct", 3) / 100
+    if idle >= cfg.get("min_usd", 20):
+        if ex.buy_market("SPY", idle, prices["SPY"], "pk", {"setup": "parking", "by": "rules"}, f"parked ${idle:.0f} idle cash in the S&P"):
+            feed.post("exec", f"Parked ${idle:.0f} of idle cash in the S&P 500 (SPY) so it keeps working overnight. "
+                      "It gets sold automatically the moment a trade needs the money.", ["SPY"], kind="alert")
 
 
 def pd_ts(d):
@@ -1111,7 +1162,7 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
                     continue
                 L = account.lot(book, t, "auto")
                 open_n = sum(1 for l in book["lots"].values() if l.get("auto", {}).get("qty", 0) > 1e-6)
-                cash = account.settled_cash(book, today) - sum(a.get("dollars", 0) for a in st["armed"].values())
+                cash = spendable(st, today)
                 dollars = min(brk_state["equity"] * cfg.get("size_pct", 10) / 100, cash)
                 if L["qty"] > 1e-6 or open_n >= cfg.get("max_open", 3) or dollars < 5 or (brk_state.get("no_new_today") and not unleashed()):
                     continue
@@ -1447,7 +1498,7 @@ def conviction_buy(st, ex, prices, today, t, d, headline):
     open_amt = sum(l.get("auto", {}).get("qty", 0) * prices.get(x, 0) for x, l in book["lots"].items() if l.get("auto", {}).get("setup") == "conviction")
     room = eq * cfg.get("max_total_pct", 60) / 100 * rec["size_multiplier"] - open_amt
     dollars = min(eq * cfg.get("max_pct_each", 30) / 100 * conv / 10 * rec["size_multiplier"], room,
-                  account.settled_cash(book, today) - sum(a.get("dollars", 0) for a in st["armed"].values()))
+                  spendable(st, today))
     if dollars < 5:
         return "BUY wanted but no cash or room left"
     px = prices[t]
@@ -1847,6 +1898,8 @@ def cycle(st, desk, br, ex, force=()):
         try:
             panic_check(st, desk, ex, data, prices, today, brk_state, now, force="panic" in force)
             auto_check(st, desk, ex, data, prices, today, brk_state, now)
+            process_fills(st, br, ex, today)
+            park_check(st, ex, prices, today, now)
             process_fills(st, br, ex, today)
         except Exception as e:
             traceback.print_exc()

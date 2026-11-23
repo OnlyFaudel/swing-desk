@@ -45,6 +45,11 @@ def trade_value(book, prices):
     return sum(l.get("trade", {}).get("qty", 0) * prices.get(t, 0) for t, l in book["lots"].items())
 
 
+def park_value(book, prices):
+    L = book["lots"].get("SPY", {}).get("park", {})
+    return L.get("qty", 0) * prices.get("SPY", (L["cost"] / L["qty"]) if L.get("qty") else 0)
+
+
 def settled_cash(book, today):
     pending = sum(a for a, d in book["unsettled"] if d > str(today))
     book["unsettled"] = [[a, d] for a, d in book["unsettled"] if d > str(today)]
@@ -63,7 +68,8 @@ def apply_fill(book, f, today, meta=None):
     """Book one broker fill. Returns a closed-trade record if a trade lot was closed."""
     t, side, q, px = f["symbol"], f["side"], float(f["qty"]), float(f["fill_price"])
     tag = tag_of(f.get("client_id"))
-    kind = "core" if tag.startswith("core") else ("panic" if tag in ("pr", "prx") else ("auto" if tag in ("au", "aux") else "trade"))
+    kind = "core" if tag.startswith("core") else ("panic" if tag in ("pr", "prx") else ("auto" if tag in ("au", "aux") else
+                                                    ("park" if tag in ("pk", "pkx") else "trade")))
     L = lot(book, t, kind)
     if side == "buy":
         book["cash"] -= q * px
@@ -83,7 +89,8 @@ def apply_fill(book, f, today, meta=None):
     proceeds = q * px
     pnl = proceeds - avg * q
     book["cash"] += proceeds
-    book["unsettled"].append([proceeds, next_session(today)])
+    if kind != "park":  # parking sales fund same-day buys; our trades are never sold the same day, so no free-riding
+        book["unsettled"].append([proceeds, next_session(today)])
     book["realized_st"] = round(book["realized_st"] + pnl, 2)
     L["qty"] = round(L["qty"] - q, 6)
     L["cost"] = max(0.0, L["cost"] - avg * q)

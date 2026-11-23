@@ -448,5 +448,12 @@
     "max_total_pct": 60,
     "max_days": 10,
     "_note": "Paper: the team's own calls from news + desk notes (not a tested rule). Size = 30% x conviction/10 x record multiplier (0.5-2x after 5 trades). Own stop/target/days; every trade scored."
+  },
+  "parking": {
+    "enabled": true,
+    "ticker": "SPY",
+    "keep_cash_pct": 3,
+    "min_usd": 20,
+    "_note": "Idle cash goes into SPY near the close and is sold on demand when any trade needs it. Tested with the panic rule 2019-2026: 37%/yr vs 25% with cash idle; worst drop -31% vs -23%."
   }
 }

@@ -81,6 +81,10 @@
   "macro_drivers": {
    "trials": 20,
    "verdict": "2026-11-23: big daily moves in natural gas (+/-5%), oil (+/-4%), the dollar (+/-0.8%), the 10-year yield (+/-10bp) and the VIX (+20%/-15%) since 2019, tested on every stock vs the basket over 5 and 20 days, same-week moves counted once. None passes the correction yet. Closest: gas jumps -> miners trail the basket by about 0.9% over 20 days (780 weeks, both halves); rate jumps help power names in the newer half only (+5.8% vs -0.9%) = not stable. News split by the first day's reaction (cheered / punished): nothing holds yet. Tested nightly as data grows."
+  },
+  "idle_cash_parking": {
+   "trials": 5,
+   "verdict": "2026-11-23: where to keep cash between panic-day trades (adaptive panic rule, 2019-2026, $1,000): cash $5,880 (25.2%/yr, worst drop -23.2%); T-bills $7,169 (28.4%, -23.2%); S&P/SPY $12,120 (37.2%, -31.2%, every year positive); uranium ETF $9,010 (-55.5%, worst year -32.9%); our 10 stocks $30,728 (54%/yr but -54.6% and picked with hindsight: they are the names that boomed); CCJ $14,538 (-54.4%). ADOPTED SPY: sold on demand to fund any trade. Our-10-stocks result is hindsight (we chose these names after their run), so not used."
   }
  }
 }
