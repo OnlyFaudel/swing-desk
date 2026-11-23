@@ -9,7 +9,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 PATH = os.path.join(ROOT, "memory", "price_events.json")
 
 
-def build(tickers, start="2018-01-01"):
+def build(tickers, start="2006-01-01"):
     import yfinance as yf
     px = yf.download(list(tickers) + ["SPY"], start=start, auto_adjust=True, progress=False)
     C, O, V = px["Close"], px["Open"], px["Volume"]
@@ -38,7 +38,7 @@ def build(tickers, start="2018-01-01"):
         for typ, m in rules.items():
             m = m.fillna(False)
             for d in m.index[m.values]:
-                if str(d.date()) < "2019-01-01":
+                if str(d.date()) < "2007-01-01":
                     continue
                 ev.append({"ticker": t, "date": str(d.date()), "title": f"{t}: {typ.replace('price_', '').replace('_', ' ')} ({r[d] * 100:+.1f}% that day)",
                            "type": typ, "source": "prices", "r0": None, "r1": None, "r5": None, "r20": None, "r60": None, "x5": None, "x20": None})
@@ -71,7 +71,7 @@ def _macro(tickers, start):
         key = name.split()[-1].replace("-", "")
         for way, m in moves.items():
             for d in m.index[m.fillna(False).values]:
-                if str(d.date()) < "2019-01-01":
+                if str(d.date()) < "2007-01-01":
                     continue
                 title = f"Big day for {name}: {way} ({ch[d] * (1 if sym == '^TNX' else 100):+.2f}{'' if sym == '^TNX' else '%'})"
                 for t in list(tickers) + ["_basket"]:

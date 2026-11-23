@@ -643,7 +643,7 @@ def memory_daily(st, data=None):
                   "(contracts, earnings, share offerings, leadership changes), with what each stock did afterwards.", kind="learn",
                   art={"big": f"{n:,} past events remembered", "sub": "Long-term memory loaded from SEC filings since 2019"})
     import yfinance as yf
-    px = yf.download(list(T), start="2018-12-01", auto_adjust=True, progress=False)["Close"]
+    px = yf.download(list(T), start="2006-01-01", auto_adjust=True, progress=False)["Close"]  # deep history: events back to 2007
     px["_basket"] = (px[list(T)].pct_change().mean(axis=1).fillna(0) + 1).cumprod()
     desk_memory.fill(px)
     try:
@@ -651,6 +651,7 @@ def memory_daily(st, data=None):
     except Exception as e:
         print("peer events failed", e)
     desk_memory.fill(px, archive.EVENTS)
+    desk_memory.fill(px, discovery.HISTORY)
     try:  # price action as events (rebuilt each day from prices), outcomes filled the same way
         price_events.build(list(T))
         desk_memory.fill(px, price_events.PATH)
