@@ -1942,6 +1942,44 @@ def team_debate(st, desk, question, ctx, decide_prompt, extra=(), max_tokens=700
 ANSWERERS = ("macro", "engineer", "investigator", "whale", "crowd", "level", "risk", "optspec", "researcher")
 
 
+def mover_radar(st, now):
+    """Stocks in the states where big moves (+20% in 10 days) were 5-7x more likely, 2019-2026: very jumpy (volatility
+    above 70%/yr) together with a volume surge, a 30%+ drop from the 2-month high, or a 15% move in 5 days. Both
+    directions get bigger there. Covers our 10 and the ~74 related stocks; refreshed every 2 hours."""
+    m = st.get("movers") or {}
+    if m.get("at") and time.time() - m["at"] < 7200:
+        return m.get("list", [])
+    out = []
+    try:
+        import yfinance as yf, numpy as np
+        names = list(T) + [t for t in CFG.get("panic_rebound", {}).get("related_universe", []) if t not in T]
+        raw = yf.download(names, period="4mo", auto_adjust=True, progress=False)
+        for t in names:
+            try:
+                c = raw["Close"][t].dropna(); v = raw["Volume"][t].dropna()
+            except Exception:
+                continue
+            if len(c) < 65 or float(c.iloc[-1]) < 3 or float((c * v).tail(60).mean()) < 20e6:
+                continue
+            vol = float(c.pct_change().tail(20).std() * np.sqrt(252))
+            vr = float(v.iloc[-1] / v.tail(21).iloc[:-1].mean())
+            dd = float(c.iloc[-1] / c.tail(60).max() - 1)
+            r5 = float(c.iloc[-1] / c.iloc[-6] - 1)
+            why = []
+            if vol > 0.7:
+                if vr >= 3: why.append(f"volume {vr:.1f}x normal")
+                if dd <= -0.30: why.append(f"{dd * 100:.0f}% under its 2-month high")
+                if abs(r5) >= 0.15: why.append(f"{r5 * 100:+.0f}% in 5 days")
+            if why:
+                out.append({"ticker": t, "core": t in T, "volatility_pct": round(vol * 100), "why": why, "price": round(float(c.iloc[-1]), 2),
+                            "note": "big moves 5-7x more likely here, in either direction"})
+    except Exception as e:
+        print("mover radar", e)
+    out.sort(key=lambda x: (not x["core"], -x["volatility_pct"]))
+    st["movers"] = {"at": time.time(), "time": now.strftime("%Y-%m-%d %H:%M"), "list": out[:20]}
+    return out[:20]
+
+
 def questioner(st, desk, prices, now, force=False):
     """The Questioner: every 2 hours it looks at EVERYTHING the bot has seen and asks what nobody noticed, what looks odd,
     what moved without a reason, what got dismissed. Each question goes to the teammate best placed to answer, who must
@@ -1958,6 +1996,7 @@ def questioner(st, desk, prices, now, force=False):
             "insiders_and_short_interest": {t: {"insiders_net_12m": (people.load(t) or {}).get("insiders_last_12m", {}).get("net_usd"),
                                                 "short": (people.load(t) or {}).get("short_interest")} for t in T},
             "sprott": sput.summary(), "uranium": uprice.summary(), "plants": plant.snapshot(st), "coming_up": st.get("catalysts", [])[:10],
+            "mover_radar_big_moves_likely": mover_radar(st, now),
             "recent_debates": st.get("debates", [])[-3:], "open_positions": {t: list(l) for t, l in st["book"]["lots"].items()
                                                                             if any(v.get("qty", 0) > 1e-6 for v in l.values())},
             "already_asked": [q["question"] for q in qs[-40:]]}

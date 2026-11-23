@@ -701,8 +701,11 @@ function stockState(t){
     const rv=S.reactor_view||{}, own=rv.owners||{};
     const plants=Object.keys(own).length?Object.entries(own).map(([t,o])=>`<div class="kv"><span>${esc(t)}: ${o.units-(o.down||[]).length} of ${o.units} reactors running</span><b class="${(o.down||[]).length?"neg":"pos"}">${(o.down||[]).length?esc(o.down.join(", "))+" down":"all up"}</b></div>`).join("")+(rv.us_fleet_running_pct!=null?`<div class="kv"><span>All US reactors (${esc(rv.date||"")})</span><b>${rv.us_fleet_running_pct}%</b></div>`:""):`<p class="mut" style="font-size:13px;margin:0">Fills in after the next morning reactor report.</p>`;
     const wx=S.weather_view||{}, ex=[].concat(...Object.entries(wx).map(([r,v])=>(v.extremes||[]).map(e=>`<div class="kv"><span>${esc(r.split(" (")[0])}, ${esc(fd(e.date))}</span><b class="neg">${esc(e.kind)} ${e.kind==="heat"?e.high_f:e.low_f}&deg;F</b></div>`)));
+    const mv=((S.movers||{}).list||[]).slice(0,8);
+    const movers=mv.length?mv.map(m=>`<div class="kv"><span><b style="color:var(--ink)">${esc(m.ticker)}</b>${m.core?"":" <small>(related)</small>"}: ${esc(m.why.join(", "))}</span><b>${money(m.price)}</b></div>`).join(""):`<p class="mut" style="font-size:13px;margin:0">No stock is in a big-move setup right now.</p>`;
     const lastQ=(S.questions||[]).slice(-1)[0];
     el.innerHTML=`<div class="bcard"><h3>Nuclear board</h3><p class="sub">Today's move and the last 30 days. Tap a stock for its file.</p>${rows}</div>
+      <div class="bcard"><h3>Mover radar</h3><p class="sub">Where +20% swings (up or down) were 5-7x more likely. The team checks why.</p>${movers}</div>
       <div class="bcard"><h3>Uranium</h3>${uran}</div>
       <div class="bcard"><h3>Plants</h3>${plants}</div>
       <div class="bcard"><h3>Power weather</h3>${ex.length?ex.join(""):`<p class="mut" style="font-size:13px;margin:0">No heat waves or cold snaps in the next 7 days for Texas or the mid-Atlantic.</p>`}</div>
