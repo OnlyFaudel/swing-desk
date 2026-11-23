@@ -12562,5 +12562,139 @@
 "project",
 "timely"
 ]
+},
+{
+"id": "635773c62703bc68",
+"date": "2026-11-20",
+"ts": 1795213125,
+"title": "PJM Finds Diminishing Respite as Shoulder-Season Prices Reach Record Highs",
+"summary": "",
+"outlet": "FactSet Insight",
+"link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNmVpTkVIcXR1Z3NGYWtuN0RURmx2b3RjTmRiYVl4SWtmM1UwbGlLam9jX0FhUzZSU2N3WE5xOTNOeWwtaE5WTWlEbGQzRkpid1BVdmRCaUxpZFJIMkFydTVGRklNUE9EREh1STdnMVVRLVZKTVdjN3JCZ01OMG9QYjl1TkJkU2psNmpLQ1VxQzRzTzNlQ2EyMkFnZ3NtekxRTjBoOUlzVWlGdnRyY3NZelBoa0XSAbQBQVVfeXFMUDZlaU5FSHF0dWdzRmFrbjdEVEZsdm90Y05kYmFZeElrZjNVMGxpS2pvY19BYVM2UlNjd1hOcTkzTnlsLWhOVk1pRGxkM0ZKYndQVXZkQmlMaWRSSDJBcnU1RkZJTVBPRERIdUk3ZzFVUS1WSk1XYzdyQmdNTjBvUGI5dU5CZFNqbDZqS0NVcUM0c08zZUNhMjJBZ2dzbXpMUU4waDlJc1VpRnZ0cmNzWXpQaGtF?oc=5",
+"place": "PJM grid",
+"tickers": [
+"CEG",
+"TLN",
+"VST"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "789dc99945c275fb",
+"w": [
+"diminishing",
+"finds",
+"highs",
+"pjm",
+"prices",
+"reach",
+"record",
+"respite",
+"season",
+"shoulder"
+]
+},
+{
+"id": "b073eeb25de54f8f",
+"date": "2026-11-21",
+"ts": 1795226828,
+"title": "China building nuclear weapons at 'hot and heavy' pace, says Trump",
+"summary": "",
+"outlet": "Dailyhunt",
+"link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNZ0V3VEN0cE9Hcmd1dzJ5Z1lBdTRpTEFkbXQ2OF9JRTlnblFuOU9WQ1hZZFVaTFJrdWo1aFo4U0tWbUt5QUlvRXVFcWtZS3lPVTA5bHJpVXRwbHMxOGlHMHB5ZFphczJkT2NnckFBaV9SMWZrbm9YTWNEX3QxNDZzR19WSUpwcnhnTDNUWFdYSVhTbTMtb3UtRUZxVDd0eTNfTnl0cW90T1FHNkl2UFM1a2V6UXdBaGI0Qm5zdXpIY2tXTEJybGx3T1ZzREVxSEIxRVM2ODNod3FjOVhJa2s4bVB3eVA0YnN5QVk5eHA5NA?oc=5",
+"place": "Weapons programs",
+"tickers": [
+"BWXT",
+"LEU"
+],
+"tags": [
+"restart",
+"defense"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.46,
+"score": 5.12,
+"echo_of": null,
+"w": [
+"building",
+"china",
+"heavy",
+"hot",
+"nuclear",
+"pace",
+"trump",
+"weapons"
+]
+},
+{
+"id": "81753ce9636874d7",
+"date": "2026-11-23",
+"ts": 1795446625,
+"title": "Energy Fuels shares jump on a plan to process another 1 million pounds of uranium at its Utah mill",
+"summary": "",
+"outlet": "MLQ.ai",
+"link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRmp0X3V0TTVxSUlfNFNtVHBSVmpic2ZmbnFyZDE3SWRnN01TX3NWNnZkbjFUMnFRMGVKRDNLVm1PWThvZGhqVVB6cGtGUXppZjJGOVlHNGxYOEk4Zkt4Z2dnQ0NzandFOTNOWE83RE05Y3I5VmgxQUowWVFSdEoxX0tKQjZHbkh6eXlyd3VvWEQ4ZWhGdEI5TDhvdzhyRGlrT0J4d0tvQXF5ZEtENExjVDRjdXNBcW00ZklZ?oc=5",
+"place": "White Mesa / Utah",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [
+"production"
+],
+"numbers": [
+"1 million"
+],
+"local": false,
+"novelty": 0.68,
+"score": 4.16,
+"echo_of": null,
+"w": [
+"another",
+"energy",
+"fuels",
+"jump",
+"mill",
+"million",
+"plan",
+"pounds",
+"process",
+"shares",
+"uranium",
+"utah"
+]
+},
+{
+"id": "97e5a70ea6902e58",
+"date": "2026-11-23",
+"ts": 1795461972,
+"title": "DOE Approves $23.5B Savannah River Plutonium Plant",
+"summary": "",
+"outlet": "Wisevoter",
+"link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUW9hY0NEaE9tZEJPUm9FeTA5SmdqX1YwQkt5ek9mS1RsVlRZVlNUN0ttTTA2ZC1UZTVrazhmUnc4Mzh6Ry1ial9oWi1DVkNrTVZRR25rNUpvaW5KVjJkZUVVTVNhUzZxRDVwcm1MUjZkXzRiOUNWMXFSUDdMU29CUlRVZ1dEVHI0LWVvTmVDaS03T1ZCbHQ4MA?oc=5",
+"place": "Weapons programs",
+"tickers": [
+"BWXT",
+"LEU"
+],
+"tags": [
+"regulation"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.69,
+"score": 5.38,
+"echo_of": null,
+"w": [
+"approves",
+"doe",
+"plant",
+"plutonium",
+"river",
+"savannah"
+]
 }
 ]
