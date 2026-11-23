@@ -303,7 +303,7 @@ button.act:hover{filter:brightness(1.08)}
 .shell{max-width:1200px;padding:0 8px}
 @media (min-width:980px){.cols{grid-template-columns:400px minmax(0,640px);gap:72px}}
 @media (min-width:980px) and (max-width:1180px){.cols{grid-template-columns:360px minmax(0,1fr);gap:40px}}
-.side{scrollbar-width:none}.side::-webkit-scrollbar{display:none}
+@media (min-width:980px){.side{position:static;max-height:none;overflow:visible}}  /* no box-inside-a-page scrolling: the whole page scrolls as one */
 </style></head>
 <body><div class="wrap">
 __BANNER__
