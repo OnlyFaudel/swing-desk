@@ -778,30 +778,6 @@
  },
  "news_feed": [
   {
-   "ticker": "BWXT",
-   "source": "Local intel: BigGo Finance (Naval reactors)",
-   "title": "South Korea's $21.7 Billion Nuclear-Powered Submarine Program Enters Full Swing, Setting Up Hanwha Ocean vs. HD Hyundai Showdown",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5aV3lyTWtySXJZcElFWmNoSkh1Q2pzclptX3o2eDNjVEIwQXhXMEs2Yk5zR2dzQzhTWUY1Ui1YYlFza0FWQS1LYkh4Vlc4SE91UmNSbXJSNnF3MEQ3dVQ1bFpyUEwwMlFtdDludXJMMXN4R05sakE?oc=5",
-   "ts": 1795121700,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CEG",
-   "source": "Local intel: Utility Dive (PJM grid)",
-   "title": "PJM urged to delay base capacity auction until data centers cut from forecast",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbXctTXFMMDVCNTJFYzVBOGF6Zk1aNUNmZUZqQUtLVTNzSHVSZk5tUGFLQzY1QWtta1BMUkNQdF9JWV83U1lsaEVNbGliSG13RlhMay1JYVJEeVN3ak5TRDA0amZER2tYTUtLSmpoNzdzUUdhTV9ISTB3dDVxOWxZNjhDN1J6RXJhVnJnZWV0TzMzR0l0NlE2ZnU5cUE?oc=5",
-   "ts": 1795111455,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
    "ticker": "CCJ",
    "source": "Yahoo Finance",
    "title": "Constellation Energy Sinks 10% in a Week as AI Stocks Slide, Giving Back Its Earnings Jump. Time to Buy?",
@@ -3776,6 +3752,30 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Headline is about Energy Fuels (UUUU), a peer, and reports a price move rather than new information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Uranium explorers provide leverage to market turnaround - The Mercury",
+   "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQdm9GSzN1Mmw2TzBBWUhldHZPdU13SEhKN3NhcmFqMWFBVnlyVkJoUGFoLVFSU1U1QUh1V0ZrNDVmVmw3Z1pKQkJKQlJQSXRGWEx3NkNxeUNBYUM3YXNwd1VwODhWZTBfSl9seDlkYnRvY1N6TEVxVlVQWEVhNXQyaFBoVmplY3lsWGF1c1pPcU5IbFplZTcyUVhKcHQ4em5qLS1QNzdjTjJmckRZQ2c2NEZmTmFqS1luekJyX2FXd1BWSUtZdjQ4QXp2YzBnWWRfdkxMOGQ4WVFrTFVPdmsxVy1KMV90RF9UUUtVQkFQblZzdk5HLXZPa2ZBc00yanlQc1ZMaGF0VU5wQTRCcTc4ag?oc=5",
+   "ts": 1795461952,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic opinion piece about explorers and uranium price leverage; no new company-specific information."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News: \"BWX Technologies\"",
+   "title": "BWXT Canada agrees to undergo AP1000 manufacturing qualification - Mugglehead Investment Magazine",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUFFZV2NFVUk4X2VEVnFwei1zVm9pVkJyRkNiQV96TGw4cl91U2lFYWJEb3JwLWxJbUtiTDlDaVE3cng5d3NtRWllNFhZTVBJVGhON0pTa3FlVmVUSEN4aUo1Ujh3akhZV1VfTDhQWFB3cHRUZlVzZ1BwZ1FPU2F1UzVReGptbEJPWFBMM3pzMVhwWGJESlE?oc=5",
+   "ts": 1795445156,
+   "materiality": 5,
+   "novelty": "follow_up",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Qualification step for AP1000 manufacturing, follows the Nov 23 deal, but is incremental rather than a new contract."
   }
  ],
  "reviews": [
@@ -5114,16 +5114,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.20277,
+  "day_usd": 0.20323,
   "month": "2026-11",
-  "month_usd": 0.46625,
-  "total_usd": 0.46625,
+  "month_usd": 0.46671,
+  "total_usd": 0.46671,
   "by_role": {
    "macro": 0.01693,
    "whale": 0.00861,
    "crowd": 0.00751,
    "level": 0.03344,
-   "scout": 0.05533,
+   "scout": 0.05579,
    "review": 0.05504,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -5228,19 +5228,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.43,
+  "CCJ": 61.64,
   "NXE": 6.79,
-  "UEC": 5.82,
-  "DNN": 1.79,
-  "UUUU": 5.26,
-  "LEU": 87.38,
-  "BWXT": 116.25,
-  "CEG": 251.66,
-  "VST": 125.22,
-  "TLN": 364.7,
-  "SPY": 723.97
+  "UEC": 5.8,
+  "DNN": 1.8,
+  "UUUU": 5.25,
+  "LEU": 87.49,
+  "BWXT": 116.12,
+  "CEG": 252.4,
+  "VST": 125.17,
+  "TLN": 365.43,
+  "SPY": 724.72
  },
- "last_cycle": "2026-11-23 15:16 ET",
+ "last_cycle": "2026-11-23 15:27 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -5265,7 +5265,7 @@
   ]
  },
  "brakes": {
-  "equity": 1033.51,
+  "equity": 1033.49,
   "day_pct": 3.3,
   "week_pct": 3.3,
   "drawdown_pct": -1.98,
@@ -6494,6 +6494,42 @@
   [
    "2026-11-23 15:16",
    1033.51
+  ],
+  [
+   "2026-11-23 15:18",
+   1033.16
+  ],
+  [
+   "2026-11-23 15:19",
+   1032.46
+  ],
+  [
+   "2026-11-23 15:20",
+   1032.51
+  ],
+  [
+   "2026-11-23 15:21",
+   1032.65
+  ],
+  [
+   "2026-11-23 15:22",
+   1033.01
+  ],
+  [
+   "2026-11-23 15:23",
+   1033.31
+  ],
+  [
+   "2026-11-23 15:25",
+   1033.94
+  ],
+  [
+   "2026-11-23 15:26",
+   1033.59
+  ],
+  [
+   "2026-11-23 15:27",
+   1033.49
   ]
  ],
  "nowcast": {
@@ -49153,18 +49189,18 @@
  },
  "sync": {
   "pulse_up": false,
-  "basket_vs_avg_pct": -6.36,
+  "basket_vs_avg_pct": -6.1,
   "partners_pct": {
-   "CCJ": -1.37,
-   "NXE": -1.08,
-   "UEC": -1.41,
-   "DNN": -1.2,
-   "UUUU": -0.83,
-   "LEU": -1.02,
-   "BWXT": -1.32,
-   "CEG": -1.24,
-   "VST": -1.42,
-   "TLN": -1.59
+   "CCJ": -1.11,
+   "NXE": -0.82,
+   "UEC": -1.11,
+   "DNN": -0.94,
+   "UUUU": -0.56,
+   "LEU": -0.77,
+   "BWXT": -1.01,
+   "CEG": -1.03,
+   "VST": -1.16,
+   "TLN": -1.31
   },
   "mult": {
    "CCJ": 0.8,
@@ -49179,16 +49215,16 @@
    "TLN": 0.8
   },
   "own_pct": {
-   "CCJ": -0.11,
-   "NXE": -2.73,
-   "UEC": 0.17,
-   "DNN": -1.65,
-   "UUUU": -4.99,
-   "LEU": -3.31,
-   "BWXT": -0.64,
-   "CEG": -1.29,
-   "VST": 0.27,
-   "TLN": 1.8
+   "CCJ": 0.16,
+   "NXE": -2.45,
+   "UEC": 0.21,
+   "DNN": -1.35,
+   "UUUU": -4.81,
+   "LEU": -2.89,
+   "BWXT": -0.7,
+   "CEG": -0.58,
+   "VST": 0.59,
+   "TLN": 2.0
   },
   "series": {
    "CCJ": [
@@ -49331,7 +49367,7 @@
     0.7805,
     0.7767,
     0.7777,
-    0.7754
+    0.7774
    ],
    "NXE": [
     1.0,
@@ -49473,7 +49509,7 @@
     0.8205,
     0.8181,
     0.8163,
-    0.8127
+    0.8151
    ],
    "UEC": [
     1.0,
@@ -49615,7 +49651,7 @@
     0.784,
     0.7813,
     0.7853,
-    0.7799
+    0.7802
    ],
    "DNN": [
     1.0,
@@ -49757,7 +49793,7 @@
     0.8223,
     0.8246,
     0.8223,
-    0.8132
+    0.8157
    ],
    "UUUU": [
     1.0,
@@ -49899,7 +49935,7 @@
     0.7079,
     0.7046,
     0.7026,
-    0.6934
+    0.6947
    ],
    "LEU": [
     1.0,
@@ -50041,7 +50077,7 @@
     0.8957,
     0.8923,
     0.8907,
-    0.8855
+    0.8894
    ],
    "BWXT": [
     1.0,
@@ -50183,7 +50219,7 @@
     0.8883,
     0.8912,
     0.8898,
-    0.8846
+    0.8841
    ],
    "CEG": [
     1.0,
@@ -50325,7 +50361,7 @@
     0.9929,
     0.9935,
     0.9933,
-    0.9905
+    0.9976
    ],
    "VST": [
     1.0,
@@ -50467,7 +50503,7 @@
     0.8808,
     0.8853,
     0.8853,
-    0.8789
+    0.8817
    ],
    "TLN": [
     1.0,
@@ -50609,7 +50645,7 @@
     1.0771,
     1.0846,
     1.0831,
-    1.076
+    1.0781
    ],
    "basket": [
     1.0,
@@ -50751,7 +50787,7 @@
     0.8844,
     0.8853,
     0.8847,
-    0.8792
+    0.8817
    ],
    "avg": [
     1.0474,
@@ -50893,10 +50929,10 @@
     0.9452,
     0.9432,
     0.9412,
-    0.9389
+    0.939
    ]
   },
-  "time": "2026-11-23 15:16"
+  "time": "2026-11-23 15:27"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -50922,8 +50958,8 @@
   "d7c07a39ed1d0a97",
   "023889bc30f2a7cd",
   "b3d0414ef4889ee9",
-  "4c474a21ada49911",
   "91d21b21da9289e4",
+  "4c474a21ada49911",
   "1715e61816aa5619",
   "1179c30a7f3faefa",
   "66abfa595ddf0659",
@@ -50976,8 +51012,8 @@
   "1e6d0eb0e2b54116",
   "2e25691d89c6bf03",
   "8df7edb48605a27d",
-  "28519b0d409dc260",
   "9342c1346e3b9a91",
+  "28519b0d409dc260",
   "2a89ac3dc67ad332",
   "5bc99c203ef396a3",
   "7c5af14d321efc0e",
@@ -51192,9 +51228,11 @@
   "e6d38cd330fc098a",
   "6c319586d5fd38f0",
   "a139bb0be8a41b23",
-  "f61fff1c8e93929e"
+  "f61fff1c8e93929e",
+  "6e29a5daa673e380",
+  "7900f7b732a740d7"
  ],
- "news_slow_at": 1795465026.1403177,
+ "news_slow_at": 1795465643.3068247,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -202015,7 +202053,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 15:16",
+  "updated": "2026-11-23 15:27",
   "total": 378,
   "week": 332,
   "places": {
@@ -202652,7 +202690,6 @@
   "0f092a6ff0645a2d",
   "8a7a925eda752f82",
   "04e5c0526493eb7e",
-  "d53204586a89fe6b",
   "498180393c058995",
   "f3ccd7a260e2d594",
   "a3f7ee9bb9023700",
@@ -202660,12 +202697,12 @@
   "65144e58fd5c26e9",
   "710e26d86c88952c",
   "c10f62c3161fa59d",
-  "33461799e841c77f",
   "03c5d2773ef94a7b",
+  "33461799e841c77f",
   "38d326870f86784b",
   "73c8ecdc752b197b",
-  "6c752481de5345ed",
   "096f1d51d1fb61ac",
+  "6c752481de5345ed",
   "f88ba68b2c94d1a7",
   "2c7a3976a5596853",
   "28eaa442b6a19a6f",
@@ -202681,6 +202718,7 @@
   "c73b8f1be49ed29e",
   "53627f4c0e7162ee",
   "09bd7b0e348df04b",
+  "e0f8d77a6373bf31",
   "9072aaac75f7221f",
   "30a860e8617961c8",
   "dbd18bd6c4654ec8",
@@ -202718,7 +202756,7 @@
   "a7baf61adc01832c",
   "7f7a05be6b3ac1f5",
   "9e7ebdf62031eeaf",
-  "e0f8d77a6373bf31",
+  "d53204586a89fe6b",
   "0ad3ea7bae8b611c",
   "f2cc6e74f1bd9dd4",
   "2d6cd019b00546cd"
@@ -202977,6 +203015,30 @@
     "ticker": "TLN",
     "what": "PJM December capacity auction timing and outcome; a delay or repricing could move TLN materially.",
     "by": "level",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-08",
+    "ticker": "UEC",
+    "what": "UEC Q1 earnings; typically moves the stock about 4-5% either way on the day",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-08",
+    "ticker": "UEC",
+    "what": "Q1 earnings report; typically moves the stock about 4-5% either way on the day",
+    "by": "engineer",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-08",
+    "ticker": "UEC",
+    "what": "UEC earnings; expect a 4-5% move either way on the day",
+    "by": "pm",
     "written": "2026-11-23",
     "surfaced": false
    },
@@ -203969,12 +204031,12 @@
    "built": "2026-11-23 15:14"
   }
  ],
- "heartbeat": "2026-11-23 15:16",
+ "heartbeat": "2026-11-23 15:27",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 127,
+ "_pushed_feed": 130,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -204081,18 +204143,18 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 116.25,
-  "TLN": 364.7
+  "BWXT": 116.125,
+  "TLN": 365.43
  },
  "notes_audit": {
   "scout": {
-   "asked": 41,
-   "used": 39,
+   "asked": 42,
+   "used": 40,
    "notes": {
     "TLN Deals and contracts": 1,
     "CCJ Deals and contracts": 13,
-    "BWXT Deals and contracts": 9,
-    "SECTOR Government and laws": 10,
+    "BWXT Deals and contracts": 10,
+    "SECTOR Government and laws": 11,
     "UUUU Deals and contracts": 8,
     "SECTOR Countries": 11,
     "CEG Deals and contracts": 6,
@@ -204392,7 +204454,7 @@
    ],
    [
     "2026-11-23",
-    61.53
+    61.62
    ]
   ],
   "NXE": [
@@ -204636,7 +204698,7 @@
    ],
    [
     "2026-11-23",
-    5.81
+    5.8
    ]
   ],
   "DNN": [
@@ -204758,7 +204820,7 @@
    ],
    [
     "2026-11-23",
-    1.79
+    1.8
    ]
   ],
   "UUUU": [
@@ -205002,7 +205064,7 @@
    ],
    [
     "2026-11-23",
-    87.35
+    87.58
    ]
   ],
   "BWXT": [
@@ -205124,7 +205186,7 @@
    ],
    [
     "2026-11-23",
-    116.29
+    116.14
    ]
   ],
   "CEG": [
@@ -205246,7 +205308,7 @@
    ],
    [
     "2026-11-23",
-    251.69
+    252.41
    ]
   ],
   "VST": [
@@ -205368,7 +205430,7 @@
    ],
    [
     "2026-11-23",
-    125.15
+    125.18
    ]
   ],
   "TLN": [
@@ -205490,7 +205552,7 @@
    ],
    [
     "2026-11-23",
-    364.48
+    365.4
    ]
   ]
  },
