@@ -816,18 +816,6 @@
  },
  "news_feed": [
   {
-   "ticker": "DNN",
-   "source": "Google News: \"Denison Mines\"",
-   "title": "Denison Mines falls 7.66% in Friday's session - Global Banking & Finance Review",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPOFFjUEMzWFVxTjI5N3d6cWtHdTlJQTMyblNjazd0S0luc1JjODBreS1nM2VEZnFhNHNWc2xxS1RTWXhUSzdWbmJxaHN5MVIxNDNTWHlTSk9nNlNMMGZhQ3d6NzZ2UjZJd3FYaEZuaXBPcFp6dWJsTGVScGRnR1ZaVGN2VkM?oc=5",
-   "ts": 1795213288,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Daily price recap; no new company information"
-  },
-  {
    "ticker": "NXE",
    "source": "Google News: \"NexGen Energy\"",
    "title": "Nexgen Energy falls 7.55% in Friday's session - Global Banking & Finance Review",
@@ -3814,6 +3802,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Local energynews.pro item on Energy Fuels' White Mesa target; a rival miner's plan, not CCJ news."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News: Constellation Energy nuclear",
+   "title": "CEG Maintained by Morgan Stanley -- Price Target Raised to $393 - GuruFocus",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZElhaldDSEtubUtoaFV6RXJpdFk2SGFTd05RcEdnWlBlMVNTMXRGSUNvaTQtRGVHbjRwUlpQWUVkOWpEeTlVN3FHcG5LUWsyanYtYkZfcTk3X1NxYzF5ZHp4aTBxTU9fSU43dmZpVVhpa2pSS1dkTGtzU2U2aWc2U1ZuOVpTNE85TFZUYmI2ejdZS19UWFJFSXlXbkRRb0U?oc=5",
+   "ts": 1795456555,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Routine price-target raise rehash; target hike alone rarely moves stock several %."
   }
  ],
  "reviews": [
@@ -5336,16 +5336,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.31258,
+  "day_usd": 0.31294,
   "month": "2026-11",
-  "month_usd": 0.57606,
-  "total_usd": 0.57606,
+  "month_usd": 0.57642,
+  "total_usd": 0.57642,
   "by_role": {
    "macro": 0.02491,
    "whale": 0.00861,
    "crowd": 0.00751,
    "level": 0.03344,
-   "scout": 0.06375,
+   "scout": 0.06411,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5463,7 +5463,7 @@
   "TLN": 365.03,
   "SPY": 722.39
  },
- "last_cycle": "2026-11-23 18:32 ET",
+ "last_cycle": "2026-11-23 18:43 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51329,6 +51329,7 @@
   "14550cc72dba894e",
   "609cd9695add1515",
   "59c6f6be8bf3e5a9",
+  "8c91e31e5f3c4c89",
   "4c474a21ada49911",
   "63e7ca0ff352dff7",
   "2f0e6fcd07e9c356",
@@ -51350,8 +51351,8 @@
   "13880e66390f270d",
   "efa3269c9fa1c644",
   "a00037110572bad0",
-  "db05240fe85a29ac",
   "4653461d7ed88855",
+  "db05240fe85a29ac",
   "702ca5529e4f7aeb",
   "982258a10913aaf8",
   "063df817fe5afbbd",
@@ -51577,7 +51578,7 @@
   "bb6d0befac06c212",
   "0d77f1d2373bb03d"
  ],
- "news_slow_at": 1795476358.3110914,
+ "news_slow_at": 1795476971.1513932,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -203573,7 +203574,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 18:32",
+  "updated": "2026-11-23 18:43",
   "total": 401,
   "week": 347,
   "places": {
@@ -204210,6 +204211,7 @@
   "7f7a05be6b3ac1f5",
   "23f0910e96eb7de3",
   "38d326870f86784b",
+  "fe223bd03cfc6370",
   "515517f776442fe4",
   "49be13755057758d",
   "096f1d51d1fb61ac",
@@ -204240,7 +204242,6 @@
   "9e7ebdf62031eeaf",
   "5298ad87eeddc34f",
   "33461799e841c77f",
-  "c73b8f1be49ed29e",
   "36cbbee89c76a1f7",
   "15fecb83818a0949",
   "f2cc6e74f1bd9dd4",
@@ -204284,7 +204285,7 @@
   "dbd18bd6c4654ec8",
   "6c752481de5345ed",
   "0d77f1d2373bb03d",
-  "fe223bd03cfc6370"
+  "c73b8f1be49ed29e"
  ],
  "panic_log": [
   {
@@ -205869,7 +205870,7 @@
    "built": "2026-11-23 18:16"
   }
  ],
- "heartbeat": "2026-11-23 18:32",
+ "heartbeat": "2026-11-23 18:43",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -205986,8 +205987,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 59,
-   "used": 55,
+   "asked": 60,
+   "used": 56,
    "notes": {
     "TLN Deals and contracts": 1,
     "CCJ Deals and contracts": 18,
@@ -205995,7 +205996,7 @@
     "SECTOR Government and laws": 16,
     "UUUU Deals and contracts": 14,
     "SECTOR Countries": 15,
-    "CEG Deals and contracts": 6,
+    "CEG Deals and contracts": 7,
     "NXE Legal": 1,
     "NXE Deals and contracts": 1,
     "DNN Deals and contracts": 1,
@@ -208547,7 +208548,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-23 18:32",
+ "watchdog_last": "2026-11-23 18:43",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
