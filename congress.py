@@ -1,7 +1,7 @@
 """Bills in Congress that touch nuclear power or uranium, with their latest action (introduced, passed a chamber, signed).
 Needs a free key from api.congress.gov (sign up at api.data.gov) in the CONGRESS_API_KEY secret; without it this is skipped
 and the news collector's "Congress and laws" searches still cover it."""
-import datetime as dt, json, os, urllib.parse, urllib.request
+import datetime as dt, json, os, urllib.error, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 PATH = os.path.join(ROOT, "memory", "intel", "congress.json")
@@ -15,7 +15,12 @@ def run(pages=4):
     db = json.load(open(PATH)) if os.path.exists(PATH) else {"bills": {}}
     for p in range(pages):  # the most recently updated bills, 250 a page; keep the nuclear ones
         q = urllib.parse.urlencode({"api_key": key, "format": "json", "limit": 250, "offset": p * 250, "sort": "updateDate+desc"})
-        d = json.load(urllib.request.urlopen(f"https://api.congress.gov/v3/bill?{q}", timeout=30))
+        req = urllib.request.Request(f"https://api.congress.gov/v3/bill?{q}", headers={  # its firewall blocks the default Python agent
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36", "Accept": "application/json"})
+        try:
+            d = json.load(urllib.request.urlopen(req, timeout=30))
+        except urllib.error.HTTPError as e:
+            raise RuntimeError(f"Congress.gov {e.code}: {e.read()[:200].decode('utf-8', 'ignore')}")
         for b in d.get("bills", []):
             title = b.get("title", "")
             if not any(w in title.lower() for w in WORDS):
