@@ -10776,5 +10776,105 @@
 "surges",
 "uranium"
 ]
+},
+{
+"id": "7280ac9846917e43",
+"date": "2026-11-20",
+"ts": 1795190734,
+"title": "ECA urges Congress to pass legislation to update the Nuclear Waste Policy Act",
+"summary": "",
+"outlet": "ExchangeMonitor",
+"link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTXJZQWkzT1RQci05OVJUQzRLVF9rSW5qUHF4QlZWeHVXOElBeVJka3hNcFB2RTNlcmJvMW4yOXBWTXp3RlRwRU8tMEJJUzRhcVd1WFVDTEIxTmdhVmZha21OMy1iUUJMa3BSeUFCNGFieVBEc0dzaXd0ZHFiT1VsSlpRRnBMTFpZUkVjUkJRemV6NXloUXVJZnBOcmh5WS1tTGozYm4ya044cEdfSjBibWRFbS1SMC1ybnV1YTVFVQ?oc=5",
+"place": "Congress and laws",
+"tickers": [
+"CCJ",
+"LEU",
+"CEG",
+"UEC",
+"UUUU"
+],
+"tags": [
+"regulation"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.88,
+"score": 5.76,
+"echo_of": null,
+"w": [
+"act",
+"congress",
+"eca",
+"legislation",
+"nuclear",
+"pass",
+"policy",
+"update",
+"urges",
+"waste"
+]
+},
+{
+"id": "26652cf90e01656a",
+"date": "2026-11-23",
+"ts": 1795423867,
+"title": "Denison Mines stock rises around 8.5% as short-term buying drives rebound despite weak technicals",
+"summary": "",
+"outlet": "Traders Union",
+"link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORUx6cFJKNk12V1JZaGI1VUlidThsai1YRG9fRUVRQlNMd3pVMVN2WnhjOEhQOVZCNmtRMmk3UHJBb1pXMFJ5eEgyUUhoXzNnQkJScDNfQmJEbUlGb05YaWQ5OE93ZXpiRFVrbEdTWXdYS2NZMWVUeU1YdElpbVVhdDN6cnpXdUw1MDFLMjdvMA?oc=5",
+"place": "Workers and jobs",
+"tickers": [
+"DNN"
+],
+"tags": [],
+"numbers": [
+"8.5%"
+],
+"local": true,
+"novelty": 0.82,
+"score": 4.64,
+"echo_of": null,
+"w": [
+"around",
+"buying",
+"denison",
+"despite",
+"drives",
+"mines",
+"rebound",
+"rises",
+"short",
+"stock",
+"technicals",
+"term",
+"weak"
+]
+},
+{
+"id": "eabbccefbaa2ef1e",
+"date": "2026-11-23",
+"ts": 1795448546,
+"title": "Fuel plates milestone for FRM-II conversion",
+"summary": "Framatome's fabrication of the first depleted uranium fuel plates is a major technical milestone towards the conversion of the FRM II research reactor at Technical University of Munich from highly enriched uranium to high-assay low-enriched uranium fuel.",
+"outlet": "World Nuclear News",
+"link": "https://www.world-nuclear-news.org/articles/fuel-plates-milestone-for-frm-ii-conversion",
+"place": "World Nuclear News",
+"tickers": [
+"CCJ",
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.92,
+"score": 4.34,
+"echo_of": null,
+"w": [
+"conversion",
+"frm",
+"fuel",
+"milestone",
+"plates"
+]
 }
 ]
