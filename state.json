@@ -272,18 +272,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Google News: Kazatomprom",
-   "title": "'Uranium sells itself': Kazatomprom's Chief Strategy Officer on industry outlook - CNBC",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPREhkVkVienpMaURoc3NleUxhU0YwdGpNWHdpTEVqZzNUSVRDaGdqVkFXVUQ3MTI5S2IwV0pQRTdla0FKMHIwOUxrSmd5OUpTTXM5clM3MWpRQmNOVXRVNU1XZl8xdlRjNkRsZkRPUmI0YjFNekhTS3c2alVCdUMxZw?oc=5",
-   "ts": 1795063587,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
    "ticker": "BWXT",
    "source": "Google News: \"BWX Technologies\"",
    "title": "Surprised By BWX Technologies' Slide? What Investors Missed - Simply Wall St",
@@ -3270,6 +3258,18 @@
    "direction": "up",
    "event_type": "other",
    "why": "Sector price recap; no new Cameco-specific information"
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News",
+   "title": "Talen Energy (TLN) Locks In Long Term PJM Sales, Is The Pullback A Valuation Opportunity? - Simply Wall St",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdl9ZRVNTcmtSeFJPSy1XUFVGaXl3YzZhcGJudkJJT1ZVYU1rMnNzeWtPWTlMc3luU3B1ZjQ5ZV9qcmtVMmZORVNPUmNhMS1ZemRRUWh2QUNnRnRlVVNfN1JHeU9ubmY1TEw2REFaSmF3QTNKSV9ZcFdpbm9rRU1tQ1U0ZFh6blZyRnlQOXRGeWxObThraTlYYk5FcGlvZm1HLUhwa3pPSVJaX2s3cHdTRHhCaDBJM21GamJnaXBhSWN6MFM4M0pLaGMwc9IB0AFBVV95cUxPX0lYVHh4Q0dhZTFQWWozOWsyV0IxTFBKN0dhQ3J2c0FCRXNBT3E3X1dsRHNoZ3pSQkNHNEVNSTdnTl90alZoZUdFYXoza0FIUlMwdW9tUFVEa01fNm9iNU1zbFdwUnZ6cnd6ZmtxTXNpS1RUQ0ZUV3ZqTFdPcmxQM2JSYmdnc25DaXJjU2hldWY3R0FiQ0xReXE1cEdXaFVQMFlydEpTTllXNmUzaHMzakp0ZUIzQmZaazJ2Qm5Bc0tEbXc4OXRQSUtsczF0ZWFY?oc=5",
+   "ts": 1795446711,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Valuation commentary on PJM sales already known; no new contract terms"
   }
  ],
  "reviews": [
@@ -4588,16 +4588,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.03762,
+  "day_usd": 0.03802,
   "month": "2026-11",
-  "month_usd": 0.30111,
-  "total_usd": 0.30111,
+  "month_usd": 0.30151,
+  "total_usd": 0.30151,
   "by_role": {
    "macro": 0.00843,
    "whale": 0.00639,
    "crowd": 0.00536,
    "level": 0.00144,
-   "scout": 0.03627,
+   "scout": 0.03667,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -4652,19 +4652,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 62.1,
-  "NXE": 6.82,
-  "UEC": 5.78,
-  "DNN": 1.8,
+  "CCJ": 62.9,
+  "NXE": 6.91,
+  "UEC": 5.81,
+  "DNN": 1.83,
   "UUUU": 5.39,
-  "LEU": 88.54,
-  "BWXT": 114.0,
-  "CEG": 251.37,
-  "VST": 124.72,
-  "TLN": 360.61,
-  "SPY": 723.21
+  "LEU": 89.52,
+  "BWXT": 115.48,
+  "CEG": 251.04,
+  "VST": 124.88,
+  "TLN": 361.24,
+  "SPY": 726.26
  },
- "last_cycle": "2026-11-23 10:17 ET",
+ "last_cycle": "2026-11-23 10:28 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4689,10 +4689,10 @@
   ]
  },
  "brakes": {
-  "equity": 1038.79,
-  "day_pct": 3.83,
-  "week_pct": 3.83,
-  "drawdown_pct": -1.48,
+  "equity": 1041.07,
+  "day_pct": 4.05,
+  "week_pct": 4.05,
+  "drawdown_pct": -1.26,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -4890,6 +4890,42 @@
   [
    "2026-11-23 10:17",
    1038.79
+  ],
+  [
+   "2026-11-23 10:18",
+   1039.68
+  ],
+  [
+   "2026-11-23 10:19",
+   1039.94
+  ],
+  [
+   "2026-11-23 10:20",
+   1040.49
+  ],
+  [
+   "2026-11-23 10:21",
+   1043.35
+  ],
+  [
+   "2026-11-23 10:22",
+   1041.32
+  ],
+  [
+   "2026-11-23 10:24",
+   1041.88
+  ],
+  [
+   "2026-11-23 10:25",
+   1041.43
+  ],
+  [
+   "2026-11-23 10:26",
+   1041.7
+  ],
+  [
+   "2026-11-23 10:28",
+   1041.07
   ]
  ],
  "nowcast": {
@@ -47533,7 +47569,7 @@
   "CEG": 1795446434.0493994,
   "VST": 1795446434.1793718,
   "BWXT": 1795446433.9712474,
-  "TLN": 1795445697.038122
+  "TLN": 1795447534.3877406
  },
  "setup_status": {
   "CCJ": "no confirmed support level below the price (it has been falling through them)",
@@ -49292,7 +49328,7 @@
     0.9427
    ]
   },
-  "time": "2026-11-23 10:17"
+  "time": "2026-11-23 10:28"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -49367,6 +49403,7 @@
   "6c0f0f111a586f76",
   "063df817fe5afbbd",
   "d377bf4c00b3bccf",
+  "9f80c9fee3eed575",
   "9dd14dae753c141a",
   "9b6ee47aa4a5262e",
   "c40403c1e5b7035d",
@@ -49509,7 +49546,6 @@
   "fa31367a940baeaa",
   "17b21557a779a003",
   "ad6bb6ac1dcb6674",
-  "7eeff7845b171edb",
   "7c221cf76c2854cd",
   "67a6b806516eadaf",
   "f61fff1c8e93929e",
@@ -49518,15 +49554,15 @@
   "6903f08684a06b0c",
   "19fb88d62a25326f",
   "009c12e19cf7cb10",
-  "22a45a3c7284120a",
-  "61b82697d913613b",
   "08783bea5ba109b0",
+  "61b82697d913613b",
   "6ae4fd45dc301c0d",
   "d8b87592a8671135",
   "a4aac5316a0eb878",
   "236832db131afa54",
   "b78da0f7db285dc2",
   "7c5af14d321efc0e",
+  "898bce48a6f14aa6",
   "d6fca5435e577b9f",
   "9cbd1f425af5c610",
   "f8916dca48bd9f43",
@@ -49536,14 +49572,15 @@
   "537b32f5b2133213",
   "17dc2073115cbcc7",
   "5e042fd73e80d40b",
-  "48a608e975b439d8",
+  "7eeff7845b171edb",
   "22ca80b609e8130c",
-  "5c4b59b788680232",
+  "48a608e975b439d8",
   "693301ddca2bc8c2",
+  "5c4b59b788680232",
   "4045069ffe34905f",
-  "898bce48a6f14aa6"
+  "22a45a3c7284120a"
  ],
- "news_slow_at": 1795446892.5159097,
+ "news_slow_at": 1795447534.9508865,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -199348,7 +199385,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 10:17",
+  "updated": "2026-11-23 10:28",
   "total": 334,
   "week": 292,
   "places": {
@@ -201004,12 +201041,12 @@
    "built": "2026-11-23 10:08"
   }
  ],
- "heartbeat": "2026-11-23 10:17",
+ "heartbeat": "2026-11-23 10:28",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 95,
+ "_pushed_feed": 96,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -201116,7 +201153,17 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 114.0,
-  "TLN": 360.614990234375
+  "BWXT": 115.4800033569336,
+  "TLN": 361.239990234375
+ },
+ "notes_audit": {
+  "scout": {
+   "asked": 1,
+   "used": 1,
+   "notes": {
+    "TLN Deals and contracts": 1
+   },
+   "since": "2026-11-23"
+  }
  }
 }
