@@ -318,21 +318,10 @@
   }
  ],
  "cooldown": {
-  "CCJ": 1795198855.6822214
+  "CCJ": 1795198855.6822214,
+  "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Chamber of Mines is optimistic about uranium tax talks ahead of 2027 - Namibia Economist",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPR19xd2pJeXM3X2diNnM2YzFtMUo0aW5RTFJIT3ZMa0EtOFd3aHl2dkdtbmxuRjFzUGhiQy1xVTZkVDFCUHZ0aDNIaHFyTVVkVWJ4LWFNM2NaSURGVml2R2pKUUZ3TWVneW1qZG5pR2JpaUFCNG5kakVZOEZUVE9uMVlLTXc5c0twUVNjTGdzelEtbS1LeWtEYXdR?oc=5",
-   "ts": 1795167728,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
   {
    "ticker": "VST",
    "source": "Google News: Vistra nuclear",
@@ -3320,6 +3309,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic Kalkine 'investors track catalyst' piece, no new company information"
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News: \"BWX Technologies\"",
+   "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com Australia",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWk9qbmJWdVdXc3VoLTRqWWFmUlVtS29yT1VRXzhWOTdYREl2Mk9qMFVKRzR3OHl5RE5WQjNTSVVObTkxT0VSYnZ0c216d0NxaHNuRGdTRVlROW9xUWR1TDE5b3pqOHo0UDM0YnJMOVlqb010czAtc2s2dWUzQU5rb1JyRWYxeEh2UTloUVJhXy0wOFhpNGthODFyZF9pdzFYME1ycVdfdXNXT2tOVC1yYjVwUHZGdw?oc=5",
+   "ts": 1795450486,
+   "materiality": 7,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Westinghouse AP1000 manufacturing deal is new, company-specific, and drove a stock surge."
   }
  ],
  "reviews": [
@@ -4638,22 +4639,22 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.04394,
+  "day_usd": 0.0804,
   "month": "2026-11",
-  "month_usd": 0.30743,
-  "total_usd": 0.30743,
+  "month_usd": 0.34389,
+  "total_usd": 0.34389,
   "by_role": {
    "macro": 0.00843,
    "whale": 0.00639,
    "crowd": 0.00536,
    "level": 0.00402,
-   "scout": 0.04001,
+   "scout": 0.04044,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
-   "pm": 0.01711,
+   "pm": 0.02903,
    "risk": 0.0066,
-   "investigator": 0.10615,
+   "investigator": 0.13026,
    "postmortem": 0.00035,
    "researcher": 0.00295
   }
@@ -4691,6 +4692,54 @@
    },
    "result": "no action",
    "time": "2026-11-20 13:21"
+  },
+  {
+   "ticker": "BWXT",
+   "trigger": "news",
+   "headline": "BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com Australia",
+   "investigator": {
+    "summary": "Westinghouse Canada gave BWXT Canada manufacturing qualification contracts for AP1000 reactor components. These are qualification contracts, meaning BWXT is being approved to make parts, not receiving large production orders, and the stock is up about 7% today on volume at only 0.21x its 20-day average.",
+    "novelty": "priced_in",
+    "direction": "up",
+    "durability": "one_day",
+    "confidence": 55,
+    "key_risk": "The 7% pop is a bounce inside a downtrend (below the 20, 50 and 200-day averages, down 11% over 20 days). Qualification contracts have no stated dollar value, and the desk's history shows BWXT's contract-deal news fades over the next 20 days (median -2.8%, up only 40% of the time).",
+    "trade_idea": "none",
+    "say": "News Scout, thanks for flagging this. I'd call it mostly priced in: the contracts only qualify BWXT to make AP1000 parts, with no disclosed dollar value, and the stock already jumped 7% today. The desk's own history shows BWXT's past contract news usually faded over the next 20 days, and the price is still below its 50-day average, so I'd wait for a patient limit-buy near support rather than chase.",
+    "to": "News Scout",
+    "_cost": 0.0241,
+    "_notes_used": [
+     "BWXT Deals and contracts",
+     "BWXT Snapshot",
+     "BWXT What history says",
+     "BWXT Leadership and insiders"
+    ]
+   },
+   "pm": {
+    "decisions": {
+     "BWXT": {
+      "action": "SKIP",
+      "size_mult": 1.0,
+      "confidence": 65,
+      "conviction": 3,
+      "target_pct": 0,
+      "stop_pct": 0,
+      "days": 0,
+      "reason": "The AP1000 qualification contracts have no disclosed dollar value, and the stock already jumped 7% today. BWXT is still in a downtrend, and its past contract news faded over 20 days (median -2.8%, up only 40% of the time), so I see no specific reason to buy now."
+     }
+    },
+    "plan_summary": "No trade in BWXT. A 7% bounce on unquantified qualification contracts inside a downtrend is chasing, not a patient entry. Revisit only if the stock pulls back to a real support level.",
+    "say": "I agree with the News Investigator that this is priced in: the contracts only approve BWXT to make AP1000 parts, with no dollar value attached, and the stock already rose 7%. The desk's history says BWXT contract news tends to fade over the next 20 days, and the stock is below its 20, 50 and 200-day averages, so I'm skipping rather than chasing the pop.",
+    "to": "News Investigator",
+    "_cost": 0.0119,
+    "_notes_used": [
+     "BWXT Deals and contracts",
+     "BWXT Snapshot",
+     "BWXT Leadership and insiders"
+    ]
+   },
+   "result": "no action",
+   "time": "2026-11-23 11:29"
   }
  ],
  "alpaca_seen_fills": [
@@ -4702,19 +4751,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 62.04,
+  "CCJ": 62.0,
   "NXE": 6.86,
-  "UEC": 5.84,
+  "UEC": 5.82,
   "DNN": 1.82,
-  "UUUU": 5.38,
+  "UUUU": 5.36,
   "LEU": 89.01,
-  "BWXT": 116.31,
-  "CEG": 251.44,
-  "VST": 125.47,
-  "TLN": 364.41,
-  "SPY": 724.31
+  "BWXT": 116.23,
+  "CEG": 251.26,
+  "VST": 125.38,
+  "TLN": 364.29,
+  "SPY": 723.7
  },
- "last_cycle": "2026-11-23 11:26 ET",
+ "last_cycle": "2026-11-23 11:29 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4739,10 +4788,10 @@
   ]
  },
  "brakes": {
-  "equity": 1040.33,
-  "day_pct": 3.98,
-  "week_pct": 3.98,
-  "drawdown_pct": -1.33,
+  "equity": 1039.91,
+  "day_pct": 3.94,
+  "week_pct": 3.94,
+  "drawdown_pct": -1.37,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -5176,6 +5225,14 @@
   [
    "2026-11-23 11:26",
    1040.33
+  ],
+  [
+   "2026-11-23 11:28",
+   1040.45
+  ],
+  [
+   "2026-11-23 11:29",
+   1039.91
   ]
  ],
  "nowcast": {
@@ -49578,7 +49635,7 @@
     0.9418
    ]
   },
-  "time": "2026-11-23 11:27"
+  "time": "2026-11-23 11:29"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -49839,9 +49896,10 @@
   "17b21557a779a003",
   "a4aac5316a0eb878",
   "c014dc203c86d5d1",
-  "cab53e09b478cbb5"
+  "cab53e09b478cbb5",
+  "2d5c6f3b4f1c4c83"
  ],
- "news_slow_at": 1795450735.2000422,
+ "news_slow_at": 1795451357.971468,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -198390,6 +198448,49 @@
    ],
    "practice": false,
    "end": "09:54"
+  },
+  {
+   "id": "20261123112940340482",
+   "title": "News on BWXT: BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investi",
+   "tickers": [
+    "BWXT"
+   ],
+   "kind": "news",
+   "start": "2026-11-23 11:29",
+   "msgs": [
+    {
+     "t": "11:29",
+     "who": "scout",
+     "to": "team",
+     "text": "Flagging this for the team: \"BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com Australia\" (Google News: \"BWX Technologies\"). No position in BWXT.",
+     "outcome": false
+    },
+    {
+     "t": "11:29",
+     "who": "investigator",
+     "to": "scout",
+     "text": "News Scout, thanks for flagging this. I'd call it mostly priced in: the contracts only qualify BWXT to make AP1000 parts, with no disclosed dollar value, and the stock already jumped 7% today. The desk's own history shows BWXT's past contract news usually faded over the next 20 days, and the price is still below its 50-day average, so I'd wait for a patient limit-buy near support rather than chase.",
+     "outcome": false,
+     "notes": "Westinghouse Canada gave BWXT Canada manufacturing qualification contracts for AP1000 reactor components. These are qualification contracts, meaning BWXT is being approved to make parts, not receiving large production orders, and the stock is up about 7% today on volume at only 0.21x its 20-day average.\nnovelty: priced_in\ndirection: up\ndurability: one_day\nconfidence: 55\nkey risk: The 7% pop is a bounce inside a downtrend (below the 20, 50 and 200-day averages, down 11% over 20 days). Qualification contracts have no stated dollar value, and the desk's history shows BWXT's contract-deal news fades over the next 20 days (median -2.8%, up only 40% of the time).\ntrade idea: none"
+    },
+    {
+     "t": "11:29",
+     "who": "pm",
+     "to": "investigator",
+     "text": "I agree with the News Investigator that this is priced in: the contracts only approve BWXT to make AP1000 parts, with no dollar value attached, and the stock already rose 7%. The desk's history says BWXT contract news tends to fade over the next 20 days, and the stock is below its 20, 50 and 200-day averages, so I'm skipping rather than chasing the pop.",
+     "outcome": false,
+     "notes": "BWXT: action: SKIP; size mult: 1.0; confidence: 65; conviction: 3; target pct: 0; stop pct: 0; days: 0; reason: The AP1000 qualification contracts have no disclosed dollar value, and the stock already jumped 7% today. BWXT is still in a downtrend, and its past contract news faded over 20 days (median -2.8\nplan summary: No trade in BWXT. A 7% bounce on unquantified qualification contracts inside a downtrend is chasing, not a patient entry. Revisit only if the stock pulls back to a real support level."
+    },
+    {
+     "t": "11:29",
+     "who": "pm",
+     "to": "team",
+     "text": "Desk on BWXT: SKIP (no action). The AP1000 qualification contracts have no disclosed dollar value, and the stock already jumped 7% today. BWXT is still in a downtrend, and its past contract news faded over 20 days (median -2.8%, up only 40% of the time), so I see no specific reason to buy now.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "11:29"
   }
  ],
  "feed": [
@@ -199328,6 +199429,40 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-23 11:29",
+   "who": "scout",
+   "kind": "agent",
+   "title": null,
+   "text": "This is a genuinely new contract headline, so it scores high, but the desk's own history shows BWXT's past deal pops often faded over the following 20 days, with a median of about -2.8%. The surge is already priced in, so I'd treat it as a reason to watch for a pullback to support rather than chase it. I agree with keeping buys disciplined here, and I'd want Risk Manager to weigh the faded-pop history before any entry.\n\nid: 2d5c6f3b4f1c4c83\nticker: BWXT\nmateriality: 7\nnovelty: new\ndirection: up\nevent type: contract_deal\nwhy: Westinghouse AP1000 manufacturing deal is new, company-specific, and drove a stock surge.\nto: team",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 11:29",
+   "who": "scout",
+   "kind": "alert",
+   "title": "News BWXT (7/10)",
+   "text": "BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com Australia - desk reviewing",
+   "tickers": [
+    "BWXT"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 11:29",
+   "who": "pm",
+   "kind": "alert",
+   "title": "Desk on BWXT: SKIP (no action)",
+   "text": "The AP1000 qualification contracts have no disclosed dollar value, and the stock already jumped 7% today. BWXT is still in a downtrend, and its past contract news faded over 20 days (median -2.8%, up only 40% of the time), so I see no specific reason to buy now.",
+   "tickers": [
+    "BWXT"
+   ],
+   "art": null,
+   "thread": "20261123112940340482"
   }
  ],
  "feed_people": {
@@ -199642,6 +199777,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "BWXT",
+   "type": "contract_deal",
+   "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com Australia",
+   "date": "2026-11-23",
+   "price": 116.23,
+   "materiality": 7,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -199722,7 +199869,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 11:27",
+  "updated": "2026-11-23 11:29",
   "total": 339,
   "week": 296,
   "places": {
@@ -201399,12 +201546,12 @@
    "built": "2026-11-23 11:09"
   }
  ],
- "heartbeat": "2026-11-23 11:26",
+ "heartbeat": "2026-11-23 11:29",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 99,
+ "_pushed_feed": 100,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -201511,20 +201658,20 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 116.30999755859375,
-  "TLN": 364.4100036621094
+  "BWXT": 116.2300033569336,
+  "TLN": 364.2850036621094
  },
  "notes_audit": {
   "scout": {
-   "asked": 9,
-   "used": 9,
+   "asked": 10,
+   "used": 10,
    "notes": {
     "TLN Deals and contracts": 1,
     "CCJ Deals and contracts": 2,
-    "BWXT Deals and contracts": 3,
+    "BWXT Deals and contracts": 4,
     "SECTOR Government and laws": 3,
     "UUUU Deals and contracts": 3,
-    "SECTOR Countries": 3,
+    "SECTOR Countries": 4,
     "CEG Deals and contracts": 1,
     "NXE Legal": 1,
     "NXE Deals and contracts": 1,
@@ -201544,6 +201691,27 @@
     "VST Price behavior": 1,
     "TLN What history says": 1,
     "desk_notes intel: PJM capacity auction delay": 1
+   },
+   "since": "2026-11-23"
+  },
+  "investigator": {
+   "asked": 1,
+   "used": 1,
+   "notes": {
+    "BWXT Deals and contracts": 1,
+    "BWXT Snapshot": 1,
+    "BWXT What history says": 1,
+    "BWXT Leadership and insiders": 1
+   },
+   "since": "2026-11-23"
+  },
+  "pm": {
+   "asked": 1,
+   "used": 1,
+   "notes": {
+    "BWXT Deals and contracts": 1,
+    "BWXT Snapshot": 1,
+    "BWXT Leadership and insiders": 1
    },
    "since": "2026-11-23"
   }
