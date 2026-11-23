@@ -49,7 +49,7 @@
 "2026-11-20": {
 "PJM grid": 4,
 "Westinghouse": 2,
-"Piketon": 4,
+"Piketon": 5,
 "Japan restarts": 1,
 "Federal Register (uranium)": 1,
 "Federal Register (nuclear)": 1,
@@ -74,7 +74,7 @@
 "Piketon": 4,
 "Naval reactors": 1,
 "Workers and jobs": 1,
-"Rare earths (Energy Fuels)": 2,
+"Rare earths (Energy Fuels)": 3,
 "Japan restarts": 1,
 "Wheeler River / Phoenix": 1
 },
@@ -82,6 +82,9 @@
 "Federal Register (nuclear)": 3
 },
 "2026-11-22": {
-"ERCOT grid": 1
+"ERCOT grid": 1,
+"Workers and jobs": 1,
+"Uranium price": 1,
+"Rook I / Arrow": 1
 }
 }
