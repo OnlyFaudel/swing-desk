@@ -102,6 +102,11 @@ def apply_fill(book, f, today, meta=None):
                "why_out": {"stop": "stop loss hit", "tp": "target hit"}.get(tag, L.get("exit_reason") or tag),
                "risk_pct": round((avg - L["stop"]) / avg * 100, 2) if L.get("stop") and avg > L["stop"] else None,
                "stop": L.get("stop"), "target": L.get("target"), "zone": L.get("zone")}
+        # paper fills are friendlier than real ones: charge the round trip the real market would (spread + slippage)
+        cost_pct = 0.30 if avg < 10 else 0.10  # small, cheap stocks have wider spreads
+        rec["realistic_cost"] = round(avg * q * cost_pct / 100, 2)
+        rec["realistic_pnl"] = round(pnl - rec["realistic_cost"], 2)
+        book["realistic_costs"] = round(book.get("realistic_costs", 0) + rec["realistic_cost"], 2)
         book["trades"].append(rec)
         if L["qty"] <= 1e-6:
             book["lots"][t][kind] = {"qty": 0.0, "cost": 0.0}

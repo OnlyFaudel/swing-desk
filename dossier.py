@@ -134,8 +134,8 @@ def build_one(t, st, data=None):
         ins = pp.get("insiders_last_12m") or {}
         S["Leadership and insiders"] = {
             "scorecard": pp.get("scorecard"), "bosses": pp.get("bosses"), "ceo": pp.get("ceo"),
-            "insiders_last_12_months": ins if (pp.get("insider_trades") or t not in ("CCJ", "NXE", "DNN")) else
-                {"note": "Canadian company: its insiders report trades in Canada (SEDI), which this source doesn't cover yet."},
+            "insiders_last_12_months": ins if pp.get("insider_trades") or t not in ("CCJ", "NXE", "DNN") else
+                {"note": "Canadian company: no insider trades came back from SEDI this week (checked through the Toronto listing)."},
             "recent_insider_trades": [x for x in pp.get("insider_trades", []) if x.get("kind") in ("buy", "sell")][:15],
             "governance_risk_1_low_10_high": pp.get("governance_risk_1_low_10_high"),
             "leadership_changes": [{k: e.get(k) for k in ("date", "title", "r20")} for e in desk_memory.events() + people_hist(t)

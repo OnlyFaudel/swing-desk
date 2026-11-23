@@ -38,7 +38,7 @@
   },
   "patient_levels_lineup": {
    "trials": 9,
-   "verdict": "2026-11-20: 10-stock fuel chain ~3x trades/week vs trio but lower R/trade and drawdowns to -46% unfiltered; pulse filter (basket above 70h avg) cut drawdowns to -14%/-20% but year-2 return fell (+21.8% -> +6.5%). Mixed; paper-test only. | 2026-11-23 falling-sector sizing (10 stocks, hourly, Dec 2023-Nov 2026, 2,698 trades, 0.1% cost): buys while the basket is below its 70-hour average lose (-0.06%/trade, 28% win, both halves <= 0) vs +0.42%/trade (38% win) when it's above. At 20% per trade: block 36.9%/yr worst -16%; half size 32.0% -24.7%; quarter 34.5% -18.8%; no filter 26.5% -39.1%. KEEP THE BLOCK.",
+   "verdict": "2026-11-20: 10-stock fuel chain ~3x trades/week vs trio but lower R/trade and drawdowns to -46% unfiltered; pulse filter (basket above 70h avg) cut drawdowns to -14%/-20% but year-2 return fell (+21.8% -> +6.5%). Mixed; paper-test only. | 2026-11-23 falling-sector sizing (10 stocks, hourly, Dec 2023-Nov 2026, 2,698 trades, 0.1% cost): buys while the basket is below its 70-hour average lose (-0.06%/trade, 28% win, both halves <= 0) vs +0.42%/trade (38% win) when it's above. At 20% per trade: block 36.9%/yr worst -16%; half size 32.0% -24.7%; quarter 34.5% -18.8%; no filter 26.5% -39.1%. KEEP THE BLOCK. | 2026-11-23: paper P&L now also shows a real-world version (0.10% round trip, 0.30% under $10).",
    "source": "research/lineup_sim (inline, bars_wide.pkl)"
   },
   "safety_nets": {

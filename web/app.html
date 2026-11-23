@@ -708,10 +708,12 @@ function stockState(t){
       else if(o.k==="park") rows.push(["Plan","Earns what the S&P earns while no trade needs the money; sold automatically when one does."]);
       else {if(L.target||L.stop) rows.push(["Plan",`${L.target?`Target ${money(L.target)}`:""}${L.target&&L.stop?", ":""}${L.stop?`stop ${money(L.stop)}`:""}${L.exit_on?`, or sells on ${esc(L.exit_on)}`:""}.`]);
         if(L.why) rows.push(["Why",esc(L.why)]); lines=[{v:avg,c:"#CDB16A",n:"bought"},{v:L.target,c:"#8CC6A0",n:"target"},{v:L.stop,c:"#E3877E",n:"stop"}];}
+      if(o.k!=="park"){const cpct=avg<10?0.3:0.1, rc=L.cost*cpct/100; rows.push(["Real-world",`about ${usd-rc>=0?"+":"−"}$${Math.abs(usd-rc).toFixed(2)} after the round-trip spread and slippage a real account would pay (~$${rc.toFixed(2)})`]);}
       if(L.opened){const o0=new Date(L.opened+"T12:00"),d=Math.max(0,Math.floor((Date.now()-o0)/864e5)); rows.push(["Held",`since ${o0.toLocaleDateString(undefined,{month:"short",day:"numeric"})} (${d} day${d===1?"":"s"})`]);}
     } else if(o.a){const a=o.a; rows.push(["Order",`Buy ${money(a.dollars)} at ${money(a.entry)}`],["Now",money(P[t])],["Valid until",esc(a.valid_until||"")]); if(a.stop||a.target) rows.push(["If filled",`stop ${money(a.stop)}, target ${money(a.target)}`]); lines=[{v:a.entry,c:"#CDB16A",n:"buy"},{v:a.stop,c:"#E3877E",n:"stop"},{v:a.target,c:"#8CC6A0",n:"target"}];}
     else if(o.x){const x=o.x; pl=`<b class="${x.pnl>=0?"pos":"neg"}">${x.pnl>=0?"+":"−"}$${Math.abs(x.pnl).toFixed(2)} (${x.ret>=0?"+":""}${x.ret}%)</b>`;
       rows.push(["In",`${money(x.entry)}, ${esc(String(x.entry_time||"").slice(5,16))}`],["Out",`${money(x.exit)}, ${esc(String(x.exit_time||"").slice(5,16))}`],["Size",money(x.dollars)],["Why in",esc(x.why_in||"")],["Why out",esc(x.why_out||"")]);
+      if(x.realistic_pnl!=null) rows.push(["Real-world",`${x.realistic_pnl>=0?"+":"−"}$${Math.abs(x.realistic_pnl).toFixed(2)} after the spread and slippage a real account would pay ($${(+x.realistic_cost).toFixed(2)})`]);
       lines=[{v:x.entry,c:"#CDB16A",n:"in"},{v:x.exit,c:"#9C9E9A",n:"out"}];}
     return `<div class="hch"><b>${esc(head)}</b>${pl}</div>${spark(t,lines)}<dl>${rows.map(r=>`<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join("")}</dl>`;
   }

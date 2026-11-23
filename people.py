@@ -26,18 +26,38 @@ def _rows(df, n=200):
     return json.loads(df.to_json(orient="records", date_format="iso"))
 
 
+CANADA = {"CCJ": "CCO.TO", "NXE": "NXE.TO", "DNN": "DML.TO"}
+
+
 def one(t):
     import yfinance as yf
     tk = yf.Ticker(t)
     info = tk.info or {}
     officers = [{k: o.get(k) for k in ("name", "title", "age", "totalPay", "yearBorn")} for o in info.get("companyOfficers", [])]
     ins = _rows(getattr(tk, "insider_transactions", None), 300)
+    source, fx = "SEC Form 4", 1.0
+    if not ins and t in CANADA:  # Canadian companies: insiders file in Canada (SEDI); read them through the Toronto listing
+        try:
+            ins = _rows(getattr(yf.Ticker(CANADA[t]), "insider_transactions", None), 300)
+            source = "SEDI (Canada), via the Toronto listing"
+            fx = float(yf.Ticker("CADUSD=X").history(period="5d").Close.iloc[-1])  # values are in Canadian dollars
+        except Exception as e:
+            print("sedi", t, e)
+    if t in CANADA and source == "SEC Form 4" and any("public market" in (r.get("Text") or "").lower() for r in ins):
+        source = "SEDI (Canada)"  # Yahoo serves the Canadian filings here too; their values are in Canadian dollars
+        try:
+            fx = float(yf.Ticker("CADUSD=X").history(period="5d").Close.iloc[-1])
+        except Exception:
+            fx = 0.72
     trades = []
     for r in ins:
         text = (r.get("Text") or "").lower()
-        kind = "buy" if "purchase" in text or "buy" in text else "sell" if "sale" in text else "award/other"
+        kind = ("buy" if "purchase" in text or "buy" in text or "acquisition in the public market" in text
+                else "sell" if "sale" in text or "disposition in the public market" in text else "award/other")
+        val = r.get("Value")
         trades.append({"date": (r.get("Start Date") or "")[:10], "who": r.get("Insider"), "role": r.get("Position"), "kind": kind,
-                       "shares": r.get("Shares"), "value_usd": r.get("Value"), "what": r.get("Text")})
+                       "shares": r.get("Shares"), "value_usd": round(val * fx, 2) if isinstance(val, (int, float)) and val == val else None,
+                       "what": r.get("Text"), "source": source})
     ana = _rows(getattr(tk, "upgrades_downgrades", None), 400)
     analysts = [{"date": (r.get("GradeDate") or r.get("index") or "")[:10], "firm": r.get("Firm"), "action": r.get("Action"),
                  "from": r.get("FromGrade"), "to": r.get("ToGrade"), "target": r.get("currentPriceTarget")} for r in ana]
