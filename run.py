@@ -902,9 +902,16 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
             px = c[c.index <= pd_ts(e["exit_on"])]
             if len(px):
                 e["result"] = round((float(px.iloc[-1]) / e["price"] - 1) * 100, 2)
+                if e.get("rule_size_pct") and e.get("size_pct") and e["size_pct"] != e["rule_size_pct"]:  # did the PM's sizing help?
+                    sc = st.setdefault("pm_size_score", {"calls": 0, "extra_pct_of_account": 0.0})
+                    sc["calls"] += 1
+                    sc["extra_pct_of_account"] = round(sc["extra_pct_of_account"] + e["result"] * (e["size_pct"] - e["rule_size_pct"]) / 100, 3)
+                    e["pm_size_effect_pct"] = round(e["result"] * (e["size_pct"] - e["rule_size_pct"]) / 100, 3)
                 feed.post("researcher", f"Panic-day rebound result: {e['ticker']} picked on {e['date']} at ${e['price']}, "
                           f"{e['result']:+.2f}% after {cfg.get('hold_sessions', 6)} sessions" + (" (we bought it)." if e.get("bought") else " (practice, not bought).")
-                          + (f" The PM had said {e['pm_view']}" + (f" ({e['pm_why']})" if e.get("pm_why") else "") + "." if e.get("pm_view") else ""),
+                          + (f" The PM had said {e['pm_view']}" + (f" ({e['pm_why']})" if e.get("pm_why") else "") + "." if e.get("pm_view") else "")
+                          + (f" The PM sized it {e['size_pct']}% instead of the rule's {e['rule_size_pct']}%, which "
+                             f"{'added' if e['pm_size_effect_pct'] >= 0 else 'cost'} {abs(e['pm_size_effect_pct']):.2f}% of the account." if e.get("pm_size_effect_pct") is not None else ""),
                           [e["ticker"]], kind="learn")
     held = {t: l["panic"] for t, l in book["lots"].items() if l.get("panic", {}).get("qty", 0) > 1e-6 and l["panic"].get("opened") != str(today)}
     if held and late and not st["flags"].get(f"panic_check:{today}"):
@@ -947,6 +954,20 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
                       "rebound (needs -3% today and 15%+ under its 20-day high). No buys.", kind="alert")
         return
     hits.sort()
+    vix = None
+    try:
+        import yfinance as yf
+        vix = float(yf.download("^VIX", period="5d", auto_adjust=True, progress=False)["Close"].dropna().iloc[-1].squeeze())
+    except Exception as e:
+        print("vix", e)
+    steps = cfg.get("size_steps", [10, 15, 25, 40, 50])
+
+    def rule_step(r):
+        """Tested 2019-2026 (153 trades): calm-market first shocks (VIX under 25) and full capitulation (VIX 40+) rebound best;
+        the grinding middle (VIX 25-40) is weakest. Stocks down 8%+ on the day rebound more than ones down 3-5%."""
+        s = 0 if vix is None else (1 if (vix < 25 or vix >= 40) else -1)
+        s += 1 if r <= -0.08 else (-1 if r > -0.05 else 0)
+        return max(0, min(len(steps) - 1, 2 + s))
     exit_on = sessions_after(str(today), cfg.get("hold_sessions", 6))
     eq = brk_state["equity"]
     room = max(0.0, eq * cfg.get("max_total_pct", 45) / 100 - sum(l.get("panic", {}).get("qty", 0) * prices.get(t, 0) for t, l in book["lots"].items()))
@@ -959,8 +980,11 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
                  + f". History on 61 days like this: +5.3% average over 6 sessions, up 70% of the time.", to="team")
         views = {}
         if desk.available:
-            ctx = {"market_today_pct": round(spy * 100, 2), "setups": [{"ticker": t, "today_pct": round(r * 100, 2), "under_20d_high_pct": round(dd * 100, 1)}
-                   for r, dd, t in hits], "rule_picks": [t for _, _, t in hits[: cfg.get("max_names", 3)]],
+            ctx = {"market_today_pct": round(spy * 100, 2), "vix": vix, "setups": [{"ticker": t, "today_pct": round(r * 100, 2), "under_20d_high_pct": round(dd * 100, 1),
+                   "rule_size_pct": steps[rule_step(r)]} for r, dd, t in hits], "rule_picks": [t for _, _, t in hits[: cfg.get("max_names", 3)]],
+                   "size_steps_pct": steps,
+                   "what_sizes_the_bet": {"VIX under 25": "+7.3% avg, 77% up", "VIX 25-40": "+2-3% avg, 61-66% up (weakest)",
+                                          "VIX 40+": "+11.7% avg, 83% up", "stock down 8%+ today": "+7.9%", "stock down 3-5%": "+3.7%"},
                    "history": {"all_61_panic_days_6d_avg_pct": 5.3, "up_share": 0.70, "market_down_3pct_plus_days_avg_pct": 1.9,
                                "market_down_2_to_3pct_days_avg_pct": 7.6, "worst_days": "-15% to -21% (Mar 2020, May 2022)",
                                "sector_only_panics": "no edge"},
@@ -972,22 +996,31 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
                 desk.ask("investigator", "fast", "News Investigator. For the rule's picks, is any of them falling for its OWN bad news "
                          "(earnings, offering, accident) rather than with the market? That matters: the rebound is about "
                          "market-wide selling. 2 sentences. " '{"say":"","to":"team"}', ctx, max_tokens=300)
-                pmv = desk.ask("pm", "fast", "Portfolio Manager. The rules buy the picks no matter what (that's what was tested). Give your "
-                               "own view anyway so we can score your judgment against the result later: for each pick, would you buy or "
-                               "skip, and why in a few words. " '{"say":"","to":"team","views":[{"ticker":"","view":"buy|skip","why":""}]}',
-                               ctx, max_tokens=400)
+                pmv = desk.ask("pm", "fast", "Portfolio Manager. The rules buy the picks (that's what was tested) and set a size for each from "
+                               "the VIX and how hard the stock fell (rule_size_pct). You decide the final size: keep it, or move it ONE step up "
+                               "or down on size_steps_pct, using what the Macro Analyst and News Investigator just said (a stock falling on its "
+                               "own bad news or a crash starting = down; a clean market-wide flush = up). Your sizing is scored against the "
+                               "rule's after every trade. Also say buy or skip as your own view. "
+                               '{"say":"","to":"team","views":[{"ticker":"","view":"buy|skip","size":"up|same|down","why":""}]}',
+                               ctx, max_tokens=450)
                 views = {v.get("ticker"): v for v in (pmv or {}).get("views") or [] if isinstance(v, dict)}
             except Exception as e:
                 feed.say("system", f"Agents unavailable: {e}"[:150])
         feed.say("risk", "The danger is the day this is the start of a crash (March 2020, May 2022: -15% to -21%) and a stop "
-                 f"won't save us, so size is the protection: {cfg.get('size_pct_each', 15)}% per stock, "
-                 f"{cfg.get('max_total_pct', 45)}% total at most. We sell at +{cfg.get('take_profit_pct', 10)}% near a close, or on {exit_on} no matter what.", to="chief")
+                 "won't save us, so size is the protection. Today's sizes follow the conditions"
+                 + (f" (VIX {vix:.0f}): " if vix else ": ") +
+                 f"between {steps[0]}% and {steps[-1]}% per stock, {cfg.get('max_total_pct', 100)}% total at most. "
+                 f"We sell at +{cfg.get('take_profit_pct', 10)}% near a close, or on {exit_on} no matter what.", to="chief")
         for r, dd, t in hits[: cfg.get("max_names", 3)]:
-            dollars = min(eq * cfg.get("size_pct_each", 15) / 100, room, cash)
+            k = rule_step(r)
+            nudge = ((views.get(t) or {}).get("size") or "same").lower()
+            k2 = max(0, min(len(steps) - 1, k + (1 if nudge == "up" else -1 if nudge == "down" else 0)))
+            dollars = min(eq * steps[k2] / 100, room, cash)
             L = account.lot(book, t, "panic")
             rec = {"date": str(today), "ticker": t, "price": round(prices[t], 2), "day_pct": round(r * 100, 2), "below_high_pct": round(dd * 100, 1),
                    "market_pct": round(spy * 100, 2), "exit_on": exit_on, "result": None, "bought": False,
-                   "pm_view": (views.get(t) or {}).get("view"), "pm_why": (views.get(t) or {}).get("why")}
+                   "pm_view": (views.get(t) or {}).get("view"), "pm_why": (views.get(t) or {}).get("why"),
+                   "vix": vix, "rule_size_pct": steps[k], "size_pct": steps[k2], "pm_size": nudge}
             if blocked or L["qty"] > 1e-6 or dollars < 5:
                 rec["skipped"] = "brakes" if blocked else ("already holding" if L["qty"] > 1e-6 else "no cash left")
             else:
