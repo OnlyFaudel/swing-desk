@@ -10466,5 +10466,140 @@
 "reactor",
 "westinghouse"
 ]
+},
+{
+"id": "efb09be793d6460a",
+"date": "2026-11-23",
+"ts": 1795419274,
+"title": "China\u2019s Nuclear Submarine Fleet Could Reach 40 by 2035 as Japan Weighs Its Own Programme and Nuclear Policy",
+"summary": "",
+"outlet": "The Korea Post",
+"link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjSm1lRThvZ0xaQ1FJOGRockpzdGs5UHBCVEctTFN5cjhNOGtzd254RVVfRV95NFA5LVJHN3I3cVduNXZvSmRQemVSTGkxaVJtM3FTS3VmbUtpcEF4NkNvS3pYTXRuaWFUNmfSAW5BVV95cUxPYUpnWUNwVEFBZElKSFNHbl9aQkZXYnBLVVNRdklmYk9Fblkydi1tNWF2aGVkeUhjOUI3bjMwTzk1NWs2Ry1URHl2bW1JQWl5M0pHSDcyQktLampoSERxWEMzQ0xkdE5iVTdjWDFRZw?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"defense"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.88,
+"score": 5.26,
+"echo_of": null,
+"w": [
+"2035",
+"china",
+"fleet",
+"japan",
+"nuclear",
+"own",
+"policy",
+"programme",
+"reach",
+"submarine",
+"weighs"
+]
+},
+{
+"id": "32cfd9ef3704009d",
+"date": "2026-11-23",
+"ts": 1795437131,
+"title": "Energy Fuels rises on White Mesa uranium plans, 1.25M-pound growth pipeline",
+"summary": "",
+"outlet": "TradingView",
+"link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQRFlfRThTZ0tUUllMZGhpRVF2bnJsbkM1Mnl2N01ob2FkRUJkcm9nRDN3RktjUVprRVRnUTJaZ1RzSlNBQXVqQ185cTdPRnhJNV91aFFyRjZqbmphV25sSzdlN01YaVZ1NWRLb1kxVExKTUFrNE1xOC01WU9MNEJrSTkwS0c2MkJVM2piemFjRzd1OTlHc1o2LWRfVXRwVmpVZWQwMTV2QVNyVHdaZ2tVLWptVVNYRTQtTF9mRlQ2ODhXbFd5WlhtZ1NGQ2w2UkhMT0hZ?oc=5",
+"place": "Rare earths (Energy Fuels)",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.46,
+"score": 2.42,
+"echo_of": null,
+"w": [
+"25m",
+"energy",
+"fuels",
+"growth",
+"mesa",
+"pipeline",
+"plans",
+"pound",
+"rises",
+"uranium",
+"white"
+]
+},
+{
+"id": "87e89d05178171d2",
+"date": "2026-11-23",
+"ts": 1795440605,
+"title": "Generation Uranium Appoints Director, Updates Activities and Grants Stock Options",
+"summary": "",
+"outlet": "TradingView",
+"link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPS1d2NTBzMS1FTFVJblI5MVJuN05ya2UwT3AxZHdKNGZNam0zWWl4YnlsVy1wVVpyOXpvd3FJcVlicEJ1WjJGNzc1OXg2M0w4VVFmVVJjeG9QeXJoWmVuQ0cwOU5vREd1VEJjNURjMUpwanVTSlhsdlBsZk9FRk8xbkZJaXFfWmdXN3ltR2RSSGUxcnhITElBbEJiUlJ5M3J6WVJ1SkNJSERzQXZyOEs0RTBObDc2YWVjdVZEQks0c3NNSG1acnU4Z1g3a3RoaDBGdjBlMXVvamVaN3VNMWNvUVFHYzA5Tnc4bE1xZg?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.82,
+"score": 3.14,
+"echo_of": null,
+"w": [
+"activities",
+"appoints",
+"director",
+"generation",
+"grants",
+"options",
+"stock",
+"updates",
+"uranium"
+]
+},
+{
+"id": "c4ff23e72a029794",
+"date": "2026-11-23",
+"ts": 1795440917,
+"title": "Nuclear Risk Reduction Talks Reach Congress After New START Lapse",
+"summary": "",
+"outlet": "Legis1",
+"link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5hSlZjOFM3UzRCc3FXUURGelhKWlR4UXJORTY1ZmptWmVVVzFSenJIVFotNDlzMFdVcTd5RHNZY0xaaWtBTnhiN0ZsNE4wZnpOQmk0bFNwT2VQcUZiZWkyVE9YVmJ1UlpGaElkVG5LMzZYZlFaRnp3?oc=5",
+"place": "Congress and laws",
+"tickers": [
+"CCJ",
+"LEU",
+"CEG",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.82,
+"score": 4.14,
+"echo_of": null,
+"w": [
+"congress",
+"lapse",
+"nuclear",
+"reach",
+"reduction",
+"risk",
+"start",
+"talks"
+]
 }
 ]
