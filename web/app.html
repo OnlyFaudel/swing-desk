@@ -854,6 +854,7 @@ function stockState(t){
     if(V.v==="inbox"){
       const NB=S.notebook||[];
       h=top("Messages",false)+`<button class="row2" data-go="groups"><span class="av c1" aria-hidden="true">#</span><div><b>Group chats</b><span>${CH.length} conversation${CH.length===1?"":"s"}: meetings, huddles, news calls, research</span></div><small></small></button>`+
+        `<button class="row2" data-go="questions"><span class="av c8" aria-hidden="true">?</span><div><b>Questions log</b><span>${(S.questions||[]).length} things nobody had noticed, each checked: relevant or not</span></div><small></small></button>`+
         `<a class="row2" href="weekly/index.html" target="_blank" rel="noopener" style="text-decoration:none"><span class="av c1" aria-hidden="true">N</span><div><b>Nuclear Weekly</b><span>The Friday research note on nuclear and uranium, ready to share</span></div><small>↗</small></a>`+
         `<button class="row2" data-go="files"><span class="av c4" aria-hidden="true">▤</span><div><b>Stock files</b><span>Everything on each stock: bosses, insiders, owners, analysts, money, lawsuits, deals, news and history</span></div><small></small></button>`+
         `<button class="row2" data-go="notebook"><span class="av c5" aria-hidden="true">✎</span><div><b>Research notebook</b><span>${(S.research_log||[]).length} studies, ${(S.research_log||[]).reduce((a,x)=>a+(x.trials||0),0)} tests run; ${NB.length} agent idea${NB.length===1?"":"s"}</span></div><small></small></button>`+`<button class="row2" data-go="intel"><span class="av c2" aria-hidden="true">◉</span><div><b>Intel collector</b><span>${(S.intel_view||{}).week||0} local and official stories this week, ${((S.intel_view||{}).bursts||[]).length} places in a burst</span></div><small></small></button><button class="row2" data-go="memory"><span class="av c3" aria-hidden="true">◷</span><div><b>Desk memory</b><span>${(S.memory_view||{}).events||0} past events remembered, ${((S.memory_view||{}).watch||[]).filter(w=>!w.surfaced).length} reminders ahead</span></div><small></small></button><div class="sect">The team</div>`+
@@ -906,6 +907,10 @@ function stockState(t){
         `<p class="note" style="margin:10px 0 0">${I.total||0} stories stored. Last pass ${esc(H.at||"not yet")}${(H.failed||[]).length?`; couldn't reach: ${esc(H.failed.join(", "))}`:"; every source answered"}.</p>`;
     } else if(V.v==="groups"){
       h=top("Group chats",true)+(CH.length?CH.slice().reverse().map(c=>{const ws=[...new Set(c.msgs.map(m=>m.who))];return `<button class="row2" data-group="${esc(c.id)}">${AV(ws[0])}<div><b>${esc(c.title)}</b><span>${esc(KIND[c.kind]||"Discussion")}, ${c.msgs.length} messages, ${ws.length} people${c.practice?", practice":""}</span></div><small>${ago(c.start)}</small></button>`}).join(""):`<p class="empty">No group chats yet.</p>`);
+    } else if(V.v==="questions"){
+      const Q=(S.questions||[]).slice().reverse();
+      h=top("Questions log",true)+`<p class="note" style="margin:0 0 12px">Every 2 hours the Questioner looks at everything the bot has seen and asks what nobody noticed. The right teammate checks each one and says whether it matters.</p>`+
+        (Q.length?Q.map(q=>`<div class="notecard"><small>${esc(q.t)}, asked ${esc(nm(q.asked))}, <b class="${q.verdict==="relevant"?"pos":q.verdict==="irrelevant"?"mut":""}">${esc(q.verdict||"?")}</b>${q.action&&q.action!=="none"?`, ${esc(q.action)}`:""}</small><b>${esc(q.question)}</b>\n${esc(q.answer||"")}</div>`).join(""):`<p class="empty">No questions yet. The first round runs within two hours.</p>`);
     } else if(V.v==="agent"){
       const w=V.w, ps=partners(w), notes=MS.filter(m=>m.who===w&&m.notes), groups=CH.filter(c=>c.msgs.some(m=>m.who===w)), posts=(S.feed||[]).filter(q=>q.who===w);
       const tk_=(S.track||{})[w];
@@ -932,6 +937,7 @@ function stockState(t){
     $("dmbody").querySelectorAll("[data-go=memory]").forEach(b=>b.onclick=()=>go({v:"memory"}));
     $("dmbody").querySelectorAll("[data-go=intel]").forEach(b=>b.onclick=()=>go({v:"intel"}));
     $("dmbody").querySelectorAll("[data-go=files]").forEach(b=>b.onclick=()=>go({v:"files"}));
+    $("dmbody").querySelectorAll("[data-go=questions]").forEach(b=>b.onclick=()=>go({v:"questions"}));
     $("dmbody").querySelectorAll("[data-file]").forEach(b=>b.onclick=()=>go({v:"file",t:b.dataset.file}));
     const isend=$("intelSend"); if(isend) isend.onclick=()=>{$("ctext").value="Send everything: here is the intel collector's last 7 days. Read all of it, tell me what matters for our stocks, save anything with a date as a reminder, and send anything worth testing to the Research Lab."; close(); $("compose").requestSubmit(); $("compose").scrollIntoView({behavior:"smooth",block:"center"});};
     $("dmbody").querySelectorAll("[data-agent]").forEach(b=>b.onclick=()=>go({v:"agent",w:b.dataset.agent}));

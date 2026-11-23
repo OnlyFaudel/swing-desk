@@ -1905,6 +1905,64 @@ def team_debate(st, desk, question, ctx, decide_prompt, extra=(), max_tokens=700
     return out
 
 
+ANSWERERS = ("macro", "engineer", "investigator", "whale", "crowd", "level", "risk", "optspec", "researcher")
+
+
+def questioner(st, desk, prices, now, force=False):
+    """The Questioner: every 2 hours it looks at EVERYTHING the bot has seen and asks what nobody noticed, what looks odd,
+    what moved without a reason, what got dismissed. Each question goes to the teammate best placed to answer, who must
+    say whether it's relevant or not (so 'irrelevant' is a checked answer, not an assumption). Relevant ones become
+    research, reminders, or a note to the owner."""
+    slot = f"{now:%Y-%m-%d}:{now.hour // 2}"
+    if not desk.available or (not force and (not (7 <= now.hour <= 21) or st["flags"].get(f"questioner:{slot}"))):
+        return
+    st["flags"][f"questioner:{slot}"] = True
+    qs = st.setdefault("questions", [])
+    pack = {"latest_posts": [f"{p.get('who')}: {(p.get('title') or '')} {str(p.get('text') or '')[:200]}" for p in st.get("feed", [])[-50:]],
+            "headlines_seen": [f"{n.get('ticker')}: {n.get('title')}" for n in st.get("news_feed", [])[-40:]],
+            "local_intel": intel_brief(12), "prices_now": {t: prices.get(t) for t in T}, "last_closes": st.get("last_prices"),
+            "insiders_and_short_interest": {t: {"insiders_net_12m": (people.load(t) or {}).get("insiders_last_12m", {}).get("net_usd"),
+                                                "short": (people.load(t) or {}).get("short_interest")} for t in T},
+            "sprott": sput.summary(), "uranium": uprice.summary(), "plants": plant.snapshot(st), "coming_up": st.get("catalysts", [])[:10],
+            "recent_debates": st.get("debates", [])[-3:], "open_positions": {t: list(l) for t, l in st["book"]["lots"].items()
+                                                                            if any(v.get("qty", 0) > 1e-6 for v in l.values())},
+            "already_asked": [q["question"] for q in qs[-40:]]}
+    try:
+        with feed.thread(f"The Questioner, {now:%b %d %H:%M}", [], kind="research"):
+            out = desk.ask("questioner", "fast", "You are THE QUESTIONER. Your only job is to notice what the rest of the team hasn't: a stock "
+                           "that moved with no explanation, a headline nobody discussed, a number that changed quietly (short interest, "
+                           "insiders, the Sprott discount, a reactor), something that contradicts what the team believes, a reminder that "
+                           "came due, or something that looks irrelevant but might not be. Ask up to 5 sharp questions, each routed to ONE "
+                           f"teammate who can answer it ({', '.join(ANSWERERS)}). Don't repeat already_asked. "
+                           '{"say":"","to":"team","questions":[{"question":"","why_it_might_matter":"","ask":"role","kind":"missed|odd|unexplained|maybe_irrelevant"}]}',
+                           pack, max_tokens=900)
+            for q in [x for x in (out.get("questions") or []) if isinstance(x, dict) and x.get("question")][:5]:
+                who = q.get("ask") if q.get("ask") in ANSWERERS else "investigator"
+                a = desk.ask(who, "fast", f"The Questioner asks you: {q['question']} (why it might matter: {q.get('why_it_might_matter', '')}). "
+                             "Look into it with your files and the context, answer plainly, and give a verdict: relevant (it matters for "
+                             "our stocks or trades), irrelevant (checked, and here's why it doesn't), or unsure. Then an action: none, "
+                             "watch (with a date), research (a test worth running), or tell_owner. "
+                             '{"say":"","to":"The Questioner","verdict":"relevant|irrelevant|unsure","action":"none|watch|research|tell_owner",'
+                             '"watch_date":"YYYY-MM-DD","research_test":""}', {**pack, "question": q}, max_tokens=600)
+                rec = {"t": now.strftime("%Y-%m-%d %H:%M"), "question": q["question"], "kind": q.get("kind"), "asked": who,
+                       "answer": a.get("say"), "verdict": a.get("verdict"), "action": a.get("action")}
+                qs.append(rec)
+                if a.get("action") == "research" and a.get("research_test"):
+                    st.setdefault("research_queue", []).append({"q": f"Questioner: {a['research_test']}", "date": str(now.date())})
+                if a.get("action") == "watch" and a.get("watch_date"):
+                    desk_memory.watch_add([{"date": a["watch_date"], "ticker": "", "what": f"Questioner follow-up: {q['question']}"[:200]}], "questioner")
+                if a.get("action") == "tell_owner":
+                    feed.post("questioner", f"Worth your attention: {q['question']}\n\n{feed.PEOPLE.get(who, (who,))[0]}: {a.get('say', '')}", [],
+                              kind="alert", art={"big": "Something we almost missed", "sub": "The Questioner"})
+        del qs[:-300]
+        done = qs[-5:]
+        if done:
+            feed.post("questioner", "Asked the team: " + " | ".join(f"{q['question']} -> {q.get('verdict') or '?'}" for q in done if q["t"] == now.strftime("%Y-%m-%d %H:%M")),
+                      [], kind="learn", art={"big": "The Questioner", "sub": "What nobody had noticed yet, checked"})
+    except Exception as e:
+        print("questioner", e)
+
+
 def conviction_record(st):
     """The team's own calls (not a tested rule): how they have done, and how much money that earns them."""
     tr = [x for x in st["book"]["trades"] if x.get("setup") == "conviction"]
@@ -2451,6 +2509,7 @@ def cycle(st, desk, br, ex, force=()):
         ei.append([now.strftime("%Y-%m-%d %H:%M"), round(brk_state["equity"], 2)])
         del ei[:-4000]
     try:  # weekly reviews run after the close / on the weekend, so they sit outside the market-hours block
+        questioner(st, desk, prices, now)
         mistakes_review(st, desk, today, now)
         nuclear_weekly(st, desk, prices, today, now)
         red_team(st, desk, prices, today, now)
