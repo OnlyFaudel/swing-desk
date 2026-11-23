@@ -194,7 +194,8 @@
   "premarket:2026-11-23": true,
   "world:2026-W48": true,
   "uprice:2026-11-23": true,
-  "jobs:2026-11-23": true
+  "jobs:2026-11-23": true,
+  "reactors:2026-11-23": true
  },
  "benchmark": {
   "shares": {
@@ -293,30 +294,6 @@
   "CCJ": 1795198855.6822214
  },
  "news_feed": [
-  {
-   "ticker": "CCJ",
-   "source": "Yahoo Finance",
-   "title": "Sprott Asset Management's Jacob White on uranium stocks sell-off and the case for a recovery",
-   "link": "https://finance.yahoo.com/video/sprott-asset-managements-jacob-white-143733002.html?.tsrc=rss",
-   "ts": 1795099053,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CEG",
-   "source": "Google News: nuclear power data center deal",
-   "title": "Non-profit claims 60% of Anthropic\u2019s mapped US data center power demand is tied to natural gas - Data Center Dynamics",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPY1FjZkJzOGxOVm9peV9CVVdIUHpnVHRWRFhFakIzOTlPY3dZbk1nbUhBemtVdEM4V2RrRjhRLWotOXBNbDNmQ1Z5R2VQbVk1RDFwRE92djRYbzE2ZDlFaURqa2dyeV9iblFWZWJQNkEzVHRQeXlzNFJnZ3phV1lXaTNkcXBWckZDQmFWcFBRRjZEMy1pOEZSbHlCY3JFWHY3SHA1RV9IQjFHUWI0YVdwNF80aGhkMUtoMlNhQk9keXY3cVJpaGticW5neExCOWp4S2c?oc=5",
-   "ts": 1795098986,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
   {
    "ticker": "CCJ",
    "source": "Google News: uranium price",
@@ -3292,6 +3269,30 @@
    "direction": "up",
    "event_type": "contract_deal",
    "why": "Parts qualification for Westinghouse units is a real but incremental, multi-year step"
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Yahoo Finance",
+   "title": "Westinghouse Canada Awards BWXT AP1000\u00ae Manufacturing Qualification Contracts",
+   "link": "https://finance.yahoo.com/energy/articles/westinghouse-canada-awards-bwxt-ap1000-130000787.html?.tsrc=rss",
+   "ts": 1795438800,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Qualification to make AP1000 reactor components could mean real future orders, though timing unclear."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Westinghouse reactor",
+   "title": "Westinghouse, BWXT Canada partner on AP1000 reactor components By Investing.com - Investing.com India",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMng3dE9jM1hQVVVwRXpQWWZwWVgxUVRaUVBDcS1uUUVSZGl3R0phZThHQUNON0s0YXJlUG5TRjFpVU8zV28tRG40QWtySU84M1l6dVFoZ3RvRnBZaE9CU3pJNS1CbnJDTW9DOEZLUk5aZEFFa2tMcHJOMF9ITFRzLVlYOTY1UHo2bmNPSjdJVnJ0QjV5TGp0Sm5sbVNTOTNjb19QQ2ZqX3BkNklhblpFY3dNYWY0cjktMG93eUF1UQ?oc=5",
+   "ts": 1795440160,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Reactor parts partnership; indirect, minor demand signal for uranium"
   }
  ],
  "reviews": [
@@ -4501,16 +4502,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.01314,
+  "day_usd": 0.01363,
   "month": "2026-11",
-  "month_usd": 0.27663,
-  "total_usd": 0.27663,
+  "month_usd": 0.27712,
+  "total_usd": 0.27712,
   "by_role": {
    "macro": 0.0037,
    "whale": 0.00304,
    "crowd": 0.0032,
    "level": 0.00144,
-   "scout": 0.03267,
+   "scout": 0.03315,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -4577,7 +4578,7 @@
   "TLN": 333.24,
   "SPY": 690.91
  },
- "last_cycle": "2026-11-23 08:20 ET",
+ "last_cycle": "2026-11-23 08:30 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -49151,6 +49152,7 @@
   "31f128ea376aa942",
   "e15990dac5b8bec2",
   "c4bedc144af05ef5",
+  "41ed20a8cec5e591",
   "f61fff1c8e93929e",
   "020569e75e7d456e",
   "a2a8ee32597c7b50",
@@ -49184,6 +49186,7 @@
   "3540271e126c026c",
   "991c698e5a396dd1",
   "c40403c1e5b7035d",
+  "236832db131afa54",
   "586a3a3d084eb114",
   "a4aac5316a0eb878",
   "b36ee151c6da4ebf",
@@ -49193,7 +49196,7 @@
   "88d39974add2ff27",
   "f16660c269a6613c"
  ],
- "news_slow_at": 1795439770.2868083,
+ "news_slow_at": 1795440391.0863903,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197632,6 +197635,23 @@
     "sub": "Pre-market check-in. Open the conversation to see the plan."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 08:30",
+   "who": "researcher",
+   "kind": "learn",
+   "title": null,
+   "text": "Reactor watch is on. Loaded every day of power output since 2019 for the 33 reactors CEG, VST and TLN own, and 174 outages into the long-term memory with what each stock did afterwards. Tested: a single outage has not moved CEG (116 cases) and the VST/TLN numbers are too few and too mixed to trade. It stays as context.",
+   "tickers": [
+    "CEG",
+    "TLN",
+    "VST"
+   ],
+   "art": {
+    "big": "174 reactor outages remembered",
+    "sub": "NRC daily power, 2019 to today"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -197852,6 +197872,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "BWXT",
+   "type": "contract_deal",
+   "title": "Westinghouse Canada Awards BWXT AP1000\u00ae Manufacturing Qualification Contracts",
+   "date": "2026-11-23",
+   "price": 108.59,
+   "materiality": 6,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -197932,7 +197964,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 08:20",
+  "updated": "2026-11-23 08:30",
   "total": 318,
   "week": 278,
   "places": {
@@ -198014,10 +198046,37 @@
    "failed": []
   },
   "reactors": {
-   "date": null,
-   "us_fleet_running_pct": null,
-   "owners": null,
-   "open_outages": null
+   "date": "2026-11-20",
+   "us_fleet_running_pct": 89.0,
+   "owners": {
+    "CEG": {
+     "units": 25,
+     "down": [
+      "Salem 1"
+     ],
+     "fleet_running_pct": 95.2
+    },
+    "VST": {
+     "units": 6,
+     "down": [],
+     "fleet_running_pct": 100.0
+    },
+    "TLN": {
+     "units": 2,
+     "down": [],
+     "fleet_running_pct": 100.0
+    }
+   },
+   "open_outages": [
+    {
+     "unit": "Salem 1",
+     "owner": "CEG",
+     "start": "2026-10-04",
+     "end": null,
+     "days": 47,
+     "kind": "refuel_or_long"
+    }
+   ]
   },
   "top": [
    {
@@ -198629,7 +198688,7 @@
   }
  ],
  "memory_view": {
-  "events": 1316,
+  "events": 1490,
   "with_outcomes": 1162,
   "playbooks": {
    "acquisition": {
@@ -199524,7 +199583,7 @@
    "built": "2026-11-23 08:05"
   }
  ],
- "heartbeat": "2026-11-23 08:20",
+ "heartbeat": "2026-11-23 08:30",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"

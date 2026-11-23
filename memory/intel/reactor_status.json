@@ -1,0 +1,155 @@
+{
+ "date": "2026-11-20",
+ "owners": {
+  "CEG": {
+   "units": 25,
+   "down": [
+    "Salem 1"
+   ],
+   "fleet_running_pct": 95.2
+  },
+  "VST": {
+   "units": 6,
+   "down": [],
+   "fleet_running_pct": 100.0
+  },
+  "TLN": {
+   "units": 2,
+   "down": [],
+   "fleet_running_pct": 100.0
+  }
+ },
+ "us_fleet_running_pct": 89.0,
+ "open_outages": [
+  {
+   "unit": "Salem 1",
+   "owner": "CEG",
+   "start": "2026-10-04",
+   "end": null,
+   "days": 47,
+   "kind": "refuel_or_long"
+  }
+ ],
+ "recent_outages": [
+  {
+   "unit": "Dresden 3",
+   "owner": "CEG",
+   "start": "2026-04-08",
+   "end": "2026-04-15",
+   "days": 7,
+   "kind": "trip_short"
+  },
+  {
+   "unit": "Limerick 1",
+   "owner": "CEG",
+   "start": "2026-04-27",
+   "end": "2026-05-22",
+   "days": 25,
+   "kind": "refuel_or_long"
+  },
+  {
+   "unit": "Comanche Peak 2",
+   "owner": "VST",
+   "start": "2026-05-04",
+   "end": "2026-05-31",
+   "days": 27,
+   "kind": "refuel_or_long"
+  },
+  {
+   "unit": "Quad Cities 2",
+   "owner": "CEG",
+   "start": "2026-05-09",
+   "end": "2026-05-18",
+   "days": 9,
+   "kind": "trip_short"
+  },
+  {
+   "unit": "LaSalle 1",
+   "owner": "CEG",
+   "start": "2026-05-26",
+   "end": "2026-06-01",
+   "days": 6,
+   "kind": "trip_short"
+  },
+  {
+   "unit": "South Texas 2",
+   "owner": "CEG",
+   "start": "2026-06-18",
+   "end": "2026-06-29",
+   "days": 11,
+   "kind": "trip_short"
+  },
+  {
+   "unit": "Dresden 2",
+   "owner": "CEG",
+   "start": "2026-09-04",
+   "end": "2026-09-11",
+   "days": 7,
+   "kind": "trip_short"
+  },
+  {
+   "unit": "Davis-Besse",
+   "owner": "VST",
+   "start": "2026-09-08",
+   "end": "2026-09-20",
+   "days": 12,
+   "kind": "trip_short"
+  },
+  {
+   "unit": "FitzPatrick",
+   "owner": "CEG",
+   "start": "2026-09-14",
+   "end": "2026-10-05",
+   "days": 21,
+   "kind": "refuel_or_long"
+  },
+  {
+   "unit": "Byron 2",
+   "owner": "CEG",
+   "start": "2026-09-28",
+   "end": "2026-10-27",
+   "days": 29,
+   "kind": "refuel_or_long"
+  },
+  {
+   "unit": "Susquehanna 1",
+   "owner": "TLN",
+   "start": "2026-09-29",
+   "end": "2026-10-17",
+   "days": 18,
+   "kind": "refuel_or_long"
+  },
+  {
+   "unit": "Salem 1",
+   "owner": "CEG",
+   "start": "2026-10-04",
+   "end": null,
+   "days": 47,
+   "kind": "refuel_or_long"
+  },
+  {
+   "unit": "Peach Bottom 2",
+   "owner": "CEG",
+   "start": "2026-10-12",
+   "end": "2026-11-08",
+   "days": 27,
+   "kind": "refuel_or_long"
+  },
+  {
+   "unit": "Comanche Peak 1",
+   "owner": "VST",
+   "start": "2026-10-19",
+   "end": "2026-11-20",
+   "days": 32,
+   "kind": "refuel_or_long"
+  },
+  {
+   "unit": "Dresden 3",
+   "owner": "CEG",
+   "start": "2026-10-26",
+   "end": "2026-11-20",
+   "days": 25,
+   "kind": "refuel_or_long"
+  }
+ ]
+}
