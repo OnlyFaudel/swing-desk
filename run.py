@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -1678,6 +1678,69 @@ def conviction_buy(st, ex, prices, today, t, d, headline):
     return "BUY order failed"
 
 
+def options_call(st, desk, t, mat, today):
+    """A proven bearish event (share offering) on one of our stocks: price the real put and let the Options Specialist decide."""
+    if not CFG.get("options_spec", {}).get("enabled", True) or any(p["ticker"] == t and not p.get("closed") for p in st.get("options_book", [])):
+        return
+    try:
+        q = optspec.quote_put(t)
+        ev = optspec.evaluate(q, optspec.history_moves())
+    except Exception as e:
+        print("options quote", e); return
+    if not q or not ev:
+        return
+    eq = account.equity(st["book"], st.get("last_prices") or {})
+    cap = eq * optspec.MAX_PCT / 100
+    out = desk.ask("optspec", "fast", "Options Specialist. A possible share offering (dilution) just hit this stock. First: is this really "
+                   "the company selling new shares (not a product 'offering' or old news)? Then use the real put price and the replay of "
+                   "past offerings to decide: BUY puts only if the replay shows the put paying off on average after the spread, and "
+                   "say how many contracts (each = 100 shares; the total must stay under max_dollars). Otherwise SKIP and say why "
+                   "(too expensive, wrong kind of news, already priced in). This is a practice book for now: every call is scored. "
+                   '{"say":"","to":"team","real_offering":true,"decision":"BUY|SKIP","contracts":1,"why":""}',
+                   {"ticker": t, "news": [m.get("title") for m in mat][:5], "put": q, "replay_of_past_offerings": ev,
+                    "history": optspec.TRIGGERS["offering_dilution"]["history"], "max_dollars": round(cap, 2)}, max_tokens=500)
+    n = int(out.get("contracts") or 0)
+    if str(out.get("decision", "")).upper() == "BUY" and out.get("real_offering") and n > 0 and ev["avg_return_pct"] > 0:
+        n = min(n, int(cap // (q["ask"] * 100)))
+        if n < 1:
+            feed.post("optspec", f"{t}: a put would make sense but one contract (${q['ask'] * 100:.0f}) is over the {optspec.MAX_PCT}% "
+                      "limit for this account. Skipped.", [t], kind="data"); return
+        pos = {**q, "qty": n, "paid": q["ask"], "date": str(today), "exit_on": sessions_after(str(today), 5), "last_bid": q["bid"],
+               "why": str(out.get("why") or "")[:200], "news": mat[0].get("title")}
+        st.setdefault("options_book", []).append(pos)
+        feed.post("optspec", f"Practice put on {t}: {n} contract{'s' if n > 1 else ''} of the ${q['strike']:g} put expiring "
+                  f"{q['expiry']} at ${q['ask']:.2f} (${q['ask'] * 100 * n:.0f}). Why: {out.get('why', '')} Replay of {ev['events_replayed']} "
+                  f"past offerings: paid off {ev['paid_off_pct']}% of the time, {ev['avg_return_pct']:+.0f}% average. Sells on "
+                  f"{pos['exit_on']}, at 2x, or if it loses half. Practice book: real prices, no money yet.",
+                  [t], kind="alert", art={"big": f"Practice put: {t}", "sub": "Options Specialist, after a share offering"})
+
+
+def options_mark(st, today, now):
+    """Once a day near the close: value each practice put at its real bid; sell at 2x, at half, or on the sell date."""
+    if not (now.time() >= dt.time(15, 45)) or st["flags"].get(f"optmark:{today}"):
+        return
+    st["flags"][f"optmark:{today}"] = True
+    for p in st.get("options_book", []):
+        if p.get("closed"):
+            continue
+        try:
+            bid = optspec.mark(p["contract"], p["ticker"])
+        except Exception as e:
+            print("option mark", e); continue
+        if bid is None:
+            continue
+        p["last_bid"] = bid
+        why = ("worth 2x what we paid" if bid >= p["paid"] * (1 + optspec.TAKE_PROFIT) else "lost half its value" if bid <= p["paid"] * optspec.CUT_AT
+               else "sell date reached" if str(today) >= p["exit_on"] else None)
+        if why:
+            p["closed"], p["exit_bid"] = str(today), bid
+            p["pnl"] = round((bid - p["paid"]) * 100 * p["qty"], 2)
+            feed.post("optspec", f"Closed the practice put on {p['ticker']} ({why}): paid ${p['paid']:.2f}, sold at ${bid:.2f}, "
+                      f"{'+' if p['pnl'] >= 0 else '−'}${abs(p['pnl']):.2f}.", [p["ticker"]], kind="learn")
+            if p["pnl"] < 0:
+                instant_review(st, "option_loss", f"Practice put on {p['ticker']} lost ${abs(p['pnl']):.2f}", p, [p["ticker"]])
+
+
 def convene_news(st, desk, ex, data, prices, today, t, mat):
     with feed.thread(f"News on {t}: {mat[0]['title'][:70]}", [t], kind="news"):
         _convene_news(st, desk, ex, data, prices, today, t, mat)
@@ -1702,6 +1765,11 @@ def _convene_news(st, desk, ex, data, prices, today, t, mat):
                                          {"ticker": t, "news": material, **plant.context(st)}, max_tokens=500)
         except Exception as e:
             entry["engineer"] = {"error": str(e)[:100]}
+        if optspec.is_trigger([m.get("title") or "" for m in mat]) or any(m.get("event_type") == "offering_dilution" for m in mat):
+            try:
+                options_call(st, desk, t, mat, today)
+            except Exception as e:
+                print("options call", e)
         sec = [m for m in material if m["source"] == "SEC filing"]
         if sec:
             entry["filings"] = desk.filings(t, sec)
@@ -2075,6 +2143,7 @@ def cycle(st, desk, br, ex, force=()):
             process_fills(st, br, ex, today)
             park_check(st, ex, prices, today, now)
             process_fills(st, br, ex, today)
+            options_mark(st, today, now)
             score_calls(st, prices, today)
             watch_mistakes(st, prices, data, today, now)
             mistakes_review(st, desk, today, now)

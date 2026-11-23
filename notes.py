@@ -22,6 +22,7 @@ SEATS = {
                                "What history says"], "sector": ["Government and laws"]},
     "scout":        {"stock": ["Legal", "Deals and contracts"], "sector": ["Government and laws", "Countries"]},
     "postmortem":   {"stock": ["Snapshot", "News", "What history says", "Our trades"], "sector": []},
+    "optspec":      {"stock": ["Snapshot", "Options and big money", "Filings and company events", "Deals and contracts"], "sector": []},
     "engineer":     {"stock": ["Business", "Places and operations", "Deals and contracts"], "sector": ["Reactors and power", "New builds and restarts", "Uranium market"]},
     "risk":         {"stock": ["Snapshot", "Legal", "Leadership and insiders", "Discoveries", "Price behavior"],
                      "sector": ["Panic-day record", "Rules the bot follows from its discoveries"]},

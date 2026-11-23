@@ -455,5 +455,9 @@
     "keep_cash_pct": 3,
     "min_usd": 20,
     "_note": "Idle cash goes into SPY near the close and is sold on demand when any trade needs it. Tested with the panic rule 2019-2026: 37%/yr vs 25% with cash idle; worst drop -31% vs -23%."
+  },
+  "options_spec": {
+    "enabled": true,
+    "_note": "Practice book: real put prices, no money. Bearish triggers proven by research only (offerings first)."
   }
 }

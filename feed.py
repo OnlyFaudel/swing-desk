@@ -36,6 +36,7 @@ PEOPLE = {
     "core":      ("Core Holdings", "the long-term CCJ position", 5),
     "review":    ("Reviewer", "end-of-day review", 8),
     "macro":     ("Macro Analyst", "market mood, calendar, risk level", 3),
+    "optspec":   ("Options Specialist", "puts on proven bearish events, priced for real", 6),
     "engineer":  ("Plant Engineer", "how the plants, mines and fuel chain really work", 5),
     "whale":     ("Whale Watcher", "options flow, short volume, insiders", 4),
     "crowd":     ("Crowd Reader", "Reddit and analyst chatter", 5),
