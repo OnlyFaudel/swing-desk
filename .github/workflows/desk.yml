@@ -64,3 +64,33 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "desk $(date -u +%F_%H%M)"
           git pull --rebase --autostash && git push
+
+  # When the bot lives on the always-on VM (RUNNER=vm): every hour on weekdays, check it is still alive and ping the phone if not.
+  watchdog:
+    if: github.event_name == 'schedule' && vars.RUNNER == 'vm'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Is the VM alive?
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, datetime as dt, urllib.request, zoneinfo
+          now = dt.datetime.now(zoneinfo.ZoneInfo("America/New_York"))
+          st = json.load(open("state.json"))
+          hb = st.get("heartbeat") or (st.get("last_cycle") or "")[:16]
+          try:
+              age = (now.replace(tzinfo=None) - dt.datetime.strptime(hb, "%Y-%m-%d %H:%M")).total_seconds() / 60
+          except ValueError:
+              age = 9999
+          print("last heartbeat", hb, f"{age:.0f} min ago")
+          market = now.weekday() < 5 and dt.time(9, 45) <= now.time() <= dt.time(16, 0)
+          if market and age > 45:
+              h = {"Title": "Swing Desk VM is quiet", "Priority": "high", "Tags": "rotating_light"}
+              if os.environ.get("NTFY_TOKEN"): h["Authorization"] = "Bearer " + os.environ["NTFY_TOKEN"]
+              req = urllib.request.Request("https://ntfy.sh/" + os.environ["NTFY_TOPIC"], method="POST", headers=h,
+                  data=f"No update from the always-on computer for {age:.0f} minutes. It may be stuck or off.".encode())
+              urllib.request.urlopen(req, timeout=20)
+          PY

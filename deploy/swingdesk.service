@@ -7,9 +7,14 @@ Wants=network-online.target
 User=desk
 WorkingDirectory=/home/desk/swing-desk
 EnvironmentFile=/etc/swingdesk.env
+Environment=TZ=America/New_York
+Environment=PYTHONUNBUFFERED=1
+ExecStartPre=-/usr/bin/git -C /home/desk/swing-desk pull -q --rebase --autostash -X theirs
+ExecStartPre=-/home/desk/venv/bin/pip install -q -r /home/desk/swing-desk/requirements.txt
 ExecStart=/home/desk/venv/bin/python run.py daemon
 Restart=always
 RestartSec=20
+MemoryMax=900M
 
 [Install]
 WantedBy=multi-user.target

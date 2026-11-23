@@ -14,7 +14,7 @@ THE PREPARATION:
   python run.py loop --minutes 13 | daemon | once [--force-morning --force-close --force-review --force-rank]
   python run.py test-notify | test-agents | test-broker
 """
-import json, os, sys, time, traceback, datetime as dt
+import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
 import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
@@ -1645,23 +1645,47 @@ def main():
             if CFG.get("hawk", {}).get("stream_prices"):
                 threading.Thread(target=hawk_stream, args=(st, wake), daemon=True).start()
         notify("Swing Desk online", f"Always-on mode started ({br.name}). Hawk mode: live prices, news every minute.", tags="green_heart")
+        last_cycle = 0
         while True:
             now = market.now_et()
-            active = now.weekday() < 5 and dt.time(8, 0) <= now.time() <= dt.time(19, 0)
-            if active:
+            weekday = now.weekday() < 5
+            active = weekday and dt.time(8, 0) <= now.time() <= dt.time(19, 0)  # every minute while it matters
+            # off-hours it still wakes: overnight news, your posts, the collector (every 10 min weeknights, 30 min weekends)
+            due = active or time.time() - last_cycle >= (600 if weekday else 1800)
+            if due:
+                last_cycle = time.time()
                 try:
-                    cycle(st, desk, br, ex)
+                    if now.weekday() == 5 and now.time() >= dt.time(10, 0) and not st["flags"].get(f"research:{now:%F}"):
+                        st["flags"][f"research:{now:%F}"] = True  # Saturday research session (was the GitHub 10am run)
+                        T[:] = st.get("active") or CFG["tickers"]
+                        try:
+                            memory_daily(st)
+                        except Exception as e:
+                            print("desk memory failed", e)
+                        research_run(st, desk)
+                    else:
+                        cycle(st, desk, br, ex)
                 except Exception as e:
                     traceback.print_exc()
                     notify_once(st, "cycle_error", "Desk cycle error", str(e)[:250])
+                st["heartbeat"] = now.strftime("%Y-%m-%d %H:%M")
                 save_state(st)
                 if time.time() - last_dash > 300:
                     dashboard.build(st, CFG); last_dash = time.time()
-                if os.environ.get("AUTO_GIT") == "1" and time.time() - last_push > 900:
-                    os.system(f"cd {ROOT} && for p in state.json docs orders data memory research/trial_ledger.json; do [ -e \"$p\" ] && git add -A \"$p\"; done; "
-                              f"git commit -qm 'desk {now:%F %H:%M}' >/dev/null 2>&1; git pull -q --rebase --autostash >/dev/null 2>&1; git push -q >/dev/null 2>&1")
+                # save to GitHub so the page updates: every 15 min in market hours, hourly otherwise (keeps data use low)
+                if os.environ.get("AUTO_GIT") == "1" and time.time() - last_push > (900 if active else 3600):
+                    before = os.popen(f"git -C {ROOT} rev-parse HEAD").read().strip()
+                    rc = os.system(f"cd {ROOT} && for p in state.json docs orders data memory research/trial_ledger.json; do [ -e \"$p\" ] && git add -A \"$p\"; done; "
+                                   f"git commit -qm 'desk {now:%F %H:%M}' >/dev/null 2>&1; git pull -q --rebase --autostash -X theirs >/dev/null 2>&1; git push -q")
+                    if rc:
+                        notify_once(st, "git_push", "Desk can't save to GitHub", "The page won't update until the VM can push (check the deploy key).")
                     last_push = time.time()
-            wake.wait(CFG.get("daemon_poll_seconds", 60) if active else 300)
+                    changed = os.popen(f"git -C {ROOT} diff --name-only {before} HEAD -- '*.py' config.json requirements.txt deploy").read().strip()
+                    if before and changed:  # new code arrived: restart so it runs (systemd brings the bot straight back)
+                        print("new code:", changed.replace("\n", ", "))
+                        save_state(st)
+                        sys.exit(0)
+            wake.wait(CFG.get("daemon_poll_seconds", 60) if active else 60)
             wake.clear()
     elif args[0] == "research":
         T[:] = st.get("active") or CFG["tickers"]
