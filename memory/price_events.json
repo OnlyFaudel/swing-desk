@@ -411,7 +411,7 @@
 "title": "CCJ: sector selloff (-1.3% that day)",
 "type": "price_sector_selloff",
 "source": "prices",
-"r0": -1.34,
+"r0": -1.35,
 "r1": 1.4,
 "r5": 2.27,
 "r20": 5.3,
@@ -2585,7 +2585,7 @@
 "r1": -1.25,
 "r5": 0.73,
 "r20": -12.97,
-"r60": null,
+"r60": -38.48,
 "x5": -1.55,
 "x20": 0.82
 },
@@ -3409,11 +3409,11 @@
 "source": "prices",
 "r0": -6.64,
 "r1": 2.35,
-"r5": -7.0,
-"r20": -7.0,
+"r5": -6.99,
+"r20": -6.99,
 "r60": -1.76,
-"x5": -0.05,
-"x20": -1.91
+"x5": -0.04,
+"x20": -1.9
 },
 {
 "ticker": "CCJ",
@@ -3451,10 +3451,10 @@
 "source": "prices",
 "r0": -2.45,
 "r1": -3.34,
-"r5": -6.49,
+"r5": -6.5,
 "r20": -14.41,
 "r60": 22.04,
-"x5": -2.74,
+"x5": -2.75,
 "x20": -4.59
 },
 {
@@ -3828,7 +3828,7 @@
 "type": "price_market_panic",
 "source": "prices",
 "r0": -4.75,
-"r1": -1.85,
+"r1": -1.84,
 "r5": 3.69,
 "r20": 16.61,
 "r60": 21.86,
@@ -5648,7 +5648,7 @@
 "type": "price_market_panic",
 "source": "prices",
 "r0": -5.57,
-"r1": null,
+"r1": 6.09,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -5703,7 +5703,7 @@
 "title": "CCJ: new 52w high (+4.3% that day)",
 "type": "price_new_52w_high",
 "source": "prices",
-"r0": 4.28,
+"r0": 4.27,
 "r1": 2.41,
 "r5": -1.29,
 "r20": 6.68,
@@ -5788,7 +5788,7 @@
 "type": "price_new_52w_high",
 "source": "prices",
 "r0": 2.5,
-"r1": -1.34,
+"r1": -1.35,
 "r5": -0.96,
 "r20": 6.04,
 "r60": -26.77,
@@ -6182,10 +6182,10 @@
 "r0": 0.41,
 "r1": 0.1,
 "r5": 1.39,
-"r20": -2.04,
+"r20": -2.05,
 "r60": -19.86,
 "x5": -3.5,
-"x20": -11.54
+"x20": -11.55
 },
 {
 "ticker": "CCJ",
@@ -6568,7 +6568,7 @@
 {
 "ticker": "CCJ",
 "date": "2020-07-15",
-"title": "CCJ: new 52w high (+6.2% that day)",
+"title": "CCJ: new 52w high (+6.3% that day)",
 "type": "price_new_52w_high",
 "source": "prices",
 "r0": 6.25,
@@ -8700,7 +8700,7 @@
 "type": "price_new_52w_low",
 "source": "prices",
 "r0": -4.75,
-"r1": -1.85,
+"r1": -1.84,
 "r5": 3.69,
 "r20": 16.61,
 "r60": 21.86,
@@ -8713,7 +8713,7 @@
 "title": "CCJ: new 52w low (-1.8% that day)",
 "type": "price_new_52w_low",
 "source": "prices",
-"r0": -1.85,
+"r0": -1.84,
 "r1": 0.23,
 "r5": 6.11,
 "r20": 19.31,
@@ -8941,7 +8941,7 @@
 "r1": 1.93,
 "r5": -4.82,
 "r20": -1.81,
-"r60": -0.81,
+"r60": -0.8,
 "x5": 2.92,
 "x20": 7.64
 },
@@ -9459,7 +9459,7 @@
 "r1": 1.86,
 "r5": -0.99,
 "r20": -5.4,
-"r60": 2.88,
+"r60": 2.89,
 "x5": -0.39,
 "x20": 1.8
 },
@@ -9961,10 +9961,10 @@
 "source": "prices",
 "r0": -6.7,
 "r1": -2.24,
-"r5": null,
+"r5": -6.76,
 "r20": null,
 "r60": null,
-"x5": null,
+"x5": -0.17,
 "x20": null
 },
 {
@@ -10016,7 +10016,7 @@
 "type": "price_new_52w_low",
 "source": "prices",
 "r0": -5.57,
-"r1": null,
+"r1": 6.09,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -10203,7 +10203,7 @@
 "r20": 3.75,
 "r60": 4.55,
 "x5": -3.06,
-"x20": -37.41
+"x20": -37.4
 },
 {
 "ticker": "CCJ",
@@ -10694,6 +10694,20 @@
 "r60": -15.88,
 "x5": -3.47,
 "x20": -5.71
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-23",
+"title": "CCJ: gap up 5 (+6.1% that day)",
+"type": "price_gap_up_5",
+"source": "prices",
+"r0": 6.09,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 },
 {
 "ticker": "CCJ",
@@ -12606,7 +12620,7 @@
 "type": "price_3_down_days",
 "source": "prices",
 "r0": -4.61,
-"r1": 0.56,
+"r1": 0.57,
 "r5": 1.49,
 "r20": -0.41,
 "r60": 6.81,
@@ -12679,7 +12693,7 @@
 "r1": 1.93,
 "r5": -4.82,
 "r20": -1.81,
-"r60": -0.81,
+"r60": -0.8,
 "x5": 2.92,
 "x20": 7.64
 },
@@ -14567,10 +14581,10 @@
 "source": "prices",
 "r0": -6.7,
 "r1": -2.24,
-"r5": null,
+"r5": -6.76,
 "r20": null,
 "r60": null,
-"x5": null,
+"x5": -0.17,
 "x20": null
 },
 {
@@ -14622,7 +14636,7 @@
 "type": "price_3_down_days",
 "source": "prices",
 "r0": -5.57,
-"r1": null,
+"r1": 6.09,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -15999,7 +16013,7 @@
 "r20": 76.94,
 "r60": 168.56,
 "x5": -1.42,
-"x20": 35.78
+"x20": 35.79
 },
 {
 "ticker": "NXE",
@@ -16949,7 +16963,7 @@
 "r1": 0.67,
 "r5": 3.17,
 "r20": -13.56,
-"r60": null,
+"r60": -34.86,
 "x5": 0.89,
 "x20": 0.23
 },
@@ -19998,7 +20012,7 @@
 "type": "price_market_panic",
 "source": "prices",
 "r0": -7.65,
-"r1": null,
+"r1": 5.86,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -22393,10 +22407,10 @@
 "source": "prices",
 "r0": -4.51,
 "r1": -1.21,
-"r5": null,
+"r5": -8.57,
 "r20": null,
 "r60": null,
-"x5": null,
+"x5": -1.98,
 "x20": null
 },
 {
@@ -22448,7 +22462,7 @@
 "type": "price_new_52w_low",
 "source": "prices",
 "r0": -7.65,
-"r1": null,
+"r1": 5.86,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -24862,6 +24876,20 @@
 "r60": -16.19,
 "x5": 0.17,
 "x20": -0.97
+},
+{
+"ticker": "NXE",
+"date": "2026-11-23",
+"title": "NXE: gap up 5 (+5.9% that day)",
+"type": "price_gap_up_5",
+"source": "prices",
+"r0": 5.86,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 },
 {
 "ticker": "NXE",
@@ -29033,7 +29061,7 @@
 "r20": 20.84,
 "r60": 36.41,
 "x5": 9.88,
-"x20": 9.63
+"x20": 9.62
 },
 {
 "ticker": "NXE",
@@ -29729,10 +29757,10 @@
 "source": "prices",
 "r0": -4.51,
 "r1": -1.21,
-"r5": null,
+"r5": -8.57,
 "r20": null,
 "r60": null,
-"x5": null,
+"x5": -1.98,
 "x20": null
 },
 {
@@ -29784,7 +29812,7 @@
 "type": "price_3_down_days",
 "source": "prices",
 "r0": -7.65,
-"r1": null,
+"r1": 5.86,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -32209,7 +32237,7 @@
 "r1": -1.29,
 "r5": -6.94,
 "r20": -25.73,
-"r60": null,
+"r60": -52.82,
 "x5": -9.22,
 "x20": -11.94
 },
@@ -35244,7 +35272,7 @@
 "type": "price_market_panic",
 "source": "prices",
 "r0": -7.99,
-"r1": null,
+"r1": 10.38,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -38521,10 +38549,10 @@
 "source": "prices",
 "r0": -7.96,
 "r1": -0.98,
-"r5": null,
+"r5": -4.57,
 "r20": null,
 "r60": null,
-"x5": null,
+"x5": 2.02,
 "x20": null
 },
 {
@@ -38576,7 +38604,7 @@
 "type": "price_new_52w_low",
 "source": "prices",
 "r0": -7.99,
-"r1": null,
+"r1": 10.38,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -41872,6 +41900,20 @@
 "r60": null,
 "x5": -0.19,
 "x20": -6.74
+},
+{
+"ticker": "UEC",
+"date": "2026-11-23",
+"title": "UEC: gap up 5 (+10.4% that day)",
+"type": "price_gap_up_5",
+"source": "prices",
+"r0": 10.38,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 },
 {
 "ticker": "UEC",
@@ -46365,7 +46407,7 @@
 "r20": -6.67,
 "r60": 0.0,
 "x5": -11.36,
-"x20": 0.44
+"x20": 0.45
 },
 {
 "ticker": "UEC",
@@ -49497,10 +49539,10 @@
 "source": "prices",
 "r0": -7.96,
 "r1": -0.98,
-"r5": null,
+"r5": -4.57,
 "r20": null,
 "r60": null,
-"x5": null,
+"x5": 2.02,
 "x20": null
 },
 {
@@ -49552,7 +49594,7 @@
 "type": "price_3_down_days",
 "source": "prices",
 "r0": -7.99,
-"r1": null,
+"r1": 10.38,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -51041,7 +51083,7 @@
 "r20": 11.63,
 "r60": 18.6,
 "x5": 3.66,
-"x20": -29.53
+"x20": -29.52
 },
 {
 "ticker": "DNN",
@@ -51907,7 +51949,7 @@
 "r1": 0.0,
 "r5": 0.88,
 "r20": -23.89,
-"r60": null,
+"r60": -47.79,
 "x5": -1.4,
 "x20": -10.1
 },
@@ -54942,7 +54984,7 @@
 "type": "price_market_panic",
 "source": "prices",
 "r0": -7.18,
-"r1": null,
+"r1": 5.36,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -57981,10 +58023,10 @@
 "source": "prices",
 "r0": -7.28,
 "r1": -1.05,
-"r5": null,
+"r5": -7.33,
 "r20": null,
 "r60": null,
-"x5": null,
+"x5": -0.74,
 "x20": null
 },
 {
@@ -58036,7 +58078,7 @@
 "type": "price_new_52w_low",
 "source": "prices",
 "r0": -7.18,
-"r1": null,
+"r1": 5.36,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -60926,6 +60968,20 @@
 "r60": -8.22,
 "x5": 3.68,
 "x20": -3.14
+},
+{
+"ticker": "DNN",
+"date": "2026-11-23",
+"title": "DNN: gap up 5 (+5.4% that day)",
+"type": "price_gap_up_5",
+"source": "prices",
+"r0": 5.36,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 },
 {
 "ticker": "DNN",
@@ -66721,7 +66777,7 @@
 "r20": 12.15,
 "r60": 31.78,
 "x5": 2.08,
-"x20": 0.94
+"x20": 0.93
 },
 {
 "ticker": "DNN",
@@ -67333,10 +67389,10 @@
 "source": "prices",
 "r0": -7.28,
 "r1": -1.05,
-"r5": null,
+"r5": -7.33,
 "r20": null,
 "r60": null,
-"x5": null,
+"x5": -0.74,
 "x20": null
 },
 {
@@ -67374,7 +67430,7 @@
 "type": "price_3_down_days",
 "source": "prices",
 "r0": -7.18,
-"r1": null,
+"r1": 5.36,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -69129,7 +69185,7 @@
 "r20": 22.22,
 "r60": -5.78,
 "x5": 2.46,
-"x20": -18.94
+"x20": -18.93
 },
 {
 "ticker": "UUUU",
@@ -69897,7 +69953,7 @@
 "r1": 0.55,
 "r5": -1.36,
 "r20": -24.81,
-"r60": null,
+"r60": -64.45,
 "x5": -3.64,
 "x20": -11.02
 },
@@ -72932,7 +72988,7 @@
 "type": "price_market_panic",
 "source": "prices",
 "r0": -9.49,
-"r1": null,
+"r1": 5.14,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -76419,10 +76475,10 @@
 "source": "prices",
 "r0": -8.35,
 "r1": -1.82,
-"r5": null,
+"r5": -13.66,
 "r20": null,
 "r60": null,
-"x5": null,
+"x5": -7.07,
 "x20": null
 },
 {
@@ -76474,7 +76530,7 @@
 "type": "price_new_52w_low",
 "source": "prices",
 "r0": -9.49,
-"r1": null,
+"r1": 5.14,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -79937,7 +79993,7 @@
 "r20": -5.88,
 "r60": 5.88,
 "x5": -3.53,
-"x20": -3.15
+"x20": -3.16
 },
 {
 "ticker": "UUUU",
@@ -85006,6 +85062,20 @@
 "r60": null,
 "x5": -3.88,
 "x20": -21.13
+},
+{
+"ticker": "UUUU",
+"date": "2026-11-23",
+"title": "UUUU: gap up 5 (+5.1% that day)",
+"type": "price_gap_up_5",
+"source": "prices",
+"r0": 5.14,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 },
 {
 "ticker": "UUUU",
@@ -92967,10 +93037,10 @@
 "source": "prices",
 "r0": -8.35,
 "r1": -1.82,
-"r5": null,
+"r5": -13.66,
 "r20": null,
 "r60": null,
-"x5": null,
+"x5": -7.07,
 "x20": null
 },
 {
@@ -93022,7 +93092,7 @@
 "type": "price_3_down_days",
 "source": "prices",
 "r0": -9.49,
-"r1": null,
+"r1": 5.14,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -96511,7 +96581,7 @@
 "r1": -2.49,
 "r5": -1.08,
 "r20": -20.14,
-"r60": null,
+"r60": -50.55,
 "x5": -3.36,
 "x20": -6.35
 },
@@ -99560,7 +99630,7 @@
 "type": "price_market_panic",
 "source": "prices",
 "r0": -9.22,
-"r1": null,
+"r1": 6.74,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -100348,7 +100418,7 @@
 "r5": 6.53,
 "r20": -4.39,
 "r60": -3.41,
-"x5": 6.98,
+"x5": 6.99,
 "x20": 2.51
 },
 {
@@ -103442,7 +103512,7 @@
 "r5": -3.95,
 "r20": -5.78,
 "r60": -57.45,
-"x5": 1.11,
+"x5": 1.12,
 "x20": -12.61
 },
 {
@@ -104420,10 +104490,10 @@
 "r0": -3.91,
 "r1": 11.15,
 "r5": -3.6,
-"r20": null,
+"r20": -11.7,
 "r60": null,
 "x5": -1.11,
-"x20": null
+"x20": 2.52
 },
 {
 "ticker": "LEU",
@@ -104474,7 +104544,7 @@
 "type": "price_new_52w_low",
 "source": "prices",
 "r0": -9.22,
-"r1": null,
+"r1": 6.74,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -108161,6 +108231,20 @@
 "r20": null,
 "r60": null,
 "x5": -2.15,
+"x20": null
+},
+{
+"ticker": "LEU",
+"date": "2026-11-23",
+"title": "LEU: gap up 5 (+6.7% that day)",
+"type": "price_gap_up_5",
+"source": "prices",
+"r0": 6.74,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
 "x20": null
 },
 {
@@ -112431,7 +112515,7 @@
 "r20": -24.07,
 "r60": -17.59,
 "x5": 10.91,
-"x20": -19.69
+"x20": -19.7
 },
 {
 "ticker": "LEU",
@@ -113873,7 +113957,7 @@
 "r20": 147.73,
 "r60": 142.42,
 "x5": -7.11,
-"x20": 106.57
+"x20": 106.58
 },
 {
 "ticker": "LEU",
@@ -116978,10 +117062,10 @@
 "r0": -3.91,
 "r1": 11.15,
 "r5": -3.6,
-"r20": null,
+"r20": -11.7,
 "r60": null,
 "x5": -1.11,
-"x20": null
+"x20": 2.52
 },
 {
 "ticker": "LEU",
@@ -117005,10 +117089,10 @@
 "source": "prices",
 "r0": -6.02,
 "r1": -3.42,
-"r5": null,
+"r5": -10.88,
 "r20": null,
 "r60": null,
-"x5": null,
+"x5": -4.29,
 "x20": null
 },
 {
@@ -117060,7 +117144,7 @@
 "type": "price_3_down_days",
 "source": "prices",
 "r0": -9.22,
-"r1": null,
+"r1": 6.74,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -118521,7 +118605,7 @@
 "r20": 17.89,
 "r60": 18.36,
 "x5": -2.67,
-"x20": -23.27
+"x20": -23.26
 },
 {
 "ticker": "BWXT",
@@ -119765,7 +119849,7 @@
 "r1": -0.37,
 "r5": 3.1,
 "r20": -12.1,
-"r60": null,
+"r60": -24.05,
 "x5": 0.82,
 "x20": 1.69
 },
@@ -121988,7 +122072,7 @@
 "type": "price_market_panic",
 "source": "prices",
 "r0": 1.21,
-"r1": 1.07,
+"r1": 1.08,
 "r5": 10.24,
 "r20": 21.03,
 "r60": 40.62,
@@ -122001,7 +122085,7 @@
 "title": "BWXT: market panic (+1.1% that day)",
 "type": "price_market_panic",
 "source": "prices",
-"r0": 1.07,
+"r0": 1.08,
 "r1": 5.62,
 "r5": 9.71,
 "r20": 16.44,
@@ -122073,10 +122157,10 @@
 "source": "prices",
 "r0": -2.54,
 "r1": -1.26,
-"r5": 13.3,
+"r5": 13.31,
 "r20": 20.23,
 "r60": 4.83,
-"x5": 10.44,
+"x5": 10.45,
 "x20": 13.99
 },
 {
@@ -122575,7 +122659,7 @@
 "title": "BWXT: market panic (-1.7% that day)",
 "type": "price_market_panic",
 "source": "prices",
-"r0": -1.72,
+"r0": -1.73,
 "r1": 0.48,
 "r5": -1.07,
 "r20": -2.54,
@@ -122814,7 +122898,7 @@
 "type": "price_market_panic",
 "source": "prices",
 "r0": -7.28,
-"r1": null,
+"r1": 6.71,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -122931,7 +123015,7 @@
 "r20": 0.1,
 "r60": 0.73,
 "x5": -3.93,
-"x20": 2.83
+"x20": 2.82
 },
 {
 "ticker": "BWXT",
@@ -123240,20 +123324,6 @@
 "r60": -8.71,
 "x5": -14.1,
 "x20": -0.45
-},
-{
-"ticker": "BWXT",
-"date": "2014-02-26",
-"title": "BWXT: new 52w high (+0.0% that day)",
-"type": "price_new_52w_high",
-"source": "prices",
-"r0": -0.0,
-"r1": -6.77,
-"r5": -5.81,
-"r20": -6.63,
-"r60": -8.82,
-"x5": -7.21,
-"x20": 4.26
 },
 {
 "ticker": "BWXT",
@@ -124020,10 +124090,10 @@
 "r0": 0.53,
 "r1": -0.88,
 "r5": -1.65,
-"r20": 5.39,
+"r20": 5.4,
 "r60": 5.8,
 "x5": 1.51,
-"x20": 1.45
+"x20": 1.46
 },
 {
 "ticker": "BWXT",
@@ -124675,7 +124745,7 @@
 "title": "BWXT: new 52w high (+0.3% that day)",
 "type": "price_new_52w_high",
 "source": "prices",
-"r0": 0.27,
+"r0": 0.26,
 "r1": -0.55,
 "r5": 0.17,
 "r20": 0.9,
@@ -125755,10 +125825,10 @@
 "source": "prices",
 "r0": 2.43,
 "r1": 0.5,
-"r5": 0.34,
+"r5": 0.35,
 "r20": -3.3,
 "r60": 11.17,
-"x5": 4.1,
+"x5": 4.11,
 "x20": -7.02
 },
 {
@@ -125977,7 +126047,7 @@
 "title": "BWXT: new 52w high (+2.1% that day)",
 "type": "price_new_52w_high",
 "source": "prices",
-"r0": 2.1,
+"r0": 2.09,
 "r1": -2.64,
 "r5": -0.47,
 "r20": 2.13,
@@ -127924,7 +127994,7 @@
 "type": "price_new_52w_low",
 "source": "prices",
 "r0": -7.28,
-"r1": null,
+"r1": 6.71,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -128381,6 +128451,20 @@
 },
 {
 "ticker": "BWXT",
+"date": "2026-11-23",
+"title": "BWXT: gap up 5 (+6.7% that day)",
+"type": "price_gap_up_5",
+"source": "prices",
+"r0": 6.71,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "BWXT",
 "date": "2010-12-14",
 "title": "BWXT: volume 3x (+0.6% that day)",
 "type": "price_volume_3x",
@@ -128501,7 +128585,7 @@
 "r1": -7.2,
 "r5": 3.62,
 "r20": -2.2,
-"r60": 0.28,
+"r60": 0.27,
 "x5": 4.65,
 "x20": -1.0
 },
@@ -128681,10 +128765,10 @@
 "source": "prices",
 "r0": 7.98,
 "r1": 0.1,
-"r5": -1.51,
+"r5": -1.5,
 "r20": -5.25,
 "r60": 1.74,
-"x5": 3.06,
+"x5": 3.07,
 "x20": 3.38
 },
 {
@@ -129595,7 +129679,7 @@
 "r20": 17.89,
 "r60": 18.36,
 "x5": -2.67,
-"x20": -23.27
+"x20": -23.26
 },
 {
 "ticker": "BWXT",
@@ -130151,10 +130235,10 @@
 "source": "prices",
 "r0": -4.78,
 "r1": 1.48,
-"r5": null,
+"r5": -0.86,
 "r20": null,
 "r60": null,
-"x5": null,
+"x5": 5.73,
 "x20": null
 },
 {
@@ -130164,7 +130248,7 @@
 "type": "price_3_down_days",
 "source": "prices",
 "r0": -7.28,
-"r1": null,
+"r1": 6.71,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -132169,7 +132253,7 @@
 "r1": -0.72,
 "r5": 8.03,
 "r20": -5.9,
-"r60": null,
+"r60": -8.91,
 "x5": 5.75,
 "x20": 7.89
 },
@@ -135204,7 +135288,7 @@
 "type": "price_market_panic",
 "source": "prices",
 "r0": -5.8,
-"r1": null,
+"r1": 6.03,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -136529,6 +136613,20 @@
 },
 {
 "ticker": "CEG",
+"date": "2026-11-23",
+"title": "CEG: gap up 5 (+6.0% that day)",
+"type": "price_gap_up_5",
+"source": "prices",
+"r0": 6.03,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "CEG",
 "date": "2022-03-18",
 "title": "CEG: volume 3x (-3.9% that day)",
 "type": "price_volume_3x",
@@ -137474,10 +137572,10 @@
 "r0": -0.38,
 "r1": 2.57,
 "r5": 1.89,
-"r20": null,
+"r20": -0.15,
 "r60": null,
 "x5": 4.38,
-"x20": null
+"x20": 14.07
 },
 {
 "ticker": "CEG",
@@ -137514,7 +137612,7 @@
 "type": "price_3_down_days",
 "source": "prices",
 "r0": -5.8,
-"r1": null,
+"r1": 6.03,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -137555,7 +137653,7 @@
 "title": "VST: spike up alone (+4.7% that day)",
 "type": "price_spike_up_alone",
 "source": "prices",
-"r0": 4.68,
+"r0": 4.69,
 "r1": -1.18,
 "r5": -2.52,
 "r20": -1.49,
@@ -137710,7 +137808,7 @@
 "type": "price_drop_alone",
 "source": "prices",
 "r0": -8.52,
-"r1": 4.68,
+"r1": 4.69,
 "r5": 4.25,
 "r20": 3.55,
 "r60": 6.57,
@@ -138691,10 +138789,10 @@
 "source": "prices",
 "r0": -1.23,
 "r1": -0.94,
-"r5": -0.63,
+"r5": -0.62,
 "r20": -1.25,
 "r60": 3.75,
-"x5": -1.57,
+"x5": -1.56,
 "x20": -0.95
 },
 {
@@ -139841,7 +139939,7 @@
 "r1": 0.2,
 "r5": 8.91,
 "r20": 0.84,
-"r60": null,
+"r60": -9.53,
 "x5": 6.63,
 "x20": 14.63
 },
@@ -142598,10 +142696,10 @@
 "r0": -1.2,
 "r1": 2.85,
 "r5": 1.54,
-"r20": 12.46,
+"r20": 12.47,
 "r60": 7.02,
 "x5": -9.28,
-"x20": -4.56
+"x20": -4.55
 },
 {
 "ticker": "VST",
@@ -142876,7 +142974,7 @@
 "type": "price_market_panic",
 "source": "prices",
 "r0": -7.17,
-"r1": null,
+"r1": 7.44,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -144447,7 +144545,7 @@
 "r1": 2.87,
 "r5": 14.86,
 "r20": 29.26,
-"r60": 81.93,
+"r60": 81.94,
 "x5": 9.73,
 "x20": 20.66
 },
@@ -145817,10 +145915,10 @@
 "source": "prices",
 "r0": 6.54,
 "r1": 3.53,
-"r5": 8.03,
+"r5": 8.02,
 "r20": 26.73,
 "r60": 57.06,
-"x5": 3.36,
+"x5": 3.35,
 "x20": 9.91
 },
 {
@@ -145891,6 +145989,20 @@
 "r20": null,
 "r60": null,
 "x5": 5.21,
+"x20": null
+},
+{
+"ticker": "VST",
+"date": "2026-11-23",
+"title": "VST: gap up 5 (+7.4% that day)",
+"type": "price_gap_up_5",
+"source": "prices",
+"r0": 7.44,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
 "x20": null
 },
 {
@@ -146124,7 +146236,7 @@
 "type": "price_volume_3x",
 "source": "prices",
 "r0": -8.52,
-"r1": 4.68,
+"r1": 4.69,
 "r5": 4.25,
 "r20": 3.55,
 "r60": 6.57,
@@ -147342,7 +147454,7 @@
 "type": "price_3_down_days",
 "source": "prices",
 "r0": -7.17,
-"r1": null,
+"r1": 7.44,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -149249,7 +149361,7 @@
 "r1": -0.12,
 "r5": 7.06,
 "r20": 2.5,
-"r60": null,
+"r60": 23.21,
 "x5": 4.78,
 "x20": 16.29
 },
@@ -152284,7 +152396,7 @@
 "type": "price_market_panic",
 "source": "prices",
 "r0": -6.46,
-"r1": null,
+"r1": 9.58,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -153267,7 +153379,7 @@
 "r1": -0.12,
 "r5": 7.06,
 "r20": 2.5,
-"r60": null,
+"r60": 23.21,
 "x5": 4.78,
 "x20": 16.29
 },
@@ -153704,6 +153816,20 @@
 "r60": null,
 "x5": 10.87,
 "x20": 15.88
+},
+{
+"ticker": "TLN",
+"date": "2026-11-23",
+"title": "TLN: gap up 5 (+9.6% that day)",
+"type": "price_gap_up_5",
+"source": "prices",
+"r0": 9.58,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 },
 {
 "ticker": "TLN",
@@ -174800,10 +174926,10 @@
 "source": "markets",
 "r0": 2.11,
 "r1": 2.81,
-"r5": 5.87,
+"r5": 5.88,
 "r20": 12.19,
 "r60": 1.56,
-"x5": 7.43,
+"x5": 7.44,
 "x20": 7.41
 },
 {
@@ -175109,7 +175235,7 @@
 "type": "macro_gas_up",
 "source": "markets",
 "r0": -8.52,
-"r1": 4.68,
+"r1": 4.69,
 "r5": 4.25,
 "r20": 3.55,
 "r60": 6.57,
@@ -181128,10 +181254,10 @@
 "r0": -0.43,
 "r1": -2.1,
 "r5": 4.68,
-"r20": -2.23,
+"r20": -2.22,
 "r60": 7.44,
 "x5": 5.42,
-"x20": 4.01
+"x20": 4.02
 },
 {
 "ticker": "CEG",
@@ -192130,7 +192256,7 @@
 "title": "Big day for natural gas: up (+8.40%)",
 "type": "macro_gas_up",
 "source": "markets",
-"r0": -1.72,
+"r0": -1.73,
 "r1": 0.48,
 "r5": -1.07,
 "r20": -2.54,
@@ -197246,7 +197372,7 @@
 "type": "macro_gas_up",
 "source": "markets",
 "r0": 0.33,
-"r1": 2.1,
+"r1": 2.09,
 "r5": 2.11,
 "r20": 4.42,
 "r60": 11.18,
@@ -198517,7 +198643,7 @@
 "r1": 2.87,
 "r5": 14.86,
 "r20": 29.26,
-"r60": 81.93,
+"r60": 81.94,
 "x5": 9.73,
 "x20": 20.66
 },
@@ -224839,7 +224965,7 @@
 "r1": -1.26,
 "r5": 1.36,
 "r20": -0.36,
-"r60": 4.09,
+"r60": 4.1,
 "x5": 8.43,
 "x20": 0.78
 },
@@ -238786,11 +238912,11 @@
 "type": "macro_gas_down",
 "source": "markets",
 "r0": -0.22,
-"r1": -1.72,
-"r5": -1.72,
+"r1": -1.73,
+"r5": -1.73,
 "r20": -3.68,
 "r60": 3.31,
-"x5": -4.03,
+"x5": -4.04,
 "x20": -12.03
 },
 {
@@ -255289,10 +255415,10 @@
 "r0": -2.98,
 "r1": -0.79,
 "r5": -0.08,
-"r20": 5.27,
+"r20": 5.28,
 "r60": 2.85,
 "x5": 3.82,
-"x20": 7.75
+"x20": 7.76
 },
 {
 "ticker": "NXE",
@@ -255600,7 +255726,7 @@
 "r1": 1.89,
 "r5": 7.19,
 "r20": 1.59,
-"r60": 7.54,
+"r60": 7.55,
 "x5": -0.3,
 "x20": 7.86
 },
@@ -270480,7 +270606,7 @@
 "r1": -3.01,
 "r5": 2.76,
 "r20": -3.01,
-"r60": -10.17,
+"r60": -10.18,
 "x5": -4.07,
 "x20": -1.42
 },
@@ -273970,7 +274096,7 @@
 "title": "Big day for oil: up (+4.15%)",
 "type": "macro_oil_up",
 "source": "markets",
-"r0": 1.07,
+"r0": 1.08,
 "r1": 5.62,
 "r5": 9.71,
 "r20": 16.44,
@@ -274436,7 +274562,7 @@
 "type": "macro_oil_up",
 "source": "markets",
 "r0": 0.54,
-"r1": 1.71,
+"r1": 1.7,
 "r5": 0.95,
 "r20": 11.5,
 "r60": 11.41,
@@ -275212,10 +275338,10 @@
 "source": "markets",
 "r0": -2.54,
 "r1": -1.26,
-"r5": 13.3,
+"r5": 13.31,
 "r20": 20.23,
 "r60": 4.83,
-"x5": 10.44,
+"x5": 10.45,
 "x20": 13.99
 },
 {
@@ -276763,10 +276889,10 @@
 "r0": -0.43,
 "r1": -2.1,
 "r5": 4.68,
-"r20": -2.23,
+"r20": -2.22,
 "r60": 7.44,
 "x5": 5.42,
-"x20": 4.01
+"x20": 4.02
 },
 {
 "ticker": "CEG",
@@ -280806,10 +280932,10 @@
 "source": "markets",
 "r0": 1.25,
 "r1": -2.33,
-"r5": 3.71,
+"r5": 3.7,
 "r20": 4.42,
 "r60": 2.87,
-"x5": -0.35,
+"x5": -0.36,
 "x20": -1.8
 },
 {
@@ -293883,11 +294009,11 @@
 "source": "markets",
 "r0": -6.64,
 "r1": 2.35,
-"r5": -7.0,
-"r20": -7.0,
+"r5": -6.99,
+"r20": -6.99,
 "r60": -1.76,
-"x5": -0.05,
-"x20": -1.91
+"x5": -0.04,
+"x20": -1.9
 },
 {
 "ticker": "NXE",
@@ -297534,7 +297660,7 @@
 "r1": 3.01,
 "r5": 4.96,
 "r20": -4.82,
-"r60": -26.87,
+"r60": -26.88,
 "x5": -0.82,
 "x20": -13.56
 },
@@ -310241,7 +310367,7 @@
 "type": "macro_oil_down",
 "source": "markets",
 "r0": 1.21,
-"r1": 1.07,
+"r1": 1.08,
 "r5": 10.24,
 "r20": 21.03,
 "r60": 40.62,
@@ -311170,7 +311296,7 @@
 "title": "Big day for oil: down (-9.29%)",
 "type": "macro_oil_down",
 "source": "markets",
-"r0": 1.71,
+"r0": 1.7,
 "r1": -1.83,
 "r5": 2.03,
 "r20": 14.21,
@@ -324564,6 +324690,160 @@
 "x5": -10.58,
 "x20": null,
 "x1": -3.89
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-23",
+"title": "Big day for oil: down (-4.64%)",
+"type": "macro_oil_down",
+"source": "markets",
+"r0": 6.09,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "NXE",
+"date": "2026-11-23",
+"title": "Big day for oil: down (-4.64%)",
+"type": "macro_oil_down",
+"source": "markets",
+"r0": 5.86,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "UEC",
+"date": "2026-11-23",
+"title": "Big day for oil: down (-4.64%)",
+"type": "macro_oil_down",
+"source": "markets",
+"r0": 10.38,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "DNN",
+"date": "2026-11-23",
+"title": "Big day for oil: down (-4.64%)",
+"type": "macro_oil_down",
+"source": "markets",
+"r0": 5.36,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "UUUU",
+"date": "2026-11-23",
+"title": "Big day for oil: down (-4.64%)",
+"type": "macro_oil_down",
+"source": "markets",
+"r0": 5.14,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "LEU",
+"date": "2026-11-23",
+"title": "Big day for oil: down (-4.64%)",
+"type": "macro_oil_down",
+"source": "markets",
+"r0": 6.74,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "BWXT",
+"date": "2026-11-23",
+"title": "Big day for oil: down (-4.64%)",
+"type": "macro_oil_down",
+"source": "markets",
+"r0": 6.71,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "CEG",
+"date": "2026-11-23",
+"title": "Big day for oil: down (-4.64%)",
+"type": "macro_oil_down",
+"source": "markets",
+"r0": 6.03,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "VST",
+"date": "2026-11-23",
+"title": "Big day for oil: down (-4.64%)",
+"type": "macro_oil_down",
+"source": "markets",
+"r0": 7.44,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "TLN",
+"date": "2026-11-23",
+"title": "Big day for oil: down (-4.64%)",
+"type": "macro_oil_down",
+"source": "markets",
+"r0": 9.58,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "_basket",
+"date": "2026-11-23",
+"title": "Big day for oil: down (-4.64%)",
+"type": "macro_oil_down",
+"source": "markets",
+"r0": 6.93,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 },
 {
 "ticker": "CCJ",
@@ -338144,7 +338424,7 @@
 "r1": 3.01,
 "r5": 4.96,
 "r20": -4.82,
-"r60": -26.87,
+"r60": -26.88,
 "x5": -0.82,
 "x20": -13.56
 },
@@ -354419,7 +354699,7 @@
 "r1": -1.05,
 "r5": 0.0,
 "r20": -3.06,
-"r60": 11.2,
+"r60": 11.19,
 "x5": -8.96,
 "x20": -10.35
 },
@@ -354433,7 +354713,7 @@
 "r1": -0.93,
 "r5": 1.4,
 "r20": 4.87,
-"r60": 13.13,
+"r60": 13.12,
 "x5": -7.56,
 "x20": -2.42
 },
@@ -355686,10 +355966,10 @@
 "r0": -1.2,
 "r1": 2.85,
 "r5": 1.54,
-"r20": 12.46,
+"r20": 12.47,
 "r60": 7.02,
 "x5": -9.28,
-"x20": -4.56
+"x20": -4.55
 },
 {
 "ticker": "TLN",
@@ -358475,10 +358755,10 @@
 "source": "markets",
 "r0": 6.54,
 "r1": 3.53,
-"r5": 8.03,
+"r5": 8.02,
 "r20": 26.73,
 "r60": 57.06,
-"x5": 3.36,
+"x5": 3.35,
 "x20": 9.91
 },
 {
@@ -369295,7 +369575,7 @@
 "title": "Big day for the dollar: down (-0.82%)",
 "type": "macro_dollar_down",
 "source": "markets",
-"r0": 1.87,
+"r0": 1.88,
 "r1": -0.53,
 "r5": -2.54,
 "r20": -6.75,
@@ -375807,10 +376087,10 @@
 "source": "markets",
 "r0": 1.22,
 "r1": -0.83,
-"r5": 2.53,
+"r5": 2.54,
 "r20": 7.61,
 "r60": 12.44,
-"x5": -2.2,
+"x5": -2.19,
 "x20": 0.93
 },
 {
@@ -377586,7 +377866,7 @@
 "r5": -9.92,
 "r20": 5.16,
 "r60": -14.73,
-"x5": -4.86,
+"x5": -4.85,
 "x20": -1.67
 },
 {
@@ -377600,7 +377880,7 @@
 "r5": 4.42,
 "r20": 16.06,
 "r60": -13.65,
-"x5": 9.48,
+"x5": 9.49,
 "x20": 9.23
 },
 {
@@ -377614,7 +377894,7 @@
 "r5": -9.17,
 "r20": -1.67,
 "r60": -13.33,
-"x5": -4.11,
+"x5": -4.1,
 "x20": -8.5
 },
 {
@@ -377628,7 +377908,7 @@
 "r5": -6.82,
 "r20": 22.73,
 "r60": -15.91,
-"x5": -1.76,
+"x5": -1.75,
 "x20": 15.9
 },
 {
@@ -377642,7 +377922,7 @@
 "r5": -7.29,
 "r20": -1.75,
 "r60": -44.31,
-"x5": -2.23,
+"x5": -2.22,
 "x20": -8.58
 },
 {
@@ -377656,7 +377936,7 @@
 "r5": -3.95,
 "r20": -5.78,
 "r60": -57.45,
-"x5": 1.11,
+"x5": 1.12,
 "x20": -12.61
 },
 {
@@ -377670,7 +377950,7 @@
 "r5": -3.62,
 "r20": 6.82,
 "r60": 19.5,
-"x5": 1.44,
+"x5": 1.45,
 "x20": -0.01
 },
 {
@@ -377723,10 +378003,10 @@
 "source": "markets",
 "r0": -0.4,
 "r1": -3.53,
-"r5": -5.06,
+"r5": -5.07,
 "r20": 6.83,
 "r60": -21.49,
-"x5": -4.35,
+"x5": -4.36,
 "x20": 8.78,
 "x1": -3.37
 },
@@ -379835,7 +380115,7 @@
 "title": "Big day for the dollar: down (-1.15%)",
 "type": "macro_dollar_down",
 "source": "markets",
-"r0": 1.02,
+"r0": 1.01,
 "r1": -0.48,
 "r5": 2.61,
 "r20": 4.8,
@@ -383726,10 +384006,10 @@
 "source": "markets",
 "r0": 1.25,
 "r1": -2.33,
-"r5": 3.71,
+"r5": 3.7,
 "r20": 4.42,
 "r60": 2.87,
-"x5": -0.35,
+"x5": -0.36,
 "x20": -1.8
 },
 {
@@ -387275,7 +387555,7 @@
 "title": "Big day for the dollar: down (-1.47%)",
 "type": "macro_dollar_down",
 "source": "markets",
-"r0": 2.1,
+"r0": 2.09,
 "r1": -2.64,
 "r5": -0.47,
 "r20": 2.13,
@@ -396183,10 +396463,10 @@
 "source": "markets",
 "r0": -2.45,
 "r1": -3.34,
-"r5": -6.49,
+"r5": -6.5,
 "r20": -14.41,
 "r60": 22.04,
-"x5": -2.74,
+"x5": -2.75,
 "x20": -4.59
 },
 {
@@ -401380,7 +401660,7 @@
 "title": "Big day for the 10-year yield: up (+0.11)",
 "type": "macro_yield_up",
 "source": "markets",
-"r0": 1.87,
+"r0": 1.88,
 "r1": -0.53,
 "r5": -2.54,
 "r20": -6.75,
@@ -404794,7 +405074,7 @@
 "r1": 1.95,
 "r5": -0.39,
 "r20": -2.73,
-"r60": 12.88,
+"r60": 12.89,
 "x5": 3.98,
 "x20": 3.53
 },
@@ -408582,7 +408862,7 @@
 "type": "macro_yield_up",
 "source": "markets",
 "r0": -2.64,
-"r1": -0.17,
+"r1": -0.18,
 "r5": 2.27,
 "r20": -1.75,
 "r60": -14.18,
@@ -435639,7 +435919,7 @@
 "r1": 3.01,
 "r5": 4.96,
 "r20": -4.82,
-"r60": -26.87,
+"r60": -26.88,
 "x5": -0.82,
 "x20": -13.56
 },
@@ -436569,7 +436849,7 @@
 "r1": -7.2,
 "r5": 3.62,
 "r20": -2.2,
-"r60": 0.28,
+"r60": 0.27,
 "x5": 4.65,
 "x20": -1.0
 },
@@ -439357,10 +439637,10 @@
 "source": "markets",
 "r0": 7.98,
 "r1": 0.1,
-"r5": -1.51,
+"r5": -1.5,
 "r20": -5.25,
 "r60": 1.74,
-"x5": 3.06,
+"x5": 3.07,
 "x20": 3.38
 },
 {
@@ -439822,10 +440102,10 @@
 "source": "markets",
 "r0": 1.22,
 "r1": -0.83,
-"r5": 2.53,
+"r5": 2.54,
 "r20": 7.61,
 "r60": 12.44,
-"x5": -2.2,
+"x5": -2.19,
 "x20": 0.93
 },
 {
@@ -440672,7 +440952,7 @@
 "r20": 3.75,
 "r60": 4.55,
 "x5": -3.06,
-"x20": -37.41
+"x20": -37.4
 },
 {
 "ticker": "NXE",
@@ -440686,7 +440966,7 @@
 "r20": 76.94,
 "r60": 168.56,
 "x5": -1.42,
-"x20": 35.78
+"x20": 35.79
 },
 {
 "ticker": "UEC",
@@ -440700,7 +440980,7 @@
 "r20": 0.0,
 "r60": -7.32,
 "x5": 6.44,
-"x20": -41.16
+"x20": -41.15
 },
 {
 "ticker": "DNN",
@@ -440714,7 +440994,7 @@
 "r20": 11.63,
 "r60": 18.6,
 "x5": 3.66,
-"x20": -29.53
+"x20": -29.52
 },
 {
 "ticker": "UUUU",
@@ -440728,7 +441008,7 @@
 "r20": 22.22,
 "r60": -5.78,
 "x5": 2.46,
-"x20": -18.94
+"x20": -18.93
 },
 {
 "ticker": "LEU",
@@ -440742,7 +441022,7 @@
 "r20": 147.73,
 "r60": 142.42,
 "x5": -7.11,
-"x20": 106.57
+"x20": 106.58
 },
 {
 "ticker": "BWXT",
@@ -440756,7 +441036,7 @@
 "r20": 17.89,
 "r60": 18.36,
 "x5": -2.67,
-"x20": -23.27
+"x20": -23.26
 },
 {
 "ticker": "CEG",
@@ -440809,10 +441089,10 @@
 "r0": -2.65,
 "r1": -1.29,
 "r5": 3.32,
-"r20": 41.16,
+"r20": 41.15,
 "r60": 49.22,
 "x5": 3.35,
-"x20": 42.54,
+"x20": 42.53,
 "x1": -1.26
 },
 {
@@ -443231,7 +443511,7 @@
 "type": "macro_yield_down",
 "source": "markets",
 "r0": 1.21,
-"r1": 1.07,
+"r1": 1.08,
 "r5": 10.24,
 "r20": 21.03,
 "r60": 40.62,
@@ -443385,7 +443665,7 @@
 "title": "Big day for the 10-year yield: down (-0.17)",
 "type": "macro_yield_down",
 "source": "markets",
-"r0": 1.07,
+"r0": 1.08,
 "r1": 5.62,
 "r5": 9.71,
 "r20": 16.44,
@@ -443767,7 +444047,7 @@
 "type": "macro_yield_down",
 "source": "markets",
 "r0": 0.18,
-"r1": -1.09,
+"r1": -1.08,
 "r5": -2.83,
 "r20": 12.66,
 "r60": 8.68,
@@ -446036,10 +446316,10 @@
 "source": "markets",
 "r0": 1.25,
 "r1": -2.33,
-"r5": 3.71,
+"r5": 3.7,
 "r20": 4.42,
 "r60": 2.87,
-"x5": -0.35,
+"x5": -0.36,
 "x20": -1.8
 },
 {
@@ -450515,7 +450795,7 @@
 "title": "Big day for the 10-year yield: down (-0.19)",
 "type": "macro_yield_down",
 "source": "markets",
-"r0": 2.1,
+"r0": 2.09,
 "r1": -2.64,
 "r5": -0.47,
 "r20": 2.13,
@@ -453532,7 +453812,7 @@
 "type": "macro_yield_down",
 "source": "markets",
 "r0": -5.57,
-"r1": null,
+"r1": 6.09,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -453546,7 +453826,7 @@
 "type": "macro_yield_down",
 "source": "markets",
 "r0": -7.65,
-"r1": null,
+"r1": 5.86,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -453560,7 +453840,7 @@
 "type": "macro_yield_down",
 "source": "markets",
 "r0": -7.99,
-"r1": null,
+"r1": 10.38,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -453574,7 +453854,7 @@
 "type": "macro_yield_down",
 "source": "markets",
 "r0": -7.18,
-"r1": null,
+"r1": 5.36,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -453588,7 +453868,7 @@
 "type": "macro_yield_down",
 "source": "markets",
 "r0": -9.49,
-"r1": null,
+"r1": 5.14,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -453602,7 +453882,7 @@
 "type": "macro_yield_down",
 "source": "markets",
 "r0": -9.22,
-"r1": null,
+"r1": 6.74,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -453616,7 +453896,7 @@
 "type": "macro_yield_down",
 "source": "markets",
 "r0": -7.28,
-"r1": null,
+"r1": 6.71,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -453630,7 +453910,7 @@
 "type": "macro_yield_down",
 "source": "markets",
 "r0": -5.8,
-"r1": null,
+"r1": 6.03,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -453644,7 +453924,7 @@
 "type": "macro_yield_down",
 "source": "markets",
 "r0": -7.17,
-"r1": null,
+"r1": 7.44,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -453658,7 +453938,7 @@
 "type": "macro_yield_down",
 "source": "markets",
 "r0": -6.46,
-"r1": null,
+"r1": 9.58,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -453672,12 +453952,13 @@
 "type": "macro_yield_down",
 "source": "markets",
 "r0": -7.38,
-"r1": null,
+"r1": 6.93,
 "r5": null,
 "r20": null,
 "r60": null,
 "x5": null,
-"x20": null
+"x20": null,
+"x1": 7.05
 },
 {
 "ticker": "CCJ",
@@ -463746,13 +464027,13 @@
 "type": "macro_gauge_up",
 "source": "markets",
 "r0": -1.59,
-"r1": 0.23,
+"r1": 0.22,
 "r5": 5.87,
 "r20": 4.81,
 "r60": -1.16,
 "x5": 5.35,
 "x20": 2.14,
-"x1": 0.13
+"x1": 0.12
 },
 {
 "ticker": "CCJ",
@@ -470891,7 +471172,7 @@
 "type": "macro_gauge_up",
 "source": "markets",
 "r0": -5.57,
-"r1": null,
+"r1": 6.09,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -470905,7 +471186,7 @@
 "type": "macro_gauge_up",
 "source": "markets",
 "r0": -7.65,
-"r1": null,
+"r1": 5.86,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -470919,7 +471200,7 @@
 "type": "macro_gauge_up",
 "source": "markets",
 "r0": -7.99,
-"r1": null,
+"r1": 10.38,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -470933,7 +471214,7 @@
 "type": "macro_gauge_up",
 "source": "markets",
 "r0": -7.18,
-"r1": null,
+"r1": 5.36,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -470947,7 +471228,7 @@
 "type": "macro_gauge_up",
 "source": "markets",
 "r0": -9.49,
-"r1": null,
+"r1": 5.14,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -470961,7 +471242,7 @@
 "type": "macro_gauge_up",
 "source": "markets",
 "r0": -9.22,
-"r1": null,
+"r1": 6.74,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -470975,7 +471256,7 @@
 "type": "macro_gauge_up",
 "source": "markets",
 "r0": -7.28,
-"r1": null,
+"r1": 6.71,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -470989,7 +471270,7 @@
 "type": "macro_gauge_up",
 "source": "markets",
 "r0": -5.8,
-"r1": null,
+"r1": 6.03,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -471003,7 +471284,7 @@
 "type": "macro_gauge_up",
 "source": "markets",
 "r0": -7.17,
-"r1": null,
+"r1": 7.44,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -471017,7 +471298,7 @@
 "type": "macro_gauge_up",
 "source": "markets",
 "r0": -6.46,
-"r1": null,
+"r1": 9.58,
 "r5": null,
 "r20": null,
 "r60": null,
@@ -471031,12 +471312,13 @@
 "type": "macro_gauge_up",
 "source": "markets",
 "r0": -7.38,
-"r1": null,
+"r1": 6.93,
 "r5": null,
 "r20": null,
 "r60": null,
 "x5": null,
-"x20": null
+"x20": null,
+"x1": 7.05
 },
 {
 "ticker": "CCJ",
@@ -473457,7 +473739,7 @@
 "r1": -7.2,
 "r5": 3.62,
 "r20": -2.2,
-"r60": 0.28,
+"r60": 0.27,
 "x5": 4.65,
 "x20": -1.0
 },
@@ -473609,7 +473891,7 @@
 "type": "macro_gauge_down",
 "source": "markets",
 "r0": 4.01,
-"r1": 1.15,
+"r1": 1.14,
 "r5": -1.91,
 "r20": -0.04,
 "r60": 8.77,
@@ -473763,7 +474045,7 @@
 "title": "Big day for the VIX fear gauge: down (-18.53%)",
 "type": "macro_gauge_down",
 "source": "markets",
-"r0": 1.15,
+"r0": 1.14,
 "r1": 0.68,
 "r5": -3.51,
 "r20": 0.53,
@@ -482197,5 +482479,159 @@
 "x5": -10.58,
 "x20": null,
 "x1": -3.89
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-23",
+"title": "Big day for the VIX fear gauge: down (-25.94%)",
+"type": "macro_gauge_down",
+"source": "markets",
+"r0": 6.09,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "NXE",
+"date": "2026-11-23",
+"title": "Big day for the VIX fear gauge: down (-25.94%)",
+"type": "macro_gauge_down",
+"source": "markets",
+"r0": 5.86,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "UEC",
+"date": "2026-11-23",
+"title": "Big day for the VIX fear gauge: down (-25.94%)",
+"type": "macro_gauge_down",
+"source": "markets",
+"r0": 10.38,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "DNN",
+"date": "2026-11-23",
+"title": "Big day for the VIX fear gauge: down (-25.94%)",
+"type": "macro_gauge_down",
+"source": "markets",
+"r0": 5.36,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "UUUU",
+"date": "2026-11-23",
+"title": "Big day for the VIX fear gauge: down (-25.94%)",
+"type": "macro_gauge_down",
+"source": "markets",
+"r0": 5.14,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "LEU",
+"date": "2026-11-23",
+"title": "Big day for the VIX fear gauge: down (-25.94%)",
+"type": "macro_gauge_down",
+"source": "markets",
+"r0": 6.74,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "BWXT",
+"date": "2026-11-23",
+"title": "Big day for the VIX fear gauge: down (-25.94%)",
+"type": "macro_gauge_down",
+"source": "markets",
+"r0": 6.71,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "CEG",
+"date": "2026-11-23",
+"title": "Big day for the VIX fear gauge: down (-25.94%)",
+"type": "macro_gauge_down",
+"source": "markets",
+"r0": 6.03,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "VST",
+"date": "2026-11-23",
+"title": "Big day for the VIX fear gauge: down (-25.94%)",
+"type": "macro_gauge_down",
+"source": "markets",
+"r0": 7.44,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "TLN",
+"date": "2026-11-23",
+"title": "Big day for the VIX fear gauge: down (-25.94%)",
+"type": "macro_gauge_down",
+"source": "markets",
+"r0": 9.58,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "_basket",
+"date": "2026-11-23",
+"title": "Big day for the VIX fear gauge: down (-25.94%)",
+"type": "macro_gauge_down",
+"source": "markets",
+"r0": 6.93,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]

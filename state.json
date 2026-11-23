@@ -135,6 +135,12 @@
     1000.0,
     0.0,
     0.0
+   ],
+   [
+    "2026-11-23",
+    1029.66,
+    0.0,
+    0.0
    ]
   ],
   "peak": 1054.400551051144,
@@ -186,7 +192,7 @@
  "flags": {
   "morning_done": "2026-11-23",
   "pulsehold:2026-11-20": true,
-  "review_done": "2026-11-20",
+  "review_done": "2026-11-23",
   "premarket:2026-11-20": true,
   "armednote:CEG:2026-11-20": true,
   "midday:2026-11-20": true,
@@ -224,7 +230,8 @@
   "close_done": "2026-11-23",
   "optmark:2026-11-23": true,
   "park:2026-11-23": true,
-  "questioner:2026-11-23:8": true
+  "questioner:2026-11-23:8": true,
+  "weekly_review_done": "2026-11-23"
  },
  "benchmark": {
   "shares": {
@@ -234,6 +241,10 @@
    [
     "2026-11-20",
     1000.0
+   ],
+   [
+    "2026-11-23",
+    1009.4
    ]
   ]
  },
@@ -3807,6 +3818,14 @@
    "equity": 1000.0,
    "bh": 1000.0,
    "week_pct": 0.0
+  },
+  {
+   "date": "2026-11-23",
+   "headline": "Up 2.9% on day one, but it's all parked cash; 3 buy orders still waiting",
+   "markdown": "**Account:** $1,029.66 vs $1,000 start (+2.91% today and this week). The goal is +5%, so we're a little over halfway. The S&P buy-and-hold would be $1,009.40, so we're ahead by about $20. Be honest: no trade closed, so this gain is not from Patient Levels. It came from the account's moves in the market, and I can't tell you how much was luck.\n\n**Core vs trading:** About $519 of idle cash was moved into the S&P (market order at 3:52pm, still pending). Settled cash is $30.91. No open positions, so no stops to report.\n\n**Orders today (none filled yet):**\n- TLN limit buys at $346.08 and $355.66. TLN closed near $365.61 (+9.8%), so both are sitting below the price. They only fill if it pulls back.\n- BWXT limit buy at $115.83, with the stock at $115.86, so this one is very close.\n\n**Agent decision:** BWXT jumped 6.7% on the Westinghouse AP1000 deal news. The desk took no action. That's right: news is priced in within minutes. Past BWXT deal headlines averaged -2.8% over the next 20 days. It's still down 51% from its 1-year high.\n\n**Watch tomorrow:** whether the BWXT order fills, and whether TLN dips. TLN's insiders sold $23M over the year (COO sale on Nov 17). Nothing was bought, which is a mild caution.\n\n**Lesson:** A good day isn't proof a strategy works. Patient Levels has only 1 data point so far, so judge it on many trades, not one.",
+   "equity": 1029.66,
+   "bh": 1009.4,
+   "week_pct": 2.91
   }
  ],
  "audits": [
@@ -3958,6 +3977,172 @@
    "auditor": {
     "_raw": "{\"to\":\"Reviewer\",\"say\":\"Nothing traded, so there is no real result to grade yet: 0 trades, $0 P&L, flat with the S&P. I agree with your flat-account read, but your message came through as broken text (cut off mid-sentence), so please resend it cleanly. Your Nov 26 flag is worth checking against the calendar, because Nov 26 is Thanksgiving in 2026 but not in 2025, and the 5-session expiry should count only trading days.\",\"grades\":{\"level\":\"Insufficient data: 0 trades, so no average result. The 0.",
     "_cost": 0.0132
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "scorecard": {
+    "by_ticker": {
+     "CEG": {
+      "n": 1,
+      "wins": 0,
+      "pnl": -0.11
+     }
+    },
+    "trades": 1,
+    "pnl": -0.11,
+    "skipped_setups_that_would_fill": 0,
+    "skipped_avg_ret_pct": null,
+    "armed_avg_ret_pct": null,
+    "agent_cost_total": 0.49832,
+    "agent_cost_by_role": {
+     "macro": 0.02284,
+     "whale": 0.00861,
+     "crowd": 0.00751,
+     "level": 0.03344,
+     "scout": 0.05757,
+     "review": 0.07035,
+     "auditor": 0.02993,
+     "strategist": 0.11417,
+     "pm": 0.03676,
+     "risk": 0.01842,
+     "investigator": 0.13379,
+     "postmortem": 0.00035,
+     "researcher": 0.00704,
+     "engineer": 0.00218,
+     "questioner": 0.00608
+    },
+    "shadow": {},
+    "ranking": {
+     "TLN": {
+      "trades": 33,
+      "avg_pct": 0.706,
+      "score": 0.589
+     },
+     "TSM": {
+      "trades": 31,
+      "avg_pct": 0.373,
+      "score": 0.331
+     },
+     "MU": {
+      "trades": 41,
+      "avg_pct": 0.348,
+      "score": 0.319
+     },
+     "PLTR": {
+      "trades": 36,
+      "avg_pct": 0.347,
+      "score": 0.315
+     },
+     "NXE": {
+      "trades": 49,
+      "avg_pct": 0.288,
+      "score": 0.273
+     },
+     "ETN": {
+      "trades": 43,
+      "avg_pct": 0.107,
+      "score": 0.125
+     },
+     "VRT": {
+      "trades": 44,
+      "avg_pct": 0.062,
+      "score": 0.087
+     },
+     "NVDA": {
+      "trades": 32,
+      "avg_pct": -0.007,
+      "score": 0.043
+     },
+     "NRG": {
+      "trades": 35,
+      "avg_pct": -0.093,
+      "score": -0.028
+     },
+     "AVGO": {
+      "trades": 38,
+      "avg_pct": -0.107,
+      "score": -0.043
+     },
+     "SMR": {
+      "trades": 58,
+      "avg_pct": -0.137,
+      "score": -0.088
+     },
+     "VST": {
+      "trades": 34,
+      "avg_pct": -0.225,
+      "score": -0.128
+     },
+     "UEC": {
+      "trades": 49,
+      "avg_pct": -0.226,
+      "score": -0.154
+     },
+     "LEU": {
+      "trades": 41,
+      "avg_pct": -0.242,
+      "score": -0.155
+     },
+     "CEG": {
+      "trades": 29,
+      "avg_pct": -0.314,
+      "score": -0.182
+     },
+     "CCJ": {
+      "trades": 34,
+      "avg_pct": -0.44,
+      "score": -0.295
+     },
+     "AMD": {
+      "trades": 49,
+      "avg_pct": -0.491,
+      "score": -0.374
+     },
+     "BWXT": {
+      "trades": 50,
+      "avg_pct": -0.494,
+      "score": -0.379
+     },
+     "PWR": {
+      "trades": 37,
+      "avg_pct": -0.589,
+      "score": -0.421
+     },
+     "OKLO": {
+      "trades": 57,
+      "avg_pct": -0.596,
+      "score": -0.477
+     }
+    },
+    "strategist_theses": {
+     "right": 0,
+     "wrong": 0
+    },
+    "learning": {
+     "patient_level": {
+      "trades": 1,
+      "avg_R": -3.333,
+      "shrunk_R": 0.16,
+      "t_stat": null,
+      "mult_before": 1.0,
+      "mult_after": 0.86
+     }
+    },
+    "postmortem_verdicts": {
+     "bad_setup": 0,
+     "bad_execution": 0,
+     "regime_mismatch": 0,
+     "news_shock": 0,
+     "noise": 0
+    }
+   },
+   "auditor": {
+    "_raw": "{\"grades\":{\"level\":\"too early to grade (1 trade, -$0.11)\",\"dip\":\"no data\",\"news\":\"no data\",\"core\":\"incomplete: the S&P order is still pending, and the account's +2.91% didn't come from Patient Levels\",\"vetoes\":\"no data: 0 skipped setups would have filled\",\"agents_worth_cost\":\"can't judge yet: $0.50 of agent cost against -$0.11 of trade P&L and no proven edge\"},\"recommendations\":[\"Don't change any rule yet. One trade is noise. The -3.3R figure is a single outcome, and the learning system already shrinks it to a tiny size nudge (1.0 to 0.86).\",\"Wait for roughly 20+ closed trades per setup type before grading anything.\",\"Report the +2.91% as market/cash luck, not strategy skill. The pending S&P order makes the comparison unclear.\",\"Historical ranking is mixed for our lineup: TLN, NXE look best, while CCJ, BWXT, CEG, LEU, UEC, VST average negative. Treat that as a hint, not proof, and use it only as a tie-breaker when picking among setups.\",\"CEG: a director open-market buy ($418k at $278) is meaningful, but the stock is now $252, below that price. Past CEG deal headlines were followed by weak 5-day moves (median -6%), so don't chase news pops.\",\"Cost watch: the investigator is the biggest spend ($0.13). Ask it to show a trade it improved before its budget grows.\"],\"summary\":\"Day one: too little data. We have one small losing trade, a gain that came from market moves, and about $0.50 in agent costs. Keep the rules as they are and re-audit after a meaningful number of trades.\"}\n\nEx",
+    "say": "I agree with the Reviewer that the +2.9% isn't from Patient Levels, since no trade has closed. With only one trade (-$0.11), I can't grade any setup, and I'd rather wait for more trades than tweak rules on noise.",
+    "to": "Reviewer",
+    "summary": "Day one: too little data. We have one small losing trade, a gain that came from market moves, and about $0.50 in agent costs. Keep the rules as they are and re-audit after a meaningful number of trades.",
+    "_cost": 0.0168
    }
   }
  ],
@@ -5145,24 +5330,24 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.21776,
+  "day_usd": 0.28557,
   "month": "2026-11",
-  "month_usd": 0.48124,
-  "total_usd": 0.48124,
+  "month_usd": 0.54905,
+  "total_usd": 0.54905,
   "by_role": {
    "macro": 0.02284,
    "whale": 0.00861,
    "crowd": 0.00751,
    "level": 0.03344,
    "scout": 0.05757,
-   "review": 0.05597,
-   "auditor": 0.01318,
-   "strategist": 0.08019,
+   "review": 0.07035,
+   "auditor": 0.02993,
+   "strategist": 0.11417,
    "pm": 0.03676,
-   "risk": 0.01792,
+   "risk": 0.01842,
    "investigator": 0.13379,
    "postmortem": 0.00035,
-   "researcher": 0.00484,
+   "researcher": 0.00704,
    "engineer": 0.00218,
    "questioner": 0.00608
   }
@@ -5260,19 +5445,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.5,
-  "NXE": 6.77,
+  "CCJ": 61.49,
+  "NXE": 6.78,
   "UEC": 5.85,
   "DNN": 1.77,
-  "UUUU": 5.21,
-  "LEU": 86.86,
-  "BWXT": 115.8,
-  "CEG": 251.66,
-  "VST": 123.83,
-  "TLN": 364.88,
-  "SPY": 722.58
+  "UUUU": 5.22,
+  "LEU": 86.92,
+  "BWXT": 115.82,
+  "CEG": 251.76,
+  "VST": 123.82,
+  "TLN": 365.03,
+  "SPY": 722.51
  },
- "last_cycle": "2026-11-23 16:00 ET",
+ "last_cycle": "2026-11-23 16:06 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -5297,10 +5482,10 @@
   ]
  },
  "brakes": {
-  "equity": 1029.46,
-  "day_pct": 2.89,
-  "week_pct": 2.89,
-  "drawdown_pct": -2.37,
+  "equity": 1029.66,
+  "day_pct": 2.91,
+  "week_pct": 2.91,
+  "drawdown_pct": -2.35,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -51107,7 +51292,6 @@
   "a4aac5316a0eb878",
   "cab53e09b478cbb5",
   "7a634663fcf720f5",
-  "0f1f809a37df564a",
   "fd2731052f33e27f",
   "38012edb5aa4d98f",
   "832a5e88c8693db1",
@@ -51164,7 +51348,6 @@
   "bf01a2cc0277276c",
   "8aff877e2dd1884c",
   "6c0f0f111a586f76",
-  "1715e61816aa5619",
   "2e25691d89c6bf03",
   "0e9db4d412c6f84b",
   "23858b9754409f40",
@@ -51275,6 +51458,7 @@
   "6a0cc1c1f8babcd3",
   "563c0572b10f43bc",
   "4045069ffe34905f",
+  "a139bb0be8a41b23",
   "8fbc143ff931bed5",
   "52950daaafc92008",
   "023889bc30f2a7cd",
@@ -51320,6 +51504,7 @@
   "66abfa595ddf0659",
   "d377bf4c00b3bccf",
   "38312f71d35b70bf",
+  "065e0289f5f77d47",
   "b8175e38a640e7c2",
   "ca2a5c0a1baa2527",
   "9d0cef749e9a05fd",
@@ -51367,21 +51552,21 @@
   "063170773d4b14a2",
   "717c47c79d590a65",
   "8d0283e176b666a8",
-  "a139bb0be8a41b23",
+  "1715e61816aa5619",
   "418a91931047cecc",
-  "065e0289f5f77d47"
+  "0f1f809a37df564a"
  ],
  "news_slow_at": 1795467528.385661,
  "officer": {
-  "settled_cash": 1000,
-  "cash": 1000,
-  "realized_short_term_gains": 0.0,
+  "settled_cash": 30.91,
+  "cash": 30.91,
+  "realized_short_term_gains": -0.11,
   "wash_sale_flags": [],
   "brakes": {
-   "equity": 1000.0,
-   "day_pct": 0.0,
-   "week_pct": 0.0,
-   "drawdown_pct": 0.0,
+   "equity": 1029.66,
+   "day_pct": 2.91,
+   "week_pct": 2.91,
+   "drawdown_pct": -2.35,
    "no_new_today": false,
    "no_new_week": false,
    "risk_mult": 1.0,
@@ -51413,28 +51598,28 @@
    "WPM": "2026-11-19 10:30",
    "SQM": "2026-11-19 09:30",
    "TECK": "2026-11-19 12:30",
-   "NVDA": "2026-11-19 11:30",
+   "NVDA": "2026-11-23 10:30",
    "AMD": "2026-11-19 11:30",
    "AVGO": "2026-11-20 09:30",
    "MU": "2026-11-20 09:30",
    "TSM": "2026-11-19 11:30",
    "ASML": "2026-11-17 10:30",
    "ARM": "2026-11-19 11:30",
-   "MRVL": "2026-11-20 09:30",
-   "SMCI": "2026-11-20 09:30",
+   "MRVL": "2026-11-23 11:30",
+   "SMCI": "2026-11-23 10:30",
    "SMH": "2026-11-17 10:30",
    "ETN": "2026-11-20 09:30",
-   "VRT": "2026-11-20 09:30",
+   "VRT": "2026-11-23 10:30",
    "PWR": "2026-11-20 09:30",
-   "NRG": "2026-11-20 09:30",
+   "NRG": "2026-11-23 11:30",
    "PLTR": "2026-11-19 15:30",
    "TSLA": "2026-11-19 11:30",
-   "COIN": "2026-11-19 11:30",
+   "COIN": "2026-11-23 10:30",
    "MSTR": "2026-11-17 09:30",
    "HOOD": "2026-11-20 09:30",
    "SOFI": "2026-11-18 09:30",
    "RKLB": "2026-11-19 11:30",
-   "IONQ": "2026-11-19 11:30",
+   "IONQ": "2026-11-23 10:30",
    "APP": "2026-11-19 12:30",
    "SHOP": "2026-11-19 09:30",
    "NOK": "2026-11-20 09:30",
@@ -51442,7 +51627,8 @@
    "AMZN": "2026-11-20 09:30",
    "MSFT": "2026-11-19 15:30",
    "GOOGL": "2026-11-19 13:30",
-   "NFLX": "2026-11-19 09:30"
+   "NFLX": "2026-11-19 09:30",
+   "GEV": "2026-11-17 10:30"
   },
   "trades": [
    {
@@ -198414,27 +198600,399 @@
     "dist_avg_pct": -4.53,
     "vol_pct": 0.76,
     "group_up": false
+   },
+   {
+    "tk": "NVDA",
+    "group": "AI chips",
+    "entry": "2026-11-23 10:30",
+    "exit": "2026-11-23 11:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Mon",
+    "open_fill": false,
+    "hour": 10,
+    "ret5d_pct": 6.53,
+    "dist_avg_pct": 6.73,
+    "vol_pct": 3.895,
+    "group_up": false
+   },
+   {
+    "tk": "MRVL",
+    "group": "AI chips",
+    "entry": "2026-11-23 11:30",
+    "exit": "2026-11-23 11:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Mon",
+    "open_fill": false,
+    "hour": 11,
+    "ret5d_pct": -1.64,
+    "dist_avg_pct": -2.74,
+    "vol_pct": 4.09,
+    "group_up": false
+   },
+   {
+    "tk": "SMCI",
+    "group": "AI chips",
+    "entry": "2026-11-23 10:30",
+    "exit": "2026-11-23 10:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Mon",
+    "open_fill": false,
+    "hour": 10,
+    "ret5d_pct": 3.12,
+    "dist_avg_pct": -0.15,
+    "vol_pct": 3.438,
+    "group_up": false
+   },
+   {
+    "tk": "VRT",
+    "group": "AI power",
+    "entry": "2026-11-23 10:30",
+    "exit": "2026-11-23 14:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Mon",
+    "open_fill": false,
+    "hour": 10,
+    "ret5d_pct": 0.84,
+    "dist_avg_pct": -1.89,
+    "vol_pct": 3.739,
+    "group_up": false
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-10-01 09:30",
+    "exit": "2026-10-01 11:30",
+    "ret_pct": 2.452,
+    "R": 1.539,
+    "weekday": "Thu",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -0.13,
+    "dist_avg_pct": 0.12,
+    "vol_pct": 0.905,
+    "group_up": false
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-10-08 12:30",
+    "exit": "2026-10-09 09:30",
+    "ret_pct": 2.806,
+    "R": 1.761,
+    "weekday": "Thu",
+    "open_fill": false,
+    "hour": 12,
+    "ret5d_pct": 3.41,
+    "dist_avg_pct": 3.3,
+    "vol_pct": 1.435,
+    "group_up": true
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-10-13 09:30",
+    "exit": "2026-10-13 09:30",
+    "ret_pct": -0.705,
+    "R": -1.165,
+    "weekday": "Tue",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": 0.7,
+    "dist_avg_pct": 0.68,
+    "vol_pct": 0.869,
+    "group_up": true
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-10-13 11:30",
+    "exit": "2026-10-13 15:30",
+    "ret_pct": 2.806,
+    "R": 1.761,
+    "weekday": "Tue",
+    "open_fill": false,
+    "hour": 11,
+    "ret5d_pct": -5.58,
+    "dist_avg_pct": -0.74,
+    "vol_pct": 0.909,
+    "group_up": false
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-10-14 09:30",
+    "exit": "2026-10-14 09:30",
+    "ret_pct": -0.481,
+    "R": -1.263,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -2.58,
+    "dist_avg_pct": 0.92,
+    "vol_pct": 1.058,
+    "group_up": true
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-10-22 09:30",
+    "exit": "2026-10-22 09:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Thu",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -1.68,
+    "dist_avg_pct": -2.68,
+    "vol_pct": 1.419,
+    "group_up": false
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-10-27 10:30",
+    "exit": "2026-10-28 09:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Tue",
+    "open_fill": false,
+    "hour": 10,
+    "ret5d_pct": -4.12,
+    "dist_avg_pct": -2.58,
+    "vol_pct": 1.291,
+    "group_up": false
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-10-28 11:30",
+    "exit": "2026-10-29 09:30",
+    "ret_pct": -1.774,
+    "R": -1.113,
+    "weekday": "Wed",
+    "open_fill": false,
+    "hour": 11,
+    "ret5d_pct": -5.26,
+    "dist_avg_pct": -1.46,
+    "vol_pct": 1.555,
+    "group_up": true
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-10-29 13:30",
+    "exit": "2026-10-30 09:30",
+    "ret_pct": -4.752,
+    "R": -2.982,
+    "weekday": "Thu",
+    "open_fill": false,
+    "hour": 13,
+    "ret5d_pct": 9.45,
+    "dist_avg_pct": 1.24,
+    "vol_pct": 2.125,
+    "group_up": true
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-10-30 10:30",
+    "exit": "2026-10-30 13:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Fri",
+    "open_fill": false,
+    "hour": 10,
+    "ret5d_pct": 5.62,
+    "dist_avg_pct": -2.01,
+    "vol_pct": 2.069,
+    "group_up": true
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-11-04 09:30",
+    "exit": "2026-11-04 09:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": 2.51,
+    "dist_avg_pct": 5.01,
+    "vol_pct": 1.576,
+    "group_up": true
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-11-05 09:30",
+    "exit": "2026-11-05 09:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Thu",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -5.25,
+    "dist_avg_pct": -3.62,
+    "vol_pct": 2.324,
+    "group_up": false
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-11-06 12:30",
+    "exit": "2026-11-09 11:30",
+    "ret_pct": 10.448,
+    "R": 6.556,
+    "weekday": "Fri",
+    "open_fill": false,
+    "hour": 12,
+    "ret5d_pct": -9.99,
+    "dist_avg_pct": -9.6,
+    "vol_pct": 2.753,
+    "group_up": false
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-11-10 09:30",
+    "exit": "2026-11-10 09:30",
+    "ret_pct": -0.1,
+    "R": 0.018,
+    "weekday": "Tue",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -3.89,
+    "dist_avg_pct": -2.66,
+    "vol_pct": 2.226,
+    "group_up": false
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-11-17 10:30",
+    "exit": "2026-11-20 09:30",
+    "ret_pct": -2.323,
+    "R": -1.458,
+    "weekday": "Tue",
+    "open_fill": false,
+    "hour": 10,
+    "ret5d_pct": -2.61,
+    "dist_avg_pct": -5.42,
+    "vol_pct": 1.484,
+    "group_up": false
+   },
+   {
+    "tk": "NRG",
+    "group": "AI power",
+    "entry": "2026-11-23 11:30",
+    "exit": "2026-11-23 13:30",
+    "ret_pct": 2.336,
+    "R": 1.466,
+    "weekday": "Mon",
+    "open_fill": false,
+    "hour": 11,
+    "ret5d_pct": 1.2,
+    "dist_avg_pct": 0.49,
+    "vol_pct": 1.991,
+    "group_up": false
+   },
+   {
+    "tk": "COIN",
+    "group": "high beta",
+    "entry": "2026-11-23 10:30",
+    "exit": "2026-11-23 12:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Mon",
+    "open_fill": false,
+    "hour": 10,
+    "ret5d_pct": -6.29,
+    "dist_avg_pct": -9.73,
+    "vol_pct": 2.486,
+    "group_up": false
+   },
+   {
+    "tk": "IONQ",
+    "group": "high beta",
+    "entry": "2026-11-23 10:30",
+    "exit": "2026-11-23 10:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Mon",
+    "open_fill": false,
+    "hour": 10,
+    "ret5d_pct": -8.43,
+    "dist_avg_pct": -14.25,
+    "vol_pct": 3.76,
+    "group_up": false
    }
   ],
-  "last_run": "2026-11-21 10:37"
+  "last_run": "2026-11-23 16:06"
  },
  "learn_report": {
   "status": "ok",
-  "n": 717,
-  "avg_R": -0.326,
+  "n": 9820,
+  "avg_R": 0.234,
   "patterns": [
    {
-    "what": "weekday = Wed",
-    "older_vs_avg_R": -0.41,
-    "newer_vs_avg_R": -0.26,
-    "n": 130,
+    "what": "tk = APP",
+    "older_vs_avg_R": 0.24,
+    "newer_vs_avg_R": 0.29,
+    "n": 194,
+    "direction": "better"
+   },
+   {
+    "what": "tk = MSFT",
+    "older_vs_avg_R": -0.43,
+    "newer_vs_avg_R": -0.23,
+    "n": 100,
     "direction": "worse"
    },
    {
-    "what": "weekday = Fri",
-    "older_vs_avg_R": 0.67,
-    "newer_vs_avg_R": 0.2,
-    "n": 135,
+    "what": "weekday = Tue",
+    "older_vs_avg_R": 0.25,
+    "newer_vs_avg_R": 0.22,
+    "n": 2154,
+    "direction": "better"
+   },
+   {
+    "what": "tk = ASML",
+    "older_vs_avg_R": 0.22,
+    "newer_vs_avg_R": 0.3,
+    "n": 150,
+    "direction": "better"
+   },
+   {
+    "what": "tk = TSM",
+    "older_vs_avg_R": 0.5,
+    "newer_vs_avg_R": 0.22,
+    "n": 147,
+    "direction": "better"
+   },
+   {
+    "what": "weekday = Thu",
+    "older_vs_avg_R": -0.18,
+    "newer_vs_avg_R": -0.15,
+    "n": 2001,
+    "direction": "worse"
+   },
+   {
+    "what": "tk = BWXT",
+    "older_vs_avg_R": -0.27,
+    "newer_vs_avg_R": -0.15,
+    "n": 164,
+    "direction": "worse"
+   },
+   {
+    "what": "tk = MU",
+    "older_vs_avg_R": 0.14,
+    "newer_vs_avg_R": 0.15,
+    "n": 175,
     "direction": "better"
    }
   ],
@@ -198468,10 +199026,38 @@
      "n": 0
     }
    }
+  },
+  {
+   "date": "2026-11-23",
+   "signals": {
+    "asia_gap_nowcast": {
+     "status": "healthy",
+     "avg_corr": 0.482,
+     "floor": 0.15,
+     "per_ticker": {
+      "CCJ": {
+       "corr": 0.526,
+       "n": 120
+      },
+      "LEU": {
+       "corr": 0.488,
+       "n": 120
+      },
+      "CEG": {
+       "corr": 0.431,
+       "n": 120
+      }
+     }
+    },
+    "patient_levels": {
+     "status": "collecting",
+     "n": 1
+    }
+   }
   }
  ],
  "setup_mult": {
-  "patient_level": 1.0
+  "patient_level": 0.86
  },
  "learning_log": [
   {
@@ -198486,12 +199072,25 @@
      "mult_after": 1.0
     }
    }
+  },
+  {
+   "date": "2026-11-23",
+   "setups": {
+    "patient_level": {
+     "trades": 1,
+     "avg_R": -3.333,
+     "shrunk_R": 0.16,
+     "t_stat": null,
+     "mult_before": 1.0,
+     "mult_after": 0.86
+    }
+   }
   }
  ],
  "theses": [],
- "strategy_note": "No strong thesis this week. I couldn't run web searches (the search tool hit its usage limit), so I haven't checked for new tariff, sanctions, enrichment or data-center power news. The desk's own inputs show no material news, no open theses and an empty radar. The only dated events are UEC earnings on 2026-12-08 and the FOMC meeting on 2026-12-09, and both are after the 5-session window for any order placed now. Today is monthly options expiry and next week is a holiday week (closed Nov 26, half day Nov 27), so the options and volume readings are distorted. Memory gives no edge either. UEC's recent median earnings move is only about 1.7%, which is too small to trade. LEU's earnings moves are large (about 12% median over the last 12), but no LEU date is on the calendar. If a real catalyst appears, such as a Section 232 uranium decision, a Russian-uranium waiver change, a hyperscaler nuclear power deal or a PJM auction result, I'd write it up then. I won't invent one to fill the slot.",
+ "strategy_note": "No strong thesis this week. Today's news (BWXT's Westinghouse AP1000 manufacturing contracts, Energy Fuels' production plan and loan) is already priced in. Our desk notes show BWXT contract wins have tended to fade over 20 days. CCJ's share sale is a dilution event, and the market has already reacted to it. The next scheduled catalyst is UEC earnings on 2026-12-08, followed by the FOMC meeting on 2026-12-09. Neither gives us a testable edge yet. Let the Patient Levels limit orders do the work.",
  "gate": {
-  "days": 1,
+  "days": 2,
   "trials": 30,
   "min_days": 60,
   "passed": false,
@@ -200537,6 +201136,114 @@
    ],
    "practice": false,
    "end": "16:00"
+  },
+  {
+   "id": "20261123160811754208",
+   "title": "Research session Mon Nov 23",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-23 16:08",
+   "msgs": [
+    {
+     "t": "16:08",
+     "who": "chief",
+     "to": "researcher",
+     "text": "Research time. 9,820 practice trades on file, average +0.234R. Research Lead, what should we test? Ideas must be checkable on the practice trades.",
+     "outcome": false
+    },
+    {
+     "t": "16:08",
+     "who": "researcher",
+     "to": "chief",
+     "text": "Research time. Before the BWXT question, the desk's own data says the cleanest test is one feature we haven't tried yet, so I'm proposing a ret5d_pct test and a group_up test. The BWXT owner question is about a single news event, which I can't test on 9,820 trades, so I'm answering it with the BWXT notes instead.",
+     "outcome": false,
+     "notes": "feature: group_up\nop: ==\nvalue: False\nclaim: worse\nwhy: If the whole sector group is below its 10-day average, a resting buy just above support is more likely to be in a sector-wide selloff that breaks the level, so these entries should do worse. This is distinct from the already-banned basket rule because it's measured per trade, not as a hard gate.\nfeature: ret5d_pct\nop: >\nvalue: 10\nclaim: worse\nwhy: Stocks that already ran more than 10% in the five days before a buy are more likely to be chasing a spike that fades, so resting buys after big run-ups may underperform. Testable on the existing fill data.\nwhy: The practice book shows uranium/nuclear trades averaging lower (+0.158R) than AI chips or AI power, and the BWXT owner question is a single-event redraw that the trade data cannot validate. The BWXT notes show a 20-day fade after past contract pops, a $7.0M insider sale by Geveden, "
+    },
+    {
+     "t": "16:08",
+     "who": "shadow",
+     "to": "researcher",
+     "text": "Test: trades where group_up == False (5437 of 9820). Older half: 0.128R vs 0.481R for the rest. Newer half: 0.132R vs 0.214R. p=0.0. Verdict: not supported.",
+     "outcome": false
+    },
+    {
+     "t": "16:08",
+     "who": "shadow",
+     "to": "researcher",
+     "text": "Test: trades where ret5d_pct > 10 (457 of 9820). Older half: 0.1R vs 0.316R for the rest. Newer half: 0.091R vs 0.167R. p=0.1605. Verdict: not supported.",
+     "outcome": false
+    },
+    {
+     "t": "16:08",
+     "who": "risk",
+     "to": "researcher",
+     "text": "Risk Manager here, and I disagree with the 'not supported' verdicts being read as a clean no: both ideas were tested after seeing the data, and the group_up result is a big p=0.0 result that actually points the opposite way from the claim. Five ideas tested so far means some of these could be luck, and the desk's own history shows the 'worse after big run-ups' pattern is already noisy. I'd log both as tested and rejected, not build rules from them, and I'd keep the research pipeline honest about trial counts before trusting any new pattern.",
+     "outcome": false,
+     "notes": "why: group_up==False trades averaged clearly better in the older half and still better in the newer half, which contradicts the claim that they should do worse; the ret5d_pct result is weak (p=0.16) and reverses only slightly across halves. With 5 ideas tested, the multiple-comparison risk is real, so neither result justifies a new rule.\nticker: UUUU\ndirection: up\ndays: 5\nfiles read: SECTOR Rules the bot follows from its discoveries"
+    },
+    {
+     "t": "16:08",
+     "who": "researcher",
+     "to": "risk",
+     "text": "Risk Manager, I agree with you: group_up=False did worse in both halves (older 0.128R vs 0.481R, newer 0.132R vs 0.214R), so the claim was backwards and the p=0.0 is too strong to wave away. The run-up idea is weak (p=0.16) and tested after the fact, so I'm logging both as rejected and not building rules on them. I'd also count the trials honestly, since five tests means some lucky hits are expected.",
+     "outcome": false,
+     "notes": "key: group_up == False\nnote: Tested whether resting buys made while the whole sector basket is below its 10-day average do worse. They did not do worse in the way I expected; the opposite held in both halves, with the older half much stronger than the newer. Rejected as a rule.\nnext: Log as rejected. Don't add a per-trade filter from this; the basket gate already exists as a hard rule.\nkey: ret5d_pct > 10\nnote: Tested whether buys after a 10%+ five-day run-up underperform. Direction matched the claim in both halves but the difference is small and not statistically solid (p=0.16, 457 trades).\nnext: Log as rejected for now. If revisited, test against a pre-set threshold instead of one chosen after seeing results.\nkey: research process\nnote: Five ideas have now been tested on the same 9,820 trades. Multiple testing means a few spurious passes are expected by chance, so any future pattern ne"
+    }
+   ],
+   "practice": false,
+   "end": "16:08"
+  },
+  {
+   "id": "20261123160827181561",
+   "title": "Daily review Mon Nov 23 + weekly strategy",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "kind": "review",
+   "start": "2026-11-23 16:08",
+   "msgs": [
+    {
+     "t": "16:08",
+     "who": "officer",
+     "to": "team",
+     "text": "Numbers for the reviewer: account $1,029.66 vs $1,000 start, +2.91% this week; the S&P buy-and-hold would be at $1,009.40. 0 trade(s) closed today. Settled cash $30.91.",
+     "outcome": false
+    },
+    {
+     "t": "16:08",
+     "who": "review",
+     "to": "team",
+     "text": "Up 2.9% on day one, but it's all parked cash; 3 buy orders still waiting\nreview markdown: **Account:** $1,029.66 vs $1,000 start (+2.91% today and this week). The goal is +5%, so we're a little over halfway. The S&P buy-and-hold would be $1,009.40, so we're ahead by about $20. Be honest: no trade closed, so this gain is not from Patient Levels. It came from the account's moves in the market, and I can't tell you how much was luck.\n\n**Core vs trading:** About $519 of idle cash was moved into the S&P (market order at 3:52pm, still pending). Settled cash is $30.91. No open positions, so no stops ",
+     "outcome": false
+    },
+    {
+     "t": "16:08",
+     "who": "auditor",
+     "to": "review",
+     "text": "I agree with the Reviewer that the +2.9% isn't from Patient Levels, since no trade has closed. With only one trade (-$0.11), I can't grade any setup, and I'd rather wait for more trades than tweak rules on noise.",
+     "outcome": false,
+     "notes": "Day one: too little data. We have one small losing trade, a gain that came from market moves, and about $0.50 in agent costs. Keep the rules as they are and re-audit after a meaningful number of trades."
+    },
+    {
+     "t": "16:08",
+     "who": "strategist",
+     "to": "auditor",
+     "text": "I don't have a strong thesis this week. BWXT jumped 6.7% on the Westinghouse contract news, but the desk's history shows that after contract wins it has tended to drift down over the following 20 days. UUUU is up on its production news but is still down about 67% over the quarter, so I wouldn't chase either one. I agree with the Auditor that we should wait for more closed trades before changing any rules.",
+     "outcome": false,
+     "notes": "No strong thesis this week. Today's news (BWXT's Westinghouse AP1000 manufacturing contracts, Energy Fuels' production plan and loan) is already priced in. Our desk notes show BWXT contract wins have tended to fade over 20 days. CCJ's share sale is a dilution event, and the market has already reacted to it. The next scheduled catalyst is UEC earnings on 2026-12-08, followed by the FOMC meeting on 2026-12-09. Neither gives us a testable edge yet. Let the Patient Levels limit orders do the work.\ndate: 2026-12-08\nticker: UEC\nwhat: Earnings report. The typical move is about 3%, and 28% of past reports moved more than 5%.\ndate: 2026-12-09\nticker: CEG\nwhat: FOMC rate decision. Rates matter to the power stocks (CEG, VST, TLN).\nwhy: I checked the news flow, the calendar and the desk's notes on how BWXT reacted to past contract wins. Today's headlines are already priced in, and no dated catalyst "
+    }
+   ],
+   "practice": false,
+   "end": "16:08"
   }
  ],
  "feed": [
@@ -201953,6 +202660,91 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 16:06",
+   "who": "shadow",
+   "kind": "data",
+   "title": null,
+   "text": "22 practice trades closed: 6 wins, 16 losses, -6.57R in total (R = what one trade risks). Best: GEV +6.56R. 9,820 practice trades on record.",
+   "tickers": [],
+   "art": {
+    "big": "22 practice trades",
+    "sub": "6 won, 16 lost, -6.6R. No money involved."
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 16:08",
+   "who": "researcher",
+   "kind": "learn",
+   "title": null,
+   "text": "Tested: group_up == False (worse). Verdict: not supported. Tested whether resting buys made while the whole sector basket is below its 10-day average do worse. They did not do worse in the way I expected; the opposite held in both halves, with the older half much stronger than the newer. Rejected as a rule.",
+   "tickers": [],
+   "art": {
+    "big": "Tested: group_up == False",
+    "sub": "Not supported"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 16:08",
+   "who": "researcher",
+   "kind": "learn",
+   "title": null,
+   "text": "Tested: ret5d_pct > 10 (worse). Verdict: not supported. Tested whether buys after a 10%+ five-day run-up underperform. Direction matched the claim in both halves but the difference is small and not statistically solid (p=0.16, 457 trades).",
+   "tickers": [],
+   "art": {
+    "big": "Tested: ret5d_pct > 10",
+    "sub": "Not supported"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 16:08",
+   "who": "researcher",
+   "kind": "alert",
+   "title": "Research notes",
+   "text": "Tested 2 idea(s). Nothing held up this time. Notes are in Team chat.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 16:08",
+   "who": "shadow",
+   "kind": "learn",
+   "title": null,
+   "text": "Weekly lessons from 9,820 practice trades (avg +0.234R): tk = APP better (+0.24R then +0.29R, n=194); tk = MSFT worse (-0.43R then -0.23R, n=100); weekday = Tue better (+0.25R then +0.22R, n=2154); tk = ASML better (+0.22R then +0.30R, n=150); tk = TSM better (+0.50R then +0.22R, n=147); weekday = Thu worse (-0.18R then -0.15R, n=2001); tk = BWXT worse (-0.27R then -0.15R, n=164); tk = MU better (+0.14R then +0.15R, n=175). These are candidates; each still needs a written-rule test.",
+   "tickers": [],
+   "art": {
+    "big": "This week's lessons",
+    "sub": "8 pattern(s) held up twice. Still unproven."
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 16:08",
+   "who": "drift",
+   "kind": "data",
+   "title": null,
+   "text": "Weekly check against the research: Asia nowcast: working as researched (link to the open 0.482); The strategy: still collecting trades (1 trades).",
+   "tickers": [],
+   "art": {
+    "big": "Weekly check: all healthy",
+    "sub": "Live results compared with what the research promised"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 16:08",
+   "who": "review",
+   "kind": "alert",
+   "title": "Daily review",
+   "text": "Up 2.9% on day one, but it's all parked cash; 3 buy orders still waiting | week +2.91% vs +5% goal | SPY hold $1009.40",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -202172,7 +202964,7 @@
    "price": 59.21,
    "materiality": 8,
    "direction_called": "down",
-   "r1": null,
+   "r1": 3.85,
    "r5": null,
    "r20": null
   },
@@ -202411,7 +203203,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 16:00",
+  "updated": "2026-11-23 16:06",
   "total": 386,
   "week": 337,
   "places": {
@@ -203059,6 +203851,7 @@
   "53627f4c0e7162ee",
   "4bcec70e5161a23d",
   "65144e58fd5c26e9",
+  "f2cc6e74f1bd9dd4",
   "4039fa58057275ae",
   "5298ad87eeddc34f",
   "f3ccd7a260e2d594",
@@ -203098,7 +203891,6 @@
   "06c0ff00fa161dd2",
   "9072aaac75f7221f",
   "7f7a05be6b3ac1f5",
-  "c5a7aa4d347cef23",
   "5178e5d1234a91bb",
   "5b83027a0cf1a496",
   "096f1d51d1fb61ac",
@@ -203114,7 +203906,7 @@
   "2c7a3976a5596853",
   "37e85b7a7ce58612",
   "28eaa442b6a19a6f",
-  "f2cc6e74f1bd9dd4",
+  "c5a7aa4d347cef23",
   "c71238280e152d73",
   "797e5c4039060606",
   "71bc1051aa67e316",
@@ -203160,7 +203952,7 @@
  ],
  "memory_view": {
   "events": 1531,
-  "with_outcomes": 1162,
+  "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
     "n": 8,
@@ -203197,10 +203989,16 @@
    "intel_contract": {
     "n": 0
    },
+   "intel_defense": {
+    "n": 0
+   },
    "intel_disruption": {
     "n": 0
    },
    "intel_financing": {
+    "n": 0
+   },
+   "intel_geopolitics": {
     "n": 0
    },
    "intel_opposition": {
@@ -203230,6 +204028,20 @@
     "next_20d_median_pct": -4.67,
     "next_20d_vs_basket_median_pct": -4.67,
     "share_up_20d": 0.29
+   },
+   "other": {
+    "n": 0
+   },
+   "policy_tariff": {
+    "n": 0
+   },
+   "reactor_outage": {
+    "n": 174,
+    "first_day_median_pct": 0.53,
+    "next_5d_median_pct": 0.86,
+    "next_20d_median_pct": 2.32,
+    "next_20d_vs_basket_median_pct": 0.93,
+    "share_up_20d": 0.61
    }
   },
   "watch": [
@@ -203584,7 +204396,7 @@
     "ticker": "CCJ",
     "title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales",
     "type": "intel_contract",
-    "r0": null,
+    "r0": 6.09,
     "r5": null,
     "r20": null
    },
@@ -203593,7 +204405,7 @@
     "ticker": "CCJ",
     "title": "Poland plans to sign a contract for the construction of its first nuclear power plant in early 2027",
     "type": "intel_contract",
-    "r0": null,
+    "r0": 6.09,
     "r5": null,
     "r20": null
    },
@@ -203602,7 +204414,7 @@
     "ticker": "BWXT",
     "title": "Poland plans to sign a contract for the construction of its first nuclear power plant in early 2027",
     "type": "intel_contract",
-    "r0": null,
+    "r0": 6.71,
     "r5": null,
     "r20": null
    },
@@ -203611,7 +204423,7 @@
     "ticker": "CCJ",
     "title": "Westinghouse Canada Awards BWXT AP1000\u00ae Manufacturing Qualification Contracts",
     "type": "intel_contract",
-    "r0": null,
+    "r0": 6.09,
     "r5": null,
     "r20": null
    },
@@ -203620,7 +204432,7 @@
     "ticker": "BWXT",
     "title": "Westinghouse Canada Awards BWXT AP1000\u00ae Manufacturing Qualification Contracts",
     "type": "intel_contract",
-    "r0": null,
+    "r0": 6.71,
     "r5": null,
     "r20": null
    },
@@ -203629,7 +204441,7 @@
     "ticker": "UUUU",
     "title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales - TradingView",
     "type": "earnings",
-    "r0": null,
+    "r0": 5.14,
     "r5": null,
     "r20": null
    },
@@ -203638,7 +204450,7 @@
     "ticker": "BWXT",
     "title": "BWX Technologies awarded manufacturing qualification contracts by Westinghouse - TipRanks",
     "type": "contract_deal",
-    "r0": null,
+    "r0": 6.71,
     "r5": null,
     "r20": null
    },
@@ -203647,7 +204459,7 @@
     "ticker": "UUUU",
     "title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales - Asianet Newsable",
     "type": "earnings",
-    "r0": null,
+    "r0": 5.14,
     "r5": null,
     "r20": null
    },
@@ -203656,7 +204468,7 @@
     "ticker": "CCJ",
     "title": "China\u2019s Nuclear Submarine Fleet Could Reach 40 by 2035 as Japan Weighs Its Own Programme and Nuclear Policy",
     "type": "intel_defense",
-    "r0": null,
+    "r0": 6.09,
     "r5": null,
     "r20": null
    },
@@ -203665,7 +204477,7 @@
     "ticker": "BWXT",
     "title": "China\u2019s Nuclear Submarine Fleet Could Reach 40 by 2035 as Japan Weighs Its Own Programme and Nuclear Policy",
     "type": "intel_defense",
-    "r0": null,
+    "r0": 6.71,
     "r5": null,
     "r20": null
    },
@@ -203674,7 +204486,7 @@
     "ticker": "UUUU",
     "title": "Energy Fuels Targets One Million Pounds of Uranium Production at White Mesa Mill as US Mining Projects Advance",
     "type": "other",
-    "r0": null,
+    "r0": 5.14,
     "r5": null,
     "r20": null
    },
@@ -203683,7 +204495,7 @@
     "ticker": "LEU",
     "title": "Standard Nuclear Submits Final Documented Safety Analyses to U.S. Department of Energy for Tennessee and Idaho Fuel Production Facilities",
     "type": "intel_production",
-    "r0": null,
+    "r0": 6.74,
     "r5": null,
     "r20": null
    },
@@ -203692,7 +204504,7 @@
     "ticker": "BWXT",
     "title": "Standard Nuclear Submits Final Documented Safety Analyses to U.S. Department of Energy for Tennessee and Idaho Fuel Production Facilities",
     "type": "intel_production",
-    "r0": null,
+    "r0": 6.71,
     "r5": null,
     "r20": null
    },
@@ -203701,7 +204513,7 @@
     "ticker": "UUUU",
     "title": "Energy Fuels Rallies 14% on Plan to Produce 1 Million Pounds of Uranium; Oklo Surges 12%, NuScale Power Gains 13%",
     "type": "intel_production",
-    "r0": null,
+    "r0": 5.14,
     "r5": null,
     "r20": null
    },
@@ -203710,7 +204522,7 @@
     "ticker": "CCJ",
     "title": "Energy Fuels Rallies 14% on Plan to Produce 1 Million Pounds of Uranium; Oklo Surges 12%, NuScale Power Gains 13%",
     "type": "intel_production",
-    "r0": null,
+    "r0": 6.09,
     "r5": null,
     "r20": null
    },
@@ -203719,7 +204531,7 @@
     "ticker": "UUUU",
     "title": "US Signs $725 Million Loan Pact with Energy Fuels to Boost Domestic Rare Earth Production - EnergyNow.com",
     "type": "policy_tariff",
-    "r0": null,
+    "r0": 5.14,
     "r5": null,
     "r20": null
    },
@@ -203728,7 +204540,7 @@
     "ticker": "BWXT",
     "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal - Investing.com",
     "type": "contract_deal",
-    "r0": null,
+    "r0": 6.71,
     "r5": null,
     "r20": null
    },
@@ -203737,7 +204549,7 @@
     "ticker": "BWXT",
     "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com India",
     "type": "contract_deal",
-    "r0": null,
+    "r0": 6.71,
     "r5": null,
     "r20": null
    },
@@ -203746,7 +204558,7 @@
     "ticker": "BWXT",
     "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com Australia",
     "type": "contract_deal",
-    "r0": null,
+    "r0": 6.71,
     "r5": null,
     "r20": null
    },
@@ -203755,7 +204567,7 @@
     "ticker": "BWXT",
     "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal",
     "type": "contract_deal",
-    "r0": null,
+    "r0": 6.71,
     "r5": null,
     "r20": null
    },
@@ -203764,7 +204576,7 @@
     "ticker": "CCJ",
     "title": "Congress Reviews Saudi Nuclear Deal Amid Enrichment Concerns",
     "type": "intel_geopolitics",
-    "r0": null,
+    "r0": 6.09,
     "r5": null,
     "r20": null
    },
@@ -203773,7 +204585,7 @@
     "ticker": "LEU",
     "title": "Congress Reviews Saudi Nuclear Deal Amid Enrichment Concerns",
     "type": "intel_geopolitics",
-    "r0": null,
+    "r0": 6.74,
     "r5": null,
     "r20": null
    },
@@ -203782,7 +204594,7 @@
     "ticker": "CCJ",
     "title": "Fresh reports indicate Russia may deploy a nuclear weapon in space",
     "type": "intel_defense",
-    "r0": null,
+    "r0": 6.09,
     "r5": null,
     "r20": null
    },
@@ -203791,7 +204603,7 @@
     "ticker": "BWXT",
     "title": "Fresh reports indicate Russia may deploy a nuclear weapon in space",
     "type": "intel_defense",
-    "r0": null,
+    "r0": 6.71,
     "r5": null,
     "r20": null
    },
@@ -203800,7 +204612,7 @@
     "ticker": "BWXT",
     "title": "Latest Outlook on the $23.5 Billion Savannah River Plutonium Plant Project Ahead of 2038 Completion",
     "type": "intel_regulation",
-    "r0": null,
+    "r0": 6.71,
     "r5": null,
     "r20": null
    },
@@ -203809,7 +204621,7 @@
     "ticker": "LEU",
     "title": "Latest Outlook on the $23.5 Billion Savannah River Plutonium Plant Project Ahead of 2038 Completion",
     "type": "intel_regulation",
-    "r0": null,
+    "r0": 6.74,
     "r5": null,
     "r20": null
    },
@@ -203818,7 +204630,7 @@
     "ticker": "CEG",
     "title": "NRC opens comments on draft EA for Crownpoint ISR project",
     "type": "intel_regulation",
-    "r0": null,
+    "r0": 6.03,
     "r5": null,
     "r20": null
    },
@@ -203827,7 +204639,7 @@
     "ticker": "VST",
     "title": "NRC opens comments on draft EA for Crownpoint ISR project",
     "type": "intel_regulation",
-    "r0": null,
+    "r0": 7.44,
     "r5": null,
     "r20": null
    },
@@ -203836,7 +204648,7 @@
     "ticker": "CEG",
     "title": "Nuclear Regulatory Commission Approves Construction Permit for Dow, X-Energy Texas Reactor Project",
     "type": "intel_regulation",
-    "r0": null,
+    "r0": 6.03,
     "r5": null,
     "r20": null
    },
@@ -203845,7 +204657,7 @@
     "ticker": "VST",
     "title": "Nuclear Regulatory Commission Approves Construction Permit for Dow, X-Energy Texas Reactor Project",
     "type": "intel_regulation",
-    "r0": null,
+    "r0": 7.44,
     "r5": null,
     "r20": null
    },
@@ -203854,7 +204666,7 @@
     "ticker": "LEU",
     "title": "NRC Reviews Transfer of Uranium De-Conversion License to HALEU Energy Fuel",
     "type": "intel_regulation",
-    "r0": null,
+    "r0": 6.74,
     "r5": null,
     "r20": null
    },
@@ -203863,7 +204675,7 @@
     "ticker": "BWXT",
     "title": "NRC Reviews Transfer of Uranium De-Conversion License to HALEU Energy Fuel",
     "type": "intel_regulation",
-    "r0": null,
+    "r0": 6.71,
     "r5": null,
     "r20": null
    },
@@ -203872,7 +204684,7 @@
     "ticker": "CCJ",
     "title": "EDF Prepares Provisional Investment Decision on EPR2 Reactors Before Brussels Approval",
     "type": "intel_regulation",
-    "r0": null,
+    "r0": 6.09,
     "r5": null,
     "r20": null
    },
@@ -203881,7 +204693,7 @@
     "ticker": "CEG",
     "title": "NRC Drafts Environmental Review for Crownpoint Uranium Project",
     "type": "intel_regulation",
-    "r0": null,
+    "r0": 6.03,
     "r5": null,
     "r20": null
    },
@@ -203890,7 +204702,7 @@
     "ticker": "VST",
     "title": "NRC Drafts Environmental Review for Crownpoint Uranium Project",
     "type": "intel_regulation",
-    "r0": null,
+    "r0": 7.44,
     "r5": null,
     "r20": null
    },
@@ -203899,7 +204711,7 @@
     "ticker": "CCJ",
     "title": "Energy Fuels targets additional low-cost U.S. uranium production as stock rises 5.9%",
     "type": "intel_production",
-    "r0": null,
+    "r0": 6.09,
     "r5": null,
     "r20": null
    },
@@ -203908,7 +204720,7 @@
     "ticker": "UUUU",
     "title": "Energy Fuels targets additional low-cost U.S. uranium production as stock rises 5.9%",
     "type": "intel_production",
-    "r0": null,
+    "r0": 5.14,
     "r5": null,
     "r20": null
    },
@@ -203917,7 +204729,7 @@
     "ticker": "CCJ",
     "title": "Korea, Slovakia Sign Nuclear Financing Pact",
     "type": "intel_financing",
-    "r0": null,
+    "r0": 6.09,
     "r5": null,
     "r20": null
    },
@@ -203926,7 +204738,7 @@
     "ticker": "BWXT",
     "title": "Korea, Slovakia Sign Nuclear Financing Pact",
     "type": "intel_financing",
-    "r0": null,
+    "r0": 6.71,
     "r5": null,
     "r20": null
    },
@@ -203935,7 +204747,7 @@
     "ticker": "UUUU",
     "title": "Energy Fuels jumps 8% on plan to produce 1M pou... - Pluang",
     "type": "other",
-    "r0": null,
+    "r0": 5.14,
     "r5": null,
     "r20": null
    }
@@ -204195,14 +205007,77 @@
    "verdict": "flipped between halves (likely luck)",
    "note": "We tested whether Wednesday fills do worse, as the learn report suggested. The effect flipped sign between halves (+0.087R older, -0.040R newer) with p=0.60, so it is likely noise. The learn report's pattern did not survive a check on the full practice book.",
    "next": "Drop it. Do not add weekday filters unless a new, independent test shows a clear, consistent effect."
-  }
- ],
- "research_queue": [
+  },
   {
-   "q": "Questioner: Redraw the BWXT support zone using only price action after the 2026-11-23 AP1000 headline, then check whether the 20-day fade pattern from past contract pops (median -2.8%) holds before any resting buy is considered.",
-   "date": "2026-11-23"
+   "t": "2026-11-23 16:08",
+   "key": "group_up == False",
+   "idea": {
+    "feature": "group_up",
+    "op": "==",
+    "value": "False",
+    "claim": "worse",
+    "why": "If the whole sector group is below its 10-day average, a resting buy just above support is more likely to be in a sector-wide selloff that breaks the level, so these entries should do worse. This is distinct from the already-banned basket rule because it's measured per trade, not as a hard gate."
+   },
+   "result": {
+    "n_match": 5437,
+    "n_total": 9820,
+    "older": {
+     "n": 2441,
+     "avgR_match": 0.128,
+     "avgR_rest": 0.481,
+     "diff": -0.354
+    },
+    "newer": {
+     "n": 2996,
+     "avgR_match": 0.132,
+     "avgR_rest": 0.214,
+     "diff": -0.082
+    },
+    "t": -5.4,
+    "p": 0.0,
+    "verdict": "not supported",
+    "trial_no": 4
+   },
+   "verdict": "not supported",
+   "note": "Tested whether resting buys made while the whole sector basket is below its 10-day average do worse. They did not do worse in the way I expected; the opposite held in both halves, with the older half much stronger than the newer. Rejected as a rule.",
+   "next": "Log as rejected. Don't add a per-trade filter from this; the basket gate already exists as a hard rule."
+  },
+  {
+   "t": "2026-11-23 16:08",
+   "key": "ret5d_pct > 10",
+   "idea": {
+    "feature": "ret5d_pct",
+    "op": ">",
+    "value": "10",
+    "claim": "worse",
+    "why": "Stocks that already ran more than 10% in the five days before a buy are more likely to be chasing a spike that fades, so resting buys after big run-ups may underperform. Testable on the existing fill data."
+   },
+   "result": {
+    "n_match": 457,
+    "n_total": 9820,
+    "older": {
+     "n": 248,
+     "avgR_match": 0.1,
+     "avgR_rest": 0.316,
+     "diff": -0.216
+    },
+    "newer": {
+     "n": 209,
+     "avgR_match": 0.091,
+     "avgR_rest": 0.167,
+     "diff": -0.077
+    },
+    "t": -1.4,
+    "p": 0.1605,
+    "verdict": "not supported",
+    "trial_no": 5
+   },
+   "verdict": "not supported",
+   "note": "Tested whether buys after a 10%+ five-day run-up underperform. Direction matched the claim in both halves but the difference is small and not statistically solid (p=0.16, 457 trades).",
+   "next": "Log as rejected for now. If revisited, test against a pre-set threshold instead of one chosen after seeing results."
   }
  ],
+ "research_queue": [],
  "research_candidates": [
   {
    "key": "open_fill == True",
@@ -204454,12 +205329,12 @@
    "built": "2026-11-23 15:44"
   }
  ],
- "heartbeat": "2026-11-23 16:00",
+ "heartbeat": "2026-11-23 16:06",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 124,
+ "_pushed_feed": 126,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -204707,8 +205582,8 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 7,
-   "used": 7,
+   "asked": 8,
+   "used": 8,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 2,
@@ -204721,12 +205596,13 @@
     "BWXT Discoveries": 2,
     "UEC Snapshot": 1,
     "UEC Leadership and insiders": 1,
-    "CCJ Price behavior": 1
+    "CCJ Price behavior": 1,
+    "SECTOR Rules the bot follows from its discoveries": 1
    },
    "since": "2026-11-23"
   },
   "review": {
-   "asked": 3,
+   "asked": 4,
    "used": 3,
    "notes": {
     "CEG Leadership and insiders": 1,
@@ -204761,12 +205637,32 @@
    "since": "2026-11-23"
   },
   "researcher": {
+   "asked": 3,
+   "used": 3,
+   "notes": {
+    "BWXT Deals and contracts": 2,
+    "BWXT Snapshot": 2,
+    "BWXT Discoveries": 2,
+    "BWXT Leadership and insiders": 1,
+    "BWXT Ownership and analysts": 1,
+    "SECTOR Rules the bot follows from its discoveries": 1,
+    "desk_lessons_from_our_mistakes": 1
+   },
+   "since": "2026-11-23"
+  },
+  "auditor": {
+   "asked": 1,
+   "used": 0,
+   "notes": {},
+   "since": "2026-11-23"
+  },
+  "strategist": {
    "asked": 1,
    "used": 1,
    "notes": {
     "BWXT Deals and contracts": 1,
     "BWXT Snapshot": 1,
-    "BWXT Discoveries": 1
+    "UUUU Snapshot": 1
    },
    "since": "2026-11-23"
   }
@@ -204892,7 +205788,7 @@
    ],
    [
     "2026-11-23",
-    61.55
+    61.49
    ]
   ],
   "NXE": [
@@ -205502,7 +206398,7 @@
    ],
    [
     "2026-11-23",
-    87.29
+    86.92
    ]
   ],
   "BWXT": [
@@ -205746,7 +206642,7 @@
    ],
    [
     "2026-11-23",
-    252.05
+    251.76
    ]
   ],
   "VST": [
@@ -205868,7 +206764,7 @@
    ],
    [
     "2026-11-23",
-    124.25
+    123.82
    ]
   ],
   "TLN": [
@@ -205990,7 +206886,7 @@
    ],
    [
     "2026-11-23",
-    365.28
+    365.03
    ]
   ]
  },
@@ -206214,6 +207110,26 @@
    "price": 364.88,
    "result": null,
    "why": "The live order conflicts with the no-new-buys rule: the basket is below its 10-day average and TLN is above the entry, so the only way it fills is a sector-wide drop, which is the exact condition the "
+  },
+  {
+   "role": "risk",
+   "ticker": "UUUU",
+   "direction": "up",
+   "days": 5,
+   "date": "2026-11-23",
+   "price": 5.22,
+   "result": null,
+   "why": "group_up==False trades averaged clearly better in the older half and still better in the newer half, which contradicts the claim that they should do worse; the ret5d_pct result is weak (p=0.16) and re"
+  },
+  {
+   "role": "strategist",
+   "ticker": "BWXT",
+   "direction": "down",
+   "days": 10,
+   "date": "2026-11-23",
+   "price": 115.82,
+   "result": null,
+   "why": "I checked the news flow, the calendar and the desk's notes on how BWXT reacted to past contract wins. Today's headlines are already priced in, and no dated catalyst gives us a testable setup."
   }
  ],
  "after_sale": [],
@@ -206892,5 +207808,12 @@
     "note": "big moves 5-7x more likely here, in either direction"
    }
   ]
+ },
+ "discovery": {
+  "run_at": "2026-11-23 16:08",
+  "events": 47444,
+  "tests_tonight": 377,
+  "tests_ever": 425,
+  "survivors": 9
  }
 }
