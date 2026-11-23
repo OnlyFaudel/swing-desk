@@ -924,6 +924,9 @@ def _dayret(df):
     return float(c.iloc[-1] / c.iloc[-2] - 1) if len(c) > 2 else 0.0
 
 
+RELATED_PICKS = set()
+
+
 def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
     """Market falls 2%+, a stock falls 3%+ and sits 15%+ under its 20-day high: buy near the close, sell 6 sessions later.
     Tested 2019-2026 on 61 such days: +5.3% average over 6 days, up 70% of the time; loses 15-21% when the panic is the
@@ -1003,12 +1006,32 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
         dd = float(c.iloc[-1] / c.iloc[-20:].max() - 1)
         if r <= -cfg.get("stock_drop_pct", 3) / 100 and dd <= -cfg.get("below_high_pct", 15) / 100:
             hits.append((r, dd, t))
+    hits.sort()
+    rel = cfg.get("related_universe") or []
+    if len(hits) < cfg.get("max_names", 3) and rel:  # nuclear first; empty slots go to the related stocks (tested: more trades, same quality)
+        try:
+            import yfinance as yf
+            raw = yf.download(rel, period="4mo", auto_adjust=True, progress=False)
+            extra = []
+            for t in rel:
+                if t in T or t not in raw["Close"]:
+                    continue
+                c = raw["Close"][t].dropna(); v = raw["Volume"][t].dropna()
+                if len(c) < 45 or float(c.iloc[-1]) < 3 or float((c * v).tail(60).mean()) < 20e6:
+                    continue
+                r_, dd_ = float(c.iloc[-1] / c.iloc[-2] - 1), float(c.iloc[-1] / c.iloc[-20:].max() - 1)
+                if r_ <= -cfg.get("stock_drop_pct", 3) / 100 and dd_ <= -cfg.get("below_high_pct", 15) / 100:
+                    extra.append((dd_, r_, t, float(c.iloc[-1])))
+            for dd_, r_, t, px in sorted(extra)[: cfg.get("max_names", 3) - len(hits)]:
+                hits.append((r_, dd_, t)); prices[t] = px
+                RELATED_PICKS.add(t)
+        except Exception as e:
+            print("related panic picks", e)
     if not hits:
         if spy <= -0.02:
             feed.post("chief", f"The market is down {spy * 100:.1f}% today, but none of our stocks is beaten down enough for the panic-day "
                       "rebound (needs -3% today and 15%+ under its 20-day high). No buys.", kind="alert")
         return
-    hits.sort()
     vix = None
     try:
         import yfinance as yf
