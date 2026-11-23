@@ -11,6 +11,16 @@
    "price": 346.08,
    "status": "pending_new",
    "note": "Patient Levels buy above $344.7"
+  },
+  {
+   "time": "2026-11-23 11:58",
+   "symbol": "TLN",
+   "side": "buy",
+   "kind": "limit",
+   "qty": 0.326717,
+   "price": 355.66,
+   "status": "pending_new",
+   "note": "Patient Levels buy above $354.24"
   }
  ]
 }
