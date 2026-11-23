@@ -4621,12 +4621,12 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.02435,
+  "day_usd": 0.02662,
   "month": "2026-11",
-  "month_usd": 0.28784,
-  "total_usd": 0.28784,
+  "month_usd": 0.29011,
+  "total_usd": 0.29011,
   "by_role": {
-   "macro": 0.00561,
+   "macro": 0.0061,
    "whale": 0.00639,
    "crowd": 0.00536,
    "level": 0.00144,
@@ -4634,9 +4634,9 @@
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
-   "pm": 0.01315,
-   "risk": 0.00352,
-   "investigator": 0.10362,
+   "pm": 0.01383,
+   "risk": 0.00411,
+   "investigator": 0.10413,
    "postmortem": 0.00035,
    "researcher": 0.00295
   }
@@ -4685,19 +4685,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 63.06,
-  "NXE": 7.0,
-  "UEC": 5.95,
-  "DNN": 1.86,
-  "UUUU": 5.56,
-  "LEU": 92.89,
-  "BWXT": 113.91,
-  "CEG": 254.63,
-  "VST": 123.34,
-  "TLN": 356.78,
-  "SPY": 716.88
+  "CCJ": 62.29,
+  "NXE": 6.91,
+  "UEC": 5.88,
+  "DNN": 1.84,
+  "UUUU": 5.51,
+  "LEU": 91.26,
+  "BWXT": 113.75,
+  "CEG": 253.18,
+  "VST": 122.3,
+  "TLN": 354.36,
+  "SPY": 715.32
  },
- "last_cycle": "2026-11-23 09:35 ET",
+ "last_cycle": "2026-11-23 09:40 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4722,10 +4722,10 @@
   ]
  },
  "brakes": {
-  "equity": 1050.32,
-  "day_pct": 4.98,
-  "week_pct": 4.98,
-  "drawdown_pct": -0.39,
+  "equity": 1044.45,
+  "day_pct": 4.39,
+  "week_pct": 4.39,
+  "drawdown_pct": -0.94,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -4767,6 +4767,22 @@
   [
    "2026-11-23 09:35",
    1050.32
+  ],
+  [
+   "2026-11-23 09:38",
+   1051.77
+  ],
+  [
+   "2026-11-23 09:39",
+   1048.09
+  ],
+  [
+   "2026-11-23 09:39",
+   1045.06
+  ],
+  [
+   "2026-11-23 09:40",
+   1044.45
   ]
  ],
  "nowcast": {
@@ -49168,7 +49184,7 @@
     0.9428
    ]
   },
-  "time": "2026-11-23 09:36"
+  "time": "2026-11-23 09:40"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -49416,7 +49432,7 @@
   "88d39974add2ff27",
   "f16660c269a6613c"
  ],
- "news_slow_at": 1795444658.0122323,
+ "news_slow_at": 1795444815.4584122,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197398,6 +197414,121 @@
    ],
    "practice": false,
    "end": "09:37"
+  },
+  {
+   "id": "20261123093934883366",
+   "title": "Huddle: fast move: CEG moved -1.6% in 9 min",
+   "tickers": [
+    "CEG"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-23 09:39",
+   "msgs": [
+    {
+     "t": "09:39",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: CEG moved -1.6% in 9 min.",
+     "outcome": false
+    },
+    {
+     "t": "09:39",
+     "who": "investigator",
+     "to": "chief",
+     "text": "I looked at the recent headlines and nothing in them is new enough to explain a 1.6% drop in 9 minutes. The items are mostly recycled or general sector commentary (data center power demand, a DOE Eddystone extension that is ongoing), which is typically already priced in and noisy. A fast move with no fresh catalyst is more likely order-flow or sector-wide selling, and the basket is already 6.4% below its average, so I'd treat this as noise rather than news.",
+     "outcome": false,
+     "notes": "ask: Risk Manager: since CEG has no confirmed support and the basket is weak, do you agree we stay flat on CEG rather than try to catch a falling knife?"
+    },
+    {
+     "t": "09:39",
+     "who": "macro",
+     "to": "investigator",
+     "text": "I agree with the News Investigator: nothing in the headlines is fresh enough to explain a 1.6% drop in 9 minutes. The basket is already 6.4% below its 10-day average, so this looks like sector-wide selling pressure, not CEG-specific news. We have no confirmed support level and no buy rule is triggered, so I'd stand aside.",
+     "outcome": false
+    },
+    {
+     "t": "09:39",
+     "who": "risk",
+     "to": "macro",
+     "text": "I agree with Macro Analyst and News Investigator: the headlines are stale or generic, so the 1.6% drop looks like basket-wide selling rather than news. My concern is the basket is already 6.4% below its 10-day average, and our rule blocks new buys in that state, and CEG has no confirmed support, so any buy here would be catching a falling knife. Standing aside is the right call.",
+     "outcome": false,
+     "notes": "ask: Desk Chief: since CEG is still falling through levels, do we have any reason to expect the basket to stabilize before the 10-day average is reclaimed?"
+    },
+    {
+     "t": "09:39",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with the News Investigator, Macro Analyst, and Risk Manager: nothing in the headlines is fresh enough to explain a 1.6% drop in 9 minutes, and the whole basket is already 6.4% below its 10-day average. CEG has no waiting buy, no resting order, and no position, so there is nothing to cancel or sell. The right move is to do nothing and let the desk's rules keep us out of a falling market.",
+     "outcome": false,
+     "notes": "action: none\nreason: No open position or waiting buy in CEG, so there is nothing to exit or skip. The basket is below its 10-day average, which blocks new buys, and there is no confirmed support level. The recent headlines are stale or generic, so the move looks like sector-wide selling rather than news."
+    },
+    {
+     "t": "09:39",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:39"
+  },
+  {
+   "id": "20261123094009260567",
+   "title": "Huddle: fast move: UEC moved -1.5% in 9 min",
+   "tickers": [
+    "UEC"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-23 09:40",
+   "msgs": [
+    {
+     "t": "09:40",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: UEC moved -1.5% in 9 min.",
+     "outcome": false
+    },
+    {
+     "t": "09:40",
+     "who": "investigator",
+     "to": "chief",
+     "text": "I checked the headline feed and there are no recent headlines at all, so nothing is explaining the UEC move. A -1.5% move in 9 minutes with no news is most likely ordinary sector selling, and the basket is already 6.4% below its 10-day average, which fits that. Nothing new here for us to act on, and no reason to chase or sell.",
+     "outcome": false
+    },
+    {
+     "t": "09:40",
+     "who": "macro",
+     "to": "investigator",
+     "text": "I agree with the News Investigator: no headlines, and the basket is 6.4% below its 10-day average, so this looks like sector-wide selling rather than anything specific to UEC. The sector pulse is down, which means our no-new-buys rule is already in force, and I have nothing to add beyond that. Nothing for us to act on right now.",
+     "outcome": false
+    },
+    {
+     "t": "09:40",
+     "who": "risk",
+     "to": "team",
+     "text": "I agree with the News Investigator and Macro Analyst that nothing here is actionable, but I want to flag the real risk: the basket is 6.4% below its 10-day average and UEC has no support level, so any 'it's just sector selling' story is unproven and a falling knife can keep falling. We should not place or chase any buy, and I'd resist anyone calling a bounce without a confirmed support level.",
+     "outcome": false,
+     "notes": "ask: Macro Analyst: since the no-new-buys rule is already active, can you confirm the desk isn't also tempted to lower a resting order on UEC to 'catch the dip'?"
+    },
+    {
+     "t": "09:40",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with the News Investigator, Macro Analyst, and Risk Manager: there are no headlines, UEC has no confirmed support, and the basket is 6.4% below its 10-day average, so our no-new-buys rule already covers this. Nothing is held and nothing is waiting, so there is nothing to sell or cancel. The right call is to do nothing and wait for a real setup.",
+     "outcome": false,
+     "notes": "action: none\nreason: No holdings or waiting buys to exit or skip. The basket is below its 10-day average so no new buys are allowed, UEC has no confirmed support level, and the -1.5% move has no news behind it, so there is no clear bad news to justify an exit."
+    },
+    {
+     "t": "09:40",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:40"
   }
  ],
  "feed": [
@@ -198119,6 +198250,36 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 09:39",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: CEG moved -1.6% in 9 min. Checking every news channel for a reason right now.",
+   "tickers": [
+    "CEG"
+   ],
+   "art": {
+    "big": "CEG moved -1.6% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 09:40",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: UEC moved -1.5% in 9 min. Checking every news channel for a reason right now.",
+   "tickers": [
+    "UEC"
+   ],
+   "art": {
+    "big": "UEC moved -1.5% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -198273,11 +198434,15 @@
  "huddle_trade_count": 1,
  "huddle_seen": {
   "fast move: BWXT moved -1.5% in 5 min": 1795444651.6639452,
-  "fast move: CCJ moved -1.5% in 6 min": 1795444651.6639457
+  "fast move: CCJ moved -1.5% in 6 min": 1795444651.6639457,
+  "fast move: CEG moved -1.6% in 9 min": 1795444774.8832722,
+  "fast move: UEC moved -1.5% in 9 min": 1795444809.2604573
  },
- "huddle_last": 1795444651.6639497,
+ "huddle_last": 1795444809.2604594,
  "huddle_log": [
   "2026-11-20",
+  "2026-11-23",
+  "2026-11-23",
   "2026-11-23"
  ],
  "event_memory": [
@@ -198456,7 +198621,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 09:37",
+  "updated": "2026-11-23 09:40",
   "total": 331,
   "week": 289,
   "places": {
@@ -199130,6 +199295,8 @@
   "8a7a925eda752f82",
   "96bd0f50c9b41d81",
   "0c3ada20fae5f894",
+  "06c0ff00fa161dd2",
+  "37e85b7a7ce58612",
   "03c5d2773ef94a7b",
   "5298ad87eeddc34f",
   "f3ccd7a260e2d594",
@@ -199141,9 +199308,7 @@
   "fe223bd03cfc6370",
   "36cbbee89c76a1f7",
   "ac86fb04e7eb798b",
-  "15fecb83818a0949",
-  "37e85b7a7ce58612",
-  "06c0ff00fa161dd2"
+  "15fecb83818a0949"
  ],
  "panic_log": [
   {
@@ -200103,12 +200268,12 @@
    "built": "2026-11-23 09:37"
   }
  ],
- "heartbeat": "2026-11-23 09:35",
+ "heartbeat": "2026-11-23 09:40",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 76,
+ "_pushed_feed": 88,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -200215,7 +200380,7 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 113.91,
-  "TLN": 356.78
+  "BWXT": 113.75,
+  "TLN": 354.36
  }
 }
