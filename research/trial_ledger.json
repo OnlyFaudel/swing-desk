@@ -157,6 +157,10 @@
   "group_exposure_caps": {
    "trials": 9,
    "verdict": "2026-11-23 (panic rule as live: nuclear first + related fill, VIX/drop sizing, +10% close exit or 6 sessions, Jan 2019-Nov 2026, 192 trades): baseline $1,000 -> $5,942, 25.3%/yr, worst drop -34.7% (Aug 2019-Mar 12 2020; the other 20%+ drop was 2022 Q2). Total caps 75/60/50%: 20.8/17.4/14.6%/yr with worst drops -30.6/-26.4/-23.4%: return per unit of drop gets worse (0.73 -> 0.68/0.66/0.62). Max 1 per group: 19.3%/yr, -36.2%; max 2 per group: 23.5%/yr, -34.9%. Correlation-triggered caps (picks' 60-day correlation 0.6-0.7+ -> 40-60%): 19.6-23.5%/yr, worst drop unchanged at -34.7%. The big drops are market-wide crashes where everything falls together, not picks that resemble each other, so diversifying picks doesn't help. Not adopted; VIX-based sizing stays the protection."
+  },
+  "pop_dip_rebound_3to6": {
+   "trials": 8,
+   "verdict": "2026-11-23 (13 nuclear stocks, full history back to 1996 for CCJ; every +3-6% day): after the pop, a limit buy 2/3/5% under that day's close (valid 5 days), sold when the price gets back to the pop-day close or after 10 days, 0.2% costs. Fills back to the pop price 64-82% of the time and wins 68-83%, but averages only +0.27/+0.42/+0.59% (since 2019: +0.25/+0.55/+0.80%) because about 1 in 20 keeps falling (worst 5%: -15% to -18%). The same dip-buy after ANY day does as well or better (+0.43/+0.64/+1.19%), so the pop adds nothing: it's normal volatility. Uranium miners' next 5 days after a pop: -0.18% vs +0.47% normally (median -0.66% vs 0), but the halves disagree (-0.51/+0.16). Not adopted. The dip-and-recover rhythm is what the support-level buys already trade, at levels instead of after pops."
   }
  }
 }
