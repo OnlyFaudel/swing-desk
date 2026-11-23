@@ -232,7 +232,9 @@
   "park:2026-11-23": true,
   "questioner:2026-11-23:8": true,
   "weekly_review_done": "2026-11-23",
-  "notecheck:2026-11-23": true
+  "notecheck:2026-11-23": true,
+  "earnread:2026-11-23": true,
+  "earnread_backfill": true
  },
  "benchmark": {
   "shares": {
@@ -5331,10 +5333,10 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.28828,
+  "day_usd": 0.30288,
   "month": "2026-11",
-  "month_usd": 0.55176,
-  "total_usd": 0.55176,
+  "month_usd": 0.56636,
+  "total_usd": 0.56636,
   "by_role": {
    "macro": 0.02284,
    "whale": 0.00861,
@@ -5346,7 +5348,7 @@
    "strategist": 0.11417,
    "pm": 0.03676,
    "risk": 0.01842,
-   "investigator": 0.13379,
+   "investigator": 0.14839,
    "postmortem": 0.00035,
    "researcher": 0.00704,
    "engineer": 0.00218,
@@ -5458,7 +5460,7 @@
   "TLN": 365.03,
   "SPY": 722.39
  },
- "last_cycle": "2026-11-23 17:20 ET",
+ "last_cycle": "2026-11-23 17:30 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51313,6 +51315,7 @@
   "d315dfa4e1149d87",
   "52950daaafc92008",
   "b8175e38a640e7c2",
+  "59ef25447c180fa9",
   "1715e61816aa5619",
   "236832db131afa54",
   "67ae0f09ed3add32",
@@ -51338,8 +51341,8 @@
   "cdf09ab4dc83c609",
   "d677eaa6f8d45c1c",
   "2cbbc694a2695e84",
-  "693301ddca2bc8c2",
   "db0be8d85f3d8c6d",
+  "693301ddca2bc8c2",
   "dcba7d8fd3be8fd0",
   "c7fdc4969083b831",
   "4317a926c756f33f",
@@ -51361,6 +51364,7 @@
   "898bce48a6f14aa6",
   "ad40fc2d9e504d93",
   "e6c12a1e5998666c",
+  "0d77f1d2373bb03d",
   "0ec3c23071785cfd",
   "f21913021e43c03f",
   "a3dd031817a4feeb",
@@ -51384,6 +51388,7 @@
   "8b6a4af8fda47884",
   "313a0e04a5719e86",
   "af6eb78442aeb47e",
+  "702ca5529e4f7aeb",
   "5d22d1b6e3da5fb6",
   "92c36fef260edb24",
   "498180393c058995",
@@ -51419,7 +51424,6 @@
   "1ed195cb4396cbe7",
   "6e29a5daa673e380",
   "bcc1a41f243d6952",
-  "4653461d7ed88855",
   "d4097d0d8db37e23",
   "618c084e327573c8",
   "e12d3a4edb7295a2",
@@ -51427,7 +51431,6 @@
   "c71238280e152d73",
   "f61fff1c8e93929e",
   "08d8363ed1ddeb47",
-  "21512a406503e470",
   "32cfd9ef3704009d",
   "8df7edb48605a27d",
   "6c0f0f111a586f76",
@@ -51533,7 +51536,6 @@
   "020569e75e7d456e",
   "c56ca4f4b89e4d32",
   "4720f4810691bed4",
-  "3cb7c6d262ed9f5f",
   "22a45a3c7284120a",
   "c40403c1e5b7035d",
   "29dae386e051dd8c",
@@ -51557,12 +51559,12 @@
   "05ad7d5a34131c8c",
   "a00037110572bad0",
   "db05240fe85a29ac",
-  "0d77f1d2373bb03d",
-  "59ef25447c180fa9",
+  "21512a406503e470",
+  "4653461d7ed88855",
   "5ca17a18c47750da",
-  "702ca5529e4f7aeb"
+  "3cb7c6d262ed9f5f"
  ],
- "news_slow_at": 1795471897.809892,
+ "news_slow_at": 1795472559.9762719,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -201250,6 +201252,153 @@
    ],
    "practice": false,
    "end": "16:08"
+  },
+  {
+   "id": "20261123173038971172",
+   "title": "CCJ results, 2026-10-30",
+   "tickers": [
+    "CCJ"
+   ],
+   "kind": "news",
+   "start": "2026-11-23 17:30",
+   "msgs": [
+    {
+     "t": "17:30",
+     "who": "investigator",
+     "to": "team",
+     "text": "This is Cameco's Q3 2026 results release, so it qualifies. Numbers are mixed: Q3 net earnings were $43M but adjusted net loss was $2M, nine-month adjusted EBITDA fell 13%, mainly from lower Westinghouse equity earnings and a longer Key Lake outage. Management narrowed 2026 production guidance down to 19.5-20.5M lb and cut the sales range, which is a mild negative for near-term volume; the stock is already down 42% over the quarter and I'm not calling a direction off this release alone.",
+     "outcome": false,
+     "notes": "is results: True\nQ3 net earnings $43M (vs ~$0); Q3 adjusted net loss $2M (vs +$32M in 2025)\n9-month adjusted net earnings $279M (vs $410M); 9-month adjusted EBITDA $1.166B (vs $1.338B, -13%)\nQ3 uranium adjusted EBITDA $179M (vs $220M); Westinghouse share of adjusted EBITDA $143M in Q3 (vs $124M), but $427M for 9 months (vs $569M)\nCash $860M, total debt $1.0B, undrawn $1.0B revolver\nQ3 uranium production 3.5M lb (vs 4.4M); Q3 deliveries 5.6M lb; uranium inventory 8.5M lb at $58.37/lb average cost\nAnnual dividend $0.24/share, payable Dec 15 2026, record date Nov 30 2026\n2026 production narrowed to 19.5-20.5M lb (from 19.5-21.5M lb)\n2026 sales/deliveries narrowed to 29.5-30.5M lb (from 29-32M lb)\nFuel Services production still 13-14M kgU\nUnit cost, direct admin and capex guidance updated (figures not stated in the excerpt)\nInkai: 4.2M lb share of 10.4M lb 2026 production; final shipment exp"
+    }
+   ],
+   "practice": false,
+   "end": "17:30"
+  },
+  {
+   "id": "20261123173045542975",
+   "title": "NXE results, 2026-11-05",
+   "tickers": [
+    "NXE"
+   ],
+   "kind": "news",
+   "start": "2026-11-23 17:30",
+   "msgs": [
+    {
+     "t": "17:30",
+     "who": "investigator",
+     "to": "team",
+     "text": "This is NexGen's Q3 2026 conference call announcement, not the actual results, so there are no real numbers yet. The filing just says the call is November 10 and the financial statements will be filed November 9 after the close. I'd wait for the actual results before reading anything into it.",
+     "outcome": false,
+     "notes": "is results: False\ntone: same\nwhy: The release is a call notice with no financials, so there is nothing to extract. The stock is down sharply over the quarter, but that does not come from this filing.\ndate: 2026-11-09\nticker: NXE\nwhat: Q3 2026 financial statements and MD&A filed after North American close; review numbers and construction milestones against Rook I promises\ndate: 2026-11-10\nticker: NXE\nwhat: Q3 2026 conference call at 8:00 am ET covering Rook I construction progress and PCE exploration\nfiles read: NXE Snapshot, NXE Filings and company events"
+    }
+   ],
+   "practice": false,
+   "end": "17:30"
+  },
+  {
+   "id": "20261123173049312656",
+   "title": "LEU results, 2026-11-04",
+   "tickers": [
+    "LEU"
+   ],
+   "kind": "news",
+   "start": "2026-11-23 17:30",
+   "msgs": [
+    {
+     "t": "17:30",
+     "who": "investigator",
+     "to": "team",
+     "text": "This is Centrus's Q3 2026 results release, and it's a mixed bag: GAAP net income of $31.6M looks strong, but it's driven by a one-time $46.4M non-cash warrant gain, while adjusted results show a $9.4M loss and revenue fell 26%. The bigger worries are that DOE's proposed FY2027 budget drops funding for the HALEU cascade (about $0.8B of backlog) and DOE won't exercise further options, which is a real hit to the Technical Solutions business. I'm not buying into this on the headline; I'd rather see how the Piketon lease and DOE funding play out.",
+     "outcome": false,
+     "notes": "is results: True\nRevenue $55.5M vs $74.9M in Q3 2025 (-26%)\nGAAP net income $31.6M, boosted by a $46.4M non-cash gain on warrant liability revaluation\nAdjusted net loss $9.4M (adjusted EPS -$0.46) vs adjusted net income $5.2M in Q3 2025\nGross loss $10.6M vs $4.3M loss a year earlier\nTotal backlog $7.0B; LEU backlog ~$6.2B including ~$5.4B contingent LEU/HALEU commitments; Technical Solutions backlog ~$0.8B\nNine-month revenue $308.3M vs $302.5M; nine-month GAAP net income $58.4M\nFY2026 total revenue expected $450M-$500M\nFY2026 capital deployment $350M-$500M, driven by centrifuge manufacturing build-out\nHire at least 100 net new employees at Oak Ridge and at least 175 at Piketon for FY2026\npromise: Hire at least 100 net new employees at Oak Ridge, TN facility in 2026\ndue: 2026-12-31\npromise: Hire at least 175 net new employees at Piketon, OH facility in 2026\ndue: 2026-12-31\npromise: Delive"
+    }
+   ],
+   "practice": false,
+   "end": "17:30"
+  },
+  {
+   "id": "20261123173055740944",
+   "title": "BWXT results, 2026-11-02",
+   "tickers": [
+    "BWXT"
+   ],
+   "kind": "news",
+   "start": "2026-11-23 17:30",
+   "msgs": [
+    {
+     "t": "17:31",
+     "who": "investigator",
+     "to": "team",
+     "text": "This is BWXT's official Q3 2026 results release, so it counts as a real results report. Revenue grew 10% and GAAP EPS rose 25%, with 2026 guidance tightened and 2027 guided to solid growth. The desk's history on BWXT results shows a modest 20-day median gain, but the stock has already fallen 51% from its high and the CEO has been selling, so I'd treat this as a steady beat rather than a new catalyst.",
+     "outcome": false,
+     "notes": "is results: True\nQ3 2026 revenue $953.0M, up 10% YoY (Government Ops +4%, Commercial Ops +25%)\nQ3 2026 GAAP net income $102.0M (+24% YoY); GAAP diluted EPS $1.11 (+25%)\nQ3 2026 non-GAAP EPS $1.26 (+26%); adjusted EBITDA $179.7M (+19%)\nQ3 2026 operating cash flow $202.7M; free cash flow $150.5M (+59% YoY)\nFull-year 2026 guidance: non-GAAP EPS tightened to $4.72-$4.77 (from $4.70-$4.80); adjusted EBITDA $662-$672M (mid-point unchanged); FCF tightened to $350-$360M; revenue ~$3.8B reaffirmed\nPreliminary 2027 outlook: high-single-digit revenue growth; high-single-digit to low-double-digit adjusted EBITDA and EPS growth\n2026 revenue reaffirmed at ~$3.8B\n2026 non-GAAP EPS narrowed to $4.72-$4.77 (upper end of prior range nudged down, low end raised)\n2026 FCF narrowed to $350-$360M\n2027 preliminary: high-single-digit revenue growth; adjusted EBITDA growth ahead of the Investor Day framework\npro"
+    }
+   ],
+   "practice": false,
+   "end": "17:31"
+  },
+  {
+   "id": "20261123173101098616",
+   "title": "CEG results, 2026-11-09",
+   "tickers": [
+    "CEG"
+   ],
+   "kind": "news",
+   "start": "2026-11-23 17:31",
+   "msgs": [
+    {
+     "t": "17:31",
+     "who": "investigator",
+     "to": "team",
+     "text": "This is CEG's real Q3 2026 results release, and it's strong: adjusted EPS of $5.06 versus $3.04 a year ago, guidance raised again, and several new long-term nuclear contracts with Amazon and Google. The stock is already up about 6% on the day, though it's still roughly 33% below its 1-year high, so the good news is partly priced in. I'd keep this as a fact-check list on management's promises rather than a reason to buy now.",
+     "outcome": false,
+     "notes": "is results: True\nQ3 2026 GAAP net income $5.19/share ($1.835B) vs $2.97 in Q3 2025\nQ3 2026 adjusted operating earnings $5.06/share vs $3.04 a year ago\nFull-year 2026 adjusted EPS guidance raised, midpoint up, range $12.50-$12.80\nQ3 2026 revenue $9.55B vs $6.57B a year ago; nine-month revenue $28.18B\nNine-month GAAP net income attributable to common shareholders $3.94B vs $1.89B\nCash fell to $603M from $3.64B at year-end 2025; short-term borrowings rose to $3.99B; long-term debt rose to $19.0B from $7.25B\nFull-year 2026 adjusted operating EPS range narrowed to $12.50-$12.80 with midpoint raised (second raise this year)\nManagement expects sustained earnings growth, driven by nuclear uprates, the Rhode Island State Energy Center acquisition ($715M, 609 MW gas plant) and continued share buybacks\npromise: Complete the Rhode Island State Energy Center acquisition from Shell for $715M, subject "
+    }
+   ],
+   "practice": false,
+   "end": "17:31"
+  },
+  {
+   "id": "20261123173106977958",
+   "title": "VST results, 2026-11-06",
+   "tickers": [
+    "VST"
+   ],
+   "kind": "news",
+   "start": "2026-11-23 17:31",
+   "msgs": [
+    {
+     "t": "17:31",
+     "who": "investigator",
+     "to": "team",
+     "text": "This is a real quarterly results release, not a rumor, and the numbers are strong: Ongoing Operations Adjusted EBITDA rose over 50% year over year to $2.38B, and management raised 2026 guidance and gave 2027 guidance above the current run-rate. But the stock had already been falling into the report, and Vistra's own past deals were no reliable short-term buy signal, so I'd treat this as a fundamentally good report rather than a trading signal. The main caution is that roughly $559M of the $1.14B GAAP net income is an unrealized hedge gain that isn't cash yet.",
+     "outcome": false,
+     "notes": "is results: True\nQ3 2026 GAAP net income $1,140M (vs $652M in Q3 2025); includes $559M unrealized hedge gain expected to settle in future years\nQ3 2026 Ongoing Operations Adjusted EBITDA $2,378M, up >50% from $1,581M\n9M 2026 Ongoing Operations Adjusted EBITDA $5,639M; Retail segment EBITDA down to $939M from $977M for 9 months\nQ3 operating revenues $6,347M vs $4,971M\nNine-month cash from operations $4,330M vs $2,638M\nLiquidity ~$8.9B at Sept 30; pro forma ~$5.4B after Cogentrix purchase, preferred redemption, and debt repayment\n2026 Ongoing Operations Adjusted EBITDA narrowed and raised midpoint to $7.1B-$7.5B; Adjusted FCFbG $4.3B-$4.7B\n2027 initial guidance: Adjusted EBITDA $7.7B-$8.5B; Adjusted FCFbG $4.3B-$5.1B\npromise: Complete remaining share repurchase authorization (~$2.5B) by year-end 2028\ndue: 2028-12-31\npromise: Deliver 2026 Ongoing Operations Adjusted EBITDA of $7.1B-$7.5B\ndu"
+    }
+   ],
+   "practice": false,
+   "end": "17:31"
+  },
+  {
+   "id": "20261123173113181673",
+   "title": "TLN results, 2026-11-03",
+   "tickers": [
+    "TLN"
+   ],
+   "kind": "news",
+   "start": "2026-11-23 17:31",
+   "msgs": [
+    {
+     "t": "17:31",
+     "who": "investigator",
+     "to": "team",
+     "text": "This is a real quarterly results release from Talen, and it is strong: adjusted EBITDA jumped to $669M from $363M a year earlier, the company is buying back $1.5B of stock quickly, and 2027 guidance is above 2026. Our note on the risk side is that the big quarterly gain depends on power prices and a PJM capacity auction, and the stock has already run hard, so this news is largely priced in; I'd treat it as a reason to keep the resting-buy plan in place rather than chase.",
+     "outcome": false,
+     "notes": "is results: True\nQ3 2026 adjusted EBITDA $669M (vs $363M in Q3 2025); adjusted free cash flow $433M (vs $223M)\n9-month adjusted EBITDA $1,516M (vs $653M); 9-month GAAP net income $109M (vs $144M)\nGAAP net income for the quarter $138M, down from $207M, pressured by $183M unrealized derivative loss and higher interest expense\nNet debt-to-adjusted EBITDA target 3.5x; liquidity about $1.6B as of Oct 30 2026 ($220M cash, $1.4B revolver)\nCapacity monetization closed Oct 1 2026: about $1.5B of future PJM capacity cash flows sold, $1.3B net proceeds used for buybacks\nHedged about 80% of Q4 2026 generation, about 70% of 2027, about 35% of 2028\n2026 adjusted EBITDA reaffirmed at $2,050M-$2,200M; adjusted FCF $1,225M-$1,325M\n2027 adjusted EBITDA guided $2,500M-$2,850M; adjusted FCF $1,500M-$1,750M (about 26-27% growth at midpoints)\npromise: Complete the $1.5B accelerated share repurchase (final set"
+    }
+   ],
+   "practice": false,
+   "end": "17:31"
   }
  ],
  "feed": [
@@ -202761,6 +202910,96 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-23 17:30",
+   "who": "investigator",
+   "kind": "data",
+   "title": null,
+   "text": "This is Cameco's Q3 2026 results release, so it qualifies. Numbers are mixed: Q3 net earnings were $43M but adjusted net loss was $2M, nine-month adjusted EBITDA fell 13%, mainly from lower Westinghouse equity earnings and a longer Key Lake outage. Management narrowed 2026 production guidance down to 19.5-20.5M lb and cut the sales range, which is a mild negative for near-term volume; the stock is already down 42% over the quarter and I'm not calling a direction off this release alone.\n\nKey numbers: Q3 net earnings $43M (vs ~$0); Q3 adjusted net loss $2M (vs +$32M in 2025); 9-month adjusted net earnings $279M (vs $410M); 9-month adjusted EBITDA $1.166B (vs $1.338B, -13%); Q3 uranium adjusted EBITDA $179M (vs $220M); Westinghouse share of adjusted EBITDA $143M in Q3 (vs $124M), but $427M for 9 months (vs $569M); Cash $860M, total debt $1.0B, undrawn $1.0B revolver; Q3 uranium production 3.5M lb (vs 4.4M); Q3 deliveries 5.6M lb; uranium inventory 8.5M lb at $58.37/lb average cost\nGuidance: 2026 production narrowed to 19.5-20.5M lb (from 19.5-21.5M lb); 2026 sales/deliveries narrowed to 29.5-30.5M lb (from 29-32M lb); Fuel Services production still 13-14M kgU\nPromises we'll check: Key",
+   "tickers": [
+    "CCJ"
+   ],
+   "art": {
+    "big": "CCJ results",
+    "sub": "Read from the SEC filing, 2026-10-30. 7 promises tracked"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 17:30",
+   "who": "investigator",
+   "kind": "data",
+   "title": null,
+   "text": "This is Centrus's Q3 2026 results release, and it's a mixed bag: GAAP net income of $31.6M looks strong, but it's driven by a one-time $46.4M non-cash warrant gain, while adjusted results show a $9.4M loss and revenue fell 26%. The bigger worries are that DOE's proposed FY2027 budget drops funding for the HALEU cascade (about $0.8B of backlog) and DOE won't exercise further options, which is a real hit to the Technical Solutions business. I'm not buying into this on the headline; I'd rather see how the Piketon lease and DOE funding play out.\n\nKey numbers: Revenue $55.5M vs $74.9M in Q3 2025 (-26%); GAAP net income $31.6M, boosted by a $46.4M non-cash gain on warrant liability revaluation; Adjusted net loss $9.4M (adjusted EPS -$0.46) vs adjusted net income $5.2M in Q3 2025; Gross loss $10.6M vs $4.3M loss a year earlier; Total backlog $7.0B; LEU backlog ~$6.2B including ~$5.4B contingent LEU/HALEU commitments; Technical Solutions backlog ~$0.8B\nGuidance: FY2026 total revenue expected $450M-$500M; FY2026 capital deployment $350M-$500M, driven by centrifuge manufacturing build-out; Hire at least 100 net new employees at Oak Ridge and at least 175 at Piketon for FY2026\nPromises we'll ",
+   "tickers": [
+    "LEU"
+   ],
+   "art": {
+    "big": "LEU results",
+    "sub": "Read from the SEC filing, 2026-11-04. 7 promises tracked"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 17:31",
+   "who": "investigator",
+   "kind": "data",
+   "title": null,
+   "text": "This is BWXT's official Q3 2026 results release, so it counts as a real results report. Revenue grew 10% and GAAP EPS rose 25%, with 2026 guidance tightened and 2027 guided to solid growth. The desk's history on BWXT results shows a modest 20-day median gain, but the stock has already fallen 51% from its high and the CEO has been selling, so I'd treat this as a steady beat rather than a new catalyst.\n\nKey numbers: Q3 2026 revenue $953.0M, up 10% YoY (Government Ops +4%, Commercial Ops +25%); Q3 2026 GAAP net income $102.0M (+24% YoY); GAAP diluted EPS $1.11 (+25%); Q3 2026 non-GAAP EPS $1.26 (+26%); adjusted EBITDA $179.7M (+19%); Q3 2026 operating cash flow $202.7M; free cash flow $150.5M (+59% YoY); Full-year 2026 guidance: non-GAAP EPS tightened to $4.72-$4.77 (from $4.70-$4.80); adjusted EBITDA $662-$672M (mid-point unchanged); FCF tightened to $350-$360M; revenue ~$3.8B reaffirmed\nGuidance: 2026 revenue reaffirmed at ~$3.8B; 2026 non-GAAP EPS narrowed to $4.72-$4.77 (upper end of prior range nudged down, low end raised); 2026 FCF narrowed to $350-$360M\nPromises we'll check: Deliver 2026 revenue of ~$3.8B (by 2026-12-31); Deliver 2026 non-GAAP EPS of $4.72-$4.77 (by 2026-12-31)",
+   "tickers": [
+    "BWXT"
+   ],
+   "art": {
+    "big": "BWXT results",
+    "sub": "Read from the SEC filing, 2026-11-02. 6 promises tracked"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 17:31",
+   "who": "investigator",
+   "kind": "data",
+   "title": null,
+   "text": "This is CEG's real Q3 2026 results release, and it's strong: adjusted EPS of $5.06 versus $3.04 a year ago, guidance raised again, and several new long-term nuclear contracts with Amazon and Google. The stock is already up about 6% on the day, though it's still roughly 33% below its 1-year high, so the good news is partly priced in. I'd keep this as a fact-check list on management's promises rather than a reason to buy now.\n\nKey numbers: Q3 2026 GAAP net income $5.19/share ($1.835B) vs $2.97 in Q3 2025; Q3 2026 adjusted operating earnings $5.06/share vs $3.04 a year ago; Full-year 2026 adjusted EPS guidance raised, midpoint up, range $12.50-$12.80; Q3 2026 revenue $9.55B vs $6.57B a year ago; nine-month revenue $28.18B; Nine-month GAAP net income attributable to common shareholders $3.94B vs $1.89B\nGuidance: Full-year 2026 adjusted operating EPS range narrowed to $12.50-$12.80 with midpoint raised (second raise this year); Management expects sustained earnings growth, driven by nuclear uprates, the Rhode Island State Energy Center acquisition ($715M, 609 MW gas plant) and continued share buybacks\nPromises we'll check: Complete the Rhode Island State Energy Center acquisition from S",
+   "tickers": [
+    "CEG"
+   ],
+   "art": {
+    "big": "CEG results",
+    "sub": "Read from the SEC filing, 2026-11-09. 5 promises tracked"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 17:31",
+   "who": "investigator",
+   "kind": "data",
+   "title": null,
+   "text": "This is a real quarterly results release, not a rumor, and the numbers are strong: Ongoing Operations Adjusted EBITDA rose over 50% year over year to $2.38B, and management raised 2026 guidance and gave 2027 guidance above the current run-rate. But the stock had already been falling into the report, and Vistra's own past deals were no reliable short-term buy signal, so I'd treat this as a fundamentally good report rather than a trading signal. The main caution is that roughly $559M of the $1.14B GAAP net income is an unrealized hedge gain that isn't cash yet.\n\nKey numbers: Q3 2026 GAAP net income $1,140M (vs $652M in Q3 2025); includes $559M unrealized hedge gain expected to settle in future years; Q3 2026 Ongoing Operations Adjusted EBITDA $2,378M, up >50% from $1,581M; 9M 2026 Ongoing Operations Adjusted EBITDA $5,639M; Retail segment EBITDA down to $939M from $977M for 9 months; Q3 operating revenues $6,347M vs $4,971M; Nine-month cash from operations $4,330M vs $2,638M\nGuidance: 2026 Ongoing Operations Adjusted EBITDA narrowed and raised midpoint to $7.1B-$7.5B; Adjusted FCFbG $4.3B-$4.7B; 2027 initial guidance: Adjusted EBITDA $7.7B-$8.5B; Adjusted FCFbG $4.3B-$5.1B\nPromises w",
+   "tickers": [
+    "VST"
+   ],
+   "art": {
+    "big": "VST results",
+    "sub": "Read from the SEC filing, 2026-11-06. 6 promises tracked"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 17:31",
+   "who": "investigator",
+   "kind": "data",
+   "title": null,
+   "text": "This is a real quarterly results release from Talen, and it is strong: adjusted EBITDA jumped to $669M from $363M a year earlier, the company is buying back $1.5B of stock quickly, and 2027 guidance is above 2026. Our note on the risk side is that the big quarterly gain depends on power prices and a PJM capacity auction, and the stock has already run hard, so this news is largely priced in; I'd treat it as a reason to keep the resting-buy plan in place rather than chase.\n\nKey numbers: Q3 2026 adjusted EBITDA $669M (vs $363M in Q3 2025); adjusted free cash flow $433M (vs $223M); 9-month adjusted EBITDA $1,516M (vs $653M); 9-month GAAP net income $109M (vs $144M); GAAP net income for the quarter $138M, down from $207M, pressured by $183M unrealized derivative loss and higher interest expense; Net debt-to-adjusted EBITDA target 3.5x; liquidity about $1.6B as of Oct 30 2026 ($220M cash, $1.4B revolver); Capacity monetization closed Oct 1 2026: about $1.5B of future PJM capacity cash flows sold, $1.3B net proceeds used for buybacks\nGuidance: 2026 adjusted EBITDA reaffirmed at $2,050M-$2,200M; adjusted FCF $1,225M-$1,325M; 2027 adjusted EBITDA guided $2,500M-$2,850M; adjusted FCF $1,500M",
+   "tickers": [
+    "TLN"
+   ],
+   "art": {
+    "big": "TLN results",
+    "sub": "Read from the SEC filing, 2026-11-03. 4 promises tracked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -203236,7 +203475,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 17:20",
+  "updated": "2026-11-23 17:31",
   "total": 394,
   "week": 341,
   "places": {
@@ -203874,7 +204113,6 @@
   "7f7a05be6b3ac1f5",
   "23f0910e96eb7de3",
   "38d326870f86784b",
-  "fe223bd03cfc6370",
   "515517f776442fe4",
   "49be13755057758d",
   "096f1d51d1fb61ac",
@@ -203903,6 +204141,7 @@
   "9e7ebdf62031eeaf",
   "5298ad87eeddc34f",
   "33461799e841c77f",
+  "c73b8f1be49ed29e",
   "36cbbee89c76a1f7",
   "15fecb83818a0949",
   "f2cc6e74f1bd9dd4",
@@ -203945,7 +204184,7 @@
   "dbd18bd6c4654ec8",
   "6c752481de5345ed",
   "0d77f1d2373bb03d",
-  "c73b8f1be49ed29e"
+  "fe223bd03cfc6370"
  ],
  "panic_log": [
   {
@@ -204081,238 +204320,6 @@
   },
   "watch": [
    {
-    "date": "2025-01-01",
-    "ticker": "LEU",
-    "what": "Placeholder only: no confirmed dated regulatory or contract event found in headlines; Orano Project IKE license review date not specified, so no real watch date can be set yet",
-    "by": "investigator",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2025-12-31",
-    "ticker": "CCJ",
-    "what": "Czech National Assembly review of KHNP Dukovany contract termination (exact date unconfirmed; verify from source)",
-    "by": "scout",
-    "written": "2026-11-23",
-    "surfaced": true
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "CEG",
-    "what": "Confirm Salem 1 restart; it is 47 days into an outage that started 2026-10-04, so a further delay would be a bigger signal",
-    "by": "engineer",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-11-23",
-    "ticker": "CCJ",
-    "what": "Czech National Assembly review of KHNP Dukovany contract termination (date unconfirmed; verify from source)",
-    "by": "pm",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-11-30",
-    "ticker": "TLN",
-    "what": "Resting buy at $355.66 expires if it does not fill; check whether the December PJM capacity auction delay has been decided",
-    "by": "whale",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-11-30",
-    "ticker": "TLN",
-    "what": "TLN resting buy at $355.66 expires if not filled; re-check support zone at $354.24",
-    "by": "crowd",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-11-30",
-    "ticker": "TLN",
-    "what": "TLN resting buy at $355.66 expires if the price does not reach the support zone; check whether the PJM December capacity auction delay request is decided",
-    "by": "risk",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-11-30",
-    "ticker": "TLN",
-    "what": "TLN resting buy at $355.66 expires; check whether the PJM capacity auction delay decision has been made and whether support at $354.24 has held.",
-    "by": "pm",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-11-30",
-    "ticker": "BWXT",
-    "what": "Resting buy at $115.83 expires if not filled; re-check support zone at $115.37",
-    "by": "risk",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-11-30",
-    "ticker": "BWXT",
-    "what": "Patient Levels buy window expires; check whether the basket has recovered above its 10-day average before any order",
-    "by": "risk",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-11-30",
-    "ticker": "BWXT",
-    "what": "Setup valid_until expires; re-check basket vs 10-day average and whether the zone $113.99-$117.21 still holds before any new entry.",
-    "by": "pm",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-11-30",
-    "ticker": "BWXT",
-    "what": "Resting buy at $115.83 expires; check whether price has retested the $115.37 support zone after the AP1000 pop",
-    "by": "questioner",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-11-30",
-    "ticker": "TLN",
-    "what": "TLN resting buy at $355.66 expires; check whether the PJM capacity auction delay decision is made and whether the $354.24 support holds",
-    "by": "questioner",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-11-30",
-    "ticker": "TLN",
-    "what": "Resting buy at $355.66 expires; check whether the PJM December capacity-auction delay has been decided and whether the $354.24 support has held",
-    "by": "macro",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-11-30",
-    "ticker": "",
-    "what": "Questioner follow-up: Has the PJM December capacity-auction delay been decided? The Talen headline calls the long-term sales a pullback opportunity, but the earnings driver is still an open regulatory",
-    "by": "questioner",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-01",
-    "ticker": "UUUU",
-    "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
-    "by": "scout",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-01",
-    "ticker": "TLN",
-    "what": "Watch PJM December capacity auction delay request, which is the main earnings driver for Talen",
-    "by": "crowd",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-01",
-    "ticker": "VST",
-    "what": "Planned exit of panic-rebound trades in VST, LEU and UUUU",
-    "by": "review",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-01",
-    "ticker": "",
-    "what": "Questioner follow-up: Has the PJM December capacity-auction delay been decided? The Talen headline calls the long-term sales a 'pullback opportunity', but the earnings driver is still an open regulato",
-    "by": "questioner",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-01",
-    "ticker": "VST",
-    "what": "Planned exit of panic-rebound trade; check market calm before selling",
-    "by": "macro",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-01",
-    "ticker": "LEU",
-    "what": "Planned exit of panic-rebound trade",
-    "by": "macro",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-01",
-    "ticker": "UUUU",
-    "what": "Planned exit of panic-rebound trade; White Mesa Mill campaign start",
-    "by": "macro",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-01",
-    "ticker": "VST",
-    "what": "Planned sell date for panic-rebound trade; sell at +10% near a close if hit earlier, otherwise on this date",
-    "by": "risk",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-01",
-    "ticker": "TLN",
-    "what": "PJM December capacity auction delay request, the main earnings driver for Talen",
-    "by": "macro",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-08",
-    "ticker": "UEC",
-    "what": "Q1 earnings report; a known catalyst that falls after the next few sessions and could break a resting-buy plan.",
-    "by": "macro",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-08",
-    "ticker": "TLN",
-    "what": "PJM December capacity auction timing and outcome; a delay or repricing could move TLN materially.",
-    "by": "level",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-08",
-    "ticker": "UEC",
-    "what": "UEC Q1 earnings; typically moves the stock about 4-5% either way on the day",
-    "by": "investigator",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-08",
-    "ticker": "UEC",
-    "what": "Q1 earnings report; typically moves the stock about 4-5% either way on the day",
-    "by": "engineer",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-08",
-    "ticker": "UEC",
-    "what": "UEC earnings; expect a 4-5% move either way on the day",
-    "by": "pm",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
     "date": "2026-12-08",
     "ticker": "UEC",
     "what": "Earnings report. The typical move is about 3%, and 28% of past reports moved more than 5%.",
@@ -204425,6 +204432,22 @@
     "surfaced": false
    },
    {
+    "date": "2026-12-15",
+    "ticker": "CCJ",
+    "what": "Dividend payment of $0.24/share; record date Nov 30 2026",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-15",
+    "ticker": "CCJ",
+    "what": "Did CCJ deliver? They promised on 2026-10-30: Pay 2026 annual dividend of $0.24/share on Dec 15 2026",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
     "date": "2026-12-21",
     "ticker": "CCJ",
     "what": "NRC public comment period closes on draft EA/PA for Crownpoint ISR project",
@@ -204433,10 +204456,346 @@
     "surfaced": false
    },
    {
+    "date": "2026-12-31",
+    "ticker": "CCJ",
+    "what": "Check whether 2026 production (19.5-20.5M lb) and deliveries (29.5-30.5M lb) landed in the narrowed ranges",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "CCJ",
+    "what": "Did CCJ deliver? They promised on 2026-10-30: Key Lake maintenance shutdown and new infrastructure commissioning completed, restoring normal production",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "CCJ",
+    "what": "Did CCJ deliver? They promised on 2026-10-30: Deliver 2026 uranium production within the narrowed 19.5-20.5M lb range",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "CCJ",
+    "what": "Did CCJ deliver? They promised on 2026-10-30: Deliver 2026 uranium sales/deliveries within the narrowed 29.5-30.5M lb range",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "CCJ",
+    "what": "Did CCJ deliver? They promised on 2026-10-30: Fuel Services annual production of 13-14M kgU",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "CCJ",
+    "what": "Did CCJ deliver? They promised on 2026-10-30: Receive final Inkai 2026 shipment at Blind River",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "LEU",
+    "what": "Check whether FY2026 revenue ($450M-$500M) and the Piketon/Oak Ridge hiring targets were delivered",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "LEU",
+    "what": "Did LEU deliver? They promised on 2026-11-04: Hire at least 100 net new employees at Oak Ridge, TN facility in 2026",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "LEU",
+    "what": "Did LEU deliver? They promised on 2026-11-04: Hire at least 175 net new employees at Piketon, OH facility in 2026",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "LEU",
+    "what": "Did LEU deliver? They promised on 2026-11-04: Deliver FY2026 total revenue of $450M-$500M",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "LEU",
+    "what": "Did LEU deliver? They promised on 2026-11-04: Deploy $350M-$500M of capital in FY2026 for industrial build-out",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "LEU",
+    "what": "Did LEU deliver? They promised on 2026-11-04: Complete manufacturing of first centrifuge and begin shipping (already reported as achieved, ahead of year-end target)",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "LEU",
+    "what": "Did LEU deliver? They promised on 2026-11-04: Finalize contracts with all supply-chain items deemed critical (reported as achieved, ahead of year-end target)",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "LEU",
+    "what": "Did LEU deliver? They promised on 2026-11-04: Complete first certified-for-construction package (reported as achieved, ahead of year-end target)",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "BWXT",
+    "what": "Did BWXT deliver? They promised on 2026-11-02: Deliver 2026 revenue of ~$3.8B",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "BWXT",
+    "what": "Did BWXT deliver? They promised on 2026-11-02: Deliver 2026 non-GAAP EPS of $4.72-$4.77",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "BWXT",
+    "what": "Did BWXT deliver? They promised on 2026-11-02: Deliver 2026 adjusted EBITDA of $662-$672M",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "BWXT",
+    "what": "Did BWXT deliver? They promised on 2026-11-02: Deliver 2026 free cash flow of $350-$360M",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "BWXT",
+    "what": "Did BWXT deliver? They promised on 2026-11-02: Convert bid pipeline into firm awards (no specific date given)",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "CEG",
+    "what": "Target date for closing the Rhode Island State Energy Center acquisition",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "CEG",
+    "what": "Did CEG deliver? They promised on 2026-11-09: Complete the Rhode Island State Energy Center acquisition from Shell for $715M, subject to regulatory approval",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "CEG",
+    "what": "Did CEG deliver? They promised on 2026-11-09: Use the conditional DOE loan (up to $5.0B) for nuclear uprates, subject to executing a loan agreement",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "VST",
+    "what": "Did VST deliver? They promised on 2026-11-06: Deliver 2026 Ongoing Operations Adjusted EBITDA of $7.1B-$7.5B",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "VST",
+    "what": "Did VST deliver? They promised on 2026-11-06: Deliver 2026 Ongoing Operations Adjusted FCFbG of $4.3B-$4.7B",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "TLN",
+    "what": "Did TLN deliver? They promised on 2026-11-03: Deliver 2026 adjusted EBITDA within $2,050M-$2,200M",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
     "date": "2027-01-01",
     "ticker": "CCJ",
     "what": "Poland plans to sign first nuclear plant construction contract in early 2027 (European new-build demand)",
     "by": "scout",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2027-01-01",
+    "ticker": "LEU",
+    "what": "Check the DOE FY2027 budget outcome for HALEU cascade funding and whether DOE exercises any further HALEU Operation Contract options",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2027-03-31",
+    "ticker": "CCJ",
+    "what": "Did CCJ deliver? They promised on 2026-10-30: Leah Hipperson takes over as CFO; Heidi Shockey retires",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2027-03-31",
+    "ticker": "TLN",
+    "what": "Final settlement of the $1.5B accelerated share repurchase expected by end of Q1 2027",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2027-03-31",
+    "ticker": "TLN",
+    "what": "Did TLN deliver? They promised on 2026-11-03: Complete the $1.5B accelerated share repurchase (final settlement, roughly 80% already delivered Oct 1 2026)",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2027-12-31",
+    "ticker": "BWXT",
+    "what": "Did BWXT deliver? They promised on 2026-11-02: Deliver 2027 preliminary outlook: high-single-digit revenue growth and high-single-digit to low-double-digit adjusted EBITDA and EPS growth",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2027-12-31",
+    "ticker": "VST",
+    "what": "Delivery of 2027 Adjusted EBITDA guidance ($7.7B-$8.5B) and Cogentrix integration",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2027-12-31",
+    "ticker": "VST",
+    "what": "Did VST deliver? They promised on 2026-11-06: Deliver 2027 Ongoing Operations Adjusted EBITDA of $7.7B-$8.5B",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2027-12-31",
+    "ticker": "VST",
+    "what": "Did VST deliver? They promised on 2026-11-06: Deliver 2027 Ongoing Operations Adjusted FCFbG of $4.3B-$5.1B",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2027-12-31",
+    "ticker": "VST",
+    "what": "Did VST deliver? They promised on 2026-11-06: Integrate Cogentrix Energy (~5,500 MW gas generation, closed Oct 2026)",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2027-12-31",
+    "ticker": "TLN",
+    "what": "Check whether 2027 adjusted EBITDA ($2.5B-$2.85B) and adjusted FCF ($1.5B-$1.75B) guidance is delivered",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2027-12-31",
+    "ticker": "TLN",
+    "what": "Did TLN deliver? They promised on 2026-11-03: Deliver 2027 adjusted EBITDA within $2,500M-$2,850M and adjusted FCF within $1,500M-$1,750M",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2028-01-01",
+    "ticker": "LEU",
+    "what": "Russian uranium waivers expire after Jan 1 2028; check the impact on LEU's supply (well over half of 2027 deliveries come from Tenex)",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2028-12-31",
+    "ticker": "CEG",
+    "what": "Did CEG deliver? They promised on 2026-11-09: Begin the Google PPA-linked nuclear uprates across 11 units, with the first uprate online (~890 MW incremental capacity)",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2028-12-31",
+    "ticker": "CEG",
+    "what": "Did CEG deliver? They promised on 2026-11-09: Begin the 270 MW Peak+ supply to the unnamed customer",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2028-12-31",
+    "ticker": "VST",
+    "what": "Did VST deliver? They promised on 2026-11-06: Complete remaining share repurchase authorization (~$2.5B) by year-end 2028",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2028-12-31",
+    "ticker": "TLN",
+    "what": "Did TLN deliver? They promised on 2026-11-03: Remaining $1.5B share repurchase capacity under the upsized program",
+    "by": "investigator",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2032-12-31",
+    "ticker": "CEG",
+    "what": "Did CEG deliver? They promised on 2026-11-09: Deliver Calvert Cliffs 190 MW capacity expansion for Amazon",
+    "by": "investigator",
     "written": "2026-11-23",
     "surfaced": false
    }
@@ -205410,7 +205769,7 @@
    "built": "2026-11-23 17:15"
   }
  ],
- "heartbeat": "2026-11-23 17:20",
+ "heartbeat": "2026-11-23 17:30",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -205582,18 +205941,42 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 3,
-   "used": 3,
+   "asked": 10,
+   "used": 10,
    "notes": {
-    "BWXT Deals and contracts": 1,
-    "BWXT Snapshot": 1,
-    "BWXT What history says": 1,
-    "BWXT Leadership and insiders": 1,
+    "BWXT Deals and contracts": 2,
+    "BWXT Snapshot": 2,
+    "BWXT What history says": 2,
+    "BWXT Leadership and insiders": 2,
     "UEC Snapshot": 1,
     "UEC Deals and contracts": 1,
     "SECTOR Uranium market": 2,
-    "TLN Snapshot": 1,
-    "TLN What history says": 1
+    "TLN Snapshot": 2,
+    "TLN What history says": 2,
+    "CCJ Snapshot": 1,
+    "CCJ Deals and contracts": 1,
+    "CCJ Leadership and insiders": 1,
+    "CCJ What history says": 1,
+    "SECTOR Government and laws": 2,
+    "coming_up": 3,
+    "NXE Snapshot": 1,
+    "NXE Filings and company events": 1,
+    "LEU Snapshot": 1,
+    "LEU Legal": 1,
+    "LEU Leadership and insiders": 1,
+    "LEU What history says": 1,
+    "LEU Deals and contracts": 1,
+    "CEG Snapshot": 1,
+    "CEG Deals and contracts": 1,
+    "CEG What history says": 1,
+    "CEG Leadership and insiders": 1,
+    "CEG Filings and company events": 1,
+    "VST Snapshot": 1,
+    "VST Deals and contracts": 1,
+    "VST What history says": 1,
+    "VST Leadership and insiders": 1,
+    "TLN Deals and contracts": 1,
+    "TLN Leadership and insiders": 1
    },
    "since": "2026-11-23"
   },
@@ -207211,6 +207594,36 @@
    "price": 115.82,
    "result": null,
    "why": "I checked the news flow, the calendar and the desk's notes on how BWXT reacted to past contract wins. Today's headlines are already priced in, and no dated catalyst gives us a testable setup."
+  },
+  {
+   "role": "investigator",
+   "ticker": "LEU",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-23",
+   "price": 86.8,
+   "result": null,
+   "why": "The headline GAAP profit is inflated by a non-cash warrant gain, and the adjusted loss, 26% revenue drop, and DOE's proposed removal of HALEU cascade funding (plus no further options) all point to wea"
+  },
+  {
+   "role": "investigator",
+   "ticker": "BWXT",
+   "direction": "up",
+   "days": 5,
+   "date": "2026-11-23",
+   "price": 115.71,
+   "result": null,
+   "why": "The release is clearly a quarterly results filing with a beat on revenue, EPS and cash flow, and guidance was tightened, not cut. The desk's history shows results tend to lift the stock modestly over "
+  },
+  {
+   "role": "investigator",
+   "ticker": "CEG",
+   "direction": "up",
+   "days": 5,
+   "date": "2026-11-23",
+   "price": 251.76,
+   "result": null,
+   "why": "The release is real and the numbers beat clearly, but the stock already jumped 6% on the day and past contract-signing days produced mixed follow-through, with the 2026 deals lower 20 days later. Insi"
   }
  ],
  "after_sale": [],
@@ -208003,5 +208416,301 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-23 17:20"
+ "watchdog_last": "2026-11-23 17:30",
+ "earnings_read": [
+  "0001193125-26-439858",
+  "0001062993-26-005762",
+  "0001628280-26-070229",
+  "0001486957-26-000053",
+  "0001868275-26-000116",
+  "0001692819-26-000023",
+  "0001622536-26-000084"
+ ],
+ "results_notes": {
+  "CCJ": [
+   {
+    "ticker": "CCJ",
+    "filed": "2026-10-30",
+    "numbers": [
+     "Q3 net earnings $43M (vs ~$0); Q3 adjusted net loss $2M (vs +$32M in 2025)",
+     "9-month adjusted net earnings $279M (vs $410M); 9-month adjusted EBITDA $1.166B (vs $1.338B, -13%)",
+     "Q3 uranium adjusted EBITDA $179M (vs $220M); Westinghouse share of adjusted EBITDA $143M in Q3 (vs $124M), but $427M for 9 months (vs $569M)",
+     "Cash $860M, total debt $1.0B, undrawn $1.0B revolver",
+     "Q3 uranium production 3.5M lb (vs 4.4M); Q3 deliveries 5.6M lb; uranium inventory 8.5M lb at $58.37/lb average cost",
+     "Annual dividend $0.24/share, payable Dec 15 2026, record date Nov 30 2026",
+     "Q3 produced cash cost $40.73/lb (vs $25.20); purchased cash cost $83.78/lb"
+    ],
+    "guidance": [
+     "2026 production narrowed to 19.5-20.5M lb (from 19.5-21.5M lb)",
+     "2026 sales/deliveries narrowed to 29.5-30.5M lb (from 29-32M lb)",
+     "Fuel Services production still 13-14M kgU",
+     "Unit cost, direct admin and capex guidance updated (figures not stated in the excerpt)",
+     "Inkai: 4.2M lb share of 10.4M lb 2026 production; final shipment expected before end of 2026"
+    ],
+    "promises": [
+     {
+      "promise": "Key Lake maintenance shutdown and new infrastructure commissioning completed, restoring normal production",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Deliver 2026 uranium production within the narrowed 19.5-20.5M lb range",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Deliver 2026 uranium sales/deliveries within the narrowed 29.5-30.5M lb range",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Fuel Services annual production of 13-14M kgU",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Receive final Inkai 2026 shipment at Blind River",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Pay 2026 annual dividend of $0.24/share on Dec 15 2026",
+      "due": "2026-12-15"
+     },
+     {
+      "promise": "Leah Hipperson takes over as CFO; Heidi Shockey retires",
+      "due": "2027-03-31"
+     }
+    ],
+    "tone": "worse",
+    "summary": "This is Cameco's Q3 2026 results release, so it qualifies. Numbers are mixed: Q3 net earnings were $43M but adjusted net loss was $2M, nine-month adjusted EBITDA fell 13%, mainly from lower Westinghouse equity earnings and a longer Key Lake outage. Management narrowed 2026 production guidance down to 19.5-20.5M lb and cut the sales range, which is a mild negative for near-term volume; the stock is already down 42% over the quarter and I'm not calling a direction off this release alone."
+   }
+  ],
+  "LEU": [
+   {
+    "ticker": "LEU",
+    "filed": "2026-11-04",
+    "numbers": [
+     "Revenue $55.5M vs $74.9M in Q3 2025 (-26%)",
+     "GAAP net income $31.6M, boosted by a $46.4M non-cash gain on warrant liability revaluation",
+     "Adjusted net loss $9.4M (adjusted EPS -$0.46) vs adjusted net income $5.2M in Q3 2025",
+     "Gross loss $10.6M vs $4.3M loss a year earlier",
+     "Total backlog $7.0B; LEU backlog ~$6.2B including ~$5.4B contingent LEU/HALEU commitments; Technical Solutions backlog ~$0.8B",
+     "Nine-month revenue $308.3M vs $302.5M; nine-month GAAP net income $58.4M",
+     "Stock snapshot: price $86.8, down ~55% over the quarter and ~74% below its 1-year high"
+    ],
+    "guidance": [
+     "FY2026 total revenue expected $450M-$500M",
+     "FY2026 capital deployment $350M-$500M, driven by centrifuge manufacturing build-out",
+     "Hire at least 100 net new employees at Oak Ridge and at least 175 at Piketon for FY2026"
+    ],
+    "promises": [
+     {
+      "promise": "Hire at least 100 net new employees at Oak Ridge, TN facility in 2026",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Hire at least 175 net new employees at Piketon, OH facility in 2026",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Deliver FY2026 total revenue of $450M-$500M",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Deploy $350M-$500M of capital in FY2026 for industrial build-out",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Complete manufacturing of first centrifuge and begin shipping (already reported as achieved, ahead of year-end target)",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Finalize contracts with all supply-chain items deemed critical (reported as achieved, ahead of year-end target)",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Complete first certified-for-construction package (reported as achieved, ahead of year-end target)",
+      "due": "2026-12-31"
+     }
+    ],
+    "tone": "worse",
+    "summary": "This is Centrus's Q3 2026 results release, and it's a mixed bag: GAAP net income of $31.6M looks strong, but it's driven by a one-time $46.4M non-cash warrant gain, while adjusted results show a $9.4M loss and revenue fell 26%. The bigger worries are that DOE's proposed FY2027 budget drops funding for the HALEU cascade (about $0.8B of backlog) and DOE won't exercise further options, which is a real hit to the Technical Solutions business. I'm not buying into this on the headline; I'd rather see how the Piketon lease and DOE funding play out."
+   }
+  ],
+  "BWXT": [
+   {
+    "ticker": "BWXT",
+    "filed": "2026-11-02",
+    "numbers": [
+     "Q3 2026 revenue $953.0M, up 10% YoY (Government Ops +4%, Commercial Ops +25%)",
+     "Q3 2026 GAAP net income $102.0M (+24% YoY); GAAP diluted EPS $1.11 (+25%)",
+     "Q3 2026 non-GAAP EPS $1.26 (+26%); adjusted EBITDA $179.7M (+19%)",
+     "Q3 2026 operating cash flow $202.7M; free cash flow $150.5M (+59% YoY)",
+     "Full-year 2026 guidance: non-GAAP EPS tightened to $4.72-$4.77 (from $4.70-$4.80); adjusted EBITDA $662-$672M (mid-point unchanged); FCF tightened to $350-$360M; revenue ~$3.8B reaffirmed",
+     "Preliminary 2027 outlook: high-single-digit revenue growth; high-single-digit to low-double-digit adjusted EBITDA and EPS growth",
+     "Quarterly dividend $0.27/share, payable Dec 10 2026"
+    ],
+    "guidance": [
+     "2026 revenue reaffirmed at ~$3.8B",
+     "2026 non-GAAP EPS narrowed to $4.72-$4.77 (upper end of prior range nudged down, low end raised)",
+     "2026 FCF narrowed to $350-$360M",
+     "2027 preliminary: high-single-digit revenue growth; adjusted EBITDA growth ahead of the Investor Day framework"
+    ],
+    "promises": [
+     {
+      "promise": "Deliver 2026 revenue of ~$3.8B",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Deliver 2026 non-GAAP EPS of $4.72-$4.77",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Deliver 2026 adjusted EBITDA of $662-$672M",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Deliver 2026 free cash flow of $350-$360M",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Deliver 2027 preliminary outlook: high-single-digit revenue growth and high-single-digit to low-double-digit adjusted EBITDA and EPS growth",
+      "due": "2027-12-31"
+     },
+     {
+      "promise": "Convert bid pipeline into firm awards (no specific date given)",
+      "due": "2026-12-31"
+     }
+    ],
+    "tone": "better",
+    "summary": "This is BWXT's official Q3 2026 results release, so it counts as a real results report. Revenue grew 10% and GAAP EPS rose 25%, with 2026 guidance tightened and 2027 guided to solid growth. The desk's history on BWXT results shows a modest 20-day median gain, but the stock has already fallen 51% from its high and the CEO has been selling, so I'd treat this as a steady beat rather than a new catalyst."
+   }
+  ],
+  "CEG": [
+   {
+    "ticker": "CEG",
+    "filed": "2026-11-09",
+    "numbers": [
+     "Q3 2026 GAAP net income $5.19/share ($1.835B) vs $2.97 in Q3 2025",
+     "Q3 2026 adjusted operating earnings $5.06/share vs $3.04 a year ago",
+     "Full-year 2026 adjusted EPS guidance raised, midpoint up, range $12.50-$12.80",
+     "Q3 2026 revenue $9.55B vs $6.57B a year ago; nine-month revenue $28.18B",
+     "Nine-month GAAP net income attributable to common shareholders $3.94B vs $1.89B",
+     "Cash fell to $603M from $3.64B at year-end 2025; short-term borrowings rose to $3.99B; long-term debt rose to $19.0B from $7.25B",
+     "Nuclear output 46,677 GWh vs 46,477 GWh; capacity factor 97.2% vs 96.8%",
+     "Calpine acquisition (closed Jan 2026) lifts total fleet to 55 GW"
+    ],
+    "guidance": [
+     "Full-year 2026 adjusted operating EPS range narrowed to $12.50-$12.80 with midpoint raised (second raise this year)",
+     "Management expects sustained earnings growth, driven by nuclear uprates, the Rhode Island State Energy Center acquisition ($715M, 609 MW gas plant) and continued share buybacks"
+    ],
+    "promises": [
+     {
+      "promise": "Complete the Rhode Island State Energy Center acquisition from Shell for $715M, subject to regulatory approval",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Begin the Google PPA-linked nuclear uprates across 11 units, with the first uprate online (~890 MW incremental capacity)",
+      "due": "2028-12-31"
+     },
+     {
+      "promise": "Deliver Calvert Cliffs 190 MW capacity expansion for Amazon",
+      "due": "2032-12-31"
+     },
+     {
+      "promise": "Begin the 270 MW Peak+ supply to the unnamed customer",
+      "due": "2028-12-31"
+     },
+     {
+      "promise": "Use the conditional DOE loan (up to $5.0B) for nuclear uprates, subject to executing a loan agreement",
+      "due": "2026-12-31"
+     }
+    ],
+    "tone": "better",
+    "summary": "This is CEG's real Q3 2026 results release, and it's strong: adjusted EPS of $5.06 versus $3.04 a year ago, guidance raised again, and several new long-term nuclear contracts with Amazon and Google. The stock is already up about 6% on the day, though it's still roughly 33% below its 1-year high, so the good news is partly priced in. I'd keep this as a fact-check list on management's promises rather than a reason to buy now."
+   }
+  ],
+  "VST": [
+   {
+    "ticker": "VST",
+    "filed": "2026-11-06",
+    "numbers": [
+     "Q3 2026 GAAP net income $1,140M (vs $652M in Q3 2025); includes $559M unrealized hedge gain expected to settle in future years",
+     "Q3 2026 Ongoing Operations Adjusted EBITDA $2,378M, up >50% from $1,581M",
+     "9M 2026 Ongoing Operations Adjusted EBITDA $5,639M; Retail segment EBITDA down to $939M from $977M for 9 months",
+     "Q3 operating revenues $6,347M vs $4,971M",
+     "Nine-month cash from operations $4,330M vs $2,638M",
+     "Liquidity ~$8.9B at Sept 30; pro forma ~$5.4B after Cogentrix purchase, preferred redemption, and debt repayment",
+     "Share count ~339M, down ~30% since Nov 2021; additional $1.5B buyback authorized",
+     "Hedged ~100% of 2026, ~98% of 2027, ~78% of 2028 expected generation"
+    ],
+    "guidance": [
+     "2026 Ongoing Operations Adjusted EBITDA narrowed and raised midpoint to $7.1B-$7.5B; Adjusted FCFbG $4.3B-$4.7B",
+     "2027 initial guidance: Adjusted EBITDA $7.7B-$8.5B; Adjusted FCFbG $4.3B-$5.1B"
+    ],
+    "promises": [
+     {
+      "promise": "Complete remaining share repurchase authorization (~$2.5B) by year-end 2028",
+      "due": "2028-12-31"
+     },
+     {
+      "promise": "Deliver 2026 Ongoing Operations Adjusted EBITDA of $7.1B-$7.5B",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Deliver 2026 Ongoing Operations Adjusted FCFbG of $4.3B-$4.7B",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Deliver 2027 Ongoing Operations Adjusted EBITDA of $7.7B-$8.5B",
+      "due": "2027-12-31"
+     },
+     {
+      "promise": "Deliver 2027 Ongoing Operations Adjusted FCFbG of $4.3B-$5.1B",
+      "due": "2027-12-31"
+     },
+     {
+      "promise": "Integrate Cogentrix Energy (~5,500 MW gas generation, closed Oct 2026)",
+      "due": "2027-12-31"
+     }
+    ],
+    "tone": "better",
+    "summary": "This is a real quarterly results release, not a rumor, and the numbers are strong: Ongoing Operations Adjusted EBITDA rose over 50% year over year to $2.38B, and management raised 2026 guidance and gave 2027 guidance above the current run-rate. But the stock had already been falling into the report, and Vistra's own past deals were no reliable short-term buy signal, so I'd treat this as a fundamentally good report rather than a trading signal. The main caution is that roughly $559M of the $1.14B GAAP net income is an unrealized hedge gain that isn't cash yet."
+   }
+  ],
+  "TLN": [
+   {
+    "ticker": "TLN",
+    "filed": "2026-11-03",
+    "numbers": [
+     "Q3 2026 adjusted EBITDA $669M (vs $363M in Q3 2025); adjusted free cash flow $433M (vs $223M)",
+     "9-month adjusted EBITDA $1,516M (vs $653M); 9-month GAAP net income $109M (vs $144M)",
+     "GAAP net income for the quarter $138M, down from $207M, pressured by $183M unrealized derivative loss and higher interest expense",
+     "Net debt-to-adjusted EBITDA target 3.5x; liquidity about $1.6B as of Oct 30 2026 ($220M cash, $1.4B revolver)",
+     "Capacity monetization closed Oct 1 2026: about $1.5B of future PJM capacity cash flows sold, $1.3B net proceeds used for buybacks",
+     "Hedged about 80% of Q4 2026 generation, about 70% of 2027, about 35% of 2028"
+    ],
+    "guidance": [
+     "2026 adjusted EBITDA reaffirmed at $2,050M-$2,200M; adjusted FCF $1,225M-$1,325M",
+     "2027 adjusted EBITDA guided $2,500M-$2,850M; adjusted FCF $1,500M-$1,750M (about 26-27% growth at midpoints)"
+    ],
+    "promises": [
+     {
+      "promise": "Complete the $1.5B accelerated share repurchase (final settlement, roughly 80% already delivered Oct 1 2026)",
+      "due": "2027-03-31"
+     },
+     {
+      "promise": "Remaining $1.5B share repurchase capacity under the upsized program",
+      "due": "2028-12-31"
+     },
+     {
+      "promise": "Deliver 2026 adjusted EBITDA within $2,050M-$2,200M",
+      "due": "2026-12-31"
+     },
+     {
+      "promise": "Deliver 2027 adjusted EBITDA within $2,500M-$2,850M and adjusted FCF within $1,500M-$1,750M",
+      "due": "2027-12-31"
+     }
+    ],
+    "tone": "better",
+    "summary": "This is a real quarterly results release from Talen, and it is strong: adjusted EBITDA jumped to $669M from $363M a year earlier, the company is buying back $1.5B of stock quickly, and 2027 guidance is above 2026. Our note on the risk side is that the big quarterly gain depends on power prices and a PJM capacity auction, and the stock has already run hard, so this news is largely priced in; I'd treat it as a reason to keep the resting-buy plan in place rather than chase."
+   }
+  ]
+ }
 }

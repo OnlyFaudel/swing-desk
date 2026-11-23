@@ -16,6 +16,22 @@
 "surfaced": true
 },
 {
+"date": "2026-11-09",
+"ticker": "NXE",
+"what": "Q3 2026 financial statements and MD&A filed after North American close; review numbers and construction milestones against Rook I promises",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-11-10",
+"ticker": "NXE",
+"what": "Q3 2026 conference call at 8:00 am ET covering Rook I construction progress and PCE exploration",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
 "date": "2026-11-20",
 "ticker": "CEG",
 "what": "Confirm Salem 1 restart; it is 47 days into an outage that started 2026-10-04, so a further delay would be a bigger signal",
@@ -120,6 +136,14 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy at $355.66 expires if unfilled; check whether the PJM December capacity auction delay decision is made and whether support near $354.24 holds",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
@@ -188,6 +212,22 @@
 "ticker": "TLN",
 "what": "PJM December capacity auction delay request, the main earnings driver for Talen",
 "by": "macro",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "CEG",
+"what": "PJM December capacity auction delay decision, a key earnings driver for the whole nuclear group",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "TLN",
+"what": "PJM December capacity auction delay decision (the main earnings driver for Talen; also relevant to VST's East segment)",
+"by": "investigator",
 "written": "2026-11-23",
 "surfaced": false
 },
@@ -344,6 +384,22 @@
 "surfaced": false
 },
 {
+"date": "2026-12-15",
+"ticker": "CCJ",
+"what": "Dividend payment of $0.24/share; record date Nov 30 2026",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "CCJ",
+"what": "Did CCJ deliver? They promised on 2026-10-30: Pay 2026 annual dividend of $0.24/share on Dec 15 2026",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
 "date": "2026-12-21",
 "ticker": "CCJ",
 "what": "NRC public comment period closes on draft EA/PA for Crownpoint ISR project",
@@ -352,10 +408,346 @@
 "surfaced": false
 },
 {
+"date": "2026-12-31",
+"ticker": "CCJ",
+"what": "Check whether 2026 production (19.5-20.5M lb) and deliveries (29.5-30.5M lb) landed in the narrowed ranges",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "CCJ",
+"what": "Did CCJ deliver? They promised on 2026-10-30: Key Lake maintenance shutdown and new infrastructure commissioning completed, restoring normal production",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "CCJ",
+"what": "Did CCJ deliver? They promised on 2026-10-30: Deliver 2026 uranium production within the narrowed 19.5-20.5M lb range",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "CCJ",
+"what": "Did CCJ deliver? They promised on 2026-10-30: Deliver 2026 uranium sales/deliveries within the narrowed 29.5-30.5M lb range",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "CCJ",
+"what": "Did CCJ deliver? They promised on 2026-10-30: Fuel Services annual production of 13-14M kgU",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "CCJ",
+"what": "Did CCJ deliver? They promised on 2026-10-30: Receive final Inkai 2026 shipment at Blind River",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "LEU",
+"what": "Check whether FY2026 revenue ($450M-$500M) and the Piketon/Oak Ridge hiring targets were delivered",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "LEU",
+"what": "Did LEU deliver? They promised on 2026-11-04: Hire at least 100 net new employees at Oak Ridge, TN facility in 2026",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "LEU",
+"what": "Did LEU deliver? They promised on 2026-11-04: Hire at least 175 net new employees at Piketon, OH facility in 2026",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "LEU",
+"what": "Did LEU deliver? They promised on 2026-11-04: Deliver FY2026 total revenue of $450M-$500M",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "LEU",
+"what": "Did LEU deliver? They promised on 2026-11-04: Deploy $350M-$500M of capital in FY2026 for industrial build-out",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "LEU",
+"what": "Did LEU deliver? They promised on 2026-11-04: Complete manufacturing of first centrifuge and begin shipping (already reported as achieved, ahead of year-end target)",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "LEU",
+"what": "Did LEU deliver? They promised on 2026-11-04: Finalize contracts with all supply-chain items deemed critical (reported as achieved, ahead of year-end target)",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "LEU",
+"what": "Did LEU deliver? They promised on 2026-11-04: Complete first certified-for-construction package (reported as achieved, ahead of year-end target)",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "BWXT",
+"what": "Did BWXT deliver? They promised on 2026-11-02: Deliver 2026 revenue of ~$3.8B",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "BWXT",
+"what": "Did BWXT deliver? They promised on 2026-11-02: Deliver 2026 non-GAAP EPS of $4.72-$4.77",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "BWXT",
+"what": "Did BWXT deliver? They promised on 2026-11-02: Deliver 2026 adjusted EBITDA of $662-$672M",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "BWXT",
+"what": "Did BWXT deliver? They promised on 2026-11-02: Deliver 2026 free cash flow of $350-$360M",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "BWXT",
+"what": "Did BWXT deliver? They promised on 2026-11-02: Convert bid pipeline into firm awards (no specific date given)",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "CEG",
+"what": "Target date for closing the Rhode Island State Energy Center acquisition",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "CEG",
+"what": "Did CEG deliver? They promised on 2026-11-09: Complete the Rhode Island State Energy Center acquisition from Shell for $715M, subject to regulatory approval",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "CEG",
+"what": "Did CEG deliver? They promised on 2026-11-09: Use the conditional DOE loan (up to $5.0B) for nuclear uprates, subject to executing a loan agreement",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "VST",
+"what": "Did VST deliver? They promised on 2026-11-06: Deliver 2026 Ongoing Operations Adjusted EBITDA of $7.1B-$7.5B",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "VST",
+"what": "Did VST deliver? They promised on 2026-11-06: Deliver 2026 Ongoing Operations Adjusted FCFbG of $4.3B-$4.7B",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-31",
+"ticker": "TLN",
+"what": "Did TLN deliver? They promised on 2026-11-03: Deliver 2026 adjusted EBITDA within $2,050M-$2,200M",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
 "date": "2027-01-01",
 "ticker": "CCJ",
 "what": "Poland plans to sign first nuclear plant construction contract in early 2027 (European new-build demand)",
 "by": "scout",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2027-01-01",
+"ticker": "LEU",
+"what": "Check the DOE FY2027 budget outcome for HALEU cascade funding and whether DOE exercises any further HALEU Operation Contract options",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2027-03-31",
+"ticker": "CCJ",
+"what": "Did CCJ deliver? They promised on 2026-10-30: Leah Hipperson takes over as CFO; Heidi Shockey retires",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2027-03-31",
+"ticker": "TLN",
+"what": "Final settlement of the $1.5B accelerated share repurchase expected by end of Q1 2027",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2027-03-31",
+"ticker": "TLN",
+"what": "Did TLN deliver? They promised on 2026-11-03: Complete the $1.5B accelerated share repurchase (final settlement, roughly 80% already delivered Oct 1 2026)",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2027-12-31",
+"ticker": "BWXT",
+"what": "Did BWXT deliver? They promised on 2026-11-02: Deliver 2027 preliminary outlook: high-single-digit revenue growth and high-single-digit to low-double-digit adjusted EBITDA and EPS growth",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2027-12-31",
+"ticker": "VST",
+"what": "Delivery of 2027 Adjusted EBITDA guidance ($7.7B-$8.5B) and Cogentrix integration",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2027-12-31",
+"ticker": "VST",
+"what": "Did VST deliver? They promised on 2026-11-06: Deliver 2027 Ongoing Operations Adjusted EBITDA of $7.7B-$8.5B",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2027-12-31",
+"ticker": "VST",
+"what": "Did VST deliver? They promised on 2026-11-06: Deliver 2027 Ongoing Operations Adjusted FCFbG of $4.3B-$5.1B",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2027-12-31",
+"ticker": "VST",
+"what": "Did VST deliver? They promised on 2026-11-06: Integrate Cogentrix Energy (~5,500 MW gas generation, closed Oct 2026)",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2027-12-31",
+"ticker": "TLN",
+"what": "Check whether 2027 adjusted EBITDA ($2.5B-$2.85B) and adjusted FCF ($1.5B-$1.75B) guidance is delivered",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2027-12-31",
+"ticker": "TLN",
+"what": "Did TLN deliver? They promised on 2026-11-03: Deliver 2027 adjusted EBITDA within $2,500M-$2,850M and adjusted FCF within $1,500M-$1,750M",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2028-01-01",
+"ticker": "LEU",
+"what": "Russian uranium waivers expire after Jan 1 2028; check the impact on LEU's supply (well over half of 2027 deliveries come from Tenex)",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2028-12-31",
+"ticker": "CEG",
+"what": "Did CEG deliver? They promised on 2026-11-09: Begin the Google PPA-linked nuclear uprates across 11 units, with the first uprate online (~890 MW incremental capacity)",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2028-12-31",
+"ticker": "CEG",
+"what": "Did CEG deliver? They promised on 2026-11-09: Begin the 270 MW Peak+ supply to the unnamed customer",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2028-12-31",
+"ticker": "VST",
+"what": "Did VST deliver? They promised on 2026-11-06: Complete remaining share repurchase authorization (~$2.5B) by year-end 2028",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2028-12-31",
+"ticker": "TLN",
+"what": "Did TLN deliver? They promised on 2026-11-03: Remaining $1.5B share repurchase capacity under the upsized program",
+"by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2032-12-31",
+"ticker": "CEG",
+"what": "Did CEG deliver? They promised on 2026-11-09: Deliver Calvert Cliffs 190 MW capacity expansion for Amazon",
+"by": "investigator",
 "written": "2026-11-23",
 "surfaced": false
 }
