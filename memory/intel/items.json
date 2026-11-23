@@ -11007,5 +11007,32 @@
 "russian",
 "south"
 ]
+},
+{
+"id": "5346832ad41e773e",
+"date": "2026-11-23",
+"ts": 1795449307,
+"title": "New York unveils advanced nuclear master plan",
+"summary": "Governor Kathy Hochul has announced the completion of the Master Plan for Responsible Advanced Nuclear Development in New York, which sets out a roadmap for the state to achieve its target of creating 5 GW of new nuclear power capacity.",
+"outlet": "World Nuclear News",
+"link": "https://www.world-nuclear-news.org/articles/new-york-unveils-advanced-nuclear-master-plan",
+"place": "World Nuclear News",
+"tickers": [],
+"tags": [],
+"numbers": [
+"5 GW"
+],
+"local": true,
+"novelty": 0.82,
+"score": 3.14,
+"echo_of": null,
+"w": [
+"advanced",
+"master",
+"nuclear",
+"plan",
+"unveils",
+"york"
+]
 }
 ]

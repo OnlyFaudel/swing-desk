@@ -25515,5 +25515,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "BWXT",
+"date": "2026-11-23",
+"title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal - Investing.com",
+"type": "contract_deal",
+"source": "Google News",
+"materiality": 6,
+"direction_called": "up",
+"price": 115.56999969482422,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "BWXT",
+"date": "2026-11-23",
+"title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com India",
+"type": "contract_deal",
+"source": "Google News",
+"materiality": 6,
+"direction_called": "up",
+"price": 115.77999877929688,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]

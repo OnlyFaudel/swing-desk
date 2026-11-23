@@ -297,78 +297,6 @@
  },
  "news_feed": [
   {
-   "ticker": "VST",
-   "source": "Google News",
-   "title": "Goldman Sachs Adjusts Price Target on Vistra to $183 From $200 - marketscreener.com",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSFR1RFdYb3B0TTJBYk9TRFIzc2oxeG9RRDI3UUt1N01WR25tdlU5YXhyZHd3M0RFTEdJWmdLUTBBSDJYZm5NUFpiY3AxNzZPNmhLczFqTXhTN0FzS19KUmQ1TnJxSDQ1TTZvMmFGdXduSXY1SldWX3FrZE0weWgwZjNsMTVOQmVEdDV0ZGZRVEQ1V0tnT2VDc2NDSVAxVXFaNjYwcVEtYlY1UWY4bmQ2bDNiZw?oc=5",
-   "ts": 1795176043,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "TLN",
-   "source": "Google News: \"Talen Energy\"",
-   "title": "Oppenheimer raises Talen Energy stock price target on power demand - Investing.com",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPS0Q4azJrdWthb3J3dS1oV0ZNRUt1MlJLTktleGg3MTVUMWJYZ1NsalVFMHdwUG1HVkRwX3FfaW5qTDUyMXVhTUNfcmNtZjdqcmxfdGRrMG9tM1FNb1VyM0ZDdFlwb3NEckxWbDg4QkI5VnlRX3cxTW1tNDRBXzNZZTJaUS1lenJTZklfSkY3RnlQNnpMSDFnLXhORGxicGRIRlhJNF85SUdFX1FhcGlWZVUyWFpjeV9DdGVDbFA2ejFKNXd0?oc=5",
-   "ts": 1795175887,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "DNN",
-   "source": "Google News: \"Denison Mines\"",
-   "title": "Denison Mine Corp (NYSEAMERICAN:DNN) Stock Has Consensus Price Target of $5.38 - MarketBeat",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWnVIWXdJZ2QyTXQ4c3pGeC0zc0JXX21Lb1VBWjMwNjI2NkVwNzhiMkZPSFJPMzVrRTd1N0ExOHhVMEpRdGJTUnVoT3E2bjdxOUVsZ1RUTHdkNjd6QnBhUHZzZERZbkpxVXFtbTJxYi1Jb01JWWJKTTRRSUlab2VRV3lFOUZzTldKVUpKUGZXSWRyajE3djF6SFZ4cVM4VU1IQjRyR1MyVVRRNlEtRU5FbXQwZFIxZjU2VGpGazNlcnhSQ1FLSC00VkI4U0xpOGdzaDdpQw?oc=5",
-   "ts": 1795175235,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CEG",
-   "source": "Google News: Constellation Energy nuclear",
-   "title": "NY Power Authority Shortlists Ten Firms to Build New Nuclear Plants - Engineering News-Record",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZkdOTlU0TGZ0MnlBbURsVGQwZnFGNUVhY1ZtdGNXb0lMN0E4R2RYOGVLcksyc3lQTGFJdWNaMEo4MTdNWTNZSk1CU2FZTzRfSk1BUU1qWUVSUHFxZWhnZ2VJY0Noa0F3MW5VRHpidWxTNWFNdTMwQzhWOV9VWWExMEdnemJTaXNFUXJ3MFBieDdqejRBR0ZrVTM0amxQOEw0eFJmdg?oc=5",
-   "ts": 1795172636,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "TLN",
-   "source": "Google News: \"Talen Energy\"",
-   "title": "Talen Energy SVP Edward Casulli sells $1.28M in common stock - Investing.com UK",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOU0FEdXdCZFhVX2hzbngtSEpMSnpQenNRYjdGWkpqOW03SE85MlhzNHRORkVURGJlNV8tSU40SmI3V3BGUlFCNEV6N0F0NFpVQ2g2clRsVWZQRDlua3JkRVplZ1lXRGNfdHFWNzJvTG5UeEFGZGVTczZVZk5KSHRRbjhDald6dFlUX05NOXUybGdCczhwa3VaSEducmQtYjJPSXExUjAxXzRYZkRDZmZSX0QxTktKU1RUei1R?oc=5",
-   "ts": 1795172520,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CEG",
-   "source": "Google News: Constellation Energy nuclear",
-   "title": "How Will Nuclear Expansion Shape Constellation Energy (NASDAQ:CEG)? - Kalkine Media",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQR2ZYblN4eDFVbjZkOWlqOHhlSHRVSUFXRkU3UjJtTTJrVzB6UVVRellLb2NXRV9NLUxPbG5JWWVNcE5VeDRmcmJfd29lUlFoWGpzNExqTGNRQ0xmaGhoalBLYkw0aGpWQ0NhRjJsM3RJcHNNYkg3OWN1N2VaVzUxRUl1YTRKMTlpdU1QYXJfdnZuc055ci1WUm1aOEozZDJJWGdZcVRIcmltQQ?oc=5",
-   "ts": 1795170540,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
    "ticker": "CCJ",
    "source": "Google News: Westinghouse reactor",
    "title": "PEJ Pushes Nuclear Contract Signing With Westinghouse and Bechtel to 2027 - energynews.pro",
@@ -3295,6 +3223,78 @@
    "direction": "neutral",
    "event_type": "supply",
    "why": "Mill throughput target is a restated corporate goal, not new information"
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News: nuclear power data center deal",
+   "title": "Data Center Power Hunger Puts Oklo (NYSE: OKLO) And NuScale (NYSE: SMR) In The Spotlight, But One Has The Edge - Foreign Policy Journal",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNRVVQenB1ZGVhbkZKVXhJc1RhRnlvS0kzNVpXZFJQUDB3SWJsd0JGQXZRMG5IUWpMbHg5cXA5aXR6N1VfNmtyMGtnTHdsRm93Q09vVGg1RlFkamR5Vk1wb0p5MnNwSmxjR1hGMVlScVhKYkF2VXotSUJfbWxvSHFzNjRNY1hIcjk0ekJJcXVSdC12SnRHN1VEejBkUmtoSmVuZUt2N2dITEl5aGJ1M0hUWVpLbWJ0NmFCbkxvVllkWG1aQmxJeFpFTFlISmhvRkJUd3Z1dWVCRF9fYnZ1RWpxc2x3T0E1dVk?oc=5",
+   "ts": 1795449360,
+   "materiality": 4,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic nuclear-for-data-centers theme piece, no new company-specific deal"
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "Nuclear Demand and Uranium Focus: Cameco Corporation (TSX:CCO) | S&P/TSX Composite Index | Large Cap Growth Stock - kalkine.ca",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQaERhSGxLeVU1TnBXSmE0bF9YNzBTeHRyYThiSllJNWdMLTd3b2VFVHk3Zzh0T1QydEk2aTF4cnhnUE5VYTI1bzNUcktzRVlsc3ZzSnJ5UkpRcjRUYkgzVjF2aVJSMVB2SGtkUzhwNTlsQ2M0aG1DdlBleUxFcU5CX2UxdlljU1FCaUNxazg5WVU0OFAyMDAzRnR6M3JvM05ZSnZzZDZvOXJ1RTl1VnJDVEVTd3RzWVdCbjZQRFJIQ0QxMm91d0d0dmxCUUhMYkE?oc=5",
+   "ts": 1795449540,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic explainer on Cameco's nuclear demand and uranium focus; no new facts."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News",
+   "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal - Investing.com",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQOFMwQXo5ZnRDcUlnMTQ5YzR6Q2MzQlJmR1RwZzFLYmRGNm1veHE5RGFER2VJTGZVMGNscjRBZGRYeVo4ampCN2ZPM05YLWduZExWa25Jcl84cmhnUmlZYVBzMjJpV1hTQzBhc2YzYjRmb3VWVnNPMGhWZGF1TldkXzFZeXd0QjJPbEZYZk1lQVZxbi1KbS1QMXM3amRTQklaMWJVcEdsaGplYmt3MXRIel96cG1SSmc?oc=5",
+   "ts": 1795450309,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Westinghouse AP1000 manufacturing deal is real demand, but the stock 'surge' size is unverified"
+  },
+  {
+   "ticker": "NXE",
+   "source": "Google News",
+   "title": "Rook I Development Watch: NexGen Energy Ltd. (TSX:NXE) | S&P/TSX Composite Index | Mid Cap Growth Stock - kalkine.ca",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMnJlNWlQQ0c5bFBLWk9aLUdJUHFrWFBRa2YyS21UZDFaX2ZVT0hVQ2kyZm00azNUMGp1Vzlobm9ZUktoeHBDRnpjMTRPMmtPN3JOQ0YzeTJMc3czbFJrMGhTbG1IVVhNaXc3QXcxQ3ZtSVlObjBaZm5tLU5nNlduZzZMSURYMUpqTWxZNU1nOTJMZmpoLVpQUmo2ZTVET19YZVhvaVZObEJsdHBYblBIS1JzWEpma3VqcG5CLUZUOEc?oc=5",
+   "ts": 1795449540,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": null,
+   "why": "Kalkine-style development watch recap of the Rook I project, no new information"
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News",
+   "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com India",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZmlRcWw5NWxXY0Q4ZHJCNVRDRFdmT0VuR2FiSDhiVXJxeTZUcE5LMkFMdmZwbXlyeUYtQi03clRtYUkyS0hMNXAxNXdhbnlfMnJmei1iT3MxOFhPOWRSVnhuMjFRRkMwTy1DQjNzWW9mcDhyTS1oeTNudTVpdVVycFZSaXZWLWRUWjN2TWJoNUM3NkVrbnFORUVGVFlTYVpDSlVuMHo2RFB1al9ZWVJkaU5hMEU1QQ?oc=5",
+   "ts": 1795450505,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Stock surging on Westinghouse AP1000 manufacturing deal; real new contract news"
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News",
+   "title": "TSX Composite Small-Cap Growth: Energy Fuels Inc. (TSX:EFR) Enters Focus as Investors Track the Next Catalyst - kalkine.ca",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQnJTaGNkTHdobG5qc210bjRKaDFWbWxqWFJTX1pxVW8wSFNxNkFwdnFIam1ZR2ZEN2xzajFZWGlBdUhLM0dXV1RHRHBxREdPUUdhbEVVQV92SVZRbkxJWHhnMHBLMW55azNKWVR2N3lwQ3NLX3dtM3p0R0cyY1lpUFVwZV9NT2NmYjhOUDBxUTVCUDJSZUtzSjVxM0J0XzVqNXdvOS1obUtWUlEyd2ZYdUJoZlh6OU01SUxuX2hrVE5DbVl3OEs3aVRSY0t1T1J1?oc=5",
+   "ts": 1795449600,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic small-cap watchlist piece with no new company information"
   }
  ],
  "reviews": [
@@ -4613,16 +4613,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.04055,
+  "day_usd": 0.04228,
   "month": "2026-11",
-  "month_usd": 0.30403,
-  "total_usd": 0.30403,
+  "month_usd": 0.30577,
+  "total_usd": 0.30577,
   "by_role": {
    "macro": 0.00843,
    "whale": 0.00639,
    "crowd": 0.00536,
    "level": 0.00274,
-   "scout": 0.0379,
+   "scout": 0.03963,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -4677,19 +4677,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 62.26,
-  "NXE": 6.86,
-  "UEC": 5.78,
-  "DNN": 1.82,
-  "UUUU": 5.39,
-  "LEU": 89.41,
-  "BWXT": 115.75,
-  "CEG": 252.07,
-  "VST": 125.32,
-  "TLN": 364.3,
-  "SPY": 723.99
+  "CCJ": 62.11,
+  "NXE": 6.85,
+  "UEC": 5.83,
+  "DNN": 1.81,
+  "UUUU": 5.38,
+  "LEU": 89.1,
+  "BWXT": 115.78,
+  "CEG": 251.78,
+  "VST": 125.59,
+  "TLN": 364.69,
+  "SPY": 724.28
  },
- "last_cycle": "2026-11-23 11:06 ET",
+ "last_cycle": "2026-11-23 11:17 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4714,10 +4714,10 @@
   ]
  },
  "brakes": {
-  "equity": 1041.17,
-  "day_pct": 4.06,
-  "week_pct": 4.06,
-  "drawdown_pct": -1.26,
+  "equity": 1040.64,
+  "day_pct": 4.01,
+  "week_pct": 4.01,
+  "drawdown_pct": -1.3,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -5083,6 +5083,42 @@
   [
    "2026-11-23 11:06",
    1041.17
+  ],
+  [
+   "2026-11-23 11:07",
+   1040.51
+  ],
+  [
+   "2026-11-23 11:09",
+   1040.23
+  ],
+  [
+   "2026-11-23 11:10",
+   1040.33
+  ],
+  [
+   "2026-11-23 11:12",
+   1040.9
+  ],
+  [
+   "2026-11-23 11:13",
+   1042.62
+  ],
+  [
+   "2026-11-23 11:14",
+   1042.56
+  ],
+  [
+   "2026-11-23 11:15",
+   1041.14
+  ],
+  [
+   "2026-11-23 11:16",
+   1039.98
+  ],
+  [
+   "2026-11-23 11:17",
+   1040.64
   ]
  ],
  "nowcast": {
@@ -47717,15 +47753,15 @@
   }
  },
  "last_scan": {
-  "CCJ": 1795448313.0545986,
-  "NXE": 1795448313.2983043,
-  "UEC": 1795448313.407719,
-  "DNN": 1795448313.5299485,
-  "UUUU": 1795448313.6137462,
-  "LEU": 1795448313.688451,
-  "CEG": 1795448313.8649235,
-  "VST": 1795448313.9527025,
-  "BWXT": 1795448313.7592828,
+  "CCJ": 1795450143.6518717,
+  "NXE": 1795450143.9443946,
+  "UEC": 1795450144.0497205,
+  "DNN": 1795450144.157145,
+  "UUUU": 1795450144.2284265,
+  "LEU": 1795450144.3532498,
+  "CEG": 1795450144.5063415,
+  "VST": 1795450144.5792527,
+  "BWXT": 1795450144.4249,
   "TLN": 1795449367.2137835
  },
  "setup_status": {
@@ -49485,7 +49521,7 @@
     0.9418
    ]
   },
-  "time": "2026-11-23 11:06"
+  "time": "2026-11-23 11:17"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -49525,7 +49561,6 @@
   "adaf4137e3446cd1",
   "8a429bbe4d25ae7d",
   "13880e66390f270d",
-  "cab53e09b478cbb5",
   "c56ca4f4b89e4d32",
   "6e7dff52f6fd70fc",
   "27cae87b69d8c12f",
@@ -49548,11 +49583,11 @@
   "88d39974add2ff27",
   "fa31367a940baeaa",
   "618c084e327573c8",
-  "4b634efdcf500ae7",
   "7eeff7845b171edb",
+  "4b634efdcf500ae7",
   "db05240fe85a29ac",
-  "c79f8cf2af696337",
   "2afc300bcf16d7fc",
+  "c79f8cf2af696337",
   "313a0e04a5719e86",
   "a82f81d0eb01a7ed",
   "085f836ba2eae79d",
@@ -49626,6 +49661,7 @@
   "59ef25447c180fa9",
   "d377bf4c00b3bccf",
   "41ed20a8cec5e591",
+  "24958b4b1d92e720",
   "9d0cef749e9a05fd",
   "d0cdede57b2eba62",
   "126369127a97f018",
@@ -49657,6 +49693,7 @@
   "e5b877975a222845",
   "a7bb0474e61a7894",
   "b4c005bc018874b7",
+  "38312f71d35b70bf",
   "11145b715ac0216e",
   "4c474a21ada49911",
   "4ae697a080cb64b9",
@@ -49699,6 +49736,7 @@
   "6709ae4e03dfb11b",
   "2a89ac3dc67ad332",
   "6ae4fd45dc301c0d",
+  "023889bc30f2a7cd",
   "32cfd9ef3704009d",
   "87e89d05178171d2",
   "9dd14dae753c141a",
@@ -49719,11 +49757,13 @@
   "7ee1ad6e6041b23e",
   "5d22d1b6e3da5fb6",
   "40da66ea723efc8f",
+  "d6fca5435e577b9f",
   "9b6ee47aa4a5262e",
   "61b82697d913613b",
   "19fb88d62a25326f",
   "5bc99c203ef396a3",
   "991c698e5a396dd1",
+  "5d0c7240e494c5f9",
   "e250b8758ee96ae8",
   "05ad7d5a34131c8c",
   "6903f08684a06b0c",
@@ -49739,9 +49779,11 @@
   "17b21557a779a003",
   "a4aac5316a0eb878",
   "c014dc203c86d5d1",
-  "d6fca5435e577b9f"
+  "cab53e09b478cbb5",
+  "ad40fc2d9e504d93",
+  "844469477dae7bae"
  ],
- "news_slow_at": 1795449441.942401,
+ "news_slow_at": 1795450062.849993,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -199508,6 +199550,30 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "BWXT",
+   "type": "contract_deal",
+   "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal - Investing.com",
+   "date": "2026-11-23",
+   "price": 115.57,
+   "materiality": 6,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
+  },
+  {
+   "ticker": "BWXT",
+   "type": "contract_deal",
+   "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com India",
+   "date": "2026-11-23",
+   "price": 115.78,
+   "materiality": 6,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -199523,9 +199589,9 @@
    "lesson": null
   }
  ],
- "intel_at": 1795448314.2478223,
+ "intel_at": 1795450144.6943521,
  "intel_health": {
-  "at": "2026-11-23 10:39",
+  "at": "2026-11-23 11:09",
   "sources": {
    "Cigar Lake": 5,
    "McArthur River / Key Lake": 3,
@@ -199540,8 +199606,8 @@
    "Namibia": 9,
    "Russia supply": 1,
    "Piketon": 12,
-   "HALEU": 10,
-   "Wyoming ISR": 17,
+   "HALEU": 9,
+   "Wyoming ISR": 16,
    "South Texas ISR": 1,
    "White Mesa / Utah": 6,
    "Rare earths (Energy Fuels)": 11,
@@ -199553,34 +199619,34 @@
    "PJM grid": 8,
    "ERCOT grid": 6,
    "Data-center nuclear deals": 9,
-   "Japan restarts": 5,
-   "China new builds": 6,
-   "Congress and laws": 24,
-   "NRC decisions": 9,
+   "Japan restarts": 4,
+   "China new builds": 5,
+   "Congress and laws": 23,
+   "NRC decisions": 7,
    "Energy Department": 35,
-   "White House and executive orders": 18,
+   "White House and executive orders": 19,
    "Tariffs and trade": 1,
-   "India": 19,
-   "South Korea": 79,
+   "India": 18,
+   "South Korea": 100,
    "Europe new builds": 29,
    "France and UK": 7,
    "Middle East": 10,
-   "Asia newcomers": 22,
-   "Canada SMRs": 3,
-   "Big tech power deals": 0,
-   "Iran": 28,
-   "North Korea": 82,
+   "Asia newcomers": 23,
+   "Canada SMRs": 1,
+   "Big tech power deals": 60,
+   "Iran": 27,
+   "North Korea": 84,
    "War zones": 14,
    "AUKUS and navies": 22,
    "Weapons programs": 6,
    "Stockpiles and reserves": 6,
    "Sprott trust": 4,
-   "Uranium price": 22,
+   "Uranium price": 21,
    "US policy": 0,
-   "Lawsuits and investigations": 75,
-   "Workers and jobs": 16,
+   "Lawsuits and investigations": 33,
+   "Workers and jobs": 14,
    "CBC Saskatchewan": 20,
-   "World Nuclear News": 49,
+   "World Nuclear News": 50,
    "Federal Register (uranium)": 6,
    "Federal Register (nuclear)": 23,
    "NRC event reports": 7
@@ -199588,12 +199654,12 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 11:06",
-  "total": 338,
-  "week": 295,
+  "updated": "2026-11-23 11:17",
+  "total": 339,
+  "week": 296,
   "places": {
    "Uranium price": 32,
-   "World Nuclear News": 26,
+   "World Nuclear News": 27,
    "Piketon": 21,
    "Europe new builds": 20,
    "AUKUS and navies": 15,
@@ -199607,7 +199673,7 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-23 10:39",
+   "at": "2026-11-23 11:09",
    "sources": {
     "Cigar Lake": 5,
     "McArthur River / Key Lake": 3,
@@ -199622,8 +199688,8 @@
     "Namibia": 9,
     "Russia supply": 1,
     "Piketon": 12,
-    "HALEU": 10,
-    "Wyoming ISR": 17,
+    "HALEU": 9,
+    "Wyoming ISR": 16,
     "South Texas ISR": 1,
     "White Mesa / Utah": 6,
     "Rare earths (Energy Fuels)": 11,
@@ -199635,34 +199701,34 @@
     "PJM grid": 8,
     "ERCOT grid": 6,
     "Data-center nuclear deals": 9,
-    "Japan restarts": 5,
-    "China new builds": 6,
-    "Congress and laws": 24,
-    "NRC decisions": 9,
+    "Japan restarts": 4,
+    "China new builds": 5,
+    "Congress and laws": 23,
+    "NRC decisions": 7,
     "Energy Department": 35,
-    "White House and executive orders": 18,
+    "White House and executive orders": 19,
     "Tariffs and trade": 1,
-    "India": 19,
-    "South Korea": 79,
+    "India": 18,
+    "South Korea": 100,
     "Europe new builds": 29,
     "France and UK": 7,
     "Middle East": 10,
-    "Asia newcomers": 22,
-    "Canada SMRs": 3,
-    "Big tech power deals": 0,
-    "Iran": 28,
-    "North Korea": 82,
+    "Asia newcomers": 23,
+    "Canada SMRs": 1,
+    "Big tech power deals": 60,
+    "Iran": 27,
+    "North Korea": 84,
     "War zones": 14,
     "AUKUS and navies": 22,
     "Weapons programs": 6,
     "Stockpiles and reserves": 6,
     "Sprott trust": 4,
-    "Uranium price": 22,
+    "Uranium price": 21,
     "US policy": 0,
-    "Lawsuits and investigations": 75,
-    "Workers and jobs": 16,
+    "Lawsuits and investigations": 33,
+    "Workers and jobs": 14,
     "CBC Saskatchewan": 20,
-    "World Nuclear News": 49,
+    "World Nuclear News": 50,
     "Federal Register (uranium)": 6,
     "Federal Register (nuclear)": 23,
     "NRC event reports": 7
@@ -200218,8 +200284,8 @@
  "intel_handed": [
   "53627f4c0e7162ee",
   "ac86fb04e7eb798b",
-  "efb09be793d6460a",
   "29f141fd08778bc3",
+  "efb09be793d6460a",
   "fe223bd03cfc6370",
   "f88ba68b2c94d1a7",
   "f2cc6e74f1bd9dd4",
@@ -200230,8 +200296,8 @@
   "4039fa58057275ae",
   "dbd18bd6c4654ec8",
   "b2e981fc7a2e7302",
-  "0d77f1d2373bb03d",
   "498180393c058995",
+  "0d77f1d2373bb03d",
   "73c8ecdc752b197b",
   "0ad3ea7bae8b611c",
   "7f7a05be6b3ac1f5",
@@ -200317,7 +200383,7 @@
   }
  ],
  "memory_view": {
-  "events": 1501,
+  "events": 1502,
   "with_outcomes": 1162,
   "playbooks": {
    "acquisition": {
@@ -200457,15 +200523,6 @@
    }
   ],
   "recent": [
-   {
-    "date": "2026-11-22",
-    "ticker": "CCJ",
-    "title": "US and Poland Issue Seventh P-TEC Ministerial Joint Statement on Civil Nuclear and Grid Cooperation",
-    "type": "intel_politics",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
    {
     "date": "2026-11-22",
     "ticker": "BWXT",
@@ -200816,6 +200873,15 @@
     "r0": null,
     "r5": null,
     "r20": null
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "BWXT",
+    "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal - Investing.com",
+    "type": "contract_deal",
+    "r0": null,
+    "r5": null,
+    "r20": null
    }
   ]
  },
@@ -201126,7 +201192,7 @@
    }
   ]
  },
- "dossier_at": 1795448355.4767694,
+ "dossier_at": 1795450185.498761,
  "sector_prices": {
   "_at": 1795444651.6528683,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -201182,82 +201248,82 @@
   {
    "ticker": "CCJ",
    "name": "Cameco",
-   "price": 62.51,
-   "week_pct": -5.27,
-   "built": "2026-11-23 10:39"
+   "price": 62.24,
+   "week_pct": -5.68,
+   "built": "2026-11-23 11:09"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
-   "price": 6.91,
-   "week_pct": -6.82,
-   "built": "2026-11-23 10:39"
+   "price": 6.85,
+   "week_pct": -7.56,
+   "built": "2026-11-23 11:09"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
-   "price": 5.79,
-   "week_pct": -5.55,
-   "built": "2026-11-23 10:39"
+   "price": 5.77,
+   "week_pct": -5.87,
+   "built": "2026-11-23 11:09"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
-   "price": 1.82,
-   "week_pct": -4.71,
-   "built": "2026-11-23 10:39"
+   "price": 1.81,
+   "week_pct": -5.24,
+   "built": "2026-11-23 11:09"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
-   "price": 5.43,
-   "week_pct": -10.1,
-   "built": "2026-11-23 10:39"
+   "price": 5.38,
+   "week_pct": -11.01,
+   "built": "2026-11-23 11:09"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
-   "price": 89.69,
-   "week_pct": -8.04,
-   "built": "2026-11-23 10:39"
+   "price": 89.14,
+   "week_pct": -8.6,
+   "built": "2026-11-23 11:09"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
-   "price": 115.99,
-   "week_pct": -0.71,
-   "built": "2026-11-23 10:39"
+   "price": 115.78,
+   "week_pct": -0.89,
+   "built": "2026-11-23 11:09"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
-   "price": 251.61,
-   "week_pct": -9.43,
-   "built": "2026-11-23 10:39"
+   "price": 251.6,
+   "week_pct": -9.44,
+   "built": "2026-11-23 11:09"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
-   "price": 124.82,
-   "week_pct": -4.1,
-   "built": "2026-11-23 10:39"
+   "price": 125.21,
+   "week_pct": -3.81,
+   "built": "2026-11-23 11:09"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
-   "price": 361.23,
-   "week_pct": 0.41,
-   "built": "2026-11-23 10:39"
+   "price": 364.03,
+   "week_pct": 1.19,
+   "built": "2026-11-23 11:09"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-23 10:39"
+   "built": "2026-11-23 11:09"
   }
  ],
- "heartbeat": "2026-11-23 11:06",
+ "heartbeat": "2026-11-23 11:17",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -201369,20 +201435,23 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 115.75,
-  "TLN": 364.30499267578125
+  "BWXT": 115.77999877929688,
+  "TLN": 364.69000244140625
  },
  "notes_audit": {
   "scout": {
-   "asked": 4,
-   "used": 4,
+   "asked": 8,
+   "used": 8,
    "notes": {
     "TLN Deals and contracts": 1,
-    "CCJ Deals and contracts": 1,
-    "BWXT Deals and contracts": 1,
-    "SECTOR Government and laws": 2,
-    "UUUU Deals and contracts": 2,
-    "SECTOR Countries": 1
+    "CCJ Deals and contracts": 2,
+    "BWXT Deals and contracts": 3,
+    "SECTOR Government and laws": 3,
+    "UUUU Deals and contracts": 3,
+    "SECTOR Countries": 3,
+    "CEG Deals and contracts": 1,
+    "NXE Legal": 1,
+    "NXE Deals and contracts": 1
    },
    "since": "2026-11-23"
   },
