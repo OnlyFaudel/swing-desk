@@ -11610,5 +11610,168 @@
 "river",
 "savannah"
 ]
+},
+{
+"id": "cfbef1439bd8e446",
+"date": "2026-11-23",
+"ts": 1795433170,
+"title": "Energy Fuels provides update on U.S. uranium operations",
+"summary": "",
+"outlet": "TipRanks",
+"link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNeUFlazlIdS1XU0xUVGJLU1EwRjE3ZmxVU1lDdTlDdUE3RjZqSlVWQmRMQVBZNWVpbzlNWWhKeDBEQ3dhaGJpai1BR05sUXRQUG03ZVJianVCV3VJUkVfLXFoM1BVaVVjNVRtQWx3Qml6aFlUVl9Cc2NsSXVZMWhLOGVsNzBNdTlfS05BMnJ2NEVfcGZpQU96R2s1dVFhbkZDcTBNT1pRNA?oc=5",
+"place": "White Mesa / Utah",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.56,
+"score": 2.62,
+"echo_of": null,
+"w": [
+"energy",
+"fuels",
+"operations",
+"provides",
+"update",
+"uranium"
+]
+},
+{
+"id": "c33e85f70d2f743d",
+"date": "2026-11-23",
+"ts": 1795453200,
+"title": "Energy Fuels Sets 1M-Pound Uranium Goal",
+"summary": "",
+"outlet": "Investing News Network",
+"link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5QY2Jxa3NORzZPbC1fR0ZJdFF5ME4xVW9fSVlTT3RDOGdKZ0VxZ1NOOHV4V1p4dFhoaDRVUzZ2bkJIbkRFdm5EZ1F5S196TC0zb0lWcDhNSXBhQjNHMmFuaGc0SDlEVTVt?oc=5",
+"place": "White Mesa / Utah",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.64,
+"score": 3.78,
+"echo_of": null,
+"w": [
+"energy",
+"fuels",
+"goal",
+"pound",
+"sets",
+"uranium"
+]
+},
+{
+"id": "37e93b6ada2df792",
+"date": "2026-11-23",
+"ts": 1795454553,
+"title": "Energy Fuels Stock Jumps on Uranium Production Plans, 35% Sales Growth Forecast",
+"summary": "",
+"outlet": "TradingView",
+"link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPSGg3b0NtOF9BVXFfNEtsb2wxVGZ5SXR0MHVnaUk2eExPQXpLODdNell3VXBhV1FuR0wybUhkb2w4b0xOc2ZrUDNvNzlHQUVXTUN5STFDQ2pIZkVSdmVfLTExZUFZRzZIZUVrMUNZZXllQ3NWdHZFanZqaXdPa1FlQ3c3TlRwWERqZlItWUxTbTgxUnpWREt0STdQQ2pnWDhhelFEbUVBWWhxMEZaaGVfX3hPVFhMRXNXZGRDU0pValVmem1UVEdMdWp2NmY0ZHZZWFE?oc=5",
+"place": "White Mesa / Utah",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [
+"production",
+"market_chatter"
+],
+"numbers": [
+"35%"
+],
+"local": false,
+"novelty": 0.0,
+"score": 1.3,
+"echo_of": "7ffa38b48cb85fdf",
+"w": [
+"energy",
+"forecast",
+"fuels",
+"growth",
+"jumps",
+"plans",
+"production",
+"sales",
+"stock",
+"uranium"
+]
+},
+{
+"id": "9f2e45d00f1961dd",
+"date": "2026-11-23",
+"ts": 1795460415,
+"title": "Ten Bagger: Uranium explorers offer deep value as equities disconnect from commodity prices",
+"summary": "",
+"outlet": "Stockhead",
+"link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRzI2dFU2Ny16NDdmNUVjYmF2MkxnTmItOXlra0ZGczEyRXFla2FVUmQtVjVTdkZOUUF3Ti11Qmg4TVFxN0dOOFZSU1ZsWTZiMjBEYWdQVVItRVNuX1Z2NXNaQy1fZXoxUDJGaGp1cTQ5RkRfQ1F5QXd4Q1JFZDVKRnZad29WRzEyZFQwOFdmY3VITGs3OVdjSEJJdW10ajRTenRPNjBfd2ZEWlJMTThtaE1JdXZIeTR4cTlQSUZuMTFmREZG?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.88,
+"score": 4.26,
+"echo_of": null,
+"w": [
+"bagger",
+"commodity",
+"deep",
+"disconnect",
+"equities",
+"explorers",
+"offer",
+"prices",
+"ten",
+"uranium",
+"value"
+]
+},
+{
+"id": "dfc77f4fe94ea6ba",
+"date": "2026-11-23",
+"ts": 1795460675,
+"title": "NRC opens comments on draft EA for Crownpoint ISR project",
+"summary": "",
+"outlet": "American Nuclear Society",
+"link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZk1NNHprYmpwZkFEQm1LdHVpb3BzV25LbHZ5NkZGTXRJN3FqYzVEUHdxUWlBSjBHNy11amFWdDBXUmpaT3NZbWo1NE01Q3J2NzVmZk9pek5oNmdZSjZEUFFUQkp1ZThoMzhqRW5rcUlVNXNZT21lRGI3Tko5TlpMYmFodV9PTkFMNHZjTWpybWhocjJNdFBqemM1MVU?oc=5",
+"place": "NRC decisions",
+"tickers": [
+"CEG",
+"VST",
+"TLN",
+"LEU",
+"BWXT"
+],
+"tags": [
+"regulation"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.79,
+"score": 5.58,
+"echo_of": null,
+"w": [
+"comments",
+"crownpoint",
+"draft",
+"isr",
+"nrc",
+"opens",
+"project"
+]
 }
 ]
