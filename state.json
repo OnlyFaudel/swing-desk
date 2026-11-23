@@ -297,18 +297,6 @@
   {
    "ticker": "DNN",
    "source": "Google News: \"Denison Mines\"",
-   "title": "Denison Mines Corp. (TSX:DML) Trading Volume in Focus as Market Participation Draws Attention - kalkine.ca",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNnJhb1ZRRk9JOVhod094S254WFN6MDl4cG9oMVZHbUFMckFmczN3OGVHTUFnU083SERSN0NWY3k3eU9RVGIzcGpHWEVjR0txR1o1SGg5VTF5THRLWVpCRFQwbjZkSE1QbGdFS3dhT0JCemp6RVRPdkh4Q3c0aUVUY0NhV21LOHRWeGdkcVduNWplZEJJRzVLZHA2Z0JLbjFQZWZsZWp0UURNZm1jLVJqTnVnZ3FCUFVXM0RCVg?oc=5",
-   "ts": 1795081200,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "DNN",
-   "source": "Google News: \"Denison Mines\"",
    "title": "Denison Mines stock drops amid continued seller dominance and negative momentum signals - Traders Union",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOczdIdnZka1RNSWV5VDJaYzR5SGZEbEw3elZxbWwtRUpiampxVzExX2dJQ05XRERFMU1ibFJKVDFUaTY0WjRrblYtMW94WVZHUlA0c0stSVhnS2kwZFNEeTltMWFVODdDNFVDNVF5QUQzN25YYTFWZktJR09POHR1aHpibVFVd2pkTlRjNWtR?oc=5",
    "ts": 1795078167,
@@ -3293,6 +3281,18 @@
    "direction": "up",
    "event_type": "other",
    "why": "Concrete production target and December 2026 campaign timing; plausible but not yet proven output."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Yahoo Finance",
+   "title": "Energy Fuels Surges 8% on Plan to Produce 1 Million Pounds of Uranium; Oklo Climbs 7%, NuScale Power Gains 6%",
+   "link": "https://247wallst.com/investing/2026/11/23/energy-fuels-surges-8-on-plan-to-produce-1-million-pounds-of-uranium-oklo-climbs-7-nuscale-power-gains-6/?.tsrc=rss",
+   "ts": 1795442994,
+   "materiality": 5,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "supply",
+   "why": "Concrete 1M lb production plan is new, but the 8% move already happened"
   }
  ],
  "reviews": [
@@ -4502,16 +4502,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.01515,
+  "day_usd": 0.01538,
   "month": "2026-11",
-  "month_usd": 0.27864,
-  "total_usd": 0.27864,
+  "month_usd": 0.27887,
+  "total_usd": 0.27887,
   "by_role": {
    "macro": 0.0037,
    "whale": 0.00304,
    "crowd": 0.0032,
    "level": 0.00144,
-   "scout": 0.03467,
+   "scout": 0.0349,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -4578,7 +4578,7 @@
   "TLN": 333.24,
   "SPY": 690.91
  },
- "last_cycle": "2026-11-23 09:12 ET",
+ "last_cycle": "2026-11-23 09:23 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -49024,8 +49024,8 @@
   "1005c86f35a3d1c3",
   "5d22d1b6e3da5fb6",
   "4627bda8dfc98062",
-  "c56ca4f4b89e4d32",
   "8010bdf39626577f",
+  "c56ca4f4b89e4d32",
   "d39dc266a3b4dae2",
   "e6c12a1e5998666c",
   "00dd4e324f5b633b",
@@ -49074,6 +49074,7 @@
   "adaf4137e3446cd1",
   "7aa8997d91d8e2dc",
   "8d0283e176b666a8",
+  "28519b0d409dc260",
   "4b634efdcf500ae7",
   "ceb6205483ccef34",
   "bb6d0befac06c212",
@@ -49204,7 +49205,7 @@
   "88d39974add2ff27",
   "f16660c269a6613c"
  ],
- "news_slow_at": 1795442881.535054,
+ "news_slow_at": 1795443505.2846339,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197996,7 +197997,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 09:12",
+  "updated": "2026-11-23 09:23",
   "total": 326,
   "week": 286,
   "places": {
@@ -199625,7 +199626,7 @@
    "built": "2026-11-23 09:05"
   }
  ],
- "heartbeat": "2026-11-23 09:12",
+ "heartbeat": "2026-11-23 09:23",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
