@@ -1863,6 +1863,10 @@ def cycle(st, desk, br, ex, force=()):
         if t not in prices and (st.get("last_prices") or {}).get(t):
             prices[t] = st["last_prices"][t]
     st["last_prices"], st["last_cycle"] = {t: round(prices[t], 2) for t in tick + ["SPY"] if t in prices}, now.strftime("%Y-%m-%d %H:%M ET")
+    try:  # last 30 daily closes per stock, for the trade hover cards on the page
+        st["spark"] = {t: [[str(i.date()), round(float(c), 2)] for i, c in data[t].Close.dropna().tail(30).items()] for t in tick if t in data}
+    except Exception as e:
+        print("spark", e)
     book = st["book"]
     is_open = market.market_open() or "close" in force or "morning" in force
     if is_open:

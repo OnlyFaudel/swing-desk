@@ -304,6 +304,27 @@ button.act:hover{filter:brightness(1.08)}
 @media (min-width:980px){.cols{grid-template-columns:400px minmax(0,640px);gap:72px}}
 @media (min-width:980px) and (max-width:1180px){.cols{grid-template-columns:360px minmax(0,1fr);gap:40px}}
 @media (min-width:980px){.side{position:static;max-height:none;overflow:visible}}  /* no box-inside-a-page scrolling: the whole page scrolls as one */
+
+/* today's brief */
+.brief{background:var(--sheet);border:1px solid var(--hair);border-radius:14px;padding:16px 18px 6px}
+.brief .bh{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px}
+.brief .bh b{font-family:"Newsreader",Georgia,serif;font-weight:500;font-size:22px}
+.brief .bh span{font-size:12.5px;color:var(--ink2)}
+.brief .bl{display:grid;grid-template-columns:58px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--hair)}
+.brief .bl i{font-style:normal;font-size:12.5px;color:var(--glow);padding-top:2px}
+.brief .bl p{margin:0;font-size:14.5px;line-height:1.5}
+.now{border-top:0;padding-top:4px}
+/* trade hover card */
+[data-hc]{cursor:default;border-radius:8px;transition:background .15s}
+[data-hc]:hover,[data-hc]:focus-visible{background:var(--sheet)}
+.hcbox{position:fixed;z-index:40;background:#1B1F23;border:1px solid #30353A;border-radius:14px;padding:14px 16px 10px;box-shadow:0 18px 40px rgba(0,0,0,.45);pointer-events:none;font-size:13.5px}
+.hcbox[hidden]{display:none}
+.hch{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px}
+.hch b:first-child{font-family:"Newsreader",Georgia,serif;font-weight:500;font-size:17px}
+.hcs{font-size:11px;color:var(--ink2);margin:-2px 0 6px}
+.hcbox dl{display:grid;grid-template-columns:78px 1fr;gap:6px 10px;margin:4px 0}
+.hcbox dt{color:var(--ink2);font-size:12.5px}.hcbox dd{margin:0;line-height:1.45}
+@media (prefers-reduced-motion:no-preference){.hcbox:not([hidden]){animation:hcin .14s ease-out}@keyframes hcin{from{opacity:0;transform:translateY(4px)}}}
 </style></head>
 <body><div class="wrap">
 __BANNER__
@@ -319,7 +340,7 @@ __BANNER__
         <div class="rng" id="rng"><button data-r="day" aria-pressed="true">Today</button><button data-r="week" aria-pressed="false">Week</button><button data-r="all" aria-pressed="false">All</button><button data-r="cal" aria-pressed="false">Calendar</button></div>
         <div class="cal" id="cal" hidden></div>
       </div>
-      <div class="now"><p id="now"></p><details><summary>Explain everything</summary><div class="ex" id="exbody"></div></details></div>
+      <div class="now"><div class="brief" id="brief"></div><p id="now" hidden></p><details><summary>Explain everything</summary><div class="ex" id="exbody"></div></details></div>
       <div id="minebody"></div>
     </aside>
     <main class="mainf">
@@ -619,19 +640,86 @@ function stockState(t){
     :arm_.length?`Waiting to buy ${arm_.map(z=>`${z[0]} at ${money((S.armed||{})[z[0]].entry)}`).join(", ")}. It only buys if the price dips to support.`
     :(C.sync&&C.sync.pulse_filter&&S.sync&&S.sync.pulse_up===false)?`Holding cash. The nuclear basket is falling, so no new buys until it turns up. Watching ${lineupT.length} stocks.`
     :`Holding cash. None of the ${lineupT.length} stocks is at a safe place to buy yet.`;
+  /* ----- trade hover cards: hover (or tap on a phone) a row to see the whole story of that trade */
+  const HC=[];
+  function hc(o){HC.push(o);return HC.length-1;}
+  const KN={trade:"support-level trade",core:"long-term hold",panic:"panic-day rebound",auto:"discovery trade",park:"idle cash parked in the S&P 500",armed:"waiting buy order",closed:"closed trade"};
+  function spark(t,lines){
+    const raw=((S.spark||{})[t]||[]), s=raw.map(x=>x[1]); if(s.length<3) return "";
+    if(P[t]&&raw.length&&raw[raw.length-1][0]!==ymd(new Date())) s.push(P[t]);
+    const W=300,H=86,all=s.concat(lines.map(l=>l.v).filter(v=>v)),lo=Math.min(...all),hi=Math.max(...all),pad=(hi-lo)*.12||1;
+    const X=i=>4+i*(W-8)/(s.length-1), Y=v=>H-6-((v-(lo-pad))/((hi+pad)-(lo-pad)))*(H-12);
+    const up=s[s.length-1]>=s[0], c=up?"#8CC6A0":"#E3877E";
+    const ls_=lines.filter(l=>l.v).sort((a,b)=>b.v-a.v); let lastY=-99;
+    const lab=ls_.map(l=>{let y=Y(l.v)-3; if(y-lastY<11) y=lastY+11; lastY=y; return {...l,ty:Math.min(H-1,y)};});
+    return `<svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}" aria-hidden="true">${lab.map(l=>`<line x1="0" x2="${W}" y1="${Y(l.v).toFixed(1)}" y2="${Y(l.v).toFixed(1)}" stroke="${l.c}" stroke-width="1" stroke-dasharray="${l.d||"3 4"}" opacity=".8"/><text x="4" y="${l.ty.toFixed(1)}" font-size="9.5" fill="${l.c}">${esc(l.n)} ${money(l.v)}</text>`).join("")}<polyline fill="none" stroke="${c}" stroke-width="1.6" stroke-linejoin="round" points="${s.map((v,i)=>X(i).toFixed(1)+","+Y(v).toFixed(1)).join(" ")}"/><circle cx="${X(s.length-1)}" cy="${Y(s[s.length-1])}" r="2.6" fill="${c}"/></svg><div class="hcs">Last 30 days</div>`;
+  }
+  const fd=s=>{const d=new Date(String(s)+"T12:00");return isNaN(d)?esc(s):d.toLocaleDateString(undefined,{month:"short",day:"numeric"});};
+  function card(o){
+    const t=o.t, rows=[]; let lines=[], head=`${t}, ${KN[o.k]||o.k}`, pl="";
+    if(o.L){const L=o.L,avg=L.cost/(L.qty||1),now=P[t]??avg,ch=(now/avg-1)*100,usd=(now-avg)*L.qty;
+      pl=`<b class="${usd>=0?"pos":"neg"}">${usd>=0?"+":"−"}$${Math.abs(usd).toFixed(2)} (${ch>=0?"+":""}${ch.toFixed(2)}%)</b>`;
+      rows.push(["Bought",`${money(avg)} for ${money(L.cost)}${L.entry_time?`, ${esc(String(L.entry_time).slice(5,16))}`:""}`],["Now",money(now)]);
+      if(o.k==="panic"){const tp=avg*1.10; rows.push(["Plan",`Sells near a close if it's at ${money(tp)} or higher (+10%), otherwise on ${fd(L.exit_on)}. No stop: the size is the protection.`]); lines=[{v:avg,c:"#CDB16A",n:"bought"},{v:tp,c:"#8CC6A0",n:"+10%"}];
+        const pl0=(S.panic_log||[]).filter(e=>e.ticker===t&&e.bought).pop(); if(pl0) rows.push(["Why",`Market ${pl0.market_pct}% that day, ${t} ${pl0.day_pct}% and ${Math.abs(pl0.below_high_pct)}% under its 20-day high.${pl0.pm_view?` Portfolio Manager said ${esc(pl0.pm_view)}${pl0.pm_why?": "+esc(pl0.pm_why):""}.`:""}`]);}
+      else if(o.k==="park") rows.push(["Plan","Earns what the S&P earns while no trade needs the money; sold automatically when one does."]);
+      else {if(L.target||L.stop) rows.push(["Plan",`${L.target?`Target ${money(L.target)}`:""}${L.target&&L.stop?", ":""}${L.stop?`stop ${money(L.stop)}`:""}${L.exit_on?`, or sells on ${esc(L.exit_on)}`:""}.`]);
+        if(L.why) rows.push(["Why",esc(L.why)]); lines=[{v:avg,c:"#CDB16A",n:"bought"},{v:L.target,c:"#8CC6A0",n:"target"},{v:L.stop,c:"#E3877E",n:"stop"}];}
+      if(L.opened){const o0=new Date(L.opened+"T12:00"),d=Math.max(0,Math.floor((Date.now()-o0)/864e5)); rows.push(["Held",`since ${o0.toLocaleDateString(undefined,{month:"short",day:"numeric"})} (${d} day${d===1?"":"s"})`]);}
+    } else if(o.a){const a=o.a; rows.push(["Order",`Buy ${money(a.dollars)} at ${money(a.entry)}`],["Now",money(P[t])],["Valid until",esc(a.valid_until||"")]); if(a.stop||a.target) rows.push(["If filled",`stop ${money(a.stop)}, target ${money(a.target)}`]); lines=[{v:a.entry,c:"#CDB16A",n:"buy"},{v:a.stop,c:"#E3877E",n:"stop"},{v:a.target,c:"#8CC6A0",n:"target"}];}
+    else if(o.x){const x=o.x; pl=`<b class="${x.pnl>=0?"pos":"neg"}">${x.pnl>=0?"+":"−"}$${Math.abs(x.pnl).toFixed(2)} (${x.ret>=0?"+":""}${x.ret}%)</b>`;
+      rows.push(["In",`${money(x.entry)}, ${esc(String(x.entry_time||"").slice(5,16))}`],["Out",`${money(x.exit)}, ${esc(String(x.exit_time||"").slice(5,16))}`],["Size",money(x.dollars)],["Why in",esc(x.why_in||"")],["Why out",esc(x.why_out||"")]);
+      lines=[{v:x.entry,c:"#CDB16A",n:"in"},{v:x.exit,c:"#9C9E9A",n:"out"}];}
+    return `<div class="hch"><b>${esc(head)}</b>${pl}</div>${spark(t,lines)}<dl>${rows.map(r=>`<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join("")}</dl>`;
+  }
+  function wireHC(){
+    let box=$("hcbox"); if(!box){box=document.createElement("div");box.id="hcbox";box.className="hcbox";box.hidden=true;box.setAttribute("role","tooltip");document.body.appendChild(box);}
+    const show=row=>{box.innerHTML=card(HC[+row.dataset.hc]);box.hidden=false;const r=row.getBoundingClientRect(),bw=Math.min(340,window.innerWidth-24);box.style.width=bw+"px";
+      let left=r.right+14; if(left+bw>window.innerWidth-12) left=Math.max(12,r.left+(r.width-bw)/2);
+      let top=left===r.right+14?r.top:r.bottom+8; box.style.left=left+"px"; box.style.top=Math.max(12,Math.min(top,window.innerHeight-box.offsetHeight-12))+"px";};
+    const hide=()=>{box.hidden=true;};
+    document.querySelectorAll("[data-hc]").forEach(row=>{row.tabIndex=0;
+      row.addEventListener("mouseenter",()=>show(row)); row.addEventListener("mouseleave",hide);
+      row.addEventListener("focus",()=>show(row)); row.addEventListener("blur",hide);
+      row.addEventListener("click",e=>{if(matchMedia("(hover:none)").matches){e.stopPropagation(); box.hidden&&box.dataset.row===row.dataset.hc?show(row):(box.hidden?show(row):hide()); box.dataset.row=row.dataset.hc;}});});
+    document.addEventListener("click",hide); window.addEventListener("scroll",hide,{passive:true});
+  }
+  /* ----- today's brief: what happened, what we hold, what would make us act */
+  function brief(){
+    const today=new Date().toISOString().slice(0,10), td=ymd(new Date());
+    const fills=(S.orders_log||[]).filter(o=>String(o.time||"").startsWith(td)&&o.status==="filled");
+    const did=fills.length?fills.map(o=>`${o.side==="buy"?"bought":"sold"} ${esc(o.symbol)}`).join(", "):"";
+    const closed=(B.trades||[]).filter(x=>String(x.exit_time||"").startsWith(td));
+    const done=did?`Today the bot ${did}.`:closed.length?`Closed ${closed.map(x=>`${esc(x.ticker)} ${x.pnl>=0?"+":"−"}$${Math.abs(x.pnl).toFixed(2)}`).join(", ")} today.`:"No buys or sells yet today.";
+    const lotsNow=[].concat(...["trade","panic","auto"].map(k=>Object.keys(B.lots||{}).filter(t=>lot(t,k).qty>1e-6).map(t=>[t,k])));
+    const park=lot("SPY","park").qty>1e-6;
+    const tot=lotsNow.reduce((a,[t,k])=>{const L=lot(t,k);return a+((P[t]??L.cost/L.qty)*L.qty-L.cost)},0);
+    const holding=lotsNow.length?`${lotsNow.map(([t])=>esc(t)).join(", ")}, <b class="${tot>=0?"pos":"neg"}">${tot>=0?"+":"−"}$${Math.abs(tot).toFixed(2)}</b> open ${tot>=0?"profit":"loss"}.${park?" The rest is parked in the S&P.":""}`:park?"No stock trades open; the cash is parked in the S&P.":"No trades open; holding cash.";
+    const next=[];
+    const pn=lotsNow.filter(([t,k])=>k==="panic").map(([t])=>t);
+    if(pn.length){const dates=[...new Set(pn.map(t=>lot(t,"panic").exit_on))];
+      next.push(`${pn.map(esc).join(", ")} sell${pn.length===1?"s":""} near the close once up 10% (${pn.map(t=>{const L=lot(t,"panic");return `${esc(t)} needs ${money(L.cost/L.qty*1.10)}`}).join(", ")}), otherwise on ${dates.map(fd).join(", ")}`);}
+    Object.entries(S.armed||{}).forEach(([t,a])=>next.push(`buy ${esc(t)} if it dips to ${money(a.entry)}`));
+    const weak=S.sync&&S.sync.pulse_up===false;
+    next.push(`a new buy if the market drops 2%+ and a stock is beaten down (panic rule), big news the team is sure about, or a dip to support${weak?" once the nuclear basket turns up":""}`);
+    $("brief").innerHTML=`<div class="bh"><b>Today</b><span>${new Date().toLocaleDateString(undefined,{weekday:"long",month:"long",day:"numeric"})}</span></div>
+      <div class="bl"><i>Done</i><p>${done}</p></div><div class="bl"><i>Holding</i><p>${holding}</p></div><div class="bl"><i>Next</i><p>${next.slice(0,3).map(x=>x[0].toUpperCase()+x.slice(1)).join(". ")}.</p></div>`;
+  }
   let m="";
   const holds=[...new Set(lineupT.concat(Object.keys(B.lots||{})))].filter(t=>lot(t,"trade").qty>1e-6||lot(t,"core").qty>1e-6);
   if(holds.length){m+=`<div class="h3">Holding now</div>`+holds.map(t=>{const L=lot(t,"trade").qty>1e-6?lot(t,"trade"):lot(t,"core"), avg=L.cost/(L.qty||1), now=P[t]??avg, pl=(now-avg)*L.qty;
-    return `<div class="tr"><div class="tk">${esc(t)}</div><div class="mid"><b>${esc(t)} ${lot(t,"trade").qty>1e-6?"trade":"long-term"}</b><span>${(+L.qty).toFixed(4)} shares at ${money(avg)}, now ${money(now)}</span></div><div class="amt ${pl>=0?"pos":"neg"}">${pl>=0?"+":"−"}$${Math.abs(pl).toFixed(2)}<span>${((now/avg-1)*100).toFixed(2)}%</span></div></div>`}).join("");}
+    return `<div class="tr" data-hc="${hc({t,k:lot(t,"trade").qty>1e-6?"trade":"core",L})}"><div class="tk">${esc(t)}</div><div class="mid"><b>${esc(t)} ${lot(t,"trade").qty>1e-6?"trade":"long-term"}</b><span>${(+L.qty).toFixed(4)} shares at ${money(avg)}, now ${money(now)}</span></div><div class="amt ${pl>=0?"pos":"neg"}">${pl>=0?"+":"−"}$${Math.abs(pl).toFixed(2)}<span>${((now/avg-1)*100).toFixed(2)}%</span></div></div>`}).join("");}
   const pan=[].concat(...["panic","auto","park"].map(k=>Object.keys(B.lots||{}).filter(t=>lot(t,k).qty>1e-6).map(t=>[t,k])));
   if(pan.length){if(!holds.length) m+=`<div class="h3">Holding now</div>`; m+=pan.map(([t,k])=>{const L=lot(t,k),avg=L.cost/(L.qty||1),now=P[t]??avg,pl=(now-avg)*L.qty;
-    return `<div class="tr"><div class="tk">${esc(t)}</div><div class="mid"><b>${esc(t)} ${k==="park"?"idle cash parked in the S&P 500":k==="auto"?(L.setup==="conviction"?"team conviction trade":"discovery trade"):"panic-day rebound"}</b><span>${(+L.qty).toFixed(4)} shares at ${money(avg)}, now ${money(now)}${k==="park"?", sold when a trade needs it":", sells "+esc(L.exit_on||"")}</span></div><div class="amt ${pl>=0?"pos":"neg"}">${pl>=0?"+":"−"}$${Math.abs(pl).toFixed(2)}<span>${((now/avg-1)*100).toFixed(2)}%</span></div></div>`}).join("");}
+    return `<div class="tr" data-hc="${hc({t,k,L})}"><div class="tk">${esc(t)}</div><div class="mid"><b>${esc(t)} ${k==="park"?"idle cash parked in the S&P 500":k==="auto"?(L.setup==="conviction"?"team conviction trade":"discovery trade"):"panic-day rebound"}</b><span>${(+L.qty).toFixed(4)} shares at ${money(avg)}, now ${money(now)}${k==="park"?", sold when a trade needs it":", sells "+fd(L.exit_on)}</span></div><div class="amt ${pl>=0?"pos":"neg"}">${pl>=0?"+":"−"}$${Math.abs(pl).toFixed(2)}<span>${((now/avg-1)*100).toFixed(2)}%</span></div></div>`}).join("");}
   const arms=Object.entries(S.armed||{});
-  if(arms.length) m+=`<div class="h3">Waiting to buy</div>`+arms.map(([t,a])=>`<div class="tr"><div class="tk">${esc(t)}</div><div class="mid"><b>${money(a.dollars)} at ${money(a.entry)}</b><span>${Math.abs(a.dist_to_entry_pct??0).toFixed(1)}% below now, until ${esc(a.valid_until)}</span></div><div class="amt mut">order</div></div>`).join("");
+  if(arms.length) m+=`<div class="h3">Waiting to buy</div>`+arms.map(([t,a])=>`<div class="tr" data-hc="${hc({t,k:"armed",a})}"><div class="tk">${esc(t)}</div><div class="mid"><b>${money(a.dollars)} at ${money(a.entry)}</b><span>${Math.abs(a.dist_to_entry_pct??0).toFixed(1)}% below now, until ${esc(a.valid_until)}</span></div><div class="amt mut">order</div></div>`).join("");
   const tr=(B.trades||[]).slice().reverse();
-  m+=`<div class="h3">Trades</div>`+(tr.length?tr.map(x=>`<div class="tr"><div class="tk">${esc(x.ticker)}</div><div class="mid"><b>${money(x.entry)} → ${money(x.exit)}</b><span>${esc(String(x.exit_time||"").slice(0,10))}, ${esc(x.why_out||"")}</span></div><div class="amt ${x.pnl>=0?"pos":"neg"}">${x.pnl>=0?"+":"−"}$${Math.abs(x.pnl).toFixed(2)}<span>${x.ret>=0?"+":""}${x.ret}%</span></div></div>`).join("")
+  m+=`<div class="h3">Trades</div>`+(tr.length?tr.map(x=>`<div class="tr" data-hc="${hc({t:x.ticker,k:"closed",x})}"><div class="tk">${esc(x.ticker)}</div><div class="mid"><b>${money(x.entry)} → ${money(x.exit)}</b><span>${esc(String(x.exit_time||"").slice(0,10))}, ${esc(x.why_out||"")}</span></div><div class="amt ${x.pnl>=0?"pos":"neg"}">${x.pnl>=0?"+":"−"}$${Math.abs(x.pnl).toFixed(2)}<span>${x.ret>=0?"+":""}${x.ret}%</span></div></div>`).join("")
      :`<p class="empty">No trades yet. Each closed trade shows here with what it bought, what it sold for, and what it made or lost.</p>`);
   $("minebody").innerHTML=m;
+  wireHC();
+  brief();
 
   /* ----- posts (public announcements) */
   const pend=(()=>{try{return JSON.parse(ls.get("pl_pending")||"[]")}catch(e){return []}})().filter(p=>!(S.feed||[]).some(f=>f.who==="owner"&&f.text.trim()===p.text.trim()));
