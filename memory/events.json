@@ -25583,5 +25583,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-23",
+"title": "Congress Reviews Saudi Nuclear Deal Amid Enrichment Concerns",
+"type": "intel_geopolitics",
+"source": "Intel: Legis1",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "LEU",
+"date": "2026-11-23",
+"title": "Congress Reviews Saudi Nuclear Deal Amid Enrichment Concerns",
+"type": "intel_geopolitics",
+"source": "Intel: Legis1",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]

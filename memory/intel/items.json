@@ -11123,5 +11123,103 @@
 "surges",
 "westinghouse"
 ]
+},
+{
+"id": "bb4ee1e1a45f30e5",
+"date": "2026-11-21",
+"ts": 1795248000,
+"title": "Orpheus Uranium (ASX:ORP) - Stock Analysis",
+"summary": "",
+"outlet": "Simply Wall St",
+"link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4wZWcwV3dkblEyaEpGRWk0NEtNQlNwbkZzUUxoSFMydnlxdGtaNDRzdUxMZzBPTE1qaXNnSm80UEhFVEp6S1R4M3g1TXhfd1gwNzJOX1lqQmhkQ0hnV0dzRUVpblRUTU90RHNNX3d1Qnh4SEF0b3VZcA?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.83,
+"score": 3.16,
+"echo_of": null,
+"w": [
+"analysis",
+"asx",
+"orp",
+"orpheus",
+"stock",
+"uranium"
+]
+},
+{
+"id": "b8175e38a640e7c2",
+"date": "2026-11-23",
+"ts": 1795450790,
+"title": "Westinghouse orders AP1000 demonstration parts from BWXT to qualify it as a reactor component supplier",
+"summary": "",
+"outlet": "MLQ.ai",
+"link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPX2liQkRQd3B6WHZpWVo3Z19kek45U2FYYkxkcl9IYUtNVnhOSzZxYl80LUlNcnMxZEFRSk9FVHpqOTliRlRFT3hnZ3lid3l3NVhjNFE2amZTbWxsMzVmU2FoRnBmb2U4QUdHQzc4N0VobWJCN3Zsa0NzcDdZVGJBc3NhSWpjdkg3SDI4RlRzZzRnZDJiZ3hHRGlReFFJc2hNX3VBVHJRek1Eby1tQlRnZkNvQUc1NFZqY1NzTVk3WWM?oc=5",
+"place": "Westinghouse",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.69,
+"score": 2.88,
+"echo_of": null,
+"w": [
+"ap1000",
+"bwxt",
+"component",
+"demonstration",
+"orders",
+"parts",
+"qualify",
+"reactor",
+"supplier",
+"westinghouse"
+]
+},
+{
+"id": "c71238280e152d73",
+"date": "2026-11-23",
+"ts": 1795452704,
+"title": "Congress Reviews Saudi Nuclear Deal Amid Enrichment Concerns",
+"summary": "",
+"outlet": "Legis1",
+"link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB5RG1rR1BucGdTMG9IM1JtNFJvOGVKdjlxUVVYOGtNSEJheERid3Rfb2pCTW82TVBGM1FSZ3VxSnRzMnUtUEx5QTc2NEVqZ1laTmladGpHNkRIMlUtYllKRDZIOGFFeEpER3Y1ekZHLU5XRWF3cmpV?oc=5",
+"place": "Congress and laws",
+"tickers": [
+"CCJ",
+"LEU",
+"CEG",
+"UEC",
+"UUUU"
+],
+"tags": [
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.67,
+"score": 5.14,
+"echo_of": null,
+"w": [
+"amid",
+"concerns",
+"congress",
+"deal",
+"enrichment",
+"nuclear",
+"reviews",
+"saudi"
+]
 }
 ]
