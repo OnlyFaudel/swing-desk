@@ -42,9 +42,42 @@ def build(tickers, start="2018-01-01"):
                     continue
                 ev.append({"ticker": t, "date": str(d.date()), "title": f"{t}: {typ.replace('price_', '').replace('_', ' ')} ({r[d] * 100:+.1f}% that day)",
                            "type": typ, "source": "prices", "r0": None, "r1": None, "r5": None, "r20": None, "r60": None, "x5": None, "x20": None})
+    ev += _macro(tickers, start)
     os.makedirs(os.path.dirname(PATH), exist_ok=True)
     json.dump(ev, open(PATH, "w"), separators=(",", ":"))
     return len(ev)
+
+
+MACRO = {"NG=F": ("natural gas", 0.05), "CL=F": ("oil", 0.04), "DX-Y.NYB": ("the dollar", 0.008), "^TNX": ("the 10-year yield", None), "^VIX": ("the VIX fear gauge", None)}
+
+
+def _macro(tickers, start):
+    """The economy's big daily moves, attached to every stock (so the engine can see which group they help or hurt) and
+    to the basket: gas sets power prices (CEG/VST/TLN), rates hit builders and miners raising money, the dollar and oil move commodities."""
+    import yfinance as yf
+    px = yf.download(list(MACRO), start=start, auto_adjust=True, progress=False)["Close"]
+    out = []
+    for sym, (name, thr) in MACRO.items():
+        s = px[sym].dropna()
+        if sym == "^TNX":
+            ch = s.diff()  # in yield points: 0.10 = 10 basis points
+            moves = {"up": ch >= 0.10, "down": ch <= -0.10}
+        elif sym == "^VIX":
+            ch = s.pct_change()
+            moves = {"up": ch >= 0.20, "down": ch <= -0.15}
+        else:
+            ch = s.pct_change()
+            moves = {"up": ch >= thr, "down": ch <= -thr}
+        key = name.split()[-1].replace("-", "")
+        for way, m in moves.items():
+            for d in m.index[m.fillna(False).values]:
+                if str(d.date()) < "2019-01-01":
+                    continue
+                title = f"Big day for {name}: {way} ({ch[d] * (1 if sym == '^TNX' else 100):+.2f}{'' if sym == '^TNX' else '%'})"
+                for t in list(tickers) + ["_basket"]:
+                    out.append({"ticker": t, "date": str(d.date()), "title": title, "type": f"macro_{key}_{way}", "source": "markets",
+                                "r0": None, "r1": None, "r5": None, "r20": None, "r60": None, "x5": None, "x20": None})
+    return out
 
 
 if __name__ == "__main__":

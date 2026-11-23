@@ -87,6 +87,14 @@ def run(min_n=30, min_half=10):
         for m in ("x1", "x5", "x20"):  # vs the basket's normal trend at the time
             test(f"{ty} (sector/government/peer news, whole basket)", basket, m)
 
+    # the market's verdict on the news: did the first day cheer it or punish it, and did that reaction keep going or reverse?
+    for ty in types:
+        if ty.startswith(("price_", "macro_")):
+            continue
+        stock = [e for e in ev if e["type"] == ty and e["ticker"] != "_basket" and e.get("r0") is not None]
+        for lab, cond in (("cheered (first day +3% or more)", lambda e: e["r0"] >= 3), ("punished (first day -3% or worse)", lambda e: e["r0"] <= -3)):
+            for m in ("x5", "x20"):
+                test(f"{ty} {lab} (all our stocks)", [e for e in stock if cond(e)], m)
     ok = _bh([t["p"] for t in tests])
     for t, k in zip(tests, ok):
         t["survives"] = bool(k and np.sign(t["older_avg"]) == np.sign(t["newer_avg"]) == np.sign(t["avg_pct"]) and t["avg_pct"] != 0)
