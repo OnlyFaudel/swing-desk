@@ -73,6 +73,10 @@
   "volume_profile_levels": {
    "trials": 12,
    "verdict": "2026-11-22 ADOPTED as a filter. From an order-flow video (value area / point of control). 9,877 Patient Levels practice trades 2024-2026, 52 stocks, profile = last 140 hourly bars before the decision, exact limit price. Levels BELOW the value area: -0.055R, 29% wins (n=2,177); in a THIN volume zone: 0.000R, 31% (n=2,627); inside value +0.382R; at the heaviest price +0.284R (44% wins); thick zone +0.330R. Skipping below-value or thin: kept +0.331R / 41% wins vs skipped +0.007R / 31%, both halves (old +0.43/+0.03, new +0.23/-0.01), 85% of tickers agree; nuclear 10 kept +0.279R vs skipped -0.019R. The video's specific claim (reversals at the value-area LOW) did NOT hold: +0.107R, below average. First attempt used the fill bar's low (look-ahead) and overstated it; corrected."
+  },
+  "auto_discovery": {
+   "trials": 181,
+   "verdict": "2026-11-23 01:33: the bot tested 124 event patterns on 8,125 events (older vs newer half, corrected for the number of tests). 0 hold up."
   }
  }
 }

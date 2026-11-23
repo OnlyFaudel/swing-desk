@@ -73,11 +73,18 @@ def fill(closes, path=None):
             if e.get(k) is None and len(after) > n:
                 e[k] = round((float(after.iloc[n]) / float(after.iloc[0]) - 1) * 100, 2)  # AFTER the first day: the tradable part
                 changed = True
-        if bk is not None:
+        if bk is not None and e["ticker"] != "_basket":
             b = bk.dropna(); ba = b[b.index >= d]
             for k, n in (("x5", 5), ("x20", 20)):
                 if e.get(k) is None and e.get("r" + k[1:]) is not None and len(ba) > n:
                     e[k] = round(e["r" + k[1:]] - (float(ba.iloc[n]) / float(ba.iloc[0]) - 1) * 100, 2)
+        elif e["ticker"] == "_basket":  # sector news: compare with the basket's NORMAL move at that time (its trend over the year before)
+            hist = c[c.index < d].iloc[-260:]
+            if len(hist) > 60:
+                for k, n in (("x1", 1), ("x5", 5), ("x20", 20)):
+                    if e.get(k) is None and e.get("r" + k[1:]) is not None:
+                        normal = float(((hist.shift(-n) / hist - 1) * 100).dropna().mean())
+                        e[k] = round(e["r" + k[1:]] - normal, 2)
     if changed:
         _save(path, ev)
 

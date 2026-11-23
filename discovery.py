@@ -18,7 +18,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, "research", "discoveries.json")
 ARCHIVE = os.path.join(ROOT, "memory", "archive_events.json")
 GROUPS = {"miners": ["CCJ", "NXE", "UEC", "DNN", "UUUU"], "fuel and tech": ["LEU", "BWXT"], "power": ["CEG", "VST", "TLN"]}
-PLAIN = {"x5": "vs the basket over the next 5 days", "x20": "vs the basket over the next 20 days",
+PLAIN = {"x1": "vs normal, the next day", "x5": "vs the basket (or its normal trend) over the next 5 days", "x20": "vs the basket (or its normal trend) over the next 20 days",
          "r5": "over the next 5 days", "r20": "over the next 20 days", "r1": "the next day"}
 
 
@@ -54,7 +54,14 @@ def run(min_n=30, min_half=10):
     tests = []
 
     def test(name, rows, metric):
-        v = [(e["date"], e[metric]) for e in rows if e.get(metric) is not None]
+        # news comes in clusters: everything in the same week (same stock) counts as ONE observation
+        wk = {}
+        for e in rows:
+            if e.get(metric) is None:
+                continue
+            k = (e["ticker"], dt.date.fromisoformat(e["date"]).isocalendar()[:2])
+            wk.setdefault(k, []).append((e["date"], e[metric]))
+        v = [(min(x[0] for x in xs), sum(x[1] for x in xs) / len(xs)) for xs in wk.values()]
         if len(v) < min_n:
             return
         v.sort()
@@ -76,7 +83,7 @@ def run(min_n=30, min_half=10):
             test(f"{ty} (all our stocks)", stock, m)
             for g, tks in GROUPS.items():
                 test(f"{ty} ({g})", [e for e in stock if e["ticker"] in tks], m)
-        for m in ("r1", "r5", "r20"):
+        for m in ("x1", "x5", "x20"):  # vs the basket's normal trend at the time
             test(f"{ty} (sector/government/peer news, whole basket)", basket, m)
 
     ok = _bh([t["p"] for t in tests])
@@ -87,6 +94,7 @@ def run(min_n=30, min_half=10):
     surv = sorted([t for t in tests if t["survives"]], key=lambda t: t["p"])
     out = {"run_at": dt.datetime.now().strftime("%Y-%m-%d %H:%M"), "events": len(ev), "tests_tonight": len(tests),
            "tests_ever": len(seen), "keys_seen": sorted(seen), "survivors": surv,
+           "method": "same-week events count once; single stocks vs the basket, sector news vs the basket's normal trend; older and newer half must agree; Benjamini-Hochberg 10% across the night's tests",
            "closest_misses": sorted([t for t in tests if not t["survives"]], key=lambda t: t["p"])[:15]}
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump(out, open(OUT, "w"), indent=1)
