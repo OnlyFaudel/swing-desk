@@ -645,6 +645,31 @@
    "decision": "SKIP",
    "reason": "The setup came in after a +7.5% day, and the chart is weak: the stock is 34% below its 200-day average and 15% below its 20-day high. Our notes say moves on recycled or stale news often reverse within",
    "evaluated": false
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "TLN",
+   "setup": "patient_level",
+   "zone": 354.24,
+   "entry": 355.66,
+   "stop": 349.99,
+   "target": 384.49,
+   "reward_risk": 5.09,
+   "dist_to_entry_pct": 2.99,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 312.55,
+    "value_high": 366.37,
+    "heaviest_price": 360.99,
+    "position": "inside value",
+    "node": "thick",
+    "node_ratio": 1.85,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The support zone at 354.24 sits inside a volume value area, but the stock is bouncing after a sharp rally (+9.9% today) inside a shaky market, and heavy put volume (put/call volume 5.35) suggests hedg",
+   "evaluated": false
   }
  ],
  "cooldown": {
@@ -4989,15 +5014,15 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.18761,
+  "day_usd": 0.18892,
   "month": "2026-11",
-  "month_usd": 0.45109,
-  "total_usd": 0.45109,
+  "month_usd": 0.4524,
+  "total_usd": 0.4524,
   "by_role": {
    "macro": 0.01625,
    "whale": 0.00861,
    "crowd": 0.00751,
-   "level": 0.027,
+   "level": 0.02831,
    "scout": 0.05249,
    "review": 0.05504,
    "auditor": 0.01318,
@@ -5103,19 +5128,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.48,
+  "CCJ": 61.45,
   "NXE": 6.79,
-  "UEC": 5.84,
+  "UEC": 5.82,
   "DNN": 1.8,
-  "UUUU": 5.3,
-  "LEU": 87.53,
-  "BWXT": 116.74,
-  "CEG": 250.47,
-  "VST": 125.5,
-  "TLN": 365.81,
-  "SPY": 723.66
+  "UUUU": 5.29,
+  "LEU": 87.42,
+  "BWXT": 116.69,
+  "CEG": 250.38,
+  "VST": 125.39,
+  "TLN": 365.36,
+  "SPY": 723.35
  },
- "last_cycle": "2026-11-23 14:31 ET",
+ "last_cycle": "2026-11-23 14:34 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -5140,10 +5165,10 @@
   ]
  },
  "brakes": {
-  "equity": 1035.51,
-  "day_pct": 3.5,
-  "week_pct": 3.5,
-  "drawdown_pct": -1.79,
+  "equity": 1034.85,
+  "day_pct": 3.43,
+  "week_pct": 3.43,
+  "drawdown_pct": -1.85,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -6213,6 +6238,14 @@
   [
    "2026-11-23 14:31",
    1035.51
+  ],
+  [
+   "2026-11-23 14:33",
+   1035.01
+  ],
+  [
+   "2026-11-23 14:34",
+   1034.85
   ]
  ],
  "nowcast": {
@@ -48856,7 +48889,7 @@
   "BWXT": 1795462308.9711826,
   "CEG": 1795462311.7693028,
   "VST": 1795462311.7817705,
-  "TLN": 1795460593.9158218
+  "TLN": 1795462448.799466
  },
  "setup_status": {
   "CCJ": "no confirmed support level below the price (it has been falling through them)",
@@ -48868,7 +48901,7 @@
   "BWXT": "the Level Analyst skipped the setup: The setup came in after a +7.5% day, and the chart is weak: the stock is 34% below its 200-day average and 15% below its 20-day high. Our notes say moves on recycl",
   "CEG": "no confirmed support level below the price (it has been falling through them)",
   "VST": "no confirmed support level below the price (it has been falling through them)",
-  "TLN": "the Level Analyst skipped the setup: The support zone at 354.24 sits inside the thick value area, which is weak support, and the stock is up 9.4% today on a sector bounce while VST and the broader mar"
+  "TLN": "the Level Analyst skipped the setup: The support zone at 354.24 sits inside a volume value area, but the stock is bouncing after a sharp rally (+9.9% today) inside a shaky market, and heavy put volume"
  },
  "sync": {
   "pulse_up": false,
@@ -50615,7 +50648,7 @@
     0.9396
    ]
   },
-  "time": "2026-11-23 14:31"
+  "time": "2026-11-23 14:34"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -201152,6 +201185,16 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-23 14:34",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping the TLN setup. The price is bouncing hard after a big one-day rally inside a weak market, and the PJM auction-delay headlines are fresh risk that could break the support zone before our buy fills. I agree with the Macro Analyst that we shouldn't add new buys into a bounce.\n\nWhy: I checked the chart, whale put/call read, and the recent PJM headlines against the setup; the bounce and event risk outweigh the support zone. The desk's own TLN history shows company-news and bounce-day outcomes are weak, so I see no edge to take.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -201596,7 +201639,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 14:31",
+  "updated": "2026-11-23 14:34",
   "total": 362,
   "week": 318,
   "places": {
@@ -202626,6 +202669,14 @@
     "surfaced": false
    },
    {
+    "date": "2026-12-09",
+    "ticker": "TLN",
+    "what": "FOMC rate decision; broad risk-off or risk-on move that can drive nuclear and power names with it.",
+    "by": "level",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
     "date": "2026-12-21",
     "ticker": "CCJ",
     "what": "NRC public comment period closes on draft EA/PA for Crownpoint ISR project",
@@ -203140,6 +203191,11 @@
    "name": "power_weather",
    "trials": 8,
    "verdict": "2026-11-23 (Open-Meteo history 2019-2026, first day of each extreme streak, next 5 days vs group): PJM heat 93F+ 3 days ahead CEG/TLN/VST +1.36% (69% beat, n=26, halves +0.3/+2.5); day-of +0.6%; Texas heat 100F+ VST -1.0%/-1.7% (n=18); Texas cold <=25F VST -3.0%/-0.9% (n=7); PJM cold ~0. Context only (forecast watch + alerts); no trade."
+  },
+  {
+   "name": "big_move_precursors",
+   "trials": 13,
+   "verdict": "2026-11-23 (10 nuclear + ~74 related, daily, mid-2019 to Nov 2026, 138k stock-days; event = a +20% high within 10 days, base rate 5.1%): 20-day volatility >70%/yr 27.5% (5.4x) but also 6.9% fall 20%+; down 30%+ from 60-day high 28.0% (5.5x); up 15%+ in 5 days 27.0%; down 15%+ in 5 days 27.5% (9.4% fall 20%+); volume 3x 14.4% (2.9x); high vol + volume 3x 36.6% (7.2x), avg 10-day +7.4%, 9.8% fall 20%+ (n=276 overlapping days); both halves agree. Big runs come from volatile names in motion, in both directions; low volatility almost never (0.8%). Overlapping rows and survivorship (names picked after their run) inflate averages. Not a trade yet: a proper rule test with cooldowns and costs is next."
   }
  ],
  "notebook": [
@@ -203503,12 +203559,12 @@
    "built": "2026-11-23 14:13"
   }
  ],
- "heartbeat": "2026-11-23 14:31",
+ "heartbeat": "2026-11-23 14:34",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 121,
+ "_pushed_feed": 122,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -203615,8 +203671,8 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 116.74,
-  "TLN": 365.805
+  "BWXT": 116.685,
+  "TLN": 365.36
  },
  "notes_audit": {
   "scout": {
@@ -203644,16 +203700,16 @@
    "since": "2026-11-23"
   },
   "level": {
-   "asked": 17,
-   "used": 15,
+   "asked": 18,
+   "used": 16,
    "notes": {
-    "TLN Snapshot": 7,
-    "TLN Price behavior": 6,
+    "TLN Snapshot": 8,
+    "TLN Price behavior": 7,
     "TLN Discoveries": 3,
-    "TLN Our trades": 6,
+    "TLN Our trades": 7,
     "VST Snapshot": 3,
     "VST Price behavior": 2,
-    "TLN What history says": 4,
+    "TLN What history says": 5,
     "desk_notes intel: PJM capacity auction delay": 1,
     "TLN intel_disruption (PJM auction delay)": 1,
     "SECTOR macro: market regime": 1,
@@ -203910,7 +203966,7 @@
    ],
    [
     "2026-11-23",
-    61.49
+    61.46
    ]
   ],
   "NXE": [
@@ -204032,7 +204088,7 @@
    ],
    [
     "2026-11-23",
-    6.8
+    6.78
    ]
   ],
   "UEC": [
@@ -204154,7 +204210,7 @@
    ],
    [
     "2026-11-23",
-    5.84
+    5.82
    ]
   ],
   "DNN": [
@@ -204520,7 +204576,7 @@
    ],
    [
     "2026-11-23",
-    87.58
+    87.53
    ]
   ],
   "BWXT": [
@@ -204642,7 +204698,7 @@
    ],
    [
     "2026-11-23",
-    116.72
+    116.62
    ]
   ],
   "CEG": [
@@ -204764,7 +204820,7 @@
    ],
    [
     "2026-11-23",
-    250.48
+    250.34
    ]
   ],
   "VST": [
@@ -204886,7 +204942,7 @@
    ],
    [
     "2026-11-23",
-    125.53
+    125.4
    ]
   ],
   "TLN": [
@@ -205008,7 +205064,7 @@
    ],
    [
     "2026-11-23",
-    365.8
+    365.36
    ]
   ]
  },
