@@ -88,6 +88,14 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "BWXT",
+"what": "Resting buy at $115.83 expires; check whether price has retested the $115.37 support zone after the AP1000 pop",
+"by": "questioner",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
@@ -179,6 +187,14 @@
 "date": "2026-12-09",
 "ticker": "TLN",
 "what": "FOMC decision and PJM December capacity auction context; a delay or ruling could move TLN and the nuclear power names.",
+"by": "level",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-09",
+"ticker": "BWXT",
+"what": "FOMC rate decision; broad risk-off or risk-on move that can pull BWXT with the nuclear group.",
 "by": "level",
 "written": "2026-11-23",
 "surfaced": false

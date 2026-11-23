@@ -202,7 +202,8 @@
   "weather:2026-11-23": true,
   "questioner:2026-11-23:6": true,
   "armednote:BWXT:2026-11-23": true,
-  "pulsehold:2026-11-23": true
+  "pulsehold:2026-11-23": true,
+  "questioner:2026-11-23:7": true
  },
  "benchmark": {
   "shares": {
@@ -569,6 +570,31 @@
    "decision": "SKIP",
    "reason": "The support zone (354.24) sits inside a thick volume node (value area 312-366, heaviest volume at 361), so the level is weak and a break would have no clean support below. Recent PJM consumer-advocate",
    "evaluated": false
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "BWXT",
+   "setup": "patient_level",
+   "zone": 116.12,
+   "entry": 116.58,
+   "stop": 114.73,
+   "target": 119.41,
+   "reward_risk": 1.52,
+   "dist_to_entry_pct": 0.33,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 114.46,
+    "value_high": 134.11,
+    "heaviest_price": 117.21,
+    "position": "at the heaviest price",
+    "node": "thick",
+    "node_ratio": 2.64,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "Price is 116.53 after a +7.4% day, and the setup's entry (116.58) sits right on today's spike, so a resting buy there is buying the bounce itself. The 20-day high is 15% above price and 50-day average",
+   "evaluated": false
   }
  ],
  "cooldown": {
@@ -576,30 +602,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "LEU",
-   "source": "Google News: \"Centrus Energy\"",
-   "title": "Centrus Energy stock hits 52-week low at 84.66 USD - Investing.com",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVGR2MXJmSE94eV9VYmxTdXk5NHI2THVnQjN5UnFMYUR3azhNNnNlYlZheFVrOWN3YlZXVXkyUWRCZHJVMGJQQUR4OEFVSDJPbXJBSnRwLUV2ak94RkR1Q2JiZTlQRDE2YjVJWVo2ZnVOR1EzZXQzVUI0QlM4MFpFbml4QlpYd2tmS0E2OTNZSUNkME1NNmZrY2RSanRIekhfRWJINlpYVnA?oc=5",
-   "ts": 1795192517,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Is Cameco (TSX:CCO) Undervalued After Its Loss And New $1b Share Sale Plan? - Simply Wall St",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVUstemctTm9za2dBU1pXd0VqUFlWaTNNblkxVHVMNjRuem5tMW1UdFFIcExIaWxzR0hIOGJkZkVYZVJmQThjcWpLdkdPejgtYjR4RVdBVGtYUWJQTHVRU0RXSDNCVGd1WHV1emkzMDBJeG92UTdTUE9wbEpQSEwzX29rV01fdGpPOGloNVFOMy1pMmhQeE5RSDZEV1QxU000eXhMTHhHRXlaTnR5eTR0MExQSWRaeXRKRkdZekVYT2xYdy1a0gHKAUFVX3lxTFBtLUc1S1NxbEdDWmh2Z3g5NXBKSmxVTVBQVnpwMThxcEo2di11ME50WDJvU29CUTJZZ0dkZnFOY1J2SXJHMkM5MzcxcDhRWENDRE9KNnFPTVNIMkVkYTE2SEhjSklxVjFNem9xNVQtWnNuWUF1X0hWbXAteUhFdE05dHpBTGVtMnVFaXNMd1JKbGR0TFV5Vi1IR2lOVWRRTXdmWkFiSF9lcGtINThUaGpIQzNOVUtfenNIRy0xTWVmcy1ZRXJJM3NzQmc?oc=5",
-   "ts": 1795190977,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
   {
    "ticker": "BWXT",
    "source": "Google News",
@@ -3575,6 +3577,30 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Headline is a price-move recap; the cause (Nvidia's Huang returning) is an AI-sentiment story, not CCJ-specific news."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Yahoo Finance",
+   "title": "What Sent Cameco Stock Lower Again?",
+   "link": "https://www.trefis.com/stock/ccj/articles/627836/what-sent-cameco-stock-lower-again/2026-11-23?.tsrc=rss",
+   "ts": 1795459266,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "down",
+   "event_type": "other",
+   "why": "Headline is a recycled 'what sent it lower' recap; the SEC probe story is about Nvidia, not Cameco."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Yahoo (CEG, related to CCJ)",
+   "title": "AI Energy Stocks, From Fuel Cells To Uranium, Leap As Nvidia Soars",
+   "link": "https://finance.yahoo.com/m/e2fe0876-9cdd-3a2d-96b4-7860f584a20d/ai-energy-stocks%2C-from-fuel.html?.tsrc=rss",
+   "ts": 1795459325,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Sector-wide AI energy rally recap; CCJ only indirectly mentioned via supply-chain link."
   }
  ],
  "reviews": [
@@ -4913,16 +4939,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.1744,
+  "day_usd": 0.18248,
   "month": "2026-11",
-  "month_usd": 0.43788,
-  "total_usd": 0.43788,
+  "month_usd": 0.44596,
+  "total_usd": 0.44596,
   "by_role": {
    "macro": 0.01625,
    "whale": 0.00861,
    "crowd": 0.00751,
-   "level": 0.02113,
-   "scout": 0.04904,
+   "level": 0.0244,
+   "scout": 0.04996,
    "review": 0.05504,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -4930,9 +4956,9 @@
    "risk": 0.01551,
    "investigator": 0.13026,
    "postmortem": 0.00035,
-   "researcher": 0.00295,
+   "researcher": 0.00484,
    "engineer": 0.00068,
-   "questioner": 0.00193
+   "questioner": 0.00393
   }
  },
  "desk_log": [
@@ -5027,19 +5053,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.26,
-  "NXE": 6.79,
+  "CCJ": 61.17,
+  "NXE": 6.78,
   "UEC": 5.78,
   "DNN": 1.79,
   "UUUU": 5.26,
-  "LEU": 87.19,
-  "BWXT": 116.48,
-  "CEG": 250.01,
-  "VST": 125.09,
-  "TLN": 363.34,
-  "SPY": 721.64
+  "LEU": 87.18,
+  "BWXT": 116.34,
+  "CEG": 249.72,
+  "VST": 124.94,
+  "TLN": 363.72,
+  "SPY": 721.03
  },
- "last_cycle": "2026-11-23 13:54 ET",
+ "last_cycle": "2026-11-23 14:00 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -5064,10 +5090,10 @@
   ]
  },
  "brakes": {
-  "equity": 1033.13,
-  "day_pct": 3.26,
-  "week_pct": 3.26,
-  "drawdown_pct": -2.02,
+  "equity": 1032.92,
+  "day_pct": 3.24,
+  "week_pct": 3.24,
+  "drawdown_pct": -2.04,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -6013,6 +6039,26 @@
   [
    "2026-11-23 13:54",
    1033.13
+  ],
+  [
+   "2026-11-23 13:55",
+   1033.14
+  ],
+  [
+   "2026-11-23 13:57",
+   1033.02
+  ],
+  [
+   "2026-11-23 13:58",
+   1033.34
+  ],
+  [
+   "2026-11-23 13:59",
+   1033.44
+  ],
+  [
+   "2026-11-23 14:00",
+   1032.92
   ]
  ],
  "nowcast": {
@@ -48647,15 +48693,15 @@
   }
  },
  "last_scan": {
-  "CCJ": 1795458638.1605043,
-  "NXE": 1795458638.4160073,
-  "UEC": 1795458638.4875414,
-  "DNN": 1795458638.5941954,
-  "UUUU": 1795458638.6748421,
-  "LEU": 1795458638.7472982,
-  "BWXT": 1795458638.8649702,
-  "CEG": 1795458641.4941723,
-  "VST": 1795458641.5709035,
+  "CCJ": 1795460452.3808224,
+  "NXE": 1795460452.6404798,
+  "UEC": 1795460452.7325273,
+  "DNN": 1795460452.826751,
+  "UUUU": 1795460452.932847,
+  "LEU": 1795460453.008857,
+  "BWXT": 1795460453.0917027,
+  "CEG": 1795460456.5385044,
+  "VST": 1795460456.6152155,
   "TLN": 1795458729.5061414
  },
  "setup_status": {
@@ -48665,7 +48711,7 @@
   "DNN": "no confirmed support level below the price (it has been falling through them)",
   "UUUU": "no confirmed support level below the price (it has been falling through them)",
   "LEU": "no confirmed support level below the price (it has been falling through them)",
-  "BWXT": "setup found",
+  "BWXT": "the Level Analyst skipped the setup: Price is 116.53 after a +7.4% day, and the setup's entry (116.58) sits right on today's spike, so a resting buy there is buying the bounce itself. The 20-day high ",
   "CEG": "no confirmed support level below the price (it has been falling through them)",
   "VST": "no confirmed support level below the price (it has been falling through them)",
   "TLN": "the Level Analyst skipped the setup: The support zone (354.24) sits inside a thick volume node (value area 312-366, heaviest volume at 361), so the level is weak and a break would have no clean suppor"
@@ -50415,7 +50461,7 @@
     0.9395
    ]
   },
-  "time": "2026-11-23 13:54"
+  "time": "2026-11-23 14:00"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -50429,11 +50475,11 @@
   "6903f08684a06b0c",
   "982258a10913aaf8",
   "a139bb0be8a41b23",
+  "f16660c269a6613c",
   "22a45a3c7284120a",
-  "6c0f0f111a586f76",
   "08d8363ed1ddeb47",
   "cdc78121c1406bce",
-  "f16660c269a6613c",
+  "6c0f0f111a586f76",
   "306dc38d51c88387",
   "32cfd9ef3704009d",
   "5c4b59b788680232",
@@ -50476,12 +50522,12 @@
   "8d0283e176b666a8",
   "17b21557a779a003",
   "ceb6205483ccef34",
+  "a00037110572bad0",
   "13880e66390f270d",
+  "acd35ca94b40c5e4",
   "5c88c6637836b8c6",
   "db717c49c87232b4",
-  "acd35ca94b40c5e4",
   "cb12badf9a3dbea8",
-  "a00037110572bad0",
   "dfaa19a96155f693",
   "4045069ffe34905f",
   "009c12e19cf7cb10",
@@ -50533,6 +50579,7 @@
   "9850b181472b7c24",
   "41ed20a8cec5e591",
   "2cbbc694a2695e84",
+  "855ac1a10429d2f5",
   "c33e85f70d2f743d",
   "269219f13ec4aa2f",
   "e12d3a4edb7295a2",
@@ -50554,7 +50601,6 @@
   "68b8d7111ead5bfd",
   "ed1aa0f23535adaa",
   "717c47c79d590a65",
-  "05ad7d5a34131c8c",
   "a74aab1c387c2b31",
   "14550cc72dba894e",
   "09bd7b0e348df04b",
@@ -50646,6 +50692,7 @@
   "6ae4fd45dc301c0d",
   "92c36fef260edb24",
   "813ce322cba7c1e5",
+  "9dd14dae753c141a",
   "7a634663fcf720f5",
   "2c2cc3e5488f76ac",
   "bfa4d042201cf513",
@@ -50672,6 +50719,7 @@
   "065e0289f5f77d47",
   "21512a406503e470",
   "020569e75e7d456e",
+  "bf01a2cc0277276c",
   "2c25658f7d8bb1d4",
   "47c56c7f6c4b5614",
   "888d96e0923cd600",
@@ -50695,12 +50743,12 @@
   "3e8dd4ce58da4a9b",
   "313a0e04a5719e86",
   "8b9f115784388b61",
-  "9dd14dae753c141a",
+  "05ad7d5a34131c8c",
   "7aa8997d91d8e2dc",
   "2f0e6fcd07e9c356",
   "00667c7b98791b66"
  ],
- "news_slow_at": 1795459620.5807145,
+ "news_slow_at": 1795460229.3614528,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -199649,6 +199697,41 @@
    ],
    "practice": false,
    "end": "13:43"
+  },
+  {
+   "id": "20261123140043200984",
+   "title": "The Questioner, Nov 23 14:00",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-23 14:00",
+   "msgs": [
+    {
+     "t": "14:00",
+     "who": "questioner",
+     "to": "level",
+     "text": "The desk keeps asking about the same TLN resting buy at $355.66 while the stock sits near $364, and the team has already answered that. The fresh thing I notice is BWXT: it jumped 7.4% on a Westinghouse manufacturing headline with no disclosed dollar value, yet the desk's own history says that kind of news pop tends to fade, and the basket is still below its 10-day average. I'd like to know whether anyone has checked if the BWXT setup is being stalked just because the price bounced, not because it reached a real support level.",
+     "outcome": false,
+     "notes": "question: BWXT rallied 7.4% on the AP1000 demonstration-parts headline, but the price is still down about 8% on the month and 15% below its 20-day high. Does the $115.37 support zone mean anything after a news-driven spike, or is it just where the price happened to be before the pop?\nwhy it might matter: If the support level was drawn from before the news bounce, a resting buy there may chase a fading headline instead of a real floor.\nask: level\nkind: odd\nquestion: The AP1000 headline has no disclosed contract value, so is this news big enough to change BWXT's revenue outlook, or is it a small qualification step that the market is overpricing?\nwhy it might matter: If the deal is immaterial, the 7% pop is noise and fades; if it is material, the level could hold.\nask: researcher\nkind: maybe_irrelevant\nwhy: BWXT's 7.4% day rests on a headline with no dollar value, and the desk's notes say n"
+    },
+    {
+     "t": "14:00",
+     "who": "level",
+     "to": "questioner",
+     "text": "The $115.37 zone was drawn before the news pop, and the price has since run 7.4% above the zone's level, so it's a stale level, not a fresh floor. Nothing in the desk's notes shows support forming after the headline, and the basket is still below its 10-day average, so no new buys are allowed anyway. I agree with the Risk Manager that the basket rule should block this, and I'd treat the BWXT setup as stale until the price actually retests a zone drawn from after the bounce.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: research\nresearch test: Redraw the BWXT support zone using only price action after the 2026-11-23 AP1000 headline, then check whether the 20-day fade pattern from past contract pops (median -2.8%) holds before any resting buy is considered.\nwhy: BWXT is up 7.4% on the day but still 15% below its 20-day high, so the old $115.37 zone predates the bounce and does not describe current support. The desk's own contract-news history and the basket-below-10-day-average rule both argue against treating this as a floor.\nticker: BWXT\ndirection: down\ndays: 5\nfiles read: BWXT Snapshot, BWXT What history says, BWXT Our trades"
+    },
+    {
+     "t": "14:00",
+     "who": "researcher",
+     "to": "questioner",
+     "text": "The AP1000 headline is a qualification step with no disclosed dollar value, and BWXT's own history shows contract-news pops tend to fade over 20 days (median -2.8%), so I don't think it changes the revenue outlook. I agree with the Level Analyst that the $115.37 zone predates the bounce and is stale, and the basket is below its 10-day average, so no new buy either way.",
+     "outcome": false,
+     "notes": "verdict: irrelevant\naction: none\nresearch test: Once a dollar value for the AP1000 qualification work is disclosed, compare BWXT's 20-day return against the desk's historical contract-deal median to see whether this headline was material.\nwhy: The deal has no disclosed value and BWXT's past contract news (5 cases) faded: median next-20-day return -2.8%, only 40% up. The move is a sharp one-day bounce inside a downtrend, and the level being watched was drawn before the pop.\nticker: BWXT\ndirection: down\ndays: 5\nfiles read: BWXT Deals and contracts, BWXT Snapshot, BWXT Discoveries"
+    }
+   ],
+   "practice": false,
+   "end": "14:00"
   }
  ],
  "feed": [
@@ -200865,6 +200948,29 @@
    ],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-23 14:00",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: BWXT rallied 7.4% on the AP1000 demonstration-parts headline, but the price is still down about 8% on the month and 15% below its 20-day high. Does the $115.37 support zone mean anything after a news-driven spike, or is it just where the price happened to be before the pop? -> relevant | The AP1000 headline has no disclosed contract value, so is this news big enough to change BWXT's revenue outlook, or is it a small qualification step that the market is overpricing? -> irrelevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 14:00",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping BWXT. The buy point is basically today's +7% bounce price, and past BWXT news pops have faded over the following weeks, so I don't trust this level to hold. I agree with the Macro Analyst that the market regime is shaky and we shouldn't add risk into a relief rally.\n\nWhy: The setup's zone is the spot where the bounce started, and BWXT contract-news history shows a fade afterward, not a support hold. Combined with a weak macro tape and the basket below its 10-day average, the risk outweighs this setup.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -201309,7 +201415,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 13:54",
+  "updated": "2026-11-23 14:00",
   "total": 357,
   "week": 314,
   "places": {
@@ -201983,7 +202089,6 @@
   "38d326870f86784b",
   "23f0910e96eb7de3",
   "537b32f5b2133213",
-  "28eaa442b6a19a6f",
   "8a7a925eda752f82",
   "5298ad87eeddc34f",
   "49be13755057758d",
@@ -202006,7 +202111,8 @@
   "515517f776442fe4",
   "88e6a210eab92423",
   "9e7ebdf62031eeaf",
-  "4bcec70e5161a23d"
+  "4bcec70e5161a23d",
+  "28eaa442b6a19a6f"
  ],
  "panic_log": [
   {
@@ -202210,6 +202316,14 @@
     "surfaced": false
    },
    {
+    "date": "2026-11-30",
+    "ticker": "BWXT",
+    "what": "Resting buy at $115.83 expires; check whether price has retested the $115.37 support zone after the AP1000 pop",
+    "by": "questioner",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
     "date": "2026-12-01",
     "ticker": "UUUU",
     "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
@@ -202301,6 +202415,14 @@
     "date": "2026-12-09",
     "ticker": "TLN",
     "what": "FOMC decision and PJM December capacity auction context; a delay or ruling could move TLN and the nuclear power names.",
+    "by": "level",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-09",
+    "ticker": "BWXT",
+    "what": "FOMC rate decision; broad risk-off or risk-on move that can pull BWXT with the nuclear group.",
     "by": "level",
     "written": "2026-11-23",
     "surfaced": false
@@ -202918,7 +203040,12 @@
    "next": "Drop it. Do not add weekday filters unless a new, independent test shows a clear, consistent effect."
   }
  ],
- "research_queue": [],
+ "research_queue": [
+  {
+   "q": "Questioner: Redraw the BWXT support zone using only price action after the 2026-11-23 AP1000 headline, then check whether the 20-day fade pattern from past contract pops (median -2.8%) holds before any resting buy is considered.",
+   "date": "2026-11-23"
+  }
+ ],
  "research_candidates": [
   {
    "key": "open_fill == True",
@@ -203170,7 +203297,7 @@
    "built": "2026-11-23 13:42"
   }
  ],
- "heartbeat": "2026-11-23 13:54",
+ "heartbeat": "2026-11-23 14:00",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -203282,21 +203409,21 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 116.4800033569336,
-  "TLN": 363.3399963378906
+  "BWXT": 116.34,
+  "TLN": 363.72
  },
  "notes_audit": {
   "scout": {
-   "asked": 28,
-   "used": 27,
+   "asked": 30,
+   "used": 29,
    "notes": {
     "TLN Deals and contracts": 1,
-    "CCJ Deals and contracts": 9,
+    "CCJ Deals and contracts": 11,
     "BWXT Deals and contracts": 9,
     "SECTOR Government and laws": 7,
     "UUUU Deals and contracts": 6,
     "SECTOR Countries": 9,
-    "CEG Deals and contracts": 3,
+    "CEG Deals and contracts": 4,
     "NXE Legal": 1,
     "NXE Deals and contracts": 1,
     "DNN Deals and contracts": 1,
@@ -203304,13 +203431,14 @@
     "LEU Deals and contracts": 2,
     "UEC Deals and contracts": 1,
     "UUUU Legal": 1,
-    "SECTOR Uranium market": 1
+    "SECTOR Uranium market": 1,
+    "CCJ Legal": 1
    },
    "since": "2026-11-23"
   },
   "level": {
-   "asked": 13,
-   "used": 11,
+   "asked": 15,
+   "used": 13,
    "notes": {
     "TLN Snapshot": 6,
     "TLN Price behavior": 5,
@@ -203322,12 +203450,13 @@
     "desk_notes intel: PJM capacity auction delay": 1,
     "TLN intel_disruption (PJM auction delay)": 1,
     "SECTOR macro: market regime": 1,
-    "BWXT Snapshot": 5,
-    "BWXT What history says": 3,
-    "BWXT Price behavior": 5,
-    "SECTOR Uranium market": 3,
-    "BWXT Our trades": 4,
-    "sector_pulse": 1
+    "BWXT Snapshot": 7,
+    "BWXT What history says": 5,
+    "BWXT Price behavior": 6,
+    "SECTOR Uranium market": 4,
+    "BWXT Our trades": 5,
+    "sector_pulse": 1,
+    "BWXT Discoveries": 1
    },
    "since": "2026-11-23"
   },
@@ -203430,12 +203559,25 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 1,
-   "used": 1,
+   "asked": 2,
+   "used": 2,
    "notes": {
     "TLN Snapshot": 1,
     "TLN News": 1,
-    "coming_up": 1
+    "coming_up": 1,
+    "BWXT Snapshot": 1,
+    "BWXT News": 1,
+    "BWXT Legal": 1
+   },
+   "since": "2026-11-23"
+  },
+  "researcher": {
+   "asked": 1,
+   "used": 1,
+   "notes": {
+    "BWXT Deals and contracts": 1,
+    "BWXT Snapshot": 1,
+    "BWXT Discoveries": 1
    },
    "since": "2026-11-23"
   }
@@ -203561,7 +203703,7 @@
    ],
    [
     "2026-11-23",
-    61.26
+    61.2
    ]
   ],
   "NXE": [
@@ -204171,7 +204313,7 @@
    ],
    [
     "2026-11-23",
-    87.19
+    87.25
    ]
   ],
   "BWXT": [
@@ -204293,7 +204435,7 @@
    ],
    [
     "2026-11-23",
-    116.48
+    116.39
    ]
   ],
   "CEG": [
@@ -204415,7 +204557,7 @@
    ],
    [
     "2026-11-23",
-    250.01
+    249.72
    ]
   ],
   "VST": [
@@ -204537,7 +204679,7 @@
    ],
    [
     "2026-11-23",
-    125.09
+    124.96
    ]
   ],
   "TLN": [
@@ -204659,7 +204801,7 @@
    ],
    [
     "2026-11-23",
-    363.34
+    364.01
    ]
   ]
  },
@@ -204763,6 +204905,36 @@
    "price": 250.8,
    "result": null,
    "why": "Morgan Stanley keeping Overweight with a $2 target bump is a small, expected update. Our CEG deal history shows the median next-20-day move after contract news was negative, so this headline alone giv"
+  },
+  {
+   "role": "scout",
+   "ticker": "CCJ",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-23",
+   "price": 61.27,
+   "result": null,
+   "why": "The headline is a stale recap, and the SEC probe is tied to Nvidia's stock. The CCJ legal and deal notes show nothing current that changes the picture, so I'm scoring it low."
+  },
+  {
+   "role": "questioner",
+   "ticker": "BWXT",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-23",
+   "price": 116.34,
+   "result": null,
+   "why": "BWXT's 7.4% day rests on a headline with no dollar value, and the desk's notes say news-driven pops in this name tended to fade over about 20 days. The TLN question has already been asked twice, so I "
+  },
+  {
+   "role": "researcher",
+   "ticker": "BWXT",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-23",
+   "price": 116.34,
+   "result": null,
+   "why": "The deal has no disclosed value and BWXT's past contract news (5 cases) faded: median next-20-day return -2.8%, only 40% up. The move is a sharp one-day bounce inside a downtrend, and the level being "
   }
  ],
  "after_sale": [],
@@ -205000,6 +205172,24 @@
    "answer": "I checked the desk files and the headlines we have for PJM. Nothing I can see shows the December capacity-auction delay has been decided; the only mention is the Talen 'pullback opportunity' article, which doesn't report a regulator decision. Since the earnings driver is still pending, I'd treat the 9% jump as pricing in an unresolved outcome, and I agree with the Risk Manager that the resting TLN buy shouldn't be left in place into this bounce.",
    "verdict": "relevant",
    "action": "watch"
+  },
+  {
+   "t": "2026-11-23 14:00",
+   "question": "BWXT rallied 7.4% on the AP1000 demonstration-parts headline, but the price is still down about 8% on the month and 15% below its 20-day high. Does the $115.37 support zone mean anything after a news-driven spike, or is it just where the price happened to be before the pop?",
+   "kind": "odd",
+   "asked": "level",
+   "answer": "The $115.37 zone was drawn before the news pop, and the price has since run 7.4% above the zone's level, so it's a stale level, not a fresh floor. Nothing in the desk's notes shows support forming after the headline, and the basket is still below its 10-day average, so no new buys are allowed anyway. I agree with the Risk Manager that the basket rule should block this, and I'd treat the BWXT setup as stale until the price actually retests a zone drawn from after the bounce.",
+   "verdict": "relevant",
+   "action": "research"
+  },
+  {
+   "t": "2026-11-23 14:00",
+   "question": "The AP1000 headline has no disclosed contract value, so is this news big enough to change BWXT's revenue outlook, or is it a small qualification step that the market is overpricing?",
+   "kind": "maybe_irrelevant",
+   "asked": "researcher",
+   "answer": "The AP1000 headline is a qualification step with no disclosed dollar value, and BWXT's own history shows contract-news pops tend to fade over 20 days (median -2.8%), so I don't think it changes the revenue outlook. I agree with the Level Analyst that the $115.37 zone predates the bounce and is stale, and the basket is below its 10-day average, so no new buy either way.",
+   "verdict": "irrelevant",
+   "action": "none"
   }
  ],
  "reactor_view": {
