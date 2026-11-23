@@ -39,7 +39,7 @@
   "materiality_to_convene_desk": 7,
   "desk_cooldown_minutes": 120,
   "budget_daily_usd": null,
-  "budget_monthly_usd": 15.0,
+  "budget_monthly_usd": 4,
   "poll_seconds": 120,
   "notify": {
     "trades": true,
@@ -424,5 +424,7 @@
     "max_names": 3,
     "_note": "Strategy #2. Buys between 3:30 and 3:58 pm ET on a market panic day; needs a run in that window (the always-on computer). On a LIVE broker it obeys the promotion gate and loss brakes.",
     "take_profit_pct": 10
-  }
+  },
+  "budget_total_usd": 4.5,
+  "_budget_note": "budget_total_usd = prepaid Claude credit minus a safety margin ($5 loaded Nov 2026). When it is reached the agents go quiet and the rules keep trading. Raise it when credit is added."
 }

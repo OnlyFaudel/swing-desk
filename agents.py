@@ -81,6 +81,9 @@ class Desk:
         if self.spend["month"] != month:
             self.spend["month"], self.spend["month_usd"] = month, 0.0
         day_cap = self.cfg.get("budget_daily_usd")
+        total_cap = self.cfg.get("budget_total_usd")  # matches the prepaid credit: stop before the balance hits zero
+        if total_cap is not None and self.spend.get("total_usd", 0) >= total_cap:
+            raise Budget(f"Agent budget reached: ${self.spend.get('total_usd', 0):.2f} of the ${total_cap:.2f} credit used. Add credit and raise budget_total_usd.")
         if (day_cap is not None and self.spend["day_usd"] >= day_cap) or self.spend["month_usd"] >= self.cfg["budget_monthly_usd"]:
             raise Budget(f"Agent budget reached (today ${self.spend['day_usd']:.2f}, month ${self.spend['month_usd']:.2f})")
 
