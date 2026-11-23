@@ -4652,19 +4652,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.93,
-  "NXE": 6.86,
-  "UEC": 5.76,
-  "DNN": 1.81,
-  "UUUU": 5.38,
-  "LEU": 88.38,
-  "BWXT": 113.06,
-  "CEG": 249.63,
-  "VST": 122.31,
-  "TLN": 359.43,
-  "SPY": 718.94
+  "CCJ": 62.04,
+  "NXE": 6.79,
+  "UEC": 5.78,
+  "DNN": 1.8,
+  "UUUU": 5.39,
+  "LEU": 88.87,
+  "BWXT": 114.39,
+  "CEG": 250.54,
+  "VST": 123.44,
+  "TLN": 359.27,
+  "SPY": 722.42
  },
- "last_cycle": "2026-11-23 09:54 ET",
+ "last_cycle": "2026-11-23 10:05 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4689,10 +4689,10 @@
   ]
  },
  "brakes": {
-  "equity": 1035.2,
-  "day_pct": 3.47,
-  "week_pct": 3.47,
-  "drawdown_pct": -1.82,
+  "equity": 1037.88,
+  "day_pct": 3.73,
+  "week_pct": 3.73,
+  "drawdown_pct": -1.57,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -4810,6 +4810,46 @@
   [
    "2026-11-23 09:54",
    1035.2
+  ],
+  [
+   "2026-11-23 09:54",
+   1036.14
+  ],
+  [
+   "2026-11-23 09:56",
+   1037.38
+  ],
+  [
+   "2026-11-23 09:57",
+   1039.79
+  ],
+  [
+   "2026-11-23 09:58",
+   1039.36
+  ],
+  [
+   "2026-11-23 09:59",
+   1038.36
+  ],
+  [
+   "2026-11-23 10:00",
+   1038.6
+  ],
+  [
+   "2026-11-23 10:01",
+   1036.5
+  ],
+  [
+   "2026-11-23 10:02",
+   1036.82
+  ],
+  [
+   "2026-11-23 10:03",
+   1037.76
+  ],
+  [
+   "2026-11-23 10:05",
+   1037.88
   ]
  ],
  "nowcast": {
@@ -47452,7 +47492,8 @@
   "LEU": 1795444605.4115553,
   "CEG": 1795444605.4346004,
   "VST": 1795444605.4470644,
-  "BWXT": 1795444605.423168
+  "BWXT": 1795444605.423168,
+  "TLN": 1795445697.038122
  },
  "setup_status": {
   "CCJ": "no confirmed support level below the price (it has been falling through them)",
@@ -47464,7 +47505,7 @@
   "BWXT": "no confirmed support level below the price (it has been falling through them)",
   "CEG": "no confirmed support level below the price (it has been falling through them)",
   "VST": "no confirmed support level below the price (it has been falling through them)",
-  "TLN": "setup found"
+  "TLN": "no confirmed support level below the price (it has been falling through them)"
  },
  "sync": {
   "pulse_up": false,
@@ -49211,7 +49252,7 @@
     0.9427
    ]
   },
-  "time": "2026-11-23 09:54"
+  "time": "2026-11-23 10:05"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -49276,10 +49317,10 @@
   "bfa4d042201cf513",
   "8aff877e2dd1884c",
   "009c12e19cf7cb10",
-  "48a608e975b439d8",
-  "dfaa19a96155f693",
   "0235abc0565d5130",
+  "dfaa19a96155f693",
   "a3dd031817a4feeb",
+  "48a608e975b439d8",
   "4959c9e24111e1e4",
   "63e7ca0ff352dff7",
   "27cae87b69d8c12f",
@@ -49461,7 +49502,7 @@
   "61b82697d913613b",
   "fa5187062c587fa6"
  ],
- "news_slow_at": 1795445608.25238,
+ "news_slow_at": 1795446237.897237,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -199246,7 +199287,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 09:54",
+  "updated": "2026-11-23 10:05",
   "total": 331,
   "week": 289,
   "places": {
@@ -199888,11 +199929,11 @@
   "5298ad87eeddc34f",
   "8a7a925eda752f82",
   "096f1d51d1fb61ac",
-  "c5a7aa4d347cef23",
   "0d77f1d2373bb03d",
-  "2c7a3976a5596853",
-  "28eaa442b6a19a6f",
   "37e85b7a7ce58612",
+  "c5a7aa4d347cef23",
+  "28eaa442b6a19a6f",
+  "2c7a3976a5596853",
   "9072aaac75f7221f",
   "83fcaa3c1c926472",
   "33461799e841c77f",
@@ -200901,12 +200942,12 @@
    "built": "2026-11-23 09:37"
   }
  ],
- "heartbeat": "2026-11-23 09:54",
+ "heartbeat": "2026-11-23 10:05",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 93,
+ "_pushed_feed": 94,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -201013,7 +201054,7 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 113.05500030517578,
-  "TLN": 359.43499755859375
+  "BWXT": 114.39,
+  "TLN": 359.27
  }
 }
