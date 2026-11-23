@@ -1832,7 +1832,12 @@ def main():
                 if time.time() - last_dash > 300:
                     dashboard.build(st, CFG); last_dash = time.time()
                 # save to GitHub so the page updates: every 15 min in market hours, hourly otherwise (keeps data use low)
-                if os.environ.get("AUTO_GIT") == "1" and time.time() - last_push > (900 if active else 3600):
+                fresh = len(st.get("feed", [])) + sum(len(c.get("msgs", [])) for c in st.get("chats", [])[-5:])
+                news = fresh != st.get("_pushed_feed")  # something new to see (your post answered, a trade, an alert): save now
+                if news or time.time() - last_dash > 300:
+                    dashboard.build(st, CFG); last_dash = time.time()
+                if os.environ.get("AUTO_GIT") == "1" and (time.time() - last_push > (600 if active else 3600) or (news and time.time() - last_push > 45)):
+                    st["_pushed_feed"] = fresh
                     before = os.popen(f"git -C {ROOT} rev-parse HEAD").read().strip()
                     rc = os.system(f"cd {ROOT} && for p in state.json docs orders data memory research/trial_ledger.json research/discoveries.json; do [ -e \"$p\" ] && git add -A \"$p\"; done; "
                                    f"git commit -qm 'desk {now:%F %H:%M}' >/dev/null 2>&1; git pull -q --rebase --autostash -X theirs >/dev/null 2>&1; git push -q")
