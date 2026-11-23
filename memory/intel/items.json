@@ -10019,5 +10019,334 @@
 "reactor",
 "share"
 ]
+},
+{
+"id": "814f716cdcebd1ef",
+"date": "2026-11-21",
+"ts": 1795221077,
+"title": "DOE Lets PJM Run a Maryland Oil Unit Past Its Yearly Limit Through Dec. 31",
+"summary": "",
+"outlet": "Energy News Beat",
+"link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOclBxLVQwXzJ1bFFnTm5GM3lWa2VrUWp4c0o0Wjh5R3B0UDlaZG0tNGtyWjgtVGRBdUpFSmp6U2xlc0VIRHlWSjVPa2JBVTlNd3RSSGc4bkFUM1lRUjVOSGprM0VSaGVCR2paMWc0NDl1d0VvT0JyM1R1SUYtT0FGbWd1c3N6b1V5LURlMWZBT3NMWl95eUhBNWhaWGV3LU1sbHNveGdpR3Y0dUNtdkR3bmx2azJlNlFJb0c4eUt5TQ?oc=5",
+"place": "PJM grid",
+"tickers": [
+"CEG",
+"TLN",
+"VST"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.9,
+"score": 4.3,
+"echo_of": null,
+"w": [
+"dec",
+"doe",
+"lets",
+"limit",
+"maryland",
+"oil",
+"past",
+"pjm",
+"run",
+"through",
+"unit",
+"yearly"
+]
+},
+{
+"id": "9383f9f99de06d9f",
+"date": "2026-11-23",
+"ts": 1795434794,
+"title": "Australia Rejects Budget Office Report Claiming AUKUS Submarine Deal Could Weaken U.S Navy",
+"summary": "",
+"outlet": "Marine Insight",
+"link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOU1lemZDZGFkR2NYR3NWQ3dERS11TGZXWWFxczVLS1EyTnluU2hVTFNnUTg0N2ktdGIyN1I0SnlGYVRtd2FzMFdIaEptUVgyM3BDMzNUWWJkOVR0UVhTNE1EclRFRG1VU3pkcDVOQ2lpUXJtMHVmb01UNE1pSnVjdUJlZHV2VnFTbW51bW9KSkVSZVhPeThBUXpqN2RwZU9YOEVTdWV5aF93RXRmbmtoQ0pjMDBJaUJQLVMtU0RB?oc=5",
+"place": "AUKUS and navies",
+"tickers": [
+"BWXT"
+],
+"tags": [
+"defense"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.38,
+"score": 4.26,
+"echo_of": "73c8ecdc752b197b",
+"w": [
+"aukus",
+"australia",
+"budget",
+"claiming",
+"deal",
+"navy",
+"office",
+"rejects",
+"report",
+"submarine",
+"weaken"
+]
+},
+{
+"id": "bb6d0befac06c212",
+"date": "2026-11-23",
+"ts": 1795436820,
+"title": "How did Cameco (TSX:CCO) and Denison Mines' (TSX:DML) third-quarter results reflect record uranium term prices?",
+"summary": "",
+"outlet": "kalkine.ca",
+"link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQmZSMjVTcTZHRE1BckxuSHVLSG82X3kzb0pYWjlOUjF1TUZReGU2TEtLdm1ma2tfbFNtT1pieEpaVnA1R2RnRWtWdlQyR0NoaWdmWVpRdkU4al9OeXVsY2Q4SEhQSFc1N1lwQ1FweTNkcllBWFlwRGlLbHJWZWxUaXJsdEljbEdYRHlRaks4WGZQbW9uSURIQzREY3M5VlJkVW9WX21IQXNiQTRnWVF0SnZ1N05OVWlLTFRVUW95NXhNbWUwcHVDOHJLQ19pWk0?oc=5",
+"place": "Wheeler River / Phoenix",
+"tickers": [
+"DNN",
+"CCJ"
+],
+"tags": [
+"price"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.64,
+"score": 3.58,
+"echo_of": null,
+"w": [
+"cameco",
+"cco",
+"denison",
+"did",
+"dml",
+"how",
+"mines",
+"prices",
+"quarter",
+"record",
+"reflect",
+"results",
+"term",
+"third",
+"tsx",
+"uranium"
+]
+},
+{
+"id": "15fecb83818a0949",
+"date": "2026-11-23",
+"ts": 1795437172,
+"title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales",
+"summary": "",
+"outlet": "Stocktwits",
+"link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNTkxhNnJWU1ZmcmV3MTNycEt5X2lTNzJwNG9IRGRCaVllSkx0U01jMEVFUVJLWTFFaTZkYnp3elBkRzdrZ2dUWGotLXdJUi1CY1h1cDE3ZWR5NHdleUlGTTNuMU11bHZCQkpzdk83R1RMdm9TeUpuelZnV2lSNUhCZ3BEX3RPV2xXNlQxQ1gzSkYwczIxNnBlbEFGTDhvcUNhc2NObXpQOVRwRmdWT3puN0JEWWpYUzBHV01SLWxwNE1UNkFvcUxwM1B3UGY0Qmk5QklzOGJiXzFOVWlqNzlJNmx5VHNvX1l6bDRLTzR5MHhDR1BWTGpDY2FIdGJ1cG5LbzJjMzNsdlMtUjBHU1dYSDVqc2lrMGdu?oc=5",
+"place": "White Mesa / Utah",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [
+"contract",
+"production"
+],
+"numbers": [
+"35%"
+],
+"local": true,
+"novelty": 0.74,
+"score": 6.58,
+"echo_of": null,
+"w": [
+"2027",
+"contract",
+"energy",
+"fuels",
+"growth",
+"million",
+"one",
+"output",
+"pounds",
+"premarket",
+"rises",
+"sales",
+"sees",
+"stock",
+"targets",
+"uranium",
+"uuuu"
+]
+},
+{
+"id": "96bd0f50c9b41d81",
+"date": "2026-11-23",
+"ts": 1795437370,
+"title": "Poland plans to sign a contract for the construction of its first nuclear power plant in early 2027",
+"summary": "",
+"outlet": "LIGA.net",
+"link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQbUtVZDVxVW9Mb1dadDNwTllwa0NtU1FnV01Vb3JwRDg5N0U2Z00wZGNxMnBidW1GTGh1RFo4bGpodS1UbjExV3hNQ2FTR0NzRUNhWWJINWVENXhuWV9EMnVnaEU1ekh2R1ZVbzMwaHJLUURvUW8yNUNRZ0s4Tzhod284d1B2c25IZDBSQ2RiVVB4ZlZOcWpwaWNWbllIaVVwS3AtX01JWnh0azdBN0NoSW5iRlpGWEZsWnVrY29EQUYwRC1QbnZtTmpLb0Nzcl9f0gHWAUFVX3lxTE1JSWlSZXZGR3c1cTAzUjAxazRKRF82b1NwdHVKdkE1QnBIckdfZkpzZmVSMW52MjNaMEoxMElEdk16QklXd1poYkV6T2E5VUZndFFvRktFdmhiVlZURV9HNldBYjVQV0cxSzhORVU5WW9LaDdNSDAtWl9pQTh2QVVKem1MUktWTHlfT3cydGtORmpPQWFmTmUyX2FsaVhHYVdpeHgxZktIekNfdjFfaWVqYzRfNHJPLXpjdzZyTmtpWVlHWl9zQ2o5VkY1ZVVaazk2clhSM3c?oc=5",
+"place": "Europe new builds",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"contract",
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.43,
+"score": 5.36,
+"echo_of": null,
+"w": [
+"2027",
+"construction",
+"contract",
+"early",
+"first",
+"nuclear",
+"plans",
+"plant",
+"poland",
+"power",
+"sign"
+]
+},
+{
+"id": "20f1773b16648765",
+"date": "2026-11-23",
+"ts": 1795437421,
+"title": "Poland plans to sign a contract to build its first nuclear power plant in early 2027",
+"summary": "",
+"outlet": "Mezha.net",
+"link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Ha1hEVzZSbUdiZDBCdjM3TUt0RWtZZnRad3dmVDcxbzFqU3pFVkpSWXRwaUtHSnhOTFJvM2g0cHRuMHVQRVlpMDRSMTlmSTdxRWJWVHFEZ0J3YnFKZ3RMUGszWi1rYmIwdlpQZlN5NTg2SlBEVDJEbkI0SjNobnM?oc=5",
+"place": "Europe new builds",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"contract",
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.17,
+"score": 4.84,
+"echo_of": "96bd0f50c9b41d81",
+"w": [
+"2027",
+"build",
+"contract",
+"early",
+"first",
+"nuclear",
+"plans",
+"plant",
+"poland",
+"power",
+"sign"
+]
+},
+{
+"id": "bb5e22a7e9cdb03c",
+"date": "2026-11-23",
+"ts": 1795437652,
+"title": "ERCOT Data Center Survey: Developers Decide on Disclosure",
+"summary": "",
+"outlet": "The Texas Dispatch",
+"link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOUVZPYWJzbjN5WXFLMTJXZVBGNHNYWnNvazY0YkNjdEE0U0hoQUVyU1pka1BZRHFWV3U2MkQybEpuNDdKcXFjM1NXdWhCdGc1bG5LMmtjQXJnWVRZOEpwUlg2cFpOSldEV2J6ZXE4NE9ZSWgzQVFPLTd4S1hhWFlPTzB3?oc=5",
+"place": "ERCOT grid",
+"tickers": [
+"VST"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.79,
+"score": 4.08,
+"echo_of": null,
+"w": [
+"center",
+"data",
+"decide",
+"developers",
+"disclosure",
+"ercot",
+"survey"
+]
+},
+{
+"id": "7c221cf76c2854cd",
+"date": "2026-11-23",
+"ts": 1795437726,
+"title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales",
+"summary": "",
+"outlet": "TradingView",
+"link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOdEZqOTltcGRBUjBXNTc4TE44b2dVd21DVDF4N3hmaVZweUE0d2FrT1hqTWpzdnN0aE9VNy1MSFlWOTZnN1I0Y3VPTVNJbndVVFBuTEcxOGFiNjR2YUxOUi00d2ZyOG8xdUpNVUNJay1WN0ZvM0dJb3BzLWxramhvc1ZTS1pZay13Q1NiME9XbG5hZkxmUExaWEIwcjV4OTl6azIyb1FsSUxoSDJfNlZCSjdROTUtR0RVREZNbEJUVHplQmNlODFMem9PWnNBSFdUT3Q5MHcwRXJ2cGxjLTM2b0dEWkFxSE1CUGFFN0FybHJjZDBVS09zU20wZlhRVjFqcDRyQU1GSmJ3X3g3RVhnQ2xpMFI?oc=5",
+"place": "White Mesa / Utah",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [
+"contract",
+"production"
+],
+"numbers": [
+"35%"
+],
+"local": false,
+"novelty": 0.0,
+"score": 4.1,
+"echo_of": "15fecb83818a0949",
+"w": [
+"2027",
+"contract",
+"energy",
+"fuels",
+"growth",
+"million",
+"one",
+"output",
+"pounds",
+"premarket",
+"rises",
+"sales",
+"sees",
+"stock",
+"targets",
+"uranium",
+"uuuu"
+]
+},
+{
+"id": "b2e981fc7a2e7302",
+"date": "2026-11-23",
+"ts": 1795438800,
+"title": "Westinghouse Canada Awards BWXT AP1000\u00ae Manufacturing Qualification Contracts",
+"summary": "",
+"outlet": "Business Wire",
+"link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTkNtMXRUeFpHd1otRnh1eUtfandfbUlfSUJKdjlabmNBYU83YWs3LVRyN1J5bWJNRGtoaDhrODJ4UjBoQ0VJSUhPaV81V1FrcVlYa3JRMUxvclM3XzFib0t6UkF4ZEdHVGlZZmI5Nmo0QngyOVZoVGNxdXBCMFozS1BMRU5oV25hbEVOOWNKLThRdXN2ZUhEZk9MSFh5OUFEcVZ4UFhOM2RFWC13UUtqNzZJbHRUZlYzWm9jLWVLenpmMG9xVmtFSWo4YkZzdw?oc=5",
+"place": "Westinghouse",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"contract"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.93,
+"score": 5.66,
+"echo_of": null,
+"w": [
+"ap1000",
+"awards",
+"bwxt",
+"canada",
+"contracts",
+"manufacturing",
+"qualification",
+"westinghouse"
+]
 }
 ]
