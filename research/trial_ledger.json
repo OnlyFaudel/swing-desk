@@ -125,6 +125,10 @@
   "uranium_spot_momentum": {
    "trials": 2,
    "verdict": "2026-11-23: month where spot uranium rose 5%+: miners (CCJ, UEC, DNN, UUUU, NXE) next month +6.5% avg (older +3.1, newer +8.8) vs +1.7% any month, n=50; spot fell 5%+: ~0. ADOPTED on paper: after a +5% spot month, buy the 5 miners at 4% each for 20 sessions, and tell the team to favor miners."
+  },
+  "power_weather": {
+   "trials": 8,
+   "verdict": "2026-11-23 (Open-Meteo history 2019-2026, first day of each extreme streak, next 5 days vs group): PJM heat 93F+ 3 days ahead CEG/TLN/VST +1.36% (69% beat, n=26, halves +0.3/+2.5); day-of +0.6%; Texas heat 100F+ VST -1.0%/-1.7% (n=18); Texas cold <=25F VST -3.0%/-0.9% (n=7); PJM cold ~0. Context only (forecast watch + alerts); no trade."
   }
  }
 }

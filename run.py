@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, earnings, weekly, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, earnings, weekly, weather, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -1558,6 +1558,25 @@ def intel_tick(st, today, force=False):
                 except Exception as e:
                     print("read results", t, e)
         del done[:-200]
+    if now.time() >= dt.time(7, 30) and not st["flags"].get(f"weather:{today}"):  # power-market weather, once a day
+        st["flags"][f"weather:{today}"] = True
+        try:
+            wx = weather.forecast()
+            st["weather_view"] = wx
+            for region, v in wx.items():
+                for e in v["extremes"][:1]:
+                    key = f"wxalert:{region}:{e['date']}:{e['kind']}"
+                    if st["flags"].get(key):
+                        continue
+                    st["flags"][key] = True
+                    note = ("History: PJM heat has been a mild plus for CEG/TLN/VST in the days before (small sample)." if "PJM" in region and e["kind"] == "heat"
+                            else "History: Texas extremes have been a minus for VST; extreme cold is the big risk (Winter Storm Uri, 2021, cost Vistra over $1 billion)."
+                            if "Texas" in region else "History: PJM cold snaps haven't moved these stocks reliably.")
+                    feed.post("engineer", f"Weather watch: {e['kind']} forecast for {region} on {e['date']} (high {e['high_f']}F, low {e['low_f']}F). "
+                              f"Stocks exposed: {', '.join(v['stocks'])}. {note}", v["stocks"], kind="data",
+                              art={"big": f"{e['kind'].title()} ahead: {region.split(' (')[0]}", "sub": f"{e['date']}, power markets"})
+        except Exception as e:
+            print("weather", e)
     if not st["flags"].get(f"catalysts:{today}"):  # the catalyst calendar, refreshed once a day
         st["flags"][f"catalysts:{today}"] = True
         try:

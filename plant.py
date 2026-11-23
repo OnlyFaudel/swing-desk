@@ -52,7 +52,8 @@ def snapshot(st=None):
            "our_owners": snap.get("owners"),
            "open_outages": [{k: o.get(k) for k in ("unit", "owner", "start", "days", "kind")} for o in (snap.get("open_outages") or [])][:10],
            "recent_outages": [{k: o.get(k) for k in ("unit", "owner", "start", "end", "days", "kind")} for o in (snap.get("recent_outages") or [])][-6:],
-           "season": _season(), "sprott_uranium_trust": __import__("sput").summary(), "uranium_price": {k: {"usd_per_lb": v.get("usd_per_lb"), "12m_change_pct": v.get("12m_change_pct")}
+           "season": _season(), "sprott_uranium_trust": __import__("sput").summary(),
+           "power_weather_next7": {k: v.get("extremes") for k, v in ((st or {}).get("weather_view") or {}).items()}, "uranium_price": {k: {"usd_per_lb": v.get("usd_per_lb"), "12m_change_pct": v.get("12m_change_pct")}
                                                    for k, v in (uprice.summary() or {}).items() if isinstance(v, dict)}}
     if st:
         out["plant_news_this_week"] = [f"{i.get('place')}: {i.get('title')}" for i in (st.get("news_feed") or [])[-40:]
