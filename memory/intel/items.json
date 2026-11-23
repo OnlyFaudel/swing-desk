@@ -11221,5 +11221,107 @@
 "reviews",
 "saudi"
 ]
+},
+{
+"id": "afa34f5e83a6f8e1",
+"date": "2026-11-21",
+"ts": 1795248000,
+"title": "Uranium Energy (NYSEAM:UEC) - Stock Analysis",
+"summary": "",
+"outlet": "Simply Wall St",
+"link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB5Y01DM19aZzdGYXVHQURjSU1QUDNUVmJPZ0tINmZGT2VacV9uN1dLbldNVGdaa3czMjZDb3ZZLVRacHRjVGlJaE1wU3RQZGktS2lhN1p1V0Z2SzRENnFrOVFRUHVWXzdQNmVXWTJDbFZnVUk?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.64,
+"score": 2.78,
+"echo_of": null,
+"w": [
+"analysis",
+"energy",
+"nyseam",
+"stock",
+"uec",
+"uranium"
+]
+},
+{
+"id": "2fd2b232d75412b8",
+"date": "2026-11-23",
+"ts": 1795453530,
+"title": "South Korea's K-Sure and Slovakia's Eximbanka agree to back Korean bids for Slovak nuclear projects",
+"summary": "",
+"outlet": "MLQ.ai",
+"link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdXdrcVF1M1J1RXVKNlVXcHM1NjZoRzJucUFyT1diWFB0ZHN5TnBNZm9IbHlYMmItSmhTcGM4cXIxYjBnZnRWUGtmM3ZDLXZ5b2wxeVBSSTE5UWVKQ05DVTFMN09KTUlDT0RidlNKWlBrMmlKT3pIVUc3X0tSZGtKZEE0N2dkTDdUZGN4ZE5HQlN6UERPdEh0bUMwWmVOR2JVdTBtNUdPcHdqRnQ0aHJOaHBMUmhpclBMSkE?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.8,
+"score": 3.1,
+"echo_of": null,
+"w": [
+"agree",
+"back",
+"bids",
+"eximbanka",
+"korea",
+"korean",
+"nuclear",
+"projects",
+"slovak",
+"slovakia",
+"south",
+"sure"
+]
+},
+{
+"id": "7ffa38b48cb85fdf",
+"date": "2026-11-23",
+"ts": 1795454553,
+"title": "Energy Fuels Stock Jumps on Uranium Production Plans, 35% Sales Growth Forecast",
+"summary": "",
+"outlet": "Benzinga",
+"link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQaWxoVnI1NVJteHhMdlBKSWVjQmlmeTBYbG9GWW5lTVd5LXdnZjk4MlYxUk80Mlp3b0wyYk8ya1BPSzY2WmdzREFCTURwa1VpMEdfRWp4dzVFWV9nbHpDYUc1WHE3MjRKUVBJQWJFbldyNjJPanlJY0RRdGpLRHAwaUVFSG9YQTJ0UE8tcEpZQnpxNkYxTmJPaEpqUlAyLWFqWnFBN1ZONElxLVVYWlZhLUhFY3AybGZ1WHlMZUREUTZCd281RnVBQ1F4UlE4dlVfenlnXw?oc=5",
+"place": "White Mesa / Utah",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [
+"production",
+"market_chatter"
+],
+"numbers": [
+"35%"
+],
+"local": false,
+"novelty": 0.69,
+"score": 2.68,
+"echo_of": null,
+"w": [
+"energy",
+"forecast",
+"fuels",
+"growth",
+"jumps",
+"plans",
+"production",
+"sales",
+"stock",
+"uranium"
+]
 }
 ]
