@@ -565,31 +565,27 @@ def run_radar(st, prices, earnings):
 
 
 # ======================================================================= morning
-def morning(st, desk, br, ex, data, prices, today, brk_state):
+def morning_prep(st, desk, data, prices, today, brk_state):
+    """9:00 ET: the full morning meeting BEFORE the bell. Nowcast, brief, options radar, macro/whales/crowd and the
+    Level Analyst's setups are all done here, so at 9:31 the bot only has to check the real opening prices and place orders."""
     book = st["book"]
-    if br.name == "sim":
-        br.expire_day_orders()
-    st["pending_meta"], st["armed"] = {}, {}
-    for t in traded(st):  # re-place DAY stops
-        L = account.lot(book, t, "trade")
-        if L["qty"] > 1e-6 and L.get("stop"):
-            ex.place_stop(t, L["stop"])
     with feed.thread(f"Morning meeting {today:%a %b %d}", T, kind="morning"):
         held_now = [t for t in traded(st) if account.lot(book, t, "trade")["qty"] > 1e-6]
-        feed.say("chief", f"Morning, team. Lineup {', '.join(T)}. Account ${brk_state['equity']:,.2f}, "
+        feed.say("chief", f"Morning, team. The bell is at 9:30; let's be ready before it. Lineup {', '.join(T)}. Account ${brk_state['equity']:,.2f}, "
                  f"{brk_state['week_pct']:+.2f}% this week. Open trades: {', '.join(held_now) or 'none'}. "
-                 "Nowcast first, then macro, whales and the crowd; the Level Analyst decides which buys to rest.")
+                 "Nowcast first, then macro, whales and the crowd; the Level Analyst picks the buys. Orders go in once the open prints.")
         nc_line = ""
         try:  # Asia's close -> expected opening gap (information only; research/ccj_leadlag.py)
             if st.get("nowcast_date") != str(today) or not any(isinstance(v, dict) and v.get("expected_gap_pct") is not None
                                                                 for v in (st.get("nowcast") or {}).values()):
                 st["nowcast"] = signals.nowcast(T)
+                st["nowcast_date"] = str(today)
             g = [f"{t} {v['expected_gap_pct']:+.1f}%" for t, v in st["nowcast"].items() if isinstance(v, dict) and v.get("expected_gap_pct") is not None]
             nc_line = (" | Asia says open: " + ", ".join(g)) if g else ""
-            feed.say("nowcast", ("Asia's close points to these opens: " + ", ".join(g) + ". That's already priced in at 9:30, so treat it as context, not a trade.") if g else "No fresh Asia close yet.")
-            feed.post("nowcast", ("Asia's close points to these opens: " + ", ".join(g) + ". Information only: the open prices this in, "
-                      "so it never places a trade.") if g else "No fresh Asia close yet.", T, kind="data",
-                      art={"big": "Asia says: " + ", ".join(g), "sub": "Expected opening moves. Background only."} if g else None)
+            feed.say("nowcast", ("Asia's close points to these opens: " + ", ".join(g) + ". That's priced in at 9:30, so treat it as context, not a trade.") if g else "No fresh Asia close yet.")
+            if g:
+                feed.post("nowcast", "Asia's close points to these opens: " + ", ".join(g) + ". Information only: the open prices this in, "
+                          "so it never places a trade.", T, kind="data", art={"big": "Asia says: " + ", ".join(g), "sub": "Expected opening moves. Background only."})
         except Exception as e:
             st["nowcast"] = {"error": str(e)[:120]}
         earnings = {t: market.next_earnings(t) for t in T}
@@ -597,11 +593,7 @@ def morning(st, desk, br, ex, data, prices, today, brk_state):
         st["brief"] = b
         record_intel(st, b, today)
         run_radar(st, prices, earnings)
-        for t in traded(st):  # don't hold a trade through earnings
-            d = market.trading_days_until(market.next_earnings(t))
-            if d is not None and 0 <= d <= CFG["exit_trading_before_earnings_days"] and account.lot(book, t, "trade")["qty"] > 1e-6:
-                ex.exit_trade(t, prices[t], f"earnings {market.next_earnings(t)}: not holding a trade through it")
-        mo = {"date": str(today)}
+        mo = {"date": str(today), "prepped": True, "nc_line": nc_line}
         if desk.available:
             try:
                 mo["macro"] = desk.macro({**(b.get("market") or {}), "research_notebook": research_lab.highlights(st)}, b.get("calendar"))
@@ -621,18 +613,44 @@ def morning(st, desk, br, ex, data, prices, today, brk_state):
                 notify_once(st, "agent_error", "Agent desk error", f"{e}"[:200] + " Rules keep running.")
         st["morning"] = mo
         refresh_candidates(st, desk, data, prices, today, brk_state, force=True)
-        arm(st, ex, prices, today, brk_state)
-        try:
-            st["gap_flags"] = signals.gap_risk(st.get("nowcast") or {}, st["armed"])
-            for t, why in st["gap_flags"].items():
-                notify_once(st, f"gapflag:{t}:{today}", f"Open watch {t}", why, tags="eyes")
-        except Exception as e:
-            print("gap flags failed", e)
-        if CFG["notify"]["morning_brief"]:
-            m = mo.get("macro") or {}
-            notify("Morning brief", f"Lineup {', '.join(T)} | risk {m.get('risk_level', 'n/a')} | armed: "
-                   + (", ".join(f"{t} ${a['entry']}" for t, a in st["armed"].items()) or "none")
-                   + f" | waiting: {', '.join(t for t in st['candidates'] if t not in st['armed']) or 'none'}" + nc_line, tags="sunrise")
+        waiting = {t: c["entry"] for t, c in st["candidates"].items()}
+        feed.say("chief", "Ready for the bell. " + (("Buys to place at 9:31 if the open is still above support: "
+                 + ", ".join(f"{t} ${p}" for t, p in waiting.items()) + ".") if waiting else "No safe buys yet; we watch the open."))
+    m = mo.get("macro") or {}
+    notify("Morning meeting done", f"Ready before the bell | risk {m.get('risk_level', 'n/a')} | buys planned: "
+           + (", ".join(f"{t} ${p}" for t, p in waiting.items()) or "none") + nc_line, tags="sunrise", who="chief")
+
+
+def morning(st, desk, br, ex, data, prices, today, brk_state):
+    """9:31 ET: the open has printed. Re-place stops, drop setups the open already broke, place the planned buys."""
+    book = st["book"]
+    if br.name == "sim":
+        br.expire_day_orders()
+    st["pending_meta"], st["armed"] = {}, {}
+    for t in traded(st):  # re-place DAY stops
+        L = account.lot(book, t, "trade")
+        if L["qty"] > 1e-6 and L.get("stop"):
+            ex.place_stop(t, L["stop"])
+    if (st.get("morning") or {}).get("date") != str(today) or not st["morning"].get("prepped"):
+        morning_prep(st, desk, data, prices, today, brk_state)  # the 9:00 meeting was missed (restart): do it now
+    mo = st["morning"]
+    for t in traded(st):  # don't hold a trade through earnings
+        d = market.trading_days_until(market.next_earnings(t))
+        if d is not None and 0 <= d <= CFG["exit_trading_before_earnings_days"] and account.lot(book, t, "trade")["qty"] > 1e-6:
+            ex.exit_trade(t, prices[t], f"earnings {market.next_earnings(t)}: not holding a trade through it")
+    refresh_candidates(st, desk, data, prices, today, brk_state)  # drops any setup the opening print already broke
+    arm(st, ex, prices, today, brk_state)
+    try:
+        st["gap_flags"] = signals.gap_risk(st.get("nowcast") or {}, st["armed"])
+        for t, why in st["gap_flags"].items():
+            notify_once(st, f"gapflag:{t}:{today}", f"Open watch {t}", why, tags="eyes")
+    except Exception as e:
+        print("gap flags failed", e)
+    if CFG["notify"]["morning_brief"]:
+        m = mo.get("macro") or {}
+        notify("Morning brief", f"Lineup {', '.join(T)} | risk {m.get('risk_level', 'n/a')} | armed: "
+               + (", ".join(f"{t} ${a['entry']}" for t, a in st["armed"].items()) or "none")
+               + f" | waiting: {', '.join(t for t in st['candidates'] if t not in st['armed']) or 'none'}" + (mo.get("nc_line") or ""), tags="sunrise")
 
 
 # ======================================================================= hawk mode (always-on VM)
@@ -887,7 +905,7 @@ def huddle(st, desk, ex, data, prices, today, brk_state, hawk):
 # ======================================================================= pre-market check-in (7:00-9:25 ET)
 def premarket(st, desk, prices, today):
     now = market.now_et()
-    if now.weekday() >= 5 or not (dt.time(7, 0) <= now.time() <= dt.time(9, 25)) or st["flags"].get(f"premarket:{today}"):
+    if now.weekday() >= 5 or market.is_holiday(today) or not (dt.time(7, 0) <= now.time() <= dt.time(9, 25)) or st["flags"].get(f"premarket:{today}"):
         return
     st["flags"][f"premarket:{today}"] = True
     try:
@@ -944,7 +962,7 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
     if not cfg.get("enabled"):
         return
     book = st["book"]
-    late = now.time() >= dt.time(15, 38)
+    late = market.cclock(now) >= dt.time(15, 38)
     for t, lots in list(book["lots"].items()):  # exits: 6 sessions later, near the close (or the first run after)
         L = lots.get("panic") or {}
         if L.get("qty", 0) <= 1e-6 or not L.get("exit_on"):
@@ -1001,7 +1019,7 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
                              '{"say":"","to":"team"}', ctx, max_tokens=250)
                 except Exception as e:
                     feed.say("system", f"Agents unavailable: {e}"[:150])
-    if not (force or (dt.time(15, 30) <= now.time() <= dt.time(15, 58))) or st["flags"].get(f"panic:{today}") or "SPY" not in data:
+    if not (force or (dt.time(15, 30) <= market.cclock(now) <= dt.time(15, 58))) or st["flags"].get(f"panic:{today}") or "SPY" not in data:
         return
     st["flags"][f"panic:{today}"] = True
     spy = _dayret(data["SPY"])
@@ -1349,7 +1367,7 @@ def park_check(st, ex, prices, today, now):
     """Never let cash sit: near the close, whatever no strategy is using goes into the S&P 500 (SPY).
     Tested 2019-2026 with the panic rule: $1,000 -> $12,120 (37%/yr, worst drop -31%) vs $5,880 leaving it in cash."""
     cfg = CFG.get("parking", {})
-    if not cfg.get("enabled") or not (dt.time(15, 52) <= now.time() <= dt.time(15, 58)) or st["flags"].get(f"park:{today}"):
+    if not cfg.get("enabled") or not (dt.time(15, 52) <= market.cclock(now) <= dt.time(15, 58)) or st["flags"].get(f"park:{today}"):
         return
     st["flags"][f"park:{today}"] = True
     if "SPY" not in prices:
@@ -1386,7 +1404,7 @@ def seasonal_check(st, ex, data, prices, today, now):
       (2007-2025: +13.9% avg, up 15 of 19 years).
     - Uranium spot momentum: after a month where spot uranium rose 5%+, buy the 5 miners (4% each) for 20 sessions
       (miners' next month +6.5% vs +1.7% normally, both halves positive)."""
-    if not (dt.time(15, 30) <= now.time() <= dt.time(15, 58)) or st["flags"].get(f"seasonal:{today}"):
+    if not (dt.time(15, 30) <= market.cclock(now) <= dt.time(15, 58)) or st["flags"].get(f"seasonal:{today}"):
         return
     st["flags"][f"seasonal:{today}"] = True
     book = st["book"]
@@ -1443,7 +1461,7 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
     cfg = CFG.get("auto_trade", {})
     if not cfg.get("enabled"):
         return
-    book, late = st["book"], now.time() >= dt.time(15, 30)
+    book, late = st["book"], market.cclock(now) >= dt.time(15, 30)
     for t, lots in list(book["lots"].items()):  # exits on the pattern's own horizon
         L = lots.get("auto") or {}
         px = prices.get(t)
@@ -1454,7 +1472,7 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
                 ex.exit_panic(t, px, f"conviction trade: target ${L['target']} hit", kind="auto", tag="aux"); continue
         if L.get("qty", 0) > 1e-6 and L.get("exit_on") and (str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late)):
             ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{ {'conviction': 'conviction', 'year_end': 'year-end bounce', 'uranium_momentum': 'uranium momentum'}.get(L.get('setup'), 'discovery') } trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
-    if not (dt.time(15, 30) <= now.time() <= dt.time(15, 58)) or st["flags"].get(f"auto:{today}"):
+    if not (dt.time(15, 30) <= market.cclock(now) <= dt.time(15, 58)) or st["flags"].get(f"auto:{today}"):
         return
     st["flags"][f"auto:{today}"] = True
     rules = _rules()
@@ -2236,7 +2254,7 @@ def options_call(st, desk, t, mat, today):
 
 def options_mark(st, today, now):
     """Once a day near the close: value each practice put at its real bid; sell at 2x, at half, or on the sell date."""
-    if not (now.time() >= dt.time(15, 45)) or st["flags"].get(f"optmark:{today}"):
+    if not (market.cclock(now) >= dt.time(15, 45)) or st["flags"].get(f"optmark:{today}"):
         return
     st["flags"][f"optmark:{today}"] = True
     for p in st.get("options_book", []):
@@ -2704,6 +2722,13 @@ def cycle(st, desk, br, ex, force=()):
         premarket(st, desk, prices, today)
     except Exception as e:
         print("premarket failed", e)
+    if (now.weekday() < 5 and dt.time(9, 0) <= now.time() < dt.time(9, 29) and not market.is_holiday(today)
+            and (st.get("morning") or {}).get("date") != str(today)):
+        try:  # the full morning meeting, before the bell
+            st["morning"] = {"date": str(today), "prepped": False}
+            morning_prep(st, desk, data, prices, today, brk_state)
+        except Exception as e:
+            traceback.print_exc()
     intel_tick(st, today, force="intel" in force)
     if time.time() - st.get("dossier_at", 0) >= 1800 or "intel" in force:
         st["dossier_at"] = time.time()
@@ -2718,7 +2743,7 @@ def cycle(st, desk, br, ex, force=()):
         print("huddle failed", e)
     handle_owner_posts(st, desk, ex, data, prices, today, brk_state)
     handle_news(st, desk, ex, data, prices, today, brk_state)
-    if ((now.weekday() < 5 and dt.time(15, 40) <= now.time() <= dt.time(15, 58)) or "close" in force) \
+    if ((now.weekday() < 5 and dt.time(15, 40) <= market.cclock(now) <= dt.time(15, 58)) or "close" in force) \
             and st["flags"].get("close_done") != str(today):
         st["flags"]["close_done"] = str(today)
         close_routine(st, desk, ex, data, prices, today, brk_state)

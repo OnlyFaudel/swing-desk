@@ -13,9 +13,30 @@ def now_et():
     return dt.datetime.now(ET)
 
 
+# NYSE full holidays and 1 pm early closes (update each year)
+HOLIDAYS = {"2026-01-01", "2026-01-19", "2026-02-16", "2026-04-03", "2026-05-25", "2026-06-19", "2026-07-03", "2026-09-07",
+            "2026-11-26", "2026-12-25", "2027-01-01", "2027-01-18", "2027-02-15", "2027-03-26", "2027-05-31", "2027-06-18",
+            "2027-07-05", "2027-09-06", "2027-11-25", "2027-12-24"}
+HALF_DAYS = {"2026-11-27", "2026-12-24", "2027-11-26"}
+
+
+def is_holiday(d=None):
+    d = d or now_et().date()
+    return str(d) in HOLIDAYS
+
+
+def cclock(t=None):
+    """Time of day for end-of-day windows. On a 1 pm early close it runs 3 hours ahead, so the 3:30-3:58 routines
+    (panic exits, parking, close review) fire at 12:30-12:58 instead of after the market has shut."""
+    t = t or now_et()
+    if str(t.date()) in HALF_DAYS:
+        return (dt.datetime.combine(t.date(), t.time()) + dt.timedelta(hours=3)).time() if t.time() < dt.time(21) else dt.time(23, 59)
+    return t.time()
+
+
 def market_open(t=None):
     t = t or now_et()
-    return t.weekday() < 5 and dt.time(9, 35) <= t.time() <= dt.time(15, 58)
+    return t.weekday() < 5 and not is_holiday(t.date()) and dt.time(9, 35) <= t.time() and cclock(t) <= dt.time(15, 58)
 
 
 def rsi(c, n):
