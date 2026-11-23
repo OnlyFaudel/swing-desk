@@ -629,30 +629,6 @@
  "news_feed": [
   {
    "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Uranium Prices Stay Strategically Important as Reactor Demand and Nuclear Investment Expand - kalkine.ca",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUU1YNTlINDlGSVFRcXRtS0l2QXptdllGYW0xbkVzVkJHTkhwVVBvbks2WWlXZW9fLWFKSGpnNU82ZDVYTnA4Y2hpT2VncENTZWVDQTNSQlJtWWRwTW10NnFnZ0NCMmJxS1NUbmF2MkVXUkdrUzEtdERGcEpxRGFlYzNSVFdXS1QwOS10bktjUHNITldocG15RVAtYTRGUE9neWNDTzRzQ0loTm5UMjI2WEcyMkVURmZRa0ZTM1NwalJtSE00anpB?oc=5",
-   "ts": 1795107300,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Yahoo Finance",
-   "title": "Cameco (TSX:CCO) On Its Loss And Share Sale With Fair Value Back In Focus",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/cameco-tsx-cco-loss-share-171211130.html?.tsrc=rss",
-   "ts": 1795194731,
-   "materiality": 8,
-   "novelty": "new",
-   "direction": "down",
-   "event_type": "offering_dilution",
-   "why": "Q3 loss from Key Lake outage plus new US$1B share sale"
-  },
-  {
-   "ticker": "CCJ",
    "source": "Google News",
    "title": "Cameco (TSX:CCO) On Its Loss And Share Sale With Fair Value Back In Focus - Yahoo! Finance Canada",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FZHJOdmM2dVNPRk0xZXIzeExrUXRpNjBtb2xpZlhUYlpoQmM0MkZJSEFYYkZGMHMyZGgwTjJfXzI4MEk0R1pmRl90X2M0Ymc5aE5wNjhmMm9iWEFaNmFTZTJYTUxva1ZRakhhbVdzeUFqMDNWQjR1Vlh2UEpuM0k?oc=5",
@@ -3626,6 +3602,30 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "NRC comment period on a Crownpoint in-situ uranium project; a minor regulatory step, not a CEG event."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "What Sent Cameco Stock Lower Again? - Trefis",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcnhUMDVsSE9hNDk3ZGVWeWZ4RUJxb2pnQjVvcl90eWY1eF9DRmFvdkd1VTFTazdiZ3lGV05xWXk4dzAzWmVUc0dROTU5T19lcEgxUHZ4U1g4VGxiaXVLdWY4azVHNzBGb05HNGxwTGpMeDZCVzA4bWtDSllHVDZlenZfb193WEtsNVlmUjZVWnlzRkNSUkl0Vm9R?oc=5",
+   "ts": 1795459240,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "down",
+   "event_type": "other",
+   "why": "Trefis recap of past moves; no new company-specific information in the headline."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Uranium explorers provide leverage to market turnaround - Townsville Bulletin",
+   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPNkRoT1FMZ0dydWxkMm9qSHBqdHVnUERKQXpCRmZjY0s2RWxNSmVpajJHTFJ1OUhtSmhnWmdYZmoyR1FEaXQ2bmxyNm9LNnJrZVYzVlpMR0t2N1NVVUF4alRveDBRNUhtVEtwcXRJbWdUckVGZzE2OTJ6akJIYnVGbVhrLWRpcC1JMm04T29rR0VXamw1eU50djRtZXQyUXpseGVqRWtpRlVvak4waDdBMmd1R080NE5ZWXk0bmp0ZnVUdDRPNnlMLXZXaU0wWW1oSDQxcXV5dzJjSFhnb3RuT0tzd2dlUDdCc3poNE83QzVPM0lONmFiMV9jRFZiOXgxRmxtM0RBY0g0TDZYSk42cWdRZkJLald2WVhV?oc=5",
+   "ts": 1795461355,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic sector commentary on explorers and uranium price; no new company-specific information."
   }
  ],
  "reviews": [
@@ -4964,16 +4964,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.1849,
+  "day_usd": 0.18574,
   "month": "2026-11",
-  "month_usd": 0.44838,
-  "total_usd": 0.44838,
+  "month_usd": 0.44922,
+  "total_usd": 0.44922,
   "by_role": {
    "macro": 0.01625,
    "whale": 0.00861,
    "crowd": 0.00751,
    "level": 0.02573,
-   "scout": 0.05105,
+   "scout": 0.05189,
    "review": 0.05504,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -5078,19 +5078,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.55,
-  "NXE": 6.8,
-  "UEC": 5.82,
+  "CCJ": 61.48,
+  "NXE": 6.79,
+  "UEC": 5.83,
   "DNN": 1.8,
-  "UUUU": 5.3,
-  "LEU": 87.88,
-  "BWXT": 117.0,
-  "CEG": 251.02,
-  "VST": 125.58,
-  "TLN": 366.64,
-  "SPY": 723.7
+  "UUUU": 5.29,
+  "LEU": 87.7,
+  "BWXT": 116.74,
+  "CEG": 250.74,
+  "VST": 125.47,
+  "TLN": 366.42,
+  "SPY": 723.45
  },
- "last_cycle": "2026-11-23 14:14 ET",
+ "last_cycle": "2026-11-23 14:24 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -5115,10 +5115,10 @@
   ]
  },
  "brakes": {
-  "equity": 1036.1,
-  "day_pct": 3.56,
-  "week_pct": 3.56,
-  "drawdown_pct": -1.74,
+  "equity": 1035.48,
+  "day_pct": 3.49,
+  "week_pct": 3.49,
+  "drawdown_pct": -1.79,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -6128,6 +6128,42 @@
   [
    "2026-11-23 14:14",
    1036.1
+  ],
+  [
+   "2026-11-23 14:15",
+   1035.99
+  ],
+  [
+   "2026-11-23 14:16",
+   1036.34
+  ],
+  [
+   "2026-11-23 14:17",
+   1036.35
+  ],
+  [
+   "2026-11-23 14:19",
+   1036.83
+  ],
+  [
+   "2026-11-23 14:20",
+   1037.36
+  ],
+  [
+   "2026-11-23 14:21",
+   1037.15
+  ],
+  [
+   "2026-11-23 14:22",
+   1037.04
+  ],
+  [
+   "2026-11-23 14:23",
+   1035.64
+  ],
+  [
+   "2026-11-23 14:24",
+   1035.48
   ]
  ],
  "nowcast": {
@@ -48787,18 +48823,18 @@
  },
  "sync": {
   "pulse_up": false,
-  "basket_vs_avg_pct": -6.44,
+  "basket_vs_avg_pct": -5.99,
   "partners_pct": {
-   "CCJ": -1.76,
-   "NXE": -1.66,
-   "UEC": -1.67,
-   "DNN": -1.71,
-   "UUUU": -1.17,
-   "LEU": -1.38,
-   "BWXT": -1.7,
-   "CEG": -1.63,
-   "VST": -1.92,
-   "TLN": -2.02
+   "CCJ": -1.27,
+   "NXE": -1.16,
+   "UEC": -1.19,
+   "DNN": -1.24,
+   "UUUU": -0.7,
+   "LEU": -0.94,
+   "BWXT": -1.22,
+   "CEG": -1.13,
+   "VST": -1.42,
+   "TLN": -1.58
   },
   "mult": {
    "CCJ": 0.8,
@@ -48810,19 +48846,19 @@
    "BWXT": 0.8,
    "CEG": 0.8,
    "VST": 0.8,
-   "TLN": 0.56
+   "TLN": 0.8
   },
   "own_pct": {
-   "CCJ": -0.82,
-   "NXE": -1.67,
-   "UEC": -1.62,
-   "DNN": -1.28,
-   "UUUU": -6.07,
-   "LEU": -4.17,
-   "BWXT": -1.29,
-   "CEG": -1.94,
-   "VST": 0.65,
-   "TLN": 1.56
+   "CCJ": -0.43,
+   "NXE": -1.38,
+   "UEC": -1.11,
+   "DNN": -0.73,
+   "UUUU": -5.53,
+   "LEU": -3.42,
+   "BWXT": -0.9,
+   "CEG": -1.63,
+   "VST": 0.93,
+   "TLN": 2.36
   },
   "series": {
    "CCJ": [
@@ -48965,7 +49001,7 @@
     0.7832,
     0.7794,
     0.7755,
-    0.7735
+    0.7766
    ],
    "NXE": [
     1.0,
@@ -49107,7 +49143,7 @@
     0.827,
     0.824,
     0.8216,
-    0.818
+    0.8204
    ],
    "UEC": [
     1.0,
@@ -49249,7 +49285,7 @@
     0.7829,
     0.7829,
     0.7802,
-    0.7776
+    0.7815
    ],
    "DNN": [
     1.0,
@@ -49391,7 +49427,7 @@
     0.8311,
     0.8242,
     0.8265,
-    0.8196
+    0.8242
    ],
    "UUUU": [
     1.0,
@@ -49533,7 +49569,7 @@
     0.7073,
     0.7047,
     0.7014,
-    0.6941
+    0.6981
    ],
    "LEU": [
     1.0,
@@ -49675,7 +49711,7 @@
     0.9014,
     0.8963,
     0.893,
-    0.8863
+    0.8933
    ],
    "BWXT": [
     1.0,
@@ -49817,7 +49853,7 @@
     0.8926,
     0.8941,
     0.897,
-    0.8929
+    0.8964
    ],
    "CEG": [
     1.0,
@@ -49959,7 +49995,7 @@
     0.9933,
     0.9896,
     0.9902,
-    0.9871
+    0.9901
    ],
    "VST": [
     1.0,
@@ -50101,7 +50137,7 @@
     0.88,
     0.8759,
     0.8803,
-    0.8774
+    0.8798
    ],
    "TLN": [
     1.0,
@@ -50243,7 +50279,7 @@
     1.0683,
     1.0667,
     1.0741,
-    1.0655
+    1.0738
    ],
    "basket": [
     1.0,
@@ -50385,7 +50421,7 @@
     0.8856,
     0.8828,
     0.8838,
-    0.879
+    0.8833
    ],
    "avg": [
     1.0476,
@@ -50527,10 +50563,10 @@
     0.9455,
     0.9436,
     0.9416,
-    0.9395
+    0.9396
    ]
   },
-  "time": "2026-11-23 14:14"
+  "time": "2026-11-23 14:24"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -50592,9 +50628,9 @@
   "8d0283e176b666a8",
   "17b21557a779a003",
   "ceb6205483ccef34",
-  "acd35ca94b40c5e4",
-  "13880e66390f270d",
   "a00037110572bad0",
+  "13880e66390f270d",
+  "acd35ca94b40c5e4",
   "5c88c6637836b8c6",
   "db717c49c87232b4",
   "cb12badf9a3dbea8",
@@ -50646,6 +50682,7 @@
   "d39dc266a3b4dae2",
   "f61fff1c8e93929e",
   "db0be8d85f3d8c6d",
+  "ca2a5c0a1baa2527",
   "9850b181472b7c24",
   "41ed20a8cec5e591",
   "2cbbc694a2695e84",
@@ -50675,9 +50712,8 @@
   "14550cc72dba894e",
   "09bd7b0e348df04b",
   "fcee5932b3cdffea",
-  "05ad7d5a34131c8c",
-  "4959c9e24111e1e4",
   "be5409ee82f38fd4",
+  "4959c9e24111e1e4",
   "5152638d88885c07",
   "4ae697a080cb64b9",
   "22706e6619f0e685",
@@ -50765,6 +50801,7 @@
   "6ae4fd45dc301c0d",
   "92c36fef260edb24",
   "813ce322cba7c1e5",
+  "9dd14dae753c141a",
   "7a634663fcf720f5",
   "2c2cc3e5488f76ac",
   "bfa4d042201cf513",
@@ -50780,6 +50817,7 @@
   "f21913021e43c03f",
   "de4d277c2d827d97",
   "023889bc30f2a7cd",
+  "efa3269c9fa1c644",
   "92ab279e132dea09",
   "40da66ea723efc8f",
   "eb0139f21af40690",
@@ -50815,12 +50853,12 @@
   "3e8dd4ce58da4a9b",
   "313a0e04a5719e86",
   "8b9f115784388b61",
-  "9dd14dae753c141a",
+  "05ad7d5a34131c8c",
   "7aa8997d91d8e2dc",
   "2f0e6fcd07e9c356",
   "00667c7b98791b66"
  ],
- "news_slow_at": 1795460867.7994416,
+ "news_slow_at": 1795461473.3808556,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -201497,7 +201535,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 14:14",
+  "updated": "2026-11-23 14:24",
   "total": 362,
   "week": 318,
   "places": {
@@ -202171,7 +202209,6 @@
   "38d326870f86784b",
   "23f0910e96eb7de3",
   "537b32f5b2133213",
-  "28eaa442b6a19a6f",
   "8a7a925eda752f82",
   "5298ad87eeddc34f",
   "49be13755057758d",
@@ -202195,7 +202232,8 @@
   "515517f776442fe4",
   "88e6a210eab92423",
   "9e7ebdf62031eeaf",
-  "4bcec70e5161a23d"
+  "4bcec70e5161a23d",
+  "28eaa442b6a19a6f"
  ],
  "panic_log": [
   {
@@ -203396,7 +203434,7 @@
    "built": "2026-11-23 14:13"
   }
  ],
- "heartbeat": "2026-11-23 14:14",
+ "heartbeat": "2026-11-23 14:24",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -203508,20 +203546,20 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 117.0,
-  "TLN": 366.645
+  "BWXT": 116.74,
+  "TLN": 366.415
  },
  "notes_audit": {
   "scout": {
-   "asked": 32,
-   "used": 31,
+   "asked": 34,
+   "used": 33,
    "notes": {
     "TLN Deals and contracts": 1,
-    "CCJ Deals and contracts": 11,
+    "CCJ Deals and contracts": 12,
     "BWXT Deals and contracts": 9,
     "SECTOR Government and laws": 8,
     "UUUU Deals and contracts": 7,
-    "SECTOR Countries": 9,
+    "SECTOR Countries": 10,
     "CEG Deals and contracts": 4,
     "NXE Legal": 1,
     "NXE Deals and contracts": 1,
@@ -203803,7 +203841,7 @@
    ],
    [
     "2026-11-23",
-    61.54
+    61.49
    ]
   ],
   "NXE": [
@@ -203925,7 +203963,7 @@
    ],
    [
     "2026-11-23",
-    6.8
+    6.79
    ]
   ],
   "UEC": [
@@ -204291,7 +204329,7 @@
    ],
    [
     "2026-11-23",
-    5.3
+    5.31
    ]
   ],
   "LEU": [
@@ -204413,7 +204451,7 @@
    ],
    [
     "2026-11-23",
-    87.96
+    87.7
    ]
   ],
   "BWXT": [
@@ -204535,7 +204573,7 @@
    ],
    [
     "2026-11-23",
-    116.9
+    116.61
    ]
   ],
   "CEG": [
@@ -204657,7 +204695,7 @@
    ],
    [
     "2026-11-23",
-    250.91
+    250.69
    ]
   ],
   "VST": [
@@ -204779,7 +204817,7 @@
    ],
    [
     "2026-11-23",
-    125.53
+    125.57
    ]
   ],
   "TLN": [
@@ -204901,7 +204939,7 @@
    ],
    [
     "2026-11-23",
-    366.64
+    366.47
    ]
   ]
  },
