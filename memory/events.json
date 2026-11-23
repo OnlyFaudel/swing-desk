@@ -25566,5 +25566,22 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "BWXT",
+"date": "2026-11-23",
+"title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal",
+"type": "contract_deal",
+"source": "Yahoo Finance",
+"materiality": 6,
+"direction_called": "up",
+"price": 115.98,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]

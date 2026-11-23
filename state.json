@@ -325,54 +325,6 @@
   {
    "ticker": "TLN",
    "source": "Google News: \"Talen Energy\"",
-   "title": "Oppenheimer Forecasts Strong Price Appreciation for Talen Energy (NASDAQ:TLN) Stock - MarketBeat",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQbkZNYU9XNzAtUmxFaHdlSUtPUlAwOC0ycndZNUZudTY2dHRtQW5WeUJSNXhLNXhFOHNjdXU1eGJEcUVVZ29OUGlPc2hPbFhDUVhudFk1R2hPWHV4RTg3T3pnM2J6eHo3bEtVb1Q4SzZtLUd5MXp3dnFnYU55U1FfYW94LWN3RnlaY0ZjcTZiTkU5VThiYkk4RGdBN2xvM1FpVDFleHRfb0VhTkhJU1lnRjhoMGZManFJSlR3NGsxUl9CR3ZkTXhHZ2l0X2ZGdC1YdEwyMnBmank5bDQ?oc=5",
-   "ts": 1795183742,
-   "materiality": 4,
-   "novelty": "follow_up",
-   "direction": "up",
-   "event_type": "analyst",
-   "why": "MarketBeat rehash of Oppenheimer's bullish target raise."
-  },
-  {
-   "ticker": "TLN",
-   "source": "Google News: \"Talen Energy\"",
-   "title": "Oppenheimer maintains Talen Energy at Outperform, raises price target to $450 from $400 - TradingView",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQZ05PYi05WW9KWUhsdUQ1bWxFTVllcEJQYk9LVjZ6cEE4V1FwWHdud0Q0bmtZUnFaUE1VUVBYNVZKS21mSk1RRGpzUDBUU2NwczFRVkYzSGJXeFVwTHUtcWJWNVlEbWxNTDRzcEFJVnBwTkNYcHhMLVVCc21JRHppZ1lmRFRMYm5ReTBVdDRhdm90X2lhcXM1RTY1N3NOWXlCMDFpczNRVWxxaEYxekI2UmV6c0JKbHZEZWJTbEhkZkUtYjlaTl9QR3Q5X21pM0xUN0VuaVY1X2ZfRjUwcXdj?oc=5",
-   "ts": 1795182332,
-   "materiality": 5,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "analyst",
-   "why": "Oppenheimer keeps Outperform and raises target to $450."
-  },
-  {
-   "ticker": "LEU",
-   "source": "Google News: \"Centrus Energy\"",
-   "title": "Guggenheim maintains Centrus Energy at Buy, raises price target to $172 from $167 - TradingView",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQb2JGZWpuV2JZZzRqSVdVeEJLMDdhZkVxNS1EQVFGbUxUNy1lRmxxOUUzcjNQQ1R2T09pal9BblVoVG1YWEJMdWJXTzJjLWJCTUZjM3FQN3NqRGU0eU95alhJd2xydUlDVG8wcDZEMElOeTJLYTY1eE9tTVdWMGNWcmZoY25rcGtsYzhjdkdpWGVPODFCZ04xOGdlS3NTSk1hYzNiTUc1ZFprQnZ5bmJwQ0RTdDFmeDlwdURoREJoN2g2N21Ubm84WVYxbFZGVUNhQkJlVW1sOA?oc=5",
-   "ts": 1795181657,
-   "materiality": 4,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "analyst",
-   "why": "Guggenheim keeps Buy, small target raise to $172."
-  },
-  {
-   "ticker": "TLN",
-   "source": "Google News: \"Talen Energy\"",
-   "title": "Oppenheimer Adjusts Price Target on Talen Energy to $450 From $400, Keeps Outperform Rating - www.marketscreener.com",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQa1RHcGowZmpGRmNKZm11VDFVeDRRSkZhUU56WHc5cURXenI3VDBaaFh1VW9jUXk4WkE0RERSSDJjOVZOQVlhaVBZRHdNVEt5RVRtSGh6QzRKR05mMklDejcwU3pmX1pNN2xHMGVHeU16M2ZqOG9rOFNvOVZOR0lMVEJraHVwQlJyZXYxM3RneTE4TTUzbEZnQ2ZWNFNTTUszRGh6UmRucnlLS3ZVTHVHc2xMckxwdXk1SVB2cy1ZM2hIQW9SN003eXV2YUtNc2xLaGVzU1F6bGs?oc=5",
-   "ts": 1795181570,
-   "materiality": 2,
-   "novelty": "follow_up",
-   "direction": "up",
-   "event_type": "analyst",
-   "why": "Same Oppenheimer target raise, repeated by another outlet."
-  },
-  {
-   "ticker": "TLN",
-   "source": "Google News: \"Talen Energy\"",
    "title": "Talen Energy COO Brad Berryman sells $19.8M in stock - Investing.com",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNXzdkZThvUGQ2NFRqUXhpT2dyZVFOZDBIb0U1UVhFbTRKWlJXQVowbTVGOXNjTUhEOVZrNnJNQlI0cVdRNy1TMTNsaHlQenQxNlk5U2U4OWZSeldLOE9rUUkwMFE1SlV5TjlHaE9yNUxkQ2tyMExxMDZjbmlMdjR6Q3FaeTdhZXA3TFNNbmJiQXkzZDJURElBakxnTndORnVtRWZHekRkZHhIMUV2UUVHdloxbUl5Zw?oc=5",
    "ts": 1795179661,
@@ -3321,6 +3273,54 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Russell index inclusion of an unrelated small explorer, no Cameco impact."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Yahoo Finance",
+   "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/bwxt-stock-surges-westinghouse-ap1000-164027465.html?.tsrc=rss",
+   "ts": 1795452027,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Real new manufacturing deal with Westinghouse, but the 6.7% pop may already be partly priced in."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "Cameco Corporation: Contracted Nuclear Demand Supports Long-Term Growth Amid Near-Term Cost Pressures - kalkine.com",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPR2F5c0lnY1ZmMWJkV0lYb1Rpd0o4RlVtTWtaa214ZVo0MEVQV0JuYU13eXkwMDh5a3lVNmlKdmtFcjdKUENRWHBmeU54Z3VSMG9laExYWnlIZGV5VzF6MnVuZktzMmlWVTAzb3FwcGtDRUxYM1NTUlpJbTZDdG1tMjRrdHY4VHhqVEIyd09adkNwZGdKRXJ5SzlLemF5NDlIWmtSS2xmdmxTb2MtV3d1QzhkeHhqZnJMckNkeUpaWTg4dEs5cVo3WDJFb3ZqaVV2S3c?oc=5",
+   "ts": 1795452075,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News",
+   "title": "Why is BWX Technologies stock surging today? By Investing.com - Investing.com India",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQclFoc3dONDlEc2pTWkxGV0Y2OWM5Zk5qT01DeUVfZmVOR3dVVUhDZENpODhVQjRMRWdGZ1V6ODk3X0xEdzl6SlJOUE5tdDB3R284cDV1bDNmZ0pFb3V1YVNCREFFdGpPSktjOUNsOTFpT2I5c2dNbUJYRDFUYnYwaUdhRXZXb2JGdHYtNUFwY3ZHdl9KVm1fS3A3RExEa0FfaDVkUTBGWQ?oc=5",
+   "ts": 1795451993,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Westinghouse reactor",
+   "title": "Westinghouse orders AP1000 demonstration parts from BWXT to qualify it as a reactor component supplier - MLQ.ai",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPX2liQkRQd3B6WHZpWVo3Z19kek45U2FYYkxkcl9IYUtNVnhOSzZxYl80LUlNcnMxZEFRSk9FVHpqOTliRlRFT3hnZ3lid3l3NVhjNFE2amZTbWxsMzVmU2FoRnBmb2U4QUdHQzc4N0VobWJCN3Zsa0NzcDdZVGJBc3NhSWpjdkg3SDI4RlRzZzRnZDJiZ3hHRGlReFFJc2hNX3VBVHJRek1Eby1tQlRnZkNvQUc1NFZqY1NzTVk3WWM?oc=5",
+   "ts": 1795450790,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Headline is about BWXT parts qualification, indirect and not uranium demand for CCJ."
   }
  ],
  "reviews": [
@@ -4639,16 +4639,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.08134,
+  "day_usd": 0.08294,
   "month": "2026-11",
-  "month_usd": 0.34483,
-  "total_usd": 0.34483,
+  "month_usd": 0.34643,
+  "total_usd": 0.34643,
   "by_role": {
    "macro": 0.00843,
    "whale": 0.00639,
    "crowd": 0.00536,
    "level": 0.00402,
-   "scout": 0.04138,
+   "scout": 0.04298,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -4751,19 +4751,19 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.36,
-  "NXE": 6.79,
-  "UEC": 5.76,
+  "CCJ": 61.47,
+  "NXE": 6.83,
+  "UEC": 5.79,
   "DNN": 1.8,
-  "UUUU": 5.27,
-  "LEU": 87.72,
-  "BWXT": 115.77,
-  "CEG": 249.74,
-  "VST": 124.38,
-  "TLN": 360.54,
-  "SPY": 719.68
+  "UUUU": 5.3,
+  "LEU": 88.25,
+  "BWXT": 116.67,
+  "CEG": 250.57,
+  "VST": 124.64,
+  "TLN": 361.89,
+  "SPY": 722.0
  },
- "last_cycle": "2026-11-23 11:41 ET",
+ "last_cycle": "2026-11-23 11:52 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -4788,10 +4788,10 @@
   ]
  },
  "brakes": {
-  "equity": 1033.46,
-  "day_pct": 3.29,
-  "week_pct": 3.29,
-  "drawdown_pct": -1.99,
+  "equity": 1035.56,
+  "day_pct": 3.5,
+  "week_pct": 3.5,
+  "drawdown_pct": -1.79,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -5273,6 +5273,42 @@
   [
    "2026-11-23 11:41",
    1033.46
+  ],
+  [
+   "2026-11-23 11:42",
+   1033.42
+  ],
+  [
+   "2026-11-23 11:43",
+   1034.09
+  ],
+  [
+   "2026-11-23 11:45",
+   1033.67
+  ],
+  [
+   "2026-11-23 11:46",
+   1032.68
+  ],
+  [
+   "2026-11-23 11:47",
+   1032.89
+  ],
+  [
+   "2026-11-23 11:48",
+   1033.88
+  ],
+  [
+   "2026-11-23 11:49",
+   1034.83
+  ],
+  [
+   "2026-11-23 11:50",
+   1035.0
+  ],
+  [
+   "2026-11-23 11:52",
+   1035.56
   ]
  ],
  "nowcast": {
@@ -49675,7 +49711,7 @@
     0.9424
    ]
   },
-  "time": "2026-11-23 11:41"
+  "time": "2026-11-23 11:52"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -49692,6 +49728,7 @@
   "59c6f6be8bf3e5a9",
   "2a89ac3dc67ad332",
   "9289aefa04c45318",
+  "a74aab1c387c2b31",
   "9b6ee47aa4a5262e",
   "4a665786ac37d007",
   "9cbd1f425af5c610",
@@ -49743,10 +49780,11 @@
   "0d77f1d2373bb03d",
   "90b74f3afa03852f",
   "ad40fc2d9e504d93",
+  "b8175e38a640e7c2",
   "41ed20a8cec5e591",
   "e12d3a4edb7295a2",
-  "d8b87592a8671135",
   "adaf4137e3446cd1",
+  "d8b87592a8671135",
   "4abce8dfecf110ac",
   "aa4b40fcca57bfea",
   "05ad7d5a34131c8c",
@@ -49805,6 +49843,7 @@
   "03fe18a1ac05bdd0",
   "7f7a05be6b3ac1f5",
   "dfaa19a96155f693",
+  "03ea4d9fa6314c2d",
   "8aff877e2dd1884c",
   "5e042fd73e80d40b",
   "6a0cc1c1f8babcd3",
@@ -49908,6 +49947,7 @@
   "fcee5932b3cdffea",
   "269219f13ec4aa2f",
   "d1c7122c048b2ed9",
+  "af6eb78442aeb47e",
   "009c12e19cf7cb10",
   "68b8d7111ead5bfd",
   "e00ac0592374a28e",
@@ -49943,7 +49983,7 @@
   "61b82697d913613b",
   "9199257f37a8ba75"
  ],
- "news_slow_at": 1795452034.5027642,
+ "news_slow_at": 1795452646.0517645,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -199833,6 +199873,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "BWXT",
+   "type": "contract_deal",
+   "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal",
+   "date": "2026-11-23",
+   "price": 115.98,
+   "materiality": 6,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -199913,7 +199965,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 11:41",
+  "updated": "2026-11-23 11:52",
   "total": 342,
   "week": 299,
   "places": {
@@ -200642,7 +200694,7 @@
   }
  ],
  "memory_view": {
-  "events": 1504,
+  "events": 1505,
   "with_outcomes": 1162,
   "playbooks": {
    "acquisition": {
@@ -200790,15 +200842,6 @@
    }
   ],
   "recent": [
-   {
-    "date": "2026-11-22",
-    "ticker": "LEU",
-    "title": "Rosatom signs world's first export agreement with Indonesia for floating nuclear power unit",
-    "type": "intel_contract",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
    {
     "date": "2026-11-22",
     "ticker": "CCJ",
@@ -201145,6 +201188,15 @@
     "date": "2026-11-23",
     "ticker": "BWXT",
     "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com Australia",
+    "type": "contract_deal",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "BWXT",
+    "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal",
     "type": "contract_deal",
     "r0": null,
     "r5": null,
@@ -201590,7 +201642,7 @@
    "built": "2026-11-23 11:40"
   }
  ],
- "heartbeat": "2026-11-23 11:41",
+ "heartbeat": "2026-11-23 11:52",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -201702,20 +201754,20 @@
   "latest_new_postings": []
  },
  "boss_watch_px": {
-  "BWXT": 115.77,
-  "TLN": 360.5400085449219
+  "BWXT": 116.67,
+  "TLN": 361.895
  },
  "notes_audit": {
   "scout": {
-   "asked": 12,
-   "used": 12,
+   "asked": 15,
+   "used": 14,
    "notes": {
     "TLN Deals and contracts": 1,
-    "CCJ Deals and contracts": 3,
-    "BWXT Deals and contracts": 6,
+    "CCJ Deals and contracts": 4,
+    "BWXT Deals and contracts": 8,
     "SECTOR Government and laws": 3,
     "UUUU Deals and contracts": 3,
-    "SECTOR Countries": 4,
+    "SECTOR Countries": 6,
     "CEG Deals and contracts": 1,
     "NXE Legal": 1,
     "NXE Deals and contracts": 1,
@@ -201882,7 +201934,7 @@
    ],
    [
     "2026-11-23",
-    61.36
+    61.57
    ]
   ],
   "NXE": [
@@ -202004,7 +202056,7 @@
    ],
    [
     "2026-11-23",
-    6.79
+    6.84
    ]
   ],
   "UEC": [
@@ -202126,7 +202178,7 @@
    ],
    [
     "2026-11-23",
-    5.76
+    5.78
    ]
   ],
   "DNN": [
@@ -202370,7 +202422,7 @@
    ],
    [
     "2026-11-23",
-    5.27
+    5.3
    ]
   ],
   "LEU": [
@@ -202492,7 +202544,7 @@
    ],
    [
     "2026-11-23",
-    87.72
+    88.25
    ]
   ],
   "BWXT": [
@@ -202614,7 +202666,7 @@
    ],
    [
     "2026-11-23",
-    115.86
+    116.66
    ]
   ],
   "CEG": [
@@ -202736,7 +202788,7 @@
    ],
    [
     "2026-11-23",
-    249.74
+    250.59
    ]
   ],
   "VST": [
@@ -202858,7 +202910,7 @@
    ],
    [
     "2026-11-23",
-    124.38
+    124.83
    ]
   ],
   "TLN": [
@@ -202980,7 +203032,7 @@
    ],
    [
     "2026-11-23",
-    360.54
+    362.11
    ]
   ]
  }
