@@ -298,10 +298,15 @@ def refresh_candidates(st, desk, data, prices, today, brk_state, force=False):
     book = st["book"]
     hourly = market.fetch_hourly(T)
     for t, c in list(st["candidates"].items()):
-        if str(today) > c["valid_until"] or t not in T:
+        broke = prices.get(t) is not None and prices[t] <= c["stop"]  # price fell through the level: that setup is dead
+        if str(today) > c["valid_until"] or t not in T or broke:
             st["candidates"].pop(t)
             if t in st["armed"]:
                 ex_cancel(st, t)
+            if broke:
+                st.setdefault("setup_status", {})[t] = (f"its support at ${c['zone']} broke (now ${prices[t]:.2f}, under the "
+                                                        f"${c['stop']} stop), so that setup was dropped; waiting for a new level")
+                st.setdefault("last_scan", {}).pop(t, None)
     scans = st.setdefault("last_scan", {})
     for t in T:
         if account.lot(book, t, "trade")["qty"] > 1e-6 or t in st["candidates"]:
