@@ -294,102 +294,6 @@
  },
  "news_feed": [
   {
-   "ticker": "BWXT",
-   "source": "Google News: \"BWX Technologies\"",
-   "title": "BWX Technologies, Inc. (BWXT) Stock Forecasts - Yahoo! Finance Canada",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNVkdHc0RQWHFnR0RfQ0xaZVRRTEdoNjdhb1R6dENZTkhhRmM3RHJYcU8wNjB0Uk5jUExYZ2tBVlktTlRKeWdXODdWcG8xN1BPdVZZYTI3QnJfcXVyWFVOOWJLWUROb2d6WGM0YVpqNU1pWHMzUHRoZEE3VTNuWVN0TVFlZ3R2THFJZlRPNU45YmhJX2c?oc=5",
-   "ts": 1795138850,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "LEU",
-   "source": "Google News: \"Centrus Energy\"",
-   "title": "VAN ECK ASSOCIATES CORP Trims Centrus Energy Corp (LEU) Stake by 20.49% - GuruFocus",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSHdPVHBHZ2dubEJMNVpTcjB0S1BwWFg1bUNteVNHZ2xkR0FVb0g5emZpX05QM2xiUl95UG5rTXVFVzBXWkJJanV0WkJZcFNfUWlTR2dwaW9nNkxyUmtLZGNESm1lYm1PSFhGTnJ0cG93MjZNdWI1eEFUYlFNOWdRSlFhbFJYU3haMWEyTHpmdmFVLUhjRWY2a2ljaUVfZ1BJWER4Y011Vlh6UQ?oc=5",
-   "ts": 1795138689,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: Westinghouse reactor",
-   "title": "Poland nuclear power plant: Westinghouse, Bechtel $50b contract due early 2027 - The Jerusalem Post",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA2UEMtU2Zfel9yN2tSbnlkRDNPcnI2dVN3bmtNM3llLTNHSkVIRlZfUjI1clBBMzc1OU1FdDhqbDd6ME9NZklSUTk0WWJya0FPNWZnZkJ3UmNVT0Nhclk0?oc=5",
-   "ts": 1795137263,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Uranium Miners ETF (ASX:URNM) Lags a Record Uranium Term Price: Why? - Kalkine Media",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOX3hTbEpiM204OTBlWGZvSDBDZ1pMcGdNeHRtX2xvQnppWG1kMTlpaFRYWVNWMWJQNFBsZF9yUUJ3MDdCUjlMSUZMVXR2cmtGTC10T0t4ZW1WN05FaTlTcGV2ckpUb2NFQlFQZXpKd0xZSlZJX05xNkZKN0ZJVDlfcFFPZWpicTN1czVFN3hhS3VBbmUya0dZTUp2WGY3XzV3MkV1dQ?oc=5",
-   "ts": 1795132620,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Boss Energy (ASX:BOE) Keeps Honeymoon Uranium Output Tracking to Plan - Kalkine Media",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeTE1eE5Ddm5wN09mQ0wzamJNU3hFUjlwU3B1MXA1TmJkVXM0amlNQmNycDJyOEIxQWxfWnI2VjI1TGhKRXJTR2t2OHozWjA1Wm5vMVRfOGNYdE9abVRRTERwd19SUUE1c05hLXdRakx6a3VBcm9sWkE4SjZPa0s1bWdLRVRRcFI3eHoxeGx3Vk5mMzBEX245c0VpRXlic0VTWVRkeDJldGFFYURs?oc=5",
-   "ts": 1795132620,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "UUUU",
-   "source": "Google News: \"Energy Fuels\" uranium",
-   "title": "Energy Fuels Inc. Securities Violation Investigation \u2013 Robbins LLP is Investigating the Officers and Directors of UUUU for Breaches of Fiduciary Duty and Violations of Securities Laws - Business Wire",
-   "link": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxPX2pKTFVGVFhLbFZ1QlM4d0NPbjFKdkNGaHlSa1picWxDM21tREU3TU9OTjU1NXhydlNnY3Y5ckZNeEk4MUVwemxTVllqeDJ4cWFsVGlOQ1dCXzRHZTM1RGJqVlZldTFoVENQY053V2JkeV9fZC1EQnpsZ1NISE1sTTBCenNackRndk80dVk4ejVYSHVULVJqYnBXMFFSMWkweWVVbTM2RVdDMlpMOTVQNmtkbl9jZnhDSUR4T1c3YWVENVV2TW0xZ014c2gtZ1BmcWxrRjNJZl9sMWRXT1FPLXZpQlpaVng1UXVlVHNZWVpkSzBHYVB2MUYtLVIxSXBseGdSYzMtSUNDSGNjUVpGZ1VXQlh2czNrcnVZVS04RExtU0JXQXJNM3VTUDdSSkJMUGhPUTZjWjBfRmpKZ0JyWklSTUNNVFM0aDcxTnM0SXNkQmxKWVNuMTdn?oc=5",
-   "ts": 1795132102,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "NXE",
-   "source": "Google News: \"NexGen Energy\"",
-   "title": "Nexgen Energy falls 4.61% in Thursday's session - Global Banking & Finance Review",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNlNZVUcyNlJlU3ppdkN3NjZfNmxUa2haSkR0TEFlSElLVzlFenhPYllxWUV1YW53N0R0SnlFV2pjR05vcmtiNUN3T0I5RFJFU3RJclotQktOT1Z2MG9GeFgySmlBdEhoQU4wakxLUThCOHJkbmxZS2hWazF4NkN5dFFzMk8?oc=5",
-   "ts": 1795129042,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "TLN",
-   "source": "Google News: \"Talen Energy\"",
-   "title": "Insider Selling: Talen Energy (NASDAQ:TLN) SVP Sells $1,276,981.04 in Stock - MarketBeat",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPWlJMWGV5VmpyOVJJMHJTRmRIMzBuTE9FVktZVnpxSzFFeEljSjc5bVV3WEZIaVhpQnhlZ3F2ZzlYQjlTUzh1bXppd3JySGM5MTJRS0Z1azFlbkZuemZVazhqbmRNUHR4NE9QZ3ViTkV1UnBmSnliNWtTdDJqU2ZIb3kwNFlOcGF3QmlOSThGTzdnV21FX1Rrc2dMVVg2a2VYUVZhZWs3UjJBMEpBdG5aZ19tM2xoT0JVal9HODhraC1HdjI0N2p0THlB?oc=5",
-   "ts": 1795126794,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
    "ticker": "LEU",
    "source": "Google News: HALEU fuel",
    "title": "Blykalla Secures World\u2019s First HALEU Enrichment Contract for a Commercial Lead-Cooled Reactor - POWER Magazine",
@@ -3292,6 +3196,102 @@
    "direction": "up",
    "event_type": "supply",
    "why": "Mill processing plan for uranium; operational news, modest revenue relevance"
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News",
+   "title": "Constellation Energy stock: DOE extends Eddystone operations - ad-hoc-news.de",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQzliZDBVNGVJV1EycDNiN2VwRmVvMUV1YkpBd1ZOTjI3N19QU2U1YXJwR1k3RXZCWHlZcmowR1AtWjEtN01ZVDM3VFFfc19UMkszWHdqS1VoUlAyd2lMZkl2NGllX215bTVkeXhQWVBxZGE3RkY0SktWMHVFR1VhcUN2cGdfLWtnQWNoV1hia3dfQkg5UGxYd3F3Q1NCRXZVTS1qMmItMU11UFFDQ1lSSVhMVHlzWFpEVThlMUVrMA?oc=5",
+   "ts": 1795435818,
+   "materiality": 4,
+   "novelty": "follow_up",
+   "direction": "up",
+   "event_type": "policy_tariff",
+   "why": "DOE order extending Eddystone plant operations; a known, likely incremental policy item"
+  },
+  {
+   "ticker": "CEG",
+   "source": "Yahoo (XLU, related to CEG)",
+   "title": "3 Funds With Electric Utility Exposure As Data Center Power Outruns The Grid",
+   "link": "https://finance.yahoo.com/energy/articles/3-funds-electric-utility-exposure-120915255.html?.tsrc=rss",
+   "ts": 1795435755,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": null,
+   "why": "Generic fund-comparison piece; opinion, no new company-specific information"
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News: \"Energy Fuels\" uranium",
+   "title": "Energy Fuels to Produce 1 Million Pounds of Uranium in Processing Campaign - www.marketscreener.com",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMUk3YVRxTTljR2RjU0Z1OHdtUkNWOFlmckpMbV92Y3pUakljalU5MFpWeGl0c0cyX19wNlVjN1dud1ZHMElXcHRnTHhmZnNoVWRDLTZGZFFiaXRzNEwwSVdnV24xMjNQRUtpbVRUZTJjN0JVTmtWN1VNckdHc0dlWlpkdXBQa0RYbkYybUNfRS1iYnMydkJoUmtNc0NpRW5wWFJXcmpadVU5dEo5alV0YkxyX1BDeFJWMERMSW5Bb3BYLXpyU3c?oc=5",
+   "ts": 1795435830,
+   "materiality": 5,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "supply",
+   "why": "Company production milestone of 1M lb uranium; meaningful but modest for multi-day move"
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Yahoo Finance",
+   "title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales",
+   "link": "https://stocktwits.com/news-articles/markets/equity/uuuu-stock-rises-premarket-as-energy-fuels-targets-one-million-pounds-of-uranium-output-sees-35-growth-in-2027-contract-sales/cNbpb5FR9jG?.tsrc=rss",
+   "ts": 1795437726,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "earnings",
+   "why": "Production guidance and 2027 sales growth target, but premarket move is unproven"
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "How did Cameco (TSX:CCO) and Denison Mines' (TSX:DML) third-quarter results reflect record uranium term prices? - kalkine.ca",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQmZSMjVTcTZHRE1BckxuSHVLSG82X3kzb0pYWjlOUjF1TUZReGU2TEtLdm1ma2tfbFNtT1pieEpaVnA1R2RnRWtWdlQyR0NoaWdmWVpRdkU4al9OeXVsY2Q4SEhQSFc1N1lwQ1FweTNkcllBWFlwRGlLbHJWZWxUaXJsdEljbEdYRHlRaks4WGZQbW9uSURIQzREY3M5VlJkVW9WX21IQXNiQTRnWVF0SnZ1N05OVWlLTFRVUW95NXhNbWUwcHVDOHJLQ19pWk0?oc=5",
+   "ts": 1795436820,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Recap of past quarterly results and term prices; nothing new"
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "Cameco Corporation: Contracted Nuclear Demand Supports Long-Term Growth Amid Near-Term Cost Pressures - kalkine.ca",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQY0xFTnBqUFlaaEtkMFlTVlh6emdERUExdTlxVjZXbjBodGNTV2hpTC1pVnJjUllhd2VkeE1lTDBlOVVhWjdtUjF1ZGdJRU5wcUN1S0Z0Rjc4WVZuOHV3MDR3elU4NHlIellxbEtXUHd1VjhVRHpxbkROTjZHY3UyMW02eWhIdnkxQ3psaWJSZTZGN0R1UjNGTGtRRkRxbmI2VmphYWhVZDBoSnI4TGNmRGtfRzV0UFlqSWx3NENaNDNGRE1MN1VzMmRjVHRlTk02?oc=5",
+   "ts": 1795438644,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic explainer on contracted demand and cost pressures; no new company-specific information."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Yahoo Finance",
+   "title": "Energy Fuels Plans One Million-Pound Uranium Processing Campaign at White Mesa Mill",
+   "link": "https://finance.yahoo.com/energy/articles/energy-fuels-plans-one-million-115158172.html?.tsrc=rss",
+   "ts": 1795434718,
+   "materiality": 4,
+   "novelty": "follow_up",
+   "direction": "up",
+   "event_type": "supply",
+   "why": "Planned mill campaign for one million pounds; modest, operational, mostly already expected."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Yahoo Finance",
+   "title": "Energy Fuels Targets Additional One Million Pounds of Low-Cost U.S. Uranium Production in Upcoming Processing Campaign; Advances Additional Uranium Ramp-Ups",
+   "link": "https://finance.yahoo.com/news/energy-fuels-targets-additional-one-111500571.html?.tsrc=rss",
+   "ts": 1795432500,
+   "materiality": 4,
+   "novelty": "follow_up",
+   "direction": "up",
+   "event_type": "supply",
+   "why": "Same processing news restated with more ramp-up detail; incremental at best, likely the same story."
   }
  ],
  "reviews": [
@@ -4381,28 +4381,28 @@
   "TLN"
  ],
  "ranking": {
-  "week": "2026-W47",
-  "date": "2026-11-20",
+  "week": "2026-W48",
+  "date": "2026-11-23",
   "scores": {
    "TLN": {
     "trades": 33,
-    "avg_pct": 0.769,
-    "score": 0.637
+    "avg_pct": 0.706,
+    "score": 0.589
    },
    "TSM": {
     "trades": 31,
-    "avg_pct": 0.5,
-    "score": 0.427
+    "avg_pct": 0.373,
+    "score": 0.331
+   },
+   "MU": {
+    "trades": 41,
+    "avg_pct": 0.348,
+    "score": 0.319
    },
    "PLTR": {
     "trades": 36,
-    "avg_pct": 0.418,
-    "score": 0.371
-   },
-   "MU": {
-    "trades": 44,
-    "avg_pct": 0.368,
-    "score": 0.337
+    "avg_pct": 0.347,
+    "score": 0.315
    },
    "NXE": {
     "trades": 49,
@@ -4410,74 +4410,74 @@
     "score": 0.273
    },
    "ETN": {
-    "trades": 44,
-    "avg_pct": 0.199,
-    "score": 0.199
+    "trades": 43,
+    "avg_pct": 0.107,
+    "score": 0.125
    },
    "VRT": {
-    "trades": 46,
-    "avg_pct": 0.178,
-    "score": 0.182
+    "trades": 44,
+    "avg_pct": 0.062,
+    "score": 0.087
    },
    "NVDA": {
     "trades": 32,
     "avg_pct": -0.007,
     "score": 0.043
    },
-   "AVGO": {
-    "trades": 38,
-    "avg_pct": -0.059,
-    "score": -0.005
-   },
    "NRG": {
     "trades": 35,
     "avg_pct": -0.093,
     "score": -0.028
    },
+   "AVGO": {
+    "trades": 38,
+    "avg_pct": -0.107,
+    "score": -0.043
+   },
    "SMR": {
-    "trades": 59,
-    "avg_pct": -0.164,
-    "score": -0.111
+    "trades": 58,
+    "avg_pct": -0.137,
+    "score": -0.088
    },
    "VST": {
     "trades": 34,
     "avg_pct": -0.225,
     "score": -0.128
    },
-   "CEG": {
-    "trades": 28,
-    "avg_pct": -0.264,
-    "score": -0.142
-   },
    "UEC": {
     "trades": 49,
     "avg_pct": -0.226,
     "score": -0.154
    },
-   "AMD": {
-    "trades": 50,
-    "avg_pct": -0.264,
-    "score": -0.187
-   },
    "LEU": {
-    "trades": 44,
-    "avg_pct": -0.345,
-    "score": -0.244
+    "trades": 41,
+    "avg_pct": -0.242,
+    "score": -0.155
+   },
+   "CEG": {
+    "trades": 29,
+    "avg_pct": -0.314,
+    "score": -0.182
    },
    "CCJ": {
     "trades": 34,
     "avg_pct": -0.44,
     "score": -0.295
    },
+   "AMD": {
+    "trades": 49,
+    "avg_pct": -0.491,
+    "score": -0.374
+   },
    "BWXT": {
-    "trades": 52,
-    "avg_pct": -0.447,
-    "score": -0.343
+    "trades": 50,
+    "avg_pct": -0.494,
+    "score": -0.379
    },
    "PWR": {
-    "trades": 38,
-    "avg_pct": -0.638,
-    "score": -0.463
+    "trades": 37,
+    "avg_pct": -0.589,
+    "score": -0.421
    },
    "OKLO": {
     "trades": 57,
@@ -4501,16 +4501,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.01069,
+  "day_usd": 0.01181,
   "month": "2026-11",
-  "month_usd": 0.27418,
-  "total_usd": 0.27418,
+  "month_usd": 0.2753,
+  "total_usd": 0.2753,
   "by_role": {
    "macro": 0.0037,
    "whale": 0.00304,
    "crowd": 0.0032,
    "level": 0.00144,
-   "scout": 0.03022,
+   "scout": 0.03134,
    "review": 0.01668,
    "auditor": 0.01318,
    "strategist": 0.08019,
@@ -4577,7 +4577,7 @@
   "TLN": 333.24,
   "SPY": 690.91
  },
- "last_cycle": "2026-11-23 07:03 ET",
+ "last_cycle": "2026-11-23 08:00 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -49019,6 +49019,7 @@
   "4627bda8dfc98062",
   "c56ca4f4b89e4d32",
   "8010bdf39626577f",
+  "d39dc266a3b4dae2",
   "e6c12a1e5998666c",
   "00dd4e324f5b633b",
   "4653461d7ed88855",
@@ -49054,7 +49055,9 @@
   "6ae4fd45dc301c0d",
   "7a634663fcf720f5",
   "e00ac0592374a28e",
+  "898bce48a6f14aa6",
   "00667c7b98791b66",
+  "12fc0c7a240e4fef",
   "b1e399ca01445ae4",
   "8b9f115784388b61",
   "888d96e0923cd600",
@@ -49062,6 +49065,7 @@
   "8d0283e176b666a8",
   "4b634efdcf500ae7",
   "ceb6205483ccef34",
+  "bb6d0befac06c212",
   "8a429bbe4d25ae7d",
   "7cabb45f8b0c2778",
   "5c88c6637836b8c6",
@@ -49097,6 +49101,7 @@
   "e7f494cb247bf154",
   "52fac14cf9cff90b",
   "de4d277c2d827d97",
+  "5152638d88885c07",
   "813ce322cba7c1e5",
   "66abfa595ddf0659",
   "fd2731052f33e27f",
@@ -49152,6 +49157,7 @@
   "f309be7c357c35cc",
   "063170773d4b14a2",
   "a3dd031817a4feeb",
+  "a82f81d0eb01a7ed",
   "91d21b21da9289e4",
   "0e9db4d412c6f84b",
   "f5de3767d3f1b3c9",
@@ -49176,9 +49182,11 @@
   "a38730433f855a68",
   "88d39974add2ff27",
   "f16660c269a6613c",
-  "12fc0c7a240e4fef"
+  "48bd8b45af68192c",
+  "cdf09ab4dc83c609",
+  "82a0f9c44d82898b"
  ],
- "news_slow_at": 1795435470.7244656,
+ "news_slow_at": 1795438483.2290032,
  "officer": {
   "settled_cash": 1000,
   "cash": 1000,
@@ -197801,6 +197809,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "UUUU",
+   "type": "earnings",
+   "title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales",
+   "date": "2026-11-23",
+   "price": 4.95,
+   "materiality": 6,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -197816,64 +197836,64 @@
    "lesson": null
   }
  ],
- "intel_at": 1795435415.0913396,
+ "intel_at": 1795437269.380444,
  "intel_health": {
-  "at": "2026-11-23 07:04",
+  "at": "2026-11-23 07:35",
   "sources": {
    "Cigar Lake": 5,
-   "McArthur River / Key Lake": 3,
-   "Athabasca Basin": 9,
+   "McArthur River / Key Lake": 2,
+   "Athabasca Basin": 6,
    "Saskatchewan wildfires": 0,
    "Rook I / Arrow": 1,
-   "Wheeler River / Phoenix": 3,
+   "Wheeler River / Phoenix": 2,
    "Port Hope / Blind River": 0,
    "Westinghouse": 8,
    "Kazakhstan": 0,
    "Niger": 4,
-   "Namibia": 9,
+   "Namibia": 7,
    "Russia supply": 1,
-   "Piketon": 11,
-   "HALEU": 8,
-   "Wyoming ISR": 13,
+   "Piketon": 10,
+   "HALEU": 10,
+   "Wyoming ISR": 14,
    "South Texas ISR": 1,
    "White Mesa / Utah": 4,
    "Rare earths (Energy Fuels)": 9,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 6,
-   "Crane / Three Mile Island": 5,
+   "Naval reactors": 4,
+   "Crane / Three Mile Island": 4,
    "Susquehanna": 5,
    "Comanche Peak": 3,
    "PJM grid": 8,
    "ERCOT grid": 6,
    "Data-center nuclear deals": 9,
-   "Japan restarts": 6,
-   "China new builds": 8,
+   "Japan restarts": 5,
+   "China new builds": 7,
    "Congress and laws": 24,
    "NRC decisions": 7,
-   "Energy Department": 40,
-   "White House and executive orders": 24,
+   "Energy Department": 31,
+   "White House and executive orders": 19,
    "Tariffs and trade": 1,
-   "India": 17,
-   "South Korea": 96,
+   "India": 16,
+   "South Korea": 98,
    "Europe new builds": 28,
    "France and UK": 8,
    "Middle East": 9,
-   "Asia newcomers": 55,
-   "Canada SMRs": 3,
-   "Big tech power deals": 26,
-   "Iran": 30,
-   "North Korea": 95,
-   "War zones": 18,
+   "Asia newcomers": 23,
+   "Canada SMRs": 4,
+   "Big tech power deals": 27,
+   "Iran": 28,
+   "North Korea": 0,
+   "War zones": 15,
    "AUKUS and navies": 22,
-   "Weapons programs": 6,
+   "Weapons programs": 10,
    "Stockpiles and reserves": 6,
-   "Sprott trust": 3,
+   "Sprott trust": 4,
    "Uranium price": 24,
    "US policy": 0,
    "Lawsuits and investigations": 33,
    "Workers and jobs": 13,
    "CBC Saskatchewan": 20,
-   "World Nuclear News": 49,
+   "World Nuclear News": 48,
    "Federal Register (uranium)": 6,
    "Federal Register (nuclear)": 23,
    "NRC event reports": 7
@@ -197881,81 +197901,81 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 07:04",
-  "total": 304,
-  "week": 268,
+  "updated": "2026-11-23 08:00",
+  "total": 309,
+  "week": 272,
   "places": {
    "Uranium price": 31,
    "World Nuclear News": 23,
    "Piketon": 21,
    "Europe new builds": 18,
    "AUKUS and navies": 15,
+   "South Korea": 12,
    "Namibia": 11,
    "Workers and jobs": 11,
    "PJM grid": 11,
-   "South Korea": 11,
    "Susquehanna": 10,
    "ERCOT grid": 9,
    "Comanche Peak": 7
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-23 07:04",
+   "at": "2026-11-23 07:35",
    "sources": {
     "Cigar Lake": 5,
-    "McArthur River / Key Lake": 3,
-    "Athabasca Basin": 9,
+    "McArthur River / Key Lake": 2,
+    "Athabasca Basin": 6,
     "Saskatchewan wildfires": 0,
     "Rook I / Arrow": 1,
-    "Wheeler River / Phoenix": 3,
+    "Wheeler River / Phoenix": 2,
     "Port Hope / Blind River": 0,
     "Westinghouse": 8,
     "Kazakhstan": 0,
     "Niger": 4,
-    "Namibia": 9,
+    "Namibia": 7,
     "Russia supply": 1,
-    "Piketon": 11,
-    "HALEU": 8,
-    "Wyoming ISR": 13,
+    "Piketon": 10,
+    "HALEU": 10,
+    "Wyoming ISR": 14,
     "South Texas ISR": 1,
     "White Mesa / Utah": 4,
     "Rare earths (Energy Fuels)": 9,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 6,
-    "Crane / Three Mile Island": 5,
+    "Naval reactors": 4,
+    "Crane / Three Mile Island": 4,
     "Susquehanna": 5,
     "Comanche Peak": 3,
     "PJM grid": 8,
     "ERCOT grid": 6,
     "Data-center nuclear deals": 9,
-    "Japan restarts": 6,
-    "China new builds": 8,
+    "Japan restarts": 5,
+    "China new builds": 7,
     "Congress and laws": 24,
     "NRC decisions": 7,
-    "Energy Department": 40,
-    "White House and executive orders": 24,
+    "Energy Department": 31,
+    "White House and executive orders": 19,
     "Tariffs and trade": 1,
-    "India": 17,
-    "South Korea": 96,
+    "India": 16,
+    "South Korea": 98,
     "Europe new builds": 28,
     "France and UK": 8,
     "Middle East": 9,
-    "Asia newcomers": 55,
-    "Canada SMRs": 3,
-    "Big tech power deals": 26,
-    "Iran": 30,
-    "North Korea": 95,
-    "War zones": 18,
+    "Asia newcomers": 23,
+    "Canada SMRs": 4,
+    "Big tech power deals": 27,
+    "Iran": 28,
+    "North Korea": 0,
+    "War zones": 15,
     "AUKUS and navies": 22,
-    "Weapons programs": 6,
+    "Weapons programs": 10,
     "Stockpiles and reserves": 6,
-    "Sprott trust": 3,
+    "Sprott trust": 4,
     "Uranium price": 24,
     "US policy": 0,
     "Lawsuits and investigations": 33,
     "Workers and jobs": 13,
     "CBC Saskatchewan": 20,
-    "World Nuclear News": 49,
+    "World Nuclear News": 48,
     "Federal Register (uranium)": 6,
     "Federal Register (nuclear)": 23,
     "NRC event reports": 7
@@ -198024,6 +198044,24 @@
     ],
     "score": 7.22,
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdk00SVRqT1A0Uk1tcFZIYk81SmJJckRVYlR0R2QyajFMSExkZWN2QVhDdjFFY3EwR3NJWnNvLTNmeXJ2RXFZQWlzZmVzNXJEVWZtc0ZmUVhiWVd1Z1RON0hBRDg1R2ZKN1FPeDhQVi1DYWZfbnRfZlhBeEc4OWFTWldIYmNuMjczRGliSDl5WmZEQ19EWXZnYjNtMlZfbmJVazBuUXNDX1hfejFlUEJ1bFFIMA?oc=5"
+   },
+   {
+    "date": "2026-11-20",
+    "title": "Trump says China is building nuclear weapons \u2018hot and heavy\u2019, warns it could catch US in 10 years | World News",
+    "outlet": "Hindustan Times",
+    "place": "Weapons programs",
+    "tickers": [
+     "BWXT",
+     "LEU"
+    ],
+    "tags": [
+     "restart",
+     "defense",
+     "geopolitics"
+    ],
+    "numbers": [],
+    "score": 7.22,
+    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQUGVLcFRsOTRYblpONE1NQW1Vc1VxVU14Nms2ZFlfd3JMckh4RUdMZVFmZm8zQTVTZGFDVmFOdE50ZFJBLV9VYU1MeUllMGpCaTJyeGtuUUZuMzNJWnRxNzViQW5pdFNsQUxub3NXR3BfSmtXcHd5N0pFWklPY3VXQjA1RlVXeDlkZngzM29iNW0tS284a3BBRWVnNW5iSExoUTVDYVUyYW5sVC0yd3I5bnAwTWJodWNFcHN1THFIZ1RJTEQ1X1hJZ0xUNjV3UjkxdGtxVkNlVVRWZ2tJQ2VjU2gwLVVDald3NFV1a01zZHRjalnSAfMBQVVfeXFMUFBlS3BUbDk0WG5aTjRNTUFtVXNVcVVNeDZrNmRZX3dyTHJIeEVHTGVRZmZvM0E1U2RhQ1ZhTnROdGRSQS1fVWFNTHlJZTBqQmkycnhrblFGbjMzSVp0cTc1YkFuaXRTbEFMbm9zV0dwX0prV3B3eTdKRVpJT2N1V0IwNUZVV3g5ZGZ4MzNvYjVtLUtvOGtwQUVlZzVuYkhMaFE1Q2FVMmFubFQtMndyOW5wME1iaHVjRXBzdUxxSGdUSUxENV9YSWdMVDY1d1I5MXRrcVZDZVVUVmdrSUNlY1NoMC1VQ2pXdzRVdWtNc2R0Y2pZ?oc=5"
    },
    {
     "date": "2026-11-19",
@@ -198456,22 +198494,6 @@
     "numbers": [],
     "score": 5.8,
     "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQQXpBb29rdVl6VFNDbXJHWG94dk1nOEpBMUtzT21sQUxjdlhvNzc1ZkVVNmhXT1dVVEVuenNPd3BrSGxDYmJhdGpDM3FkdzBjS19hU2RLeVQtQVJKLXNYdThqZHV2akdCUFZhN2tseVhucTlxRXNpUmZGNmpwYzZQcFk2NXNZRW1jcjN4LWVUZElBWk85bUVjc1U1WWtZMnk4RHBQWlBRLVFmMEV6Q3ctODF3bHNmTHpOR1A4RWdiMTZOclczSmpjNEZYUGlTdUdsd3Ftd2xsRXVzcDBBWWdROVJTczE2TWF5NE8zVWdQdzlHeHZITjhvRXJ6Y096S0NP0gGGAkFVX3lxTFBPTVBhZFdva2xqdm5paUNycnlHWXdxLXIzeFNFc0NiU0ZqMzVwSVlGd2xCYklPWGJkeW9Jd3NoV3hSM3dmM3BmbU5XekFMYVhBcHJEemxnLTlDZmFHYWNIR3pSSFEwOFVKMDU3SGRkLXphREtYSnBLd2VMZEhUUzhRYXNGNFVtbGRpVlF4ZjU3ajd1bjN4dHVzdVBWZWtVemZweWNsLWcxaDF2VXZVWnZUZ0RHeVB3dlEyOEt1RkNBN0tEazZzVzN1ZXRDbzItaXl2eU5yUUg5anp6Um5EZmhKemEweWZqZ2FsSmtfODItYUFMMWg4ZG1abTJZb3AwZGl2WS0yeVE?oc=5"
-   },
-   {
-    "date": "2026-11-17",
-    "title": "Urenco, Blykalla sign HALEU deal",
-    "outlet": "World Nuclear News",
-    "place": "World Nuclear News",
-    "tickers": [
-     "CCJ",
-     "LEU"
-    ],
-    "tags": [
-     "contract"
-    ],
-    "numbers": [],
-    "score": 5.8,
-    "link": "https://www.world-nuclear-news.org/articles/urenco-blykalla-sign-haleu-deal"
    }
   ]
  },
@@ -198570,7 +198592,7 @@
   }
  ],
  "memory_view": {
-  "events": 1306,
+  "events": 1309,
   "with_outcomes": 1162,
   "playbooks": {
    "acquisition": {
@@ -198662,15 +198684,6 @@
    }
   ],
   "recent": [
-   {
-    "date": "2026-11-21",
-    "ticker": "CEG",
-    "title": "Explosions were heard in Zaporizhzhia; traffic across the Dnipro Hydroelectric Power Plant was completely halted",
-    "type": "intel_disruption",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
    {
     "date": "2026-11-22",
     "ticker": "VST",
@@ -199021,6 +199034,15 @@
     "r0": null,
     "r5": null,
     "r20": null
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "UUUU",
+    "title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales",
+    "type": "earnings",
+    "r0": null,
+    "r5": null,
+    "r20": null
    }
   ]
  },
@@ -199326,7 +199348,7 @@
    }
   ]
  },
- "dossier_at": 1795435460.700406,
+ "dossier_at": 1795437309.1434927,
  "sector_prices": {
   "_at": 1795421580.0402806,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -199384,85 +199406,85 @@
    "name": "Cameco",
    "price": 57.96,
    "week_pct": -18.05,
-   "built": "2026-11-23 07:04"
+   "built": "2026-11-23 07:35"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.41,
    "week_pct": -17.33,
-   "built": "2026-11-23 07:04"
+   "built": "2026-11-23 07:35"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.31,
    "week_pct": -20.3,
-   "built": "2026-11-23 07:04"
+   "built": "2026-11-23 07:35"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.69,
    "week_pct": -17.96,
-   "built": "2026-11-23 07:04"
+   "built": "2026-11-23 07:35"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 4.95,
    "week_pct": -24.81,
-   "built": "2026-11-23 07:04"
+   "built": "2026-11-23 07:35"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 81.56,
    "week_pct": -21.41,
-   "built": "2026-11-23 07:04"
+   "built": "2026-11-23 07:35"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 108.59,
    "week_pct": -11.49,
-   "built": "2026-11-23 07:04"
+   "built": "2026-11-23 07:35"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 237.44,
    "week_pct": -15.13,
-   "built": "2026-11-23 07:04"
+   "built": "2026-11-23 07:35"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 115.22,
    "week_pct": -13.37,
-   "built": "2026-11-23 07:04"
+   "built": "2026-11-23 07:35"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 333.24,
    "week_pct": -11.37,
-   "built": "2026-11-23 07:04"
+   "built": "2026-11-23 07:35"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-23 07:04"
+   "built": "2026-11-23 07:35"
   }
  ],
- "heartbeat": "2026-11-23 07:03",
+ "heartbeat": "2026-11-23 08:00",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 69,
+ "_pushed_feed": 72,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
