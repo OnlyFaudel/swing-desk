@@ -161,6 +161,10 @@
   "pop_dip_rebound_3to6": {
    "trials": 8,
    "verdict": "2026-11-23 (13 nuclear stocks, full history back to 1996 for CCJ; every +3-6% day): after the pop, a limit buy 2/3/5% under that day's close (valid 5 days), sold when the price gets back to the pop-day close or after 10 days, 0.2% costs. Fills back to the pop price 64-82% of the time and wins 68-83%, but averages only +0.27/+0.42/+0.59% (since 2019: +0.25/+0.55/+0.80%) because about 1 in 20 keeps falling (worst 5%: -15% to -18%). The same dip-buy after ANY day does as well or better (+0.43/+0.64/+1.19%), so the pop adds nothing: it's normal volatility. Uranium miners' next 5 days after a pop: -0.18% vs +0.47% normally (median -0.66% vs 0), but the halves disagree (-0.51/+0.16). Not adopted. The dip-and-recover rhythm is what the support-level buys already trade, at levels instead of after pops."
+  },
+  "support_vs_dipbuy_fills": {
+   "trials": 14,
+   "verdict": "2026-11-23 (10 nuclear stocks, Dec 2023-Nov 2026 hourly for support buys, daily for the dip-buy; $1,000, 25% per trade, max 4 open). Paper-style fills (touch = filled): support buys with the falling-sector block +0.44%/trade -> $3,369 (52%/yr, worst drop -28%); simple 2% dip-buy, sell back at the anchor close or 10 days -> $9,376. Realistic fills (price must trade 0.3% through the order): support buys +0.15%/trade, halves +0.37/-0.07 -> $1,348 (11%/yr, -44%); dip-buy -> $3,036 (47%/yr, -46%). Placing the support order 0.8-1.6% above the level doesn't fix it (+0.14 to +0.19%/trade, newer half negative). The dip-buy over 2008-2026 with realistic fills and $5+ stocks: 6.7%/yr, worst drop -64%; on the uranium ETF URA (no survivor bias) it lost money (-4.3%/yr). Conclusions: (1) the support buys' paper edge mostly comes from fills that only touched the price; (2) the dip-buy only shone in the 2023-26 bull and on surviving stocks; neither adopted as an upgrade. Added an honest-fill check (fill_check) so the paper record shows P&L without touch-only fills."
   }
  }
 }

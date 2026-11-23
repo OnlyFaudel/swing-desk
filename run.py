@@ -2530,12 +2530,56 @@ def scorecard(st):
                                   "wrong": sum(1 for x in st.get("theses", []) if x.get("status") == "wrong")}}
 
 
+def fill_check(st, data, today, thr=0.3):
+    """Paper limit orders fill the moment the price touches them; real ones often need the price to trade THROUGH.
+    Research 2026-11-23 (support buys, Dec 2023-Nov 2026): requiring a 0.3% trade-through cut the average trade from
+    +0.44% to +0.15% and the newer half went negative. So every support fill is checked against the day's real low/high
+    and the honest record (touch-only fills removed) is kept next to the paper one."""
+    book = st["book"]
+
+    def bar(t):
+        d = data.get(t)
+        if d is None or not len(d) or d.index[-1].date() != today:
+            return None
+        return float(d.Low.iloc[-1]), float(d.High.iloc[-1])
+    for t, lots in book["lots"].items():
+        L = lots.get("trade") or {}
+        if L.get("qty", 0) > 1e-6 and L.get("opened") == str(today) and not L.get("fill_quality"):
+            b = bar(t)
+            if b:
+                L["fill_quality"] = "touch-only" if b[0] >= L["entry"] * (1 - thr / 100) else "traded through"
+    for r in book["trades"]:
+        if r.get("setup") == "patient_level":
+            if str(r.get("exit_time") or "")[:10] == str(today) and r.get("why_out") == "target hit" and not r.get("exit_fill"):
+                b = bar(r["ticker"])
+                if b:
+                    r["exit_fill"] = "touch-only" if b[1] <= r["exit"] * (1 + thr / 100) else "traded through"
+    sup = [r for r in book["trades"] if r.get("entry_fill") or r.get("exit_fill")]
+    honest = [r for r in sup if r.get("entry_fill") != "touch-only"]
+    adj = lambda r: (r.get("realistic_pnl", r["pnl"]) if r.get("exit_fill") != "touch-only" else
+                     round((r.get("realistic_pnl", r["pnl"])) - r["dollars"] * 0.5 / 100, 2))  # a missed target usually means a worse exit
+    st["fill_honesty"] = {"checked_trades": len(sup), "touch_only_entries": sum(1 for r in sup if r.get("entry_fill") == "touch-only"),
+                          "touch_only_exits": sum(1 for r in sup if r.get("exit_fill") == "touch-only"),
+                          "paper_pnl": round(sum(r["pnl"] for r in sup), 2), "honest_pnl": round(sum(adj(r) for r in honest), 2),
+                          "note": "Honest = drop trades whose buy only touched the price, charge real costs, and take 0.5% off target exits that only touched."}
+    return st["fill_honesty"]
+
+
 def review(st, desk, data, prices, today, brk_state):
     # Friday's weekly pieces (strategist, auditor, drift check, practice-trade lessons). If a Friday was missed, the next review catches up.
     lw = st["flags"].get("weekly_review_done")
     is_weekly = today.weekday() == 4 or not lw or lw < str(today - dt.timedelta(days=7))
     if is_weekly:
         st["flags"]["weekly_review_done"] = str(today)
+    try:
+        fh = fill_check(st, data, today)
+        if fh.get("checked_trades"):
+            feed.post("officer", f"Honest fills check: of {fh['checked_trades']} support trades, {fh['touch_only_entries']} buys and "
+                      f"{fh['touch_only_exits']} target sells only touched the price (a real order might not have filled). "
+                      f"Paper P&L ${fh['paper_pnl']:+.2f}; honest P&L ${fh['honest_pnl']:+.2f}.", [], kind="data",
+                      art={"big": f"Honest P&L ${fh['honest_pnl']:+.2f}", "sub": f"Paper says ${fh['paper_pnl']:+.2f}"})
+    except Exception as e:
+        print("fill check", e)
     book = st["book"]
     b = st["benchmark"]
     if b["shares"] is None:
