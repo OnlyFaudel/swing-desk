@@ -161,7 +161,10 @@ def post_agent(role, out, to=None):
     if role == "scout" and not any((i.get("materiality") or 0) >= 7 for i in (out.get("items") or []) if isinstance(i, dict)):
         return
     tick = [k for k in (out.get("tickers") or {}) if isinstance(k, str)] if isinstance(out.get("tickers"), dict) else []
-    txt = (out.get("say") + "\n\n" if out.get("say") else "") + "\n".join(_flatten({k: v for k, v in out.items() if k != "say"}))
+    if out.get("say"):  # public post: what they said + why, in plain words (details stay in the chats and notes)
+        txt = str(out["say"]) + (f"\n\nWhy: {out['why']}" if out.get("why") else "")
+    else:
+        txt = "\n".join(_flatten({k: v for k, v in out.items() if k not in ("to", "watch", "files_read", "why")}))
     post(role, txt[:1200] or json.dumps(out, default=str)[:400], tick, kind="agent")
 
 

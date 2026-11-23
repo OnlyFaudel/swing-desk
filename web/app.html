@@ -3,11 +3,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Patient Levels</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400..700&family=Newsreader:opsz,wght@6..72,400..600&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#040E15; --sheet:#0A1B26; --sheet2:#0F2532; --ink:#EAF3F8; --ink2:#86A3B4; --hair:#15303F;
-  --glow:#5CC8FF; --glow-soft:#10334A; --violet:#8E7CFF; --gain:#3DDC97; --loss:#FF7A70; --amber:#F2C230;
+  --glow:#CDB16A; --glow-soft:#10334A; --violet:#8E7CFF; --gain:#8CC6A0; --loss:#E3877E; --amber:#F2C230;
   --r1:3px; --r2:10px;
 }
 *{box-sizing:border-box}
@@ -82,7 +82,7 @@ details summary{cursor:pointer;color:var(--ink2);font-size:13px}
 .fcol{max-width:700px}
 .fbar{position:sticky;top:0;background:var(--paper);padding:6px 0 10px;z-index:2}
 .kind{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink2)}
-.av{color:#04202E}.av.c1{background:#5CC8FF}.av.c2{background:#3DDC97}.av.c3{background:#B79CFF}.av.c4{background:#FF9F43}.av.c5{background:#4FD1C5}.av.c6{background:#FF7A70}.av.c7{background:#A9C2D0}.av.c8{background:#F2C230}
+.av{color:#04202E}.av.c1{background:#CDB16A}.av.c2{background:#8CC6A0}.av.c3{background:#B79CFF}.av.c4{background:#9BB7C4}.av.c5{background:#4FD1C5}.av.c6{background:#E3877E}.av.c7{background:#A9C2D0}.av.c8{background:#F2C230}
 
 .chain{display:grid;grid-template-columns:1fr 34px 1fr 34px 1fr;align-items:stretch;margin:4px 0 16px}
 .node{background:var(--sheet);border:1px solid var(--hair);border-radius:14px;padding:12px 12px 11px;min-width:0}
@@ -164,7 +164,7 @@ nav.more button{font-weight:500;font-size:13.5px;padding:6px 10px;border-bottom-
 .cal .d{min-height:54px;border-radius:6px;background:var(--sheet);padding:4px 3px;display:flex;flex-direction:column;align-items:center;gap:1px;font-size:10.5px;line-height:1.15}
 .cal .d i{font-style:normal;font-size:11px;color:var(--ink2);align-self:flex-start;padding-left:2px}
 .cal .d b{font-size:11.5px;font-weight:700}
-.cal .d.up{background:rgba(61,220,151,.14)}.cal .d.dn{background:rgba(255,122,112,.14)}
+.cal .d.up{background:rgba(140,198,160,.14)}.cal .d.dn{background:rgba(227,135,126,.14)}
 .cal .d.off{background:none}.cal .d.today{outline:1.5px solid var(--glow)}
 .cal .foot{font-size:12px;color:var(--ink2);margin:8px 2px 0}
 .now{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);margin:16px 0 0;padding:14px 2px}
@@ -226,7 +226,7 @@ nav.more button{font-weight:500;font-size:13.5px;padding:6px 10px;border-bottom-
 .art .sub{font-size:14px;color:rgba(234,243,248,.75);margin-top:8px}
 .art.k-alert{background:radial-gradient(120% 90% at 85% 0%,rgba(92,200,255,.55),rgba(92,200,255,0) 60%),linear-gradient(160deg,#0B2A3B,#071722)}
 .art.k-owner{background:radial-gradient(100% 90% at 10% 0%,rgba(142,124,255,.6),rgba(142,124,255,0) 60%),linear-gradient(160deg,#151A3A,#0A1022)}
-.art.k-answer{background:radial-gradient(110% 90% at 90% 10%,rgba(61,220,151,.45),rgba(61,220,151,0) 60%),linear-gradient(160deg,#0B2A2A,#071B1E)}
+.art.k-answer{background:radial-gradient(110% 90% at 90% 10%,rgba(140,198,160,.45),rgba(140,198,160,0) 60%),linear-gradient(160deg,#0B2A2A,#071B1E)}
 .art.k-data{background:repeating-linear-gradient(0deg,rgba(92,200,255,.06) 0 1px,transparent 1px 28px),repeating-linear-gradient(90deg,rgba(92,200,255,.06) 0 1px,transparent 1px 28px),linear-gradient(160deg,#0A2230,#061620)}
 .art.k-learn{background:radial-gradient(100% 100% at 50% 120%,rgba(142,124,255,.55),rgba(142,124,255,0) 65%),#0B1730}
 .art.k-agent{background:linear-gradient(160deg,#0F2532,#081A24)}
@@ -261,6 +261,49 @@ nav.more button{font-weight:500;font-size:13.5px;padding:6px 10px;border-bottom-
 .notecard small{display:block;color:var(--ink2);margin-bottom:4px;white-space:normal}
 @media (max-width:560px){.bio{display:none}.acct{margin-left:0;text-align:left}.brand{font-size:30px}}
 @media (prefers-reduced-motion:no-preference){.meter i{transition:width .6s ease}}
+
+/* ===== v2 look: a private research desk for nuclear markets. Graphite, ivory type, yellowcake accent, no neon. ===== */
+:root{--paper:#111315;--sheet:#181B1E;--sheet2:#21262A;--ink:#ECE8DF;--ink2:#9C9E9A;--hair:#272B2F;
+  --glow:#CDB16A;--glow-soft:rgba(205,177,106,.10);--violet:#A79FC6;--gain:#8CC6A0;--loss:#E3877E;--amber:#CDB16A;--r2:12px}
+html{font-family:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;letter-spacing:.003em}
+body{line-height:1.5}
+.val,.wm,.bar .wm,.art .big,.ladder h3,.big,.ex h2,.dmtop h2,.cal .yr b,.node .tk,.brand,.acct b{font-family:"Newsreader",Georgia,serif;font-stretch:normal;font-weight:500;letter-spacing:-.015em}
+.bar .wm{font-size:22px;font-weight:500}
+.val,.side .val{font-size:60px;font-weight:400;line-height:1;letter-spacing:-.025em}
+.val small{font-family:"Newsreader",Georgia,serif;font-size:.42em;color:var(--ink2);vertical-align:1.05em;font-weight:400}
+.chg{font-size:14.5px}
+.live.on i{background:var(--gain);box-shadow:none}
+.dmbtn i{background:var(--glow);color:#16140E}
+button.act{background:var(--glow);color:#17150F;border-radius:99px;padding:9px 18px;font-weight:600}
+button.act:hover{filter:brightness(1.08)}
+.rng button{font-weight:500}
+.rng button[aria-pressed=true]{background:var(--sheet2);color:var(--ink)}
+/* people: muted, quiet avatars */
+.av{color:#121416;font-weight:700}
+.av.c1{background:#C9B37A}.av.c2{background:#93BFA1}.av.c3{background:#ABA2CA}.av.c4{background:#D2A57A}.av.c5{background:#86B5AC}.av.c6{background:#D39790}.av.c7{background:#A3ABB0}.av.c8{background:#C7BD8B}
+.ring{background:var(--hair);padding:2px}
+.story.on .ring{background:var(--glow)}
+.ring span{border-width:3px}
+.ig header .ringsm{background:var(--hair)}
+.stories{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+/* posts: a written note, not a poster */
+.ig{padding:20px 0 22px}
+.art,.art.k-alert,.art.k-owner,.art.k-answer,.art.k-data,.art.k-learn,.art.k-agent{background:var(--sheet);min-height:0;padding:18px 20px 16px;border-radius:12px;border:1px solid var(--hair)}
+.art.k-alert{border-left:2px solid var(--glow)}.art.k-owner{border-left:2px solid var(--violet)}.art.k-learn{border-left:2px solid #86B5AC}
+.art .big{font-size:25px;line-height:1.22;font-weight:500;max-width:100%}
+.art .sub{font-size:13.5px;color:var(--ink2);margin-top:8px}
+.art.neg .big{color:var(--loss)}.art.pos .big{color:var(--gain)}
+.cap{font-size:14.5px;line-height:1.55;color:#D9D5CC}
+.ptk,.vc{color:var(--glow)}.ptk{background:var(--glow-soft)}
+.bb.me .bub,.msg.out .bub{background:var(--glow-soft);border-color:rgba(205,177,106,.35)}
+.tr .tk{background:var(--sheet2);font-stretch:normal;font-size:11.5px;letter-spacing:.02em}
+.cal .d{border-radius:8px}.cal .d.today{outline:1px solid var(--glow)}
+.cal .yr b{font-size:30px;font-weight:500}
+/* laptop: use the width, keep both columns whole */
+.shell{max-width:1200px;padding:0 8px}
+@media (min-width:980px){.cols{grid-template-columns:400px minmax(0,640px);gap:72px}}
+@media (min-width:980px) and (max-width:1180px){.cols{grid-template-columns:360px minmax(0,1fr);gap:40px}}
+.side{scrollbar-width:none}.side::-webkit-scrollbar{display:none}
 </style></head>
 <body><div class="wrap">
 __BANNER__
@@ -379,8 +422,9 @@ const S=__STATE__, C=__CFG__; let LAB=__LAB__;
 const FEAT={vol_pct:"jumpy stocks (hourly swings)",open_fill:"buys filled right at the open",weekday:"day of the week",hour:"hour of the fill",
   ret5d_pct:"the stock's last 5 days",dist_avg_pct:"distance from its average",group_up:"its group rising",gap_pct:"the opening gap"};
 const DAYS={Mon:"Monday",Tue:"Tuesday",Wed:"Wednesday",Thu:"Thursday",Fri:"Friday"};
-function human(t){
+function human(t,keepFields){
   t=String(t??"").trim(); if(!t) return "";
+  if(!keepFields) t=t.split("\n").filter(l=>!/^(to|date|ticker|what|watch|files read|files_read):/i.test(l.trim())).join("\n").trim();
   if(t[0]==="{"){ // an agent reply that arrived as raw data
     try{const o=JSON.parse(t); let r=o.say||o.summary||o.headline||""; if(!r&&o._raw){try{const i=JSON.parse(o._raw);r=i.say||i.summary||"";}catch(e){const m=/"say"\s*:\s*"([^"]+)/.exec(o._raw);r=m?m[1]:"";}} t=r;}
     catch(e){const m=/"say"\s*:\s*"([^"]+)/.exec(t); t=m?m[1]:"";}
@@ -401,7 +445,7 @@ function human(t){
   return t;
 }
 (S.feed||[]).forEach(p=>{p.text=human(p.text);}); S.feed=(S.feed||[]).filter(p=>p.text||p.art);
-(S.chats||[]).forEach(c=>{(c.msgs||[]).forEach(m=>{m.text=human(m.text); if(m.notes) m.notes=human(m.notes);}); c.msgs=(c.msgs||[]).filter(m=>m.text);});
+(S.chats||[]).forEach(c=>{(c.msgs||[]).forEach(m=>{m.text=human(m.text); if(m.notes) m.notes=human(m.notes,true);}); c.msgs=(c.msgs||[]).filter(m=>m.text);});
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const usd=x=>x==null||isNaN(x)?"—":(x<0?"−":"")+"$"+Math.abs(x).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -519,11 +563,11 @@ function stockState(t){
     const x=cv.getContext("2d"); x.scale(dpr,dpr); x.clearRect(0,0,W,H);
     const ys=pts.map(p=>p[1]), lo=Math.min(...ys,first), hi=Math.max(...ys,first), pad=Math.max((hi-lo)*0.15,v*0.002);
     const t0=+pts[0][0], t1=+pts[pts.length-1][0], X=t=>((+t-t0)/((t1-t0)||1))*(W-8)+4, Y=y=>H-14-((y-(lo-pad))/((hi+pad)-(lo-pad)))*(H-28);
-    const c=up?"#3DDC97":"#FF7A70";
-    x.setLineDash([3,5]); x.strokeStyle="#1F3D50"; x.lineWidth=1; x.beginPath(); x.moveTo(0,Y(first)); x.lineTo(W,Y(first)); x.stroke(); x.setLineDash([]);
-    const g=x.createLinearGradient(0,0,0,H); g.addColorStop(0,up?"rgba(61,220,151,.28)":"rgba(255,122,112,.26)"); g.addColorStop(1,"rgba(4,14,21,0)");
+    const c=up?"#8CC6A0":"#E3877E";
+    x.setLineDash([2,6]); x.strokeStyle="#3A3F44"; x.lineWidth=1; x.beginPath(); x.moveTo(0,Y(first)); x.lineTo(W,Y(first)); x.stroke(); x.setLineDash([]);
+    const g=x.createLinearGradient(0,0,0,H); g.addColorStop(0,up?"rgba(140,198,160,.16)":"rgba(227,135,126,.15)"); g.addColorStop(1,"rgba(17,19,21,0)");
     x.beginPath(); pts.forEach((p,i)=>i?x.lineTo(X(p[0]),Y(p[1])):x.moveTo(X(p[0]),Y(p[1]))); x.lineTo(X(pts[pts.length-1][0]),H); x.lineTo(X(pts[0][0]),H); x.closePath(); x.fillStyle=g; x.fill();
-    x.shadowColor=c; x.shadowBlur=12; x.strokeStyle=c; x.lineWidth=2.2; x.lineJoin="round";
+    x.shadowBlur=0; x.strokeStyle=c; x.lineWidth=1.8; x.lineJoin="round";
     x.beginPath(); pts.forEach((p,i)=>i?x.lineTo(X(p[0]),Y(p[1])):x.moveTo(X(p[0]),Y(p[1]))); x.stroke(); x.shadowBlur=0;
     const lp=pts[pts.length-1]; x.fillStyle=c; x.beginPath(); x.arc(X(lp[0]),Y(lp[1]),4,0,7); x.fill();
     $("chartnote").textContent=ys.every(y=>Math.abs(y-ys[0])<0.005)?(intr.length>1?"No change yet: the money is in cash, waiting for a buy.":"The line starts moving once the bot runs during market hours."):"";
@@ -778,7 +822,7 @@ $("ladders").innerHTML=[...new Set([...held,...lineup])].sort((a,b)=>rankL(a)-ra
 (function(){const Y=S.sync||{}; if(!Y.mult||!Object.keys(Y.mult).length){$("syncTxt").innerHTML='<p class="mut">The trio pulse appears after the first market-hours run.</p>';$("syncChart").style.display="none";return}
   const up=Y.pulse_up; const rows=Object.keys(Y.mult).map(t=>`<div><b>${t}</b> · own move (2 days) <span class="${cls(Y.own_pct?.[t])}">${pct(Y.own_pct?.[t])}</span> · partners <span class="${cls(Y.partners_pct?.[t])}">${pct(Y.partners_pct?.[t])}</span> → next buy slot <b>${(+Y.mult[t]).toFixed(2)}×</b></div>`).join("");
   $("syncTxt").innerHTML=`<p><b class="${up?"pos":"neg"}">Trio pulse ${up?"UP":"DOWN"}</b>: the basket is ${pct(Y.basket_vs_avg_pct)} versus its 10-day average · ${esc(Y.time||"")}</p>`+rows;
-  const se=Y.series||{}; const cols={basket:"#111",avg:"#999"}; const pal=["#5CC8FF","#FF9F43","#3DDC97"];
+  const se=Y.series||{}; const cols={basket:"#111",avg:"#999"}; const pal=["#CDB16A","#9BB7C4","#8CC6A0"];
   const lines=Object.keys(se).filter(k=>k!=="basket"&&k!=="avg").map((t,i)=>({v:se[t],c:pal[i%3]})); if(se.basket) lines.push({v:se.basket,c:cols.basket}); if(se.avg) lines.push({v:se.avg.map(v=>v??NaN),c:cols.avg});
   line($("syncChart"),lines,{base:1,fmt:v=>((v-1)*100).toFixed(0)+"%"});
   $("syncTxt").innerHTML+=`<p class="mut" style="font-size:12px">Chart (last ~20 sessions, start = 0%): ${Object.keys(se).filter(k=>k!=="basket"&&k!=="avg").map((t,i)=>`<span style="color:${pal[i%3]}">■ ${t}</span>`).join(" ")} <span>■ trio basket</span> <span class="mut">■ its 10-day average</span></p>`;})();
@@ -795,7 +839,7 @@ function line(cv,series,opts={}){
   series.forEach(s=>{ctx.strokeStyle=s.c;ctx.lineWidth=s.w||2;ctx.beginPath();s.v.forEach((v,i)=>{if(v==null)return;i?ctx.lineTo(X(i),Y(v)):ctx.moveTo(X(i),Y(v))});ctx.stroke()});
 }
 const E=B.equity||[], BE=(S.benchmark||{}).equity||[];
-line($("eqchart"),[{v:BE.map(x=>x[1]),c:"#5E7C8E",w:1.5},{v:E.map(x=>x[1]),c:"#5CC8FF"}],{base:start,fmt:v=>"$"+v.toFixed(0),empty:"The chart starts after the second trading day."});
+line($("eqchart"),[{v:BE.map(x=>x[1]),c:"#5E7C8E",w:1.5},{v:E.map(x=>x[1]),c:"#CDB16A"}],{base:start,fmt:v=>"$"+v.toFixed(0),empty:"The chart starts after the second trading day."});
 $("eqnote").textContent=E.length?"Blue: the account. Gray: the same $1,000 in the S&P 500.":"";
 const R=(S.reviews||[]).slice(-1)[0];
 $("review").innerHTML=R?`<div><b>${esc(R.headline)}</b><div class="mut">${esc(R.date)}</div>${esc(R.markdown).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/\n/g,"<br>")}</div>`:`<div class="mut">The first review is written after today's close.</div>`;
@@ -823,11 +867,11 @@ async function drawCandles(){
   ctx.font="11px Archivo"; ctx.fillStyle="#8CA9BA"; ctx.strokeStyle="#1C3A4C";
   for(let k=0;k<=4;k++){const v=lo+(hi-lo)*k/4;ctx.beginPath();ctx.moveTo(48,Y(v));ctx.lineTo(W-8,Y(v));ctx.stroke();ctx.fillText(v.toFixed(v>=100?0:2),2,Y(v)+4)}
   if(lv&&lv.zone){ctx.fillStyle="#123A52";ctx.fillRect(48,Y(lv.entry||lv.zone*1.004),W-56,Y(lv.zone)-Y(lv.entry||lv.zone*1.004)+1)}
-  for(let i=s0;i<b.c.length;i++){const up=b.c[i]>=b.o[i];ctx.strokeStyle=ctx.fillStyle=up?"#3DDC97":"#FF7A70";ctx.beginPath();ctx.moveTo(X(i),Y(b.h[i]));ctx.lineTo(X(i),Y(b.l[i]));ctx.stroke();
+  for(let i=s0;i<b.c.length;i++){const up=b.c[i]>=b.o[i];ctx.strokeStyle=ctx.fillStyle=up?"#8CC6A0":"#E3877E";ctx.beginPath();ctx.moveTo(X(i),Y(b.h[i]));ctx.lineTo(X(i),Y(b.l[i]));ctx.stroke();
     const y1=Y(Math.max(b.o[i],b.c[i])),y2=Y(Math.min(b.o[i],b.c[i]));ctx.fillRect(X(i)-cw/2,y1,cw,Math.max(1,y2-y1))}
   const hl=(v,c,dash,label)=>{if(!v)return;ctx.strokeStyle=c;ctx.setLineDash(dash?[6,4]:[]);ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(48,Y(v));ctx.lineTo(W-8,Y(v));ctx.stroke();ctx.setLineDash([]);ctx.lineWidth=1;ctx.fillStyle=c;ctx.font="bold 11.5px Archivo";ctx.fillText(label+" "+v.toFixed(2),W-110,Y(v)-4)};
-  if(lv){hl(lv.entry,"#5CC8FF",false,Lt.qty>1e-6?"in at":"buy");hl(lv.stop,"#FF7A70",true,"stop");hl(lv.target,"#3DDC97",true,"target")}
-  const sim=plEngine(b,botParams()); sim.filter(x=>x.en>=b.t[s0]).forEach(x=>{const i=b.t.indexOf(x.en);ctx.fillStyle=x.ret>0?"#3DDC97":"#FF7A70";ctx.beginPath();ctx.arc(X(i),Y(x.entry),3.5,0,7);ctx.fill()});
+  if(lv){hl(lv.entry,"#CDB16A",false,Lt.qty>1e-6?"in at":"buy");hl(lv.stop,"#E3877E",true,"stop");hl(lv.target,"#8CC6A0",true,"target")}
+  const sim=plEngine(b,botParams()); sim.filter(x=>x.en>=b.t[s0]).forEach(x=>{const i=b.t.indexOf(x.en);ctx.fillStyle=x.ret>0?"#8CC6A0":"#E3877E";ctx.beginPath();ctx.arc(X(i),Y(x.entry),3.5,0,7);ctx.fill()});
   $("chartInfo").textContent=`${t} now ${usd(b.c[b.c.length-1])} · last ${N} hourly bars`;
 }
 
@@ -875,7 +919,7 @@ async function runLab(){
       open.push({...x,size:Math.min(eq/p.slots*m, Math.max(0,eq-used))}); }
     open.sort((a,b)=>a.ex-b.ex).forEach(o=>{eq+=o.size*o.ret;curve.push([o.ex,eq])}); return {eq,curve}};
   const flat=sim(false), synced=sim(true), useS=$("syncOn").checked; let {eq,curve}=useS?synced:flat;
-  line($("labEq"),[{v:curve.map(c=>c[1]),c:"#5CC8FF"}],{base:1000,fmt:v=>"$"+v.toFixed(0)});
+  line($("labEq"),[{v:curve.map(c=>c[1]),c:"#CDB16A"}],{base:1000,fmt:v=>"$"+v.toFixed(0)});
   const yrs=curve.length>1?(curve[curve.length-1][0]-curve[0][0])/31557600:1; let peak=1000,dd=0; curve.forEach(c=>{peak=Math.max(peak,c[1]);dd=Math.min(dd,c[1]/peak-1)});
   // weekly
   const wk={}; let last=1000; curve.forEach(c=>{const d=new Date(c[0]*1000); const k=Math.floor((c[0]-345600)/604800); wk[k]=c[1]}); const keys=Object.keys(wk).map(Number).sort((a,b)=>a-b);
@@ -889,7 +933,7 @@ function drawWeeks(wr){
   const bins=[-10,-5,-2,0,2,5,10],labels=["≤−5%","−5…−2","−2…0","0…2","2…5","≥5%"],cnt=[0,0,0,0,0,0];
   wr.forEach(r=>{const v=r*100;const i=v<=-5?0:v<=-2?1:v<0?2:v<2?3:v<5?4:5;cnt[i]++});
   const mx=Math.max(...cnt,1),bw=(W-20)/6; ctx.font="11px Archivo";
-  cnt.forEach((c,i)=>{const h=(H-34)*c/mx;ctx.fillStyle=i<3?"#FF7A70":i===5?"#5CC8FF":"#3DDC97";ctx.fillRect(10+i*bw+6,H-20-h,bw-12,h);ctx.fillStyle="#E4EFF5";ctx.fillText(c,10+i*bw+bw/2-4,H-24-h);ctx.fillStyle="#8CA9BA";ctx.fillText(labels[i],10+i*bw+8,H-6)});
+  cnt.forEach((c,i)=>{const h=(H-34)*c/mx;ctx.fillStyle=i<3?"#E3877E":i===5?"#CDB16A":"#8CC6A0";ctx.fillRect(10+i*bw+6,H-20-h,bw-12,h);ctx.fillStyle="#ECE8DF";ctx.fillText(c,10+i*bw+bw/2-4,H-24-h);ctx.fillStyle="#8CA9BA";ctx.fillText(labels[i],10+i*bw+8,H-6)});
   const g5=wr.filter(r=>r>=0.05).length, avg=wr.reduce((a,b)=>a+b,0)/Math.max(1,wr.length)*100;
   $("labWk").innerHTML=`Average week ${pct(avg)} · +5% or better in ${g5} of ${wr.length} weeks (${(g5/Math.max(1,wr.length)*100).toFixed(0)}%). Blue bar: your goal.`;
 }
