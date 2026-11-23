@@ -180,7 +180,8 @@
   "reactors:2026-11-20": true,
   "panic:2026-11-20": true,
   "reactors:2026-11-21": true,
-  "reactors:2026-11-22": true
+  "reactors:2026-11-22": true,
+  "congress:2026-11-23": true
  },
  "benchmark": {
   "shares": {
@@ -197136,108 +197137,146 @@
    "lesson": null
   }
  ],
- "intel_at": 1795396571.1128638,
+ "intel_at": 1795417464.2797298,
  "intel_health": {
-  "at": "2026-11-22 20:16",
+  "at": "2026-11-23 02:05",
   "sources": {
    "Cigar Lake": 3,
-   "McArthur River / Key Lake": 4,
+   "McArthur River / Key Lake": 3,
    "Athabasca Basin": 10,
    "Saskatchewan wildfires": 0,
    "Rook I / Arrow": 2,
    "Wheeler River / Phoenix": 4,
    "Port Hope / Blind River": 0,
-   "Westinghouse": 7,
+   "Westinghouse": 9,
    "Kazakhstan": 0,
-   "Niger": 6,
+   "Niger": 5,
    "Namibia": 16,
    "Russia supply": 1,
    "Piketon": 11,
    "HALEU": 8,
    "Wyoming ISR": 15,
    "South Texas ISR": 1,
-   "White Mesa / Utah": 0,
-   "Rare earths (Energy Fuels)": 5,
+   "White Mesa / Utah": 1,
+   "Rare earths (Energy Fuels)": 6,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 7,
+   "Naval reactors": 5,
    "Crane / Three Mile Island": 5,
-   "Susquehanna": 7,
+   "Susquehanna": 8,
    "Comanche Peak": 4,
-   "PJM grid": 9,
+   "PJM grid": 8,
    "ERCOT grid": 5,
    "Data-center nuclear deals": 9,
    "Japan restarts": 5,
-   "China new builds": 12,
-   "Sprott trust": 6,
-   "Uranium price": 30,
+   "China new builds": 8,
+   "Congress and laws": 22,
+   "NRC decisions": 7,
+   "Energy Department": 32,
+   "White House and executive orders": 20,
+   "Tariffs and trade": 1,
+   "India": 17,
+   "South Korea": 66,
+   "Europe new builds": 28,
+   "France and UK": 6,
+   "Middle East": 28,
+   "Asia newcomers": 20,
+   "Canada SMRs": 4,
+   "Big tech power deals": 29,
+   "Iran": 33,
+   "North Korea": 90,
+   "War zones": 18,
+   "AUKUS and navies": 23,
+   "Weapons programs": 5,
+   "Stockpiles and reserves": 6,
+   "Sprott trust": 3,
+   "Uranium price": 28,
    "US policy": 0,
    "Workers and jobs": 12,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 51,
    "Federal Register (uranium)": 6,
-   "Federal Register (nuclear)": 25,
+   "Federal Register (nuclear)": 23,
    "NRC event reports": 5
   },
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-22 20:16",
-  "total": 208,
-  "week": 182,
+  "updated": "2026-11-23 02:05",
+  "total": 281,
+  "week": 249,
   "places": {
-   "Uranium price": 29,
+   "Uranium price": 30,
    "World Nuclear News": 23,
-   "Piketon": 20,
+   "Piketon": 21,
+   "AUKUS and navies": 14,
+   "Europe new builds": 14,
    "Namibia": 11,
    "PJM grid": 11,
    "Workers and jobs": 10,
    "Susquehanna": 9,
    "ERCOT grid": 9,
-   "Comanche Peak": 7,
-   "Federal Register (nuclear)": 6,
-   "Wheeler River / Phoenix": 6,
-   "Rare earths (Energy Fuels)": 6
+   "South Korea": 9,
+   "Comanche Peak": 7
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-22 20:16",
+   "at": "2026-11-23 02:05",
    "sources": {
     "Cigar Lake": 3,
-    "McArthur River / Key Lake": 4,
+    "McArthur River / Key Lake": 3,
     "Athabasca Basin": 10,
     "Saskatchewan wildfires": 0,
     "Rook I / Arrow": 2,
     "Wheeler River / Phoenix": 4,
     "Port Hope / Blind River": 0,
-    "Westinghouse": 7,
+    "Westinghouse": 9,
     "Kazakhstan": 0,
-    "Niger": 6,
+    "Niger": 5,
     "Namibia": 16,
     "Russia supply": 1,
     "Piketon": 11,
     "HALEU": 8,
     "Wyoming ISR": 15,
     "South Texas ISR": 1,
-    "White Mesa / Utah": 0,
-    "Rare earths (Energy Fuels)": 5,
+    "White Mesa / Utah": 1,
+    "Rare earths (Energy Fuels)": 6,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 7,
+    "Naval reactors": 5,
     "Crane / Three Mile Island": 5,
-    "Susquehanna": 7,
+    "Susquehanna": 8,
     "Comanche Peak": 4,
-    "PJM grid": 9,
+    "PJM grid": 8,
     "ERCOT grid": 5,
     "Data-center nuclear deals": 9,
     "Japan restarts": 5,
-    "China new builds": 12,
-    "Sprott trust": 6,
-    "Uranium price": 30,
+    "China new builds": 8,
+    "Congress and laws": 22,
+    "NRC decisions": 7,
+    "Energy Department": 32,
+    "White House and executive orders": 20,
+    "Tariffs and trade": 1,
+    "India": 17,
+    "South Korea": 66,
+    "Europe new builds": 28,
+    "France and UK": 6,
+    "Middle East": 28,
+    "Asia newcomers": 20,
+    "Canada SMRs": 4,
+    "Big tech power deals": 29,
+    "Iran": 33,
+    "North Korea": 90,
+    "War zones": 18,
+    "AUKUS and navies": 23,
+    "Weapons programs": 5,
+    "Stockpiles and reserves": 6,
+    "Sprott trust": 3,
+    "Uranium price": 28,
     "US policy": 0,
     "Workers and jobs": 12,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 51,
     "Federal Register (uranium)": 6,
-    "Federal Register (nuclear)": 25,
+    "Federal Register (nuclear)": 23,
     "NRC event reports": 5
    },
    "failed": []
@@ -197249,6 +197288,25 @@
    "open_outages": null
   },
   "top": [
+   {
+    "date": "2026-11-22",
+    "title": "China raises concerns over IAEA verification of South Korea's nuclear-powered submarines, calling it a \"grave challenge to international security\"",
+    "outlet": "\uc7ac\uacbd\uc77c\ubcf4",
+    "place": "South Korea",
+    "tickers": [
+     "CCJ",
+     "BWXT"
+    ],
+    "tags": [
+     "financing",
+     "defense",
+     "geopolitics",
+     "opposition"
+    ],
+    "numbers": [],
+    "score": 8.12,
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5BTnlRVkdycFZRT3JnR2ktbDZ5RGVvdzJsRkR4M3BCV2Z4aDdVbU5fMGJ0TnUyUEs3TXBPeGZNMVZHV25uemNSS3pjbjZSem9DV2xTYjVYU0plOWE4Q0VGLWVB?oc=5"
+   },
    {
     "date": "2026-11-19",
     "title": "Utility Dive: PA Consumer Advocate Darryl Lawrence Joins Advocates In 7 Other PJM States, Independent PJM Market Monitor Urging PJM To Delay December Generation Auction To Avoid Billions In Added Costs To Consumers - PA ",
@@ -197266,6 +197324,25 @@
     "numbers": [],
     "score": 7.3,
     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVmR4aWJTOGRXeVg5Vms4cHRvTFJna1A3SnpYVm0wMEl0Q25IMnUtYjZPalJuaGhkSV8wUnJqNFRWNjJMY3hnNXpFcnBkN1lTY0VJeElKd0lyWDhLUWVGTUUxNk0yckQxemp5UnRkRDVhYTRTSlBpSVJVaDRudHB4V2JuQ1d6X2MwWVl0YWdn?oc=5"
+   },
+   {
+    "date": "2026-11-21",
+    "title": "Energy Dominance, Measured in Exports: America\u2019s $50 Billion Nuclear Bet in Poland",
+    "outlet": "Energy News Beat",
+    "place": "Europe new builds",
+    "tickers": [
+     "CCJ",
+     "BWXT"
+    ],
+    "tags": [
+     "regulation",
+     "politics"
+    ],
+    "numbers": [
+     "$50 Billion"
+    ],
+    "score": 7.22,
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdk00SVRqT1A0Uk1tcFZIYk81SmJJckRVYlR0R2QyajFMSExkZWN2QVhDdjFFY3EwR3NJWnNvLTNmeXJ2RXFZQWlzZmVzNXJEVWZtc0ZmUVhiWVd1Z1RON0hBRDg1R2ZKN1FPeDhQVi1DYWZfbnRfZlhBeEc4OWFTWldIYmNuMjczRGliSDl5WmZEQ19EWXZnYjNtMlZfbmJVazBuUXNDX1hfejFlUEJ1bFFIMA?oc=5"
    },
    {
     "date": "2026-11-19",
@@ -197334,6 +197411,73 @@
     "numbers": [],
     "score": 6.72,
     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUDlpa2hmUXVSb2k4MkpJa2t1b1FxR1Nqb3p1OUVaNUVhdjNFQV9XUFdGbEEyNWZaVTVuVDNTN0J2cThVR2NYRGJLM0ZXdnd2RFE1RnNQRm82TWl6WGtud1o4MEFlSGFHRTVCNWlmLWg1QWxOVkNwZjZPMnp1T1p5ZjV4WnlYZXcwa0Q2NjJjVXhvS1V1TGRFN3dlcW1zZG4xYloySFo3TQ?oc=5"
+   },
+   {
+    "date": "2026-11-22",
+    "title": "Rosatom signs world's first export agreement with Indonesia for floating nuclear power unit",
+    "outlet": "The Bangladesh Monitor",
+    "place": "Asia newcomers",
+    "tickers": [
+     "CCJ",
+     "LEU"
+    ],
+    "tags": [
+     "contract",
+     "politics"
+    ],
+    "numbers": [],
+    "score": 6.46,
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYTRZRlgyVDZmNjd0Q1ZKYVZ3SzY3ZG5tY1RUWmxrX0tSd3l3Tkhobm5ROWFQdUg5LWxucTdaMGtzeTJGQUY3dHNhY3ZTeGdwczVyeE9mWkMtQjJWYkN1eHZyNWNGOXVtSGpXanp4cHVGdllRZWZQYlZtS1llbWI2aXRreGUxRk9pSjdRc01vOVh0aGRjdmpxd0tEeEpRbXZMYmNlTy1zekdMajVFcVI2eDY1UGFkUQ?oc=5"
+   },
+   {
+    "date": "2026-11-22",
+    "title": "South Korea Seeks IAEA Safeguards for Nuclear Submarines",
+    "outlet": "\uc870\uc120\uc77c\ubcf4",
+    "place": "South Korea",
+    "tickers": [
+     "CCJ",
+     "BWXT"
+    ],
+    "tags": [
+     "defense",
+     "geopolitics"
+    ],
+    "numbers": [],
+    "score": 6.44,
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcFoyRnk1Z2Rla0k1RXA0bS1CSG5MdHVjSmZ4dVpMRnlUbzJXc0FaZkItamhmN1A1MFJ1bWtzT05VVFloaHhOZzd5V2VsZG9Db2REejhoZFYwZ1VhUWZvcDN6Vnh4YmozMFhqV21ONDVLYjRTbzBpdTNRZDRLUHJqdUFnb3l0ajl4?oc=5"
+   },
+   {
+    "date": "2026-11-22",
+    "title": "'They are wrong': Defence minister denies US report on AUKUS submarines",
+    "outlet": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+    "place": "AUKUS and navies",
+    "tickers": [
+     "BWXT"
+    ],
+    "tags": [
+     "politics",
+     "defense"
+    ],
+    "numbers": [],
+    "score": 6.36,
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOWtpN1dKN09aTmh2clZaSmp6X0ZDZ3dicUp4NDl0b3JtT21ZTlp5MjNoM3UxX1VTQnNTRXhiUDNTc095U3luZ1IyZ0g1NUY2SG9ldjV6a3RSSHpDR2ZEOFV0S1BlT3plVnk4SGpVd0FIVUJHYm5XanBGTld4b0tnUWtEaDBVdTBUQno2T0U3emdJYUk3Wk5lT1o2THU1MUZ4dnphb0R5Q1M0ZDVFcFpwM1JB?oc=5"
+   },
+   {
+    "date": "2026-11-20",
+    "title": "Russian Attacks Force Emergency Power Cuts as Ukraine\u2019s Nuclear Plants Reduce Output",
+    "outlet": "112.ua",
+    "place": "War zones",
+    "tickers": [
+     "CCJ",
+     "CEG"
+    ],
+    "tags": [
+     "production",
+     "geopolitics"
+    ],
+    "numbers": [],
+    "score": 6.36,
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc1BCNGRHNGlmaGJGdDZ4UWdMV0ZYT1R2VHJWM0ViX0lyV05qVDR2dUNuaTFlaVJrS0QxaTYtSVFveHk2RnhscFFLNGhFV3Bfbm5VU2RQRDZURllMSmdQcHNJUUtjX2tjZVlheEg0MzBsc0RrWEFEaTk3SmRJZmJFd1FlQTdTaXVIWXJ2QnIxeEdDVWQzbGU2b3pMMGI2RXMwQm4xcU1WaFFxd1d1TzZNYzBNdG9zY2JNZFFnYkplNUw3RmZF?oc=5"
    },
    {
     "date": "2026-11-20",
@@ -197453,6 +197597,56 @@
     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbEYtX003UDFOaE9LM21OakdtSFN5UE40OFZQbGFQWkFpVjFHRjc3R1hJTU84T05oWGZlemVmSnh3SnZaODRjaF94blRJZUhNZ0VLNm05bmtVdVJrV2xGVkN4WVJNNzNqTUM3NVlZU2pzYnhJeEF3RnhvbEpKSlNnQm5GTFJTQ3Vs?oc=5"
    },
    {
+    "date": "2026-11-23",
+    "title": "'Construction Contractor Dispute' Team Korea Vows to \"Complete the Czech Dukovany Nuclear Plant\"",
+    "outlet": "\uc544\uc2dc\uc544\uacbd\uc81c",
+    "place": "Europe new builds",
+    "tickers": [
+     "CCJ",
+     "BWXT",
+     "CEG"
+    ],
+    "tags": [
+     "contract",
+     "restart"
+    ],
+    "numbers": [],
+    "score": 6.06,
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9qSlI3WE5DMlJXbEV6TDNzS08tZEdXZ25ReEpvMl9BYzVYUnNoNXpVcEVySU9lVkZnX0FHeDlhbC1keWRBUmphNUx2dWd6R0NJWnNZTTdNMjlaOHl1TXNBbWN3cDg?oc=5"
+   },
+   {
+    "date": "2026-11-22",
+    "title": "Australia defends AUKUS submarine plan after CBO warns of U.S. Navy strain",
+    "outlet": "Traders Union",
+    "place": "AUKUS and navies",
+    "tickers": [
+     "BWXT"
+    ],
+    "tags": [
+     "defense",
+     "geopolitics"
+    ],
+    "numbers": [],
+    "score": 6.04,
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPN2VQbXlnY0pRMkQwNEtRNVh0QTRwamxTQzFXUzZwVFV3M3VoYV9SZUV5RHl6Wm9MM3pfcVhFQTJkTUp0N1lSMFo1VGlkaG1rVFhWZElFMWpZUVV5N0JUZEV6WTh0dVI0RGNBSDBUZXNoLWF4MGZzekZaNXVGRy1vSjg2YUhRQnJRRTkzcEQwWlUzSUl0WlA0c3Y1YUVFYk4yZ2c?oc=5"
+   },
+   {
+    "date": "2026-11-22",
+    "title": "Australia rejects US report warning AUKUS submarine deal could weaken American Navy",
+    "outlet": "Anadolu Ajans\u0131",
+    "place": "AUKUS and navies",
+    "tickers": [
+     "BWXT"
+    ],
+    "tags": [
+     "defense",
+     "geopolitics"
+    ],
+    "numbers": [],
+    "score": 6.04,
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxObU5oX2dpUk5yOGFQd0puMmZxNURIblRTczVtNmRQSzlYS0twZXhfa1VkNjVvYVROcURQN0FNRXNGWWJEekotdWVyelRrb0JtWXVSQUdXRHBaODFYQ1hKODZuNXdtcVQ1X0VmWmRsbUR4andOb0FYd0lnNTdfUHMzVE96ME5UX0FIenZjd2VCejVyVUlNZTlia1ZGNUJmS0lSeHEwZHgyYTlpbWpXMFdVT3hVSjNKQkw0X1dtRlFZeHY5b2c?oc=5"
+   },
+   {
     "date": "2026-11-19",
     "title": "Consumer advocates join PJM's market monitor in urging delay of December capacity auction",
     "outlet": "CEO\uacbd\uc81c\uc2e0\ubb38",
@@ -197470,6 +197664,22 @@
     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSlljdldGSkdnZnhuMnBVMV84c3BkTkUyMGxQb19GY2laM1plcHg2SmFya1hWYmhSblhtSkg1b0NJZUZKNVZJOGNWb3d3QU9IRE14dnd4QmVPTHlLQjE4SXMxQ0VfbGx4YV9Fb0RRekpNR0htTFJwSzN0SHd6WDJPdzVTWjE?oc=5"
    },
    {
+    "date": "2026-11-21",
+    "title": "Houthi Strikes Raise Security Concerns Over US Saudi Nuclear Pact",
+    "outlet": "cwibc.co.id",
+    "place": "Middle East",
+    "tickers": [
+     "CCJ",
+     "LEU"
+    ],
+    "tags": [
+     "disruption"
+    ],
+    "numbers": [],
+    "score": 5.88,
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1UczZWcGlHZnFZRTdHOGoyUlR4cWxkYmxNWWZzb2lWSTFkZFhVS3drVW9nREFaVVkxa1FIbzdLamQtVjBLMmNrVV9FT3NubEdVbnY1MHNhNm55ajQxMWdyMzlhY1JkWjQ?oc=5"
+   },
+   {
     "date": "2026-11-19",
     "title": "New nuclear projects offer economic advantages for Ontario",
     "outlet": "World Nuclear News",
@@ -197483,6 +197693,22 @@
     "numbers": [],
     "score": 5.86,
     "link": "https://www.world-nuclear-news.org/articles/new-nuclear-projects-offer-economic-advantages-for-ontario"
+   },
+   {
+    "date": "2026-11-22",
+    "title": "\u2018They are wrong\u2019: Australia dismisses US report warning AUKUS submarine deal could hurt Navy",
+    "outlet": "The Times of India",
+    "place": "AUKUS and navies",
+    "tickers": [
+     "BWXT"
+    ],
+    "tags": [
+     "defense",
+     "geopolitics"
+    ],
+    "numbers": [],
+    "score": 5.8,
+    "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQQXpBb29rdVl6VFNDbXJHWG94dk1nOEpBMUtzT21sQUxjdlhvNzc1ZkVVNmhXT1dVVEVuenNPd3BrSGxDYmJhdGpDM3FkdzBjS19hU2RLeVQtQVJKLXNYdThqZHV2akdCUFZhN2tseVhucTlxRXNpUmZGNmpwYzZQcFk2NXNZRW1jcjN4LWVUZElBWk85bUVjc1U1WWtZMnk4RHBQWlBRLVFmMEV6Q3ctODF3bHNmTHpOR1A4RWdiMTZOclczSmpjNEZYUGlTdUdsd3Ftd2xsRXVzcDBBWWdROVJTczE2TWF5NE8zVWdQdzlHeHZITjhvRXJ6Y096S0NP0gGGAkFVX3lxTFBPTVBhZFdva2xqdm5paUNycnlHWXdxLXIzeFNFc0NiU0ZqMzVwSVlGd2xCYklPWGJkeW9Jd3NoV3hSM3dmM3BmbU5XekFMYVhBcHJEemxnLTlDZmFHYWNIR3pSSFEwOFVKMDU3SGRkLXphREtYSnBLd2VMZEhUUzhRYXNGNFVtbGRpVlF4ZjU3ajd1bjN4dHVzdVBWZWtVemZweWNsLWcxaDF2VXZVWnZUZ0RHeVB3dlEyOEt1RkNBN0tEazZzVzN1ZXRDbzItaXl2eU5yUUg5anp6Um5EZmhKemEweWZqZ2FsSmtfODItYUFMMWg4ZG1abTJZb3AwZGl2WS0yeVE?oc=5"
    },
    {
     "date": "2026-11-17",
@@ -197516,6 +197742,22 @@
     "link": "https://www.federalregister.gov/documents/2026/11/23/2026-23753/interim-staff-guidance-nrc-application-pathway-for-reactor-designs-previously-authorized-by-us"
    },
    {
+    "date": "2026-11-22",
+    "title": "Australia's Defence Minister Richard Marles denies report AUKUS deal would 'diminish US Navy'",
+    "outlet": "Firstpost",
+    "place": "AUKUS and navies",
+    "tickers": [
+     "BWXT"
+    ],
+    "tags": [
+     "politics",
+     "defense"
+    ],
+    "numbers": [],
+    "score": 5.78,
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcTd5dDFVbDBZWWlJNUZYLWo5bURhVHoydEQyblREZVYwc2NGR0xYa185S1B6UzN0dm44ZXBvbldXX1JRUGVFa1NEODhTaGpkMHI0WWltV182SlY4SGF1d1FFVHg5bkdldnM4WGtVbEg5UGdEX29hS21SNF84eEYtN2ZKZThoQjJtTDFwamZLSUNsYjhyWkZsR1lveDNYWklERE1STXR1VmRuNUhzWklHZ2hMOU9TcXdSSVQtVEQ5eFBwSk95VHlMR0Nkam9lbU1TcGfSAdcBQVVfeXFMUGx6TDByc2FUTTdTdlktUjE1TEFJMWVLWHFna0tiTWswTzIyTVpJSzE3X05zNktpQVBaODV4VElMOHY3VjR5RTRPUFJscE8zcE5mQ1NrWU9WdW5YNjhvOHNMa2lYRVVKUXRFbmJ6bjZnSDNhMW1Yd1l2MnVFZWJUTk8xSVdReUROb21Ld01kMlRPay1tY3piMjhjTmVFNFJNZVdqVUJZZ29DU1ZsRkoyUElwUmw2ZE1kWFZ5QXE1TkY2cWVWQ1RQOFZrdDN1RDUxVnUtNHlkQW8?oc=5"
+   },
+   {
     "date": "2026-11-19",
     "title": "Consumer Groups Seek PJM Auction Delay Over Data Centers",
     "outlet": "Wisevoter",
@@ -197546,198 +197788,6 @@
     "numbers": [],
     "score": 5.68,
     "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNSmZtMGUtUlhlMnY1UW82NGhwelhRTlBhNm01NS1FTjJlUl93YUk4Q1NXTFlUNzZsOUZKVHNGS2M5MHY2aU5FS3k0MTR2YnNDWTktcFdrNEhyd252NnZVNE11ZWc5S1k0OHcwVTZ6M1k0djVpVlExWVBVT3Vqa3FsaTRLSkR4ZGJvQ3NOTVV4bzd6RUhjTEd0MW9rTzUwcE5WWkJQdU5pdUZoRXFja3NXalJXZk4xWFZZdE1kYUk3WlNFbkpFb2dWLXFvZGNWTktLZHdBMHBHX3dWaDJ1c1NPVUJQbTRmUnl4alZDOE9YQ1hwQlJPR2lvbW1faktCbVc1M3fSAYICQVVfeXFMTUpmbTBlLVJYZTJ2NVFvNjRocHpYUU5QYTZtNTUtRU4yZVJfd2FJOENTV0xZVDc2bDlGSlRzRktjOTB2NmlORUt5NDE0dmJzQ1k5LXBXazRIcndudjZ2VTRNdWVnOUtZNDh3MFU2ejNZNHY1aVZRMVlQVU91amtxbGk0S0pEeGRib0NzTk1VeG83ekVIY0xHdDFva081MHBOVlpCUHVOaXVGaEVxY2tzV2pSV2ZOMVhWWXRNZGFJN1pTRW5KRW9nVi1xb2RjVk5LS2R3QTBwR193VmgydXNTT1VCUG00ZlJ5eGpWQzhPWENYcEJST0dpb21tX2pLQm1XNTN3?oc=5"
-   },
-   {
-    "date": "2026-11-20",
-    "title": "Partners prepare to procure next batch of equipment for Polish plant",
-    "outlet": "World Nuclear News",
-    "place": "World Nuclear News",
-    "tickers": [
-     "CCJ"
-    ],
-    "tags": [
-     "contract"
-    ],
-    "numbers": [],
-    "score": 5.66,
-    "link": "https://www.world-nuclear-news.org/articles/partners-prepare-to-procure-next-batch-of-equipment-for-polish-plant"
-   },
-   {
-    "date": "2026-11-20",
-    "title": "Poland nuclear power plant: Westinghouse, Bechtel $50b contract due early 2027",
-    "outlet": "The Jerusalem Post",
-    "place": "Westinghouse",
-    "tickers": [
-     "CCJ",
-     "BWXT"
-    ],
-    "tags": [
-     "contract"
-    ],
-    "numbers": [],
-    "score": 5.56,
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA2UEMtU2Zfel9yN2tSbnlkRDNPcnI2dVN3bmtNM3llLTNHSkVIRlZfUjI1clBBMzc1OU1FdDhqbDd6ME9NZklSUTk0WWJya0FPNWZnZkJ3UmNVT0Nhclk0?oc=5"
-   },
-   {
-    "date": "2026-11-19",
-    "title": "Blykalla Secures World\u2019s First HALEU Enrichment Contract for a Commercial Lead-Cooled Reactor",
-    "outlet": "POWER Magazine",
-    "place": "HALEU",
-    "tickers": [
-     "LEU",
-     "BWXT"
-    ],
-    "tags": [
-     "contract"
-    ],
-    "numbers": [],
-    "score": 5.5,
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdW1fMlBCSU1PM2dyckdFTzdudHFrOEZrM29wVm9nLXpuRGx0ZU9mYnBaQUFSaHl5SnM5bTRNZjRrTFdDZE94emlhXzV6bnNvTEpNX0NIWVRfRkU5TzNWVjVQU2JZekRnRXNPSEg3YnMzTnN3VTVWWl9BbnZiVmxYeXhTYWFOLWtaVl8xN0k5Mmh1YjdNcTBMMHVfYVJ4a1Bwa2VXeHg5M21uRHk4dmZheTgzNUtBT2dVdEE?oc=5"
-   },
-   {
-    "date": "2026-11-20",
-    "title": "US Signs $725 Million Loan Pact with Energy Fuels to Boost Domestic Rare Earth Production",
-    "outlet": "EnergyNow.com",
-    "place": "Rare earths (Energy Fuels)",
-    "tickers": [
-     "UUUU"
-    ],
-    "tags": [
-     "production"
-    ],
-    "numbers": [
-     "$725 Million"
-    ],
-    "score": 5.48,
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONjRaeWl2N3NFSjZkenN2MjVYSmFXbF9hOS04QzFNV0hRVl9KNzhYWUQzbkZUY0Ewa0plSUpSdVh6Vk9MYW5Gc3VhRE5EbkxFQzhiel84bHFyVzQ1WmFIbnh5Y09FVHoyNERvUVE3RzRlZWdaLXZWYzN4eldxNHZKeGZGN3h5MF9jbEQwcTZCYjAxRDFEMkJiUE8zek1jR0M4OHM0akRRbE9FRUhmOE1lZFFqZWVvekhTdHo4?oc=5"
-   },
-   {
-    "date": "2026-11-20",
-    "title": "How companies are buying power for AI and data centers: PPAs, nuclear deals and capacity markets",
-    "outlet": "CEO\uacbd\uc81c\uc2e0\ubb38",
-    "place": "Data-center nuclear deals",
-    "tickers": [
-     "CEG",
-     "VST",
-     "TLN"
-    ],
-    "tags": [
-     "contract"
-    ],
-    "numbers": [],
-    "score": 5.46,
-    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE92dUc5ZUU1bzNUOXZ1LU1FYUpQN1diSkZpSW9BZWJtNmthc25Sb2hNSXoyUVpIc1M5MnhZb2lqZlpmMUs5VW5BSUQycUdaTE1SclYwUk5jcHlZWXpLTHUtbzdWSHk1clpIUFI1NmxoOVFreDdla0daZFBn?oc=5"
-   },
-   {
-    "date": "2026-11-21",
-    "title": "$6.4 Million to Train Local Workers for Piketon Jobs",
-    "outlet": "Scioto County Daily News",
-    "place": "Piketon",
-    "tickers": [
-     "LEU"
-    ],
-    "tags": [
-     "jobs"
-    ],
-    "numbers": [
-     "$6.4 Million"
-    ],
-    "score": 5.44,
-    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWks5czlDRHkzOEVaaEhUb1VRZkxoYkRJakgteWNRNkgzOWQ0a09CNnVmWWdnMmkzNVVXYXl6RVhqSEZfQ1RGTlkwSjlQN2JFZXlJa19zX0pXbHVGM2lHek1jREl1Z1JRbFZmSFFDblhXb09KYXhneUxEX0pmLXVobVR0dUIwNkJTSFFra1FMdw?oc=5"
-   },
-   {
-    "date": "2026-11-20",
-    "title": "Controversial Pay Agreement for ERCOT CEO Finalized",
-    "outlet": "Texas Scorecard",
-    "place": "ERCOT grid",
-    "tickers": [
-     "VST"
-    ],
-    "tags": [
-     "contract"
-    ],
-    "numbers": [],
-    "score": 5.44,
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRDE5andYTmpPdTV3SGxqYnpnRWxHelVNRXd4aG5pTzJ2MjY0VzF2cEduWmhpSG9sM0liTjIyY3A3NjRtWm5NSGNMWjBWV2F3WEFkMngzbHg2MWpkUElmWDVKU0d4RWtWaHRDUWNxZTRsVXpVYmplQVFzOWp4VjhnX1dhZ3R0dkpnSkswTGdB?oc=5"
-   },
-   {
-    "date": "2026-11-20",
-    "title": "Why Uranium Stocks Have Halved While Spot Holds Near US$90/lb",
-    "outlet": "Discovery Alert",
-    "place": "Uranium price",
-    "tickers": [
-     "CCJ",
-     "NXE",
-     "DNN",
-     "UEC",
-     "UUUU"
-    ],
-    "tags": [
-     "price"
-    ],
-    "numbers": [
-     "US$90/lb"
-    ],
-    "score": 5.34,
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOGd4NElsTEpkWW9RcHE0N1NRVFE3UV90b0J1R09HZVgyXzR5aUtQZ3p1X1ZWdTFoeFYwVE1Gd0NRc1EwWlpVTk8tVW9rVkl5OHJ0LTZJSnhJUFlKLV9jOFFmUjdmMUZrYlR4ODFXT0UwUDdXMU9Sa3RicWh0U3hoYWQ4eTRsX3J6Q2hQaQ?oc=5"
-   },
-   {
-    "date": "2026-11-17",
-    "title": "SMR, LLC; Palisades SMR, LLC; Pioneer Units 1 and 2; Receipt of Construction Permit Application",
-    "outlet": "Federal Register (nuclear)",
-    "place": "Federal Register (nuclear)",
-    "tickers": [],
-    "tags": [
-     "regulation",
-     "restart"
-    ],
-    "numbers": [],
-    "score": 5.2,
-    "link": "https://www.federalregister.gov/documents/2026/11/17/2026-23355/smr-llc-palisades-smr-llc-pioneer-units-1-and-2-receipt-of-construction-permit-application"
-   },
-   {
-    "date": "2026-11-20",
-    "title": "PEJ Pushes Nuclear Contract Signing With Westinghouse and Bechtel to 2027",
-    "outlet": "energynews.pro",
-    "place": "Westinghouse",
-    "tickers": [
-     "CCJ",
-     "BWXT"
-    ],
-    "tags": [
-     "contract"
-    ],
-    "numbers": [],
-    "score": 5.08,
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMnIxNHF1SC13ZFNvemU1WDNiUVZ2LVZnaS1odmdCX0lONlJLZ0sxSzFRbHVtN01OSDNxQjZiMkViN1laNnAxMVptdERSb0RnOVNJdmYzSzV6a0hEclZEajZvdVFmX1BmWTVndGlCbjdwbFZ3bGdkOURkQU9PU1dFM3oyLWE4bmxNYW5BT3NnTG00MjdfaGxaVDN2bXlDdzQ3?oc=5"
-   },
-   {
-    "date": "2026-11-18",
-    "title": "Forecasting the Future of the ERCOT Grid, Part 2: Solving the Winter Reliability Challenge",
-    "outlet": "Texas Public Policy Foundation",
-    "place": "ERCOT grid",
-    "tickers": [
-     "VST"
-    ],
-    "tags": [
-     "opposition"
-    ],
-    "numbers": [],
-    "score": 5.06,
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZ21MZ3JPOUlIcjRyMHF5VVNodm1SbDNBcFRzU0RfYzVJQktRRjJZUG5OQ19mZHRwTVJRNDljNWgxNHFhdWZ0R0NHV25ZdHlta0p2dWVlbmx0ZncwWXhSczlSWmtaZjhwUlBhNVRVbU0tNXd6Y0VmcjJKNUhTS3ZQRDJRbEVzNTZWeUdtMkVlRXpCUjM2eG9SSHc5Vkd2Z3hMQ0MzMmp5Uk1nZFJTRFBzNk44c05Jdjdl?oc=5"
-   },
-   {
-    "date": "2026-11-17",
-    "title": "Chernobyl and Fukushima sharing decommissioning experience",
-    "outlet": "World Nuclear News",
-    "place": "World Nuclear News",
-    "tickers": [],
-    "tags": [
-     "disruption"
-    ],
-    "numbers": [],
-    "score": 5.0,
-    "link": "https://www.world-nuclear-news.org/articles/chernobyl-and-fukushima-sharing-decommissioning-experience"
    }
   ]
  },
@@ -197808,7 +197858,7 @@
   }
  ],
  "memory_view": {
-  "events": 1246,
+  "events": 1293,
   "with_outcomes": 1162,
   "playbooks": {
    "acquisition": {
@@ -197884,334 +197934,28 @@
   "watch": [],
   "recent": [
    {
-    "date": "2026-11-18",
-    "ticker": "NXE",
-    "title": "Lotus Resources (ASX:LOT) Looks to Build on Its First Uranium Export",
-    "type": "intel_politics",
-    "r0": -0.55,
+    "date": "2026-11-20",
+    "ticker": "CCJ",
+    "title": "US, Indonesia expand civil nuclear partnership to establish regional small modular reactor hub",
+    "type": "intel_contract",
+    "r0": null,
     "r5": null,
     "r20": null
    },
    {
-    "date": "2026-11-19",
-    "ticker": "CEG",
-    "title": "PJM urged to delay base capacity auction until data centers cut from forecast",
-    "type": "intel_disruption",
-    "r0": -4.08,
+    "date": "2026-11-20",
+    "ticker": "CCJ",
+    "title": "Houthi attacks add to worries over Trump Saudi nuclear power pact",
+    "type": "intel_geopolitics",
+    "r0": null,
     "r5": null,
     "r20": null
    },
    {
-    "date": "2026-11-19",
-    "ticker": "TLN",
-    "title": "PJM urged to delay base capacity auction until data centers cut from forecast",
-    "type": "intel_disruption",
-    "r0": -1.19,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-19",
-    "ticker": "CEG",
-    "title": "Consumer Groups Seek PJM Auction Delay Over Data Centers",
-    "type": "intel_disruption",
-    "r0": -4.08,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-19",
-    "ticker": "TLN",
-    "title": "Consumer Groups Seek PJM Auction Delay Over Data Centers",
-    "type": "intel_disruption",
-    "r0": -1.19,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-19",
-    "ticker": "CEG",
-    "title": "Consumer advocates join PJM's market monitor in urging delay of December capacity auction",
-    "type": "intel_disruption",
-    "r0": -4.08,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-19",
-    "ticker": "TLN",
-    "title": "Consumer advocates join PJM's market monitor in urging delay of December capacity auction",
-    "type": "intel_disruption",
-    "r0": -1.19,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-19",
-    "ticker": "BWXT",
-    "title": "South Korea's $21.7 Billion Nuclear-Powered Submarine Program Enters Full Swing, Setting Up Hanwha Ocean vs. HD Hyundai Showdown",
-    "type": "intel_regulation",
-    "r0": -0.51,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "ticker": "LEU",
-    "title": "Blykalla Secures World\u2019s First HALEU Enrichment Contract for a Commercial Lead-Cooled Reactor",
-    "type": "intel_contract",
-    "r0": -2.24,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-19",
-    "ticker": "BWXT",
-    "title": "Blykalla Secures World\u2019s First HALEU Enrichment Contract for a Commercial Lead-Cooled Reactor",
-    "type": "intel_contract",
-    "r0": -0.51,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-19",
-    "ticker": "CEG",
-    "title": "Utility Dive: PA Consumer Advocate Darryl Lawrence Joins Advocates In 7 Other PJM States, Independent PJM Market Monitor Urging PJM To Delay December Generation",
-    "type": "intel_disruption",
-    "r0": -4.08,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-19",
-    "ticker": "TLN",
-    "title": "Utility Dive: PA Consumer Advocate Darryl Lawrence Joins Advocates In 7 Other PJM States, Independent PJM Market Monitor Urging PJM To Delay December Generation",
-    "type": "intel_disruption",
-    "r0": -1.19,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-19",
-    "ticker": "CCJ",
-    "title": "Boss Energy (ASX:BOE) Keeps Honeymoon Uranium Output Tracking to Plan",
-    "type": "intel_production",
-    "r0": -1.63,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-19",
-    "ticker": "NXE",
-    "title": "Boss Energy (ASX:BOE) Keeps Honeymoon Uranium Output Tracking to Plan",
-    "type": "intel_production",
-    "r0": -4.81,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-19",
-    "ticker": "CCJ",
-    "title": "Standard Uranium Closes Final Tranche of LIFE Offering",
-    "type": "intel_disruption",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-19",
-    "ticker": "NXE",
-    "title": "Standard Uranium Closes Final Tranche of LIFE Offering",
-    "type": "intel_disruption",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "CCJ",
-    "title": "Cameco (TSX:CCO) On Its Loss And Share Sale With Fair Value Back In Focus",
-    "type": "offering_dilution",
-    "r0": -5.57,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "CEG",
-    "title": "Consumer advocates from seven states and PJM's market monitor urge delay of the December capacity auction over data center forecasts",
-    "type": "intel_disruption",
-    "r0": -5.8,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "TLN",
-    "title": "Consumer advocates from seven states and PJM's market monitor urge delay of the December capacity auction over data center forecasts",
-    "type": "intel_disruption",
-    "r0": -6.46,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "CCJ",
-    "title": "Poland nuclear power plant: Westinghouse, Bechtel $50b contract due early 2027",
-    "type": "intel_contract",
-    "r0": -5.57,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "BWXT",
-    "title": "Poland nuclear power plant: Westinghouse, Bechtel $50b contract due early 2027",
-    "type": "intel_contract",
-    "r0": -7.28,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "CCJ",
-    "title": "Japan's Niigata Prefecture to Subsidize Electricity Bills for 6 Cities Near Kashiwazaki-Kariwa Nuclear Plant with \u00a53.24 Billion; Supplementary Budget to Go Befo",
-    "type": "intel_regulation",
-    "r0": -5.57,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "CEG",
-    "title": "Japan's Niigata Prefecture to Subsidize Electricity Bills for 6 Cities Near Kashiwazaki-Kariwa Nuclear Plant with \u00a53.24 Billion; Supplementary Budget to Go Befo",
-    "type": "intel_regulation",
-    "r0": -5.8,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "CCJ",
-    "title": "NuFuels, Inc.; Crownpoint Uranium Recovery Project; Draft Environmental Assessment and Draft Programmatic Agreement",
-    "type": "intel_regulation",
-    "r0": -5.57,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "CCJ",
-    "title": "PEJ Pushes Nuclear Contract Signing With Westinghouse and Bechtel to 2027",
-    "type": "intel_contract",
-    "r0": -5.57,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "BWXT",
-    "title": "PEJ Pushes Nuclear Contract Signing With Westinghouse and Bechtel to 2027",
-    "type": "intel_contract",
-    "r0": -7.28,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "CEG",
-    "title": "How companies are buying power for AI and data centers: PPAs, nuclear deals and capacity markets",
-    "type": "intel_contract",
-    "r0": -5.8,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "VST",
-    "title": "How companies are buying power for AI and data centers: PPAs, nuclear deals and capacity markets",
-    "type": "intel_contract",
-    "r0": -7.17,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "CCJ",
-    "title": "Skeleton Coast closes $855K tranche for Namibia uranium push",
-    "type": "intel_disruption",
-    "r0": -5.57,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "VST",
-    "title": "ERCOT finalizes CEO contract that drew backlash from Lieutenant Gov. Dan Patrick",
-    "type": "intel_contract",
-    "r0": -7.17,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "CCJ",
-    "title": "Partners prepare to procure next batch of equipment for Polish plant",
-    "type": "intel_contract",
-    "r0": -5.57,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "VST",
-    "title": "Dan Patrick criticizes contract extension for ERCOT CEO",
-    "type": "intel_contract",
-    "r0": -7.17,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "VST",
-    "title": "ERCOT approves CEO Pablo Vegas\u2019 contract months after backlash",
-    "type": "intel_regulation",
-    "r0": -7.17,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "VST",
-    "title": "Controversial Pay Agreement for ERCOT CEO Finalized",
-    "type": "intel_contract",
-    "r0": -7.17,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "CCJ",
-    "title": "Niger: WFP approves $772.66 million plan for 2027-2031",
-    "type": "intel_regulation",
-    "r0": -5.57,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "UEC",
-    "title": "Niger: WFP approves $772.66 million plan for 2027-2031",
-    "type": "intel_regulation",
-    "r0": -7.99,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "UUUU",
-    "title": "US Signs $725 Million Loan Pact with Energy Fuels to Boost Domestic Rare Earth Production",
-    "type": "intel_production",
+    "title": "Houthi attacks add to worries over Trump Saudi nuclear power pact",
+    "type": "intel_geopolitics",
     "r0": null,
     "r5": null,
     "r20": null
@@ -198235,10 +197979,316 @@
     "r20": null
    },
    {
+    "date": "2026-11-21",
+    "ticker": "CCJ",
+    "title": "Escalating attacks on Saudi facilities raise concerns in Washington regarding the proposed nuclear deal",
+    "type": "intel_geopolitics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-21",
+    "ticker": "LEU",
+    "title": "Escalating attacks on Saudi facilities raise concerns in Washington regarding the proposed nuclear deal",
+    "type": "intel_geopolitics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-21",
+    "ticker": "CCJ",
+    "title": "Houthi Strikes Raise Security Concerns Over US Saudi Nuclear Pact",
+    "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-21",
+    "ticker": "LEU",
+    "title": "Houthi Strikes Raise Security Concerns Over US Saudi Nuclear Pact",
+    "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-21",
+    "ticker": "CCJ",
+    "title": "Energy Dominance, Measured in Exports: America\u2019s $50 Billion Nuclear Bet in Poland",
+    "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-21",
+    "ticker": "BWXT",
+    "title": "Energy Dominance, Measured in Exports: America\u2019s $50 Billion Nuclear Bet in Poland",
+    "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-21",
+    "ticker": "CCJ",
+    "title": "N-safety regulator AERB grants criticality nod to Rajasthan\u2019s N-plant unit-8, reactor moves closer to pow",
+    "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
     "date": "2026-11-22",
     "ticker": "VST",
     "title": "ERCOT\u2019s Vegas to Receive Hefty Pay Package After Delay",
     "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "'They are wrong': Defence minister denies US report on AUKUS submarines",
+    "type": "intel_politics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "Australia criticises US Congressional Budget Office over AUKUS comments",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "CCJ",
+    "title": "IAEA chief says planned US-Saudi nuclear deal 'very satisfactory' on inspections",
+    "type": "intel_geopolitics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "LEU",
+    "title": "IAEA chief says planned US-Saudi nuclear deal 'very satisfactory' on inspections",
+    "type": "intel_geopolitics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "Australia denies US claims on AUKUS submarines",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "Australia's Defence Minister Richard Marles denies report AUKUS deal would 'diminish US Navy'",
+    "type": "intel_politics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "Australia criticises US report saying AUKUS will shrink submarine fleet",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "Australia rejects US report warning AUKUS submarine deal could weaken American Navy",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "Australia Defends AUKUS Submarine Deal Against US Navy Capacity Concerns",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "Australia Defence Minister Rejects Claim AUKUS Deal Would Weaken US Navy",
+    "type": "intel_politics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "Australia Dismisses AUKUS Submarine Production Concerns",
+    "type": "intel_production",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "\u2018They are wrong\u2019: Australia dismisses US report warning AUKUS submarine deal could hurt Navy",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "Australia defends AUKUS submarine plan after CBO warns of U.S. Navy strain",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "CCJ",
+    "title": "New Maryland-Korea Agreement Aims To Lower Energy Costs Through Nuclear Power",
+    "type": "intel_contract",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "New Maryland-Korea Agreement Aims To Lower Energy Costs Through Nuclear Power",
+    "type": "intel_contract",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "CCJ",
+    "title": "US and Poland Issue Seventh P-TEC Ministerial Joint Statement on Civil Nuclear and Grid Cooperation",
+    "type": "intel_politics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "US and Poland Issue Seventh P-TEC Ministerial Joint Statement on Civil Nuclear and Grid Cooperation",
+    "type": "intel_politics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "CCJ",
+    "title": "Rosatom signs world's first export agreement with Indonesia for floating nuclear power unit",
+    "type": "intel_contract",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "LEU",
+    "title": "Rosatom signs world's first export agreement with Indonesia for floating nuclear power unit",
+    "type": "intel_contract",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "CCJ",
+    "title": "South Korea Seeks IAEA Safeguards for Nuclear Submarines",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "South Korea Seeks IAEA Safeguards for Nuclear Submarines",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "CCJ",
+    "title": "China raises concerns over IAEA verification of South Korea's nuclear-powered submarines, calling it a \"grave challenge to international security\"",
+    "type": "intel_financing",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-22",
+    "ticker": "BWXT",
+    "title": "China raises concerns over IAEA verification of South Korea's nuclear-powered submarines, calling it a \"grave challenge to international security\"",
+    "type": "intel_financing",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "CCJ",
+    "title": "South Korea Eases Regulatory Path for Next-Generation Nuclear Reactors",
+    "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "BWXT",
+    "title": "South Korea Eases Regulatory Path for Next-Generation Nuclear Reactors",
+    "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "CCJ",
+    "title": "'Construction Contractor Dispute' Team Korea Vows to \"Complete the Czech Dukovany Nuclear Plant\"",
+    "type": "intel_contract",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "BWXT",
+    "title": "'Construction Contractor Dispute' Team Korea Vows to \"Complete the Czech Dukovany Nuclear Plant\"",
+    "type": "intel_contract",
     "r0": null,
     "r5": null,
     "r20": null
@@ -198310,6 +198360,11 @@
    "name": "volume_profile_levels",
    "trials": 12,
    "verdict": "2026-11-22 ADOPTED as a filter. From an order-flow video (value area / point of control). 9,877 Patient Levels practice trades 2024-2026, 52 stocks, profile = last 140 hourly bars before the decision, exact limit price. Levels BELOW the value area: -0.055R, 29% wins (n=2,177); in a THIN volume zone: 0.000R, 31% (n=2,627); inside value +0.382R; at the heaviest price +0.284R (44% wins); thick zone +0.330R. Skipping below-value or thin: kept +0.331R / 41% wins vs skipped +0.007R / 31%, both halves (old +0.43/+0.03, new +0.23/-0.01), 85% of tickers agree; nuclear 10 kept +0.279R vs skipped -0.019R. The video's specific claim (reversals at the value-area LOW) did NOT hold: +0.107R, below average. First attempt used the fill bar's low (look-ahead) and overstated it; corrected."
+  },
+  {
+   "name": "auto_discovery",
+   "trials": 181,
+   "verdict": "2026-11-23 01:33: the bot tested 124 event patterns on 8,125 events (older vs newer half, corrected for the number of tests). 0 hold up."
   }
  ],
  "notebook": [
@@ -198449,5 +198504,6 @@
    },
    "found": "2026-11-21"
   }
- ]
+ ],
+ "reactor_retry_at": 1795421102.054807
 }
