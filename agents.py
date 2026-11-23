@@ -111,6 +111,8 @@ class Desk:
                 payload = {**payload, "teammates_track_record": {k: f"right {v['right']} of {v['calls']} calls" for k, v in tr.items()},
                            "how_to_use_track_record": "Lean on teammates whose calls have been right; question the ones who've been wrong."}
         offered = notes.ASK in system
+        if role in ("pm", "risk", "macro", "engineer", "optspec", "investigator") and isinstance(payload, dict) and self.state.get("catalysts"):
+            payload = {**payload, "coming_up": [f"{c['date']}: {c['what']}" for c in self.state["catalysts"][:10]]}
         les = [x["lesson"] for x in self.state.get("lessons", []) if x.get("lesson")][-6:]
         if les and isinstance(payload, dict):  # what the desk learned from its own mistakes, in every agent's head
             payload = {**payload, "desk_lessons_from_our_mistakes": les}

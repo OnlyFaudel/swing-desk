@@ -101,6 +101,10 @@
   "sprott_premium": {
    "trials": 2,
    "verdict": "2026-11-23 monthly proxy (SRUUF price vs 0.2374 lb/unit x Cameco monthly spot, Jul 2021-Oct 2026, 64 months): premium rising 3+ pts -> miners next month +6.2% (n=11); falling 3+ pts -> -0.8% (n=20); deep discount < -10% -> -5.9% (n=3). Too few months to trade; daily tracker started 2026-11-23 (first reading -20.3%, NAV $21.60, price $17.22)."
+  },
+  "earnings_drift": {
+   "trials": 8,
+   "verdict": "2026-11-23: 442 earnings 2010-2026 in our 10 stocks: reaction day moves 4.5% avg either way; next 5 days vs group -0.17% overall; +5% reactions faded -1.6% (older -0.3, newer -2.3: halves disagree); -5% reactions -0.4%; beats/misses ~0; beat+pop -0.7% (older +1.3, newer -1.8); no pre-earnings run-up (-0.26%, 48% up). No tradable drift. Keep stepping aside before earnings; earnings dates now in the catalyst calendar."
   }
  }
 }

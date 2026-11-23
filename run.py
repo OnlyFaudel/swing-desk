@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -1388,6 +1388,12 @@ def intel_tick(st, today, force=False):
                           art={"big": "Plant report", "sub": f"Reactors, mines and fuel, {today:%b %d}"})
         except Exception as e:
             print("plant report", e)
+    if not st["flags"].get(f"catalysts:{today}"):  # the catalyst calendar, refreshed once a day
+        st["flags"][f"catalysts:{today}"] = True
+        try:
+            st["catalysts"] = catalysts.upcoming(list(T))
+        except Exception as e:
+            print("catalysts", e)
     if now.time() >= dt.time(18, 15) and today.weekday() < 5 and not st["flags"].get(f"sput:{today}"):  # Sprott publishes NAV ~6pm
         st["flags"][f"sput:{today}"] = True
         try:

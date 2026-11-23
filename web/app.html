@@ -310,7 +310,7 @@ button.act:hover{filter:brightness(1.08)}
 .brief .bh{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px}
 .brief .bh b{font-family:"Newsreader",Georgia,serif;font-weight:500;font-size:22px}
 .brief .bh span{font-size:12.5px;color:var(--ink2)}
-.brief .bl{display:grid;grid-template-columns:58px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--hair)}
+.brief .bl{display:grid;grid-template-columns:74px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--hair)}
 .brief .bl i{font-style:normal;font-size:12.5px;color:var(--glow);padding-top:2px}
 .brief .bl p{margin:0;font-size:14.5px;line-height:1.5}
 .now{border-top:0;padding-top:4px}
@@ -745,8 +745,10 @@ function stockState(t){
     Object.entries(S.armed||{}).forEach(([t,a])=>next.push(`buy ${esc(t)} if it dips to ${money(a.entry)}`));
     const weak=S.sync&&S.sync.pulse_up===false;
     next.push(`a new buy if the market drops 2%+ and a stock is beaten down (panic rule), big news the team is sure about, or a dip to support${weak?" once the nuclear basket turns up":""}`);
+    const cu=(S.catalysts||[]).filter(c=>c.date>=ymd(new Date())).slice(0,4);
+    const coming=cu.length?cu.map(c=>`${fd(c.date)}: ${esc(c.what)}`).join("<br>"):"Nothing dated in the next weeks.";
     $("brief").innerHTML=`<div class="bh"><b>Today</b><span>${new Date().toLocaleDateString(undefined,{weekday:"long",month:"long",day:"numeric"})}</span></div>
-      <div class="bl"><i>Done</i><p>${done}</p></div><div class="bl"><i>Holding</i><p>${holding}</p></div><div class="bl"><i>Next</i><p>${next.slice(0,3).map(x=>x[0].toUpperCase()+x.slice(1)).join(". ")}.</p></div>`;
+      <div class="bl"><i>Done</i><p>${done}</p></div><div class="bl"><i>Holding</i><p>${holding}</p></div><div class="bl"><i>Next</i><p>${next.slice(0,3).map(x=>x[0].toUpperCase()+x.slice(1)).join(". ")}.</p></div><div class="bl"><i>Coming up</i><p>${coming}</p></div>`;
   }
   let m="";
   const holds=[...new Set(lineupT.concat(Object.keys(B.lots||{})))].filter(t=>lot(t,"trade").qty>1e-6||lot(t,"core").qty>1e-6);
