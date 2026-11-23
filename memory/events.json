@@ -26144,5 +26144,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-23",
+"title": "Open to Debate: Does the U.S.-Saudi Civil Nuclear Agreement Serve America\u2019s Interests?",
+"type": "intel_contract",
+"source": "Intel: Council on Foreign Relations",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "LEU",
+"date": "2026-11-23",
+"title": "Open to Debate: Does the U.S.-Saudi Civil Nuclear Agreement Serve America\u2019s Interests?",
+"type": "intel_contract",
+"source": "Intel: Council on Foreign Relations",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]
