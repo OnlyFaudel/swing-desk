@@ -1,6 +1,6 @@
 {
 "ticker": "TLN",
-"updated": "2026-11-23 04:07",
+"updated": "2026-11-23 06:32",
 "name": "Talen Energy Corporation",
 "about": "Talen Energy Corporation, an independent power producer and infrastructure company, produces and sells electricity, capacity, and ancillary services into wholesale power markets in the United States. The company's plants generate power using a variety of fuels, such as nuclear, fossil, oil, natural gas, and coal power plants. It owns and operates approximately 13.1 GW of power infrastructure. Talen Energy Corporation was incorporated in 2014 and is headquartered in Houston, Texas.",
 "website": "https://www.talenenergy.com",
@@ -158,6 +158,60 @@
 },
 {
 "date": "2026-05-22",
+"who": "LEBSACK DALE E JR.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 85618,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "WRIGHT ANDREW M.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 95533,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "BERRYMAN BRAD",
+"role": "Chief Operating Officer",
+"kind": "award/other",
+"shares": 99138,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "MULLER COLE",
+"role": "Chief Financial Officer",
+"kind": "award/other",
+"shares": 62862,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "PLAGENS ANTHONY J.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 5668,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
+"who": "CASULLI EDWARD T.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 6376,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-05-22",
 "who": "OLAGUES DARREN J",
 "role": "Officer",
 "kind": "award/other",
@@ -247,60 +301,6 @@
 "what": ""
 },
 {
-"date": "2026-05-22",
-"who": "LEBSACK DALE E JR.",
-"role": "Officer",
-"kind": "award/other",
-"shares": 85618,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2026-05-22",
-"who": "WRIGHT ANDREW M.",
-"role": "Officer",
-"kind": "award/other",
-"shares": 95533,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2026-05-22",
-"who": "BERRYMAN BRAD",
-"role": "Chief Operating Officer",
-"kind": "award/other",
-"shares": 99138,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2026-05-22",
-"who": "MULLER COLE",
-"role": "Chief Financial Officer",
-"kind": "award/other",
-"shares": 62862,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2026-05-22",
-"who": "PLAGENS ANTHONY J.",
-"role": "Officer",
-"kind": "award/other",
-"shares": 5668,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2026-05-22",
-"who": "CASULLI EDWARD T.",
-"role": "Officer",
-"kind": "award/other",
-"shares": 6376,
-"value_usd": null,
-"what": ""
-},
-{
 "date": "2025-07-18",
 "who": "NUTT TERRY L",
 "role": "Chief Financial Officer",
@@ -324,6 +324,51 @@
 "role": "General Counsel",
 "kind": "award/other",
 "shares": 20779,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "LEBSACK DALE E JR.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 17946,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "WRIGHT ANDREW M.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 20024,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "BERRYMAN BRAD",
+"role": "Officer",
+"kind": "award/other",
+"shares": 20779,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "MULLER COLE",
+"role": "Officer",
+"kind": "award/other",
+"shares": 13176,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-06-09",
+"who": "PLAGENS ANTHONY J.",
+"role": "Officer",
+"kind": "award/other",
+"shares": 5667,
 "value_usd": null,
 "what": ""
 },
@@ -396,51 +441,6 @@
 "role": "Officer",
 "kind": "award/other",
 "shares": 14050,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2025-06-09",
-"who": "LEBSACK DALE E JR.",
-"role": "Officer",
-"kind": "award/other",
-"shares": 17946,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2025-06-09",
-"who": "WRIGHT ANDREW M.",
-"role": "Officer",
-"kind": "award/other",
-"shares": 20024,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2025-06-09",
-"who": "BERRYMAN BRAD",
-"role": "Officer",
-"kind": "award/other",
-"shares": 20779,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2025-06-09",
-"who": "MULLER COLE",
-"role": "Officer",
-"kind": "award/other",
-"shares": 13176,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2025-06-09",
-"who": "PLAGENS ANTHONY J.",
-"role": "Officer",
-"kind": "award/other",
-"shares": 5667,
 "value_usd": null,
 "what": ""
 },

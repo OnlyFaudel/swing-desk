@@ -1,6 +1,6 @@
 {
 "ticker": "UUUU",
-"updated": "2026-11-23 04:07",
+"updated": "2026-11-23 06:32",
 "name": "Energy Fuels Inc.",
 "about": "Energy Fuels Inc., together with its subsidiaries, engages in the exploration, recovery, recycling, exploration, operation, development, permitting, evaluation, and sale of uranium mineral properties in the United States. It operates through three segments: Uranium, REE, and HMS. It produces and sells vanadium pentoxide, rare earth elements, carbonate, and heavy mineral sands, such as ilmenite, rutile, zircon, and monazite. The company was formerly known as Volcanic Metals Exploration Inc. and changed its name to Energy Fuels Inc. in May 2006. Energy Fuels Inc. was incorporated in 1987 and is headquartered in Lakewood, Colorado.",
 "website": "https://www.energyfuels.com",
@@ -234,6 +234,69 @@
 },
 {
 "date": "2026-01-27",
+"who": "CABRERA MISAEL",
+"role": "Officer",
+"kind": "award/other",
+"shares": 10443,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-01-27",
+"who": "BAKKEN SCOTT",
+"role": "Officer",
+"kind": "award/other",
+"shares": 5260,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-01-27",
+"who": "HERRERA JAQUELINE",
+"role": "Director",
+"kind": "award/other",
+"shares": 4724,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-01-27",
+"who": "HERRERA JAQUELINE",
+"role": "Director",
+"kind": "award/other",
+"shares": 5039,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-01-27",
+"who": "BONIFAS BERNARD",
+"role": "Officer",
+"kind": "award/other",
+"shares": 4871,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-01-27",
+"who": "KAPOSTASY DANIEL",
+"role": "Officer",
+"kind": "award/other",
+"shares": 5554,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-01-27",
+"who": "SHUMWAY LOGAN",
+"role": "Officer",
+"kind": "award/other",
+"shares": 4971,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-01-27",
 "who": "BENNETT NATHAN REED",
 "role": "Chief Financial Officer",
 "kind": "award/other",
@@ -297,69 +360,6 @@
 },
 {
 "date": "2026-01-27",
-"who": "CABRERA MISAEL",
-"role": "Officer",
-"kind": "award/other",
-"shares": 10443,
-"value_usd": 0,
-"what": "Stock Award(Grant) at price 0.00 per share."
-},
-{
-"date": "2026-01-27",
-"who": "HANSEN BRUCE DOUGLAS",
-"role": "Director",
-"kind": "award/other",
-"shares": 8188,
-"value_usd": 0,
-"what": "Stock Award(Grant) at price 0.00 per share."
-},
-{
-"date": "2026-01-27",
-"who": "HERRERA JAQUELINE",
-"role": "Director",
-"kind": "award/other",
-"shares": 4724,
-"value_usd": 0,
-"what": "Stock Award(Grant) at price 0.00 per share."
-},
-{
-"date": "2026-01-27",
-"who": "HERRERA JAQUELINE",
-"role": "Director",
-"kind": "award/other",
-"shares": 5039,
-"value_usd": 0,
-"what": "Stock Award(Grant) at price 0.00 per share."
-},
-{
-"date": "2026-01-27",
-"who": "BONIFAS BERNARD",
-"role": "Officer",
-"kind": "award/other",
-"shares": 4871,
-"value_usd": 0,
-"what": "Stock Award(Grant) at price 0.00 per share."
-},
-{
-"date": "2026-01-27",
-"who": "KAPOSTASY DANIEL",
-"role": "Officer",
-"kind": "award/other",
-"shares": 5554,
-"value_usd": 0,
-"what": "Stock Award(Grant) at price 0.00 per share."
-},
-{
-"date": "2026-01-27",
-"who": "SHUMWAY LOGAN",
-"role": "Officer",
-"kind": "award/other",
-"shares": 4971,
-"value_usd": 0,
-"what": "Stock Award(Grant) at price 0.00 per share."
-},
-{
-"date": "2026-01-27",
 "who": "CHALMERS MARK STEPHEN",
 "role": "Chief Executive Officer",
 "kind": "award/other",
@@ -378,10 +378,19 @@
 },
 {
 "date": "2026-01-27",
-"who": "BAKKEN SCOTT",
-"role": "Officer",
+"who": "FILAS BARBARA APPELIN",
+"role": "Director",
 "kind": "award/other",
-"shares": 5260,
+"shares": 5039,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-01-27",
+"who": "BHAPPU ROSS R",
+"role": "President",
+"kind": "award/other",
+"shares": 32583,
 "value_usd": 0,
 "what": "Stock Award(Grant) at price 0.00 per share."
 },
@@ -414,6 +423,15 @@
 },
 {
 "date": "2026-01-27",
+"who": "HANSEN BRUCE DOUGLAS",
+"role": "Director",
+"kind": "award/other",
+"shares": 8188,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2026-01-27",
 "who": "MORRISON ALEXANDER G.",
 "role": "Director",
 "kind": "award/other",
@@ -427,24 +445,6 @@
 "role": "Director",
 "kind": "award/other",
 "shares": 4724,
-"value_usd": 0,
-"what": "Stock Award(Grant) at price 0.00 per share."
-},
-{
-"date": "2026-01-27",
-"who": "FILAS BARBARA APPELIN",
-"role": "Director",
-"kind": "award/other",
-"shares": 5039,
-"value_usd": 0,
-"what": "Stock Award(Grant) at price 0.00 per share."
-},
-{
-"date": "2026-01-27",
-"who": "BHAPPU ROSS R",
-"role": "President",
-"kind": "award/other",
-"shares": 32583,
 "value_usd": 0,
 "what": "Stock Award(Grant) at price 0.00 per share."
 },
@@ -540,21 +540,21 @@
 },
 {
 "date": "2025-09-19",
-"who": "HIGGS DENNIS LYLE",
-"role": "Director",
-"kind": "sell",
-"shares": 10000,
-"value_usd": 146580,
-"what": "Sale at price 14.33 - 15.24 per share."
-},
-{
-"date": "2025-09-19",
 "who": "BOVAIRD J BIRKS",
 "role": "Director",
 "kind": "sell",
 "shares": 10000,
 "value_usd": 148500,
 "what": "Sale at price 14.85 per share."
+},
+{
+"date": "2025-09-19",
+"who": "HIGGS DENNIS LYLE",
+"role": "Director",
+"kind": "sell",
+"shares": 10000,
+"value_usd": 146580,
+"what": "Sale at price 14.33 - 15.24 per share."
 },
 {
 "date": "2025-09-17",
@@ -630,6 +630,15 @@
 },
 {
 "date": "2025-08-05",
+"who": "VAN AKKOOI MICHIEL",
+"role": "Officer",
+"kind": "award/other",
+"shares": 12060,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-08-05",
 "who": "GERMAN OSCAR ARMANDO",
 "role": "Officer",
 "kind": "award/other",
@@ -649,15 +658,6 @@
 {
 "date": "2025-08-05",
 "who": "VAN MICHIEL AKKOOI",
-"role": "Officer",
-"kind": "award/other",
-"shares": 12060,
-"value_usd": 0,
-"what": "Stock Award(Grant) at price 0.00 per share."
-},
-{
-"date": "2025-08-05",
-"who": "VAN AKKOOI MICHIEL",
 "role": "Officer",
 "kind": "award/other",
 "shares": 12060,
@@ -693,15 +693,6 @@
 },
 {
 "date": "2025-04-21",
-"who": "HANSEN BRUCE DOUGLAS",
-"role": "Director",
-"kind": "award/other",
-"shares": 417,
-"value_usd": 0,
-"what": "Stock Award(Grant) at price 0.00 per share."
-},
-{
-"date": "2025-04-21",
 "who": "ESTABROOKE IVY VIRGINIA",
 "role": "Director",
 "kind": "award/other",
@@ -729,6 +720,15 @@
 },
 {
 "date": "2025-04-21",
+"who": "FILAS BARBARA APPELIN",
+"role": "Director",
+"kind": "award/other",
+"shares": 63,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-04-21",
 "who": "BOVAIRD J BIRKS",
 "role": "Director",
 "kind": "award/other",
@@ -738,10 +738,10 @@
 },
 {
 "date": "2025-04-21",
-"who": "FILAS BARBARA APPELIN",
+"who": "HANSEN BRUCE DOUGLAS",
 "role": "Director",
 "kind": "award/other",
-"shares": 63,
+"shares": 417,
 "value_usd": 0,
 "what": "Stock Award(Grant) at price 0.00 per share."
 },
@@ -801,28 +801,28 @@
 },
 {
 "date": "2025-01-29",
-"who": "BENNETT NATHAN REED",
-"role": "Chief Financial Officer",
-"kind": "award/other",
-"shares": 26362,
-"value_usd": 0,
-"what": "Stock Award(Grant) at price 0.00 per share."
-},
-{
-"date": "2025-01-29",
-"who": "LONGENECKER NATHAN M.",
-"role": "General Counsel",
-"kind": "award/other",
-"shares": 62620,
-"value_usd": 0,
-"what": "Stock Award(Grant) at price 0.00 per share."
-},
-{
-"date": "2025-01-29",
-"who": "DRERA SALEEM",
+"who": "BAKKEN SCOTT",
 "role": "Officer",
 "kind": "award/other",
-"shares": 19036,
+"shares": 22814,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-01-29",
+"who": "NAZARENUS DEE ANN",
+"role": "Officer",
+"kind": "award/other",
+"shares": 20890,
+"value_usd": 0,
+"what": "Stock Award(Grant) at price 0.00 per share."
+},
+{
+"date": "2025-01-29",
+"who": "ESTABROOKE IVY VIRGINIA",
+"role": "Director",
+"kind": "award/other",
+"shares": 18859,
 "value_usd": 0,
 "what": "Stock Award(Grant) at price 0.00 per share."
 }

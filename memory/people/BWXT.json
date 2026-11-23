@@ -1,6 +1,6 @@
 {
 "ticker": "BWXT",
-"updated": "2026-11-23 04:07",
+"updated": "2026-11-23 06:32",
 "name": "BWX Technologies, Inc.",
 "about": "BWX Technologies, Inc. manufactures and sells nuclear components in the United States, Canada, and internationally. The company operates through two segments, Government Operations and Commercial Operations. It manufactures precision naval nuclear components, reactors, and nuclear fuel; close-tolerance and high-quality equipment for nuclear applications; critical nuclear components, fuels and assemblies for government and limited other uses; down blend government stockpiles of uranium; and fabricate fuel-bearing precision components. The company also supplies proprietary and sole-source valves, manifolds, and fittings to naval and commercial shipping customers; research reactor fuel elements for colleges, universities, and national laboratories; and components for defense applications. In addition, it manufactures commercial nuclear steam generators, nuclear fuel, fuel handling systems, pressure vessels, reactor components, heat exchangers, tooling delivery systems; and containers for the storage of nuclear fuel and other high-level nuclear waste. Further, the company supplies nuclear fuel, fuel handling systems, tooling delivery systems, nuclear-grade materials and precisely machined components; and manufactures medical radioisotopes, radiopharmaceuticals, and medical devices. Additionally, it provides specialized engineering services that include structural component design, 3-D thermal-hydraulic engineering analysis, weld and robotic process development, electrical and con",
 "website": "https://www.bwxt.com",
@@ -177,7 +177,7 @@
 },
 {
 "date": "2026-04-30",
-"who": "KRIEG KENNETH J",
+"who": "NILAND BARBARA A",
 "role": "Director",
 "kind": "award/other",
 "shares": 762,
@@ -186,7 +186,7 @@
 },
 {
 "date": "2026-04-30",
-"who": "NILAND BARBARA A",
+"who": "KRIEG KENNETH J",
 "role": "Director",
 "kind": "award/other",
 "shares": 762,
@@ -393,15 +393,6 @@
 },
 {
 "date": "2025-08-06",
-"who": "MEGUID OMAR FATHI",
-"role": "Officer",
-"kind": "sell",
-"shares": 2261,
-"value_usd": 406618.0,
-"what": "Sale at price 179.84 per share."
-},
-{
-"date": "2025-08-06",
 "who": "GEVEDEN REX D",
 "role": "Chief Executive Officer",
 "kind": "sell",
@@ -410,17 +401,17 @@
 "what": "Sale at price 178.99 - 179.69 per share."
 },
 {
-"date": "2025-05-02",
-"who": "RICHARDSON JOHN M",
-"role": "Director",
-"kind": "award/other",
-"shares": 1465,
-"value_usd": null,
-"what": ""
+"date": "2025-08-06",
+"who": "MEGUID OMAR FATHI",
+"role": "Officer",
+"kind": "sell",
+"shares": 2261,
+"value_usd": 406618.0,
+"what": "Sale at price 179.84 per share."
 },
 {
 "date": "2025-05-02",
-"who": "KRIEG KENNETH J",
+"who": "RICHARDSON JOHN M",
 "role": "Director",
 "kind": "award/other",
 "shares": 1465,
@@ -437,6 +428,15 @@
 "what": ""
 },
 {
+"date": "2025-05-02",
+"who": "KRIEG KENNETH J",
+"role": "Director",
+"kind": "award/other",
+"shares": 1465,
+"value_usd": null,
+"what": ""
+},
+{
 "date": "2025-03-05",
 "who": "DUFFY ROBERT L",
 "role": "Officer",
@@ -444,6 +444,15 @@
 "shares": 6000,
 "value_usd": 624161.0,
 "what": "Sale at price 104.03 per share."
+},
+{
+"date": "2025-02-28",
+"who": "MCCOY KEVIN M",
+"role": "Officer",
+"kind": "award/other",
+"shares": 496,
+"value_usd": null,
+"what": ""
 },
 {
 "date": "2025-02-28",
@@ -474,19 +483,19 @@
 },
 {
 "date": "2025-02-28",
-"who": "LEMASTERS ROBB A.",
-"role": "Chief Financial Officer",
+"who": "DUFFY ROBERT L",
+"role": "Officer",
 "kind": "award/other",
-"shares": 760,
+"shares": 25,
 "value_usd": null,
 "what": ""
 },
 {
 "date": "2025-02-28",
-"who": "MCCOY KEVIN M",
-"role": "Officer",
+"who": "LEMASTERS ROBB A.",
+"role": "Chief Financial Officer",
 "kind": "award/other",
-"shares": 496,
+"shares": 760,
 "value_usd": null,
 "what": ""
 },
@@ -500,11 +509,11 @@
 "what": ""
 },
 {
-"date": "2025-02-28",
-"who": "DUFFY ROBERT L",
+"date": "2025-02-27",
+"who": "MCCOY KEVIN M",
 "role": "Officer",
 "kind": "award/other",
-"shares": 25,
+"shares": 648,
 "value_usd": null,
 "what": ""
 },
@@ -537,6 +546,15 @@
 },
 {
 "date": "2025-02-27",
+"who": "DUFFY ROBERT L",
+"role": "Officer",
+"kind": "award/other",
+"shares": 91,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-27",
 "who": "LEMASTERS ROBB A.",
 "role": "Chief Financial Officer",
 "kind": "award/other",
@@ -546,28 +564,10 @@
 },
 {
 "date": "2025-02-27",
-"who": "MCCOY KEVIN M",
-"role": "Officer",
-"kind": "award/other",
-"shares": 648,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2025-02-27",
 "who": "GEVEDEN REX D",
 "role": "Chief Executive Officer",
 "kind": "award/other",
 "shares": 4538,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2025-02-27",
-"who": "DUFFY ROBERT L",
-"role": "Officer",
-"kind": "award/other",
-"shares": 91,
 "value_usd": null,
 "what": ""
 },
@@ -591,6 +591,15 @@
 },
 {
 "date": "2025-02-21",
+"who": "MCCOY KEVIN M",
+"role": "Officer",
+"kind": "award/other",
+"shares": 7229,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-21",
 "who": "WHITFORD RONALD OWEN JR.",
 "role": "General Counsel",
 "kind": "award/other",
@@ -609,19 +618,19 @@
 },
 {
 "date": "2025-02-21",
-"who": "MCCOY KEVIN M",
-"role": "Officer",
-"kind": "award/other",
-"shares": 7229,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2025-02-21",
 "who": "GEVEDEN REX D",
 "role": "Chief Executive Officer",
 "kind": "award/other",
 "shares": 72283,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2025-02-18",
+"who": "MCCOY KEVIN M",
+"role": "Officer",
+"kind": "award/other",
+"shares": 1064,
 "value_usd": null,
 "what": ""
 },
@@ -640,15 +649,6 @@
 "role": "Chief Financial Officer",
 "kind": "award/other",
 "shares": 2129,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2025-02-18",
-"who": "MCCOY KEVIN M",
-"role": "Officer",
-"kind": "award/other",
-"shares": 1064,
 "value_usd": null,
 "what": ""
 },

@@ -1,6 +1,6 @@
 {
 "ticker": "UEC",
-"updated": "2026-11-23 04:07",
+"updated": "2026-11-23 06:32",
 "name": "Uranium Energy Corp.",
 "about": "Uranium Energy Corp., together with its subsidiaries, engages in the exploration, pre-extraction, extraction, and processing of uranium and titanium concentrates properties in the United States, Canada, and the Republic of Paraguay. Its principal projects are located in Wyoming and Texas in the United States, as well as in Saskatchewan, Canada. The company was formerly known as Carlin Gold Inc. and changed its name to Uranium Energy Corp. in January 2005. The company was incorporated in 2003 and is headquartered in Corpus Christi, Texas.",
 "website": "https://www.uraniumenergy.com",
@@ -74,6 +74,15 @@
 },
 {
 "date": "2026-07-31",
+"who": "MELBYE SCOTT ERIC",
+"role": "Officer",
+"kind": "award/other",
+"shares": 133302,
+"value_usd": null,
+"what": ""
+},
+{
+"date": "2026-07-31",
 "who": "BERG BRENT",
 "role": "Officer",
 "kind": "award/other",
@@ -123,15 +132,6 @@
 "role": "Director",
 "kind": "award/other",
 "shares": 10740,
-"value_usd": null,
-"what": ""
-},
-{
-"date": "2026-07-31",
-"who": "MELBYE SCOTT ERIC",
-"role": "Officer",
-"kind": "award/other",
-"shares": 133302,
 "value_usd": null,
 "what": ""
 },

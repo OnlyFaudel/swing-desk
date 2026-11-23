@@ -1,6 +1,6 @@
 {
 "ticker": "VST",
-"updated": "2026-11-23 04:07",
+"updated": "2026-11-23 06:32",
 "name": "Vistra Corp.",
 "about": "Vistra Corp., together with its subsidiaries, operates as an integrated retail electricity and power generation company in the United States. The company operates through five segments: Retail, Texas, East, West, and Asset Closure. The company retails electricity and natural gas to residential, commercial, and industrial customers across states in the United States and the District of Columbia. It is also involved in electricity generation, wholesale energy purchases and sales, commodity risk management, fuel procurement, and fuel logistics management activities. In addition, the company engages in decommissioning and reclamation of retired generation facilities, including mines, and battery removal and remediation activities. It serves approximately 5 million customers with a generation capacity of approximately 44,000 megawatts with a portfolio of natural gas, nuclear, coal, solar, and battery energy storage facilities. The company was formerly known as Vistra Energy Corp. and changed its name to Vistra Corp. in July 2020. Vistra Corp. was founded in 1882 and is based in Irving, Texas.",
 "website": "https://vistracorp.com",
@@ -125,21 +125,21 @@
 },
 {
 "date": "2026-09-08",
-"who": "MOLDOVAN KRISTOPHER E.",
-"role": "Chief Financial Officer",
-"kind": "sell",
-"shares": 20000,
-"value_usd": 3020600,
-"what": "Sale at price 151.03 per share."
-},
-{
-"date": "2026-09-08",
 "who": "HUDSON SCOTT A",
 "role": "Officer",
 "kind": "sell",
 "shares": 44444,
 "value_usd": 6747545,
 "what": "Sale at price 150.97 - 152.56 per share."
+},
+{
+"date": "2026-09-08",
+"who": "MOLDOVAN KRISTOPHER E.",
+"role": "Chief Financial Officer",
+"kind": "sell",
+"shares": 20000,
+"value_usd": 3020600,
+"what": "Sale at price 151.03 per share."
 },
 {
 "date": "2026-09-01",
@@ -161,21 +161,21 @@
 },
 {
 "date": "2026-06-18",
-"who": "ACOSTA ARCILIA C",
-"role": "Director",
-"kind": "sell",
-"shares": 15000,
-"value_usd": 2512800,
-"what": "Sale at price 165.04 - 170.00 per share."
-},
-{
-"date": "2026-06-18",
 "who": "SULT JOHN R",
 "role": "Director",
 "kind": "sell",
 "shares": 6500,
 "value_usd": 1105000,
 "what": "Sale at price 170.00 per share."
+},
+{
+"date": "2026-06-18",
+"who": "ACOSTA ARCILIA C",
+"role": "Director",
+"kind": "sell",
+"shares": 15000,
+"value_usd": 2512800,
+"what": "Sale at price 165.04 - 170.00 per share."
 },
 {
 "date": "2026-06-16",
@@ -494,21 +494,21 @@
 },
 {
 "date": "2025-11-14",
-"who": "HUDSON SCOTT A",
-"role": "Officer",
-"kind": "award/other",
-"shares": 56000,
-"value_usd": 1102080,
-"what": "Conversion of Exercise of derivative security at price 19.68 per share."
-},
-{
-"date": "2025-11-14",
 "who": "KIRBY CARRIE LEE",
 "role": "Officer",
 "kind": "award/other",
 "shares": 58275,
 "value_usd": 1339160,
 "what": "Conversion of Exercise of derivative security at price 22.98 per share."
+},
+{
+"date": "2025-11-14",
+"who": "HUDSON SCOTT A",
+"role": "Officer",
+"kind": "award/other",
+"shares": 56000,
+"value_usd": 1102080,
+"what": "Conversion of Exercise of derivative security at price 19.68 per share."
 },
 {
 "date": "2025-11-14",
