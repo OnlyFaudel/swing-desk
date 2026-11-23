@@ -557,6 +557,7 @@ function stockState(t){
     if(V.v==="inbox"){
       const NB=S.notebook||[];
       h=top("Messages",false)+`<button class="row2" data-go="groups"><span class="av c1" aria-hidden="true">#</span><div><b>Group chats</b><span>${CH.length} conversation${CH.length===1?"":"s"}: meetings, huddles, news calls, research</span></div><small></small></button>`+
+        `<button class="row2" data-go="files"><span class="av c4" aria-hidden="true">▤</span><div><b>Stock files</b><span>Everything known about each stock and the sector, in 14 sections</span></div><small></small></button>`+
         `<button class="row2" data-go="notebook"><span class="av c5" aria-hidden="true">✎</span><div><b>Research notebook</b><span>${(S.research_log||[]).length} studies, ${(S.research_log||[]).reduce((a,x)=>a+(x.trials||0),0)} tests run; ${NB.length} agent idea${NB.length===1?"":"s"}</span></div><small></small></button>`+`<button class="row2" data-go="intel"><span class="av c2" aria-hidden="true">◉</span><div><b>Intel collector</b><span>${(S.intel_view||{}).week||0} local and official stories this week, ${((S.intel_view||{}).bursts||[]).length} places in a burst</span></div><small></small></button><button class="row2" data-go="memory"><span class="av c3" aria-hidden="true">◷</span><div><b>Desk memory</b><span>${(S.memory_view||{}).events||0} past events remembered, ${((S.memory_view||{}).watch||[]).filter(w=>!w.surfaced).length} reminders ahead</span></div><small></small></button><div class="sect">The team</div>`+
         people.filter(w=>act[w]).map(w=>{const last=MS.filter(m=>m.who===w).pop(); return `<button class="row2" data-agent="${esc(w)}">${AV(w)}<div><b>${esc(nm(w))}</b><span>${last?esc(last.text):esc((PP[w]||{}).bio||"")}</span></div><small>${act[w]?ago(act[w]):""}</small></button>`}).join("");
     } else if(V.v==="notebook"){
@@ -570,6 +571,30 @@ function stockState(t){
         `<div class="sect">Reminders for the future</div>`+(W.length?W.map(w=>`<div class="notecard"><small>${esc(w.date)}${w.ticker?", "+esc(w.ticker):""} · noted ${esc(w.written)} by ${esc(nm(w.by))}${w.surfaced?", done":""}</small>${esc(w.what)}</div>`).join(""):`<p class="empty">None yet. When an agent reads about a future date (a regulator decision, a contract award, guidance), it writes it here.</p>`)+
         `<div class="sect">What each kind of event did before</div>`+(Object.keys(PB).length?Object.entries(PB).filter(([k,v])=>v.n>=3).map(([k,v])=>`<div class="notecard"><small>${esc(nice(k))}, ${v.n} times</small>First day: ${v.first_day_median_pct}% (median). Next 20 days: ${v.next_20d_median_pct}%, ${v.next_20d_vs_basket_median_pct}% vs the nuclear basket; up ${Math.round((v.share_up_20d||0)*100)}% of the time.</div>`).join(""):`<p class="empty">Loading after the next daily review.</p>`)+
         `<div class="sect">Latest events remembered</div>`+((MV.recent||[]).slice().reverse().slice(0,20).map(e=>`<div class="notecard"><small>${esc(e.date)}, ${esc(e.ticker)}, ${esc(nice(e.type||""))}</small>${esc(e.title)}${e.r20!=null?`\nAfter: day ${e.r0}%, 5 days ${e.r5}%, 20 days ${e.r20}%`:""}</div>`).join("")||`<p class="empty">Nothing yet.</p>`);
+    } else if(V.v==="files"){
+      const IX=S.dossier_index||[];
+      h=top("Stock files",true)+`<p class="note" style="margin:0 0 12px">One file per stock, rebuilt every 30 minutes from everything the bot collects: news, local intel, filings, government, workers, the crowd, options, history and the team's notes.</p>`+
+        (IX.length?IX.map(x=>`<button class="row2" data-file="${esc(x.ticker)}"><span class="av c${x.ticker==="SECTOR"?1:3}" aria-hidden="true" style="font-size:11px">${esc(x.ticker==="SECTOR"?"ALL":x.ticker)}</span><div><b>${esc(x.name)}</b><span>${x.price!=null?"$"+esc(x.price)+" · ":""}${x.week_pct!=null?(x.week_pct>=0?"+":"")+x.week_pct+"% this week · ":""}updated ${esc(x.built)}</span></div><small></small></button>`).join(""):`<p class="empty">The first files are written at the bot's next run.</p>`);
+    } else if(V.v==="file"){
+      const F=(window.FILES=window.FILES||{})[V.t];
+      if(!F){h=top(V.t,true)+`<p class="empty">Opening the file…</p>`;
+        fetch(`dossiers/${encodeURIComponent(V.t)}.json?${Date.now()}`).then(r=>r.ok?r.json():Promise.reject(r.status)).then(d=>{window.FILES[V.t]=d; if(stack[stack.length-1]===V) render();})
+          .catch(e=>{window.FILES[V.t]={name:V.t,sections:{"Not available":{note:"This file isn't on the page yet. It appears after the bot's next run."}}}; if(stack[stack.length-1]===V) render();});
+      } else {
+        const lab=k=>String(k).replace(/_/g," ").replace(/^./,c=>c.toUpperCase());
+        const val=v=>v==null?"–":typeof v==="number"?String(v):typeof v==="string"?esc(v):esc(JSON.stringify(v));
+        const item=o=>{ if(o==null||typeof o!=="object") return `<div class="notecard">${val(o)}</div>`;
+          const title=o.title||o.text||o.event||o.headline||""; const meta=["date","t","who","type","place","outlet","source","metric","ticker"].filter(k=>o[k]!=null&&o[k]!==title).map(k=>esc(o[k])).join(", ");
+          const rest=Object.entries(o).filter(([k,v])=>!["title","text","event","headline","date","t","who","type","place","outlet","source","link","metric","ticker","w"].includes(k)&&v!=null&&v!==""&&!(Array.isArray(v)&&!v.length));
+          return `<div class="notecard">${meta?`<small>${meta}</small>`:""}${title?(o.link?`<a href="${esc(o.link)}" target="_blank" rel="noopener" style="color:inherit">${esc(title)}</a>`:esc(title)):""}${rest.length?`<span style="display:block;opacity:.75;font-size:13px;margin-top:4px">${rest.map(([k,v])=>`${esc(lab(k))}: ${val(v)}`).join(" · ")}</span>`:""}</div>`;};
+        const block=(v,depth)=>{ if(v==null||(Array.isArray(v)&&!v.length)||(typeof v==="object"&&!Array.isArray(v)&&!Object.keys(v).length)) return `<p class="empty" style="margin:2px 0 10px">Nothing collected yet.</p>`;
+          if(Array.isArray(v)) return v.map(item).join("");
+          if(typeof v!=="object") return `<div class="notecard">${val(v)}</div>`;
+          const simple=Object.entries(v).filter(([k,x])=>x==null||typeof x!=="object"), deep=Object.entries(v).filter(([k,x])=>x!=null&&typeof x==="object");
+          return (simple.length?`<div class="notecard">${simple.map(([k,x])=>`<b>${esc(lab(k))}:</b> ${val(x)}`).join("<br>")}</div>`:"")+deep.map(([k,x])=>`<div style="margin:10px 0 4px;font-weight:600;font-size:14px">${esc(lab(k))}</div>`+block(x,depth+1)).join("");};
+        h=top(F.name||V.t,true)+`<p class="note" style="margin:0 0 6px">Updated ${esc(F.built||"")}. Tap a section.</p>`+
+          Object.entries(F.sections||{}).map(([k,v],i)=>`<details ${i===0?"open":""} style="border-top:1px solid var(--line,#223);padding:8px 0"><summary style="cursor:pointer;font-weight:700;font-size:16px;padding:6px 0">${i+1}. ${esc(k)}</summary>${block(v,0)}</details>`).join("");
+      }
     } else if(V.v==="intel"){
       const I=S.intel_view||{}, R=I.reactors||{}, O=R.owners||{}, H=(I.health||{}), P=I.places||{};
       h=top("Intel collector",true)+`<p class="note" style="margin:0 0 12px">Free and always on, no AI: local papers near every mine, mill, plant and reactor, plus the regulator, the Federal Register and the NRC's daily reactor report. Rules tag each story; the best ones go to the news desk on their own.</p>`+
@@ -604,6 +629,8 @@ function stockState(t){
     $("dmbody").querySelectorAll("[data-go=notebook]").forEach(b=>b.onclick=()=>go({v:"notebook"}));
     $("dmbody").querySelectorAll("[data-go=memory]").forEach(b=>b.onclick=()=>go({v:"memory"}));
     $("dmbody").querySelectorAll("[data-go=intel]").forEach(b=>b.onclick=()=>go({v:"intel"}));
+    $("dmbody").querySelectorAll("[data-go=files]").forEach(b=>b.onclick=()=>go({v:"files"}));
+    $("dmbody").querySelectorAll("[data-file]").forEach(b=>b.onclick=()=>go({v:"file",t:b.dataset.file}));
     const isend=$("intelSend"); if(isend) isend.onclick=()=>{$("ctext").value="Send everything: here is the intel collector's last 7 days. Read all of it, tell me what matters for our stocks, save anything with a date as a reminder, and send anything worth testing to the Research Lab."; close(); $("compose").requestSubmit(); $("compose").scrollIntoView({behavior:"smooth",block:"center"});};
     $("dmbody").querySelectorAll("[data-agent]").forEach(b=>b.onclick=()=>go({v:"agent",w:b.dataset.agent}));
     $("dmbody").querySelectorAll("[data-pair]").forEach(b=>b.onclick=()=>go({v:"pair",k:b.dataset.pair}));

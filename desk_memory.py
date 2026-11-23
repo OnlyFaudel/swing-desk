@@ -53,9 +53,11 @@ def add_event(ticker, title, etype, date=None, source="", materiality=None, dire
     _save(EV, ev)
 
 
-def fill(closes):
-    """closes: DataFrame of daily closes (columns = tickers + '_basket'). Fills every outcome that is now known."""
-    ev, changed = events(), False
+def fill(closes, path=None):
+    """closes: DataFrame of daily closes (columns = tickers + '_basket'). Fills every outcome that is now known.
+    path: another event file (the news archive) instead of the main memory."""
+    path = path or EV
+    ev, changed = _load(path, []), False
     bk = closes.get("_basket")
     for e in ev:
         if e.get("r60") is not None or e["ticker"] not in closes:
@@ -77,7 +79,7 @@ def fill(closes):
                 if e.get(k) is None and e.get("r" + k[1:]) is not None and len(ba) > n:
                     e[k] = round(e["r" + k[1:]] - (float(ba.iloc[n]) / float(ba.iloc[0]) - 1) * 100, 2)
     if changed:
-        _save(EV, ev)
+        _save(path, ev)
 
 
 def backfill_sec(tickers, since="2019-01-01"):

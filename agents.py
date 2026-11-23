@@ -109,13 +109,25 @@ class Desk:
         model = self.cfg["models"][tier]
         kw = dict(model=model, max_tokens=max_tokens, system=HOUSE + "\n\nYOUR ROLE: " + system,
                   messages=[{"role": "user", "content": user}])
+        # Claude 5.5 models think by default and thinking shares max_tokens: with our short limits the thinking used the
+        # whole allowance and the answer came back EMPTY. Fast agents: thinking off. Smart agents: low effort + room.
+        if "haiku" in model:
+            kw["thinking"] = {"type": "disabled"}
+        else:
+            kw["output_config"] = {"effort": "low"}
+            kw["max_tokens"] = max(max_tokens, 2500)
         if web_search:
             kw["tools"] = [{"type": "web_search_20260209", "name": "web_search", "max_uses": web_search}]
         try:
             resp = self.client.messages.create(**kw)
         except Exception as e:
-            if web_search and "tool" in str(e).lower():
+            msg = str(e).lower()
+            if web_search and "tool" in msg:
                 kw.pop("tools")
+                resp = self.client.messages.create(**kw)
+            elif "thinking" in msg or "output_config" in msg or "effort" in msg:  # model refused the setting: give it room instead
+                kw.pop("thinking", None); kw.pop("output_config", None)
+                kw["max_tokens"] = max(kw["max_tokens"], 3000)
                 resp = self.client.messages.create(**kw)
             else:
                 raise

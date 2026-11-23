@@ -60,7 +60,7 @@ jobs:
           git config user.name "swing-desk"
           git config user.email "swing-desk@users.noreply.github.com"
           # add each path on its own: one missing folder must not stop the rest from being saved
-          for p in state.json docs orders data memory research/trial_ledger.json; do if [ -e "$p" ]; then git add -A "$p"; fi; done
+          for p in state.json docs orders data memory research/trial_ledger.json research/discoveries.json; do if [ -e "$p" ]; then git add -A "$p"; fi; done
           git diff --cached --quiet && exit 0
           git commit -m "desk $(date -u +%F_%H%M)"
           git pull --rebase --autostash && git push

@@ -29,12 +29,14 @@ OWNERS = {
     "TLN": ["Susquehanna 1", "Susquehanna 2"],
 }
 UNIT_OWNER = {u: t for t, us in OWNERS.items() for u in us}
+HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36",
+           "Accept": "text/plain,text/html;q=0.9,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9"}
 DOWN_FROM, DOWN_TO = 80, 30      # an outage: was >= 80% and is now <= 30%
 BACK_AT = 80                     # back in service at >= 80%
 
 
 def fetch():
-    req = urllib.request.Request(URL, headers={"User-Agent": "Mozilla/5.0 SwingDesk research"})
+    req = urllib.request.Request(URL, headers=HEADERS)
     txt = urllib.request.urlopen(req, timeout=40).read().decode("utf-8", "ignore")
     rows = []
     for line in txt.splitlines()[1:]:
@@ -51,7 +53,7 @@ def fetch():
 
 def fetch_year(y):
     url = URL.replace("PowerReactorStatusForLast365Days.txt", f"{y}/{y}PowerStatus.txt")
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 SwingDesk research"})
+    req = urllib.request.Request(url, headers=HEADERS)
     txt = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "ignore")
     rows = []
     for line in txt.splitlines()[1:]:

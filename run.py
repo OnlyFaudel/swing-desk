@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -345,6 +345,8 @@ def refresh_candidates(st, desk, data, prices, today, brk_state, force=False):
                                                                              and e["date"] >= str(today - dt.timedelta(days=45))][-6:],
                                                 "what_share_offerings_did_before": desk_memory.playbook("offering_dilution", list(T)),
                                                 "desk_memory_playbook": memory.playbook(st, t), "active_theses": active_theses(st, t),
+               "everything_we_know": dossier.for_agent(t), "discoveries": discovery.brief(5),
+                                                "everything_we_know": dossier.for_agent(t), "discoveries": discovery.brief(5),
                                                 "recent_headlines": [f["title"] for f in st["news_feed"] if f["ticker"] == t][-8:]})
                 v = (lv.get("setups") or {}).get(t, {})
                 decision, reason = str(v.get("decision", "ARM")).upper(), v.get("reason", "")
@@ -634,6 +636,18 @@ def memory_daily(st, data=None):
     px = yf.download(list(T), start="2018-12-01", auto_adjust=True, progress=False)["Close"]
     px["_basket"] = (px[list(T)].pct_change().mean(axis=1).fillna(0) + 1).cumprod()
     desk_memory.fill(px)
+    desk_memory.fill(px, archive.EVENTS)
+    try:  # the discovery engine: test every kind of event on everything collected, every night
+        res, new = discovery.run()
+        st["discovery"] = {k: res[k] for k in ("run_at", "events", "tests_tonight", "tests_ever")} | {"survivors": len(res["survivors"])}
+        for s in new[:3]:
+            feed.post("researcher", f"New pattern found by the discovery engine: {s['event']} -> {s['avg_pct']:+.2f}% "
+                      f"{discovery.PLAIN.get(s['metric'], s['metric'])} ({s['n']} cases; older half {s['older_avg']:+.2f}%, newer half "
+                      f"{s['newer_avg']:+.2f}%; it survived the correction for the {res['tests_tonight']} patterns tested tonight). "
+                      "It goes into every stock file and the agents' context.", kind="learn",
+                      art={"big": "New pattern found", "sub": s["event"][:60]})
+    except Exception as e:
+        print("discovery failed", e)
     ev = desk_memory.events()
     st["memory_view"] = {"events": len(ev), "with_outcomes": sum(e.get("r20") is not None for e in ev),
                          "playbooks": desk_memory.all_playbooks(list(T)), "watch": desk_memory.watch_all()[-60:],
@@ -972,7 +986,8 @@ def intel_tick(st, today, force=False):
             feed.post("crowd", f"{b['place']} is suddenly in the news: {b['today']} separate stories today, versus about {b['normal']} on a "
                       "normal day. Something may be happening there; the news desk is reading the stories now.", tk, kind="alert",
                       art={"big": f"{b['place']}: {b['today']} stories today", "sub": f"Normal day: {b['normal']}. Local news collector"})
-    if (force or (now.time() >= dt.time(8, 30) and st["flags"].get(f"reactors:{today}") is None)):
+    if (force or (now.time() >= dt.time(8, 30) and st["flags"].get(f"reactors:{today}") is None
+                  and time.time() >= st.get("reactor_retry_at", 0))):
         st["flags"][f"reactors:{today}"] = True
         try:
             if not os.path.exists(reactors.HIST):
@@ -989,7 +1004,9 @@ def intel_tick(st, today, force=False):
                           "offline hasn't moved these stocks on its own; it matters if several go down or a restart drags on.", tk,
                           kind="alert", art={"big": f"{o['unit']} offline", "sub": f"{o['owner']} reactor, NRC daily power report"})
         except Exception as e:
-            print("reactor watch failed", e)
+            print("reactor watch failed", e)  # the NRC site blocks some cloud servers: try again in an hour, not tomorrow
+            st["flags"].pop(f"reactors:{today}", None)
+            st["reactor_retry_at"] = time.time() + 3600
     try:
         collector.view(st)
     except Exception as e:
@@ -1570,6 +1587,12 @@ def cycle(st, desk, br, ex, force=()):
     except Exception as e:
         print("premarket failed", e)
     intel_tick(st, today, force="intel" in force)
+    if time.time() - st.get("dossier_at", 0) >= 1800 or "intel" in force:
+        st["dossier_at"] = time.time()
+        try:
+            dossier.build_all(st, data, list(T))
+        except Exception as e:
+            print("stock files failed", e)
     hawk = hawk_events(st)
     try:
         huddle(st, desk, ex, data, prices, today, brk_state, hawk)
@@ -1665,6 +1688,13 @@ def main():
                         research_run(st, desk)
                     else:
                         cycle(st, desk, br, ex)
+                    if not active and not archive.complete():  # nights and weekends: read old news, 4 minutes at a time
+                        prog = archive.step(240)
+                        st["archive_progress"] = prog
+                        if prog.get("topics_done") == prog.get("topics") and not st["flags"].get("archive_done"):
+                            st["flags"]["archive_done"] = True
+                            feed.post("researcher", f"The news archive is complete: {prog['events_total']:,} tagged events since 2019 across "
+                                      "our 10 companies, the uranium market, government and laws. The discovery engine tests them every night.", kind="learn")
                 except Exception as e:
                     traceback.print_exc()
                     notify_once(st, "cycle_error", "Desk cycle error", str(e)[:250])
@@ -1675,7 +1705,7 @@ def main():
                 # save to GitHub so the page updates: every 15 min in market hours, hourly otherwise (keeps data use low)
                 if os.environ.get("AUTO_GIT") == "1" and time.time() - last_push > (900 if active else 3600):
                     before = os.popen(f"git -C {ROOT} rev-parse HEAD").read().strip()
-                    rc = os.system(f"cd {ROOT} && for p in state.json docs orders data memory research/trial_ledger.json; do [ -e \"$p\" ] && git add -A \"$p\"; done; "
+                    rc = os.system(f"cd {ROOT} && for p in state.json docs orders data memory research/trial_ledger.json research/discoveries.json; do [ -e \"$p\" ] && git add -A \"$p\"; done; "
                                    f"git commit -qm 'desk {now:%F %H:%M}' >/dev/null 2>&1; git pull -q --rebase --autostash -X theirs >/dev/null 2>&1; git push -q")
                     if rc:
                         notify_once(st, "git_push", "Desk can't save to GitHub", "The page won't update until the VM can push (check the deploy key).")
