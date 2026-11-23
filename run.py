@@ -581,8 +581,10 @@ def morning(st, desk, br, ex, data, prices, today, brk_state):
                  "Nowcast first, then macro, whales and the crowd; the Level Analyst decides which buys to rest.")
         nc_line = ""
         try:  # Asia's close -> expected opening gap (information only; research/ccj_leadlag.py)
-            st["nowcast"] = signals.nowcast(T)
-            g = [f"{t} {v['expected_gap_pct']:+.1f}%" for t, v in st["nowcast"].items() if v.get("expected_gap_pct") is not None]
+            if st.get("nowcast_date") != str(today) or not any(isinstance(v, dict) and v.get("expected_gap_pct") is not None
+                                                                for v in (st.get("nowcast") or {}).values()):
+                st["nowcast"] = signals.nowcast(T)
+            g = [f"{t} {v['expected_gap_pct']:+.1f}%" for t, v in st["nowcast"].items() if isinstance(v, dict) and v.get("expected_gap_pct") is not None]
             nc_line = (" | Asia says open: " + ", ".join(g)) if g else ""
             feed.say("nowcast", ("Asia's close points to these opens: " + ", ".join(g) + ". That's already priced in at 9:30, so treat it as context, not a trade.") if g else "No fresh Asia close yet.")
             feed.post("nowcast", ("Asia's close points to these opens: " + ", ".join(g) + ". Information only: the open prices this in, "
@@ -890,6 +892,7 @@ def premarket(st, desk, prices, today):
     st["flags"][f"premarket:{today}"] = True
     try:
         st["nowcast"] = signals.nowcast(T)
+        st["nowcast_date"] = str(today)
     except Exception as e:
         st["nowcast"] = {"error": str(e)[:100]}
     g = [f"{t} {v['expected_gap_pct']:+.1f}%" for t, v in (st.get("nowcast") or {}).items() if isinstance(v, dict) and v.get("expected_gap_pct") is not None]
@@ -2483,6 +2486,11 @@ def scorecard(st):
 
 
 def review(st, desk, data, prices, today, brk_state):
+    # Friday's weekly pieces (strategist, auditor, drift check, practice-trade lessons). If a Friday was missed, the next review catches up.
+    lw = st["flags"].get("weekly_review_done")
+    is_weekly = today.weekday() == 4 or not lw or lw < str(today - dt.timedelta(days=7))
+    if is_weekly:
+        st["flags"]["weekly_review_done"] = str(today)
     book = st["book"]
     b = st["benchmark"]
     if b["shares"] is None:
@@ -2532,7 +2540,7 @@ def review(st, desk, data, prices, today, brk_state):
         print("desk memory daily failed", e)
     if CFG.get("research_lab", {}).get("daily", True):
         research_run(st, desk)
-    if today.weekday() == 4:
+    if is_weekly:
         try:
             lr = shadow.learn_report(st)
             st["learn_report"] = lr
@@ -2546,7 +2554,7 @@ def review(st, desk, data, prices, today, brk_state):
                           art={"big": "This week's lessons", "sub": f"{len(lr['patterns'])} pattern(s) held up twice. Still unproven."})
         except Exception as e:
             feed.post("system", f"Learn report failed: {e}"[:200])
-    if today.weekday() == 4:  # feedback loop: is each live signal still behaving like its research said?
+    if is_weekly:  # feedback loop: is each live signal still behaving like its research said?
         try:
             dr = signals.weekly_drift(st)
             packet["signal_drift"] = dr
@@ -2563,7 +2571,7 @@ def review(st, desk, data, prices, today, brk_state):
                        + ". Check research/signals_registry.json retire rules.", tags="chart_with_downwards_trend")
         except Exception as e:
             print("drift check failed", e)
-    with feed.thread(f"Daily review {today:%a %b %d}" + (" + weekly strategy" if today.weekday() == 4 else ""), T, kind="review"):
+    with feed.thread(f"Daily review {today:%a %b %d}" + (" + weekly strategy" if is_weekly else ""), T, kind="review"):
         closed = [x for x in book["trades"] if str(x.get("exit_time", "")).startswith(str(today))]
         feed.say("officer", f"Numbers for the reviewer: account ${eq:,.2f} vs ${CFG['capital_cap']:,.0f} start, "
                  f"{brk_state['week_pct']:+.2f}% this week; the S&P buy-and-hold would be at ${bh:,.2f}. "
@@ -2571,8 +2579,8 @@ def review(st, desk, data, prices, today, brk_state):
         rev = None
         if desk.available:
             try:
-                rev = desk.reviewer(packet, weekly=today.weekday() == 4)
-                if today.weekday() == 4:
+                rev = desk.reviewer(packet, weekly=is_weekly)
+                if is_weekly:
                     ch = learning.update_weights(st, CFG, today) if CFG["learning"]["enabled"] else {}
                     sc = scorecard(st)
                     sc["learning"] = ch
@@ -2717,7 +2725,8 @@ def cycle(st, desk, br, ex, force=()):
         process_fills(st, br, ex, today)
     if ((now.weekday() < 5 and dt.time(16, 5) <= now.time() <= dt.time(19, 0)) or "review" in force) \
             and st["flags"].get("review_done") != str(today):
-        st["flags"]["review_done"] = str(today)
+        if now.weekday() < 5 and dt.time(16, 5) <= now.time() <= dt.time(19, 0):  # a forced test review must not use up the real one
+            st["flags"]["review_done"] = str(today)
         review(st, desk, data, prices, today, account.brakes(book, prices, CFG, today))
     for k in [k for k in st["flags"] if ":" in k and k.split(":")[-1][:10] < str(today - dt.timedelta(days=10))]:
         del st["flags"][k]
