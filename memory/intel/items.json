@@ -12930,5 +12930,131 @@
 "very",
 "wyoming"
 ]
+},
+{
+"id": "47c0133b017f9360",
+"date": "2026-11-21",
+"ts": 1795225615,
+"title": "China building nuclear weapons at 'hot and heavy' pace, says Trump",
+"summary": "",
+"outlet": "Mathrubhumi English",
+"link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPeElQbGhQb0hhM2dOUFhTYnoyT3JPSWY5cm1kMXJZVXBYc3h6U2lOOFpoeUZISldBSnVxaFUyMy1kM3ZPVWZLdTFDeXBwS2RzdHJhS3owdU96M1RycXpZZ0RYbjVvNktQWVZjSU45d2hBQ1ZBWVkzUWtNdGg2V3VMOVhVYnZnOHR0ekdxZ0htdENfMWlzVEtWd3hZQlBKeWVuQnhBTnlR0gGrAUFVX3lxTE1QempJMVRxWkpJbmNwbWc0ZEYxWXYxdm1WOERqWVlETER1NXZkUmNTOG1FRDFjR1FxVFFfT1dvMUtmSnpVbkNJc3d4S2RWaE5iOVN0RzVqZlVHMzF4WlQ3ZWRYR0JxbVV3c0V1dy1vSEpFSFNaSlVHeHpsZGI5Vk12VGlXOTRSa0Rsb1RNVVc0VXAwWGN3UkJtWDR1cWx3dlpnTkNzWE5fRlNLSQ?oc=5",
+"place": "Weapons programs",
+"tickers": [
+"BWXT",
+"LEU"
+],
+"tags": [
+"restart",
+"defense"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 4.2,
+"echo_of": "b073eeb25de54f8f",
+"w": [
+"building",
+"china",
+"heavy",
+"hot",
+"nuclear",
+"pace",
+"trump",
+"weapons"
+]
+},
+{
+"id": "d87a1acbb5ff13ef",
+"date": "2026-11-23",
+"ts": 1795448468,
+"title": "Poland is making progress on its first nuclear power plant with Westinghouse and Bechtel",
+"summary": "",
+"outlet": "Inspenet",
+"link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPLThqLW5FM0syS3dqNTRzMk11T3ktY3hIUDRJUWlwV29laWNUMHpmWGlKUzg0bVNUUUl4WDdGYUl5bE9Sbm9WLWt5UTFaM2M4T2h3V0Y5aVVlRVRFZlM2R0NpVTJ5cHB2bllIaVVsQ3F5NEhLUHNkS3Z2clBlbnhHZQ?oc=5",
+"place": "Westinghouse",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.57,
+"score": 3.64,
+"echo_of": null,
+"w": [
+"bechtel",
+"first",
+"making",
+"nuclear",
+"plant",
+"poland",
+"power",
+"progress",
+"westinghouse"
+]
+},
+{
+"id": "1f0c92334f3206aa",
+"date": "2026-11-23",
+"ts": 1795457302,
+"title": "Energy Fuels targets one million pounds of uranium at White Mesa",
+"summary": "",
+"outlet": "energynews.pro",
+"link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSFhTWGxyZnlySTVXVDBoOUxUYnlqRVNJUEpNcVJ5Q19SaXdTX1NLVURKN19qbGtmdXRGRTgwOTdTRy14NjhfVWN5MTRjREFmNDN6WURKUFNyY0VsVkdka2xVM01QSnpPZFRLY1liN0J3TTVPWnZjVWdmNE9OSGNHSHA2LXNwVXktNTFIMUktSnptanpw?oc=5",
+"place": "Workers and jobs",
+"tickers": [
+"CCJ",
+"UUUU"
+],
+"tags": [
+"production"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.62,
+"score": 4.54,
+"echo_of": null,
+"w": [
+"energy",
+"fuels",
+"mesa",
+"million",
+"one",
+"pounds",
+"targets",
+"uranium",
+"white"
+]
+},
+{
+"id": "16f5d7a8fa7cf22a",
+"date": "2026-11-23",
+"ts": 1795475519,
+"title": "Energy Fuels targets 1M pounds of uranium",
+"summary": "",
+"outlet": "Metal Tech News",
+"link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQeTNIcG9NejlPVGwtRVdsd2NfVEhEanpmb3JfSlVUZzJVZW5FaURnT1JWYzd6X0xEMXR6S1NFZ25NQm5QYVpyWGtaa1A3VHFhTUJSMEtMOGFNUjhfQ25FaUZXZVZJQjlDa1V3bDNJMUROUXpoSy1ZdmpFTk95N1lyZmhqM01NdjZzTEFZNkpRWWhxcDRDTHRaN0FzeDJpcjZrb0ZBazJuXzZrUlZUdDk4?oc=5",
+"place": "White Mesa / Utah",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [
+"production"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.44,
+"score": 4.18,
+"echo_of": null,
+"w": [
+"energy",
+"fuels",
+"pounds",
+"targets",
+"uranium"
+]
 }
 ]
