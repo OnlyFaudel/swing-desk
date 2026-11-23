@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -1221,6 +1221,39 @@ def mistakes_review(st, desk, today, now):
         print("mistakes review", e)
 
 
+def red_team(st, desk, prices, today, now):
+    """Sunday evening: replay the real nuclear/uranium shocks on what we hold, then the Risk Manager plays attacker."""
+    if not (now.weekday() == 6 and now.time() >= dt.time(17, 0)) or st["flags"].get(f"redteam:{today}") or not desk.available:
+        return
+    st["flags"][f"redteam:{today}"] = True
+    try:
+        s = redteam.stress(st["book"], prices, account.equity(st["book"], prices))
+        st["red_team"] = {"date": str(today), **s}
+        with feed.thread(f"Nuclear red team, week of {today + dt.timedelta(days=1):%b %d}", list(s["positions"]), kind="research"):
+            out = desk.ask("risk", "smart", "Risk Manager playing the NUCLEAR RED TEAM. Your job is to find what could hurt this account "
+                           "this week. The account is a nuclear and uranium specialist on purpose, so don't say 'diversify'; find the "
+                           "nuclear-specific blowups. Use the replay of real past shocks on today's positions, the catalyst calendar, the "
+                           "plants, the uranium price and the Sprott trust. Give the 3 biggest threats (with the dollar damage from the "
+                           "closest past shock), the early warning sign for each that the team should watch, and ONE protective idea "
+                           "worth testing on history. Plain words. "
+                           '{"say":"","to":"team","threats":[{"threat":"","damage":"","warning_sign":""}],"protect_idea":""}',
+                           {"stress_test": s, "coming_up": st.get("catalysts", [])[:10], "plants_now": plant.snapshot(st),
+                            "sprott": sput.summary()}, max_tokens=1400)
+        th = [x for x in (out.get("threats") or []) if isinstance(x, dict)]
+        worst = s["scenarios"][0] if s["scenarios"] else None
+        if out.get("protect_idea"):
+            st.setdefault("research_queue", []).append({"q": f"Red team protection idea: {out['protect_idea']}", "date": str(today)})
+        feed.post("risk", (out.get("say") or "Weekly nuclear red team.")
+                  + ("\n\n" + "\n".join(f"- {x.get('threat')}" + (f" (damage: {x.get('damage')})" if x.get("damage") else "")
+                                          + (f". Watch for: {x.get('warning_sign')}" if x.get("warning_sign") else "") for x in th[:3]) if th else "")
+                  + (f"\n\nIdea to test: {out['protect_idea']}" if out.get("protect_idea") else ""),
+                  list(s["positions"]), kind="learn",
+                  art={"big": "Nuclear red team", "sub": (f"Worst replay: {worst['scenario']}, {'+' if worst['dollars'] >= 0 else '−'}${abs(worst['dollars']):.0f}"
+                                                          if worst else "No open positions to stress")})
+    except Exception as e:
+        print("red team", e)
+
+
 def park_check(st, ex, prices, today, now):
     """Never let cash sit: near the close, whatever no strategy is using goes into the S&P 500 (SPY).
     Tested 2019-2026 with the panic rule: $1,000 -> $12,120 (37%/yr, worst drop -31%) vs $5,880 leaving it in cash."""
@@ -2178,6 +2211,11 @@ def cycle(st, desk, br, ex, force=()):
         ei = st.setdefault("equity_intraday", [])
         ei.append([now.strftime("%Y-%m-%d %H:%M"), round(brk_state["equity"], 2)])
         del ei[:-4000]
+    try:  # weekly reviews run after the close / on the weekend, so they sit outside the market-hours block
+        mistakes_review(st, desk, today, now)
+        red_team(st, desk, prices, today, now)
+    except Exception as e:
+        traceback.print_exc()
     if is_open:
         if (st["flags"].get("morning_done") != str(today) and now.time() >= dt.time(9, 31)) or "morning" in force:
             if now.time() >= dt.time(9, 31) and market.market_open():  # a forced test meeting before the open must not use up the real one
@@ -2195,7 +2233,6 @@ def cycle(st, desk, br, ex, force=()):
             options_mark(st, today, now)
             score_calls(st, prices, today)
             watch_mistakes(st, prices, data, today, now)
-            mistakes_review(st, desk, today, now)
         except Exception as e:
             traceback.print_exc()
         try:
