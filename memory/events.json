@@ -26280,5 +26280,22 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "LEU",
+"date": "2026-11-23",
+"title": "A desert plant that can supply about a third of the enriched uranium U.S. reactors use filled its first commercial cylinder of uranium enriched past 5%, somethi",
+"type": "supply",
+"source": "Google News: HALEU fuel",
+"materiality": 6,
+"direction_called": "up",
+"price": 86.80000305175781,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]

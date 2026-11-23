@@ -235,7 +235,8 @@
   "notecheck:2026-11-23": true,
   "earnread:2026-11-23": true,
   "earnread_backfill": true,
-  "radarres:2026-11-23": true
+  "radarres:2026-11-23": true,
+  "questioner:2026-11-23:9": true
  },
  "benchmark": {
   "shares": {
@@ -813,18 +814,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "TLN",
-   "source": "Google News: \"Talen Energy\"",
-   "title": "Oppenheimer raises Talen Energy stock price target on power demand By Investing.com - Investing.com India",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVXBZSExrTWoydXBkZm1yWUd1bjFEQ1JuSlhzeEc2TmV5S0FBVTRZZWYwWWxWaVNxakw4MTZ6YlVjSDYwcUNQQS1KdHI5eWtTZXdoUTE0SUE2RGtrMVhoZkNGSktBN1RuTGt1ekd3ZFk5QTF6OXBaZjNYNldqMWREQWVsblVYM0V0b3J0REZsR2stME5pUVp2d0FfMjhSMVdIQWJLQ2ZkRVo0WjBMOTZIMjlac3lncFF2eWlqN28zR251QzRhd0E?oc=5",
-   "ts": 1795173491,
-   "materiality": 5,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "analyst",
-   "why": "Oppenheimer raised price target on power-demand thesis; routine analyst move."
-  },
   {
    "ticker": "TLN",
    "source": "Google News: \"Talen Energy\"",
@@ -3812,6 +3801,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic MarketBeat price-recap headline; no new company information."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News: HALEU fuel",
+   "title": "A desert plant that can supply about a third of the enriched uranium U.S. reactors use filled its first commercial cylinder of uranium enriched past 5%, something the company says no other plant in th",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9yRm5fRW4tcDhTc0JFVWNWU3ZCeFhSRzd0UVQ5SjBmSmdXUjZOXzJnU094bVpLMk5Gc2ZjeXNPYmNSaHdkdGwzRUFVR3JILUpjel8zMFZOY3hNblVkZ255OFRPMV81ZWNfWTBibFBEVjBMTm10NTRtU3VBaw?oc=5",
+   "ts": 1795465800,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "supply",
+   "why": "First commercial HALEU cylinder past 5% enrichment; scarce product, but a milestone already known to the market."
   }
  ],
  "reviews": [
@@ -5334,26 +5335,26 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.30451,
+  "day_usd": 0.31123,
   "month": "2026-11",
-  "month_usd": 0.56799,
-  "total_usd": 0.56799,
+  "month_usd": 0.57471,
+  "total_usd": 0.57471,
   "by_role": {
-   "macro": 0.02284,
+   "macro": 0.02491,
    "whale": 0.00861,
    "crowd": 0.00751,
    "level": 0.03344,
-   "scout": 0.06191,
+   "scout": 0.0624,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
    "pm": 0.03676,
-   "risk": 0.01842,
+   "risk": 0.02043,
    "investigator": 0.14839,
    "postmortem": 0.00035,
    "researcher": 0.00704,
    "engineer": 0.00218,
-   "questioner": 0.00608
+   "questioner": 0.00823
   }
  },
  "desk_log": [
@@ -5461,7 +5462,7 @@
   "TLN": 365.03,
   "SPY": 722.39
  },
- "last_cycle": "2026-11-23 17:51 ET",
+ "last_cycle": "2026-11-23 18:00 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51316,6 +51317,7 @@
   "d315dfa4e1149d87",
   "52950daaafc92008",
   "b8175e38a640e7c2",
+  "0bc3518b4abd9020",
   "1715e61816aa5619",
   "236832db131afa54",
   "67ae0f09ed3add32",
@@ -51571,7 +51573,7 @@
   "5ca17a18c47750da",
   "702ca5529e4f7aeb"
  ],
- "news_slow_at": 1795473834.8433344,
+ "news_slow_at": 1795474439.0150156,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -201406,6 +201408,41 @@
    ],
    "practice": false,
    "end": "17:31"
+  },
+  {
+   "id": "20261123180100917356",
+   "title": "The Questioner, Nov 23 18:00",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-23 18:01",
+   "msgs": [
+    {
+     "t": "18:01",
+     "who": "questioner",
+     "to": "risk",
+     "text": "TLN closed around $365 after a 9.6% day and the stock is now about 2.9% above our $355.66 resting buy. The team already agreed the order is a leftover from a plan made before the bounce, and the basket is still below its 10-day average, so the no-new-buys rule applies anyway. The real question I want answered is whether that resting order should simply be canceled rather than left to expire on Nov 30.",
+     "outcome": false,
+     "notes": "question: Given the 9.6% bounce and the basket still below its 10-day average, should the TLN resting buy at $355.66 be canceled now rather than left until its Nov 30 expiry?\nwhy it might matter: The order was placed for a dip to a support zone that the price has now left, and leaving it live could fill us into a fading bounce during a no-new-buys period.\nask: risk\nkind: odd\nquestion: Has anyone confirmed whether the PJM December capacity-auction delay has been decided? It is the main earnings driver for Talen, and the 'pullback opportunity' headline does not answer it.\nwhy it might matter: A regulatory decision could move TLN far more than the support level does, and the order's expiry date falls before the auction timing is known.\nask: macro\nkind: unexplained\nwhy: The TLN order was armed when the price was $362 and support was $354, and it now sits well below a price that has moved up "
+    },
+    {
+     "t": "18:01",
+     "who": "risk",
+     "to": "questioner",
+     "text": "I agree with the Questioner's worry: the TLN resting buy at $355.66 was set for a dip to support at $354.24, and the stock has since jumped about 9.6% to near $365. Leaving it live means it could fill on a fading bounce while the basket is still below its 10-day average, which blocks new buys. I'd cancel it now rather than let it sit until Nov 30.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: tell_owner\nwhy: The desk notes show TLN is about 2.9% above the resting buy after a 9.6% day, and the basket remains below its 10-day average, so the no-new-buys rule applies. The order was built for a dip that has already passed, so keeping it live mainly adds the risk of a fill into a fading bounce.\nticker: TLN\ndirection: down\ndays: 5\nfiles read: TLN Snapshot, TLN Price behavior"
+    },
+    {
+     "t": "18:01",
+     "who": "macro",
+     "to": "questioner",
+     "text": "I checked the desk files for the PJM December capacity-auction delay and found nothing confirming a decision. The only dated reference is the Nov 30 expiry on our TLN resting order, which falls before any known auction timing. Since TLN is about 2.9% above our buy level and the basket is below its 10-day average, the order should not sit live on an unresolved regulatory question.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: watch\nwatch date: 2026-11-30\nwhy: The desk files contain no confirmed decision on the PJM delay, only the 'pullback opportunity' headline and a Nov 30 order expiry that falls before the auction timing is known. TLN is about 2.9% above the resting buy at $355.66 and the basket is still below its 10-day average, so the order is a stale bid into an unresolved regulatory catalyst.\nticker: TLN\ndirection: down\ndays: 5\ndate: 2026-11-30\nticker: TLN\nwhat: Confirm whether the PJM December capacity-auction delay has been decided; resting buy at $355.66 expires that day.\nfiles read: TLN Snapshot, SECTOR Government and laws, SECTOR Uranium market"
+    }
+   ],
+   "practice": false,
+   "end": "18:01"
   }
  ],
  "feed": [
@@ -203007,6 +203044,32 @@
     "sub": "Read from the SEC filing, 2026-11-03. 4 promises tracked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 18:01",
+   "who": "questioner",
+   "kind": "alert",
+   "title": null,
+   "text": "Worth your attention: Given the 9.6% bounce and the basket still below its 10-day average, should the TLN resting buy at $355.66 be canceled now rather than left until its Nov 30 expiry?\n\nRisk Manager: I agree with the Questioner's worry: the TLN resting buy at $355.66 was set for a dip to support at $354.24, and the stock has since jumped about 9.6% to near $365. Leaving it live means it could fill on a fading bounce while the basket is still below its 10-day average, which blocks new buys. I'd cancel it now rather than let it sit until Nov 30.",
+   "tickers": [],
+   "art": {
+    "big": "Something we almost missed",
+    "sub": "The Questioner"
+   },
+   "thread": "20261123180100917356"
+  },
+  {
+   "t": "2026-11-23 18:01",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Given the 9.6% bounce and the basket still below its 10-day average, should the TLN resting buy at $355.66 be canceled now rather than left until its Nov 30 expiry? -> relevant | Has anyone confirmed whether the PJM December capacity-auction delay has been decided? It is the main earnings driver for Talen, and the 'pullback opportunity' headline does not answer it. -> relevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -203414,6 +203477,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "LEU",
+   "type": "supply",
+   "title": "A desert plant that can supply about a third of the enriched uranium U.S. reactors use filled its first commercial cylinder of uranium enric",
+   "date": "2026-11-23",
+   "price": 86.8,
+   "materiality": 6,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -203494,7 +203569,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 17:51",
+  "updated": "2026-11-23 18:01",
   "total": 397,
   "week": 344,
   "places": {
@@ -204245,7 +204320,7 @@
   }
  ],
  "memory_view": {
-  "events": 1546,
+  "events": 1547,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -204823,15 +204898,6 @@
   "recent": [
    {
     "date": "2026-11-23",
-    "ticker": "BWXT",
-    "title": "China\u2019s Nuclear Submarine Fleet Could Reach 40 by 2035 as Japan Weighs Its Own Programme and Nuclear Policy",
-    "type": "intel_defense",
-    "r0": 6.71,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-23",
     "ticker": "UUUU",
     "title": "Energy Fuels Targets One Million Pounds of Uranium Production at White Mesa Mill as US Mining Projects Advance",
     "type": "other",
@@ -205177,6 +205243,15 @@
     "ticker": "CCJ",
     "title": "'Very Odd' Cyber Breach Halts Operations, Stock Trading At Wyoming Uranium Mine",
     "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "LEU",
+    "title": "A desert plant that can supply about a third of the enriched uranium U.S. reactors use filled its first commercial cylinder of uranium enriched past 5%, somethi",
+    "type": "supply",
     "r0": null,
     "r5": null,
     "r20": null
@@ -205789,7 +205864,7 @@
    "built": "2026-11-23 17:46"
   }
  ],
- "heartbeat": "2026-11-23 17:51",
+ "heartbeat": "2026-11-23 18:00",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -205906,13 +205981,13 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 55,
-   "used": 51,
+   "asked": 56,
+   "used": 52,
    "notes": {
     "TLN Deals and contracts": 1,
     "CCJ Deals and contracts": 16,
     "BWXT Deals and contracts": 11,
-    "SECTOR Government and laws": 15,
+    "SECTOR Government and laws": 16,
     "UUUU Deals and contracts": 13,
     "SECTOR Countries": 13,
     "CEG Deals and contracts": 6,
@@ -205920,7 +205995,7 @@
     "NXE Deals and contracts": 1,
     "DNN Deals and contracts": 1,
     "BWXT Legal": 1,
-    "LEU Deals and contracts": 4,
+    "LEU Deals and contracts": 5,
     "UEC Deals and contracts": 1,
     "UUUU Legal": 2,
     "SECTOR Uranium market": 2,
@@ -206027,15 +206102,15 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 8,
-   "used": 8,
+   "asked": 9,
+   "used": 9,
    "notes": {
-    "SECTOR Uranium market": 7,
+    "SECTOR Uranium market": 8,
     "BWXT Snapshot": 3,
     "CCJ Snapshot": 1,
     "UUUU Snapshot": 1,
-    "SECTOR Government and laws": 5,
-    "TLN Snapshot": 2,
+    "SECTOR Government and laws": 6,
+    "TLN Snapshot": 3,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1
    },
@@ -206066,14 +206141,14 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 8,
-   "used": 8,
+   "asked": 9,
+   "used": 9,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 2,
     "BWXT Snapshot": 2,
     "SECTOR Uranium market": 3,
-    "TLN Snapshot": 1,
+    "TLN Snapshot": 2,
     "TLN Legal": 1,
     "BWXT Legal": 1,
     "BWXT Leadership and insiders": 1,
@@ -206081,7 +206156,8 @@
     "UEC Snapshot": 1,
     "UEC Leadership and insiders": 1,
     "CCJ Price behavior": 1,
-    "SECTOR Rules the bot follows from its discoveries": 1
+    "SECTOR Rules the bot follows from its discoveries": 1,
+    "TLN Price behavior": 1
    },
    "since": "2026-11-23"
   },
@@ -206104,17 +206180,17 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 3,
-   "used": 3,
+   "asked": 4,
+   "used": 4,
    "notes": {
-    "TLN Snapshot": 2,
-    "TLN News": 2,
+    "TLN Snapshot": 3,
+    "TLN News": 3,
     "coming_up": 1,
     "BWXT Snapshot": 1,
     "BWXT News": 1,
     "BWXT Legal": 1,
     "CCJ Snapshot": 1,
-    "TLN Leadership and insiders": 1,
+    "TLN Leadership and insiders": 2,
     "CCJ Legal": 1,
     "TLN Legal": 1
    },
@@ -207644,6 +207720,16 @@
    "price": 251.76,
    "result": null,
    "why": "The release is real and the numbers beat clearly, but the stock already jumped 6% on the day and past contract-signing days produced mixed follow-through, with the 2026 deals lower 20 days later. Insi"
+  },
+  {
+   "role": "macro",
+   "ticker": "TLN",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-23",
+   "price": 365.03,
+   "result": null,
+   "why": "The desk files contain no confirmed decision on the PJM delay, only the 'pullback opportunity' headline and a Nov 30 order expiry that falls before the auction timing is known. TLN is about 2.9% above"
   }
  ],
  "after_sale": [],
@@ -207918,6 +208004,24 @@
    "answer": "I checked the desk's files and I can't confirm the PJM December capacity-auction delay has been decided; the notes only show an open request from consumer advocates. Talen's resting buy at $355.66 is a live exposure to that outcome, so the watch date should be 2026-11-30 when the order expires. I agree with the Questioner that the order looks like a leftover, but this question is about the regulatory risk, not the cancel decision.",
    "verdict": "relevant",
    "action": "watch"
+  },
+  {
+   "t": "2026-11-23 18:00",
+   "question": "Given the 9.6% bounce and the basket still below its 10-day average, should the TLN resting buy at $355.66 be canceled now rather than left until its Nov 30 expiry?",
+   "kind": "odd",
+   "asked": "risk",
+   "answer": "I agree with the Questioner's worry: the TLN resting buy at $355.66 was set for a dip to support at $354.24, and the stock has since jumped about 9.6% to near $365. Leaving it live means it could fill on a fading bounce while the basket is still below its 10-day average, which blocks new buys. I'd cancel it now rather than let it sit until Nov 30.",
+   "verdict": "relevant",
+   "action": "tell_owner"
+  },
+  {
+   "t": "2026-11-23 18:00",
+   "question": "Has anyone confirmed whether the PJM December capacity-auction delay has been decided? It is the main earnings driver for Talen, and the 'pullback opportunity' headline does not answer it.",
+   "kind": "unexplained",
+   "asked": "macro",
+   "answer": "I checked the desk files for the PJM December capacity-auction delay and found nothing confirming a decision. The only dated reference is the Nov 30 expiry on our TLN resting order, which falls before any known auction timing. Since TLN is about 2.9% above our buy level and the basket is below its 10-day average, the order should not sit live on an unresolved regulatory question.",
+   "verdict": "relevant",
+   "action": "watch"
   }
  ],
  "reactor_view": {
@@ -208177,17 +208281,17 @@
  ],
  "shadow": [],
  "movers": {
-  "at": 1795467615.80382,
-  "time": "2026-11-23 16:00",
+  "at": 1795474860.9136038,
+  "time": "2026-11-23 18:00",
   "list": [
    {
     "ticker": "LEU",
     "core": true,
-    "volatility_pct": 116,
+    "volatility_pct": 115,
     "why": [
      "-53% under its 2-month high"
     ],
-    "price": 86.97,
+    "price": 86.81,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -208197,7 +208301,7 @@
     "why": [
      "-52% under its 2-month high"
     ],
-    "price": 5.85,
+    "price": 5.84,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -208217,17 +208321,17 @@
     "why": [
      "-31% under its 2-month high"
     ],
-    "price": 137.41,
+    "price": 137.39,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "NVDA",
     "core": false,
-    "volatility_pct": 136,
+    "volatility_pct": 137,
     "why": [
      "-31% under its 2-month high"
     ],
-    "price": 164.79,
+    "price": 165.05,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -208243,11 +208347,11 @@
    {
     "ticker": "MU",
     "core": false,
-    "volatility_pct": 131,
+    "volatility_pct": 132,
     "why": [
      "-36% under its 2-month high"
     ],
-    "price": 706.74,
+    "price": 707.7,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -208257,7 +208361,7 @@
     "why": [
      "-36% under its 2-month high"
     ],
-    "price": 186.33,
+    "price": 186.35,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -208267,7 +208371,7 @@
     "why": [
      "-52% under its 2-month high"
     ],
-    "price": 20.76,
+    "price": 20.77,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -208288,7 +208392,7 @@
     "why": [
      "-35% under its 2-month high"
     ],
-    "price": 159.43,
+    "price": 159.44,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -208306,9 +208410,9 @@
     "core": false,
     "volatility_pct": 100,
     "why": [
-     "-36% under its 2-month high"
+     "-35% under its 2-month high"
     ],
-    "price": 111.78,
+    "price": 111.92,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -208318,7 +208422,7 @@
     "why": [
      "-36% under its 2-month high"
     ],
-    "price": 35.52,
+    "price": 35.54,
     "note": "big moves 5-7x more likely here, in either direction"
    }
   ]
@@ -208436,7 +208540,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-23 17:51",
+ "watchdog_last": "2026-11-23 18:00",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
