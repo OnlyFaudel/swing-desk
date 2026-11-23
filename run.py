@@ -1066,8 +1066,14 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
     book, late = st["book"], now.time() >= dt.time(15, 30)
     for t, lots in list(book["lots"].items()):  # exits on the pattern's own horizon
         L = lots.get("auto") or {}
+        px = prices.get(t)
+        if L.get("qty", 0) > 1e-6 and L.get("setup") == "conviction" and px and market.market_open() and L.get("opened") != str(today):
+            if L.get("stop") and px <= L["stop"]:
+                ex.exit_panic(t, px, f"conviction trade: stop ${L['stop']} hit", kind="auto", tag="aux"); continue
+            if L.get("target") and px >= L["target"]:
+                ex.exit_panic(t, px, f"conviction trade: target ${L['target']} hit", kind="auto", tag="aux"); continue
         if L.get("qty", 0) > 1e-6 and L.get("exit_on") and (str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late)):
-            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"discovery trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
+            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{'conviction' if L.get('setup') == 'conviction' else 'discovery'} trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
     if not (dt.time(15, 30) <= now.time() <= dt.time(15, 58)) or st["flags"].get(f"auto:{today}"):
         return
     st["flags"][f"auto:{today}"] = True
@@ -1415,6 +1421,51 @@ def handle_news(st, desk, ex, data, prices, today, brk_state):
         convene_news(st, desk, ex, data, prices, today, t, mat)
 
 
+def conviction_record(st):
+    """The team's own calls (not a tested rule): how they have done, and how much money that earns them."""
+    tr = [x for x in st["book"]["trades"] if x.get("setup") == "conviction"]
+    n = len(tr)
+    avg = round(sum(x["ret"] for x in tr) / n, 2) if n else None
+    mult = 1.0 if n < 5 else max(0.5, min(2.0, 1 + avg / 10))
+    return {"closed_trades": n, "avg_return_pct": avg, "wins": sum(1 for x in tr if x["ret"] > 0), "size_multiplier": round(mult, 2)}
+
+
+def conviction_buy(st, ex, prices, today, t, d, headline):
+    cfg = CFG.get("conviction", {})
+    conv = int(d.get("conviction") or d.get("confidence") or 0)
+    if not cfg.get("enabled"):
+        return "conviction trades are off"
+    if conv < cfg.get("min_conviction", 7):
+        return f"BUY wanted but conviction {conv}/10 is under {cfg.get('min_conviction', 7)}"
+    if not market.market_open() or t not in prices:
+        return "BUY wanted but the market is closed"
+    book = st["book"]
+    if account.lot(book, t, "auto")["qty"] > 1e-6:
+        return "already holding a conviction or discovery trade in it"
+    eq = book["cash"] + sum(account.lot(book, x, k)["qty"] * prices.get(x, 0) for x in book["lots"] for k in ("trade", "panic", "auto", "core"))
+    rec = conviction_record(st)
+    open_amt = sum(l.get("auto", {}).get("qty", 0) * prices.get(x, 0) for x, l in book["lots"].items() if l.get("auto", {}).get("setup") == "conviction")
+    room = eq * cfg.get("max_total_pct", 60) / 100 * rec["size_multiplier"] - open_amt
+    dollars = min(eq * cfg.get("max_pct_each", 30) / 100 * conv / 10 * rec["size_multiplier"], room,
+                  account.settled_cash(book, today) - sum(a.get("dollars", 0) for a in st["armed"].values()))
+    if dollars < 5:
+        return "BUY wanted but no cash or room left"
+    px = prices[t]
+    stop_pct = max(3.0, min(15.0, float(d.get("stop_pct") or 8)))
+    tgt_pct = max(3.0, min(40.0, float(d.get("target_pct") or 10)))
+    days = max(1, min(cfg.get("max_days", 10), int(d.get("days") or 5)))
+    meta = {"setup": "conviction", "by": "agents", "exit_on": sessions_after(str(today), days), "days": days,
+            "stop": round(px * (1 - stop_pct / 100), 2), "target": round(px * (1 + tgt_pct / 100), 2), "conviction": conv,
+            "why": f"team conviction {conv}/10 on: {headline[:100]}. {str(d.get('reason', ''))[:160]}"}
+    if ex.buy_market(t, dollars, px, "au", meta, f"conviction buy {conv}/10"):
+        feed.post("pm", f"Conviction buy: {t} ${dollars:.0f} at about ${px:.2f} ({conv}/10). Why: {str(d.get('reason', ''))[:220]} "
+                  f"Sell at ${meta['target']} (+{tgt_pct:.0f}%), stop ${meta['stop']} (-{stop_pct:.0f}%), or on {meta['exit_on']}.",
+                  [t], kind="alert", art={"big": f"Conviction buy {t}", "sub": f"{conv}/10 from the team. ${dollars:.0f}"})
+        notify(f"Conviction buy {t}", f"${dollars:.0f}, {conv}/10. {str(d.get('reason', ''))[:200]}", tags="brain")
+        return f"bought ${dollars:.0f} (conviction {conv}/10)"
+    return "BUY order failed"
+
+
 def convene_news(st, desk, ex, data, prices, today, t, mat):
     with feed.thread(f"News on {t}: {mat[0]['title'][:70]}", [t], kind="news"):
         _convene_news(st, desk, ex, data, prices, today, t, mat)
@@ -1438,11 +1489,14 @@ def _convene_news(st, desk, ex, data, prices, today, t, mat):
                "desk_memory_playbook": memory.playbook(st, t), "active_theses": active_theses(st, t),
                "similar_past_events": desk_memory.similar(mat[0]["title"], t),
                "what_this_kind_of_event_did_before": desk_memory.playbook(mat[0].get("event_type") or "other", list(T)),
-               "rules": "You may SELL an open trade on clearly bad durable news, or SKIP to cancel a waiting buy. "
-                        "BUY is not allowed: entries only happen at support levels."}
+               "rules": "You may SELL an open trade on clearly bad durable news, SKIP to cancel a waiting buy, or BUY a CONVICTION "
+                        "trade: your own call from the news plus everything in desk_notes (bosses, insiders, lawsuits, deals, history, "
+                        "discoveries). For BUY give conviction 1-10 (7+ needed; it sets the size), target_pct, stop_pct and days (1-10). "
+                        "Conviction trades are scored: a good record gives the team more money to bet, a bad one less.",
+               "conviction_record": conviction_record(st)}
         entry["pm"] = desk.pm(ctx, "event")
         d = (entry["pm"].get("decisions") or {}).get(t, entry["pm"])
-        if held or t in st["candidates"]:  # only argue when there is something to act on
+        if held or t in st["candidates"] or str(d.get("action", "")).upper() == "BUY":  # only argue when there is something to act on
             entry["risk"] = desk.challenge(t, d, {"held_trade": held, "waiting_buy": st["candidates"].get(t), "chart": ch})
             if entry["risk"].get("object"):
                 entry["pm_reply"] = desk.pm({**ctx, "risk_manager_objection": entry["risk"], "reply_to": "Risk Manager",
@@ -1467,6 +1521,8 @@ def _convene_news(st, desk, ex, data, prices, today, t, mat):
         st["candidates"].pop(t)
         ex_cancel(st, t)
         result = "canceled waiting buy"
+    elif action == "BUY":
+        result = conviction_buy(st, ex, prices, today, t, d, mat[0]["title"])
     entry["result"] = result
     desk.record(entry)
     notify(f"Desk on {t}: {action} ({result})", (d.get("reason") or "")[:300], tags="brain")

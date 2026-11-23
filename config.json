@@ -440,5 +440,13 @@
     "max_open": 3,
     "_note": "Paper: patterns that pass the discovery engine act on their own. Relative up-patterns (beat the basket) raise that stock's next support-buy size 1.5x for the horizon; sector up-patterns buy CCJ near the close; down-patterns pause support buys in that stock.",
     "favor_mult": 1.5
+  },
+  "conviction": {
+    "enabled": true,
+    "min_conviction": 7,
+    "max_pct_each": 30,
+    "max_total_pct": 60,
+    "max_days": 10,
+    "_note": "Paper: the team's own calls from news + desk notes (not a tested rule). Size = 30% x conviction/10 x record multiplier (0.5-2x after 5 trades). Own stop/target/days; every trade scored."
   }
 }

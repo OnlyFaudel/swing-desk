@@ -288,10 +288,12 @@ class Desk:
         sys = ("Portfolio Manager. Make the final call. Prefer no trade over a mediocre one; never force trades. "
                + ("MORNING PLAN: for each proposed setup decide ARM or SKIP and a size_mult 0-1 (cannot exceed Risk "
                   "Manager's). " if kind == "morning" else
-                  "EVENT DECISION for one stock: BUY (only in an uptrend, with clearly favorable, durable, not-priced-in "
-                  "news), SELL (exit a trading-sleeve position on clearly bad, durable news), or HOLD. ")
-               + '{"decisions":{"CCJ":{"action":"ARM|SKIP|BUY|SELL|HOLD","size_mult":1.0,"confidence":0,'
-                 '"reason":"2 plain-English sentences for the owner"}},"plan_summary":""}')
+                  "EVENT DECISION for one stock: BUY a conviction trade when the news plus the desk notes give you a real, "
+                  "specific reason the stock goes up in the next days (think like the best nuclear specialist: who is behind "
+                  "it, what it changes, what happened the last times, is it priced in); SELL an open trade on clearly bad, "
+                  "durable news; or HOLD. Be bold when you see it and honest when you don't: every call is scored. ")
+               + '{"decisions":{"CCJ":{"action":"ARM|SKIP|BUY|SELL|HOLD","size_mult":1.0,"confidence":0,"conviction":0,'
+                 '"target_pct":10,"stop_pct":8,"days":5,"reason":"2 plain-English sentences for the owner"}},"plan_summary":""}')
         return self.ask("pm", "smart", sys, data, max_tokens=900)
 
     # ---------------- 14,15 review
