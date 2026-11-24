@@ -1106,30 +1106,6 @@
  },
  "news_feed": [
   {
-   "ticker": "DNN",
-   "source": "Google News: \"Denison Mines\"",
-   "title": "DNN declines as downward price move continues under strong seller pressure - Traders Union",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeUxKUUpreEZ0QkVOSG5UQmt4MjA3VXM1eTlscVBZOHZDeWJKbTlQQXprT3NJTzM0OHE3MzZOR3c3Tk12bkxYU01aSEtWemhZWWFfZzZROGI2OFhldnczU0hyMWM5TEx2ZzI4ZW9hVUlSXzhZaGxZSlFMTzNYeGNKWm5Qczh3Xy1pTDlVM2JR?oc=5",
-   "ts": 1795423640,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Automated price-recap article; no new company information, just describes a selloff already visible in price."
-  },
-  {
-   "ticker": "VST",
-   "source": "Google News: Vistra nuclear",
-   "title": "Vistra (VST) Following Its Selloff Still Has A Case For Higher Fair Value - Simply Wall St",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWDU5bEh5SGlhSkl1UW9zUmZueHE0M3ZxcFBOWTgyZUNVbmNsVkpSZFpEZFB6ajVEeTZqNV9JN1JKeXd2NXk2N2lxLVhsOVlSTzRFbFlteTZoc1dEOGtBWGIxSkNMVTQwM1EtTUNQWml2WjZDd2doaG56Y2ZWZnZ4WEdPbERBWFpCRFhvNkZsQWJEd0IybFpyRVdvNTB2M2ljR0oyU05mdEJKX3ZYeHNTR1RYckVCZFBLMTY5WkN5T3RXSmI5ZmfSAcYBQVVfeXFMT1g1OWxIeUhpYUpJdVFvc1JmbnhxNDN2cXBQTlk4MmVDVW5jbFZKUmRaRGRQemo1RHk2ajVfSTdSSnl3djV5NjdpcS1YbDlZUk80RWxZbXk2aHNXRDhrQVhiMUpDTFU0MDNRLU1DUFppdlo2Q3dnaGhuemNmVmZ2eFhHT2xEQVhaQkRYbzZGbEFiRHdCMmxackVXbzUwdjNpY0dKMlNOZnRCSl92WHhzU0dUWHJFQmRQSzE2OVpDeU90V0piOWZn?oc=5",
-   "ts": 1795331542,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Simply Wall St valuation opinion piece on a past selloff; generic fair-value commentary, no new facts."
-  },
-  {
    "ticker": "BWXT",
    "source": "Google News: \"BWX Technologies\"",
    "title": "222,957 BWX Technologies, Inc. $BWXT Shares Acquired by First Trust Advisors LP - MarketBeat",
@@ -4104,6 +4080,30 @@
    "direction": "neutral",
    "event_type": "analyst",
    "why": "Technical-analysis recap of URNM ETF; price-pattern opinion with no new company information."
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News",
+   "title": "Here\u2019s How Much You Would Have Made Owning Vistra Stock In The Last 5 Years - Benzinga",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTXpMakluUmctY1N3YXZpeWp0eEtXVVgtVFBTZ19reFlpREladEtsczROSlcya2lrRE9ucHJ2bm15UW5ycXZ2RG9jNEYzWXhMRjNjdlZHczFpQlRYZkx2ZEdkRkdqZ3VJRlR4bGdUUGR1cXBEanNYZl80TEYzQWp3VXN0dEVDUW9ST3E1X0JxSm5YejZjWHhMTENmeVQ0XzdWOG5YWHE2Y3g5X1VZY3BNbjBPYw?oc=5",
+   "ts": 1795533317,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Backward-looking 'what you would have made' recap; no new company information."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News: \"Talen Energy\"",
+   "title": "Talen Energy's $9.5B Debt: A Risk to Its Long-Term Growth Plans? - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSG9WZ284ZUZTMDMyN1dnaVFRNVhyc0JTR2NfN1RqOUVRQjdoMkxDb3ZvbHg2WnBfRWtJal9OMm9ndWRNbDNINVBrU1g0WFBYVnNUU1VYNzhtbko2VnptZTRfUVFvejVMZzkwcEY3bDBKeXdwZ1RYU1VMazgtaGpnU0Z6NW1hNWwwZ1R5MnJLSzFnREpQMThtOFBKclNNa2QybHRNWGZrVTItMmR4Y2drZlplbzRqRTJl?oc=5",
+   "ts": 1795524600,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Opinion piece about debt levels; no new company-specific information."
   }
  ],
  "reviews": [
@@ -5706,16 +5706,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.13535,
+  "day_usd": 0.1361,
   "month": "2026-11",
-  "month_usd": 0.86677,
-  "total_usd": 0.86677,
+  "month_usd": 0.86752,
+  "total_usd": 0.86752,
   "by_role": {
    "macro": 0.07833,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.05018,
-   "scout": 0.09415,
+   "scout": 0.0949,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5821,20 +5821,20 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 59.27,
-  "NXE": 6.62,
-  "UEC": 5.53,
+  "CCJ": 59.14,
+  "NXE": 6.59,
+  "UEC": 5.51,
   "DNN": 1.71,
   "UUUU": 4.88,
-  "LEU": 82.5,
-  "BWXT": 112.43,
-  "CEG": 246.77,
-  "VST": 120.4,
-  "TLN": 352.28,
-  "SPY": 717.06,
-  "SSO": 60.22
+  "LEU": 82.0,
+  "BWXT": 112.01,
+  "CEG": 245.88,
+  "VST": 119.96,
+  "TLN": 351.95,
+  "SPY": 715.81,
+  "SSO": 60.03
  },
- "last_cycle": "2026-11-24 10:20 ET",
+ "last_cycle": "2026-11-24 10:24 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -5859,10 +5859,10 @@
   ]
  },
  "brakes": {
-  "equity": 1003.13,
-  "day_pct": -2.56,
-  "week_pct": 0.26,
-  "drawdown_pct": -4.86,
+  "equity": 1000.74,
+  "day_pct": -2.79,
+  "week_pct": 0.02,
+  "drawdown_pct": -5.09,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -7380,6 +7380,22 @@
   [
    "2026-11-24 10:20",
    1003.13
+  ],
+  [
+   "2026-11-24 10:21",
+   1003.09
+  ],
+  [
+   "2026-11-24 10:23",
+   1002.0
+  ],
+  [
+   "2026-11-24 10:24",
+   1000.92
+  ],
+  [
+   "2026-11-24 10:24",
+   1000.74
   ]
  ],
  "nowcast": {
@@ -51886,7 +51902,7 @@
     0.8961
    ]
   },
-  "time": "2026-11-24 10:20"
+  "time": "2026-11-24 10:24"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -52193,6 +52209,7 @@
   "48a608e975b439d8",
   "8aff877e2dd1884c",
   "67a6b806516eadaf",
+  "a971dbe271ea0831",
   "1744c42d9aa30cb5",
   "9199257f37a8ba75",
   "4c474a21ada49911",
@@ -52285,9 +52302,10 @@
   "b36ee151c6da4ebf",
   "32cfd9ef3704009d",
   "04dd9aeafd90d9b4",
-  "7ffa38b48cb85fdf"
+  "7ffa38b48cb85fdf",
+  "3c0d3789a7b698e6"
  ],
- "news_slow_at": 1795533638.2740383,
+ "news_slow_at": 1795533873.8803966,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -206618,6 +206636,21 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-24 10:24",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: UEC moved -1.6% in 9 min. Checking the news for a reason.",
+   "tickers": [
+    "UEC"
+   ],
+   "art": {
+    "big": "UEC moved -1.6% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -207218,7 +207251,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 10:20",
+  "updated": "2026-11-24 10:24",
   "total": 491,
   "week": 414,
   "places": {
@@ -209744,12 +209777,12 @@
    "built": "2026-11-24 09:56"
   }
  ],
- "heartbeat": "2026-11-24 10:20",
+ "heartbeat": "2026-11-24 10:24",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 239,
+ "_pushed_feed": 242,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -209899,15 +209932,15 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 112.43,
-  "TLN": 352.28
+  "BWXT": 112.01,
+  "TLN": 351.95
  },
  "notes_audit": {
   "scout": {
-   "asked": 122,
-   "used": 114,
+   "asked": 124,
+   "used": 116,
    "notes": {
-    "TLN Deals and contracts": 6,
+    "TLN Deals and contracts": 7,
     "CCJ Deals and contracts": 31,
     "BWXT Deals and contracts": 23,
     "SECTOR Government and laws": 30,
@@ -209924,7 +209957,7 @@
     "SECTOR Uranium market": 2,
     "CCJ Legal": 5,
     "CEG Legal": 2,
-    "VST Deals and contracts": 9,
+    "VST Deals and contracts": 10,
     "LEU Legal": 1
    },
    "since": "2026-11-23"
@@ -210343,7 +210376,7 @@
    ],
    [
     "2026-11-24",
-    59.22
+    59.05
    ]
   ],
   "NXE": [
@@ -210465,7 +210498,7 @@
    ],
    [
     "2026-11-24",
-    6.61
+    6.59
    ]
   ],
   "UEC": [
@@ -210587,7 +210620,7 @@
    ],
    [
     "2026-11-24",
-    5.53
+    5.51
    ]
   ],
   "DNN": [
@@ -210953,7 +210986,7 @@
    ],
    [
     "2026-11-24",
-    82.5
+    82.0
    ]
   ],
   "BWXT": [
@@ -211075,7 +211108,7 @@
    ],
    [
     "2026-11-24",
-    112.56
+    111.86
    ]
   ],
   "CEG": [
@@ -211197,7 +211230,7 @@
    ],
    [
     "2026-11-24",
-    246.71
+    245.88
    ]
   ],
   "VST": [
@@ -211319,7 +211352,7 @@
    ],
    [
     "2026-11-24",
-    120.36
+    119.97
    ]
   ],
   "TLN": [
@@ -211441,7 +211474,7 @@
    ],
    [
     "2026-11-24",
-    351.8
+    352.08
    ]
   ]
  },
@@ -214050,6 +214083,11 @@
    1795533625.5844555,
    "LEU",
    -1
+  ],
+  [
+   1795533873.7898157,
+   "UEC",
+   -1
   ]
  ],
  "auto_log": [],
@@ -214351,7 +214389,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 10:20",
+ "watchdog_last": "2026-11-24 10:24",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
