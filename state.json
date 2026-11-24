@@ -251,7 +251,8 @@
   "ev:b2ebfecd315c": true,
   "weather:2026-11-24": true,
   "questioner:2026-11-24:4": true,
-  "reactors:2026-11-24": true
+  "reactors:2026-11-24": true,
+  "plantrep:2026-11-24": true
  },
  "benchmark": {
   "shares": {
@@ -5425,10 +5426,10 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.03738,
+  "day_usd": 0.03826,
   "month": "2026-11",
-  "month_usd": 0.7688,
-  "total_usd": 0.7688,
+  "month_usd": 0.76968,
+  "total_usd": 0.76968,
   "by_role": {
    "macro": 0.06009,
    "whale": 0.01301,
@@ -5443,7 +5444,7 @@
    "investigator": 0.18133,
    "postmortem": 0.00035,
    "researcher": 0.00704,
-   "engineer": 0.00879,
+   "engineer": 0.00967,
    "questioner": 0.05399
   }
  },
@@ -5553,7 +5554,7 @@
   "SPY": 722.39,
   "SSO": 61.17
  },
- "last_cycle": "2026-11-24 08:32 ET",
+ "last_cycle": "2026-11-24 08:36 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -202457,6 +202458,31 @@
    ],
    "practice": false,
    "end": "08:00"
+  },
+  {
+   "id": "20261124083602394478",
+   "title": "Plant report Nov 24",
+   "tickers": [
+    "CCJ",
+    "CEG",
+    "LEU",
+    "TLN",
+    "VST"
+   ],
+   "kind": "research",
+   "start": "2026-11-24 08:36",
+   "msgs": [
+    {
+     "t": "08:36",
+     "who": "engineer",
+     "to": "team",
+     "text": "Salem 1 at Constellation (CEG) has been down about 47 days, but that's a planned refuel-season outage, and CEG's fleet is 95% running, so it's routine and shouldn't move the stock today. Nothing unusual at our other owners (Vistra and Talen are both at 100%), and no mine or enrichment disruption in the news beyond routine items. Nothing in the plants data calls for a trade today.",
+     "outcome": false,
+     "notes": "why: I checked open outages against the refueling-season pattern: Salem 1 is a planned long outage in a normal window, and the fleet numbers for CEG, VST and TLN show no surprise. The plant news this week is mostly developer and permit items for miners, which don't change today's reactor picture.\ndate: 2026-11-30\nticker: CEG\nwhat: Salem 1 return to service is still pending; a late return would be a weak signal for CEG's near-term power sales.\nfiles read: CEG Places and operations, VST Places and operations, CEG Business"
+    }
+   ],
+   "practice": false,
+   "end": "08:36"
   }
  ],
  "feed": [
@@ -204873,6 +204899,23 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-24 08:36",
+   "who": "engineer",
+   "kind": "data",
+   "title": null,
+   "text": "Salem 1 at Constellation (CEG) has been down about 47 days, but that's a planned refuel-season outage, and CEG's fleet is 95% running, so it's routine and shouldn't move the stock today. Nothing unusual at our other owners (Vistra and Talen are both at 100%), and no mine or enrichment disruption in the news beyond routine items. Nothing in the plants data calls for a trade today.",
+   "tickers": [
+    "CEG",
+    "TLN",
+    "VST"
+   ],
+   "art": {
+    "big": "Plant report",
+    "sub": "Reactors, mines and fuel, Nov 24"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -205461,7 +205504,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 08:32",
+  "updated": "2026-11-24 08:36",
   "total": 481,
   "week": 405,
   "places": {
@@ -206140,6 +206183,7 @@
   "7f7a05be6b3ac1f5",
   "9e7ebdf62031eeaf",
   "a9bcbfe54ba12f7e",
+  "ed609e22ce9351ef",
   "0ad3ea7bae8b611c",
   "16345b7a70842227",
   "b95ad295cbbaef38",
@@ -206152,7 +206196,6 @@
   "6aea49b49aa5bae7",
   "5178e5d1234a91bb",
   "61659cb80b158a77",
-  "a7baf61adc01832c",
   "c2a1739b2e369eff",
   "28eaa442b6a19a6f",
   "97e5a70ea6902e58",
@@ -206211,7 +206254,7 @@
   "f88ba68b2c94d1a7",
   "29f141fd08778bc3",
   "fe094eef9f0aabee",
-  "ed609e22ce9351ef"
+  "a7baf61adc01832c"
  ],
  "panic_log": [
   {
@@ -207973,7 +208016,7 @@
    "built": "2026-11-24 08:24"
   }
  ],
- "heartbeat": "2026-11-24 08:32",
+ "heartbeat": "2026-11-24 08:36",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -208247,11 +208290,11 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 7,
-   "used": 7,
+   "asked": 8,
+   "used": 8,
    "notes": {
     "SECTOR Reactors and power": 2,
-    "CEG Places and operations": 2,
+    "CEG Places and operations": 3,
     "UEC Deals and contracts": 1,
     "UEC Places and operations": 1,
     "license_tracker": 3,
@@ -208260,7 +208303,9 @@
     "LEU Deals and contracts": 2,
     "LEU Places and operations": 1,
     "NRC license tracker": 1,
-    "power_deals_and_fuel_policy": 1
+    "power_deals_and_fuel_policy": 1,
+    "VST Places and operations": 1,
+    "CEG Business": 1
    },
    "since": "2026-11-23"
   },
@@ -211965,7 +212010,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 08:32",
+ "watchdog_last": "2026-11-24 08:36",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
