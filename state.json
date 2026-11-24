@@ -904,18 +904,6 @@
  },
  "news_feed": [
   {
-   "ticker": "UUUU",
-   "source": "Google News: \"Energy Fuels\" uranium",
-   "title": "UUUU Stock Gets Pre-Market Boost On Rare Earth Production Breakthrough \u2013 Here\u2019s Why It Matters - Stocktwits",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWXlaMkdJLUNoeENtUllVLXhibDRBRl9yZlYyVG12S0FxRFJXUkM3R3RkN2Nxak1wMmdDMGJaVUwwakpoYmRraDRNWlVPSGdlVUJaRV82VkxQZ3Z5QXV2QzFOLW96VXgxWTByUURyQ1E4UDU5Y3lMZkpZTzJnV3AtT1RjS0Y2ak5xalRYSDQxVVBhX3lVV24zMTRrMjZiOVY2MWhDR2VwNjQ1TkpzTFJoTTFVb1dJRVNtX0x0QUtpNkVZWnRvd1IyTzd5d3B0X3MzblE?oc=5",
-   "ts": 1795345506,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
    "ticker": "CCJ",
    "source": "Local intel: \uc7ac\uacbd\uc77c\ubcf4 (South Korea)",
    "title": "China raises concerns over IAEA verification of South Korea's nuclear-powered submarines, calling it a \"grave challenge to international security\"",
@@ -3902,6 +3890,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Opinion piece on tactical nukes; no company-specific news or contract."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: \"McArthur River\" OR \"Cigar Lake\" uranium",
+   "title": "Cosa Resources Identifies Significant Anomalies in Ambient Noise Tomography Survey at the Astro Uranium Project, Athabasca Basin, Saskatchewan - Junior Mining Network",
+   "link": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxNdmwxR1pDbGp5cG4tYkJlWkpwUl81bGlfLVZFeU5jWXdPRENMX0x6V3pOdWRGUE5VbHVfM3NSYkxMVE15V21QM0phdjNUMmUzcnExZjVvZkhvNjYxWHdSRzZONTUtWG1TczYxODFSMnBWRTFTSkRRXzI3dWptaTVLMElOQUE4TnYtM2dlUk9xWm56Y0FlYTFMMmc4ZmlpeGJDVDNVX1F1NUVuSDdYQVBLVFhMeGI5NnpwcXA4X1BhXzd2SUkxYnQtYTBFQlJ4V0NVQzlNZGdEMkpJc21mTmlLVUg2c2ZNR21FdEpjTElBaHU2ZWZPdnlRcDV5aEJwdWFmVnJVV2NLRWtzaGZmMDZ6cHZveFRFUDdPb1h1ZmVFVnU0eEFGUEt5djJ6OXpaRlVLY25OVG5rcnZ3dlpCOG9mb0N2TXhUZ1lCN3RoQjlDclE5TUk?oc=5",
+   "ts": 1795525475,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Exploration survey results at a junior's early-stage project, not Cameco's own mines."
   }
  ],
  "reviews": [
@@ -5424,16 +5424,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.03412,
+  "day_usd": 0.03459,
   "month": "2026-11",
-  "month_usd": 0.76554,
-  "total_usd": 0.76554,
+  "month_usd": 0.76601,
+  "total_usd": 0.76601,
   "by_role": {
    "macro": 0.06009,
    "whale": 0.01301,
    "crowd": 0.00849,
    "level": 0.03741,
-   "scout": 0.08421,
+   "scout": 0.08468,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5552,7 +5552,7 @@
   "SPY": 722.39,
   "SSO": 61.17
  },
- "last_cycle": "2026-11-24 08:00 ET",
+ "last_cycle": "2026-11-24 08:11 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51578,6 +51578,7 @@
   "e3886df4b9b8827c",
   "063170773d4b14a2",
   "0e9db4d412c6f84b",
+  "cda8fbdcb8858d7a",
   "24958b4b1d92e720",
   "be5409ee82f38fd4",
   "9342c1346e3b9a91",
@@ -51727,7 +51728,7 @@
   "a7baf61adc01832c",
   "13880e66390f270d"
  ],
- "news_slow_at": 1795524864.260722,
+ "news_slow_at": 1795525528.4875064,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -205441,7 +205442,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 08:00",
+  "updated": "2026-11-24 08:11",
   "total": 478,
   "week": 402,
   "places": {
@@ -206120,7 +206121,6 @@
   "7f7a05be6b3ac1f5",
   "9e7ebdf62031eeaf",
   "a9bcbfe54ba12f7e",
-  "ed609e22ce9351ef",
   "0ad3ea7bae8b611c",
   "16345b7a70842227",
   "b95ad295cbbaef38",
@@ -206133,6 +206133,7 @@
   "6aea49b49aa5bae7",
   "5178e5d1234a91bb",
   "61659cb80b158a77",
+  "a7baf61adc01832c",
   "c2a1739b2e369eff",
   "28eaa442b6a19a6f",
   "97e5a70ea6902e58",
@@ -206191,7 +206192,7 @@
   "f88ba68b2c94d1a7",
   "29f141fd08778bc3",
   "fe094eef9f0aabee",
-  "a7baf61adc01832c"
+  "ed609e22ce9351ef"
  ],
  "panic_log": [
   {
@@ -207953,12 +207954,12 @@
    "built": "2026-11-24 07:54"
   }
  ],
- "heartbeat": "2026-11-24 08:00",
+ "heartbeat": "2026-11-24 08:11",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 198,
+ "_pushed_feed": 202,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -208113,15 +208114,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 100,
-   "used": 93,
+   "asked": 101,
+   "used": 94,
    "notes": {
     "TLN Deals and contracts": 4,
-    "CCJ Deals and contracts": 25,
+    "CCJ Deals and contracts": 26,
     "BWXT Deals and contracts": 21,
     "SECTOR Government and laws": 26,
     "UUUU Deals and contracts": 22,
-    "SECTOR Countries": 19,
+    "SECTOR Countries": 20,
     "CEG Deals and contracts": 13,
     "NXE Legal": 2,
     "NXE Deals and contracts": 3,
@@ -211925,7 +211926,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 08:00",
+ "watchdog_last": "2026-11-24 08:11",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
