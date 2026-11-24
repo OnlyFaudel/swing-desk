@@ -127,7 +127,8 @@
 "NRC decisions": 4,
 "HALEU": 1,
 "France and UK": 1,
-"Wyoming ISR": 2
+"Wyoming ISR": 2,
+"India": 1
 },
 "2026-11-22": {
 "ERCOT grid": 1,
@@ -142,5 +143,8 @@
 "Asia newcomers": 1,
 "Weapons programs": 1,
 "War zones": 1
+},
+"2026-11-24": {
+"PJM grid": 1
 }
 }

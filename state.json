@@ -817,78 +817,6 @@
  },
  "news_feed": [
   {
-   "ticker": "UUUU",
-   "source": "Google News",
-   "title": "Texas Capital Securities Maintains Energy Fuels(UUUU.US) With Buy Rating, Raises Target Price to $24 - Moomoo",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcmZta2VfNlJRcDBzRjdFcGRrZ05QV3M5eDF0S1NkRUI5THZIX2xpXzNHbFU4ZlNFS0NfV3pXY0lBWkp1U0RhYVNrejdUS0VwUTRYQ3VGd2NqTVVFb1JleGJtdXhYdktDU2xvOFhWMWd0QmxMYTg0YnV2c1N6OGN2b3dfM1lHWFVjVHNwb2pnVU1fallrZVpRak9mSDRDV1RTMUhjNDJhbFBCNTkwQmlqTkZhZEw?oc=5",
-   "ts": 1795206141,
-   "materiality": 4,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "analyst",
-   "why": "One bank's buy rating and higher target; modest signal"
-  },
-  {
-   "ticker": "CEG",
-   "source": "Google News",
-   "title": "Andrew Novotny proposes selling 555 Constellation Energy (CEG) shares worth about $132,000. - Stock Titan",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdU1sQlZobGY5M1hhQ2ExWE9WZUVSWS1tMl9zeE54blRUaDRqWGpaQUdqdm1UYlY3bzBvbGtDd1N1QjBjZG1PcnNFV3g4X2lYWTRPcldMNjdRVGVPVWFhYVYyMnJLRTIwVEJFcWpfSy15RzdPNVBrYzdJcGNVRUFRVUlLa1JsQnRlbl9GMjhyNUpsajhFT1dxaVlRd0UzMngyWXl3?oc=5",
-   "ts": 1795215044,
-   "materiality": 2,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Small insider Form 144 sale notice (~$132k); likely planned sale, low signal"
-  },
-  {
-   "ticker": "BWXT",
-   "source": "Google News: \"BWX Technologies\"",
-   "title": "BWX Technologies (NYSE:BWXT) Stock Price Down 7.3% - Should You Sell? - MarketBeat",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPcTFfZGkydGtRUHh6LVJSeHNmVnZkWkhEVWc2Ym9lTHR4WjhWSlltRGIxOHpGT2ctZW1CWm4ybWFzY3BuVXFFV0RMSy1CcS0teFBPbUVrMlB0UERMOW53STlMMFFCR1dKTDdQSXI2M3BPc0tQel9PUkYwZzlMSFlBLTZ0azdZUzRaUENKU2ozOUwyVTRGT3VyNjBsV2RLMklvdmJuVkFJTXdGMXdDYVNETThRQTJQNmNqWlVFWW51WQ?oc=5",
-   "ts": 1795214776,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Routine MarketBeat price recap; no new company information"
-  },
-  {
-   "ticker": "UUUU",
-   "source": "Google News: \"Energy Fuels\" uranium",
-   "title": "Energy Fuels Inc. Securities Violation Investigation \u2013 Robbins LLP is Investigating the Officers and Directors of UUUU for Breaches of Fiduciary Duty and Violations of Securities Laws - FinancialConte",
-   "link": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxPZ0JGaDRfdmlVZ2ZpUjktR0tvYU9VMVZBQlV6UElWcS1fcUJfdktBYk5TX2J3OGRZMmJGVy1ISlBWUF82eEstRE40TWJaQU82amZXUHRxQmRqVFFqU1dfOWEzZTZ0MnlnQXl4WnplbmNmc2pSRkJZb2tGZk1ucEN2M2hjMUMzNlJFdHlSdnRrRjl1eVV0djVzVmFnTDJhcVNvMWxmMEMzZ2JhT0hDalFnckx4RnJ6ZXU2ZnllNHNHLW9pd2hOZm5YaE5QQ0FWRGRpem9YRFZXUzc2NFBrYWtWNFdHZUtwekZYSHpOOWlLWUhydkxvMXFJZ3VXVGdoaUdkWWxoOWFoMGdHS3pNZUdBQ2MyVmhwYjFrQ3c3bDYzaFFUdTRzdldxb3lYYkNrYTkwNldPV1o4cmJ6QXM2YWVRT1Q5UVpEQVRLeS1haUxaVHdPdUlGUUR6QTdpN0M?oc=5",
-   "ts": 1795131900,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Law-firm investigation advertisement; boilerplate, no new facts"
-  },
-  {
-   "ticker": "CEG",
-   "source": "Google News",
-   "title": "Is Constellation Energy Corp (CEG) a Bargain After 5.7% Drop? GF Value Says Undervalued - GuruFocus",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdklQN0NQYUEteTNEd3VFeE10TjJaVnEtRXMtTmVnOG1Da0ppZnJsTXJEQ250akFqdjBROV9TRnNFQ1A3dFM1bUdIc0VVQ1E4UDFGT1U4aGEtckFBWTF4SmRJNXlUU0JEeEY2M1VVTzVDbW5Kd0I4aERacEI4M01WeGxZS3kzcXJRMEtCMUxzTnMwMldKUHFJWEdKTms0LTBWZTJxeGlKcEZQUDl1UDZTelM4V3ZnM29CbmlmWlNn?oc=5",
-   "ts": 1795217850,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Valuation opinion piece recapping a past price drop; no new company information."
-  },
-  {
-   "ticker": "CEG",
-   "source": "Google News",
-   "title": "CEG: Constellation officer Andrew Novotny plans to sell 555 shares - Quantisnow",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdkh3bEkwT0xVU1JtUUJwV0tmcjU4V0JicTZ1bXQ1Q0d2dG1EM0h1VkVFS2dsbWtOT1hwUDNJNHNxVkJ5YmFuSllrRXp2Y1VwbnkwcTdBcnJvX3JhSkgxMVRmOE9Vc3BUMy1tS21zdmluc1ktdlhEX00wTVNyNmJiam9aUGpTSXo5dWNUM01pcEJ3TnYxWUw4Vg?oc=5",
-   "ts": 1795215363,
-   "materiality": 2,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Officer planning to sell 555 shares is tiny and may be a routine planned sale."
-  },
-  {
    "ticker": "LEU",
    "source": "Google News: HALEU fuel",
    "title": "Blykalla and Urenco agree to enrich HALEU for the SEALER reactor - Inspenet",
@@ -3815,6 +3743,78 @@
    "direction": "neutral",
    "event_type": "policy_tariff",
    "why": "NRC licensing guide for military/DOE-authorized reactor designs; procedural, indirect for CEG."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News",
+   "title": "Energy Fuels Plans One Million-Pound Uranium Processing Campaign at White Mesa Mill from December 2026 - Kalkine",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPaFJrQkpTYmxrMHlFQ3VJd0ViVUJNS01mSE5aX2lwTTg1TEZacUphZnV5SDlFWlJsRnYyRnNnYlFhaFlBYnFtZWU1cGFoS0hVdjZUYkQ4Z1JuNVdQREpfcnRwRnFMNFFSY0tmWkN3VkZvYXVKTlgzbktHeW9vT1k1X0pocjJ5Q1VYN0Z1RHVQN2xTRkdDS09IQjZlSjl3RWxZeC1SRTJjYk1NTFhqb21kVzNHdlNtRWh0M2pldTk0aGN0TV9wNHUtaHdaWXhqekp1MlAtcnp0aTJyU3hX?oc=5",
+   "ts": 1795475701,
+   "materiality": 3,
+   "novelty": "follow_up",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Planned processing campaign from Dec 2026 is operational scheduling, not new financial information."
+  },
+  {
+   "ticker": "DNN",
+   "source": "Yahoo Finance",
+   "title": "Drilling Results Could Shape The Case For Denison Mines Stock (TSX:DML)",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/drilling-results-could-shape-case-001620564.html?.tsrc=rss",
+   "ts": 1795479380,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "exploration",
+   "why": "Summer drilling results from a Darby JV, reported as past results with no new resource figure."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News: \"Talen Energy\"",
+   "title": "Form 4 Talen Energy Corp For: Nov 23 Filed by: Muller Cole - StreetInsider",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUy13dVNZYTA3RDdhN205OEJXLWZjd3BsbzhhcXA1SjZQbGhxLXNMOUVTMm1fLXotbUVGOExCZW04dU9SbEYtVzM3NldIeGJjZXFtblVjNzIybjgwRi1abmdrd0F0Z2pSeFVHM3pUbEVTX0xlZnhVZ3o4dkdGb29lc2lwWlFWbVRUUzFLLUdEX1dESGlfM1h0UzJOc01yeVlIS29Jd3ROcUVCaTFkM0xXSVpMUzFhM0s4R0E?oc=5",
+   "ts": 1795481396,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Routine Form 4 insider filing from a Nov 23 date; no clear signal about buying or selling direction."
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News",
+   "title": "A Look at Vistra Corp (VST) After 7.5% Gain -- GF Value $182.46 vs Price $123.87 - GuruFocus",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdFU5M3pRcDFMRG9tcGV4N2o5Yk9wMmc2S0pUS2QtMUFweTVMc2NJXzlwMmd3a3BZX2pCWXFxTUpMQjc4Q1RZdVVENWpUMEhna0ZQVGlyTmxwOUQ5MUdfX1ZKZFdndC16M19xMEhBcTZkemV2djY4MzByZnRfenFod2QxR2oxY3pNOGduLUpZLWktR000UDR2Q1N6OUd1YmRDZUFGa1pFZ0x4NFF0?oc=5",
+   "ts": 1795480921,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Valuation recap on a 7.5% gain; GuruFocus 'GF Value' is a model number, not new information."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News",
+   "title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales - Stocktwits",
+   "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNTkxhNnJWU1ZmcmV3MTNycEt5X2lTNzJwNG9IRGRCaVllSkx0U01jMEVFUVJLWTFFaTZkYnp3elBkRzdrZ2dUWGotLXdJUi1CY1h1cDE3ZWR5NHdleUlGTTNuMU11bHZCQkpzdk83R1RMdm9TeUpuelZnV2lSNUhCZ3BEX3RPV2xXNlQxQ1gzSkYwczIxNnBlbEFGTDhvcUNhc2NObXpQOVRwRmdWT3puN0JEWWpYUzBHV01SLWxwNE1UNkFvcUxwM1B3UGY0Qmk5QklzOGJiXzFOVWlqNzlJNmx5VHNvX1l6bDRLTzR5MHhDR1BWTGpDY2FIdGJ1cG5LbzJjMzNsdlMtUjBHU1dYSDVqc2lrMGdu?oc=5",
+   "ts": 1795480912,
+   "materiality": 4,
+   "novelty": "follow_up",
+   "direction": "up",
+   "event_type": "supply",
+   "why": "Production target and 2027 sales growth are real, but Energy Fuels has a history of fading on such news."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Local intel: RTO Insider (PJM grid)",
+   "title": "PJM Consumer Advocates, Monitor Request 2029/30 Auction be Delayed",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbUJFeGkyRjFWT25KbERkNXhweVVZZzN2NnV4M2x3YlFJbEhITFdTTlUxektPRWhSSVcxbmhqNWpuVHdfVU12MEUtaDdsbUliSnJJNlJ4YmJ2TldfWWRyOVBtdS11WUxDMGVTaE5lUWZNWUpyc0FIUkdUMjFjNnlZbEwyTkp6UzYxc2xzbDdqbU1IaklsYktqT2M2Wml3TTVwVEE?oc=5",
+   "ts": 1795481372,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "policy_tariff",
+   "why": "PJM consumer advocates asking to delay a capacity auction; a policy process request, not a decision yet."
   }
  ],
  "reviews": [
@@ -5337,26 +5337,26 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.31501,
+  "day_usd": 0.32549,
   "month": "2026-11",
-  "month_usd": 0.57849,
-  "total_usd": 0.57849,
+  "month_usd": 0.58897,
+  "total_usd": 0.58897,
   "by_role": {
-   "macro": 0.02491,
+   "macro": 0.02708,
    "whale": 0.00861,
    "crowd": 0.00751,
    "level": 0.03344,
-   "scout": 0.06532,
+   "scout": 0.06696,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
    "pm": 0.03676,
-   "risk": 0.02043,
-   "investigator": 0.14839,
+   "risk": 0.02256,
+   "investigator": 0.15066,
    "postmortem": 0.00035,
    "researcher": 0.00704,
    "engineer": 0.00303,
-   "questioner": 0.00823
+   "questioner": 0.0105
   }
  },
  "desk_log": [
@@ -5464,7 +5464,7 @@
   "TLN": 365.03,
   "SPY": 722.39
  },
- "last_cycle": "2026-11-23 19:20 ET",
+ "last_cycle": "2026-11-23 20:01 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51343,12 +51343,14 @@
   "e250b8758ee96ae8",
   "04e5c0526493eb7e",
   "fd2731052f33e27f",
+  "f1c6e7a99bef23fc",
   "813ce322cba7c1e5",
   "8aff877e2dd1884c",
   "52fac14cf9cff90b",
   "c56ca4f4b89e4d32",
   "4720f4810691bed4",
   "87aebc088e19e85e",
+  "c1f74bed7bdbed79",
   "4ae697a080cb64b9",
   "13880e66390f270d",
   "efa3269c9fa1c644",
@@ -51404,6 +51406,7 @@
   "2c2cc3e5488f76ac",
   "c527b52a6d387b5e",
   "dfaa19a96155f693",
+  "9cd5f827ff39e8aa",
   "608a6c7d81d54f47",
   "1f0c92334f3206aa",
   "29d23ebb15d8cf15",
@@ -51489,6 +51492,7 @@
   "085f836ba2eae79d",
   "15d6f9963fcdf41e",
   "b4c005bc018874b7",
+  "fa17ed4285ac01d2",
   "020569e75e7d456e",
   "c40403c1e5b7035d",
   "29dae386e051dd8c",
@@ -51543,6 +51547,7 @@
   "2d3f6639ab9cea68",
   "563c0572b10f43bc",
   "9199257f37a8ba75",
+  "15fecb83818a0949",
   "97e9eff63229f754",
   "61b82697d913613b",
   "0f1f809a37df564a",
@@ -51581,7 +51586,7 @@
   "bb6d0befac06c212",
   "0d77f1d2373bb03d"
  ],
- "news_slow_at": 1795479671.7463644,
+ "news_slow_at": 1795481522.986924,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -201451,6 +201456,49 @@
    ],
    "practice": false,
    "end": "18:01"
+  },
+  {
+   "id": "20261123200133002619",
+   "title": "The Questioner, Nov 23 20:01",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-23 20:01",
+   "msgs": [
+    {
+     "t": "20:01",
+     "who": "questioner",
+     "to": "risk",
+     "text": "TLN closed around $365 after a 9.6% one-day jump, so the resting buy at $355.66 now sits about 2.6% below the price, and the team has already flagged it as a leftover the no-new-buys rule should cancel. I want to know whether anyone has confirmed the PJM December capacity-auction delay decision, because that is the real earnings driver for Talen and nobody has answered it.",
+     "outcome": false,
+     "notes": "question: Has anyone actually confirmed the status of the PJM December 2029/30 capacity-auction delay request? The 'pullback opportunity' headline does not answer it, and it is the main earnings driver for Talen.\nwhy it might matter: If the auction is delayed, TLN's earnings outlook changes, and our $355.66 resting buy would be sitting on an unresolved catalyst that could break the support zone.\nask: macro\nkind: unexplained\nquestion: TLN is up 9.6% on the day while the basket is still below its 10-day average, so the no-new-buys rule applies. Is the resting order at $355.66 still a live plan, or should it be canceled now instead of waiting to its Nov 30 expiry?\nwhy it might matter: A resting bid left in place during a shaky basket can fill on the way back down after a news bounce, which is the pattern our notes warn about.\nask: risk\nkind: missed\nquestion: TLN's COO Brad Berryman sold abo"
+    },
+    {
+     "t": "20:01",
+     "who": "macro",
+     "to": "questioner",
+     "text": "I checked the desk files for the PJM December 2029/30 capacity-auction delay and found no confirmed decision. The only item is the 'PJM Consumer Advocates, Monitor Request 2029/30 Auction be Delayed' headline, which is a request, not a ruling. The 'pullback opportunity' piece doesn't settle it, so I'm treating the outcome as open. For TLN, that means the $355.66 resting buy is sitting on an unresolved catalyst, which is a reason to keep it canceled or at least not add to it, not a reason to rely on it.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: research\nwatch date: 2026-11-30\nresearch test: Pull the PJM board/FERC docket for the 2029/30 auction delay request and record the decision date; then compare TLN's moves in the sessions before and after that decision against the $354.24 support zone.\nwhy: I searched the desk notes, headlines, and coming-up calendar for a decision on the delay and found only the request itself, with no ruling or date. The auction timing directly affects Talen's earnings outlook, which is why it matters for our resting buy.\ndate: 2026-11-30\nticker: TLN\nwhat: Check whether the PJM December 2029/30 capacity-auction delay request has been decided, and whether the $354.24 support zone held before the $355.66 resting buy expires.\nticker: TLN\ndirection: down\ndays: 5\nfiles read: TLN Snapshot, SECTOR Government and laws"
+    },
+    {
+     "t": "20:01",
+     "who": "risk",
+     "to": "team",
+     "text": "The basket is still below its 10-day average, so the no-new-buys rule applies, and TLN has run about 2.6% above our resting bid at $355.66 after a 9.6% bounce. A bid left in place into a shaky group can fill on the way back down after a news pop, which our notes warn about. I agree with the Macro Analyst that the PJM auction-delay outcome is still open, so the order is resting on an unresolved catalyst; I'd cancel it now rather than wait for Nov 30.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: tell_owner\nwatch date: 2026-11-30\nwhy: TLN closed about $365 versus the $355.66 bid after a 9.6% day, and the basket is still below its 10-day average, so the rule blocks new buys. The desk files show no confirmed PJM auction decision, and the 'company-only down day' history is weak evidence, so I'd cancel rather than rely on a bounce-back fill.\ndate: 2026-11-30\nticker: TLN\nwhat: Resting buy at $355.66 expires; confirm whether PJM 2029/30 capacity auction delay has been decided\nticker: TLN\ndirection: down\ndays: 5\nfiles read: TLN Snapshot, TLN Price behavior, TLN Discoveries"
+    },
+    {
+     "t": "20:01",
+     "who": "investigator",
+     "to": "questioner",
+     "text": "Brad Berryman's Nov 17 sale is about $19.8M of TLN stock, but the desk files don't record whether it was a planned 10b5-1 sale or open-market, so I can't classify it from what we have. That matters because our rule treats open-market sales as meaningful, and TLN's yearly insider net is already -$23M. I agree with the Risk Manager that the TLN resting buy should be canceled given the basket rule and the unresolved PJM auction delay, and the insider question doesn't change that.",
+     "outcome": false,
+     "notes": "verdict: unsure\naction: research\nresearch test: Pull the Form 4 for the Nov 17 Berryman sale and check the footnotes for a 10b5-1 plan adoption date; if the plan was adopted well before the sale and the sale matches a schedule, file it as planned, otherwise treat it as open-market and recount TLN's insider net.\nwhy: The desk files show the Nov 17 sale and the -$23M yearly net, but nothing in them says whether a 10b5-1 plan covered it, so I can't classify it. The TLN files cover the sale, the leadership history and the PJM headline, but none of them settle the plan question.\nfiles read: TLN Leadership and insiders, TLN Snapshot"
+    }
+   ],
+   "practice": false,
+   "end": "20:01"
   }
  ],
  "feed": [
@@ -203116,6 +203164,32 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-23 20:01",
+   "who": "questioner",
+   "kind": "alert",
+   "title": null,
+   "text": "Worth your attention: TLN is up 9.6% on the day while the basket is still below its 10-day average, so the no-new-buys rule applies. Is the resting order at $355.66 still a live plan, or should it be canceled now instead of waiting to its Nov 30 expiry?\n\nRisk Manager: The basket is still below its 10-day average, so the no-new-buys rule applies, and TLN has run about 2.6% above our resting bid at $355.66 after a 9.6% bounce. A bid left in place into a shaky group can fill on the way back down after a news pop, which our notes warn about. I agree with the Macro Analyst that the PJM auction-delay outcome is still open, so the order is resting on an unresolved catalyst; I'd cancel it now rather than wait for Nov 30.",
+   "tickers": [],
+   "art": {
+    "big": "Something we almost missed",
+    "sub": "The Questioner"
+   },
+   "thread": "20261123200133002619"
+  },
+  {
+   "t": "2026-11-23 20:01",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Has anyone actually confirmed the status of the PJM December 2029/30 capacity-auction delay request? The 'pullback opportunity' headline does not answer it, and it is the main earnings driver for Talen. -> relevant | TLN is up 9.6% on the day while the basket is still below its 10-day average, so the no-new-buys rule applies. Is the resting order at $355.66 still a live plan, or should it be canceled now instead of waiting to its Nov 30 expiry? -> relevant | TLN's COO Brad Berryman sold about $19.8M of stock on Nov 17 at roughly $345-365. Is that a planned 10b5-1 sale or an open-market sale, and does it change how we read the insider picture? -> unsure",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -203550,9 +203624,9 @@
    "lesson": null
   }
  ],
- "intel_at": 1795479623.8501658,
+ "intel_at": 1795481477.0910473,
  "intel_health": {
-  "at": "2026-11-23 19:21",
+  "at": "2026-11-23 19:51",
   "sources": {
    "Cigar Lake": 5,
    "McArthur River / Key Lake": 2,
@@ -203564,11 +203638,11 @@
    "Westinghouse": 7,
    "Kazakhstan": 0,
    "Niger": 5,
-   "Namibia": 10,
+   "Namibia": 11,
    "Russia supply": 1,
-   "Piketon": 11,
-   "HALEU": 10,
-   "Wyoming ISR": 26,
+   "Piketon": 13,
+   "HALEU": 9,
+   "Wyoming ISR": 19,
    "South Texas ISR": 2,
    "White Mesa / Utah": 10,
    "Rare earths (Energy Fuels)": 17,
@@ -203578,34 +203652,34 @@
    "Susquehanna": 2,
    "Comanche Peak": 3,
    "PJM grid": 8,
-   "ERCOT grid": 9,
+   "ERCOT grid": 10,
    "Data-center nuclear deals": 9,
    "Japan restarts": 4,
    "China new builds": 5,
-   "Congress and laws": 45,
+   "Congress and laws": 31,
    "NRC decisions": 12,
    "Energy Department": 36,
-   "White House and executive orders": 15,
+   "White House and executive orders": 22,
    "Tariffs and trade": 1,
-   "India": 19,
-   "South Korea": 74,
-   "Europe new builds": 53,
-   "France and UK": 7,
-   "Middle East": 47,
+   "India": 21,
+   "South Korea": 76,
+   "Europe new builds": 52,
+   "France and UK": 6,
+   "Middle East": 24,
    "Asia newcomers": 26,
    "Canada SMRs": 5,
-   "Big tech power deals": 55,
-   "Iran": 33,
-   "North Korea": 80,
-   "War zones": 25,
+   "Big tech power deals": 56,
+   "Iran": 32,
+   "North Korea": 100,
+   "War zones": 17,
    "AUKUS and navies": 20,
    "Weapons programs": 14,
    "Stockpiles and reserves": 14,
    "Sprott trust": 4,
-   "Uranium price": 14,
+   "Uranium price": 42,
    "US policy": 0,
    "Lawsuits and investigations": 71,
-   "Workers and jobs": 15,
+   "Workers and jobs": 16,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
    "Federal Register (uranium)": 6,
@@ -203615,9 +203689,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 19:21",
-  "total": 406,
-  "week": 350,
+  "updated": "2026-11-23 20:01",
+  "total": 409,
+  "week": 352,
   "places": {
    "Uranium price": 42,
    "World Nuclear News": 27,
@@ -203626,7 +203700,7 @@
    "South Korea": 18,
    "Workers and jobs": 16,
    "AUKUS and navies": 15,
-   "PJM grid": 13,
+   "PJM grid": 14,
    "Namibia": 11,
    "Susquehanna": 10,
    "ERCOT grid": 10,
@@ -203634,7 +203708,7 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-23 19:21",
+   "at": "2026-11-23 19:51",
    "sources": {
     "Cigar Lake": 5,
     "McArthur River / Key Lake": 2,
@@ -203646,11 +203720,11 @@
     "Westinghouse": 7,
     "Kazakhstan": 0,
     "Niger": 5,
-    "Namibia": 10,
+    "Namibia": 11,
     "Russia supply": 1,
-    "Piketon": 11,
-    "HALEU": 10,
-    "Wyoming ISR": 26,
+    "Piketon": 13,
+    "HALEU": 9,
+    "Wyoming ISR": 19,
     "South Texas ISR": 2,
     "White Mesa / Utah": 10,
     "Rare earths (Energy Fuels)": 17,
@@ -203660,34 +203734,34 @@
     "Susquehanna": 2,
     "Comanche Peak": 3,
     "PJM grid": 8,
-    "ERCOT grid": 9,
+    "ERCOT grid": 10,
     "Data-center nuclear deals": 9,
     "Japan restarts": 4,
     "China new builds": 5,
-    "Congress and laws": 45,
+    "Congress and laws": 31,
     "NRC decisions": 12,
     "Energy Department": 36,
-    "White House and executive orders": 15,
+    "White House and executive orders": 22,
     "Tariffs and trade": 1,
-    "India": 19,
-    "South Korea": 74,
-    "Europe new builds": 53,
-    "France and UK": 7,
-    "Middle East": 47,
+    "India": 21,
+    "South Korea": 76,
+    "Europe new builds": 52,
+    "France and UK": 6,
+    "Middle East": 24,
     "Asia newcomers": 26,
     "Canada SMRs": 5,
-    "Big tech power deals": 55,
-    "Iran": 33,
-    "North Korea": 80,
-    "War zones": 25,
+    "Big tech power deals": 56,
+    "Iran": 32,
+    "North Korea": 100,
+    "War zones": 17,
     "AUKUS and navies": 20,
     "Weapons programs": 14,
     "Stockpiles and reserves": 14,
     "Sprott trust": 4,
-    "Uranium price": 14,
+    "Uranium price": 42,
     "US policy": 0,
     "Lawsuits and investigations": 71,
-    "Workers and jobs": 15,
+    "Workers and jobs": 16,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
     "Federal Register (uranium)": 6,
@@ -204269,6 +204343,7 @@
   "06c0ff00fa161dd2",
   "29f141fd08778bc3",
   "9e331cf926161f76",
+  "85de31670d4daf9d",
   "0c3ada20fae5f894",
   "c10f62c3161fa59d",
   "97e33afa5909ea24",
@@ -204284,6 +204359,7 @@
   "f88ba68b2c94d1a7",
   "dfc77f4fe94ea6ba",
   "d4097d0d8db37e23",
+  "68240c37371f3e26",
   "c71238280e152d73",
   "9e7ebdf62031eeaf",
   "5298ad87eeddc34f",
@@ -204331,8 +204407,7 @@
   "dbd18bd6c4654ec8",
   "6c752481de5345ed",
   "0d77f1d2373bb03d",
-  "c73b8f1be49ed29e",
-  "85de31670d4daf9d"
+  "c73b8f1be49ed29e"
  ],
  "panic_log": [
   {
@@ -204373,7 +204448,7 @@
   }
  ],
  "memory_view": {
-  "events": 1553,
+  "events": 1555,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -204467,14 +204542,6 @@
    }
   },
   "watch": [
-   {
-    "date": "2026-12-09",
-    "ticker": "CCJ",
-    "what": "FOMC rate decision; broad risk-off or risk-on move that can drive the uranium and nuclear names with it.",
-    "by": "macro",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
    {
     "date": "2026-12-09",
     "ticker": "TLN",
@@ -204940,6 +205007,14 @@
     "surfaced": false
    },
    {
+    "date": "2029-01-01",
+    "ticker": "CEG",
+    "what": "Quad Cities reactor relicensing (per desk note); possible power-deal driver",
+    "by": "scout",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
     "date": "2032-12-31",
     "ticker": "CEG",
     "what": "Did CEG deliver? They promised on 2026-11-09: Deliver Calvert Cliffs 190 MW capacity expansion for Amazon",
@@ -204949,24 +205024,6 @@
    }
   ],
   "recent": [
-   {
-    "date": "2026-11-23",
-    "ticker": "BWXT",
-    "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal - Investing.com",
-    "type": "contract_deal",
-    "r0": 6.71,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-23",
-    "ticker": "BWXT",
-    "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com India",
-    "type": "contract_deal",
-    "r0": 6.71,
-    "r5": null,
-    "r20": null
-   },
    {
     "date": "2026-11-23",
     "ticker": "BWXT",
@@ -205305,6 +205362,24 @@
     "ticker": "VST",
     "title": "NRC issues its guide for licensing reactor designs already authorized by the Energy Department or the military",
     "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-24",
+    "ticker": "CEG",
+    "title": "PJM Consumer Advocates, Monitor Request 2029/30 Auction be Delayed",
+    "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-24",
+    "ticker": "TLN",
+    "title": "PJM Consumer Advocates, Monitor Request 2029/30 Auction be Delayed",
+    "type": "intel_disruption",
     "r0": null,
     "r5": null,
     "r20": null
@@ -205665,7 +205740,16 @@
    "next": "Log as rejected for now. If revisited, test against a pre-set threshold instead of one chosen after seeing results."
   }
  ],
- "research_queue": [],
+ "research_queue": [
+  {
+   "q": "Questioner: Pull the PJM board/FERC docket for the 2029/30 auction delay request and record the decision date; then compare TLN's moves in the sessions before and after that decision against the $354.24 support zone.",
+   "date": "2026-11-23"
+  },
+  {
+   "q": "Questioner: Pull the Form 4 for the Nov 17 Berryman sale and check the footnotes for a 10b5-1 plan adoption date; if the plan was adopted well before the sale and the sale matches a schedule, file it as planned, otherwise treat it as open-market and recount TLN's insider net.",
+   "date": "2026-11-23"
+  }
+ ],
  "research_candidates": [
   {
    "key": "open_fill == True",
@@ -205786,7 +205870,7 @@
    }
   ]
  },
- "dossier_at": 1795479667.8368392,
+ "dossier_at": 1795481519.0287662,
  "sector_prices": {
   "_at": 1795466680.0529685,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -205844,85 +205928,85 @@
    "name": "Cameco",
    "price": 61.49,
    "week_pct": -6.82,
-   "built": "2026-11-23 19:21"
+   "built": "2026-11-23 19:51"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.78,
    "week_pct": -8.57,
-   "built": "2026-11-23 19:21"
+   "built": "2026-11-23 19:51"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.85,
    "week_pct": -4.57,
-   "built": "2026-11-23 19:21"
+   "built": "2026-11-23 19:51"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.77,
    "week_pct": -7.33,
-   "built": "2026-11-23 19:21"
+   "built": "2026-11-23 19:52"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.22,
    "week_pct": -13.58,
-   "built": "2026-11-23 19:21"
+   "built": "2026-11-23 19:52"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 86.8,
    "week_pct": -11.0,
-   "built": "2026-11-23 19:21"
+   "built": "2026-11-23 19:52"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.71,
    "week_pct": -0.95,
-   "built": "2026-11-23 19:21"
+   "built": "2026-11-23 19:52"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 251.76,
    "week_pct": -9.38,
-   "built": "2026-11-23 19:21"
+   "built": "2026-11-23 19:52"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 123.81,
    "week_pct": -4.88,
-   "built": "2026-11-23 19:21"
+   "built": "2026-11-23 19:52"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 365.03,
    "week_pct": 1.47,
-   "built": "2026-11-23 19:21"
+   "built": "2026-11-23 19:52"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-23 19:21"
+   "built": "2026-11-23 19:52"
   }
  ],
- "heartbeat": "2026-11-23 19:20",
+ "heartbeat": "2026-11-23 20:01",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 134,
+ "_pushed_feed": 137,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -206034,19 +206118,19 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 63,
-   "used": 59,
+   "asked": 66,
+   "used": 62,
    "notes": {
     "TLN Deals and contracts": 1,
     "CCJ Deals and contracts": 18,
     "BWXT Deals and contracts": 11,
-    "SECTOR Government and laws": 17,
-    "UUUU Deals and contracts": 14,
+    "SECTOR Government and laws": 18,
+    "UUUU Deals and contracts": 16,
     "SECTOR Countries": 16,
-    "CEG Deals and contracts": 9,
+    "CEG Deals and contracts": 10,
     "NXE Legal": 1,
     "NXE Deals and contracts": 1,
-    "DNN Deals and contracts": 1,
+    "DNN Deals and contracts": 2,
     "BWXT Legal": 1,
     "LEU Deals and contracts": 5,
     "UEC Deals and contracts": 1,
@@ -206054,7 +206138,7 @@
     "SECTOR Uranium market": 2,
     "CCJ Legal": 1,
     "CEG Legal": 1,
-    "VST Deals and contracts": 4
+    "VST Deals and contracts": 5
    },
    "since": "2026-11-23"
   },
@@ -206089,8 +206173,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 10,
-   "used": 10,
+   "asked": 11,
+   "used": 11,
    "notes": {
     "BWXT Deals and contracts": 2,
     "BWXT Snapshot": 2,
@@ -206099,7 +206183,7 @@
     "UEC Snapshot": 1,
     "UEC Deals and contracts": 1,
     "SECTOR Uranium market": 2,
-    "TLN Snapshot": 2,
+    "TLN Snapshot": 3,
     "TLN What history says": 2,
     "CCJ Snapshot": 1,
     "CCJ Deals and contracts": 1,
@@ -206124,7 +206208,7 @@
     "VST What history says": 1,
     "VST Leadership and insiders": 1,
     "TLN Deals and contracts": 1,
-    "TLN Leadership and insiders": 1
+    "TLN Leadership and insiders": 2
    },
    "since": "2026-11-23"
   },
@@ -206157,15 +206241,15 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 9,
-   "used": 9,
+   "asked": 10,
+   "used": 10,
    "notes": {
     "SECTOR Uranium market": 8,
     "BWXT Snapshot": 3,
     "CCJ Snapshot": 1,
     "UUUU Snapshot": 1,
-    "SECTOR Government and laws": 6,
-    "TLN Snapshot": 3,
+    "SECTOR Government and laws": 7,
+    "TLN Snapshot": 4,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1
    },
@@ -206196,14 +206280,14 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 9,
-   "used": 9,
+   "asked": 10,
+   "used": 10,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 2,
     "BWXT Snapshot": 2,
     "SECTOR Uranium market": 3,
-    "TLN Snapshot": 2,
+    "TLN Snapshot": 3,
     "TLN Legal": 1,
     "BWXT Legal": 1,
     "BWXT Leadership and insiders": 1,
@@ -206212,7 +206296,8 @@
     "UEC Leadership and insiders": 1,
     "CCJ Price behavior": 1,
     "SECTOR Rules the bot follows from its discoveries": 1,
-    "TLN Price behavior": 1
+    "TLN Price behavior": 2,
+    "TLN Discoveries": 1
    },
    "since": "2026-11-23"
   },
@@ -206235,19 +206320,19 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 4,
-   "used": 4,
+   "asked": 5,
+   "used": 5,
    "notes": {
-    "TLN Snapshot": 3,
-    "TLN News": 3,
+    "TLN Snapshot": 4,
+    "TLN News": 4,
     "coming_up": 1,
     "BWXT Snapshot": 1,
     "BWXT News": 1,
     "BWXT Legal": 1,
     "CCJ Snapshot": 1,
-    "TLN Leadership and insiders": 2,
+    "TLN Leadership and insiders": 3,
     "CCJ Legal": 1,
-    "TLN Legal": 1
+    "TLN Legal": 2
    },
    "since": "2026-11-23"
   },
@@ -208077,6 +208162,33 @@
    "answer": "I checked the desk files for the PJM December capacity-auction delay and found nothing confirming a decision. The only dated reference is the Nov 30 expiry on our TLN resting order, which falls before any known auction timing. Since TLN is about 2.9% above our buy level and the basket is below its 10-day average, the order should not sit live on an unresolved regulatory question.",
    "verdict": "relevant",
    "action": "watch"
+  },
+  {
+   "t": "2026-11-23 20:01",
+   "question": "Has anyone actually confirmed the status of the PJM December 2029/30 capacity-auction delay request? The 'pullback opportunity' headline does not answer it, and it is the main earnings driver for Talen.",
+   "kind": "unexplained",
+   "asked": "macro",
+   "answer": "I checked the desk files for the PJM December 2029/30 capacity-auction delay and found no confirmed decision. The only item is the 'PJM Consumer Advocates, Monitor Request 2029/30 Auction be Delayed' headline, which is a request, not a ruling. The 'pullback opportunity' piece doesn't settle it, so I'm treating the outcome as open. For TLN, that means the $355.66 resting buy is sitting on an unresolved catalyst, which is a reason to keep it canceled or at least not add to it, not a reason to rely on it.",
+   "verdict": "relevant",
+   "action": "research"
+  },
+  {
+   "t": "2026-11-23 20:01",
+   "question": "TLN is up 9.6% on the day while the basket is still below its 10-day average, so the no-new-buys rule applies. Is the resting order at $355.66 still a live plan, or should it be canceled now instead of waiting to its Nov 30 expiry?",
+   "kind": "missed",
+   "asked": "risk",
+   "answer": "The basket is still below its 10-day average, so the no-new-buys rule applies, and TLN has run about 2.6% above our resting bid at $355.66 after a 9.6% bounce. A bid left in place into a shaky group can fill on the way back down after a news pop, which our notes warn about. I agree with the Macro Analyst that the PJM auction-delay outcome is still open, so the order is resting on an unresolved catalyst; I'd cancel it now rather than wait for Nov 30.",
+   "verdict": "relevant",
+   "action": "tell_owner"
+  },
+  {
+   "t": "2026-11-23 20:01",
+   "question": "TLN's COO Brad Berryman sold about $19.8M of stock on Nov 17 at roughly $345-365. Is that a planned 10b5-1 sale or an open-market sale, and does it change how we read the insider picture?",
+   "kind": "odd",
+   "asked": "investigator",
+   "answer": "Brad Berryman's Nov 17 sale is about $19.8M of TLN stock, but the desk files don't record whether it was a planned 10b5-1 sale or open-market, so I can't classify it from what we have. That matters because our rule treats open-market sales as meaningful, and TLN's yearly insider net is already -$23M. I agree with the Risk Manager that the TLN resting buy should be canceled given the basket rule and the unresolved PJM auction delay, and the insider question doesn't change that.",
+   "verdict": "unsure",
+   "action": "research"
   }
  ],
  "reactor_view": {
@@ -208350,148 +208462,189 @@
  ],
  "shadow": [],
  "movers": {
-  "at": 1795474860.9136038,
-  "time": "2026-11-23 18:00",
+  "at": 1795482093.0003085,
+  "time": "2026-11-23 20:01",
   "list": [
    {
     "ticker": "LEU",
     "core": true,
-    "volatility_pct": 115,
+    "volatility_pct": 113,
     "why": [
-     "-53% under its 2-month high"
+     "-56% under its 2-month high",
+     "-22% in 5 days"
     ],
-    "price": 86.81,
+    "price": 81.43,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "UEC",
     "core": true,
-    "volatility_pct": 96,
+    "volatility_pct": 87,
     "why": [
-     "-52% under its 2-month high"
+     "-57% under its 2-month high",
+     "-20% in 5 days"
     ],
-    "price": 5.84,
+    "price": 5.3,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "UUUU",
     "core": true,
-    "volatility_pct": 86,
+    "volatility_pct": 83,
     "why": [
-     "-65% under its 2-month high"
+     "-66% under its 2-month high",
+     "-25% in 5 days"
     ],
-    "price": 5.22,
+    "price": 4.96,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "VST",
+    "core": true,
+    "volatility_pct": 81,
+    "why": [
+     "-31% under its 2-month high"
+    ],
+    "price": 115.25,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "MOD",
     "core": false,
-    "volatility_pct": 154,
+    "volatility_pct": 150,
     "why": [
-     "-31% under its 2-month high"
+     "-37% under its 2-month high"
     ],
-    "price": 137.39,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "NVDA",
-    "core": false,
-    "volatility_pct": 137,
-    "why": [
-     "-31% under its 2-month high"
-    ],
-    "price": 165.05,
+    "price": 124.67,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "AMD",
     "core": false,
-    "volatility_pct": 133,
+    "volatility_pct": 131,
     "why": [
-     "-30% under its 2-month high"
+     "-35% under its 2-month high",
+     "-21% in 5 days"
     ],
-    "price": 453.46,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "MU",
-    "core": false,
-    "volatility_pct": 132,
-    "why": [
-     "-36% under its 2-month high"
-    ],
-    "price": 707.7,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "VRT",
-    "core": false,
-    "volatility_pct": 127,
-    "why": [
-     "-36% under its 2-month high"
-    ],
-    "price": 186.35,
+    "price": 424.39,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "OKLO",
     "core": false,
-    "volatility_pct": 126,
+    "volatility_pct": 124,
     "why": [
-     "-52% under its 2-month high"
+     "-54% under its 2-month high",
+     "-17% in 5 days"
     ],
-    "price": 20.77,
+    "price": 19.85,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "VRT",
+    "core": false,
+    "volatility_pct": 119,
+    "why": [
+     "-43% under its 2-month high",
+     "-18% in 5 days"
+    ],
+    "price": 166.24,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "SMR",
     "core": false,
-    "volatility_pct": 115,
+    "volatility_pct": 112,
     "why": [
-     "-68% under its 2-month high",
-     "-17% in 5 days"
+     "-70% under its 2-month high",
+     "-28% in 5 days"
     ],
-    "price": 3.53,
+    "price": 3.36,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
-    "ticker": "MTZ",
+    "ticker": "MU",
     "core": false,
-    "volatility_pct": 105,
+    "volatility_pct": 110,
     "why": [
-     "-35% under its 2-month high"
+     "-46% under its 2-month high",
+     "-24% in 5 days"
     ],
-    "price": 159.44,
+    "price": 594.51,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "NNE",
     "core": false,
-    "volatility_pct": 104,
+    "volatility_pct": 103,
     "why": [
-     "-51% under its 2-month high"
+     "-53% under its 2-month high",
+     "-18% in 5 days"
     ],
-    "price": 9.47,
+    "price": 9.1,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "MTZ",
+    "core": false,
+    "volatility_pct": 98,
+    "why": [
+     "-41% under its 2-month high",
+     "-21% in 5 days"
+    ],
+    "price": 144.71,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "NVT",
     "core": false,
-    "volatility_pct": 100,
+    "volatility_pct": 93,
     "why": [
-     "-35% under its 2-month high"
+     "-41% under its 2-month high"
     ],
-    "price": 111.92,
+    "price": 101.84,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "ORCL",
+    "core": false,
+    "volatility_pct": 84,
+    "why": [
+     "-38% under its 2-month high",
+     "-19% in 5 days"
+    ],
+    "price": 101.19,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "GEV",
+    "core": false,
+    "volatility_pct": 73,
+    "why": [
+     "-32% under its 2-month high"
+    ],
+    "price": 699.33,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "MP",
     "core": false,
-    "volatility_pct": 75,
+    "volatility_pct": 73,
     "why": [
-     "-36% under its 2-month high"
+     "-40% under its 2-month high"
     ],
-    "price": 35.54,
+    "price": 33.95,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "TSM",
+    "core": false,
+    "volatility_pct": 71,
+    "why": [
+     "-34% under its 2-month high",
+     "-20% in 5 days"
+    ],
+    "price": 318.71,
     "note": "big moves 5-7x more likely here, in either direction"
    }
   ]
@@ -208609,7 +208762,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-23 19:20",
+ "watchdog_last": "2026-11-23 20:01",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

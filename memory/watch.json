@@ -160,6 +160,22 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Check whether the PJM December 2029/30 capacity-auction delay request has been decided, and whether the $354.24 support zone held before the $355.66 resting buy expires.",
+"by": "macro",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy at $355.66 expires; confirm whether PJM 2029/30 capacity auction delay has been decided",
+"by": "risk",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
@@ -244,6 +260,14 @@
 "ticker": "TLN",
 "what": "PJM December capacity auction delay decision (the main earnings driver for Talen; also relevant to VST's East segment)",
 "by": "investigator",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "UUUU",
+"what": "White Mesa Mill one-million-pound uranium processing campaign begins",
+"by": "scout",
 "written": "2026-11-23",
 "surfaced": false
 },
@@ -763,6 +787,14 @@
 "date": "2029-01-01",
 "ticker": "VST",
 "what": "Constellation's Quad Cities reactors come up for relicensing in 2029; a sector-wide relicensing item to recheck then, not a near-term catalyst.",
+"by": "scout",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2029-01-01",
+"ticker": "CEG",
+"what": "Quad Cities reactor relicensing (per desk note); possible power-deal driver",
 "by": "scout",
 "written": "2026-11-23",
 "surfaced": false

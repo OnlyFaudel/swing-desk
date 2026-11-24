@@ -26399,5 +26399,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "CEG",
+"date": "2026-11-24",
+"title": "PJM Consumer Advocates, Monitor Request 2029/30 Auction be Delayed",
+"type": "intel_disruption",
+"source": "Intel: RTO Insider",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "TLN",
+"date": "2026-11-24",
+"title": "PJM Consumer Advocates, Monitor Request 2029/30 Auction be Delayed",
+"type": "intel_disruption",
+"source": "Intel: RTO Insider",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]

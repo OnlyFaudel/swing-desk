@@ -13228,5 +13228,103 @@
 "nrc",
 "reactor"
 ]
+},
+{
+"id": "b2d68a84e9c063d3",
+"date": "2026-11-23",
+"ts": 1795434290,
+"title": "Prototype Fast Breeder Reactor (PFBR) at Kalpakkam achieves first criticality: What it means for India\u2019s nuclear energy plans",
+"summary": "",
+"outlet": "DD News",
+"link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNOXBIZzVZN3E3NjJmdjVYemhXTnUtMnlTR1psaDFHNWZBY25ZN1o1bDhFQnBjandzaFVOMWNLMGVuLTlCX2h0M2NwbFBvTVNzdHpkREthZnRaNjVUZE0xaFljV2dJVmtIZXhTT2ctZzFoVmNqVUJUa1lhVVlxclM1WjZGNlJzUWNzUE1Jd2JKZWFxUWZlMnkxR2ZfRm1KbWFMRzdja3lhVDZzLUw2Mm9Gallhdm12eGc4aElNNDhadGQyeG5tWkZKM0QwWmFManRrUHNaRnllQWc5ZGo1V3VNVw?oc=5",
+"place": "India",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.79,
+"score": 4.08,
+"echo_of": null,
+"w": [
+"achieves",
+"breeder",
+"criticality",
+"energy",
+"fast",
+"first",
+"india",
+"kalpakkam",
+"means",
+"nuclear",
+"pfbr",
+"plans",
+"prototype",
+"reactor",
+"what"
+]
+},
+{
+"id": "565c76a2ac1eaecc",
+"date": "2026-11-23",
+"ts": 1795473857,
+"title": "Energy Fuels Plans White Mesa Uranium Campaign",
+"summary": "",
+"outlet": "Wisevoter",
+"link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRi01M2JuRWRFVXRieHNiRUtfdXhmSzFaSHZKSGF3WkcxSUtMM0h6XzdrdVVWaWotVHNQQV9mRi1kUWFkb0NBdlpzdWRIQUFzS1FmR2ZrMlhERmU1VEtya3BiS2RJZ1otaXpYcThaSWc1OGNGRmx2d29jZlA2c2Rxck9RX3lWS2F4eVFhTm1B?oc=5",
+"place": "White Mesa / Utah",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.22,
+"score": 2.94,
+"echo_of": "92ab279e132dea09",
+"w": [
+"campaign",
+"energy",
+"fuels",
+"mesa",
+"plans",
+"uranium",
+"white"
+]
+},
+{
+"id": "68240c37371f3e26",
+"date": "2026-11-24",
+"ts": 1795481372,
+"title": "PJM Consumer Advocates, Monitor Request 2029/30 Auction be Delayed",
+"summary": "",
+"outlet": "RTO Insider",
+"link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbUJFeGkyRjFWT25KbERkNXhweVVZZzN2NnV4M2x3YlFJbEhITFdTTlUxektPRWhSSVcxbmhqNWpuVHdfVU12MEUtaDdsbUliSnJJNlJ4YmJ2TldfWWRyOVBtdS11WUxDMGVTaE5lUWZNWUpyc0FIUkdUMjFjNnlZbEwyTkp6UzYxc2xzbDdqbU1IaklsYktqT2M2Wml3TTVwVEE?oc=5",
+"place": "PJM grid",
+"tickers": [
+"CEG",
+"TLN",
+"VST"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.64,
+"score": 5.78,
+"echo_of": null,
+"w": [
+"2029",
+"advocates",
+"auction",
+"consumer",
+"delayed",
+"monitor",
+"pjm",
+"request"
+]
 }
 ]
