@@ -1407,54 +1407,6 @@
  },
  "news_feed": [
   {
-   "ticker": "UUUU",
-   "source": "Google News",
-   "title": "Robbins LLP Reminds Investors it is Investigating the Officers and Directors of Energy Fuels Inc. (UUUU) on Behalf of Shareholders - PR Newswire",
-   "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPeEFlTnowSzhJT2RUUnBEcU1mZFVuNTNPTjdxcGY3eHNUR1ZtLS1ISlhJVUVoVDFzWUo2WmtkRFJoMnREZGhtRkVQSTczTVp2b1ptZi1YVTZGUElyMVJhUWp1b3J0a3owT1Mxb0hmWGdScm8zMkhWM0tPZ1Q4dFVnMW55TmxYSm9oUG9EQ3FTRWZoRm9NTVI4YlN4LVhvemtaY21jQkVDdzIwUDdUSGlZR1lBSUc2aW42RlZ5UXBzd0o1c3FnNlgyWS1NS0JnUkxibUNxOU9rVFJTN3NXSDFnU0JMS0NhZzB2MmdJd3owbmJyeTh5WklzMW90cHJqQzNWakpzZ1IxMkZNQzk3R1dYVQ?oc=5",
-   "ts": 1795438800,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Law-firm solicitation notice; investigation details not disclosed, no new company facts"
-  },
-  {
-   "ticker": "BWXT",
-   "source": "Google News",
-   "title": "BWX Technologies awarded manufacturing qualification contracts by Westinghouse - TipRanks",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRkxOcUQ3Y05kNzhyX2RMcUEyQ3ltaHBNblpCN1dkNEc2X0FJbWJNVi1fZDVOc2NLM3pFaFJWeE1rREg0Tk4xWFVWSTZEdFR4RDNuZ2plUmdtcW5nUk03ZWhaSjlNXzIxaWhVUlRoelFrakVfMWJkM0djaUhkMkN5RFhueGNycXprUml1cjQzbmZLUHYtV0dZai10ZmlFZHE3aWZLUzlhWmhIZldqUE13aUx4cHFmSE10R25ySkpNOWNkeTRhR0lr?oc=5",
-   "ts": 1795439131,
-   "materiality": 6,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "contract_deal",
-   "why": "New Westinghouse manufacturing qualification contracts; a real but modest-sized award"
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Cameco Corporation: Contracted Nuclear Demand Supports Long-Term Growth Amid Near-Term Cost Pressures - kalkine.co.uk",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSFg2WVZRbTdYY2dURkIxSy14N2JKSGJiLTBtQ2hiX2JVeXh0UFY1ek04cEpQS1E0MHhlWVhuc1FoMHh4LTFMMXFjaGRzVl9PQmF4Uy00T1pDTWlIaDlEdTFFT1JCUEhfUE1DVG0wOVFXMEZpR0F6WWtGZzVnczlnVXZEN282d2M1TG8tNXVUWmxKYVZmV0ZuWmZaRE04dHFfUlpiVUo4dzZMSVZXVWRSQ3htSFE1YWZpLWdzZUlqbkU5RkVIYkdWQkRfVUtOb3BNYVNySg?oc=5",
-   "ts": 1795439459,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Generic outlook piece on contracted demand; nothing new, rehashes known thesis"
-  },
-  {
-   "ticker": "BWXT",
-   "source": "Google News",
-   "title": "Westinghouse\u2019s reactor design has 14 units under construction. BWXT is qualifying to make parts. - Stock Titan",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQcUszOUtmMVYtT0xZOVl4bW4yWEowczVQdUtrTEZJVjhrU0wtdUJWWU1RSXk3cFhqb25PQmtCQkc4WUdWa2s1YzY1aE5ENTVua29DcUw0ZVBaaVYzNzV3SkpuWlk0aThVU2NoYWFNWmxVLWVJck5UTDZleUl6M3JldVV5d2p4bjVRQjYwX3gweUdNTDRERWNkM1dBdW9NUnlwR044X2xZSjlhQmVOUU9VNFBRZ3lKUHVnRXptbXV3?oc=5",
-   "ts": 1795438800,
-   "materiality": 4,
-   "novelty": "follow_up",
-   "direction": "up",
-   "event_type": "contract_deal",
-   "why": "Parts qualification for Westinghouse units is a real but incremental, multi-year step"
-  },
-  {
    "ticker": "BWXT",
    "source": "Yahoo Finance",
    "title": "Westinghouse Canada Awards BWXT AP1000\u00ae Manufacturing Qualification Contracts",
@@ -4405,6 +4357,54 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Opinion piece on USA Rare Earth valuation; not new information about Energy Fuels."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News: \"Centrus Energy\"",
+   "title": "Centrus Energy Investor Day Set for Dec. 7 in Piketon, Ohio - kalkine.com",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbld5WHVNQUZkNnozcUdCeEdKdUhUT184dnh0WXZkdnBJbGgyOEs2VlpvY0I1cG04eE5QdUdnd3FRWlI0TDA4a19vbWdPa0R5bFA1dDZpQWdzQ3lfOEJ4UThjckRVR3BBRTMzY1FHVG9UaHVKeDdCTXFVTlhCQnNIWEFLUkIxb2w4WTg3UTZHTjg0b2pKN0NQc0RKRjM?oc=5",
+   "ts": 1795523244,
+   "materiality": 4,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Investor day announcement; a scheduled event, but usually low-impact on its own."
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News",
+   "title": "Midterms provide clarity on data center development: Vistra CEO - Utility Dive",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPOWc1UUNFRzlXVjVFYmpuNmN6ejFOenE0SzhYYl9QNzJ1c3o5NmtWOEthS0hFWDVuNTQyM0VkWUVjWS00TWZ3WEVkbDk0NzE2QlNFaVA5ZjNtYkttalQ4aTR1cU5IRmNlZWh4X2ZKejgyRWc3NGNkSnVLaVVtUF9Va2xVSU8?oc=5",
+   "ts": 1795540267,
+   "materiality": 4,
+   "novelty": "follow_up",
+   "direction": "neutral",
+   "event_type": "policy_tariff",
+   "why": "CEO commentary on midterm election clarity for data centers; general, not new facts."
+  },
+  {
+   "ticker": "VST",
+   "source": "Yahoo Finance",
+   "title": "Midterms provide clarity on data center development: Vistra CEO",
+   "link": "https://www.utilitydive.com/news/vistra-midterms-data-center-ercot-pjm/875626/?.tsrc=rss",
+   "ts": 1795535695,
+   "materiality": 5,
+   "novelty": "follow_up",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "CEO says data center queues were overstated; clarifies demand but not new contracts."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "Cameco Corporation TSX:CCO in Focus Today: S&P/TSX Composite Index, Large Cap and Value Stock as Investors Watch the Next Catalyst - kalkine.ca",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNRFR6a09fV2VZZ3M2Tm8zV0VtYU5ZZm1zTnlkNF9fUWdKbVkxM0dpSVRLZVJWd0JpUVBsTm81VWhRczVUSWdSdjJ0S2ZyV3Y3TmQ2eDNHOWVkRGtYbnkxTmZOQ0hEaGRpcV81elRBSV9abTdXZTVjeEZWdU5zcjFWQ0VtT3dRZ210U0JQeWpLbm1WT0hlZTNIX1pSRlhqVHZoeEI1cWRXVVYxc2tEOU9rNnFsamlUTzcxYXBuZTEzSWxtdHlVZ0k3bnNjTEJ4czljWlR6cVhkUEgyT3pfLWZIZXlHZlU2WkhBZTdueA?oc=5",
+   "ts": 1795540380,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic 'in focus today' listicle-style recap with no new company information."
   }
  ],
  "reviews": [
@@ -6007,16 +6007,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.19755,
+  "day_usd": 0.19927,
   "month": "2026-11",
-  "month_usd": 0.92897,
-  "total_usd": 0.92897,
+  "month_usd": 0.93069,
+  "total_usd": 0.93069,
   "by_role": {
    "macro": 0.08577,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.0684,
-   "scout": 0.10413,
+   "scout": 0.10585,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -6122,20 +6122,20 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 59.27,
-  "NXE": 6.73,
-  "UEC": 5.62,
+  "CCJ": 59.23,
+  "NXE": 6.68,
+  "UEC": 5.61,
   "DNN": 1.72,
   "UUUU": 4.99,
-  "LEU": 83.47,
-  "BWXT": 113.96,
-  "CEG": 245.55,
-  "VST": 120.35,
-  "TLN": 351.82,
-  "SPY": 717.31,
-  "SSO": 60.28
+  "LEU": 83.91,
+  "BWXT": 113.86,
+  "CEG": 245.4,
+  "VST": 120.0,
+  "TLN": 349.94,
+  "SPY": 717.61,
+  "SSO": 60.35
  },
- "last_cycle": "2026-11-24 12:09 ET",
+ "last_cycle": "2026-11-24 12:19 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -6160,10 +6160,10 @@
   ]
  },
  "brakes": {
-  "equity": 1008.38,
-  "day_pct": -2.05,
-  "week_pct": 0.79,
-  "drawdown_pct": -4.36,
+  "equity": 1008.79,
+  "day_pct": -2.01,
+  "week_pct": 0.83,
+  "drawdown_pct": -4.33,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -8049,6 +8049,42 @@
   [
    "2026-11-24 12:09",
    1008.38
+  ],
+  [
+   "2026-11-24 12:10",
+   1012.18
+  ],
+  [
+   "2026-11-24 12:11",
+   1011.78
+  ],
+  [
+   "2026-11-24 12:13",
+   1010.07
+  ],
+  [
+   "2026-11-24 12:14",
+   1010.08
+  ],
+  [
+   "2026-11-24 12:15",
+   1010.6
+  ],
+  [
+   "2026-11-24 12:16",
+   1010.08
+  ],
+  [
+   "2026-11-24 12:17",
+   1008.63
+  ],
+  [
+   "2026-11-24 12:18",
+   1008.25
+  ],
+  [
+   "2026-11-24 12:19",
+   1008.79
   ]
  ],
  "nowcast": {
@@ -52555,7 +52591,7 @@
     0.8917
    ]
   },
-  "time": "2026-11-24 12:09"
+  "time": "2026-11-24 12:19"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -52613,6 +52649,7 @@
   "ed1aa0f23535adaa",
   "efa3269c9fa1c644",
   "3b97ba80a72f6fe4",
+  "c2bfe85469484a37",
   "e87b1e4d61fe1cbd",
   "32cfd9ef3704009d",
   "b98ba2f840724229",
@@ -52631,10 +52668,10 @@
   "d39dc266a3b4dae2",
   "46ef5d40f9b97a80",
   "2ac262d1779b4fad",
-  "1005c86f35a3d1c3",
   "1d91a3cc917720fa",
-  "5d0c7240e494c5f9",
+  "1005c86f35a3d1c3",
   "d4097d0d8db37e23",
+  "5d0c7240e494c5f9",
   "898bce48a6f14aa6",
   "eb0139f21af40690",
   "a454f891b1c31853",
@@ -52644,6 +52681,7 @@
   "df371025b77dc13a",
   "ad760b57be87fe67",
   "52e6c78d06498482",
+  "515406ebde80edc1",
   "9f80c9fee3eed575",
   "fef3943ac40abc8e",
   "9dbb51b520d076e7",
@@ -52659,8 +52697,8 @@
   "d7c07a39ed1d0a97",
   "11145b715ac0216e",
   "d944f1045c86ab02",
-  "67ae6099beae1657",
   "66abfa595ddf0659",
+  "67ae6099beae1657",
   "c3a24ba02dad5302",
   "b07158a571deea5e",
   "0f1f809a37df564a",
@@ -52777,6 +52815,7 @@
   "1b180f9c668466ea",
   "591ad377f04357ca",
   "4959c9e24111e1e4",
+  "cf312da3056cac36",
   "f5de3767d3f1b3c9",
   "c71238280e152d73",
   "e4d002d912973043",
@@ -52980,9 +53019,10 @@
   "b2e981fc7a2e7302",
   "8b6a4af8fda47884",
   "47c56c7f6c4b5614",
-  "2a89ac3dc67ad332"
+  "2a89ac3dc67ad332",
+  "a128e5980c57146c"
  ],
- "news_slow_at": 1795539578.0941978,
+ "news_slow_at": 1795540238.7118206,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -208496,7 +208536,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 12:09",
+  "updated": "2026-11-24 12:19",
   "total": 506,
   "week": 426,
   "places": {
@@ -209172,14 +209212,15 @@
   "43fb66d513a66eee",
   "29f141fd08778bc3",
   "95cbeeb9e5e1fd0d",
-  "85de31670d4daf9d",
   "c10f62c3161fa59d",
+  "85de31670d4daf9d",
   "26652cf90e01656a",
   "67ae0f09ed3add32",
   "21f82ecada6221ca",
   "8080c5e15c173c5b",
   "f815e45da305cee7",
   "97e33afa5909ea24",
+  "515517f776442fe4",
   "9e7ebdf62031eeaf",
   "85595f527d301d07",
   "f3afa8d6a24239f3",
@@ -209216,7 +209257,6 @@
   "38d326870f86784b",
   "30a860e8617961c8",
   "e0b3ad48c50895f3",
-  "b95ad295cbbaef38",
   "b371c50f261a21f0",
   "4bcec70e5161a23d",
   "36cbbee89c76a1f7",
@@ -209254,7 +209294,7 @@
   "dfc77f4fe94ea6ba",
   "68240c37371f3e26",
   "b2e981fc7a2e7302",
-  "515517f776442fe4"
+  "b95ad295cbbaef38"
  ],
  "panic_log": [
   {
@@ -211035,7 +211075,7 @@
    "built": "2026-11-24 11:59"
   }
  ],
- "heartbeat": "2026-11-24 12:09",
+ "heartbeat": "2026-11-24 12:19",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -211190,18 +211230,18 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 113.95500183105469,
-  "TLN": 351.8223876953125
+  "BWXT": 113.86,
+  "TLN": 349.935
  },
  "notes_audit": {
   "scout": {
-   "asked": 144,
-   "used": 133,
+   "asked": 148,
+   "used": 137,
    "notes": {
     "TLN Deals and contracts": 7,
-    "CCJ Deals and contracts": 36,
+    "CCJ Deals and contracts": 37,
     "BWXT Deals and contracts": 25,
-    "SECTOR Government and laws": 34,
+    "SECTOR Government and laws": 36,
     "UUUU Deals and contracts": 32,
     "SECTOR Countries": 27,
     "CEG Deals and contracts": 22,
@@ -211209,13 +211249,13 @@
     "NXE Deals and contracts": 6,
     "DNN Deals and contracts": 7,
     "BWXT Legal": 1,
-    "LEU Deals and contracts": 17,
+    "LEU Deals and contracts": 18,
     "UEC Deals and contracts": 3,
     "UUUU Legal": 14,
     "SECTOR Uranium market": 2,
-    "CCJ Legal": 5,
+    "CCJ Legal": 6,
     "CEG Legal": 2,
-    "VST Deals and contracts": 12,
+    "VST Deals and contracts": 14,
     "LEU Legal": 1,
     "VST Legal": 1
    },
@@ -211646,7 +211686,7 @@
    ],
    [
     "2026-11-24",
-    59.25
+    59.23
    ]
   ],
   "NXE": [
@@ -211768,7 +211808,7 @@
    ],
    [
     "2026-11-24",
-    6.73
+    6.68
    ]
   ],
   "UEC": [
@@ -211890,7 +211930,7 @@
    ],
    [
     "2026-11-24",
-    5.62
+    5.61
    ]
   ],
   "DNN": [
@@ -212012,7 +212052,7 @@
    ],
    [
     "2026-11-24",
-    1.72
+    1.71
    ]
   ],
   "UUUU": [
@@ -212256,7 +212296,7 @@
    ],
    [
     "2026-11-24",
-    83.47
+    84.35
    ]
   ],
   "BWXT": [
@@ -212378,7 +212418,7 @@
    ],
    [
     "2026-11-24",
-    113.96
+    113.89
    ]
   ],
   "CEG": [
@@ -212500,7 +212540,7 @@
    ],
    [
     "2026-11-24",
-    245.55
+    245.34
    ]
   ],
   "VST": [
@@ -212622,7 +212662,7 @@
    ],
    [
     "2026-11-24",
-    120.35
+    120.05
    ]
   ],
   "TLN": [
@@ -212744,7 +212784,7 @@
    ],
    [
     "2026-11-24",
-    351.82
+    350.08
    ]
   ]
  },
@@ -213318,6 +213358,16 @@
    "price": 4.99,
    "result": null,
    "why": "The plant and outage data show no new information for UUUU, which is a mill and uranium-price story rather than a reactor one. The basket is below its 10-day average and UUUU has no support level, so "
+  },
+  {
+   "role": "scout",
+   "ticker": "VST",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-24",
+   "price": 120.27,
+   "result": null,
+   "why": "Headline is a CEO comment that the interconnect queues were overstated, which is a known sector caveat. The desk notes show no new VST contract here; prior deal history suggests the stock responds to "
   }
  ],
  "after_sale": [],
@@ -216166,7 +216216,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 12:09",
+ "watchdog_last": "2026-11-24 12:19",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
