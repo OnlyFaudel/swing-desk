@@ -212,6 +212,13 @@ class Exec:
             except Exception as e:
                 ops.note_reject(self.st, CFG, notify, f"{t} stop: {e}")
                 time.sleep(0 if self.br.name == "sim" else 2)
+        px_now = market.INTRADAY[t].Close.iloc[-1] if market.INTRADAY.get(t) is not None else None
+        if px_now and stop >= px_now * 0.999 and not L.get("stop_moved"):
+            L["stop_moved"] = True  # the fill came in at/under the planned stop: honor the risk plan by exiting only if it keeps falling
+            new_stop = round(px_now * (1 - CFG.get("min_stop_room_pct", 0.75) / 100), 2)
+            notify(f"STOP MOVED {t}", f"Filled below the planned stop ${stop:.2f}; stop set at ${new_stop:.2f} instead of dumping at the market.", tags="warning")
+            L["stop"] = new_stop
+            return self.place_stop(t, new_stop)
         notify(f"STOP FAILED {t}: exiting", f"Could not place a stop at ${stop:.2f} twice, so the trade is being closed.",
                tags="rotating_light", priority="high")
         px = market.INTRADAY[t].Close.iloc[-1] if market.INTRADAY.get(t) is not None else L["stop"]
@@ -512,7 +519,9 @@ def arm(st, ex, prices, today, brk_state):
     cands = sorted(((c, t) for t, c in st["candidates"].items() if t in prices),
                    key=lambda x: prices[x[1]] / x[0]["entry"] - 1)  # closest to filling first
     # a price already at/below the stop means the level broke: a fill there is an instant stop-out, so don't rest it
-    cands = [(c, t) for c, t in cands if prices[t] > c["stop"]]
+    # Live leak 2026-11-20 (CEG): price $244.16 was already under the $247.99 buy and only 0.05% above the $244.04 stop. The limit
+    # filled instantly, the broker rejected a stop above the market price, and the bot dumped the shares. Need real room to the stop.
+    cands = [(c, t) for c, t in cands if prices[t] > c["stop"] * (1 + CFG.get("min_stop_room_pct", 0.75) / 100)]
     av = st.get("avoid", {})  # a discovery says this kind of news hurts this stock: no support-level buys until the date
     cands = [(c, t) for c, t in cands if av.get(t, {}).get("until", "") < str(today)]
     want = [t for c, t in cands][:max(free, 0)]
@@ -542,7 +551,7 @@ def arm(st, ex, prices, today, brk_state):
             if CFG["notify"]["orders_armed"] and not st["flags"].get(f"armednote:{t}:{c['created']}"):
                 st["flags"][f"armednote:{t}:{c['created']}"] = True
                 notify(f"ARMED {t}: buy ${c['entry']:.2f}",
-                       f"${dollars:.0f} resting above support ${c['zone']:.2f} (now ${prices[t]:.2f}, {c['dist_to_entry_pct']:+.1f}% away). "
+                       f"${dollars:.0f} resting above support ${c['zone']:.2f} (now ${prices[t]:.2f}, {(prices[t] / c['entry'] - 1) * 100:+.1f}% vs the buy price). "
                        f"Stop ${c['stop']:.2f}, target ${c['target']:.2f}, {c['reward_risk']}x. Valid to {c['valid_until']}. "
                        f"Trio sync size {sm:.2f}x ({'pulse up' if st['sync'].get('pulse_up') else 'pulse down'}).", tags="dart")
 
@@ -1593,6 +1602,19 @@ def comeback_buy(st, ex, today, brk_state, comebacks, cb):
     and stocks that dipped and did NOT come back showed no edge (-0.1% / +0.9%)."""
     if not comebacks or (brk_state.get("no_new_today") and not unleashed()):
         return
+    if cb.get("only_below_200d", True):
+        # Loss-cluster audit 2026-11-24: with the S&P ABOVE its 200-day average comebacks lost to the S&P in both eras
+        # (-2.74% / -0.82% over 20 days); below it they won big (+5.08% / +12.17%). Calm-market dips are noise.
+        tr = st.get("park_trend") or {}
+        if not tr.get("date") or tr["date"] < str(today - dt.timedelta(days=4)):
+            try:
+                import yfinance as yf
+                sc = yf.download("SPY", period="14mo", auto_adjust=True, progress=False)["Close"].dropna().squeeze()
+                tr = {"date": str(today), "above": float(sc.iloc[-1]) > float(sc.tail(200).mean())}
+            except Exception:
+                return
+        if tr.get("above"):
+            return
     book = st["book"]
     open_n = sum(1 for l in book["lots"].values() if (l.get("auto") or {}).get("qty", 0) > 1e-6 and l["auto"].get("setup") == "comeback")
     room = cb.get("max_open", 3) - open_n

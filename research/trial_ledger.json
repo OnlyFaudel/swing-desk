@@ -253,6 +253,10 @@
   "intraday_comeback": {
    "trials": 10,
    "verdict": "2026-11-24 (85 nuclear + related stocks, intraday low X% under yesterday's close but the close above yesterday's close, one per stock per 10 days, vs the S&P, 0.2% costs). X=4%: 10/15/20-day +1.27/+0.86/+1.93% (2008-18) and +0.72/+2.15/+2.13% (2019-26); X=6%: +2.18/+1.70/+3.80% and +0.87/+2.83/+3.59% (20-day t 2.3/1.9); X=8%: +0.62/+0.35/+5.15% and +3.84/+6.25/+8.18%. All 18 cells positive. Control (dipped 6% and closed down 3%+): -0.12% / +0.85%, so the comeback is what matters. 1- and 5-day holds were flat or negative: the payoff takes weeks. ADOPTED comeback (6%, 20 sessions, 10% size, max 3)."
+  },
+  "loss_cluster_audit_2026_11_24": {
+   "trials": 16,
+   "verdict": "Live audit: the only closed support trade (CEG, Nov 20) was an execution leak, not a strategy loss: a $247.99 buy limit was armed while CEG traded $244.16 (already under the buy, 0.05% above the $244.04 stop); it filled instantly at $244.12, the broker rejected a stop above the market ('stop price must be less than current price'), and the bot sold at market. Fixed: support buys need price >= stop + 0.75%, and a stop above the market is re-placed 0.75% under it instead of dumping. Backtest loss clusters (8 features x 2 eras): sharp-drop (1,154 trades, +1.47% vs S&P) has no bucket bad in both eras; weakest VIX<20 (-0.13/+0.44%). Comeback (392 trades, +3.68%): S&P above its 200-day -2.74%/-0.82% (bad both), below +5.08%/+12.17%; stock under its own 200-day +4.99/+7.11%; under $10 +7.76/+11.87%; VIX 30+ +5.54/+9.09%. ADOPTED comeback.only_below_200d."
   }
  }
 }
