@@ -5,7 +5,7 @@
 "what": "Placeholder only: no confirmed dated regulatory or contract event found in headlines; Orano Project IKE license review date not specified, so no real watch date can be set yet",
 "by": "investigator",
 "written": "2026-11-23",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2025-12-31",
@@ -21,7 +21,7 @@
 "what": "Q3 2026 financial statements and MD&A filed after North American close; review numbers and construction milestones against Rook I promises",
 "by": "investigator",
 "written": "2026-11-23",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-10",
@@ -29,7 +29,7 @@
 "what": "Q3 2026 conference call at 8:00 am ET covering Rook I construction progress and PCE exploration",
 "by": "investigator",
 "written": "2026-11-23",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-20",
@@ -37,7 +37,7 @@
 "what": "Confirm Salem 1 restart; it is 47 days into an outage that started 2026-10-04, so a further delay would be a bigger signal",
 "by": "engineer",
 "written": "2026-11-23",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-23",
@@ -45,6 +45,14 @@
 "what": "Czech National Assembly review of KHNP Dukovany contract termination (date unconfirmed; verify from source)",
 "by": "pm",
 "written": "2026-11-23",
+"surfaced": true
+},
+{
+"date": "2026-11-25",
+"ticker": "",
+"what": "Pre-Thanksgiving session: seasonal tendency is mildly positive for the S&P, but thin trading makes it a weak signal",
+"by": "macro",
+"written": "2026-11-24",
 "surfaced": false
 },
 {
@@ -376,6 +384,14 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy at $355.66 expires; if no one re-approves it, cancel before expiry",
+"by": "questioner",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
@@ -565,6 +581,30 @@
 "what": "Confirm whether PJM has decided the December 2029/30 capacity-auction delay request; this is Talen's main earnings driver",
 "by": "macro",
 "written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "TLN",
+"what": "PJM December 2029/30 capacity auction delay decision; main earnings driver for Talen and unconfirmed as of this check",
+"by": "macro",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "TLN",
+"what": "PJM December 2029/30 capacity-auction delay decision; main earnings driver for Talen. Confirm before any TLN buy.",
+"by": "pm",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-12-07",
+"ticker": "LEU",
+"what": "Centrus Energy Investor Day at American Centrifuge Plant; possible guidance and contract updates",
+"by": "scout",
+"written": "2026-11-24",
 "surfaced": false
 },
 {
