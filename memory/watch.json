@@ -272,6 +272,22 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy at $355.66 expires; PJM 2029/30 auction-delay decision status must be confirmed before then",
+"by": "questioner",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Confirm whether the PJM December 2029/30 capacity-auction delay has been decided; the resting buy at $355.66 expires the same day",
+"by": "macro",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
@@ -452,6 +468,14 @@
 "ticker": "UEC",
 "what": "Q1 earnings report; typically moves about 4-5% either way, a catalyst that could break any resting-buy plan",
 "by": "pm",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-08",
+"ticker": "",
+"what": "Questioner follow-up: Was TLN's COO Brad Berryman's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale?",
+"by": "questioner",
 "written": "2026-11-23",
 "surfaced": false
 },
