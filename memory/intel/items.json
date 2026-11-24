@@ -16436,5 +16436,88 @@
 "provide",
 "vistra"
 ]
+},
+{
+"id": "c022c2ee571f9126",
+"date": "2026-11-24",
+"ts": 1795521600,
+"title": "Centrus Energy to Host Investor Day on December 7, 2026",
+"summary": "",
+"outlet": "Yahoo Finance",
+"link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPX3NwTy1YTVVKOFlNbXk1RjlyNnZnN0l2UjVhdG1xZzdDOEk2WkhIbnNtNTJmRGF5aDY3bkp2QXM0T1VmczhuTDJZaGV4cHdEY0dtM19lZWI3bW9KN2NZTm9QOVZMV0ZLNWV5RzM1dkl0UGs5NktheWlUdkp1UlZmMUU3NXZWTGZmRXNQN1Z6SmJnVGc?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 1.5,
+"echo_of": "52dee3d37e759da2",
+"w": [
+"2026",
+"centrus",
+"day",
+"december",
+"energy",
+"host",
+"investor"
+]
+},
+{
+"id": "cf312da3056cac36",
+"date": "2026-11-24",
+"ts": 1795523244,
+"title": "Centrus Energy Investor Day Set for Dec. 7 in Piketon, Ohio",
+"summary": "",
+"outlet": "kalkine.com",
+"link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbld5WHVNQUZkNnozcUdCeEdKdUhUT184dnh0WXZkdnBJbGgyOEs2VlpvY0I1cG04eE5QdUdnd3FRWlI0TDA4a19vbWdPa0R5bFA1dDZpQWdzQ3lfOEJ4UThjckRVR3BBRTMzY1FHVG9UaHVKeDdCTXFVTlhCQnNIWEFLUkIxb2w4WTg3UTZHTjg0b2pKN0NQc0RKRjM?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.64,
+"score": 2.78,
+"echo_of": null,
+"w": [
+"centrus",
+"day",
+"dec",
+"energy",
+"investor",
+"ohio",
+"piketon",
+"set"
+]
+},
+{
+"id": "806c34008624cc55",
+"date": "2026-11-24",
+"ts": 1795539154,
+"title": "FRM II moves closer to HALEU",
+"summary": "",
+"outlet": "Nuclear Engineering International",
+"link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB1SUR2UEFHLVExR3BPZThJc3pCbnpzbkVQdnd4aDdBTW9xeWp0aWU0cjk3enNFeTYwcks3SzlxTGxLVG1QaUpyLXp4WEVKd1VPdEw1dEtrdmMwMnFqVzdzaGU5T1BxcmFXMWlHdUNOcw?oc=5",
+"place": "HALEU",
+"tickers": [
+"LEU",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.86,
+"score": 4.22,
+"echo_of": null,
+"w": [
+"closer",
+"frm",
+"haleu",
+"moves"
+]
 }
 ]
