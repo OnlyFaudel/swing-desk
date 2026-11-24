@@ -14472,5 +14472,267 @@
 "vistra",
 "what"
 ]
+},
+{
+"id": "681976043db30c9f",
+"date": "2026-11-24",
+"ts": 1795509933,
+"title": "Uzbekistan and China Discuss Nuclear Energy Cooperation",
+"summary": "",
+"outlet": "Wisevoter",
+"link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWEZ5OHVQSmEyNERrQnZsblVXU0QxQW9LOFk5bmw2S2JxYnRIY3E1bGpZT01oWkxVNlFTQnZJQzhSTEEtRzdfek9IalR3TGlxVl9jTWhMOWxLWmQycWE4MVpVaEN3MHRfQy1Cd2JiX05VMXJkSWplZkJwNndQeGRiRnhRY1JVUkFtSDFOdXB1UHVsZw?oc=5",
+"place": "China new builds",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.8,
+"score": 4.1,
+"echo_of": null,
+"w": [
+"china",
+"cooperation",
+"discuss",
+"energy",
+"nuclear",
+"uzbekistan"
+]
+},
+{
+"id": "43fb66d513a66eee",
+"date": "2026-11-24",
+"ts": 1795493985,
+"title": "Cygnus secures Nuclear Regulatory Commission (NRC) CLE Support contract",
+"summary": "",
+"outlet": "OrangeSlices AI",
+"link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZUUzbDkyUFVvTzVkTHFlN2M2cnRKSE03eDJKeGF4Y09pYkpXNUgwdGplMlJDdWFuTTRCQTZYdDNxV28teFNEWm1jWC1lRFJCV1JEMGM5X2U3RUktYXZoU1BOTjRya0VyaldWQkF4UUNxcjBleXlVVlRZRFlvbGlaLXNobXlUQ3RVYm9zWWpoVVpWVFhRMEpnc0VB?oc=5",
+"place": "NRC decisions",
+"tickers": [
+"CEG",
+"VST",
+"TLN",
+"LEU",
+"BWXT"
+],
+"tags": [
+"regulation",
+"contract"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.8,
+"score": 6.9,
+"echo_of": null,
+"w": [
+"cle",
+"commission",
+"contract",
+"cygnus",
+"nrc",
+"nuclear",
+"regulatory",
+"secures",
+"support"
+]
+},
+{
+"id": "9fc86e3effd7da3b",
+"date": "2026-11-24",
+"ts": 1795496400,
+"title": "International Isotopes Fluorine Products, Inc.; Consideration of Approval of Transfer of Control of License",
+"summary": "The U.S. Nuclear Regulatory Commission (NRC, the Commission) received and is considering approval of an application filed by International Isotopes Fluorine Products, Inc. (IIFP) on October 22, 2026. The application seeks NRC consent to the direct transfer of control of the materials license SUB-101",
+"outlet": "Federal Register (uranium)",
+"link": "https://www.federalregister.gov/documents/2026/11/24/2026-23865/international-isotopes-fluorine-products-inc-consideration-of-approval-of-transfer-of-control-of",
+"place": "Federal Register (uranium)",
+"tickers": [
+"LEU"
+],
+"tags": [
+"regulation"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.88,
+"score": 5.76,
+"echo_of": null,
+"w": [
+"approval",
+"consideration",
+"control",
+"fluorine",
+"international",
+"isotopes",
+"license",
+"products",
+"transfer"
+]
+},
+{
+"id": "7a2c65fe816aede0",
+"date": "2026-11-24",
+"ts": 1795496400,
+"title": "Southern Nuclear Operating Company; Vogtle Electric Generating Plant, Units 3 and 4; Exemptions",
+"summary": "The U.S. Nuclear Regulatory Commission (NRC) is issuing exemptions in response to a request dated April 27, 2026, from Southern Nuclear Operating Company (SNC, the licensee) to allow the implementation of the American Society of Mechanical Engineers Code Case N-921 after the start dates of the first",
+"outlet": "Federal Register (nuclear)",
+"link": "https://www.federalregister.gov/documents/2026/11/24/2026-23887/southern-nuclear-operating-company-vogtle-electric-generating-plant-units-3-and-4-exemptions",
+"place": "Federal Register (nuclear)",
+"tickers": [],
+"tags": [
+"regulation"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.86,
+"score": 4.22,
+"echo_of": null,
+"w": [
+"company",
+"electric",
+"exemptions",
+"generating",
+"nuclear",
+"operating",
+"plant",
+"southern",
+"units",
+"vogtle"
+]
+},
+{
+"id": "f03da1aa9b55ef13",
+"date": "2026-11-24",
+"ts": 1795496400,
+"title": "Biweekly Notice; Applications and Amendments to Facility Operating Licenses and Combined Licenses Involving No Significant Hazards Considerations",
+"summary": "Pursuant to section 189a.(2) of the Atomic Energy Act of 1954, as amended (the Act), the U.S. Nuclear Regulatory Commission (NRC) is publishing this regular biweekly notice. The Act requires the Commission to publish notice of any amendments issued, or proposed to be issued, and grants the Commissio",
+"outlet": "Federal Register (nuclear)",
+"link": "https://www.federalregister.gov/documents/2026/11/24/2026-23827/biweekly-notice-applications-and-amendments-to-facility-operating-licenses-and-combined-licenses",
+"place": "Federal Register (nuclear)",
+"tickers": [],
+"tags": [
+"regulation"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.92,
+"score": 4.34,
+"echo_of": null,
+"w": [
+"amendments",
+"applications",
+"biweekly",
+"combined",
+"considerations",
+"facility",
+"hazards",
+"involving",
+"licenses",
+"notice",
+"operating",
+"significant"
+]
+},
+{
+"id": "e694e5bf2467d73e",
+"date": "2026-11-24",
+"ts": 1795496400,
+"title": "SMR, LLC; Palisades SMR, LLC; Pioneer Units 1 and 2; Receipt of Construction Permit Application",
+"summary": "The U.S. Nuclear Regulatory Commission (NRC) is providing public notice of receipt and availability each week, for four consecutive weeks, beginning November 10, 2026, of the second part of a phased construction permit application, from SMR, LLC, on behalf of Palisades SMR, LLC, a wholly-owned subsi",
+"outlet": "Federal Register (nuclear)",
+"link": "https://www.federalregister.gov/documents/2026/11/24/2026-23826/smr-llc-palisades-smr-llc-pioneer-units-1-and-2-receipt-of-construction-permit-application",
+"place": "Federal Register (nuclear)",
+"tickers": [],
+"tags": [
+"regulation",
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 3.2,
+"echo_of": "e7fe29a7963bee0a",
+"w": [
+"application",
+"construction",
+"llc",
+"palisades",
+"permit",
+"pioneer",
+"receipt",
+"smr",
+"units"
+]
+},
+{
+"id": "0028541e109c6801",
+"date": "2026-11-24",
+"ts": 1795510740,
+"title": "Who Is Kevin Graney, the New Centrus Energy (NYSE:LEU) Director?",
+"summary": "",
+"outlet": "Kalkine Media",
+"link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQelpKNEkxMVhMZ1JrRWhWVXhsbmU2UGw5TGdYRU51NXkyWWo5NFRFTGJsV1FVd1RWNmNibzl6RG11UHlQTXg3UzRVN0dSbi0tS0tqektLM1Y1N3lRb1VpUGRWQ2JTdy1ibWVHWXZxOWRoTk9lYV8yY3NUam50V2ozdmhYSkNoM1FHbU5EemhwVlVIVVhUR0lsUTh5V3IxdUVOQVln?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.67,
+"score": 2.84,
+"echo_of": null,
+"w": [
+"centrus",
+"director",
+"energy",
+"graney",
+"kevin",
+"leu",
+"nyse",
+"who"
+]
+},
+{
+"id": "e979a258e0a7a737",
+"date": "2026-11-24",
+"ts": 1795515405,
+"title": "Sprott Uranium Miners ETF (URNM) Price Prediction: Oversold bounce attempt meets still-bearish trend structure",
+"summary": "",
+"outlet": "blockchain.news",
+"link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQc1VtbkxOalBJdnJJSmtSSXN2bEhsZEEtMlFPU2lQVzdvZnNkWWcyQlBEclg1dWFGZFJnUGlQS0tHcFJVcm45TzQteXNFMGd2YjVpN25uT1dnTXFhWmVxVjJiZEN6dExONDlpakRWcWliX3Z5ejNoQlZjM25HMkRhQnNfV1hfR1N5QmpKVVlySXQtc0lzYnhEV0pFVjI1VHREYU11UDRR?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [
+"market_chatter"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.29,
+"score": 1.58,
+"echo_of": "cab53e09b478cbb5",
+"w": [
+"attempt",
+"bearish",
+"bounce",
+"etf",
+"meets",
+"miners",
+"oversold",
+"prediction",
+"price",
+"sprott",
+"still",
+"structure",
+"trend",
+"uranium",
+"urnm"
+]
 }
 ]

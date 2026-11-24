@@ -239,7 +239,9 @@
   "questioner:2026-11-23:9": true,
   "sput:2026-11-23": true,
   "ev:f02ea2de0893": true,
-  "catalysts:2026-11-24": true
+  "catalysts:2026-11-24": true,
+  "ev:4d92e5824a73": true,
+  "ev:bd635f455b36": true
  },
  "benchmark": {
   "shares": {
@@ -892,90 +894,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Ur-Energy Advances Lost Soldier Uranium Project - DirectorsTalk Interviews",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcHhEY1F5QVNsT1JBLUZxeHM2LTJXNXZONk9lTGloQXVKY3QzclFSLW5QTGhLdklOX3RUUGctRjgxZWlPRUlhN3ZTMUJWcmlrbjBucjY4Ykg4ZGJjSzZOVjlQQWstd1E0VUVYLXhwd0NsMGd6Y0RxczVCemwzM3VrMFpiNkJzTG9haDBXSTB1S2F2aFZzUjd5OFBhU3FLeFk?oc=5",
-   "ts": 1795193146,
-   "materiality": 3,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "supply",
-   "why": "Peer US uranium project advancing; small supply signal for uranium"
-  },
-  {
-   "ticker": "BWXT",
-   "source": "Local intel: Defense and Munitions (Naval reactors)",
-   "title": "Curtiss-Wright awarded contracts valued more than $225 million to support critical U.S. Navy aircraft carrier and submarine platforms",
-   "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNc0pNY0Y1bTgxazdGNzdwMmtXMzREYkdKWjJvT0xCSi1KNlEtazUxUHVaR0FEbTJLRHZkdnUwdl9pbVBhMmtnMTJsVC13YVV5WkQ4bGZhbF9FVS1GbUxseC1HTklwUWFha09tNzExWHZZSERUUWNMMk1xZEM3c0ZCQ1BQZEwzbm9aNjcweUQ2TFNqWTJmR0x3YUNqcy1TZlhGTG8tdlZwU2RpdmtYS0l4MmFadlR0WERjYUtwV1NsbVRGdG9YT2JEQk5idHpBSG9JdzhuY3NWdkEwNXgyNTlJbzNPcm1OSEFEODlpSFVMclBOZnVmeFpTZS1SOGpRYkI0dXp4U3FDNDQ3bDBp?oc=5",
-   "ts": 1795248000,
-   "materiality": 3,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "contract_deal",
-   "why": "Competitor Curtiss-Wright won Navy contracts; sector read-through, not BWXT's own deal"
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Local intel: Trefis (Workers and jobs)",
-   "title": "Cameco Stock Slides 22% Over 7 Straight Down Days",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNY2ZMb3Mzamxsb29xZU56OFNOWmxkUTJja1Y1NWxubzNFU2tzaVdmd0tCUWlWdWJoMFdCTGFENUxEWURrbnY3Tk5GU2d3aWtVeUNQaVh2ODA0VkdhTmI0Mm1tWHAtSlcyRVhWQmRzZkl5SVFJWVF1Umw5am9KTHB2Q1g3d3dzUTE4NzR4VnhkR29aU2Ffd2NJT2M5R0FjUXRwWVA5T0UzaUZRWC1L?oc=5",
-   "ts": 1795251988,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Duplicate of the Trefis 22% slide recap; no new facts"
-  },
-  {
-   "ticker": "VST",
-   "source": "Google News",
-   "title": "Goldman Sachs Sticks to Its Buy Rating for Vistra Corp (VST) - The Globe and Mail",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPM3ZobW1NNjkzSThjZTdoUXlBSk95dGFlWlJKVXJsd0xiU1pFTFMzRUJlVWtlbnlRQlJVUnU2cHpaRGZUajE1V0hoalFFQXI0R1lmNUdSUENSbEF4bXlfV2lndzVWWHA0NVYtb3c3R3pjdHF4Y29aOElqOVc4SGRDT3JPSGRVZGd1ak1CdGI4M0VQTTMyRmtMdVQtWnc2NjF2N3ZnLVBucnJzdjFJU2RJSi1yZVhlTEVDT2JFZjRkVUtXdXp4NzE1UmtPVlZoWl9QMTBwUlF3bXNGUQ?oc=5",
-   "ts": 1795269696,
-   "materiality": 2,
-   "novelty": "follow_up",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Goldman reiterating an existing Buy rating; no change in view"
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Cameco Corporation $CCJ Shares Newly Purchased by Horizon Kinetics Asset Management LLC - MarketBeat",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQUnZQZldmVjFQTTdJSV9WMW50VDZuT2VzTTByRVNqbXNqMTg5OTAwZWdWZG41YVhiMjZRQmJvUmh3NzFfVWpIQndiSmxKdEVUR2xuOHd6cnhONnhYd0lPRlpjNjByRDYxZUVRQlZodnpGWWpVd1VFMm5maVZ5YlpJdGM1SE1ycXlsM3Iwam8yRjNLUW1iY3l2aWZsSXdWN2NGbGlJVlpTQUhZdE9hb2dtUENFRjRyM1dJNWNTR0VuT2x0MU1JY056XzVLdnM4MDNKMFo3UEJKR0lQRXJRa2xKUA?oc=5",
-   "ts": 1795269031,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Routine fund-holdings filing recap; no new company information"
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Yahoo (LEU, related to CCJ)",
-   "title": "Centrus Energy (LEU) Stock Sees Fair Value Cut As Analysts Reset Nuclear Growth Expectations",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/centrus-energy-leu-stock-sees-130929010.html?.tsrc=rss",
-   "ts": 1795266569,
-   "materiality": 3,
-   "novelty": "new",
-   "direction": "down",
-   "event_type": "analyst",
-   "why": "Centrus fair value cut 13%; weak read-through to Cameco's uranium demand"
-  },
-  {
-   "ticker": "LEU",
-   "source": "Google News: \"Centrus Energy\"",
-   "title": "Guggenheim Remains a Buy on Centrus Energy (LEU) - The Globe and Mail",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUEV3YzU0YS1JXzAxd1lKZEtzM3hmTTBtNVBvUTYtV1ZuV2VVdHY4ejF2WVdwbk5XUEpyelpQNDJRMlA1M2laZjgwY2RoUVVZYzNTOWl5eGhSRU1rZGN1RzdNM1hIbDNoeTNadWNaWXp2cnBicmdvb3QweHN3dzFaM0FVZHV1MUlqcF92U1NOOVZiWTJMMjlmcEN3WkNpVEhVX0wwZVRpUUdfeko2ZlZpckMwaGhuUXZYbFdBRXdZUnJZREVCNlE5Q2Nn?oc=5",
-   "ts": 1795264567,
-   "materiality": 2,
-   "novelty": "follow_up",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Guggenheim reiterates Buy on Centrus; no change in view"
-  },
   {
    "ticker": "UUUU",
    "source": "Google News: \"Energy Fuels\" uranium",
@@ -3891,6 +3809,90 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Kalkine Media explainer on a Canadian-listed ticker's mill campaign; a rehash with no new company-specific information."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News: \"uranium enrichment\" United States",
+   "title": "DOE Cleanup on Paducah Site Makes Headway for $1.5bn General Matter Uranium Enrichment Plant - Construction Review",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQkxBaTRCQTRmaEY3YWEtLU5QMFNISDUyVXBqUV9sQjE4NTZ2M0lySzFLRkt2c3JJY0N3UEtxT3dQMHpLdHZOejZ0SDM2UG8zV05DYTFVVS1BOXdCZmctV2dfa3V6YmY5SjBfTi1uMHByR1F3SFp0QWFjekJSbENGRVB4cFpJdTlZMXZ6NUF4Y3VpNzlQdUlaRXBYSjkxSlRxdm5qNlhFY0s5TkxPSFRKT3BGMVNKOWh4bDlMalc0bGpCUmpUQU96OQ?oc=5",
+   "ts": 1795514912,
+   "materiality": 5,
+   "novelty": "follow_up",
+   "direction": "up",
+   "event_type": "policy_tariff",
+   "why": "DOE cleanup progress at Paducah supports the enrichment site, but it is a construction-status update for a competitor's plant, not new Centrus information."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News: \"Energy Fuels\" uranium",
+   "title": "Energy Fuels Targets Additional One Million Pounds of Low-Cost U.S. Uranium Production in Upcoming Processing Campaign; Advances Additional Uranium Ramp-Ups - The Globe and Mail",
+   "link": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxNTlA4Y21WeTcySmhoMEVqTnc4Qy1WSmVENndxZVQ5N24wNHplUVJlRHdLZElQUUZwYThVeUhHRmUycXJ4TWpKRHdGakNqOVZkUHJ6eWZqMWg4WGJhSnh1ckhpcFZTYzNpVmtLeUI4YTJsbWRHMVE0UHRYNGVTVnB1VG5UNXQzNEJBUjhpTGxiZGFieC1MajBzTERBbGxLelFSVV9OdmR5UmhYbGpZcHF6TUlTb2hSZ2VmT1A3WElfSzA0NmlUbFIwbmxQWHpKSzJtbW1ES0NQMVdsWjVVSURzQ3NCRjNYZnVKM05VcmJDQnphZ25rbkNLZmFFNzRzSzY1WXo3N2w4cWcycVJIc1otUU1JeVhWY3plYjNoUnlMMnZLQk9IUWM4YnVqNW96N2Y2elNLa2gzMTEtMWwwX1R3aXNQVDFiZHlSYV82eUNaQ2RfLWE1Y3lzTjVoaw?oc=5",
+   "ts": 1795512651,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "supply",
+   "why": "Production target restatement and ramp-up language, largely a rehash of prior company guidance with no new numbers."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News",
+   "title": "Who Is Kevin Graney, the New Centrus Energy (NYSE:LEU) Director? - Kalkine Media",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQelpKNEkxMVhMZ1JrRWhWVXhsbmU2UGw5TGdYRU51NXkyWWo5NFRFTGJsV1FVd1RWNmNibzl6RG11UHlQTXg3UzRVN0dSbi0tS0tqektLM1Y1N3lRb1VpUGRWQ2JTdy1ibWVHWXZxOWRoTk9lYV8yY3NUam50V2ozdmhYSkNoM1FHbU5EemhwVlVIVVhUR0lsUTh5V3IxdUVOQVln?oc=5",
+   "ts": 1795510740,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Routine board appointment profile; a director change rarely moves the stock by several percent."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News",
+   "title": "Constellation Energy (CEG) Stock Price Prediction: Analyst targets stay elevated as CEG trades below short-term trend and tests a narrow pivot zone - blockchain.news",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQcGVQbThWc21RcVdTR1ZIQXVLWmJITEQxRFk3emtwRDFwLTZfUlVxTFFwZTRvWU5JQWlMYkdOdGNpbWE5aUxfQUZGOHZheWxQTHg2X3ZWOWRmck9GNFFXWGdPMGJ4RHU5LW5aUjFiQUFicTBvTlBrUGVvam1Bd2pYNGZ2WHB1MFpoWHpTdXpmT2U4aXNLNHFWTUxLWQ?oc=5",
+   "ts": 1795515060,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Generic technical price-prediction recap of CEG; no new company information."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Federal Register: uranium",
+   "title": "International Isotopes Fluorine Products, Inc.; Consideration of Approval of Transfer of Control of License",
+   "link": "https://www.federalregister.gov/documents/2026/11/24/2026-23865/international-isotopes-fluorine-products-inc-consideration-of-approval-of-transfer-of-control-of",
+   "ts": 1795496400,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "policy_tariff",
+   "why": "Routine NRC notice on a license transfer for a small fluorine firm, not Centrus itself."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Local intel: OrangeSlices AI (NRC decisions)",
+   "title": "Cygnus secures Nuclear Regulatory Commission (NRC) CLE Support contract",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZUUzbDkyUFVvTzVkTHFlN2M2cnRKSE03eDJKeGF4Y09pYkpXNUgwdGplMlJDdWFuTTRCQTZYdDNxV28teFNEWm1jWC1lRFJCV1JEMGM5X2U3RUktYXZoU1BOTjRya0VyaldWQkF4UUNxcjBleXlVVlRZRFlvbGlaLXNobXlUQ3RVYm9zWWpoVVpWVFhRMEpnc0VB?oc=5",
+   "ts": 1795493985,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Cygnus is a small NRC support contractor, not a Constellation deal, so little effect on CEG."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Local intel: Federal Register (uranium) (Federal Register (uranium))",
+   "title": "International Isotopes Fluorine Products, Inc.; Consideration of Approval of Transfer of Control of License",
+   "link": "https://www.federalregister.gov/documents/2026/11/24/2026-23865/international-isotopes-fluorine-products-inc-consideration-of-approval-of-transfer-of-control-of",
+   "ts": 1795496400,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "policy_tariff",
+   "why": "Duplicate of the same routine Federal Register notice on an unrelated license transfer."
   }
  ],
  "reviews": [
@@ -5413,16 +5415,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.00422,
+  "day_usd": 0.00872,
   "month": "2026-11",
-  "month_usd": 0.73564,
-  "total_usd": 0.73564,
+  "month_usd": 0.74014,
+  "total_usd": 0.74014,
   "by_role": {
    "macro": 0.05663,
    "whale": 0.01301,
    "crowd": 0.00849,
    "level": 0.03741,
-   "scout": 0.07647,
+   "scout": 0.07836,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5431,7 +5433,7 @@
    "investigator": 0.17659,
    "postmortem": 0.00035,
    "researcher": 0.00704,
-   "engineer": 0.00303,
+   "engineer": 0.00564,
    "questioner": 0.04928
   }
  },
@@ -5541,7 +5543,7 @@
   "SPY": 722.39,
   "SSO": 61.17
  },
- "last_cycle": "2026-11-24 05:06 ET",
+ "last_cycle": "2026-11-24 05:47 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51410,6 +51412,7 @@
   "29d23ebb15d8cf15",
   "db05240fe85a29ac",
   "a454f891b1c31853",
+  "0028541e109c6801",
   "126369127a97f018",
   "c014dc203c86d5d1",
   "61659cb80b158a77",
@@ -51544,6 +51547,7 @@
   "08783bea5ba109b0",
   "91d21b21da9289e4",
   "32d10c819f70dc10",
+  "6cda49f31f9074ba",
   "27cae87b69d8c12f",
   "e00ac0592374a28e",
   "edbad492ece75d90",
@@ -51593,6 +51597,7 @@
   "0235abc0565d5130",
   "b4c005bc018874b7",
   "a1266dd4e5f78432",
+  "224aaaf7b4461861",
   "cab53e09b478cbb5",
   "009c12e19cf7cb10",
   "fa31367a940baeaa",
@@ -51644,6 +51649,7 @@
   "693301ddca2bc8c2",
   "834bd992b1a75cdd",
   "c71238280e152d73",
+  "560f5fcf0c779ea2",
   "85342e1a4ce58044",
   "bb6d0befac06c212",
   "f309be7c357c35cc",
@@ -51687,9 +51693,10 @@
   "2afc300bcf16d7fc",
   "fcce01ed145ab804",
   "a74aab1c387c2b31",
-  "8a429bbe4d25ae7d"
+  "8a429bbe4d25ae7d",
+  "9fc86e3effd7da3b"
  ],
- "news_slow_at": 1795514761.7113833,
+ "news_slow_at": 1795517276.023144,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -204436,6 +204443,81 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-24 05:47",
+   "who": "engineer",
+   "kind": "agent",
+   "title": null,
+   "text": "This is a federal Nuclear Regulatory Commission notice about routine license amendments, with no specific reactor timeline or uranium pounds attached, so it changes nothing physically. None of our names is directly affected by this boilerplate filing. I'd treat it as noise and not act on it.\n\nWhy: The headline and summary are a generic biweekly list of license amendments that do not name a plant, a reactor timeline, or a fuel quantity. The license tracker and plant status show no change tied to this notice.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-24 05:47",
+   "who": "engineer",
+   "kind": "alert",
+   "title": null,
+   "text": "Licensing news: Biweekly Notice; Applications and Amendments to Facility Operating Licenses and Combined Licenses Involving No Significant Hazards Considerations. 2026 licensing approvals: first-day moves were mixed (Long Mott permit: small-reactor stocks +7% to +14%; Kemmerer: +0% to +4%) and most of it was gone within 5 trading days. Only 3 events, so this is context, not a trading rule.\n\nPlant Engineer: This is a federal Nuclear Regulatory Commission notice about routine license amendments, with no specific reactor timeline or uranium pounds attached, so it changes nothing physically. None of our names is directly affected by this boilerplate filing. I'd treat it as noise and not act on it.",
+   "tickers": [
+    "LEU",
+    "NNE",
+    "OKLO",
+    "SMR"
+   ],
+   "art": {
+    "big": "NRC LICENSING NEWS",
+    "sub": "Biweekly Notice; Applications and Amendments to Facility Operating Licenses and Combined L"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-24 05:47",
+   "who": "engineer",
+   "kind": "alert",
+   "title": "NRC LICENSING NEWS",
+   "text": "Biweekly Notice; Applications and Amendments to Facility Operating Licenses and Combined Licenses Involving No Significant Hazards Considerations | This is a federal Nuclear Regulatory Commission notice about routine license amendments, with no specific reactor timeline or uranium pounds attached, so it changes nothing physically. None of our nam",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-24 05:47",
+   "who": "engineer",
+   "kind": "agent",
+   "title": null,
+   "text": "This is a notice that NRC is receiving the second part of Holtec's construction permit application for two small modular reactors (SMR-300s) at Palisades. It is a procedural step, not a decision, and the desk already knows about the Palisades SMR application, so it adds nothing new. It mainly competes with NuScale (SMR) and OKLO for small-reactor customers, and does not change physical uranium demand for our miners or enricher in any near-term way.\n\nWhy: The headline is a weekly public notice of an application already tracked as 'Palisades SMR-300 (two units)' with a 2027 decision window. No pounds of uranium or reactor timeline changes, and the basket is not in a position to act on it.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-24 05:47",
+   "who": "engineer",
+   "kind": "alert",
+   "title": null,
+   "text": "Licensing news: SMR, LLC; Palisades SMR, LLC; Pioneer Units 1 and 2; Receipt of Construction Permit Application. 2026 licensing approvals: first-day moves were mixed (Long Mott permit: small-reactor stocks +7% to +14%; Kemmerer: +0% to +4%) and most of it was gone within 5 trading days. Only 3 events, so this is context, not a trading rule.\n\nPlant Engineer: This is a notice that NRC is receiving the second part of Holtec's construction permit application for two small modular reactors (SMR-300s) at Palisades. It is a procedural step, not a decision, and the desk already knows about the Palisades SMR application, so it adds nothing new. It mainly competes with NuScale (SMR) and OKLO for small-reactor customers, and does not change physical uranium demand for our miners or enricher in any near-term way.",
+   "tickers": [
+    "CEG",
+    "TLN",
+    "VST"
+   ],
+   "art": {
+    "big": "NRC LICENSING NEWS",
+    "sub": "SMR, LLC; Palisades SMR, LLC; Pioneer Units 1 and 2; Receipt of Construction Permit Applic"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-24 05:47",
+   "who": "engineer",
+   "kind": "alert",
+   "title": "NRC LICENSING NEWS",
+   "text": "SMR, LLC; Palisades SMR, LLC; Pioneer Units 1 and 2; Receipt of Construction Permit Application | This is a notice that NRC is receiving the second part of Holtec's construction permit application for two small modular reactors (SMR-300s) at Palisades. It is a procedural step, not a decision, and ",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -204899,79 +204981,79 @@
    "lesson": null
   }
  ],
- "intel_at": 1795513545.6713772,
+ "intel_at": 1795517224.831345,
  "intel_health": {
-  "at": "2026-11-24 04:46",
+  "at": "2026-11-24 05:47",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 2,
-   "Athabasca Basin": 6,
+   "Athabasca Basin": 5,
    "Saskatchewan wildfires": 0,
    "Rook I / Arrow": 1,
    "Wheeler River / Phoenix": 6,
    "Port Hope / Blind River": 0,
-   "Westinghouse": 8,
+   "Westinghouse": 7,
    "Kazakhstan": 0,
    "Niger": 6,
-   "Namibia": 23,
+   "Namibia": 25,
    "Russia supply": 3,
-   "Piketon": 11,
+   "Piketon": 15,
    "HALEU": 10,
-   "Wyoming ISR": 21,
+   "Wyoming ISR": 26,
    "South Texas ISR": 0,
    "White Mesa / Utah": 12,
-   "Rare earths (Energy Fuels)": 15,
+   "Rare earths (Energy Fuels)": 16,
    "Lynchburg / Erwin": 0,
    "Naval reactors": 4,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 2,
    "Comanche Peak": 7,
-   "PJM grid": 8,
+   "PJM grid": 7,
    "ERCOT grid": 10,
-   "Data-center nuclear deals": 9,
-   "Japan restarts": 7,
-   "China new builds": 4,
-   "Congress and laws": 27,
-   "NRC decisions": 15,
-   "Energy Department": 0,
-   "White House and executive orders": 21,
+   "Data-center nuclear deals": 8,
+   "Japan restarts": 6,
+   "China new builds": 5,
+   "Congress and laws": 26,
+   "NRC decisions": 9,
+   "Energy Department": 49,
+   "White House and executive orders": 17,
    "Tariffs and trade": 1,
-   "India": 12,
-   "South Korea": 75,
-   "Europe new builds": 0,
-   "France and UK": 6,
-   "Middle East": 22,
-   "Asia newcomers": 28,
-   "Canada SMRs": 7,
-   "Big tech power deals": 55,
-   "Iran": 36,
+   "India": 11,
+   "South Korea": 76,
+   "Europe new builds": 27,
+   "France and UK": 7,
+   "Middle East": 23,
+   "Asia newcomers": 57,
+   "Canada SMRs": 6,
+   "Big tech power deals": 57,
+   "Iran": 21,
    "North Korea": 100,
-   "War zones": 21,
+   "War zones": 22,
    "AUKUS and navies": 22,
-   "Weapons programs": 13,
-   "Stockpiles and reserves": 14,
+   "Weapons programs": 14,
+   "Stockpiles and reserves": 19,
    "Sprott trust": 4,
-   "Uranium price": 13,
+   "Uranium price": 43,
    "US policy": 0,
-   "Lawsuits and investigations": 30,
-   "Workers and jobs": 23,
+   "Lawsuits and investigations": 72,
+   "Workers and jobs": 24,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 49,
-   "Federal Register (uranium)": 6,
-   "Federal Register (nuclear)": 23,
-   "NRC event reports": 7
+   "Federal Register (uranium)": 7,
+   "Federal Register (nuclear)": 26,
+   "NRC event reports": 4
   },
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 05:06",
-  "total": 446,
-  "week": 379,
+  "updated": "2026-11-24 05:47",
+  "total": 454,
+  "week": 384,
   "places": {
    "Uranium price": 43,
-   "World Nuclear News": 27,
+   "World Nuclear News": 26,
+   "Piketon": 23,
    "Europe new builds": 23,
-   "Piketon": 22,
    "South Korea": 21,
    "Workers and jobs": 18,
    "AUKUS and navies": 16,
@@ -204983,65 +205065,65 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-24 04:46",
+   "at": "2026-11-24 05:47",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 2,
-    "Athabasca Basin": 6,
+    "Athabasca Basin": 5,
     "Saskatchewan wildfires": 0,
     "Rook I / Arrow": 1,
     "Wheeler River / Phoenix": 6,
     "Port Hope / Blind River": 0,
-    "Westinghouse": 8,
+    "Westinghouse": 7,
     "Kazakhstan": 0,
     "Niger": 6,
-    "Namibia": 23,
+    "Namibia": 25,
     "Russia supply": 3,
-    "Piketon": 11,
+    "Piketon": 15,
     "HALEU": 10,
-    "Wyoming ISR": 21,
+    "Wyoming ISR": 26,
     "South Texas ISR": 0,
     "White Mesa / Utah": 12,
-    "Rare earths (Energy Fuels)": 15,
+    "Rare earths (Energy Fuels)": 16,
     "Lynchburg / Erwin": 0,
     "Naval reactors": 4,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 2,
     "Comanche Peak": 7,
-    "PJM grid": 8,
+    "PJM grid": 7,
     "ERCOT grid": 10,
-    "Data-center nuclear deals": 9,
-    "Japan restarts": 7,
-    "China new builds": 4,
-    "Congress and laws": 27,
-    "NRC decisions": 15,
-    "Energy Department": 0,
-    "White House and executive orders": 21,
+    "Data-center nuclear deals": 8,
+    "Japan restarts": 6,
+    "China new builds": 5,
+    "Congress and laws": 26,
+    "NRC decisions": 9,
+    "Energy Department": 49,
+    "White House and executive orders": 17,
     "Tariffs and trade": 1,
-    "India": 12,
-    "South Korea": 75,
-    "Europe new builds": 0,
-    "France and UK": 6,
-    "Middle East": 22,
-    "Asia newcomers": 28,
-    "Canada SMRs": 7,
-    "Big tech power deals": 55,
-    "Iran": 36,
+    "India": 11,
+    "South Korea": 76,
+    "Europe new builds": 27,
+    "France and UK": 7,
+    "Middle East": 23,
+    "Asia newcomers": 57,
+    "Canada SMRs": 6,
+    "Big tech power deals": 57,
+    "Iran": 21,
     "North Korea": 100,
-    "War zones": 21,
+    "War zones": 22,
     "AUKUS and navies": 22,
-    "Weapons programs": 13,
-    "Stockpiles and reserves": 14,
+    "Weapons programs": 14,
+    "Stockpiles and reserves": 19,
     "Sprott trust": 4,
-    "Uranium price": 13,
+    "Uranium price": 43,
     "US policy": 0,
-    "Lawsuits and investigations": 30,
-    "Workers and jobs": 23,
+    "Lawsuits and investigations": 72,
+    "Workers and jobs": 24,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 49,
-    "Federal Register (uranium)": 6,
-    "Federal Register (nuclear)": 23,
-    "NRC event reports": 7
+    "Federal Register (uranium)": 7,
+    "Federal Register (nuclear)": 26,
+    "NRC event reports": 4
    },
    "failed": []
   },
@@ -205237,6 +205319,26 @@
     "numbers": [],
     "score": 7.02,
     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1scnlHdWQxWDlJWGRnZk5yZEhBUV9mbmtfcTNEWkNWNDFPX2lJYThHNUFGMDFiSWdhSXFXd0pMUXNxRzkwd283MU8zLXVVZFl5bUtlWlBMMEw0YmRpZGdhSGtkY1Z2MWdRSmp6NUJFTDlod29RSUE?oc=5"
+   },
+   {
+    "date": "2026-11-24",
+    "title": "Cygnus secures Nuclear Regulatory Commission (NRC) CLE Support contract",
+    "outlet": "OrangeSlices AI",
+    "place": "NRC decisions",
+    "tickers": [
+     "CEG",
+     "VST",
+     "TLN",
+     "LEU",
+     "BWXT"
+    ],
+    "tags": [
+     "regulation",
+     "contract"
+    ],
+    "numbers": [],
+    "score": 6.9,
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZUUzbDkyUFVvTzVkTHFlN2M2cnRKSE03eDJKeGF4Y09pYkpXNUgwdGplMlJDdWFuTTRCQTZYdDNxV28teFNEWm1jWC1lRFJCV1JEMGM5X2U3RUktYXZoU1BOTjRya0VyaldWQkF4UUNxcjBleXlVVlRZRFlvbGlaLXNobXlUQ3RVYm9zWWpoVVpWVFhRMEpnc0VB?oc=5"
    },
    {
     "date": "2026-11-23",
@@ -205581,24 +205683,6 @@
     "numbers": [],
     "score": 6.14,
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPeFRmMDFkREN6YUJoN25ZODV2Zk5RQy1iQUx2UHRNd3ZZaHdNYWp1WkU1YUhxanRVODBndTNRRGVsYUhIdndPdVJyZFd6SGhHUXNQQVA2dHdrZmE5LVAyVXNJY0d6NFVnSkdmT193dDlqTk5iVHBzc2JZSVE1bkRZWWgyQkJpRG8xT2NHR0l5UmZHaVpDTEpFckRGMDdhWGNYUFUw?oc=5"
-   },
-   {
-    "date": "2026-11-23",
-    "title": "KHNP Presses Ahead With Termination of Czech Nuclear Plant Construction Agreement... 'Controversy' Ahead of National Assembly Review",
-    "outlet": "\ud30c\uc774\ub0b8\uc15c\ub274\uc2a4",
-    "place": "Europe new builds",
-    "tickers": [
-     "CCJ",
-     "BWXT",
-     "CEG"
-    ],
-    "tags": [
-     "contract",
-     "restart"
-    ],
-    "numbers": [],
-    "score": 6.1,
-    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAzUDVUcjVrUFhTdUxLYVV2b0M3azlMLV92SG9vOFVMRXQ2UllabFk4bVR3RlA1VTB4RzNHQnk2S2d6WXhNVWJoMmVhQWhBTUxkN3ppNmVCR0E?oc=5"
    }
   ]
  },
@@ -205694,7 +205778,9 @@
   "c10f62c3161fa59d",
   "97e33afa5909ea24",
   "b371c50f261a21f0",
-  "0d77f1d2373bb03d"
+  "0d77f1d2373bb03d",
+  "43fb66d513a66eee",
+  "9fc86e3effd7da3b"
  ],
  "panic_log": [
   {
@@ -205735,7 +205821,7 @@
   }
  ],
  "memory_view": {
-  "events": 1570,
+  "events": 1573,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -205829,14 +205915,6 @@
    }
   },
   "watch": [
-   {
-    "date": "2026-12-09",
-    "ticker": "TLN",
-    "what": "FOMC rate decision and PJM December capacity auction timing; both can move power-producer stocks sharply.",
-    "by": "level",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
    {
     "date": "2026-12-09",
     "ticker": "TLN",
@@ -206174,6 +206252,14 @@
     "surfaced": false
    },
    {
+    "date": "2027-06-30",
+    "ticker": "SMR",
+    "what": "Approximate window for NRC decision on Holtec Palisades SMR-300 construction permit (18-month clock); competes with NuScale for small-reactor customers",
+    "by": "engineer",
+    "written": "2026-11-24",
+    "surfaced": false
+   },
+   {
     "date": "2027-12-31",
     "ticker": "BWXT",
     "what": "Did BWXT deliver? They promised on 2026-11-02: Deliver 2027 preliminary outlook: high-single-digit revenue growth and high-single-digit to low-double-digit adjusted EBITDA and EPS growth",
@@ -206311,33 +206397,6 @@
    }
   ],
   "recent": [
-   {
-    "date": "2026-11-23",
-    "ticker": "BWXT",
-    "title": "NRC Reviews Transfer of Uranium De-Conversion License to HALEU Energy Fuel",
-    "type": "intel_regulation",
-    "r0": 6.71,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-23",
-    "ticker": "CCJ",
-    "title": "EDF Prepares Provisional Investment Decision on EPR2 Reactors Before Brussels Approval",
-    "type": "intel_regulation",
-    "r0": 6.09,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-23",
-    "ticker": "CEG",
-    "title": "NRC Drafts Environmental Review for Crownpoint Uranium Project",
-    "type": "intel_regulation",
-    "r0": 6.03,
-    "r5": null,
-    "r20": null
-   },
    {
     "date": "2026-11-23",
     "ticker": "VST",
@@ -206670,6 +206729,33 @@
     "r0": null,
     "r5": null,
     "r20": null
+   },
+   {
+    "date": "2026-11-24",
+    "ticker": "CEG",
+    "title": "Cygnus secures Nuclear Regulatory Commission (NRC) CLE Support contract",
+    "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-24",
+    "ticker": "VST",
+    "title": "Cygnus secures Nuclear Regulatory Commission (NRC) CLE Support contract",
+    "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-24",
+    "ticker": "LEU",
+    "title": "International Isotopes Fluorine Products, Inc.; Consideration of Approval of Transfer of Control of License",
+    "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
    }
   ]
  },
@@ -206983,6 +207069,11 @@
    "name": "night_round_2",
    "trials": 6,
    "verdict": "2026-11-24 night round 2 (85 nuclear + related, vs S&P, 0.2% costs). Failed breakdown (low broke 3%+ under the prior 52-week low within 5 days, close back above it): 10 days +0.37/+0.35% (t 0.5/0.4), 20 days -0.06/+1.54%: too weak, rejected. Strong on a selloff day (S&P -2%, stock closes up / up 2%+): 10 days -0.67/-0.21% and -2.26/-0.14%; 20 days -0.68/+0.46% and -1.46/+0.29%: no edge (if anything it fades in 2008-18), rejected. Considered but not adopted: half-size sharp-drop trades when VIX < 20 (weakest bucket both eras, +0.44% best case) - gain too small vs the extra rule."
+  },
+  {
+   "name": "pop_exit_test",
+   "trials": 6,
+   "verdict": "2026-11-24 night round 3: sell a held rebound trade on its first 8/12/15%+ up day. Sharp-drop: +1.08/+1.51/+1.55% (2008-18) and +1.24/+1.40/+1.58% (2019-26) vs live +1.52/+1.48%: no gain. Comeback (with -15% stop): +2.43/+2.77/+2.69% and +1.91/+3.71/+8.21% vs live +2.96/+9.79%: cuts the biggest winners. Rejected. Server check 04:04 ET: cycling normally on the new code (watchdog active), no errors; smart parking and the practice book start at today's close."
   }
  ],
  "notebook": [
@@ -207315,7 +207406,7 @@
    }
   ]
  },
- "dossier_at": 1795513587.3793044,
+ "dossier_at": 1795517272.1003888,
  "sector_prices": {
   "_at": 1795511759.0681665,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -207373,80 +207464,80 @@
    "name": "Cameco",
    "price": 61.49,
    "week_pct": -6.82,
-   "built": "2026-11-24 04:46"
+   "built": "2026-11-24 05:47"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.78,
    "week_pct": -8.57,
-   "built": "2026-11-24 04:46"
+   "built": "2026-11-24 05:47"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.85,
    "week_pct": -4.57,
-   "built": "2026-11-24 04:46"
+   "built": "2026-11-24 05:47"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.77,
    "week_pct": -7.33,
-   "built": "2026-11-24 04:46"
+   "built": "2026-11-24 05:47"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.22,
    "week_pct": -13.58,
-   "built": "2026-11-24 04:46"
+   "built": "2026-11-24 05:47"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 86.8,
    "week_pct": -11.0,
-   "built": "2026-11-24 04:46"
+   "built": "2026-11-24 05:47"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.71,
    "week_pct": -0.95,
-   "built": "2026-11-24 04:46"
+   "built": "2026-11-24 05:47"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 251.76,
    "week_pct": -9.38,
-   "built": "2026-11-24 04:46"
+   "built": "2026-11-24 05:47"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 123.81,
    "week_pct": -4.88,
-   "built": "2026-11-24 04:46"
+   "built": "2026-11-24 05:47"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 365.03,
    "week_pct": 1.47,
-   "built": "2026-11-24 04:46"
+   "built": "2026-11-24 05:47"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-24 04:46"
+   "built": "2026-11-24 05:47"
   }
  ],
- "heartbeat": "2026-11-24 05:06",
+ "heartbeat": "2026-11-24 05:47",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -207563,21 +207654,21 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 86,
-   "used": 80,
+   "asked": 90,
+   "used": 84,
    "notes": {
     "TLN Deals and contracts": 2,
     "CCJ Deals and contracts": 23,
     "BWXT Deals and contracts": 17,
-    "SECTOR Government and laws": 21,
-    "UUUU Deals and contracts": 20,
+    "SECTOR Government and laws": 22,
+    "UUUU Deals and contracts": 21,
     "SECTOR Countries": 19,
-    "CEG Deals and contracts": 11,
+    "CEG Deals and contracts": 13,
     "NXE Legal": 1,
     "NXE Deals and contracts": 1,
     "DNN Deals and contracts": 3,
     "BWXT Legal": 1,
-    "LEU Deals and contracts": 7,
+    "LEU Deals and contracts": 10,
     "UEC Deals and contracts": 1,
     "UUUU Legal": 2,
     "SECTOR Uranium market": 2,
@@ -207674,15 +207765,16 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 3,
-   "used": 3,
+   "asked": 5,
+   "used": 5,
    "notes": {
     "SECTOR Reactors and power": 2,
     "CEG Places and operations": 2,
     "UEC Deals and contracts": 1,
     "UEC Places and operations": 1,
-    "license_tracker": 1,
-    "LEU Business": 1
+    "license_tracker": 3,
+    "LEU Business": 1,
+    "plants_now": 2
    },
    "since": "2026-11-23"
   },
@@ -210767,6 +210859,27 @@
     "NNE",
     "LEU"
    ]
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "license",
+   "title": "Biweekly Notice; Applications and Amendments to Facility Operating Licenses and Combined Licenses Involving No Significant Hazards Considerations",
+   "tickers": [
+    "OKLO",
+    "SMR",
+    "NNE",
+    "LEU"
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "license",
+   "title": "SMR, LLC; Palisades SMR, LLC; Pioneer Units 1 and 2; Receipt of Construction Permit Application",
+   "tickers": [
+    "CEG",
+    "VST",
+    "TLN"
+   ]
   }
  ],
  "vp_skipped": [
@@ -211321,7 +211434,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 05:06",
+ "watchdog_last": "2026-11-24 05:47",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
