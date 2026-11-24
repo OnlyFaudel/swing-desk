@@ -1066,12 +1066,21 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
     except Exception as e:
         print("vix", e)
     steps = cfg.get("size_steps", [10, 15, 25, 40, 50])
+    below_trend = False
+    try:  # crash brake: research 2026-11-23 (panic_rule_2008): S&P under its 200-day average -> smallest size only
+        import yfinance as yf
+        sc = yf.download("SPY", period="14mo", auto_adjust=True, progress=False)["Close"].dropna().squeeze()
+        below_trend = bool(sc.iloc[-1] < sc.rolling(200).mean().iloc[-1])
+    except Exception as e:
+        print("spy trend", e)
 
     def rule_step(r):
         """Tested 2019-2026 (153 trades): calm-market first shocks (VIX under 25) and full capitulation (VIX 40+) rebound best;
         the grinding middle (VIX 25-40) is weakest. Stocks down 8%+ on the day rebound more than ones down 3-5%."""
         s = 0 if vix is None else (1 if (vix < 25 or vix >= 40) else -1)
         s += 1 if r <= -0.08 else (-1 if r > -0.05 else 0)
+        if below_trend and cfg.get("small_below_200d", True):
+            return 0  # 2008-2018 the rule lost money sizing up into a falling market (-65% drop); smallest size there cut it to -41%
         return max(0, min(len(steps) - 1, 2 + s))
     exit_on = sessions_after(str(today), cfg.get("hold_sessions", 6))
     eq = brk_state["equity"]
@@ -1087,7 +1096,9 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
         if desk.available:
             ctx = {"market_today_pct": round(spy * 100, 2), "vix": vix, "setups": [{"ticker": t, "today_pct": round(r * 100, 2), "under_20d_high_pct": round(dd * 100, 1),
                    "rule_size_pct": steps[rule_step(r)]} for r, dd, t in hits], "rule_picks": [t for _, _, t in hits[: cfg.get("max_names", 3)]],
-                   "size_steps_pct": steps,
+                   "size_steps_pct": steps, "sp500_below_200_day_average": below_trend,
+                   "crash_brake": "When the S&P is under its 200-day average every panic buy is the smallest size (10%). 2008-2018 the rule "
+                                  "lost money sizing up into falling markets; this brake turned -2.1%/yr into +1.5%/yr and cut the worst drop from -65% to -41%.",
                    "what_sizes_the_bet": {"VIX under 25": "+7.3% avg, 77% up", "VIX 25-40": "+2-3% avg, 61-66% up (weakest)",
                                           "VIX 40+": "+11.7% avg, 83% up", "stock down 8%+ today": "+7.9%", "stock down 3-5%": "+3.7%"},
                    "history": {"all_61_panic_days_6d_avg_pct": 5.3, "up_share": 0.70, "market_down_3pct_plus_days_avg_pct": 1.9,
@@ -1114,6 +1125,8 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
             k = rule_step(r)
             nudge = ((views.get(t) or {}).get("size") or "same").lower()
             k2 = max(0, min(len(steps) - 1, k + (1 if nudge == "up" else -1 if nudge == "down" else 0)))
+            if below_trend and cfg.get("small_below_200d", True):
+                k2 = 0  # the crash brake isn't up for debate
             dollars = min(eq * steps[k2] / 100, room, cash)
             L = account.lot(book, t, "panic")
             rec = {"date": str(today), "ticker": t, "price": round(prices[t], 2), "day_pct": round(r * 100, 2), "below_high_pct": round(dd * 100, 1),

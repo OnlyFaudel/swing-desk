@@ -165,6 +165,38 @@
   "support_vs_dipbuy_fills": {
    "trials": 14,
    "verdict": "2026-11-23 (10 nuclear stocks, Dec 2023-Nov 2026 hourly for support buys, daily for the dip-buy; $1,000, 25% per trade, max 4 open). Paper-style fills (touch = filled): support buys with the falling-sector block +0.44%/trade -> $3,369 (52%/yr, worst drop -28%); simple 2% dip-buy, sell back at the anchor close or 10 days -> $9,376. Realistic fills (price must trade 0.3% through the order): support buys +0.15%/trade, halves +0.37/-0.07 -> $1,348 (11%/yr, -44%); dip-buy -> $3,036 (47%/yr, -46%). Placing the support order 0.8-1.6% above the level doesn't fix it (+0.14 to +0.19%/trade, newer half negative). The dip-buy over 2008-2026 with realistic fills and $5+ stocks: 6.7%/yr, worst drop -64%; on the uranium ETF URA (no survivor bias) it lost money (-4.3%/yr). Conclusions: (1) the support buys' paper edge mostly comes from fills that only touched the price; (2) the dip-buy only shone in the 2023-26 bull and on surviving stocks; neither adopted as an upgrade. Added an honest-fill check (fill_check) so the paper record shows P&L without touch-only fills."
+  },
+  "overnight_vs_day": {
+   "trials": 3,
+   "verdict": "2026-11-23 (12 nuclear stocks + URA + SPY, 2000-2026, $3+): almost all the gain comes overnight (close to next open): CCJ +8.7 bp a night vs +0.6 bp in the day; the miners, SMR, OKLO and URA lose money during the day on average. Both halves agree for nearly every stock. A hold-overnight-only basket of our 10 stocks: since 2019 58%/yr before costs but 23%/yr after 0.10% a night, vs 36%/yr just holding; since 2008 2.7%/yr after costs vs 5.9%. Not adopted as a strategy (costs eat it). Lesson used: buy near the close rather than in the morning."
+  },
+  "panic_trigger_variants": {
+   "trials": 7,
+   "verdict": "2026-11-23 (panic rule as live, 2019-2026): S&P -1.5% trigger 30.7%/yr (halves 41.0/21.2) vs 25.3% (35.2/16.3), worst drop -37.7 vs -34.7; nuclear-only crash days (URA -4%, S&P flat) 0.5%/yr, newer half -10.4%: no edge (matches earlier 'sector_only_panics: no edge'); selling the next morning instead of at the close: 24.8 vs 25.3%/yr (no help). But 2008-2018 the -1.5% trigger did worse than -2% (-6.6 vs -2.1%/yr). Nothing adopted from this set."
+  },
+  "panic_rule_2008": {
+   "trials": 8,
+   "verdict": "2026-11-23 (same rule, 2008-2026, universe = today's stocks that existed then): 2008-2018 the live panic rule LOST money: -2.1%/yr, worst drop -65.5%, worst month -31% (it sized UP into the 2008 crash because VIX 40+ counts as capitulation). Full 2008-2026: 8.5%/yr. Fixes tried: no VIX 40+ upsizing (7.2%/yr, -61.5%); trade only above the S&P 200-day average (5.6%/yr, -26.6%); pause after a -15% month (4.9%, -67.6%); smallest size (10%) whenever the S&P is under its 200-day average: 2008-18 +1.5%/yr, 2019-26 21.7%/yr (halves 26.7/17.0), full 9.5%/yr, worst drop -40.6%, worst month -16.7%. ADOPTED the last one (small_below_200d). Honest note: the rule's 25%/yr is a 2019-2026 number; over 18 years it's closer to 9-10%/yr."
+  },
+  "support_buy_at_close": {
+   "trials": 6,
+   "verdict": "2026-11-23 (10 nuclear stocks, hourly Dec 2023-Nov 2026, live level rules): buy at the close when it ends within 1/2/3% above the support level (stop under the level, target = resistance with a 0.3% trade-through, 3 days max). With the falling-sector block: +0.17/+0.02/-0.07% per trade (newer half -0.23/-0.48/-0.51%); without: +0.02/-0.12/-0.22%. No edge: the support levels' paper edge was the touch fills, not the levels. Not adopted."
+  },
+  "close_auction_timing": {
+   "trials": 1,
+   "verdict": "2026-11-23 (10 nuclear stocks + SPY, 5-minute bars, last 60 days): the close vs the price at 3:50 pm differs by 0.30% either way on average, -0.14% mean (one short window). Noise-sized. Alpaca's market-on-close orders don't work with fractional shares (Day orders only), and our account trades fractions, so no change."
+  },
+  "miners_vs_uranium_lag": {
+   "trials": 8,
+   "verdict": "2026-11-23 (Sprott trust price SRUUF vs CCJ/NXE/UEC/DNN/UUUU basket, Jun 2021-Nov 2026): when uranium beat the miners by 5-10%+ over 10-20 days, the miners' next 10-20 days were +0.4 to +3.6% vs +1.2 to +2.6% normally; the newer half was at or below normal in every version (e.g. +2.06% vs 2.63% normal; +9.51/-2.68 halves). No reliable catch-up. Context only."
+  },
+  "fed_days": {
+   "trials": 3,
+   "verdict": "2026-11-23 (62 Fed decisions 2019-2026, our 10 stocks equal weight): decision day +0.64% vs +0.14% normal (halves +0.73/+0.56, up 58%), 3 days before -0.07% vs +0.41% (halves disagree), 3 days after +0.48% vs +0.41%. The Fed-day edge is within noise (t about 1.3). Added Fed days to the catalyst calendar as context; no rule. CPI days not tested (release dates not reachable from the research machine)."
+  },
+  "insider_buys": {
+   "trials": 2,
+   "verdict": "2026-11-23 (yfinance insider records Nov 2024-Nov 2026, 63 nuclear + related stocks): only 106 open-market insider buys, 63 separate events; they beat the S&P by +2.0% after 1 month (median +0.6%) and +6.0% after 3 months but only 54% of the time. Clusters of 2+ insiders: 4 events. Our 14 nuclear names had 11 open-market buys in 2 years: executives here mostly sell. Too few to test; the insider watch keeps flagging buys."
   }
  }
 }

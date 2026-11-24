@@ -9,6 +9,12 @@ import datetime as dt
 import market, desk_memory
 
 
+# Fed decision days (2 pm ET, from federalreserve.gov). Tested 2019-2026, 62 decisions: our 10 stocks rose +0.64% on the
+# day vs +0.14% on a normal day (both halves agree, +0.73/+0.56) but that's within noise (t about 1.3), and the 3 days
+# before were weaker than normal (halves disagree). Context for the team, not a trading rule.
+FOMC = ["2026-12-09", "2027-01-27"]
+
+
 def upcoming(tickers, days=45, today=None):
     today = today or dt.date.today()
     end = str(today + dt.timedelta(days=days))
@@ -23,6 +29,10 @@ def upcoming(tickers, days=45, today=None):
     for w in desk_memory.watch_all():
         if str(today) <= w["date"] <= end:
             out.append({"date": w["date"], "ticker": w.get("ticker") or "", "what": w["what"], "kind": "reminder", "by": w.get("by")})
+    for d in FOMC:
+        if str(today) <= d <= end:
+            out.append({"date": d, "ticker": "", "kind": "macro",
+                        "what": "Fed rate decision, 2 pm. Since 2019 our stocks averaged +0.6% on Fed days vs +0.1% normally (not a sure thing)"})
     seen, uniq = set(), []
     for x in sorted(out, key=lambda x: x["date"]):
         k = (x["date"], x["what"][:60])
