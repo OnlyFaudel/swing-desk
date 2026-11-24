@@ -1463,6 +1463,10 @@ def pd_ts(d):
 
 
 # ======================================================================= discoveries -> action (the bot adjusts itself)
+def px_ok(prices, t):
+    return bool(prices.get(t))
+
+
 def _rules():
     """Patterns that passed the discovery engine, turned into rules: which event type, which stocks, which way, how long."""
     out = []
@@ -1807,6 +1811,17 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
                     until = sessions_after(str(today), ru["days"])
                     st.setdefault("avoid", {})[t] = {"until": until, "why": f"{e['title'][:80]} ({p['event']}: {p['avg_pct']:+.2f}% {discovery.PLAIN.get(p['metric'], '')})"}
                     acted.append(f"no new buys in {t} until {until}")
+                    # A proven sharp drop (e.g. share offering: -4.5% over 5 days, down 76% of the time, both halves) also gets us OUT
+                    # of anything we already hold in that stock. Short horizons only, so it never overrides a tested longer trade.
+                    if p["avg_pct"] <= cfg.get("exit_on_bad_pct", -2.0) and ru["days"] <= 5 and px_ok(prices, t):
+                        for kind, tag in (("panic", "prx"), ("auto", "aux")):
+                            if account.lot(book, t, kind)["qty"] > 1e-6:
+                                ex.exit_panic(t, prices[t], f"sold on proven bad news: {e['title'][:70]} ({p['event']} averaged "
+                                              f"{p['avg_pct']:+.2f}% over the next {ru['days']} days in {p['n']} past cases)", kind=kind, tag=tag)
+                                acted.append(f"sold {t} ({kind})")
+                        if account.lot(book, t, "trade")["qty"] > 1e-6:
+                            ex.exit_trade(t, prices[t], f"sold on proven bad news: {p['event']} averaged {p['avg_pct']:+.2f}%")
+                            acted.append(f"sold {t} (support trade)")
                     continue
                 L = account.lot(book, t, "auto")
                 open_n = sum(1 for l in book["lots"].values() if l.get("auto", {}).get("qty", 0) > 1e-6)
