@@ -2364,8 +2364,32 @@ def owner_scan(st, desk, ex, data, prices, today, brk_state, text):
 
 
 # ======================================================================= supply-shock and licensing headlines
+_ROUTINE = re.compile(r"biweekly notice|receipt of|notice of (acceptance|docketing|intent)|public meeting|meeting notice|"
+                      r"no significant hazards|environmental assessment|exemption|extension of|withdrawal of|order imposing|"
+                      r"information collection|correction", re.I)
+
+
+def _ev_words(title):
+    t = (title or "").lower()
+    t = re.sub(r"\s[-|]\s[^-|]{2,40}$", "", t)  # drop " - Simply Wall St" style source tails
+    return {w for w in re.findall(r"[a-z0-9]+", t) if len(w) > 2}
+
+
+def _trim(txt, n):
+    """Cut at a sentence (or at least a word) boundary instead of mid-word."""
+    txt = (txt or "").strip()
+    if len(txt) <= n:
+        return txt
+    cut = txt[:n]
+    dot = max(cut.rfind(". "), cut.rfind("; "))
+    if dot > n * 0.5:
+        return cut[:dot + 1]
+    return cut[:cut.rfind(" ")].rstrip(",;:") + "…"
+
+
 def event_watch(st, items, today):
-    """Big producer cuts (Kazatomprom, Cameco...) and NRC licensing news get their own alert with history attached."""
+    """Big producer cuts (Kazatomprom, Cameco...) and NRC licensing news get their own alert with history attached.
+    Same story from a second outlet is skipped; routine NRC paperwork goes to the page quietly, no phone buzz."""
     import hashlib
     sent = st.setdefault("event_watch", [])
     n_today = sum(1 for e in sent if e.get("date") == str(today))
@@ -2381,6 +2405,15 @@ def event_watch(st, items, today):
         if st["flags"].get(key):
             continue
         st["flags"][key] = True
+        w = _ev_words(it.get("title"))
+        recent = [e for e in sent if e.get("date", "") >= str(today - dt.timedelta(days=3))]
+        if w and any(len(w & _ev_words(e.get("title"))) / max(1, len(w | _ev_words(e.get("title")))) >= 0.5 for e in recent):
+            continue  # same story, different outlet
+        routine = bool(lic and not sh and _ROUTINE.search(it.get("title") or ""))
+        if routine:
+            feed.post("engineer", f"Routine NRC paperwork (no phone alert): {it.get('title')}", [], kind="news")
+            sent.append({"date": str(today), "kind": "routine", "title": it.get("title"), "tickers": []})
+            continue
         n_today += 1
         if sh:
             who = shocks.beneficiaries(sh["site"], T)
@@ -2415,7 +2448,7 @@ def event_watch(st, items, today):
                 print("event watch engineer", e)
         feed.post("engineer", body + (f"\n\nPlant Engineer: {rd}" if rd else ""), [t for t in tick if t][:4], kind="alert",
                   art={"big": title, "sub": (it.get("title") or "")[:90]})
-        notify(title, (it.get("title") or "")[:160] + (f" | {rd[:200]}" if rd else ""), tags="warning" if sh else ("handshake" if dl else "scroll"), priority="high", who="engineer")
+        notify(title, _trim(it.get("title"), 140) + (f" | {_trim(rd, 260)}" if rd else ""), tags="warning" if sh else ("handshake" if dl else "scroll"), priority="high", who="engineer")
         sent.append({"date": str(today), "kind": kind, "title": it.get("title"), "tickers": tick[:4]})
     del sent[:-60]
 
