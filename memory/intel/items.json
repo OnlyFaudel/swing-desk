@@ -13456,5 +13456,95 @@
 "sign",
 "targets"
 ]
+},
+{
+"id": "ed609e22ce9351ef",
+"date": "2026-11-24",
+"ts": 1795481295,
+"title": "Navigating Nuclear: US Nuclear Regulatory Commission Issues Final Rules of Practice and Procedure",
+"summary": "",
+"outlet": "The National Law Review",
+"link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQOUM3cTBlal8tMVV6dklxWnhaTV9Ic09EUnVGaV9FZ3pvQ19WZDAxRjg1SXZwUDdqd0I5d3F3Qzl6VU1uT184dm9KNThSNVZicmlhUG9WaGJ6RWJqWlNIRmd0SVd1a2dWTEc4NkhpUHdZMWkyaDRUcC10WFEtYVU3MjVqaDJlaVFRUUlydllFU2NpQnJvN1lJUGoyZ3haNVJqX1BLam9PWWduYUM5RmVjbW9NczBvN03SAbwBQVVfeXFMT2VidTZGMnFTTUtHQkV1dUZzMXBfLUJyY0JSTWxMVi1Pd0lDQnQyMnNCUXIwRmNGbkNLQzBrZEpKbktMMGpWajhDNGUzRlRyOEpTNnFIZEFlYTN6VjEwMTFFcWdFeEphU1FaVnVzdTlwSGJMdVZUOWJwbGdLV2QxTFBVNVJHdjhsWEN2cWNvWVNKQXBUOGVnNHdYNElrcURBRU5DVHZoclV6SkNfRDVMLXoydnVDVW5TdWJDaFo?oc=5",
+"place": "NRC decisions",
+"tickers": [
+"CEG",
+"VST",
+"TLN",
+"LEU",
+"BWXT"
+],
+"tags": [
+"regulation"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.82,
+"score": 5.64,
+"echo_of": null,
+"w": [
+"commission",
+"final",
+"issues",
+"navigating",
+"nuclear",
+"practice",
+"procedure",
+"regulatory",
+"rules"
+]
+},
+{
+"id": "5578374fc03615c2",
+"date": "2026-11-24",
+"ts": 1795482689,
+"title": "A New Chapter in India's Nuclear Journey",
+"summary": "",
+"outlet": "www.pib.gov.in",
+"link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4MHJoMThrc296MDVTaVBFRHpuZVFuS0hVMmppOEQwN3dfSUluZ3dHOGdvU1AyWTVqQ3lZUEx0UmZoNmdkUVU5OVpDcHpCMHhacDNMaVl0RXpnNUhKeHpxNUZtLWR1ZWdrMl94aGZ4cDBYbXh1VkNRcw?oc=5",
+"place": "India",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "e13acaefe1e9f49f",
+"w": [
+"chapter",
+"india",
+"journey",
+"nuclear"
+]
+},
+{
+"id": "f6770689473d1480",
+"date": "2026-11-24",
+"ts": 1795486528,
+"title": "KHNP Seeks 13.2mlb Uranium in Largest Tender This Decade",
+"summary": "",
+"outlet": "Wisevoter",
+"link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNVjBsZDlGcWVCLUZjdUR4WjBmSWxBSU5ub0t1Nnp3TTA5cEVucWM0SWItOGxFYkhtb0UyVzk0dkZOSmNGVjAyOXJBVVgyeG9GcS1kM3RXMnR1WXhUUVpQa01ZNHppWkotbVYzeHVmbzUyYXAzU25YMXN3cjNqSFZxaWdUTWMxeVFyVEE?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.89,
+"score": 4.28,
+"echo_of": null,
+"w": [
+"2mlb",
+"decade",
+"khnp",
+"largest",
+"seeks",
+"tender",
+"uranium"
+]
 }
 ]
