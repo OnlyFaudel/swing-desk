@@ -16556,5 +16556,95 @@
 "tsx",
 "watch"
 ]
+},
+{
+"id": "7249344723eb0b21",
+"date": "2026-11-24",
+"ts": 1795525200,
+"title": "Cosa Identifies Significant Anomalies in Ambient Noise Tomography Survey at the Astro Uranium Project, Athabasca Basin, Saskatchewan",
+"summary": "",
+"outlet": "TMX Newsfile",
+"link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPZmVibnk5TXkza0FSdnpTSVN3cWRQazN4a3EtZnUzaVJDVlZZcEFOTVJzMHdQQ3ZqM0tubnFvc3FkT0V3NXc1WmRNQWhITzZSQ1dBSlg3Yk5WV1lTQWpvclUzUlRLWGp4U0tJLUc2N2JncWgycFplYUFuYjJveC1YMkt2SVFOZDd2MDJTZXVXSTJXQ19uVHNTTkhWdjVmM21UaWJINThqSjN6R01qUGo3dUNFeGUzS1NEb2h5LU05QUZKTDViXy12OXdzNm9xM1JmeWs3eUZYUGpQX0RrUUpYOWJuYmViTkozV25mUzg1RjhRY3MtQWZHMzExUnZBUnZwcWpFSw?oc=5",
+"place": "Athabasca Basin",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.07,
+"score": 2.64,
+"echo_of": "cda8fbdcb8858d7a",
+"w": [
+"ambient",
+"anomalies",
+"astro",
+"athabasca",
+"basin",
+"cosa",
+"identifies",
+"noise",
+"project",
+"saskatchewan",
+"significant",
+"survey",
+"tomography",
+"uranium"
+]
+},
+{
+"id": "3d904897689442d5",
+"date": "2026-11-24",
+"ts": 1795546546,
+"title": "Interest in Saskatchewan on the rise thanks to uranium",
+"summary": "",
+"outlet": "Country 600 CJWW",
+"link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNmsySVI5RWNYY1hFNlA2UDRhLWQ2dkduVUdCQkVvdmVQQU1Yd1QtU0JnWjhqMnkzZUR0WWg0YzhkNVllTDhVOEZqSHRDYmVXenVLVDlNaXRVY2diWE9oUF91amxmYXZKRndKQk9MTU1STXBwanJHc2Z2dXhSZlJjYUxpcklkZTllNmtPbDM3NmJrZFY1SHVr?oc=5",
+"place": "Athabasca Basin",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.86,
+"score": 4.22,
+"echo_of": null,
+"w": [
+"interest",
+"rise",
+"saskatchewan",
+"thanks",
+"uranium"
+]
+},
+{
+"id": "6fb969d093a9bc6e",
+"date": "2026-11-24",
+"ts": 1795546750,
+"title": "NexGen expands PCE discovery",
+"summary": "",
+"outlet": "Canadian Mining Journal",
+"link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB0NXp3OHNSZzVsb1pjMXFiSU1tYUt5UHF2RXE0a244SENQbkZCa2JaMUlEUkxKVEluNGtDV0NzOEtYM25yQ3hZbmhPSEJxckh6R0ZFbmhKMndXWHNlMFlZSlphclF5d2JpYTlHc0JiaUdjVFB4Ry15YjZlbkw?oc=5",
+"place": "Rook I / Arrow",
+"tickers": [
+"NXE"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.62,
+"score": 3.74,
+"echo_of": null,
+"w": [
+"discovery",
+"expands",
+"nexgen",
+"pce"
+]
 }
 ]
