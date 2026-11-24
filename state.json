@@ -904,42 +904,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Local intel: \uc7ac\uacbd\uc77c\ubcf4 (South Korea)",
-   "title": "China raises concerns over IAEA verification of South Korea's nuclear-powered submarines, calling it a \"grave challenge to international security\"",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5BTnlRVkdycFZRT3JnR2ktbDZ5RGVvdzJsRkR4M3BCV2Z4aDdVbU5fMGJ0TnUyUEs3TXBPeGZNMVZHV25uemNSS3pjbjZSem9DV2xTYjVYU0plOWE4Q0VGLWVB?oc=5",
-   "ts": 1795390200,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Local intel: The Bangladesh Monitor (Asia newcomers)",
-   "title": "Rosatom signs world's first export agreement with Indonesia for floating nuclear power unit",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYTRZRlgyVDZmNjd0Q1ZKYVZ3SzY3ZG5tY1RUWmxrX0tSd3l3Tkhobm5ROWFQdUg5LWxucTdaMGtzeTJGQUY3dHNhY3ZTeGdwczVyeE9mWkMtQjJWYkN1eHZyNWNGOXVtSGpXanp4cHVGdllRZWZQYlZtS1llbWI2aXRreGUxRk9pSjdRc01vOVh0aGRjdmpxd0tEeEpRbXZMYmNlTy1zekdMajVFcVI2eDY1UGFkUQ?oc=5",
-   "ts": 1795351837,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Local intel: \uc870\uc120\uc77c\ubcf4 (South Korea)",
-   "title": "South Korea Seeks IAEA Safeguards for Nuclear Submarines",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcFoyRnk1Z2Rla0k1RXA0bS1CSG5MdHVjSmZ4dVpMRnlUbzJXc0FaZkItamhmN1A1MFJ1bWtzT05VVFloaHhOZzd5V2VsZG9Db2REejhoZFYwZ1VhUWZvcDN6Vnh4YmozMFhqV21ONDVLYjRTbzBpdTNRZDRLUHJqdUFnb3l0ajl4?oc=5",
-   "ts": 1795378246,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
    "ticker": "BWXT",
    "source": "Local intel: ABC News & Headlines \u2013 Australian Broadcasting Corporation (AUKUS and navies)",
    "title": "'They are wrong': Defence minister denies US report on AUKUS submarines",
@@ -3902,6 +3866,42 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Exploration survey results at a junior's early-stage project, not Cameco's own mines."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Yahoo Finance",
+   "title": "Cosa Identifies Significant Anomalies in Ambient Noise Tomography Survey at the Astro Uranium Project, Athabasca Basin, Saskatchewan",
+   "link": "https://finance.yahoo.com/energy/articles/cosa-identifies-significant-anomalies-ambient-130000964.html?.tsrc=rss",
+   "ts": 1795525200,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Promotional mining exploration press release about a different company's project (Cosa Resources) in the Athabasca Basin."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News",
+   "title": "Energy Fuels targets 1Mlb uranium production campaign - www.mining-journal.com",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNc0tCV1NBN0JBOWxmckoxZ3JfYks2SHk1NkJDT05uLTJFOXRtVjA4VFRPUi0yN21YRlp3WjhNQ2lpZl9wbThwZ3o3UlpOdWkxYkVWOEQ0dG5fR1pSQjlLSC1LYmpLeTF4UlFxVmE4NWVaM0tFTXBLb0hianNYNW9MYnBRUk5XVE5vT3dKSnF0RkdoVEdMSS01aElHajdYYUJVNDBGc1ptSVJzWklJNzFpWnl2SjNvenBjSXl1dE9tZw?oc=5",
+   "ts": 1795525964,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic production campaign target headline; no new numbers or timing shown here."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: \"McArthur River\" OR \"Cigar Lake\" uranium",
+   "title": "Global Uranium Reports ANT Survey Results at Astro and Identifies Promising Follow-Up Area Along AS-1 - Junior Mining Network",
+   "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNekYwaHU3dzZENS1fTXhxbHdaV2RackdmRlFsd0V5eHEzTEdIVGdwWVB1WHk1eV9fS3M0ZTNLYVBqdmtkY1d5NWdJREtlYlEzYXhVRXNSYlZ6QWFHYzZ0LTRfUlkzeG5xNzdURDZvaUhJUUlYOG5PMWs4aXVNZ3RoRnl2amREa3BlOXVxVDZ1cEZDZTI0b3JJbkp0Y3hiMkNsMVhralhLX2k2MndfZzcwbXlXeWVQTU1zanpWYlZVODhTNmNaLUhneG4zRWY4UmJQUEE5bXhIRVhWVWVIWW9jazZhN01YU2dJN3NJR3REeW9acGI4aVltM3dUamZPTmphMjNKSF9CdU1KMEVPb2d2Q3p6TUwtbFVyM2N0VlVxdEtjQQ?oc=5",
+   "ts": 1795525475,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Promotional survey news from a junior explorer about an unrelated Athabasca project, not Cameco."
   }
  ],
  "reviews": [
@@ -5424,16 +5424,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.03459,
+  "day_usd": 0.036,
   "month": "2026-11",
-  "month_usd": 0.76601,
-  "total_usd": 0.76601,
+  "month_usd": 0.76742,
+  "total_usd": 0.76742,
   "by_role": {
    "macro": 0.06009,
    "whale": 0.01301,
    "crowd": 0.00849,
    "level": 0.03741,
-   "scout": 0.08468,
+   "scout": 0.08609,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5552,7 +5552,7 @@
   "SPY": 722.39,
   "SSO": 61.17
  },
- "last_cycle": "2026-11-24 08:11 ET",
+ "last_cycle": "2026-11-24 08:21 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51398,6 +51398,7 @@
   "0ec3c23071785cfd",
   "bb6d0befac06c212",
   "cdc78121c1406bce",
+  "1b180f9c668466ea",
   "586a3a3d084eb114",
   "1d91a3cc917720fa",
   "8c91e31e5f3c4c89",
@@ -51563,6 +51564,7 @@
   "acd35ca94b40c5e4",
   "a2a8ee32597c7b50",
   "693301ddca2bc8c2",
+  "ffa36b0bf7521b7f",
   "982258a10913aaf8",
   "0235abc0565d5130",
   "fd2731052f33e27f",
@@ -51631,6 +51633,7 @@
   "33f4fae5acefd642",
   "5e042fd73e80d40b",
   "ca2a5c0a1baa2527",
+  "f2896a10ee94b15b",
   "563c0572b10f43bc",
   "844469477dae7bae",
   "f1c6e7a99bef23fc",
@@ -51728,7 +51731,7 @@
   "a7baf61adc01832c",
   "13880e66390f270d"
  ],
- "news_slow_at": 1795525528.4875064,
+ "news_slow_at": 1795526148.9829092,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -205442,7 +205445,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 08:11",
+  "updated": "2026-11-24 08:21",
   "total": 478,
   "week": 402,
   "places": {
@@ -206121,6 +206124,7 @@
   "7f7a05be6b3ac1f5",
   "9e7ebdf62031eeaf",
   "a9bcbfe54ba12f7e",
+  "ed609e22ce9351ef",
   "0ad3ea7bae8b611c",
   "16345b7a70842227",
   "b95ad295cbbaef38",
@@ -206133,7 +206137,6 @@
   "6aea49b49aa5bae7",
   "5178e5d1234a91bb",
   "61659cb80b158a77",
-  "a7baf61adc01832c",
   "c2a1739b2e369eff",
   "28eaa442b6a19a6f",
   "97e5a70ea6902e58",
@@ -206192,7 +206195,7 @@
   "f88ba68b2c94d1a7",
   "29f141fd08778bc3",
   "fe094eef9f0aabee",
-  "ed609e22ce9351ef"
+  "a7baf61adc01832c"
  ],
  "panic_log": [
   {
@@ -207954,7 +207957,7 @@
    "built": "2026-11-24 07:54"
   }
  ],
- "heartbeat": "2026-11-24 08:11",
+ "heartbeat": "2026-11-24 08:21",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -208114,15 +208117,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 101,
-   "used": 94,
+   "asked": 104,
+   "used": 97,
    "notes": {
     "TLN Deals and contracts": 4,
-    "CCJ Deals and contracts": 26,
+    "CCJ Deals and contracts": 27,
     "BWXT Deals and contracts": 21,
     "SECTOR Government and laws": 26,
-    "UUUU Deals and contracts": 22,
-    "SECTOR Countries": 20,
+    "UUUU Deals and contracts": 23,
+    "SECTOR Countries": 21,
     "CEG Deals and contracts": 13,
     "NXE Legal": 2,
     "NXE Deals and contracts": 3,
@@ -208130,9 +208133,9 @@
     "BWXT Legal": 1,
     "LEU Deals and contracts": 16,
     "UEC Deals and contracts": 3,
-    "UUUU Legal": 3,
+    "UUUU Legal": 4,
     "SECTOR Uranium market": 2,
-    "CCJ Legal": 2,
+    "CCJ Legal": 4,
     "CEG Legal": 1,
     "VST Deals and contracts": 9,
     "LEU Legal": 1
@@ -209946,6 +209949,16 @@
    "price": 365.03,
    "result": null,
    "why": "The order sits about 2.6% below a $365 close while the basket is under its 10-day average, which breaks our no-new-buys rule. No note shows anyone re-approving it, so it should be canceled and the own"
+  },
+  {
+   "role": "scout",
+   "ticker": "UUUU",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-24",
+   "price": 5.22,
+   "result": null,
+   "why": "The headline states a production target with no new results, guidance change, or contract attached. Desk history shows UUUU's past deal-type news has tended to fade, and there is a live securities inv"
   }
  ],
  "after_sale": [],
@@ -211926,7 +211939,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 08:11",
+ "watchdog_last": "2026-11-24 08:21",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
