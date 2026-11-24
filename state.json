@@ -1256,18 +1256,6 @@
  },
  "news_feed": [
   {
-   "ticker": "UUUU",
-   "source": "Yahoo Finance",
-   "title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales",
-   "link": "https://stocktwits.com/news-articles/markets/equity/uuuu-stock-rises-premarket-as-energy-fuels-targets-one-million-pounds-of-uranium-output-sees-35-growth-in-2027-contract-sales/cNbpb5FR9jG?.tsrc=rss",
-   "ts": 1795437726,
-   "materiality": 6,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "earnings",
-   "why": "Production guidance and 2027 sales growth target, but premarket move is unproven"
-  },
-  {
    "ticker": "CCJ",
    "source": "Google News: uranium price",
    "title": "How did Cameco (TSX:CCO) and Denison Mines' (TSX:DML) third-quarter results reflect record uranium term prices? - kalkine.ca",
@@ -4254,6 +4242,18 @@
    "direction": "neutral",
    "event_type": "earnings",
    "why": "Cash flow growth headline on a known Calpine deal; mostly already priced in."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News: Constellation Energy nuclear",
+   "title": "CEG Below the 50 and 200-Day SMAs: Is It a Buy or Hold Right Now? - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQXJtZGxmMi12UFQ1MzQ2NDcyWkw3ZlBYbXliSDhYdlJmZHBUZGhONHFMeDVkT252NmQxTjNpRmduY1drUU1Mb2RYWGVSdy1LbXcwWWVzUnZKa2c5NDd0UlhlMGR0cHlLeV9Fbko1b3U3QURYc1E4bkNEeHV4Q2hQTDNkSFkwcm1lT1lHVGNaRUZOMElIeUxOOUNmcGZVRlpyaGh6QlhyMERUWXVjcmJFb1A0Rk9xZ2Q3cDQ4?oc=5",
+   "ts": 1795526640,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic SMA technical-analysis piece with no new company information."
   }
  ],
  "reviews": [
@@ -5856,16 +5856,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.17231,
+  "day_usd": 0.17269,
   "month": "2026-11",
-  "month_usd": 0.90373,
-  "total_usd": 0.90373,
+  "month_usd": 0.90411,
+  "total_usd": 0.90411,
   "by_role": {
    "macro": 0.08201,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.05997,
-   "scout": 0.10053,
+   "scout": 0.10091,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5971,20 +5971,20 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 58.89,
-  "NXE": 6.58,
-  "UEC": 5.52,
+  "CCJ": 59.07,
+  "NXE": 6.63,
+  "UEC": 5.57,
   "DNN": 1.71,
-  "UUUU": 4.89,
-  "LEU": 83.63,
-  "BWXT": 111.89,
-  "CEG": 245.93,
-  "VST": 119.92,
-  "TLN": 349.85,
-  "SPY": 714.51,
-  "SSO": 59.8
+  "UUUU": 4.92,
+  "LEU": 84.14,
+  "BWXT": 112.7,
+  "CEG": 247.22,
+  "VST": 120.14,
+  "TLN": 350.88,
+  "SPY": 716.22,
+  "SSO": 60.07
  },
- "last_cycle": "2026-11-24 11:18 ET",
+ "last_cycle": "2026-11-24 11:26 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -6009,10 +6009,10 @@
   ]
  },
  "brakes": {
-  "equity": 1002.91,
-  "day_pct": -2.58,
-  "week_pct": 0.24,
-  "drawdown_pct": -4.88,
+  "equity": 1006.27,
+  "day_pct": -2.26,
+  "week_pct": 0.58,
+  "drawdown_pct": -4.56,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -7726,6 +7726,34 @@
   [
    "2026-11-24 11:18",
    1002.91
+  ],
+  [
+   "2026-11-24 11:19",
+   1000.27
+  ],
+  [
+   "2026-11-24 11:20",
+   1001.01
+  ],
+  [
+   "2026-11-24 11:21",
+   1004.34
+  ],
+  [
+   "2026-11-24 11:22",
+   1003.76
+  ],
+  [
+   "2026-11-24 11:24",
+   1003.92
+  ],
+  [
+   "2026-11-24 11:25",
+   1005.08
+  ],
+  [
+   "2026-11-24 11:26",
+   1006.27
   ]
  ],
  "nowcast": {
@@ -50489,42 +50517,42 @@
  },
  "sync": {
   "pulse_up": false,
-  "basket_vs_avg_pct": -9.23,
+  "basket_vs_avg_pct": -9.4,
   "partners_pct": {
-   "CCJ": 0.06,
-   "NXE": -0.08,
-   "UEC": -0.12,
-   "DNN": 0.06,
-   "UUUU": 0.33,
-   "LEU": 0.01,
-   "BWXT": -0.12,
-   "CEG": -0.28,
-   "VST": -0.44,
-   "TLN": -0.79
+   "CCJ": -0.1,
+   "NXE": -0.24,
+   "UEC": -0.26,
+   "DNN": -0.12,
+   "UUUU": 0.17,
+   "LEU": -0.21,
+   "BWXT": -0.28,
+   "CEG": -0.45,
+   "VST": -0.55,
+   "TLN": -0.93
   },
   "mult": {
-   "CCJ": 0.92,
+   "CCJ": 0.8,
    "NXE": 0.8,
    "UEC": 0.8,
-   "DNN": 0.92,
+   "DNN": 0.8,
    "UUUU": 0.92,
-   "LEU": 0.92,
+   "LEU": 0.8,
    "BWXT": 0.8,
    "CEG": 0.8,
    "VST": 0.8,
    "TLN": 0.8
   },
   "own_pct": {
-   "CCJ": -1.93,
-   "NXE": -0.68,
-   "UEC": -0.27,
-   "DNN": -1.92,
-   "UUUU": -4.31,
-   "LEU": -1.48,
-   "BWXT": -0.29,
-   "CEG": 1.14,
-   "VST": 2.63,
-   "TLN": 5.75
+   "CCJ": -2.08,
+   "NXE": -0.83,
+   "UEC": -0.63,
+   "DNN": -1.9,
+   "UUUU": -4.5,
+   "LEU": -1.05,
+   "BWXT": -0.42,
+   "CEG": 1.06,
+   "VST": 1.96,
+   "TLN": 5.43
   },
   "series": {
    "CCJ": [
@@ -50667,7 +50695,7 @@
     0.7446,
     0.7431,
     0.7094,
-    0.7106
+    0.7095
    ],
    "NXE": [
     1.0,
@@ -50809,7 +50837,7 @@
     0.778,
     0.7752,
     0.7534,
-    0.7534
+    0.7523
    ],
    "UEC": [
     1.0,
@@ -50951,7 +50979,7 @@
     0.7272,
     0.7322,
     0.6871,
-    0.6915
+    0.689
    ],
    "DNN": [
     1.0,
@@ -51093,7 +51121,7 @@
     0.7622,
     0.7516,
     0.724,
-    0.7226
+    0.7228
    ],
    "UUUU": [
     1.0,
@@ -51235,7 +51263,7 @@
     0.6377,
     0.6335,
     0.5928,
-    0.5934
+    0.5923
    ],
    "LEU": [
     1.0,
@@ -51377,7 +51405,7 @@
     0.7966,
     0.7905,
     0.7426,
-    0.7526
+    0.7559
    ],
    "BWXT": [
     1.0,
@@ -51519,7 +51547,7 @@
     0.869,
     0.8665,
     0.8349,
-    0.8387
+    0.8375
    ],
    "CEG": [
     1.0,
@@ -51661,7 +51689,7 @@
     0.9722,
     0.9725,
     0.9502,
-    0.9496
+    0.9489
    ],
    "VST": [
     1.0,
@@ -51803,7 +51831,7 @@
     0.8576,
     0.8492,
     0.8242,
-    0.8268
+    0.8214
    ],
    "TLN": [
     1.0,
@@ -51945,7 +51973,7 @@
     1.0619,
     1.0611,
     1.0213,
-    1.0198
+    1.0167
    ],
    "basket": [
     1.0,
@@ -52087,7 +52115,7 @@
     0.8419,
     0.8388,
     0.8061,
-    0.8077
+    0.8061
    ],
    "avg": [
     0.9967,
@@ -52232,7 +52260,7 @@
     0.8898
    ]
   },
-  "time": "2026-11-24 11:18"
+  "time": "2026-11-24 11:26"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -52539,8 +52567,8 @@
   "9f2e45d00f1961dd",
   "7269a326a498bd44",
   "42e4688c154f3e5b",
-  "960af125712d07b2",
   "fe808fea77078dbb",
+  "960af125712d07b2",
   "bf01a2cc0277276c",
   "1b180f9c668466ea",
   "b78359c4e74e2d63",
@@ -52646,9 +52674,10 @@
   "b36ee151c6da4ebf",
   "32cfd9ef3704009d",
   "04dd9aeafd90d9b4",
-  "7ffa38b48cb85fdf"
+  "7ffa38b48cb85fdf",
+  "e2c2d566a7566dea"
  ],
- "news_slow_at": 1795536960.8672302,
+ "news_slow_at": 1795537586.4630036,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -207300,6 +207329,21 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-24 11:26",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: UEC moved +1.5% in 9 min. Checking the news for a reason.",
+   "tickers": [
+    "UEC"
+   ],
+   "art": {
+    "big": "UEC moved +1.5% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -207930,7 +207974,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 11:18",
+  "updated": "2026-11-24 11:26",
   "total": 501,
   "week": 422,
   "places": {
@@ -210460,7 +210504,7 @@
    "built": "2026-11-24 10:57"
   }
  ],
- "heartbeat": "2026-11-24 11:18",
+ "heartbeat": "2026-11-24 11:26",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -210615,13 +210659,13 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 111.89,
-  "TLN": 349.85
+  "BWXT": 112.7,
+  "TLN": 350.88
  },
  "notes_audit": {
   "scout": {
-   "asked": 136,
-   "used": 126,
+   "asked": 137,
+   "used": 127,
    "notes": {
     "TLN Deals and contracts": 7,
     "CCJ Deals and contracts": 35,
@@ -210629,7 +210673,7 @@
     "SECTOR Government and laws": 33,
     "UUUU Deals and contracts": 29,
     "SECTOR Countries": 27,
-    "CEG Deals and contracts": 19,
+    "CEG Deals and contracts": 20,
     "NXE Legal": 2,
     "NXE Deals and contracts": 6,
     "DNN Deals and contracts": 7,
@@ -211067,7 +211111,7 @@
    ],
    [
     "2026-11-24",
-    58.92
+    59.07
    ]
   ],
   "NXE": [
@@ -211189,7 +211233,7 @@
    ],
    [
     "2026-11-24",
-    6.59
+    6.63
    ]
   ],
   "UEC": [
@@ -211311,7 +211355,7 @@
    ],
    [
     "2026-11-24",
-    5.51
+    5.57
    ]
   ],
   "DNN": [
@@ -211555,7 +211599,7 @@
    ],
    [
     "2026-11-24",
-    4.89
+    4.93
    ]
   ],
   "LEU": [
@@ -211677,7 +211721,7 @@
    ],
    [
     "2026-11-24",
-    83.35
+    84.15
    ]
   ],
   "BWXT": [
@@ -211799,7 +211843,7 @@
    ],
    [
     "2026-11-24",
-    112.12
+    112.51
    ]
   ],
   "CEG": [
@@ -211921,7 +211965,7 @@
    ],
    [
     "2026-11-24",
-    245.95
+    246.96
    ]
   ],
   "VST": [
@@ -212043,7 +212087,7 @@
    ],
    [
     "2026-11-24",
-    119.79
+    120.14
    ]
   ],
   "TLN": [
@@ -212165,7 +212209,7 @@
    ],
    [
     "2026-11-24",
-    349.73
+    350.8
    ]
   ]
  },
@@ -215013,19 +215057,9 @@
  "hawk_cool": {},
  "hawk_recent": [
   [
-   1795534432.0696638,
-   "LEU",
-   1
-  ],
-  [
-   1795534730.4080257,
+   1795537586.3781326,
    "UEC",
    1
-  ],
-  [
-   1795535066.9407828,
-   "UEC",
-   -1
   ]
  ],
  "auto_log": [],
@@ -215344,7 +215378,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 11:18",
+ "watchdog_last": "2026-11-24 11:26",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
