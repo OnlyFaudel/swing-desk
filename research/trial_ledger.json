@@ -277,6 +277,14 @@
   "whole_stack_backtest": {
    "trials": 1,
    "verdict": "2026-11-24 night round 4: one $1,000 account, Jan 2008-Nov 2026, daily closes, 0.2% costs: smart parking (SSO above the S&P 200-day, T-bills below) + panic rebound (crash brake) + sharp-drop (10%/15%) + comeback (below 200d, -15% stop) on today's 10 nuclear + related stocks. Result 21.1%/yr, $1,000 -> $37,287, worst drop -50.8%, 837 trades (panic 257, sharp 496, comeback 84). Years: 2008 -27.0, 2009 +49.3, 2010 +12.8, 2011 +3.5, 2012 +26.5, 2013 +78.9, 2014 +21.7, 2015 -4.4, 2016 +35.9, 2017 +49.6, 2018 -12.7, 2019 +14.0, 2020 +8.6, 2021 +67.0, 2022 -8.4, 2023 +25.2, 2024 +62.9, 2025 +41.8, 2026 YTD +14.4. Benchmarks: S&P 10.9%/yr (-51.9%); smart parking alone 15.3%/yr (-37.5%), $14,641. Not included: support buys, AI power, fear fading, year-end, uranium momentum, Thanksgiving, bank-the-jump, discovery trades. Caveats: survivor bias (today's stock list), closing-price fills."
+  },
+  "whole_stack_all7": {
+   "trials": 6,
+   "verdict": "2026-11-24 (whole-bot backtest, 2008-2026, $1,000, adding the smaller rules to panic+sharp+comeback with smart parking): core 3 21.1%/yr ($37,287); + fear fading 22.3% ($44,523; both eras up ~1.1-1.2 pts); + AI power 22.8% ($48,584; +0.4 / +3.6 pts); + year-end 21.3% (-0.2 / +0.7); + Thanksgiving 21.1% (flat); all 7: 23.9%/yr, 2008-18 18.7%, 2019-26 31.6%, $57,553, worst -51.3%. Drawdowns worse than -25%: Feb-Nov 2008 -51.3% (recovered Oct 2009), Apr-Jun 2010 -26.1%, Apr-Oct 2011 -25.1%, Nov 2015-Jan 2016 -26.8%, Jan 2018-Mar 2020 -49.1%, Oct 2025-Mar 2026 -25.5%."
+  },
+  "account_drawdown_brake": {
+   "trials": 5,
+   "verdict": "2026-11-24 (all 7 rules): half size on new trades when the account is 15/20/25%+ under its peak: 22.2/22.3/23.2%/yr vs 23.9%, worst drop -36.0/-40.2/-40.7% vs -51.3% (2019-26: -35.2/-34.6/-34.6 vs -43.8); quarter size at 20%: 18.8%/yr, -34.6%. ADOPTED 25% / half size (dd_mult on every sizing path): return per unit of worst drop 0.47 -> 0.57 for -0.7 pts/yr."
   }
  }
 }

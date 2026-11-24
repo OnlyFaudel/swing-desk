@@ -581,5 +581,11 @@
     "only_below_200d": true,
     "stop_pct": 15
   },
-  "min_stop_room_pct": 0.75
+  "min_stop_room_pct": 0.75,
+  "account_brake": {
+    "enabled": true,
+    "drawdown_pct": 25,
+    "mult": 0.5,
+    "note": "Half size on every new trade while the account is 25%+ below its peak. Research 2026-11-24: account_drawdown_brake."
+  }
 }

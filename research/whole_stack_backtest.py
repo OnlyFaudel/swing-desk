@@ -8,13 +8,13 @@ idx=C.loc["2007-06-01":].index
 C=C.reindex(idx); L=L.reindex(idx); V=V.reindex(idx)
 spy=C['SPY']; sma=spy.rolling(200).mean(); above=(spy>sma)
 sso=Z['SSO'].reindex(idx).ffill(); tb=(Z['^IRX'].reindex(idx).ffill()/100/252).fillna(0)
-vix=X['^VIX'].reindex(idx).ffill()
+vix=X['^VIX'].reindex(idx).ffill(); nvda=X['NVDA'].reindex(idx).ffill()
 R=C.pct_change(); r5=C.pct_change(5); dv=(C*V).rolling(20).mean(); ok=(C>3)&(dv>5e6)
 HI20=C.rolling(20).max()
-def run(start, end=None, parking=True, rules=("panic","sharp","comeback"), cost=0.002):
+def run(start, end=None, parking=True, rules=("panic","sharp","comeback"), cost=0.002, brake=None, brake_mult=0.5):
     days=idx[(idx>=start)&((idx<=end) if end else True)]
     I={d:i for i,d in enumerate(idx)}
-    cash=1000.0; pos=[]; curve=[]; ntr={k:0 for k in rules}
+    cash=1000.0; pos=[]; curve=[]; ntr={k:0 for k in rules}; state={}
     for d in days:
         i=I[d]
         # parked cash earns SSO (above 200d) or T-bills (below), decided at yesterday's close
@@ -29,6 +29,7 @@ def run(start, end=None, parking=True, rules=("panic","sharp","comeback"), cost=
             done=False
             if p['k']=="panic": done = px>=p['e']*1.10 or i-p['i']>=6
             if p['k']=="sharp": done = px>=p['e']*1.10 or i-p['i']>=10
+            if p['k'] in ("fear","ai","yearend","tg"): done = i>=p['x']
             if p['k']=="comeback":
                 if L.iat[i,p['j']]<=p['e']*0.85: px=p['e']*0.85; done=True
                 done = done or i-p['i']>=20
@@ -36,13 +37,31 @@ def run(start, end=None, parking=True, rules=("panic","sharp","comeback"), cost=
             else: keep.append(p)
         pos=keep
         val=cash+sum(p['q']*(C.iat[i,p['j']] if not np.isnan(C.iat[i,p['j']]) else p['e']) for p in pos)
-        curve.append(val)
+        curve.append(val); state['peak']=max(state.get('peak',val),val)
         held={p['j'] for p in pos}
-        def buy(j,frac,k):
+        def buy(j,frac,k,x=None):
             nonlocal cash
-            amt=min(val*frac,cash)
+            amt=min(val*frac*(brake_mult if (brake and val<state['peak']*(1-brake)) else 1),cash)
             if amt<5: return
-            px=C.iat[i,j]*(1+cost/2); pos.append(dict(j=j,q=amt/px,e=C.iat[i,j],i=i,k=k)); cash-=amt; held.add(j); ntr[k]+=1
+            px=C.iat[i,j]*(1+cost/2); pos.append(dict(j=j,q=amt/px,e=C.iat[i,j],i=i,k=k,x=x)); cash-=amt; held.add(j); ntr[k]+=1
+        cols=list(C.columns)
+        if "fear" in rules and i>2 and vix.iloc[i]>30 and vix.iloc[i]<vix.iloc[i-1]<vix.iloc[i-2] and i-state.get('lastfear',-99)>=20:
+            state['lastfear']=i; js=[cols.index(t) for t in NUC if ok.iat[i,cols.index(t)] and cols.index(t) not in held]
+            for j in js: buy(j,0.20/len(js),"fear",i+20)
+        if "ai" in rules and i>0 and nvda.iloc[i]/nvda.iloc[i-1]-1>=0.06:
+            js=[cols.index(t) for t in ("CEG","VST","TLN") if t in cols and ok.iat[i,cols.index(t)] and cols.index(t) not in held]
+            for j in js: buy(j,0.15/len(js),"ai",i+5)
+        if "yearend" in rules and d.month==12 and d.day>=18 and state.get('ye')!=d.year:
+            state['ye']=d.year; y0=idx[(idx.year==d.year)][0]; i0=I[y0]
+            ytd=[(C.iat[i,cols.index(t)]/C.iat[i0,cols.index(t)]-1,cols.index(t)) for t in NUC if ok.iat[i,cols.index(t)] and not np.isnan(C.iat[i0,cols.index(t)])]
+            ex_i=I[idx[idx>=pd.Timestamp(d.year+1,1,13)][0]] if (idx>=pd.Timestamp(d.year+1,1,13)).any() else len(idx)-1
+            for _,j in sorted(ytd)[:3]:
+                if j not in held: buy(j,0.10,"yearend",ex_i)
+        if "tg" in rules and d.month==11:
+            tgd=pd.Timestamp(d.year,11,1); tgd=tgd+pd.Timedelta(days=(3-tgd.dayofweek)%7+21)
+            if d==tgd-pd.Timedelta(days=2):
+                js=[cols.index(t) for t in NUC if ok.iat[i,cols.index(t)] and cols.index(t) not in held]
+                for j in js: buy(j,0.15/len(js),"tg",i+2)
         if "panic" in rules and spy.iloc[i]/spy.iloc[i-1]-1<=-0.02:
             hits=[(R.iat[i,j],j) for j,t in enumerate(C.columns) if t in NUC and ok.iat[i,j] and R.iat[i,j]<=-0.03 and C.iat[i,j]/HI20.iat[i,j]-1<=-0.15]
             fill=[(C.iat[i,j]/HI20.iat[i,j]-1,j) for j,t in enumerate(C.columns) if t in REL and ok.iat[i,j] and R.iat[i,j]<=-0.03 and C.iat[i,j]/HI20.iat[i,j]-1<=-0.15]
@@ -64,14 +83,12 @@ def run(start, end=None, parking=True, rules=("panic","sharp","comeback"), cost=
     e=pd.Series(curve,index=days); y=(days[-1]-days[0]).days/365.25
     yr=e.resample("YE").last(); yr=pd.concat([pd.Series([1000.0],index=[days[0]]),yr]).pct_change().dropna()*100
     return e,(e.iloc[-1]/1000)**(1/y)-1,(e/e.cummax()-1).min(),ntr,yr
-for lab,kw in (("S&P buy-and-hold",None),("parking only (SSO/T-bills)",dict(rules=())),("full stack",dict()),("full stack, plain S&P parking",dict(parking=False))):
-    if kw is None:
-        e=spy.loc["2008-01-01":]; y=(e.index[-1]-e.index[0]).days/365.25
-        print(f"{lab:32s} {((e.iloc[-1]/e.iloc[0])**(1/y)-1)*100:5.1f}%/yr worst {((e/e.cummax()-1).min())*100:6.1f}%"); continue
-    if not kw.get("parking",True):
-        sso0,ab0=globals()['sso'],globals()['above']; globals()['sso']=spy; globals()['above']=pd.Series(True,index=idx)
-        e,cg,dd,n,yr=run("2008-01-01",**{k:v for k,v in kw.items() if k!="parking"}); globals()['sso'],globals()['above']=sso0,ab0
-    else:
-        e,cg,dd,n,yr=run("2008-01-01",**kw)
-    print(f"{lab:32s} {cg*100:5.1f}%/yr worst {dd*100:6.1f}% | $1,000 -> ${e.iloc[-1]:,.0f} | trades {n}")
-    if lab=="full stack": print("   by year:", {d.year:round(v,1) for d,v in yr.items()})
+
+
+allr=("panic","sharp","comeback","fear","ai","yearend","tg")
+for lab,kw in (("no brake",{}),("half size when 15%+ under peak",dict(brake=0.15)),("half size when 20%+ under peak",dict(brake=0.20)),
+               ("half size when 25%+ under peak",dict(brake=0.25)),("quarter size when 20%+ under peak",dict(brake=0.20,brake_mult=0.25))):
+    e,cg,dd,n,yr=run("2008-01-01",rules=allr,**kw)
+    e1=e.loc[:"2018-12-31"]; e2=e.loc["2019-01-01":]
+    f=lambda x:((x.iloc[-1]/x.iloc[0])**(365.25/(x.index[-1]-x.index[0]).days)-1)*100
+    print(f"{lab:34s} {cg*100:5.1f}%/yr (08-18 {f(e1):5.1f}%, 19-26 {f(e2):5.1f}%) worst {dd*100:6.1f}% (08-18 {((e1/e1.cummax()-1).min())*100:.1f}, 19-26 {((e2/e2.cummax()-1).min())*100:.1f}) | ${e.iloc[-1]:,.0f}",flush=True)

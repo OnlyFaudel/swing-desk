@@ -486,6 +486,20 @@ def ex_cancel(st, t, why="rule"):
         BROKER["b"].cancel(a["order_id"])
 
 
+def dd_mult(st):
+    """Account brake (research 2026-11-24, account_drawdown_brake): when the account is 25%+ below its peak, every new trade
+    is half size until it recovers. Whole-bot backtest 2008-2026: 23.2%/yr vs 23.9% without it, worst drop -40.7% vs -51.3%
+    (2019-26: -34.6% vs -43.8%)."""
+    cfg = CFG.get("account_brake", {})
+    if not cfg.get("enabled", True):
+        return 1.0
+    eqs = [e[1] for e in st["book"].get("equity", []) if isinstance(e, (list, tuple)) and len(e) > 1]
+    if not eqs:
+        return 1.0
+    peak, now = max(eqs), eqs[-1]
+    return cfg.get("mult", 0.5) if now < peak * (1 - cfg.get("drawdown_pct", 25) / 100) else 1.0
+
+
 def arm(st, ex, prices, today, brk_state):
     """Keep resting buy orders on the candidates most likely to fill, as many as free slots and settled cash allow."""
     book = st["book"]
@@ -536,7 +550,7 @@ def arm(st, ex, prices, today, brk_state):
         fv = st.get("favor", {}).get(t, {})
         if fv.get("until", "") >= str(today):
             sm *= fv.get("mult", 1.0)  # a discovery favors this stock for a few days
-        dollars = min(slot_usd * sm, eq * CFG["max_position_pct"] / 100, cash)
+        dollars = min(slot_usd * sm * dd_mult(st), eq * CFG["max_position_pct"] / 100, cash)
         if dollars < CFG["min_trade_usd"]:
             continue
         qty = dollars / c["entry"]
@@ -1222,7 +1236,7 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
             k2 = max(0, min(len(steps) - 1, k + (1 if nudge == "up" else -1 if nudge == "down" else 0)))
             if below_trend and cfg.get("small_below_200d", True):
                 k2 = 0  # the crash brake isn't up for debate
-            dollars = min(eq * steps[k2] / 100, room, cash)
+            dollars = min(eq * steps[k2] / 100 * dd_mult(st), room, cash)
             L = account.lot(book, t, "panic")
             rec = {"date": str(today), "ticker": t, "price": round(prices[t], 2), "day_pct": round(r * 100, 2), "below_high_pct": round(dd * 100, 1),
                    "market_pct": round(spy * 100, 2), "exit_on": exit_on, "result": None, "bought": False,
@@ -1563,7 +1577,7 @@ def seasonal_check(st, ex, data, prices, today, now):
                 continue
             meta = {"setup": "year_end", "by": "rules", "exit_on": f"{today.year + 1}-01-13", "days": "mid-January",
                     "why": f"year-end bounce: {t} is {ytd[t] * 100:+.0f}% this year, among the 3 worst of our stocks"}
-            if ex.buy_market(t, eq * 0.10, prices[t], "au", meta, "year-end bounce buy"):
+            if ex.buy_market(t, eq * 0.10 * dd_mult(st), prices[t], "au", meta, "year-end bounce buy"):
                 bought.append(f"{t} ({ytd[t] * 100:+.0f}% this year)")
         if bought:
             feed.post("chief", "Year-end bounce: bought " + ", ".join(bought) + ", 10% each, selling around Jan 13. History (2007-2025): "
@@ -1584,7 +1598,7 @@ def seasonal_check(st, ex, data, prices, today, now):
                 continue
             meta = {"setup": "uranium_momentum", "by": "rules", "exit_on": sessions_after(str(today), 20), "days": 20,
                     "why": f"spot uranium rose {sp['1m_change_pct']:+.1f}% in {mon}; miners have followed strong spot months"}
-            if ex.buy_market(t, eq * 0.04, prices[t], "au", meta, "uranium momentum buy"):
+            if ex.buy_market(t, eq * 0.04 * dd_mult(st), prices[t], "au", meta, "uranium momentum buy"):
                 bought.append(t)
         if dm:
             st["flags"][f"spotmom:{dm['as_of'][:7]}"] = True
@@ -1626,7 +1640,7 @@ def comeback_buy(st, ex, today, brk_state, comebacks, cb):
             continue
         if t in (st.get("avoid") or {}) and st["avoid"][t].get("until", "") >= str(today):
             continue
-        dollars = min(brk_state["equity"] * cb.get("size_pct", 10) / 100, spendable(st, today))
+        dollars = min(brk_state["equity"] * cb.get("size_pct", 10) / 100 * dd_mult(st), spendable(st, today))
         if dollars < 5:
             break
         meta = {"setup": "comeback", "by": "rule", "exit_on": sessions_after(str(today), cb.get("hold_sessions", 20)), "days": cb.get("hold_sessions", 20),
@@ -1728,7 +1742,7 @@ def sharp_drop_check(st, ex, prices, today, brk_state, now):
         if t in (st.get("avoid") or {}) and st["avoid"][t].get("until", "") >= str(today):
             continue
         big = r5 <= -cfg.get("deep_drop_pct", 20) / 100  # deeper crashes rebounded about twice as hard (research: strength_sizing)
-        dollars = min(brk_state["equity"] * cfg.get("deep_size_pct" if big else "size_pct", 15 if big else 10) / 100, spendable(st, today))
+        dollars = min(brk_state["equity"] * cfg.get("deep_size_pct" if big else "size_pct", 15 if big else 10) / 100 * dd_mult(st), spendable(st, today))
         if dollars < 5:
             break
         exit_on = sessions_after(str(today), cfg.get("hold_sessions", 10))
@@ -1770,7 +1784,7 @@ def signal_trades(st, ex, prices, today, brk_state, now):
         tickers = [t for t in tickers if prices.get(t) and (book["lots"].get(t, {}).get("auto") or {}).get("qty", 0) <= 1e-6]
         if not tickers:
             return []
-        each = min(brk_state["equity"] * pct_total / 100, spendable(st, today)) / len(tickers)
+        each = min(brk_state["equity"] * pct_total / 100 * dd_mult(st), spendable(st, today)) / len(tickers)
         out = []
         exit_on = sessions_after(str(today), days)
         for t in tickers:
@@ -1853,7 +1867,7 @@ def holiday_trades(st, ex, prices, today, brk_state, now):
         if brk_state.get("no_new_today") and not unleashed():
             return
         names = [t for t in T if prices.get(t) and (book["lots"].get(t, {}).get("auto") or {}).get("qty", 0) <= 1e-6]
-        each = min(brk_state["equity"] * cfg.get("thanksgiving_pct", 15) / 100, spendable(st, today)) / max(1, len(names))
+        each = min(brk_state["equity"] * cfg.get("thanksgiving_pct", 15) / 100 * dd_mult(st), spendable(st, today)) / max(1, len(names))
         got = [t for t in names if each >= 5 and ex.buy_market(t, each, prices[t], "au", {
             "setup": "thanksgiving", "by": "rule", "exit_on": str(bf), "days": 2,
             "why": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998."}, "thanksgiving")]
@@ -1943,7 +1957,7 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
                 L = account.lot(book, t, "auto")
                 open_n = sum(1 for l in book["lots"].values() if l.get("auto", {}).get("qty", 0) > 1e-6)
                 cash = spendable(st, today)
-                dollars = min(brk_state["equity"] * cfg.get("size_pct", 10) / 100, cash)
+                dollars = min(brk_state["equity"] * cfg.get("size_pct", 10) / 100 * dd_mult(st), cash)
                 if L["qty"] > 1e-6 or open_n >= cfg.get("max_open", 3) or dollars < 5 or (brk_state.get("no_new_today") and not unleashed()):
                     continue
                 exit_on = sessions_after(str(today), ru["days"])
@@ -2639,7 +2653,7 @@ def conviction_buy(st, ex, prices, today, t, d, headline):
     rec = conviction_record(st)
     open_amt = sum(l.get("auto", {}).get("qty", 0) * prices.get(x, 0) for x, l in book["lots"].items() if l.get("auto", {}).get("setup") == "conviction")
     room = eq * cfg.get("max_total_pct", 60) / 100 * rec["size_multiplier"] - open_amt
-    dollars = min(eq * cfg.get("max_pct_each", 30) / 100 * conv / 10 * rec["size_multiplier"], room,
+    dollars = min(eq * cfg.get("max_pct_each", 30) / 100 * conv / 10 * rec["size_multiplier"] * dd_mult(st), room,
                   spendable(st, today))
     if dollars < 5:
         return "BUY wanted but no cash or room left"
