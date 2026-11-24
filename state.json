@@ -520,7 +520,8 @@
   "tgbuy:2026-11-24": true,
   "optmark:2026-11-24": true,
   "park:2026-11-24": true,
-  "questioner:2026-11-24:8": true
+  "questioner:2026-11-24:8": true,
+  "notecheck:2026-11-24": true
  },
  "benchmark": {
   "shares": {
@@ -2424,18 +2425,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "DNN",
-   "source": "Google News: \"Denison Mines\"",
-   "title": "TSX Composite Mid-Cap Growth: Denison Mines Corp. (TSX:DML) Enters Focus as Investors Track the Next Catalyst - kalkine.ca",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRV9MOXRJLUg3MVRkUFpRLVBZTVlKTWZma3FzX2RNd3lXOG43ZW4xU3NrNXd5bF9QNjVVcDhEVExGemlGeWI3TzI2dHlNdldHLTFkVGNESGVfVzRRMmpoY204WHBLUFNKSFVUT0pHNWdzY0ctZERfcGQ5aWpZMmFGa1QxR3hhel9yRDk0Z1dtZDhIUEcxdmVycDZxMjZVZFg3V1VsU0NIMFItUFdZLTBOaXFibTRKYUZzZm1tdjJnVTQwLUVSc09JZE15MTh3OExZ?oc=5",
-   "ts": 1795449600,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic Kalkine 'investors track catalyst' piece, no new company information"
-  },
   {
    "ticker": "BWXT",
    "source": "Google News: \"BWX Technologies\"",
@@ -5423,6 +5412,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "A $1bn French nuclear manufacturing plant is real but indirect demand for CCJ's uranium."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "DISA Uranium showcases Mary Ann cleanup milestone - Mining.com.au",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA1dUs2bzdWVW9BWmpsZFRZUU5JZXpmN0JHMG5qU0VZVXluOWNURXo0MlZ5TGNwVlpKbk14blYtRFhPNzUyMUMtcTItRlRNLUdjREdydG5QSUFiV04wWlVLYXkyY3NvMDcxbFlXWVNLWEQtSVZ0Ymd2cmphcG0?oc=5",
+   "ts": 1795511161,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Local mine cleanup milestone for a DISA Uranium site; not a Cameco-specific or supply-changing event."
   }
  ],
  "reviews": [
@@ -7173,16 +7174,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.31022,
+  "day_usd": 0.31068,
   "month": "2026-11",
-  "month_usd": 1.04164,
-  "total_usd": 1.04164,
+  "month_usd": 1.0421,
+  "total_usd": 1.0421,
   "by_role": {
    "macro": 0.09287,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.10967,
-   "scout": 0.11732,
+   "scout": 0.11778,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -7302,23 +7303,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 59.79,
+  "CCJ": 59.78,
   "NXE": 6.84,
   "UEC": 5.58,
   "DNN": 1.75,
   "UUUU": 5.15,
-  "LEU": 84.13,
-  "BWXT": 113.11,
+  "LEU": 84.12,
+  "BWXT": 113.13,
   "CEG": 244.84,
-  "VST": 120.68,
+  "VST": 120.71,
   "TLN": 347.92,
   "AMD": 413.24,
-  "SMR": 3.31,
+  "SMR": 3.3,
   "NNE": 8.84,
-  "SPY": 718.81,
-  "SGOV": 100.66
+  "SPY": 718.79,
+  "SGOV": 100.65
  },
- "last_cycle": "2026-11-24 16:05 ET",
+ "last_cycle": "2026-11-24 16:15 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -7355,10 +7356,10 @@
   ]
  },
  "brakes": {
-  "equity": 1016.74,
-  "day_pct": -1.24,
-  "week_pct": 1.62,
-  "drawdown_pct": -3.57,
+  "equity": 1016.54,
+  "day_pct": -1.26,
+  "week_pct": 1.6,
+  "drawdown_pct": -3.59,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -54640,8 +54641,8 @@
   "cdf09ab4dc83c609",
   "a2a8ee32597c7b50",
   "503a7ef14b3cb3d2",
-  "bbef828d764dbb47",
   "85342e1a4ce58044",
+  "bbef828d764dbb47",
   "ca2a5c0a1baa2527",
   "b98ba2f840724229",
   "63e7ca0ff352dff7",
@@ -54750,6 +54751,7 @@
   "063170773d4b14a2",
   "326afd4f7d0093ec",
   "d315dfa4e1149d87",
+  "9f68078cca375136",
   "af6eb78442aeb47e",
   "a4aac5316a0eb878",
   "a00037110572bad0",
@@ -54967,7 +54969,7 @@
   "c2a1739b2e369eff",
   "f2896a10ee94b15b"
  ],
- "news_slow_at": 1795553964.046841,
+ "news_slow_at": 1795554609.032347,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -211095,6 +211097,16 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-24 16:15",
+   "who": "auditor",
+   "kind": "learn",
+   "title": null,
+   "text": "Note check (does each teammate use the stock files?): Scout used them in 92% of 175 answers (mostly CCJ Deals and contracts, SECTOR Government and laws); Level Analyst used them in 97% of 76 answers (mostly SECTOR Uranium market, TLN Snapshot); Risk Manager used them in 100% of 48 answers (mostly TLN Snapshot, SECTOR Uranium market); Macro Analyst used them in 100% of 46 answers (mostly SECTOR Government and laws, SECTOR Uranium market); News Investigator used them in 95% of 39 answers (mostly TLN Snapshot, SECTOR Uranium market); questioner used them in 100% of 26 answers (mostly TLN Snapshot, TLN News); Portfolio Manager used them in 100% of 25 answers (mostly SECTOR Uranium market, BWXT Snapshot); engineer used them in 100% of 21 answers (mostly CEG Places and operations, SECTOR Uranium market); Researcher used them in 100% of 6 answers (mostly BWXT Snapshot, BWXT Deals and contracts); Reviewer used them in 80% of 5 answers (mostly UUUU Snapshot, LEU Snapshot); Whale Watcher used them in 100% of 4 answers (mostly CCJ Snapshot, TLN Legal); Crowd Reader used them in 100% of 3 answers (mostly SECTOR Uranium market, CCJ Snapshot). Everyone is using them.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -211754,7 +211766,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 16:05",
+  "updated": "2026-11-24 16:15",
   "total": 528,
   "week": 440,
   "places": {
@@ -212659,14 +212671,6 @@
   "watch": [
    {
     "date": "2026-12-09",
-    "ticker": "CEG",
-    "what": "FOMC rate decision; broad risk-off or risk-on move that can drive the nuclear and utility names.",
-    "by": "level",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
-   {
-    "date": "2026-12-09",
     "ticker": "TLN",
     "what": "PJM December capacity auction delay decision; a key catalyst for Talen's capacity revenue that could move the stock sharply in either direction.",
     "by": "level",
@@ -213130,6 +213134,14 @@
     "surfaced": false
    },
    {
+    "date": "2029-01-01",
+    "ticker": "CEG",
+    "what": "Quad Cities reactor relicensing (per TLN deals notes); a regulatory event that could move the nuclear plant operators",
+    "by": "researcher",
+    "written": "2026-11-24",
+    "surfaced": false
+   },
+   {
     "date": "2032-12-31",
     "ticker": "CEG",
     "what": "Did CEG deliver? They promised on 2026-11-09: Deliver Calvert Cliffs 190 MW capacity expansion for Amazon",
@@ -213559,7 +213571,7 @@
   },
   {
    "name": "shadow_patterns",
-   "trials": 5,
+   "trials": 7,
    "verdict": "background research lab"
   },
   {
@@ -213570,7 +213582,7 @@
   {
    "name": "auto_discovery",
    "trials": 425,
-   "verdict": "2026-11-23 16:08: the bot tested 377 event patterns on 47,444 events (older vs newer half, corrected for the number of tests). 9 hold up: price_3_down_days (miners) -> +1.12% vs the basket (or its normal trend) over the next 5 days (n=1065, up 55%); price_3_down_days (all our stocks) -> +1.10% vs the basket (or its normal trend) over the next 5 days (n=1513, up 55%); price_new_52w_high (miners) -> -1.31% vs the basket (or its normal trend) over the next 5 days (n=348, up 35%); offering_dilution (all our stocks) -> -4.46% vs the basket (or its normal trend) over the next 5 days (n=55, up 24%); price_new_52w_high (all our stocks) -> -0.86% vs the basket (or its normal trend) over the next 5 days (n=704, up 42%); offering_dilution (miners) -> -4.10% vs the basket (or its normal trend) over the next 5 days (n=44, up 25%)"
+   "verdict": "2026-11-24 16:07: the bot tested 377 event patterns on 47,502 events (older vs newer half, corrected for the number of tests). 9 hold up: price_3_down_days (miners) -> +1.12% vs the basket (or its normal trend) over the next 5 days (n=1065, up 55%); price_3_down_days (all our stocks) -> +1.10% vs the basket (or its normal trend) over the next 5 days (n=1514, up 55%); price_new_52w_high (miners) -> -1.31% vs the basket (or its normal trend) over the next 5 days (n=348, up 35%); offering_dilution (all our stocks) -> -4.46% vs the basket (or its normal trend) over the next 5 days (n=55, up 24%); price_new_52w_high (all our stocks) -> -0.85% vs the basket (or its normal trend) over the next 5 days (n=704, up 42%); offering_dilution (miners) -> -4.10% vs the basket (or its normal trend) over the next 5 days (n=44, up 25%)"
   },
   {
    "name": "macro_drivers",
@@ -214335,12 +214347,12 @@
    "built": "2026-11-24 16:02"
   }
  ],
- "heartbeat": "2026-11-24 16:05",
+ "heartbeat": "2026-11-24 16:15",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 294,
+ "_pushed_feed": 296,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -214495,7 +214507,7 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 174,
+   "asked": 175,
    "used": 161,
    "notes": {
     "TLN Deals and contracts": 7,
@@ -214969,7 +214981,7 @@
    ],
    [
     "2026-11-24",
-    59.79
+    59.78
    ]
   ],
   "NXE": [
@@ -215579,7 +215591,7 @@
    ],
    [
     "2026-11-24",
-    84.13
+    84.12
    ]
   ],
   "BWXT": [
@@ -215701,7 +215713,7 @@
    ],
    [
     "2026-11-24",
-    113.11
+    113.13
    ]
   ],
   "CEG": [
@@ -215945,7 +215957,7 @@
    ],
    [
     "2026-11-24",
-    120.68
+    120.71
    ]
   ],
   "TLN": [
@@ -216311,7 +216323,7 @@
    ],
    [
     "2026-11-24",
-    3.31
+    3.3
    ]
   ],
   "NNE": [
@@ -220544,7 +220556,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 16:05",
+ "watchdog_last": "2026-11-24 16:15",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
