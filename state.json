@@ -893,66 +893,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Cameco Stock Has Fallen Sharply and May Be Offering a Deep-Value Opportunity - NAI500",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOGFtc2FCNDI2X3hNQjIxdXZCSTNvS1lPOWJyWEU3d3dXeUlLZmtNbjRiYnAzdExFdWd2Skx6cHAyQ3JQVGl4aVdiY0pwMkwwczM0UmVJLUFMMVptMGZiQjNOb2gzb3NqWWFUa2RjSGktXzU0V1J5dGltY0ZYaFZlaWpsYTlCd25yREVXOHNVR2ZBYzh6cTZ5b182NHlrSkhzaDlTSWdJbW51dVljbnc?oc=5",
-   "ts": 1795246628,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Deep-value opinion piece after a price drop; no new facts"
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Local intel: B\u00e9nin Web TV (Niger)",
-   "title": "Niger: WFP approves $772.66 million plan for 2027-2031",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUnhCdmNVWkZUb1dfSmRoUDhXZFNxUG5yQlV3VURnX0FOR0hleDBTV1BWNmlfUzZSeTk5MTBBZnMwUkN6d3lTVnAxZVg2Y2pMRWtRQ3FiNm5BTEJ5a3V6M1lCa2JwNzlqSVpyQjRsZUwzTXlFdmVubTJTWXFtWFFqS3ZXZVQ?oc=5",
-   "ts": 1795180644,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "WFP food-aid funding for Niger; unrelated to uranium supply or Cameco"
-  },
-  {
-   "ticker": "CEG",
-   "source": "Google News",
-   "title": "Constellation Energy stock: Barclays lifts target to 371 dollars - ad-hoc-news.de",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZ0EyamFRa2pyNFFiekpMWHVqMWFDQmR5amx4TmpMRUs0ZW5yNV9CRmUyeHN1eW9NVHl1bVpTbzRqcThhYWFpTWtza05oVWpoNjZmdmFuMzhGVVctbnplV3AwZkNlc3d2VnJJVU9FeDVOTEVaNERYQThMYlkxRG8wUDZkR1ppaVdmaGNHUVRHbWRZV3g2VHVNRXcxd3RzY0ZHZi1RRjFjbXVocjdGUjMxbGFXa1JkUTBBWkYxRFdRZnhmRXM5?oc=5",
-   "ts": 1795256028,
-   "materiality": 5,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "analyst",
-   "why": "Barclays raised target; a real analyst move, but from a weak aggregator source"
-  },
-  {
-   "ticker": "UUUU",
-   "source": "Yahoo Finance",
-   "title": "Energy Fuels (TSX:EFR) Could Be 78% Below Fair Value After Its Sharp Selloff",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/energy-fuels-tsx-efr-could-100701220.html?.tsrc=rss",
-   "ts": 1795255621,
-   "materiality": 2,
-   "novelty": "follow_up",
-   "direction": "down",
-   "event_type": "analyst",
-   "why": "Valuation opinion piece citing old estimate cuts; no new facts"
-  },
-  {
-   "ticker": "UUUU",
-   "source": "Google News: \"Energy Fuels\" uranium",
-   "title": "Why Is Energy Fuels (TSX:EFR) Pushing Deeper Into Rare Earths Now? - Yahoo Finance",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSlV2TDVQUExjRmZpUjlkUU8wbzdOVFo2bXc4cV84Ynl6VVVuSlFwcURUWC1rOXNHN1NLQmlDbnRWem5hbmRwdmxvU1ZXTVNjVUJRZzkwbGg5c19SNDRHNklydGgxVE9kLXBpZnZKbG9kOHRyXzVhMzNjdWpOTzRFaFpaRlJlM2ZH?oc=5",
-   "ts": 1795252332,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Duplicate of the rare-earths story, repeated via another feed"
-  },
-  {
    "ticker": "UUUU",
    "source": "Yahoo Finance",
    "title": "Why Is Energy Fuels (TSX:EFR) Pushing Deeper Into Rare Earths Now?",
@@ -3891,6 +3831,66 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic 'why did it slide' recap with no new company-specific information."
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News",
+   "title": "Vistra Corp. (VST) Stock Forecasts - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaW14MGVvNWZBRWR0ZVQ3c0F3UXY4SGMxRjlsRkxQZnc3SF9vVEptNTFkYkx0eERXeXFIVW9CMWExWXZBLWtxMDB3UUdPVDNaaDdiSFZBZDVYVmJVY3o5aGhSS0Y2RmUyc3kxcUIwVENEWmpwcGl2ZHlzR0ZzLVczQXNwWXRlWkQ5ZGxjWHNR?oc=5",
+   "ts": 1795498349,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Yahoo forecast page with no new company-specific information."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News: \"BWX Technologies\"",
+   "title": "Why is BWX Technologies stock surging today? By Investing.com - Investing.com Australia",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYkdoUUN0cjdhT0dEa0xvbWZPRGNMbnF5Sm9MTUZXeVBGQ0gtMHFndFZWTGZLaFl0d0NvMjFod0VuSXM0cEgwT0FZWDZvN3RNXzNsX0JqMVNjSWdwdkdGWThIa3pIbVZXQmRSbm8zX01GVXNMTF9LMFR5V0trZ1FhNWlsWG1kNWRYTWo2SUpaTm16d2hYTXd5OW4xN0xJUWpFcERNelRxNA?oc=5",
+   "ts": 1795460977,
+   "materiality": 6,
+   "novelty": "follow_up",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Surge tied to Westinghouse AP1000 manufacturing deal, but the desk file dates that deal to 2026-11-23, so this is a follow-up recap."
+  },
+  {
+   "ticker": "NXE",
+   "source": "Google News",
+   "title": "4 Drill-Ready Targets & 10% Carried Interests Add Athabasca Exposure for ATHA - Crux Investor",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTEM4S2RDcERuOGtMNng5bXZubDBPaXlPbDNuQUFJdFg0eUhmdk9ZS3E4c0RWNXBSRjVheXRJbEdyWUdSbjNLU2V2eTlObDRVY0VCcFBoQnI0UDRQX002VDZGWko1NFJsNDZpV3JSbVBRS1ZadDBHNVFqb1RPN0FENTFELTdzakRoWGR5TjNEM1hndFNBVG94R1MwTF9MTGtDbjNNT2tLSF80SFgwQ0E?oc=5",
+   "ts": 1795505639,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Promotional Crux Investor piece on other Athabasca properties; recap-style, not new NexGen information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: RTO Insider (Canada SMRs)",
+   "title": "Darlington SMR Faces Cost Overrun; Construction Interest Remains Recoverable",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdXluVE13NkNkVlhEZFdISUtncWZSWlk5SnoxU01fZ3B0RnRoVVp6QWtZZ2dQeUxoUUtaRGhrc3ViTS0zd0lGTE1JZWliQXZUTjdENi1LV2ZkY213TTNCZnhoUTE3WFBEU2hUYy00bkRzNTF0TTE3cVZDSHBtQ2pMVUR4NUttYVgyVmdob2VTOGtKbGlSUDlhbVF5Q28xTXRBSFFNX1lMaHk5RHJaSzFr?oc=5",
+   "ts": 1795493009,
+   "materiality": null,
+   "novelty": null,
+   "direction": null,
+   "event_type": null,
+   "why": null
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News: \"Energy Fuels\" uranium",
+   "title": "Energy Fuels Targets Additional One Million Pounds of US Uranium Production - NucNet",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVVJvenNLOTIyWDc1UE50THdaWVFPVTBNaUdDRnBmbUNGT29keFp2YkNtSGpfbHJJU1dZaDI2Q1Z3UDFUWXdBcFlZUkZmbVJfRzdkaWg0LU9nRGRDTlh2T05zdFRXaDhWTURxMmptX1hmTW5tZzFNSlN5akJIT1U3RzYwLW05UFFzRklvSDhLb0ZERUZGZVE4UGdhQkpyYXdSV3FrTEVUQkxjemxEbzJpNWJRVQ?oc=5",
+   "ts": 1795506858,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "supply",
+   "why": "Company target to add a million pounds of production is a generic restatement of existing plans."
   }
  ],
  "reviews": [
@@ -5413,16 +5413,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.00135,
+  "day_usd": 0.00273,
   "month": "2026-11",
-  "month_usd": 0.73277,
-  "total_usd": 0.73277,
+  "month_usd": 0.73415,
+  "total_usd": 0.73415,
   "by_role": {
    "macro": 0.05663,
    "whale": 0.01301,
    "crowd": 0.00849,
    "level": 0.03741,
-   "scout": 0.0736,
+   "scout": 0.07498,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5541,7 +5541,7 @@
   "SPY": 722.39,
   "SSO": 61.17
  },
- "last_cycle": "2026-11-24 02:00 ET",
+ "last_cycle": "2026-11-24 03:02 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51409,6 +51409,7 @@
   "4b634efdcf500ae7",
   "05752eb0e8aadb3e",
   "43902d6121194e02",
+  "38693fc53c74cd34",
   "2d3f6639ab9cea68",
   "898bce48a6f14aa6",
   "236832db131afa54",
@@ -51483,6 +51484,7 @@
   "d1c7122c048b2ed9",
   "e12d3a4edb7295a2",
   "f7fb21429d8dfc22",
+  "e356ee82386a78c0",
   "c5ba50cbcf752a4f",
   "15fecb83818a0949",
   "fd2731052f33e27f",
@@ -51500,6 +51502,7 @@
   "de98c29c1b6c2e5d",
   "6903f08684a06b0c",
   "6e7dff52f6fd70fc",
+  "edbad492ece75d90",
   "fa17ed4285ac01d2",
   "ca2a5c0a1baa2527",
   "5d0c7240e494c5f9",
@@ -51678,9 +51681,10 @@
   "32cfd9ef3704009d",
   "c33e85f70d2f743d",
   "12bf832407de3c00",
-  "1c7e8600a30c74ce"
+  "1c7e8600a30c74ce",
+  "f81c799cfd29db76"
  ],
- "news_slow_at": 1795503594.0103788,
+ "news_slow_at": 1795507347.8931184,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -204863,6 +204867,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "BWXT",
+   "type": "contract_deal",
+   "title": "Why is BWX Technologies stock surging today? By Investing.com - Investing.com Australia",
+   "date": "2026-11-24",
+   "price": 115.71,
+   "materiality": 6,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -204878,11 +204894,11 @@
    "lesson": null
   }
  ],
- "intel_at": 1795502382.0254629,
+ "intel_at": 1795506111.6756358,
  "intel_health": {
-  "at": "2026-11-24 01:40",
+  "at": "2026-11-24 02:42",
   "sources": {
-   "Cigar Lake": 6,
+   "Cigar Lake": 0,
    "McArthur River / Key Lake": 2,
    "Athabasca Basin": 6,
    "Saskatchewan wildfires": 0,
@@ -204892,11 +204908,11 @@
    "Westinghouse": 8,
    "Kazakhstan": 0,
    "Niger": 5,
-   "Namibia": 15,
+   "Namibia": 18,
    "Russia supply": 2,
    "Piketon": 12,
-   "HALEU": 10,
-   "Wyoming ISR": 19,
+   "HALEU": 9,
+   "Wyoming ISR": 27,
    "South Texas ISR": 1,
    "White Mesa / Utah": 11,
    "Rare earths (Energy Fuels)": 16,
@@ -204908,32 +204924,32 @@
    "PJM grid": 8,
    "ERCOT grid": 10,
    "Data-center nuclear deals": 8,
-   "Japan restarts": 4,
+   "Japan restarts": 5,
    "China new builds": 5,
    "Congress and laws": 27,
-   "NRC decisions": 15,
+   "NRC decisions": 8,
    "Energy Department": 37,
-   "White House and executive orders": 22,
+   "White House and executive orders": 16,
    "Tariffs and trade": 1,
-   "India": 19,
-   "South Korea": 75,
+   "India": 15,
+   "South Korea": 70,
    "Europe new builds": 54,
-   "France and UK": 7,
-   "Middle East": 44,
-   "Asia newcomers": 26,
-   "Canada SMRs": 6,
-   "Big tech power deals": 28,
-   "Iran": 22,
-   "North Korea": 75,
-   "War zones": 28,
+   "France and UK": 6,
+   "Middle East": 21,
+   "Asia newcomers": 57,
+   "Canada SMRs": 7,
+   "Big tech power deals": 57,
+   "Iran": 24,
+   "North Korea": 76,
+   "War zones": 21,
    "AUKUS and navies": 22,
-   "Weapons programs": 13,
-   "Stockpiles and reserves": 6,
+   "Weapons programs": 19,
+   "Stockpiles and reserves": 5,
    "Sprott trust": 5,
-   "Uranium price": 41,
+   "Uranium price": 42,
    "US policy": 0,
-   "Lawsuits and investigations": 71,
-   "Workers and jobs": 23,
+   "Lawsuits and investigations": 30,
+   "Workers and jobs": 22,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
    "Federal Register (uranium)": 6,
@@ -204943,9 +204959,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 02:00",
-  "total": 431,
-  "week": 367,
+  "updated": "2026-11-24 03:02",
+  "total": 436,
+  "week": 370,
   "places": {
    "Uranium price": 42,
    "World Nuclear News": 27,
@@ -204955,16 +204971,16 @@
    "Workers and jobs": 16,
    "AUKUS and navies": 16,
    "PJM grid": 14,
+   "Namibia": 13,
    "Weapons programs": 13,
-   "Namibia": 12,
    "ERCOT grid": 11,
    "Westinghouse": 11
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-24 01:40",
+   "at": "2026-11-24 02:42",
    "sources": {
-    "Cigar Lake": 6,
+    "Cigar Lake": 0,
     "McArthur River / Key Lake": 2,
     "Athabasca Basin": 6,
     "Saskatchewan wildfires": 0,
@@ -204974,11 +204990,11 @@
     "Westinghouse": 8,
     "Kazakhstan": 0,
     "Niger": 5,
-    "Namibia": 15,
+    "Namibia": 18,
     "Russia supply": 2,
     "Piketon": 12,
-    "HALEU": 10,
-    "Wyoming ISR": 19,
+    "HALEU": 9,
+    "Wyoming ISR": 27,
     "South Texas ISR": 1,
     "White Mesa / Utah": 11,
     "Rare earths (Energy Fuels)": 16,
@@ -204990,32 +205006,32 @@
     "PJM grid": 8,
     "ERCOT grid": 10,
     "Data-center nuclear deals": 8,
-    "Japan restarts": 4,
+    "Japan restarts": 5,
     "China new builds": 5,
     "Congress and laws": 27,
-    "NRC decisions": 15,
+    "NRC decisions": 8,
     "Energy Department": 37,
-    "White House and executive orders": 22,
+    "White House and executive orders": 16,
     "Tariffs and trade": 1,
-    "India": 19,
-    "South Korea": 75,
+    "India": 15,
+    "South Korea": 70,
     "Europe new builds": 54,
-    "France and UK": 7,
-    "Middle East": 44,
-    "Asia newcomers": 26,
-    "Canada SMRs": 6,
-    "Big tech power deals": 28,
-    "Iran": 22,
-    "North Korea": 75,
-    "War zones": 28,
+    "France and UK": 6,
+    "Middle East": 21,
+    "Asia newcomers": 57,
+    "Canada SMRs": 7,
+    "Big tech power deals": 57,
+    "Iran": 24,
+    "North Korea": 76,
+    "War zones": 21,
     "AUKUS and navies": 22,
-    "Weapons programs": 13,
-    "Stockpiles and reserves": 6,
+    "Weapons programs": 19,
+    "Stockpiles and reserves": 5,
     "Sprott trust": 5,
-    "Uranium price": 41,
+    "Uranium price": 42,
     "US policy": 0,
-    "Lawsuits and investigations": 71,
-    "Workers and jobs": 23,
+    "Lawsuits and investigations": 30,
+    "Workers and jobs": 22,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
     "Federal Register (uranium)": 6,
@@ -205665,6 +205681,7 @@
   "0d77f1d2373bb03d",
   "ce712a30484ccc2e",
   "0c3ada20fae5f894",
+  "cf819bf3ea1da08c",
   "06c0ff00fa161dd2",
   "d53204586a89fe6b",
   "30a860e8617961c8",
@@ -205712,7 +205729,7 @@
   }
  ],
  "memory_view": {
-  "events": 1567,
+  "events": 1568,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -206290,15 +206307,6 @@
   "recent": [
    {
     "date": "2026-11-23",
-    "ticker": "LEU",
-    "title": "NRC Reviews Transfer of Uranium De-Conversion License to HALEU Energy Fuel",
-    "type": "intel_regulation",
-    "r0": 6.74,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-23",
     "ticker": "BWXT",
     "title": "NRC Reviews Transfer of Uranium De-Conversion License to HALEU Energy Fuel",
     "type": "intel_regulation",
@@ -206644,6 +206652,15 @@
     "ticker": "CEG",
     "title": "Russian attack kills 2 people, wounds 22 in Ukraine\u2019s Zaporizhzhia",
     "type": "intel_geopolitics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-24",
+    "ticker": "BWXT",
+    "title": "Why is BWX Technologies stock surging today? By Investing.com - Investing.com Australia",
+    "type": "contract_deal",
     "r0": null,
     "r5": null,
     "r20": null
@@ -207277,7 +207294,7 @@
    }
   ]
  },
- "dossier_at": 1795502422.3935776,
+ "dossier_at": 1795506163.6311703,
  "sector_prices": {
   "_at": 1795489440.1481204,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -207335,80 +207352,80 @@
    "name": "Cameco",
    "price": 61.49,
    "week_pct": -6.82,
-   "built": "2026-11-24 01:40"
+   "built": "2026-11-24 02:42"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.78,
    "week_pct": -8.57,
-   "built": "2026-11-24 01:40"
+   "built": "2026-11-24 02:42"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.85,
    "week_pct": -4.57,
-   "built": "2026-11-24 01:40"
+   "built": "2026-11-24 02:42"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.77,
    "week_pct": -7.33,
-   "built": "2026-11-24 01:40"
+   "built": "2026-11-24 02:42"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.22,
    "week_pct": -13.58,
-   "built": "2026-11-24 01:40"
+   "built": "2026-11-24 02:42"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 86.8,
    "week_pct": -11.0,
-   "built": "2026-11-24 01:40"
+   "built": "2026-11-24 02:42"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.71,
    "week_pct": -0.95,
-   "built": "2026-11-24 01:40"
+   "built": "2026-11-24 02:42"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 251.76,
    "week_pct": -9.38,
-   "built": "2026-11-24 01:40"
+   "built": "2026-11-24 02:42"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 123.81,
    "week_pct": -4.88,
-   "built": "2026-11-24 01:40"
+   "built": "2026-11-24 02:42"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 365.03,
    "week_pct": 1.47,
-   "built": "2026-11-24 01:40"
+   "built": "2026-11-24 02:42"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-24 01:40"
+   "built": "2026-11-24 02:42"
   }
  ],
- "heartbeat": "2026-11-24 02:00",
+ "heartbeat": "2026-11-24 03:02",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -207525,15 +207542,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 80,
-   "used": 75,
+   "asked": 83,
+   "used": 77,
    "notes": {
     "TLN Deals and contracts": 2,
     "CCJ Deals and contracts": 22,
-    "BWXT Deals and contracts": 16,
+    "BWXT Deals and contracts": 17,
     "SECTOR Government and laws": 21,
-    "UUUU Deals and contracts": 18,
-    "SECTOR Countries": 18,
+    "UUUU Deals and contracts": 19,
+    "SECTOR Countries": 19,
     "CEG Deals and contracts": 11,
     "NXE Legal": 1,
     "NXE Deals and contracts": 1,
@@ -209299,6 +209316,16 @@
    "price": 115.71,
    "result": null,
    "why": "I checked the desk notes: BWXT's past deals showed no reliable 20-day follow-through, and the Westinghouse supplier story was already covered by the earlier surge, so this is a follow-up. The Talen gi"
+  },
+  {
+   "role": "scout",
+   "ticker": "CCJ",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-24",
+   "price": 61.49,
+   "result": null,
+   "why": "This is a sponsored-style article about Athabasca Basin drill targets and carried interests at another company (ATHA). It mentions Athabasca exposure but nothing new or company-specific for NexGen's R"
   }
  ],
  "after_sale": [],
@@ -211263,7 +211290,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 02:00",
+ "watchdog_last": "2026-11-24 03:02",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
