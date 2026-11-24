@@ -525,7 +525,8 @@
   "recent:2026-11-24": true,
   "intraday_backfill": "2026-11-24",
   "intraday:2026-11-24": true,
-  "earnread:2026-11-24": true
+  "earnread:2026-11-24": true,
+  "radarres:2026-11-24": true
  },
  "benchmark": {
   "shares": {
@@ -7323,7 +7324,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-24 17:38 ET",
+ "last_cycle": "2026-11-24 17:49 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -54648,8 +54649,8 @@
   "cdf09ab4dc83c609",
   "a2a8ee32597c7b50",
   "503a7ef14b3cb3d2",
-  "bbef828d764dbb47",
   "85342e1a4ce58044",
+  "bbef828d764dbb47",
   "ca2a5c0a1baa2527",
   "6f83643eaed2fbc3",
   "b98ba2f840724229",
@@ -54984,7 +54985,7 @@
   "c2a1739b2e369eff",
   "f2896a10ee94b15b"
  ],
- "news_slow_at": 1795559591.210892,
+ "news_slow_at": 1795560195.368883,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -211781,12 +211782,12 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 17:38",
+  "updated": "2026-11-24 17:49",
   "total": 534,
-  "week": 442,
+  "week": 441,
   "places": {
    "Uranium price": 45,
-   "Piketon": 32,
+   "Piketon": 31,
    "World Nuclear News": 26,
    "Europe new builds": 25,
    "South Korea": 25,
@@ -214360,7 +214361,7 @@
    "built": "2026-11-24 17:35"
   }
  ],
- "heartbeat": "2026-11-24 17:38",
+ "heartbeat": "2026-11-24 17:49",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -220570,7 +220571,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 17:38",
+ "watchdog_last": "2026-11-24 17:49",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
