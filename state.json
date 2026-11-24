@@ -1658,18 +1658,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Local intel: The Korea Post (South Korea)",
-   "title": "China\u2019s Nuclear Submarine Fleet Could Reach 40 by 2035 as Japan Weighs Its Own Programme and Nuclear Policy",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjSm1lRThvZ0xaQ1FJOGRockpzdGs5UHBCVEctTFN5cjhNOGtzd254RVVfRV95NFA5LVJHN3I3cVduNXZvSmRQemVSTGkxaVJtM3FTS3VmbUtpcEF4NkNvS3pYTXRuaWFUNmfSAW5BVV95cUxPYUpnWUNwVEFBZElKSFNHbl9aQkZXYnBLVVNRdklmYk9Fblkydi1tNWF2aGVkeUhjOUI3bjMwTzk1NWs2Ry1URHl2bW1JQWl5M0pHSDcyQktLampoSERxWEMzQ0xkdE5iVTdjWDFRZw?oc=5",
-   "ts": 1795419274,
-   "materiality": 1,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Naval nuclear sub fleet talk has no direct uranium-miner revenue link"
-  },
-  {
    "ticker": "UUUU",
    "source": "Google News",
    "title": "Energy Fuels Surges 8% on Plan to Produce 1 Million Pounds of Uranium; Oklo Climbs 7%, NuScale Power Gains 6% - 24/7 Wall St.",
@@ -4656,6 +4644,18 @@
    "direction": "neutral",
    "event_type": "analyst",
    "why": "Generic 'great growth stock' listicle-style piece, no new company-specific information."
+  },
+  {
+   "ticker": "DNN",
+   "source": "Google News: \"Denison Mines\"",
+   "title": "Denison Mines Corp. TSX:DML in Focus Today: S&P/TSX Composite Index, Mid Cap and Growth Stock as Investors Watch the Next Catalyst - kalkine.ca",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPUnZiVVJ1YUh5WTUwYlJnbk52ZERNQXpkZ1doUU16SVhJbXB0aXhlVHNfZHVDcG9UdDUtV29JQ2hvYUZjMi11X2wtU29fQ2VtbFlHaVBjT3lldUtQSjd3V1V5Y0NZUGd1NkhuZkRlQk1WYVpWdU5XZkdsdm5vc1F5cGpfdnFlVkdnUjQxVWdJZ0c5Zl9yeHVZckw3SmFFM21BTHBWdUVOZGMzc3k0SUxGYkVraGhpLWtrYWFUam9jVmZVaG44dHJyYUdYTDBteDA4YXl1bUluQWQ2V0MyTGpISXA4TTBVWDFJUzE0?oc=5",
+   "ts": 1795540380,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Kalkine 'in focus' listicle with no new company information; they cover TSX:DML price-watch pieces routinely."
   }
  ],
  "reviews": [
@@ -6258,16 +6258,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.22936,
+  "day_usd": 0.2298,
   "month": "2026-11",
-  "month_usd": 0.96078,
-  "total_usd": 0.96078,
+  "month_usd": 0.96122,
+  "total_usd": 0.96122,
   "by_role": {
    "macro": 0.08905,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.08219,
-   "scout": 0.10947,
+   "scout": 0.10991,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -6373,20 +6373,20 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 59.95,
-  "NXE": 6.81,
+  "CCJ": 59.84,
+  "NXE": 6.85,
   "UEC": 5.68,
   "DNN": 1.74,
-  "UUUU": 5.06,
-  "LEU": 84.91,
-  "BWXT": 114.21,
-  "CEG": 244.51,
-  "VST": 119.94,
-  "TLN": 349.27,
-  "SPY": 718.58,
-  "SSO": 60.5
+  "UUUU": 5.05,
+  "LEU": 84.82,
+  "BWXT": 114.19,
+  "CEG": 244.72,
+  "VST": 120.17,
+  "TLN": 349.8,
+  "SPY": 718.21,
+  "SSO": 60.47
  },
- "last_cycle": "2026-11-24 13:09 ET",
+ "last_cycle": "2026-11-24 13:19 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -6411,10 +6411,10 @@
   ]
  },
  "brakes": {
-  "equity": 1013.37,
-  "day_pct": -1.57,
-  "week_pct": 1.29,
-  "drawdown_pct": -3.89,
+  "equity": 1013.1,
+  "day_pct": -1.59,
+  "week_pct": 1.26,
+  "drawdown_pct": -3.92,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -8500,6 +8500,42 @@
   [
    "2026-11-24 13:09",
    1013.37
+  ],
+  [
+   "2026-11-24 13:10",
+   1012.62
+  ],
+  [
+   "2026-11-24 13:11",
+   1012.43
+  ],
+  [
+   "2026-11-24 13:13",
+   1013.01
+  ],
+  [
+   "2026-11-24 13:14",
+   1013.2
+  ],
+  [
+   "2026-11-24 13:15",
+   1013.1
+  ],
+  [
+   "2026-11-24 13:16",
+   1013.26
+  ],
+  [
+   "2026-11-24 13:17",
+   1013.72
+  ],
+  [
+   "2026-11-24 13:18",
+   1013.04
+  ],
+  [
+   "2026-11-24 13:19",
+   1013.1
   ]
  ],
  "nowcast": {
@@ -53006,7 +53042,7 @@
     0.8899
    ]
   },
-  "time": "2026-11-24 13:09"
+  "time": "2026-11-24 13:19"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -53133,8 +53169,8 @@
   "cdf09ab4dc83c609",
   "a2a8ee32597c7b50",
   "503a7ef14b3cb3d2",
-  "bbef828d764dbb47",
   "85342e1a4ce58044",
+  "bbef828d764dbb47",
   "ca2a5c0a1baa2527",
   "b98ba2f840724229",
   "63e7ca0ff352dff7",
@@ -53402,6 +53438,7 @@
   "0939c76270a70008",
   "c2d5142e019783ce",
   "6a0cc1c1f8babcd3",
+  "bd4b01979593b573",
   "a7bb0474e61a7894",
   "9ac4d1225260d8c6",
   "24958b4b1d92e720",
@@ -53445,7 +53482,7 @@
   "c2a1739b2e369eff",
   "f2896a10ee94b15b"
  ],
- "news_slow_at": 1795543259.3713095,
+ "news_slow_at": 1795543911.486954,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -209216,7 +209253,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 13:09",
+  "updated": "2026-11-24 13:19",
   "total": 510,
   "week": 429,
   "places": {
@@ -211760,12 +211797,12 @@
    "built": "2026-11-24 13:00"
   }
  ],
- "heartbeat": "2026-11-24 13:09",
+ "heartbeat": "2026-11-24 13:19",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 266,
+ "_pushed_feed": 271,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -211915,13 +211952,13 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 114.21,
-  "TLN": 349.27
+  "BWXT": 114.185,
+  "TLN": 349.8
  },
  "notes_audit": {
   "scout": {
-   "asked": 156,
-   "used": 144,
+   "asked": 157,
+   "used": 145,
    "notes": {
     "TLN Deals and contracts": 7,
     "CCJ Deals and contracts": 38,
@@ -211932,7 +211969,7 @@
     "CEG Deals and contracts": 23,
     "NXE Legal": 3,
     "NXE Deals and contracts": 7,
-    "DNN Deals and contracts": 7,
+    "DNN Deals and contracts": 8,
     "BWXT Legal": 1,
     "LEU Deals and contracts": 19,
     "UEC Deals and contracts": 3,
@@ -212383,7 +212420,7 @@
    ],
    [
     "2026-11-24",
-    59.96
+    59.88
    ]
   ],
   "NXE": [
@@ -212505,7 +212542,7 @@
    ],
    [
     "2026-11-24",
-    6.81
+    6.84
    ]
   ],
   "UEC": [
@@ -212871,7 +212908,7 @@
    ],
    [
     "2026-11-24",
-    5.06
+    5.05
    ]
   ],
   "LEU": [
@@ -212993,7 +213030,7 @@
    ],
    [
     "2026-11-24",
-    84.79
+    84.82
    ]
   ],
   "BWXT": [
@@ -213115,7 +213152,7 @@
    ],
    [
     "2026-11-24",
-    114.14
+    114.18
    ]
   ],
   "CEG": [
@@ -213237,7 +213274,7 @@
    ],
    [
     "2026-11-24",
-    244.76
+    244.81
    ]
   ],
   "VST": [
@@ -213359,7 +213396,7 @@
    ],
    [
     "2026-11-24",
-    119.89
+    120.23
    ]
   ],
   "TLN": [
@@ -213481,7 +213518,7 @@
    ],
    [
     "2026-11-24",
-    349.24
+    350.07
    ]
   ]
  },
@@ -217113,7 +217150,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 13:09",
+ "watchdog_last": "2026-11-24 13:19",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
