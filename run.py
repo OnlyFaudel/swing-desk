@@ -131,7 +131,11 @@ def spy_px(st, t=None):
 
 
 def free_cash(st, today):
-    return account.settled_cash(st["book"], today) - sum(a.get("dollars", 0) for a in st["armed"].values())
+    pend = st.get("pending_buys") or {}
+    for k in [k for k, v in pend.items() if v.get("t", "") < str(today)]:  # never-filled orders stop counting the next day
+        pend.pop(k, None)
+    return account.settled_cash(st["book"], today) - sum(a.get("dollars", 0) for a in st["armed"].values()) \
+        - sum(v.get("usd", 0) for v in pend.values())
 
 
 def spendable(st, today):
@@ -185,6 +189,8 @@ class Exec:
             return None
         ops.note_order(self.st, CFG, notify)
         self.st["pending_meta"][o["client_id"]] = meta
+        if tag != "pk":  # hold the money until the fill shows up in our books (process_fills releases it)
+            self.st.setdefault("pending_buys", {})[o["client_id"]] = {"usd": float(notional), "t": str(market.now_et().date())}
         log_order(self.st, o, note)
         return o
 
@@ -245,6 +251,7 @@ def process_fills(st, br, ex, today):
     book = st["book"]
     for f in fills:
         meta = st["pending_meta"].pop(f.get("client_id"), None)
+        (st.get("pending_buys") or {}).pop(f.get("client_id"), None)
         tag = account.tag_of(f.get("client_id"))
         rec = account.apply_fill(book, f, today, meta)
         if tag == "pl" and f["side"] == "buy":
@@ -1507,13 +1514,25 @@ def park_check(st, ex, prices, today, now):
             print("park trend", e)
     target, held = park_target(st), park_ticker(st)
     book = st["book"]
-    if held != target and (book["lots"].get(held, {}).get("park") or {}).get("qty", 0) > 1e-6:
-        L = book["lots"][held]["park"]
-        px_old = prices.get(held) or spy_px(st, held)
-        if px_old:
-            log_order(st, ex.br.market_sell(held, L["qty"], px_old, "pkx"), f"parking switch: {held} -> {target}")
+    L = (book["lots"].get(held, {}).get("park") or {})
+    px_old = prices.get(held) or spy_px(st, held)
+    sell_q, why = 0.0, ""
+    if L.get("qty", 0) > 1e-6 and px_old:
+        if held != target:
+            sell_q, why = L["qty"], f"parking switch: {held} -> {target}"
+        elif free_cash(st, today) < 0:  # spent more than we had (margin): pay it back from the parked money
+            sell_q, why = min(L["qty"], round(-free_cash(st, today) * 1.01 / px_old, 6)), f"sold parked {held} to cover a negative cash balance"
+    if sell_q > 1e-6:
+        try:
+            real = (ex.br.positions() or {}).get(held, {}).get("qty")
+            if real is not None:
+                sell_q = min(sell_q, float(real))  # fractional rounding: never ask to sell more than the broker holds
+            log_order(st, ex.br.market_sell(held, round(sell_q, 6), px_old, "pkx"), why)
             time.sleep(0 if ex.br.name == "sim" else 2)
             process_fills(st, ex.br, ex, today)
+        except Exception as e:
+            ops.note_reject(st, CFG, notify, f"parking sale {held}: {e}")
+            notify("Parking sale failed", f"{why}: {str(e)[:150]}", tags="warning")
     px = prices.get(target) or spy_px(st, target)
     if not px:
         return
@@ -2288,6 +2307,22 @@ def intel_brief(n=8):
 
 
 # ======================================================================= owner posts (the owner asks the team to look now)
+def positions_view(st, prices):
+    """Every open position of every kind, in plain words, for agents answering the owner."""
+    names = {"trade": "support setup", "panic": "panic-day rebound", "park": "parked idle cash", "core": "core holding"}
+    out = []
+    for t, lots in st["book"]["lots"].items():
+        for kind, L in lots.items():
+            q = L.get("qty", 0)
+            if q <= 1e-6:
+                continue
+            avg, px = L["cost"] / q, prices.get(t) or (st.get("last_prices") or {}).get(t)
+            what = (L.get("setup") or names.get(kind, kind)).replace("_", " ")
+            out.append(f"{t}: {what}, ${L['cost']:.0f} at ${avg:.2f}" + (f", now ${px:.2f} ({(px / avg - 1) * 100:+.1f}%)" if px else "")
+                       + (f", sells {L['exit_on']}" if L.get("exit_on") else "") + (f", opened {L['opened']}" if L.get("opened") else ""))
+    return out
+
+
 def handle_owner_posts(st, desk, ex, data, prices, today, brk_state):
     cfg = CFG.get("owner_posts", {})
     if not cfg.get("enabled"):
@@ -2357,6 +2392,15 @@ def owner_scan(st, desk, ex, data, prices, today, brk_state, text):
             ctx = {"boss_post": text, "setups_found": found, "why_no_setup": why, "info_only": info, "market_open": is_open,
                    "nowcast": st.get("nowcast"), "prices": {t: prices.get(t) for t in T}, "open_trades": {t: account.lot(st["book"], t, "trade")
                    for t in T if account.lot(st["book"], t, "trade")["qty"] > 1e-6}, "resting_buys": st["armed"],
+                   "ALL_POSITIONS_NOW": positions_view(st, prices),
+                   "orders_today": [f"{o['time'][11:]} {o['side']} {o['symbol']} ({o.get('note', '')[:50]})" for o in st["orders_log"]
+                                    if o["time"].startswith(str(today))],
+                   "account": {"equity": round(account.equity(st["book"], prices), 2), "start": CFG["capital_cap"],
+                               "cash": round(st["book"]["cash"], 2), "week_pct": brk_state.get("week_pct"), "day_pct": brk_state.get("day_pct")},
+                   "IMPORTANT": "Support setups (Patient Levels) are only one of our strategies. Rule trades (panic-day rebound, "
+                                "sharp-drop rebound and its second buy, comeback, AI power day, fear fading, Thanksgiving run-up, "
+                                "parking) run on their own schedule. Answer from ALL_POSITIONS_NOW and orders_today, never say "
+                                "'no trades' if orders_today has buys.",
                    "recent_headlines": [f["title"] for f in st["news_feed"]][-10:], "research_notebook": research_lab.highlights(st)}
             ctx["local_intel"] = collector.digest(days=7, top=40) if dump else intel_brief()
             # everyone hears the boss: each specialist answers from their own seat
