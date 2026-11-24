@@ -1,5 +1,146 @@
 {
  "date": "2026-11-24",
  "broker": "alpaca-paper",
- "orders": []
+ "orders": [
+  {
+   "time": "2026-11-24 15:40",
+   "symbol": "SPY",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.098938,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "sold $71 of parked SPY to fund a trade"
+  },
+  {
+   "time": "2026-11-24 15:40",
+   "symbol": "AMD",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "sharp-drop rebound"
+  },
+  {
+   "time": "2026-11-24 15:40",
+   "symbol": "NNE",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "sharp-drop rebound"
+  },
+  {
+   "time": "2026-11-24 15:40",
+   "symbol": "SMR",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "sharp-drop rebound"
+  },
+  {
+   "time": "2026-11-24 15:40",
+   "symbol": "CCJ",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "thanksgiving"
+  },
+  {
+   "time": "2026-11-24 15:40",
+   "symbol": "NXE",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "thanksgiving"
+  },
+  {
+   "time": "2026-11-24 15:40",
+   "symbol": "UEC",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "thanksgiving"
+  },
+  {
+   "time": "2026-11-24 15:40",
+   "symbol": "DNN",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "thanksgiving"
+  },
+  {
+   "time": "2026-11-24 15:40",
+   "symbol": "UUUU",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "thanksgiving"
+  },
+  {
+   "time": "2026-11-24 15:40",
+   "symbol": "LEU",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "thanksgiving"
+  },
+  {
+   "time": "2026-11-24 15:40",
+   "symbol": "BWXT",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "thanksgiving"
+  },
+  {
+   "time": "2026-11-24 15:40",
+   "symbol": "CEG",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "thanksgiving"
+  },
+  {
+   "time": "2026-11-24 15:40",
+   "symbol": "VST",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "thanksgiving"
+  },
+  {
+   "time": "2026-11-24 15:40",
+   "symbol": "TLN",
+   "side": "buy",
+   "kind": "market",
+   "qty": 0.0,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "thanksgiving"
+  }
+ ]
 }
