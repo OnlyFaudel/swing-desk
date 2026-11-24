@@ -105,9 +105,29 @@ def traded(st):
     return list(dict.fromkeys(T + held + list(st["armed"])))
 
 
-def spy_px(st):
-    live = market.LIVE.get("SPY")
-    return (live[0] if live and time.time() - live[1] < 600 else None) or (st.get("last_prices") or {}).get("SPY")
+def park_ticker(st):
+    """The fund idle cash sits in right now (whatever holds a 'park' lot), else today's target."""
+    for t, l in st["book"]["lots"].items():
+        if (l.get("park") or {}).get("qty", 0) > 1e-6:
+            return t
+    return park_target(st)
+
+
+def park_target(st):
+    """Smart parking (research 2026-11-24, park_trend_leverage, real SSO prices 2007-2026): 2x S&P fund (SSO) while the
+    S&P is above its 200-day average, T-bill fund (SGOV) while below. 13.0%/yr vs 10.5% for plain SPY, worst drop -40% vs -55%,
+    better in both 2007-18 and 2019-26. mode 'spy' keeps the old behaviour."""
+    cfg = CFG.get("parking", {})
+    if cfg.get("mode") != "trend_2x":
+        return cfg.get("ticker", "SPY")
+    tr = st.get("park_trend") or {}
+    return cfg.get("up_ticker", "SSO") if tr.get("above", True) else cfg.get("down_ticker", "SGOV")
+
+
+def spy_px(st, t=None):
+    t = t or park_ticker(st)
+    live = market.LIVE.get(t)
+    return (live[0] if live and time.time() - live[1] < 600 else None) or (st.get("last_prices") or {}).get(t)
 
 
 def free_cash(st, today):
@@ -116,8 +136,9 @@ def free_cash(st, today):
 
 def spendable(st, today):
     """Cash we can put into a trade right now: free cash plus the parked S&P shares (sold on demand)."""
-    px = spy_px(st)
-    return free_cash(st, today) + (account.park_value(st["book"], {"SPY": px}) if px else 0)
+    pt = park_ticker(st)
+    px = spy_px(st, pt)
+    return free_cash(st, today) + (account.park_value(st["book"], {pt: px}) if px else 0)
 
 
 # ======================================================================= execution trader (code)
@@ -129,13 +150,14 @@ class Exec:
         """Idle money sits in the S&P (SPY). When a trade needs it, sell just enough SPY first."""
         today = market.now_et().date()
         short = need - free_cash(self.st, today)
-        L = self.st["book"]["lots"].get("SPY", {}).get("park", {})
-        px = spy_px(self.st)
+        pt = park_ticker(self.st)
+        L = self.st["book"]["lots"].get(pt, {}).get("park", {})
+        px = spy_px(self.st, pt)
         if short <= 0 or not L.get("qty") or not px:
             return
         qty = min(L["qty"], round(short * 1.01 / px, 6))
         try:
-            log_order(self.st, self.br.market_sell("SPY", qty, px, "pkx"), f"sold ${qty * px:.0f} of parked S&P to fund a trade")
+            log_order(self.st, self.br.market_sell(pt, qty, px, "pkx"), f"sold ${qty * px:.0f} of parked {pt} to fund a trade")
             time.sleep(0 if self.br.name == "sim" else 2)
             process_fills(self.st, self.br, self, today)
         except Exception as e:
@@ -1447,14 +1469,40 @@ def park_check(st, ex, prices, today, now):
     if not cfg.get("enabled") or not (dt.time(15, 52) <= market.cclock(now) <= dt.time(15, 58)) or st["flags"].get(f"park:{today}"):
         return
     st["flags"][f"park:{today}"] = True
-    if "SPY" not in prices:
+    if cfg.get("mode") == "trend_2x":
+        try:  # once a day: is the S&P above its 200-day average?
+            import yfinance as yf
+            sc = yf.download("SPY", period="14mo", auto_adjust=True, progress=False)["Close"].dropna().squeeze()
+            last = float(prices.get("SPY") or sc.iloc[-1])
+            sma = float(sc.tail(200).mean())
+            was = (st.get("park_trend") or {}).get("above")
+            st["park_trend"] = {"date": str(today), "above": last > sma, "spy": round(last, 2), "sma200": round(sma, 2)}
+            if was is not None and was != st["park_trend"]["above"]:
+                notify("Parking switch", f"S&P {last:.0f} is now {'above' if last > sma else 'below'} its 200-day average {sma:.0f}: idle cash moves to "
+                       f"{park_target(st)}", tags="arrows_counterclockwise")
+        except Exception as e:
+            print("park trend", e)
+    target, held = park_target(st), park_ticker(st)
+    book = st["book"]
+    if held != target and (book["lots"].get(held, {}).get("park") or {}).get("qty", 0) > 1e-6:
+        L = book["lots"][held]["park"]
+        px_old = prices.get(held) or spy_px(st, held)
+        if px_old:
+            log_order(st, ex.br.market_sell(held, L["qty"], px_old, "pkx"), f"parking switch: {held} -> {target}")
+            time.sleep(0 if ex.br.name == "sim" else 2)
+            process_fills(st, ex.br, ex, today)
+    px = prices.get(target) or spy_px(st, target)
+    if not px:
         return
-    eq = account.equity(st["book"], prices)
+    eq = account.equity(book, prices)
     idle = free_cash(st, today) - eq * cfg.get("keep_cash_pct", 3) / 100
     if idle >= cfg.get("min_usd", 20):
-        if ex.buy_market("SPY", idle, prices["SPY"], "pk", {"setup": "parking", "by": "rules"}, f"parked ${idle:.0f} idle cash in the S&P"):
-            feed.post("exec", f"Parked ${idle:.0f} of idle cash in the S&P 500 (SPY) so it keeps working overnight. "
-                      "It gets sold automatically the moment a trade needs the money.", ["SPY"], kind="alert")
+        what = {"SSO": "a 2x S&P 500 fund (SSO), because the S&P is above its 200-day average",
+                "SGOV": "T-bills (SGOV), because the S&P is below its 200-day average",
+                "SPY": "the S&P 500 (SPY)"}.get(target, target)
+        if ex.buy_market(target, idle, px, "pk", {"setup": "parking", "by": "rules"}, f"parked ${idle:.0f} idle cash in {target}"):
+            feed.post("exec", f"Parked ${idle:.0f} of idle cash in {what}. It gets sold automatically the moment a trade needs the money.",
+                      [target], kind="alert")
 
 
 def pd_ts(d):
@@ -1611,7 +1659,8 @@ def sharp_drop_check(st, ex, prices, today, brk_state, now):
             continue
         if t in (st.get("avoid") or {}) and st["avoid"][t].get("until", "") >= str(today):
             continue
-        dollars = min(brk_state["equity"] * cfg.get("size_pct", 10) / 100, spendable(st, today))
+        big = r5 <= -cfg.get("deep_drop_pct", 20) / 100  # deeper crashes rebounded about twice as hard (research: strength_sizing)
+        dollars = min(brk_state["equity"] * cfg.get("deep_size_pct" if big else "size_pct", 15 if big else 10) / 100, spendable(st, today))
         if dollars < 5:
             break
         exit_on = sessions_after(str(today), cfg.get("hold_sessions", 10))
@@ -3058,11 +3107,12 @@ def cycle(st, desk, br, ex, force=()):
         weekly_rank(st, force="rank" in force)
     T[:] = st["active"]
     tick = traded(st)
-    data, prices = market.fetch(tick + ["SPY"])
-    for t in tick + ["SPY"]:  # a ticker Yahoo failed to send keeps its last known price
+    extra = list(dict.fromkeys(["SPY", park_ticker(st), park_target(st)]))
+    data, prices = market.fetch(tick + [x for x in extra if x not in tick])
+    for t in tick + extra:  # a ticker Yahoo failed to send keeps its last known price
         if t not in prices and (st.get("last_prices") or {}).get(t):
             prices[t] = st["last_prices"][t]
-    st["last_prices"], st["last_cycle"] = {t: round(prices[t], 2) for t in tick + ["SPY"] if t in prices}, now.strftime("%Y-%m-%d %H:%M ET")
+    st["last_prices"], st["last_cycle"] = {t: round(prices[t], 2) for t in tick + extra if t in prices}, now.strftime("%Y-%m-%d %H:%M ET")
     try:  # last 30 daily closes per stock, for the trade hover cards on the page
         st["spark"] = {t: [[str(i.date()), round(float(c), 2)] for i, c in data[t].Close.dropna().tail(30).items()] for t in tick if t in data}
     except Exception as e:

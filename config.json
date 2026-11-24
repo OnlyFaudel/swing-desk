@@ -535,7 +535,11 @@
     "ticker": "SPY",
     "keep_cash_pct": 3,
     "min_usd": 20,
-    "_note": "Idle cash goes into SPY near the close and is sold on demand when any trade needs it. Tested with the panic rule 2019-2026: 37%/yr vs 25% with cash idle; worst drop -31% vs -23%."
+    "_note": "Idle cash goes into SPY near the close and is sold on demand when any trade needs it. Tested with the panic rule 2019-2026: 37%/yr vs 25% with cash idle; worst drop -31% vs -23%.",
+    "mode": "trend_2x",
+    "up_ticker": "SSO",
+    "down_ticker": "SGOV",
+    "trend_note": "Research 2026-11-24 (park_trend_leverage): SSO above the S&P 200-day average, T-bills below: 2007-26 13.0%/yr vs 10.5% SPY, worst drop -40% vs -55%; better in 2007-18 (10.2 vs 7.0) and 2019-26 (17.5 vs 16.1). mode 'spy' = old behaviour."
   },
   "options_spec": {
     "enabled": true,
@@ -550,7 +554,9 @@
     "max_open": 3,
     "min_price": 3,
     "min_dollar_volume": 5000000,
-    "note": "Any-day rebound after a 15%+ fall over 5 sessions (nuclear + related). Research 2026-11-23: beat the S&P by +0.84%/trade 2008-18 and +1.09% 2019-26, about 1 trade a week."
+    "note": "Any-day rebound after a 15%+ fall over 5 sessions (nuclear + related). Research 2026-11-23: beat the S&P by +0.84%/trade 2008-18 and +1.09% 2019-26, about 1 trade a week.",
+    "deep_drop_pct": 20,
+    "deep_size_pct": 15
   },
   "signal_trades": {
     "enabled": true,

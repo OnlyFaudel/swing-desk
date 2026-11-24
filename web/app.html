@@ -740,7 +740,7 @@ function stockState(t){
   /* ----- trade hover cards: hover (or tap on a phone) a row to see the whole story of that trade */
   const HC=[];
   function hc(o){HC.push(o);return HC.length-1;}
-  const KN={trade:"support-level trade",core:"long-term hold",panic:"panic-day rebound",auto:"discovery trade",park:"idle cash parked in the S&P 500",armed:"waiting buy order",closed:"closed trade"};
+  const KN={trade:"support-level trade",core:"long-term hold",panic:"panic-day rebound",auto:"discovery trade",park:"idle cash parked (S&P fund or T-bills)",armed:"waiting buy order",closed:"closed trade"};
   function spark(t,lines){
     const raw=((S.spark||{})[t]||[]), s=raw.map(x=>x[1]); if(s.length<3) return "";
     if(P[t]&&raw.length&&raw[raw.length-1][0]!==ymd(new Date())) s.push(P[t]);
@@ -790,9 +790,10 @@ function stockState(t){
     const closed=(B.trades||[]).filter(x=>String(x.exit_time||"").startsWith(td));
     const done=did?`Today the bot ${did}.`:closed.length?`Closed ${closed.map(x=>`${esc(x.ticker)} ${x.pnl>=0?"+":"−"}$${Math.abs(x.pnl).toFixed(2)}`).join(", ")} today.`:"No buys or sells yet today.";
     const lotsNow=[].concat(...["trade","panic","auto"].map(k=>Object.keys(B.lots||{}).filter(t=>lot(t,k).qty>1e-6).map(t=>[t,k])));
-    const park=lot("SPY","park").qty>1e-6;
+    const parkT=Object.keys((S.book||{}).lots||{}).find(t=>lot(t,"park").qty>1e-6), park=!!parkT;
+    const parkWhere=({SSO:"a 2x S&P fund (SSO)",SGOV:"T-bills (SGOV)",SPY:"the S&P"})[parkT]||parkT;
     const tot=lotsNow.reduce((a,[t,k])=>{const L=lot(t,k);return a+((P[t]??L.cost/L.qty)*L.qty-L.cost)},0);
-    const holding=lotsNow.length?`${lotsNow.map(([t])=>esc(t)).join(", ")}, <b class="${tot>=0?"pos":"neg"}">${tot>=0?"+":"−"}$${Math.abs(tot).toFixed(2)}</b> open ${tot>=0?"profit":"loss"}.${park?" The rest is parked in the S&P.":""}`:park?"No stock trades open; the cash is parked in the S&P.":"No trades open; holding cash.";
+    const holding=lotsNow.length?`${lotsNow.map(([t])=>esc(t)).join(", ")}, <b class="${tot>=0?"pos":"neg"}">${tot>=0?"+":"−"}$${Math.abs(tot).toFixed(2)}</b> open ${tot>=0?"profit":"loss"}.${park?" The rest is parked in "+parkWhere+".":""}`:park?"No stock trades open; the cash is parked in "+parkWhere+".":"No trades open; holding cash.";
     const next=[];
     const pn=lotsNow.filter(([t,k])=>k==="panic").map(([t])=>t);
     if(pn.length){const dates=[...new Set(pn.map(t=>lot(t,"panic").exit_on))];
@@ -811,7 +812,7 @@ function stockState(t){
     return `<div class="tr" data-hc="${hc({t,k:lot(t,"trade").qty>1e-6?"trade":"core",L})}"><div class="tk">${esc(t)}</div><div class="mid"><b>${esc(t)} ${lot(t,"trade").qty>1e-6?"trade":"long-term"}</b><span>${(+L.qty).toFixed(4)} shares at ${money(avg)}, now ${money(now)}</span></div><div class="amt ${pl>=0?"pos":"neg"}">${pl>=0?"+":"−"}$${Math.abs(pl).toFixed(2)}<span>${((now/avg-1)*100).toFixed(2)}%</span></div></div>`}).join("");}
   const pan=[].concat(...["panic","auto","park"].map(k=>Object.keys(B.lots||{}).filter(t=>lot(t,k).qty>1e-6).map(t=>[t,k])));
   if(pan.length){if(!holds.length) m+=`<div class="h3">Holding now</div>`; m+=pan.map(([t,k])=>{const L=lot(t,k),avg=L.cost/(L.qty||1),now=P[t]??avg,pl=(now-avg)*L.qty;
-    return `<div class="tr" data-hc="${hc({t,k,L})}"><div class="tk">${esc(t)}</div><div class="mid"><b>${esc(t)} ${k==="park"?"idle cash parked in the S&P 500":k==="auto"?({conviction:"team conviction trade",year_end:"year-end bounce",uranium_momentum:"uranium momentum",sharp_drop:"sharp-drop rebound",ai_power:"AI power day",fear_fade:"fear fading",thanksgiving:"Thanksgiving run-up"}[L.setup]||"discovery trade"):"panic-day rebound"}</b><span>${(+L.qty).toFixed(4)} shares at ${money(avg)}, now ${money(now)}${k==="park"?", sold when a trade needs it":", sells "+fd(L.exit_on)}</span></div><div class="amt ${pl>=0?"pos":"neg"}">${pl>=0?"+":"−"}$${Math.abs(pl).toFixed(2)}<span>${((now/avg-1)*100).toFixed(2)}%</span></div></div>`}).join("");}
+    return `<div class="tr" data-hc="${hc({t,k,L})}"><div class="tk">${esc(t)}</div><div class="mid"><b>${esc(t)} ${k==="park"?({SSO:"idle cash in a 2x S&P fund (S&P above its 200-day)",SGOV:"idle cash in T-bills (S&P below its 200-day)"})[t]||"idle cash parked in the S&P 500":k==="auto"?({conviction:"team conviction trade",year_end:"year-end bounce",uranium_momentum:"uranium momentum",sharp_drop:"sharp-drop rebound",ai_power:"AI power day",fear_fade:"fear fading",thanksgiving:"Thanksgiving run-up"}[L.setup]||"discovery trade"):"panic-day rebound"}</b><span>${(+L.qty).toFixed(4)} shares at ${money(avg)}, now ${money(now)}${k==="park"?", sold when a trade needs it":", sells "+fd(L.exit_on)}</span></div><div class="amt ${pl>=0?"pos":"neg"}">${pl>=0?"+":"−"}$${Math.abs(pl).toFixed(2)}<span>${((now/avg-1)*100).toFixed(2)}%</span></div></div>`}).join("");}
   const arms=Object.entries(S.armed||{});
   if(arms.length) m+=`<div class="h3">Waiting to buy</div>`+arms.map(([t,a])=>`<div class="tr" data-hc="${hc({t,k:"armed",a})}"><div class="tk">${esc(t)}</div><div class="mid"><b>${money(a.dollars)} at ${money(a.entry)}</b><span>${Math.abs(a.dist_to_entry_pct??0).toFixed(1)}% below now, until ${esc(a.valid_until)}</span></div><div class="amt mut">order</div></div>`).join("");
   const tr=(B.trades||[]).slice().reverse();

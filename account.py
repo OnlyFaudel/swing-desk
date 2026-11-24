@@ -46,8 +46,12 @@ def trade_value(book, prices):
 
 
 def park_value(book, prices):
-    L = book["lots"].get("SPY", {}).get("park", {})
-    return L.get("qty", 0) * prices.get("SPY", (L["cost"] / L["qty"]) if L.get("qty") else 0)
+    tot = 0.0
+    for t, l in book["lots"].items():
+        L = l.get("park") or {}
+        if L.get("qty"):
+            tot += L["qty"] * (prices.get(t) or L["cost"] / L["qty"])
+    return tot
 
 
 def settled_cash(book, today):

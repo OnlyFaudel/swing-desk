@@ -237,6 +237,14 @@
   "recent_era_book": {
    "trials": 0,
    "verdict": "2026-11-24: owner's hypothesis that the AI-era nuclear market differs from 2008-2018. Five rules that worked 2019-2026 but failed 2008-2018 (RSI(2) dip, worst week, 4 down days, quarter turn, 12-month momentum switch) now run as a live practice book (recent.py, no money), scored per trade vs the S&P. Promotion candidate after 30 closed trades with positive average and t >= 1.5; real money still requires the normal gate."
+  },
+  "park_trend_leverage": {
+   "trials": 13,
+   "verdict": "2026-11-24 (where idle cash sits; synthetic 2x S&P from 2000, then the real SSO fund 2007-2026 with T-bill yields): SPY only 10.5%/yr 2007-26, worst -55%; SSO always 13.9%/yr, worst -85%; SSO while the S&P is above its 200-day average, T-bills below: 13.0%/yr, worst -40%, 2007-18 10.2% vs 7.0%, 2019-26 17.5% vs 16.1% (1% band version 12.0%, -40%; SSO/SPY version 14.5%, -62%). Synthetic 2000-07: band versions beat SPY, no-band lost (-2.3% vs +1.6%). ADOPTED parking mode trend_2x (SSO above / SGOV below, checked daily near the close). Note 2026-11-23: S&P 722 vs 200-day 730 -> T-bills."
+  },
+  "strategy_round_2026_11_24": {
+   "trials": 20,
+   "verdict": "2026-11-24: Rosh Hashanah -> Yom Kippur ('sell RH, buy YK'): S&P -0.37% vs +0.32% normal, down only 53% of 32 years; our nuclear -1.66% (down 47%); after Yom Kippur +1.11% vs +0.91%; Passover week +0.68% vs +0.23%: none reliable. Overnight-only in CCJ/CEG/VST/BWXT at 0.03/0.06/0.10% a night: 2008-18 -6.3/-13.1/-21.5%/yr vs 0% holding; 2019-26 24.9/15.8/4.8% vs 29.4%: rejected. Sharp-drop rule on 120 big stocks across sectors: +0.29%/+0.69% per trade vs S&P (2008-18/2019-26) vs +0.83/+1.09% on nuclear+related; adding them gives more trades but weaker ones: kept the current list. Call spreads (1 month, ATM to +10%) on the 1,147 sharp-drop trades, Black-Scholes with recent volatility x1.0/x1.3: +4.7/+0.5% (2008-18) and +3.3/+0.0% (2019-26) on premium, worst 10% -71 to -88%: rejected. Strength sizing: 20%+ drops beat the S&P by +1.06/+2.18% vs +0.83/+1.09% for 15%+: ADOPTED 15% size for 20%+ drops (10% otherwise)."
   }
  }
 }
