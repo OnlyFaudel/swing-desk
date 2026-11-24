@@ -5630,12 +5630,12 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.07574,
+  "day_usd": 0.08225,
   "month": "2026-11",
-  "month_usd": 0.80716,
-  "total_usd": 0.80716,
+  "month_usd": 0.81367,
+  "total_usd": 0.81367,
   "by_role": {
-   "macro": 0.0669,
+   "macro": 0.06843,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.04601,
@@ -5643,12 +5643,12 @@
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.04671,
-   "risk": 0.05855,
-   "investigator": 0.18216,
+   "pm": 0.04843,
+   "risk": 0.05932,
+   "investigator": 0.183,
    "postmortem": 0.00035,
    "researcher": 0.00704,
-   "engineer": 0.01135,
+   "engineer": 0.013,
    "questioner": 0.05399
   }
  },
@@ -5745,20 +5745,20 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 60.18,
-  "NXE": 6.69,
-  "UEC": 5.66,
+  "CCJ": 60.41,
+  "NXE": 6.7,
+  "UEC": 5.65,
   "DNN": 1.74,
-  "UUUU": 5.03,
-  "LEU": 83.19,
-  "BWXT": 113.43,
-  "CEG": 246.69,
-  "VST": 121.15,
+  "UUUU": 5.04,
+  "LEU": 84.0,
+  "BWXT": 114.32,
+  "CEG": 247.18,
+  "VST": 121.82,
   "TLN": 357.07,
-  "SPY": 715.44,
-  "SSO": 59.95
+  "SPY": 715.84,
+  "SSO": 60.01
  },
- "last_cycle": "2026-11-24 09:40 ET",
+ "last_cycle": "2026-11-24 09:41 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -5783,10 +5783,10 @@
   ]
  },
  "brakes": {
-  "equity": 1008.61,
-  "day_pct": -2.03,
-  "week_pct": 0.81,
-  "drawdown_pct": -4.34,
+  "equity": 1011.41,
+  "day_pct": -1.76,
+  "week_pct": 1.09,
+  "drawdown_pct": -4.08,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -7172,6 +7172,10 @@
   [
    "2026-11-24 09:40",
    1008.61
+  ],
+  [
+   "2026-11-24 09:41",
+   1011.41
   ]
  ],
  "nowcast": {
@@ -51678,7 +51682,7 @@
     0.8962
    ]
   },
-  "time": "2026-11-24 09:40"
+  "time": "2026-11-24 09:41"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -51973,8 +51977,8 @@
   "9f2e45d00f1961dd",
   "7269a326a498bd44",
   "42e4688c154f3e5b",
-  "960af125712d07b2",
   "fe808fea77078dbb",
+  "960af125712d07b2",
   "bf01a2cc0277276c",
   "1b180f9c668466ea",
   "b78359c4e74e2d63",
@@ -52074,7 +52078,7 @@
   "04dd9aeafd90d9b4",
   "7ffa38b48cb85fdf"
  ],
- "news_slow_at": 1795531259.9397054,
+ "news_slow_at": 1795531315.9493635,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -203082,6 +203086,73 @@
    ],
    "practice": false,
    "end": "09:40"
+  },
+  {
+   "id": "20261124094141064305",
+   "title": "Huddle: fast move: NXE moved +1.5% in 9 min",
+   "tickers": [
+    "NXE"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-24 09:41",
+   "msgs": [
+    {
+     "t": "09:41",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: NXE moved +1.5% in 9 min.",
+     "outcome": false
+    },
+    {
+     "t": "09:41",
+     "who": "investigator",
+     "to": "chief",
+     "text": "NXE jumped about 6% today, but that's inside a basket that's down about 8% versus its 10-day average, and there's no fresh news driving it, just a drilling update that's already public. The only concrete item is the Sprott trust sitting at a 20% discount, which argues against a supportive uranium tape. I'm not adding a new idea here; the desk's setup already has NXE sitting out, and I agree with that.",
+     "outcome": false,
+     "notes": "why: The NXE move is a bounce after a -40% quarter, and the headline is a routine drilling update, not new information. The basket is below its average, which blocks any new buys anyway.\nticker: NXE\ndirection: down\ndays: 3\nfiles read: NXE Snapshot, NXE Legal, SECTOR Uranium market"
+    },
+    {
+     "t": "09:41",
+     "who": "engineer",
+     "to": "investigator",
+     "text": "I agree with News Investigator: NXE's +1.5% move is a short burst inside a basket that's about 8% below its 10-day average, with only a public drilling update behind it. Physically, nothing at the plants or mines changes this week, and Salem 1 is the only open outage among our owners, which is routine refueling season. No new buy and no call from my side.",
+     "outcome": false,
+     "notes": "why: I checked the outage list (only Salem 1 open, normal refueling), the power weather (empty), and the uranium price (spot $91.55, up 14% over 12 months), and none of it explains a move in NXE. The Sprott discount at about -20% suggests weak investor demand for uranium, not a supportive tape.\nfiles read: CEG Places and operations, VST Places and operations, NXE Places and operations"
+    },
+    {
+     "t": "09:41",
+     "who": "macro",
+     "to": "chief",
+     "text": "Sector context: the whole nuclear basket is about 8% below its 10-day average, with the VIX up 49% over the month, so this NXE bounce looks like a short sector relief move, not a broad uranium rally. The Sprott trust sitting at a 20% discount says investors are still leaving uranium, which argues against chasing it. I agree with the Investigator and Plant Engineer: nothing market-wide or sector-wide changes this, so NXE stays out.",
+     "outcome": false,
+     "notes": "why: Checked the basket vs its 10-day average (-8.3%), the VIX and Sprott discount in the desk notes, and whether any sector-wide news explains the move. Nothing does, so the setup stays out.\nfiles read: SECTOR Uranium market, NXE Snapshot"
+    },
+    {
+     "t": "09:41",
+     "who": "risk",
+     "to": "investigator",
+     "text": "Agree with News Investigator and Plant Engineer: NXE's 6% bounce is a short relief move inside a basket about 8% under its 10-day average, with only a public drilling update behind it. The Sprott trust at a 20% discount says money is still leaving uranium, and NXE is 20% under its 50-day average, so I'd want no buy here and nothing to add on the risk side.",
+     "outcome": false,
+     "notes": "why: The desk's rule blocks new buys while the basket is below its 10-day average, and it is (-8.3%). NXE is already sitting out with no level worth acting on, so there's nothing to argue against beyond confirming the sit-out.\nfiles read: SECTOR Uranium market, NXE Snapshot, NXE Legal"
+    },
+    {
+     "t": "09:41",
+     "who": "pm",
+     "to": "team",
+     "text": "I agree with the Risk Manager, News Investigator, and Macro Analyst: NXE's 6% bounce is a short relief move inside a basket still about 8% under its 10-day average, with only a public drilling update behind it. There's no open position to exit and no waiting buy to cancel, and the desk's setup already sits out NXE, so the right call is to do nothing.",
+     "outcome": false,
+     "notes": "action: none\nreason: No holdings or waiting buys exist in NXE, so there is nothing to exit or skip. The basket is below its 10-day average, the Sprott trust is at a 20% discount, and the level at $6.38 has no proven value, so no new entry is allowed.\nwhy: I checked the sector pulse (basket -8.3% vs its 10-day average), the NXE snapshot (up 5.9% today but down 20% vs its 50-day average), and the desk's setup rule, which says no buys while the basket is falling. Nothing here justifies acting.\nticker: NXE\ndirection: down\ndays: 5\nfiles read: SECTOR Uranium market, NXE Snapshot"
+    },
+    {
+     "t": "09:41",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:41"
   }
  ],
  "feed": [
@@ -205669,6 +205740,21 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-24 09:41",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: NXE moved +1.5% in 9 min. Checking the news for a reason.",
+   "tickers": [
+    "NXE"
+   ],
+   "art": {
+    "big": "NXE moved +1.5% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -205852,8 +205938,6 @@
  ],
  "huddle_trade_count": 1,
  "huddle_seen": {
-  "fast move: NXE moved -1.6% in 9 min": 1795444862.9860013,
-  "BWXT (you asked us to watch it) moved -1.1% since we last looked": 1795444862.9860015,
   "fast move: DNN moved -1.9% in 9 min": 1795444921.9854822,
   "fast move: LEU moved -1.5% in 2 min": 1795444962.2797282,
   "fast move: UUUU moved -1.5% in 3 min": 1795444998.8496578,
@@ -205868,9 +205952,10 @@
   "BWXT (you asked us to watch it) moved -2.1% since we last looked": 1795530959.0769582,
   "TLN (you asked us to watch it) moved -3.3% since we last looked": 1795530959.0769587,
   "TLN (you asked us to watch it) moved +1.0% since we last looked": 1795531179.4415808,
-  "fast move: CEG moved +1.5% in 8 min": 1795531244.5072694
+  "fast move: CEG moved +1.5% in 8 min": 1795531244.5072694,
+  "fast move: NXE moved +1.5% in 9 min": 1795531301.0631235
  },
- "huddle_last": 1795531244.5072756,
+ "huddle_last": 1795531301.0631309,
  "huddle_log": [
   "2026-11-20",
   "2026-11-23",
@@ -205888,6 +205973,7 @@
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
+  "2026-11-24",
   "2026-11-24",
   "2026-11-24",
   "2026-11-24"
@@ -206260,7 +206346,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 09:40",
+  "updated": "2026-11-24 09:41",
   "total": 489,
   "week": 413,
   "places": {
@@ -208785,12 +208871,12 @@
    "built": "2026-11-24 09:25"
   }
  ],
- "heartbeat": "2026-11-24 09:40",
+ "heartbeat": "2026-11-24 09:41",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 220,
+ "_pushed_feed": 225,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -208940,7 +209026,7 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 113.43000030517578,
+  "BWXT": 114.31690216064453,
   "TLN": 357.075
  },
  "notes_audit": {
@@ -209003,8 +209089,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 25,
-   "used": 23,
+   "asked": 26,
+   "used": 24,
    "notes": {
     "BWXT Deals and contracts": 2,
     "BWXT Snapshot": 2,
@@ -209012,7 +209098,7 @@
     "BWXT Leadership and insiders": 2,
     "UEC Snapshot": 1,
     "UEC Deals and contracts": 1,
-    "SECTOR Uranium market": 3,
+    "SECTOR Uranium market": 4,
     "TLN Snapshot": 12,
     "TLN What history says": 3,
     "CCJ Snapshot": 1,
@@ -209021,7 +209107,7 @@
     "CCJ What history says": 1,
     "SECTOR Government and laws": 2,
     "coming_up": 3,
-    "NXE Snapshot": 1,
+    "NXE Snapshot": 2,
     "NXE Filings and company events": 1,
     "LEU Snapshot": 1,
     "LEU Legal": 1,
@@ -209039,19 +209125,20 @@
     "VST Leadership and insiders": 1,
     "TLN Deals and contracts": 5,
     "TLN Leadership and insiders": 11,
-    "TLN Filings and company events": 3
+    "TLN Filings and company events": 3,
+    "NXE Legal": 1
    },
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 11,
-   "used": 11,
+   "asked": 12,
+   "used": 12,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 5,
     "BWXT Leadership and insiders": 1,
     "TLN Snapshot": 4,
-    "SECTOR Uranium market": 7,
+    "SECTOR Uranium market": 8,
     "BWXT Discoveries": 2,
     "UEC Snapshot": 1,
     "UEC Leadership and insiders": 1,
@@ -209059,16 +209146,17 @@
     "TLN Discoveries": 1,
     "SECTOR pulse": 1,
     "CEG Snapshot": 1,
-    "SECTOR Market backdrop": 1
+    "SECTOR Market backdrop": 1,
+    "NXE Snapshot": 1
    },
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 9,
-   "used": 9,
+   "asked": 10,
+   "used": 10,
    "notes": {
     "SECTOR Reactors and power": 2,
-    "CEG Places and operations": 4,
+    "CEG Places and operations": 5,
     "UEC Deals and contracts": 1,
     "UEC Places and operations": 1,
     "license_tracker": 3,
@@ -209078,16 +209166,17 @@
     "LEU Places and operations": 1,
     "NRC license tracker": 1,
     "power_deals_and_fuel_policy": 2,
-    "VST Places and operations": 1,
-    "CEG Business": 1
+    "VST Places and operations": 2,
+    "CEG Business": 1,
+    "NXE Places and operations": 1
    },
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 28,
-   "used": 28,
+   "asked": 29,
+   "used": 29,
    "notes": {
-    "SECTOR Uranium market": 16,
+    "SECTOR Uranium market": 17,
     "BWXT Snapshot": 6,
     "CCJ Snapshot": 2,
     "UUUU Snapshot": 2,
@@ -209098,7 +209187,8 @@
     "CEG Legal": 1,
     "coming_up: PJM December capacity auction delay": 1,
     "VST Snapshot": 2,
-    "CEG Snapshot": 2
+    "CEG Snapshot": 2,
+    "NXE Snapshot": 1
    },
    "since": "2026-11-23"
   },
@@ -209141,13 +209231,13 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 28,
-   "used": 28,
+   "asked": 29,
+   "used": 29,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 2,
     "BWXT Snapshot": 2,
-    "SECTOR Uranium market": 8,
+    "SECTOR Uranium market": 9,
     "TLN Snapshot": 19,
     "TLN Legal": 2,
     "BWXT Legal": 1,
@@ -209161,7 +209251,9 @@
     "TLN Discoveries": 2,
     "TLN Leadership and insiders": 7,
     "CEG Snapshot": 1,
-    "CEG Price behavior": 1
+    "CEG Price behavior": 1,
+    "NXE Snapshot": 1,
+    "NXE Legal": 1
    },
    "since": "2026-11-23"
   },
@@ -209356,7 +209448,7 @@
    ],
    [
     "2026-11-24",
-    60.28
+    60.4
    ]
   ],
   "NXE": [
@@ -209722,7 +209814,7 @@
    ],
    [
     "2026-11-24",
-    1.75
+    1.74
    ]
   ],
   "UUUU": [
@@ -209844,7 +209936,7 @@
    ],
    [
     "2026-11-24",
-    5.03
+    5.04
    ]
   ],
   "LEU": [
@@ -209966,7 +210058,7 @@
    ],
    [
     "2026-11-24",
-    83.19
+    83.5
    ]
   ],
   "BWXT": [
@@ -210088,7 +210180,7 @@
    ],
    [
     "2026-11-24",
-    113.43
+    114.32
    ]
   ],
   "CEG": [
@@ -210210,7 +210302,7 @@
    ],
    [
     "2026-11-24",
-    246.98
+    247.48
    ]
   ],
   "VST": [
@@ -210332,7 +210424,7 @@
    ],
    [
     "2026-11-24",
-    121.45
+    121.52
    ]
   ],
   "TLN": [
@@ -210454,7 +210546,7 @@
    ],
    [
     "2026-11-24",
-    356.36
+    358.34
    ]
   ]
  },
@@ -210878,6 +210970,26 @@
    "price": 246.69,
    "result": null,
    "why": "I checked the basket gate (-8.3% vs 10-day average, so no new buys), the fleet status (only Salem 1 down on a normal refuel), and the desk's Black Friday notes. Nothing in the data argues for chasing "
+  },
+  {
+   "role": "investigator",
+   "ticker": "NXE",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-24",
+   "price": 6.7,
+   "result": null,
+   "why": "The NXE move is a bounce after a -40% quarter, and the headline is a routine drilling update, not new information. The basket is below its average, which blocks any new buys anyway."
+  },
+  {
+   "role": "pm",
+   "ticker": "NXE",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-24",
+   "price": 6.7,
+   "result": null,
+   "why": "I checked the sector pulse (basket -8.3% vs its 10-day average), the NXE snapshot (up 5.9% today but down 20% vs its 50-day average), and the desk's setup rule, which says no buys while the basket is "
   }
  ],
  "after_sale": [],
@@ -212826,6 +212938,11 @@
    1795531244.5070684,
    "CEG",
    1
+  ],
+  [
+   1795531301.0629408,
+   "NXE",
+   1
   ]
  ],
  "auto_log": [],
@@ -213125,7 +213242,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 09:40",
+ "watchdog_last": "2026-11-24 09:41",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
