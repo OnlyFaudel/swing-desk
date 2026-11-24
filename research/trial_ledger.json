@@ -67,7 +67,7 @@
    "verdict": "2026-11-20 ESTIMATE (Black-Scholes, implied vol = 1.3x recent vol on entry, 1.05x on exit, ~5% spread each way; no real historical option prices): 2-week calls on the panic-day picks turn the stock's +5.2% into about +5% (at the money) or 0% (5% out of the money) on average, median -9% to -16%, winning on <50% of days, losing 80%+ on 11-15%. Fear makes options expensive exactly on panic days. Shares beat calls for this setup. Re-test with the options recorder's real chains once enough panic days are recorded. Today's real CCJ chain: IV ~60%, $65 Dec-4 call 0.65/0.97 (40% spread)."
   },
   "shadow_patterns": {
-   "trials": 5,
+   "trials": 7,
    "verdict": "background research lab"
   },
   "volume_profile_levels": {
@@ -76,7 +76,7 @@
   },
   "auto_discovery": {
    "trials": 425,
-   "verdict": "2026-11-23 16:08: the bot tested 377 event patterns on 47,444 events (older vs newer half, corrected for the number of tests). 9 hold up: price_3_down_days (miners) -> +1.12% vs the basket (or its normal trend) over the next 5 days (n=1065, up 55%); price_3_down_days (all our stocks) -> +1.10% vs the basket (or its normal trend) over the next 5 days (n=1513, up 55%); price_new_52w_high (miners) -> -1.31% vs the basket (or its normal trend) over the next 5 days (n=348, up 35%); offering_dilution (all our stocks) -> -4.46% vs the basket (or its normal trend) over the next 5 days (n=55, up 24%); price_new_52w_high (all our stocks) -> -0.86% vs the basket (or its normal trend) over the next 5 days (n=704, up 42%); offering_dilution (miners) -> -4.10% vs the basket (or its normal trend) over the next 5 days (n=44, up 25%)"
+   "verdict": "2026-11-24 16:07: the bot tested 377 event patterns on 47,502 events (older vs newer half, corrected for the number of tests). 9 hold up: price_3_down_days (miners) -> +1.12% vs the basket (or its normal trend) over the next 5 days (n=1065, up 55%); price_3_down_days (all our stocks) -> +1.10% vs the basket (or its normal trend) over the next 5 days (n=1514, up 55%); price_new_52w_high (miners) -> -1.31% vs the basket (or its normal trend) over the next 5 days (n=348, up 35%); offering_dilution (all our stocks) -> -4.46% vs the basket (or its normal trend) over the next 5 days (n=55, up 24%); price_new_52w_high (all our stocks) -> -0.85% vs the basket (or its normal trend) over the next 5 days (n=704, up 42%); offering_dilution (miners) -> -4.10% vs the basket (or its normal trend) over the next 5 days (n=44, up 25%)"
   },
   "macro_drivers": {
    "trials": 20,
