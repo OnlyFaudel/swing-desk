@@ -96,6 +96,14 @@
 "surfaced": false
 },
 {
+"date": "2026-11-28",
+"ticker": "UUUU",
+"what": "Half-day session after Thanksgiving; check whether the basket recovers above its 10-day average before any future resting buy.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
 "date": "2026-11-30",
 "ticker": "TLN",
 "what": "Resting buy at $355.66 expires if it does not fill; check whether the December PJM capacity auction delay has been decided",
@@ -1019,6 +1027,38 @@
 "date": "2026-11-30",
 "ticker": "TLN",
 "what": "Resting buy window from the Level Analyst's order expires; check PJM capacity auction delay decision before any new arm.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "CCJ",
+"what": "Patient Levels setup window closes (5 sessions); re-check whether the basket has reclaimed its 10-day average before any new buy.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "CEG",
+"what": "Resting buy window expires; recheck whether the basket is back above its 10-day average and whether the PJM 2029/30 auction delay decision has been made.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "VST",
+"what": "Confirm whether the basket clears its 10-day average and whether VST holds the $113.47-$114.85 support zone before any re-look.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting setup window closes; check whether the PJM capacity auction delay is decided and whether the $340-346 zone held.",
 "by": "level",
 "written": "2026-11-24",
 "surfaced": false
