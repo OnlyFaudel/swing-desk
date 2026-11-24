@@ -1586,6 +1586,39 @@ def seasonal_check(st, ex, data, prices, today, now):
                       bought, kind="alert", art={"big": "Uranium momentum", "sub": f"Spot {sp['1m_change_pct']:+.1f}% last month"})
 
 
+def comeback_buy(st, ex, today, brk_state, comebacks, cb):
+    """Intraday comeback: a stock that fell 6%+ below yesterday's close during the day but is back above it near the close.
+    Research 2026-11-24 (intraday_comeback, 85 nuclear + related stocks): held 20 sessions it beat the S&P by +3.8% (2008-18)
+    and +3.6% (2019-26); every threshold (4/6/8%) and hold (10/15/20 days) was positive in both eras, deeper dips did better,
+    and stocks that dipped and did NOT come back showed no edge (-0.1% / +0.9%)."""
+    if not comebacks or (brk_state.get("no_new_today") and not unleashed()):
+        return
+    book = st["book"]
+    open_n = sum(1 for l in book["lots"].values() if (l.get("auto") or {}).get("qty", 0) > 1e-6 and l["auto"].get("setup") == "comeback")
+    room = cb.get("max_open", 3) - open_n
+    got = []
+    for dip, t, px in sorted(comebacks):
+        if room <= 0:
+            break
+        if any((book["lots"].get(t, {}).get(k) or {}).get("qty", 0) > 1e-6 for k in ("auto", "panic")):
+            continue
+        if t in (st.get("avoid") or {}) and st["avoid"][t].get("until", "") >= str(today):
+            continue
+        dollars = min(brk_state["equity"] * cb.get("size_pct", 10) / 100, spendable(st, today))
+        if dollars < 5:
+            break
+        meta = {"setup": "comeback", "by": "rule", "exit_on": sessions_after(str(today), cb.get("hold_sessions", 20)), "days": cb.get("hold_sessions", 20),
+                "why": f"fell {abs(dip) * 100:.1f}% during the day and came back above yesterday's close. Past cases beat the S&P by about 3.5% over 20 sessions."}
+        if ex.buy_market(t, dollars, px, "au", meta, "intraday comeback"):
+            got.append(f"{t} (down {abs(dip) * 100:.0f}% at the low) ${dollars:.0f}")
+            room -= 1
+    if got:
+        feed.post("chief", "Intraday comeback: bought " + "; ".join(got) + ". These dropped hard during the day but buyers pushed them back "
+                  "above yesterday's close. Since 2008 that beat the S&P by about 3.5% over the next 20 sessions, in good years and bad.",
+                  [g.split()[0] for g in got], kind="trade", art={"big": "Intraday comeback", "sub": ", ".join(g.split()[0] for g in got)})
+        notify("Intraday comeback", "Bought " + "; ".join(got), tags="boomerang")
+
+
 def sharp_drop_check(st, ex, prices, today, brk_state, now):
     """Sharp-drop rebound, any day (no market panic needed): a stock that closes 15%+ lower than 5 sessions ago is bought
     near the close and sold near a close once it's +10% from the buy, or after 10 sessions. Research 2026-11-23
@@ -1616,10 +1649,8 @@ def sharp_drop_check(st, ex, prices, today, brk_state, now):
         return
     open_n = sum(1 for l in book["lots"].values() if (l.get("auto") or {}).get("qty", 0) > 1e-6 and l["auto"].get("setup") == "sharp_drop")
     room = cfg.get("max_open", 3) - open_n
-    if room <= 0:
-        return
     names = list(dict.fromkeys(list(T) + (CFG.get("panic_rebound", {}).get("related_universe") or [])))
-    hits = []
+    hits, comebacks, cb = [], [], CFG.get("comeback", {})
     try:
         import yfinance as yf
         raw = yf.download(names, period="2mo", auto_adjust=True, progress=False)
@@ -1647,11 +1678,21 @@ def sharp_drop_check(st, ex, prices, today, brk_state, now):
                 continue
             if r5 <= -cfg.get("drop_pct", 15) / 100:
                 hits.append((r1, r5, t, last))
+            if cb.get("enabled") and c.index[-1].date() == today and t in raw["Low"]:
+                lo = float(raw["Low"][t].iloc[-1])
+                if lo / float(hist.iloc[-1]) - 1 <= -cb.get("low_pct", 6) / 100 and last > float(hist.iloc[-1]):
+                    comebacks.append((lo / float(hist.iloc[-1]) - 1, t, last))
     except Exception as e:
         print("sharp drop scan", e)
         return
+    try:
+        comeback_buy(st, ex, today, brk_state, comebacks, cb)
+    except Exception as e:
+        print("comeback", e)
     hits.sort()  # biggest drop today first (as tested)
     bought = []
+    if room <= 0:
+        hits = []
     for r1, r5, t, px in hits:
         if room <= 0:
             break
@@ -1825,7 +1866,7 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
             if L.get("target") and px >= L["target"]:
                 ex.exit_panic(t, px, f"conviction trade: target ${L['target']} hit", kind="auto", tag="aux"); continue
         if L.get("qty", 0) > 1e-6 and L.get("setup") != "sharp_drop" and L.get("exit_on") and (str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late)):
-            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{ {'conviction': 'conviction', 'year_end': 'year-end bounce', 'uranium_momentum': 'uranium momentum', 'ai_power': 'AI power day', 'fear_fade': 'fear fading', 'thanksgiving': 'Thanksgiving run-up'}.get(L.get('setup'), 'discovery') } trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
+            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{ {'conviction': 'conviction', 'year_end': 'year-end bounce', 'uranium_momentum': 'uranium momentum', 'ai_power': 'AI power day', 'fear_fade': 'fear fading', 'thanksgiving': 'Thanksgiving run-up', 'comeback': 'intraday comeback'}.get(L.get('setup'), 'discovery') } trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
     if not (dt.time(15, 30) <= market.cclock(now) <= dt.time(15, 58)) or st["flags"].get(f"auto:{today}"):
         return
     st["flags"][f"auto:{today}"] = True

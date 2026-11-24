@@ -245,6 +245,14 @@
   "strategy_round_2026_11_24": {
    "trials": 20,
    "verdict": "2026-11-24: Rosh Hashanah -> Yom Kippur ('sell RH, buy YK'): S&P -0.37% vs +0.32% normal, down only 53% of 32 years; our nuclear -1.66% (down 47%); after Yom Kippur +1.11% vs +0.91%; Passover week +0.68% vs +0.23%: none reliable. Overnight-only in CCJ/CEG/VST/BWXT at 0.03/0.06/0.10% a night: 2008-18 -6.3/-13.1/-21.5%/yr vs 0% holding; 2019-26 24.9/15.8/4.8% vs 29.4%: rejected. Sharp-drop rule on 120 big stocks across sectors: +0.29%/+0.69% per trade vs S&P (2008-18/2019-26) vs +0.83/+1.09% on nuclear+related; adding them gives more trades but weaker ones: kept the current list. Call spreads (1 month, ATM to +10%) on the 1,147 sharp-drop trades, Black-Scholes with recent volatility x1.0/x1.3: +4.7/+0.5% (2008-18) and +3.3/+0.0% (2019-26) on premium, worst 10% -71 to -88%: rejected. Strength sizing: 20%+ drops beat the S&P by +1.06/+2.18% vs +0.83/+1.09% for 15%+: ADOPTED 15% size for 20%+ drops (10% otherwise)."
+  },
+  "night_round_1": {
+   "trials": 34,
+   "verdict": "2026-11-24 night. Earnings-day drops of 6%/10%+ bought at the close (5/10/20 days): 2008-18 -2.6% to +0.2% vs the S&P, 2019-26 +0.6% to +3.6%: eras disagree, rejected. Bitcoin 5-day moves of 15%+ -> miners/our stocks next 5 days: no edge either way. Crash (20% in 10 days) then calm (5-day swings under half the crash's): nuclear +7.9%/-0.9%, related +0.4%/-0.7%: rejected. Capitulation day (25% down in 20 days, 2.5x volume, close in top 20% of range): 1-10 events per era, mixed: rejected."
+  },
+  "intraday_comeback": {
+   "trials": 10,
+   "verdict": "2026-11-24 (85 nuclear + related stocks, intraday low X% under yesterday's close but the close above yesterday's close, one per stock per 10 days, vs the S&P, 0.2% costs). X=4%: 10/15/20-day +1.27/+0.86/+1.93% (2008-18) and +0.72/+2.15/+2.13% (2019-26); X=6%: +2.18/+1.70/+3.80% and +0.87/+2.83/+3.59% (20-day t 2.3/1.9); X=8%: +0.62/+0.35/+5.15% and +3.84/+6.25/+8.18%. All 18 cells positive. Control (dipped 6% and closed down 3%+): -0.12% / +0.85%, so the comeback is what matters. 1- and 5-day holds were flat or negative: the payoff takes weeks. ADOPTED comeback (6%, 20 sessions, 10% size, max 3)."
   }
  }
 }

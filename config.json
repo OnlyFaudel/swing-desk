@@ -570,5 +570,13 @@
     "enabled": true,
     "thanksgiving_pct": 15,
     "note": "Thanksgiving run-up (Tue close -> Black Friday close) and Black Friday exit for trades due within 3 sessions. Research 2026-11-23: thanksgiving_trades."
+  },
+  "comeback": {
+    "enabled": true,
+    "low_pct": 6,
+    "hold_sessions": 20,
+    "size_pct": 10,
+    "max_open": 3,
+    "note": "Intraday comeback (low 6%+ under yesterday's close, back above it near the close) -> hold 20 sessions. Research 2026-11-24: intraday_comeback."
   }
 }
