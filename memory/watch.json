@@ -96,6 +96,14 @@
 "surfaced": false
 },
 {
+"date": "2026-11-27",
+"ticker": "CCJ",
+"what": "Black Friday half-day session; historically weak Black Friday to Monday period for the power trio and our basket",
+"by": "macro",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
 "date": "2026-11-28",
 "ticker": "UUUU",
 "what": "Half-day session after Thanksgiving; check whether the basket recovers above its 10-day average before any future resting buy.",
@@ -1064,6 +1072,14 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "VST",
+"what": "Panic-trade sell-by window approaching; check VIX and whether the basket is still above its 10-day average",
+"by": "macro",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
@@ -1304,6 +1320,30 @@
 "surfaced": false
 },
 {
+"date": "2026-12-01",
+"ticker": "VST",
+"what": "Scheduled sell date for the VST panic-day trade (rule sells on date or at +10%)",
+"by": "risk",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "LEU",
+"what": "Scheduled sell date for the LEU panic-day trade (rule sells on date or at +10%)",
+"by": "risk",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "UUUU",
+"what": "Scheduled sell date for the UUUU panic-day trade (rule sells on date or at +10%)",
+"by": "risk",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
 "date": "2026-12-07",
 "ticker": "LEU",
 "what": "Centrus Energy Investor Day at American Centrifuge Plant; possible guidance and contract updates",
@@ -1404,6 +1444,14 @@
 "ticker": "LEU",
 "what": "Centrus Investor Day at Piketon facility (live webcast); watch for contract, capacity, or guidance updates",
 "by": "scout",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-12-07",
+"ticker": "LEU",
+"what": "Centrus Investor Day at Piketon facility with live webcast",
+"by": "risk",
 "written": "2026-11-24",
 "surfaced": false
 },
