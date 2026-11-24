@@ -26433,5 +26433,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "BWXT",
+"date": "2026-11-23",
+"title": "Karman Awarded $31 Million Navy Contract for Virginia-Class Submarine Propulsor Tailcones",
+"type": "intel_contract",
+"source": "Intel: Seapower Magazine",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "BWXT",
+"date": "2026-11-24",
+"title": "Keating: AUKUS \u2018was not about submarines\u2019 \u2014 it was about a US base in Perth",
+"type": "intel_defense",
+"source": "Intel: Crikey",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]

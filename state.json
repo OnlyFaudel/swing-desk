@@ -809,6 +809,81 @@
    "decision": "SKIP",
    "reason": "The support zone at 354.24 sits inside the thick value area near the heaviest volume node, which is supportive, but the stock is in a bounce after a sharp rally (+9% today) with the basket still below",
    "evaluated": false
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "CEG",
+   "setup": "patient_level",
+   "zone": 236.82,
+   "entry": 237.77,
+   "stop": 233.98,
+   "target": 257.5,
+   "reward_risk": 5.21,
+   "dist_to_entry_pct": 5.89,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 236.67,
+    "value_high": 278.26,
+    "heaviest_price": 264.17,
+    "position": "at value low",
+    "node": "normal",
+    "node_ratio": 1.15,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The buy would rest at 237.77 while the stock trades at 251.76, about 5.9% above entry, so it likely would not fill soon. The market regime is weak (SPY below its 200-day average) and the basket is bel",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "VST",
+   "setup": "patient_level",
+   "zone": 114.85,
+   "entry": 115.31,
+   "stop": 113.47,
+   "target": 125.85,
+   "reward_risk": 5.74,
+   "dist_to_entry_pct": 7.37,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 111.81,
+    "value_high": 141.35,
+    "heaviest_price": 119.66,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 0.78,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "Zone at 114.85 sits in a stock that is down about 15% from its 20-day high and 18% below its 200-day average, after a one-day 7.4% bounce. The basket is still below its 10-day average, which the desk ",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "TLN",
+   "setup": "patient_level",
+   "zone": 354.24,
+   "entry": 355.66,
+   "stop": 349.99,
+   "target": 369.46,
+   "reward_risk": 2.44,
+   "dist_to_entry_pct": 2.64,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 312.55,
+    "value_high": 366.37,
+    "heaviest_price": 360.99,
+    "position": "inside value",
+    "node": "thick",
+    "node_ratio": 1.83,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "Support zone at 354.24 sits inside a stock that just jumped 9.6% today and is still 5.6% below its 20-day high, so the bounce is not yet a clean base. Thin support on a sharp one-day rally, plus the d",
+   "evaluated": false
   }
  ],
  "cooldown": {
@@ -816,54 +891,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "CCJ",
-   "source": "Yahoo (SRUUF, related to CCJ)",
-   "title": "The Uranium Price Paradox: 5 Investments Facing Very Different Tests in 2027",
-   "link": "https://www.marketbeat.com/articles/the-uranium-price-paradox-5-investments-facing-very-different-tests-in-2027/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-   "ts": 1795102200,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Opinion piece recapping uranium miners' recent declines, no new facts"
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Cameco Corp (CCJ) Shares Fall 5.6% -- What GF Score of 83 Tells Investors - GuruFocus",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNekl2d3NoVG1ock4ybVVUc243QnVGMTJLVzhwQVR5bEJsd243cjZ5cnBjMERkWDZxVmxuU2xoNlFRNXVxeWxPdkRDOGVGeS1FMURRYm5zY21DaThFaXgxRHFRbkVYN2pMM3ppMnZJZ1g4d2dmSXhjX2YzRnJrUTgta3c5OW54QkhuZ3htQ2J3N3MwWFJpQ0F5bjUtY3NTaHpRcUxxU1JqN0o?oc=5",
-   "ts": 1795224364,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Price recap with a generic score; no new company information."
-  },
-  {
-   "ticker": "VST",
-   "source": "Google News",
-   "title": "Is Vistra Corp (VST) a Bargain After 7.2% Drop? GF Value Says Un - GuruFocus",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQWp6RlBOMlVVaDFCaXBpUFFNUXdsSXhTd2hmVTJZd2EzOGNuOGNiLWZ1cl9uN1lYeDVuYlBnN2pKTWtOZVFwU205Y0VSYjA1amFYLU1iQ2k2cGJySnNWakdNVmhWeU55eUtRbGhnN01JRFlqRGNyNUtwTXlpQmphaWJRZUNVMktWVjh5Znp2Nkx3T0o3UFZRS21CYkJjRXZwTC1HS2hqd2g4NWs?oc=5",
-   "ts": 1795221512,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Opinion piece on a past drop; no new fundamentals."
-  },
-  {
-   "ticker": "UUUU",
-   "source": "Google News: \"Energy Fuels\" uranium",
-   "title": "Can Energy Fuels Sustain Its Expansion Plans Amid Cash Outflows? - The Globe and Mail",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPQ0pzRXNpT2JVeV9MZy1CQnVlSVlISnZBVmljcURZNWxMMDE3cXpKU2t2NGxJbk9Zbjd3b3BRZXRZdmpPZDdDbm01SklmR2ZJRU90QjMzdnVfYmhqa0FmNDRyQ3plSUZqMWRaYy05dUxYd1lhb1pDQXhQT0gtaE1oTXI4LXljWXl0TVBoa1dBMEM4dEIzZkFyck1iUGFxUWpEeVdCemh6UGViNGhJaFpmTk9pMTdtR2RSTnZmYm96QjJQUFBwdkVrVElnQUFhRUYyVXRSZmpweE13bEhIOXFzZDhn?oc=5",
-   "ts": 1795219492,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Commentary on cash burn; hints at future dilution risk but nothing new."
-  },
   {
    "ticker": "CEG",
    "source": "Google News: Constellation Energy nuclear",
@@ -3815,6 +3842,54 @@
    "direction": "neutral",
    "event_type": "earnings",
    "why": "Roundup article; BWXT raising guidance is company-specific news, not LEU's own results."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News: \"Talen Energy\"",
+   "title": "Talen Energy CFO Cole Muller Donates 7,445 Shares to Charity, Reports Form 4 Filing - Kalkine Media",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQd1hZVFFxQzZiendzcXI2ckEwZnZjYmp4dUhrdm54SjFKbnFJQ09nQXhlblhoQVl4TWtCS2hMN3ZhdTR6QTlYRHd2WEJkWHRrQ21RVjhiMFpkU3Vud08wemM3R0M4OFRlUVhwcUx2NW9sd01zVU1PU3VCZUE4aUI3RkVCcU1kV1B3TTdreGl3bHNvenc3U21GNUpFMEsyZ3BtYmZNWEItNkFhVUtiV0dadmdyeWk1VXE4RUFhYW1jNXFTekhDUEhr?oc=5",
+   "ts": 1795482255,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Routine Form 4 charitable share donation by CFO; no trading signal."
+  },
+  {
+   "ticker": "DNN",
+   "source": "Google News: \"Denison Mines\"",
+   "title": "Drilling Results Could Shape The Case For Denison Mines Stock (TSX:DML) - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTXV2Smh0a21ZdUlTUVJ4bE5DU3didDJKX1dVYlBiOVJ0YWJiV2djX3JUc0NyLXYtVDJ3UDJJRndXYU90VU9OY3F0S2I1MHA4azFEcE1mZWxLZGI3TUJxcEpZZ3ZVSzI5SnplVnRnRVBYUVZOVFpmSDNZM2locVBJeDlTazN1cEVscHBia0xfcHJzM2J3dGVaeEJwNnFqRWc?oc=5",
+   "ts": 1795479360,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic drilling-results explainer; no concrete new result stated."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Local intel: Seapower Magazine (Naval reactors)",
+   "title": "Karman Awarded $31 Million Navy Contract for Virginia-Class Submarine Propulsor Tailcones",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWC0takxQRTdyVmlYT0RNMXhNSHhYZlhJcWJiTGZBSVVTM3A5Y0JjUGYxbWZIOHYxSnJoVXhlbkRocHFRLVpRRU40ZVNqUXk0VkRjWl8tdU40dzJmWXlabnVGZUQ4QXY5NjhVRVBCZE5MVUFrQjdWcXg4V1RMbWhxQnkySlBDNnk5aFdIekxXNW9ZVVVYdnNXWlA4MXBFd3FQcFNEQlNSU2NvNXVwX1djWUxZLXhuR1k3VXc?oc=5",
+   "ts": 1795473373,
+   "materiality": 4,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "$31M Navy subcontract to Karman is small and not directly BWXT's contract."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Local intel: Crikey (AUKUS and navies)",
+   "title": "Keating: AUKUS \u2018was not about submarines\u2019 \u2014 it was about a US base in Perth",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZjBkdGNGZzVaVE93SktuNEY4WnFydnc5MWpoeTVzcVUxQkp6YW5uSVVEdFJvTUNOdnVzVjJKZ3dIY09rZURkR1pPXzVzMGIySkFSU2tQSDVLVEMzd1FlbXVNZWFKWll1M05SbGk4RllHeDQ0Wklhbm9PRk5IakltOG1IVnFlMXFH?oc=5",
+   "ts": 1795482245,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "policy_tariff",
+   "why": "Political commentary on AUKUS; no new information for BWXT."
   }
  ],
  "reviews": [
@@ -5337,26 +5412,26 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.34372,
+  "day_usd": 0.36264,
   "month": "2026-11",
-  "month_usd": 0.6072,
-  "total_usd": 0.6072,
+  "month_usd": 0.62612,
+  "total_usd": 0.62612,
   "by_role": {
-   "macro": 0.03144,
-   "whale": 0.00861,
-   "crowd": 0.00751,
-   "level": 0.03344,
-   "scout": 0.06748,
+   "macro": 0.03358,
+   "whale": 0.01073,
+   "crowd": 0.00849,
+   "level": 0.03741,
+   "scout": 0.06807,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.03676,
-   "risk": 0.02677,
-   "investigator": 0.15516,
+   "pm": 0.03801,
+   "risk": 0.03004,
+   "investigator": 0.15748,
    "postmortem": 0.00035,
    "researcher": 0.00704,
    "engineer": 0.00303,
-   "questioner": 0.01514
+   "questioner": 0.01742
   }
  },
  "desk_log": [
@@ -5464,7 +5539,7 @@
   "TLN": 365.03,
   "SPY": 722.39
  },
- "last_cycle": "2026-11-23 20:13 ET",
+ "last_cycle": "2026-11-23 20:23 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -49492,16 +49567,16 @@
   }
  },
  "last_scan": {
-  "CCJ": 1795464109.8076608,
-  "NXE": 1795464110.027692,
-  "UEC": 1795464110.1278968,
-  "DNN": 1795464110.2329392,
-  "UUUU": 1795464110.3028624,
-  "LEU": 1795464110.4345095,
-  "BWXT": 1795464110.506795,
-  "CEG": 1795464113.7073512,
-  "VST": 1795464116.1815503,
-  "TLN": 1795464255.5372398
+  "CCJ": 1795483469.96887,
+  "NXE": 1795483470.322859,
+  "UEC": 1795483470.3907542,
+  "DNN": 1795483470.4554837,
+  "UUUU": 1795483470.521856,
+  "LEU": 1795483470.5883248,
+  "BWXT": 1795483470.6901472,
+  "CEG": 1795483470.790735,
+  "VST": 1795483473.5312579,
+  "TLN": 1795483475.9012375
  },
  "setup_status": {
   "CCJ": "a level at $57.87 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
@@ -49510,10 +49585,10 @@
   "DNN": "a level at $1.68 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
   "UUUU": "a level at $4.91 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
   "LEU": "a level at $80.9 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
-  "BWXT": "the Level Analyst skipped the setup: The support zone sits at 116.12 and the entry at 116.58, but the stock just jumped 7.2% today on a deal headline and sits about 15% below its 20-day high. The desk",
-  "CEG": "the Level Analyst skipped the setup: Price is about 5.5% above the entry and well below the 20-day, 50-day and 200-day averages, so the level is not a confirmed support zone and the stock has been fal",
-  "VST": "the Level Analyst skipped the setup: Price is 15% below its 20-day high and 11% below its 50-day average, with the stock in a downtrend that a support zone is unlikely to stop. The desk's own note say",
-  "TLN": "the Level Analyst skipped the setup: The support zone at 354.24 sits inside the thick value area near the heaviest volume node, which is supportive, but the stock is in a bounce after a sharp rally (+"
+  "BWXT": "a level at $108.17 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
+  "CEG": "the Level Analyst skipped the setup: The buy would rest at 237.77 while the stock trades at 251.76, about 5.9% above entry, so it likely would not fill soon. The market regime is weak (SPY below its 2",
+  "VST": "the Level Analyst skipped the setup: Zone at 114.85 sits in a stock that is down about 15% from its 20-day high and 18% below its 200-day average, after a one-day 7.4% bounce. The basket is still belo",
+  "TLN": "the Level Analyst skipped the setup: Support zone at 354.24 sits inside a stock that just jumped 9.6% today and is still 5.6% below its 20-day high, so the bounce is not yet a clean base. Thin support"
  },
  "sync": {
   "pulse_up": false,
@@ -51267,7 +51342,8 @@
   "IdKicBM1HfMP",
   "VfvfIHsPWZaM",
   "865i8og4V93C",
-  "d489ySz3AQwq"
+  "d489ySz3AQwq",
+  "pR15bQ0qw3Ik"
  ],
  "seen_news": [
   "855ac1a10429d2f5",
@@ -51543,8 +51619,8 @@
   "0bc3518b4abd9020",
   "27cae87b69d8c12f",
   "a2a8ee32597c7b50",
-  "4a665786ac37d007",
   "4b634efdcf500ae7",
+  "4a665786ac37d007",
   "7f1ab1d7e538b600",
   "fd2731052f33e27f",
   "38012edb5aa4d98f",
@@ -51586,9 +51662,11 @@
   "563c0572b10f43bc",
   "f16660c269a6613c",
   "2d5c6f3b4f1c4c83",
-  "b2e981fc7a2e7302"
+  "b2e981fc7a2e7302",
+  "fe808fea77078dbb",
+  "43e977044e9b9f2b"
  ],
- "news_slow_at": 1795482731.9105625,
+ "news_slow_at": 1795483491.8516335,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -201587,6 +201665,148 @@
    ],
    "practice": false,
    "end": "20:13"
+  },
+  {
+   "id": "20261123202334596423",
+   "title": "The Questioner, Nov 23 20:23",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-23 20:23",
+   "msgs": [
+    {
+     "t": "20:23",
+     "who": "questioner",
+     "to": "risk",
+     "text": "The TLN resting buy at $355.66 looks like a leftover. The stock closed near $365 after a 9.6% day, the basket is still below its 10-day average so our no-new-buys rule applies, and the COO's $19.8M sale on Nov 17 is still unexplained. I'm asking the Risk Manager whether the order should be canceled now rather than waiting for the Nov 30 expiry.",
+     "outcome": false,
+     "notes": "question: Given the 9.6% bounce and the basket still below its 10-day average, should the TLN resting buy at $355.66 be canceled now rather than left until its Nov 30 expiry?\nwhy it might matter: Our own rule says no new buys while the basket is below its 10-day average, and the price is about 2.6% above the entry, so a live order could fill against the rule.\nask: risk\nkind: odd\nquestion: Was the TLN COO's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale?\nwhy it might matter: Planned sales are noise, but an open-market sale by a senior officer right before a 9% bounce is a warning sign we should not dismiss.\nask: investigator\nkind: unexplained\nwhy: The order sits 2.6% below the current price while the no-new-buys rule is active, which the desk notes flag as a conflict. The COO sale is a recent insider sell that the desk has not yet classified.\ndate: 2026-11-30\ntic"
+    },
+    {
+     "t": "20:23",
+     "who": "risk",
+     "to": "questioner",
+     "text": "Yes, I agree the TLN resting buy at $355.66 should be canceled now rather than left to expire Nov 30. Our own rule blocks new buys while the basket is below its 10-day average, and that is still true, while the stock sits about 2.6% above the entry, so a live order could fill against the rule. I'm agreeing with the Questioner and the Risk Manager's no-new-buys logic here.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: tell_owner\nwatch date: 2026-11-30\nwhy: The basket is still down about 6% versus its 10-day average, and TLN closed around $365 against a $355.66 entry, so the order conflicts with our stated rule. The COO's $19.8M sale is still unexplained, which adds to the case for canceling rather than waiting.\nticker: TLN\ndirection: up\ndays: 5\nfiles read: TLN Snapshot, SECTOR Uranium market, TLN Leadership and insiders"
+    },
+    {
+     "t": "20:23",
+     "who": "investigator",
+     "to": "questioner",
+     "text": "I checked the TLN COO sale (Brad Berryman, 56,091 shares, about $19.8M, Nov 17). The desk notes list it as an open-market sale, not a 10b5-1 plan, so it is not noise by our own standard, but a single senior-officer sale in a stock with 2 operating reactors and no disclosed 10b5-1 plan is one data point and does not prove he knows something. Treat it as a caution flag on the TLN setup, not as a reason to trade in either direction.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: watch\nwatch date: 2026-12-01\nresearch test: Check whether Berryman's Form 4 footnotes mention a 10b5-1 plan, and whether any further TLN insider sales follow in the next 30 days; compare TLN's 20-day returns after open-market insider sales against its basket.\nwhy: The desk file lists the Nov 17 sale as a regular open-market sale, and insiders have sold about $23M of TLN stock in the last 12 months with no buys, which is the pattern our own insider rule treats as meaningful. I didn't find a 10b5-1 flag in the files, so I can't rule out a planned sale, and I'm not treating it as a signal to buy or sell.\nfiles read: TLN Leadership and insiders, TLN Snapshot"
+    }
+   ],
+   "practice": false,
+   "end": "20:23"
+  },
+  {
+   "id": "20261123202429332412",
+   "title": "You asked: Just wanted to point out were below 3% today when we could have taken ",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "kind": "owner",
+   "start": "2026-11-23 20:24",
+   "msgs": [
+    {
+     "t": "20:24",
+     "who": "owner",
+     "to": "team",
+     "text": "Just wanted to point out were below 3% today when we could have taken profits and re-entered like i said.",
+     "outcome": false
+    },
+    {
+     "t": "20:24",
+     "who": "chief",
+     "to": "owner",
+     "text": "Heard you, boss. Everyone stop and read this. Re-scanning all 10 stocks for a support setup right now.",
+     "outcome": false
+    },
+    {
+     "t": "20:24",
+     "who": "level",
+     "to": "macro",
+     "text": "CEG is about 6% above our resting buy, and the desk rule says no new buys while the basket is below its 10-day average, so I'm skipping. Being 6% above entry would also mean waiting for a fresh drop to fill, which isn't a clean setup in a shaky market. I agree with the Macro Analyst that today's bounce is a reason to wait, not chase.",
+     "outcome": false,
+     "notes": "CEG: decision: SKIP; reason: The buy would rest at 237.77 while the stock trades at 251.76, about 5.9% above entry, so it likely would not fill soon. The market regime is weak (SPY below its 200-day average) and the basket is below its 10-day average, which blocks new buys anyway. The stock is also down \nwhy: Entry is 5.9% below the current price and the basket rule blocks new buys in this weak regime. The bounce is sentiment-driven, and the market and sector backdrop is still negative.\nticker: CEG\ndirection: down\ndays: 5\ndate: 2026-12-09\nticker: CEG\nwhat: FOMC rate decision; broad risk-off or risk-on move that can drive the nuclear and utility names.\nfiles read: CEG Snapshot, CEG Price behavior, SECTOR Uranium market"
+    },
+    {
+     "t": "20:24",
+     "who": "level",
+     "to": "macro",
+     "text": "I'm skipping the Vistra setup. The stock jumped 7% today but is still well below its trend, and the desk rule says no new buys while the basket is under its 10-day average. I agree with the Macro Analyst that this bounce is a reason to wait, not chase.",
+     "outcome": false,
+     "notes": "VST: decision: SKIP; reason: Zone at 114.85 sits in a stock that is down about 15% from its 20-day high and 18% below its 200-day average, after a one-day 7.4% bounce. The basket is still below its 10-day average, which the desk rules say blocks new buys, and the Macro Analyst flags the market as elevate\nwhy: The setup fails the basket rule and the trend, and the one-day bounce looks like a relief rally that tends to fade. Insider buys are a small positive, but not enough to override the regime.\nticker: VST\ndirection: down\ndays: 5\nfiles read: VST Snapshot, VST Price behavior, VST Our trades, SECTOR Uranium market"
+    },
+    {
+     "t": "20:24",
+     "who": "level",
+     "to": "team",
+     "text": "I'm skipping the TLN setup. The stock just rallied almost 10% in one day, and a resting buy just above a support zone is a bet that the level holds, which is weak right after a sharp bounce in a shaky market. I agree with the Level Analyst and Macro Analyst that today's bounce is a reason to wait, not chase.",
+     "outcome": false,
+     "notes": "TLN: decision: SKIP; reason: Support zone at 354.24 sits inside a stock that just jumped 9.6% today and is still 5.6% below its 20-day high, so the bounce is not yet a clean base. Thin support on a sharp one-day rally, plus the desk rule against new buys while the basket is below its 10-day average, make\nwhy: I checked the support zone against today's 9.6% jump, the basket's position versus its 10-day average, and the PJM auction-delay event risk. The bounce is too fresh to trust the level, so I'd rather wait for a cleaner base.\ndate: 2026-12-09\nticker: TLN\nwhat: PJM December capacity auction delay decision; a key catalyst for Talen's capacity revenue that could move the stock sharply in either direction.\nticker: TLN\ndirection: down\ndays: 5\nfiles read: TLN Snapshot, TLN Price behavior, TLN Our trades"
+    },
+    {
+     "t": "20:24",
+     "who": "level",
+     "to": "owner",
+     "text": "Scan results:\nCCJ: nothing yet, a level at $57.87 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out\nNXE: nothing yet, a level at $6.38 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out\nUEC: nothing yet, a level at $5.29 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out\nDNN: nothing yet, a level at $1.68 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out\nUUUU: nothing yet, a level at $4.91 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades,",
+     "outcome": false
+    },
+    {
+     "t": "20:24",
+     "who": "macro",
+     "to": "owner",
+     "text": "Boss, I hear you: the stocks bounced hard today, and taking profits and re-entering lower would have looked smart in hindsight. But our rule only lets us buy resting just above a support level with a stop underneath, and right now no stock in the lineup has a clean setup, with the whole basket still below its 10-day average. I'd rather wait for a real setup than chase a bounce or invent a level to make the scan look busy.",
+     "outcome": false,
+     "notes": "why: The scan found no valid setup in any of the 10 names, and the desk rule blocks new buys while the basket is weak, so the only honest answer is to wait. The 'take profits and re-enter' idea is a hindsight judgement that our rules don't support on their own, so I'm not endorsing it as a rule change.\nfiles read: SECTOR Uranium market, CCJ Snapshot, UUUU Snapshot, BWXT Snapshot"
+    },
+    {
+     "t": "20:24",
+     "who": "whale",
+     "to": "owner",
+     "text": "Boss, I hear the frustration: the bounce today looked like a chance to lock in profits and re-enter lower, and in hindsight that would have worked. But our rules only allow resting buys just above a support level with a stop underneath, and no stock in the lineup has that setup right now while the basket is still below its 10-day average. I agree with the Macro Analyst: waiting beats chasing a bounce. If you want, I can have the desk pre-mark the support zones we'd act on, so next time a dip lands on one we're ready.",
+     "outcome": false,
+     "notes": "why: The scan found no valid setup: every level sits below recent trading, and the basket is still under its 10-day average, which blocks new buys. Options and short-volume data show nothing that changes the picture for today.\nfiles read: CCJ Snapshot, UUUU Snapshot, UUUU Options and big money"
+    },
+    {
+     "t": "20:24",
+     "who": "crowd",
+     "to": "owner",
+     "text": "Boss, I hear you, and today's bounce makes taking profits and re-entering lower look smart in hindsight. But our rules only allow resting buys just above a support level with a stop underneath, and no name in the lineup has that setup right now while the basket is still below its 10-day average. I agree with the Macro Analyst that waiting beats chasing a bounce, and I'd rather not invent a level just to make the scan look busy.",
+     "outcome": false,
+     "notes": "why: Checked the scan results and the basket trend: every level was rejected as too far below recent trading, and the basket is still under its 10-day average, so no buy is allowed under the rules.\nfiles read: SECTOR Uranium market"
+    },
+    {
+     "t": "20:24",
+     "who": "risk",
+     "to": "owner",
+     "text": "Boss, I hear you: taking profits and re-entering lower would have looked smart after today's bounce. But our rule only allows resting buys just above a real support level with a stop underneath, and no name in the lineup has that setup right now while the basket is still below its 10-day average. I agree with the Macro Analyst and Level Analyst that waiting beats chasing a bounce, and I won't invent a level to make the scan look busy.",
+     "outcome": false,
+     "notes": "why: No stock passes the support-level test and the basket is under its 10-day average, so the rules say no new buys; a hindsight profit-taking idea doesn't change that. Checked the scan results and the desk's lesson that single outcomes are noise.\nfiles read: SECTOR Uranium market"
+    },
+    {
+     "t": "20:24",
+     "who": "pm",
+     "to": "owner",
+     "text": "Boss, I hear the frustration: taking profits on today's bounce and re-entering lower would have looked smart in hindsight. But no stock in the lineup has a clean setup right now (a resting buy just above a support level with a stop underneath), and the basket is still below its 10-day average, so I'm not buying. I agree with the Macro Analyst and Level Analyst that waiting beats chasing a bounce.",
+     "outcome": false,
+     "notes": "post: No setups today; the team is waiting for a clean support level rather than chasing today's bounce\ntype: none\nwhy: Every name fails the level test: the candidate levels sit well below recent trading, CEG and VST are too far above or too extended after a sharp bounce, and TLN's support is thin. The basket is still below its 10-day average, so new buys are blocked by our own rule.\ndate: 2026-12-08\nticker: UEC\nwhat: Q1 earnings report; typically moves about 4-5% either way, a catalyst that could break any resting-buy plan\nfiles read: SECTOR Uranium market"
+    }
+   ],
+   "practice": false,
+   "end": "20:24"
   }
  ],
  "feed": [
@@ -203343,6 +203563,76 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 20:23",
+   "who": "questioner",
+   "kind": "alert",
+   "title": null,
+   "text": "Worth your attention: Given the 9.6% bounce and the basket still below its 10-day average, should the TLN resting buy at $355.66 be canceled now rather than left until its Nov 30 expiry?\n\nRisk Manager: Yes, I agree the TLN resting buy at $355.66 should be canceled now rather than left to expire Nov 30. Our own rule blocks new buys while the basket is below its 10-day average, and that is still true, while the stock sits about 2.6% above the entry, so a live order could fill against the rule. I'm agreeing with the Questioner and the Risk Manager's no-new-buys logic here.",
+   "tickers": [],
+   "art": {
+    "big": "Something we almost missed",
+    "sub": "The Questioner"
+   },
+   "thread": "20261123202334596423"
+  },
+  {
+   "t": "2026-11-23 20:23",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Given the 9.6% bounce and the basket still below its 10-day average, should the TLN resting buy at $355.66 be canceled now rather than left until its Nov 30 expiry? -> relevant | Was the TLN COO's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale? -> relevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 20:24",
+   "who": "owner",
+   "kind": "owner",
+   "title": null,
+   "text": "Just wanted to point out were below 3% today when we could have taken profits and re-entered like i said.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 20:24",
+   "who": "pm",
+   "kind": "answer",
+   "title": null,
+   "text": "Boss, I hear the frustration: taking profits on today's bounce and re-entering lower would have looked smart in hindsight. But no stock in the lineup has a clean setup right now (a resting buy just above a support level with a stop underneath), and the basket is still below its 10-day average, so I'm not buying. I agree with the Macro Analyst and Level Analyst that waiting beats chasing a bounce.",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "art": {
+    "big": "No setups today; the team is waiting for a clean support lev",
+    "sub": "The team's answer to your post"
+   },
+   "thread": "20261123202429332412"
+  },
+  {
+   "t": "2026-11-23 20:24",
+   "who": "pm",
+   "kind": "alert",
+   "title": "Team answered your post",
+   "text": "No setups today; the team is waiting for a clean support level rather than chasing today's bounce",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -203517,6 +203807,11 @@
    "date": "2026-11-23",
    "id": "d489ySz3AQwq",
    "text": "Do you guys think itd be more beneficial to continue holding right now rather then take some profits? perhaps itll go down a little more and we re enter the position"
+  },
+  {
+   "date": "2026-11-23",
+   "id": "pR15bQ0qw3Ik",
+   "text": "Just wanted to point out were below 3% today when we could have taken profits and re-entered like i said."
   }
  ],
  "huddle_trade_count": 1,
@@ -203777,30 +204072,30 @@
    "lesson": null
   }
  ],
- "intel_at": 1795481477.0910473,
+ "intel_at": 1795483422.1343205,
  "intel_health": {
-  "at": "2026-11-23 19:51",
+  "at": "2026-11-23 20:24",
   "sources": {
    "Cigar Lake": 5,
    "McArthur River / Key Lake": 2,
-   "Athabasca Basin": 6,
+   "Athabasca Basin": 5,
    "Saskatchewan wildfires": 0,
    "Rook I / Arrow": 1,
-   "Wheeler River / Phoenix": 5,
+   "Wheeler River / Phoenix": 6,
    "Port Hope / Blind River": 0,
    "Westinghouse": 7,
    "Kazakhstan": 0,
    "Niger": 5,
    "Namibia": 11,
    "Russia supply": 1,
-   "Piketon": 13,
+   "Piketon": 12,
    "HALEU": 9,
-   "Wyoming ISR": 19,
+   "Wyoming ISR": 20,
    "South Texas ISR": 2,
    "White Mesa / Utah": 10,
-   "Rare earths (Energy Fuels)": 17,
+   "Rare earths (Energy Fuels)": 16,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 5,
+   "Naval reactors": 6,
    "Crane / Three Mile Island": 3,
    "Susquehanna": 2,
    "Comanche Peak": 3,
@@ -203808,31 +204103,31 @@
    "ERCOT grid": 10,
    "Data-center nuclear deals": 9,
    "Japan restarts": 4,
-   "China new builds": 5,
-   "Congress and laws": 31,
-   "NRC decisions": 12,
-   "Energy Department": 36,
-   "White House and executive orders": 22,
+   "China new builds": 3,
+   "Congress and laws": 30,
+   "NRC decisions": 11,
+   "Energy Department": 41,
+   "White House and executive orders": 21,
    "Tariffs and trade": 1,
    "India": 21,
    "South Korea": 76,
    "Europe new builds": 52,
-   "France and UK": 6,
-   "Middle East": 24,
-   "Asia newcomers": 26,
+   "France and UK": 7,
+   "Middle East": 47,
+   "Asia newcomers": 56,
    "Canada SMRs": 5,
-   "Big tech power deals": 56,
+   "Big tech power deals": 55,
    "Iran": 32,
    "North Korea": 100,
-   "War zones": 17,
-   "AUKUS and navies": 20,
-   "Weapons programs": 14,
-   "Stockpiles and reserves": 14,
-   "Sprott trust": 4,
-   "Uranium price": 42,
+   "War zones": 25,
+   "AUKUS and navies": 21,
+   "Weapons programs": 9,
+   "Stockpiles and reserves": 7,
+   "Sprott trust": 3,
+   "Uranium price": 40,
    "US policy": 0,
-   "Lawsuits and investigations": 71,
-   "Workers and jobs": 16,
+   "Lawsuits and investigations": 30,
+   "Workers and jobs": 18,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
    "Federal Register (uranium)": 6,
@@ -203842,9 +204137,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 20:13",
-  "total": 409,
-  "week": 352,
+  "updated": "2026-11-23 20:24",
+  "total": 413,
+  "week": 355,
   "places": {
    "Uranium price": 42,
    "World Nuclear News": 27,
@@ -203852,7 +204147,7 @@
    "Europe new builds": 22,
    "South Korea": 18,
    "Workers and jobs": 16,
-   "AUKUS and navies": 15,
+   "AUKUS and navies": 16,
    "PJM grid": 14,
    "Namibia": 11,
    "Susquehanna": 10,
@@ -203861,28 +204156,28 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-23 19:51",
+   "at": "2026-11-23 20:24",
    "sources": {
     "Cigar Lake": 5,
     "McArthur River / Key Lake": 2,
-    "Athabasca Basin": 6,
+    "Athabasca Basin": 5,
     "Saskatchewan wildfires": 0,
     "Rook I / Arrow": 1,
-    "Wheeler River / Phoenix": 5,
+    "Wheeler River / Phoenix": 6,
     "Port Hope / Blind River": 0,
     "Westinghouse": 7,
     "Kazakhstan": 0,
     "Niger": 5,
     "Namibia": 11,
     "Russia supply": 1,
-    "Piketon": 13,
+    "Piketon": 12,
     "HALEU": 9,
-    "Wyoming ISR": 19,
+    "Wyoming ISR": 20,
     "South Texas ISR": 2,
     "White Mesa / Utah": 10,
-    "Rare earths (Energy Fuels)": 17,
+    "Rare earths (Energy Fuels)": 16,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 5,
+    "Naval reactors": 6,
     "Crane / Three Mile Island": 3,
     "Susquehanna": 2,
     "Comanche Peak": 3,
@@ -203890,31 +204185,31 @@
     "ERCOT grid": 10,
     "Data-center nuclear deals": 9,
     "Japan restarts": 4,
-    "China new builds": 5,
-    "Congress and laws": 31,
-    "NRC decisions": 12,
-    "Energy Department": 36,
-    "White House and executive orders": 22,
+    "China new builds": 3,
+    "Congress and laws": 30,
+    "NRC decisions": 11,
+    "Energy Department": 41,
+    "White House and executive orders": 21,
     "Tariffs and trade": 1,
     "India": 21,
     "South Korea": 76,
     "Europe new builds": 52,
-    "France and UK": 6,
-    "Middle East": 24,
-    "Asia newcomers": 26,
+    "France and UK": 7,
+    "Middle East": 47,
+    "Asia newcomers": 56,
     "Canada SMRs": 5,
-    "Big tech power deals": 56,
+    "Big tech power deals": 55,
     "Iran": 32,
     "North Korea": 100,
-    "War zones": 17,
-    "AUKUS and navies": 20,
-    "Weapons programs": 14,
-    "Stockpiles and reserves": 14,
-    "Sprott trust": 4,
-    "Uranium price": 42,
+    "War zones": 25,
+    "AUKUS and navies": 21,
+    "Weapons programs": 9,
+    "Stockpiles and reserves": 7,
+    "Sprott trust": 3,
+    "Uranium price": 40,
     "US policy": 0,
-    "Lawsuits and investigations": 71,
-    "Workers and jobs": 16,
+    "Lawsuits and investigations": 30,
+    "Workers and jobs": 18,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
     "Federal Register (uranium)": 6,
@@ -204115,6 +204410,24 @@
     "numbers": [],
     "score": 7.02,
     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1scnlHdWQxWDlJWGRnZk5yZEhBUV9mbmtfcTNEWkNWNDFPX2lJYThHNUFGMDFiSWdhSXFXd0pMUXNxRzkwd283MU8zLXVVZFl5bUtlWlBMMEw0YmRpZGdhSGtkY1Z2MWdRSmp6NUJFTDlod29RSUE?oc=5"
+   },
+   {
+    "date": "2026-11-23",
+    "title": "Karman Awarded $31 Million Navy Contract for Virginia-Class Submarine Propulsor Tailcones",
+    "outlet": "Seapower Magazine",
+    "place": "Naval reactors",
+    "tickers": [
+     "BWXT"
+    ],
+    "tags": [
+     "contract",
+     "defense"
+    ],
+    "numbers": [
+     "$31 Million"
+    ],
+    "score": 6.9,
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWC0takxQRTdyVmlYT0RNMXhNSHhYZlhJcWJiTGZBSVVTM3A5Y0JjUGYxbWZIOHYxSnJoVXhlbkRocHFRLVpRRU40ZVNqUXk0VkRjWl8tdU40dzJmWXlabnVGZUQ4QXY5NjhVRVBCZE5MVUFrQjdWcXg4V1RMbWhxQnkySlBDNnk5aFdIekxXNW9ZVVVYdnNXWlA4MXBFd3FQcFNEQlNSU2NvNXVwX1djWUxZLXhuR1k3VXc?oc=5"
    },
    {
     "date": "2026-11-20",
@@ -204459,22 +204772,6 @@
     "numbers": [],
     "score": 6.1,
     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAzUDVUcjVrUFhTdUxLYVV2b0M3azlMLV92SG9vOFVMRXQ2UllabFk4bVR3RlA1VTB4RzNHQnk2S2d6WXhNVWJoMmVhQWhBTUxkN3ppNmVCR0E?oc=5"
-   },
-   {
-    "date": "2026-11-23",
-    "title": "'Very Odd' Cyber Breach Halts Operations, Stock Trading At Wyoming Uranium Mine",
-    "outlet": "Cowboy State Daily",
-    "place": "Wyoming ISR",
-    "tickers": [
-     "UEC",
-     "CCJ"
-    ],
-    "tags": [
-     "disruption"
-    ],
-    "numbers": [],
-    "score": 6.08,
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcC00blMxMXkzdWRZSzlCdVh4RnZJTjJTRUxJcm9JU1Y2bHVFenlfREZTTnZkVWFMbnl5cmR0V0FkUmhBdmxvdjFzQ2dleWQ5MEdONHF3dldqNk1Gbk1QMGduSm1jNWlnYnVqcmVEemhRRi1VSm9wdm5yUE9VVGRrYWFaVGFYUVlxRFdsMmh5Xy1QUERfaXFENF85QTBDVEQxRXFvME45dU5mU3RWZjI3M2g3cm4xQQ?oc=5"
    }
   ]
  },
@@ -204560,7 +204857,9 @@
   "85de31670d4daf9d",
   "7f7a05be6b3ac1f5",
   "b2e981fc7a2e7302",
-  "515517f776442fe4"
+  "515517f776442fe4",
+  "6aea49b49aa5bae7",
+  "ffdf4cb6e7b285b1"
  ],
  "panic_log": [
   {
@@ -204601,7 +204900,7 @@
   }
  ],
  "memory_view": {
-  "events": 1555,
+  "events": 1557,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -205179,24 +205478,6 @@
   "recent": [
    {
     "date": "2026-11-23",
-    "ticker": "BWXT",
-    "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com Australia",
-    "type": "contract_deal",
-    "r0": 6.71,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-23",
-    "ticker": "BWXT",
-    "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal",
-    "type": "contract_deal",
-    "r0": 6.71,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-23",
     "ticker": "CCJ",
     "title": "Congress Reviews Saudi Nuclear Deal Amid Enrichment Concerns",
     "type": "intel_geopolitics",
@@ -205520,6 +205801,15 @@
     "r20": null
    },
    {
+    "date": "2026-11-23",
+    "ticker": "BWXT",
+    "title": "Karman Awarded $31 Million Navy Contract for Virginia-Class Submarine Propulsor Tailcones",
+    "type": "intel_contract",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
     "date": "2026-11-24",
     "ticker": "CEG",
     "title": "PJM Consumer Advocates, Monitor Request 2029/30 Auction be Delayed",
@@ -205533,6 +205823,15 @@
     "ticker": "TLN",
     "title": "PJM Consumer Advocates, Monitor Request 2029/30 Auction be Delayed",
     "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-24",
+    "ticker": "BWXT",
+    "title": "Keating: AUKUS \u2018was not about submarines\u2019 \u2014 it was about a US base in Perth",
+    "type": "intel_defense",
     "r0": null,
     "r5": null,
     "r20": null
@@ -206027,7 +206326,7 @@
    }
   ]
  },
- "dossier_at": 1795481519.0287662,
+ "dossier_at": 1795483465.0156474,
  "sector_prices": {
   "_at": 1795466680.0529685,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -206085,85 +206384,85 @@
    "name": "Cameco",
    "price": 61.49,
    "week_pct": -6.82,
-   "built": "2026-11-23 19:51"
+   "built": "2026-11-23 20:24"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.78,
    "week_pct": -8.57,
-   "built": "2026-11-23 19:51"
+   "built": "2026-11-23 20:24"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.85,
    "week_pct": -4.57,
-   "built": "2026-11-23 19:51"
+   "built": "2026-11-23 20:24"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.77,
    "week_pct": -7.33,
-   "built": "2026-11-23 19:52"
+   "built": "2026-11-23 20:24"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.22,
    "week_pct": -13.58,
-   "built": "2026-11-23 19:52"
+   "built": "2026-11-23 20:24"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 86.8,
    "week_pct": -11.0,
-   "built": "2026-11-23 19:52"
+   "built": "2026-11-23 20:24"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.71,
    "week_pct": -0.95,
-   "built": "2026-11-23 19:52"
+   "built": "2026-11-23 20:24"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 251.76,
    "week_pct": -9.38,
-   "built": "2026-11-23 19:52"
+   "built": "2026-11-23 20:24"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 123.81,
    "week_pct": -4.88,
-   "built": "2026-11-23 19:52"
+   "built": "2026-11-23 20:24"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 365.03,
    "week_pct": 1.47,
-   "built": "2026-11-23 19:52"
+   "built": "2026-11-23 20:24"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-23 19:52"
+   "built": "2026-11-23 20:24"
   }
  ],
- "heartbeat": "2026-11-23 20:13",
+ "heartbeat": "2026-11-23 20:23",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 147,
+ "_pushed_feed": 153,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -206275,12 +206574,12 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 67,
-   "used": 63,
+   "asked": 68,
+   "used": 64,
    "notes": {
-    "TLN Deals and contracts": 1,
+    "TLN Deals and contracts": 2,
     "CCJ Deals and contracts": 19,
-    "BWXT Deals and contracts": 12,
+    "BWXT Deals and contracts": 13,
     "SECTOR Government and laws": 18,
     "UUUU Deals and contracts": 16,
     "SECTOR Countries": 16,
@@ -206300,15 +206599,15 @@
    "since": "2026-11-23"
   },
   "level": {
-   "asked": 22,
-   "used": 20,
+   "asked": 25,
+   "used": 23,
    "notes": {
-    "TLN Snapshot": 8,
-    "TLN Price behavior": 8,
+    "TLN Snapshot": 9,
+    "TLN Price behavior": 9,
     "TLN Discoveries": 3,
-    "TLN Our trades": 8,
-    "VST Snapshot": 4,
-    "VST Price behavior": 3,
+    "TLN Our trades": 9,
+    "VST Snapshot": 5,
+    "VST Price behavior": 4,
     "TLN What history says": 6,
     "desk_notes intel: PJM capacity auction delay": 1,
     "TLN intel_disruption (PJM auction delay)": 1,
@@ -206316,22 +206615,22 @@
     "BWXT Snapshot": 9,
     "BWXT What history says": 6,
     "BWXT Price behavior": 8,
-    "SECTOR Uranium market": 5,
+    "SECTOR Uranium market": 7,
     "BWXT Our trades": 7,
     "sector_pulse": 1,
     "BWXT Discoveries": 1,
-    "CEG Snapshot": 1,
-    "CEG Price behavior": 1,
+    "CEG Snapshot": 2,
+    "CEG Price behavior": 2,
     "CEG Our trades": 1,
     "VST What history says": 1,
-    "VST Our trades": 1,
+    "VST Our trades": 2,
     "SECTOR Market regime": 1
    },
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 13,
-   "used": 12,
+   "asked": 14,
+   "used": 13,
    "notes": {
     "BWXT Deals and contracts": 2,
     "BWXT Snapshot": 2,
@@ -206340,7 +206639,7 @@
     "UEC Snapshot": 1,
     "UEC Deals and contracts": 1,
     "SECTOR Uranium market": 2,
-    "TLN Snapshot": 4,
+    "TLN Snapshot": 5,
     "TLN What history says": 2,
     "CCJ Snapshot": 1,
     "CCJ Deals and contracts": 1,
@@ -206365,19 +206664,19 @@
     "VST What history says": 1,
     "VST Leadership and insiders": 1,
     "TLN Deals and contracts": 2,
-    "TLN Leadership and insiders": 3
+    "TLN Leadership and insiders": 4
    },
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 6,
-   "used": 6,
+   "asked": 7,
+   "used": 7,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 3,
     "BWXT Leadership and insiders": 1,
     "TLN Snapshot": 1,
-    "SECTOR Uranium market": 5,
+    "SECTOR Uranium market": 6,
     "BWXT Discoveries": 2,
     "UEC Snapshot": 1,
     "UEC Leadership and insiders": 1
@@ -206398,13 +206697,13 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 12,
-   "used": 12,
+   "asked": 13,
+   "used": 13,
    "notes": {
-    "SECTOR Uranium market": 10,
-    "BWXT Snapshot": 3,
-    "CCJ Snapshot": 1,
-    "UUUU Snapshot": 1,
+    "SECTOR Uranium market": 11,
+    "BWXT Snapshot": 4,
+    "CCJ Snapshot": 2,
+    "UUUU Snapshot": 2,
     "SECTOR Government and laws": 9,
     "TLN Snapshot": 6,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
@@ -206413,23 +206712,25 @@
    "since": "2026-11-23"
   },
   "whale": {
-   "asked": 1,
-   "used": 1,
+   "asked": 2,
+   "used": 2,
    "notes": {
     "TLN Legal": 1,
     "SECTOR Uranium market": 1,
     "BWXT Snapshot": 1,
-    "CCJ Snapshot": 1
+    "CCJ Snapshot": 2,
+    "UUUU Snapshot": 1,
+    "UUUU Options and big money": 1
    },
    "since": "2026-11-23"
   },
   "crowd": {
-   "asked": 1,
-   "used": 1,
+   "asked": 2,
+   "used": 2,
    "notes": {
     "TLN Legal": 1,
     "TLN Catalysts": 1,
-    "SECTOR Uranium market": 1,
+    "SECTOR Uranium market": 2,
     "BWXT Snapshot": 1,
     "CCJ Snapshot": 1,
     "UUUU Snapshot": 1
@@ -206437,14 +206738,14 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 12,
-   "used": 12,
+   "asked": 14,
+   "used": 14,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 2,
     "BWXT Snapshot": 2,
-    "SECTOR Uranium market": 3,
-    "TLN Snapshot": 5,
+    "SECTOR Uranium market": 5,
+    "TLN Snapshot": 6,
     "TLN Legal": 2,
     "BWXT Legal": 1,
     "BWXT Leadership and insiders": 1,
@@ -206454,7 +206755,8 @@
     "CCJ Price behavior": 1,
     "SECTOR Rules the bot follows from its discoveries": 1,
     "TLN Price behavior": 4,
-    "TLN Discoveries": 1
+    "TLN Discoveries": 1,
+    "TLN Leadership and insiders": 1
    },
    "since": "2026-11-23"
   },
@@ -206477,17 +206779,17 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 7,
-   "used": 7,
+   "asked": 8,
+   "used": 8,
    "notes": {
-    "TLN Snapshot": 6,
-    "TLN News": 6,
+    "TLN Snapshot": 7,
+    "TLN News": 7,
     "coming_up": 1,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
     "BWXT Legal": 1,
     "CCJ Snapshot": 1,
-    "TLN Leadership and insiders": 5,
+    "TLN Leadership and insiders": 6,
     "CCJ Legal": 1,
     "TLN Legal": 2,
     "SECTOR Market regime": 1
@@ -208401,6 +208703,24 @@
    "answer": "The COO sale looks like a regular event, not a signal: the desk's own notes say planned 10b5-1 sales carry no weight, and the sale appears on record as a plain sale without a confirmed plan tag, so I can't prove it's planned. Either way, insider selling in TLN is a small, bounded factor compared with the PJM auction-delay question and the no-new-buys rule that actually govern our resting order. I agree with the Risk Manager that the open TLN order should be reviewed now rather than left to expire.",
    "verdict": "irrelevant",
    "action": "tell_owner"
+  },
+  {
+   "t": "2026-11-23 20:23",
+   "question": "Given the 9.6% bounce and the basket still below its 10-day average, should the TLN resting buy at $355.66 be canceled now rather than left until its Nov 30 expiry?",
+   "kind": "odd",
+   "asked": "risk",
+   "answer": "Yes, I agree the TLN resting buy at $355.66 should be canceled now rather than left to expire Nov 30. Our own rule blocks new buys while the basket is below its 10-day average, and that is still true, while the stock sits about 2.6% above the entry, so a live order could fill against the rule. I'm agreeing with the Questioner and the Risk Manager's no-new-buys logic here.",
+   "verdict": "relevant",
+   "action": "tell_owner"
+  },
+  {
+   "t": "2026-11-23 20:23",
+   "question": "Was the TLN COO's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale?",
+   "kind": "unexplained",
+   "asked": "investigator",
+   "answer": "I checked the TLN COO sale (Brad Berryman, 56,091 shares, about $19.8M, Nov 17). The desk notes list it as an open-market sale, not a 10b5-1 plan, so it is not noise by our own standard, but a single senior-officer sale in a stock with 2 operating reactors and no disclosed 10b5-1 plan is one data point and does not prove he knows something. Treat it as a caution flag on the TLN setup, not as a reason to trade in either direction.",
+   "verdict": "relevant",
+   "action": "watch"
   }
  ],
  "reactor_view": {
@@ -208641,6 +208961,125 @@
     "position": "below value",
     "node": "thin",
     "node_ratio": 0.35,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "CCJ",
+   "zone": 57.87,
+   "entry": 58.1,
+   "stop": 57.18,
+   "target": 63.68,
+   "vp": {
+    "value_low": 60.56,
+    "value_high": 76.69,
+    "heaviest_price": 61.57,
+    "position": "below value",
+    "node": "normal",
+    "node_ratio": 0.6,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "NXE",
+   "zone": 6.38,
+   "entry": 6.41,
+   "stop": 6.3,
+   "target": 7.07,
+   "vp": {
+    "value_low": 6.83,
+    "value_high": 8.82,
+    "heaviest_price": 7.95,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.37,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "UEC",
+   "zone": 5.29,
+   "entry": 5.31,
+   "stop": 5.23,
+   "target": 6.03,
+   "vp": {
+    "value_low": 5.75,
+    "value_high": 8.2,
+    "heaviest_price": 5.86,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.28,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "DNN",
+   "zone": 1.68,
+   "entry": 1.69,
+   "stop": 1.66,
+   "target": 1.88,
+   "vp": {
+    "value_low": 1.81,
+    "value_high": 2.38,
+    "heaviest_price": 2.11,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.28,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "UUUU",
+   "zone": 4.91,
+   "entry": 4.92,
+   "stop": 4.85,
+   "target": 5.7,
+   "vp": {
+    "value_low": 5.27,
+    "value_high": 8.35,
+    "heaviest_price": 6.76,
+    "position": "below value",
+    "node": "normal",
+    "node_ratio": 0.8,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "LEU",
+   "zone": 80.9,
+   "entry": 81.22,
+   "stop": 79.93,
+   "target": 93.4,
+   "vp": {
+    "value_low": 86.51,
+    "value_high": 117.36,
+    "heaviest_price": 87.91,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.33,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "BWXT",
+   "zone": 108.17,
+   "entry": 108.6,
+   "stop": 106.87,
+   "target": 119.41,
+   "vp": {
+    "value_low": 114.46,
+    "value_high": 134.11,
+    "heaviest_price": 117.21,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.21,
     "skip": true
    }
   }
@@ -208974,7 +209413,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-23 20:13",
+ "watchdog_last": "2026-11-23 20:23",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

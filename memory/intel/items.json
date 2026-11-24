@@ -13326,5 +13326,135 @@
 "pjm",
 "request"
 ]
+},
+{
+"id": "6aea49b49aa5bae7",
+"date": "2026-11-23",
+"ts": 1795473373,
+"title": "Karman Awarded $31 Million Navy Contract for Virginia-Class Submarine Propulsor Tailcones",
+"summary": "",
+"outlet": "Seapower Magazine",
+"link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWC0takxQRTdyVmlYT0RNMXhNSHhYZlhJcWJiTGZBSVVTM3A5Y0JjUGYxbWZIOHYxSnJoVXhlbkRocHFRLVpRRU40ZVNqUXk0VkRjWl8tdU40dzJmWXlabnVGZUQ4QXY5NjhVRVBCZE5MVUFrQjdWcXg4V1RMbWhxQnkySlBDNnk5aFdIekxXNW9ZVVVYdnNXWlA4MXBFd3FQcFNEQlNSU2NvNXVwX1djWUxZLXhuR1k3VXc?oc=5",
+"place": "Naval reactors",
+"tickers": [
+"BWXT"
+],
+"tags": [
+"contract",
+"defense"
+],
+"numbers": [
+"$31 Million"
+],
+"local": true,
+"novelty": 0.8,
+"score": 6.9,
+"echo_of": null,
+"w": [
+"awarded",
+"class",
+"contract",
+"karman",
+"million",
+"navy",
+"propulsor",
+"submarine",
+"tailcones",
+"virginia"
+]
+},
+{
+"id": "43e977044e9b9f2b",
+"date": "2026-11-24",
+"ts": 1795479360,
+"title": "Drilling Results Could Shape The Case For Denison Mines Stock (TSX:DML)",
+"summary": "",
+"outlet": "Yahoo Finance",
+"link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTXV2Smh0a21ZdUlTUVJ4bE5DU3didDJKX1dVYlBiOVJ0YWJiV2djX3JUc0NyLXYtVDJ3UDJJRndXYU90VU9OY3F0S2I1MHA4azFEcE1mZWxLZGI3TUJxcEpZZ3ZVSzI5SnplVnRnRVBYUVZOVFpmSDNZM2locVBJeDlTazN1cEVscHBia0xfcHJzM2J3dGVaeEJwNnFqRWc?oc=5",
+"place": "Wheeler River / Phoenix",
+"tickers": [
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.69,
+"score": 2.88,
+"echo_of": null,
+"w": [
+"case",
+"denison",
+"dml",
+"drilling",
+"mines",
+"results",
+"shape",
+"stock",
+"tsx"
+]
+},
+{
+"id": "ffdf4cb6e7b285b1",
+"date": "2026-11-24",
+"ts": 1795482245,
+"title": "Keating: AUKUS \u2018was not about submarines\u2019 \u2014 it was about a US base in Perth",
+"summary": "",
+"outlet": "Crikey",
+"link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZjBkdGNGZzVaVE93SktuNEY4WnFydnc5MWpoeTVzcVUxQkp6YW5uSVVEdFJvTUNOdnVzVjJKZ3dIY09rZURkR1pPXzVzMGIySkFSU2tQSDVLVEMzd1FlbXVNZWFKWll1M05SbGk4RllHeDQ0Wklhbm9PRk5IakltOG1IVnFlMXFH?oc=5",
+"place": "AUKUS and navies",
+"tickers": [
+"BWXT"
+],
+"tags": [
+"defense"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.78,
+"score": 5.06,
+"echo_of": null,
+"w": [
+"aukus",
+"base",
+"keating",
+"not",
+"perth",
+"submarines"
+]
+},
+{
+"id": "379333ae9de5b5eb",
+"date": "2026-11-24",
+"ts": 1795483114,
+"title": "Poland Targets Early 2027 Contract to Sign Final Contract for Flagship Nuclear Power Plant",
+"summary": "",
+"outlet": "SightLine | U308",
+"link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQzZ3X2FRYUtsVzk5NE8wMU1vdUw3X3NBRW1HcmlzLU5xZHlSZXBaaWNPVmd6ejQ2U2hmVEhOQnZtSVcyTlc4YkZDWGNzRlBqT3FXOGZMQ0UwZndMbXFibldJa3pBYXQ5cnpVX3B6MjZINXE5ZmlRVXZ0eENMeklDX1lWYU1sejhmWWQ1NzdDYlRHcVNCYnN4QXFQLVFIUU11TFZpVEl2M3Y1cFg2UkN2bHBXM0FFUGdEcUsxS1Z0MWhocG8?oc=5",
+"place": "Europe new builds",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"contract"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 3.8,
+"echo_of": "07b1d20c07adf89a",
+"w": [
+"2027",
+"contract",
+"early",
+"final",
+"flagship",
+"nuclear",
+"plant",
+"poland",
+"power",
+"sign",
+"targets"
+]
 }
 ]

@@ -192,6 +192,14 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy at $355.66 expires; confirm whether the PJM December 2029/30 capacity-auction delay request has been decided",
+"by": "questioner",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
@@ -312,6 +320,14 @@
 "surfaced": false
 },
 {
+"date": "2026-12-01",
+"ticker": "",
+"what": "Questioner follow-up: Was the TLN COO's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale?",
+"by": "questioner",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
 "date": "2026-12-08",
 "ticker": "UEC",
 "what": "Q1 earnings report; a known catalyst that falls after the next few sessions and could break a resting-buy plan.",
@@ -356,6 +372,14 @@
 "ticker": "UEC",
 "what": "Earnings report. The typical move is about 3%, and 28% of past reports moved more than 5%.",
 "by": "strategist",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-08",
+"ticker": "UEC",
+"what": "Q1 earnings report; typically moves about 4-5% either way, a catalyst that could break any resting-buy plan",
+"by": "pm",
 "written": "2026-11-23",
 "surfaced": false
 },
@@ -460,6 +484,22 @@
 "ticker": "CEG",
 "what": "FOMC rate decision. Rates matter to the power stocks (CEG, VST, TLN).",
 "by": "strategist",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-09",
+"ticker": "CEG",
+"what": "FOMC rate decision; broad risk-off or risk-on move that can drive the nuclear and utility names.",
+"by": "level",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-09",
+"ticker": "TLN",
+"what": "PJM December capacity auction delay decision; a key catalyst for Talen's capacity revenue that could move the stock sharply in either direction.",
+"by": "level",
 "written": "2026-11-23",
 "surfaced": false
 },
