@@ -720,6 +720,22 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "CEG",
+"what": "Check whether the PJM capacity-auction delay decision lands and whether price reclaims the 20-day high area, which would make a future setup more credible.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy window closes; check PJM capacity-auction delay decision and whether the 344.7 zone holds on a re-test.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
@@ -939,6 +955,14 @@
 "date": "2026-12-01",
 "ticker": "CEG",
 "what": "Re-check the support zone and whether the basket has reclaimed its 10-day average; PJM capacity-auction delay decision pending.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "VST",
+"what": "Open panic-rebound position exits on this date per the rules; review then.",
 "by": "level",
 "written": "2026-11-24",
 "surfaced": false
