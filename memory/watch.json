@@ -984,6 +984,46 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "CCJ",
+"what": "Check whether the basket cleared its 10-day average and whether the $57.87-$58.10 zone held; re-evaluate the level only if the gate is clear.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "UUUU",
+"what": "Resting buy at $4.92 expires; check whether the $4.85-$4.91 zone held or broke.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "CEG",
+"what": "Re-check whether the basket has recovered above its 10-day average and whether the PJM capacity-auction delay decision has been announced.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "VST",
+"what": "Resting setup expires; re-check whether the basket recovers above its 10-day average and whether the $114.85 zone holds.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy window from the Level Analyst's order expires; check PJM capacity auction delay decision before any new arm.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
