@@ -16337,5 +16337,75 @@
 "strategic",
 "trump"
 ]
+},
+{
+"id": "113ecd31dc858e1b",
+"date": "2026-11-24",
+"ts": 1795521790,
+"title": "SPROTT PHYSICAL URANIUM TRUST (U-U.NE) Seasonal returns chart",
+"summary": "",
+"outlet": "Yahoo Finance UK",
+"link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9MT0V6Yzh1Q192S19nM0M2UTNUemJ6VExJX0ZDWU5Cd2IyX1hTdUR6eWR2eS1XQlB5enQ0STRfOFhtbVVnYUIyYVhEdVVFZVRkWjRLWExsTXhyWlRqN1FOX1RsZzI?oc=5",
+"place": "Sprott trust",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.75,
+"score": 3.0,
+"echo_of": null,
+"w": [
+"chart",
+"physical",
+"returns",
+"seasonal",
+"sprott",
+"trust",
+"uranium"
+]
+},
+{
+"id": "209f77c94559cbcf",
+"date": "2026-11-24",
+"ts": 1795537557,
+"title": "Global Uranium Reports ANT Survey Results at Astro Project, Identifies Priority Zone Along AS-1 Conductor in Saskatchewan's Athabasca Basin",
+"summary": "",
+"outlet": "kalkine.ca",
+"link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOS2NuT3pwZkl1LUJzWC1pcHJmQ3FkTVo1U1ZTNXNiQ29ZSHlfMHRDVmZ5VDF2NWYyYUhzeTk3Um5Dc0dWbjNUYTRHQUhLOV93SWwtLVEwbFVXUnhmV1gyM19TUUtQNWdOT3ZwOE9UdnJLMTNHamdYdHlIcjZyRzROQnVDdThxNGY2YWxPbTE0TWxrYngzTlptV3VoWE9qVUprNzJkZXdHaTdST0hlMUFLSk5sRHdrNVR5R3NUMzVNa3d0RXZjTEcyNzdsVW9QUTNlQm5Hb25LTUtSN1ZNV0ZsYzllNmtDajRVVEpEMkNfS0h2VmdSVTNrQ2tDTTlZTFpNbHM5TS1R?oc=5",
+"place": "Athabasca Basin",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.65,
+"score": 2.8,
+"echo_of": null,
+"w": [
+"along",
+"ant",
+"astro",
+"athabasca",
+"basin",
+"conductor",
+"global",
+"identifies",
+"priority",
+"project",
+"reports",
+"results",
+"saskatchewan",
+"survey",
+"uranium",
+"zone"
+]
 }
 ]
