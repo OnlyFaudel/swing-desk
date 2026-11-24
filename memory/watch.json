@@ -640,6 +640,22 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "VST",
+"what": "Check whether the basket is back above its 10-day average and whether the PJM capacity-auction delay decision has landed before any new buy.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy at $355.66 expires; check whether the PJM capacity-auction delay decision came out and whether $354.24 support held.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
@@ -852,6 +868,14 @@
 "ticker": "UUUU",
 "what": "White Mesa uranium processing campaign begins (targets ~1M lb U3O8 through early 2027)",
 "by": "scout",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "CEG",
+"what": "Re-check the support zone and whether the basket has reclaimed its 10-day average; PJM capacity-auction delay decision pending.",
+"by": "level",
 "written": "2026-11-24",
 "surfaced": false
 },

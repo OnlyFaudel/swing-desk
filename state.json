@@ -1023,6 +1023,81 @@
    "decision": "SKIP",
    "reason": "The support zone at 354.24 sits inside a volume value area and the stock has rallied 9.6% in one day on a peer echo, so the level is not clearly tested. The live PJM capacity-auction delay story is a ",
    "evaluated": false
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "CEG",
+   "setup": "patient_level",
+   "zone": 236.82,
+   "entry": 237.77,
+   "stop": 233.98,
+   "target": 257.5,
+   "reward_risk": 5.21,
+   "dist_to_entry_pct": 5.89,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 236.67,
+    "value_high": 278.26,
+    "heaviest_price": 264.17,
+    "position": "at value low",
+    "node": "normal",
+    "node_ratio": 1.15,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "Price is 11.9% below its 20-day high, 6.4% below its 50-day average and 10.4% below its 200-day average, and the basket is in a weak tape with VIX near 30, so the basket gate will likely block a buy a",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "VST",
+   "setup": "patient_level",
+   "zone": 114.85,
+   "entry": 115.31,
+   "stop": 113.47,
+   "target": 125.85,
+   "reward_risk": 5.74,
+   "dist_to_entry_pct": 7.37,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 111.81,
+    "value_high": 141.35,
+    "heaviest_price": 119.66,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 0.78,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The support zone at $114.85 sits in a stretch of thin volume, with price 14% under its 20-day high and 13% under its 50-day average, so a resting buy would be catching a falling knife. The basket is a",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "TLN",
+   "setup": "patient_level",
+   "zone": 354.24,
+   "entry": 355.66,
+   "stop": 349.99,
+   "target": 369.46,
+   "reward_risk": 2.44,
+   "dist_to_entry_pct": 2.64,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 312.55,
+    "value_high": 366.37,
+    "heaviest_price": 360.99,
+    "position": "inside value",
+    "node": "thick",
+    "node_ratio": 1.83,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The support zone at 354.24 sits inside the value area and the basket is not clearly above its 10-day average, so the no-new-buys gate applies. Macro risk is elevated (VIX near 30, SPY below its 200-da",
+   "evaluated": false
   }
  ],
  "cooldown": {
@@ -5631,15 +5706,15 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.11333,
+  "day_usd": 0.1175,
   "month": "2026-11",
-  "month_usd": 0.84475,
-  "total_usd": 0.84475,
+  "month_usd": 0.84892,
+  "total_usd": 0.84892,
   "by_role": {
    "macro": 0.07531,
    "whale": 0.01672,
    "crowd": 0.01094,
-   "level": 0.04601,
+   "level": 0.05018,
    "scout": 0.09318,
    "review": 0.07035,
    "auditor": 0.02993,
@@ -5746,20 +5821,20 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 60.38,
-  "NXE": 6.69,
+  "CCJ": 59.96,
+  "NXE": 6.66,
   "UEC": 5.65,
-  "DNN": 1.72,
-  "UUUU": 4.99,
-  "LEU": 85.21,
-  "BWXT": 113.11,
-  "CEG": 248.9,
-  "VST": 122.43,
-  "TLN": 357.59,
-  "SPY": 719.94,
-  "SSO": 60.69
+  "DNN": 1.74,
+  "UUUU": 4.96,
+  "LEU": 84.03,
+  "BWXT": 112.91,
+  "CEG": 248.85,
+  "VST": 121.47,
+  "TLN": 356.8,
+  "SPY": 718.51,
+  "SSO": 60.5
  },
- "last_cycle": "2026-11-24 10:00 ET",
+ "last_cycle": "2026-11-24 10:06 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -5784,10 +5859,10 @@
   ]
  },
  "brakes": {
-  "equity": 1016.02,
-  "day_pct": -1.31,
-  "week_pct": 1.55,
-  "drawdown_pct": -3.64,
+  "equity": 1010.82,
+  "day_pct": -1.81,
+  "week_pct": 1.03,
+  "drawdown_pct": -4.13,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -7237,6 +7312,26 @@
   [
    "2026-11-24 10:00",
    1016.02
+  ],
+  [
+   "2026-11-24 10:01",
+   1014.3
+  ],
+  [
+   "2026-11-24 10:02",
+   1012.98
+  ],
+  [
+   "2026-11-24 10:03",
+   1013.32
+  ],
+  [
+   "2026-11-24 10:04",
+   1014.92
+  ],
+  [
+   "2026-11-24 10:06",
+   1010.82
   ]
  ],
  "nowcast": {
@@ -49975,16 +50070,16 @@
   }
  },
  "last_scan": {
-  "CCJ": 1795530947.0214822,
-  "NXE": 1795530947.1204531,
-  "UEC": 1795530947.128129,
-  "DNN": 1795530947.1352365,
-  "UUUU": 1795530947.1420782,
-  "LEU": 1795530947.1502717,
-  "BWXT": 1795530947.157371,
-  "CEG": 1795530947.165062,
-  "VST": 1795530950.627467,
-  "TLN": 1795530953.9171865
+  "CCJ": 1795532767.0655644,
+  "NXE": 1795532767.0730736,
+  "UEC": 1795532767.0800393,
+  "DNN": 1795532767.087047,
+  "UUUU": 1795532767.094309,
+  "LEU": 1795532767.1013153,
+  "BWXT": 1795532767.1084266,
+  "CEG": 1795532767.1160522,
+  "VST": 1795532770.182884,
+  "TLN": 1795532772.9562166
  },
  "setup_status": {
   "CCJ": "a level at $57.87 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
@@ -49994,9 +50089,9 @@
   "UUUU": "a level at $4.91 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
   "LEU": "a level at $80.9 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
   "BWXT": "a level at $108.17 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
-  "CEG": "the Level Analyst skipped the setup: Basket gate: the broader setup is unfavorable and the stock is still 5.2% under its 50-day average with the market shaky (VIX near 30). Resting buy sits about 6% a",
-  "VST": "the Level Analyst skipped the setup: The zone at $114.85 sits in a stock that is 31% below its 1-year high and 18% below its 200-day average, with the whole basket under its 10-day average and VIX nea",
-  "TLN": "the Level Analyst skipped the setup: The support zone at 354.24 sits inside a volume value area and the stock has rallied 9.6% in one day on a peer echo, so the level is not clearly tested. The live P"
+  "CEG": "the Level Analyst skipped the setup: Price is 11.9% below its 20-day high, 6.4% below its 50-day average and 10.4% below its 200-day average, and the basket is in a weak tape with VIX near 30, so the ",
+  "VST": "the Level Analyst skipped the setup: The support zone at $114.85 sits in a stretch of thin volume, with price 14% under its 20-day high and 13% under its 50-day average, so a resting buy would be catc",
+  "TLN": "the Level Analyst skipped the setup: The support zone at 354.24 sits inside the value area and the basket is not clearly above its 10-day average, so the no-new-buys gate applies. Macro risk is elevat"
  },
  "sync": {
   "pulse_up": false,
@@ -51743,7 +51838,7 @@
     0.8962
    ]
   },
-  "time": "2026-11-24 10:00"
+  "time": "2026-11-24 10:06"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -52039,8 +52134,8 @@
   "9f2e45d00f1961dd",
   "7269a326a498bd44",
   "42e4688c154f3e5b",
-  "960af125712d07b2",
   "fe808fea77078dbb",
+  "960af125712d07b2",
   "bf01a2cc0277276c",
   "1b180f9c668466ea",
   "b78359c4e74e2d63",
@@ -206196,6 +206291,36 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-24 10:06",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping CEG. It's in a clear downtrend, below its 50-day and 200-day averages, and the whole market is shaky with fear elevated, so a resting buy just above $236 has a poor chance of holding. The stop would likely get hit. I agree with the Macro Analyst that the basket gate matters more than any single setup.\n\nWhy: I checked the chart (below 50-day and 200-day averages, down 34% from the 1-year high), the macro read (VIX near 30, SPY below its 200-day average) and the desk's history on similar events, which leans negative. The support zone looks fragile in this tape, so I'd rather wait for a confirmed bounce.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-24 10:06",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I agree with the Macro Analyst that the basket gate should decide this, and with the Level Analyst's skip. VST is still falling under its averages, the PJM decision is an open event risk, and the insider buying is too small to outweigh a broken trend. I'd pass on this setup and wait for the basket to recover above its 10-day average.\n\nWhy: I checked the volume profile, the 20-day and 50-day trend, the basket gate, and the PJM event risk. The setup is in a weak tape with no confirmed bounce, so the level is more likely to break than hold.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-24 10:06",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping TLN. The stock is near support, but the market is shaky and the basket gate comes first, and a pending PJM auction decision is a coin-flip event that could break the zone. Our own practice record on this setup (0.17 average R, 36% wins) doesn't give me confidence to force it.\n\nWhy: I checked the chart level against the volume profile, the macro risk level, the PJM event risk and our own practice-trade record. The zone looks decent on its own, but the gate and the event risk make the setup not worth arming.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -206794,7 +206919,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 10:00",
+  "updated": "2026-11-24 10:06",
   "total": 491,
   "week": 414,
   "places": {
@@ -209320,12 +209445,12 @@
    "built": "2026-11-24 09:56"
   }
  ],
- "heartbeat": "2026-11-24 10:00",
+ "heartbeat": "2026-11-24 10:06",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 235,
+ "_pushed_feed": 234,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -209475,8 +209600,8 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 113.11499786376953,
-  "TLN": 357.59
+  "BWXT": 112.91,
+  "TLN": 356.8
  },
  "notes_audit": {
   "scout": {
@@ -209506,33 +209631,33 @@
    "since": "2026-11-23"
   },
   "level": {
-   "asked": 31,
-   "used": 29,
+   "asked": 34,
+   "used": 32,
    "notes": {
-    "TLN Snapshot": 11,
-    "TLN Price behavior": 11,
+    "TLN Snapshot": 12,
+    "TLN Price behavior": 12,
     "TLN Discoveries": 3,
-    "TLN Our trades": 10,
-    "VST Snapshot": 7,
-    "VST Price behavior": 6,
-    "TLN What history says": 7,
+    "TLN Our trades": 11,
+    "VST Snapshot": 8,
+    "VST Price behavior": 7,
+    "TLN What history says": 8,
     "desk_notes intel: PJM capacity auction delay": 1,
     "TLN intel_disruption (PJM auction delay)": 1,
     "SECTOR macro: market regime": 1,
     "BWXT Snapshot": 9,
     "BWXT What history says": 6,
     "BWXT Price behavior": 8,
-    "SECTOR Uranium market": 11,
+    "SECTOR Uranium market": 13,
     "BWXT Our trades": 7,
     "sector_pulse": 1,
     "BWXT Discoveries": 1,
-    "CEG Snapshot": 4,
-    "CEG Price behavior": 3,
+    "CEG Snapshot": 5,
+    "CEG Price behavior": 4,
     "CEG Our trades": 1,
     "VST What history says": 2,
-    "VST Our trades": 3,
+    "VST Our trades": 4,
     "SECTOR Market regime": 1,
-    "CEG What history says": 2,
+    "CEG What history says": 3,
     "CEG Discoveries": 1
    },
    "since": "2026-11-23"
@@ -209907,7 +210032,7 @@
    ],
    [
     "2026-11-24",
-    60.0
+    59.99
    ]
   ],
   "NXE": [
@@ -210029,7 +210154,7 @@
    ],
    [
     "2026-11-24",
-    6.68
+    6.65
    ]
   ],
   "UEC": [
@@ -210151,7 +210276,7 @@
    ],
    [
     "2026-11-24",
-    5.65
+    5.63
    ]
   ],
   "DNN": [
@@ -210273,7 +210398,7 @@
    ],
    [
     "2026-11-24",
-    1.72
+    1.73
    ]
   ],
   "UUUU": [
@@ -210395,7 +210520,7 @@
    ],
    [
     "2026-11-24",
-    4.99
+    4.97
    ]
   ],
   "LEU": [
@@ -210517,7 +210642,7 @@
    ],
    [
     "2026-11-24",
-    85.66
+    84.04
    ]
   ],
   "BWXT": [
@@ -210639,7 +210764,7 @@
    ],
    [
     "2026-11-24",
-    113.11
+    113.05
    ]
   ],
   "CEG": [
@@ -210761,7 +210886,7 @@
    ],
    [
     "2026-11-24",
-    248.76
+    248.99
    ]
   ],
   "VST": [
@@ -210883,7 +211008,7 @@
    ],
    [
     "2026-11-24",
-    122.33
+    121.41
    ]
   ],
   "TLN": [
@@ -211005,7 +211130,7 @@
    ],
    [
     "2026-11-24",
-    357.51
+    356.29
    ]
   ]
  },
@@ -213427,6 +213552,125 @@
     "node_ratio": 0.22,
     "skip": true
    }
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "CCJ",
+   "zone": 57.87,
+   "entry": 58.1,
+   "stop": 57.18,
+   "target": 63.68,
+   "vp": {
+    "value_low": 61.23,
+    "value_high": 76.69,
+    "heaviest_price": 75.01,
+    "position": "below value",
+    "node": "normal",
+    "node_ratio": 0.62,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "NXE",
+   "zone": 6.38,
+   "entry": 6.41,
+   "stop": 6.3,
+   "target": 7.07,
+   "vp": {
+    "value_low": 6.83,
+    "value_high": 8.82,
+    "heaviest_price": 7.95,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.37,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "UEC",
+   "zone": 5.29,
+   "entry": 5.31,
+   "stop": 5.23,
+   "target": 6.03,
+   "vp": {
+    "value_low": 5.75,
+    "value_high": 8.2,
+    "heaviest_price": 7.62,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.29,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "DNN",
+   "zone": 1.68,
+   "entry": 1.69,
+   "stop": 1.66,
+   "target": 1.88,
+   "vp": {
+    "value_low": 1.81,
+    "value_high": 2.38,
+    "heaviest_price": 2.11,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.28,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "UUUU",
+   "zone": 4.91,
+   "entry": 4.92,
+   "stop": 4.85,
+   "target": 5.7,
+   "vp": {
+    "value_low": 5.54,
+    "value_high": 8.35,
+    "heaviest_price": 6.76,
+    "position": "below value",
+    "node": "normal",
+    "node_ratio": 0.82,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "LEU",
+   "zone": 80.9,
+   "entry": 81.22,
+   "stop": 79.93,
+   "target": 93.4,
+   "vp": {
+    "value_low": 86.51,
+    "value_high": 117.36,
+    "heaviest_price": 109.41,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.35,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "BWXT",
+   "zone": 108.17,
+   "entry": 108.6,
+   "stop": 106.87,
+   "target": 119.41,
+   "vp": {
+    "value_low": 114.46,
+    "value_high": 134.11,
+    "heaviest_price": 117.21,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.22,
+    "skip": true
+   }
   }
  ],
  "hawk_cool": {},
@@ -213761,7 +214005,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 10:00",
+ "watchdog_last": "2026-11-24 10:06",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
