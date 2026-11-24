@@ -5706,12 +5706,12 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.1297,
+  "day_usd": 0.13535,
   "month": "2026-11",
-  "month_usd": 0.86112,
-  "total_usd": 0.86112,
+  "month_usd": 0.86677,
+  "total_usd": 0.86677,
   "by_role": {
-   "macro": 0.07759,
+   "macro": 0.07833,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.05018,
@@ -5719,12 +5719,12 @@
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.05693,
-   "risk": 0.06758,
-   "investigator": 0.18812,
+   "pm": 0.0586,
+   "risk": 0.06833,
+   "investigator": 0.18978,
    "postmortem": 0.00035,
    "researcher": 0.00704,
-   "engineer": 0.02071,
+   "engineer": 0.02154,
    "questioner": 0.05635
   }
  },
@@ -5821,20 +5821,20 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 59.34,
-  "NXE": 6.63,
-  "UEC": 5.56,
-  "DNN": 1.72,
+  "CCJ": 59.27,
+  "NXE": 6.62,
+  "UEC": 5.53,
+  "DNN": 1.71,
   "UUUU": 4.88,
-  "LEU": 83.14,
-  "BWXT": 112.58,
-  "CEG": 247.13,
-  "VST": 120.61,
-  "TLN": 353.39,
-  "SPY": 717.48,
-  "SSO": 60.33
+  "LEU": 82.5,
+  "BWXT": 112.43,
+  "CEG": 246.77,
+  "VST": 120.4,
+  "TLN": 352.28,
+  "SPY": 717.06,
+  "SSO": 60.22
  },
- "last_cycle": "2026-11-24 10:19 ET",
+ "last_cycle": "2026-11-24 10:20 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -5859,10 +5859,10 @@
   ]
  },
  "brakes": {
-  "equity": 1004.74,
-  "day_pct": -2.4,
-  "week_pct": 0.42,
-  "drawdown_pct": -4.71,
+  "equity": 1003.13,
+  "day_pct": -2.56,
+  "week_pct": 0.26,
+  "drawdown_pct": -4.86,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -7376,6 +7376,10 @@
   [
    "2026-11-24 10:19",
    1004.74
+  ],
+  [
+   "2026-11-24 10:20",
+   1003.13
   ]
  ],
  "nowcast": {
@@ -51882,7 +51886,7 @@
     0.8961
    ]
   },
-  "time": "2026-11-24 10:19"
+  "time": "2026-11-24 10:20"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -52123,6 +52127,7 @@
   "e87b1e4d61fe1cbd",
   "5bc99c203ef396a3",
   "7c221cf76c2854cd",
+  "67ae6099beae1657",
   "d0cdede57b2eba62",
   "52e6c78d06498482",
   "0d77f1d2373bb03d",
@@ -52179,8 +52184,8 @@
   "9f2e45d00f1961dd",
   "7269a326a498bd44",
   "42e4688c154f3e5b",
-  "960af125712d07b2",
   "fe808fea77078dbb",
+  "960af125712d07b2",
   "bf01a2cc0277276c",
   "1b180f9c668466ea",
   "b78359c4e74e2d63",
@@ -52226,6 +52231,7 @@
   "8b9f115784388b61",
   "418a91931047cecc",
   "de4d277c2d827d97",
+  "e979a258e0a7a737",
   "4959c9e24111e1e4",
   "41ed20a8cec5e591",
   "2aa378956ea76132",
@@ -52279,11 +52285,9 @@
   "b36ee151c6da4ebf",
   "32cfd9ef3704009d",
   "04dd9aeafd90d9b4",
-  "7ffa38b48cb85fdf",
-  "67ae6099beae1657",
-  "e979a258e0a7a737"
+  "7ffa38b48cb85fdf"
  ],
- "news_slow_at": 1795533556.3991406,
+ "news_slow_at": 1795533638.2740383,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -203783,6 +203787,73 @@
    ],
    "practice": false,
    "end": "10:19"
+  },
+  {
+   "id": "20261124102025585963",
+   "title": "Huddle: fast move: LEU moved -1.7% in 9 min",
+   "tickers": [
+    "LEU"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-24 10:20",
+   "msgs": [
+    {
+     "t": "10:20",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: LEU moved -1.7% in 9 min.",
+     "outcome": false
+    },
+    {
+     "t": "10:20",
+     "who": "investigator",
+     "to": "chief",
+     "text": "LEU is down about 2.7% today and the whole nuclear basket is about 9% below its 10-day average, so this looks like sector-wide weakness, not fresh company news. The only recent LEU headlines are an investor day and a fireside chat, which are scheduled, not market-moving surprises, and Russian-supply policy has been known for years. Nothing new to act on, so I agree with the Desk Chief that we sit out.",
+     "outcome": false,
+     "notes": "why: I checked the headlines and desk notes for LEU and the sector. The basket is well below its 10-day average, and the LEU news is routine or already known.\ndate: 2026-12-07\nticker: LEU\nwhat: Centrus Investor Day (scheduled, check for guidance or waiver updates)\nfiles read: LEU Snapshot, LEU Legal, SECTOR Uranium market"
+    },
+    {
+     "t": "10:20",
+     "who": "engineer",
+     "to": "investigator",
+     "text": "Agree with News Investigator: LEU's move is sector-wide weakness, with the whole basket about 9% below its 10-day average and no new company-specific news. I see no physical event at Centrus's enrichment plants or Russian supply change that would alter that, so I'm sitting out too.",
+     "outcome": false,
+     "notes": "date: 2026-12-07\nticker: LEU\nwhat: Centrus Investor Day (scheduled; check for guidance or contract updates)\nwhy: Centrus's operations and fuel-policy picture show nothing new physically, and the basket is in a sector-wide decline. Staying out fits the no-buy-while-basket-falls rule.\nfiles read: LEU Places and operations, LEU Deals and contracts, SECTOR Uranium market"
+    },
+    {
+     "t": "10:20",
+     "who": "macro",
+     "to": "chief",
+     "text": "I agree with News Investigator and Plant Engineer: LEU's drop looks like sector-wide weakness, since the whole basket is about 9% below its 10-day average and the recent LEU headlines are scheduled events, not new surprises. Nothing macro-specific changes that, and the sector pulse is negative, so I'd sit out. The Sprott trust is at a deep discount, which argues against buying the sector right now.",
+     "outcome": false,
+     "notes": "why: The whole basket is down and the Sprott trust premium is deeply negative, meaning investors are leaving uranium rather than rotating into it. Combined with the teammates' read that there's no company-specific news, a market-wide weakness signal means no new buy.\nfiles read: SECTOR Uranium market, LEU Snapshot"
+    },
+    {
+     "t": "10:20",
+     "who": "risk",
+     "to": "chief",
+     "text": "I agree with the team to sit out LEU. The basket is about 9% below its 10-day average, and under our rules no new buys are allowed while the whole group is falling, so the rule already decides this. I see no concrete reason to argue the other way, and LEU's level at $80.9 averaged nothing in our practice trades anyway.",
+     "outcome": false,
+     "notes": "why: The sector pulse is negative (basket -8.8% vs 10-day average), which blocks new buys by desk rule, and LEU's setup was already rejected on its history. Nothing new in the headlines or plant data overturns that.\nticker: LEU\ndirection: down\ndays: 3\nfiles read: SECTOR Uranium market"
+    },
+    {
+     "t": "10:20",
+     "who": "pm",
+     "to": "team",
+     "text": "I agree with the Risk Manager and the rest of the team: the whole nuclear basket is about 9% below its 10-day average, our rule bars new buys while the group is falling, and LEU's level has no track record in our practice trades. Nothing in the news or plant data changes that, so there is nothing to skip or exit; we simply hold off.",
+     "outcome": false,
+     "notes": "action: none\nreason: No open trades or waiting buys exist for LEU, so there is nothing to cancel or sell. The sector pulse is negative and the basket rule blocks new buys.\nwhy: I checked the sector pulse (basket -8.8% vs its 10-day average), the LEU snapshot (down 2.7% today, down 29% from its 50-day average), and the recent headlines, which are scheduled events, not new surprises. No action is needed, so the default is none.\nfiles read: SECTOR Uranium market, LEU Snapshot, SECTOR Plants and power news"
+    },
+    {
+     "t": "10:20",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "10:20"
   }
  ],
  "feed": [
@@ -206532,6 +206603,21 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-24 10:20",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: LEU moved -1.7% in 9 min. Checking the news for a reason.",
+   "tickers": [
+    "LEU"
+   ],
+   "art": {
+    "big": "LEU moved -1.7% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -206731,9 +206817,10 @@
   "fast move: TLN moved +1.6% in 9 min": 1795531699.1733294,
   "fast move: sector move: 4 of our nuclear stocks moving up together (CEG, NXE, TLN, UUUU)": 1795531699.1733296,
   "fast move: UEC moved -1.7% in 9 min": 1795533266.4380224,
-  "fast move: UUUU moved -1.6% in 9 min": 1795533542.648756
+  "fast move: UUUU moved -1.6% in 9 min": 1795533542.648756,
+  "fast move: LEU moved -1.7% in 9 min": 1795533625.5846615
  },
- "huddle_last": 1795533542.6487648,
+ "huddle_last": 1795533625.5846694,
  "huddle_log": [
   "2026-11-20",
   "2026-11-23",
@@ -206751,6 +206838,7 @@
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
+  "2026-11-24",
   "2026-11-24",
   "2026-11-24",
   "2026-11-24",
@@ -207130,7 +207218,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 10:19",
+  "updated": "2026-11-24 10:20",
   "total": 491,
   "week": 414,
   "places": {
@@ -209656,12 +209744,12 @@
    "built": "2026-11-24 09:56"
   }
  ],
- "heartbeat": "2026-11-24 10:19",
+ "heartbeat": "2026-11-24 10:20",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 238,
+ "_pushed_feed": 239,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -209811,8 +209899,8 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 112.58,
-  "TLN": 353.39
+  "BWXT": 112.43,
+  "TLN": 352.28
  },
  "notes_audit": {
   "scout": {
@@ -209874,8 +209962,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 31,
-   "used": 29,
+   "asked": 32,
+   "used": 30,
    "notes": {
     "BWXT Deals and contracts": 2,
     "BWXT Snapshot": 2,
@@ -209883,7 +209971,7 @@
     "BWXT Leadership and insiders": 2,
     "UEC Snapshot": 2,
     "UEC Deals and contracts": 1,
-    "SECTOR Uranium market": 9,
+    "SECTOR Uranium market": 10,
     "TLN Snapshot": 13,
     "TLN What history says": 3,
     "CCJ Snapshot": 1,
@@ -209894,8 +209982,8 @@
     "coming_up": 3,
     "NXE Snapshot": 2,
     "NXE Filings and company events": 1,
-    "LEU Snapshot": 1,
-    "LEU Legal": 1,
+    "LEU Snapshot": 2,
+    "LEU Legal": 2,
     "LEU Leadership and insiders": 1,
     "LEU What history says": 1,
     "LEU Deals and contracts": 1,
@@ -209920,14 +210008,14 @@
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 18,
-   "used": 18,
+   "asked": 19,
+   "used": 19,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 7,
     "BWXT Leadership and insiders": 1,
     "TLN Snapshot": 5,
-    "SECTOR Uranium market": 13,
+    "SECTOR Uranium market": 14,
     "BWXT Discoveries": 2,
     "UEC Snapshot": 3,
     "UEC Leadership and insiders": 1,
@@ -209938,13 +210026,15 @@
     "SECTOR Market backdrop": 1,
     "NXE Snapshot": 1,
     "SECTOR Plants now": 1,
-    "UUUU Snapshot": 1
+    "UUUU Snapshot": 1,
+    "LEU Snapshot": 1,
+    "SECTOR Plants and power news": 1
    },
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 15,
-   "used": 15,
+   "asked": 16,
+   "used": 16,
    "notes": {
     "SECTOR Reactors and power": 2,
     "CEG Places and operations": 8,
@@ -209953,8 +210043,8 @@
     "license_tracker": 3,
     "LEU Business": 3,
     "plants_now": 3,
-    "LEU Deals and contracts": 2,
-    "LEU Places and operations": 1,
+    "LEU Deals and contracts": 3,
+    "LEU Places and operations": 2,
     "NRC license tracker": 1,
     "power_deals_and_fuel_policy": 2,
     "VST Places and operations": 3,
@@ -209963,17 +210053,17 @@
     "plants_now: fleet status and open outages": 1,
     "desk_notes: CEG Places and operations": 1,
     "desk_notes: UUUU Places and operations": 1,
-    "SECTOR Uranium market": 3,
+    "SECTOR Uranium market": 4,
     "TLN Places and operations": 1,
     "UUUU Places and operations": 1
    },
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 36,
-   "used": 36,
+   "asked": 37,
+   "used": 37,
    "notes": {
-    "SECTOR Uranium market": 23,
+    "SECTOR Uranium market": 24,
     "BWXT Snapshot": 6,
     "CCJ Snapshot": 2,
     "UUUU Snapshot": 3,
@@ -209987,7 +210077,8 @@
     "CEG Snapshot": 3,
     "NXE Snapshot": 1,
     "plants_now": 1,
-    "UEC Snapshot": 1
+    "UEC Snapshot": 1,
+    "LEU Snapshot": 1
    },
    "since": "2026-11-23"
   },
@@ -210030,13 +210121,13 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 36,
-   "used": 36,
+   "asked": 37,
+   "used": 37,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 2,
     "BWXT Snapshot": 3,
-    "SECTOR Uranium market": 12,
+    "SECTOR Uranium market": 13,
     "TLN Snapshot": 21,
     "TLN Legal": 2,
     "BWXT Legal": 2,
@@ -210252,7 +210343,7 @@
    ],
    [
     "2026-11-24",
-    59.29
+    59.22
    ]
   ],
   "NXE": [
@@ -210374,7 +210465,7 @@
    ],
    [
     "2026-11-24",
-    6.63
+    6.61
    ]
   ],
   "UEC": [
@@ -210496,7 +210587,7 @@
    ],
    [
     "2026-11-24",
-    5.57
+    5.53
    ]
   ],
   "DNN": [
@@ -210618,7 +210709,7 @@
    ],
    [
     "2026-11-24",
-    1.72
+    1.71
    ]
   ],
   "UUUU": [
@@ -210740,7 +210831,7 @@
    ],
    [
     "2026-11-24",
-    4.89
+    4.88
    ]
   ],
   "LEU": [
@@ -210862,7 +210953,7 @@
    ],
    [
     "2026-11-24",
-    83.15
+    82.5
    ]
   ],
   "BWXT": [
@@ -210984,7 +211075,7 @@
    ],
    [
     "2026-11-24",
-    112.54
+    112.56
    ]
   ],
   "CEG": [
@@ -211106,7 +211197,7 @@
    ],
    [
     "2026-11-24",
-    247.25
+    246.71
    ]
   ],
   "VST": [
@@ -211228,7 +211319,7 @@
    ],
    [
     "2026-11-24",
-    120.75
+    120.36
    ]
   ],
   "TLN": [
@@ -211350,7 +211441,7 @@
    ],
    [
     "2026-11-24",
-    353.39
+    351.8
    ]
   ]
  },
@@ -211864,6 +211955,16 @@
    "price": 353.39,
    "result": null,
    "why": "TLN's debt story is a rehash of known leverage, and the URNM piece is pure technical commentary. The desk notes show TLN's signed AWS and CEG-style power deals historically lifted the stock over 20 da"
+  },
+  {
+   "role": "risk",
+   "ticker": "LEU",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-24",
+   "price": 82.5,
+   "result": null,
+   "why": "The sector pulse is negative (basket -8.8% vs 10-day average), which blocks new buys by desk rule, and LEU's setup was already rejected on its history. Nothing new in the headlines or plant data overt"
   }
  ],
  "after_sale": [],
@@ -213944,6 +214045,11 @@
    1795533542.648462,
    "UUUU",
    -1
+  ],
+  [
+   1795533625.5844555,
+   "LEU",
+   -1
   ]
  ],
  "auto_log": [],
@@ -214245,7 +214351,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 10:19",
+ "watchdog_last": "2026-11-24 10:20",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
