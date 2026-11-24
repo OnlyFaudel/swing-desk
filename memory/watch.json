@@ -496,6 +496,46 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy at $355.66 expires; check whether the PJM capacity auction delay decision is made and whether support at $354.24 holds",
+"by": "macro",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy at $355.66 expires; check whether support at $354.24 has held and whether the PJM capacity auction delay decision is made",
+"by": "risk",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Patient Levels window for the cancelled buy expires; check whether the PJM December capacity auction delay has been decided and whether the basket is back above its 10-day average before any new setup",
+"by": "pm",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "CEG",
+"what": "Check whether Salem 1 returns to service and whether the fleet running rate recovers toward 100%",
+"by": "engineer",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "CEG",
+"what": "Re-check basket vs 10-day average and whether the Patient Levels buy window and setup expiry still apply before any new entry.",
+"by": "pm",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",

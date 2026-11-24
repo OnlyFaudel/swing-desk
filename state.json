@@ -1030,18 +1030,6 @@
  },
  "news_feed": [
   {
-   "ticker": "BWXT",
-   "source": "Local intel: Internazionale (AUKUS and navies)",
-   "title": "Australia criticises US Congressional Budget Office over AUKUS comments",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNZC1fWmRYTnFyT0wxMHJ4cVMyX3c3LWZIeFBhaEpFT2VPLVJmS19tYkNHbUh6eHBrcjhtaTVhYy1ycmtmQi1rdUJ1Sno1aUtXcktkb0NkVVBpMk44UjB4dUI4bDBiaHJyMURpS0J3UEFMT2NHWHdOYjdRbXdCbjdPdnRQengzVXk1RFJhMTBuZmhrdHdzSWJqT042d2N0R0IzT0ZNcU1mTkdtNGF2OHJ6Xzd3cEk4c25tTzdicVlSeUZ6QmdfYWMxS20xZl9HN3Fn?oc=5",
-   "ts": 1795307582,
-   "materiality": 2,
-   "novelty": "follow_up",
-   "direction": "neutral",
-   "event_type": "policy_tariff",
-   "why": "AUKUS political sparring over CBO commentary; no new contract or funding."
-  },
-  {
    "ticker": "CCJ",
    "source": "Local intel: CASRAI (Europe new builds)",
    "title": "US and Poland Issue Seventh P-TEC Ministerial Joint Statement on Civil Nuclear and Grid Cooperation",
@@ -4028,6 +4016,18 @@
    "direction": "neutral",
    "event_type": "analyst",
    "why": "Generic Yahoo valuation piece on a recent pullback; no new company information."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News",
+   "title": "CEG Below the 50 and 200-Day SMAs: Is It a Buy or Hold Right Now? - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSFBUbjVxNDJqaFhNWHNDd3pnT1hXYmZqcE9PMmpJMEl2SlRKb3NEMzViWjdHZFVuUktMa3hfVUNiQUVLRGZ6TmdpVTljQk9fLUdibWh1cmRHNlVLcmRNbkc4aC1WMEV3S2wxcUJfZUxjaFpKWFlJT19yZnMtY09pNFVXSXI5WVBWN0pfOFVR?oc=5",
+   "ts": 1795526640,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic technical-analysis piece about moving averages; no new company information."
   }
  ],
  "reviews": [
@@ -5630,25 +5630,25 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.06414,
+  "day_usd": 0.07574,
   "month": "2026-11",
-  "month_usd": 0.79556,
-  "total_usd": 0.79556,
+  "month_usd": 0.80716,
+  "total_usd": 0.80716,
   "by_role": {
-   "macro": 0.06389,
+   "macro": 0.0669,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.04601,
-   "scout": 0.09159,
+   "scout": 0.09198,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.04325,
-   "risk": 0.05632,
-   "investigator": 0.18133,
+   "pm": 0.04671,
+   "risk": 0.05855,
+   "investigator": 0.18216,
    "postmortem": 0.00035,
    "researcher": 0.00704,
-   "engineer": 0.00967,
+   "engineer": 0.01135,
    "questioner": 0.05399
   }
  },
@@ -5745,20 +5745,20 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 60.23,
-  "NXE": 6.68,
-  "UEC": 5.67,
-  "DNN": 1.75,
-  "UUUU": 5.08,
-  "LEU": 84.3,
-  "BWXT": 113.52,
-  "CEG": 245.14,
-  "VST": 121.23,
-  "TLN": 353.11,
-  "SPY": 713.63,
-  "SSO": 59.65
+  "CCJ": 60.18,
+  "NXE": 6.69,
+  "UEC": 5.66,
+  "DNN": 1.74,
+  "UUUU": 5.03,
+  "LEU": 83.19,
+  "BWXT": 113.43,
+  "CEG": 246.69,
+  "VST": 121.15,
+  "TLN": 357.07,
+  "SPY": 715.44,
+  "SSO": 59.95
  },
- "last_cycle": "2026-11-24 09:35 ET",
+ "last_cycle": "2026-11-24 09:40 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -5783,10 +5783,10 @@
   ]
  },
  "brakes": {
-  "equity": 1010.98,
-  "day_pct": -1.8,
-  "week_pct": 1.05,
-  "drawdown_pct": -4.12,
+  "equity": 1008.61,
+  "day_pct": -2.03,
+  "week_pct": 0.81,
+  "drawdown_pct": -4.34,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -7156,6 +7156,22 @@
   [
    "2026-11-24 09:35",
    1010.98
+  ],
+  [
+   "2026-11-24 09:37",
+   1010.48
+  ],
+  [
+   "2026-11-24 09:38",
+   1007.92
+  ],
+  [
+   "2026-11-24 09:39",
+   1009.15
+  ],
+  [
+   "2026-11-24 09:40",
+   1008.61
   ]
  ],
  "nowcast": {
@@ -51662,7 +51678,7 @@
     0.8962
    ]
   },
-  "time": "2026-11-24 09:35"
+  "time": "2026-11-24 09:40"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -51842,6 +51858,7 @@
   "f16660c269a6613c",
   "12fc0c7a240e4fef",
   "52950daaafc92008",
+  "4ab58aca5fa3c3af",
   "e5b877975a222845",
   "27cae87b69d8c12f",
   "313a0e04a5719e86",
@@ -52057,7 +52074,7 @@
   "04dd9aeafd90d9b4",
   "7ffa38b48cb85fdf"
  ],
- "news_slow_at": 1795530863.0217843,
+ "news_slow_at": 1795531259.9397054,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -202947,6 +202964,124 @@
    ],
    "practice": false,
    "end": "09:36"
+  },
+  {
+   "id": "20261124093939442871",
+   "title": "Huddle: TLN (you asked us to watch it) moved +1.0% since we last looked",
+   "tickers": [
+    "TLN"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-24 09:39",
+   "msgs": [
+    {
+     "t": "09:39",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: TLN (you asked us to watch it) moved +1.0% since we last looked.",
+     "outcome": false
+    },
+    {
+     "t": "09:39",
+     "who": "macro",
+     "to": "chief",
+     "text": "This looks like a sector-wide move rather than TLN-specific: the whole basket is about 8% below its 10-day average and the VIX fear gauge is up sharply, so the market is risk-off. TLN's own 9.6% one-day jump came on a peer echo, not new company news, and the Level Analyst already skipped the setup. I'd stay out until the basket recovers above its average.",
+     "outcome": false,
+     "notes": "why: The basket sits well below its 10-day average and the fear gauge is elevated, which blocks new buys under our rule. TLN's jump appears to be a peer echo rather than stock-specific news, so I see no edge to add.\ndate: 2026-11-30\nticker: TLN\nwhat: Resting buy at $355.66 expires; check whether the PJM capacity auction delay decision is made and whether support at $354.24 holds\nfiles read: SECTOR Uranium market, SECTOR Government and laws, TLN Snapshot, VST Snapshot, CEG Snapshot"
+    },
+    {
+     "t": "09:39",
+     "who": "risk",
+     "to": "macro",
+     "text": "I agree with the Macro Analyst: TLN jumped 9.6% on a peer echo, not company news, and the basket is well below its 10-day average, so buying into this is catching a bounce in a falling sector. The planned resting buy at $355.66 is also priced off a support zone the Level Analyst says has not been clearly tested. I'd keep TLN on watch and not place anything.",
+     "outcome": false,
+     "notes": "why: The 9.6% day came from a peer move rather than TLN-specific news, and the Level Analyst already rejected the setup because the zone is not clearly tested. The basket is 8.3% below its 10-day average, which blocks new buys under our rules.\ndate: 2026-11-30\nticker: TLN\nwhat: Resting buy at $355.66 expires; check whether support at $354.24 has held and whether the PJM capacity auction delay decision is made\nfiles read: TLN Snapshot, TLN Discoveries"
+    },
+    {
+     "t": "09:39",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with the Macro Analyst and Risk Manager: TLN jumped 9.6% on a peer echo rather than company news, the basket sits about 8% below its 10-day average, and the Level Analyst already skipped the setup. There's no open position, so the only thing to do is keep the resting buy from filling in a falling sector; I'll cancel it rather than let it sit.",
+     "outcome": false,
+     "notes": "action: skip\nTLN\nreason: Basket is risk-off (about -8% vs 10-day average, VIX up), TLN's jump was a peer echo, and the support zone at 354.24 was never clearly tested. Cancelling the waiting buy at 355.66 avoids chasing a bounce in a falling sector.\nwhy: Checked the sector pulse (basket -8.29% vs its 10-day average, pulse down), the TLN snapshot (+9.6% day, 7.4% above its 50-day average), and the Level Analyst's skip. Buying into a falling sector after a peer-driven spike is the pattern our rules avoid.\nticker: TLN\ndirection: down\ndays: 5\ndate: 2026-11-30\nticker: TLN\nwhat: Patient Levels window for the cancelled buy expires; check whether the PJM December capacity auction delay has been decided and whether the basket is back above its 10-day average before any new setup.\nfiles read: SECTOR pulse, TLN Snapshot"
+    },
+    {
+     "t": "09:39",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:39"
+  },
+  {
+   "id": "20261124094044508684",
+   "title": "Huddle: fast move: CEG moved +1.5% in 8 min",
+   "tickers": [
+    "CEG"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-24 09:40",
+   "msgs": [
+    {
+     "t": "09:40",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: CEG moved +1.5% in 8 min.",
+     "outcome": false
+    },
+    {
+     "t": "09:40",
+     "who": "investigator",
+     "to": "chief",
+     "text": "CEG is up about 6% on the day, but the move is a bounce inside a downtrend: it's still 5% under its 50-day average and 9% lower over the week, and the basket is well below its average. The only fresh news is an NRC construction permit for a Texas reactor, which doesn't name CEG and is a sector story that's already public. Nothing here changes the picture, so I'd not chase the bounce.",
+     "outcome": false,
+     "notes": "why: I checked the desk's CEG notes, the recent headlines, and the sector pulse. The only new item (the NRC permit) is public and not CEG-specific, while the trend and basket gate remain negative.\nfiles read: CEG Snapshot, CEG Filings and company events, SECTOR Uranium market"
+    },
+    {
+     "t": "09:40",
+     "who": "engineer",
+     "to": "investigator",
+     "text": "I agree with the News Investigator: this CEG move is a bounce inside a downtrend, not news. Physically, the fleet is 95.8% running, with only Salem 1 down on a planned refuel that started in October and is normal for the season, so nothing new is breaking at the plants. The NRC Texas permit is a sector item that doesn't change CEG's output or contracts this week.",
+     "outcome": false,
+     "notes": "why: I checked the reactor status, open outages, and the recent headlines. Nothing physical has changed for CEG, so I see no reason to act on the bounce.\ndate: 2026-11-30\nticker: CEG\nwhat: Check whether Salem 1 returns to service and whether the fleet running rate recovers toward 100%\nfiles read: CEG Places and operations, plants_now, power_deals_and_fuel_policy"
+    },
+    {
+     "t": "09:40",
+     "who": "macro",
+     "to": "team",
+     "text": "I agree with the News Investigator and Plant Engineer: CEG's +1.5% pop is a bounce inside a downtrend, not a sector or macro signal. The whole basket is down about 8% versus its 10-day average and the VIX is near 27-30, so the market is shaky and a single-stock bounce doesn't tell us the fear is over. I'd not chase it.",
+     "outcome": false,
+     "notes": "why: Checked basket vs 10-day average (-8.3%), VIX level and the spread of sector ETFs; the sector is weak, not turning up. The bounce is a stock-level move, so no reason to act on it.\nfiles read: SECTOR Uranium market, SECTOR Government and laws, CEG Snapshot"
+    },
+    {
+     "t": "09:40",
+     "who": "risk",
+     "to": "team",
+     "text": "I agree with the team: CEG's move is a bounce inside a downtrend, and the basket is well below its 10-day average with VIX near 30. A new buy here would break the desk's own rule against buying while the basket is falling, so I'd stay flat. I'd also flag that the 'NRC permit' headline is not a CEG catalyst and the Black Friday and Monday seasonal pattern is weak for our names.",
+     "outcome": false,
+     "notes": "why: I checked the basket gate (-8.3% vs 10-day average, so no new buys), the fleet status (only Salem 1 down on a normal refuel), and the desk's Black Friday notes. Nothing in the data argues for chasing the bounce.\nticker: CEG\ndirection: down\ndays: 5\nfiles read: SECTOR Uranium market, CEG Snapshot, CEG Price behavior"
+    },
+    {
+     "t": "09:40",
+     "who": "pm",
+     "to": "risk",
+     "text": "Team agrees this CEG move is a bounce inside a downtrend, not new information, and the basket is well below its 10-day average with VIX near 30. Our rule says no new buys while the basket is falling, and I can't buy anyway, so there's nothing to cancel or sell. I'm standing pat and agree with the Risk Manager that staying flat is right.",
+     "outcome": false,
+     "notes": "action: none\nreason: No open position or waiting buy in CEG, so there is nothing to skip or exit. The basket gate is closed (sector -8.3% vs 10-day average, VIX near 30), and the only headline is a sector NRC permit that doesn't name CEG.\nwhy: I checked the CEG snapshot, sector pulse, and fleet status; the fleet is 95.8% running with only a normal planned refuel, and the 6% day move is a bounce below the 50-day average. No exit trigger, no skip needed, so the default is none.\ndate: 2026-11-30\nticker: CEG\nwhat: Re-check basket vs 10-day average and whether the Patient Levels buy window and setup expiry still apply before any new entry.\nfiles read: CEG Snapshot, SECTOR Market backdrop"
+    },
+    {
+     "t": "09:40",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:40"
   }
  ],
  "feed": [
@@ -205519,6 +205654,21 @@
    ],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-24 09:40",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: CEG moved +1.5% in 8 min. Checking the news for a reason.",
+   "tickers": [
+    "CEG"
+   ],
+   "art": {
+    "big": "CEG moved +1.5% in 8 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -205702,10 +205852,6 @@
  ],
  "huddle_trade_count": 1,
  "huddle_seen": {
-  "fast move: BWXT moved -1.5% in 5 min": 1795444651.6639452,
-  "fast move: CCJ moved -1.5% in 6 min": 1795444651.6639457,
-  "fast move: CEG moved -1.6% in 9 min": 1795444774.8832722,
-  "fast move: UEC moved -1.5% in 9 min": 1795444809.2604573,
   "fast move: NXE moved -1.6% in 9 min": 1795444862.9860013,
   "BWXT (you asked us to watch it) moved -1.1% since we last looked": 1795444862.9860015,
   "fast move: DNN moved -1.9% in 9 min": 1795444921.9854822,
@@ -205720,9 +205866,11 @@
   "BWXT is within 1.0% of its buy zone $115.83 but no order is resting": 1795459394.4680073,
   "fast move: UEC moved +1.7% in 9 min": 1795465010.8841233,
   "BWXT (you asked us to watch it) moved -2.1% since we last looked": 1795530959.0769582,
-  "TLN (you asked us to watch it) moved -3.3% since we last looked": 1795530959.0769587
+  "TLN (you asked us to watch it) moved -3.3% since we last looked": 1795530959.0769587,
+  "TLN (you asked us to watch it) moved +1.0% since we last looked": 1795531179.4415808,
+  "fast move: CEG moved +1.5% in 8 min": 1795531244.5072694
  },
- "huddle_last": 1795530959.076967,
+ "huddle_last": 1795531244.5072756,
  "huddle_log": [
   "2026-11-20",
   "2026-11-23",
@@ -205740,6 +205888,8 @@
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
+  "2026-11-24",
+  "2026-11-24",
   "2026-11-24"
  ],
  "event_memory": [
@@ -206110,7 +206260,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 09:35",
+  "updated": "2026-11-24 09:40",
   "total": 489,
   "week": 413,
   "places": {
@@ -208635,12 +208785,12 @@
    "built": "2026-11-24 09:25"
   }
  ],
- "heartbeat": "2026-11-24 09:35",
+ "heartbeat": "2026-11-24 09:40",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 211,
+ "_pushed_feed": 220,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -208790,13 +208940,13 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 113.52,
-  "TLN": 353.105
+  "BWXT": 113.43000030517578,
+  "TLN": 357.075
  },
  "notes_audit": {
   "scout": {
-   "asked": 116,
-   "used": 109,
+   "asked": 117,
+   "used": 110,
    "notes": {
     "TLN Deals and contracts": 5,
     "CCJ Deals and contracts": 30,
@@ -208804,7 +208954,7 @@
     "SECTOR Government and laws": 29,
     "UUUU Deals and contracts": 25,
     "SECTOR Countries": 24,
-    "CEG Deals and contracts": 16,
+    "CEG Deals and contracts": 17,
     "NXE Legal": 2,
     "NXE Deals and contracts": 5,
     "DNN Deals and contracts": 5,
@@ -208853,8 +209003,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 24,
-   "used": 22,
+   "asked": 25,
+   "used": 23,
    "notes": {
     "BWXT Deals and contracts": 2,
     "BWXT Snapshot": 2,
@@ -208862,7 +209012,7 @@
     "BWXT Leadership and insiders": 2,
     "UEC Snapshot": 1,
     "UEC Deals and contracts": 1,
-    "SECTOR Uranium market": 2,
+    "SECTOR Uranium market": 3,
     "TLN Snapshot": 12,
     "TLN What history says": 3,
     "CCJ Snapshot": 1,
@@ -208878,11 +209028,11 @@
     "LEU Leadership and insiders": 1,
     "LEU What history says": 1,
     "LEU Deals and contracts": 1,
-    "CEG Snapshot": 1,
+    "CEG Snapshot": 2,
     "CEG Deals and contracts": 1,
     "CEG What history says": 1,
     "CEG Leadership and insiders": 1,
-    "CEG Filings and company events": 1,
+    "CEG Filings and company events": 2,
     "VST Snapshot": 1,
     "VST Deals and contracts": 1,
     "VST What history says": 1,
@@ -208894,57 +209044,61 @@
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 9,
-   "used": 9,
+   "asked": 11,
+   "used": 11,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 5,
     "BWXT Leadership and insiders": 1,
-    "TLN Snapshot": 3,
+    "TLN Snapshot": 4,
     "SECTOR Uranium market": 7,
     "BWXT Discoveries": 2,
     "UEC Snapshot": 1,
     "UEC Leadership and insiders": 1,
     "TLN Deals and contracts": 1,
-    "TLN Discoveries": 1
+    "TLN Discoveries": 1,
+    "SECTOR pulse": 1,
+    "CEG Snapshot": 1,
+    "SECTOR Market backdrop": 1
    },
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 8,
-   "used": 8,
+   "asked": 9,
+   "used": 9,
    "notes": {
     "SECTOR Reactors and power": 2,
-    "CEG Places and operations": 3,
+    "CEG Places and operations": 4,
     "UEC Deals and contracts": 1,
     "UEC Places and operations": 1,
     "license_tracker": 3,
     "LEU Business": 3,
-    "plants_now": 2,
+    "plants_now": 3,
     "LEU Deals and contracts": 2,
     "LEU Places and operations": 1,
     "NRC license tracker": 1,
-    "power_deals_and_fuel_policy": 1,
+    "power_deals_and_fuel_policy": 2,
     "VST Places and operations": 1,
     "CEG Business": 1
    },
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 26,
-   "used": 26,
+   "asked": 28,
+   "used": 28,
    "notes": {
-    "SECTOR Uranium market": 14,
+    "SECTOR Uranium market": 16,
     "BWXT Snapshot": 6,
     "CCJ Snapshot": 2,
     "UUUU Snapshot": 2,
-    "SECTOR Government and laws": 21,
-    "TLN Snapshot": 18,
+    "SECTOR Government and laws": 23,
+    "TLN Snapshot": 19,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
     "CEG Legal": 1,
     "coming_up: PJM December capacity auction delay": 1,
-    "VST Snapshot": 1
+    "VST Snapshot": 2,
+    "CEG Snapshot": 2
    },
    "since": "2026-11-23"
   },
@@ -208987,14 +209141,14 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 26,
-   "used": 26,
+   "asked": 28,
+   "used": 28,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 2,
     "BWXT Snapshot": 2,
-    "SECTOR Uranium market": 7,
-    "TLN Snapshot": 18,
+    "SECTOR Uranium market": 8,
+    "TLN Snapshot": 19,
     "TLN Legal": 2,
     "BWXT Legal": 1,
     "BWXT Leadership and insiders": 1,
@@ -209004,8 +209158,10 @@
     "CCJ Price behavior": 1,
     "SECTOR Rules the bot follows from its discoveries": 1,
     "TLN Price behavior": 12,
-    "TLN Discoveries": 1,
-    "TLN Leadership and insiders": 7
+    "TLN Discoveries": 2,
+    "TLN Leadership and insiders": 7,
+    "CEG Snapshot": 1,
+    "CEG Price behavior": 1
    },
    "since": "2026-11-23"
   },
@@ -209200,7 +209356,7 @@
    ],
    [
     "2026-11-24",
-    60.23
+    60.28
    ]
   ],
   "NXE": [
@@ -209444,7 +209600,7 @@
    ],
    [
     "2026-11-24",
-    5.67
+    5.66
    ]
   ],
   "DNN": [
@@ -209566,7 +209722,7 @@
    ],
    [
     "2026-11-24",
-    1.74
+    1.75
    ]
   ],
   "UUUU": [
@@ -209688,7 +209844,7 @@
    ],
    [
     "2026-11-24",
-    5.07
+    5.03
    ]
   ],
   "LEU": [
@@ -209810,7 +209966,7 @@
    ],
    [
     "2026-11-24",
-    84.3
+    83.19
    ]
   ],
   "BWXT": [
@@ -209932,7 +210088,7 @@
    ],
    [
     "2026-11-24",
-    113.01
+    113.43
    ]
   ],
   "CEG": [
@@ -210054,7 +210210,7 @@
    ],
    [
     "2026-11-24",
-    245.14
+    246.98
    ]
   ],
   "VST": [
@@ -210176,7 +210332,7 @@
    ],
    [
     "2026-11-24",
-    121.24
+    121.45
    ]
   ],
   "TLN": [
@@ -210298,7 +210454,7 @@
    ],
    [
     "2026-11-24",
-    353.11
+    356.36
    ]
   ]
  },
@@ -210702,6 +210858,26 @@
    "price": 353.11,
    "result": null,
    "why": "The basket-below-10-day-average rule blocks new buys, and TLN's 9.6% one-day rally on a peer move makes the support level unreliable. BWXT has no valid level, so there is nothing to act on there eithe"
+  },
+  {
+   "role": "pm",
+   "ticker": "TLN",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-24",
+   "price": 354.47,
+   "result": null,
+   "why": "Checked the sector pulse (basket -8.29% vs its 10-day average, pulse down), the TLN snapshot (+9.6% day, 7.4% above its 50-day average), and the Level Analyst's skip. Buying into a falling sector afte"
+  },
+  {
+   "role": "risk",
+   "ticker": "CEG",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-24",
+   "price": 246.69,
+   "result": null,
+   "why": "I checked the basket gate (-8.3% vs 10-day average, so no new buys), the fleet status (only Salem 1 down on a normal refuel), and the desk's Black Friday notes. Nothing in the data argues for chasing "
   }
  ],
  "after_sale": [],
@@ -212645,6 +212821,11 @@
    1795530862.9321806,
    "UUUU",
    1
+  ],
+  [
+   1795531244.5070684,
+   "CEG",
+   1
   ]
  ],
  "auto_log": [],
@@ -212944,7 +213125,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 09:35",
+ "watchdog_last": "2026-11-24 09:40",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
