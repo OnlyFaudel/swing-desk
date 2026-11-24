@@ -523,7 +523,8 @@
   "questioner:2026-11-24:8": true,
   "notecheck:2026-11-24": true,
   "recent:2026-11-24": true,
-  "intraday_backfill": "2026-11-24"
+  "intraday_backfill": "2026-11-24",
+  "intraday:2026-11-24": true
  },
  "benchmark": {
   "shares": {
@@ -2427,30 +2428,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Cameco Corporation: Contracted Nuclear Demand Supports Long-Term Growth Amid Near-Term Cost Pressures - kalkine.com",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPR2F5c0lnY1ZmMWJkV0lYb1Rpd0o4RlVtTWtaa214ZVo0MEVQV0JuYU13eXkwMDh5a3lVNmlKdmtFcjdKUENRWHBmeU54Z3VSMG9laExYWnlIZGV5VzF6MnVuZktzMmlWVTAzb3FwcGtDRUxYM1NTUlpJbTZDdG1tMjRrdHY4VHhqVEIyd09adkNwZGdKRXJ5SzlLemF5NDlIWmtSS2xmdmxTb2MtV3d1QzhkeHhqZnJMckNkeUpaWTg4dEs5cVo3WDJFb3ZqaVV2S3c?oc=5",
-   "ts": 1795452075,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "BWXT",
-   "source": "Google News",
-   "title": "Why is BWX Technologies stock surging today? By Investing.com - Investing.com India",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQclFoc3dONDlEc2pTWkxGV0Y2OWM5Zk5qT01DeUVfZmVOR3dVVUhDZENpODhVQjRMRWdGZ1V6ODk3X0xEdzl6SlJOUE5tdDB3R284cDV1bDNmZ0pFb3V1YVNCREFFdGpPSktjOUNsOTFpT2I5c2dNbUJYRDFUYnYwaUdhRXZXb2JGdHYtNUFwY3ZHdl9KVm1fS3A3RExEa0FfaDVkUTBGWQ?oc=5",
-   "ts": 1795451993,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
   {
    "ticker": "CCJ",
    "source": "Google News: Westinghouse reactor",
@@ -5426,6 +5403,30 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic SEC 8-K filing headline with no disclosed content; the substance is unknown."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "Cameco Corporation: 12-Monats-Kursziel auf $112,51 gesenkt, Aufw\u00e4rtspotenzial von 83% - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1PMjlPQ0VFX0JtRmdhallXYm95cm82WDU4cEE1T0ozLXpKVDFpb1Jqb1piSmtOOHd1SkVZTEg2VW1iQS1LbE4wUko3czhBQW1oN0IwUWVZSEVRTHoxSlFQUjBsbzJ6WTZrOVFTZFhR?oc=5",
+   "ts": 1795548000,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Price target cut to $112.51 is an analyst recap; the cut itself is old news and the upside % is derived from the current price."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News",
+   "title": "Centrus Energy Corp.: 12-Monats-Kursziel auf $170,45 gesenkt, Aufw\u00e4rtspotenzial von 96% - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5YZ281MUNOQmdXcGhueGZhZHFKTkp5VlduOXh5WERhaWZaTWdnWWZwNl85WEtZSW03enNON05SVWtxcGU2bEN5aFQ3UzhDclRFWmltc1g4R2JoUHljcWQ1LTRVTl9MZUdMa1BXREJB?oc=5",
+   "ts": 1795548000,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Routine price-target cut from a TradingView recap; target still implies 96% upside."
   }
  ],
  "reviews": [
@@ -7176,16 +7177,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.31313,
+  "day_usd": 0.31404,
   "month": "2026-11",
-  "month_usd": 1.04455,
-  "total_usd": 1.04455,
+  "month_usd": 1.04546,
+  "total_usd": 1.04546,
   "by_role": {
    "macro": 0.09287,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.10967,
-   "scout": 0.12024,
+   "scout": 0.12115,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -7321,7 +7322,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-24 16:47 ET",
+ "last_cycle": "2026-11-24 16:57 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -54613,8 +54614,10 @@
   "b78359c4e74e2d63",
   "cf312da3056cac36",
   "44041d56f140e1b4",
+  "beef726d305ecaee",
   "4ab58aca5fa3c3af",
   "c527b52a6d387b5e",
+  "98254137294b157b",
   "19fb88d62a25326f",
   "f61fff1c8e93929e",
   "cb12badf9a3dbea8",
@@ -54643,8 +54646,8 @@
   "cdf09ab4dc83c609",
   "a2a8ee32597c7b50",
   "503a7ef14b3cb3d2",
-  "85342e1a4ce58044",
   "bbef828d764dbb47",
+  "85342e1a4ce58044",
   "ca2a5c0a1baa2527",
   "6f83643eaed2fbc3",
   "b98ba2f840724229",
@@ -54976,7 +54979,7 @@
   "c2a1739b2e369eff",
   "f2896a10ee94b15b"
  ],
- "news_slow_at": 1795556476.6214921,
+ "news_slow_at": 1795557102.9070253,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -211773,7 +211776,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 16:47",
+  "updated": "2026-11-24 16:57",
   "total": 530,
   "week": 439,
   "places": {
@@ -214355,7 +214358,7 @@
    "built": "2026-11-24 16:33"
   }
  ],
- "heartbeat": "2026-11-24 16:47",
+ "heartbeat": "2026-11-24 16:57",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -214515,11 +214518,11 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 181,
-   "used": 166,
+   "asked": 183,
+   "used": 168,
    "notes": {
     "TLN Deals and contracts": 9,
-    "CCJ Deals and contracts": 39,
+    "CCJ Deals and contracts": 40,
     "BWXT Deals and contracts": 26,
     "SECTOR Government and laws": 39,
     "UUUU Deals and contracts": 34,
@@ -214529,10 +214532,10 @@
     "NXE Deals and contracts": 9,
     "DNN Deals and contracts": 8,
     "BWXT Legal": 1,
-    "LEU Deals and contracts": 23,
+    "LEU Deals and contracts": 24,
     "UEC Deals and contracts": 3,
     "UUUU Legal": 17,
-    "SECTOR Uranium market": 2,
+    "SECTOR Uranium market": 3,
     "CCJ Legal": 7,
     "CEG Legal": 2,
     "VST Deals and contracts": 18,
@@ -220565,7 +220568,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 16:47",
+ "watchdog_last": "2026-11-24 16:57",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
