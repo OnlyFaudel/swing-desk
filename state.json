@@ -1256,30 +1256,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CEG",
-   "source": "Yahoo (XLU, related to CEG)",
-   "title": "3 Funds With Electric Utility Exposure As Data Center Power Outruns The Grid",
-   "link": "https://finance.yahoo.com/energy/articles/3-funds-electric-utility-exposure-120915255.html?.tsrc=rss",
-   "ts": 1795435755,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": null,
-   "why": "Generic fund-comparison piece; opinion, no new company-specific information"
-  },
-  {
-   "ticker": "UUUU",
-   "source": "Google News: \"Energy Fuels\" uranium",
-   "title": "Energy Fuels to Produce 1 Million Pounds of Uranium in Processing Campaign - www.marketscreener.com",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMUk3YVRxTTljR2RjU0Z1OHdtUkNWOFlmckpMbV92Y3pUakljalU5MFpWeGl0c0cyX19wNlVjN1dud1ZHMElXcHRnTHhmZnNoVWRDLTZGZFFiaXRzNEwwSVdnV24xMjNQRUtpbVRUZTJjN0JVTmtWN1VNckdHc0dlWlpkdXBQa0RYbkYybUNfRS1iYnMydkJoUmtNc0NpRW5wWFJXcmpadVU5dEo5alV0YkxyX1BDeFJWMERMSW5Bb3BYLXpyU3c?oc=5",
-   "ts": 1795435830,
-   "materiality": 5,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "supply",
-   "why": "Company production milestone of 1M lb uranium; meaningful but modest for multi-day move"
-  },
-  {
    "ticker": "UUUU",
    "source": "Yahoo Finance",
    "title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales",
@@ -4254,6 +4230,30 @@
    "direction": "down",
    "event_type": "other",
    "why": "A 3% drop on construction cost and cash updates is modest, and the desk's DNN history shows weak follow-through from news."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "Westinghouse Eyes Ontario Parts Deal With BWX - Wisevoter",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNYzZlWlh4MV9WVlBmbGt2NEdpdXR2OG9mSlR1QWt6M054NWpMNU5pN1NkUHIwbVRodXN6MHlUWnVZREdSWmhlSXhzT1Z1aW9tNEdvbEpBd2JqZkN4TU5EbmJDdzdDTjBkZnF2ZjNpQUVjYjJ4Y0pHd29TOE1rSG1NVTZWZ0lZeG1jeC0yMmhzY0x0N21VeUlJeC1oMzZ1T0RJOUE?oc=5",
+   "ts": 1795536476,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Headline is a vague 'eyes a deal' report, about a reactor parts maker, not uranium supply."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Yahoo Finance",
+   "title": "Can CEG's Improving Cash Flow Support Its Expanding Investment Plans?",
+   "link": "https://finance.yahoo.com/energy/articles/cegs-improving-cash-flow-support-150500837.html?.tsrc=rss",
+   "ts": 1795532700,
+   "materiality": 3,
+   "novelty": "follow_up",
+   "direction": "neutral",
+   "event_type": "earnings",
+   "why": "Cash flow growth headline on a known Calpine deal; mostly already priced in."
   }
  ],
  "reviews": [
@@ -5856,16 +5856,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.17147,
+  "day_usd": 0.17231,
   "month": "2026-11",
-  "month_usd": 0.90289,
-  "total_usd": 0.90289,
+  "month_usd": 0.90373,
+  "total_usd": 0.90373,
   "by_role": {
    "macro": 0.08201,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.05997,
-   "scout": 0.09969,
+   "scout": 0.10053,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5971,20 +5971,20 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 58.55,
-  "NXE": 6.55,
-  "UEC": 5.49,
+  "CCJ": 58.89,
+  "NXE": 6.58,
+  "UEC": 5.52,
   "DNN": 1.71,
-  "UUUU": 4.86,
-  "LEU": 83.16,
-  "BWXT": 111.67,
-  "CEG": 245.59,
-  "VST": 119.81,
-  "TLN": 349.51,
-  "SPY": 712.78,
-  "SSO": 59.5
+  "UUUU": 4.89,
+  "LEU": 83.63,
+  "BWXT": 111.89,
+  "CEG": 245.93,
+  "VST": 119.92,
+  "TLN": 349.85,
+  "SPY": 714.51,
+  "SSO": 59.8
  },
- "last_cycle": "2026-11-24 11:07 ET",
+ "last_cycle": "2026-11-24 11:18 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -6009,10 +6009,10 @@
   ]
  },
  "brakes": {
-  "equity": 999.74,
-  "day_pct": -2.89,
-  "week_pct": -0.08,
-  "drawdown_pct": -5.18,
+  "equity": 1002.91,
+  "day_pct": -2.58,
+  "week_pct": 0.24,
+  "drawdown_pct": -4.88,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -7690,6 +7690,42 @@
   [
    "2026-11-24 11:07",
    999.74
+  ],
+  [
+   "2026-11-24 11:09",
+   1000.67
+  ],
+  [
+   "2026-11-24 11:10",
+   1001.62
+  ],
+  [
+   "2026-11-24 11:11",
+   1001.67
+  ],
+  [
+   "2026-11-24 11:12",
+   1001.38
+  ],
+  [
+   "2026-11-24 11:13",
+   1000.43
+  ],
+  [
+   "2026-11-24 11:14",
+   999.72
+  ],
+  [
+   "2026-11-24 11:15",
+   999.62
+  ],
+  [
+   "2026-11-24 11:17",
+   1000.36
+  ],
+  [
+   "2026-11-24 11:18",
+   1002.91
   ]
  ],
  "nowcast": {
@@ -52196,7 +52232,7 @@
     0.8898
    ]
   },
-  "time": "2026-11-24 11:07"
+  "time": "2026-11-24 11:18"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -52275,6 +52311,7 @@
   "e62333d1078d965b",
   "22a45a3c7284120a",
   "15fecb83818a0949",
+  "f1f8a01f5b2d2080",
   "67ae0f09ed3add32",
   "31f128ea376aa942",
   "f800ab709c11fba9",
@@ -52483,6 +52520,7 @@
   "df371025b77dc13a",
   "a2a8ee32597c7b50",
   "cdf09ab4dc83c609",
+  "eb7027544ff02a6e",
   "844469477dae7bae",
   "3c0d3789a7b698e6",
   "2b8ac242c7c5754f",
@@ -52501,8 +52539,8 @@
   "9f2e45d00f1961dd",
   "7269a326a498bd44",
   "42e4688c154f3e5b",
-  "fe808fea77078dbb",
   "960af125712d07b2",
+  "fe808fea77078dbb",
   "bf01a2cc0277276c",
   "1b180f9c668466ea",
   "b78359c4e74e2d63",
@@ -52610,7 +52648,7 @@
   "04dd9aeafd90d9b4",
   "7ffa38b48cb85fdf"
  ],
- "news_slow_at": 1795536314.9761353,
+ "news_slow_at": 1795536960.8672302,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -207892,7 +207930,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 11:07",
+  "updated": "2026-11-24 11:18",
   "total": 501,
   "week": 422,
   "places": {
@@ -210422,12 +210460,12 @@
    "built": "2026-11-24 10:57"
   }
  ],
- "heartbeat": "2026-11-24 11:07",
+ "heartbeat": "2026-11-24 11:18",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 253,
+ "_pushed_feed": 256,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -210577,21 +210615,21 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 111.67,
-  "TLN": 349.51
+  "BWXT": 111.89,
+  "TLN": 349.85
  },
  "notes_audit": {
   "scout": {
-   "asked": 134,
-   "used": 124,
+   "asked": 136,
+   "used": 126,
    "notes": {
     "TLN Deals and contracts": 7,
-    "CCJ Deals and contracts": 34,
+    "CCJ Deals and contracts": 35,
     "BWXT Deals and contracts": 24,
     "SECTOR Government and laws": 33,
     "UUUU Deals and contracts": 29,
-    "SECTOR Countries": 26,
-    "CEG Deals and contracts": 18,
+    "SECTOR Countries": 27,
+    "CEG Deals and contracts": 19,
     "NXE Legal": 2,
     "NXE Deals and contracts": 6,
     "DNN Deals and contracts": 7,
@@ -211029,7 +211067,7 @@
    ],
    [
     "2026-11-24",
-    58.54
+    58.92
    ]
   ],
   "NXE": [
@@ -211151,7 +211189,7 @@
    ],
    [
     "2026-11-24",
-    6.55
+    6.59
    ]
   ],
   "UEC": [
@@ -211273,7 +211311,7 @@
    ],
    [
     "2026-11-24",
-    5.49
+    5.51
    ]
   ],
   "DNN": [
@@ -211517,7 +211555,7 @@
    ],
    [
     "2026-11-24",
-    4.86
+    4.89
    ]
   ],
   "LEU": [
@@ -211639,7 +211677,7 @@
    ],
    [
     "2026-11-24",
-    83.29
+    83.35
    ]
   ],
   "BWXT": [
@@ -211761,7 +211799,7 @@
    ],
    [
     "2026-11-24",
-    111.78
+    112.12
    ]
   ],
   "CEG": [
@@ -211883,7 +211921,7 @@
    ],
    [
     "2026-11-24",
-    245.65
+    245.95
    ]
   ],
   "VST": [
@@ -212005,7 +212043,7 @@
    ],
    [
     "2026-11-24",
-    120.08
+    119.79
    ]
   ],
   "TLN": [
@@ -212127,7 +212165,7 @@
    ],
    [
     "2026-11-24",
-    349.11
+    349.73
    ]
   ]
  },
@@ -215306,7 +215344,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 11:07",
+ "watchdog_last": "2026-11-24 11:18",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
