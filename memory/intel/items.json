@@ -15505,5 +15505,103 @@
 "tactical",
 "weapons"
 ]
+},
+{
+"id": "cda8fbdcb8858d7a",
+"date": "2026-11-24",
+"ts": 1795525475,
+"title": "Cosa Resources Identifies Significant Anomalies in Ambient Noise Tomography Survey at the Astro Uranium Project, Athabasca Basin, Saskatchewan",
+"summary": "",
+"outlet": "Junior Mining Network",
+"link": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxNdmwxR1pDbGp5cG4tYkJlWkpwUl81bGlfLVZFeU5jWXdPRENMX0x6V3pOdWRGUE5VbHVfM3NSYkxMVE15V21QM0phdjNUMmUzcnExZjVvZkhvNjYxWHdSRzZONTUtWG1TczYxODFSMnBWRTFTSkRRXzI3dWptaTVLMElOQUE4TnYtM2dlUk9xWm56Y0FlYTFMMmc4ZmlpeGJDVDNVX1F1NUVuSDdYQVBLVFhMeGI5NnpwcXA4X1BhXzd2SUkxYnQtYTBFQlJ4V0NVQzlNZGdEMkpJc21mTmlLVUg2c2ZNR21FdEpjTElBaHU2ZWZPdnlRcDV5aEJwdWFmVnJVV2NLRWtzaGZmMDZ6cHZveFRFUDdPb1h1ZmVFVnU0eEFGUEt5djJ6OXpaRlVLY25OVG5rcnZ3dlpCOG9mb0N2TXhUZ1lCN3RoQjlDclE5TUk?oc=5",
+"place": "Athabasca Basin",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.79,
+"score": 4.08,
+"echo_of": null,
+"w": [
+"ambient",
+"anomalies",
+"astro",
+"athabasca",
+"basin",
+"cosa",
+"identifies",
+"noise",
+"project",
+"resources",
+"saskatchewan",
+"significant",
+"survey",
+"tomography",
+"uranium"
+]
+},
+{
+"id": "f2896a10ee94b15b",
+"date": "2026-11-24",
+"ts": 1795525964,
+"title": "Energy Fuels targets 1Mlb uranium production campaign",
+"summary": "",
+"outlet": "www.mining-journal.com",
+"link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNc0tCV1NBN0JBOWxmckoxZ3JfYks2SHk1NkJDT05uLTJFOXRtVjA4VFRPUi0yN21YRlp3WjhNQ2lpZl9wbThwZ3o3UlpOdWkxYkVWOEQ0dG5fR1pSQjlLSC1LYmpLeTF4UlFxVmE4NWVaM0tFTXBLb0hianNYNW9MYnBRUk5XVE5vT3dKSnF0RkdoVEdMSS01aElHajdYYUJVNDBGc1ptSVJzWklJNzFpWnl2SjNvenBjSXl1dE9tZw?oc=5",
+"place": "Workers and jobs",
+"tickers": [
+"CCJ",
+"UUUU"
+],
+"tags": [
+"production"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.5,
+"score": 4.3,
+"echo_of": null,
+"w": [
+"1mlb",
+"campaign",
+"energy",
+"fuels",
+"production",
+"targets",
+"uranium"
+]
+},
+{
+"id": "96daf38a2007dab1",
+"date": "2026-11-24",
+"ts": 1795526460,
+"title": "NexGen Expands PCE High-Grade Mineralization in 2026 Drilling",
+"summary": "",
+"outlet": "TipRanks",
+"link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOelEzLXRGMzBWcHJDTC1ETlJZTFp2d1JEa1pSUWF6Q2F2a29BUU9ILVFab1I0aHd3TFhDSVIycVhlbXBYQnRJcGYySFptMk5uRm83TWhpeGszWVZLWDJodmoxNFpyalFva2x6b0o3U0pFUEJHb3NabVMzbGhxaC05b0hSdE1vM3FvS2VNTm5zcVZ1cV9TSmFJTlY1MzVHYVhOMHozTWxEbE1rMkwzYjJlXzIwRQ?oc=5",
+"place": "Rook I / Arrow",
+"tickers": [
+"NXE"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.75,
+"score": 3.0,
+"echo_of": null,
+"w": [
+"2026",
+"drilling",
+"expands",
+"grade",
+"high",
+"mineralization",
+"nexgen",
+"pce"
+]
 }
 ]
