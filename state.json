@@ -5412,10 +5412,10 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.44957,
+  "day_usd": 0.45191,
   "month": "2026-11",
-  "month_usd": 0.71305,
-  "total_usd": 0.71305,
+  "month_usd": 0.71539,
+  "total_usd": 0.71539,
   "by_role": {
    "macro": 0.05189,
    "whale": 0.01301,
@@ -5431,7 +5431,7 @@
    "postmortem": 0.00035,
    "researcher": 0.00704,
    "engineer": 0.00303,
-   "questioner": 0.04204
+   "questioner": 0.04438
   }
  },
  "desk_log": [
@@ -5539,7 +5539,7 @@
   "TLN": 365.03,
   "SPY": 722.39
  },
- "last_cycle": "2026-11-23 21:31 ET",
+ "last_cycle": "2026-11-23 21:41 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51657,6 +51657,7 @@
   "9289aefa04c45318",
   "63e7ca0ff352dff7",
   "1e6d0eb0e2b54116",
+  "e87b1e4d61fe1cbd",
   "b78da0f7db285dc2",
   "e25f2e7759aee0aa",
   "991c698e5a396dd1",
@@ -51671,8 +51672,7 @@
   "90b74f3afa03852f",
   "d4097d0d8db37e23",
   "591ad377f04357ca",
-  "eb0139f21af40690",
-  "e87b1e4d61fe1cbd"
+  "eb0139f21af40690"
  ],
  "news_slow_at": 1795487530.2712638,
  "officer": {
@@ -202194,6 +202194,25 @@
    ],
    "practice": false,
    "end": "21:31"
+  },
+  {
+   "id": "20261123214135968743",
+   "title": "The Questioner, Nov 23 21:41",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-23 21:41",
+   "msgs": [
+    {
+     "t": "21:41",
+     "who": "questioner",
+     "to": "risk",
+     "text": "The TLN resting buy at $355.66 is still live even though our own rule says no new buys while the basket is below its 10-day average, and nobody has explicitly re-approved it. The stock is now about 2.6% above that level, so the order may never fill, but if it does, it breaks our rule. The PJM capacity-auction delay decision, Talen's main earnings driver, also hasn't been confirmed by anyone. I'm not asking for a new question here, just for someone to own the order.",
+     "outcome": false,
+     "notes": "why: I checked the TLN snapshot: the stock closed at $365.03, up 9.6% on the day, about 5.6% below its 20-day high and about 7.4% above its 50-day average, with the basket still under its 10-day average. The rule is explicit, and the PJM delay question has been raised repeatedly without a source-backed answer, so I'm flagging ownership rather than repeating the question.\ndate: 2026-11-30\nticker: TLN\nwhat: Resting buy at $355.66 expires; confirm owner and whether it should be canceled under the no-new-buys rule\nfiles read: TLN Snapshot, TLN News, SECTOR Uranium market"
+    }
+   ],
+   "practice": false,
+   "end": "21:41"
   }
  ],
  "feed": [
@@ -204267,6 +204286,19 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 21:41",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: ",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -204783,7 +204815,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 21:32",
+  "updated": "2026-11-23 21:41",
   "total": 416,
   "week": 357,
   "places": {
@@ -205491,6 +205523,7 @@
   "096f1d51d1fb61ac",
   "b2e981fc7a2e7302",
   "06c0ff00fa161dd2",
+  "ed609e22ce9351ef",
   "15fecb83818a0949",
   "65144e58fd5c26e9",
   "f88ba68b2c94d1a7",
@@ -205505,8 +205538,7 @@
   "37e85b7a7ce58612",
   "88813f2311f7a1b2",
   "d4097d0d8db37e23",
-  "4039fa58057275ae",
-  "ed609e22ce9351ef"
+  "4039fa58057275ae"
  ],
  "panic_log": [
   {
@@ -205641,14 +205673,6 @@
    }
   },
   "watch": [
-   {
-    "date": "2026-12-09",
-    "ticker": "TLN",
-    "what": "FOMC rate decision and PJM December capacity auction timing; either can move the power-plant names sharply.",
-    "by": "level",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
    {
     "date": "2026-12-09",
     "ticker": "TLN",
@@ -206109,6 +206133,14 @@
     "date": "2029-01-01",
     "ticker": "CEG",
     "what": "Quad Cities reactor relicensing (per desk note); possible power-deal driver",
+    "by": "scout",
+    "written": "2026-11-23",
+    "surfaced": false
+   },
+   {
+    "date": "2029-01-01",
+    "ticker": "CEG",
+    "what": "Quad Cities reactors come up for NRC relicensing (approx. 2029)",
     "by": "scout",
     "written": "2026-11-23",
     "surfaced": false
@@ -207178,12 +207210,12 @@
    "built": "2026-11-23 21:32"
   }
  ],
- "heartbeat": "2026-11-23 21:31",
+ "heartbeat": "2026-11-23 21:41",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 177,
+ "_pushed_feed": 180,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -207505,11 +207537,11 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 17,
-   "used": 17,
+   "asked": 18,
+   "used": 18,
    "notes": {
-    "TLN Snapshot": 16,
-    "TLN News": 16,
+    "TLN Snapshot": 17,
+    "TLN News": 17,
     "coming_up": 4,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
@@ -207521,7 +207553,7 @@
     "SECTOR Market regime": 1,
     "desk_lessons_from_our_mistakes": 2,
     "TLN Ownership and analysts": 4,
-    "SECTOR Uranium market": 3
+    "SECTOR Uranium market": 4
    },
    "since": "2026-11-23"
   },
@@ -210386,7 +210418,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-23 21:31",
+ "watchdog_last": "2026-11-23 21:41",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
