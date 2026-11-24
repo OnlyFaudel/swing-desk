@@ -14163,5 +14163,133 @@
 "uranium",
 "wealth"
 ]
+},
+{
+"id": "b795024a5c2a60e9",
+"date": "2026-11-21",
+"ts": 1795265014,
+"title": "China Expands Nuclear Arsenal as Trump Warns of Rapid Pace",
+"summary": "",
+"outlet": "\u0648\u0631\u062f\u0646\u0627",
+"link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUEYxZUxkWUNkOUprZHlweWc1OUgwMWtGQkdFVjIySUJIclZhbGNNQ250WE5zQTU4TDdMMHhLcm9BWjF6ZVZVeDB5NnpDdTJWTXlRNTRLWGkySHd5Q3BPMExkVnVfeXNJc01oQ09WVE5SQkl0Wi1iTXdFcFB4N2ttZXMzOC1HbnpXVjlHaUloV0tsa0ZZUW9aZE9SVzNBM2l4cl9LOA?oc=5",
+"place": "Weapons programs",
+"tickers": [
+"BWXT",
+"LEU"
+],
+"tags": [
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.6,
+"score": 5.0,
+"echo_of": null,
+"w": [
+"arsenal",
+"china",
+"expands",
+"nuclear",
+"pace",
+"rapid",
+"trump",
+"warns"
+]
+},
+{
+"id": "a094238f3202d920",
+"date": "2026-11-24",
+"ts": 1795506321,
+"title": "Puma Energy Fuels FoodForward SA Food Deliveries",
+"summary": "",
+"outlet": "Wisevoter",
+"link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRnp1M0g0bnRyblhjVFYyLXNnMVpSbzBoS190NnJfVG5NRXRISjg1VmJjMWFqR2tpcTZlMFp1SWpNekppWmJGQTM2V0RBVWRZbHVPZWVKNWNEc25HN0FyV0FCaVVDaUxnbnBydXR6Mnd3bGZPZGZ2RnEwRGtpRUo2SE5reE5vamc?oc=5",
+"place": "Workers and jobs",
+"tickers": [
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.75,
+"score": 4.0,
+"echo_of": null,
+"w": [
+"deliveries",
+"energy",
+"food",
+"foodforward",
+"fuels",
+"puma"
+]
+},
+{
+"id": "f81c799cfd29db76",
+"date": "2026-11-24",
+"ts": 1795506858,
+"title": "Energy Fuels Targets Additional One Million Pounds of US Uranium Production",
+"summary": "",
+"outlet": "NucNet",
+"link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVVJvenNLOTIyWDc1UE50THdaWVFPVTBNaUdDRnBmbUNGT29keFp2YkNtSGpfbHJJU1dZaDI2Q1Z3UDFUWXdBcFlZUkZmbVJfRzdkaWg0LU9nRGRDTlh2T05zdFRXaDhWTURxMmptX1hmTW5tZzFNSlN5akJIT1U3RzYwLW05UFFzRklvSDhLb0ZERUZGZVE4UGdhQkpyYXdSV3FrTEVUQkxjemxEbzJpNWJRVQ?oc=5",
+"place": "White Mesa / Utah",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [
+"production"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.36,
+"score": 4.02,
+"echo_of": "1f0c92334f3206aa",
+"w": [
+"additional",
+"energy",
+"fuels",
+"million",
+"one",
+"pounds",
+"production",
+"targets",
+"uranium"
+]
+},
+{
+"id": "16345b7a70842227",
+"date": "2026-11-24",
+"ts": 1795505940,
+"title": "Share-Paid Stake Purchase Extends IsoEnergy's C$33.2 Million Uranium Holdings",
+"summary": "",
+"outlet": "Crux Investor",
+"link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVGJlNXZjV0M1TzlwYWsxWUk5bDNyRl9mR2ZZR2FEdEt4NTllcFBHcFVLYnVNTm4yNjRObWg4TnZucWR2WW9Kcm5wanU0WEVETW8yLUhjelNTaURQaGk4SUFfLWNMVkIyNHJfTjdocWZzdHM1YzJlbjE4dWhubEtqUk9jQnBuU3JmZ2w0Tk01TlFYTlZvSGM5MEFEQktuRThDRFdhUUVmVnpwWWZJa2xBSw?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [
+"$33.2 Million"
+],
+"local": true,
+"novelty": 0.85,
+"score": 4.7,
+"echo_of": null,
+"w": [
+"extends",
+"holdings",
+"isoenergy",
+"million",
+"paid",
+"purchase",
+"share",
+"stake",
+"uranium"
+]
 }
 ]

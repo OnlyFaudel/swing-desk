@@ -26654,5 +26654,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "BWXT",
+"date": "2026-11-21",
+"title": "China Expands Nuclear Arsenal as Trump Warns of Rapid Pace",
+"type": "intel_geopolitics",
+"source": "Intel: \u0648\u0631\u062f\u0646\u0627",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "LEU",
+"date": "2026-11-21",
+"title": "China Expands Nuclear Arsenal as Trump Warns of Rapid Pace",
+"type": "intel_geopolitics",
+"source": "Intel: \u0648\u0631\u062f\u0646\u0627",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]
