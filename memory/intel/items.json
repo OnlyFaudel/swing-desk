@@ -17121,5 +17121,67 @@
 "prepares",
 "reactor"
 ]
+},
+{
+"id": "43902d6121194e02",
+"date": "2026-11-23",
+"ts": 1795466329,
+"title": "Exelon Or Vistra: Which Fits Your Power Demand Bet?",
+"summary": "",
+"outlet": "Yahoo Finance",
+"link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPc3JyM1pyZDNPWEFUaFpEUkxNZkVBVWFHZ0VhUGxsODNfbTZGZ0pBWTVtLXdldXktTlpXdTNBdDR5RzFPUTE0cW1HZ1V3SlN6UkJSWU1aYjJBT2Z4ZXQ2dDNNZjZ2RUhOSDdsaVNmRGxJMXFfRDIzemRnZS1mSnZrZVdKelNoOVpnRC1TV0pfc25vdw?oc=5",
+"place": "Comanche Peak",
+"tickers": [
+"VST"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 1.5,
+"echo_of": "c5ba50cbcf752a4f",
+"w": [
+"bet",
+"demand",
+"exelon",
+"fits",
+"power",
+"vistra",
+"which",
+"your"
+]
+},
+{
+"id": "1bc8a335514e5e60",
+"date": "2026-11-24",
+"ts": 1795531799,
+"title": "Bishop John Arnold supports review of new treaty prohibiting nuclear weapons",
+"summary": "",
+"outlet": "Independent Catholic News",
+"link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5jcDQzZlVWbFZpbW5RMmNGeWQwMHA5a0ZhQ2p1QjZtUlE3TVNsVFlnZnRPZm0wNm12MlNYZVR2MHdhTjVqRnpwYlVoOUVWMWl3dzFNUA?oc=5",
+"place": "Weapons programs",
+"tickers": [
+"BWXT",
+"LEU"
+],
+"tags": [
+"defense"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.83,
+"score": 5.16,
+"echo_of": null,
+"w": [
+"arnold",
+"bishop",
+"john",
+"nuclear",
+"prohibiting",
+"review",
+"supports",
+"treaty",
+"weapons"
+]
 }
 ]
