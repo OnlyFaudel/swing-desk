@@ -981,18 +981,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Local intel: Koreabizwire (South Korea)",
-   "title": "South Korea Eases Regulatory Path for Next-Generation Nuclear Reactors",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSElacS1TUk4ybHM4a1d0bHhNR0dqZ3RhcDkwUnRSTkZMeGVhLUdxc1lTS21CMFFWS3liWld0bzlzNm9BNGVhQjZkX0RTMHo5dlhpQ01meVZMN3B6dWRKUW9uOWZuLWViMWNFd0xUMUt6czEwU01YTU9QV2JjTGgxTjdVdW0wazdWRnBfd3lfcDMwY1FGTkZqQzdNSmIzWXhJeDI4?oc=5",
-   "ts": 1795393712,
-   "materiality": 3,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "policy_tariff",
-   "why": "South Korean reactor licensing easing is a real policy shift but mostly indirect for Cameco."
-  },
-  {
    "ticker": "BWXT",
    "source": "Local intel: Menafn (AUKUS and navies)",
    "title": "Australia Dismisses AUKUS Submarine Production Concerns",
@@ -3979,6 +3967,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Commentary about Talen's debt load; related to CCJ only indirectly and not new information."
+  },
+  {
+   "ticker": "NXE",
+   "source": "Google News: \"NexGen Energy\"",
+   "title": "A uranium discovery spans 905 meters vertically and 678 meters along strike, NexGen reports. - Stock Titan",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOY2RhN1dEMnRwTHdlMlIwTzlkNEx3b1pPaklrRDhhTmdudVRjaHBaY1hybVZ0S3p1NFNBajkzM0xIMHBUVGxhYl9ocUR5NWlYckhpcWxhZ3VUd01vWGF3THhoZnZMbmlFc3JEc0QzemNyMklQODdIdnVIR3gtdXhyNGlKN1FaeEpYSXZldEphcWdBa0NxRTNlcVNHTldYR1VDa1h6ajJyNUk5UG1vQmJWWFcwejh0eXpCWDQ3bA?oc=5",
+   "ts": 1795519800,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Discovery geometry details; resource-size news is often already known and rehashed."
   }
  ],
  "reviews": [
@@ -5581,16 +5581,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.053,
+  "day_usd": 0.05344,
   "month": "2026-11",
-  "month_usd": 0.78442,
-  "total_usd": 0.78442,
+  "month_usd": 0.78486,
+  "total_usd": 0.78486,
   "by_role": {
    "macro": 0.06235,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.04182,
-   "scout": 0.08938,
+   "scout": 0.08982,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5709,7 +5709,7 @@
   "SPY": 722.39,
   "SSO": 61.17
  },
- "last_cycle": "2026-11-24 09:00 ET",
+ "last_cycle": "2026-11-24 09:11 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51899,6 +51899,7 @@
   "4627bda8dfc98062",
   "7bfa83a63debfd77",
   "33f4fae5acefd642",
+  "17938eb8e2e8c5e7",
   "5e042fd73e80d40b",
   "ca2a5c0a1baa2527",
   "f2896a10ee94b15b",
@@ -52000,7 +52001,7 @@
   "a7baf61adc01832c",
   "13880e66390f270d"
  ],
- "news_slow_at": 1795528721.3149068,
+ "news_slow_at": 1795529337.5910668,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -205904,7 +205905,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 09:01",
+  "updated": "2026-11-24 09:11",
   "total": 485,
   "week": 409,
   "places": {
@@ -206585,7 +206586,6 @@
   "7f7a05be6b3ac1f5",
   "9e7ebdf62031eeaf",
   "a9bcbfe54ba12f7e",
-  "ed609e22ce9351ef",
   "0ad3ea7bae8b611c",
   "16345b7a70842227",
   "b95ad295cbbaef38",
@@ -206598,6 +206598,7 @@
   "6aea49b49aa5bae7",
   "5178e5d1234a91bb",
   "61659cb80b158a77",
+  "a7baf61adc01832c",
   "c2a1739b2e369eff",
   "28eaa442b6a19a6f",
   "97e5a70ea6902e58",
@@ -206656,7 +206657,7 @@
   "f88ba68b2c94d1a7",
   "29f141fd08778bc3",
   "fe094eef9f0aabee",
-  "a7baf61adc01832c"
+  "ed609e22ce9351ef"
  ],
  "panic_log": [
   {
@@ -208418,12 +208419,12 @@
    "built": "2026-11-24 08:55"
   }
  ],
- "heartbeat": "2026-11-24 09:00",
+ "heartbeat": "2026-11-24 09:11",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 201,
+ "_pushed_feed": 209,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -208578,8 +208579,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 111,
-   "used": 104,
+   "asked": 112,
+   "used": 105,
    "notes": {
     "TLN Deals and contracts": 5,
     "CCJ Deals and contracts": 30,
@@ -208589,7 +208590,7 @@
     "SECTOR Countries": 23,
     "CEG Deals and contracts": 15,
     "NXE Legal": 2,
-    "NXE Deals and contracts": 4,
+    "NXE Deals and contracts": 5,
     "DNN Deals and contracts": 5,
     "BWXT Legal": 1,
     "LEU Deals and contracts": 16,
@@ -212573,7 +212574,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 09:00",
+ "watchdog_last": "2026-11-24 09:11",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
