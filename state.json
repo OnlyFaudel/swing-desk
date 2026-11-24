@@ -521,7 +521,8 @@
   "optmark:2026-11-24": true,
   "park:2026-11-24": true,
   "questioner:2026-11-24:8": true,
-  "notecheck:2026-11-24": true
+  "notecheck:2026-11-24": true,
+  "recent:2026-11-24": true
  },
  "benchmark": {
   "shares": {
@@ -2425,18 +2426,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "BWXT",
-   "source": "Google News: \"BWX Technologies\"",
-   "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal By Investing.com - Investing.com Australia",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWk9qbmJWdVdXc3VoLTRqWWFmUlVtS29yT1VRXzhWOTdYREl2Mk9qMFVKRzR3OHl5RE5WQjNTSVVObTkxT0VSYnZ0c216d0NxaHNuRGdTRVlROW9xUWR1TDE5b3pqOHo0UDM0YnJMOVlqb010czAtc2s2dWUzQU5rb1JyRWYxeEh2UTloUVJhXy0wOFhpNGthODFyZF9pdzFYME1ycVdfdXNXT2tOVC1yYjVwUHZGdw?oc=5",
-   "ts": 1795450486,
-   "materiality": 7,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "contract_deal",
-   "why": "Westinghouse AP1000 manufacturing deal is new, company-specific, and drove a stock surge."
-  },
   {
    "ticker": "BWXT",
    "source": "Google News",
@@ -5424,6 +5413,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Local mine cleanup milestone for a DISA Uranium site; not a Cameco-specific or supply-changing event."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News",
+   "title": "Talen Energy's $9.5B Debt: A Risk to Its Long-Term Growth Plans? - The Globe and Mail",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQNFlBdU10M25HN1ZFcC15eVc5ckpSZ3VpcTVVQ0lVZndzRU5vQkZKaTFzMzlTakNvR0ZPbEhTYTVHMHUzTDBiSElVdGlrYUJqc3Z2NnotaEtjdXBRSl9VQS1oQ2xKQUxEVVdsUXlpcWQ5WUlXNDdfd1UwZWtlYkNsblU3MTR0QlNpWVAyVkpidmhuTFhQUklVSVhyU3NsMHFlQmdSU09QY3UybHAxdkRrem1zQnZoRmNRSGlJZzNheWlONTBNbkZlellralg5VXVLMGJsZFQzZDhDb0U?oc=5",
+   "ts": 1795550945,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic debt-risk commentary on a known balance sheet; no new facts or dated catalyst."
   }
  ],
  "reviews": [
@@ -7174,16 +7175,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.31068,
+  "day_usd": 0.31105,
   "month": "2026-11",
-  "month_usd": 1.0421,
-  "total_usd": 1.0421,
+  "month_usd": 1.04247,
+  "total_usd": 1.04247,
   "by_role": {
    "macro": 0.09287,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.10967,
-   "scout": 0.11778,
+   "scout": 0.11815,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -7319,7 +7320,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-24 16:15 ET",
+ "last_cycle": "2026-11-24 16:26 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -54641,8 +54642,8 @@
   "cdf09ab4dc83c609",
   "a2a8ee32597c7b50",
   "503a7ef14b3cb3d2",
-  "85342e1a4ce58044",
   "bbef828d764dbb47",
+  "85342e1a4ce58044",
   "ca2a5c0a1baa2527",
   "b98ba2f840724229",
   "63e7ca0ff352dff7",
@@ -54771,6 +54772,7 @@
   "2ddc82c2b5215c74",
   "418a91931047cecc",
   "313a0e04a5719e86",
+  "a8cf3750b80937f0",
   "a9e4ab3bdf07e0a2",
   "97e9eff63229f754",
   "e3886df4b9b8827c",
@@ -54969,7 +54971,7 @@
   "c2a1739b2e369eff",
   "f2896a10ee94b15b"
  ],
- "news_slow_at": 1795554609.032347,
+ "news_slow_at": 1795555240.132757,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -211766,7 +211768,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 16:15",
+  "updated": "2026-11-24 16:26",
   "total": 528,
   "week": 440,
   "places": {
@@ -214347,12 +214349,12 @@
    "built": "2026-11-24 16:02"
   }
  ],
- "heartbeat": "2026-11-24 16:15",
+ "heartbeat": "2026-11-24 16:26",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 296,
+ "_pushed_feed": 297,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -214507,10 +214509,10 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 175,
-   "used": 161,
+   "asked": 176,
+   "used": 162,
    "notes": {
-    "TLN Deals and contracts": 7,
+    "TLN Deals and contracts": 8,
     "CCJ Deals and contracts": 39,
     "BWXT Deals and contracts": 26,
     "SECTOR Government and laws": 39,
@@ -214529,7 +214531,8 @@
     "CEG Legal": 2,
     "VST Deals and contracts": 17,
     "LEU Legal": 1,
-    "VST Legal": 1
+    "VST Legal": 1,
+    "TLN Legal": 1
    },
    "since": "2026-11-23"
   },
@@ -220556,7 +220559,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 16:15",
+ "watchdog_last": "2026-11-24 16:26",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -220937,5 +220940,57 @@
    ],
    "closed_today": []
   }
- ]
+ ],
+ "recent_view": {
+  "started": "2026-11-24",
+  "rules": {
+   "rsi2_dip": {
+    "what": "RSI(2) under 10 on one of our 10: buy the close, sell when RSI(2) goes over 70 or after 10 sessions (2019-26: 20.7%/yr)",
+    "closed": 0,
+    "open": 0,
+    "avg_pct": null,
+    "avg_vs_spy_pct": null,
+    "win_pct": null,
+    "t": null,
+    "candidate": false
+   },
+   "worst_week": {
+    "what": "Our 2 worst stocks over the last 5 days: buy the close, sell after 5 sessions (2019-26: 22.4%/yr, -62% worst drop)",
+    "closed": 0,
+    "open": 2,
+    "avg_pct": null,
+    "avg_vs_spy_pct": null,
+    "win_pct": null,
+    "t": null,
+    "candidate": false
+   },
+   "four_down": {
+    "what": "4 down closes in a row (our 10 + related stocks): buy the close, sell after 5 sessions (2019-26: 26.2%/yr on related)",
+    "closed": 0,
+    "open": 0,
+    "avg_pct": null,
+    "avg_vs_spy_pct": null,
+    "win_pct": null,
+    "t": null,
+    "candidate": false
+   },
+   "quarter_turn": {
+    "what": "Buy our 10 at a quarter's last close, sell 3 sessions later (2019-26: +1.56% vs S&P)",
+    "closed": 0,
+    "open": 0,
+    "avg_pct": null,
+    "avg_vs_spy_pct": null,
+    "win_pct": null,
+    "t": null,
+    "candidate": false
+   },
+   "momentum_switch": {
+    "what": "Each month hold our 10 instead of the S&P when their 12-month return beats the S&P's (2019-26: 41.2%/yr)",
+    "closed": 0,
+    "open": 0,
+    "avg_vs_spy_pct": null,
+    "now": "S&P"
+   }
+  }
+ }
 }

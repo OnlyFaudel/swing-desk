@@ -1,0 +1,29 @@
+{
+ "open": [
+  {
+   "rule": "worst_week",
+   "t": "UUUU",
+   "date": "2026-11-24",
+   "px": 5.13,
+   "spy": 718.5800170898438,
+   "hold": 5,
+   "days": 0
+  },
+  {
+   "rule": "worst_week",
+   "t": "LEU",
+   "date": "2026-11-24",
+   "px": 84.04,
+   "spy": 718.5800170898438,
+   "hold": 5,
+   "days": 0
+  }
+ ],
+ "closed": [],
+ "switch": {
+  "in_nuclear": false,
+  "months": [],
+  "decided": "2026-11-24"
+ },
+ "last_run": "2026-11-24"
+}
