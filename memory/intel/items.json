@@ -17215,5 +17215,100 @@
 "sec",
 "statements"
 ]
+},
+{
+"id": "98254137294b157b",
+"date": "2026-11-24",
+"ts": 1795548000,
+"title": "Centrus Energy Corp.: 12-Monats-Kursziel auf $170,45 gesenkt, Aufw\u00e4rtspotenzial von 96%",
+"summary": "",
+"outlet": "TradingView",
+"link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5YZ281MUNOQmdXcGhueGZhZHFKTkp5VlduOXh5WERhaWZaTWdnWWZwNl85WEtZSW03enNON05SVWtxcGU2bEN5aFQ3UzhDclRFWmltc1g4R2JoUHljcWQ1LTRVTl9MZUdMa1BXREJB?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [],
+"numbers": [
+"96%"
+],
+"local": false,
+"novelty": 0.82,
+"score": 3.64,
+"echo_of": null,
+"w": [
+"170",
+"auf",
+"aufw",
+"centrus",
+"energy",
+"gesenkt",
+"kursziel",
+"monats",
+"rtspotenzial",
+"von"
+]
+},
+{
+"id": "bb70a1f088013762",
+"date": "2026-11-24",
+"ts": 1795553881,
+"title": "Kazakhstan Signs New Uranium Supply Deal with India and China as Export Markets Expand",
+"summary": "",
+"outlet": "Construction Review",
+"link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQM2N3aVl3OXktOC1idEk2ZnY0TmlNdmI2ZGw1di1zajNZRWpoVS1OV00wcnNnYkprTFBwclNsNUFhUlhlZEtKMTQxVHVXcXdPZDRhZVJFUzdVUFUtazN6N1BUQ2ZnTENfcmp0UUpvRU1Fa0xFNF9ib3Y0c2dsM1lOd3pzNTNVRlE2UXN6ZzZtMTROdWNEZGI0ZktqM3BSRFQxUFdsNEZpQm9vdWZ2dm1wSnNod25iUGtUellJTk1ZUE9aUQ?oc=5",
+"place": "India",
+"tickers": [
+"CCJ"
+],
+"tags": [
+"contract",
+"politics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.82,
+"score": 6.44,
+"echo_of": null,
+"w": [
+"china",
+"deal",
+"expand",
+"export",
+"india",
+"kazakhstan",
+"markets",
+"signs",
+"supply",
+"uranium"
+]
+},
+{
+"id": "5c37ae2a5c6cc9a0",
+"date": "2026-11-24",
+"ts": 1795557920,
+"title": "Centrus Energy Announces Investor Day and Strategic Outlook",
+"summary": "",
+"outlet": "TipRanks",
+"link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWEFyVWJfWGFxeWVManBfYWZyRnVkSklVNm5kTTREV3ZQX1dOVEUza24xdWtPMm1McWdydzYxUTRCcHNpVFdrZEFTOXBnUHRWSGFKV2xobzNBR0x3aEVTUlB0MmVwc0JMY3I0X2RlOUJ3ZlVkWVJ6alUxbUlINDBnT3JTZGE0X0RFYTZIQUNxcFF1OHNrbmZydWNqbU04Y3Z5YVE5bWpyXzFWejFEZ044dg?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.58,
+"score": 2.66,
+"echo_of": null,
+"w": [
+"announces",
+"centrus",
+"day",
+"energy",
+"investor",
+"outlook",
+"strategic"
+]
 }
 ]
