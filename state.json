@@ -5412,12 +5412,12 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.45191,
+  "day_usd": 0.45898,
   "month": "2026-11",
-  "month_usd": 0.71539,
-  "total_usd": 0.71539,
+  "month_usd": 0.72246,
+  "total_usd": 0.72246,
   "by_role": {
-   "macro": 0.05189,
+   "macro": 0.05424,
    "whale": 0.01301,
    "crowd": 0.00849,
    "level": 0.03741,
@@ -5426,12 +5426,12 @@
    "auditor": 0.02993,
    "strategist": 0.11417,
    "pm": 0.03801,
-   "risk": 0.05026,
+   "risk": 0.05256,
    "investigator": 0.17659,
    "postmortem": 0.00035,
    "researcher": 0.00704,
    "engineer": 0.00303,
-   "questioner": 0.04438
+   "questioner": 0.0468
   }
  },
  "desk_log": [
@@ -5539,7 +5539,7 @@
   "TLN": 365.03,
   "SPY": 722.39
  },
- "last_cycle": "2026-11-23 21:41 ET",
+ "last_cycle": "2026-11-23 21:51 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51674,7 +51674,7 @@
   "591ad377f04357ca",
   "eb0139f21af40690"
  ],
- "news_slow_at": 1795487530.2712638,
+ "news_slow_at": 1795488716.9379942,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -202213,6 +202213,41 @@
    ],
    "practice": false,
    "end": "21:41"
+  },
+  {
+   "id": "20261123215149658637",
+   "title": "The Questioner, Nov 23 21:51",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-23 21:51",
+   "msgs": [
+    {
+     "t": "21:51",
+     "who": "questioner",
+     "to": "risk",
+     "text": "Our TLN resting buy at $355.66 is still live even though the basket is below its 10-day average, which our own rule forbids, and nobody has explicitly re-approved it. The stock closed about 2.6% above that level, so the order isn't even close to filling. I also haven't seen anyone confirm whether the PJM capacity-auction delay has been decided, which is Talen's main earnings driver, so the 9.6% bounce is hard to explain.",
+     "outcome": false,
+     "notes": "question: Who explicitly owns the TLN resting buy at $355.66 right now? If nobody re-approves it in writing, should it be canceled today instead of waiting for the Nov 30 expiry?\nwhy it might matter: The order sits about 2.6% below the close while the basket is still under its 10-day average, so our own no-new-buys rule says it should not be live.\nask: risk\nkind: odd\nquestion: Has the PJM December 2029/30 capacity-auction delay request been decided? Talen's earnings depend on it, and nobody has confirmed it.\nwhy it might matter: A 9.6% one-day jump on an undecided regulatory question needs an explanation, and the outcome could move the stock either way.\nask: macro\nkind: unexplained\nwhy: The TLN order and the basket rule conflict, and no one has claimed the order. The PJM decision is the stated earnings driver but no one has confirmed it.\ndate: 2026-11-30\nticker: TLN\nwhat: Resting buy at "
+    },
+    {
+     "t": "21:51",
+     "who": "risk",
+     "to": "questioner",
+     "text": "Nobody in the files explicitly owns or re-approved the TLN resting buy at $355.66, and our own rule says no new buys while the basket is under its 10-day average. Since it sits about 2.6% below a $365 close, it should not be live; I'd cancel it today rather than wait for the Nov 30 expiry, and the owner or PM should re-approve it in writing if they want it back. I agree with the Questioner that the order is stale and unowned, though the PJM capacity-auction question is a separate issue that still needs an answer.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: tell_owner\nwatch date: 2026-11-30\nwhy: The desk files show TLN closed at $365.03, about 2.6% above the resting buy, and the basket is still below its 10-day average, so the no-new-buys rule applies. No file records a written re-approval, so the order should be canceled or explicitly re-approved.\nfiles read: TLN Snapshot, TLN Price behavior"
+    },
+    {
+     "t": "21:51",
+     "who": "macro",
+     "to": "questioner",
+     "text": "I checked the desk files and the news, and nothing I can find confirms whether the PJM December 2029/30 capacity-auction delay request has been decided. The Talen 'pullback opportunity' headline doesn't settle it, so this stays an open regulatory question that could move TLN either way. I agree with the Risk Manager that it's worth tracking, but I'm not treating the 9.6% jump as explained.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: watch\nwatch date: 2026-12-01\nwhy: The desk's files and today's headlines contain no confirmation of the PJM delay decision; the only related item is a PJM consumer-advocate request to delay the auction, which is a request, not a ruling. Since Talen's earnings depend on it and the outcome is unknown, it belongs on the watch list until a decision is confirmed.\ndate: 2026-12-01\nticker: TLN\nwhat: Confirm whether the PJM December 2029/30 capacity-auction delay request has been decided; it is Talen's main earnings driver and a 9.6% bounce is unexplained without it.\nfiles read: TLN Snapshot, SECTOR Government and laws"
+    }
+   ],
+   "practice": false,
+   "end": "21:51"
   }
  ],
  "feed": [
@@ -204299,6 +204334,32 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 21:51",
+   "who": "questioner",
+   "kind": "alert",
+   "title": null,
+   "text": "Worth your attention: Who explicitly owns the TLN resting buy at $355.66 right now? If nobody re-approves it in writing, should it be canceled today instead of waiting for the Nov 30 expiry?\n\nRisk Manager: Nobody in the files explicitly owns or re-approved the TLN resting buy at $355.66, and our own rule says no new buys while the basket is under its 10-day average. Since it sits about 2.6% below a $365 close, it should not be live; I'd cancel it today rather than wait for the Nov 30 expiry, and the owner or PM should re-approve it in writing if they want it back. I agree with the Questioner that the order is stale and unowned, though the PJM capacity-auction question is a separate issue that still needs an answer.",
+   "tickers": [],
+   "art": {
+    "big": "Something we almost missed",
+    "sub": "The Questioner"
+   },
+   "thread": "20261123215149658637"
+  },
+  {
+   "t": "2026-11-23 21:51",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Who explicitly owns the TLN resting buy at $355.66 right now? If nobody re-approves it in writing, should it be canceled today instead of waiting for the Nov 30 expiry? -> relevant | Has the PJM December 2029/30 capacity-auction delay request been decided? Talen's earnings depend on it, and nobody has confirmed it. -> relevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -204815,7 +204876,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 21:41",
+  "updated": "2026-11-23 21:51",
   "total": 416,
   "week": 357,
   "places": {
@@ -207210,12 +207271,12 @@
    "built": "2026-11-23 21:32"
   }
  ],
- "heartbeat": "2026-11-23 21:41",
+ "heartbeat": "2026-11-23 21:51",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 180,
+ "_pushed_feed": 178,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -207451,15 +207512,15 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 21,
-   "used": 21,
+   "asked": 22,
+   "used": 22,
    "notes": {
     "SECTOR Uranium market": 11,
     "BWXT Snapshot": 4,
     "CCJ Snapshot": 2,
     "UUUU Snapshot": 2,
-    "SECTOR Government and laws": 17,
-    "TLN Snapshot": 14,
+    "SECTOR Government and laws": 18,
+    "TLN Snapshot": 15,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
     "CEG Legal": 1,
@@ -207496,14 +207557,14 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 23,
-   "used": 23,
+   "asked": 24,
+   "used": 24,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 2,
     "BWXT Snapshot": 2,
     "SECTOR Uranium market": 6,
-    "TLN Snapshot": 15,
+    "TLN Snapshot": 16,
     "TLN Legal": 2,
     "BWXT Legal": 1,
     "BWXT Leadership and insiders": 1,
@@ -207512,7 +207573,7 @@
     "UEC Leadership and insiders": 1,
     "CCJ Price behavior": 1,
     "SECTOR Rules the bot follows from its discoveries": 1,
-    "TLN Price behavior": 10,
+    "TLN Price behavior": 11,
     "TLN Discoveries": 1,
     "TLN Leadership and insiders": 6
    },
@@ -207537,17 +207598,17 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 18,
-   "used": 18,
+   "asked": 19,
+   "used": 19,
    "notes": {
-    "TLN Snapshot": 17,
-    "TLN News": 17,
+    "TLN Snapshot": 18,
+    "TLN News": 18,
     "coming_up": 4,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
     "BWXT Legal": 1,
     "CCJ Snapshot": 1,
-    "TLN Leadership and insiders": 15,
+    "TLN Leadership and insiders": 16,
     "CCJ Legal": 1,
     "TLN Legal": 3,
     "SECTOR Market regime": 1,
@@ -209726,6 +209787,24 @@
    "answer": "I checked the files on Brad Berryman's Nov 17 TLN sale. The desk notes show it as a sale at $345-365 per share, but they don't say whether it was planned under a 10b5-1 plan or made on the open market, so I can't confirm which. It's real selling, and it's one COO sale in a larger net-selling picture, so it's worth tracking but not enough to change our TLN order by itself.",
    "verdict": "unsure",
    "action": "research"
+  },
+  {
+   "t": "2026-11-23 21:51",
+   "question": "Who explicitly owns the TLN resting buy at $355.66 right now? If nobody re-approves it in writing, should it be canceled today instead of waiting for the Nov 30 expiry?",
+   "kind": "odd",
+   "asked": "risk",
+   "answer": "Nobody in the files explicitly owns or re-approved the TLN resting buy at $355.66, and our own rule says no new buys while the basket is under its 10-day average. Since it sits about 2.6% below a $365 close, it should not be live; I'd cancel it today rather than wait for the Nov 30 expiry, and the owner or PM should re-approve it in writing if they want it back. I agree with the Questioner that the order is stale and unowned, though the PJM capacity-auction question is a separate issue that still needs an answer.",
+   "verdict": "relevant",
+   "action": "tell_owner"
+  },
+  {
+   "t": "2026-11-23 21:51",
+   "question": "Has the PJM December 2029/30 capacity-auction delay request been decided? Talen's earnings depend on it, and nobody has confirmed it.",
+   "kind": "unexplained",
+   "asked": "macro",
+   "answer": "I checked the desk files and the news, and nothing I can find confirms whether the PJM December 2029/30 capacity-auction delay request has been decided. The Talen 'pullback opportunity' headline doesn't settle it, so this stays an open regulatory question that could move TLN either way. I agree with the Risk Manager that it's worth tracking, but I'm not treating the 9.6% jump as explained.",
+   "verdict": "relevant",
+   "action": "watch"
   }
  ],
  "reactor_view": {
@@ -210418,7 +210497,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-23 21:41",
+ "watchdog_last": "2026-11-23 21:51",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
