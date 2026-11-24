@@ -1624,6 +1624,66 @@ def sharp_drop_check(st, ex, prices, today, brk_state, now):
         notify("Sharp-drop rebound", "Bought " + "; ".join(bought), tags="chart_with_upwards_trend")
 
 
+def signal_trades(st, ex, prices, today, brk_state, now):
+    """Two outside-data signals that held up 2008-2026 (research/trial_ledger.json: cross_market_signals):
+    - AI power day: NVIDIA up 6%+ today -> buy the power trio (CEG, VST, TLN) near the close, sell after 5 sessions.
+      Beat the S&P by +1.4% (2019-22) and +1.3% (2023-26) over normal; VST did the same 2016-18; bigger jumps, bigger effect.
+    - Fear fading: VIX above 30 and down 2 days in a row -> buy our lineup near the close, sell after 20 sessions.
+      Beat the S&P by +6.3% (2008-18) and +4.9% (2019-26) vs normal 20-day stretches. Rare: a few times a year."""
+    cfg = CFG.get("signal_trades", {})
+    if not cfg.get("enabled") or not (dt.time(15, 40) <= market.cclock(now) <= dt.time(15, 56)) or st["flags"].get(f"signals:{today}"):
+        return
+    st["flags"][f"signals:{today}"] = True
+    if brk_state.get("no_new_today") and not unleashed():
+        return
+    import yfinance as yf
+    book = st["book"]
+
+    def today_move(sym):
+        h = yf.download(sym, period="15d", auto_adjust=True, progress=False)["Close"].dropna().squeeze()
+        past = h[[x.date() < today for x in h.index]]
+        now_px = float(h.iloc[-1]) if h.index[-1].date() == today else float(yf.Ticker(sym).fast_info["last_price"])
+        return now_px, past
+
+    def buy_basket(tickers, pct_total, setup, days, why):
+        tickers = [t for t in tickers if prices.get(t) and (book["lots"].get(t, {}).get("auto") or {}).get("qty", 0) <= 1e-6]
+        if not tickers:
+            return []
+        each = min(brk_state["equity"] * pct_total / 100, spendable(st, today)) / len(tickers)
+        out = []
+        exit_on = sessions_after(str(today), days)
+        for t in tickers:
+            if each >= 5 and ex.buy_market(t, each, prices[t], "au", {"setup": setup, "by": "rule", "exit_on": exit_on, "days": days, "why": why}, setup):
+                out.append(t)
+        return out
+    msgs = []
+    try:
+        px, past = today_move("NVDA")
+        mv = px / float(past.iloc[-1]) - 1
+        if mv >= cfg.get("nvda_jump_pct", 6) / 100:
+            got = buy_basket(["CEG", "VST", "TLN"], cfg.get("ai_power_pct", 15), "ai_power", 5,
+                             f"NVIDIA {mv * 100:+.1f}% today. After 6%+ NVIDIA days the power stocks beat the S&P by about 1.3% over the next week (2016-2026).")
+            if got:
+                msgs.append(f"AI power day: NVIDIA {mv * 100:+.1f}%, bought {', '.join(got)} for 5 sessions")
+    except Exception as e:
+        print("ai power signal", e)
+    try:
+        vx, past = today_move("^VIX")
+        last_ff = st.get("fear_fade_last") or "2000-01-01"
+        if len(past) >= 2 and vx > cfg.get("vix_level", 30) and vx < float(past.iloc[-1]) < float(past.iloc[-2]) and \
+                (dt.date.fromisoformat(last_ff) + dt.timedelta(days=28)) <= today:
+            got = buy_basket(list(T), cfg.get("fear_fade_pct", 20), "fear_fade", 20,
+                             f"VIX {vx:.1f} and falling 2 days in a row: fear is fading. Our stocks beat the S&P by about 5-6% over the next 20 sessions after this (2008-2026).")
+            if got:
+                st["fear_fade_last"] = str(today)
+                msgs.append(f"Fear fading: VIX {vx:.1f} and falling, bought {', '.join(got)} for 20 sessions")
+    except Exception as e:
+        print("fear fade signal", e)
+    if msgs:
+        feed.post("macro", ". ".join(msgs) + ".", kind="trade", art={"big": "Signal trade", "sub": msgs[0][:80]})
+        notify("Signal trade", "; ".join(msgs), tags="satellite")
+
+
 def auto_check(st, desk, ex, data, prices, today, brk_state, now):
     cfg = CFG.get("auto_trade", {})
     if not cfg.get("enabled"):
@@ -1638,7 +1698,7 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
             if L.get("target") and px >= L["target"]:
                 ex.exit_panic(t, px, f"conviction trade: target ${L['target']} hit", kind="auto", tag="aux"); continue
         if L.get("qty", 0) > 1e-6 and L.get("setup") != "sharp_drop" and L.get("exit_on") and (str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late)):
-            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{ {'conviction': 'conviction', 'year_end': 'year-end bounce', 'uranium_momentum': 'uranium momentum'}.get(L.get('setup'), 'discovery') } trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
+            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{ {'conviction': 'conviction', 'year_end': 'year-end bounce', 'uranium_momentum': 'uranium momentum', 'ai_power': 'AI power day', 'fear_fade': 'fear fading'}.get(L.get('setup'), 'discovery') } trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
     if not (dt.time(15, 30) <= market.cclock(now) <= dt.time(15, 58)) or st["flags"].get(f"auto:{today}"):
         return
     st["flags"][f"auto:{today}"] = True
@@ -2944,6 +3004,7 @@ def cycle(st, desk, br, ex, force=()):
             panic_check(st, desk, ex, data, prices, today, brk_state, now, force="panic" in force)
             auto_check(st, desk, ex, data, prices, today, brk_state, now)
             sharp_drop_check(st, ex, prices, today, brk_state, now)
+            signal_trades(st, ex, prices, today, brk_state, now)
             seasonal_check(st, ex, data, prices, today, now)
             process_fills(st, br, ex, today)
             park_check(st, ex, prices, today, now)

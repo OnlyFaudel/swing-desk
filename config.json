@@ -551,5 +551,13 @@
     "min_price": 3,
     "min_dollar_volume": 5000000,
     "note": "Any-day rebound after a 15%+ fall over 5 sessions (nuclear + related). Research 2026-11-23: beat the S&P by +0.84%/trade 2008-18 and +1.09% 2019-26, about 1 trade a week."
+  },
+  "signal_trades": {
+    "enabled": true,
+    "nvda_jump_pct": 6,
+    "ai_power_pct": 15,
+    "vix_level": 30,
+    "fear_fade_pct": 20,
+    "note": "AI power day (NVIDIA +6% -> CEG/VST/TLN for 5 sessions) and fear fading (VIX>30 down 2 days -> lineup for 20 sessions). Research 2026-11-23: cross_market_signals."
   }
 }
