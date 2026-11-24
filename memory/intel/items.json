@@ -14995,5 +14995,350 @@
 "nxe",
 "sec"
 ]
+},
+{
+"id": "61659cb80b158a77",
+"date": "2026-11-23",
+"ts": 1795471131,
+"title": "ENERGY FUELS INC. INVESTIGATION: UUUU Securities Investors",
+"summary": "",
+"outlet": "GlobeNewswire",
+"link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOT0Z3dzNuWmo4WXpIRzFkNjc0VVJ4eEh2TEtKdzRVRmpMT0hlYVdnZ1VQMk9FV0lVZjl3ZU0za3hCaGFNclJTM1FiM3NhOHFpdXU4Wk1fUk5NcjFJTGFEYUZfNGdsZHFPWFdUU21JY3dpcVdfaGhneGtDZHBZTzNORWlVNmtjbFVBV2t1VzYtakR1Wk1iTmtmMjBieWRkYXd1d25TY2hBZnpicmltMzc2RHpTNmoxbEdEUXpBbzQxb2VWOTk0ZVljdUZNUzJTajlXbWNhelExc3ZEaWJJZG9BZlV5LW5KbjNldXdRSU9IVnNiWHVwSFRJY3ljMXJ6ZEgtNExTTHJsMHBCdXVlUjVQSkFOMzRnSm9qbXNR?oc=5",
+"place": "Lawsuits and investigations",
+"tickers": [
+"UUUU"
+],
+"tags": [
+"legal"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.73,
+"score": 5.46,
+"echo_of": null,
+"w": [
+"energy",
+"fuels",
+"investigation",
+"investors",
+"securities",
+"uuuu"
+]
+},
+{
+"id": "b95ad295cbbaef38",
+"date": "2026-11-24",
+"ts": 1795506515,
+"title": "EDF to supply about 220 MW of nuclear power to Elyse Energy's electric refinery",
+"summary": "",
+"outlet": "energynews.pro",
+"link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSi1zRUlPbE5LcVlfd0d2SWdBb3JHTk1VZUtZZWYydkI2YXM5NkVrZ3FsNTJKQ2JvMDdDVU1jQ1lfN0lyN1RuTTV5VXE1Wkp1YXNSem9iNDBZZDU5TUZudDZ1eUVWYWR6UjlzcF83U0tPVi1Zc0ljQzBqYVBWcFUtSVp2UU5DQlo3cWpYMENTcUZOMlEwbjVBZUNJb3ZUT1cwYmZVdFY2Yw?oc=5",
+"place": "France and UK",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [
+"220 MW"
+],
+"local": true,
+"novelty": 0.77,
+"score": 4.54,
+"echo_of": null,
+"w": [
+"220",
+"edf",
+"electric",
+"elyse",
+"energy",
+"nuclear",
+"power",
+"refinery",
+"supply"
+]
+},
+{
+"id": "fe094eef9f0aabee",
+"date": "2026-11-24",
+"ts": 1795515769,
+"title": "White Mesa mill to resume processing as US uranium production falls",
+"summary": "The USA's production of uranium for the third quarter of 2026 fell by 78% reflecting the suspension of uranium processing at Energy Fuels' White Mesa mill - but the company is planning a large-scale processing campaign for the first quarter of 2027, as well as advancing several mining projects.",
+"outlet": "World Nuclear News",
+"link": "https://www.world-nuclear-news.org/articles/white-mesa-mill-to-resume-processing-as-us-uranium-production-falls",
+"place": "World Nuclear News",
+"tickers": [
+"CCJ",
+"UUUU"
+],
+"tags": [
+"production"
+],
+"numbers": [
+"78%"
+],
+"local": true,
+"novelty": 0.69,
+"score": 5.18,
+"echo_of": null,
+"w": [
+"falls",
+"mesa",
+"mill",
+"processing",
+"production",
+"resume",
+"uranium",
+"white"
+]
+},
+{
+"id": "fe0239e8c69f7365",
+"date": "2026-11-24",
+"ts": 1795518632,
+"title": "Energy Fuels (TSX:EFR) Targets 1 Million Pounds Of U3O8 At White Mesa Mill",
+"summary": "",
+"outlet": "Yahoo Finance",
+"link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdlA1bmJOZEZueGo0aWFVR3JnejhoeHh6ZjY0d0RlRVlLRzZZOTU4Z1luOE5vSDQxbWxReEttVDFHWjBFaWhfRkE2MnAtcXB1ZjFCNHFOZUwyMUF6aGJ6ZFlCSmdFLUFHVDl2TTJpbFRBamZuVERpTkJPSlNVaC00czFySGpkd1E4TjdIT25n?oc=5",
+"place": "Rare earths (Energy Fuels)",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [
+"production"
+],
+"numbers": [
+"1 Million"
+],
+"local": false,
+"novelty": 0.46,
+"score": 3.72,
+"echo_of": null,
+"w": [
+"efr",
+"energy",
+"fuels",
+"mesa",
+"mill",
+"million",
+"pounds",
+"targets",
+"tsx",
+"u3o8",
+"white"
+]
+},
+{
+"id": "0412c05c3a33b92d",
+"date": "2026-11-24",
+"ts": 1795518687,
+"title": "Posiva completes test transport at encapsulation plant",
+"summary": "Finnish radioactive waste management company Posiva has successfully completed first test transport of the transfer cask for used nuclear fuel to the encapsulation plant at Olkiluoto.",
+"outlet": "World Nuclear News",
+"link": "https://www.world-nuclear-news.org/articles/posiva-completes-test-transport-at-encapsulation-plant",
+"place": "World Nuclear News",
+"tickers": [],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.91,
+"score": 2.82,
+"echo_of": null,
+"w": [
+"completes",
+"encapsulation",
+"plant",
+"posiva",
+"test",
+"transport"
+]
+},
+{
+"id": "b5cc93f097618cf0",
+"date": "2026-11-24",
+"ts": 1795518786,
+"title": "Centrus Energy Stock Gets Oklo HALEU Supply Deal Backed By Meta",
+"summary": "",
+"outlet": "Simply Wall St",
+"link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWWdLblRJY3RtM2xIYkRSeE1KQ0xHX3ZXN0dJbDlkdUs3YVVQMDJvQkZqNkl3ZnNKajFRVVloakR1WUxFQUVZZGJ3YkdMS2F4U1d0c1QyV0ViZVBfalRCVmVlQm1QSGhheW1JQ0wzenlQWk9ZZmtFQ29WR3FTbmlrX1FSdlJxUUdzaEd5Q2xzNjBLSWpDd1llZHVLQ3Zfa2RjalF5azZJTzc2bmlRdUZoNWl4QUY2QWwtb09HWVRwai1xaDN1YlFn0gHMAUFVX3lxTE92VFBzeGY3RTZQNHJIOUg3dTF4MnA5RzZzWEJJbzBtcC1fRmdCeDBMRkJxNVZrRVI4bGVVREZFR1kxaXNleWdIN052VVlnejZ4YXRvekdCSDNGZjJPNjFWc29mYXhuRXdzdUozdWZqemk3UEtYSzNGaTljOXRnX3BnZXVreHB4NVFocmdaWDhMaDJqYTRIdjNPT1M5d2tUQ3htWV9mX29fNllscjFGNnVRODQ4Q3ZkcmY2QkFlMzBtTm1Udi1MWVRvZ1RsSg?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [
+"contract"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.64,
+"score": 4.08,
+"echo_of": null,
+"w": [
+"backed",
+"centrus",
+"deal",
+"energy",
+"gets",
+"haleu",
+"meta",
+"oklo",
+"stock",
+"supply"
+]
+},
+{
+"id": "b6bd97b3b3412412",
+"date": "2026-11-24",
+"ts": 1795521564,
+"title": "Kazakhstan aims to establish uranium reserve of 150,000 tonnes by 2050",
+"summary": "",
+"outlet": "Silk Way TV",
+"link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSjJ5QXB2REhHQ2MwYlM2aDU0WEZnQ2hOSGZTU1JvMkQzTEt2eTRtYmRxc1RhQVNkTWFwYzNHTXFQMzBKWWpwZzVQTDd3b1BySWdueU5OSDVlSEp1RmtUMUZJVF9NMnVhVXJpQmZzZWQ5SnlpenlNLWN1LWQzTUJqNE5Dek5OR0c0VEVxQjV3NUdzSDVKaVUzRE9LdWdPNXhjekE?oc=5",
+"place": "Stockpiles and reserves",
+"tickers": [
+"CCJ",
+"UEC",
+"UUUU"
+],
+"tags": [
+"production"
+],
+"numbers": [
+"150,000 tonnes"
+],
+"local": true,
+"novelty": 0.87,
+"score": 5.54,
+"echo_of": null,
+"w": [
+"000",
+"150",
+"2050",
+"aims",
+"establish",
+"kazakhstan",
+"reserve",
+"tonnes",
+"uranium"
+]
+},
+{
+"id": "52dee3d37e759da2",
+"date": "2026-11-24",
+"ts": 1795521600,
+"title": "Centrus Energy to Host Investor Day on December 7, 2026",
+"summary": "",
+"outlet": "PR Newswire",
+"link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQejQ2R2JDdHlSdDZKTkRIXzFaWGVfSno1Z1U2eUJ2QXZSc3RvVnF4Q0lpYUJTcGJDaWZIN3pjYnB4OVpjbGN3UnRSUHpoRHlVV1IzTWg1QTJTYjhyUHFfVi1zdmwxU21CdVhSQXZvTjkxM2w0LUhFM0FWRV9IMDh0NlpzcjAwNFRhRGZfajY2MndCamtTd08yRkJtNFR5d2J0NkQ2NTFmNk5Ib2RVMThF?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.75,
+"score": 4.0,
+"echo_of": null,
+"w": [
+"2026",
+"centrus",
+"day",
+"december",
+"energy",
+"host",
+"investor"
+]
+},
+{
+"id": "df371025b77dc13a",
+"date": "2026-11-24",
+"ts": 1795521600,
+"title": "A former U.S. energy secretary will join Centrus for a fireside chat",
+"summary": "",
+"outlet": "Stock Titan",
+"link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONmZJa2pkaXJjSVkwUDliTE1kY2E3NDQ0MmxkTzZPS25DXzJCdm5LYzZ2NWRzcVlvb0F2cDhlbU4zWVZXb2ptazd1YnQwR0N1Y042NHprSmgyeEx5dnItM0RBay1kN0kwSTU3MEVnRUZub1NWeGx1QXE1X0xGaUs4NC1TR2xJcFBHMi1VYlo4azZSaFRRTWtzakl3UmFFRGR2Y1g0ckdB?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.8,
+"score": 6.1,
+"echo_of": null,
+"w": [
+"centrus",
+"chat",
+"energy",
+"fireside",
+"former",
+"join",
+"secretary"
+]
+},
+{
+"id": "dd57ba38f81c0a8f",
+"date": "2026-11-24",
+"ts": 1795521757,
+"title": "How South Korea Can Help America Build Nuclear Reactors on Schedule",
+"summary": "",
+"outlet": "The National Interest",
+"link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNEVybkJES1BvcEZ3LXAzTmNiVVJSblhsZDRQbUVqRmgwUlExUGtwNHJma3BQSERLV1ZJcVZzVEltQlF4Y2ltQjFKdGM5TGpfQUlBYzB2YnFXRXBGaVFEdDduZXpkQnJpWXJDc08wZ0xVMzZIOUpQMkRJN091WUV1c1RqMmlvWXpncnBidUo4YlU1NmRrOEhMZDc1azR4Vk1ZY09sSGNoUkg4bzhhTWF2MFkxS1Y?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.73,
+"score": 4.66,
+"echo_of": null,
+"w": [
+"america",
+"build",
+"can",
+"help",
+"how",
+"korea",
+"nuclear",
+"reactors",
+"schedule",
+"south"
+]
+},
+{
+"id": "586161ce66891b02",
+"date": "2026-11-24",
+"ts": 1795540259,
+"title": "Start-up milestones for Indian plants",
+"summary": "As Kaiga unit 1 restarts after a record-breaking refurbishment outage, India's nuclear regulator has given Nuclear Power Corporation of India permission for the First Approach to Criticality for unit 8 at the Rajasthan Atomic Power Project.",
+"outlet": "World Nuclear News",
+"link": "https://www.world-nuclear-news.org/articles/start-up-milestones-for-indian-plants",
+"place": "World Nuclear News",
+"tickers": [],
+"tags": [
+"disruption",
+"regulation",
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.91,
+"score": 7.02,
+"echo_of": null,
+"w": [
+"indian",
+"milestones",
+"plants",
+"start"
+]
 }
 ]
