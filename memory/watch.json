@@ -176,6 +176,14 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy at $355.66 expires; confirm it was canceled or let lapse, and check whether the PJM December capacity-auction delay has been decided.",
+"by": "risk",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
@@ -268,6 +276,22 @@
 "ticker": "UUUU",
 "what": "White Mesa Mill one-million-pound uranium processing campaign begins",
 "by": "scout",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "TLN",
+"what": "PJM December capacity auction delay decision; main earnings driver for Talen",
+"by": "questioner",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "",
+"what": "Questioner follow-up: The PJM December 2029/30 capacity-auction delay request is the main earnings driver for Talen, and it has not been decided. How does the stock's 9.6% jump square with an open reg",
+"by": "questioner",
 "written": "2026-11-23",
 "surfaced": false
 },
