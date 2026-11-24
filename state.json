@@ -2429,18 +2429,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Local intel: Legis1 (Congress and laws)",
-   "title": "Congress Reviews Saudi Nuclear Deal Amid Enrichment Concerns",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB5RG1rR1BucGdTMG9IM1JtNFJvOGVKdjlxUVVYOGtNSEJheERid3Rfb2pCTW82TVBGM1FSZ3VxSnRzMnUtUEx5QTc2NEVqZ1laTmladGpHNkRIMlUtYllKRDZIOGFFeEpER3Y1ekZHLU5XRWF3cmpV?oc=5",
-   "ts": 1795452704,
-   "materiality": 3,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "policy_tariff",
-   "why": "Congressional review of a Saudi nuclear deal; no CCJ-specific terms or timing yet."
-  },
-  {
    "ticker": "CEG",
    "source": "Google News",
    "title": "2027 PowerFolio Data Analyst Intern - Houston Office \u2013 Constellation Energy \u2013 Houston, Texas - energynews.pro",
@@ -5427,6 +5415,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Investor day announcement is a scheduling notice, no new financial information."
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News",
+   "title": "Vistra Corp. stock underperforms Tuesday when compared to competitors - MarketWatch",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQYnJKWjhDUlZ3Uk5jQ0VGU3loSWNxV2toYk1odG5ZUXdVTm5UN1l2dmJZMHJ1WkFobjZocGdCOE1BWnk5dWlZNExPbUlMWmRTcGc1YkZfelNaTVM5d1hwZkdxM2F0V1FESzlfaTh2a3Jpd245VnI5VDU1TndLQkw4Z2FGS04yS01uNWVWM1A0N0k0Mm8zX0RpMW1BY1RLRlQ1VXc1NGI3UHQteDY3NkhCT2FPRUlvRHY2akpZTVJjWUZtT3ktTUlrTGRNai1vZXNQb01pRVZHM3doRDU2ZUJj?oc=5",
+   "ts": 1795557120,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Routine MarketWatch price recap of relative underperformance; no new company information."
   }
  ],
  "reviews": [
@@ -7177,16 +7177,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.31496,
+  "day_usd": 0.31531,
   "month": "2026-11",
-  "month_usd": 1.04638,
-  "total_usd": 1.04638,
+  "month_usd": 1.04673,
+  "total_usd": 1.04673,
   "by_role": {
    "macro": 0.09287,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.10967,
-   "scout": 0.12207,
+   "scout": 0.12242,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -7322,7 +7322,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-24 17:18 ET",
+ "last_cycle": "2026-11-24 17:28 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -54647,8 +54647,8 @@
   "cdf09ab4dc83c609",
   "a2a8ee32597c7b50",
   "503a7ef14b3cb3d2",
-  "85342e1a4ce58044",
   "bbef828d764dbb47",
+  "85342e1a4ce58044",
   "ca2a5c0a1baa2527",
   "6f83643eaed2fbc3",
   "b98ba2f840724229",
@@ -54895,6 +54895,7 @@
   "40da66ea723efc8f",
   "7eeff7845b171edb",
   "ce4e13f4ad219801",
+  "e8576c26f24e8b21",
   "46c5572fb4069bdf",
   "915b10ab6e0bdc34",
   "1179c30a7f3faefa",
@@ -54982,7 +54983,7 @@
   "c2a1739b2e369eff",
   "f2896a10ee94b15b"
  ],
- "news_slow_at": 1795558336.9514787,
+ "news_slow_at": 1795558963.3759344,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -211779,7 +211780,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 17:18",
+  "updated": "2026-11-24 17:28",
   "total": 531,
   "week": 439,
   "places": {
@@ -214361,7 +214362,7 @@
    "built": "2026-11-24 17:04"
   }
  ],
- "heartbeat": "2026-11-24 17:18",
+ "heartbeat": "2026-11-24 17:28",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -214521,7 +214522,7 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 185,
+   "asked": 186,
    "used": 170,
    "notes": {
     "TLN Deals and contracts": 9,
@@ -220571,7 +220572,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 17:18",
+ "watchdog_last": "2026-11-24 17:28",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
