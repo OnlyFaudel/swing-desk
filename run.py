@@ -1684,6 +1684,32 @@ def signal_trades(st, ex, prices, today, brk_state, now):
         notify("Signal trade", "; ".join(msgs), tags="satellite")
 
 
+def gapdown_shadow(st, data, prices, today, now):
+    """Practice record, no money: our stocks that open 5%+ below yesterday's close. Daily bars 2008-2026 say buying at the
+    official open and selling at the close beat the S&P by +1.9% (2008-18) / +1.3% (2019-26), but hourly bars show the bounce
+    happens in the first hour and 5-minute bars (last 60 days) were negative from 9:35. The bot can only buy from about 9:35,
+    so this logs the 9:35 price and the close for every case until there's enough real evidence to trade it."""
+    log = st.setdefault("gapdown_shadow", [])
+    if dt.time(9, 35) <= now.time() <= dt.time(9, 50) and not st["flags"].get(f"gapshadow:{today}"):
+        st["flags"][f"gapshadow:{today}"] = True
+        for t in T:
+            d = data.get(t)
+            if d is None or not prices.get(t):
+                continue
+            prev = d.Close[[x.date() < today for x in d.index]].dropna()
+            if len(prev) and prices[t] / float(prev.iloc[-1]) - 1 <= -0.05:
+                log.append({"date": str(today), "ticker": t, "gap_pct": round((prices[t] / float(prev.iloc[-1]) - 1) * 100, 1),
+                            "px_935": round(prices[t], 2), "spy_935": prices.get("SPY")})
+    if market.cclock(now) >= dt.time(15, 55):
+        for e in log:
+            if e["date"] == str(today) and e.get("close") is None and prices.get(e["ticker"]):
+                e["close"] = round(prices[e["ticker"]], 2)
+                e["ret_pct"] = round((e["close"] / e["px_935"] - 1) * 100, 2)
+                if e.get("spy_935") and prices.get("SPY"):
+                    e["vs_spy_pct"] = round(e["ret_pct"] - (prices["SPY"] / e["spy_935"] - 1) * 100, 2)
+    del log[:-300]
+
+
 def auto_check(st, desk, ex, data, prices, today, brk_state, now):
     cfg = CFG.get("auto_trade", {})
     if not cfg.get("enabled"):
@@ -3000,6 +3026,7 @@ def cycle(st, desk, br, ex, force=()):
         process_fills(st, br, ex, today)
         try:
             gap_bank(st, ex, data, prices, today, now)
+            gapdown_shadow(st, data, prices, today, now)
             process_fills(st, br, ex, today)
             panic_check(st, desk, ex, data, prices, today, brk_state, now, force="panic" in force)
             auto_check(st, desk, ex, data, prices, today, brk_state, now)
@@ -3051,14 +3078,15 @@ def cycle(st, desk, br, ex, force=()):
         print("huddle failed", e)
     handle_owner_posts(st, desk, ex, data, prices, today, brk_state)
     handle_news(st, desk, ex, data, prices, today, brk_state)
-    if ((now.weekday() < 5 and dt.time(15, 40) <= market.cclock(now) <= dt.time(15, 58)) or "close" in force) \
+    trading_day = now.weekday() < 5 and not market.is_holiday(today)  # Thanksgiving, Christmas...: no close routine, no review
+    if ((trading_day and dt.time(15, 40) <= market.cclock(now) <= dt.time(15, 58)) or "close" in force) \
             and st["flags"].get("close_done") != str(today):
         st["flags"]["close_done"] = str(today)
         close_routine(st, desk, ex, data, prices, today, brk_state)
         process_fills(st, br, ex, today)
-    if ((now.weekday() < 5 and dt.time(16, 5) <= now.time() <= dt.time(19, 0)) or "review" in force) \
+    if ((trading_day and dt.time(16, 5) <= now.time() <= dt.time(19, 0)) or "review" in force) \
             and st["flags"].get("review_done") != str(today):
-        if now.weekday() < 5 and dt.time(16, 5) <= now.time() <= dt.time(19, 0):  # a forced test review must not use up the real one
+        if trading_day and dt.time(16, 5) <= now.time() <= dt.time(19, 0):  # a forced test review must not use up the real one
             st["flags"]["review_done"] = str(today)
         review(st, desk, data, prices, today, account.brakes(book, prices, CFG, today))
     for k in [k for k in st["flags"] if ":" in k and k.split(":")[-1][:10] < str(today - dt.timedelta(days=10))]:

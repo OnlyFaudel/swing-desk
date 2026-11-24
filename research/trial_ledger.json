@@ -209,6 +209,22 @@
   "cross_market_signals": {
    "trials": 95,
    "verdict": "2026-11-23 (outside data -> our stocks, per event vs the S&P minus a normal stretch). AI: NVIDIA +6% day -> CEG/VST/TLN next 5 days +1.37% (2019-22, t 1.4) / +1.30% (2023-26, t 1.0), VST 2016-18 +1.66%; +7%: +1.59/+2.83%; positive in 11 of 12 threshold/hold variants per era. Fear fading: VIX>30 down 2 days -> our 10 next 20 days +6.32% (2008-18, n=19) / +4.94% (2019-26, n=10); every VIX>25-35 variant positive 2008-18, most 2019-26. Rejected or context: natural gas -> power trio (eras disagree), 10-yr yield moves (no edge), VIX one-day spikes (negative 2008-18), copper -> miners (40-day hold flips negative 2019-26), oil drops (weak), uranium trust swings (small n), utilities at 52-week highs (eras disagree), breadth extremes (eras disagree), chip ETF 20-day moves (n tiny). Pairs (buy the laggard of two linked stocks, long only): with hand-picked pairs +3.10%/+1.18% per 10 days (t 2.2/2.3) but that used hindsight; choosing pairs by trailing correlation, 10 variants: about 0 to +1% per trade, t under 1.6, drops -50 to -66%: rejected. Pre-earnings run-up: none (-0.4% vs S&P). Months: Jan/Feb strong and Mar/Jun weak in both eras (12 and 8 samples per month: context). Reactor outages were already tested by the discovery engine (no survivor). ADOPTED: ai_power (15% split over CEG/VST/TLN, 5 sessions) and fear_fade (20% over the lineup, 20 sessions, at most once per 4 weeks)."
+  },
+  "idle_cash_regime": {
+   "trials": 12,
+   "verdict": "2026-11-23 (where parked cash sits: S&P vs an equal-weight basket of our 10, daily, 0.1% switching cost). S&P only: 7.2%/yr 2008-18, 16.1% 2019-26, 10.8% overall, worst drop -52%. Nuclear basket only: -10.4% / +35.4% / 6.5%, worst -85%. Trend and relative-momentum switches (50/100/200-day averages, 3/6/12-month vs S&P, daily or monthly): best overall 14.5-14.8%/yr, but every one trailed the S&P 2008-18 (-9.9% to +3.2%/yr) with worse drops (-55% to -77%). Not adopted: parking stays in the S&P."
+  },
+  "leadlag_calendar_groups": {
+   "trials": 19,
+   "verdict": "2026-11-23: CCJ big days -> small miners next 3 days flips sign between eras (+2.1%/-0.4% after +4% days); followers lagging the leader (CCJ, CEG): no edge; weekend hold, week after options expiry, group lagged the S&P by 8% in 5 days: positive both eras but t under 1; options-expiry week and pre-holiday days: nothing. None adopted."
+  },
+  "gap_down_open": {
+   "trials": 8,
+   "verdict": "2026-11-23 (our 10, daily bars, $3+): stock opens 3%/5%/8%+ below yesterday's close -> buy at the official open, sell at the close, vs the S&P: 2008-18 +1.36/+1.87/+1.82% vs -0.04% normal (t 5.7/5.1/2.9); 2019-26 +0.49/+1.33/+2.13% vs -0.03% (t 2.3/2.5/1.6). But on hourly bars (2024-26) the edge is in the first hour: from 10:30 to the close only +0.08/+0.27% vs +0.01%; on 5-minute bars (last 60 days, n=10-48) it was negative from the open and from 9:35. The bot can't buy before about 9:35. Not traded; a practice log (gapdown_shadow) records the 9:35 price and close for every case."
+  },
+  "thanksgiving_week": {
+   "trials": 7,
+   "verdict": "2026-11-23 (Thanksgiving week, S&P and CCJ since 1996, our 10 since 2008): the week before Thanksgiving week: our 10 -2.4% (up 6 of 18 years); Fri -> Wed of Thanksgiving week: S&P +0.69% vs +0.14% normal (up 73% of 30 years), our 10 +1.8% (up 67%), power trio +2.8% (2019-25); Tue -> Black Friday: S&P +0.33% (up 77%); Black Friday -> Monday: S&P -0.36% (up 40%), our 10 -0.5%, power trio -1.7% (up 1 of 7); Black Friday -> 2 weeks later: power trio -4.1% (up 2 of 7), miners +1.5%; Black Friday -> Dec 31: miners +3.0% (2008-25), power trio -2.1% (2019-25). Black Friday volume 0.55x normal, moves smaller (2.15% vs 2.88%). Small samples: put on the calendar for the team, no rule."
   }
  }
 }
