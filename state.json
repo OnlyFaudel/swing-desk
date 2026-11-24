@@ -2159,30 +2159,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Nuclear Demand and Uranium Focus: Cameco Corporation (TSX:CCO) | S&P/TSX Composite Index | Large Cap Growth Stock - kalkine.ca",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQaERhSGxLeVU1TnBXSmE0bF9YNzBTeHRyYThiSllJNWdMLTd3b2VFVHk3Zzh0T1QydEk2aTF4cnhnUE5VYTI1bzNUcktzRVlsc3ZzSnJ5UkpRcjRUYkgzVjF2aVJSMVB2SGtkUzhwNTlsQ2M0aG1DdlBleUxFcU5CX2UxdlljU1FCaUNxazg5WVU0OFAyMDAzRnR6M3JvM05ZSnZzZDZvOXJ1RTl1VnJDVEVTd3RzWVdCbjZQRFJIQ0QxMm91d0d0dmxCUUhMYkE?oc=5",
-   "ts": 1795449540,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic explainer on Cameco's nuclear demand and uranium focus; no new facts."
-  },
-  {
-   "ticker": "BWXT",
-   "source": "Google News",
-   "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal - Investing.com",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQOFMwQXo5ZnRDcUlnMTQ5YzR6Q2MzQlJmR1RwZzFLYmRGNm1veHE5RGFER2VJTGZVMGNscjRBZGRYeVo4ampCN2ZPM05YLWduZExWa25Jcl84cmhnUmlZYVBzMjJpV1hTQzBhc2YzYjRmb3VWVnNPMGhWZGF1TldkXzFZeXd0QjJPbEZYZk1lQVZxbi1KbS1QMXM3amRTQklaMWJVcEdsaGplYmt3MXRIel96cG1SSmc?oc=5",
-   "ts": 1795450309,
-   "materiality": 6,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "contract_deal",
-   "why": "Westinghouse AP1000 manufacturing deal is real demand, but the stock 'surge' size is unverified"
-  },
-  {
    "ticker": "NXE",
    "source": "Google News",
    "title": "Rook I Development Watch: NexGen Energy Ltd. (TSX:NXE) | S&P/TSX Composite Index | Mid Cap Growth Stock - kalkine.ca",
@@ -5157,6 +5133,30 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Investor Day announcement is a scheduled event, not new financial information yet."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "Cameco Corporation Stock 12\u2011Month Price Target Cut to $112.51, Implies 83% Upside - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVXBPNXAwSEg2c0xvay03NmJqZE1TNG1sYkRhNjJSTFFvd0tSZnltbFEwVzRZeFgwOVI5YV9IT3lyLUJfM1dhbWdfZWppODd4dEFzS1ItSlctY1lncFdxLVJLQTVILUJaUE9jRU52NXgyb0JyTXdCb1VjVXluV1JuQW96RDREeXgxNE1Ja2ZOVXU5clFLNFktQV9oLWs4WjJlSjI0VXlybEdhWVRtTWF3QXk2M2JTT0poQU9HcjJ0YkJMVUpiTUIwUVg5UzZHUEhoMHlPZWg5QQ?oc=5",
+   "ts": 1795548000,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Price-target cut headline is a recap of an analyst move; no new fundamental information."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News",
+   "title": "Centrus Energy Corp. Stock 12\u2011Month Price Target Cut to $170.45, Implies 96% Upside - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNYjJOWjVyOEhKdm9Uc0E1TXFOOWdBNHJ4Y3VaTXd3cmlHTWNaaDZGQVpvamk2NmdWMHRMNzBRakVXYTlza2ZuaUIzcVR4REh1RXktWjhVeTZZLUllLUg2SWxqNjN0TE5jSWhNY2piOTFMREhrUGpDcEVFNENCTDRkbjBFeVo4NWJmZWkxb2VfRER4MVR2ZS12ZDRiT19sRXc5YVBqZGJNcGVvY2UxaGlvN3NDdy02N1Vqd2FCdkJkSHl1dUhGRzVhNGZ0dkNTVnlTLWp3a0RBS0Q?oc=5",
+   "ts": 1795548000,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Price-target cut headline is a recap with a generic upside figure; no new company information."
   }
  ],
  "reviews": [
@@ -6759,16 +6759,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.27224,
+  "day_usd": 0.27269,
   "month": "2026-11",
-  "month_usd": 1.00366,
-  "total_usd": 1.00366,
+  "month_usd": 1.00411,
+  "total_usd": 1.00411,
   "by_role": {
    "macro": 0.0913,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.10967,
-   "scout": 0.11558,
+   "scout": 0.11603,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -6874,20 +6874,20 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 59.72,
+  "CCJ": 59.64,
   "NXE": 6.87,
-  "UEC": 5.63,
+  "UEC": 5.64,
   "DNN": 1.75,
   "UUUU": 5.07,
-  "LEU": 83.86,
-  "BWXT": 113.71,
-  "CEG": 243.87,
-  "VST": 119.78,
-  "TLN": 347.74,
-  "SPY": 715.94,
-  "SSO": 60.05
+  "LEU": 83.72,
+  "BWXT": 113.86,
+  "CEG": 244.08,
+  "VST": 120.14,
+  "TLN": 348.55,
+  "SPY": 716.3,
+  "SSO": 60.1
  },
- "last_cycle": "2026-11-24 15:10 ET",
+ "last_cycle": "2026-11-24 15:20 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -6912,10 +6912,10 @@
   ]
  },
  "brakes": {
-  "equity": 1009.65,
-  "day_pct": -1.93,
-  "week_pct": 0.91,
-  "drawdown_pct": -4.24,
+  "equity": 1009.96,
+  "day_pct": -1.9,
+  "week_pct": 0.94,
+  "drawdown_pct": -4.22,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -9401,6 +9401,42 @@
   [
    "2026-11-24 15:10",
    1009.65
+  ],
+  [
+   "2026-11-24 15:11",
+   1010.06
+  ],
+  [
+   "2026-11-24 15:12",
+   1010.75
+  ],
+  [
+   "2026-11-24 15:13",
+   1011.08
+  ],
+  [
+   "2026-11-24 15:15",
+   1011.89
+  ],
+  [
+   "2026-11-24 15:16",
+   1011.62
+  ],
+  [
+   "2026-11-24 15:17",
+   1010.88
+  ],
+  [
+   "2026-11-24 15:18",
+   1011.16
+  ],
+  [
+   "2026-11-24 15:19",
+   1010.03
+  ],
+  [
+   "2026-11-24 15:20",
+   1009.96
   ]
  ],
  "nowcast": {
@@ -53907,7 +53943,7 @@
     0.879
    ]
   },
-  "time": "2026-11-24 15:10"
+  "time": "2026-11-24 15:21"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -54037,8 +54073,8 @@
   "cdf09ab4dc83c609",
   "a2a8ee32597c7b50",
   "503a7ef14b3cb3d2",
-  "bbef828d764dbb47",
   "85342e1a4ce58044",
+  "bbef828d764dbb47",
   "ca2a5c0a1baa2527",
   "b98ba2f840724229",
   "63e7ca0ff352dff7",
@@ -54121,6 +54157,7 @@
   "dbf547d247c12542",
   "2d5c6f3b4f1c4c83",
   "020569e75e7d456e",
+  "f52de1cf7b8b9c06",
   "b550feca111a11b5",
   "7bfa83a63debfd77",
   "04e5c0526493eb7e",
@@ -54316,6 +54353,7 @@
   "302ff446725f4916",
   "0939c76270a70008",
   "c2d5142e019783ce",
+  "6305a538f3553f7a",
   "6a0cc1c1f8babcd3",
   "bd4b01979593b573",
   "a7bb0474e61a7894",
@@ -54361,7 +54399,7 @@
   "c2a1739b2e369eff",
   "f2896a10ee94b15b"
  ],
- "news_slow_at": 1795550805.066351,
+ "news_slow_at": 1795551443.267917,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -210401,7 +210439,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 15:10",
+  "updated": "2026-11-24 15:21",
   "total": 523,
   "week": 438,
   "places": {
@@ -212947,12 +212985,12 @@
    "built": "2026-11-24 15:02"
   }
  ],
- "heartbeat": "2026-11-24 15:10",
+ "heartbeat": "2026-11-24 15:20",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 285,
+ "_pushed_feed": 290,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -213102,16 +213140,16 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 113.71,
-  "TLN": 347.735
+  "BWXT": 113.86,
+  "TLN": 348.55
  },
  "notes_audit": {
   "scout": {
-   "asked": 170,
-   "used": 157,
+   "asked": 171,
+   "used": 158,
    "notes": {
     "TLN Deals and contracts": 7,
-    "CCJ Deals and contracts": 38,
+    "CCJ Deals and contracts": 39,
     "BWXT Deals and contracts": 26,
     "SECTOR Government and laws": 39,
     "UUUU Deals and contracts": 34,
@@ -213121,11 +213159,11 @@
     "NXE Deals and contracts": 9,
     "DNN Deals and contracts": 8,
     "BWXT Legal": 1,
-    "LEU Deals and contracts": 20,
+    "LEU Deals and contracts": 21,
     "UEC Deals and contracts": 3,
     "UUUU Legal": 17,
     "SECTOR Uranium market": 2,
-    "CCJ Legal": 6,
+    "CCJ Legal": 7,
     "CEG Legal": 2,
     "VST Deals and contracts": 16,
     "LEU Legal": 1,
@@ -213574,7 +213612,7 @@
    ],
    [
     "2026-11-24",
-    59.73
+    59.62
    ]
   ],
   "NXE": [
@@ -213818,7 +213856,7 @@
    ],
    [
     "2026-11-24",
-    5.64
+    5.66
    ]
   ],
   "DNN": [
@@ -214184,7 +214222,7 @@
    ],
    [
     "2026-11-24",
-    83.86
+    83.6
    ]
   ],
   "BWXT": [
@@ -214306,7 +214344,7 @@
    ],
    [
     "2026-11-24",
-    113.62
+    113.76
    ]
   ],
   "CEG": [
@@ -214428,7 +214466,7 @@
    ],
    [
     "2026-11-24",
-    243.93
+    244.12
    ]
   ],
   "VST": [
@@ -214550,7 +214588,7 @@
    ],
    [
     "2026-11-24",
-    119.79
+    120.05
    ]
   ],
   "TLN": [
@@ -214672,7 +214710,7 @@
    ],
    [
     "2026-11-24",
-    347.61
+    348.63
    ]
   ]
  },
@@ -218691,7 +218729,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 15:10",
+ "watchdog_last": "2026-11-24 15:20",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
