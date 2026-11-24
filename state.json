@@ -2608,18 +2608,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Local intel: Traders Union (Workers and jobs)",
-   "title": "Uranium Energy backs United States Uranium Refining & Conversion Corp. development as stock rises 9.5%",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRHRqc3pZRFFvM2l5ZE5hREZVNzdDeFpNYzQ5Z1ZReUNlR2NyRGR6azlyUVBQcWIyc0J6LTlsdm5TTDRHclBaWS1JYWdia2hBdEh6YUNuV3RBamM5QklNY0JJa2k0emEybTlSeExnZTF6VlAtZWRNZWtTQmdjZ09VX0NCMjNGemM2U2tvY3I1d0h4Zw?oc=5",
-   "ts": 1795453532,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Uranium Energy's refining project news and a 9.5% move is a peer's stock, not CCJ-specific."
-  },
-  {
    "ticker": "UUUU",
    "source": "Yahoo Finance",
    "title": "Can UUUU's Uranium Ramp-Up Strengthen Its Long-Term Growth Story?",
@@ -5606,6 +5594,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic MarketBeat price recap of a 2.6% drop; no new company information."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News",
+   "title": "A Look at Talen Energy Corp (TLN) After 4.7% Decline -- GF Value $414.10 vs Price $347.68 - GuruFocus",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQc3d0eXc3RFBEVElvaXVUdGV2eHdfNzl6UEN1VTcwVGZWSjlnbnVmOG8tSmVhckpqd3pQVG80Z1c3d1ZHcVZCbmMxTUtSOE05dWNwczZqTGlnQ0pMc1RTeFViQ0Q3WEpCeHRFS1hKelJIX3hjVTloSXd2c3BCSUd4ZzI3TEtpZDl0TE5Tbjgwdi1HQ2JYdGd0aE5sNVY2aU5mSVJHVHpzOFFmd0JzU1RFUGIwclVOWUZm?oc=5",
+   "ts": 1795562559,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Recycled GuruFocus valuation recap with a price decline; no new company information."
   }
  ],
  "reviews": [
@@ -7356,16 +7356,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.33892,
+  "day_usd": 0.33928,
   "month": "2026-11",
-  "month_usd": 1.07034,
-  "total_usd": 1.07034,
+  "month_usd": 1.0707,
+  "total_usd": 1.0707,
   "by_role": {
    "macro": 0.09628,
    "whale": 0.01778,
    "crowd": 0.01194,
    "level": 0.11932,
-   "scout": 0.12381,
+   "scout": 0.12417,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -7501,7 +7501,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-24 18:22 ET",
+ "last_cycle": "2026-11-24 18:33 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -54814,8 +54814,8 @@
   "2ddc82c2b5215c74",
   "d39dc266a3b4dae2",
   "2aa378956ea76132",
-  "0235abc0565d5130",
   "326afd4f7d0093ec",
+  "0235abc0565d5130",
   "a454f891b1c31853",
   "498180393c058995",
   "dc443e4398225bc9",
@@ -55136,6 +55136,7 @@
   "a00037110572bad0",
   "dfaa19a96155f693",
   "bd4b01979593b573",
+  "832a141cb29fe453",
   "e7f494cb247bf154",
   "3459ed8af9ea8da9",
   "f16660c269a6613c",
@@ -55166,7 +55167,7 @@
   "f9eb7cbce2793d86",
   "09bd7b0e348df04b"
  ],
- "news_slow_at": 1795562144.8290348,
+ "news_slow_at": 1795562766.8970127,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -212232,11 +212233,11 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 18:22",
+  "updated": "2026-11-24 18:33",
   "total": 535,
-  "week": 442,
+  "week": 441,
   "places": {
-   "Uranium price": 45,
+   "Uranium price": 44,
    "Piketon": 31,
    "World Nuclear News": 26,
    "South Korea": 26,
@@ -214811,7 +214812,7 @@
    "built": "2026-11-24 18:05"
   }
  ],
- "heartbeat": "2026-11-24 18:22",
+ "heartbeat": "2026-11-24 18:33",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -214971,7 +214972,7 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 189,
+   "asked": 190,
    "used": 172,
    "notes": {
     "TLN Deals and contracts": 9,
@@ -221141,7 +221142,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 18:22",
+ "watchdog_last": "2026-11-24 18:33",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
