@@ -2430,42 +2430,6 @@
  "news_feed": [
   {
    "ticker": "CCJ",
-   "source": "Google News: Westinghouse reactor",
-   "title": "Westinghouse orders AP1000 demonstration parts from BWXT to qualify it as a reactor component supplier - MLQ.ai",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPX2liQkRQd3B6WHZpWVo3Z19kek45U2FYYkxkcl9IYUtNVnhOSzZxYl80LUlNcnMxZEFRSk9FVHpqOTliRlRFT3hnZ3lid3l3NVhjNFE2amZTbWxsMzVmU2FoRnBmb2U4QUdHQzc4N0VobWJCN3Zsa0NzcDdZVGJBc3NhSWpjdkg3SDI4RlRzZzRnZDJiZ3hHRGlReFFJc2hNX3VBVHJRek1Eby1tQlRnZkNvQUc1NFZqY1NzTVk3WWM?oc=5",
-   "ts": 1795450790,
-   "materiality": 3,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "contract_deal",
-   "why": "Headline is about BWXT parts qualification, indirect and not uranium demand for CCJ."
-  },
-  {
-   "ticker": "LEU",
-   "source": "Google News: \"uranium enrichment\" United States",
-   "title": "Congress Reviews Saudi Nuclear Deal Amid Enrichment Concerns - Legis1",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB5RG1rR1BucGdTMG9IM1JtNFJvOGVKdjlxUVVYOGtNSEJheERid3Rfb2pCTW82TVBGM1FSZ3VxSnRzMnUtUEx5QTc2NEVqZ1laTmladGpHNkRIMlUtYllKRDZIOGFFeEpER3Y1ekZHLU5XRWF3cmpV?oc=5",
-   "ts": 1795452757,
-   "materiality": 4,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "policy_tariff",
-   "why": "Congressional review of a Saudi nuclear deal is policy talk; no immediate contract or enrichment decision for LEU."
-  },
-  {
-   "ticker": "UEC",
-   "source": "Google News",
-   "title": "Uranium Energy backs United States Uranium Refining & Conversion Corp. development as stock rises 9.5% - Traders Union",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRHRqc3pZRFFvM2l5ZE5hREZVNzdDeFpNYzQ5Z1ZReUNlR2NyRGR6azlyUVBQcWIyc0J6LTlsdm5TTDRHclBaWS1JYWdia2hBdEh6YUNuV3RBamM5QklNY0JJa2k0emEybTlSeExnZTF6VlAtZWRNZWtTQmdjZ09VX0NCMjNGemM2U2tvY3I1d0h4Zw?oc=5",
-   "ts": 1795453532,
-   "materiality": 4,
-   "novelty": "follow_up",
-   "direction": "up",
-   "event_type": "other",
-   "why": "Backing a domestic refining/conversion venture is a positive but early, non-binding development."
-  },
-  {
-   "ticker": "CCJ",
    "source": "Local intel: Legis1 (Congress and laws)",
    "title": "Congress Reviews Saudi Nuclear Deal Amid Enrichment Concerns",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB5RG1rR1BucGdTMG9IM1JtNFJvOGVKdjlxUVVYOGtNSEJheERid3Rfb2pCTW82TVBGM1FSZ3VxSnRzMnUtUEx5QTc2NEVqZ1laTmladGpHNkRIMlUtYllKRDZIOGFFeEpER3Y1ekZHLU5XRWF3cmpV?oc=5",
@@ -5427,6 +5391,42 @@
    "direction": "neutral",
    "event_type": "analyst",
    "why": "Routine price-target cut from a TradingView recap; target still implies 96% upside."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Kazatomprom",
+   "title": "Kazakhstan Signs New Uranium Supply Deal with India and China as Export Markets Expand - Construction Review",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQM2N3aVl3OXktOC1idEk2ZnY0TmlNdmI2ZGw1di1zajNZRWpoVS1OV00wcnNnYkprTFBwclNsNUFhUlhlZEtKMTQxVHVXcXdPZDRhZVJFUzdVUFUtazN6N1BUQ2ZnTENfcmp0UUpvRU1Fa0xFNF9ib3Y0c2dsM1lOd3pzNTNVRlE2UXN6ZzZtMTROdWNEZGI0ZktqM3BSRFQxUFdsNEZpQm9vdWZ2dm1wSnNod25iUGtUellJTk1ZUE9aUQ?oc=5",
+   "ts": 1795553881,
+   "materiality": 5,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Kazakh supply deal with India/China is new demand for uranium supply, but Kazatomprom is a supplier peer, not Cameco's direct contract."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News: \"Centrus Energy\"",
+   "title": "Centrus Energy Corp. (LEU) latest stock news and headlines - Yahoo Finance UK",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9mWTRMTUVWN2FpLXRXYmNyZWtpZ214MHRIYVBjRnltc0ZMY1FxaXV4LVB1T3dRc2tOTDRUSFlrVkJKX3VJVUxGOW1MWDdhZTE4SVZsWmhsNA?oc=5",
+   "ts": 1795523754,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Yahoo quote/headline page with no new company-specific information."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News",
+   "title": "Centrus Energy Announces Investor Day and Strategic Outlook - TipRanks",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWEFyVWJfWGFxeWVManBfYWZyRnVkSklVNm5kTTREV3ZQX1dOVEUza24xdWtPMm1McWdydzYxUTRCcHNpVFdrZEFTOXBnUHRWSGFKV2xobzNBR0x3aEVTUlB0MmVwc0JMY3I0X2RlOUJ3ZlVkWVJ6alUxbUlINDBnT3JTZGE0X0RFYTZIQUNxcFF1OHNrbmZydWNqbU04Y3Z5YVE5bWpyXzFWejFEZ044dg?oc=5",
+   "ts": 1795557920,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Investor day announcement is a scheduling notice, no new financial information."
   }
  ],
  "reviews": [
@@ -7177,16 +7177,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.31404,
+  "day_usd": 0.31496,
   "month": "2026-11",
-  "month_usd": 1.04546,
-  "total_usd": 1.04546,
+  "month_usd": 1.04638,
+  "total_usd": 1.04638,
   "by_role": {
    "macro": 0.09287,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.10967,
-   "scout": 0.12115,
+   "scout": 0.12207,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -7322,7 +7322,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-24 17:07 ET",
+ "last_cycle": "2026-11-24 17:18 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -54624,6 +54624,7 @@
   "f81c799cfd29db76",
   "aa8f01f30c3e42be",
   "4b9fdf7502d597a5",
+  "bb70a1f088013762",
   "4b634efdcf500ae7",
   "b1e399ca01445ae4",
   "fcce01ed145ab804",
@@ -54646,8 +54647,8 @@
   "cdf09ab4dc83c609",
   "a2a8ee32597c7b50",
   "503a7ef14b3cb3d2",
-  "bbef828d764dbb47",
   "85342e1a4ce58044",
+  "bbef828d764dbb47",
   "ca2a5c0a1baa2527",
   "6f83643eaed2fbc3",
   "b98ba2f840724229",
@@ -54805,6 +54806,7 @@
   "43902d6121194e02",
   "844469477dae7bae",
   "a454f891b1c31853",
+  "5c37ae2a5c6cc9a0",
   "e62333d1078d965b",
   "c4bedc144af05ef5",
   "2afc300bcf16d7fc",
@@ -54871,6 +54873,7 @@
   "8d0283e176b666a8",
   "9342c1346e3b9a91",
   "aa4831603d62a7e7",
+  "f95adf233d7e88ad",
   "fe0239e8c69f7365",
   "2ac262d1779b4fad",
   "8b9f115784388b61",
@@ -54979,7 +54982,7 @@
   "c2a1739b2e369eff",
   "f2896a10ee94b15b"
  ],
- "news_slow_at": 1795557733.672774,
+ "news_slow_at": 1795558336.9514787,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -211776,7 +211779,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 17:07",
+  "updated": "2026-11-24 17:18",
   "total": 531,
   "week": 439,
   "places": {
@@ -214358,7 +214361,7 @@
    "built": "2026-11-24 17:04"
   }
  ],
- "heartbeat": "2026-11-24 17:07",
+ "heartbeat": "2026-11-24 17:18",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -214518,13 +214521,13 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 183,
-   "used": 168,
+   "asked": 185,
+   "used": 170,
    "notes": {
     "TLN Deals and contracts": 9,
-    "CCJ Deals and contracts": 40,
+    "CCJ Deals and contracts": 41,
     "BWXT Deals and contracts": 26,
-    "SECTOR Government and laws": 39,
+    "SECTOR Government and laws": 40,
     "UUUU Deals and contracts": 34,
     "SECTOR Countries": 33,
     "CEG Deals and contracts": 26,
@@ -214532,7 +214535,7 @@
     "NXE Deals and contracts": 9,
     "DNN Deals and contracts": 8,
     "BWXT Legal": 1,
-    "LEU Deals and contracts": 24,
+    "LEU Deals and contracts": 26,
     "UEC Deals and contracts": 3,
     "UUUU Legal": 17,
     "SECTOR Uranium market": 3,
@@ -220568,7 +220571,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 17:07",
+ "watchdog_last": "2026-11-24 17:18",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
