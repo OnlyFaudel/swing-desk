@@ -26603,5 +26603,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-24",
+"title": "Russian attack kills 2 people, wounds 22 in Ukraine\u2019s Zaporizhzhia",
+"type": "intel_geopolitics",
+"source": "Intel: Cyprus Mail",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "CEG",
+"date": "2026-11-24",
+"title": "Russian attack kills 2 people, wounds 22 in Ukraine\u2019s Zaporizhzhia",
+"type": "intel_geopolitics",
+"source": "Intel: Cyprus Mail",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]

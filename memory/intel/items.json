@@ -13918,5 +13918,95 @@
 "million",
 "receive"
 ]
+},
+{
+"id": "907752fad90c0d04",
+"date": "2026-11-21",
+"ts": 1795248735,
+"title": "US President Confirms China is Expanding its Nuclear Arsenal",
+"summary": "",
+"outlet": "Qatar news agency",
+"link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMFdleWpkWGdPUWUtMWRpWkVsNmVzeHl1blNja0tWa0E2aHVJUncxS3ZsRnE3ZUI1UEFUVk42aUt3dWlwWXUtcFZOU0ppNE1ibnhxMkpTandkS05GTnVHQ2FELXBBZThsWm1NTXVZbzhRSldjME1DRmpIeUFNbXZIRWo3Z0FrMXRXaWlOQ3VsQVVqUkpsYVdfNVRNWHZ6YkRUS1p1d3BiSGNSZlQt?oc=5",
+"place": "Weapons programs",
+"tickers": [
+"BWXT",
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.25,
+"score": 3.0,
+"echo_of": "036faf30b480f5ef",
+"w": [
+"arsenal",
+"china",
+"confirms",
+"expanding",
+"nuclear",
+"president"
+]
+},
+{
+"id": "c6bb7d86a0508edf",
+"date": "2026-11-22",
+"ts": 1795367340,
+"title": "Kim ghosts Trump while building up nuclear arsenal",
+"summary": "",
+"outlet": "The Telegraph",
+"link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSV94RVFwcGlsN1pRazZNUHpIT052NWV5Y0ROcXoxcU9IRWFMLVJWeXJTZXNZV1ZLUkp2SHRqWl8tU3FtUDRQYXlQZlQ1QmNuOW9KVjNQaVBIeDhjUWtzN3hjTXBtNlphLUFLNkhkaFJ0N1BhRk9yc0JtaEFWWmZtVlJUTXozM1NBSGVET2V3czhuSTlWbGRjdEJmc2J0UE5TT09J?oc=5",
+"place": "Weapons programs",
+"tickers": [
+"BWXT",
+"LEU"
+],
+"tags": [
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.7,
+"score": 4.6,
+"echo_of": null,
+"w": [
+"arsenal",
+"building",
+"ghosts",
+"kim",
+"nuclear",
+"trump",
+"while"
+]
+},
+{
+"id": "325ee9327f3b68ce",
+"date": "2026-11-24",
+"ts": 1795500056,
+"title": "Russian attack kills 2 people, wounds 22 in Ukraine\u2019s Zaporizhzhia",
+"summary": "",
+"outlet": "Cyprus Mail",
+"link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNUhlQnJsVklXN1VOYU9XZXd5d3NfdnZlaUFHQnBWS09xMmlGV2ZMQ2Z6NE1qejZ6TTlQdkFNSF83WnAxR1lWc1VTV2liaXV0eUZ2NndxNFI3bkxiZW1vVXpWcUI1c2FDeHVmY1N0TGcwdlNlNUxHYkVDVjVuMWpXTVVXNWRLdzBWaG12eTBNdnR6N3lOU081US1FWTJWVTVa?oc=5",
+"place": "War zones",
+"tickers": [
+"CCJ",
+"CEG"
+],
+"tags": [
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.82,
+"score": 5.44,
+"echo_of": null,
+"w": [
+"attack",
+"kills",
+"people",
+"russian",
+"ukraine",
+"wounds",
+"zaporizhzhia"
+]
 }
 ]
