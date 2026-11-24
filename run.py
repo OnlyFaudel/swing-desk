@@ -233,6 +233,16 @@ def process_fills(st, br, ex, today):
                    f"sell near the close on {L.get('exit_on')} | {L.get('why', '')[:90]}", tags="zap")
         elif tag.startswith("core") and CFG["notify"]["trades"]:
             notify(f"CORE {f['side'].upper()} {f['symbol']}", f"{f['qty']:.4f} sh @ ${f['fill_price']:.2f}", tags="moneybag")
+        if rec and tag == "prg":
+            gb = st.setdefault("gap_banked", {}).get(rec["ticker"])
+            if gb:
+                gb["proceeds"] = round(rec["dollars"] + rec["pnl"], 2)
+                gb["sold_at"] = rec["exit"]
+            notify(f"BANKED THE JUMP {rec['ticker']}", f"Opened up big, sold at ${rec['exit']:.2f} ({rec['ret']:+.1f}% on this piece). "
+                   "Buying back near the close unless the trade is done.", tags="moneybag")
+            rec = None
+        if tag == "prr" and f["side"] == "buy":
+            notify(f"BOUGHT BACK {f['symbol']}", f"{f['qty']:.4f} sh @ ${f['fill_price']:.2f} after banking this morning's jump", tags="repeat")
         if rec:
             if CFG["notify"]["trades"]:
                 notify(f"SOLD {rec['ticker']} {'+' if rec['pnl'] >= 0 else ''}{rec['ret']:.1f}%",
@@ -954,6 +964,59 @@ def _dayret(df):
 RELATED_PICKS = set()
 
 
+def gap_bank(st, ex, data, prices, today, now):
+    """Bank the jump: a panic-rebound stock that opens 5%+ above yesterday's close is sold right after the open and
+    bought back near the close (unless the trade would have ended today anyway). Research 2026-11-23 (gap_bank_panic):
+    our stocks earn most of their gains overnight and fade during the day after big gap-ups (2008-2026 average -0.44%
+    open to close after a 2%+ gap; weaker since 2021). On the live panic trades, with 0.4% for costs and selling at 9:35:
+    2008-2018 +0.8% -> +3.2% per trade, 2019-2026 +5.09% -> +5.05% (both halves equal). Insurance for bad years, free in good ones."""
+    cfg = CFG.get("panic_rebound", {})
+    pct = cfg.get("gap_bank_pct", 5.0)
+    if not pct:
+        return
+    book, bank = st["book"], st.setdefault("gap_banked", {})
+    t_now = now.time()
+    if dt.time(9, 35) <= t_now <= dt.time(10, 15):
+        for t, lots in list(book["lots"].items()):
+            L = lots.get("panic") or {}
+            if L.get("qty", 0) <= 1e-6 or L.get("opened") == str(today) or t in bank or t not in data or not prices.get(t):
+                continue
+            d = data[t]
+            prev = d.Close[[x.date() < today for x in d.index]].dropna()
+            if not len(prev):
+                continue
+            jump = prices[t] / float(prev.iloc[-1]) - 1
+            if jump * 100 < pct or st["flags"].get(f"gapbank:{t}:{today}"):
+                continue
+            st["flags"][f"gapbank:{t}:{today}"] = True
+            avg = L["cost"] / L["qty"]
+            bank[t] = {"date": str(today), "meta": {k: v for k, v in L.items() if k not in ("qty", "cost", "selling", "exit_reason")},
+                       "anchor": L.get("anchor") or avg, "proceeds": round(L["qty"] * prices[t], 2), "jump_pct": round(jump * 100, 1)}
+            ex.exit_panic(t, prices[t], f"banked the jump: opened {jump * 100:+.1f}% vs yesterday's close; buying back near the close", tag="prg")
+            feed.post("exec", f"Banked the jump on {t}: it opened {jump * 100:+.1f}% above yesterday's close, so I sold right after the open. "
+                      "Our stocks usually give back part of a big morning jump during the day and make their gains overnight. "
+                      "I buy it back near the close, unless the trade is due to end today or it's already +10% from where we bought.", [t],
+                      kind="trade", art={"big": f"Banked {t} {jump * 100:+.1f}%", "sub": "Buying back near the close"})
+    if market.cclock(now) >= dt.time(15, 45):
+        for t, b in list(bank.items()):
+            if b["date"] != str(today) or b.get("done"):
+                if b["date"] < str(today - dt.timedelta(days=5)):
+                    bank.pop(t, None)
+                continue
+            b["done"] = True
+            px, anchor, m = prices.get(t), b["anchor"], b["meta"]
+            if not px:
+                continue
+            if str(today) >= str(m.get("exit_on") or "9999") or px >= anchor * (1 + cfg.get("take_profit_pct", 10) / 100):
+                feed.post("exec", f"{t}: not buying back. The trade was due to end today (or it's already +10% from our buy), "
+                          f"so this morning's sale at ${b.get('sold_at', 0):.2f} was the exit.", [t], kind="trade")
+                continue
+            ex.buy_market(t, min(b.get("proceeds", 0), spendable(st, today)), px, "prr", {**m, "anchor": anchor},
+                          f"buy back {t} after banking the morning jump")
+            feed.post("exec", f"Bought {t} back at about ${px:.2f} (sold this morning at ${b.get('sold_at', 0):.2f}). Same plan: sell at "
+                      f"+10% from the original ${anchor:.2f} near a close, or on {m.get('exit_on')}.", [t], kind="trade")
+
+
 def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
     """Market falls 2%+, a stock falls 3%+ and sits 15%+ under its 20-day high: buy near the close, sell 6 sessions later.
     Tested 2019-2026 on 61 such days: +5.3% average over 6 days, up 70% of the time; loses 15-21% when the panic is the
@@ -970,10 +1033,11 @@ def panic_check(st, desk, ex, data, prices, today, brk_state, now, force=False):
         px, avg = prices.get(t, L["cost"] / L["qty"]), L["cost"] / L["qty"]
         if str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late):
             ex.exit_panic(t, px, f"panic-day rebound: held {cfg.get('hold_sessions', 6)} sessions")
-        elif late and L.get("opened") != str(today) and px >= avg * (1 + cfg.get("take_profit_pct", 10) / 100):
-            ex.exit_panic(t, px, f"panic-day rebound: up {(px / avg - 1) * 100:.1f}%, took the profit early")
+        base = L.get("anchor") or avg  # after a banked jump the +10% still counts from the original buy price
+        if late and L.get("opened") != str(today) and px >= base * (1 + cfg.get("take_profit_pct", 10) / 100):
+            ex.exit_panic(t, px, f"panic-day rebound: up {(px / base - 1) * 100:.1f}%, took the profit early")
         elif late and L.get("opened") != str(today) and t in data and not st["flags"].get(f"missedexit:{t}:{today}"):
-            hi = float(data[t].High.iloc[-1]); tp = avg * (1 + cfg.get("take_profit_pct", 10) / 100)
+            hi = float(data[t].High.iloc[-1]); tp = base * (1 + cfg.get("take_profit_pct", 10) / 100)
             if hi >= tp > px:
                 st["flags"][f"missedexit:{t}:{today}"] = True
                 instant_review(st, "missed_exit", f"{t} touched +10% today but closed below, so we didn't sell",
@@ -2785,6 +2849,8 @@ def cycle(st, desk, br, ex, force=()):
         manage_open(st, ex, prices, today, brk_state)
         process_fills(st, br, ex, today)
         try:
+            gap_bank(st, ex, data, prices, today, now)
+            process_fills(st, br, ex, today)
             panic_check(st, desk, ex, data, prices, today, brk_state, now, force="panic" in force)
             auto_check(st, desk, ex, data, prices, today, brk_state, now)
             seasonal_check(st, ex, data, prices, today, now)

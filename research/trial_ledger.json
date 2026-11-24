@@ -197,6 +197,10 @@
   "insider_buys": {
    "trials": 2,
    "verdict": "2026-11-23 (yfinance insider records Nov 2024-Nov 2026, 63 nuclear + related stocks): only 106 open-market insider buys, 63 separate events; they beat the S&P by +2.0% after 1 month (median +0.6%) and +6.0% after 3 months but only 54% of the time. Clusters of 2+ insiders: 4 events. Our 14 nuclear names had 11 open-market buys in 2 years: executives here mostly sell. Too few to test; the insider watch keeps flagging buys."
+  },
+  "gap_bank_panic": {
+   "trials": 12,
+   "verdict": "2026-11-23 (owner's idea: take profit on a morning jump and re-enter). Panic trades as live; on a day a held stock opens X%+ above yesterday's close: sell at the open (0.4-0.6% for 9:35 slippage + costs), buy back at the close unless the rule would end the trade that day (+10% from the original buy, or the sell date). First version peeked at the exit day (wrongly showed +1%/trade everywhere); corrected, no peeking: X=2%: 2008-18 +0.79 -> +2.85%/trade, 2019-26 +5.09 -> +4.23%; X=3%: +3.18% / +4.66%; X=5%: +3.16% (halves +2.71/+3.61 vs -1.23/+2.81) / +5.05% (halves +4.74/+5.35 vs +4.82/+5.37), since 2023 +7.33 -> +7.80% (46 trades). Background: open-to-close after a 2%+ gap-up in our stocks averaged -0.44% 2008-2026 but about 0 since 2021 (last 60 days +0.46%). ADOPTED X=5% for panic trades (gap_bank_pct): big help in bad years, free in good ones."
   }
  }
 }

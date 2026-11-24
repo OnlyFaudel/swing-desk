@@ -68,7 +68,7 @@ def apply_fill(book, f, today, meta=None):
     """Book one broker fill. Returns a closed-trade record if a trade lot was closed."""
     t, side, q, px = f["symbol"], f["side"], float(f["qty"]), float(f["fill_price"])
     tag = tag_of(f.get("client_id"))
-    kind = "core" if tag.startswith("core") else ("panic" if tag in ("pr", "prx") else ("auto" if tag in ("au", "aux") else
+    kind = "core" if tag.startswith("core") else ("panic" if tag in ("pr", "prx", "prg", "prr") else ("auto" if tag in ("au", "aux") else
                                                     ("park" if tag in ("pk", "pkx") else "trade")))
     L = lot(book, t, kind)
     if side == "buy":
