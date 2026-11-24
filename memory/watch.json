@@ -56,6 +56,14 @@
 "surfaced": false
 },
 {
+"date": "2026-11-27",
+"ticker": "CEG",
+"what": "Black Friday half-day session; desk notes show power-trio weakness the Monday after in most years, so treat as a sentiment check, not a trade signal",
+"by": "macro",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
 "date": "2026-11-30",
 "ticker": "TLN",
 "what": "Resting buy at $355.66 expires if it does not fill; check whether the December PJM capacity auction delay has been decided",
@@ -531,6 +539,30 @@
 "date": "2026-11-30",
 "ticker": "CEG",
 "what": "Re-check basket vs 10-day average and whether the Patient Levels buy window and setup expiry still apply before any new entry.",
+"by": "pm",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "PJM December capacity auction delay decision; check whether TLN support at $354.24 holds before the $355.66 resting buy is considered.",
+"by": "engineer",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "BWXT",
+"what": "Resting buy window at $115.83 expires; re-check the $113.99-$117.21 zone and whether the basket is back above its 10-day average.",
+"by": "engineer",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "BWXT",
+"what": "Patient Levels setup valid_until expires; re-check basket vs 10-day average and whether the $113.99-$117.21 zone still holds before any new entry.",
 "by": "pm",
 "written": "2026-11-24",
 "surfaced": false
