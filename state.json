@@ -1106,30 +1106,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Local intel: \uc7ac\uacbd\uc77c\ubcf4 (South Korea)",
-   "title": "Team Korea Pledges \"On-Time Completion\" Despite Czech Nuclear Plant Construction Gap : Business/Industry : JKN",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1UNkkySERieUxxOVVUUWRnTUIteW5tYlZ4c2pxWFhTY2Vramo3ZXZ3MVNqdzAyWm54NU40dWNxQTVuUHRYeklvNEpqNVVaNGtUOTRQRjRTS2ZwX1d0dmgtWXpB?oc=5",
-   "ts": 1795408804,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Korean builder pledges on-time Czech plant; schedule news, no new uranium demand signal for CCJ."
-  },
-  {
-   "ticker": "VST",
-   "source": "Google News",
-   "title": "Vistra (VST) Stock Price Prediction: Bears still control the tape despite stronger earnings and buybacks - Blockchain News",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaERuUDRxLTk1LU44aWlzY2tmSy0xTkEzNzBabVcwQzRaN3h4UktBOWpfTExkYWNlQ1B5RDhYbDd6MVBXbFRvRVo0bEFqa2RQR3hkcmtKRDFvalNqcVRhazUxLVlFelN5cnk4U2FtZ280ZU4xTGtSQUF4NUdtVkdRT1hvRVNya2pqSHpGM3RSMkI5X1psdGlPWWVMZw?oc=5",
-   "ts": 1795423080,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Price-prediction opinion piece rehashing earnings and buybacks already public"
-  },
-  {
    "ticker": "DNN",
    "source": "Google News: \"Denison Mines\"",
    "title": "DNN declines as downward price move continues under strong seller pressure - Traders Union",
@@ -4104,6 +4080,30 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Drill result showing a radiation zone growing; already-known exploration progress, not a new catalyst."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News: \"Talen Energy\"",
+   "title": "Talen Energy's $9.5B Debt: A Risk to Its Long-Term Growth Plans? - Yahoo! Finance Canada",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9zMHFRbFd5ZjVBNmhqcHhlTUR0eGFiQ1IzTjBwd3NCV1c2c1lISUVRc3U3ZXVyWFVyU3BscWhSUng4S3E2eGkzT29YZExOdTJ4Nmwzb25ucEZkZ05uZWZtcXliTkw1RXN1anVERDJPZHEyWUE1ejRqNFlFTmQ?oc=5",
+   "ts": 1795524600,
+   "materiality": 4,
+   "novelty": "follow_up",
+   "direction": "down",
+   "event_type": "other",
+   "why": "Debt-load commentary on a known leveraged name; not new fundamental information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Sprott Uranium Miners ETF (URNM) Price Prediction: Oversold bounce attempt meets still-bearish trend structure - Blockchain News",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQc1VtbkxOalBJdnJJSmtSSXN2bEhsZEEtMlFPU2lQVzdvZnNkWWcyQlBEclg1dWFGZFJnUGlQS0tHcFJVcm45TzQteXNFMGd2YjVpN25uT1dnTXFhWmVxVjJiZEN6dExONDlpakRWcWliX3Z5ejNoQlZjM25HMkRhQnNfV1hfR1N5QmpKVVlySXQtc0lzYnhEV0pFVjI1VHREYU11UDRR?oc=5",
+   "ts": 1795515405,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Technical-analysis recap of URNM ETF; price-pattern opinion with no new company information."
   }
  ],
  "reviews": [
@@ -5706,25 +5706,25 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.12344,
+  "day_usd": 0.1297,
   "month": "2026-11",
-  "month_usd": 0.85486,
-  "total_usd": 0.85486,
+  "month_usd": 0.86112,
+  "total_usd": 0.86112,
   "by_role": {
-   "macro": 0.07683,
+   "macro": 0.07759,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.05018,
-   "scout": 0.09365,
+   "scout": 0.09415,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.0552,
-   "risk": 0.06683,
-   "investigator": 0.1873,
+   "pm": 0.05693,
+   "risk": 0.06758,
+   "investigator": 0.18812,
    "postmortem": 0.00035,
    "researcher": 0.00704,
-   "engineer": 0.01901,
+   "engineer": 0.02071,
    "questioner": 0.05635
   }
  },
@@ -5821,20 +5821,20 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 59.71,
-  "NXE": 6.64,
-  "UEC": 5.58,
+  "CCJ": 59.34,
+  "NXE": 6.63,
+  "UEC": 5.56,
   "DNN": 1.72,
-  "UUUU": 4.93,
-  "LEU": 83.73,
-  "BWXT": 113.1,
-  "CEG": 247.53,
-  "VST": 120.95,
-  "TLN": 354.94,
-  "SPY": 718.68,
-  "SSO": 60.53
+  "UUUU": 4.88,
+  "LEU": 83.14,
+  "BWXT": 112.58,
+  "CEG": 247.13,
+  "VST": 120.61,
+  "TLN": 353.39,
+  "SPY": 717.48,
+  "SSO": 60.33
  },
- "last_cycle": "2026-11-24 10:14 ET",
+ "last_cycle": "2026-11-24 10:19 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -5859,10 +5859,10 @@
   ]
  },
  "brakes": {
-  "equity": 1008.8,
-  "day_pct": -2.01,
-  "week_pct": 0.83,
-  "drawdown_pct": -4.32,
+  "equity": 1004.74,
+  "day_pct": -2.4,
+  "week_pct": 0.42,
+  "drawdown_pct": -4.71,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -7360,6 +7360,22 @@
   [
    "2026-11-24 10:14",
    1008.8
+  ],
+  [
+   "2026-11-24 10:16",
+   1010.77
+  ],
+  [
+   "2026-11-24 10:17",
+   1007.55
+  ],
+  [
+   "2026-11-24 10:18",
+   1005.56
+  ],
+  [
+   "2026-11-24 10:19",
+   1004.74
   ]
  ],
  "nowcast": {
@@ -50123,42 +50139,42 @@
  },
  "sync": {
   "pulse_up": false,
-  "basket_vs_avg_pct": -8.1,
+  "basket_vs_avg_pct": -8.83,
   "partners_pct": {
-   "CCJ": -0.07,
-   "NXE": -0.07,
-   "UEC": -0.23,
-   "DNN": 0.04,
-   "UUUU": 0.38,
-   "LEU": 0.02,
-   "BWXT": -0.09,
-   "CEG": -0.25,
-   "VST": -0.34,
-   "TLN": -0.73
+   "CCJ": -0.88,
+   "NXE": -1.01,
+   "UEC": -1.12,
+   "DNN": -0.82,
+   "UUUU": -0.44,
+   "LEU": -0.79,
+   "BWXT": -1.05,
+   "CEG": -1.23,
+   "VST": -1.22,
+   "TLN": -1.62
   },
   "mult": {
    "CCJ": 0.8,
    "NXE": 0.8,
    "UEC": 0.8,
-   "DNN": 0.92,
-   "UUUU": 0.92,
-   "LEU": 0.92,
+   "DNN": 0.8,
+   "UUUU": 0.8,
+   "LEU": 0.8,
    "BWXT": 0.8,
    "CEG": 0.8,
    "VST": 0.8,
    "TLN": 0.8
   },
   "own_pct": {
-   "CCJ": -0.68,
-   "NXE": -0.74,
-   "UEC": 0.72,
-   "DNN": -1.7,
-   "UUUU": -4.79,
-   "LEU": -1.54,
-   "BWXT": -0.48,
+   "CCJ": -2.29,
+   "NXE": -1.12,
+   "UEC": -0.09,
+   "DNN": -2.83,
+   "UUUU": -6.23,
+   "LEU": -3.04,
+   "BWXT": -0.71,
    "CEG": 0.92,
-   "VST": 1.71,
-   "TLN": 5.25
+   "VST": 0.78,
+   "TLN": 4.41
   },
   "series": {
    "CCJ": [
@@ -50301,7 +50317,7 @@
     0.7485,
     0.7499,
     0.7484,
-    0.7348
+    0.723
    ],
    "NXE": [
     1.0,
@@ -50443,7 +50459,7 @@
     0.7821,
     0.7821,
     0.7792,
-    0.7671
+    0.7642
    ],
    "UEC": [
     1.0,
@@ -50585,7 +50601,7 @@
     0.7356,
     0.7325,
     0.7375,
-    0.7098
+    0.7041
    ],
    "DNN": [
     1.0,
@@ -50727,7 +50743,7 @@
     0.7714,
     0.7671,
     0.7564,
-    0.7415
+    0.7329
    ],
    "UUUU": [
     1.0,
@@ -50869,7 +50885,7 @@
     0.649,
     0.6429,
     0.6386,
-    0.608
+    0.5989
    ],
    "LEU": [
     1.0,
@@ -51011,7 +51027,7 @@
     0.8166,
     0.8147,
     0.8084,
-    0.7864
+    0.7744
    ],
    "BWXT": [
     1.0,
@@ -51153,7 +51169,7 @@
     0.879,
     0.8734,
     0.8709,
-    0.8491
+    0.8471
    ],
    "CEG": [
     1.0,
@@ -51295,7 +51311,7 @@
     0.9665,
     0.97,
     0.9704,
-    0.954
+    0.9539
    ],
    "VST": [
     1.0,
@@ -51437,7 +51453,7 @@
     0.8622,
     0.8588,
     0.8505,
-    0.8373
+    0.8296
    ],
    "TLN": [
     1.0,
@@ -51579,7 +51595,7 @@
     1.0601,
     1.0587,
     1.0579,
-    1.0335
+    1.0252
    ],
    "basket": [
     1.0,
@@ -51721,7 +51737,7 @@
     0.8477,
     0.8459,
     0.8427,
-    0.8236
+    0.817
    ],
    "avg": [
     1.0024,
@@ -51863,10 +51879,10 @@
     0.9025,
     0.9003,
     0.8982,
-    0.8962
+    0.8961
    ]
   },
-  "time": "2026-11-24 10:14"
+  "time": "2026-11-24 10:19"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -52263,9 +52279,11 @@
   "b36ee151c6da4ebf",
   "32cfd9ef3704009d",
   "04dd9aeafd90d9b4",
-  "7ffa38b48cb85fdf"
+  "7ffa38b48cb85fdf",
+  "67ae6099beae1657",
+  "e979a258e0a7a737"
  ],
- "news_slow_at": 1795533279.510986,
+ "news_slow_at": 1795533556.3991406,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -203698,6 +203716,73 @@
    ],
    "practice": false,
    "end": "10:14"
+  },
+  {
+   "id": "20261124101902650152",
+   "title": "Huddle: fast move: UUUU moved -1.6% in 9 min",
+   "tickers": [
+    "UUUU"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-24 10:19",
+   "msgs": [
+    {
+     "t": "10:19",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: UUUU moved -1.6% in 9 min.",
+     "outcome": false
+    },
+    {
+     "t": "10:19",
+     "who": "investigator",
+     "to": "chief",
+     "text": "UUUU fell 4.6% today and is down 34% over the month, with a securities-investor investigation filed on Nov 23. That is old-style bad news that is already in the price, and the desk's rule says drift after bad news is more reliable than a bounce, so I see no reason to buy. The basket is also falling, so no new buys anyway.",
+     "outcome": false,
+     "notes": "why: The UUUU legal notice is an investor-solicitation type filing, not a company-specific fraud finding, so it adds little beyond the price drop already visible. The sector basket is 8.8% below its average, which blocks any new entry.\nfiles read: UUUU Snapshot, UUUU Legal, SECTOR Uranium market"
+    },
+    {
+     "t": "10:19",
+     "who": "engineer",
+     "to": "investigator",
+     "text": "I'm the Plant Engineer, and the physical picture is calm: the fleet is 89% running, the open outage at Salem 1 is a normal refueling-season event, and nothing in the plants or fuel supply points to a UUUU-specific shock. The only real UUUU operating news is the White Mesa 1 million pound production campaign, which is a steady mill story rather than a new catalyst. I agree with News Investigator that the basket is falling and UUUU's move is old bad news, so nothing physical argues for buying.",
+     "outcome": false,
+     "notes": "why: I checked the open outages, the White Mesa mill status, the fuel-policy notes and the power weather, and none of them changes UUUU's near-term outlook. Refueling-season outages are normal and the basket is below its 10-day average.\ndate: 2026-11-30\nticker: UUUU\nwhat: Check whether the basket recovers above its 10-day average before any new buy; White Mesa campaign progress is the physical story to track.\nfiles read: SECTOR Uranium market, UUUU Places and operations"
+    },
+    {
+     "t": "10:19",
+     "who": "macro",
+     "to": "team",
+     "text": "I agree with News Investigator and Plant Engineer: this is a sector-wide move, not a UUUU-specific shock. The whole basket is about 9% below its 10-day average, and the Asia nowcast shows a flat-to-slightly-negative open for uranium names, so there is no reason to add a macro bet here. I'm staying out and watching the basket recover above its average before anything changes.",
+     "outcome": false,
+     "notes": "why: The basket is 8.8% below its 10-day average and the Asia nowcast is flat to slightly down across the group, so this looks like a sector selloff rather than a macro reversal. Uranium spot is up 14% year over year, which is supportive but does not override a falling basket.\nfiles read: SECTOR Uranium market, SECTOR Government and laws, UUUU Snapshot"
+    },
+    {
+     "t": "10:19",
+     "who": "risk",
+     "to": "team",
+     "text": "I agree with the team: UUUU is down 4.6% today and 34% over the month, the basket is about 9% below its 10-day average, and the desk rule forbids new buys while the basket is falling. Adding a bet into a securities-investor investigation with no setup would just be catching a falling knife, so I'd stay out. I'd also flag that the $4.91 level is below most recent trading and the desk's data says those levels averaged nothing.",
+     "outcome": false,
+     "notes": "why: Checked the basket filter (below 10-day average, so no buys), the UUUU legal headline (filed Nov 23, already priced in), and the level quality note (no edge). All three say stay flat.\nticker: UUUU\ndirection: down\ndays: 3\nfiles read: UUUU Snapshot, UUUU Legal, SECTOR pulse"
+    },
+    {
+     "t": "10:19",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with the team: UUUU has no setup, the basket is about 9% below its 10-day average so no new buys are allowed, and there is no open position to exit. Nothing here justifies action, so I'm holding at none.",
+     "outcome": false,
+     "notes": "action: none\nreason: No waiting buy or open holding exists for UUUU, and the $4.91 level has no proven edge. The basket is falling, which blocks new entries, and the securities-investor investigation is old bad news already in the price.\nwhy: Checked the stock file: no resting order, no holding, and the sector pulse is negative (basket -8.8% vs 10-day average). Nothing new in headlines or plant data warrants an exit.\nticker: UUUU\ndirection: down\ndays: 5\ndate: 2026-11-30\nticker: UUUU\nwhat: Re-check whether the basket has recovered above its 10-day average before considering any setup, and watch the securities-investor investigation for new filings.\nfiles read: UUUU Snapshot, SECTOR Uranium market"
+    },
+    {
+     "t": "10:19",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "10:19"
   }
  ],
  "feed": [
@@ -206432,6 +206517,21 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-24 10:19",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: UUUU moved -1.6% in 9 min. Checking the news for a reason.",
+   "tickers": [
+    "UUUU"
+   ],
+   "art": {
+    "big": "UUUU moved -1.6% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -206630,9 +206730,10 @@
   "BWXT (you asked us to watch it) moved +1.1% since we last looked": 1795531566.7600045,
   "fast move: TLN moved +1.6% in 9 min": 1795531699.1733294,
   "fast move: sector move: 4 of our nuclear stocks moving up together (CEG, NXE, TLN, UUUU)": 1795531699.1733296,
-  "fast move: UEC moved -1.7% in 9 min": 1795533266.4380224
+  "fast move: UEC moved -1.7% in 9 min": 1795533266.4380224,
+  "fast move: UUUU moved -1.6% in 9 min": 1795533542.648756
  },
- "huddle_last": 1795533266.4380317,
+ "huddle_last": 1795533542.6487648,
  "huddle_log": [
   "2026-11-20",
   "2026-11-23",
@@ -206650,6 +206751,7 @@
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
+  "2026-11-24",
   "2026-11-24",
   "2026-11-24",
   "2026-11-24",
@@ -207028,7 +207130,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 10:14",
+  "updated": "2026-11-24 10:19",
   "total": 491,
   "week": 414,
   "places": {
@@ -209554,12 +209656,12 @@
    "built": "2026-11-24 09:56"
   }
  ],
- "heartbeat": "2026-11-24 10:14",
+ "heartbeat": "2026-11-24 10:19",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 237,
+ "_pushed_feed": 238,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -209709,16 +209811,16 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 113.1,
-  "TLN": 354.94
+  "BWXT": 112.58,
+  "TLN": 353.39
  },
  "notes_audit": {
   "scout": {
-   "asked": 121,
-   "used": 113,
+   "asked": 122,
+   "used": 114,
    "notes": {
-    "TLN Deals and contracts": 5,
-    "CCJ Deals and contracts": 30,
+    "TLN Deals and contracts": 6,
+    "CCJ Deals and contracts": 31,
     "BWXT Deals and contracts": 23,
     "SECTOR Government and laws": 30,
     "UUUU Deals and contracts": 25,
@@ -209772,8 +209874,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 30,
-   "used": 28,
+   "asked": 31,
+   "used": 29,
    "notes": {
     "BWXT Deals and contracts": 2,
     "BWXT Snapshot": 2,
@@ -209781,7 +209883,7 @@
     "BWXT Leadership and insiders": 2,
     "UEC Snapshot": 2,
     "UEC Deals and contracts": 1,
-    "SECTOR Uranium market": 8,
+    "SECTOR Uranium market": 9,
     "TLN Snapshot": 13,
     "TLN What history says": 3,
     "CCJ Snapshot": 1,
@@ -209811,19 +209913,21 @@
     "TLN Filings and company events": 3,
     "NXE Legal": 1,
     "BWXT Legal": 1,
-    "plants_now": 1
+    "plants_now": 1,
+    "UUUU Snapshot": 1,
+    "UUUU Legal": 1
    },
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 17,
-   "used": 17,
+   "asked": 18,
+   "used": 18,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 7,
     "BWXT Leadership and insiders": 1,
     "TLN Snapshot": 5,
-    "SECTOR Uranium market": 12,
+    "SECTOR Uranium market": 13,
     "BWXT Discoveries": 2,
     "UEC Snapshot": 3,
     "UEC Leadership and insiders": 1,
@@ -209833,13 +209937,14 @@
     "CEG Snapshot": 3,
     "SECTOR Market backdrop": 1,
     "NXE Snapshot": 1,
-    "SECTOR Plants now": 1
+    "SECTOR Plants now": 1,
+    "UUUU Snapshot": 1
    },
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 14,
-   "used": 14,
+   "asked": 15,
+   "used": 15,
    "notes": {
     "SECTOR Reactors and power": 2,
     "CEG Places and operations": 8,
@@ -209858,20 +209963,21 @@
     "plants_now: fleet status and open outages": 1,
     "desk_notes: CEG Places and operations": 1,
     "desk_notes: UUUU Places and operations": 1,
-    "SECTOR Uranium market": 2,
-    "TLN Places and operations": 1
+    "SECTOR Uranium market": 3,
+    "TLN Places and operations": 1,
+    "UUUU Places and operations": 1
    },
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 35,
-   "used": 35,
+   "asked": 36,
+   "used": 36,
    "notes": {
-    "SECTOR Uranium market": 22,
+    "SECTOR Uranium market": 23,
     "BWXT Snapshot": 6,
     "CCJ Snapshot": 2,
-    "UUUU Snapshot": 2,
-    "SECTOR Government and laws": 27,
+    "UUUU Snapshot": 3,
+    "SECTOR Government and laws": 28,
     "TLN Snapshot": 21,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
@@ -209924,8 +210030,8 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 35,
-   "used": 35,
+   "asked": 36,
+   "used": 36,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 2,
@@ -209947,7 +210053,10 @@
     "CEG Price behavior": 2,
     "NXE Snapshot": 1,
     "NXE Legal": 1,
-    "UEC Legal": 1
+    "UEC Legal": 1,
+    "UUUU Snapshot": 1,
+    "UUUU Legal": 1,
+    "SECTOR pulse": 1
    },
    "since": "2026-11-23"
   },
@@ -210143,7 +210252,7 @@
    ],
    [
     "2026-11-24",
-    59.62
+    59.29
    ]
   ],
   "NXE": [
@@ -210265,7 +210374,7 @@
    ],
    [
     "2026-11-24",
-    6.64
+    6.63
    ]
   ],
   "UEC": [
@@ -210387,7 +210496,7 @@
    ],
    [
     "2026-11-24",
-    5.59
+    5.57
    ]
   ],
   "DNN": [
@@ -210509,7 +210618,7 @@
    ],
    [
     "2026-11-24",
-    1.71
+    1.72
    ]
   ],
   "UUUU": [
@@ -210631,7 +210740,7 @@
    ],
    [
     "2026-11-24",
-    4.93
+    4.89
    ]
   ],
   "LEU": [
@@ -210753,7 +210862,7 @@
    ],
    [
     "2026-11-24",
-    83.89
+    83.15
    ]
   ],
   "BWXT": [
@@ -210875,7 +210984,7 @@
    ],
    [
     "2026-11-24",
-    112.9
+    112.54
    ]
   ],
   "CEG": [
@@ -210997,7 +211106,7 @@
    ],
    [
     "2026-11-24",
-    247.41
+    247.25
    ]
   ],
   "VST": [
@@ -211119,7 +211228,7 @@
    ],
    [
     "2026-11-24",
-    120.83
+    120.75
    ]
   ],
   "TLN": [
@@ -211241,7 +211350,7 @@
    ],
    [
     "2026-11-24",
-    354.42
+    353.39
    ]
   ]
  },
@@ -211725,6 +211834,36 @@
    "price": 5.58,
    "result": null,
    "why": "Checked the nowcast (Asia gap for UEC is only -0.26%), the sector pulse (basket below its 10-day average), the uranium spot and long-term prices (spot up 14% over 12 months, long-term up 15%), and the"
+  },
+  {
+   "role": "risk",
+   "ticker": "UUUU",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-24",
+   "price": 4.88,
+   "result": null,
+   "why": "Checked the basket filter (below 10-day average, so no buys), the UUUU legal headline (filed Nov 23, already priced in), and the level quality note (no edge). All three say stay flat."
+  },
+  {
+   "role": "pm",
+   "ticker": "UUUU",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-24",
+   "price": 4.88,
+   "result": null,
+   "why": "Checked the stock file: no resting order, no holding, and the sector pulse is negative (basket -8.8% vs 10-day average). Nothing new in headlines or plant data warrants an exit."
+  },
+  {
+   "role": "scout",
+   "ticker": "TLN",
+   "direction": "up",
+   "days": 5,
+   "date": "2026-11-24",
+   "price": 353.39,
+   "result": null,
+   "why": "TLN's debt story is a rehash of known leverage, and the URNM piece is pure technical commentary. The desk notes show TLN's signed AWS and CEG-style power deals historically lifted the stock over 20 da"
   }
  ],
  "after_sale": [],
@@ -213800,6 +213939,11 @@
    1795533266.4377248,
    "UEC",
    -1
+  ],
+  [
+   1795533542.648462,
+   "UUUU",
+   -1
   ]
  ],
  "auto_log": [],
@@ -214101,7 +214245,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 10:14",
+ "watchdog_last": "2026-11-24 10:19",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
