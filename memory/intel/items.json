@@ -16245,5 +16245,97 @@
 "plant",
 "poland"
 ]
+},
+{
+"id": "46c5572fb4069bdf",
+"date": "2026-11-24",
+"ts": 1795509814,
+"title": "Uranium Energy Corp. (UEC) options chain \u2013 Yahoo Finance",
+"summary": "",
+"outlet": "Yahoo Finance Singapore",
+"link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdmxjY0g4MzMxcHNDMUdDRGRaYTN2LVRiX0lIS04zTWpjNkdVMmkwcHVqR1I0bWpFWnlhSEhwZ1g3cnhWVUZZNS1wRFp0MlJ0STNlM0I3ZXhVRG1XTUEwaTlTMUE5Yk9yZ2ZpYWl1VG01ay1NSXYxR3RPckpDQ3djS3NaYnJGRXo4QVNBTWZGSHY?oc=5",
+"place": "Workers and jobs",
+"tickers": [
+"CCJ",
+"UEC"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.67,
+"score": 2.84,
+"echo_of": null,
+"w": [
+"chain",
+"energy",
+"finance",
+"options",
+"uec",
+"uranium",
+"yahoo"
+]
+},
+{
+"id": "b3c7050974f73faf",
+"date": "2026-11-24",
+"ts": 1795515785,
+"title": "NRC opens comments on draft EA for Crownpoint ISR project",
+"summary": "",
+"outlet": "American Nuclear Society",
+"link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMThlODJhLUxQcGZmU0lDZG1LQllVMnVvb0VYUm5VZ0FTekpEOVlZTDlxUGNVUi15S0FKYVFfTzZ4MFdmLW92Z0lBUGFNN1d0bkJqVVAyaVdkRGNzbGM1RW1zMWd4ZU1hU1NSUHRvWlFoeG9ncHpDU2diTXl2eHdvRFZCTUQ4OThqZ1cyZm05Ni1hN1FvNmFteVJtMGlpel9CMGx6VjZ6UURDM2M?oc=5",
+"place": "NRC decisions",
+"tickers": [
+"CEG",
+"VST",
+"TLN",
+"LEU",
+"BWXT"
+],
+"tags": [
+"regulation"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 4.0,
+"echo_of": "dfc77f4fe94ea6ba",
+"w": [
+"comments",
+"crownpoint",
+"draft",
+"isr",
+"nrc",
+"opens",
+"project"
+]
+},
+{
+"id": "5a1100f085a1aaf7",
+"date": "2026-11-24",
+"ts": 1795536819,
+"title": "Trump\u2019s Saudi Nuclear Deal Could Become A Strategic Danger",
+"summary": "",
+"outlet": "Forbes",
+"link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSXJxdzBlcEtHcEdrSW81YkkwUnVBXy1pX1RyNWY4WEZnNDFTNERlQ0t3eVRwLVZSVk5pUzYzcHBwd0lmc0VMQjhqcW5BTV9QaUFJUTRCS0VVVDRaSFJVMnZNMUhQdS1BaTlKVmxfMTVMWUxSOXphblZiUGdXTjB6VUZicWNvMjkzbnRjQjA0S2NJdzczRGNucFpyOWtZV2JrWG5vYkNqeDFDMFZfLXc?oc=5",
+"place": "Middle East",
+"tickers": [
+"CCJ",
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.67,
+"score": 3.84,
+"echo_of": null,
+"w": [
+"become",
+"danger",
+"deal",
+"nuclear",
+"saudi",
+"strategic",
+"trump"
+]
 }
 ]
