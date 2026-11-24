@@ -13546,5 +13546,132 @@
 "tender",
 "uranium"
 ]
+},
+{
+"id": "f3afa8d6a24239f3",
+"date": "2026-11-23",
+"ts": 1795410764,
+"title": "Pro-nuclear experts halt role in Korea's reactor debate",
+"summary": "",
+"outlet": "Aju Press",
+"link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBwX3FYYnU5am0wVWhIZHFCeHlheHhEN2tKS0ExVm53Q3pNaDFyZjZTakljd3JfSWZyaEFRakVYX1VNWVY2TXdoeVFVbDdCM1NvMml2ZXVUd2xBcU0?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.58,
+"score": 5.66,
+"echo_of": null,
+"w": [
+"debate",
+"experts",
+"halt",
+"korea",
+"nuclear",
+"pro",
+"reactor",
+"role"
+]
+},
+{
+"id": "c2a1739b2e369eff",
+"date": "2026-11-23",
+"ts": 1795452621,
+"title": "Westinghouse, BWXT Canada strike AP1000 component manufacturing deal",
+"summary": "",
+"outlet": "StreetInsider",
+"link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPRmhQNWdhU0l6dFgzYlJRbEcxMXJibUlPa3d2Y0tiZ04tTUkybTVrZW9ycC1sdmNtRHhRRHF4VnNLUGQ5ZnB3RTROMG9mTDRLcDJQa21yQUozWUJxdkVwdzFRZHh3TmpySmxXUW5YQzJiN29NMTRnUWtBdWx3cEw1SXZMOUVZQXFTcnhsWngtZFh1YWxpZ1BzTHhSX1psZm02X1l6VExYNVRVUElkV0NoOUpKNkZTSXNoOGtUc0RHNmphbldEcDE1dA?oc=5",
+"place": "Westinghouse",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.5,
+"score": 5.5,
+"echo_of": null,
+"w": [
+"ap1000",
+"bwxt",
+"canada",
+"component",
+"deal",
+"manufacturing",
+"strike",
+"westinghouse"
+]
+},
+{
+"id": "a12efa4e1cdf3096",
+"date": "2026-11-24",
+"ts": 1795483295,
+"title": "South Korea's Samsung Heavy signs up a US reactor maker for the first nuclear-powered LNG carrier",
+"summary": "",
+"outlet": "IntelliNews",
+"link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPa2NoRkZWZlpuaFpSWUw0VVhXUV9GdHVPWmFMUlRuSnh5cldSSWJaN0VISVVRTmdWZFFtVVBpcG5nSU81Ny1JZGJJbkUxcnRJNDZ5MUEtaF9VZmJXMHhKc3N5Zkx1R2xMajB5QkllZ1lpSGVLY0pFNDA1VzE4Wk8yM3lhV1FMa19IVXFmaENNTFpMbjltTHB3UEtCWTNXQ3RoTFJ6eFlFV21SbTdZRVR2Sm9zdFdtMTlVMzBGQk9YQTRVU09VR0VueUI4aTNOZw?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.44,
+"score": 3.38,
+"echo_of": null,
+"w": [
+"carrier",
+"first",
+"heavy",
+"korea",
+"lng",
+"maker",
+"nuclear",
+"powered",
+"reactor",
+"samsung",
+"signs",
+"south"
+]
+},
+{
+"id": "cfc2e129443bfb4f",
+"date": "2026-11-24",
+"ts": 1795490181,
+"title": "Namibia\u2019s Uranium Exports Fuel Nuclear Ambitions",
+"summary": "",
+"outlet": "Windhoek Observer",
+"link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE54VUVDTllfY1NkemFycHpudGwyckZSd3QwWFJscHh5OXdqUnJudGNnRlVNaDhuLVI2aUstSGhYQ0FXenNKdTNkeG04b3hackcwSktneXdpRWs0djE2UEwtUEpCQjdXdERsd0UyRHRKS3d0amdULWZWcHBFZ3hSTmc?oc=5",
+"place": "Namibia",
+"tickers": [
+"CCJ"
+],
+"tags": [
+"politics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.78,
+"score": 5.06,
+"echo_of": null,
+"w": [
+"ambitions",
+"exports",
+"fuel",
+"namibia",
+"nuclear",
+"uranium"
+]
 }
 ]
