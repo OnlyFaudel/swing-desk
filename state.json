@@ -906,18 +906,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Local intel: \uc544\uc2dc\uc544\uacbd\uc81c (Europe new builds)",
-   "title": "'Construction Contractor Dispute' Team Korea Vows to \"Complete the Czech Dukovany Nuclear Plant\"",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9qSlI3WE5DMlJXbEV6TDNzS08tZEdXZ25ReEpvMl9BYzVYUnNoNXpVcEVySU9lVkZnX0FHeDlhbC1keWRBUmphNUx2dWd6R0NJWnNZTTdNMjlaOHl1TXNBbWN3cDg?oc=5",
-   "ts": 1795399636,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
    "ticker": "BWXT",
    "source": "Local intel: Anadolu Ajans\u0131 (AUKUS and navies)",
    "title": "Australia rejects US report warning AUKUS submarine deal could weaken American Navy",
@@ -3904,6 +3892,18 @@
    "direction": "up",
    "event_type": "supply",
    "why": "Planned White Mesa uranium campaign for about 1M lb; a real production signal but months away and a plan, not a result."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News: Constellation Energy nuclear",
+   "title": "Constellation Energy Corporation (CEG) latest stock news and headlines - Yahoo Finance Australia",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE41MGRpYjF0MURqUldBaU5qTVZHUXg0ay1sZzNnNjZGMWtDRDdXc0c0WDIwdVJUYUxHUUlEWkl1T3NtNUJfaUgwcDRQVlc4MHZRTVFSd0Zjaw?oc=5",
+   "ts": 1795497790,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Yahoo Finance landing page with no specific new company event."
   }
  ],
  "reviews": [
@@ -5426,16 +5426,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.03826,
+  "day_usd": 0.03863,
   "month": "2026-11",
-  "month_usd": 0.76968,
-  "total_usd": 0.76968,
+  "month_usd": 0.77005,
+  "total_usd": 0.77005,
   "by_role": {
    "macro": 0.06009,
    "whale": 0.01301,
    "crowd": 0.00849,
    "level": 0.03741,
-   "scout": 0.08747,
+   "scout": 0.08784,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5554,7 +5554,7 @@
   "SPY": 722.39,
   "SSO": 61.17
  },
- "last_cycle": "2026-11-24 08:36 ET",
+ "last_cycle": "2026-11-24 08:46 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51626,6 +51626,7 @@
   "4720f4810691bed4",
   "adaf4137e3446cd1",
   "efa3269c9fa1c644",
+  "e399b873136cfef6",
   "66abfa595ddf0659",
   "b36ee151c6da4ebf",
   "dc443e4398225bc9",
@@ -51736,7 +51737,7 @@
   "a7baf61adc01832c",
   "13880e66390f270d"
  ],
- "news_slow_at": 1795526809.4640503,
+ "news_slow_at": 1795527435.8449147,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -205504,7 +205505,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 08:36",
+  "updated": "2026-11-24 08:46",
   "total": 481,
   "week": 405,
   "places": {
@@ -206183,7 +206184,6 @@
   "7f7a05be6b3ac1f5",
   "9e7ebdf62031eeaf",
   "a9bcbfe54ba12f7e",
-  "ed609e22ce9351ef",
   "0ad3ea7bae8b611c",
   "16345b7a70842227",
   "b95ad295cbbaef38",
@@ -206196,6 +206196,7 @@
   "6aea49b49aa5bae7",
   "5178e5d1234a91bb",
   "61659cb80b158a77",
+  "a7baf61adc01832c",
   "c2a1739b2e369eff",
   "28eaa442b6a19a6f",
   "97e5a70ea6902e58",
@@ -206254,7 +206255,7 @@
   "f88ba68b2c94d1a7",
   "29f141fd08778bc3",
   "fe094eef9f0aabee",
-  "a7baf61adc01832c"
+  "ed609e22ce9351ef"
  ],
  "panic_log": [
   {
@@ -208016,12 +208017,12 @@
    "built": "2026-11-24 08:24"
   }
  ],
- "heartbeat": "2026-11-24 08:36",
+ "heartbeat": "2026-11-24 08:46",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 202,
+ "_pushed_feed": 201,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -208176,8 +208177,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 107,
-   "used": 100,
+   "asked": 108,
+   "used": 101,
    "notes": {
     "TLN Deals and contracts": 4,
     "CCJ Deals and contracts": 27,
@@ -208185,7 +208186,7 @@
     "SECTOR Government and laws": 27,
     "UUUU Deals and contracts": 24,
     "SECTOR Countries": 23,
-    "CEG Deals and contracts": 13,
+    "CEG Deals and contracts": 14,
     "NXE Legal": 2,
     "NXE Deals and contracts": 4,
     "DNN Deals and contracts": 5,
@@ -212010,7 +212011,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 08:36",
+ "watchdog_last": "2026-11-24 08:46",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
