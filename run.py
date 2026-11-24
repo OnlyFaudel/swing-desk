@@ -3077,6 +3077,72 @@ def fill_check(st, data, today, thr=0.3):
     return st["fill_honesty"]
 
 
+def _prev_close(data, t, today):
+    if t not in data:
+        return None
+    c = data[t].Close.dropna()
+    c = c[[d < today for d in c.index.date]]  # works for tz-aware and plain dates
+    return float(c.iloc[-1]) if len(c) else None
+
+
+def day_attribution(st, data, prices, today, eq):
+    """Every day (green or red): which positions made or lost the money, what the market and the basket did, which
+    rules acted. Kept in st['day_book'] so red days can be studied as a group later, not reacted to one at a time."""
+    book = st["book"]
+    eqs = [e for e in book["equity"] if e[0] < str(today)]
+    prev = eqs[-1][1] if eqs else CFG["capital_cap"]
+    contrib = {}
+    for t, lots in book["lots"].items():
+        pc, px = _prev_close(data, t, today), prices.get(t)
+        if not (pc and px):
+            continue
+        for kind, L in lots.items():
+            q = L.get("qty", 0)
+            if q > 1e-6:
+                opened_today = L.get("opened") == str(today)
+                base = (L["cost"] / q) if opened_today else pc
+                contrib[f"{t} {kind}"] = round(q * (px - base), 2)
+    rets = {t: (prices[t] / _prev_close(data, t, today) - 1) * 100 for t in T if prices.get(t) and _prev_close(data, t, today)}
+    spc = _prev_close(data, "SPY", today)
+    spy_d = round((prices["SPY"] / spc - 1) * 100, 2) if spc and prices.get("SPY") else None
+    trend = st.get("park_trend") or {}
+    e = {"date": str(today), "equity": round(eq, 2), "day_usd": round(eq - prev, 2), "day_pct": round((eq / prev - 1) * 100, 2),
+         "spy_pct": spy_d, "basket_pct": round(sum(rets.values()) / len(rets), 2) if rets else None,
+         "spy_above_200d": trend.get("above"), "by_position": dict(sorted(contrib.items(), key=lambda kv: kv[1])),
+         "rules_acted": [o.get("note", "")[:60] for o in st["orders_log"] if o["time"].startswith(str(today))][:12],
+         "closed_today": [x["ticker"] for x in book["trades"] if str(x.get("exit_time", "")).startswith(str(today))]}
+    db = st.setdefault("day_book", [])
+    if not db:  # first run: seed earlier days from the equity history (totals only, no breakdown)
+        pe = CFG["capital_cap"]
+        for d, v, *_ in eqs:
+            db.append({"date": d, "equity": v, "day_usd": round(v - pe, 2), "day_pct": round((v / pe - 1) * 100, 2), "spy_pct": None,
+                       "by_position": {}, "seeded": True})
+            pe = v
+    db[:] = [x for x in db if x["date"] != str(today)] + [e]
+    del db[:-400]
+    if e["day_usd"] < 0:
+        worst = ", ".join(f"{k} ${v:+.2f}" for k, v in list(e["by_position"].items())[:3]) or "no positions"
+        f2 = lambda v: "n/a" if v is None else f"{v:+.2f}%"
+        feed.post("officer", f"Why today was red: account {e['day_pct']:+.2f}% (${e['day_usd']:+.2f}). S&P {f2(spy_d)}, our basket "
+                  f"{f2(e['basket_pct'])} on average. Biggest drags: {worst}. Rules that acted today: "
+                  f"{len(e['rules_acted'])}. {day_book_summary(st)['line']}", [], kind="data",
+                  art={"big": f"Red day {e['day_pct']:+.2f}%", "sub": f"S&P {f2(spy_d)}, basket {f2(e['basket_pct'])}"})
+    return e
+
+
+def day_book_summary(st):
+    db = st.get("day_book", [])
+    red = [d for d in db if d["day_usd"] < 0]
+    if not db:
+        return {"line": "First day on record."}
+    beat = sum(1 for d in red if d.get("spy_pct") is not None and d["day_pct"] > d["spy_pct"])
+    line = (f"Record so far: {len(red)} red of {len(db)} days; on red days we lost {sum(d['day_pct'] for d in red) / max(1, len(red)):+.2f}% "
+            f"on average and did better than the S&P {beat} of {len(red)} times." if red else f"{len(db)} days on record, none red.")
+    if len(red) >= 20:
+        line += " Enough red days to test for a pattern; the researcher checks this on Fridays."
+    return {"line": line, "days": len(db), "red": len(red), "red_beat_spy": beat}
+
+
 def review(st, desk, data, prices, today, brk_state):
     # Friday's weekly pieces (strategist, auditor, drift check, practice-trade lessons). If a Friday was missed, the next review catches up.
     lw = st["flags"].get("weekly_review_done")
@@ -3100,6 +3166,11 @@ def review(st, desk, data, prices, today, brk_state):
     b["equity"].append([str(today), round(bh, 2)])
     eq = account.equity(book, prices)
     book["equity"].append([str(today), round(eq, 2), round(account.core_value(book, prices), 2), round(account.trade_value(book, prices), 2)])
+    try:
+        day_entry = day_attribution(st, data, prices, today, eq)
+    except Exception as e:
+        day_entry = None
+        print("day attribution", e)
     evaluate_setups(st, data)
     memory.fill_reactions(st, data)
     grade_theses(st, prices)
@@ -3122,6 +3193,11 @@ def review(st, desk, data, prices, today, brk_state):
               "armed": st["armed"], "waiting": {t: c for t, c in st["candidates"].items() if t not in st["armed"]},
               "trades_closed_today": [x for x in book["trades"] if str(x.get("exit_time", "")).startswith(str(today))],
               "orders_today": [o for o in st["orders_log"] if o["time"].startswith(str(today))],
+              "why_today_moved": day_entry,
+              "day_book_so_far": day_book_summary(st),
+              "red_day_rule": "On a red day, say whether any rule was broken or misfired (that is a fix) or whether it was the normal "
+                              "cost of holding through a down market (that is not). Never change a rule because of one day; a pattern "
+                              "needs many red days and a written test.",
               "desk_today": [{k: e.get(k) for k in ("ticker", "trigger", "result", "headline")} for e in st.get("desk_log", [])
                              if e.get("time", "").startswith(str(today))], "officer": officer}
     try:
