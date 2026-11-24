@@ -241,7 +241,8 @@
   "ev:f02ea2de0893": true,
   "catalysts:2026-11-24": true,
   "ev:4d92e5824a73": true,
-  "ev:bd635f455b36": true
+  "ev:bd635f455b36": true,
+  "ev:7bf94b572896": true
  },
  "benchmark": {
   "shares": {
@@ -894,42 +895,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "UUUU",
-   "source": "Google News: \"Energy Fuels\" uranium",
-   "title": "Can Energy Fuels Sustain Its Expansion Plans Amid Cash Outflows? - The Globe and Mail",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQa0prV3ZEaFFMQWdXVmlINm03Um9GSGlEb0tWTXh4WXNDVDUwMVh1N0tTNTJwSE95X0dHTXNiTHd4ZGszRlhyUXZQYVBYMnJfdW5rSDNJT2tlVzh4OU9FSmhLUG1ITFd5U2RBczFLWURfN2Q2VTREa2JRYTZXMGJPVlI4Nk8yQ05ISGJjNG9jUTRmQkZRTFViaG5YLW5HU2lkWTZ1RnlsVnhiRWUxQnFyUGMxQWVMTzZfYWNTRHFRRU9UYVdhcWhPOGdyQXZ0blh0eGRubF91b3FIZ1JPdkVneGJn?oc=5",
-   "ts": 1795261980,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Opinion piece on cash outflows; general worry, no new facts"
-  },
-  {
-   "ticker": "CEG",
-   "source": "Google News",
-   "title": "45% Upside for Constellation Energy? Barclays Thinks So, and Here\u2019s How - TIKR.com",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM09IdW55am93YXNjUF9rTnBlcDk3eGEwUE5yVVoyRWliUkZ2dFh6Y3plZENrZkU1TnZlcEVoNU5tZFFiZ3JQVXVGNkI5WjE0VUNxQWV1eU5tUkZtZmxvRUpMdUVpQm1pSEdFMG10VEZaNkh0WUhXcXE3dDczSzVkM2RlV2FrRGNWTXdkZzhsZFgySzVGMnhqbg?oc=5",
-   "ts": 1795257000,
-   "materiality": 4,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "analyst",
-   "why": "Barclays price target implies 45% upside; analyst view, not confirmed new action"
-  },
-  {
-   "ticker": "UUUU",
-   "source": "Google News: \"Energy Fuels\" uranium",
-   "title": "Energy Fuels (TSX:EFR) Could Be 78% Below Fair Value After Its Sharp Selloff - Yahoo Finance",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNR0hKS2dfSzlxX2c4aFJTamY1SHFvWlFib0xzSXAxOHNlcmZDaFRybGVQb3doekVfZF9mLTNsNlRBV0xrNWpWWnd6cmhqOHpncmh5UGs1VjBROEprNkZEQjgwdVVWTnhWMGdNS2pmNUNkdXVXblhTN0xNMkNhMXVsbHdpOTVmWUJXeHRrT1Z4bEh3T3Q1S0E?oc=5",
-   "ts": 1795255621,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Automated valuation piece on the Canadian listing after an old selloff"
-  },
   {
    "ticker": "CCJ",
    "source": "Google News: uranium price",
@@ -3893,6 +3858,42 @@
    "direction": "neutral",
    "event_type": "policy_tariff",
    "why": "Duplicate of the same routine Federal Register notice on an unrelated license transfer."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Aura Energy (ASX:AEE): Tiris Uranium Study Outcomes, Funding Plan and December 2026 Decision Point - Kalkine",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWUp4Snhyd3h2MnNYYmtIa3I0aUhsRDBfWnNNb3pzLVVXekJ4cmVTeDNxU3RUUXBBSFQyWFN4S19OWVQ3cW1Ud0YwSS1OVVlZSG9aa2ZnRVJodktMdEU0VzJ0Z25fRkU4TWZqdjg5eDdmRVBXRjRmUjFOQ2tjUGVkb1ZHSTFuMVZjNzdDTjRHVDhMSXNscWpWOXZueUo0UnlVTGlZeGxpSGNFa0pMc3JtYUtDVTVXTFRrTnppSUpyYjN0TWlKdktz?oc=5",
+   "ts": 1795517700,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Promotional Kalkine piece about Aura Energy, an unrelated ASX uranium developer; no CCJ news."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News",
+   "title": "Centrus Energy Stock Gets Oklo HALEU Supply Deal Backed By Meta - Simply Wall St",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWWdLblRJY3RtM2xIYkRSeE1KQ0xHX3ZXN0dJbDlkdUs3YVVQMDJvQkZqNkl3ZnNKajFRVVloakR1WUxFQUVZZGJ3YkdMS2F4U1d0c1QyV0ViZVBfalRCVmVlQm1QSGhheW1JQ0wzenlQWk9ZZmtFQ29WR3FTbmlrX1FSdlJxUUdzaEd5Q2xzNjBLSWpDd1llZHVLQ3Zfa2RjalF5azZJTzc2bmlRdUZoNWl4QUY2QWwtb09HWVRwai1xaDN1YlFn0gHMAUFVX3lxTE92VFBzeGY3RTZQNHJIOUg3dTF4MnA5RzZzWEJJbzBtcC1fRmdCeDBMRkJxNVZrRVI4bGVVREZFR1kxaXNleWdIN052VVlnejZ4YXRvekdCSDNGZjJPNjFWc29mYXhuRXdzdUozdWZqemk3UEtYSzNGaTljOXRnX3BnZXVreHB4NVFocmdaWDhMaDJqYTRIdjNPT1M5d2tUQ3htWV9mX29fNllscjFGNnVRODQ4Q3ZkcmY2QkFlMzBtTm1Udi1MWVRvZ1RsSg?oc=5",
+   "ts": 1795518786,
+   "materiality": 4,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Oklo HALEU supply deal already reported in desk notes Nov 18; this is a recap."
+  },
+  {
+   "ticker": "DNN",
+   "source": "Google News",
+   "title": "Denison Mines Stock In Focus As Phoenix Build Advances And Darby Drilling Adds Support - Simply Wall St",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNcEM3dkMzY2Q5aW5PaXpLNW12WVU5Q2t2RlRSWENVQXN0bEk3bkxhSFA4V29nVlJOTy1Za0ZEMncwWjBnUVFzVDNYVi1FTTdKQ1lRNHdLS2tJSnhUQ1ltRlI2b0N5cXE2cno1QVhJbTl3OFp0YkdYMTFuMVBzX1ppS0xMWjlUbzVoWEtmNG5fLTdTMlR6LU1BUEJXZ2hIcWdheU0tNVhMZ2Y2RHFibXVRNWlHMVVuMlVCZzhwZ2dkajZwX0FDWXpRMHRtd3RvZ9IB0wFBVV95cUxQMkpHZjRxR2FFeUFWTkNhbF9iN1JMdzNGVmNVenp6c3Etc1k4RXRPTHVlRnMycXgyaWpJSTBWNzlIZEF0UnZUNFlZM0loU2JrX3QyQ0pmY0p0LXhWU1dZdFVVa1dqLVNaT2YwWkVxeEJUVVY3VnlZNEdod2Jwem92Uk1ZVUMxNXM4NWlDZnR2OWx4a2hKbjZPSFZfZGhLY3ZXVUJBb2RGZEQ1NkgtcVRTUUdrLWpLblVTa0ZMWEZ1dGk3VWNVQmFZcVVDS0pGQ2FuUTI0?oc=5",
+   "ts": 1795518784,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Simply Wall St feature recapping Phoenix build and drilling; no new company information."
   }
  ],
  "reviews": [
@@ -5415,16 +5416,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.00872,
+  "day_usd": 0.01121,
   "month": "2026-11",
-  "month_usd": 0.74014,
-  "total_usd": 0.74014,
+  "month_usd": 0.74263,
+  "total_usd": 0.74263,
   "by_role": {
    "macro": 0.05663,
    "whale": 0.01301,
    "crowd": 0.00849,
    "level": 0.03741,
-   "scout": 0.07836,
+   "scout": 0.07928,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5433,7 +5434,7 @@
    "investigator": 0.17659,
    "postmortem": 0.00035,
    "researcher": 0.00704,
-   "engineer": 0.00564,
+   "engineer": 0.00721,
    "questioner": 0.04928
   }
  },
@@ -5543,7 +5544,7 @@
   "SPY": 722.39,
   "SSO": 61.17
  },
- "last_cycle": "2026-11-24 05:49 ET",
+ "last_cycle": "2026-11-24 06:30 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51440,6 +51441,7 @@
   "fa17ed4285ac01d2",
   "67ae0f09ed3add32",
   "23858b9754409f40",
+  "b78359c4e74e2d63",
   "7cabb45f8b0c2778",
   "912ca4344a818db7",
   "52950daaafc92008",
@@ -51694,9 +51696,11 @@
   "d377bf4c00b3bccf",
   "ad6bb6ac1dcb6674",
   "a7baf61adc01832c",
-  "13880e66390f270d"
+  "13880e66390f270d",
+  "b5cc93f097618cf0",
+  "2aa378956ea76132"
  ],
- "news_slow_at": 1795517276.023144,
+ "news_slow_at": 1795519245.6773503,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -204518,6 +204522,44 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-24 06:30",
+   "who": "engineer",
+   "kind": "agent",
+   "title": null,
+   "text": "This headline is an Oklo supply deal for high-enriched uranium (HALEU) from Centrus, which is a real but small, slow-moving contract for small advanced reactors, not a change in near-term uranium pounds. The stock history on deals is mixed and mostly already priced in, so it doesn't change the physical picture for our fuel chain much. I agree with the desk's skepticism here: treat it as minor until Oklo's reactor timeline firms up.\n\nWhy: I checked the Centrus deal history, which shows the stock's day-of reactions to deals were coin-flip afterward, and the NRC tracker, where Oklo-linked advanced reactors are still years from operation. The physical fuel volume involved is small compared with the Russian-supply waiver issue that matters more for LEU.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-24 06:30",
+   "who": "engineer",
+   "kind": "alert",
+   "title": null,
+   "text": "Power deal news: Centrus Energy Stock Gets Oklo HALEU Supply Deal Backed By Meta - Simply Wall St. Past deals: the stock that signed jumped +8.8% on average on the day (median +10.5%) and its rivals +5%. Buying after the day's close was a coin flip: 5 days later -7% to +18%, and the 2026 deals were lower 20 days later. 7 deals only: context, not a rule.\n\nPlant Engineer: This headline is an Oklo supply deal for high-enriched uranium (HALEU) from Centrus, which is a real but small, slow-moving contract for small advanced reactors, not a change in near-term uranium pounds. The stock history on deals is mixed and mostly already priced in, so it doesn't change the physical picture for our fuel chain much. I agree with the desk's skepticism here: treat it as minor until Oklo's reactor timeline firms up.",
+   "tickers": [
+    "LEU",
+    "OKLO"
+   ],
+   "art": {
+    "big": "POWER DEAL NEWS",
+    "sub": "Centrus Energy Stock Gets Oklo HALEU Supply Deal Backed By Meta - Simply Wall St"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-24 06:30",
+   "who": "engineer",
+   "kind": "alert",
+   "title": "POWER DEAL NEWS",
+   "text": "Centrus Energy Stock Gets Oklo HALEU Supply Deal Backed By Meta - Simply Wall St | This headline is an Oklo supply deal for high-enriched uranium (HALEU) from Centrus, which is a real but small, slow-moving contract for small advanced reactors, not a change in near-term uranium poun",
+   "tickers": [
+    "LEU"
+   ],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -204981,25 +205023,25 @@
    "lesson": null
   }
  ],
- "intel_at": 1795517224.831345,
+ "intel_at": 1795519200.640481,
  "intel_health": {
-  "at": "2026-11-24 05:47",
+  "at": "2026-11-24 06:20",
   "sources": {
    "Cigar Lake": 6,
-   "McArthur River / Key Lake": 2,
-   "Athabasca Basin": 5,
+   "McArthur River / Key Lake": 3,
+   "Athabasca Basin": 6,
    "Saskatchewan wildfires": 0,
    "Rook I / Arrow": 1,
    "Wheeler River / Phoenix": 6,
    "Port Hope / Blind River": 0,
-   "Westinghouse": 7,
+   "Westinghouse": 0,
    "Kazakhstan": 0,
    "Niger": 6,
-   "Namibia": 25,
+   "Namibia": 28,
    "Russia supply": 3,
    "Piketon": 15,
    "HALEU": 10,
-   "Wyoming ISR": 26,
+   "Wyoming ISR": 23,
    "South Texas ISR": 0,
    "White Mesa / Utah": 12,
    "Rare earths (Energy Fuels)": 16,
@@ -205008,34 +205050,34 @@
    "Crane / Three Mile Island": 4,
    "Susquehanna": 2,
    "Comanche Peak": 7,
-   "PJM grid": 7,
+   "PJM grid": 8,
    "ERCOT grid": 10,
    "Data-center nuclear deals": 8,
-   "Japan restarts": 6,
+   "Japan restarts": 7,
    "China new builds": 5,
-   "Congress and laws": 26,
-   "NRC decisions": 9,
-   "Energy Department": 49,
-   "White House and executive orders": 17,
+   "Congress and laws": 25,
+   "NRC decisions": 15,
+   "Energy Department": 39,
+   "White House and executive orders": 22,
    "Tariffs and trade": 1,
-   "India": 11,
-   "South Korea": 76,
+   "India": 12,
+   "South Korea": 100,
    "Europe new builds": 27,
-   "France and UK": 7,
+   "France and UK": 6,
    "Middle East": 23,
-   "Asia newcomers": 57,
+   "Asia newcomers": 56,
    "Canada SMRs": 6,
-   "Big tech power deals": 57,
-   "Iran": 21,
-   "North Korea": 100,
-   "War zones": 22,
+   "Big tech power deals": 55,
+   "Iran": 24,
+   "North Korea": 79,
+   "War zones": 21,
    "AUKUS and navies": 22,
-   "Weapons programs": 14,
-   "Stockpiles and reserves": 19,
+   "Weapons programs": 20,
+   "Stockpiles and reserves": 13,
    "Sprott trust": 4,
-   "Uranium price": 43,
+   "Uranium price": 13,
    "US policy": 0,
-   "Lawsuits and investigations": 72,
+   "Lawsuits and investigations": 30,
    "Workers and jobs": 24,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 49,
@@ -205046,12 +205088,12 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 05:49",
-  "total": 454,
-  "week": 384,
+  "updated": "2026-11-24 06:30",
+  "total": 455,
+  "week": 383,
   "places": {
    "Uranium price": 43,
-   "World Nuclear News": 26,
+   "World Nuclear News": 25,
    "Piketon": 23,
    "Europe new builds": 23,
    "South Korea": 21,
@@ -205065,23 +205107,23 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-24 05:47",
+   "at": "2026-11-24 06:20",
    "sources": {
     "Cigar Lake": 6,
-    "McArthur River / Key Lake": 2,
-    "Athabasca Basin": 5,
+    "McArthur River / Key Lake": 3,
+    "Athabasca Basin": 6,
     "Saskatchewan wildfires": 0,
     "Rook I / Arrow": 1,
     "Wheeler River / Phoenix": 6,
     "Port Hope / Blind River": 0,
-    "Westinghouse": 7,
+    "Westinghouse": 0,
     "Kazakhstan": 0,
     "Niger": 6,
-    "Namibia": 25,
+    "Namibia": 28,
     "Russia supply": 3,
     "Piketon": 15,
     "HALEU": 10,
-    "Wyoming ISR": 26,
+    "Wyoming ISR": 23,
     "South Texas ISR": 0,
     "White Mesa / Utah": 12,
     "Rare earths (Energy Fuels)": 16,
@@ -205090,34 +205132,34 @@
     "Crane / Three Mile Island": 4,
     "Susquehanna": 2,
     "Comanche Peak": 7,
-    "PJM grid": 7,
+    "PJM grid": 8,
     "ERCOT grid": 10,
     "Data-center nuclear deals": 8,
-    "Japan restarts": 6,
+    "Japan restarts": 7,
     "China new builds": 5,
-    "Congress and laws": 26,
-    "NRC decisions": 9,
-    "Energy Department": 49,
-    "White House and executive orders": 17,
+    "Congress and laws": 25,
+    "NRC decisions": 15,
+    "Energy Department": 39,
+    "White House and executive orders": 22,
     "Tariffs and trade": 1,
-    "India": 11,
-    "South Korea": 76,
+    "India": 12,
+    "South Korea": 100,
     "Europe new builds": 27,
-    "France and UK": 7,
+    "France and UK": 6,
     "Middle East": 23,
-    "Asia newcomers": 57,
+    "Asia newcomers": 56,
     "Canada SMRs": 6,
-    "Big tech power deals": 57,
-    "Iran": 21,
-    "North Korea": 100,
-    "War zones": 22,
+    "Big tech power deals": 55,
+    "Iran": 24,
+    "North Korea": 79,
+    "War zones": 21,
     "AUKUS and navies": 22,
-    "Weapons programs": 14,
-    "Stockpiles and reserves": 19,
+    "Weapons programs": 20,
+    "Stockpiles and reserves": 13,
     "Sprott trust": 4,
-    "Uranium price": 43,
+    "Uranium price": 13,
     "US policy": 0,
-    "Lawsuits and investigations": 72,
+    "Lawsuits and investigations": 30,
     "Workers and jobs": 24,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 49,
@@ -205755,8 +205797,8 @@
   "dd69a7c047abb2b3",
   "cfc2e129443bfb4f",
   "710e26d86c88952c",
-  "7908d2b630649992",
   "0c3ada20fae5f894",
+  "7908d2b630649992",
   "36cbbee89c76a1f7",
   "f3afa8d6a24239f3",
   "43fb66d513a66eee",
@@ -207411,7 +207453,7 @@
    }
   ]
  },
- "dossier_at": 1795517272.1003888,
+ "dossier_at": 1795519241.3740582,
  "sector_prices": {
   "_at": 1795511759.0681665,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -207469,80 +207511,80 @@
    "name": "Cameco",
    "price": 61.49,
    "week_pct": -6.82,
-   "built": "2026-11-24 05:47"
+   "built": "2026-11-24 06:20"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.78,
    "week_pct": -8.57,
-   "built": "2026-11-24 05:47"
+   "built": "2026-11-24 06:20"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.85,
    "week_pct": -4.57,
-   "built": "2026-11-24 05:47"
+   "built": "2026-11-24 06:20"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.77,
    "week_pct": -7.33,
-   "built": "2026-11-24 05:47"
+   "built": "2026-11-24 06:20"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.22,
    "week_pct": -13.58,
-   "built": "2026-11-24 05:47"
+   "built": "2026-11-24 06:20"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 86.8,
    "week_pct": -11.0,
-   "built": "2026-11-24 05:47"
+   "built": "2026-11-24 06:20"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.71,
    "week_pct": -0.95,
-   "built": "2026-11-24 05:47"
+   "built": "2026-11-24 06:20"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 251.76,
    "week_pct": -9.38,
-   "built": "2026-11-24 05:47"
+   "built": "2026-11-24 06:20"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 123.81,
    "week_pct": -4.88,
-   "built": "2026-11-24 05:47"
+   "built": "2026-11-24 06:20"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 365.03,
    "week_pct": 1.47,
-   "built": "2026-11-24 05:47"
+   "built": "2026-11-24 06:20"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-24 05:47"
+   "built": "2026-11-24 06:20"
   }
  ],
- "heartbeat": "2026-11-24 05:49",
+ "heartbeat": "2026-11-24 06:30",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -207659,8 +207701,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 90,
-   "used": 84,
+   "asked": 92,
+   "used": 85,
    "notes": {
     "TLN Deals and contracts": 2,
     "CCJ Deals and contracts": 23,
@@ -207671,9 +207713,9 @@
     "CEG Deals and contracts": 13,
     "NXE Legal": 1,
     "NXE Deals and contracts": 1,
-    "DNN Deals and contracts": 3,
+    "DNN Deals and contracts": 4,
     "BWXT Legal": 1,
-    "LEU Deals and contracts": 10,
+    "LEU Deals and contracts": 11,
     "UEC Deals and contracts": 1,
     "UUUU Legal": 2,
     "SECTOR Uranium market": 2,
@@ -207770,16 +207812,19 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 5,
-   "used": 5,
+   "asked": 6,
+   "used": 6,
    "notes": {
     "SECTOR Reactors and power": 2,
     "CEG Places and operations": 2,
     "UEC Deals and contracts": 1,
     "UEC Places and operations": 1,
     "license_tracker": 3,
-    "LEU Business": 1,
-    "plants_now": 2
+    "LEU Business": 2,
+    "plants_now": 2,
+    "LEU Deals and contracts": 1,
+    "LEU Places and operations": 1,
+    "NRC license tracker": 1
    },
    "since": "2026-11-23"
   },
@@ -210885,6 +210930,15 @@
     "VST",
     "TLN"
    ]
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "deal",
+   "title": "Centrus Energy Stock Gets Oklo HALEU Supply Deal Backed By Meta - Simply Wall St",
+   "tickers": [
+    "OKLO",
+    "LEU"
+   ]
   }
  ],
  "vp_skipped": [
@@ -211439,7 +211493,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 05:49",
+ "watchdog_last": "2026-11-24 06:30",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

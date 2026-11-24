@@ -14734,5 +14734,39 @@
 "uranium",
 "urnm"
 ]
+},
+{
+"id": "0749fffb66690ab6",
+"date": "2026-11-24",
+"ts": 1795518091,
+"title": "Cyberattack hits Peninsula Energy's Lance uranium mine in Wyoming and halts its shares",
+"summary": "",
+"outlet": "MLQ.ai",
+"link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNOG04MlBYSHpnWDRxaXp6eVJHZDlNc3loTHdVdEpYY2V6Q0JSREpoeFd0N29KeTNzR2xwWDdsNzBVVWFyMFdmcmF1Um1JVEpQM2QxVkRoVkhJaDNXbEpCdXl3NjF6UHhlUENZOURqN25TX1V0UU1RcDRxeHhMOEhUQ3cwd3J3MVo5ZzRsNWVmOU1VRkVyQTVXVG5aR01SZ2xLV3dyaXNad1V1dw?oc=5",
+"place": "Wyoming ISR",
+"tickers": [
+"UEC",
+"CCJ"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.4,
+"score": 4.3,
+"echo_of": "54c46c163f31bd9c",
+"w": [
+"cyberattack",
+"energy",
+"halts",
+"hits",
+"lance",
+"mine",
+"peninsula",
+"shares",
+"uranium",
+"wyoming"
+]
 }
 ]
