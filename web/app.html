@@ -519,6 +519,7 @@ if(location.hash){const b=document.querySelector(`[role=tab][data-tab="${locatio
 const ROLE={CCJ:"mines it",NXE:"mine in development",UEC:"mines it",DNN:"mine in development",UUUU:"mines it",LEU:"enriches it",BWXT:"builds reactor parts",CEG:"burns it",VST:"burns it",TLN:"burns it"};
 const lineupT=(S.active&&S.active.length?S.active:C.tickers)||[];
 const money=x=>x==null||isNaN(x)?"—":"$"+(+x).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});
+const fd=s=>{const d=new Date(String(s)+"T12:00");return isNaN(d)?esc(s):d.toLocaleDateString(undefined,{month:"short",day:"numeric"});};
 function stockState(t){
   const L=lot(t,"trade"), a=(S.armed||{})[t], c=(S.candidates||{})[t], why=(S.setup_status||{})[t];
   if(L.qty>1e-6) return {k:"held",short:`Holding. Stop ${money(L.stop)}, target ${money(L.target)}.`,
@@ -749,7 +750,6 @@ function stockState(t){
     const lab=ls_.map(l=>{let y=Y(l.v)-3; if(y-lastY<11) y=lastY+11; lastY=y; return {...l,ty:Math.min(H-1,y)};});
     return `<svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}" aria-hidden="true">${lab.map(l=>`<line x1="0" x2="${W}" y1="${Y(l.v).toFixed(1)}" y2="${Y(l.v).toFixed(1)}" stroke="${l.c}" stroke-width="1" stroke-dasharray="${l.d||"3 4"}" opacity=".8"/><text x="4" y="${l.ty.toFixed(1)}" font-size="9.5" fill="${l.c}">${esc(l.n)} ${money(l.v)}</text>`).join("")}<polyline fill="none" stroke="${c}" stroke-width="1.6" stroke-linejoin="round" points="${s.map((v,i)=>X(i).toFixed(1)+","+Y(v).toFixed(1)).join(" ")}"/><circle cx="${X(s.length-1)}" cy="${Y(s[s.length-1])}" r="2.6" fill="${c}"/></svg><div class="hcs">Last 30 days</div>`;
   }
-  const fd=s=>{const d=new Date(String(s)+"T12:00");return isNaN(d)?esc(s):d.toLocaleDateString(undefined,{month:"short",day:"numeric"});};
   function card(o){
     const t=o.t, rows=[]; let lines=[], head=`${t}, ${KN[o.k]||o.k}`, pl="";
     if(o.L){const L=o.L,avg=L.cost/(L.qty||1),now=P[t]??avg,ch=(now/avg-1)*100,usd=(now-avg)*L.qty;

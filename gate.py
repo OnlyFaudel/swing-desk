@@ -6,7 +6,8 @@ Pass requires ALL of:
   - Deflated Sharpe Ratio >= min_dsr (Bailey & Lopez de Prado 2014), with N = every variant ever backtested
     (research/trial_ledger.json) and that research's cross-trial Sharpe variance: the more ideas were tried,
     the higher the bar
-  - net-of-cost return > 0 in both halves of the record (paper fills already include costs/slippage)
+  - net-of-cost return > 0 in both halves of the record, on the HONEST equity curve (real costs charged,
+    touch-only support fills removed: see honest_equity)
   - max drawdown no worse than max_drawdown_pct
   - at least min_days trading days of record
 """
@@ -18,10 +19,32 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 G = 0.5772156649
 
 
+def honest_equity(st):
+    """The paper equity curve minus what real fills would have cost: every closed trade's real-world spread/slippage
+    (realistic_cost), support buys whose fill only touched the price removed entirely, and 0.5% off target sells
+    that only touched (research 2026-11-23: touch-only fills carried most of the support buys' paper edge)."""
+    eqs = st["book"].get("equity", [])
+    hair = []
+    for r in st["book"].get("trades", []):
+        d = str(r.get("exit_time") or "")[:10]
+        h = r.get("realistic_cost", 0) or 0
+        if r.get("entry_fill") == "touch-only":
+            h = r["pnl"]  # the order most likely would not have filled: no profit, no loss
+        elif r.get("exit_fill") == "touch-only":
+            h += r.get("dollars", 0) * 0.005
+        if d and h:
+            hair.append((d, h))
+    out = []
+    for e in eqs:
+        cut = sum(h for d, h in hair if d <= str(e[0])[:10])
+        out.append(e[1] - cut)
+    return np.array(out, dtype=float)
+
+
 def evaluate(st, cfg):
     c = cfg["promotion_gate"]
     led = json.load(open(os.path.join(ROOT, "research", "trial_ledger.json")))["strategies"][c["strategy"]]
-    eq = np.array([e[1] for e in st["book"].get("equity", [])], dtype=float)
+    eq = honest_equity(st)  # judged on honest fills, not paper ones
     out = {"days": int(len(eq)), "trials": led["trials"], "min_days": c["min_days"], "passed": False}
     if len(eq) < 3:
         out["reason"] = "not enough record yet"
