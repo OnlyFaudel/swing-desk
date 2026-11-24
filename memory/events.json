@@ -26365,5 +26365,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "CEG",
+"date": "2026-11-23",
+"title": "NRC issues its guide for licensing reactor designs already authorized by the Energy Department or the military",
+"type": "intel_regulation",
+"source": "Intel: MLQ.ai",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "VST",
+"date": "2026-11-23",
+"title": "NRC issues its guide for licensing reactor designs already authorized by the Energy Department or the military",
+"type": "intel_regulation",
+"source": "Intel: MLQ.ai",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]

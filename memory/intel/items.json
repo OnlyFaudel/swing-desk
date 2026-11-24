@@ -13188,5 +13188,45 @@
 "plant",
 "record"
 ]
+},
+{
+"id": "85de31670d4daf9d",
+"date": "2026-11-23",
+"ts": 1795477672,
+"title": "NRC issues its guide for licensing reactor designs already authorized by the Energy Department or the military",
+"summary": "",
+"outlet": "MLQ.ai",
+"link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQa0pBeldQeUt2SElVY05adWh4RDlrSk9XdHprNEtBbENmcGFTY2pSQ0FNSG1qVElvd1YwaWRLV2RsbDdQUDBGbE9OenFseGpyTUtpVEJkSU43bWpOMm5rRzNqUTRkSzhXX1VZUTVnY2tfNVZwNkt6VnhhbVMzQ2JWZDlQQkdIRVIzQzlMUDZDZFZXdk5pMlFBUGRfUFJldUx5WU9MN3ZEMHJKeXkwcFVXN194dERORlBkYXhUTzRrSVNwY29lUm1OVG1abw?oc=5",
+"place": "NRC decisions",
+"tickers": [
+"CEG",
+"VST",
+"TLN",
+"LEU",
+"BWXT"
+],
+"tags": [
+"regulation",
+"politics",
+"defense"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.67,
+"score": 6.34,
+"echo_of": null,
+"w": [
+"already",
+"authorized",
+"department",
+"designs",
+"energy",
+"guide",
+"issues",
+"licensing",
+"military",
+"nrc",
+"reactor"
+]
 }
 ]

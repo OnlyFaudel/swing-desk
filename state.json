@@ -237,7 +237,8 @@
   "earnread_backfill": true,
   "radarres:2026-11-23": true,
   "questioner:2026-11-23:9": true,
-  "sput:2026-11-23": true
+  "sput:2026-11-23": true,
+  "ev:f02ea2de0893": true
  },
  "benchmark": {
   "shares": {
@@ -815,30 +816,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "CEG",
-   "source": "Google News",
-   "title": "Constellation Energy falls 5.80% in Friday's session - Global Banking & Finance Review",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOajV2b1hyaUw5bjBuNjNWeWNZQlQydVdNVnZ6SGpjYTVTMVBFVmxjRTY1ZmRTUWhMYk5Jb2xaT0kzXzVQNWt5STB1ZUY4M0JzV2dEYlJ6bllVM1dvWkY0anhIX3RkbWRxendKY0ZTeS1SUnM5V2IxQklPbHZjUTdyWnFBdzlMdGpoNGc?oc=5",
-   "ts": 1795213275,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Daily price recap; no new company information"
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Bank Of Montreal (BMO): Structured notes tied to lowest of Cameco and EQT, due 2029 - Quantisnow",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTDhGZzdRalpya3NoYWRWM21tOExXTTFScHNtMWZFaEFES3NpYkV4M1dfeXh5QktHWFBpRzZ5MUtQZjBJR0pUMlRibERablJXSjE5MzlibTVGY0dQcE43dDlTU1NpRU5OWkdOYWdJWGdYUDVKeTExUFZpZUtQNDVzb09reDJpS1Jm?oc=5",
-   "ts": 1795213255,
-   "materiality": 1,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Bank structured note issue; no effect on Cameco's business"
-  },
   {
    "ticker": "UUUU",
    "source": "Google News",
@@ -3814,6 +3791,30 @@
    "direction": "neutral",
    "event_type": "analyst",
    "why": "Generic price-move recap with valuation talk; no new company information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Energy Fuels Lifts Uranium Output Target to 1 Million Pounds; 2027 Contract Sales Seen Up 35% - BigGo Finance",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4teG9XTUZfMTN2ZGcxWjlIR3NDZjNybVpqbkRTa245SG9uOFhRUjQ1Tkp3TEQxaTlRRnN3dVdVY0V2V0NHZ1ZfVDREU3hicktaZlhSTzNSSWtjZnpwZkk0ZlhzUGp0YW03SUFwNmRVY1E1Ykthb1E?oc=5",
+   "ts": 1795456500,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "supply",
+   "why": "Energy Fuels is a peer's output guidance, a Google News price recap, weak signal for Cameco."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Local intel: MLQ.ai (NRC decisions)",
+   "title": "NRC issues its guide for licensing reactor designs already authorized by the Energy Department or the military",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQa0pBeldQeUt2SElVY05adWh4RDlrSk9XdHprNEtBbENmcGFTY2pSQ0FNSG1qVElvd1YwaWRLV2RsbDdQUDBGbE9OenFseGpyTUtpVEJkSU43bWpOMm5rRzNqUTRkSzhXX1VZUTVnY2tfNVZwNkt6VnhhbVMzQ2JWZDlQQkdIRVIzQzlMUDZDZFZXdk5pMlFBUGRfUFJldUx5WU9MN3ZEMHJKeXkwcFVXN194dERORlBkYXhUTzRrSVNwY29lUm1OVG1abw?oc=5",
+   "ts": 1795477672,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "policy_tariff",
+   "why": "NRC licensing guide for military/DOE-authorized reactor designs; procedural, indirect for CEG."
   }
  ],
  "reviews": [
@@ -5336,16 +5337,16 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.3133,
+  "day_usd": 0.31501,
   "month": "2026-11",
-  "month_usd": 0.57678,
-  "total_usd": 0.57678,
+  "month_usd": 0.57849,
+  "total_usd": 0.57849,
   "by_role": {
    "macro": 0.02491,
    "whale": 0.00861,
    "crowd": 0.00751,
    "level": 0.03344,
-   "scout": 0.06447,
+   "scout": 0.06532,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5354,7 +5355,7 @@
    "investigator": 0.14839,
    "postmortem": 0.00035,
    "researcher": 0.00704,
-   "engineer": 0.00218,
+   "engineer": 0.00303,
    "questioner": 0.00823
   }
  },
@@ -5463,7 +5464,7 @@
   "TLN": 365.03,
   "SPY": 722.39
  },
- "last_cycle": "2026-11-23 18:54 ET",
+ "last_cycle": "2026-11-23 19:20 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51352,8 +51353,8 @@
   "13880e66390f270d",
   "efa3269c9fa1c644",
   "a00037110572bad0",
-  "db05240fe85a29ac",
   "4653461d7ed88855",
+  "db05240fe85a29ac",
   "702ca5529e4f7aeb",
   "982258a10913aaf8",
   "063df817fe5afbbd",
@@ -51410,6 +51411,7 @@
   "6ae4fd45dc301c0d",
   "2c25658f7d8bb1d4",
   "a7baf61adc01832c",
+  "e25f2e7759aee0aa",
   "23858b9754409f40",
   "4959c9e24111e1e4",
   "f16660c269a6613c",
@@ -51579,7 +51581,7 @@
   "bb6d0befac06c212",
   "0d77f1d2373bb03d"
  ],
- "news_slow_at": 1795477632.7781296,
+ "news_slow_at": 1795479671.7463644,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -203076,6 +203078,44 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 19:21",
+   "who": "engineer",
+   "kind": "agent",
+   "title": null,
+   "text": "The NRC guide makes it easier to license reactor designs the Energy Department or military already approved, which is a licensing-process change that matters for small-reactor names, not for our fuel-cycle or plant operators. For the desk it's mostly known sector news and the licensing path was already open via the 2025 18-month rule, so it does not change any of our current positions.\n\nWhy: Checked the license tracker: the Long Mott and Kemmerer approvals already showed mixed, short-lived stock moves, and none of our names (CCJ, NXE, UEC, DNN, UUUU, LEU, BWXT, CEG, VST, TLN) is a small-reactor developer. The only tangential link is Centrus (LEU) and HALEU fuel demand for advanced designs, which is a multi-year story, not a physical change this week.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 19:21",
+   "who": "engineer",
+   "kind": "alert",
+   "title": null,
+   "text": "Licensing news: NRC issues its guide for licensing reactor designs already authorized by the Energy Department or the military. 2026 licensing approvals: first-day moves were mixed (Long Mott permit: small-reactor stocks +7% to +14%; Kemmerer: +0% to +4%) and most of it was gone within 5 trading days. Only 3 events, so this is context, not a trading rule.\n\nPlant Engineer: The NRC guide makes it easier to license reactor designs the Energy Department or military already approved, which is a licensing-process change that matters for small-reactor names, not for our fuel-cycle or plant operators. For the desk it's mostly known sector news and the licensing path was already open via the 2025 18-month rule, so it does not change any of our current positions.",
+   "tickers": [
+    "LEU",
+    "NNE",
+    "OKLO",
+    "SMR"
+   ],
+   "art": {
+    "big": "NRC LICENSING NEWS",
+    "sub": "NRC issues its guide for licensing reactor designs already authorized by the Energy Depart"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-23 19:21",
+   "who": "engineer",
+   "kind": "alert",
+   "title": "NRC LICENSING NEWS",
+   "text": "NRC issues its guide for licensing reactor designs already authorized by the Energy Department or the military | The NRC guide makes it easier to license reactor designs the Energy Department or military already approved, which is a licensing-process change that matters for small-reactor names, not for our fuel-",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -203510,9 +203550,9 @@
    "lesson": null
   }
  ],
- "intel_at": 1795477586.2629945,
+ "intel_at": 1795479623.8501658,
  "intel_health": {
-  "at": "2026-11-23 18:47",
+  "at": "2026-11-23 19:21",
   "sources": {
    "Cigar Lake": 5,
    "McArthur River / Key Lake": 2,
@@ -203526,9 +203566,9 @@
    "Niger": 5,
    "Namibia": 10,
    "Russia supply": 1,
-   "Piketon": 12,
+   "Piketon": 11,
    "HALEU": 10,
-   "Wyoming ISR": 0,
+   "Wyoming ISR": 26,
    "South Texas ISR": 2,
    "White Mesa / Utah": 10,
    "Rare earths (Energy Fuels)": 17,
@@ -203537,32 +203577,32 @@
    "Crane / Three Mile Island": 3,
    "Susquehanna": 2,
    "Comanche Peak": 3,
-   "PJM grid": 9,
+   "PJM grid": 8,
    "ERCOT grid": 9,
-   "Data-center nuclear deals": 8,
+   "Data-center nuclear deals": 9,
    "Japan restarts": 4,
    "China new builds": 5,
-   "Congress and laws": 46,
-   "NRC decisions": 11,
-   "Energy Department": 34,
-   "White House and executive orders": 22,
+   "Congress and laws": 45,
+   "NRC decisions": 12,
+   "Energy Department": 36,
+   "White House and executive orders": 15,
    "Tariffs and trade": 1,
-   "India": 17,
-   "South Korea": 99,
-   "Europe new builds": 28,
+   "India": 19,
+   "South Korea": 74,
+   "Europe new builds": 53,
    "France and UK": 7,
-   "Middle East": 24,
+   "Middle East": 47,
    "Asia newcomers": 26,
    "Canada SMRs": 5,
-   "Big tech power deals": 28,
-   "Iran": 25,
-   "North Korea": 100,
+   "Big tech power deals": 55,
+   "Iran": 33,
+   "North Korea": 80,
    "War zones": 25,
    "AUKUS and navies": 20,
-   "Weapons programs": 10,
+   "Weapons programs": 14,
    "Stockpiles and reserves": 14,
    "Sprott trust": 4,
-   "Uranium price": 41,
+   "Uranium price": 14,
    "US policy": 0,
    "Lawsuits and investigations": 71,
    "Workers and jobs": 15,
@@ -203575,9 +203615,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 18:54",
-  "total": 405,
-  "week": 349,
+  "updated": "2026-11-23 19:21",
+  "total": 406,
+  "week": 350,
   "places": {
    "Uranium price": 42,
    "World Nuclear News": 27,
@@ -203594,7 +203634,7 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-23 18:47",
+   "at": "2026-11-23 19:21",
    "sources": {
     "Cigar Lake": 5,
     "McArthur River / Key Lake": 2,
@@ -203608,9 +203648,9 @@
     "Niger": 5,
     "Namibia": 10,
     "Russia supply": 1,
-    "Piketon": 12,
+    "Piketon": 11,
     "HALEU": 10,
-    "Wyoming ISR": 0,
+    "Wyoming ISR": 26,
     "South Texas ISR": 2,
     "White Mesa / Utah": 10,
     "Rare earths (Energy Fuels)": 17,
@@ -203619,32 +203659,32 @@
     "Crane / Three Mile Island": 3,
     "Susquehanna": 2,
     "Comanche Peak": 3,
-    "PJM grid": 9,
+    "PJM grid": 8,
     "ERCOT grid": 9,
-    "Data-center nuclear deals": 8,
+    "Data-center nuclear deals": 9,
     "Japan restarts": 4,
     "China new builds": 5,
-    "Congress and laws": 46,
-    "NRC decisions": 11,
-    "Energy Department": 34,
-    "White House and executive orders": 22,
+    "Congress and laws": 45,
+    "NRC decisions": 12,
+    "Energy Department": 36,
+    "White House and executive orders": 15,
     "Tariffs and trade": 1,
-    "India": 17,
-    "South Korea": 99,
-    "Europe new builds": 28,
+    "India": 19,
+    "South Korea": 74,
+    "Europe new builds": 53,
     "France and UK": 7,
-    "Middle East": 24,
+    "Middle East": 47,
     "Asia newcomers": 26,
     "Canada SMRs": 5,
-    "Big tech power deals": 28,
-    "Iran": 25,
-    "North Korea": 100,
+    "Big tech power deals": 55,
+    "Iran": 33,
+    "North Korea": 80,
     "War zones": 25,
     "AUKUS and navies": 20,
-    "Weapons programs": 10,
+    "Weapons programs": 14,
     "Stockpiles and reserves": 14,
     "Sprott trust": 4,
-    "Uranium price": 41,
+    "Uranium price": 14,
     "US policy": 0,
     "Lawsuits and investigations": 71,
     "Workers and jobs": 15,
@@ -203973,6 +204013,27 @@
    },
    {
     "date": "2026-11-23",
+    "title": "NRC issues its guide for licensing reactor designs already authorized by the Energy Department or the military",
+    "outlet": "MLQ.ai",
+    "place": "NRC decisions",
+    "tickers": [
+     "CEG",
+     "VST",
+     "TLN",
+     "LEU",
+     "BWXT"
+    ],
+    "tags": [
+     "regulation",
+     "politics",
+     "defense"
+    ],
+    "numbers": [],
+    "score": 6.34,
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQa0pBeldQeUt2SElVY05adWh4RDlrSk9XdHprNEtBbENmcGFTY2pSQ0FNSG1qVElvd1YwaWRLV2RsbDdQUDBGbE9OenFseGpyTUtpVEJkSU43bWpOMm5rRzNqUTRkSzhXX1VZUTVnY2tfNVZwNkt6VnhhbVMzQ2JWZDlQQkdIRVIzQzlMUDZDZFZXdk5pMlFBUGRfUFJldUx5WU9MN3ZEMHJKeXkwcFVXN194dERORlBkYXhUTzRrSVNwY29lUm1OVG1abw?oc=5"
+   },
+   {
+    "date": "2026-11-23",
     "title": "Romania\u2019s Nuclearelectrica posts loss in Q3 on Cernavoda NPP shutdown",
     "outlet": "Romania Insider",
     "place": "Europe new builds",
@@ -204187,22 +204248,6 @@
     "numbers": [],
     "score": 6.08,
     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcC00blMxMXkzdWRZSzlCdVh4RnZJTjJTRUxJcm9JU1Y2bHVFenlfREZTTnZkVWFMbnl5cmR0V0FkUmhBdmxvdjFzQ2dleWQ5MEdONHF3dldqNk1Gbk1QMGduSm1jNWlnYnVqcmVEemhRRi1VSm9wdm5yUE9VVGRrYWFaVGFYUVlxRFdsMmh5Xy1QUERfaXFENF85QTBDVEQxRXFvME45dU5mU3RWZjI3M2g3cm4xQQ?oc=5"
-   },
-   {
-    "date": "2026-11-23",
-    "title": "3 experts suspend participation in Korea's nuclear power deliberations",
-    "outlet": "Chosunbiz",
-    "place": "South Korea",
-    "tickers": [
-     "CCJ",
-     "BWXT"
-    ],
-    "tags": [
-     "disruption"
-    ],
-    "numbers": [],
-    "score": 6.08,
-    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbWpBTUxIcEk2dVk2ZF9FOE45a1RQdF9CY1NDd0Y0Y0FPMHV1aGZSWkl5SE9MMGFsRW5PY0JFcG9CT0E2Q3dWZ0VyVlF5N2N3bWtrMXZJT2JiZUp6aXNleGY0NUthSi1fOURfaDRnQU52a0NxS2NMVnBRZzllZy0yQk130gGWAUFVX3lxTE1veDhJM250b3RTUkNzUmZBWFE1eEpSeWgxWFlsRmtES2tvbk1BUHlLRlducWlfWVlHVjR0ZDFac3RPckxmYl9KbEhiZnVDeVpwekVaeEtGejY2eGFnQnVwY01zSUctSG5mY2ZNYnRPWElNZnZ1VkV3bnlFVlJCc1JyZzNoVzltRF9vZFR4Mzc5eXZJSERqZw?oc=5"
    }
   ]
  },
@@ -204212,6 +204257,7 @@
   "7f7a05be6b3ac1f5",
   "23f0910e96eb7de3",
   "38d326870f86784b",
+  "fe223bd03cfc6370",
   "515517f776442fe4",
   "49be13755057758d",
   "096f1d51d1fb61ac",
@@ -204242,7 +204288,6 @@
   "9e7ebdf62031eeaf",
   "5298ad87eeddc34f",
   "33461799e841c77f",
-  "c73b8f1be49ed29e",
   "36cbbee89c76a1f7",
   "15fecb83818a0949",
   "f2cc6e74f1bd9dd4",
@@ -204286,7 +204331,8 @@
   "dbd18bd6c4654ec8",
   "6c752481de5345ed",
   "0d77f1d2373bb03d",
-  "fe223bd03cfc6370"
+  "c73b8f1be49ed29e",
+  "85de31670d4daf9d"
  ],
  "panic_log": [
   {
@@ -204327,7 +204373,7 @@
   }
  ],
  "memory_view": {
-  "events": 1551,
+  "events": 1553,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -204905,24 +204951,6 @@
   "recent": [
    {
     "date": "2026-11-23",
-    "ticker": "CCJ",
-    "title": "Energy Fuels Rallies 14% on Plan to Produce 1 Million Pounds of Uranium; Oklo Surges 12%, NuScale Power Gains 13%",
-    "type": "intel_production",
-    "r0": 6.09,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-23",
-    "ticker": "UUUU",
-    "title": "US Signs $725 Million Loan Pact with Energy Fuels to Boost Domestic Rare Earth Production - EnergyNow.com",
-    "type": "policy_tariff",
-    "r0": 5.14,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-23",
     "ticker": "BWXT",
     "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal - Investing.com",
     "type": "contract_deal",
@@ -205259,6 +205287,24 @@
     "ticker": "CCJ",
     "title": "Energy Fuels targets 1M pounds of uranium",
     "type": "intel_production",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "CEG",
+    "title": "NRC issues its guide for licensing reactor designs already authorized by the Energy Department or the military",
+    "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "VST",
+    "title": "NRC issues its guide for licensing reactor designs already authorized by the Energy Department or the military",
+    "type": "intel_regulation",
     "r0": null,
     "r5": null,
     "r20": null
@@ -205740,7 +205786,7 @@
    }
   ]
  },
- "dossier_at": 1795477628.672744,
+ "dossier_at": 1795479667.8368392,
  "sector_prices": {
   "_at": 1795466680.0529685,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -205798,80 +205844,80 @@
    "name": "Cameco",
    "price": 61.49,
    "week_pct": -6.82,
-   "built": "2026-11-23 18:47"
+   "built": "2026-11-23 19:21"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.78,
    "week_pct": -8.57,
-   "built": "2026-11-23 18:47"
+   "built": "2026-11-23 19:21"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.85,
    "week_pct": -4.57,
-   "built": "2026-11-23 18:47"
+   "built": "2026-11-23 19:21"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.77,
    "week_pct": -7.33,
-   "built": "2026-11-23 18:47"
+   "built": "2026-11-23 19:21"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.22,
    "week_pct": -13.58,
-   "built": "2026-11-23 18:47"
+   "built": "2026-11-23 19:21"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 86.8,
    "week_pct": -11.0,
-   "built": "2026-11-23 18:47"
+   "built": "2026-11-23 19:21"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.71,
    "week_pct": -0.95,
-   "built": "2026-11-23 18:47"
+   "built": "2026-11-23 19:21"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 251.76,
    "week_pct": -9.38,
-   "built": "2026-11-23 18:47"
+   "built": "2026-11-23 19:21"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 123.81,
    "week_pct": -4.88,
-   "built": "2026-11-23 18:47"
+   "built": "2026-11-23 19:21"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 365.03,
    "week_pct": 1.47,
-   "built": "2026-11-23 18:47"
+   "built": "2026-11-23 19:21"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-23 18:47"
+   "built": "2026-11-23 19:21"
   }
  ],
- "heartbeat": "2026-11-23 18:54",
+ "heartbeat": "2026-11-23 19:20",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -205988,16 +206034,16 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 61,
-   "used": 57,
+   "asked": 63,
+   "used": 59,
    "notes": {
     "TLN Deals and contracts": 1,
     "CCJ Deals and contracts": 18,
     "BWXT Deals and contracts": 11,
-    "SECTOR Government and laws": 16,
+    "SECTOR Government and laws": 17,
     "UUUU Deals and contracts": 14,
-    "SECTOR Countries": 15,
-    "CEG Deals and contracts": 8,
+    "SECTOR Countries": 16,
+    "CEG Deals and contracts": 9,
     "NXE Legal": 1,
     "NXE Deals and contracts": 1,
     "DNN Deals and contracts": 1,
@@ -206098,13 +206144,15 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 2,
-   "used": 2,
+   "asked": 3,
+   "used": 3,
    "notes": {
     "SECTOR Reactors and power": 2,
-    "CEG Places and operations": 1,
+    "CEG Places and operations": 2,
     "UEC Deals and contracts": 1,
-    "UEC Places and operations": 1
+    "UEC Places and operations": 1,
+    "license_tracker": 1,
+    "LEU Business": 1
    },
    "since": "2026-11-23"
   },
@@ -208156,7 +208204,19 @@
    }
   ]
  },
- "event_watch": [],
+ "event_watch": [
+  {
+   "date": "2026-11-23",
+   "kind": "license",
+   "title": "NRC issues its guide for licensing reactor designs already authorized by the Energy Department or the military",
+   "tickers": [
+    "OKLO",
+    "SMR",
+    "NNE",
+    "LEU"
+   ]
+  }
+ ],
  "vp_skipped": [
   {
    "date": "2026-11-23",
@@ -208549,7 +208609,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-23 18:54",
+ "watchdog_last": "2026-11-23 19:20",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
