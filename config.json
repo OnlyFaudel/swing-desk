@@ -540,5 +540,16 @@
   "options_spec": {
     "enabled": true,
     "_note": "Practice book: real put prices, no money. Bearish triggers proven by research only (offerings first)."
+  },
+  "sharp_drop": {
+    "enabled": true,
+    "drop_pct": 15,
+    "take_profit_pct": 10,
+    "hold_sessions": 10,
+    "size_pct": 10,
+    "max_open": 3,
+    "min_price": 3,
+    "min_dollar_volume": 5000000,
+    "note": "Any-day rebound after a 15%+ fall over 5 sessions (nuclear + related). Research 2026-11-23: beat the S&P by +0.84%/trade 2008-18 and +1.09% 2019-26, about 1 trade a week."
   }
 }

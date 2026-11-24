@@ -1534,6 +1534,96 @@ def seasonal_check(st, ex, data, prices, today, now):
                       bought, kind="alert", art={"big": "Uranium momentum", "sub": f"Spot {sp['1m_change_pct']:+.1f}% last month"})
 
 
+def sharp_drop_check(st, ex, prices, today, brk_state, now):
+    """Sharp-drop rebound, any day (no market panic needed): a stock that closes 15%+ lower than 5 sessions ago is bought
+    near the close and sold near a close once it's +10% from the buy, or after 10 sessions. Research 2026-11-23
+    (strategy_sweep_2026_11): 84 nuclear + related stocks, per trade vs the S&P over the same days: 2008-2018 +0.84%,
+    2019-2026 +1.09% (+0.64/+0.89% at double costs); deeper drops did better in both eras (10% < 12% < 15% < 20%).
+    About one trade a week. Small size because the edge is real but modest (t about 1-2)."""
+    cfg = CFG.get("sharp_drop", {})
+    if not cfg.get("enabled"):
+        return
+    book, clock = st["book"], market.cclock(now)
+    late = clock >= dt.time(15, 38)
+    for t, lots in list(book["lots"].items()):  # exits: +10% near a close, or the sell date
+        L = lots.get("auto") or {}
+        if L.get("qty", 0) <= 1e-6 or L.get("setup") != "sharp_drop":
+            continue
+        px = prices.get(t) or (st.get("last_prices") or {}).get(t)
+        if not px:
+            continue
+        base = L.get("entry") or L["cost"] / L["qty"]
+        if str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late):
+            ex.exit_panic(t, px, f"sharp-drop rebound: held {cfg.get('hold_sessions', 10)} sessions", kind="auto", tag="aux")
+        elif late and L.get("opened") != str(today) and px >= base * (1 + cfg.get("take_profit_pct", 10) / 100):
+            ex.exit_panic(t, px, f"sharp-drop rebound: up {(px / base - 1) * 100:.1f}%, took the profit", kind="auto", tag="aux")
+    if not (dt.time(15, 40) <= clock <= dt.time(15, 56)) or st["flags"].get(f"sharpdrop:{today}"):
+        return
+    st["flags"][f"sharpdrop:{today}"] = True
+    if brk_state.get("no_new_today") and not unleashed():
+        return
+    open_n = sum(1 for l in book["lots"].values() if (l.get("auto") or {}).get("qty", 0) > 1e-6 and l["auto"].get("setup") == "sharp_drop")
+    room = cfg.get("max_open", 3) - open_n
+    if room <= 0:
+        return
+    names = list(dict.fromkeys(list(T) + (CFG.get("panic_rebound", {}).get("related_universe") or [])))
+    hits = []
+    try:
+        import yfinance as yf
+        raw = yf.download(names, period="2mo", auto_adjust=True, progress=False)
+        for t in names:
+            if t not in raw["Close"]:
+                continue
+            c = raw["Close"][t].dropna(); v = raw["Volume"][t].dropna()
+            hist = c[[x.date() < today for x in c.index]]
+            if len(hist) < 25:
+                continue
+            drop = cfg.get("drop_pct", 15) / 100
+            if prices.get(t):
+                last = float(prices[t])
+            elif c.index[-1].date() == today:
+                last = float(c.iloc[-1])
+            elif hist.iloc[-1] / hist.iloc[-5] - 1 <= -drop + 0.10:  # close enough to qualify: ask for a live price
+                try:
+                    last = float(yf.Ticker(t).fast_info["last_price"])
+                except Exception:
+                    continue
+            else:
+                continue
+            r5, r1 = last / float(hist.iloc[-5]) - 1, last / float(hist.iloc[-1]) - 1
+            if last < cfg.get("min_price", 3) or float((c * v).tail(20).mean()) < cfg.get("min_dollar_volume", 5e6):
+                continue
+            if r5 <= -cfg.get("drop_pct", 15) / 100:
+                hits.append((r1, r5, t, last))
+    except Exception as e:
+        print("sharp drop scan", e)
+        return
+    hits.sort()  # biggest drop today first (as tested)
+    bought = []
+    for r1, r5, t, px in hits:
+        if room <= 0:
+            break
+        if (book["lots"].get(t, {}).get("auto") or {}).get("qty", 0) > 1e-6 or (book["lots"].get(t, {}).get("panic") or {}).get("qty", 0) > 1e-6:
+            continue
+        if t in (st.get("avoid") or {}) and st["avoid"][t].get("until", "") >= str(today):
+            continue
+        dollars = min(brk_state["equity"] * cfg.get("size_pct", 10) / 100, spendable(st, today))
+        if dollars < 5:
+            break
+        exit_on = sessions_after(str(today), cfg.get("hold_sessions", 10))
+        meta = {"setup": "sharp_drop", "by": "rule", "exit_on": exit_on, "days": cfg.get("hold_sessions", 10),
+                "why": f"down {r5 * 100:.1f}% in 5 sessions ({r1 * 100:+.1f}% today). Past cases beat the S&P by about 1% a trade."}
+        if ex.buy_market(t, dollars, px, "au", meta, "sharp-drop rebound"):
+            bought.append(f"{t} ({r5 * 100:.0f}% in 5 days) ${dollars:.0f}")
+            room -= 1
+    if bought:
+        feed.post("chief", "Sharp-drop rebound: bought " + "; ".join(bought) + ". Rule: a stock down 15%+ in 5 sessions, sell at +10% near "
+                  "a close or after 10 sessions. Tested 2008-2026 on our stocks and their neighbors: beat the S&P by about 1% a trade "
+                  "in both the bad years and the good ones. Small size because it's a modest edge.", [b.split()[0] for b in bought],
+                  kind="trade", art={"big": "Sharp-drop rebound", "sub": ", ".join(b.split()[0] for b in bought)})
+        notify("Sharp-drop rebound", "Bought " + "; ".join(bought), tags="chart_with_upwards_trend")
+
+
 def auto_check(st, desk, ex, data, prices, today, brk_state, now):
     cfg = CFG.get("auto_trade", {})
     if not cfg.get("enabled"):
@@ -1547,7 +1637,7 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
                 ex.exit_panic(t, px, f"conviction trade: stop ${L['stop']} hit", kind="auto", tag="aux"); continue
             if L.get("target") and px >= L["target"]:
                 ex.exit_panic(t, px, f"conviction trade: target ${L['target']} hit", kind="auto", tag="aux"); continue
-        if L.get("qty", 0) > 1e-6 and L.get("exit_on") and (str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late)):
+        if L.get("qty", 0) > 1e-6 and L.get("setup") != "sharp_drop" and L.get("exit_on") and (str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late)):
             ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{ {'conviction': 'conviction', 'year_end': 'year-end bounce', 'uranium_momentum': 'uranium momentum'}.get(L.get('setup'), 'discovery') } trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
     if not (dt.time(15, 30) <= market.cclock(now) <= dt.time(15, 58)) or st["flags"].get(f"auto:{today}"):
         return
@@ -2853,6 +2943,7 @@ def cycle(st, desk, br, ex, force=()):
             process_fills(st, br, ex, today)
             panic_check(st, desk, ex, data, prices, today, brk_state, now, force="panic" in force)
             auto_check(st, desk, ex, data, prices, today, brk_state, now)
+            sharp_drop_check(st, ex, prices, today, brk_state, now)
             seasonal_check(st, ex, data, prices, today, now)
             process_fills(st, br, ex, today)
             park_check(st, ex, prices, today, now)
