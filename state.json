@@ -907,54 +907,6 @@
  "news_feed": [
   {
    "ticker": "BWXT",
-   "source": "Local intel: Anadolu Ajans\u0131 (AUKUS and navies)",
-   "title": "Australia rejects US report warning AUKUS submarine deal could weaken American Navy",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxObU5oX2dpUk5yOGFQd0puMmZxNURIblRTczVtNmRQSzlYS0twZXhfa1VkNjVvYVROcURQN0FNRXNGWWJEekotdWVyelRrb0JtWXVSQUdXRHBaODFYQ1hKODZuNXdtcVQ1X0VmWmRsbUR4andOb0FYd0lnNTdfUHMzVE96ME5UX0FIenZjd2VCejVyVUlNZTlia1ZGNUJmS0lSeHEwZHgyYTlpbWpXMFdVT3hVSjNKQkw0X1dtRlFZeHY5b2c?oc=5",
-   "ts": 1795333966,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "BWXT",
-   "source": "Local intel: Traders Union (AUKUS and navies)",
-   "title": "Australia defends AUKUS submarine plan after CBO warns of U.S. Navy strain",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPN2VQbXlnY0pRMkQwNEtRNVh0QTRwamxTQzFXUzZwVFV3M3VoYV9SZUV5RHl6Wm9MM3pfcVhFQTJkTUp0N1lSMFo1VGlkaG1rVFhWZElFMWpZUVV5N0JUZEV6WTh0dVI0RGNBSDBUZXNoLWF4MGZzekZaNXVGRy1vSjg2YUhRQnJRRTkzcEQwWlUzSUl0WlA0c3Y1YUVFYk4yZ2c?oc=5",
-   "ts": 1795344924,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "BWXT",
-   "source": "Local intel: The Times of India (AUKUS and navies)",
-   "title": "\u2018They are wrong\u2019: Australia dismisses US report warning AUKUS submarine deal could hurt Navy",
-   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQQXpBb29rdVl6VFNDbXJHWG94dk1nOEpBMUtzT21sQUxjdlhvNzc1ZkVVNmhXT1dVVEVuenNPd3BrSGxDYmJhdGpDM3FkdzBjS19hU2RLeVQtQVJKLXNYdThqZHV2akdCUFZhN2tseVhucTlxRXNpUmZGNmpwYzZQcFk2NXNZRW1jcjN4LWVUZElBWk85bUVjc1U1WWtZMnk4RHBQWlBRLVFmMEV6Q3ctODF3bHNmTHpOR1A4RWdiMTZOclczSmpjNEZYUGlTdUdsd3Ftd2xsRXVzcDBBWWdROVJTczE2TWF5NE8zVWdQdzlHeHZITjhvRXJ6Y096S0NP0gGGAkFVX3lxTFBPTVBhZFdva2xqdm5paUNycnlHWXdxLXIzeFNFc0NiU0ZqMzVwSVlGd2xCYklPWGJkeW9Jd3NoV3hSM3dmM3BmbU5XekFMYVhBcHJEemxnLTlDZmFHYWNIR3pSSFEwOFVKMDU3SGRkLXphREtYSnBLd2VMZEhUUzhRYXNGNFVtbGRpVlF4ZjU3ajd1bjN4dHVzdVBWZWtVemZweWNsLWcxaDF2VXZVWnZUZ0RHeVB3dlEyOEt1RkNBN0tEazZzVzN1ZXRDbzItaXl2eU5yUUg5anp6Um5EZmhKemEweWZqZ2FsSmtfODItYUFMMWg4ZG1abTJZb3AwZGl2WS0yeVE?oc=5",
-   "ts": 1795340100,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Alligator Energy Ltd (ASX:AGE) Advances Samphire Uranium Project with Accelerated Drilling and Federal Referral Lodged - Kalkine",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNUVluT1hoWFNETDBWSnFqTnRuNDF3VVdyUmpaSXVwanRRZTJ4N25xMVpUbmlXZUZ4aG4yWHN3T3FRcE02b1d6OGJVckVpR2UycTE4NUpSOU94bWt1aDZaQUhxM1k3VFJ4dkRPcXgwdGlxZkFkUklVSldRcVU3cmVKcVZPWXhCczZJUEVYdW1rX2g4cWp4YVYxaXpMdmV1bzFCN0U3WTZ0eE9uZG54dElaVjBmY3NyMDd1RnNxT3Q3Q0pVdVdXNlNxNGRJcEJGY1VWQmpXb1ZTTVNXZExoNk85b0UycGk?oc=5",
-   "ts": 1795413360,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Small Australian explorer's drilling and permit news, not a Cameco event."
-  },
-  {
-   "ticker": "BWXT",
    "source": "Local intel: Firstpost (AUKUS and navies)",
    "title": "Australia's Defence Minister Richard Marles denies report AUKUS deal would 'diminish US Navy'",
    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcTd5dDFVbDBZWWlJNUZYLWo5bURhVHoydEQyblREZVYwc2NGR0xYa185S1B6UzN0dm44ZXBvbldXX1JRUGVFa1NEODhTaGpkMHI0WWltV182SlY4SGF1d1FFVHg5bkdldnM4WGtVbEg5UGdEX29hS21SNF84eEYtN2ZKZThoQjJtTDFwamZLSUNsYjhyWkZsR1lveDNYWklERE1STXR1VmRuNUhzWklHZ2hMOU9TcXdSSVQtVEQ5eFBwSk95VHlMR0Nkam9lbU1TcGfSAdcBQVVfeXFMUGx6TDByc2FUTTdTdlktUjE1TEFJMWVLWHFna0tiTWswTzIyTVpJSzE3X05zNktpQVBaODV4VElMOHY3VjR5RTRPUFJscE8zcE5mQ1NrWU9WdW5YNjhvOHNMa2lYRVVKUXRFbmJ6bjZnSDNhMW1Yd1l2MnVFZWJUTk8xSVdReUROb21Ld01kMlRPay1tY3piMjhjTmVFNFJNZVdqVUJZZ29DU1ZsRkoyUElwUmw2ZE1kWFZ5QXE1TkY2cWVWQ1RQOFZrdDN1RDUxVnUtNHlkQW8?oc=5",
@@ -3904,6 +3856,54 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic Yahoo Finance landing page with no specific new company event."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: \"McArthur River\" OR \"Cigar Lake\" uranium",
+   "title": "Global Uranium Reports ANT Survey Results at Astro and Identifies Promising Follow-Up Area Along AS-1 - Morningstar",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPWHFkbklaMmhtU0pHbTVkZGNVMVpxLVA1aWxTdzlydlFGOGF6S0hwbnJaV0dTNkVpQW82LTNmYnBYVUVJSUNhckcwVnBhZ0VqYjFuV0luQ2ZSTnR3T080WnpsTDBkOEhyd2lXcExGek1jV21XQ0NEV2xKNHRjeFZxNF9jSjNwTHotQ2hzam1DMHRIT2RCMVl1WUJXOXZfR04xYnhmeFQ5QXNOU25pdldCTDdOOVR1TzNXb3U2UkZKbVVxSEpxYmpDNE9PN0djOG93UjdueHlCOENyX05iUW5rWWtIdXFGYXJqa1I2WmZn?oc=5",
+   "ts": 1795525200,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Exploration survey at Astro project, not McArthur River or Cigar Lake output."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: \"Sprott Physical Uranium\"",
+   "title": "SPROTT PHYSICAL URANIUM TRUST (U-U.NE) Seasonal returns chart - Yahoo Finance UK",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9MT0V6Yzh1Q192S19nM0M2UTNUemJ6VExJX0ZDWU5Cd2IyX1hTdUR6eWR2eS1XQlB5enQ0STRfOFhtbVVnYUIyYVhEdVVFZVRkWjRLWExsTXhyWlRqN1FOX1RsZzI?oc=5",
+   "ts": 1795521790,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Seasonal returns chart for a fund, a price recap with no new information."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Local intel: World Nuclear News (World Nuclear News)",
+   "title": "Key step in licensing of US TRISO fuel facilities",
+   "link": "https://www.world-nuclear-news.org/articles/key-step-in-licensing-of-us-triso-fuel-facilities",
+   "ts": 1795527620,
+   "materiality": 5,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Licensing step for new TRISO fuel plants; real but early, years from revenue."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: Instagram (Namibia)",
+   "title": "Nandi-Ndaitwah urges wider use of nuclear energy Staff Reporter PRESIDENT Netumbo Nandi-Ndaitwah has called for the expanded application of nuclear energy to support Namibia\u2019s economic development and growth, while urgin",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE93T2F3X3RVZGR5Yy15UGJ6MFNia09rNDBzc3p0bDI4eXBZME42Q0J5dGFqLTM0eVUxQW12aUVHdVVkQ2twV0JITmxmU25zektibmc?oc=5",
+   "ts": 1795518014,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "policy_tariff",
+   "why": "Generic Namibian president comment on nuclear; no new contract or policy with a date."
   }
  ],
  "reviews": [
@@ -5426,16 +5426,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.03863,
+  "day_usd": 0.03964,
   "month": "2026-11",
-  "month_usd": 0.77005,
-  "total_usd": 0.77005,
+  "month_usd": 0.77106,
+  "total_usd": 0.77106,
   "by_role": {
    "macro": 0.06009,
    "whale": 0.01301,
    "crowd": 0.00849,
    "level": 0.03741,
-   "scout": 0.08784,
+   "scout": 0.08885,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5554,7 +5554,7 @@
   "SPY": 722.39,
   "SSO": 61.17
  },
- "last_cycle": "2026-11-24 08:46 ET",
+ "last_cycle": "2026-11-24 08:57 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51438,6 +51438,7 @@
   "85342e1a4ce58044",
   "fa5187062c587fa6",
   "3e8dd4ce58da4a9b",
+  "d7a4322b710f8594",
   "6c319586d5fd38f0",
   "15d6f9963fcdf41e",
   "236832db131afa54",
@@ -51510,6 +51511,7 @@
   "42e4688c154f3e5b",
   "608a6c7d81d54f47",
   "0364072127de7058",
+  "113ecd31dc858e1b",
   "17b21557a779a003",
   "5ca17a18c47750da",
   "f8916dca48bd9f43",
@@ -51737,7 +51739,7 @@
   "a7baf61adc01832c",
   "13880e66390f270d"
  ],
- "news_slow_at": 1795527435.8449147,
+ "news_slow_at": 1795528053.1824632,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -205440,25 +205442,25 @@
    "lesson": null
   }
  ],
- "intel_at": 1795526628.725643,
+ "intel_at": 1795528468.8697546,
  "intel_health": {
-  "at": "2026-11-24 08:24",
+  "at": "2026-11-24 08:55",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
-   "Athabasca Basin": 6,
+   "Athabasca Basin": 5,
    "Saskatchewan wildfires": 0,
    "Rook I / Arrow": 4,
    "Wheeler River / Phoenix": 7,
    "Port Hope / Blind River": 0,
-   "Westinghouse": 8,
+   "Westinghouse": 6,
    "Kazakhstan": 0,
    "Niger": 6,
-   "Namibia": 30,
+   "Namibia": 32,
    "Russia supply": 4,
-   "Piketon": 13,
+   "Piketon": 14,
    "HALEU": 10,
-   "Wyoming ISR": 22,
+   "Wyoming ISR": 23,
    "South Texas ISR": 0,
    "White Mesa / Utah": 12,
    "Rare earths (Energy Fuels)": 16,
@@ -205471,33 +205473,33 @@
    "ERCOT grid": 10,
    "Data-center nuclear deals": 7,
    "Japan restarts": 7,
-   "China new builds": 7,
-   "Congress and laws": 39,
-   "NRC decisions": 17,
-   "Energy Department": 45,
+   "China new builds": 5,
+   "Congress and laws": 40,
+   "NRC decisions": 11,
+   "Energy Department": 36,
    "White House and executive orders": 21,
    "Tariffs and trade": 1,
-   "India": 14,
-   "South Korea": 74,
-   "Europe new builds": 57,
-   "France and UK": 7,
-   "Middle East": 49,
+   "India": 13,
+   "South Korea": 100,
+   "Europe new builds": 58,
+   "France and UK": 8,
+   "Middle East": 48,
    "Asia newcomers": 28,
    "Canada SMRs": 8,
-   "Big tech power deals": 54,
-   "Iran": 24,
+   "Big tech power deals": 27,
+   "Iran": 46,
    "North Korea": 82,
-   "War zones": 32,
+   "War zones": 21,
    "AUKUS and navies": 22,
-   "Weapons programs": 15,
+   "Weapons programs": 21,
    "Stockpiles and reserves": 21,
    "Sprott trust": 4,
    "Uranium price": 13,
    "US policy": 0,
-   "Lawsuits and investigations": 31,
-   "Workers and jobs": 31,
+   "Lawsuits and investigations": 72,
+   "Workers and jobs": 29,
    "CBC Saskatchewan": 20,
-   "World Nuclear News": 50,
+   "World Nuclear News": 52,
    "Federal Register (uranium)": 7,
    "Federal Register (nuclear)": 26,
    "NRC event reports": 4
@@ -205505,42 +205507,42 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 08:46",
-  "total": 481,
-  "week": 405,
+  "updated": "2026-11-24 08:57",
+  "total": 485,
+  "week": 409,
   "places": {
    "Uranium price": 43,
    "Piketon": 26,
-   "World Nuclear News": 24,
+   "World Nuclear News": 26,
    "Europe new builds": 24,
-   "South Korea": 23,
+   "South Korea": 24,
    "Workers and jobs": 20,
    "AUKUS and navies": 16,
    "Weapons programs": 16,
-   "Namibia": 14,
+   "Namibia": 15,
    "PJM grid": 14,
    "Rare earths (Energy Fuels)": 12,
    "Wheeler River / Phoenix": 11
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-24 08:24",
+   "at": "2026-11-24 08:55",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
-    "Athabasca Basin": 6,
+    "Athabasca Basin": 5,
     "Saskatchewan wildfires": 0,
     "Rook I / Arrow": 4,
     "Wheeler River / Phoenix": 7,
     "Port Hope / Blind River": 0,
-    "Westinghouse": 8,
+    "Westinghouse": 6,
     "Kazakhstan": 0,
     "Niger": 6,
-    "Namibia": 30,
+    "Namibia": 32,
     "Russia supply": 4,
-    "Piketon": 13,
+    "Piketon": 14,
     "HALEU": 10,
-    "Wyoming ISR": 22,
+    "Wyoming ISR": 23,
     "South Texas ISR": 0,
     "White Mesa / Utah": 12,
     "Rare earths (Energy Fuels)": 16,
@@ -205553,33 +205555,33 @@
     "ERCOT grid": 10,
     "Data-center nuclear deals": 7,
     "Japan restarts": 7,
-    "China new builds": 7,
-    "Congress and laws": 39,
-    "NRC decisions": 17,
-    "Energy Department": 45,
+    "China new builds": 5,
+    "Congress and laws": 40,
+    "NRC decisions": 11,
+    "Energy Department": 36,
     "White House and executive orders": 21,
     "Tariffs and trade": 1,
-    "India": 14,
-    "South Korea": 74,
-    "Europe new builds": 57,
-    "France and UK": 7,
-    "Middle East": 49,
+    "India": 13,
+    "South Korea": 100,
+    "Europe new builds": 58,
+    "France and UK": 8,
+    "Middle East": 48,
     "Asia newcomers": 28,
     "Canada SMRs": 8,
-    "Big tech power deals": 54,
-    "Iran": 24,
+    "Big tech power deals": 27,
+    "Iran": 46,
     "North Korea": 82,
-    "War zones": 32,
+    "War zones": 21,
     "AUKUS and navies": 22,
-    "Weapons programs": 15,
+    "Weapons programs": 21,
     "Stockpiles and reserves": 21,
     "Sprott trust": 4,
     "Uranium price": 13,
     "US policy": 0,
-    "Lawsuits and investigations": 31,
-    "Workers and jobs": 31,
+    "Lawsuits and investigations": 72,
+    "Workers and jobs": 29,
     "CBC Saskatchewan": 20,
-    "World Nuclear News": 50,
+    "World Nuclear News": 52,
     "Federal Register (uranium)": 7,
     "Federal Register (nuclear)": 26,
     "NRC event reports": 4
@@ -206157,6 +206159,7 @@
   "06c0ff00fa161dd2",
   "73c8ecdc752b197b",
   "67ae0f09ed3add32",
+  "4d1201d16c499929",
   "eb9266fa4c912b94",
   "68240c37371f3e26",
   "65144e58fd5c26e9",
@@ -206168,6 +206171,7 @@
   "15fecb83818a0949",
   "fd337937e7471e2a",
   "ac86fb04e7eb798b",
+  "a23df2d3730c8d3b",
   "c10f62c3161fa59d",
   "df371025b77dc13a",
   "797e5c4039060606",
@@ -206184,6 +206188,7 @@
   "7f7a05be6b3ac1f5",
   "9e7ebdf62031eeaf",
   "a9bcbfe54ba12f7e",
+  "ed609e22ce9351ef",
   "0ad3ea7bae8b611c",
   "16345b7a70842227",
   "b95ad295cbbaef38",
@@ -206196,7 +206201,6 @@
   "6aea49b49aa5bae7",
   "5178e5d1234a91bb",
   "61659cb80b158a77",
-  "a7baf61adc01832c",
   "c2a1739b2e369eff",
   "28eaa442b6a19a6f",
   "97e5a70ea6902e58",
@@ -206255,7 +206259,7 @@
   "f88ba68b2c94d1a7",
   "29f141fd08778bc3",
   "fe094eef9f0aabee",
-  "ed609e22ce9351ef"
+  "a7baf61adc01832c"
  ],
  "panic_log": [
   {
@@ -206296,7 +206300,7 @@
   }
  ],
  "memory_view": {
-  "events": 1594,
+  "events": 1595,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -206874,15 +206878,6 @@
   "recent": [
    {
     "date": "2026-11-23",
-    "ticker": "VST",
-    "title": "NRC issues its guide for licensing reactor designs already authorized by the Energy Department or the military",
-    "type": "intel_regulation",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-23",
     "ticker": "BWXT",
     "title": "Karman Awarded $31 Million Navy Contract for Virginia-Class Submarine Propulsor Tailcones",
     "type": "intel_contract",
@@ -207228,6 +207223,15 @@
     "ticker": "LEU",
     "title": "AP1000 Component Deal Could Expand BWX Technologies Stock Role In Nuclear Builds",
     "type": "contract_deal",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-24",
+    "ticker": "BWXT",
+    "title": "Key step in licensing of US TRISO fuel facilities",
+    "type": "intel_production",
     "r0": null,
     "r5": null,
     "r20": null
@@ -207886,7 +207890,7 @@
    }
   ]
  },
- "dossier_at": 1795526670.0195806,
+ "dossier_at": 1795528510.691234,
  "sector_prices": {
   "_at": 1795511759.0681665,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -207944,80 +207948,80 @@
    "name": "Cameco",
    "price": 61.49,
    "week_pct": -6.82,
-   "built": "2026-11-24 08:24"
+   "built": "2026-11-24 08:55"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.78,
    "week_pct": -8.57,
-   "built": "2026-11-24 08:24"
+   "built": "2026-11-24 08:55"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.85,
    "week_pct": -4.57,
-   "built": "2026-11-24 08:24"
+   "built": "2026-11-24 08:55"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.77,
    "week_pct": -7.33,
-   "built": "2026-11-24 08:24"
+   "built": "2026-11-24 08:55"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.22,
    "week_pct": -13.58,
-   "built": "2026-11-24 08:24"
+   "built": "2026-11-24 08:55"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 86.8,
    "week_pct": -11.0,
-   "built": "2026-11-24 08:24"
+   "built": "2026-11-24 08:55"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.71,
    "week_pct": -0.95,
-   "built": "2026-11-24 08:24"
+   "built": "2026-11-24 08:55"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 251.76,
    "week_pct": -9.38,
-   "built": "2026-11-24 08:24"
+   "built": "2026-11-24 08:55"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 123.81,
    "week_pct": -4.88,
-   "built": "2026-11-24 08:24"
+   "built": "2026-11-24 08:55"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 365.03,
    "week_pct": 1.47,
-   "built": "2026-11-24 08:24"
+   "built": "2026-11-24 08:55"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-24 08:24"
+   "built": "2026-11-24 08:55"
   }
  ],
- "heartbeat": "2026-11-24 08:46",
+ "heartbeat": "2026-11-24 08:57",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -208177,13 +208181,13 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 108,
-   "used": 101,
+   "asked": 110,
+   "used": 103,
    "notes": {
     "TLN Deals and contracts": 4,
-    "CCJ Deals and contracts": 27,
-    "BWXT Deals and contracts": 22,
-    "SECTOR Government and laws": 27,
+    "CCJ Deals and contracts": 29,
+    "BWXT Deals and contracts": 23,
+    "SECTOR Government and laws": 28,
     "UUUU Deals and contracts": 24,
     "SECTOR Countries": 23,
     "CEG Deals and contracts": 14,
@@ -208195,7 +208199,7 @@
     "UEC Deals and contracts": 3,
     "UUUU Legal": 5,
     "SECTOR Uranium market": 2,
-    "CCJ Legal": 4,
+    "CCJ Legal": 5,
     "CEG Legal": 1,
     "VST Deals and contracts": 9,
     "LEU Legal": 1
@@ -212011,7 +212015,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 08:46",
+ "watchdog_last": "2026-11-24 08:57",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
