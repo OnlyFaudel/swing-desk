@@ -2608,18 +2608,6 @@
  },
  "news_feed": [
   {
-   "ticker": "UUUU",
-   "source": "Yahoo Finance",
-   "title": "Can UUUU's Uranium Ramp-Up Strengthen Its Long-Term Growth Story?",
-   "link": "https://finance.yahoo.com/energy/articles/uuuus-uranium-ramp-strengthen-long-170400847.html?.tsrc=rss",
-   "ts": 1795453440,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Promotional growth-story piece restating known production targets; no new information."
-  },
-  {
    "ticker": "CCJ",
    "source": "Yahoo Finance",
    "title": "Cameco vs. Denison: Which Uranium Stock Offers Better Opportunity Today?",
@@ -5606,6 +5594,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Recycled GuruFocus valuation recap with a price decline; no new company information."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News: \"Centrus Energy\"",
+   "title": "Centrus Energy to Host Investor Day Dec. 7 with Business and Financial Outlook Updates - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNcHF5bTEyZWo2UmplLWRhZldsdncwSlR1bldxNWp2QWhYVTBidWpiUER6dE5yQWZWMWYtRDh5OUJwcEJ1SHBoOXppcjVldkMxXzJNZ18xbU93NDI0V0lHV2VLaklJWndrRXRnWFNaeHNUckVCQlhhZ2FsY0pvTEFmZUtUYzFGX1RNR2dFTGoyRWltWVJmdUpuT01DZ0hLNURMbkMxeW1jMWFQdWNFc0QzTWJUUEFWOTh1TlZwZTlHVFNnWE1KVkt0V1pvbVFmb0FvNEpPbkRPT0NoaGZlakZKYw?oc=5",
+   "ts": 1795556581,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Investor Day with outlook updates is a scheduled company event that could move the stock, but content is unknown."
   }
  ],
  "reviews": [
@@ -7356,16 +7356,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.33928,
+  "day_usd": 0.33977,
   "month": "2026-11",
-  "month_usd": 1.0707,
-  "total_usd": 1.0707,
+  "month_usd": 1.07119,
+  "total_usd": 1.07119,
   "by_role": {
    "macro": 0.09628,
    "whale": 0.01778,
    "crowd": 0.01194,
    "level": 0.11932,
-   "scout": 0.12417,
+   "scout": 0.12466,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -7501,7 +7501,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-24 18:44 ET",
+ "last_cycle": "2026-11-24 18:54 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -54814,8 +54814,8 @@
   "2ddc82c2b5215c74",
   "d39dc266a3b4dae2",
   "2aa378956ea76132",
-  "0235abc0565d5130",
   "326afd4f7d0093ec",
+  "0235abc0565d5130",
   "a454f891b1c31853",
   "498180393c058995",
   "dc443e4398225bc9",
@@ -55099,6 +55099,7 @@
   "813ce322cba7c1e5",
   "c5ba50cbcf752a4f",
   "2f0e6fcd07e9c356",
+  "637530bf82fb0126",
   "16f5d7a8fa7cf22a",
   "991c698e5a396dd1",
   "6c0f0f111a586f76",
@@ -55167,7 +55168,7 @@
   "f9eb7cbce2793d86",
   "09bd7b0e348df04b"
  ],
- "news_slow_at": 1795563369.796939,
+ "news_slow_at": 1795563990.2420456,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -212153,6 +212154,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "LEU",
+   "type": "other",
+   "title": "Centrus Energy to Host Investor Day Dec. 7 with Business and Financial Outlook Updates - TradingView",
+   "date": "2026-11-24",
+   "price": 84.12,
+   "materiality": 6,
+   "direction_called": "neutral",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -212233,7 +212246,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 18:44",
+  "updated": "2026-11-24 18:54",
   "total": 536,
   "week": 442,
   "places": {
@@ -213034,7 +213047,7 @@
   }
  ],
  "memory_view": {
-  "events": 1613,
+  "events": 1614,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -213618,15 +213631,6 @@
   "recent": [
    {
     "date": "2026-11-24",
-    "ticker": "CEG",
-    "title": "Cygnus secures Nuclear Regulatory Commission (NRC) CLE Support contract",
-    "type": "intel_regulation",
-    "r0": -2.73,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-24",
     "ticker": "VST",
     "title": "Cygnus secures Nuclear Regulatory Commission (NRC) CLE Support contract",
     "type": "intel_regulation",
@@ -213972,6 +213976,15 @@
     "ticker": "CCJ",
     "title": "Kazakhstan Signs New Uranium Supply Deal with India and China as Export Markets Expand",
     "type": "intel_contract",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-24",
+    "ticker": "LEU",
+    "title": "Centrus Energy to Host Investor Day Dec. 7 with Business and Financial Outlook Updates - TradingView",
+    "type": "other",
     "r0": null,
     "r5": null,
     "r20": null
@@ -214812,7 +214825,7 @@
    "built": "2026-11-24 18:36"
   }
  ],
- "heartbeat": "2026-11-24 18:44",
+ "heartbeat": "2026-11-24 18:54",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -214972,8 +214985,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 190,
-   "used": 172,
+   "asked": 191,
+   "used": 173,
    "notes": {
     "TLN Deals and contracts": 9,
     "CCJ Deals and contracts": 41,
@@ -214986,7 +214999,7 @@
     "NXE Deals and contracts": 9,
     "DNN Deals and contracts": 8,
     "BWXT Legal": 2,
-    "LEU Deals and contracts": 26,
+    "LEU Deals and contracts": 27,
     "UEC Deals and contracts": 3,
     "UUUU Legal": 17,
     "SECTOR Uranium market": 3,
@@ -221142,7 +221155,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 18:44",
+ "watchdog_last": "2026-11-24 18:54",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
