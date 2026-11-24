@@ -155,8 +155,8 @@
   ],
   "week": "2026-W48",
   "week_start": 1000.514157479616,
-  "day": "2026-11-23",
-  "day_start": 1000.514157479616,
+  "day": "2026-11-24",
+  "day_start": 1029.4871151027255,
   "killed": false,
   "wash_flags": [],
   "buys_log": [
@@ -238,7 +238,8 @@
   "radarres:2026-11-23": true,
   "questioner:2026-11-23:9": true,
   "sput:2026-11-23": true,
-  "ev:f02ea2de0893": true
+  "ev:f02ea2de0893": true,
+  "catalysts:2026-11-24": true
  },
  "benchmark": {
   "shares": {
@@ -891,30 +892,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Sprott Asset Management's Jacob White on uranium stocks sell-off and the case for a recovery - Proactive financial news",
-   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNVVE2WDhxYWs3STczal84RUJVczE4ZVZjLV9Ma2lubElfMTlYbUlNSGM1SHB6T0NNNmVfbktRZ0RYcmppdW9scm5XSlMtd3BWSm11OXNqUkozMl9FYVRHZDZVRlhqV3J3SHptVGdCWV9qVnpaYVR3UHFhNTQxY1gzZkt6Qm85T1ZpWmJtWGpWVEZWby04bTRnT18tZFJZeTk0b2YzTWlKNDU5SGlGRUxkSmhiVlpYUy00YXlxQXRiWThBQlpBV0VoQVktaGNKOGZjY0hpeWszN0pyMFhXSUpFSEtkUmFHenBMckE?oc=5",
-   "ts": 1795160400,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Fund manager opinion on uranium sell-off; no new facts"
-  },
-  {
-   "ticker": "UUUU",
-   "source": "Google News: \"Energy Fuels\" uranium",
-   "title": "Is Energy Fuels (TSX:EFR) Undervalued After Its Selloff And Strong Sell Rating? - Simply Wall St",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQUlsbHliNWEtbDBveGZjX2h2U1VMRm1NN01KYmZRbmJsRW95RUItSk10cFlmNFFEOXl1MnVDVHFESjF2Ul9TbkRhX3RlYzl4cHVpNVRfcnNQdFIwYjlmWFQyakR5TTNJU0ZpQlByNzJjSlJTZTdyVHBwQlVud0JLQmRMWnBqQUpYNXdDTUpiblkwWnRFUUpGMXd1QUJkYzNnRlIyc1psdTUzLTljTTVYTzV5RUJpNVNwdkx3clFKSFZyNE1DTXQ0enNqM1TSAdIBQVVfeXFMTzZCUVBRbkpSbjhQRUFqY3NITmJmY0FZRzhjNmo5NEM0M2VNcV9wNEM5T3JKTVhnT1hVWGxfT1g2Y2o5eGpiUnZVcmdlbmRMRHJuNjg0bHRJbEJFeVo5N1N2c1FaOUxaY2FmbGJNcHpQNVVQbmVMcjNQazhkOXc2NEJmUGRkYmkzN0lid01ZVzZZczZXMFF1SWxnLUN0YmR5bjJab1dYbldqNVEwOTlmNkU4WVRUVHZGdTdpbmhsRG16TGZpRnZuV3FyNkhWTGpQTjRR?oc=5",
-   "ts": 1795248710,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
   {
    "ticker": "UUUU",
    "source": "Yahoo Finance",
@@ -3890,6 +3867,30 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic Yahoo Finance forecast-page headline with no new company-specific information."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News",
+   "title": "Mining Briefs: Energy Fuels, WIN, Kingsrose, and more... - Mining News Net",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWThCV1BMWGJraFVUV2NPTmczcjFNWURNSlFHUkdGTEVSSklGbWdsNFV5YzNDYjN5LS0zYy1FOEdVdUZOV1k4b25TUE1jQ2tCS2wxQldrZUZhay10QjBBLU9JZ3NueXdjNTAxZlJnQVFyUGhhZWhKM2NBekd5em9HNENPSmtEaVlZWlJidHZBb1NObXQ2SVJzbC1IWEVfTFlyU3p2dVNObEZ6Qk9xYVdtc3N3NA?oc=5",
+   "ts": 1795498321,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Roundup of mining briefs; Energy Fuels is only a minor mention, no new company-specific information."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Local intel: ExchangeMonitor (Energy Department)",
+   "title": "Deep Isolation to receive $20 million from DOE ARPA-E",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbDVhSFhTYUNSTi1DYmtScjdnNVU4dFpUVnBjNjBZT1M2dVZ6MTJqVkRIS2c5Um1Wb2dEeklsNEQwRkFLMlptNktmOTBGaWhpbE12WDRSSlgxVDBSeFJUZm43NG44Qk9tZ1h2d2xXOVhEdlFfMzR5RWJCVXRINUNuSTQ1TWNKbHUxaTdPaTlB?oc=5",
+   "ts": 1795467548,
+   "materiality": 4,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Deep Isolation's $20M DOE grant is for nuclear waste disposal, a small related-sector item for Centrus."
   }
  ],
  "reviews": [
@@ -5411,17 +5412,17 @@
   "mode": "fixed"
  },
  "spend": {
-  "day": "2026-11-23",
-  "day_usd": 0.46794,
+  "day": "2026-11-24",
+  "day_usd": 0.00049,
   "month": "2026-11",
-  "month_usd": 0.73142,
-  "total_usd": 0.73142,
+  "month_usd": 0.73191,
+  "total_usd": 0.73191,
   "by_role": {
    "macro": 0.05663,
    "whale": 0.01301,
    "crowd": 0.00849,
    "level": 0.03741,
-   "scout": 0.07225,
+   "scout": 0.07274,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5539,7 +5540,7 @@
   "TLN": 365.03,
   "SPY": 722.39
  },
- "last_cycle": "2026-11-23 23:57 ET",
+ "last_cycle": "2026-11-24 00:58 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -5565,7 +5566,7 @@
  },
  "brakes": {
   "equity": 1029.49,
-  "day_pct": 2.9,
+  "day_pct": 0.0,
   "week_pct": 2.9,
   "drawdown_pct": -2.36,
   "no_new_today": false,
@@ -51412,7 +51413,6 @@
   "537b32f5b2133213",
   "f8916dca48bd9f43",
   "29dae386e051dd8c",
-  "dce4cce47213c16f",
   "bf01a2cc0277276c",
   "717c47c79d590a65",
   "85342e1a4ce58044",
@@ -51565,6 +51565,7 @@
   "42e4688c154f3e5b",
   "e87b1e4d61fe1cbd",
   "0ec3c23071785cfd",
+  "8fb46f7035449802",
   "1c8b73cd5ee7949f",
   "2b8ac242c7c5754f",
   "0939c76270a70008",
@@ -51673,10 +51674,11 @@
   "e7f494cb247bf154",
   "302ff446725f4916",
   "4c474a21ada49911",
-  "e62333d1078d965b",
-  "48a608e975b439d8"
+  "dce4cce47213c16f",
+  "48a608e975b439d8",
+  "e62333d1078d965b"
  ],
- "news_slow_at": 1795496167.8406599,
+ "news_slow_at": 1795499887.5189676,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -204874,11 +204876,11 @@
    "lesson": null
   }
  ],
- "intel_at": 1795494952.1698585,
+ "intel_at": 1795498671.5088313,
  "intel_health": {
-  "at": "2026-11-23 23:36",
+  "at": "2026-11-24 00:38",
   "sources": {
-   "Cigar Lake": 5,
+   "Cigar Lake": 6,
    "McArthur River / Key Lake": 2,
    "Athabasca Basin": 6,
    "Saskatchewan wildfires": 0,
@@ -204892,44 +204894,44 @@
    "Russia supply": 1,
    "Piketon": 11,
    "HALEU": 9,
-   "Wyoming ISR": 26,
+   "Wyoming ISR": 19,
    "South Texas ISR": 1,
-   "White Mesa / Utah": 0,
-   "Rare earths (Energy Fuels)": 0,
+   "White Mesa / Utah": 11,
+   "Rare earths (Energy Fuels)": 16,
    "Lynchburg / Erwin": 0,
    "Naval reactors": 5,
    "Crane / Three Mile Island": 3,
-   "Susquehanna": 2,
+   "Susquehanna": 1,
    "Comanche Peak": 3,
    "PJM grid": 8,
-   "ERCOT grid": 0,
-   "Data-center nuclear deals": 0,
-   "Japan restarts": 4,
-   "China new builds": 5,
-   "Congress and laws": 41,
-   "NRC decisions": 14,
-   "Energy Department": 36,
+   "ERCOT grid": 10,
+   "Data-center nuclear deals": 8,
+   "Japan restarts": 0,
+   "China new builds": 4,
+   "Congress and laws": 42,
+   "NRC decisions": 8,
+   "Energy Department": 47,
    "White House and executive orders": 16,
    "Tariffs and trade": 1,
-   "India": 16,
+   "India": 18,
    "South Korea": 100,
-   "Europe new builds": 27,
-   "France and UK": 6,
-   "Middle East": 46,
-   "Asia newcomers": 56,
+   "Europe new builds": 54,
+   "France and UK": 7,
+   "Middle East": 45,
+   "Asia newcomers": 25,
    "Canada SMRs": 6,
-   "Big tech power deals": 56,
-   "Iran": 23,
-   "North Korea": 79,
-   "War zones": 27,
+   "Big tech power deals": 27,
+   "Iran": 31,
+   "North Korea": 100,
+   "War zones": 26,
    "AUKUS and navies": 22,
-   "Weapons programs": 12,
-   "Stockpiles and reserves": 14,
-   "Sprott trust": 5,
+   "Weapons programs": 16,
+   "Stockpiles and reserves": 6,
+   "Sprott trust": 4,
    "Uranium price": 41,
    "US policy": 0,
    "Lawsuits and investigations": 71,
-   "Workers and jobs": 21,
+   "Workers and jobs": 22,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
    "Federal Register (uranium)": 6,
@@ -204939,9 +204941,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 23:57",
-  "total": 427,
-  "week": 366,
+  "updated": "2026-11-24 00:58",
+  "total": 428,
+  "week": 365,
   "places": {
    "Uranium price": 42,
    "World Nuclear News": 27,
@@ -204958,9 +204960,9 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-23 23:36",
+   "at": "2026-11-24 00:38",
    "sources": {
-    "Cigar Lake": 5,
+    "Cigar Lake": 6,
     "McArthur River / Key Lake": 2,
     "Athabasca Basin": 6,
     "Saskatchewan wildfires": 0,
@@ -204974,44 +204976,44 @@
     "Russia supply": 1,
     "Piketon": 11,
     "HALEU": 9,
-    "Wyoming ISR": 26,
+    "Wyoming ISR": 19,
     "South Texas ISR": 1,
-    "White Mesa / Utah": 0,
-    "Rare earths (Energy Fuels)": 0,
+    "White Mesa / Utah": 11,
+    "Rare earths (Energy Fuels)": 16,
     "Lynchburg / Erwin": 0,
     "Naval reactors": 5,
     "Crane / Three Mile Island": 3,
-    "Susquehanna": 2,
+    "Susquehanna": 1,
     "Comanche Peak": 3,
     "PJM grid": 8,
-    "ERCOT grid": 0,
-    "Data-center nuclear deals": 0,
-    "Japan restarts": 4,
-    "China new builds": 5,
-    "Congress and laws": 41,
-    "NRC decisions": 14,
-    "Energy Department": 36,
+    "ERCOT grid": 10,
+    "Data-center nuclear deals": 8,
+    "Japan restarts": 0,
+    "China new builds": 4,
+    "Congress and laws": 42,
+    "NRC decisions": 8,
+    "Energy Department": 47,
     "White House and executive orders": 16,
     "Tariffs and trade": 1,
-    "India": 16,
+    "India": 18,
     "South Korea": 100,
-    "Europe new builds": 27,
-    "France and UK": 6,
-    "Middle East": 46,
-    "Asia newcomers": 56,
+    "Europe new builds": 54,
+    "France and UK": 7,
+    "Middle East": 45,
+    "Asia newcomers": 25,
     "Canada SMRs": 6,
-    "Big tech power deals": 56,
-    "Iran": 23,
-    "North Korea": 79,
-    "War zones": 27,
+    "Big tech power deals": 27,
+    "Iran": 31,
+    "North Korea": 100,
+    "War zones": 26,
     "AUKUS and navies": 22,
-    "Weapons programs": 12,
-    "Stockpiles and reserves": 14,
-    "Sprott trust": 5,
+    "Weapons programs": 16,
+    "Stockpiles and reserves": 6,
+    "Sprott trust": 4,
     "Uranium price": 41,
     "US policy": 0,
     "Lawsuits and investigations": 71,
-    "Workers and jobs": 21,
+    "Workers and jobs": 22,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
     "Federal Register (uranium)": 6,
@@ -205663,6 +205665,7 @@
   "d4097d0d8db37e23",
   "c5a7aa4d347cef23",
   "4039fa58057275ae",
+  "e0b3ad48c50895f3",
   "6c752481de5345ed",
   "dbd18bd6c4654ec8",
   "eb9266fa4c912b94"
@@ -207236,7 +207239,7 @@
    }
   ]
  },
- "dossier_at": 1795494993.5103898,
+ "dossier_at": 1795498712.415255,
  "sector_prices": {
   "_at": 1795489440.1481204,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -207294,80 +207297,80 @@
    "name": "Cameco",
    "price": 61.49,
    "week_pct": -6.82,
-   "built": "2026-11-23 23:36"
+   "built": "2026-11-24 00:38"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.78,
    "week_pct": -8.57,
-   "built": "2026-11-23 23:36"
+   "built": "2026-11-24 00:38"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.85,
    "week_pct": -4.57,
-   "built": "2026-11-23 23:36"
+   "built": "2026-11-24 00:38"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.77,
    "week_pct": -7.33,
-   "built": "2026-11-23 23:36"
+   "built": "2026-11-24 00:38"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.22,
    "week_pct": -13.58,
-   "built": "2026-11-23 23:36"
+   "built": "2026-11-24 00:38"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 86.8,
    "week_pct": -11.0,
-   "built": "2026-11-23 23:36"
+   "built": "2026-11-24 00:38"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.71,
    "week_pct": -0.95,
-   "built": "2026-11-23 23:36"
+   "built": "2026-11-24 00:38"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 251.76,
    "week_pct": -9.38,
-   "built": "2026-11-23 23:36"
+   "built": "2026-11-24 00:38"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 123.81,
    "week_pct": -4.88,
-   "built": "2026-11-23 23:36"
+   "built": "2026-11-24 00:38"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 365.03,
    "week_pct": 1.47,
-   "built": "2026-11-23 23:36"
+   "built": "2026-11-24 00:38"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-23 23:36"
+   "built": "2026-11-24 00:38"
   }
  ],
- "heartbeat": "2026-11-23 23:57",
+ "heartbeat": "2026-11-24 00:58",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -207484,21 +207487,21 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 77,
-   "used": 72,
+   "asked": 78,
+   "used": 73,
    "notes": {
     "TLN Deals and contracts": 2,
     "CCJ Deals and contracts": 22,
     "BWXT Deals and contracts": 16,
     "SECTOR Government and laws": 21,
-    "UUUU Deals and contracts": 17,
+    "UUUU Deals and contracts": 18,
     "SECTOR Countries": 17,
     "CEG Deals and contracts": 11,
     "NXE Legal": 1,
     "NXE Deals and contracts": 1,
     "DNN Deals and contracts": 2,
     "BWXT Legal": 1,
-    "LEU Deals and contracts": 6,
+    "LEU Deals and contracts": 7,
     "UEC Deals and contracts": 1,
     "UUUU Legal": 2,
     "SECTOR Uranium market": 2,
@@ -209284,11 +209287,22 @@
  ],
  "catalysts": [
   {
-   "date": "2026-11-23",
-   "ticker": "CCJ",
-   "what": "Czech National Assembly review of KHNP Dukovany contract termination (date unconfirmed; verify from source)",
-   "kind": "reminder",
-   "by": "pm"
+   "date": "2026-11-25",
+   "ticker": "",
+   "kind": "calendar",
+   "what": "Wednesday before Thanksgiving. Since 1996 the S&P rose Fri->Wed of this week 73% of years (+0.69% vs +0.14% normal); our 10 +1.8% (2008-25, up 67%)."
+  },
+  {
+   "date": "2026-11-26",
+   "ticker": "",
+   "kind": "calendar",
+   "what": "Thanksgiving: market closed."
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "",
+   "kind": "calendar",
+   "what": "Black Friday: market closes at 1 pm, volume about half of normal. Black Friday close -> Monday has been weak: S&P up only 40% of 30 years, our 10 -0.5%, power trio -1.7% (down 6 of 7 years since 2019)."
   },
   {
    "date": "2026-11-30",
@@ -209319,6 +209333,222 @@
    "by": "pm"
   },
   {
+   "date": "2026-11-30",
+   "ticker": "BWXT",
+   "what": "Resting buy at $115.83 expires if not filled; re-check support zone at $115.37",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "BWXT",
+   "what": "Patient Levels buy window expires; check whether the basket has recovered above its 10-day average before any order",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "BWXT",
+   "what": "Setup valid_until expires; re-check basket vs 10-day average and whether the zone $113.99-$117.21 still holds before any new entry.",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "BWXT",
+   "what": "Resting buy at $115.83 expires; check whether price has retested the $115.37 support zone after the AP1000 pop",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; check whether the PJM December capacity-auction delay has been decided and whether the $354.24 support has held",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "",
+   "what": "Questioner follow-up: Has the PJM December capacity-auction delay been decided? The Talen headline calls the long-term sales a pullback opportunity, but the earnings driver is still an open regulatory",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires if unfilled; check whether the PJM December capacity auction delay decision is made and whether support near $354.24 holds",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Confirm whether the PJM December capacity-auction delay has been decided; resting buy at $355.66 expires that day.",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "",
+   "what": "Questioner follow-up: Has anyone confirmed whether the PJM December capacity-auction delay has been decided? It is the main earnings driver for Talen, and the 'pullback opportunity' headline does not ",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Check whether the PJM December 2029/30 capacity-auction delay request has been decided, and whether the $354.24 support zone held before the $355.66 resting buy expires.",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm whether PJM 2029/30 capacity auction delay has been decided",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm it was canceled or let lapse, and check whether the PJM December capacity-auction delay has been decided.",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; check whether PJM capacity-auction delay has been decided and whether $354.24 support held",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm whether the PJM December 2029/30 capacity-auction delay request has been decided",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; check PJM December 2029/30 capacity-auction delay decision",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Check whether PJM has decided the 2029/30 capacity-auction delay request; this is Talen's main earnings driver, and the TLN resting buy at $355.66 expires the same day",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; re-check the insider picture and whether the PJM capacity-auction delay has been decided",
+   "kind": "reminder",
+   "by": "whale"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "",
+   "what": "Questioner follow-up: TLN's COO sold about $19.8M of stock on Nov 17 at roughly $345-365. Was that a planned 10b5-1 sale or an open-market sale?",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm it was canceled or re-approved and check whether the PJM December 2029/30 capacity-auction delay has been decided",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "",
+   "what": "Questioner follow-up: Has anyone actually confirmed whether the PJM December 2029/30 capacity-auction delay has been decided? The 'pullback opportunity' headline does not answer it.",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; decide cancel or re-approve, and confirm the PJM 2029/30 auction delay outcome",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Confirm whether the PJM 2029/30 capacity-auction delay request was decided; resting buy at $355.66 expires this date",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; PJM 2029/30 auction-delay decision status must be confirmed before then",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Confirm whether the PJM December 2029/30 capacity-auction delay has been decided; the resting buy at $355.66 expires the same day",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm cancel/re-approval and check the PJM December 2029/30 capacity-auction delay decision",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm it was canceled or explicitly re-approved before then, and check whether the PJM December capacity-auction delay has been decided.",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm cancel or re-approval and whether the PJM 2029/30 capacity-auction delay has been decided",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm it is canceled or explicitly re-approved, and check the PJM 2029/30 capacity-auction delay decision",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm owner and whether it should be canceled under the no-new-buys rule",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; PJM capacity-auction delay decision still unconfirmed",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "",
+   "kind": "calendar",
+   "what": "Monday after Thanksgiving. Power trio over the next 2 weeks: -4.1% on average since 2019 (up 2 of 7 years); miners +1.5% (2008-25). Year-end bounce trades start Dec 18."
+  },
+  {
    "date": "2026-12-01",
    "ticker": "UUUU",
    "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
@@ -209340,6 +209570,132 @@
    "by": "review"
   },
   {
+   "date": "2026-12-01",
+   "ticker": "",
+   "what": "Questioner follow-up: Has the PJM December capacity-auction delay been decided? The Talen headline calls the long-term sales a 'pullback opportunity', but the earnings driver is still an open regulato",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "VST",
+   "what": "Planned exit of panic-rebound trade; check market calm before selling",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "LEU",
+   "what": "Planned exit of panic-rebound trade",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "UUUU",
+   "what": "Planned exit of panic-rebound trade; White Mesa Mill campaign start",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "VST",
+   "what": "Planned sell date for panic-rebound trade; sell at +10% near a close if hit earlier, otherwise on this date",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "TLN",
+   "what": "PJM December capacity auction delay request, the main earnings driver for Talen",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "CEG",
+   "what": "PJM December capacity auction delay decision, a key earnings driver for the whole nuclear group",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "TLN",
+   "what": "PJM December capacity auction delay decision (the main earnings driver for Talen; also relevant to VST's East segment)",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "UUUU",
+   "what": "White Mesa Mill one-million-pound uranium processing campaign begins",
+   "kind": "reminder",
+   "by": "scout"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "TLN",
+   "what": "PJM December capacity auction delay decision; main earnings driver for Talen",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "",
+   "what": "Questioner follow-up: The PJM December 2029/30 capacity-auction delay request is the main earnings driver for Talen, and it has not been decided. How does the stock's 9.6% jump square with an open reg",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "",
+   "what": "Questioner follow-up: Has anyone confirmed whether the PJM December 2029/30 capacity-auction delay has been decided? The 'pullback opportunity' headline does not answer it, and it is Talen's main earn",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "",
+   "what": "Questioner follow-up: Was the TLN COO's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale?",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "TLN",
+   "what": "Confirm whether the PJM December 2029/30 capacity-auction delay request has been decided; it is Talen's main earnings driver and the answer changes whether the 9.6% jump is backed by firmer earnings.",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "TLN",
+   "what": "Check whether the PJM December 2029/30 capacity-auction delay request has been decided; it is Talen's main earnings driver.",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "",
+   "what": "Questioner follow-up: Has the PJM December 2029/30 capacity-auction delay request been decided? The 'pullback opportunity' headline does not say, and it is Talen's main earnings driver.",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "",
+   "what": "Questioner follow-up: Was TLN's COO Brad Berryman's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale?",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "TLN",
+   "what": "Confirm whether PJM has decided the December 2029/30 capacity-auction delay request; this is Talen's main earnings driver",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
    "date": "2026-12-08",
    "ticker": "UEC",
    "what": "UEC earnings (moves about 4-5% either way on the day)",
@@ -209351,6 +209707,55 @@
    "what": "Q1 earnings report; a known catalyst that falls after the next few sessions and could break a resting-buy plan.",
    "kind": "reminder",
    "by": "macro"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "TLN",
+   "what": "PJM December capacity auction timing and outcome; a delay or repricing could move TLN materially.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "UEC Q1 earnings; typically moves the stock about 4-5% either way on the day",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Q1 earnings report; typically moves the stock about 4-5% either way on the day",
+   "kind": "reminder",
+   "by": "engineer"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "UEC earnings; expect a 4-5% move either way on the day",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Earnings report. The typical move is about 3%, and 28% of past reports moved more than 5%.",
+   "kind": "reminder",
+   "by": "strategist"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Q1 earnings report; typically moves about 4-5% either way, a catalyst that could break any resting-buy plan",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "",
+   "what": "Questioner follow-up: Was TLN's COO Brad Berryman's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale?",
+   "kind": "reminder",
+   "by": "questioner"
   },
   {
    "date": "2026-12-09",
@@ -209381,11 +209786,220 @@
    "by": "level"
   },
   {
+   "date": "2026-12-09",
+   "ticker": "TLN",
+   "what": "FOMC decision and PJM December capacity auction context; a delay or ruling could move TLN and the nuclear power names.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-09",
+   "ticker": "TLN",
+   "what": "FOMC decision; broad risk-off or risk-on move that can drive the nuclear and utility names.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-09",
+   "ticker": "BWXT",
+   "what": "FOMC rate decision; broad risk-off or risk-on move can drive the nuclear names.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-09",
+   "ticker": "BWXT",
+   "what": "FOMC rate decision; a risk-off or risk-on move could hit the nuclear names and break or confirm the zone.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-09",
+   "ticker": "CEG",
+   "what": "FOMC rate decision. Rates matter to the power stocks (CEG, VST, TLN).",
+   "kind": "reminder",
+   "by": "strategist"
+  },
+  {
+   "date": "2026-12-09",
+   "ticker": "TLN",
+   "what": "PJM December capacity auction delay decision; a key catalyst for Talen's capacity revenue that could move the stock sharply in either direction.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-09",
+   "ticker": "",
+   "kind": "macro",
+   "what": "Fed rate decision, 2 pm. Since 2019 our stocks averaged +0.6% on Fed days vs +0.1% normally (not a sure thing)"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "CCJ",
+   "what": "Dividend payment of $0.24/share; record date Nov 30 2026",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "CCJ",
+   "what": "Did CCJ deliver? They promised on 2026-10-30: Pay 2026 annual dividend of $0.24/share on Dec 15 2026",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-21",
+   "ticker": "CCJ",
+   "what": "NRC public comment period closes on draft EA/PA for Crownpoint ISR project",
+   "kind": "reminder",
+   "by": "scout"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "CCJ",
+   "what": "Check whether 2026 production (19.5-20.5M lb) and deliveries (29.5-30.5M lb) landed in the narrowed ranges",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "CCJ",
+   "what": "Did CCJ deliver? They promised on 2026-10-30: Key Lake maintenance shutdown and new infrastructure commissioning completed, restoring normal production",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "CCJ",
+   "what": "Did CCJ deliver? They promised on 2026-10-30: Deliver 2026 uranium production within the narrowed 19.5-20.5M lb range",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "CCJ",
+   "what": "Did CCJ deliver? They promised on 2026-10-30: Fuel Services annual production of 13-14M kgU",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "CCJ",
+   "what": "Did CCJ deliver? They promised on 2026-10-30: Receive final Inkai 2026 shipment at Blind River",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "LEU",
+   "what": "Check whether FY2026 revenue ($450M-$500M) and the Piketon/Oak Ridge hiring targets were delivered",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "LEU",
+   "what": "Did LEU deliver? They promised on 2026-11-04: Hire at least 100 net new employees at Oak Ridge, TN facility in 2026",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "LEU",
+   "what": "Did LEU deliver? They promised on 2026-11-04: Deliver FY2026 total revenue of $450M-$500M",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "LEU",
+   "what": "Did LEU deliver? They promised on 2026-11-04: Deploy $350M-$500M of capital in FY2026 for industrial build-out",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "LEU",
+   "what": "Did LEU deliver? They promised on 2026-11-04: Complete manufacturing of first centrifuge and begin shipping (already reported as achieved, ahead of year-end target)",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "LEU",
+   "what": "Did LEU deliver? They promised on 2026-11-04: Finalize contracts with all supply-chain items deemed critical (reported as achieved, ahead of year-end target)",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "LEU",
+   "what": "Did LEU deliver? They promised on 2026-11-04: Complete first certified-for-construction package (reported as achieved, ahead of year-end target)",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "BWXT",
+   "what": "Did BWXT deliver? They promised on 2026-11-02: Deliver 2026 revenue of ~$3.8B",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "BWXT",
+   "what": "Did BWXT deliver? They promised on 2026-11-02: Convert bid pipeline into firm awards (no specific date given)",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "CEG",
+   "what": "Target date for closing the Rhode Island State Energy Center acquisition",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "CEG",
+   "what": "Did CEG deliver? They promised on 2026-11-09: Complete the Rhode Island State Energy Center acquisition from Shell for $715M, subject to regulatory approval",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "CEG",
+   "what": "Did CEG deliver? They promised on 2026-11-09: Use the conditional DOE loan (up to $5.0B) for nuclear uprates, subject to executing a loan agreement",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "VST",
+   "what": "Did VST deliver? They promised on 2026-11-06: Deliver 2026 Ongoing Operations Adjusted EBITDA of $7.1B-$7.5B",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "TLN",
+   "what": "Did TLN deliver? They promised on 2026-11-03: Deliver 2026 adjusted EBITDA within $2,050M-$2,200M",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
    "date": "2027-01-01",
    "ticker": "CCJ",
    "what": "Poland plans to sign first nuclear plant construction contract in early 2027 (European new-build demand)",
    "kind": "reminder",
    "by": "scout"
+  },
+  {
+   "date": "2027-01-01",
+   "ticker": "LEU",
+   "what": "Check the DOE FY2027 budget outcome for HALEU cascade funding and whether DOE exercises any further HALEU Operation Contract options",
+   "kind": "reminder",
+   "by": "investigator"
   }
  ],
  "weather_view": {
@@ -210611,7 +211225,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-23 23:57",
+ "watchdog_last": "2026-11-24 00:58",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

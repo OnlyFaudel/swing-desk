@@ -13885,5 +13885,38 @@
 "trump",
 "worries"
 ]
+},
+{
+"id": "e0b3ad48c50895f3",
+"date": "2026-11-23",
+"ts": 1795467548,
+"title": "Deep Isolation to receive $20 million from DOE ARPA-E",
+"summary": "",
+"outlet": "ExchangeMonitor",
+"link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbDVhSFhTYUNSTi1DYmtScjdnNVU4dFpUVnBjNjBZT1M2dVZ6MTJqVkRIS2c5Um1Wb2dEeklsNEQwRkFLMlptNktmOTBGaWhpbE12WDRSSlgxVDBSeFJUZm43NG44Qk9tZ1h2d2xXOVhEdlFfMzR5RWJCVXRINUNuSTQ1TWNKbHUxaTdPaTlB?oc=5",
+"place": "Energy Department",
+"tickers": [
+"LEU",
+"BWXT",
+"CCJ",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [
+"$20 million"
+],
+"local": true,
+"novelty": 0.91,
+"score": 4.82,
+"echo_of": null,
+"w": [
+"arpa",
+"deep",
+"doe",
+"isolation",
+"million",
+"receive"
+]
 }
 ]

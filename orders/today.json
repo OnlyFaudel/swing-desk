@@ -1,46 +1,5 @@
 {
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "broker": "alpaca-paper",
- "orders": [
-  {
-   "time": "2026-11-23 09:36",
-   "symbol": "TLN",
-   "side": "buy",
-   "kind": "limit",
-   "qty": 0.485585,
-   "price": 346.08,
-   "status": "pending_new",
-   "note": "Patient Levels buy above $344.7"
-  },
-  {
-   "time": "2026-11-23 11:58",
-   "symbol": "TLN",
-   "side": "buy",
-   "kind": "limit",
-   "qty": 0.326717,
-   "price": 355.66,
-   "status": "pending_new",
-   "note": "Patient Levels buy above $354.24"
-  },
-  {
-   "time": "2026-11-23 13:30",
-   "symbol": "BWXT",
-   "side": "buy",
-   "kind": "limit",
-   "qty": 1.431477,
-   "price": 115.83,
-   "status": "pending_new",
-   "note": "Patient Levels buy above $115.37"
-  },
-  {
-   "time": "2026-11-23 15:52",
-   "symbol": "SPY",
-   "side": "buy",
-   "kind": "market",
-   "qty": 0.0,
-   "price": 0.0,
-   "status": "pending_new",
-   "note": "parked $519 idle cash in the S&P"
-  }
- ]
+ "orders": []
 }
