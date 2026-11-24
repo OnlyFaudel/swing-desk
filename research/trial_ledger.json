@@ -285,6 +285,10 @@
   "account_drawdown_brake": {
    "trials": 5,
    "verdict": "2026-11-24 (all 7 rules): half size on new trades when the account is 15/20/25%+ under its peak: 22.2/22.3/23.2%/yr vs 23.9%, worst drop -36.0/-40.2/-40.7% vs -51.3% (2019-26: -35.2/-34.6/-34.6 vs -43.8); quarter size at 20%: 18.8%/yr, -34.6%. ADOPTED 25% / half size (dd_mult on every sizing path): return per unit of worst drop 0.47 -> 0.57 for -0.7 pts/yr."
+  },
+  "take_profit_early_panic": {
+   "trials": 5,
+   "verdict": "2026-11-24 (owner: 'take profits whenever we can in a losing market'). Every panic-rule trade 2008-2026 on 88 nuclear+related stocks (1,937 trades), sell during the day the moment +5/7/10/15% is hit vs live (+10% at a close, else day 6), 0.2% costs. 2019-26: live +3.44% avg; +5% limit +2.03%, +7% +2.45%, +10% +2.73%. With the S&P under its 200-day (the losing-market case): live +3.02%, +5% +1.51% (t -4.1 vs live), +7% +2.00% (t -3.2), +10% +2.26% (t -3.6). 2008-18 downtrend: +10% limit +0.11% vs live (t 0.6, noise), +5% -0.44%. Early profit-taking shrinks the worst 5% of trades (-18.8% -> -13.3%) but costs 1-1.5% per trade on average: rebounds that run keep running, and the losers still lose in full. Rejected. The owner's earlier idea (sell a 5%+ morning gap, buy back at the close) passed and is live as gap_bank."
   }
  }
 }
