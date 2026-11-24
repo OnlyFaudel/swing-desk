@@ -892,30 +892,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CEG",
-   "source": "Google News: Constellation Energy nuclear",
-   "title": "Constellation Energy Sinks 10% in a Week as AI Stocks Slide, Giving Back Its Earnings Jump. Time to Buy? - TIKR.com",
-   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPc2EtaUNsWGdXcmdpRTdhN2FFcmpmdl9tdG5yUDlFVm81M1EwS1VKY1FVazFEcXNfRmlFbmNHc1hiTUlObTdfaUNWR1pzR081SWtjU3A1Q2ZuNmZXaHRfTmY0OWtUOUhUTGRnelJwZTJGajd4YXFwRzFwdWQ1aE55MklvVm94SkV1aTh2U0RPbVRZdzd2bW1SeTZzWlZmaVA5YVM4Q2lfLThIMXpybkJQRUF4MXBmN0dhVGhuZ3d4Q193UTZiX2Y2cnA3NmZXaWFDSHdHUzRn?oc=5",
-   "ts": 1795190175,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Weekly price recap tied to AI-stock selloff; no company news."
-  },
-  {
-   "ticker": "VST",
-   "source": "Local intel: San Antonio Express-News (ERCOT grid)",
-   "title": "ERCOT approves CEO Pablo Vegas\u2019 contract months after backlash",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUDlpa2hmUXVSb2k4MkpJa2t1b1FxR1Nqb3p1OUVaNUVhdjNFQV9XUFdGbEEyNWZaVTVuVDNTN0J2cThVR2NYRGJLM0ZXdnd2RFE1RnNQRm82TWl6WGtud1o4MEFlSGFHRTVCNWlmLWg1QWxOVkNwZjZPMnp1T1p5ZjV4WnlYZXcwa0Q2NjJjVXhvS1V1TGRFN3dlcW1zZG4xYloySFo3TQ?oc=5",
-   "ts": 1795212685,
-   "materiality": 2,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "ERCOT grid operator CEO pay approval; Vistra not directly affected."
-  },
-  {
    "ticker": "VST",
    "source": "Local intel: Texas Scorecard (ERCOT grid)",
    "title": "Controversial Pay Agreement for ERCOT CEO Finalized",
@@ -3890,6 +3866,30 @@
    "direction": "neutral",
    "event_type": "policy_tariff",
    "why": "Political commentary on AUKUS; no new information for BWXT."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News: \"Talen Energy\"",
+   "title": "Form 4 Talen Energy Corp: Cole Muller (CFO) For: 23 November By Investing.com - Investing.com India",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNX0thSm9DNHlhcFk4Y01wcGhhcmxnWGJtbVpBa3pJZlZxa0xhMkluLXFjZndRUXRldGZPWHhTd25DZFZuOTlDYk1WMFRVcHdrdGdsTktuRVQzVWZiMlc3ZjdBblNpcDBGTFQ2UUJCTzhmbVdGSkdlVU8xd3ppbVB1X0p6bHNmeE5oeGcwQm9JOUFMcGNXWVctNVdqSkY1ZWNHTHlSZlQxY2hZdlBlNEdkWVhDcVFKOUJl?oc=5",
+   "ts": 1795483666,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Routine Form 4 CFO filing; no detail on whether it's a buy or planned sale."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News: \"Talen Energy\"",
+   "title": "Form 4 Talen Energy Corp: Cole Muller (CFO) For: 23 November - Investing.com UK",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdVRxS1JsWVMxeWthbjFlQnpqU2M0UEx2dnVwczlNYUpPLWs3RE14cndVMEJWVTBndXhyODBiQzR4bXZmU3FBdEhEckdxVUlOTkY2Qnk0UTgwMzFWNkphQUdYR0hxVjd5WWlacnAzbkxaMlR5MXNDVGVxWWRpMlNsMExVZkoteEh6bV9kdGZ1TmpxNmFRS0FqYVRnZDVDTjBELTVwZFRoTTJLYjdkNVZPTk8xVVFfSjlS?oc=5",
+   "ts": 1795482960,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Same Form 4 CFO filing repeated by another outlet; no new information."
   }
  ],
  "reviews": [
@@ -5412,26 +5412,26 @@
  },
  "spend": {
   "day": "2026-11-23",
-  "day_usd": 0.37425,
+  "day_usd": 0.38376,
   "month": "2026-11",
-  "month_usd": 0.63773,
-  "total_usd": 0.63773,
+  "month_usd": 0.64724,
+  "total_usd": 0.64724,
   "by_role": {
-   "macro": 0.03358,
+   "macro": 0.03577,
    "whale": 0.01301,
    "crowd": 0.00849,
    "level": 0.03741,
-   "scout": 0.06807,
+   "scout": 0.06849,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
    "pm": 0.03801,
-   "risk": 0.03221,
-   "investigator": 0.15982,
+   "risk": 0.03438,
+   "investigator": 0.16216,
    "postmortem": 0.00035,
    "researcher": 0.00704,
    "engineer": 0.00303,
-   "questioner": 0.02224
+   "questioner": 0.02463
   }
  },
  "desk_log": [
@@ -5539,7 +5539,7 @@
   "TLN": 365.03,
   "SPY": 722.39
  },
- "last_cycle": "2026-11-23 20:25 ET",
+ "last_cycle": "2026-11-23 20:36 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -51351,8 +51351,8 @@
   "e250b8758ee96ae8",
   "855ac1a10429d2f5",
   "3540271e126c026c",
-  "fa656e6b4ef9de9d",
   "4317a926c756f33f",
+  "fa656e6b4ef9de9d",
   "aa4b40fcca57bfea",
   "032f537039c80fee",
   "09bd7b0e348df04b",
@@ -51664,9 +51664,11 @@
   "c33e85f70d2f743d",
   "f61fff1c8e93929e",
   "844469477dae7bae",
-  "6903f08684a06b0c"
+  "6903f08684a06b0c",
+  "323b3d916f8bfaf7",
+  "a454f891b1c31853"
  ],
- "news_slow_at": 1795483491.8516335,
+ "news_slow_at": 1795484197.299682,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -201850,6 +201852,49 @@
    ],
    "practice": false,
    "end": "20:26"
+  },
+  {
+   "id": "20261123203626264496",
+   "title": "The Questioner, Nov 23 20:36",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-23 20:36",
+   "msgs": [
+    {
+     "t": "20:36",
+     "who": "questioner",
+     "to": "risk",
+     "text": "The TLN resting buy at $355.66 is still sitting there even though our own rule says no new buys while the basket is below its 10-day average, and TLN has bounced to about $365. That order should be canceled or explicitly re-approved, and the team has not said which. Nobody has confirmed the PJM capacity-auction delay status either, which is Talen's main earnings driver.",
+     "outcome": false,
+     "notes": "question: Who is canceling or explicitly re-approving the TLN resting buy at $355.66? It sits 2.6% below the price, the basket is still below its 10-day average, and the rule says no new buys in that state.\nwhy it might matter: A live order that breaks our own rule is a process failure regardless of whether it fills, and it will fill on a dip into a weak sector.\nask: risk\nkind: odd\nquestion: Has anyone actually confirmed whether the PJM December 2029/30 capacity-auction delay has been decided? The 'pullback opportunity' headline does not answer it.\nwhy it might matter: Talen's earnings depend on that auction, so a 9.6% bounce on an open regulatory question is either priced for good news or about to reverse.\nask: macro\nkind: unexplained\nquestion: Was TLN's COO Brad Berryman's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale?\nwhy it might matter: Our notes say open-"
+    },
+    {
+     "t": "20:36",
+     "who": "risk",
+     "to": "questioner",
+     "text": "Nobody on the team has claimed the TLN resting buy at $355.66 in the posts I can see, and the rule is clear that no new buys happen while the basket is below its 10-day average. The order is most likely a leftover from an earlier plan, not a live decision, so I'd treat it as a process failure to clean up rather than a trade to defend. I agree with the Questioner that it should be canceled now instead of waiting for the Nov 30 expiry.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: tell_owner\nwatch date: 2026-11-30\nwhy: The desk notes show TLN at about $365 after a 9.6% day, well above the $355.66 bid, and the basket still below its 10-day average. The posts show the team discussing the order without anyone confirming a deliberate re-approval, so it looks like a stale order that breaks our stated rule.\nticker: TLN\ndirection: down\ndays: 5\nfiles read: TLN Snapshot, TLN Price behavior"
+    },
+    {
+     "t": "20:36",
+     "who": "macro",
+     "to": "questioner",
+     "text": "I checked the desk's files and the team's posts for any confirmation that the PJM December 2029/30 capacity-auction delay has been decided, and there is none. The only item is a report that consumer advocates and the market monitor requested the delay, which is a request, not a ruling. Since Talen's earnings depend on this auction and the 9.6% bounce is not explained by a decision, I agree with the Questioner that this matters, and the answer should go to the owner as an open question rather than being treated as settled.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: watch\nwatch date: 2026-11-30\nwhy: The desk's news list only shows a PJM filing request for a delay, with no decision, and the 'pullback opportunity' headline does not address the regulatory status. Talen's 9.6% move therefore rests on an unresolved auction question, and that is what makes it relevant to our resting buy.\nticker: TLN\ndirection: down\ndays: 5\nfiles read: TLN Snapshot, SECTOR Government and laws"
+    },
+    {
+     "t": "20:36",
+     "who": "investigator",
+     "to": "questioner",
+     "text": "I checked TLN's COO Brad Berryman's Nov 17 sale against our files. The desk record shows it as a regular sale of about 56,000 shares at $345-365, but nothing in our notes confirms whether it was a 10b5-1 plan sale or an open-market sale. Since we can't verify the classification, it doesn't change our TLN trade today, but it should be checked against the Form 4 filing.",
+     "outcome": false,
+     "notes": "verdict: unsure\naction: research\nresearch test: Pull the Form 4 for the Nov 17 BERRYMAN sale and read the footnote for a 10b5-1 plan reference (plan adoption date, if disclosed). If it cites a 10b5-1 plan, mark it planned and drop it from the insider signal; if not, keep it as an open-market sale and recheck TLN's 20-day return after such sales.\nwhy: The desk's insider summary shows the sale and a net 12-month figure of -$23.4M, but the file does not record the 10b5-1 status. The stock's 9.6% bounce and the open PJM auction question matter more to the TLN decision than this classification.\nfiles read: TLN Leadership and insiders, TLN Snapshot"
+    }
+   ],
+   "practice": false,
+   "end": "20:36"
   }
  ],
  "feed": [
@@ -203702,6 +203747,32 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-23 20:36",
+   "who": "questioner",
+   "kind": "alert",
+   "title": null,
+   "text": "Worth your attention: Who is canceling or explicitly re-approving the TLN resting buy at $355.66? It sits 2.6% below the price, the basket is still below its 10-day average, and the rule says no new buys in that state.\n\nRisk Manager: Nobody on the team has claimed the TLN resting buy at $355.66 in the posts I can see, and the rule is clear that no new buys happen while the basket is below its 10-day average. The order is most likely a leftover from an earlier plan, not a live decision, so I'd treat it as a process failure to clean up rather than a trade to defend. I agree with the Questioner that it should be canceled now instead of waiting for the Nov 30 expiry.",
+   "tickers": [],
+   "art": {
+    "big": "Something we almost missed",
+    "sub": "The Questioner"
+   },
+   "thread": "20261123203626264496"
+  },
+  {
+   "t": "2026-11-23 20:36",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Who is canceling or explicitly re-approving the TLN resting buy at $355.66? It sits 2.6% below the price, the basket is still below its 10-day average, and the rule says no new buys in that state. -> relevant | Has anyone actually confirmed whether the PJM December 2029/30 capacity-auction delay has been decided? The 'pullback opportunity' headline does not answer it. -> relevant | Was TLN's COO Brad Berryman's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale? -> unsure",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -204206,7 +204277,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-23 20:26",
+  "updated": "2026-11-23 20:36",
   "total": 413,
   "week": 355,
   "places": {
@@ -204892,8 +204963,8 @@
   "a9bcbfe54ba12f7e",
   "95cbeeb9e5e1fd0d",
   "68240c37371f3e26",
-  "9e7ebdf62031eeaf",
   "2d6cd019b00546cd",
+  "9e7ebdf62031eeaf",
   "73c8ecdc752b197b",
   "1087f7fcf3d3190a",
   "30a860e8617961c8",
@@ -206313,6 +206384,10 @@
   {
    "q": "Questioner: Pull the Form 4 filed for the Nov 17 BERRYMAN BRAD sale and check the footnotes for a 10b5-1 plan reference and its adoption date. If it is open-market with no plan, weigh it as an insider sell; if planned, drop it from the TLN insider count (currently -$23.4M over 12 months, which includes it).",
    "date": "2026-11-23"
+  },
+  {
+   "q": "Questioner: Pull the Form 4 for the Nov 17 BERRYMAN sale and read the footnote for a 10b5-1 plan reference (plan adoption date, if disclosed). If it cites a 10b5-1 plan, mark it planned and drop it from the insider signal; if not, keep it as an open-market sale and recheck TLN's 20-day return after such sales.",
+   "date": "2026-11-23"
   }
  ],
  "research_candidates": [
@@ -206566,12 +206641,12 @@
    "built": "2026-11-23 20:24"
   }
  ],
- "heartbeat": "2026-11-23 20:25",
+ "heartbeat": "2026-11-23 20:36",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 168,
+ "_pushed_feed": 170,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -206683,7 +206758,7 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 68,
+   "asked": 69,
    "used": 64,
    "notes": {
     "TLN Deals and contracts": 2,
@@ -206738,8 +206813,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 15,
-   "used": 14,
+   "asked": 16,
+   "used": 15,
    "notes": {
     "BWXT Deals and contracts": 2,
     "BWXT Snapshot": 2,
@@ -206748,7 +206823,7 @@
     "UEC Snapshot": 1,
     "UEC Deals and contracts": 1,
     "SECTOR Uranium market": 2,
-    "TLN Snapshot": 6,
+    "TLN Snapshot": 7,
     "TLN What history says": 3,
     "CCJ Snapshot": 1,
     "CCJ Deals and contracts": 1,
@@ -206773,7 +206848,7 @@
     "VST What history says": 1,
     "VST Leadership and insiders": 1,
     "TLN Deals and contracts": 3,
-    "TLN Leadership and insiders": 4
+    "TLN Leadership and insiders": 5
    },
    "since": "2026-11-23"
   },
@@ -206806,15 +206881,15 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 13,
-   "used": 13,
+   "asked": 14,
+   "used": 14,
    "notes": {
     "SECTOR Uranium market": 11,
     "BWXT Snapshot": 4,
     "CCJ Snapshot": 2,
     "UUUU Snapshot": 2,
-    "SECTOR Government and laws": 9,
-    "TLN Snapshot": 6,
+    "SECTOR Government and laws": 10,
+    "TLN Snapshot": 7,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1
    },
@@ -206849,14 +206924,14 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 15,
-   "used": 15,
+   "asked": 16,
+   "used": 16,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 2,
     "BWXT Snapshot": 2,
     "SECTOR Uranium market": 5,
-    "TLN Snapshot": 7,
+    "TLN Snapshot": 8,
     "TLN Legal": 2,
     "BWXT Legal": 1,
     "BWXT Leadership and insiders": 1,
@@ -206865,7 +206940,7 @@
     "UEC Leadership and insiders": 1,
     "CCJ Price behavior": 1,
     "SECTOR Rules the bot follows from its discoveries": 1,
-    "TLN Price behavior": 5,
+    "TLN Price behavior": 6,
     "TLN Discoveries": 1,
     "TLN Leadership and insiders": 1
    },
@@ -206890,20 +206965,21 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 9,
-   "used": 9,
+   "asked": 10,
+   "used": 10,
    "notes": {
-    "TLN Snapshot": 8,
-    "TLN News": 8,
+    "TLN Snapshot": 9,
+    "TLN News": 9,
     "coming_up": 2,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
     "BWXT Legal": 1,
     "CCJ Snapshot": 1,
-    "TLN Leadership and insiders": 7,
+    "TLN Leadership and insiders": 8,
     "CCJ Legal": 1,
     "TLN Legal": 2,
-    "SECTOR Market regime": 1
+    "SECTOR Market regime": 1,
+    "desk_lessons_from_our_mistakes": 1
    },
    "since": "2026-11-23"
   },
@@ -208859,6 +208935,33 @@
    "answer": "I checked the TLN COO sale. Brad Berryman sold about $19.8M on Nov 17 at roughly $345-365 and the files list it as an open-market sale, not a planned 10b5-1 plan, so it counts as a meaningful insider sell. TLN's insider picture is net selling of about $23M over 12 months, and that is a fair warning sign that matters for our TLN resting buy at $355.66. I'm not making a directional call on the sale alone.",
    "verdict": "relevant",
    "action": "watch"
+  },
+  {
+   "t": "2026-11-23 20:36",
+   "question": "Who is canceling or explicitly re-approving the TLN resting buy at $355.66? It sits 2.6% below the price, the basket is still below its 10-day average, and the rule says no new buys in that state.",
+   "kind": "odd",
+   "asked": "risk",
+   "answer": "Nobody on the team has claimed the TLN resting buy at $355.66 in the posts I can see, and the rule is clear that no new buys happen while the basket is below its 10-day average. The order is most likely a leftover from an earlier plan, not a live decision, so I'd treat it as a process failure to clean up rather than a trade to defend. I agree with the Questioner that it should be canceled now instead of waiting for the Nov 30 expiry.",
+   "verdict": "relevant",
+   "action": "tell_owner"
+  },
+  {
+   "t": "2026-11-23 20:36",
+   "question": "Has anyone actually confirmed whether the PJM December 2029/30 capacity-auction delay has been decided? The 'pullback opportunity' headline does not answer it.",
+   "kind": "unexplained",
+   "asked": "macro",
+   "answer": "I checked the desk's files and the team's posts for any confirmation that the PJM December 2029/30 capacity-auction delay has been decided, and there is none. The only item is a report that consumer advocates and the market monitor requested the delay, which is a request, not a ruling. Since Talen's earnings depend on this auction and the 9.6% bounce is not explained by a decision, I agree with the Questioner that this matters, and the answer should go to the owner as an open question rather than being treated as settled.",
+   "verdict": "relevant",
+   "action": "watch"
+  },
+  {
+   "t": "2026-11-23 20:36",
+   "question": "Was TLN's COO Brad Berryman's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale?",
+   "kind": "odd",
+   "asked": "investigator",
+   "answer": "I checked TLN's COO Brad Berryman's Nov 17 sale against our files. The desk record shows it as a regular sale of about 56,000 shares at $345-365, but nothing in our notes confirms whether it was a 10b5-1 plan sale or an open-market sale. Since we can't verify the classification, it doesn't change our TLN trade today, but it should be checked against the Form 4 filing.",
+   "verdict": "unsure",
+   "action": "research"
   }
  ],
  "reactor_view": {
@@ -209551,7 +209654,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-23 20:25",
+ "watchdog_last": "2026-11-23 20:36",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
