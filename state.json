@@ -522,7 +522,8 @@
   "park:2026-11-24": true,
   "questioner:2026-11-24:8": true,
   "notecheck:2026-11-24": true,
-  "recent:2026-11-24": true
+  "recent:2026-11-24": true,
+  "intraday_backfill": "2026-11-24"
  },
  "benchmark": {
   "shares": {
@@ -2426,42 +2427,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Uranium Timeline Comes Into Focus: Anfield Energy Inc. (TSXV:AEC) | S&P/TSX Venture Composite Index | Small Cap Growth Stock - kalkine.ca",
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNV2NNdG9JN0kwRUZKZThzNUNuckFCWUhxdjNOUkpBc0ozbWxBbEVuZE56dHB4YXlkMkFzWDVJWWJJZ1dNUGpMc05KUjNrYVg5TG5qLVJ6Z1FnRnhRd1U3US1GUW5lOXByZWNaMjBYN0ZJUkZwY0NvNXhUa3c5NFhvSUQxckJtXzFMeDNKNE5MR0diV1Q4UHVRTHVYTVh0UmR3RUdkUF9OcE9nRk9aMEFqQjJwTVRLX0YzRlBrVVJCcy1LREhtNFhwblhMSU1xeGllTjBmQzV2b0xrSk4t?oc=5",
-   "ts": 1795449540,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Promotional kalkine piece on Anfield, a different junior explorer, not Cameco."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "An American Uranium Explorer Joins the Russell Microcap After the Dec. 11 Close - Quantisnow",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcTlNejNWVkNfaDU0bGdFOWZuaEZPdjFQVHNCMHc4QmlxUHFqNkxMR0Vtc1VmbG0ydmE5Skd5RGE5ZWNvanFJSmVQT2otV3I5RGQ3VXhma1JNU0RXYUZlV0hkNnEwYjNJNk5yM0VmR0tVNEZDSm5hcDN1Y3JkakNrWUx1LTRUSlZBR3hRNnZJdTBid2F6SHYwLWJtNWJsTF95Q2VFMnowenFua2ZG?oc=5",
-   "ts": 1795445468,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Russell index inclusion of an unrelated small explorer, no Cameco impact."
-  },
-  {
-   "ticker": "BWXT",
-   "source": "Yahoo Finance",
-   "title": "BWXT stock surges on Westinghouse AP1000 manufacturing deal",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/bwxt-stock-surges-westinghouse-ap1000-164027465.html?.tsrc=rss",
-   "ts": 1795452027,
-   "materiality": 6,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "contract_deal",
-   "why": "Real new manufacturing deal with Westinghouse, but the 6.7% pop may already be partly priced in."
-  },
   {
    "ticker": "CCJ",
    "source": "Google News",
@@ -5425,6 +5390,42 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Catholic bishop backing a weapons treaty review; no BWXT-specific business news."
+  },
+  {
+   "ticker": "LEU",
+   "source": "SEC filing",
+   "title": "SEC 8-K filed (items 7.01,9.01): 8-K",
+   "link": "https://www.sec.gov/Archives/edgar/data/1065059/000162828026075756/leu-20261124.htm",
+   "ts": 1795556222,
+   "materiality": 4,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "An SEC 8-K with only routine items 7.01 and 9.01 usually means a press release or exhibit, not a material event."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News: \"Talen Energy\"",
+   "title": "Talen Energy's $9.5B Debt: A Risk to Its Long-Term Growth Plans? - The Globe and Mail",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQQ20yeXpxZFdIWmxuazBDdFNjSzJ2NC03cVdBSVktN0V0V19fcm5rUFdROGVGWTRGTjFwd3NDOGZFaC1weVY2SnRkV1hmaWlHTEpUU3ZuV2ZMLXB0WGg0Tlh3eFBiNERhbXNTUDluRTVQbE5hdTBkNEhDYlVJeG92WTU5N1NkZWVuVUthdGxjMFhfeENGdUFVU3ROOUg2OHlkTWROLTg3SWFxcmxGdlBQQXhQRG5NNlZBMVlUTnU5aWM4X2tncnplRjFBbGh1MXNUWDExd0s3VXoxQmc?oc=5",
+   "ts": 1795534861,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Opinion-style piece on debt; no new company-specific event reported."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News",
+   "title": "LEU: Centrus Energy Corp. filed SEC Form 8-K: Regulation FD Disclosure, Financial Statements and Exhibits - Quantisnow",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWUlKcGxCMmtSeUlEbnJ2YWtOblFkeFZkWFFxRDNDc3pLUl9pUEdZRHJFTVBFVVpqN1RBb2p4SHZ6VzdRaHgtVkozY1hGTlRyS3hfRHVJamQzRU1CTzNDbmJVemtTNzg3X2twUVJwTXBlanR2U1FONFNUVE1FeDhNWEpBT0lyVnVzc2dKZmtEWFRIVUtXZFNrQzBLQ3VEWWh5eFpSYjlSV01HQQ?oc=5",
+   "ts": 1795556449,
+   "materiality": 4,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic SEC 8-K filing headline with no disclosed content; the substance is unknown."
   }
  ],
  "reviews": [
@@ -7175,16 +7176,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.31185,
+  "day_usd": 0.31313,
   "month": "2026-11",
-  "month_usd": 1.04327,
-  "total_usd": 1.04327,
+  "month_usd": 1.04455,
+  "total_usd": 1.04455,
   "by_role": {
    "macro": 0.09287,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.10967,
-   "scout": 0.11896,
+   "scout": 0.12024,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -7320,7 +7321,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-24 16:36 ET",
+ "last_cycle": "2026-11-24 16:47 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -54642,9 +54643,10 @@
   "cdf09ab4dc83c609",
   "a2a8ee32597c7b50",
   "503a7ef14b3cb3d2",
-  "bbef828d764dbb47",
   "85342e1a4ce58044",
+  "bbef828d764dbb47",
   "ca2a5c0a1baa2527",
+  "6f83643eaed2fbc3",
   "b98ba2f840724229",
   "63e7ca0ff352dff7",
   "1f0bd29da0672341",
@@ -54771,6 +54773,7 @@
   "9fc86e3effd7da3b",
   "2d3f6639ab9cea68",
   "2ddc82c2b5215c74",
+  "490db1d69070bee7",
   "418a91931047cecc",
   "313a0e04a5719e86",
   "a8cf3750b80937f0",
@@ -54887,6 +54890,7 @@
   "7eeff7845b171edb",
   "ce4e13f4ad219801",
   "46c5572fb4069bdf",
+  "915b10ab6e0bdc34",
   "1179c30a7f3faefa",
   "5bc99c203ef396a3",
   "7f1ab1d7e538b600",
@@ -54972,7 +54976,7 @@
   "c2a1739b2e369eff",
   "f2896a10ee94b15b"
  ],
- "news_slow_at": 1795555868.55589,
+ "news_slow_at": 1795556476.6214921,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -211769,12 +211773,12 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 16:36",
+  "updated": "2026-11-24 16:47",
   "total": 530,
-  "week": 441,
+  "week": 439,
   "places": {
    "Uranium price": 45,
-   "Piketon": 30,
+   "Piketon": 29,
    "World Nuclear News": 26,
    "Europe new builds": 25,
    "South Korea": 25,
@@ -211784,7 +211788,7 @@
    "Namibia": 15,
    "PJM grid": 14,
    "Rare earths (Energy Fuels)": 14,
-   "Wheeler River / Phoenix": 13
+   "Comanche Peak": 12
   },
   "bursts": [],
   "health": {
@@ -214351,7 +214355,7 @@
    "built": "2026-11-24 16:33"
   }
  ],
- "heartbeat": "2026-11-24 16:36",
+ "heartbeat": "2026-11-24 16:47",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -214511,10 +214515,10 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 178,
-   "used": 163,
+   "asked": 181,
+   "used": 166,
    "notes": {
-    "TLN Deals and contracts": 8,
+    "TLN Deals and contracts": 9,
     "CCJ Deals and contracts": 39,
     "BWXT Deals and contracts": 26,
     "SECTOR Government and laws": 39,
@@ -214525,7 +214529,7 @@
     "NXE Deals and contracts": 9,
     "DNN Deals and contracts": 8,
     "BWXT Legal": 1,
-    "LEU Deals and contracts": 21,
+    "LEU Deals and contracts": 23,
     "UEC Deals and contracts": 3,
     "UUUU Legal": 17,
     "SECTOR Uranium market": 2,
@@ -220561,7 +220565,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 16:36",
+ "watchdog_last": "2026-11-24 16:47",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
