@@ -16949,5 +16949,144 @@
 "piketon",
 "webcast"
 ]
+},
+{
+"id": "8868199eaca25050",
+"date": "2026-11-24",
+"ts": 1795540440,
+"title": "NexGen Energy (TSX:NXE): TSX Composite Large Cap Growth Stock in Focus as Investors Track the Next Catalyst",
+"summary": "",
+"outlet": "kalkine.ca",
+"link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPVWdncEZoQ3dFdUhJSExnVTVaMUN2SFBmeGhwNFJ4eTZFb25pd3lYcDJfekZfWThiQUxyVHE3Sk9wSzI5Z254d3Y0TmhScHdldFd5MkhpMzNkRTVPeFdXZEd3eWNkenluVkV1ZzNhaEJlLVFZX1YwbnhfQ2Ric1VVYWF1eGpEZlRSSi1jcUt4NGRGNWtsZjBQY3hPcHhOV3p6SjFWZF9rNjlVbkdnN0RvbUktWEtHRExzeHJkTE9PcklGQ3A1YUNmVTJPUE10WnM?oc=5",
+"place": "Workers and jobs",
+"tickers": [
+"NXE"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.44,
+"score": 2.38,
+"echo_of": null,
+"w": [
+"cap",
+"catalyst",
+"composite",
+"energy",
+"focus",
+"growth",
+"investors",
+"large",
+"nexgen",
+"next",
+"nxe",
+"stock",
+"track",
+"tsx"
+]
+},
+{
+"id": "f52de1cf7b8b9c06",
+"date": "2026-11-24",
+"ts": 1795548000,
+"title": "Centrus Energy Corp. Stock 12\u2011Month Price Target Cut to $170.45, Implies 96% Upside",
+"summary": "",
+"outlet": "TradingView",
+"link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNYjJOWjVyOEhKdm9Uc0E1TXFOOWdBNHJ4Y3VaTXd3cmlHTWNaaDZGQVpvamk2NmdWMHRMNzBRakVXYTlza2ZuaUIzcVR4REh1RXktWjhVeTZZLUllLUg2SWxqNjN0TE5jSWhNY2piOTFMREhrUGpDcEVFNENCTDRkbjBFeVo4NWJmZWkxb2VfRER4MVR2ZS12ZDRiT19sRXc5YVBqZGJNcGVvY2UxaGlvN3NDdy02N1Vqd2FCdkJkSHl1dUhGRzVhNGZ0dkNTVnlTLWp3a0RBS0Q?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [
+"market_chatter"
+],
+"numbers": [
+"96%"
+],
+"local": false,
+"novelty": 0.62,
+"score": 1.74,
+"echo_of": null,
+"w": [
+"170",
+"centrus",
+"cut",
+"energy",
+"implies",
+"month",
+"price",
+"stock",
+"target",
+"upside"
+]
+},
+{
+"id": "250622f986f802f8",
+"date": "2026-11-24",
+"ts": 1795549500,
+"title": "How Is (TSX:EFR) Energy Fuels Planning Its Next Uranium Campaign?",
+"summary": "",
+"outlet": "Kalkine Media",
+"link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOS2p2YlpSZC1FV3VwOE93TldQaUZQTWtUN0tYemtFMEs4cGpyUTRMbnZNaDRHbHNabThuREZ2X2xtQXJLVFd6SFZQZEdua01wbVlKNzFDbXE2amM5QlRxV3BvZEhuS3ZNOTFRM2ZmMVNYbkNyOW5Ic3N6QVRaQTdYSzNDWnp0TElPVmFtTkI0el9ZeV9ETmlwWUpyLVpuUkNmRVh0bGNn?oc=5",
+"place": "Rare earths (Energy Fuels)",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.67,
+"score": 2.84,
+"echo_of": null,
+"w": [
+"campaign",
+"efr",
+"energy",
+"fuels",
+"how",
+"next",
+"planning",
+"tsx",
+"uranium"
+]
+},
+{
+"id": "82aaff9e4512c732",
+"date": "2026-11-24",
+"ts": 1795551222,
+"title": "N. Korea's Yongbyon nuclear complex expansion may be aimed at boosting weapons-grade uranium production: ISIS",
+"summary": "",
+"outlet": "Yonhap News Agency",
+"link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5NLXBPSElKZS0wWEViaVNiV05tMERiSjVXYUVOeWNYN2pMN1FGam54YndINHpxWnJJZjZBSDFjWlZBNzA2SmVIbzRXbXNfZnhybWJGcVhNdzFldw?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"production",
+"defense"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.82,
+"score": 5.94,
+"echo_of": null,
+"w": [
+"aimed",
+"boosting",
+"complex",
+"expansion",
+"grade",
+"isis",
+"korea",
+"may",
+"nuclear",
+"production",
+"uranium",
+"weapons",
+"yongbyon"
+]
 }
 ]
