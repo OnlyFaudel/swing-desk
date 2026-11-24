@@ -15853,5 +15853,79 @@
 "exposes",
 "irony"
 ]
+},
+{
+"id": "4ae697a080cb64b9",
+"date": "2026-11-23",
+"ts": 1795441456,
+"title": "Energy Fuels Targets One Million Pounds of Uranium Production at White Mesa Mill as US Mining Projects Advance",
+"summary": "",
+"outlet": "Yahoo Finance",
+"link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNY1ByaEw5MEIzMzEtcHRCWW1xdWpNR1dJN0JwTGZyUHdIWVFzZldRUzNIRGdWRG44MEgzemJPUi15SjdBM3ZLdTBZWi1oTm9maC1uZjRxSEFiVHR6XzdQNmJWYl9CUVVCUEZlQ3NmU05jMENSQUNwRGJPWG81M18waVVnNmE0RkJiSEJIYTFfZEFpUzA?oc=5",
+"place": "Rare earths (Energy Fuels)",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [
+"production"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.36,
+"score": 3.02,
+"echo_of": "1f0c92334f3206aa",
+"w": [
+"advance",
+"energy",
+"fuels",
+"mesa",
+"mill",
+"million",
+"mining",
+"one",
+"pounds",
+"production",
+"projects",
+"targets",
+"uranium",
+"white"
+]
+},
+{
+"id": "8080c5e15c173c5b",
+"date": "2026-11-24",
+"ts": 1795531182,
+"title": "Purdue partners with Department of Energy to Advance Nuclear Reactor Construction Technology",
+"summary": "",
+"outlet": "WBIW",
+"link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTHRTQjN2bFIzeXFSSzN4UDg5YnVnaGwxMURlQ3R3RWxvVldZRklFSVIyZ1lRa2ljZlZVWTkxcnM2QWRXMVJURk4tY3VxRW15aGtNb1gybnllYl9NSUJJZmNLeFhEdDFBRzY2NVFzOEhVeTh0MC1hWXlSZnVsSDV0cVZra1FzV2N2UUEwNWIzT0JMeHQtcDN2Mm9ya3VNZkZBQmcwazlXNDNZdWMwZDlnQmZ0TmV3S053UE93QXRvWTdJSDQ?oc=5",
+"place": "Energy Department",
+"tickers": [
+"LEU",
+"BWXT",
+"CCJ",
+"UEC",
+"UUUU"
+],
+"tags": [
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.75,
+"score": 4.7,
+"echo_of": null,
+"w": [
+"advance",
+"construction",
+"department",
+"energy",
+"nuclear",
+"partners",
+"purdue",
+"reactor",
+"technology"
+]
 }
 ]
