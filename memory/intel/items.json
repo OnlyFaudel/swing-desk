@@ -15732,5 +15732,126 @@
 "step",
 "triso"
 ]
+},
+{
+"id": "0eaa7e33c2887374",
+"date": "2026-11-24",
+"ts": 1795502130,
+"title": "Nuclear energy in Wyoming U.S. Congress",
+"summary": "",
+"outlet": "OpenSecrets",
+"link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWGRUZTBiTkZzUFR6WDJmSDJyNkM0YUFBai1nSGNjZEU2bGVkaVBTaEFVNmpVS1BDZDFyMGlOT3VQME05Mm5ZZnJLR0hVd3dMQkVpUnhJMXlwQnlQSlprZnUtbmhqU01Yd2M0MjlXb0thd2tqVHpDMGI4VXdVOE1GNVU1cmc0UGxHa2VKXzdSUDhmd3plSXZUbEtUaUdrWXlONUw3QWZRZE4?oc=5",
+"place": "Congress and laws",
+"tickers": [
+"CCJ",
+"LEU",
+"CEG",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.71,
+"score": 3.92,
+"echo_of": null,
+"w": [
+"congress",
+"energy",
+"nuclear",
+"wyoming"
+]
+},
+{
+"id": "e894528a7fb48a37",
+"date": "2026-11-24",
+"ts": 1795506839,
+"title": "Uzbekistan and China explore deeper nuclear power ties, plant safety initiatives",
+"summary": "",
+"outlet": "Trend News Agency",
+"link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBONW9kaWVpRGtMeFREdEZPR2F3NTFzbFNXd3ZJYk5TSDZ2ZTFLalplZ1F5bUR4UXh2NjRWOUNqRWRpOXBHY1hkTHM3WkRNMVlTeGtuelY2dVFUakpSR1dj?oc=5",
+"place": "China new builds",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.77,
+"score": 4.04,
+"echo_of": null,
+"w": [
+"china",
+"deeper",
+"explore",
+"initiatives",
+"nuclear",
+"plant",
+"power",
+"safety",
+"ties",
+"uzbekistan"
+]
+},
+{
+"id": "fef3943ac40abc8e",
+"date": "2026-11-24",
+"ts": 1795525713,
+"title": "White Mesa Ramp Could Change The Case For Energy Fuels Stock (TSX:EFR)",
+"summary": "",
+"outlet": "Yahoo Finance",
+"link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeEZxYWJ5VDdMS3JBYzgwd3pHTjkxLTluWWtPWUV2NC1YVlFnVnlDRTdJQXNLdEZBQ190T3JNcTI5TGN1bW9vMVFHR2VIdHY1cDFHQzhNYkp2OEFjdC1JSjBPbm1WejM4bjdoT0tlMG5PYk9vSi1lU3FWNjFfbUV1bWxOUUdfOVgxZldId0dR?oc=5",
+"place": "Rare earths (Energy Fuels)",
+"tickers": [
+"UUUU"
+],
+"tags": [
+"production"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.6,
+"score": 3.5,
+"echo_of": null,
+"w": [
+"case",
+"change",
+"efr",
+"energy",
+"fuels",
+"mesa",
+"ramp",
+"stock",
+"tsx",
+"white"
+]
+},
+{
+"id": "f6eef16e9608400a",
+"date": "2026-11-24",
+"ts": 1795527240,
+"title": "Australia\u2019s dependence on the US exposes the irony of AUKUS",
+"summary": "",
+"outlet": "Global Times",
+"link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAyaHFsbUpjdlhCcjh1VWxlVHgxZ25QLTY3Yl8xTGs5U2xkVnVPUWVqbE10VC1MTGhvYnpRUzF0N1REcW1tRmJPclpfQ3prNDUxck91bHFfM0Rwa1ptWnZaNnJ3?oc=5",
+"place": "AUKUS and navies",
+"tickers": [
+"BWXT"
+],
+"tags": [
+"defense"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.75,
+"score": 5.0,
+"echo_of": null,
+"w": [
+"aukus",
+"australia",
+"dependence",
+"exposes",
+"irony"
+]
 }
 ]
