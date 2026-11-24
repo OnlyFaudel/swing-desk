@@ -104,6 +104,14 @@
 "surfaced": false
 },
 {
+"date": "2026-11-27",
+"ticker": "VST",
+"what": "Thanksgiving-window auto trade exits; check whether the basket recovered above its 10-day average before any new VST buys.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
 "date": "2026-11-28",
 "ticker": "UUUU",
 "what": "Half-day session after Thanksgiving; check whether the basket recovers above its 10-day average before any future resting buy.",
@@ -1104,6 +1112,30 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "CEG",
+"what": "Check whether the PJM capacity-auction delay decision landed and whether the $242.89 zone held or broke.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy window for the $346.08 level closes; PJM capacity-auction delay decision could move the stock.",
+"by": "level",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy at $355.66 expires; check whether the PJM capacity auction delay has been decided and whether the $354.24 support holds.",
+"by": "pm",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
@@ -1548,6 +1580,14 @@
 "ticker": "UEC",
 "what": "Earnings; event risk for any open position.",
 "by": "macro",
+"written": "2026-11-24",
+"surfaced": false
+},
+{
+"date": "2026-12-08",
+"ticker": "UEC",
+"what": "Earnings release; event risk for any position.",
+"by": "level",
 "written": "2026-11-24",
 "surfaced": false
 },
