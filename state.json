@@ -1248,6 +1248,81 @@
    "decision": "SKIP",
    "reason": "Price is at 350.58 and the resting entry at 346.08 is only about 1.5% below the market, but the support zone 344.7 is thin and the stop sits just 1.6% under entry. Basket-level gate is elevated fear (",
    "evaluated": false
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "CEG",
+   "setup": "patient_level",
+   "zone": 236.82,
+   "entry": 237.77,
+   "stop": 233.98,
+   "target": 257.5,
+   "reward_risk": 5.21,
+   "dist_to_entry_pct": 3.46,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 236.67,
+    "value_high": 278.26,
+    "heaviest_price": 264.17,
+    "position": "at value low",
+    "node": "normal",
+    "node_ratio": 1.15,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The support zone is at $236.82 and the entry sits only 3.5% above the current price, but the stock is already down 12% from its 20-day high and 34% from its 1-year high, and the stop at $233.98 is clo",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "VST",
+   "setup": "patient_level",
+   "zone": 114.85,
+   "entry": 115.31,
+   "stop": 113.47,
+   "target": 125.85,
+   "reward_risk": 5.74,
+   "dist_to_entry_pct": 4.21,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 111.81,
+    "value_high": 141.35,
+    "heaviest_price": 119.66,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 0.78,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The zone at 114.85 sits in a stock that is 15.9% below its 20-day high, under its 50-day and 200-day averages, and falling into an elevated-fear market (VIX 29.6). Macro shows the basket is in a downt",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "TLN",
+   "setup": "patient_level",
+   "zone": 344.7,
+   "entry": 346.08,
+   "stop": 340.56,
+   "target": 358.21,
+   "reward_risk": 2.2,
+   "dist_to_entry_pct": 1.53,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 312.55,
+    "value_high": 366.37,
+    "heaviest_price": 360.99,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 0.9,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "Price is at 347.84 and the resting limit sits at 346.08, very near the 344.7 support zone with a tight stop at 340.56. The PJM capacity-auction delay fight is live event risk, the basket is in a risk-",
+   "evaluated": false
   }
  ],
  "cooldown": {
@@ -1255,18 +1330,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "How did Cameco (TSX:CCO) and Denison Mines' (TSX:DML) third-quarter results reflect record uranium term prices? - kalkine.ca",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQmZSMjVTcTZHRE1BckxuSHVLSG82X3kzb0pYWjlOUjF1TUZReGU2TEtLdm1ma2tfbFNtT1pieEpaVnA1R2RnRWtWdlQyR0NoaWdmWVpRdkU4al9OeXVsY2Q4SEhQSFc1N1lwQ1FweTNkcllBWFlwRGlLbHJWZWxUaXJsdEljbEdYRHlRaks4WGZQbW9uSURIQzREY3M5VlJkVW9WX21IQXNiQTRnWVF0SnZ1N05OVWlLTFRVUW95NXhNbWUwcHVDOHJLQ19pWk0?oc=5",
-   "ts": 1795436820,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Recap of past quarterly results and term prices; nothing new"
-  },
   {
    "ticker": "CCJ",
    "source": "Google News",
@@ -4254,6 +4317,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic SMA technical-analysis piece with no new company information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Westinghouse reactor",
+   "title": "BWXT Canada approved to make parts for Westinghouse AP 1000 reactors - www.exchangemonitor.com",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZjR3TGdJcVE1TEpJNk1vVHFDbUNvZkI4UkRuclBfbmdRQ096OFdNamFJZm54NGdYNXVmWUNWMHpnMVE0T19DZl9TT18wczRNRjh6N3p5d3hCR0NoS05weGZKT3BwMVFzSHBFWUtyYUdYVjBXcTI1QlB1dUN6Tl9Wb0lnRlNPYm8tcXlzY3dwWklzRkxTdkxiZEl3Z2VtRGR6ZXpv?oc=5",
+   "ts": 1795537898,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Westinghouse and BWXT Canada AP1000 component deal is real new demand news, but indirect for uranium miner CCJ."
   }
  ],
  "reviews": [
@@ -5856,16 +5931,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.17269,
+  "day_usd": 0.17729,
   "month": "2026-11",
-  "month_usd": 0.90411,
-  "total_usd": 0.90411,
+  "month_usd": 0.90871,
+  "total_usd": 0.90871,
   "by_role": {
    "macro": 0.08201,
    "whale": 0.01672,
    "crowd": 0.01094,
-   "level": 0.05997,
-   "scout": 0.10091,
+   "level": 0.06414,
+   "scout": 0.10134,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -5971,20 +6046,20 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 59.01,
-  "NXE": 6.63,
-  "UEC": 5.55,
-  "DNN": 1.71,
-  "UUUU": 4.92,
-  "LEU": 84.33,
-  "BWXT": 112.35,
-  "CEG": 246.93,
-  "VST": 120.0,
-  "TLN": 351.1,
-  "SPY": 715.23,
-  "SSO": 59.96
+  "CCJ": 58.74,
+  "NXE": 6.62,
+  "UEC": 5.53,
+  "DNN": 1.7,
+  "UUUU": 4.91,
+  "LEU": 83.65,
+  "BWXT": 112.08,
+  "CEG": 244.73,
+  "VST": 119.44,
+  "TLN": 347.84,
+  "SPY": 713.78,
+  "SSO": 59.67
  },
- "last_cycle": "2026-11-24 11:27 ET",
+ "last_cycle": "2026-11-24 11:37 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -6009,10 +6084,10 @@
   ]
  },
  "brakes": {
-  "equity": 1005.74,
-  "day_pct": -2.31,
-  "week_pct": 0.52,
-  "drawdown_pct": -4.62,
+  "equity": 1002.41,
+  "day_pct": -2.63,
+  "week_pct": 0.19,
+  "drawdown_pct": -4.93,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -7758,6 +7833,38 @@
   [
    "2026-11-24 11:27",
    1005.74
+  ],
+  [
+   "2026-11-24 11:29",
+   1004.0
+  ],
+  [
+   "2026-11-24 11:30",
+   1002.72
+  ],
+  [
+   "2026-11-24 11:31",
+   1003.2
+  ],
+  [
+   "2026-11-24 11:33",
+   1003.53
+  ],
+  [
+   "2026-11-24 11:34",
+   1004.42
+  ],
+  [
+   "2026-11-24 11:35",
+   1003.57
+  ],
+  [
+   "2026-11-24 11:36",
+   1002.97
+  ],
+  [
+   "2026-11-24 11:37",
+   1002.41
   ]
  ],
  "nowcast": {
@@ -50496,16 +50603,16 @@
   }
  },
  "last_scan": {
-  "CCJ": 1795536463.6948144,
-  "NXE": 1795536463.7024982,
-  "UEC": 1795536463.7097862,
-  "DNN": 1795536463.717118,
-  "UUUU": 1795536463.7241113,
-  "LEU": 1795536463.7357862,
-  "BWXT": 1795536463.7426186,
-  "CEG": 1795536463.749845,
-  "VST": 1795536467.2734032,
-  "TLN": 1795536470.4973404
+  "CCJ": 1795538273.8724806,
+  "NXE": 1795538274.2172468,
+  "UEC": 1795538274.2887928,
+  "DNN": 1795538274.3939342,
+  "UUUU": 1795538274.501011,
+  "LEU": 1795538274.5720387,
+  "BWXT": 1795538274.6718833,
+  "CEG": 1795538274.7407513,
+  "VST": 1795538277.9573836,
+  "TLN": 1795538281.0965014
  },
  "setup_status": {
   "CCJ": "a level at $57.87 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
@@ -50515,9 +50622,9 @@
   "UUUU": "no confirmed support level below the price (it has been falling through them)",
   "LEU": "a level at $80.9 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
   "BWXT": "a level at $108.17 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
-  "CEG": "the Level Analyst skipped the setup: Price is $245.49 and the support zone sits at $236.82 with entry $237.77, but the stock is down 8.4% this week and 12.9% below its 20-day high. The desk's notes sh",
-  "VST": "the Level Analyst skipped the setup: The setup's zone is 114.85 with a stop at 113.47, but the price is 119.81, down 3.3% today and 15.6% below its 20-day high, with the 50-day and 200-day averages bo",
-  "TLN": "the Level Analyst skipped the setup: Price is at 350.58 and the resting entry at 346.08 is only about 1.5% below the market, but the support zone 344.7 is thin and the stop sits just 1.6% under entry."
+  "CEG": "the Level Analyst skipped the setup: The support zone is at $236.82 and the entry sits only 3.5% above the current price, but the stock is already down 12% from its 20-day high and 34% from its 1-year",
+  "VST": "the Level Analyst skipped the setup: The zone at 114.85 sits in a stock that is 15.9% below its 20-day high, under its 50-day and 200-day averages, and falling into an elevated-fear market (VIX 29.6).",
+  "TLN": "the Level Analyst skipped the setup: Price is at 347.84 and the resting limit sits at 346.08, very near the 344.7 support zone with a tight stop at 340.56. The PJM capacity-auction delay fight is live"
  },
  "sync": {
   "pulse_up": false,
@@ -52264,7 +52371,7 @@
     0.8898
    ]
   },
-  "time": "2026-11-24 11:27"
+  "time": "2026-11-24 11:38"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -52318,6 +52425,7 @@
   "7ee1ad6e6041b23e",
   "9cee24c18c288d5e",
   "61659cb80b158a77",
+  "7baea97af7cc8870",
   "bcc1a41f243d6952",
   "d7c07a39ed1d0a97",
   "0f192e3ee6f7d8a7",
@@ -52681,7 +52789,7 @@
   "22706e6619f0e685",
   "27cae87b69d8c12f"
  ],
- "news_slow_at": 1795537586.4630036,
+ "news_slow_at": 1795538192.3659985,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -207348,6 +207456,36 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-24 11:37",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping CEG. The price is falling hard, sitting below its 50- and 200-day averages, and the zone's heaviest volume is up at $264, so the $236.82 support looks thin. Like the Macro Analyst, I'd rather wait for the basket to recover above its 10-day average before buying into weakness.\n\nWhy: I checked the chart trend, where the volume concentrates, and the basket gate the desk set, and each points to a fragile zone rather than a confirmed bounce. The PJM auction delay and the NRC news are real but cut both ways and were not enough to override the trend.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-24 11:38",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping VST. The price is still sliding under all its moving averages in a market where fear is elevated, so a resting buy just above $115 is more likely to get run over than to bounce. I agree with the Macro Analyst that the basket gate should decide this, and I'd rather wait for the trend to repair than catch a falling knife.\n\nWhy: I checked the trend (below SMA20, SMA50 and SMA200), the basket gate, and the macro fear regime, and all point to a falling tape. The only positive, the $903k insider buy, is real but too small to override the trend and the gate.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-24 11:38",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping TLN. The price is sitting almost on top of the support zone, the PJM auction delay decision is live event risk, and today's volume is very thin, so a break through the zone looks as likely as a bounce. I agree with the Macro Analyst that the basket gate matters more than any single setup.\n\nWhy: I checked how close the entry sits to support, the PJM event risk, and today's volume against the macro risk regime. The setup has no margin of safety, so I'm skipping it rather than arming it.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -207898,6 +208036,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "CCJ",
+   "type": "contract_deal",
+   "title": "BWXT Canada approved to make parts for Westinghouse AP 1000 reactors - www.exchangemonitor.com",
+   "date": "2026-11-24",
+   "price": 58.83,
+   "materiality": 6,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -207978,7 +208128,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 11:28",
+  "updated": "2026-11-24 11:38",
   "total": 504,
   "week": 424,
   "places": {
@@ -208626,8 +208776,8 @@
   "2d6cd019b00546cd",
   "f3afa8d6a24239f3",
   "9230ada1dcbe0065",
-  "c10f62c3161fa59d",
   "04e5c0526493eb7e",
+  "c10f62c3161fa59d",
   "b95ad295cbbaef38",
   "df371025b77dc13a",
   "26652cf90e01656a",
@@ -208777,7 +208927,7 @@
   }
  ],
  "memory_view": {
-  "events": 1602,
+  "events": 1603,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -209355,15 +209505,6 @@
   "recent": [
    {
     "date": "2026-11-23",
-    "ticker": "BWXT",
-    "title": "Dmitri Medvedev admits the possibility of a \u201cpreemptive\u201d nuclear attack by Russia if the West were to supply Ukraine with nuclear weapons",
-    "type": "intel_defense",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-23",
     "ticker": "LEU",
     "title": "Dmitri Medvedev admits the possibility of a \u201cpreemptive\u201d nuclear attack by Russia if the West were to supply Ukraine with nuclear weapons",
     "type": "intel_defense",
@@ -209709,6 +209850,15 @@
     "ticker": "BWXT",
     "title": "Poland eyes 2027 deal for $75.15 billion nuclear plant",
     "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-24",
+    "ticker": "CCJ",
+    "title": "BWXT Canada approved to make parts for Westinghouse AP 1000 reactors - www.exchangemonitor.com",
+    "type": "contract_deal",
     "r0": null,
     "r5": null,
     "r20": null
@@ -210508,7 +210658,7 @@
    "built": "2026-11-24 11:28"
   }
  ],
- "heartbeat": "2026-11-24 11:27",
+ "heartbeat": "2026-11-24 11:37",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -210663,18 +210813,18 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 112.3499984741211,
-  "TLN": 351.1000061035156
+  "BWXT": 112.08,
+  "TLN": 347.84
  },
  "notes_audit": {
   "scout": {
-   "asked": 137,
-   "used": 127,
+   "asked": 138,
+   "used": 128,
    "notes": {
     "TLN Deals and contracts": 7,
-    "CCJ Deals and contracts": 35,
-    "BWXT Deals and contracts": 24,
-    "SECTOR Government and laws": 33,
+    "CCJ Deals and contracts": 36,
+    "BWXT Deals and contracts": 25,
+    "SECTOR Government and laws": 34,
     "UUUU Deals and contracts": 29,
     "SECTOR Countries": 27,
     "CEG Deals and contracts": 20,
@@ -210695,33 +210845,33 @@
    "since": "2026-11-23"
   },
   "level": {
-   "asked": 40,
-   "used": 38,
+   "asked": 43,
+   "used": 41,
    "notes": {
-    "TLN Snapshot": 14,
-    "TLN Price behavior": 14,
+    "TLN Snapshot": 15,
+    "TLN Price behavior": 15,
     "TLN Discoveries": 3,
-    "TLN Our trades": 12,
-    "VST Snapshot": 10,
-    "VST Price behavior": 9,
-    "TLN What history says": 10,
+    "TLN Our trades": 13,
+    "VST Snapshot": 11,
+    "VST Price behavior": 10,
+    "TLN What history says": 11,
     "desk_notes intel: PJM capacity auction delay": 1,
     "TLN intel_disruption (PJM auction delay)": 1,
     "SECTOR macro: market regime": 1,
     "BWXT Snapshot": 9,
     "BWXT What history says": 6,
     "BWXT Price behavior": 8,
-    "SECTOR Uranium market": 18,
+    "SECTOR Uranium market": 20,
     "BWXT Our trades": 7,
     "sector_pulse": 1,
     "BWXT Discoveries": 1,
-    "CEG Snapshot": 7,
-    "CEG Price behavior": 6,
+    "CEG Snapshot": 8,
+    "CEG Price behavior": 7,
     "CEG Our trades": 1,
-    "VST What history says": 4,
-    "VST Our trades": 5,
+    "VST What history says": 5,
+    "VST Our trades": 6,
     "SECTOR Market regime": 1,
-    "CEG What history says": 5,
+    "CEG What history says": 6,
     "CEG Discoveries": 1,
     "SECTOR Government and laws": 3
    },
@@ -211115,7 +211265,7 @@
    ],
    [
     "2026-11-24",
-    59.01
+    58.72
    ]
   ],
   "NXE": [
@@ -211237,7 +211387,7 @@
    ],
    [
     "2026-11-24",
-    6.63
+    6.61
    ]
   ],
   "UEC": [
@@ -211359,7 +211509,7 @@
    ],
    [
     "2026-11-24",
-    5.55
+    5.53
    ]
   ],
   "DNN": [
@@ -211481,7 +211631,7 @@
    ],
    [
     "2026-11-24",
-    1.71
+    1.7
    ]
   ],
   "UUUU": [
@@ -211603,7 +211753,7 @@
    ],
    [
     "2026-11-24",
-    4.92
+    4.91
    ]
   ],
   "LEU": [
@@ -211725,7 +211875,7 @@
    ],
    [
     "2026-11-24",
-    84.33
+    83.9
    ]
   ],
   "BWXT": [
@@ -211847,7 +211997,7 @@
    ],
    [
     "2026-11-24",
-    112.35
+    112.1
    ]
   ],
   "CEG": [
@@ -211969,7 +212119,7 @@
    ],
    [
     "2026-11-24",
-    246.93
+    244.47
    ]
   ],
   "VST": [
@@ -212091,7 +212241,7 @@
    ],
    [
     "2026-11-24",
-    120.0
+    119.51
    ]
   ],
   "TLN": [
@@ -212213,7 +212363,7 @@
    ],
    [
     "2026-11-24",
-    351.1
+    347.73
    ]
   ]
  },
@@ -215056,6 +215206,108 @@
     "node_ratio": 0.22,
     "skip": true
    }
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "CCJ",
+   "zone": 57.87,
+   "entry": 58.1,
+   "stop": 57.18,
+   "target": 63.68,
+   "vp": {
+    "value_low": 61.23,
+    "value_high": 76.69,
+    "heaviest_price": 75.01,
+    "position": "below value",
+    "node": "normal",
+    "node_ratio": 0.62,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "NXE",
+   "zone": 6.38,
+   "entry": 6.41,
+   "stop": 6.3,
+   "target": 7.07,
+   "vp": {
+    "value_low": 6.83,
+    "value_high": 8.82,
+    "heaviest_price": 7.95,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.37,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "UEC",
+   "zone": 5.29,
+   "entry": 5.31,
+   "stop": 5.23,
+   "target": 6.03,
+   "vp": {
+    "value_low": 5.75,
+    "value_high": 8.2,
+    "heaviest_price": 7.24,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.29,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "DNN",
+   "zone": 1.68,
+   "entry": 1.69,
+   "stop": 1.66,
+   "target": 1.88,
+   "vp": {
+    "value_low": 1.81,
+    "value_high": 2.38,
+    "heaviest_price": 2.11,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.28,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "LEU",
+   "zone": 80.9,
+   "entry": 81.22,
+   "stop": 79.93,
+   "target": 93.4,
+   "vp": {
+    "value_low": 86.51,
+    "value_high": 117.36,
+    "heaviest_price": 109.41,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.42,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "ticker": "BWXT",
+   "zone": 108.17,
+   "entry": 108.6,
+   "stop": 106.87,
+   "target": 119.41,
+   "vp": {
+    "value_low": 114.46,
+    "value_high": 134.11,
+    "heaviest_price": 117.21,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.22,
+    "skip": true
+   }
   }
  ],
  "hawk_cool": {},
@@ -215382,7 +215634,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 11:27",
+ "watchdog_last": "2026-11-24 11:37",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
