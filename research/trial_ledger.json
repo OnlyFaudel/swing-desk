@@ -233,6 +233,10 @@
   "holidays_quarters_earnings": {
    "trials": 18,
    "verdict": "2026-11-24 (every US market holiday 1999-2026, our 12 nuclear + 72 related, 0.2% costs, $5M/day). Pre-holiday run-up (2 sessions into the last pre-holiday close) vs the S&P: nuclear -0.16% (1999-07), +0.09% (2008-18, t 0.4), +0.62% (2019-26, t 1.8); related -0.14/-0.12/+0.13%: only recent and only nuclear, not adopted (Thanksgiving keeps its own tested trade). By holiday (2008-26, no costs): Memorial +2.2%, Juneteenth +1.2%, Thanksgiving +1.0%, Christmas +0.7%, July 4 -0.7%. Quarter turn: without costs/liquidity filter the first 3 days of a quarter looked like +1.0%/+1.6% vs S&P, but with them: nuclear -0.74/+0.10/+1.56%, related -0.32/-0.36/-0.11% (12 variants, only 2019-26 positive): rejected. Last 5 sessions before earnings: -0.65% (2008-18, t -1.2) / -0.13% (2019-26): no rule. Also adopted from the discovery engine's own survivors: exit held positions on proven short-term bad news (avg <= -2% within 5 days; today that's share offerings: -4.46% over 5 days, 24% up, both halves)."
+  },
+  "recent_era_book": {
+   "trials": 0,
+   "verdict": "2026-11-24: owner's hypothesis that the AI-era nuclear market differs from 2008-2018. Five rules that worked 2019-2026 but failed 2008-2018 (RSI(2) dip, worst week, 4 down days, quarter turn, 12-month momentum switch) now run as a live practice book (recent.py, no money), scored per trade vs the S&P. Promotion candidate after 30 closed trades with positive average and t >= 1.5; real money still requires the normal gate."
   }
  }
 }

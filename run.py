@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, re, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, earnings, weekly, weather, shocks, licenses, deals, radarlog, watchdog, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, earnings, weekly, weather, shocks, licenses, deals, radarlog, watchdog, recent, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -1954,6 +1954,25 @@ def intel_tick(st, today, force=False):
     if not st.get("sput_view"):
         st["sput_view"] = sput.summary()
     st["license_view"] = licenses.summary()
+    if now.weekday() < 5 and not market.is_holiday(today) and now.time() >= dt.time(16, 20) and not st["flags"].get(f"recent:{today}"):
+        st["flags"][f"recent:{today}"] = True  # practice book for rules that only worked 2019-2026 (no money)
+        try:
+            recent.run(list(T), CFG.get("panic_rebound", {}).get("related_universe") or [], today)
+            rv = recent.summary()
+            new_c = [k for k, v in rv["rules"].items() if v.get("candidate") and not (st.get("recent_view") or {}).get("rules", {}).get(k, {}).get("candidate")]
+            st["recent_view"] = rv
+            if new_c:
+                feed.post("researcher", f"Recent-era practice book: {', '.join(new_c)} now has 30+ live trades beating the S&P (t 1.5+). "
+                          "It failed 2008-2018 but is working in this market, so it's a candidate for real trading.", kind="alert",
+                          art={"big": "Practice rule earned a look", "sub": ", ".join(new_c)})
+                notify("Practice rule earned a look", ", ".join(new_c), tags="seedling")
+            if today.weekday() == 4:
+                lines = [f"{k}: {v['closed']} closed, " + (f"{v['avg_vs_spy_pct']:+.2f}% vs S&P each" if v.get("avg_vs_spy_pct") is not None else "no results yet")
+                         for k, v in rv["rules"].items()]
+                feed.post("researcher", "Recent-era practice book (rules that only worked since 2019, no money): " + "; ".join(lines) + ".",
+                          kind="data", art={"big": "Recent-era practice book", "sub": "Is this market different? Live scores"})
+        except Exception as e:
+            print("recent book", e)
     st["deals_view"] = deals.summary()
     if now.time() >= dt.time(17, 45) and today.weekday() < 5 and not st["flags"].get(f"radarres:{today}"):
         st["flags"][f"radarres:{today}"] = True  # did options into earnings turn out cheap or expensive?
