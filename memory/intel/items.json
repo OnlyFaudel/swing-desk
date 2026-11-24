@@ -17310,5 +17310,39 @@
 "outlook",
 "strategic"
 ]
+},
+{
+"id": "0a269ad6c5061465",
+"date": "2026-11-24",
+"ts": 1795559811,
+"title": "Exclusive: Russian Nuclear-Capable Tu-160 Bombers Approach South Korean Airspace Near Ulleungdo",
+"summary": "",
+"outlet": "\uc870\uc120\uc77c\ubcf4",
+"link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPV3c2OUpUS0VkeXpDX29NZG54Tk5ndDNKVkJBVjlxMlRIcWhNQWs3eVVtYVAzeFJmRE13ZkVldllyMVJrUUt3WTRCVnVCSGZQTEZxVU1rdlczSU5JS0N3M1Z6U2VBWlQ5dTlvRDkwM3IyUnlXUFNhdU1pa0IzNjRnSmlKcTlvMlpz?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.83,
+"score": 4.16,
+"echo_of": null,
+"w": [
+"160",
+"airspace",
+"approach",
+"bombers",
+"capable",
+"exclusive",
+"korean",
+"near",
+"nuclear",
+"russian",
+"south",
+"ulleungdo"
+]
 }
 ]
