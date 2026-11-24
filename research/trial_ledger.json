@@ -265,6 +265,10 @@
   "panic_cluster_audit": {
    "trials": 5,
    "verdict": "Panic rule 2008-2026 with crash brake, 523 trades, +2.14% vs S&P: no bucket bad in both eras. Weak spots: S&P below its 200-day -1.22% (2008-18) / +3.63% (2019-26) (already the smallest size there); related-stock fill -1.84% / +3.34% vs nuclear +1.58% / +5.20%; VIX under 25 +0.44% / +4.20%. Deeper same-day drops (-8%+) did better (+2.07/+8.11%) but n=13/3. No change."
+  },
+  "night_round_2": {
+   "trials": 6,
+   "verdict": "2026-11-24 night round 2 (85 nuclear + related, vs S&P, 0.2% costs). Failed breakdown (low broke 3%+ under the prior 52-week low within 5 days, close back above it): 10 days +0.37/+0.35% (t 0.5/0.4), 20 days -0.06/+1.54%: too weak, rejected. Strong on a selloff day (S&P -2%, stock closes up / up 2%+): 10 days -0.67/-0.21% and -2.26/-0.14%; 20 days -0.68/+0.46% and -1.46/+0.29%: no edge (if anything it fades in 2008-18), rejected. Considered but not adopted: half-size sharp-drop trades when VIX < 20 (weakest bucket both eras, +0.44% best case) - gain too small vs the extra rule."
   }
  }
 }
