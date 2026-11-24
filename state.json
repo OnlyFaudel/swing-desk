@@ -1533,42 +1533,6 @@
  },
  "news_feed": [
   {
-   "ticker": "UUUU",
-   "source": "Google News",
-   "title": "UUUU Stock Rises Premarket As Energy Fuels Targets One Million Pounds Of Uranium Output \u2014 Sees 35% Growth In 2027 Contract Sales - Asianet Newsable",
-   "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPNWt4bUJvR3Z6NktHWnFySWIycWJLcVFIdjhtLWFVZ29JckFGdzBIY2h4OHVqREVjQUtpVnhpNmdhWVhJdm42UE55U3I4R3p2S1I3MVpYYXVqbjg5R2tpQ201Ql85ZHBvbDc5WkhwSUhnM1hXLXBwYmROUmgwcFB5SEFUYkE1cGNfN2l2ZVBJMTd4TEQwd0hNTS1hQ3VwSWg3TUFsWkpWcTR5TmhBdmxvTlBQck0yNHJ4eExYUXhpYlQyWkFWM2V1ck1CcUhDbGUtaDNRVlNRc1NfemNvODlSLWJpNl9OLXhwMUh3UmxCNi1CQ29uNG1ma1p1NGswZWR5ME16YWtJemdkbFhWaEFHVEhHcG3SAZoCQVVfeXFMUG8zZ2lkTDBmVF9JM0c3NGo5Q01RdUlLdUxNT2xCOUIyalQtY3ZVN3ZBSkxheDAzclVsNWd5eTV0dmtxcDF3SUI5SENEdTdwR1U5WFhyQ0ZpbHNOUF9ZdWtOYzVZaUNWX1owRENDT1dOemtHeTFTejZQV1ozSU5ERDlLX2ZCSWM1bDJ0VVUxSm1SMXo4dy1xc3lma1V1T1pfSUZXSkkweGR0aVlTXzlic0RJSnk5TjRLM05sUzRWR3BqOHNjT1NTNFBBZk9haEJFRG95LTd5SFVEeVMtdDVWMzlfREhBUW41ZnNIVGViUUJnSVd0Slp5LTdkVkJpZ3BoZ3ZydzJRdTZZdWw5S3dkNkVHVjBBTEVzSnV3?oc=5",
-   "ts": 1795441502,
-   "materiality": 6,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "earnings",
-   "why": "Company production target and 2027 sales growth guidance, a real company-specific update."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Generation Uranium Appoints Director, Updates Activities and Grants Stock Options - TradingView",
-   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPS1d2NTBzMS1FTFVJblI5MVJuN05ya2UwT3AxZHdKNGZNam0zWWl4YnlsVy1wVVpyOXpvd3FJcVlicEJ1WjJGNzc1OXg2M0w4VVFmVVJjeG9QeXJoWmVuQ0cwOU5vREd1VEJjNURjMUpwanVTSlhsdlBsZk9FRk8xbkZJaXFfWmdXN3ltR2RSSGUxcnhITElBbEJiUlJ5M3J6WVJ1SkNJSERzQXZyOEs0RTBObDc2YWVjdVZEQks0c3NNSG1acnU4Z1g3a3RoaDBGdjBlMXVvamVaN3VNMWNvUVFHYzA5Tnc4bE1xZg?oc=5",
-   "ts": 1795440605,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Headline concerns a different, unrelated junior explorer's director appointment, not Cameco."
-  },
-  {
-   "ticker": "UUUU",
-   "source": "Google News: \"Energy Fuels\" uranium",
-   "title": "Energy Fuels rises on White Mesa uranium plans, 1.25M-pound growth pipeline - TradingView",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQRFlfRThTZ0tUUllMZGhpRVF2bnJsbkM1Mnl2N01ob2FkRUJkcm9nRDN3RktjUVprRVRnUTJaZ1RzSlNBQXVqQ185cTdPRnhJNV91aFFyRjZqbmphV25sSzdlN01YaVZ1NWRLb1kxVExKTUFrNE1xOC01WU9MNEJrSTkwS0c2MkJVM2piemFjRzd1OTlHc1o2LWRfVXRwVmpVZWQwMTV2QVNyVHdaZ2tVLWptVVNYRTQtTF9mRlQ2ODhXbFd5WlhtZ1NGQ2w2UkhMT0hZ?oc=5",
-   "ts": 1795437131,
-   "materiality": 5,
-   "novelty": "follow_up",
-   "direction": "up",
-   "event_type": "other",
-   "why": "Plan to expand White Mesa mill and pipeline is real but recycled, likely already known."
-  },
-  {
    "ticker": "CCJ",
    "source": "Local intel: The Korea Post (South Korea)",
    "title": "China\u2019s Nuclear Submarine Fleet Could Reach 40 by 2035 as Japan Weighs Its Own Programme and Nuclear Policy",
@@ -4531,6 +4495,42 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic promotional piece on 2027 contracts; no new company-specific figures or announcement."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Yahoo Finance",
+   "title": "Is Constellation Energy Stock's Fall A Bargain Or A Warning?",
+   "link": "https://www.trefis.com/stock/ceg/articles/628278/is-constellation-energy-stocks-fall-a-bargain-or-a-warning/2026-11-24?.tsrc=rss",
+   "ts": 1795540954,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Yahoo opinion piece asking if the fall is a bargain; no new information."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News: \"Energy Fuels\" uranium",
+   "title": "Energy Fuels (NYSE American:UUUU) Climbs on a Plan to Produce About 1 Million Pounds of Uranium - kalkine.com",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMF9DR1F6QW1vRDFqYTZCYjFldllDUi1CZk5UdDVSb0xBU2hzZmswZXdtSWZxbzNSUmU2SDQwaFJJYzRCb3VZVEhEQ185cUhZWXBjNlA3RHBJQkRvUDRJeHFrTlRfMTBzTDBFQlFLR3dKZUVlMzM0QVRKZVpjSG1KWDFnekJrd1NjVmtENE43WnVIVHA0SE5VZVdnc1VSSDU3Q1ZFRUR0T2RDa3R2LXdpRDFyRFZxZkRKQjhWeXpBR2UxQQ?oc=5",
+   "ts": 1795524120,
+   "materiality": 5,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "supply",
+   "why": "Plan to produce about 1 million pounds of uranium is company-specific supply news, but a plan is not yet output or revenue."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Yahoo Finance",
+   "title": "3 Reasons Why Constellation Energy Corporation (CEG) Is a Great Growth Stock",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-why-constellation-energy-164502937.html?.tsrc=rss",
+   "ts": 1795538702,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Generic 'great growth stock' listicle-style piece, no new company-specific information."
   }
  ],
  "reviews": [
@@ -6133,16 +6133,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.22123,
+  "day_usd": 0.22247,
   "month": "2026-11",
-  "month_usd": 0.95265,
-  "total_usd": 0.95265,
+  "month_usd": 0.95389,
+  "total_usd": 0.95389,
   "by_role": {
    "macro": 0.08905,
    "whale": 0.01672,
    "crowd": 0.01094,
    "level": 0.0753,
-   "scout": 0.10823,
+   "scout": 0.10947,
    "review": 0.07035,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -6248,20 +6248,20 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 60.0,
-  "NXE": 6.78,
-  "UEC": 5.7,
-  "DNN": 1.73,
-  "UUUU": 5.07,
-  "LEU": 85.24,
-  "BWXT": 114.0,
-  "CEG": 246.07,
-  "VST": 120.76,
-  "TLN": 350.9,
-  "SPY": 720.14,
-  "SSO": 60.76
+  "CCJ": 59.84,
+  "NXE": 6.76,
+  "UEC": 5.67,
+  "DNN": 1.74,
+  "UUUU": 5.05,
+  "LEU": 84.32,
+  "BWXT": 113.72,
+  "CEG": 244.71,
+  "VST": 119.85,
+  "TLN": 349.3,
+  "SPY": 718.16,
+  "SSO": 60.43
  },
- "last_cycle": "2026-11-24 12:41 ET",
+ "last_cycle": "2026-11-24 12:52 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -6286,10 +6286,10 @@
   ]
  },
  "brakes": {
-  "equity": 1016.48,
-  "day_pct": -1.26,
-  "week_pct": 1.6,
-  "drawdown_pct": -3.6,
+  "equity": 1011.72,
+  "day_pct": -1.73,
+  "week_pct": 1.12,
+  "drawdown_pct": -4.05,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -8283,6 +8283,42 @@
   [
    "2026-11-24 12:41",
    1016.48
+  ],
+  [
+   "2026-11-24 12:42",
+   1015.39
+  ],
+  [
+   "2026-11-24 12:44",
+   1015.64
+  ],
+  [
+   "2026-11-24 12:45",
+   1016.09
+  ],
+  [
+   "2026-11-24 12:46",
+   1014.63
+  ],
+  [
+   "2026-11-24 12:47",
+   1013.43
+  ],
+  [
+   "2026-11-24 12:48",
+   1013.23
+  ],
+  [
+   "2026-11-24 12:49",
+   1013.19
+  ],
+  [
+   "2026-11-24 12:50",
+   1013.34
+  ],
+  [
+   "2026-11-24 12:52",
+   1011.72
   ]
  ],
  "nowcast": {
@@ -52789,7 +52825,7 @@
     0.89
    ]
   },
-  "time": "2026-11-24 12:41"
+  "time": "2026-11-24 12:52"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -52877,6 +52913,7 @@
   "23858b9754409f40",
   "93754439462a3d1c",
   "12fc0c7a240e4fef",
+  "81924e0d9ee0143f",
   "e356ee82386a78c0",
   "3c0d3789a7b698e6",
   "834bd992b1a75cdd",
@@ -52915,8 +52952,8 @@
   "cdf09ab4dc83c609",
   "a2a8ee32597c7b50",
   "503a7ef14b3cb3d2",
-  "85342e1a4ce58044",
   "bbef828d764dbb47",
+  "85342e1a4ce58044",
   "ca2a5c0a1baa2527",
   "b98ba2f840724229",
   "63e7ca0ff352dff7",
@@ -53045,6 +53082,7 @@
   "c2987c10404bf5fc",
   "1c7e8600a30c74ce",
   "22ca80b609e8130c",
+  "7ef53a09d1590d1f",
   "f7118b59fff9e876",
   "f7fb21429d8dfc22",
   "c928dcc41ecc5a41",
@@ -53223,9 +53261,10 @@
   "46ef5d40f9b97a80",
   "17dc2073115cbcc7",
   "c2a1739b2e369eff",
-  "f2896a10ee94b15b"
+  "f2896a10ee94b15b",
+  "34dd3aa515a79d75"
  ],
- "news_slow_at": 1795542033.9151375,
+ "news_slow_at": 1795542650.9407434,
  "officer": {
   "settled_cash": 30.91,
   "cash": 30.91,
@@ -208946,7 +208985,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 12:41",
+  "updated": "2026-11-24 12:52",
   "total": 507,
   "week": 427,
   "places": {
@@ -211490,7 +211529,7 @@
    "built": "2026-11-24 12:30"
   }
  ],
- "heartbeat": "2026-11-24 12:41",
+ "heartbeat": "2026-11-24 12:52",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -211645,28 +211684,28 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 114.0,
-  "TLN": 350.8999938964844
+  "BWXT": 113.72,
+  "TLN": 349.3
  },
  "notes_audit": {
   "scout": {
-   "asked": 153,
-   "used": 142,
+   "asked": 156,
+   "used": 144,
    "notes": {
     "TLN Deals and contracts": 7,
     "CCJ Deals and contracts": 38,
     "BWXT Deals and contracts": 26,
     "SECTOR Government and laws": 36,
-    "UUUU Deals and contracts": 33,
+    "UUUU Deals and contracts": 34,
     "SECTOR Countries": 28,
-    "CEG Deals and contracts": 22,
+    "CEG Deals and contracts": 23,
     "NXE Legal": 3,
     "NXE Deals and contracts": 7,
     "DNN Deals and contracts": 7,
     "BWXT Legal": 1,
     "LEU Deals and contracts": 19,
     "UEC Deals and contracts": 3,
-    "UUUU Legal": 15,
+    "UUUU Legal": 16,
     "SECTOR Uranium market": 2,
     "CCJ Legal": 6,
     "CEG Legal": 2,
@@ -212110,7 +212149,7 @@
    ],
    [
     "2026-11-24",
-    60.0
+    59.85
    ]
   ],
   "NXE": [
@@ -212232,7 +212271,7 @@
    ],
    [
     "2026-11-24",
-    6.78
+    6.76
    ]
   ],
   "UEC": [
@@ -212354,7 +212393,7 @@
    ],
    [
     "2026-11-24",
-    5.7
+    5.66
    ]
   ],
   "DNN": [
@@ -212598,7 +212637,7 @@
    ],
    [
     "2026-11-24",
-    5.07
+    5.04
    ]
   ],
   "LEU": [
@@ -212720,7 +212759,7 @@
    ],
    [
     "2026-11-24",
-    85.24
+    84.52
    ]
   ],
   "BWXT": [
@@ -212842,7 +212881,7 @@
    ],
    [
     "2026-11-24",
-    114.0
+    113.65
    ]
   ],
   "CEG": [
@@ -212964,7 +213003,7 @@
    ],
    [
     "2026-11-24",
-    246.07
+    244.58
    ]
   ],
   "VST": [
@@ -213086,7 +213125,7 @@
    ],
    [
     "2026-11-24",
-    120.76
+    119.85
    ]
   ],
   "TLN": [
@@ -213208,7 +213247,7 @@
    ],
    [
     "2026-11-24",
-    350.9
+    349.43
    ]
   ]
  },
@@ -216755,7 +216794,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 12:41",
+ "watchdog_last": "2026-11-24 12:52",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
