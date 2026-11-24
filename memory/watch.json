@@ -288,6 +288,22 @@
 "surfaced": false
 },
 {
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy at $355.66 expires; confirm cancel/re-approval and check the PJM December 2029/30 capacity-auction delay decision",
+"by": "questioner",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "TLN",
+"what": "Resting buy at $355.66 expires; confirm it was canceled or explicitly re-approved before then, and check whether the PJM December capacity-auction delay has been decided.",
+"by": "risk",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
 "date": "2026-12-01",
 "ticker": "UUUU",
 "what": "White Mesa Mill uranium processing campaign start; check whether ~1M lb production is on track",
@@ -411,6 +427,22 @@
 "date": "2026-12-01",
 "ticker": "",
 "what": "Questioner follow-up: Was the TLN COO's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale?",
+"by": "questioner",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "TLN",
+"what": "Confirm whether the PJM December 2029/30 capacity-auction delay request has been decided; it is Talen's main earnings driver and the answer changes whether the 9.6% jump is backed by firmer earnings.",
+"by": "macro",
+"written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-01",
+"ticker": "",
+"what": "Questioner follow-up: Has anyone confirmed whether the PJM December 2029/30 capacity-auction delay request has been decided? The 'pullback opportunity' headline does not answer it, and it is Talen's m",
 "by": "questioner",
 "written": "2026-11-23",
 "surfaced": false
