@@ -578,7 +578,8 @@
     "size_pct": 10,
     "max_open": 3,
     "note": "Intraday comeback (low 6%+ under yesterday's close, back above it near the close) -> hold 20 sessions. Research 2026-11-24: intraday_comeback.",
-    "only_below_200d": true
+    "only_below_200d": true,
+    "stop_pct": 15
   },
   "min_stop_room_pct": 0.75
 }

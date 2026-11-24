@@ -257,6 +257,14 @@
   "loss_cluster_audit_2026_11_24": {
    "trials": 16,
    "verdict": "Live audit: the only closed support trade (CEG, Nov 20) was an execution leak, not a strategy loss: a $247.99 buy limit was armed while CEG traded $244.16 (already under the buy, 0.05% above the $244.04 stop); it filled instantly at $244.12, the broker rejected a stop above the market ('stop price must be less than current price'), and the bot sold at market. Fixed: support buys need price >= stop + 0.75%, and a stop above the market is re-placed 0.75% under it instead of dumping. Backtest loss clusters (8 features x 2 eras): sharp-drop (1,154 trades, +1.47% vs S&P) has no bucket bad in both eras; weakest VIX<20 (-0.13/+0.44%). Comeback (392 trades, +3.68%): S&P above its 200-day -2.74%/-0.82% (bad both), below +5.08%/+12.17%; stock under its own 200-day +4.99/+7.11%; under $10 +7.76/+11.87%; VIX 30+ +5.54/+9.09%. ADOPTED comeback.only_below_200d."
+  },
+  "exit_tests_2026_11_24": {
+   "trials": 12,
+   "verdict": "Sharp-drop exits (vs S&P per trade 2008-18 / 2019-26, worst 5%): live +10%-or-10-days +1.52/+1.48% (-21/-22%); stop -10% +0.15/+0.92% (-10%); stop -15% +0.63/+1.17% (-15%); +15% target +1.51/+1.51%; 15-day hold +1.92/+1.32% (-27/-26%); trailing 8% after +3% +1.51/+1.91% (-21/-20%): stops destroy the rebound edge, nothing beats live in both eras by enough: unchanged. Comeback (S&P below 200d) exits: live 20 days +3.94/+9.95% (worst 5% -34/-25%); stop -10% +2.94/+8.42% (-10%); stop -15% +2.96/+9.79% (-15%); +15% target +3.31/+5.84%; 30 days +6.24/+14.86% (-45/-20%); trailing 10% +3.31/+7.05%. ADOPTED comeback stop -15% (return per unit of tail risk 0.12->0.20 and 0.40->0.65)."
+  },
+  "panic_cluster_audit": {
+   "trials": 5,
+   "verdict": "Panic rule 2008-2026 with crash brake, 523 trades, +2.14% vs S&P: no bucket bad in both eras. Weak spots: S&P below its 200-day -1.22% (2008-18) / +3.63% (2019-26) (already the smallest size there); related-stock fill -1.84% / +3.34% vs nuclear +1.58% / +5.20%; VIX under 25 +0.44% / +4.20%. Deeper same-day drops (-8%+) did better (+2.07/+8.11%) but n=13/3. No change."
   }
  }
 }

@@ -1652,6 +1652,11 @@ def sharp_drop_check(st, ex, prices, today, brk_state, now):
         return
     book, clock = st["book"], market.cclock(now)
     late = clock >= dt.time(15, 38)
+    for t, lots in list(book["lots"].items()):  # comeback catastrophe stop: -15% from the buy (research: exit_tests_2026_11_24)
+        L = lots.get("auto") or {}
+        if L.get("qty", 0) > 1e-6 and L.get("setup") == "comeback" and prices.get(t) and market.market_open() \
+                and prices[t] <= (L.get("entry") or L["cost"] / L["qty"]) * (1 - CFG.get("comeback", {}).get("stop_pct", 15) / 100):
+            ex.exit_panic(t, prices[t], f"intraday comeback: -{CFG.get('comeback', {}).get('stop_pct', 15)}% stop hit", kind="auto", tag="aux")
     for t, lots in list(book["lots"].items()):  # exits: +10% near a close, or the sell date
         L = lots.get("auto") or {}
         if L.get("qty", 0) <= 1e-6 or L.get("setup") != "sharp_drop":
