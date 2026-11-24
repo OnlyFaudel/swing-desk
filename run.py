@@ -2085,6 +2085,19 @@ def intel_tick(st, today, force=False):
     if not st.get("sput_view"):
         st["sput_view"] = sput.summary()
     st["license_view"] = licenses.summary()
+    try:  # order-flow data: one-time backfill (after hours), then a daily top-up after the close (intraday.py)
+        import subprocess
+        after_hours = now.time() >= dt.time(16, 45) or now.time() < dt.time(7, 30) or now.weekday() >= 5
+        if after_hours and not st["flags"].get("intraday_backfill"):
+            st["flags"]["intraday_backfill"] = str(today)
+            subprocess.Popen([sys.executable, "intraday.py", "backfill"], cwd=ROOT, start_new_session=True,
+                             stdout=open("/tmp/intraday_backfill.log", "a"), stderr=subprocess.STDOUT)
+        elif now.weekday() < 5 and not market.is_holiday(today) and now.time() >= dt.time(16, 50) and not st["flags"].get(f"intraday:{today}"):
+            st["flags"][f"intraday:{today}"] = True
+            subprocess.Popen([sys.executable, "intraday.py", "daily"], cwd=ROOT, start_new_session=True,
+                             stdout=open("/tmp/intraday_daily.log", "a"), stderr=subprocess.STDOUT)
+    except Exception as e:
+        print("intraday pull", e)
     if now.weekday() < 5 and not market.is_holiday(today) and now.time() >= dt.time(16, 20) and not st["flags"].get(f"recent:{today}"):
         st["flags"][f"recent:{today}"] = True  # practice book for rules that only worked 2019-2026 (no money)
         try:
