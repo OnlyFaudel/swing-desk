@@ -289,6 +289,10 @@
   "take_profit_early_panic": {
    "trials": 5,
    "verdict": "2026-11-24 (owner: 'take profits whenever we can in a losing market'). Every panic-rule trade 2008-2026 on 88 nuclear+related stocks (1,937 trades), sell during the day the moment +5/7/10/15% is hit vs live (+10% at a close, else day 6), 0.2% costs. 2019-26: live +3.44% avg; +5% limit +2.03%, +7% +2.45%, +10% +2.73%. With the S&P under its 200-day (the losing-market case): live +3.02%, +5% +1.51% (t -4.1 vs live), +7% +2.00% (t -3.2), +10% +2.26% (t -3.6). 2008-18 downtrend: +10% limit +0.11% vs live (t 0.6, noise), +5% -0.44%. Early profit-taking shrinks the worst 5% of trades (-18.8% -> -13.3%) but costs 1-1.5% per trade on average: rebounds that run keep running, and the losers still lose in full. Rejected. The owner's earlier idea (sell a 5%+ morning gap, buy back at the close) passed and is live as gap_bank."
+  },
+  "sharp_drop_add": {
+   "trials": 9,
+   "verdict": "2026-11-24 (owner: 'think of more ideas'). Sharp-drop trades (live rule, 86 nuclear+related stocks, 0.2% costs). Ideas: (B) size by 1/volatility: no better (2019-26 +1.26% vs S&P vs live +1.47%): rejected. (C) wait for the first green close before buying: 2019-26 +0.49% vs live +1.47% (t 1.0): rejected, the edge is buying the drop itself. (D) second buy of the same dollars when the trade falls another 10%: happened in 32% of trades; the second buy alone 2008-18 +3.53% (+2.47% vs S&P, t 2.3, n 155), 2019-26 +4.13% (+2.58%, t 3.1, n 206), held ~5 days. Variants: -7% +2.20/+2.70 (t 2.4/3.4); -12% +1.86/+2.63 (t 1.4/2.8); -15% +0.71/+3.48. Related names only (independent check) +3.10/+2.76 (t 2.9/2.4); nuclear only 2008-18 n=17 -2.64% (too few), 2019-26 +2.35% (t 1.9). Cost: worst 5% of whole trades -31% at double size vs -21%. ADOPTED at -10%, once per trade, total sharp-drop money capped at 45% of the account, account brake applies."
   }
  }
 }

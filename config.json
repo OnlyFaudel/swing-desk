@@ -556,7 +556,13 @@
     "min_dollar_volume": 5000000,
     "note": "Any-day rebound after a 15%+ fall over 5 sessions (nuclear + related). Research 2026-11-23: beat the S&P by +0.84%/trade 2008-18 and +1.09% 2019-26, about 1 trade a week.",
     "deep_drop_pct": 20,
-    "deep_size_pct": 15
+    "deep_size_pct": 15,
+    "add": {
+      "enabled": true,
+      "drop_pct": 10,
+      "max_total_pct": 45,
+      "note": "Second buy (same dollars, once) when an open sharp-drop trade falls another 10%. Research 2026-11-24: sharp_drop_add."
+    }
   },
   "signal_trades": {
     "enabled": true,

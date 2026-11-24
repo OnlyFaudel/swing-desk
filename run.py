@@ -1655,6 +1655,46 @@ def comeback_buy(st, ex, today, brk_state, comebacks, cb):
         notify("Intraday comeback", "Bought " + "; ".join(got), tags="boomerang")
 
 
+def sharp_drop_add(st, ex, prices, today, cfg):
+    """Second buy: an open sharp-drop trade that falls another 10% below the first buy gets the same dollars again (once),
+    near the close; the +10% target then counts from the blended price and the sell date stays the same.
+    Research 2026-11-24 (sharp_drop_add): the second buy alone, 2008-18 +3.53% a trade (+2.47% vs the S&P, t 2.3, n 155),
+    2019-26 +4.13% (+2.58%, t 3.1, n 206), held about 5 days; also held at -7% and on the related stocks alone in both eras.
+    Downside: the trade's worst cases get bigger (-31% worst 5% at double size), so total sharp-drop money is capped."""
+    a = cfg.get("add", {})
+    if not a.get("enabled"):
+        return
+    book, eq = st["book"], account.equity(st["book"], prices) if prices else st["book"]["cash"]
+    live = {t: l["auto"] for t, l in book["lots"].items() if (l.get("auto") or {}).get("qty", 0) > 1e-6 and l["auto"].get("setup") == "sharp_drop"}
+    for t, L in live.items():
+        if L.get("added") or L.get("opened") == str(today) or str(today) >= L.get("exit_on", "9999"):
+            continue
+        px = prices.get(t)
+        if not px:
+            try:
+                import yfinance as yf
+                px = float(yf.Ticker(t).fast_info["last_price"])
+            except Exception:
+                continue
+        first = L.get("entry") or L["cost"] / L["qty"]
+        if px > first * (1 - a.get("drop_pct", 10) / 100):
+            continue
+        in_sd = sum(l["qty"] * (prices.get(x) or l["cost"] / l["qty"]) for x, l in live.items())
+        room = eq * a.get("max_total_pct", 45) / 100 - in_sd
+        dollars = min(L["cost"] * dd_mult(st), room, spendable(st, today))
+        if dollars < 5:
+            continue
+        meta = {k: v for k, v in L.items() if k in ("setup", "by", "exit_on", "days", "why", "opened", "entry", "entry_time")}
+        meta.update({"added": str(today), "add_price": round(px, 4)})
+        if ex.buy_market(t, dollars, px, "au", meta, "sharp-drop second buy"):
+            L["added"] = str(today)
+            feed.post("chief", f"Sharp-drop second buy: {t} fell another {(1 - px / first) * 100:.1f}% below our first buy (${first:.2f} -> "
+                      f"${px:.2f}), so we bought the same ${dollars:.0f} again. Tested: the second buy beat the S&P by about 2.5% a trade "
+                      f"in both eras. Sell at +10% from the blended price or on {L.get('exit_on')}.", [t], kind="trade",
+                      art={"big": f"{t} second buy", "sub": f"${dollars:.0f} at ${px:.2f}"})
+            notify(f"SECOND BUY {t}", f"Down {(1 - px / first) * 100:.1f}% from our first buy; added ${dollars:.0f} at ${px:.2f}", tags="heavy_plus_sign")
+
+
 def sharp_drop_check(st, ex, prices, today, brk_state, now):
     """Sharp-drop rebound, any day (no market panic needed): a stock that closes 15%+ lower than 5 sessions ago is bought
     near the close and sold near a close once it's +10% from the buy, or after 10 sessions. Research 2026-11-23
@@ -1678,7 +1718,7 @@ def sharp_drop_check(st, ex, prices, today, brk_state, now):
         px = prices.get(t) or (st.get("last_prices") or {}).get(t)
         if not px:
             continue
-        base = L.get("entry") or L["cost"] / L["qty"]
+        base = (L["cost"] / L["qty"]) if L.get("added") else (L.get("entry") or L["cost"] / L["qty"])  # after a second buy: +10% from the blended price
         if str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late):
             ex.exit_panic(t, px, f"sharp-drop rebound: held {cfg.get('hold_sessions', 10)} sessions", kind="auto", tag="aux")
         elif late and L.get("opened") != str(today) and px >= base * (1 + cfg.get("take_profit_pct", 10) / 100):
@@ -1688,6 +1728,10 @@ def sharp_drop_check(st, ex, prices, today, brk_state, now):
     st["flags"][f"sharpdrop:{today}"] = True
     if brk_state.get("no_new_today") and not unleashed():
         return
+    try:
+        sharp_drop_add(st, ex, prices, today, cfg)
+    except Exception as e:
+        print("sharp drop add", e)
     open_n = sum(1 for l in book["lots"].values() if (l.get("auto") or {}).get("qty", 0) > 1e-6 and l["auto"].get("setup") == "sharp_drop")
     room = cfg.get("max_open", 3) - open_n
     names = list(dict.fromkeys(list(T) + (CFG.get("panic_rebound", {}).get("related_universe") or [])))
