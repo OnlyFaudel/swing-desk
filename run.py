@@ -1710,6 +1710,54 @@ def gapdown_shadow(st, data, prices, today, now):
     del log[:-300]
 
 
+def thanksgiving_dates(year):
+    d = dt.date(year, 11, 1)
+    tg = d + dt.timedelta(days=(3 - d.weekday()) % 7 + 21)
+    return tg - dt.timedelta(days=2), tg, tg + dt.timedelta(days=1)  # Tuesday, Thanksgiving, Black Friday
+
+
+def holiday_trades(st, ex, prices, today, brk_state, now):
+    """Thanksgiving (research/trial_ledger.json: thanksgiving_trades, our nuclear stocks 1998-2025):
+    - Run-up: buy the lineup at Tuesday's close, sell at Black Friday's close (1 pm). Positive in every era: +1.5% (1998-2007),
+      +0.9% (2008-18), +0.4% (2019-25) after costs; beat the S&P by +0.9% / +0.7% (2008-18 / 2019-25). Small edge, small size.
+    - Black Friday exit: Black Friday close -> Monday was down for our stocks 15 of 22 years (-1.7% / -0.4% / -1.7% by era).
+      Any panic or automatic trade in our stocks that's due to sell within 3 sessions sells at Black Friday's close instead."""
+    cfg = CFG.get("holiday_trades", {})
+    if not cfg.get("enabled"):
+        return
+    tue, tg, bf = thanksgiving_dates(today.year)
+    clock, book = market.cclock(now), st["book"]
+    if today == tue and dt.time(15, 40) <= clock <= dt.time(15, 56) and not st["flags"].get(f"tgbuy:{today}"):
+        st["flags"][f"tgbuy:{today}"] = True
+        if brk_state.get("no_new_today") and not unleashed():
+            return
+        names = [t for t in T if prices.get(t) and (book["lots"].get(t, {}).get("auto") or {}).get("qty", 0) <= 1e-6]
+        each = min(brk_state["equity"] * cfg.get("thanksgiving_pct", 15) / 100, spendable(st, today)) / max(1, len(names))
+        got = [t for t in names if each >= 5 and ex.buy_market(t, each, prices[t], "au", {
+            "setup": "thanksgiving", "by": "rule", "exit_on": str(bf), "days": 2,
+            "why": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998."}, "thanksgiving")]
+        if got:
+            feed.post("chief", f"Thanksgiving run-up: bought {', '.join(got)} (about ${each:.0f} each), selling at Black Friday's 1 pm close. "
+                      "History: positive in every era since 1998, but a small edge (+0.4% after costs in 2019-25), so it's a small bet.",
+                      got, kind="trade", art={"big": "Thanksgiving run-up", "sub": "Sell Black Friday's close"})
+            notify("Thanksgiving run-up", f"Bought {', '.join(got)}; sell Friday near the 1 pm close", tags="turkey")
+    if today == bf and dt.time(15, 45) <= clock <= dt.time(15, 57) and not st["flags"].get(f"bfexit:{today}"):
+        st["flags"][f"bfexit:{today}"] = True
+        soon = sessions_after(str(today), 3)
+        sold = []
+        for t, lots in list(book["lots"].items()):
+            for kind, tag in (("panic", "prx"), ("auto", "aux")):
+                L = lots.get(kind) or {}
+                if L.get("qty", 0) > 1e-6 and L.get("exit_on") and L["exit_on"] <= soon and L.get("setup") != "thanksgiving":
+                    ex.exit_panic(t, prices.get(t) or L["cost"] / L["qty"], "Black Friday exit: our stocks fell from Black Friday's close to "
+                                  "Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway", kind=kind, tag=tag)
+                    sold.append(t)
+        if sold:
+            feed.post("chief", f"Black Friday exit: sold {', '.join(sold)} early. They were due to sell within 3 sessions, and our stocks "
+                      "have dropped from Black Friday's close to Monday in 15 of the last 22 years (-1.7% on average since 2019).",
+                      sold, kind="trade", art={"big": "Black Friday exit", "sub": ", ".join(sold)})
+
+
 def auto_check(st, desk, ex, data, prices, today, brk_state, now):
     cfg = CFG.get("auto_trade", {})
     if not cfg.get("enabled"):
@@ -1724,7 +1772,7 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
             if L.get("target") and px >= L["target"]:
                 ex.exit_panic(t, px, f"conviction trade: target ${L['target']} hit", kind="auto", tag="aux"); continue
         if L.get("qty", 0) > 1e-6 and L.get("setup") != "sharp_drop" and L.get("exit_on") and (str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late)):
-            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{ {'conviction': 'conviction', 'year_end': 'year-end bounce', 'uranium_momentum': 'uranium momentum', 'ai_power': 'AI power day', 'fear_fade': 'fear fading'}.get(L.get('setup'), 'discovery') } trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
+            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{ {'conviction': 'conviction', 'year_end': 'year-end bounce', 'uranium_momentum': 'uranium momentum', 'ai_power': 'AI power day', 'fear_fade': 'fear fading', 'thanksgiving': 'Thanksgiving run-up'}.get(L.get('setup'), 'discovery') } trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
     if not (dt.time(15, 30) <= market.cclock(now) <= dt.time(15, 58)) or st["flags"].get(f"auto:{today}"):
         return
     st["flags"][f"auto:{today}"] = True
@@ -3032,6 +3080,7 @@ def cycle(st, desk, br, ex, force=()):
             auto_check(st, desk, ex, data, prices, today, brk_state, now)
             sharp_drop_check(st, ex, prices, today, brk_state, now)
             signal_trades(st, ex, prices, today, brk_state, now)
+            holiday_trades(st, ex, prices, today, brk_state, now)
             seasonal_check(st, ex, data, prices, today, now)
             process_fills(st, br, ex, today)
             park_check(st, ex, prices, today, now)

@@ -225,6 +225,10 @@
   "thanksgiving_week": {
    "trials": 7,
    "verdict": "2026-11-23 (Thanksgiving week, S&P and CCJ since 1996, our 10 since 2008): the week before Thanksgiving week: our 10 -2.4% (up 6 of 18 years); Fri -> Wed of Thanksgiving week: S&P +0.69% vs +0.14% normal (up 73% of 30 years), our 10 +1.8% (up 67%), power trio +2.8% (2019-25); Tue -> Black Friday: S&P +0.33% (up 77%); Black Friday -> Monday: S&P -0.36% (up 40%), our 10 -0.5%, power trio -1.7% (up 1 of 7); Black Friday -> 2 weeks later: power trio -4.1% (up 2 of 7), miners +1.5%; Black Friday -> Dec 31: miners +3.0% (2008-25), power trio -2.1% (2019-25). Black Friday volume 0.55x normal, moves smaller (2.15% vs 2.88%). Small samples: put on the calendar for the team, no rule."
+  },
+  "thanksgiving_trades": {
+   "trials": 40,
+   "verdict": "2026-11-24 (9 windows x 4 groups: our 12 nuclear, 6 miners, power trio, 72 related stocks; 2008-18 vs 2019-25, 0.2% costs, $3+ and $5M/day; year-by-year back to 1998 for our stocks). Black Friday close -> Monday: our nuclear -1.71% (1998-2007), -0.37% (2008-18), -1.73% (2019-25), down 15 of 22 years; every group negative in both eras; related stocks beat the S&P 0 of 7 years 2019-25. The S&P's own Black Friday -> Monday dip (-0.25/-0.53/-0.30%) comes almost all from 2008 (-8.9%); 2009-18 averaged +0.3%: parking left alone. Tue close -> Black Friday close, our nuclear: +1.52% / +0.86% / +0.36% after costs (up 60/64/57% of years), vs the S&P +0.88% / +0.74%. Miners Mon -> Wed +0.53/+1.05% vs S&P (both eras). After Black Friday (1 week, 2 weeks, to Dec 31) the eras disagree (2008-18 up, 2019-25 down hard). ADOPTED (holiday_trades): Thanksgiving run-up (15% across the lineup, Tue close -> Black Friday close) and Black Friday exit (panic/auto trades due within 3 sessions sell at Black Friday's close). Small samples (11 and 7 years per era): small sizes."
   }
  }
 }
