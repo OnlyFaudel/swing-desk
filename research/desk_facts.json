@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 01:30",
+ "updated": "2026-11-25 01:40",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -45,6 +45,16 @@
    "topic": "Fear gauges beyond the VIX",
    "answer": "SKEW (crash pricing) and VIX9D-over-VIX (short-term panic) did not predict our basket vs the S&P in either era. A VVIX spike (top 5% of the past year) flipped: -3.0% in 2008-18, +3.3% in 2019-26 over 10 days; it is in the practice book, no money.",
    "source": "research/trial_ledger.json: night_round_14_2026_11_25"
+  },
+  {
+   "topic": "Reactor restart news: sell-the-news",
+   "answer": "After restart headlines (Japan, Palisades, Three Mile Island and others), the named stock lagged the S&P over the next 5 days in every sample: -2.8% (2019-22, n 30, t -2.4), -2.2% (2023-26, n 134, t -3.7), -2.1% (2008-18, only 6 cases). Restarts are anticipated long before the headline. Don't open new buys in a stock for 5 sessions after its restart news; don't treat the headline as a reason to add.",
+   "source": "research/trial_ledger.json: night_round_15_2026_11_25"
+  },
+  {
+   "topic": "Other news types (archive 2019-2026)",
+   "answer": "Contract, disruption, geopolitics, jobs, opposition, politics and production headlines show no consistent effect on the named stock over 5 or 20 days. Regulation news for power names leaned positive (+2.0% / +2.3% over 20 days in 2019-22 / 2023-26) but not strongly enough to trade. There is no free daily uranium futures history (UX=F on Yahoo has only today's price).",
+   "source": "research/trial_ledger.json: night_round_15_2026_11_25"
   }
  ]
 }

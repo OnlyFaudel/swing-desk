@@ -365,6 +365,10 @@
   "night_round_14_2026_11_25": {
    "trials": 14,
    "verdict": "2026-11-25 01:30 (new data: ^VVIX, ^SKEW, ^VIX9D from Yahoo). Our 10 basket vs S&P, 10 days, one point per signal (10-day gap), 2008-18 / 2019-26: VVIX top 5% of past year -2.96% (t -2.8) / +3.25% (t 2.3): flipped -> practice book 'vvix_spike'; VVIX top 5% and falling -0.54% / +2.12%; SKEW top 5% -1.04% / +0.38%; SKEW bottom 5% +0.54% / +0.83%; VIX9D 10%+ over VIX -1.54% / +0.55%; easing -0.22% / -0.55%: nothing. Seasons (per year, buy-and-hold window vs S&P after costs): Jan-Feb our 10 +3.73% (t 1.2, 6/11 yrs) / +5.71% (t 2.2, 7/8), related +0.68% (5/11) / +3.74% (t 1.9, 6/8): weak in 2008-18, overlaps the live year-end trade: not traded, fact for the agents. November our 10 -1.22% / -3.09%, related -0.96% (t -2.2) / -0.73%. March our 10 -7.87% / -3.16% but related +0.36% / +1.04% (not independent). Weekday: no effect (Tuesday -0.24%/day 2008-18 t -2.3 flips to +0.21% 2019-26)."
+  },
+  "night_round_15_2026_11_25": {
+   "trials": 19,
+   "verdict": "2026-11-25 01:40. Every news type in memory/archive_events.json (2019-2026) by group, next close, vs S&P, halves 2019-22 / 2023-26 (5d and 20d). Only consistent result: news_restart (all names) 5d -2.77% (n 30, t -2.4) / -2.16% (n 134, t -3.7); history file 2008-18 -2.10% (n 6). Sell-the-news; no shorting, so it becomes a 'no new buys for 5 sessions after restart news' fact for the agents. Others (contract, disruption, geopolitics, jobs, opposition, politics, production, regulation) inconsistent; regulation for power +2.00% (t 1.2) / +2.32% (t 2.2) over 20d, all names +0.69% / +1.86%: not enough. Data: Yahoo has no uranium futures history (UX=F one row)."
   }
  }
 }
