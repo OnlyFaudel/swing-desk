@@ -21582,5 +21582,102 @@
 "stock",
 "top"
 ]
+},
+{
+"id": "786442fc5ebb962f",
+"date": "2026-11-25",
+"ts": 1795573171,
+"title": "First Public Debate on Korea's Nuclear Future Becomes One-Sided Briefing",
+"summary": "",
+"outlet": "Seoul Economic Daily",
+"link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdmV2djNrRHVTM0VGZkRSVnZvdmx6WEt6RkJUNEFwZzB2YmxuamhuQ212UnAteFM5RXNaM3RGQUFMOWZMZ0lXTS12UEplU1JIVzFkZjlGZVpIUGVlelRqbzVKQ0VmQmVpekxKM1ROVzl1Q1Y2YlJ5Mld5OHNaUWtnUXhVX3VjZ3JTOTRrU3E0aFhDRFdOcDJab2txWkhVT3M?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "f8644b8dbeff2121",
+"w": [
+"becomes",
+"briefing",
+"debate",
+"first",
+"future",
+"korea",
+"nuclear",
+"one",
+"public",
+"sided"
+]
+},
+{
+"id": "5f159b11a32384bb",
+"date": "2026-11-25",
+"ts": 1795634700,
+"title": "How Is NexGen (TSX:NXE) Growing the High-Grade Subdomain at Patterson Corridor East?",
+"summary": "",
+"outlet": "Kalkine Media",
+"link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQLS1xNUNyR3dWSlp0SldtTlpuXzFTNDh6QjBXSlVpSWNyU0VFUEFPazNsTkpvaU9WaTFsMlVCYllxcHJzWkF3aHJDWTBwcWZoVE5fc2xvRHBqX2RqSW8wamJaamZLU1FvdnlWelRTTGpfcDJyZm9LbUlScEJ5RzU0Qmd4ejF6VFZrWFgwZ2FZUUQ4SG9HSHhibUJPVFVWVjFYWnEwZXI4cmctUS1YSzRJOE14dk5mcmNTclpyU1Rvaw?oc=5",
+"place": "Rook I / Arrow",
+"tickers": [
+"NXE"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.62,
+"score": 2.74,
+"echo_of": null,
+"w": [
+"corridor",
+"east",
+"grade",
+"growing",
+"high",
+"how",
+"nexgen",
+"nxe",
+"patterson",
+"subdomain",
+"tsx"
+]
+},
+{
+"id": "c4213b53ccaf5e6f",
+"date": "2026-11-25",
+"ts": 1795637797,
+"title": "US, S.Korea, Japan warn of joint response if N.Korea conducts another nuclear test",
+"summary": "",
+"outlet": "Yeni Safak English",
+"link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOX0xsU1FSMWlMOGhGUkJ2QTcyRHRvbGN4bkN5dDJXS2t3VDRMVFo4MlZWQ2h1eXBKLS1YbjZMT3dXTmV2TEg0eXhFbXF6OGRJMENkYUpoakQyU2diaVFqNVc3Z0R5QVVrLV9xYUlpQzc3ekxBRjMzbk1hMHBRUUZjTFExbXQyWGJTSjA4MEZPSkRNQUFaWlpaOVl6c1pPbWdVRDlBQll6SFE3amhsRHJVeEdrZ1lKZ0w3?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.85,
+"score": 5.5,
+"echo_of": null,
+"w": [
+"another",
+"conducts",
+"japan",
+"joint",
+"korea",
+"nuclear",
+"response",
+"test",
+"warn"
+]
 }
 ]

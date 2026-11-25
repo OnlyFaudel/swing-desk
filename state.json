@@ -579,7 +579,9 @@
   "epop:2026-11-25": true,
   "optmark:2026-11-25": true,
   "park:2026-11-25": true,
-  "questioner:2026-11-25:8": true
+  "questioner:2026-11-25:8": true,
+  "reconcile:2026-11-25": true,
+  "notecheck:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -4163,18 +4165,6 @@
  },
  "news_feed": [
   {
-   "ticker": "LEU",
-   "source": "Yahoo (BWXT, related to LEU)",
-   "title": "Earnings Strength: 3 Companies Raising Guidance",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/earnings-strength-3-companies-raising-000200165.html?.tsrc=rss",
-   "ts": 1795478520,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "earnings",
-   "why": "Roundup article; BWXT raising guidance is company-specific news, not LEU's own results."
-  },
-  {
    "ticker": "TLN",
    "source": "Google News: \"Talen Energy\"",
    "title": "Talen Energy CFO Cole Muller Donates 7,445 Shares to Charity, Reports Form 4 Filing - Kalkine Media",
@@ -7161,6 +7151,18 @@
    "direction": "neutral",
    "event_type": "contract_deal",
    "why": "Reactor parts qualification for BWXT, a supplier, is only loosely tied to CCJ's uranium supply."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: Yeni Safak English (South Korea)",
+   "title": "US, S.Korea, Japan warn of joint response if N.Korea conducts another nuclear test",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOX0xsU1FSMWlMOGhGUkJ2QTcyRHRvbGN4bkN5dDJXS2t3VDRMVFo4MlZWQ2h1eXBKLS1YbjZMT3dXTmV2TEg0eXhFbXF6OGRJMENkYUpoakQyU2diaVFqNVc3Z0R5QVVrLV9xYUlpQzc3ekxBRjMzbk1hMHBRUUZjTFExbXQyWGJTSjA4MEZPSkRNQUFaWlpaOVl6c1pPbWdVRDlBQll6SFE3amhsRHJVeEdrZ1lKZ0w3?oc=5",
+   "ts": 1795637797,
+   "materiality": 1,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "war_geopolitics",
+   "why": "North Korea nuclear test warning is geopolitical noise with no uranium-demand link."
   }
  ],
  "reviews": [
@@ -8920,16 +8922,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.70409,
+  "day_usd": 0.70455,
   "month": "2026-11",
-  "month_usd": 1.88765,
-  "total_usd": 1.88765,
+  "month_usd": 1.88811,
+  "total_usd": 1.88811,
   "by_role": {
    "macro": 0.19063,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.16579,
+   "scout": 0.16625,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9116,23 +9118,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.54,
+  "CCJ": 61.56,
   "NXE": 6.95,
-  "UEC": 5.68,
+  "UEC": 5.69,
   "DNN": 1.8,
   "UUUU": 5.2,
-  "LEU": 83.14,
-  "BWXT": 113.46,
+  "LEU": 83.23,
+  "BWXT": 113.49,
   "CEG": 235.25,
   "VST": 121.32,
   "TLN": 351.55,
   "AMD": 406.83,
-  "SMR": 3.26,
+  "SMR": 3.25,
   "NNE": 8.85,
-  "SPY": 716.73,
+  "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 16:05 ET",
+ "last_cycle": "2026-11-25 16:15 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -9195,10 +9197,10 @@
   ]
  },
  "brakes": {
-  "equity": 1005.55,
-  "day_pct": -1.08,
-  "week_pct": 0.5,
-  "drawdown_pct": -4.63,
+  "equity": 1005.46,
+  "day_pct": -1.09,
+  "week_pct": 0.49,
+  "drawdown_pct": -4.64,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -57786,8 +57788,8 @@
   "a3dd031817a4feeb",
   "fd337937e7471e2a",
   "fe0239e8c69f7365",
-  "3540271e126c026c",
   "e36e8842560640fa",
+  "3540271e126c026c",
   "1e0f49b9f0b2bcbb",
   "e8576c26f24e8b21",
   "59c6f6be8bf3e5a9",
@@ -58345,7 +58347,7 @@
   "3fe9fc872b222598",
   "8a429bbe4d25ae7d"
  ],
- "news_slow_at": 1795640201.8104386,
+ "news_slow_at": 1795640934.6859224,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -218473,6 +218475,16 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-25 16:16",
+   "who": "auditor",
+   "kind": "learn",
+   "title": null,
+   "text": "Note check (does each teammate use the stock files?): Scout used them in 90% of 278 answers (mostly SECTOR Government and laws, SECTOR Countries); Level Analyst used them in 96% of 144 answers (mostly SECTOR Uranium market, TLN Price behavior); Macro Analyst used them in 98% of 98 answers (mostly SECTOR Uranium market, SECTOR Government and laws); Risk Manager used them in 99% of 98 answers (mostly SECTOR Uranium market, TLN Snapshot); News Investigator used them in 96% of 80 answers (mostly SECTOR Uranium market, TLN Snapshot); Portfolio Manager used them in 100% of 63 answers (mostly SECTOR Uranium market, UEC Snapshot); engineer used them in 98% of 57 answers (mostly SECTOR Uranium market, CEG Places and operations); questioner used them in 100% of 48 answers (mostly TLN Snapshot, TLN News); Researcher used them in 100% of 9 answers (mostly BWXT Snapshot, BWXT Deals and contracts); Whale Watcher used them in 100% of 6 answers (mostly CCJ Snapshot, SECTOR Uranium market); Reviewer used them in 83% of 6 answers (mostly UUUU Snapshot, LEU Snapshot); Crowd Reader used them in 100% of 5 answers (mostly SECTOR Uranium market, CCJ Snapshot). Everyone is using them.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -219211,62 +219223,62 @@
    "lesson": null
   }
  ],
- "intel_at": 1795639540.7108917,
+ "intel_at": 1795641347.6109693,
  "intel_health": {
-  "at": "2026-11-25 15:46",
+  "at": "2026-11-25 16:16",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
-   "Athabasca Basin": 7,
+   "Athabasca Basin": 6,
    "Saskatchewan wildfires": 4,
-   "Rook I / Arrow": 6,
+   "Rook I / Arrow": 7,
    "Wheeler River / Phoenix": 9,
    "Port Hope / Blind River": 0,
-   "Westinghouse": 11,
+   "Westinghouse": 12,
    "Kazakhstan": 15,
    "Niger": 7,
-   "Namibia": 31,
+   "Namibia": 30,
    "Russia supply": 3,
    "Piketon": 25,
    "HALEU": 12,
-   "Wyoming ISR": 43,
+   "Wyoming ISR": 23,
    "South Texas ISR": 2,
-   "White Mesa / Utah": 0,
+   "White Mesa / Utah": 14,
    "Rare earths (Energy Fuels)": 23,
    "Lynchburg / Erwin": 0,
    "Naval reactors": 10,
-   "Crane / Three Mile Island": 4,
+   "Crane / Three Mile Island": 0,
    "Susquehanna": 5,
    "Comanche Peak": 7,
-   "PJM grid": 12,
+   "PJM grid": 6,
    "ERCOT grid": 11,
    "Data-center nuclear deals": 9,
    "Japan restarts": 8,
-   "China new builds": 10,
-   "Congress and laws": 27,
-   "NRC decisions": 21,
-   "Energy Department": 69,
-   "White House and executive orders": 27,
+   "China new builds": 14,
+   "Congress and laws": 49,
+   "NRC decisions": 20,
+   "Energy Department": 68,
+   "White House and executive orders": 22,
    "Tariffs and trade": 2,
-   "India": 25,
-   "South Korea": 0,
-   "Europe new builds": 0,
+   "India": 27,
+   "South Korea": 85,
+   "Europe new builds": 29,
    "France and UK": 0,
-   "Middle East": 24,
-   "Asia newcomers": 53,
+   "Middle East": 25,
+   "Asia newcomers": 22,
    "Canada SMRs": 10,
-   "Big tech power deals": 29,
-   "Iran": 47,
-   "North Korea": 63,
-   "War zones": 9,
-   "AUKUS and navies": 15,
+   "Big tech power deals": 60,
+   "Iran": 49,
+   "North Korea": 98,
+   "War zones": 32,
+   "AUKUS and navies": 13,
    "Weapons programs": 16,
-   "Stockpiles and reserves": 29,
-   "Sprott trust": 0,
-   "Uranium price": 46,
+   "Stockpiles and reserves": 24,
+   "Sprott trust": 6,
+   "Uranium price": 45,
    "US policy": 0,
-   "Lawsuits and investigations": 33,
-   "Workers and jobs": 42,
+   "Lawsuits and investigations": 72,
+   "Workers and jobs": 24,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
    "Federal Register (uranium)": 9,
@@ -219276,12 +219288,12 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 16:05",
-  "total": 668,
-  "week": 505,
+  "updated": "2026-11-25 16:16",
+  "total": 671,
+  "week": 507,
   "places": {
    "Uranium price": 49,
-   "South Korea": 35,
+   "South Korea": 36,
    "Piketon": 27,
    "Europe new builds": 27,
    "Weapons programs": 26,
@@ -219295,60 +219307,60 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-25 15:46",
+   "at": "2026-11-25 16:16",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
-    "Athabasca Basin": 7,
+    "Athabasca Basin": 6,
     "Saskatchewan wildfires": 4,
-    "Rook I / Arrow": 6,
+    "Rook I / Arrow": 7,
     "Wheeler River / Phoenix": 9,
     "Port Hope / Blind River": 0,
-    "Westinghouse": 11,
+    "Westinghouse": 12,
     "Kazakhstan": 15,
     "Niger": 7,
-    "Namibia": 31,
+    "Namibia": 30,
     "Russia supply": 3,
     "Piketon": 25,
     "HALEU": 12,
-    "Wyoming ISR": 43,
+    "Wyoming ISR": 23,
     "South Texas ISR": 2,
-    "White Mesa / Utah": 0,
+    "White Mesa / Utah": 14,
     "Rare earths (Energy Fuels)": 23,
     "Lynchburg / Erwin": 0,
     "Naval reactors": 10,
-    "Crane / Three Mile Island": 4,
+    "Crane / Three Mile Island": 0,
     "Susquehanna": 5,
     "Comanche Peak": 7,
-    "PJM grid": 12,
+    "PJM grid": 6,
     "ERCOT grid": 11,
     "Data-center nuclear deals": 9,
     "Japan restarts": 8,
-    "China new builds": 10,
-    "Congress and laws": 27,
-    "NRC decisions": 21,
-    "Energy Department": 69,
-    "White House and executive orders": 27,
+    "China new builds": 14,
+    "Congress and laws": 49,
+    "NRC decisions": 20,
+    "Energy Department": 68,
+    "White House and executive orders": 22,
     "Tariffs and trade": 2,
-    "India": 25,
-    "South Korea": 0,
-    "Europe new builds": 0,
+    "India": 27,
+    "South Korea": 85,
+    "Europe new builds": 29,
     "France and UK": 0,
-    "Middle East": 24,
-    "Asia newcomers": 53,
+    "Middle East": 25,
+    "Asia newcomers": 22,
     "Canada SMRs": 10,
-    "Big tech power deals": 29,
-    "Iran": 47,
-    "North Korea": 63,
-    "War zones": 9,
-    "AUKUS and navies": 15,
+    "Big tech power deals": 60,
+    "Iran": 49,
+    "North Korea": 98,
+    "War zones": 32,
+    "AUKUS and navies": 13,
     "Weapons programs": 16,
-    "Stockpiles and reserves": 29,
-    "Sprott trust": 0,
-    "Uranium price": 46,
+    "Stockpiles and reserves": 24,
+    "Sprott trust": 6,
+    "Uranium price": 45,
     "US policy": 0,
-    "Lawsuits and investigations": 33,
-    "Workers and jobs": 42,
+    "Lawsuits and investigations": 72,
+    "Workers and jobs": 24,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
     "Federal Register (uranium)": 9,
@@ -220071,7 +220083,8 @@
   "7c9070babbad9d71",
   "ff034b5c87c95680",
   "e350e3c2ce700f95",
-  "b95ad295cbbaef38"
+  "b95ad295cbbaef38",
+  "c4213b53ccaf5e6f"
  ],
  "panic_log": [
   {
@@ -220112,7 +220125,7 @@
   }
  ],
  "memory_view": {
-  "events": 1667,
+  "events": 1669,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -220696,24 +220709,6 @@
   "recent": [
    {
     "date": "2026-11-25",
-    "ticker": "LEU",
-    "title": "Researchers estimate Israel\u2019s nuclear arsenal at 90 warheads \u2014 Jerusalem Post",
-    "type": "intel_defense",
-    "r0": -1.07,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "CCJ",
-    "title": "Kazakhstan detains Kazatomprom executive in corruption investigation",
-    "type": "intel_legal",
-    "r0": 2.93,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
     "ticker": "NXE",
     "title": "Kazakhstan detains Kazatomprom executive in corruption investigation",
     "type": "intel_legal",
@@ -221053,6 +221048,24 @@
     "r0": 2.93,
     "r5": null,
     "r20": null
+   },
+   {
+    "date": "2026-11-25",
+    "ticker": "CCJ",
+    "title": "US, S.Korea, Japan warn of joint response if N.Korea conducts another nuclear test",
+    "type": "intel_geopolitics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-25",
+    "ticker": "BWXT",
+    "title": "US, S.Korea, Japan warn of joint response if N.Korea conducts another nuclear test",
+    "type": "intel_geopolitics",
+    "r0": null,
+    "r5": null,
+    "r20": null
    }
   ]
  },
@@ -221114,7 +221127,7 @@
   },
   {
    "name": "shadow_patterns",
-   "trials": 7,
+   "trials": 8,
    "verdict": "background research lab"
   },
   {
@@ -221125,7 +221138,7 @@
   {
    "name": "auto_discovery",
    "trials": 425,
-   "verdict": "2026-11-24 16:07: the bot tested 377 event patterns on 47,502 events (older vs newer half, corrected for the number of tests). 9 hold up: price_3_down_days (miners) -> +1.12% vs the basket (or its normal trend) over the next 5 days (n=1065, up 55%); price_3_down_days (all our stocks) -> +1.10% vs the basket (or its normal trend) over the next 5 days (n=1514, up 55%); price_new_52w_high (miners) -> -1.31% vs the basket (or its normal trend) over the next 5 days (n=348, up 35%); offering_dilution (all our stocks) -> -4.46% vs the basket (or its normal trend) over the next 5 days (n=55, up 24%); price_new_52w_high (all our stocks) -> -0.85% vs the basket (or its normal trend) over the next 5 days (n=704, up 42%); offering_dilution (miners) -> -4.10% vs the basket (or its normal trend) over the next 5 days (n=44, up 25%)"
+   "verdict": "2026-11-25 16:07: the bot tested 377 event patterns on 47,529 events (older vs newer half, corrected for the number of tests). 9 hold up: price_3_down_days (miners) -> +1.12% vs the basket (or its normal trend) over the next 5 days (n=1065, up 55%); price_3_down_days (all our stocks) -> +1.10% vs the basket (or its normal trend) over the next 5 days (n=1515, up 55%); price_new_52w_high (miners) -> -1.31% vs the basket (or its normal trend) over the next 5 days (n=348, up 35%); offering_dilution (all our stocks) -> -4.46% vs the basket (or its normal trend) over the next 5 days (n=55, up 24%); price_new_52w_high (all our stocks) -> -0.86% vs the basket (or its normal trend) over the next 5 days (n=704, up 42%); offering_dilution (miners) -> -4.10% vs the basket (or its normal trend) over the next 5 days (n=44, up 25%)"
   },
   {
    "name": "macro_drivers",
@@ -222324,7 +222337,7 @@
    }
   ]
  },
- "dossier_at": 1795639582.6487107,
+ "dossier_at": 1795641389.96377,
  "sector_prices": {
   "_at": 1795624908.0259144,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -222380,87 +222393,87 @@
   {
    "ticker": "CCJ",
    "name": "Cameco",
-   "price": 61.33,
-   "week_pct": -1.78,
-   "built": "2026-11-25 15:46"
+   "price": 61.56,
+   "week_pct": -1.42,
+   "built": "2026-11-25 16:16"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
-   "price": 6.91,
-   "week_pct": -5.01,
-   "built": "2026-11-25 15:46"
+   "price": 6.95,
+   "week_pct": -4.46,
+   "built": "2026-11-25 16:16"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
-   "price": 5.68,
-   "week_pct": -4.05,
-   "built": "2026-11-25 15:46"
+   "price": 5.69,
+   "week_pct": -3.89,
+   "built": "2026-11-25 16:16"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
-   "price": 1.78,
-   "week_pct": -2.46,
-   "built": "2026-11-25 15:46"
+   "price": 1.8,
+   "week_pct": -1.64,
+   "built": "2026-11-25 16:16"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
-   "price": 5.17,
-   "week_pct": -8.32,
-   "built": "2026-11-25 15:46"
+   "price": 5.2,
+   "week_pct": -7.71,
+   "built": "2026-11-25 16:16"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
-   "price": 82.83,
-   "week_pct": -9.73,
-   "built": "2026-11-25 15:46"
+   "price": 83.23,
+   "week_pct": -9.3,
+   "built": "2026-11-25 16:16"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
-   "price": 113.29,
-   "week_pct": -3.71,
-   "built": "2026-11-25 15:46"
+   "price": 113.49,
+   "week_pct": -3.54,
+   "built": "2026-11-25 16:16"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
-   "price": 235.35,
-   "week_pct": -10.43,
-   "built": "2026-11-25 15:46"
+   "price": 235.25,
+   "week_pct": -10.46,
+   "built": "2026-11-25 16:16"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
-   "price": 121.02,
-   "week_pct": -3.63,
-   "built": "2026-11-25 15:46"
+   "price": 121.32,
+   "week_pct": -3.39,
+   "built": "2026-11-25 16:16"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
-   "price": 351.23,
-   "week_pct": -2.49,
-   "built": "2026-11-25 15:46"
+   "price": 351.55,
+   "week_pct": -2.4,
+   "built": "2026-11-25 16:16"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-25 15:46"
+   "built": "2026-11-25 16:16"
   }
  ],
- "heartbeat": "2026-11-25 16:05",
+ "heartbeat": "2026-11-25 16:15",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 370,
+ "_pushed_feed": 374,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -222680,15 +222693,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 278,
-   "used": 250,
+   "asked": 279,
+   "used": 251,
    "notes": {
     "TLN Deals and contracts": 16,
     "CCJ Deals and contracts": 53,
     "BWXT Deals and contracts": 37,
-    "SECTOR Government and laws": 67,
+    "SECTOR Government and laws": 68,
     "UUUU Deals and contracts": 38,
-    "SECTOR Countries": 60,
+    "SECTOR Countries": 61,
     "CEG Deals and contracts": 32,
     "NXE Legal": 10,
     "NXE Deals and contracts": 17,
@@ -223255,7 +223268,7 @@
    ],
    [
     "2026-11-25",
-    61.54
+    61.56
    ]
   ],
   "NXE": [
@@ -223499,7 +223512,7 @@
    ],
    [
     "2026-11-25",
-    5.68
+    5.69
    ]
   ],
   "DNN": [
@@ -223865,7 +223878,7 @@
    ],
    [
     "2026-11-25",
-    83.14
+    83.23
    ]
   ],
   "BWXT": [
@@ -223987,7 +224000,7 @@
    ],
    [
     "2026-11-25",
-    113.46
+    113.49
    ]
   ],
   "CEG": [
@@ -224597,7 +224610,7 @@
    ],
    [
     "2026-11-25",
-    3.26
+    3.25
    ]
   ],
   "NNE": [
@@ -230641,7 +230654,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 16:05",
+ "watchdog_last": "2026-11-25 16:15",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -231150,7 +231163,7 @@
  },
  "boss_notes": [],
  "reconcile": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "gaps": [],
   "ok": true
  },
