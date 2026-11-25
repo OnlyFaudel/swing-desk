@@ -30,6 +30,9 @@ RULES = {
                 "stocks -0.18% / +0.22%: recent and nuclear-only)",
     "dry_rally": "Our 10 or a related stock rises 8%+ in 10 sessions on volume 30%+ below its prior 50-day average: buy the close, sell after "
                  "10 sessions (2008-18 +0.39%, 2019-26 +1.33% (t 3.3); big US stocks -0.37% / +0.27%: fails the independent check)",
+    "sprott_issuing": "The Sprott uranium trust is issuing new units (units outstanding up 1%+ in ~20 sessions, i.e. it is raising money to "
+                      "buy physical uranium) while the 5 miners are already up 10%+ in 20 sessions: buy CCJ, UEC, DNN, UUUU, NXE, sell after "
+                      "20 sessions (2021-26 only: +6.3% vs S&P, n 12, vs +0.4% for the miners' rally alone, n 37; one era, small)",
 }
 
 
@@ -116,6 +119,18 @@ def run(lineup, related, today=None, breadth=None):
                 enter("dry_drop", t, 10)
             elif r10 >= 0.08:
                 enter("dry_rally", t, 10)
+    try:  # Sprott trust issuing units (memory/intel/sput.json, collected daily) + miners' rally (round 24, 2026-11-25)
+        import sput
+        h = [x for x in sput.load() if x.get("units")]
+        mn = [t for t in ("CCJ", "UEC", "DNN", "UUUU", "NXE") if t in C and len(C[t].dropna()) > 21]
+        if len(h) >= 21 and len(mn) >= 4 and h[-1]["units"] >= h[-21]["units"] * 1.01:
+            mret = float(np.mean([C[t].dropna().iloc[-1] / C[t].dropna().iloc[-21] - 1 for t in mn]))
+            if mret >= 0.10 and b.get("last_sprott", "") < str(today - dt.timedelta(days=28)):
+                b["last_sprott"] = str(today)
+                for t in mn:
+                    enter("sprott_issuing", t, 20)
+    except Exception:
+        pass
     if "NVDA" in C and len(C["NVDA"].dropna()) > 2 and float(C["NVDA"].iloc[-1] / C["NVDA"].iloc[-2] - 1) <= -0.06:
         for t in ("CEG", "VST", "TLN"):
             enter("ai_scare", t, 10)

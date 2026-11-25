@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 03:10",
+ "updated": "2026-11-25 03:20",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -145,6 +145,18 @@
     "strategist",
     "researcher",
     "scout"
+   ]
+  },
+  {
+   "topic": "Share issuance: companies diluting or buying back, and the Sprott uranium trust issuing units",
+   "answer": "Share-count history (Yahoo, 2017-2026, 84 of our and related stocks), next month vs the S&P: companies that diluted 20%+ in a year did -0.1% (2017-21) / +1.8% (2022-26); buybacks -0.2% / +1.2%; by quintile no pattern. Dilution trend alone is not a signal for us (single offerings are different: the drop after an offering is a known pattern). The Sprott Physical Uranium Trust can only issue new units (and buy uranium) at a premium. When it was issuing fast while the miners were already up 10%+ in a month, the miners did +6.3% more than the S&P over the next 20 sessions (n 12, 2021-26) vs +0.4% for a miner rally without issuance (n 37): issuance confirms a rally is backed by real buying. Small, one era: practice book only (sprott_issuing). Right now the trust trades ~17% BELOW its asset value and has not issued since August, so it is not buying uranium: one less buyer behind spot.",
+   "roles": [
+    "pm",
+    "macro",
+    "researcher",
+    "strategist",
+    "investigator",
+    "risk"
    ]
   }
  ]

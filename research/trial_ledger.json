@@ -458,6 +458,18 @@
   "night_round_23_2026_11_25": {
    "trials": 14,
    "verdict": "2026-11-25 03:10. New families: all_time_high_distance, round_numbers, crash_anniversary, canada_holidays. Nothing adopted; 'fallen stock turning' is the best-looking idea of the night but is survivor-biased and fails 2000-06."
+  },
+  "share_count_dilution": {
+   "trials": 7,
+   "verdict": "2026-11-25 03:20 (round 24, new data: yfinance get_shares_full, 84 stocks 2017-2026). Next month vs S&P by 12-month share growth quintile q0..q4: 2017-21 +0.17/-0.15/+0.25/-0.25/+0.11; 2022-26 +1.06/+0.78/+0.82/+1.11/+0.35. Diluted 20%+: -0.11% (n 203) / +1.84% (n 309); buybacks 2%+: -0.20% (n 576) / +1.20% (n 736); all +0.03 / +0.82. Ours top-quintile diluters +1.86 vs -0.27 / +1.70 vs +1.65; related -0.10 vs +0.02 / -0.06 vs +0.88. Rejected."
+  },
+  "sprott_issuance": {
+   "trials": 5,
+   "verdict": "2026-11-25 03:20 (round 24, new: SRUUF units outstanding from yfinance, Jul 2021-Aug 2026). 20-day unit growth in top 25% of its year (and >1%): miners (CCJ,UEC,DNN,UUUU,NXE) next 20d vs S&P +4.15% (n 29, t 1.1 vs all-days +1.82%), halves +6.83 / +2.52; not issuing +2.21% (n 58). Not just spot: picks without a +5% spot month +2.98% (n 21). With miners already +10% in 20d: +6.28% (n 12) vs miners +10% alone +0.36% (n 37). One era, small: practice book rule 'sprott_issuing' (uses live units from memory/intel/sput.json). Trust at -17% discount now: inactive."
+  },
+  "night_round_24_2026_11_25": {
+   "trials": 12,
+   "verdict": "2026-11-25 03:20. New data: share counts (dilution/buybacks) and the Sprott trust's units. Nothing adopted for money; practice book +1 (sprott_issuing). No source here for delisted stocks, so the survivor-free 'fallen stock turning' re-test stays open."
   }
  }
 }
