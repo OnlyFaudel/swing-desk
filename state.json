@@ -3979,6 +3979,156 @@
    "decision": "SKIP",
    "reason": "Basket is below its 10-day average, so the market gate is closed and no new buys are allowed. TLN also has a sell-the-news pattern after restart headlines, and the PJM capacity-auction delay fight is ",
    "evaluated": false
+  },
+  {
+   "date": "2026-11-25",
+   "ticker": "NXE",
+   "setup": "patient_level",
+   "zone": 6.54,
+   "entry": 6.57,
+   "stop": 6.46,
+   "target": 7.07,
+   "reward_risk": 4.81,
+   "dist_to_entry_pct": 6.23,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 6.51,
+    "value_high": 8.69,
+    "heaviest_price": 7.95,
+    "position": "at value low",
+    "node": "normal",
+    "node_ratio": 1.01,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The basket is below its 10-day average, so the market gate is closed and no new buys are allowed. NXE is also 17% under its 50-day average and 33% under its 200-day, and the desk's data says level buy",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-25",
+   "ticker": "UEC",
+   "setup": "patient_level",
+   "zone": 5.46,
+   "entry": 5.48,
+   "stop": 5.39,
+   "target": 5.87,
+   "reward_risk": 4.44,
+   "dist_to_entry_pct": 4.34,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 5.4,
+    "value_high": 7.79,
+    "heaviest_price": 7.59,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 1.11,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "Basket is below its 10-day average, so the market gate is closed and no new buys are allowed. The stock is also 30% below its 20-day high, down 72% from the 1-year high, and trading 28.8% under its 50",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-25",
+   "ticker": "DNN",
+   "setup": "patient_level",
+   "zone": 1.69,
+   "entry": 1.7,
+   "stop": 1.67,
+   "target": 1.88,
+   "reward_risk": 6.78,
+   "dist_to_entry_pct": 5.79,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 1.69,
+    "value_high": 2.38,
+    "heaviest_price": 2.11,
+    "position": "at value low",
+    "node": "normal",
+    "node_ratio": 1.12,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The basket gate is closed (the whole nuclear lineup is below its 10-day average, and the macro desk says stay flat), so no new buys. On top of that, DNN is 22% below its 50-day average and 43% below i",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-25",
+   "ticker": "UUUU",
+   "setup": "patient_level",
+   "zone": 4.91,
+   "entry": 4.92,
+   "stop": 4.85,
+   "target": 5.7,
+   "reward_risk": 9.88,
+   "dist_to_entry_pct": 6.2,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 4.82,
+    "value_high": 7.39,
+    "heaviest_price": 6.67,
+    "position": "inside value",
+    "node": "thick",
+    "node_ratio": 2.16,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The basket is below its 10-day average, so the market gate is closed and no new buys are allowed. The stock is also down about 37% over the month and sits far below its 200-day average, where past lev",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-25",
+   "ticker": "VST",
+   "setup": "patient_level",
+   "zone": 114.85,
+   "entry": 115.31,
+   "stop": 113.47,
+   "target": 125.85,
+   "reward_risk": 5.74,
+   "dist_to_entry_pct": 5.06,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 112.61,
+    "value_high": 136.76,
+    "heaviest_price": 119.94,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 0.72,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "Basket is below its 10-day average, so the market gate is closed and no new buys are allowed. VST is also 14% under its 20-day high and below its 200-day average, and our fills below the 200-day have ",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-25",
+   "ticker": "TLN",
+   "setup": "patient_level",
+   "zone": 344.7,
+   "entry": 346.08,
+   "stop": 340.56,
+   "target": 358.21,
+   "reward_risk": 2.2,
+   "dist_to_entry_pct": 1.08,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 312.55,
+    "value_high": 366.37,
+    "heaviest_price": 360.99,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 0.82,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The basket is below its 10-day average, so the market gate is closed and no new buys are allowed. TLN also has a restart-style news cycle with PJM auction delay headlines, and the desk note says sell-",
+   "evaluated": false
   }
  ],
  "cooldown": {
@@ -3986,18 +4136,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "VST",
-   "source": "Google News",
-   "title": "A Look at Vistra Corp (VST) After 7.5% Gain -- GF Value $182.46 vs Price $123.87 - GuruFocus",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdFU5M3pRcDFMRG9tcGV4N2o5Yk9wMmc2S0pUS2QtMUFweTVMc2NJXzlwMmd3a3BZX2pCWXFxTUpMQjc4Q1RZdVVENWpUMEhna0ZQVGlyTmxwOUQ5MUdfX1ZKZFdndC16M19xMEhBcTZkemV2djY4MzByZnRfenFod2QxR2oxY3pNOGduLUpZLWktR000UDR2Q1N6OUd1YmRDZUFGa1pFZ0x4NFF0?oc=5",
-   "ts": 1795480921,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Valuation recap on a 7.5% gain; GuruFocus 'GF Value' is a model number, not new information."
-  },
   {
    "ticker": "UUUU",
    "source": "Google News",
@@ -6985,6 +7123,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Headline is about Boss Energy (an Australian miner) guidance, not Cameco; only indirect sector read."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: DD News (India)",
+   "title": "IAEA Director General praises India\u2019s major nuclear milestone at Kalpakkam",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVWxGS0E3OGdYNERrUXpFUVJGeUZrSjBjQ21HeU9vOXNZSFZzYkRqaG9zX1ZnZmFmNVoySG1SR1duNHY4VTJKUUFtbW95Z0dUdTljOHpHc203ZTI0dXhsRXg2S1l2Tl9xNDFRYTFQdjRHQmdTX3NCNGpfMGRrZUlFSzhsd2xvMTF2UHlFM3BMbHJaS0Q4UEdXcWswRjY4Z2RE?oc=5",
+   "ts": 1795588965,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "policy_tariff",
+   "why": "IAEA praise for India's Kalpakkam milestone is general, not new CCJ-specific demand."
   }
  ],
  "reviews": [
@@ -8726,16 +8876,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.65093,
+  "day_usd": 0.66349,
   "month": "2026-11",
-  "month_usd": 1.83449,
-  "total_usd": 1.83449,
+  "month_usd": 1.84705,
+  "total_usd": 1.84705,
   "by_role": {
    "macro": 0.18797,
    "whale": 0.02215,
    "crowd": 0.01446,
-   "level": 0.22202,
-   "scout": 0.16333,
+   "level": 0.2341,
+   "scout": 0.16381,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -8921,23 +9071,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.47,
+  "CCJ": 61.52,
   "NXE": 6.93,
-  "UEC": 5.7,
+  "UEC": 5.71,
   "DNN": 1.79,
   "UUUU": 5.18,
-  "LEU": 83.19,
-  "BWXT": 113.81,
-  "CEG": 236.24,
-  "VST": 121.06,
-  "TLN": 350.12,
-  "AMD": 402.58,
-  "SMR": 3.26,
-  "NNE": 8.97,
-  "SPY": 715.92,
-  "SGOV": 100.68
+  "LEU": 83.37,
+  "BWXT": 113.63,
+  "CEG": 236.26,
+  "VST": 121.12,
+  "TLN": 350.43,
+  "AMD": 402.21,
+  "SMR": 3.28,
+  "NNE": 9.0,
+  "SPY": 715.86,
+  "SGOV": 100.67
  },
- "last_cycle": "2026-11-25 15:12 ET",
+ "last_cycle": "2026-11-25 15:15 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -8974,10 +9124,10 @@
   ]
  },
  "brakes": {
-  "equity": 1004.23,
-  "day_pct": -1.21,
-  "week_pct": 0.37,
-  "drawdown_pct": -4.76,
+  "equity": 1005.8,
+  "day_pct": -1.06,
+  "week_pct": 0.53,
+  "drawdown_pct": -4.61,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -12783,6 +12933,14 @@
   [
    "2026-11-25 15:12",
    1004.23
+  ],
+  [
+   "2026-11-25 15:13",
+   1005.95
+  ],
+  [
+   "2026-11-25 15:15",
+   1005.8
   ]
  ],
  "nowcast": {
@@ -55621,28 +55779,28 @@
   }
  },
  "last_scan": {
-  "CCJ": 1795635865.4578052,
-  "NXE": 1795635865.6806748,
-  "UEC": 1795635868.2075899,
-  "DNN": 1795635871.164795,
-  "UUUU": 1795635873.71098,
-  "LEU": 1795635876.8320284,
-  "BWXT": 1795635876.8975189,
-  "CEG": 1795635876.9657757,
-  "VST": 1795635877.0727348,
-  "TLN": 1795635880.0971231
+  "CCJ": 1795637707.7859347,
+  "NXE": 1795637708.09272,
+  "UEC": 1795637711.158042,
+  "DNN": 1795637714.166815,
+  "UUUU": 1795637717.0509694,
+  "LEU": 1795637719.7941146,
+  "BWXT": 1795637719.8745418,
+  "CEG": 1795637719.9584074,
+  "VST": 1795637720.0313993,
+  "TLN": 1795637722.5285704
  },
  "setup_status": {
   "CCJ": "a level at $58.44 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
-  "NXE": "the Level Analyst skipped the setup: I'm skipping NXE. The desk's rule is no new buys while the whole nuclear basket is below its 10-day average, and that gate is closed today. Even without the gate, ",
-  "UEC": "the Level Analyst skipped the setup: Basket gate is closed: the nuclear basket is below its 10-day average and the market regime is risky (VIX 31.5, S&P below its 200-day). UEC is down about 30% in 20",
-  "DNN": "the Level Analyst skipped the setup: The basket-level gate is closed: the nuclear group is below its 10-day average and the S&P is under its 200-day, so no new buys. DNN is also 22.7% under its 50-day",
-  "UUUU": "the Level Analyst skipped the setup: The market gate is closed: the whole basket is below its 10-day average, and the stock is 39% below that average and 37% below its 20-day high. Our own notes say t",
+  "NXE": "the Level Analyst skipped the setup: The basket is below its 10-day average, so the market gate is closed and no new buys are allowed. NXE is also 17% under its 50-day average and 33% under its 200-da",
+  "UEC": "the Level Analyst skipped the setup: Basket is below its 10-day average, so the market gate is closed and no new buys are allowed. The stock is also 30% below its 20-day high, down 72% from the 1-year",
+  "DNN": "the Level Analyst skipped the setup: The basket gate is closed (the whole nuclear lineup is below its 10-day average, and the macro desk says stay flat), so no new buys. On top of that, DNN is 22% bel",
+  "UUUU": "the Level Analyst skipped the setup: The basket is below its 10-day average, so the market gate is closed and no new buys are allowed. The stock is also down about 37% over the month and sits far belo",
   "LEU": "a level at $81.32 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
   "BWXT": "a level at $111.12 but it sits in a thin, low-volume zone over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
   "CEG": "no confirmed support level below the price (it has been falling through them)",
-  "VST": "the Level Analyst skipped the setup: Basket is below its 10-day average, so the market gate is closed and no new buys are allowed. Also, the level sits about 5% below price and the stock is 14% under ",
-  "TLN": "the Level Analyst skipped the setup: Basket is below its 10-day average, so the market gate is closed and no new buys are allowed. TLN also has a sell-the-news pattern after restart headlines, and the"
+  "VST": "the Level Analyst skipped the setup: Basket is below its 10-day average, so the market gate is closed and no new buys are allowed. VST is also 14% under its 20-day high and below its 200-day average, ",
+  "TLN": "the Level Analyst skipped the setup: The basket is below its 10-day average, so the market gate is closed and no new buys are allowed. TLN also has a restart-style news cycle with PJM auction delay he"
  },
  "sync": {
   "pulse_up": false,
@@ -57389,7 +57547,7 @@
     0.8554
    ]
   },
-  "time": "2026-11-25 15:12"
+  "time": "2026-11-25 15:15"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -57470,9 +57628,9 @@
   "f309be7c357c35cc",
   "db97a028991e6f24",
   "17dc2073115cbcc7",
+  "fa31367a940baeaa",
   "d7a4322b710f8594",
   "c928dcc41ecc5a41",
-  "fa31367a940baeaa",
   "5c37ae2a5c6cc9a0",
   "63e7ca0ff352dff7",
   "b8175e38a640e7c2",
@@ -57555,8 +57713,8 @@
   "a0cdbf7102008a59",
   "3b97ba80a72f6fe4",
   "ba16c7429b99dacc",
-  "19fb88d62a25326f",
   "66abfa595ddf0659",
+  "19fb88d62a25326f",
   "7a634663fcf720f5",
   "fef3943ac40abc8e",
   "c527b52a6d387b5e",
@@ -57973,7 +58131,7 @@
   "065e0289f5f77d47",
   "e2c2d566a7566dea"
  ],
- "news_slow_at": 1795637014.020446,
+ "news_slow_at": 1795637627.6171415,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -217108,6 +217266,66 @@
     "sub": "1 change(s) from the plain rules"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-25 15:15",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping NXE. The whole nuclear basket is below its 10-day average, which closes the market gate for new buys, and NXE sits well under its 200-day average, where our level buys have earned less. I agree with the Macro Analyst and Whale Watcher that we stay flat today.\n\nWhy: The gate is closed and the 200-day trend is against this setup, so there is no reason to rest a buy here. The Macro Analyst's stay-flat call and the whale read of no strong flow both point the same way.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 15:15",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping UEC. The basket is below its 10-day average, so the gate is closed and I'm not buying into a falling sector, especially with earnings coming up December 8. I agree with the Macro Analyst and Whale Watcher that we stay flat for now.\n\nWhy: Checked the market gate, the stock's trend versus its moving averages, the put-skew read, and the earnings date; the closed gate alone decides it, and the long-term trend under the 200-day average makes a fill less attractive even once the gate reopens.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 15:15",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping DNN. The whole nuclear basket is below its 10-day average, so the market gate is closed and we don't add new buys, and DNN is also well below its long-term averages, which is where our support-level buys have historically done worst. I agree with the Macro Analyst's stay-flat call.\n\nWhy: Checked the basket gate (closed), DNN's position versus its 50-day and 200-day averages, and the desk's finding that level fills under the 200-day earn less; the trade fails on the gate alone.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 15:15",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping UUUU. The whole nuclear basket is below its 10-day average, which closes the gate for new buys, and UUUU is in a steep downtrend well under its 200-day average, which is where our support-level buys have worked worst. I agree with the Macro Analyst and Whale Watcher that we stay flat.\n\nWhy: Checked the basket gate (closed per the macro read), the 200-day trend filter (UUUU is about 65% under it), and the recent headlines; nothing supports a support-bounce entry here.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 15:15",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "The basket-below-10-day-average gate is closed, so I'm skipping this VST setup even though the chart level looks clean. I agree with the Macro Analyst and Whale Watcher that we stay flat, and the desk's data says level fills below the 200-day average have underperformed.\n\nWhy: Checked the basket gate, the 200-day trend, and the desk's fill history; the gate alone is enough to skip, and the trend gives a second reason.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 15:15",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping TLN. The basket is below its 10-day average, which closes the gate on new buys, and the recent PJM auction-delay headlines fit the desk's sell-the-news pattern. I agree with the Macro Analyst's stay-flat call and the Whale Watcher's read that there's no insider or options signal to override it.\n\nWhy: Checked the basket gate (closed), the TLN news pattern (PJM auction delay headlines, 5-session sell-the-news rule), and the 200-day sizing note (TLN is above its 200-day, so that doesn't add a concern). The gate alone is enough to skip.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -217834,62 +218052,62 @@
    "lesson": null
   }
  ],
- "intel_at": 1795635882.7371252,
+ "intel_at": 1795637725.1034374,
  "intel_health": {
-  "at": "2026-11-25 14:45",
+  "at": "2026-11-25 15:16",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
-   "Athabasca Basin": 9,
+   "Athabasca Basin": 7,
    "Saskatchewan wildfires": 3,
    "Rook I / Arrow": 6,
-   "Wheeler River / Phoenix": 9,
+   "Wheeler River / Phoenix": 8,
    "Port Hope / Blind River": 0,
    "Westinghouse": 11,
    "Kazakhstan": 14,
    "Niger": 7,
-   "Namibia": 34,
+   "Namibia": 31,
    "Russia supply": 3,
    "Piketon": 25,
    "HALEU": 12,
-   "Wyoming ISR": 22,
+   "Wyoming ISR": 43,
    "South Texas ISR": 2,
    "White Mesa / Utah": 14,
-   "Rare earths (Energy Fuels)": 24,
+   "Rare earths (Energy Fuels)": 23,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 10,
-   "Crane / Three Mile Island": 5,
+   "Naval reactors": 9,
+   "Crane / Three Mile Island": 4,
    "Susquehanna": 5,
    "Comanche Peak": 7,
-   "PJM grid": 11,
-   "ERCOT grid": 15,
-   "Data-center nuclear deals": 8,
+   "PJM grid": 12,
+   "ERCOT grid": 11,
+   "Data-center nuclear deals": 9,
    "Japan restarts": 8,
-   "China new builds": 11,
+   "China new builds": 13,
    "Congress and laws": 28,
    "NRC decisions": 13,
-   "Energy Department": 53,
-   "White House and executive orders": 22,
+   "Energy Department": 69,
+   "White House and executive orders": 27,
    "Tariffs and trade": 2,
-   "India": 27,
-   "South Korea": 79,
-   "Europe new builds": 29,
-   "France and UK": 18,
-   "Middle East": 55,
-   "Asia newcomers": 53,
+   "India": 28,
+   "South Korea": 80,
+   "Europe new builds": 59,
+   "France and UK": 12,
+   "Middle East": 25,
+   "Asia newcomers": 23,
    "Canada SMRs": 10,
-   "Big tech power deals": 28,
-   "Iran": 48,
+   "Big tech power deals": 29,
+   "Iran": 25,
    "North Korea": 63,
-   "War zones": 32,
-   "AUKUS and navies": 16,
-   "Weapons programs": 17,
-   "Stockpiles and reserves": 23,
+   "War zones": 0,
+   "AUKUS and navies": 15,
+   "Weapons programs": 21,
+   "Stockpiles and reserves": 0,
    "Sprott trust": 6,
-   "Uranium price": 45,
+   "Uranium price": 46,
    "US policy": 0,
-   "Lawsuits and investigations": 73,
-   "Workers and jobs": 24,
+   "Lawsuits and investigations": 72,
+   "Workers and jobs": 41,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
    "Federal Register (uranium)": 9,
@@ -217899,9 +218117,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 15:12",
-  "total": 664,
-  "week": 502,
+  "updated": "2026-11-25 15:16",
+  "total": 666,
+  "week": 504,
   "places": {
    "Uranium price": 49,
    "South Korea": 35,
@@ -217911,67 +218129,67 @@
    "World Nuclear News": 24,
    "Workers and jobs": 22,
    "AUKUS and navies": 19,
+   "Kazakhstan": 18,
    "War zones": 18,
-   "Kazakhstan": 17,
    "Rare earths (Energy Fuels)": 15,
    "Asia newcomers": 14
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-25 14:45",
+   "at": "2026-11-25 15:16",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
-    "Athabasca Basin": 9,
+    "Athabasca Basin": 7,
     "Saskatchewan wildfires": 3,
     "Rook I / Arrow": 6,
-    "Wheeler River / Phoenix": 9,
+    "Wheeler River / Phoenix": 8,
     "Port Hope / Blind River": 0,
     "Westinghouse": 11,
     "Kazakhstan": 14,
     "Niger": 7,
-    "Namibia": 34,
+    "Namibia": 31,
     "Russia supply": 3,
     "Piketon": 25,
     "HALEU": 12,
-    "Wyoming ISR": 22,
+    "Wyoming ISR": 43,
     "South Texas ISR": 2,
     "White Mesa / Utah": 14,
-    "Rare earths (Energy Fuels)": 24,
+    "Rare earths (Energy Fuels)": 23,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 10,
-    "Crane / Three Mile Island": 5,
+    "Naval reactors": 9,
+    "Crane / Three Mile Island": 4,
     "Susquehanna": 5,
     "Comanche Peak": 7,
-    "PJM grid": 11,
-    "ERCOT grid": 15,
-    "Data-center nuclear deals": 8,
+    "PJM grid": 12,
+    "ERCOT grid": 11,
+    "Data-center nuclear deals": 9,
     "Japan restarts": 8,
-    "China new builds": 11,
+    "China new builds": 13,
     "Congress and laws": 28,
     "NRC decisions": 13,
-    "Energy Department": 53,
-    "White House and executive orders": 22,
+    "Energy Department": 69,
+    "White House and executive orders": 27,
     "Tariffs and trade": 2,
-    "India": 27,
-    "South Korea": 79,
-    "Europe new builds": 29,
-    "France and UK": 18,
-    "Middle East": 55,
-    "Asia newcomers": 53,
+    "India": 28,
+    "South Korea": 80,
+    "Europe new builds": 59,
+    "France and UK": 12,
+    "Middle East": 25,
+    "Asia newcomers": 23,
     "Canada SMRs": 10,
-    "Big tech power deals": 28,
-    "Iran": 48,
+    "Big tech power deals": 29,
+    "Iran": 25,
     "North Korea": 63,
-    "War zones": 32,
-    "AUKUS and navies": 16,
-    "Weapons programs": 17,
-    "Stockpiles and reserves": 23,
+    "War zones": 0,
+    "AUKUS and navies": 15,
+    "Weapons programs": 21,
+    "Stockpiles and reserves": 0,
     "Sprott trust": 6,
-    "Uranium price": 45,
+    "Uranium price": 46,
     "US policy": 0,
-    "Lawsuits and investigations": 73,
-    "Workers and jobs": 24,
+    "Lawsuits and investigations": 72,
+    "Workers and jobs": 41,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
     "Federal Register (uranium)": 9,
@@ -218691,7 +218909,9 @@
   "43fb66d513a66eee",
   "5b83027a0cf1a496",
   "85595f527d301d07",
-  "2cbfccb9c415890b"
+  "2cbfccb9c415890b",
+  "7fd6ad3664eaf535",
+  "e350e3c2ce700f95"
  ],
  "panic_log": [
   {
@@ -218732,7 +218952,7 @@
   }
  ],
  "memory_view": {
-  "events": 1663,
+  "events": 1666,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -218834,16 +219054,16 @@
   "watch": [
    {
     "date": "2026-12-15",
-    "ticker": "CEG",
-    "what": "PJM 2029/30 capacity auction closes. Historically the release-day pop fades; do not chase it, and consider trimming held power names into it rather than adding.",
+    "ticker": "VST",
+    "what": "PJM 2029/30 capacity auction closes; expect a cap-level clearing, historically a release-day pop that fades over 20 sessions, so don't chase it.",
     "by": "level",
     "written": "2026-11-25",
     "surfaced": false
    },
    {
     "date": "2026-12-15",
-    "ticker": "CEG",
-    "what": "PJM 2029/30 capacity auction closes; expected to clear near the cap. Historically the release-day pop fades, so do not chase it.",
+    "ticker": "TLN",
+    "what": "PJM 2029/30 capacity auction closes; desk notes say the release-day pop tends to fade, so don't chase it.",
     "by": "level",
     "written": "2026-11-25",
     "surfaced": false
@@ -219317,33 +219537,6 @@
    {
     "date": "2026-11-25",
     "ticker": "BWXT",
-    "title": "Why Australia\u2019s Aukus submarine dream is running into turbulent waters",
-    "type": "intel_defense",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "CCJ",
-    "title": "Orano Enrichment USA, LLC; Uranium Enrichment Facility; Draft Environmental Impact Statement",
-    "type": "intel_regulation",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "LEU",
-    "title": "Orano Enrichment USA, LLC; Uranium Enrichment Facility; Draft Environmental Impact Statement",
-    "type": "intel_regulation",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "BWXT",
     "title": "Researchers estimate Israel\u2019s nuclear arsenal at 90 warheads \u2014 Jerusalem Post",
     "type": "intel_defense",
     "r0": null,
@@ -219670,6 +219863,33 @@
     "ticker": "CEG",
     "title": "Google\u2019s grid deal in Ohio tests a faster path to data center power - Latitude Media",
     "type": "contract_deal",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-25",
+    "ticker": "CCJ",
+    "title": "IAEA Director General praises India\u2019s major nuclear milestone at Kalpakkam",
+    "type": "intel_geopolitics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-25",
+    "ticker": "CCJ",
+    "title": "Kazatomprom announced cooperation with investigation following Omarbekov's detention",
+    "type": "intel_legal",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-25",
+    "ticker": "NXE",
+    "title": "Kazatomprom announced cooperation with investigation following Omarbekov's detention",
+    "type": "intel_legal",
     "r0": null,
     "r5": null,
     "r20": null
@@ -220879,7 +221099,7 @@
    }
   ]
  },
- "dossier_at": 1795635925.0604281,
+ "dossier_at": 1795637767.495363,
  "sector_prices": {
   "_at": 1795624908.0259144,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -220935,82 +221155,82 @@
   {
    "ticker": "CCJ",
    "name": "Cameco",
-   "price": 61.37,
-   "week_pct": -1.71,
-   "built": "2026-11-25 14:45"
+   "price": 61.53,
+   "week_pct": -1.46,
+   "built": "2026-11-25 15:16"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
-   "price": 6.95,
-   "week_pct": -4.54,
-   "built": "2026-11-25 14:45"
+   "price": 6.93,
+   "week_pct": -4.74,
+   "built": "2026-11-25 15:16"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
-   "price": 5.69,
-   "week_pct": -3.88,
-   "built": "2026-11-25 14:45"
+   "price": 5.7,
+   "week_pct": -3.63,
+   "built": "2026-11-25 15:16"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.79,
-   "week_pct": -1.91,
-   "built": "2026-11-25 14:45"
+   "week_pct": -1.94,
+   "built": "2026-11-25 15:16"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
-   "price": 5.2,
-   "week_pct": -7.79,
-   "built": "2026-11-25 14:45"
+   "price": 5.18,
+   "week_pct": -8.07,
+   "built": "2026-11-25 15:16"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
-   "price": 83.75,
-   "week_pct": -8.73,
-   "built": "2026-11-25 14:45"
+   "price": 83.37,
+   "week_pct": -9.14,
+   "built": "2026-11-25 15:16"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
-   "price": 113.68,
-   "week_pct": -3.38,
-   "built": "2026-11-25 14:45"
+   "price": 113.63,
+   "week_pct": -3.43,
+   "built": "2026-11-25 15:16"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
-   "price": 237.03,
-   "week_pct": -9.79,
-   "built": "2026-11-25 14:45"
+   "price": 236.29,
+   "week_pct": -10.07,
+   "built": "2026-11-25 15:16"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
-   "price": 121.32,
-   "week_pct": -3.39,
-   "built": "2026-11-25 14:45"
+   "price": 121.18,
+   "week_pct": -3.51,
+   "built": "2026-11-25 15:16"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
-   "price": 349.92,
-   "week_pct": -2.85,
-   "built": "2026-11-25 14:45"
+   "price": 350.65,
+   "week_pct": -2.65,
+   "built": "2026-11-25 15:16"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-25 14:45"
+   "built": "2026-11-25 15:16"
   }
  ],
- "heartbeat": "2026-11-25 15:12",
+ "heartbeat": "2026-11-25 15:15",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -221230,20 +221450,20 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 113.80500030517578,
-  "TLN": 350.1199951171875
+  "BWXT": 113.63,
+  "TLN": 350.43
  },
  "notes_audit": {
   "scout": {
-   "asked": 273,
-   "used": 246,
+   "asked": 274,
+   "used": 247,
    "notes": {
     "TLN Deals and contracts": 16,
     "CCJ Deals and contracts": 52,
     "BWXT Deals and contracts": 36,
     "SECTOR Government and laws": 66,
     "UUUU Deals and contracts": 38,
-    "SECTOR Countries": 57,
+    "SECTOR Countries": 58,
     "CEG Deals and contracts": 32,
     "NXE Legal": 10,
     "NXE Deals and contracts": 17,
@@ -221263,23 +221483,23 @@
    "since": "2026-11-23"
   },
   "level": {
-   "asked": 137,
-   "used": 131,
+   "asked": 143,
+   "used": 137,
    "notes": {
-    "TLN Snapshot": 30,
-    "TLN Price behavior": 33,
+    "TLN Snapshot": 31,
+    "TLN Price behavior": 34,
     "TLN Discoveries": 6,
     "TLN Our trades": 19,
-    "VST Snapshot": 31,
-    "VST Price behavior": 26,
-    "TLN What history says": 23,
+    "VST Snapshot": 32,
+    "VST Price behavior": 27,
+    "TLN What history says": 24,
     "desk_notes intel: PJM capacity auction delay": 1,
     "TLN intel_disruption (PJM auction delay)": 1,
     "SECTOR macro: market regime": 1,
     "BWXT Snapshot": 9,
     "BWXT What history says": 6,
     "BWXT Price behavior": 8,
-    "SECTOR Uranium market": 91,
+    "SECTOR Uranium market": 96,
     "BWXT Our trades": 7,
     "sector_pulse": 1,
     "BWXT Discoveries": 1,
@@ -221295,42 +221515,42 @@
     "desk_lessons_from_our_mistakes": 1,
     "CCJ Snapshot": 7,
     "CCJ Options and big money": 1,
-    "UUUU Snapshot": 13,
-    "UUUU Price behavior": 13,
+    "UUUU Snapshot": 14,
+    "UUUU Price behavior": 14,
     "UUUU What history says": 3,
-    "CCJ Price behavior": 6,
+    "CCJ Price behavior": 7,
     "CCJ Our trades": 3,
     "UUUU Crowd": 1,
     "CCJ Discoveries": 1,
     "CCJ What history says": 4,
     "UUUU Legal": 3,
     "UUUU Discoveries": 3,
-    "UEC Snapshot": 4,
+    "UEC Snapshot": 5,
     "UEC Earnings": 1,
     "UEC Cyber breach": 1,
-    "DNN Snapshot": 8,
+    "DNN Snapshot": 9,
     "DNN Price behavior": 8,
     "DNN Discoveries": 3,
     "UUUU Our trades": 4,
     "Patient Levels fills: the stock's own long trend matters": 1,
     "Reactor restart news: sell-the-news": 2,
     "PJM 2029/30 capacity auction delay": 4,
-    "SECTOR": 6,
+    "SECTOR": 7,
     "macro market_note": 1,
-    "Patient Levels fills: the stock's own long trend matters (20": 3,
+    "Patient Levels fills: the stock's own long trend matters (20": 4,
     "What PJM capacity-auction results do to the power stocks (VS": 1,
     "PJM auction history": 1,
-    "NXE Snapshot": 4,
-    "NXE What history says": 3,
-    "NXE Price behavior": 5,
+    "NXE Snapshot": 5,
+    "NXE What history says": 4,
+    "NXE Price behavior": 6,
     "What PJM capacity-auction results do to the power stocks": 1,
-    "NXE Our trades": 3,
+    "NXE Our trades": 4,
     "NXE Options and big money": 1,
     "desk_memory_playbook": 2,
     "desk_notes patient levels 200-day": 1,
     "TLN Lessons": 1,
-    "UEC Ownership and analysts": 1,
-    "UEC Price behavior": 2,
+    "UEC Ownership and analysts": 2,
+    "UEC Price behavior": 3,
     "UEC Our trades": 2,
     "Macro Analyst": 1,
     "UEC Discoveries": 1,
@@ -221805,7 +222025,7 @@
    ],
    [
     "2026-11-25",
-    61.47
+    61.53
    ]
   ],
   "NXE": [
@@ -222415,7 +222635,7 @@
    ],
    [
     "2026-11-25",
-    83.19
+    83.37
    ]
   ],
   "BWXT": [
@@ -222537,7 +222757,7 @@
    ],
    [
     "2026-11-25",
-    113.81
+    113.63
    ]
   ],
   "CEG": [
@@ -222659,7 +222879,7 @@
    ],
    [
     "2026-11-25",
-    236.24
+    236.29
    ]
   ],
   "VST": [
@@ -222781,7 +223001,7 @@
    ],
    [
     "2026-11-25",
-    121.06
+    121.18
    ]
   ],
   "TLN": [
@@ -222903,7 +223123,7 @@
    ],
    [
     "2026-11-25",
-    350.12
+    350.65
    ]
   ],
   "AMD": [
@@ -223025,7 +223245,7 @@
    ],
    [
     "2026-11-25",
-    402.58
+    402.21
    ]
   ],
   "SMR": [
@@ -223147,7 +223367,7 @@
    ],
    [
     "2026-11-25",
-    3.26
+    3.28
    ]
   ],
   "NNE": [
@@ -223269,7 +223489,7 @@
    ],
    [
     "2026-11-25",
-    8.97
+    9.0
    ]
   ]
  },
@@ -228623,6 +228843,57 @@
     "node_ratio": 0.46,
     "skip": "True"
    }
+  },
+  {
+   "date": "2026-11-25",
+   "ticker": "CCJ",
+   "zone": 58.44,
+   "entry": 58.67,
+   "stop": 57.74,
+   "target": 63.68,
+   "vp": {
+    "value_low": 59.55,
+    "value_high": 76.35,
+    "heaviest_price": 74.6,
+    "position": "below value",
+    "node": "normal",
+    "node_ratio": 0.97,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "ticker": "LEU",
+   "zone": 81.32,
+   "entry": 81.65,
+   "stop": 80.35,
+   "target": 93.4,
+   "vp": {
+    "value_low": 86.51,
+    "value_high": 117.23,
+    "heaviest_price": 88.09,
+    "position": "below value",
+    "node": "normal",
+    "node_ratio": 0.84,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "ticker": "BWXT",
+   "zone": 111.12,
+   "entry": 111.57,
+   "stop": 109.79,
+   "target": 117.21,
+   "vp": {
+    "value_low": 112.1,
+    "value_high": 131.75,
+    "heaviest_price": 117.21,
+    "position": "at value low",
+    "node": "thin",
+    "node_ratio": 0.46,
+    "skip": "True"
+   }
   }
  ],
  "hawk_cool": {},
@@ -229031,7 +229302,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 15:12",
+ "watchdog_last": "2026-11-25 15:15",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
