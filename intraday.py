@@ -82,7 +82,8 @@ def _write(rows):
         p = os.path.join(OUT, f"{month}.csv")
         old = pd.read_csv(p) if os.path.exists(p) else pd.DataFrame(columns=COLS)
         allr = pd.concat([old, part[COLS]]).drop_duplicates(["t", "date"], keep="last").sort_values(["date", "t"])
-        allr.to_csv(p, index=False)
+        allr.to_csv(p + ".tmp", index=False)
+        os.replace(p + ".tmp", p)
 
 
 def universe():
@@ -93,9 +94,23 @@ def universe():
     return list(dict.fromkeys(lineup + extra + (cfg.get("panic_rebound", {}).get("related_universe") or [])))
 
 
+def _load_prog():
+    try:
+        return json.load(open(PROG))
+    except Exception:  # missing or half-written: start the bookkeeping over (data already saved is kept)
+        return {}
+
+
+def _save_prog(prog):
+    os.makedirs(OUT, exist_ok=True)
+    tmp = PROG + ".tmp"
+    json.dump(prog, open(tmp, "w"))
+    os.replace(tmp, PROG)  # atomic: a reader never sees a half-written file
+
+
 def pull(tickers, start, end, resume=True):
     cl = _client()
-    prog = json.load(open(PROG)) if (resume and os.path.exists(PROG)) else {}
+    prog = _load_prog() if resume else {}
     for t in tickers:
         if resume and isinstance(prog.get(t), dict) and prog[t].get("done"):
             continue
@@ -127,12 +142,11 @@ def pull(tickers, start, end, resume=True):
         if resume:
             # only 'done' if most chunks worked; otherwise the next launch retries this stock
             prog[t] = {"done": bool(rows) and fails <= 2, "days": len(rows), "failed_chunks": fails, "feed": feed, "err": last_err}
-            os.makedirs(OUT, exist_ok=True)
-            json.dump(prog, open(PROG, "w"))
+            _save_prog(prog)
         print(f"intraday {t}: {len(rows)} days ({feed}), {fails} failed chunks {last_err}", flush=True)
     if resume:
         prog["_complete"] = all((prog.get(t) or {}).get("done") for t in tickers)
-        json.dump(prog, open(PROG, "w"))
+        _save_prog(prog)
 
 
 def _locked():

@@ -321,6 +321,10 @@
   "night_round_4_2026_11_25": {
    "trials": 9,
    "verdict": "2026-11-24 23:45. Sharp-drop trades (live rule, nuclear+related, 1,131 trades: +1.44%/+1.47% vs S&P): (B) group fell 8%+ too: +2.37% (t 3.5) / -0.36% (t -0.4); stock fell alone (group flat): -0.15% / +0.91%: flips between eras, no selection filter. (C) above the 200-day average +0.22% (n 56) / +1.73%; below +1.58% / +1.53%: no filter. (E) capitulation day (85%+ of 140 big stocks down, one point per day, 5-day gap): our 10 vs S&P 5 days -1.13% (t -2.9) / +1.26% (t 2.2), 10 days -1.44% (t -2.6) / +2.08% (t 2.6); 90%+: -1.43% / +0.65%; related ~0. Flipped between eras -> recent-era practice book (recent.py 'capitulation'), no money."
+  },
+  "night_round_5_2026_11_25": {
+   "trials": 6,
+   "verdict": "2026-11-24 23:55. (I) Tech-panic days (SMH -3%+ while the S&P falls less than 2%; panic-rule stock conditions; one point per day): nuclear+related -2.46% vs S&P (2008-18, t -1.6) / +1.13% (2019-26, t 1.0); our 10 only +0.50% (n 9) / +2.21% (t 1.7); SMH -4%+: -2.78% / +3.18%. Flipped -> practice book (recent.py 'tech_panic'). Reference: live panic days +0.06% / +2.16%. (J) Faster sharp-drop trigger, 12%+ in 3 days not yet 15% in 5: per trade +0.58% (t 1.1) / +1.21% (t 2.4), but whole-account with it as a lower-priority candidate: 20.8%/yr (12.6 / 33.0) vs 25.2% (17.7 / 36.3): crowds out better trades. Rejected. Bug fixed: the minute-data progress file was committed half-written (non-atomic write); writes are now atomic."
   }
  }
 }

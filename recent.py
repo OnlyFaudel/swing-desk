@@ -18,6 +18,9 @@ RULES = {
     "momentum_switch": "Each month hold our 10 instead of the S&P when their 12-month return beats the S&P's (2019-26: 41.2%/yr)",
     "capitulation": "85%+ of the 115 big US stocks fall on the same day: buy our 10 at the close, sell after 10 sessions "
                     "(one point per day, 5-day gap: 2008-18 -1.44% vs S&P (t -2.6), 2019-26 +2.08% (t 2.6): flipped between eras)",
+    "tech_panic": "Chip stocks (SMH) fall 3%+ while the S&P falls less than 2%: buy our 10 that fell 3%+ and sit 15%+ under their "
+                  "20-day high, sell at +10% or after 6 sessions (per day: 2008-18 +0.50% (n 9), 2019-26 +2.21% vs S&P (t 1.7); "
+                  "with related stocks -2.46% / +1.13%: flipped between eras)",
     "ai_scare": "NVIDIA down 6%+ in a day: buy the power trio (CEG, VST, TLN) at the close, sell after 10 sessions (one data point per "
                 "scare: 2008-18 -1.0% vs S&P, 2019-26 +2.0% (t 1.6); 2024 +4.5%, 2025 +9.6%, 2026 +12.0%: an AI-era-only pattern)",
 }
@@ -49,7 +52,7 @@ def run(lineup, related, today=None, breadth=None):
     b = _load()
     if b.get("last_run") == str(today):
         return []
-    names = list(dict.fromkeys(list(lineup) + list(related) + ["SPY", "NVDA", "CEG", "VST", "TLN"] + list(breadth or [])))
+    names = list(dict.fromkeys(list(lineup) + list(related) + ["SPY", "NVDA", "CEG", "VST", "TLN", "SMH"] + list(breadth or [])))
     raw = yf.download(names, period="14mo", auto_adjust=True, progress=False)
     C, V = raw["Close"], raw["Volume"]
     if C.index[-1].date() != today:
@@ -97,6 +100,13 @@ def run(lineup, related, today=None, breadth=None):
     if "NVDA" in C and len(C["NVDA"].dropna()) > 2 and float(C["NVDA"].iloc[-1] / C["NVDA"].iloc[-2] - 1) <= -0.06:
         for t in ("CEG", "VST", "TLN"):
             enter("ai_scare", t, 10)
+    if "SMH" in C and "SPY" in C and len(C["SMH"].dropna()) > 2:
+        smh_d, spy_d = float(C["SMH"].iloc[-1] / C["SMH"].iloc[-2] - 1), float(C["SPY"].iloc[-1] / C["SPY"].iloc[-2] - 1)
+        if smh_d <= -0.03 and spy_d > -0.02:
+            for t in lineup:
+                c = C[t].dropna() if t in C else None
+                if c is not None and len(c) > 21 and float(c.iloc[-1] / c.iloc[-2] - 1) <= -0.03 and float(c.iloc[-1] / c.tail(20).max() - 1) <= -0.15:
+                    enter("tech_panic", t, 6)
     bl = [t for t in (breadth or []) if t in C and len(C[t].dropna()) > 2]
     if len(bl) >= 50:
         moves = [float(C[t].iloc[-1] / C[t].iloc[-2] - 1) for t in bl if not np.isnan(C[t].iloc[-1]) and not np.isnan(C[t].iloc[-2])]
