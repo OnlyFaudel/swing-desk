@@ -598,6 +598,14 @@
   "night_round_39_2026_11_25": {
    "trials": 0,
    "verdict": "2026-11-25 06:00. Reference audit: no state key read without a writer, no hard config read missing (one soft default: learning.instant_reviews_per_day), all named ledger references resolve. Found: the promotion gate (real-money switch) deflated the paper Sharpe using only patient_levels' 30 trials, but the account trades every adopted rule and the ledger holds 2,031 trials (143 entries), so the luck hurdle was 1.11 annualized instead of 1.85. Fixed in gate.py: trials = all ledger trials (never fewer than the strategy's own). Current gate: still failing (3 days, halves not both positive, DSR 0.57)."
+  },
+  "reentry_after_win": {
+   "trials": 3,
+   "verdict": "2026-11-25 06:10 (round 40, new). After a panic/sharp-drop trade hits +10% at a close, buy again at the first close 5%+ below the exit price within 10 sessions; hold 10 sessions or +10% at a close; vs S&P, 0.2% cost. Ours 00-07 / 08-18 / 19-26: -1.96% (n 55) / +0.15% (n 126) / +1.21% (n 175, t 1.3). Wide 08-18 / 19-26: +0.93% (n 199) / +1.13% (n 138). Rejected (fails 2000-07 and 2008-18 in our names). Side note: staying in 10 more sessions after the +10% exit: ours -0.45 / +0.72 / +0.57, wide +1.70 / +0.55 (selling at +10% gives up a little in later eras; covered by exit_method_audit: keep the live exit)."
+  },
+  "night_round_40_2026_11_25": {
+   "trials": 3,
+   "verdict": "2026-11-25 06:10. reentry_after_win rejected. Honesty audit: account.brakes uses the internal $1k book (cash incl. the overdraft + positions), not the $100k Alpaca balance; honest_equity removes touch-only support fills and charges realistic costs as documented. No change needed."
   }
  }
 }
