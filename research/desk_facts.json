@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 03:40",
+ "updated": "2026-11-25 03:50",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -177,6 +177,16 @@
     "pm",
     "risk",
     "level",
+    "strategist",
+    "researcher"
+   ]
+  },
+  {
+   "topic": "When the panic rule and the sharp-drop rule want the same money, and whether to wait a day before buying a panic",
+   "answer": "88 nuclear/related stocks, 2000-07 / 2008-18 / 2019-26, vs the S&P after costs. Stocks that qualify for BOTH rules on the same day are not reliably better than panic-only or sharp-drop-only picks (both: -0.79 / +0.42 / +2.13% over 6 days; panic only +0.49 / +0.68 / +1.45%; sharp only -0.65 / +0.67 / +1.32%): no reason to favor one rule when cash is short; spread the money. Waiting a day to 'confirm' a panic buy is worse: buying the next close only if that day was up earned -1.12 / +0.46 / +0.70% vs +0.09 / +0.60 / +1.65% buying on the panic day as the rule does. Buy on the day.",
+   "roles": [
+    "pm",
+    "risk",
     "strategist",
     "researcher"
    ]
