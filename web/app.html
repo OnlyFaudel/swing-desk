@@ -568,7 +568,8 @@ function stockState(t){
   const ls={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
   // live dot
   const lc=parseT((S.last_cycle||"").replace(" ET","")), mins=lc?(Date.now()-lc)/6e4:1e9;
-  $("live").className="live"+(mins<45?" on":""); $("live").innerHTML=`<i></i>${mins<45?"Live":S.last_cycle?"Last run "+ago(S.last_cycle.replace(" ET","")):"Not started"}`;
+  $("live").className="live"+(mins<45?" on":""); {const et=new Date(new Date().toLocaleString("en-US",{timeZone:"America/New_York"})), night=et.getDay()%6===0||et.getHours()<8||et.getHours()>=19;
+   $("live").innerHTML=`<i></i>${mins<45?"Live":!S.last_cycle?"Not started":night&&mins<75?"Night mode: saves hourly, last "+ago(S.last_cycle.replace(" ET","")):"Last run "+ago(S.last_cycle.replace(" ET",""))}`;}
 
   /* ----- messages model (from the group chats) */
   const CH=S.chats||[], MS=[];
