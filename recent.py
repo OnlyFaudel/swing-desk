@@ -30,6 +30,13 @@ RULES = {
                 "stocks -0.18% / +0.22%: recent and nuclear-only)",
     "dry_rally": "Our 10 or a related stock rises 8%+ in 10 sessions on volume 30%+ below its prior 50-day average: buy the close, sell after "
                  "10 sessions (2008-18 +0.39%, 2019-26 +1.33% (t 3.3); big US stocks -0.37% / +0.27%: fails the independent check)",
+    "tg_week_dip": "Thanksgiving week (Mon-Wed): one of our 10 trades 5%+ under yesterday's close (a resting limit order would fill at "
+                   "that price, or at the open if it opens lower): buy, sell at the Black Friday close (2007-18 +7.9%/buy vs -0.4% for the "
+                   "same trade in ordinary weeks, 2019-25 +4.5% vs +0.8%; ~600 other stocks +3.5%/+1.9% vs -0.3%/-0.7%; only 14 weeks "
+                   "with fills in our 10, t 1.5-2.5: small, so practice first)",
+    "holiday_dip": "Any of the 3 sessions before a market holiday: our 10 or a related stock trades 3%+ under yesterday's close (limit fill): "
+                   "buy, sell at the first close after the holiday (2007-18 +0.32%/buy vs -0.05% ordinary days, 2019-25 +0.52% vs +0.12%, "
+                   "t 2.1/2.4; ~600 other stocks show nothing (+0.02 / -0.17): fails the independent check, nuclear-only)",
     "sprott_issuing": "The Sprott uranium trust is issuing new units (units outstanding up 1%+ in ~20 sessions, i.e. it is raising money to "
                       "buy physical uranium) while the 5 miners are already up 10%+ in 20 sessions: buy CCJ, UEC, DNN, UUUU, NXE, sell after "
                       "20 sessions (2021-26 only: +6.3% vs S&P, n 12, vs +0.4% for the miners' rally alone, n 37; one era, small)",
@@ -131,6 +138,38 @@ def run(lineup, related, today=None, breadth=None):
                     enter("sprott_issuing", t, 20)
     except Exception:
         pass
+    try:  # limit-order dip buys before holidays (round 57, 2026-11-25)
+        import market
+        n_before, d, hol_found = 0, today, None
+        for _ in range(10):
+            d += dt.timedelta(days=1)
+            if d.weekday() >= 5:
+                continue
+            if market.is_holiday(d):
+                hol_found = d; break
+            n_before += 1
+        O, Lo = raw["Open"], raw["Low"]
+        spy_prev = float(C["SPY"].iloc[-2])
+
+        def enter_limit(rule, t, k, hold):
+            if (rule, t) in held or t not in C or len(C[t].dropna()) < 3 or not ok(t):
+                return
+            pc, o, lo = float(C[t].iloc[-2]), float(O[t].iloc[-1]), float(Lo[t].iloc[-1])
+            lim = pc * (1 - k)
+            if np.isnan(o) or np.isnan(lo) or lo > lim:
+                return
+            fill = o if o <= lim else lim
+            b["open"].append({"rule": rule, "t": t, "date": str(today), "px": round(fill, 4), "spy": spy_prev, "hold": hold, "days": 0})
+            held.add((rule, t))
+            out.append(f"{rule}: opened {t} at ${fill:.2f}")
+        if hol_found and n_before <= 2:
+            for t in dict.fromkeys(list(lineup) + list(related)):
+                enter_limit("holiday_dip", t, 0.03, n_before + 1)
+            if hol_found.month == 11 and hol_found.weekday() == 3 and 22 <= hol_found.day <= 28:  # Thanksgiving
+                for t in lineup:
+                    enter_limit("tg_week_dip", t, 0.05, n_before + 1)
+    except Exception as e:
+        out.append(f"holiday dip check failed: {e}"[:120])
     if "NVDA" in C and len(C["NVDA"].dropna()) > 2 and float(C["NVDA"].iloc[-1] / C["NVDA"].iloc[-2] - 1) <= -0.06:
         for t in ("CEG", "VST", "TLN"):
             enter("ai_scare", t, 10)
@@ -188,7 +227,13 @@ def summary():
                           "avg_vs_spy_pct": round(float(np.mean(x)), 2) if x else None, "now": "our 10" if b["switch"].get("in_nuclear") else "S&P"}
             continue
         cl = [r for r in b["closed"] if r["rule"] == rule]
-        x = np.array([r["vs_spy"] for r in cl]) if cl else np.array([])
+        if rule in ("holiday_dip", "tg_week_dip"):  # dozens of fills on the same day are one bet: score one average per day
+            by_day = {}
+            for r in cl:
+                by_day.setdefault(r["date"], []).append(r["vs_spy"])
+            x = np.array([float(np.mean(v)) for v in by_day.values()])
+        else:
+            x = np.array([r["vs_spy"] for r in cl]) if cl else np.array([])
         t = float(x.mean() / x.std() * np.sqrt(len(x))) if len(x) > 2 and x.std() > 0 else None
         rows[rule] = {"what": desc, "closed": len(cl), "open": sum(1 for p in b["open"] if p["rule"] == rule),
                       "avg_pct": round(float(np.mean([r["ret"] for r in cl])), 2) if cl else None,

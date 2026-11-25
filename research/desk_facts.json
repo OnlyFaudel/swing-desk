@@ -281,6 +281,20 @@
     "exec",
     "level"
    ]
+  },
+  {
+   "topic": "Does the market drop most Thanksgivings, and can we catch holiday dips? (owner's idea, tested 2026-11-25)",
+   "answer": "The premise is false: in Thanksgiving week the S&P dipped 1%+ below the prior Friday in only 32% of years (ordinary weeks 52%) and the week finished up 74% of years (ordinary 57%); our 10 dipped 3%+ in 53% of stock-years vs 61% normally. Thanksgiving week is calmer and stronger than usual, not a reliable drop. Seven variants tested (about 20 counting thresholds), entries only by resting limit orders set from yesterday's close, so no look-ahead. FAILED: buying stocks that open down 2%+ on the Wednesday (2019-25 -0.8%), adding to the Thanksgiving trade when it falls 3% (2019-25 -0.45%), the Monday after Thanksgiving (worse than an ordinary Monday), and holding pre-holiday dips 2 extra sessions (edge gone in 2019-25). SURVIVED, small: (1) tg_week_dip, a limit 5% under yesterday's close Mon-Wed of Thanksgiving week on our 10, sold at the Black Friday close: +7.9%/buy in 2007-18 and +4.5% in 2019-25 vs -0.4%/+0.8% for the same trade in ordinary weeks, and ~600 other stocks agree (+3.5%/+1.9%), but only 14 weeks had fills in our 10 (t 1.5-2.5) and the big years were 2008 and 2020. (2) holiday_dip, a limit 3% under yesterday's close in the 3 sessions before any market holiday on our 10 plus related stocks, sold at the first close after: +0.32%/+0.52% a buy vs -0.05%/+0.12% on ordinary days (t 2.1/2.4), but ~600 other stocks show nothing, only 53% of holidays made money, and July 4, Labor Day and Presidents Day lost. Both went into the practice book (recent.py), no money, scored one average per day because same-day fills are one bet. Today's (Nov 25) fills are the day that gave us the idea, so don't count them as proof. Revisit after 30+ scored days.",
+   "roles": [
+    "pm",
+    "risk",
+    "macro",
+    "strategist",
+    "researcher",
+    "investigator",
+    "exec",
+    "level"
+   ]
   }
  ]
 }
