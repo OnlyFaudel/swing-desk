@@ -1856,6 +1856,14 @@
 "surfaced": false
 },
 {
+"date": "2026-12-08",
+"ticker": "UEC",
+"what": "Earnings inside the patient-level hold window; avoid resting buys into it",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
 "date": "2026-12-09",
 "ticker": "CCJ",
 "what": "FOMC rate decision; broad risk-off or risk-on move that can drive the uranium and nuclear names with it.",
@@ -2139,6 +2147,22 @@
 "date": "2026-12-15",
 "ticker": "CEG",
 "what": "PJM 2029/30 capacity auction closes; historically the release-day pop fades, so don't chase it",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "CEG",
+"what": "PJM 2029/30 capacity auction closes; historically the release-day pop fades, so do not chase it and consider trimming held power names into it",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "VST",
+"what": "PJM 2029/30 capacity auction closes; expected to clear near the cap. Historically the release-day pop fades, so don't chase it.",
 "by": "level",
 "written": "2026-11-25",
 "surfaced": false

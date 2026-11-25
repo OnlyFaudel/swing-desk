@@ -21198,5 +21198,91 @@
 "kazatomprom",
 "probe"
 ]
+},
+{
+"id": "e253d37d89c9e4cf",
+"date": "2026-11-22",
+"ts": 1795388870,
+"title": "Vistra Corp Lobbying Profile, 2026",
+"summary": "",
+"outlet": "OpenSecrets",
+"link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTS14NTRCQUt4QVY1NFZuRW1JcmgxTDdxeDVBd1FNYnZGNzI5QzVROHh4XzJMT3lxTjRQdWhaRnk5MXZoc3FQVTZqSzlVSmxlNU9INnUyT19VX2tZWmRCVlEwbDZHRDVzeDhCZ3c0bF9wSXl6U0VRdzgwWHpEN3JKS2FqelZJOFBr?oc=5",
+"place": "Comanche Peak",
+"tickers": [
+"VST"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.75,
+"score": 4.0,
+"echo_of": null,
+"w": [
+"2026",
+"lobbying",
+"profile",
+"vistra"
+]
+},
+{
+"id": "b4a8409648247199",
+"date": "2026-11-25",
+"ts": 1795608087,
+"title": "JAGUAR URANIUM ANNOUNCES MAIDEN MINERAL RESOURCE ESTIMATE AT THE...",
+"summary": "",
+"outlet": "Quantisnow",
+"link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeTVqNVUyQ29WOTljWDM1NTZHZW1qMkM5TTBrdnpVR2Q3TDNQZ2MzWl90RTVqVmRZRTFJcDBscWNWam5pZ2Z0eFdPYWZUNVBzb3Q3blkzb3ptYTdRaDlucWlSRDJHeTg4T1k3cVJDUWhvZEhRREl5ZG5Kam9pNkFtdzlMMHNqOHpGa1FEOGM1MXpJY2paVlFyT3N1ZTRGUG5ZWjMwUGx3NG9CM2JTUUFMZEUtQzU?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.87,
+"score": 4.24,
+"echo_of": null,
+"w": [
+"announces",
+"estimate",
+"jaguar",
+"maiden",
+"mineral",
+"resource",
+"uranium"
+]
+},
+{
+"id": "7d5bb02004db2606",
+"date": "2026-11-25",
+"ts": 1795614120,
+"title": "Vistra Underperforms Industry in the Past Year: Time to Buy or Wait?",
+"summary": "",
+"outlet": "TradingView",
+"link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMjZRanN4MFBOZ3ktVHZneFhhQmhZVVg0RE1hZGZIcVdsRG9zTXB4VWFzR1FEYjRBdDJ1aTJNaUVOYVNBWTJNeklUQ0RiZFZVcURMc3U2ekVGam5YYkFIcmZTZkcyV1lqVWhZaHJaVVRuZFMtTkNqM2VlRjA1dkVWYXRtV0RFYnlnVk54TDJ2alNheXR2V05Kc3llQ2NQdmdPSXJGOGlQZk9BaDdXc2F6NUlySE9DS19jcDRUME1hbw?oc=5",
+"place": "Comanche Peak",
+"tickers": [
+"VST"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 1.5,
+"echo_of": "95d12e5461204a04",
+"w": [
+"buy",
+"industry",
+"past",
+"time",
+"underperforms",
+"vistra",
+"wait",
+"year"
+]
 }
 ]
