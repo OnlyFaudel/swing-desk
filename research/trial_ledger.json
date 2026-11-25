@@ -678,6 +678,10 @@
   "night_round_52_2026_11_25": {
    "trials": 0,
    "verdict": "2026-11-25 07:25. Sharp-drop rehearsal (copy, sim broker, UEC's latest close patched to -17% vs 5 sessions ago, 15:45): with the real books no buy, correctly (3 live sharp-drop lots AMD/SMR/NNE already open = max_open 3). With one more slot and cash: bought UEC at the deep-drop size ($255 = 15%, it read -22% in 5 days), sell date 2026-12-10 = 10 sessions skipping Thanksgiving; rule_errors empty."
+  },
+  "night_round_53_2026_11_25": {
+   "trials": 0,
+   "verdict": "2026-11-25 07:35. Black Friday (1 pm close) rehearsal on a copy (sim broker): every near-close window (earnings_pop, holiday_trades, seasonal, park, signal_trades, auto_check, judgment, gap_bank close leg) uses market.cclock, which runs 3 hours ahead on HALF_DAYS (2026-11-27 listed). At 12:30 nothing early; at 12:40 auto_check sold all 10 Thanksgiving lots ('held 2 sessions'); at 12:50 the Black Friday exit sold the 3 panic lots due within 3 sessions (UUUU +4.2%, LEU +3.4%, VST +4.6% on stale prices) and correctly left the Thanksgiving lots to their own exit. rule_errors empty."
   }
  }
 }
