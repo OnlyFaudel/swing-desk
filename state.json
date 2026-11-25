@@ -556,7 +556,8 @@
   "gapshadow:2026-11-25": true,
   "questioner:2026-11-25:5": true,
   "questioner:2026-11-25:6": true,
-  "midday:2026-11-25": true
+  "midday:2026-11-25": true,
+  "questioner:2026-11-25:7": true
  },
  "benchmark": {
   "shares": {
@@ -8400,10 +8401,10 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.53747,
+  "day_usd": 0.53986,
   "month": "2026-11",
-  "month_usd": 1.72103,
-  "total_usd": 1.72103,
+  "month_usd": 1.72342,
+  "total_usd": 1.72342,
   "by_role": {
    "macro": 0.18432,
    "whale": 0.02215,
@@ -8419,7 +8420,7 @@
    "postmortem": 0.00035,
    "researcher": 0.01486,
    "engineer": 0.07767,
-   "questioner": 0.11725
+   "questioner": 0.11964
   }
  },
  "desk_log": [
@@ -8595,23 +8596,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.23,
+  "CCJ": 61.13,
   "NXE": 6.92,
-  "UEC": 5.63,
-  "DNN": 1.78,
-  "UUUU": 5.13,
-  "LEU": 83.02,
-  "BWXT": 113.84,
-  "CEG": 238.16,
-  "VST": 121.56,
-  "TLN": 351.3,
-  "AMD": 402.18,
-  "SMR": 3.27,
-  "NNE": 8.78,
-  "SPY": 718.02,
+  "UEC": 5.62,
+  "DNN": 1.77,
+  "UUUU": 5.12,
+  "LEU": 82.72,
+  "BWXT": 113.16,
+  "CEG": 236.73,
+  "VST": 120.8,
+  "TLN": 347.93,
+  "AMD": 400.88,
+  "SMR": 3.24,
+  "NNE": 8.71,
+  "SPY": 715.83,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 13:50 ET",
+ "last_cycle": "2026-11-25 14:00 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -8648,10 +8649,10 @@
   ]
  },
  "brakes": {
-  "equity": 1001.35,
-  "day_pct": -1.49,
-  "week_pct": 0.08,
-  "drawdown_pct": -5.03,
+  "equity": 996.81,
+  "day_pct": -1.94,
+  "week_pct": -0.37,
+  "drawdown_pct": -5.46,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -12177,6 +12178,42 @@
   [
    "2026-11-25 13:50",
    1001.35
+  ],
+  [
+   "2026-11-25 13:51",
+   997.42
+  ],
+  [
+   "2026-11-25 13:52",
+   999.83
+  ],
+  [
+   "2026-11-25 13:54",
+   999.42
+  ],
+  [
+   "2026-11-25 13:55",
+   999.49
+  ],
+  [
+   "2026-11-25 13:56",
+   998.14
+  ],
+  [
+   "2026-11-25 13:57",
+   999.89
+  ],
+  [
+   "2026-11-25 13:58",
+   998.57
+  ],
+  [
+   "2026-11-25 13:59",
+   997.82
+  ],
+  [
+   "2026-11-25 14:00",
+   996.81
   ]
  ],
  "nowcast": {
@@ -56783,7 +56820,7 @@
     0.8628
    ]
   },
-  "time": "2026-11-25 13:50"
+  "time": "2026-11-25 14:00"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -56915,8 +56952,8 @@
   "bf78a7a4b7c697c4",
   "d944f1045c86ab02",
   "8ad0b53ebffe0c90",
-  "4959c9e24111e1e4",
   "52e6c78d06498482",
+  "4959c9e24111e1e4",
   "0f192e3ee6f7d8a7",
   "c5ba50cbcf752a4f",
   "36bc42fa3067d0c3",
@@ -57067,11 +57104,11 @@
   "7cceea348ff5f82c",
   "323b3d916f8bfaf7",
   "c13d3d6b63c10c3e",
-  "1e9ac2ee38a1003f",
-  "9ac4d1225260d8c6",
   "3c0d3789a7b698e6",
-  "563c0572b10f43bc",
   "656606bd4aff29ca",
+  "1e9ac2ee38a1003f",
+  "563c0572b10f43bc",
+  "9ac4d1225260d8c6",
   "4653461d7ed88855",
   "cda8fbdcb8858d7a",
   "10ac2b136225e49d",
@@ -57363,7 +57400,7 @@
   "a73665945ff493c7",
   "b2e981fc7a2e7302"
  ],
- "news_slow_at": 1795632628.015625,
+ "news_slow_at": 1795633254.3519294,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -212042,6 +212079,25 @@
    ],
    "practice": false,
    "end": "13:50"
+  },
+  {
+   "id": "20261125140051644152",
+   "title": "The Questioner, Nov 25 14:00",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-25 14:00",
+   "msgs": [
+    {
+     "t": "14:00",
+     "who": "questioner",
+     "to": "team",
+     "text": "Nothing is resting: LIVE_ORDERS_RIGHT_NOW is empty, so every setup in the chat is analysis only. Before anyone calls a level 'placed' or 'armed', we need the desk's order book to confirm it, because a mention in an old post proves nothing about a live order.",
+     "outcome": false,
+     "notes": "why: The payload explicitly says no orders are live and that every order is a day order that expires at close. Several posts discuss TLN, VST, DNN and UUUU levels as if they were set, so the desk needs to separate what is placed from what is only discussed. The question is already asked, so I am not repeating it.\ndate: 2026-12-15\nticker: TLN\nwhat: PJM 2029/30 capacity auction closes; no FERC ruling on the delay request found as of Nov 25, so assume it proceeds. Power stocks often pop on the release and then fade over 20 sessions.\nfiles read: LIVE_ORDERS_RIGHT_NOW"
+    }
+   ],
+   "practice": false,
+   "end": "14:00"
   }
  ],
  "feed": [
@@ -216147,6 +216203,19 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-25 14:00",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: ",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -216925,9 +216994,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 13:50",
+  "updated": "2026-11-25 14:00",
   "total": 659,
-  "week": 503,
+  "week": 502,
   "places": {
    "Uranium price": 49,
    "South Korea": 35,
@@ -217567,8 +217636,8 @@
   ]
  },
  "intel_handed": [
-  "a3f7ee9bb9023700",
   "21888157b537cd9b",
+  "a3f7ee9bb9023700",
   "d4097d0d8db37e23",
   "498180393c058995",
   "ff034b5c87c95680",
@@ -217859,17 +217928,17 @@
   "watch": [
    {
     "date": "2026-12-15",
-    "ticker": "CEG",
-    "what": "PJM 2029/30 capacity auction closes; historically the release-day pop fades, so do not chase it and consider trimming held power names into it",
-    "by": "level",
+    "ticker": "VST",
+    "what": "PJM 2029/30 capacity auction closes under the price collar; expected to clear near the cap, so do not buy the release-day pop",
+    "by": "pm",
     "written": "2026-11-25",
     "surfaced": false
    },
    {
     "date": "2026-12-15",
-    "ticker": "VST",
-    "what": "PJM 2029/30 capacity auction closes; expected to clear near the cap. Historically the release-day pop fades, so don't chase it.",
-    "by": "level",
+    "ticker": "TLN",
+    "what": "PJM 2029/30 capacity auction closes; no FERC ruling on the delay request found as of Nov 25, so assume it proceeds. Power stocks often pop on the release and then fade over 20 sessions.",
+    "by": "questioner",
     "written": "2026-11-25",
     "surfaced": false
    },
@@ -220035,12 +220104,12 @@
    "built": "2026-11-25 13:45"
   }
  ],
- "heartbeat": "2026-11-25 13:50",
+ "heartbeat": "2026-11-25 14:00",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 351,
+ "_pushed_feed": 352,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -220255,8 +220324,8 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 113.84,
-  "TLN": 351.3
+  "BWXT": 113.16,
+  "TLN": 347.93
  },
  "notes_audit": {
   "scout": {
@@ -220634,8 +220703,8 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 46,
-   "used": 46,
+   "asked": 47,
+   "used": 47,
    "notes": {
     "TLN Snapshot": 42,
     "TLN News": 37,
@@ -220658,7 +220727,7 @@
     "Reminder: Pre-Thanksgiving session (2026-11-25)": 1,
     "Reminder: Thanksgiving run-up rule": 1,
     "Basket gate note: nuclear basket -11.2% vs 10-day average": 1,
-    "LIVE_ORDERS_RIGHT_NOW": 1,
+    "LIVE_ORDERS_RIGHT_NOW": 2,
     "SECTOR Calendar": 1,
     "already_asked": 1
    },
@@ -220822,7 +220891,7 @@
    ],
    [
     "2026-11-25",
-    61.26
+    61.12
    ]
   ],
   "NXE": [
@@ -220944,7 +221013,7 @@
    ],
    [
     "2026-11-25",
-    6.93
+    6.91
    ]
   ],
   "UEC": [
@@ -221066,7 +221135,7 @@
    ],
    [
     "2026-11-25",
-    5.62
+    5.61
    ]
   ],
   "DNN": [
@@ -221188,7 +221257,7 @@
    ],
    [
     "2026-11-25",
-    1.78
+    1.77
    ]
   ],
   "UUUU": [
@@ -221310,7 +221379,7 @@
    ],
    [
     "2026-11-25",
-    5.14
+    5.12
    ]
   ],
   "LEU": [
@@ -221432,7 +221501,7 @@
    ],
    [
     "2026-11-25",
-    82.84
+    82.82
    ]
   ],
   "BWXT": [
@@ -221554,7 +221623,7 @@
    ],
    [
     "2026-11-25",
-    113.74
+    113.03
    ]
   ],
   "CEG": [
@@ -221676,7 +221745,7 @@
    ],
    [
     "2026-11-25",
-    238.1
+    236.7
    ]
   ],
   "VST": [
@@ -221798,7 +221867,7 @@
    ],
    [
     "2026-11-25",
-    121.56
+    120.8
    ]
   ],
   "TLN": [
@@ -221920,7 +221989,7 @@
    ],
    [
     "2026-11-25",
-    351.4
+    348.43
    ]
   ],
   "AMD": [
@@ -222042,7 +222111,7 @@
    ],
    [
     "2026-11-25",
-    402.18
+    400.88
    ]
   ],
   "SMR": [
@@ -222164,7 +222233,7 @@
    ],
    [
     "2026-11-25",
-    3.27
+    3.24
    ]
   ],
   "NNE": [
@@ -222286,7 +222355,7 @@
    ],
    [
     "2026-11-25",
-    8.78
+    8.71
    ]
   ]
  },
@@ -227619,17 +227688,17 @@
   }
  ],
  "movers": {
-  "at": 1795618842.8691847,
-  "time": "2026-11-25 10:00",
+  "at": 1795633251.642544,
+  "time": "2026-11-25 14:00",
   "list": [
    {
     "ticker": "LEU",
     "core": true,
-    "volatility_pct": 108,
+    "volatility_pct": 107,
     "why": [
-     "-57% under its 2-month high"
+     "-55% under its 2-month high"
     ],
-    "price": 78.97,
+    "price": 82.82,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -227637,9 +227706,9 @@
     "core": true,
     "volatility_pct": 88,
     "why": [
-     "-55% under its 2-month high"
+     "-53% under its 2-month high"
     ],
-    "price": 5.3,
+    "price": 5.61,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -227647,9 +227716,9 @@
     "core": true,
     "volatility_pct": 76,
     "why": [
-     "-67% under its 2-month high"
+     "-65% under its 2-month high"
     ],
-    "price": 4.85,
+    "price": 5.12,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -227657,62 +227726,61 @@
     "core": false,
     "volatility_pct": 153,
     "why": [
-     "-35% under its 2-month high"
+     "-32% under its 2-month high"
     ],
-    "price": 128.57,
+    "price": 135.63,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "NVDA",
     "core": false,
-    "volatility_pct": 139,
+    "volatility_pct": 138,
     "why": [
-     "-39% under its 2-month high"
+     "-38% under its 2-month high"
     ],
-    "price": 145.13,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "AMD",
-    "core": false,
-    "volatility_pct": 135,
-    "why": [
-     "-41% under its 2-month high",
-     "-27% in 5 days"
-    ],
-    "price": 385.33,
+    "price": 147.86,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "MU",
     "core": false,
-    "volatility_pct": 135,
+    "volatility_pct": 134,
     "why": [
-     "-47% under its 2-month high",
-     "-18% in 5 days"
+     "-46% under its 2-month high",
+     "-16% in 5 days"
     ],
-    "price": 577.55,
+    "price": 589.8,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "AMD",
+    "core": false,
+    "volatility_pct": 133,
+    "why": [
+     "-38% under its 2-month high",
+     "-24% in 5 days"
+    ],
+    "price": 401.09,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "OKLO",
     "core": false,
-    "volatility_pct": 127,
+    "volatility_pct": 126,
     "why": [
-     "-59% under its 2-month high",
-     "-18% in 5 days"
+     "-56% under its 2-month high"
     ],
-    "price": 17.96,
+    "price": 19.11,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "VRT",
     "core": false,
-    "volatility_pct": 112,
+    "volatility_pct": 111,
     "why": [
-     "-43% under its 2-month high"
+     "-41% under its 2-month high"
     ],
-    "price": 165.45,
+    "price": 172.84,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -227720,21 +227788,10 @@
     "core": false,
     "volatility_pct": 110,
     "why": [
-     "-72% under its 2-month high",
-     "-20% in 5 days"
+     "-71% under its 2-month high",
+     "-17% in 5 days"
     ],
-    "price": 3.11,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "NNE",
-    "core": false,
-    "volatility_pct": 105,
-    "why": [
-     "-57% under its 2-month high",
-     "-20% in 5 days"
-    ],
-    "price": 8.3,
+    "price": 3.24,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -227742,70 +227799,70 @@
     "core": false,
     "volatility_pct": 105,
     "why": [
-     "-40% under its 2-month high",
-     "-15% in 5 days"
+     "-38% under its 2-month high"
     ],
-    "price": 147.84,
+    "price": 152.94,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "NNE",
+    "core": false,
+    "volatility_pct": 104,
+    "why": [
+     "-55% under its 2-month high",
+     "-16% in 5 days"
+    ],
+    "price": 8.71,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "NVT",
     "core": false,
-    "volatility_pct": 100,
+    "volatility_pct": 99,
     "why": [
-     "-43% under its 2-month high"
+     "-40% under its 2-month high"
     ],
-    "price": 99.26,
+    "price": 103.3,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "TSM",
     "core": false,
-    "volatility_pct": 90,
+    "volatility_pct": 89,
     "why": [
-     "-32% under its 2-month high"
+     "-30% under its 2-month high"
     ],
-    "price": 329.76,
+    "price": 339.05,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "ORCL",
     "core": false,
-    "volatility_pct": 88,
+    "volatility_pct": 87,
     "why": [
-     "-37% under its 2-month high"
+     "-35% under its 2-month high"
     ],
-    "price": 102.15,
+    "price": 104.62,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "AVGO",
     "core": false,
-    "volatility_pct": 85,
+    "volatility_pct": 83,
     "why": [
-     "-19% in 5 days"
+     "-17% in 5 days"
     ],
-    "price": 286.67,
+    "price": 295.05,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "GEV",
     "core": false,
-    "volatility_pct": 77,
-    "why": [
-     "-33% under its 2-month high"
-    ],
-    "price": 692.06,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "ETN",
-    "core": false,
     "volatility_pct": 76,
     "why": [
      "-31% under its 2-month high"
     ],
-    "price": 306.73,
+    "price": 711.28,
     "note": "big moves 5-7x more likely here, in either direction"
    }
   ]
@@ -227923,7 +227980,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 13:50",
+ "watchdog_last": "2026-11-25 14:00",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
