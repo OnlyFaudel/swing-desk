@@ -674,6 +674,10 @@
   "night_round_51_2026_11_25": {
    "trials": 0,
    "verdict": "2026-11-25 07:20. After-hours dip rehearsal (copy, sim broker, UEC patched 4% under its close at 17:00 with real volume, Friday 9:35 exit): (a) with the real books no buy, correctly: every lineup stock holds a ~$15 Thanksgiving 'auto' lot (the rule skips stocks with an open auto/panic/trade lot) and free cash is negative until the morning repayment; so the after-hours dip cannot fire tonight, which is fine. (b) With UEC freed and cash: limit buy $136 at $5.37 (0.3% over the after-hours price), filled, exit date Fri Nov 27 (Thursday holiday skipped), sold at 9:35 Friday +2.05% with the right label. rule_errors empty. Also fixed the stale '+1.5-1.8% a trade' line in the alert text."
+  },
+  "night_round_52_2026_11_25": {
+   "trials": 0,
+   "verdict": "2026-11-25 07:25. Sharp-drop rehearsal (copy, sim broker, UEC's latest close patched to -17% vs 5 sessions ago, 15:45): with the real books no buy, correctly (3 live sharp-drop lots AMD/SMR/NNE already open = max_open 3). With one more slot and cash: bought UEC at the deep-drop size ($255 = 15%, it read -22% in 5 days), sell date 2026-12-10 = 10 sessions skipping Thanksgiving; rule_errors empty."
   }
  }
 }
