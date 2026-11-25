@@ -3361,18 +3361,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Local intel: energynews.pro (Workers and jobs)",
-   "title": "Energy Fuels targets one million pounds of uranium at White Mesa",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSFhTWGxyZnlySTVXVDBoOUxUYnlqRVNJUEpNcVJ5Q19SaXdTX1NLVURKN19qbGtmdXRGRTgwOTdTRy14NjhfVWN5MTRjREFmNDN6WURKUFNyY0VsVkdka2xVM01QSnpPZFRLY1liN0J3TTVPWnZjVWdmNE9OSGNHSHA2LXNwVXktNTFIMUktSnptanpw?oc=5",
-   "ts": 1795457302,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Local energynews.pro item on Energy Fuels' White Mesa target; a rival miner's plan, not CCJ news."
-  },
-  {
    "ticker": "CEG",
    "source": "Google News: Constellation Energy nuclear",
    "title": "CEG Maintained by Morgan Stanley -- Price Target Raised to $393 - GuruFocus",
@@ -6359,6 +6347,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Kalkine explainer on Energy Fuels' uranium plans; no new company-specific fact, mostly recap of known strategy."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Jaguar Uranium releases first resource estimate for Colombia project - StreetInsider",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMVRlZmtGUTUtRUR2VXJ5ZktjQlZULUtKY1hpT0FVdnFEaUJ5Z1lJR2VSYUxuaXVrbmFLYWJMU0dnRHZzYm1LUVZHcE1aNmdraXFFbHdRNk5JbG5PSllpZUhZTmctZnpNN2IyR0lKS0R3MTY0LVAtR3V1LU1uNnFRZUNqenVhRkJ4RTBDYWw2V0lhNTNvQUtFOE83LXdfa3JkZXZaQmNHZGI1bmtCVVR6ZW1mTVNwZnRNZ1kwbzRCdzFRak1Zbnc?oc=5",
+   "ts": 1795607871,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Early-stage resource estimate for a Colombia uranium project; small, distant, and not a near-term supply change."
   }
  ],
  "reviews": [
@@ -8100,16 +8100,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.50251,
+  "day_usd": 0.50338,
   "month": "2026-11",
-  "month_usd": 1.68607,
-  "total_usd": 1.68607,
+  "month_usd": 1.68694,
+  "total_usd": 1.68694,
   "by_role": {
    "macro": 0.18313,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.17472,
-   "scout": 0.15971,
+   "scout": 0.16058,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -8295,23 +8295,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 60.72,
-  "NXE": 6.86,
-  "UEC": 5.59,
-  "DNN": 1.75,
+  "CCJ": 60.81,
+  "NXE": 6.85,
+  "UEC": 5.6,
+  "DNN": 1.76,
   "UUUU": 5.09,
-  "LEU": 81.66,
-  "BWXT": 112.59,
-  "CEG": 237.94,
-  "VST": 120.86,
-  "TLN": 348.67,
-  "AMD": 392.89,
-  "SMR": 3.22,
-  "NNE": 8.56,
-  "SPY": 712.55,
-  "SGOV": 100.68
+  "LEU": 82.21,
+  "BWXT": 112.73,
+  "CEG": 237.57,
+  "VST": 120.38,
+  "TLN": 348.04,
+  "AMD": 390.52,
+  "SMR": 3.21,
+  "NNE": 8.57,
+  "SPY": 711.69,
+  "SGOV": 100.67
  },
- "last_cycle": "2026-11-25 12:55 ET",
+ "last_cycle": "2026-11-25 13:03 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -8348,10 +8348,10 @@
   ]
  },
  "brakes": {
-  "equity": 988.44,
-  "day_pct": -2.76,
-  "week_pct": -1.21,
-  "drawdown_pct": -6.26,
+  "equity": 988.06,
+  "day_pct": -2.8,
+  "week_pct": -1.24,
+  "drawdown_pct": -6.29,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -11693,6 +11693,34 @@
   [
    "2026-11-25 12:55",
    988.44
+  ],
+  [
+   "2026-11-25 12:57",
+   988.1
+  ],
+  [
+   "2026-11-25 12:58",
+   987.05
+  ],
+  [
+   "2026-11-25 12:59",
+   984.24
+  ],
+  [
+   "2026-11-25 13:00",
+   981.34
+  ],
+  [
+   "2026-11-25 13:01",
+   984.81
+  ],
+  [
+   "2026-11-25 13:03",
+   986.7
+  ],
+  [
+   "2026-11-25 13:03",
+   988.06
   ]
  ],
  "nowcast": {
@@ -54556,18 +54584,18 @@
  },
  "sync": {
   "pulse_up": false,
-  "basket_vs_avg_pct": -7.41,
+  "basket_vs_avg_pct": -6.61,
   "partners_pct": {
-   "CCJ": -4.89,
-   "NXE": -5.12,
-   "UEC": -4.57,
-   "DNN": -4.67,
-   "UUUU": -4.52,
-   "LEU": -4.16,
-   "BWXT": -4.67,
-   "CEG": -4.5,
-   "VST": -4.58,
-   "TLN": -4.51
+   "CCJ": -3.98,
+   "NXE": -4.16,
+   "UEC": -3.69,
+   "DNN": -3.8,
+   "UUUU": -3.6,
+   "LEU": -3.29,
+   "BWXT": -3.71,
+   "CEG": -3.51,
+   "VST": -3.65,
+   "TLN": -3.55
   },
   "mult": {
    "CCJ": 0.56,
@@ -54582,16 +54610,16 @@
    "TLN": 0.56
   },
   "own_pct": {
-   "CCJ": -2.17,
-   "NXE": -0.15,
-   "UEC": -5.08,
-   "DNN": -4.14,
-   "UUUU": -5.55,
-   "LEU": -8.74,
-   "BWXT": -4.19,
-   "CEG": -5.65,
-   "VST": -4.94,
-   "TLN": -5.58
+   "CCJ": -1.14,
+   "NXE": 0.49,
+   "UEC": -3.7,
+   "DNN": -2.76,
+   "UUUU": -4.51,
+   "LEU": -7.33,
+   "BWXT": -3.59,
+   "CEG": -5.31,
+   "VST": -4.12,
+   "TLN": -4.96
   },
   "series": {
    "CCJ": [
@@ -54733,8 +54761,8 @@
     0.7237,
     0.6974,
     0.6985,
-    0.7209,
-    0.7274
+    0.7203,
+    0.7351
    ],
    "NXE": [
     1.0,
@@ -54876,7 +54904,7 @@
     0.7348,
     0.7518,
     0.7661,
-    0.7746
+    0.7796
    ],
    "UEC": [
     1.0,
@@ -55017,8 +55045,8 @@
     0.6914,
     0.6421,
     0.652,
-    0.6718,
-    0.6824
+    0.6706,
+    0.6923
    ],
    "DNN": [
     1.0,
@@ -55159,8 +55187,8 @@
     0.74,
     0.6977,
     0.7125,
-    0.7272,
-    0.7336
+    0.7252,
+    0.7442
    ],
    "UUUU": [
     1.0,
@@ -55302,7 +55330,7 @@
     0.5807,
     0.5856,
     0.6045,
-    0.6143
+    0.621
    ],
    "LEU": [
     1.0,
@@ -55444,7 +55472,7 @@
     0.7067,
     0.7057,
     0.7266,
-    0.7344
+    0.7457
    ],
    "BWXT": [
     1.0,
@@ -55586,7 +55614,7 @@
     0.8093,
     0.819,
     0.8283,
-    0.8333
+    0.8385
    ],
    "CEG": [
     1.0,
@@ -55728,7 +55756,7 @@
     0.9025,
     0.9,
     0.91,
-    0.917
+    0.9203
    ],
    "VST": [
     1.0,
@@ -55870,7 +55898,7 @@
     0.8111,
     0.808,
     0.8232,
-    0.8279
+    0.8351
    ],
    "TLN": [
     1.0,
@@ -56012,7 +56040,7 @@
     0.9603,
     0.967,
     0.9843,
-    0.9902
+    0.9967
    ],
    "basket": [
     1.0,
@@ -56153,8 +56181,8 @@
     0.8154,
     0.7754,
     0.781,
-    0.797,
-    0.8039
+    0.7966,
+    0.811
    ],
    "avg": [
     0.989,
@@ -56296,10 +56324,10 @@
     0.8762,
     0.8734,
     0.8707,
-    0.8682
+    0.8683
    ]
   },
-  "time": "2026-11-25 12:55"
+  "time": "2026-11-25 13:03"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -56431,8 +56459,8 @@
   "bf78a7a4b7c697c4",
   "d944f1045c86ab02",
   "8ad0b53ebffe0c90",
-  "4959c9e24111e1e4",
   "52e6c78d06498482",
+  "4959c9e24111e1e4",
   "0f192e3ee6f7d8a7",
   "c5ba50cbcf752a4f",
   "36bc42fa3067d0c3",
@@ -56520,6 +56548,7 @@
   "97e9eff63229f754",
   "7aa8997d91d8e2dc",
   "6cda49f31f9074ba",
+  "85cd040198b19b4d",
   "432eef714b674588",
   "bcc1a41f243d6952",
   "9ab10d3c257d1ce5",
@@ -56581,11 +56610,11 @@
   "7cceea348ff5f82c",
   "323b3d916f8bfaf7",
   "c13d3d6b63c10c3e",
-  "1e9ac2ee38a1003f",
-  "9ac4d1225260d8c6",
   "3c0d3789a7b698e6",
-  "563c0572b10f43bc",
   "656606bd4aff29ca",
+  "1e9ac2ee38a1003f",
+  "563c0572b10f43bc",
+  "9ac4d1225260d8c6",
   "4653461d7ed88855",
   "cda8fbdcb8858d7a",
   "10ac2b136225e49d",
@@ -56871,9 +56900,12 @@
   "22a45a3c7284120a",
   "4045069ffe34905f",
   "a73665945ff493c7",
-  "b2e981fc7a2e7302"
+  "b2e981fc7a2e7302",
+  "89226f35e5decf62",
+  "b4a8409648247199",
+  "b61833da8b9de7f6"
  ],
- "news_slow_at": 1795629363.9239573,
+ "news_slow_at": 1795629832.5815275,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -215440,6 +215472,21 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-25 13:03",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: LEU moved +1.6% in 9 min. Checking the news for a reason.",
+   "tickers": [
+    "LEU"
+   ],
+   "art": {
+    "big": "LEU moved +1.6% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -216218,7 +216265,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 12:55",
+  "updated": "2026-11-25 13:03",
   "total": 652,
   "week": 500,
   "places": {
@@ -216860,8 +216907,8 @@
   ]
  },
  "intel_handed": [
-  "a3f7ee9bb9023700",
   "21888157b537cd9b",
+  "a3f7ee9bb9023700",
   "d4097d0d8db37e23",
   "498180393c058995",
   "ff034b5c87c95680",
@@ -219328,12 +219375,12 @@
    "built": "2026-11-25 12:43"
   }
  ],
- "heartbeat": "2026-11-25 12:55",
+ "heartbeat": "2026-11-25 13:03",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 337,
+ "_pushed_feed": 338,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -219548,20 +219595,20 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 112.59,
-  "TLN": 348.67
+  "BWXT": 112.73,
+  "TLN": 348.04
  },
  "notes_audit": {
   "scout": {
-   "asked": 265,
-   "used": 241,
+   "asked": 267,
+   "used": 242,
    "notes": {
     "TLN Deals and contracts": 16,
     "CCJ Deals and contracts": 52,
     "BWXT Deals and contracts": 35,
-    "SECTOR Government and laws": 64,
+    "SECTOR Government and laws": 65,
     "UUUU Deals and contracts": 38,
-    "SECTOR Countries": 55,
+    "SECTOR Countries": 56,
     "CEG Deals and contracts": 31,
     "NXE Legal": 10,
     "NXE Deals and contracts": 17,
@@ -220109,7 +220156,7 @@
    ],
    [
     "2026-11-25",
-    60.75
+    60.79
    ]
   ],
   "NXE": [
@@ -220353,7 +220400,7 @@
    ],
    [
     "2026-11-25",
-    5.58
+    5.6
    ]
   ],
   "DNN": [
@@ -220475,7 +220522,7 @@
    ],
    [
     "2026-11-25",
-    1.75
+    1.76
    ]
   ],
   "UUUU": [
@@ -220719,7 +220766,7 @@
    ],
    [
     "2026-11-25",
-    81.26
+    82.14
    ]
   ],
   "BWXT": [
@@ -220841,7 +220888,7 @@
    ],
    [
     "2026-11-25",
-    112.7
+    112.76
    ]
   ],
   "CEG": [
@@ -220963,7 +221010,7 @@
    ],
    [
     "2026-11-25",
-    238.0
+    237.43
    ]
   ],
   "VST": [
@@ -221085,7 +221132,7 @@
    ],
    [
     "2026-11-25",
-    120.83
+    120.36
    ]
   ],
   "TLN": [
@@ -221207,7 +221254,7 @@
    ],
    [
     "2026-11-25",
-    348.5
+    348.12
    ]
   ],
   "AMD": [
@@ -221329,7 +221376,7 @@
    ],
    [
     "2026-11-25",
-    392.89
+    390.52
    ]
   ],
   "SMR": [
@@ -221451,7 +221498,7 @@
    ],
    [
     "2026-11-25",
-    3.22
+    3.21
    ]
   ],
   "NNE": [
@@ -221573,7 +221620,7 @@
    ],
    [
     "2026-11-25",
-    8.56
+    8.57
    ]
   ]
  },
@@ -226698,13 +226745,13 @@
  "hawk_cool": {},
  "hawk_recent": [
   [
-   1795628595.4513743,
-   "LEU",
+   1795629353.3822064,
+   "UEC",
    1
   ],
   [
-   1795629353.3822064,
-   "UEC",
+   1795629832.4877045,
+   "LEU",
    1
   ]
  ],
@@ -227113,7 +227160,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 12:55",
+ "watchdog_last": "2026-11-25 13:03",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
