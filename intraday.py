@@ -47,6 +47,8 @@ def _press(g):
 
 def features(df, t, feed):
     out = []
+    if df is None or df.empty or "ts" not in df:
+        return out  # no bars in this window (before the stock listed, or a holiday stretch): nothing to add, not a failure
     tt = df.ts.dt.time
     ext = {}
     for day, g in df[(tt < dt.time(9, 30)) | (tt >= dt.time(16, 0))].groupby(df.ts.dt.date):
