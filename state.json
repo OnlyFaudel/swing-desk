@@ -2610,18 +2610,6 @@
  "news_feed": [
   {
    "ticker": "CCJ",
-   "source": "Yahoo Finance",
-   "title": "What Sent Cameco Stock Lower Again?",
-   "link": "https://www.trefis.com/stock/ccj/articles/627836/what-sent-cameco-stock-lower-again/2026-11-23?.tsrc=rss",
-   "ts": 1795459266,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Headline is a recycled 'what sent it lower' recap; the SEC probe story is about Nvidia, not Cameco."
-  },
-  {
-   "ticker": "CCJ",
    "source": "Yahoo (CEG, related to CCJ)",
    "title": "AI Energy Stocks, From Fuel Cells To Uranium, Leap As Nvidia Soars",
    "link": "https://finance.yahoo.com/m/e2fe0876-9cdd-3a2d-96b4-7860f584a20d/ai-energy-stocks%2C-from-fuel.html?.tsrc=rss",
@@ -5607,6 +5595,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic Yahoo seasonal-returns chart page; no new company information."
+  },
+  {
+   "ticker": "NXE",
+   "source": "Google News: \"NexGen Energy\"",
+   "title": "NexGen Energy Expands PCE High-Grade Subdomain Vertically to 739m and Along Strike to 238m - Kalkine",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxON0VtUmxySUJ1MlVreVN0bi1GdVlJemRza0RTU1d4VjV5amVBeFp0UDd2MXV3Z0wwSDd4djJyTDh2XzJkWnRoX0lZVU5wVmdGNjQwYVhHUFZmNDQwb2JrbGc4T0ZPY0RjbmpKMTZWYXJIZ0dCNVgwQlhKQUMxNHI4OTBzckFqNXRjMV9PNjVhOGRIVERrQjRiaFkzalRNNWlsR3o2LS14TzFERVFJbGswVUt4M3ZaSks3c1VqVVRRV0gtNmZtMXBvOUxCRUk?oc=5",
+   "ts": 1795571027,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Kalkine drill-result recap of a previously announced high-grade subdomain expansion."
   }
  ],
  "reviews": [
@@ -7357,26 +7357,26 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.3993,
+  "day_usd": 0.40673,
   "month": "2026-11",
-  "month_usd": 1.13072,
-  "total_usd": 1.13072,
+  "month_usd": 1.13815,
+  "total_usd": 1.13815,
   "by_role": {
-   "macro": 0.11247,
+   "macro": 0.11478,
    "whale": 0.01778,
    "crowd": 0.01194,
    "level": 0.11932,
-   "scout": 0.12791,
+   "scout": 0.12836,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
    "pm": 0.07014,
-   "risk": 0.10419,
+   "risk": 0.10644,
    "investigator": 0.2062,
    "postmortem": 0.00035,
    "researcher": 0.01198,
    "engineer": 0.02902,
-   "questioner": 0.08531
+   "questioner": 0.08773
   }
  },
  "desk_log": [
@@ -7502,7 +7502,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-24 20:54 ET",
+ "last_cycle": "2026-11-24 21:04 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -54725,11 +54725,12 @@
   "b3d0414ef4889ee9",
   "1c8b73cd5ee7949f",
   "5d0c7240e494c5f9",
+  "ba91b24a8be77cec",
   "ed1aa0f23535adaa",
   "9cd5f827ff39e8aa",
   "6e29a5daa673e380",
-  "e62333d1078d965b",
   "6ae4fd45dc301c0d",
+  "e62333d1078d965b",
   "d944f1045c86ab02",
   "e8576c26f24e8b21",
   "22706e6619f0e685",
@@ -54988,10 +54989,10 @@
   "59ef25447c180fa9",
   "2afc300bcf16d7fc",
   "acd35ca94b40c5e4",
+  "11145b715ac0216e",
+  "9f1e3828f2663395",
   "efa3269c9fa1c644",
   "2b8ac242c7c5754f",
-  "9f1e3828f2663395",
-  "11145b715ac0216e",
   "c40403c1e5b7035d",
   "db717c49c87232b4",
   "a8cf3750b80937f0",
@@ -55174,9 +55175,9 @@
   "326afd4f7d0093ec",
   "a3dd031817a4feeb",
   "43e977044e9b9f2b",
-  "ba91b24a8be77cec"
+  "15c5ededcaa0a513"
  ],
- "news_slow_at": 1795571659.1771293,
+ "news_slow_at": 1795572316.550205,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -208211,6 +208212,41 @@
    ],
    "practice": false,
    "end": "20:54"
+  },
+  {
+   "id": "20261124210503016077",
+   "title": "The Questioner, Nov 24 21:04",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-24 21:05",
+   "msgs": [
+    {
+     "t": "21:05",
+     "who": "questioner",
+     "to": "risk",
+     "text": "Two things stand out in the data: the Talen (TLN) resting buy at $355.66 is still live even though the basket is below its 10-day average, which our rule forbids unless someone re-approved it in writing, and nobody has confirmed whether the PJM capacity-auction delay was decided, even though a 9.6% bounce hangs on it. I'm asking the owner-facing risk side to answer the first one before the stock moves, and the macro side the second.",
+     "outcome": false,
+     "notes": "question: Who explicitly owns the TLN resting buy at $355.66, and has anyone re-approved it in writing since the basket fell below its 10-day average? If nobody has, should it be canceled today rather than waiting for the Nov 30 expiry?\nwhy it might matter: The owner's standing instruction says no new buys until the basket is back above its 10-day average, and the desk's own files say a live order without re-approval breaks that rule. A resting order can fill on a single-day dip without anyone deciding to buy.\nask: risk\nkind: odd\nquestion: Has the PJM December 2029/30 capacity-auction delay request been decided? If not, why did TLN bounce roughly 9.6% on a regulatory question nobody has confirmed?\nwhy it might matter: Talen's earnings depend on that auction, and a large bounce on an undecided outcome means the move may reverse once the real decision lands. The desk should not treat it as"
+    },
+    {
+     "t": "21:05",
+     "who": "risk",
+     "to": "questioner",
+     "text": "Nothing in the desk's files shows anyone re-approving the TLN resting buy at $355.66 in writing since the basket dropped under its 10-day average, so it should not be live under our rule. I'd cancel it today instead of waiting for the Nov 30 expiry, because a single-day dip could fill it without anyone deciding to buy. I agree with the Questioner that this one is worth acting on now.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: tell_owner\nwatch date: 2026-11-30\nwhy: The desk's standing rule blocks new buys while the basket is below its 10-day average, and the notes show no written re-approval of this order. TLN is about 2.6% above the buy level and fell 4.6% today, so a dip-fill is plausible.\nticker: TLN\ndirection: down\ndays: 3\nfiles read: TLN Snapshot, TLN Price behavior"
+    },
+    {
+     "t": "21:05",
+     "who": "macro",
+     "to": "questioner",
+     "text": "I checked the desk's files and the headline set for the PJM December 2029/30 capacity-auction delay. Nothing in our notes or news confirms a decision, and the only related item is a 'pullback opportunity' headline that does not state the outcome, so a 9.6% TLN bounce on an undecided regulatory question should not be treated as confirmed support. I agree with the Risk Manager that the TLN resting buy needs explicit re-approval under the basket gate, since the stock is 4.6% down today and the basket is under its 10-day average.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: watch\nwatch date: 2026-11-30\nresearch test: Pull the PJM official filing or FERC docket for the delay request and record the decision date and outcome; if the decision lands after Nov 30, treat the TLN bounce as unconfirmed and do not rely on the $354.24 zone.\nwhy: Nothing in the desk notes or the headlines I was given confirms whether the PJM auction delay was decided, and TLN's latest move is unconfirmed news-driven. The basket gate is already blocking new buys, so the action is to flag the open question and watch the expiry date rather than act on the bounce.\nticker: TLN\ndirection: down\ndays: 5"
+    }
+   ],
+   "practice": false,
+   "end": "21:05"
   }
  ],
  "feed": [
@@ -212034,6 +212070,32 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-24 21:05",
+   "who": "questioner",
+   "kind": "alert",
+   "title": null,
+   "text": "Worth your attention: Who explicitly owns the TLN resting buy at $355.66, and has anyone re-approved it in writing since the basket fell below its 10-day average? If nobody has, should it be canceled today rather than waiting for the Nov 30 expiry?\n\nRisk Manager: Nothing in the desk's files shows anyone re-approving the TLN resting buy at $355.66 in writing since the basket dropped under its 10-day average, so it should not be live under our rule. I'd cancel it today instead of waiting for the Nov 30 expiry, because a single-day dip could fill it without anyone deciding to buy. I agree with the Questioner that this one is worth acting on now.",
+   "tickers": [],
+   "art": {
+    "big": "Something we almost missed",
+    "sub": "The Questioner"
+   },
+   "thread": "20261124210503016077"
+  },
+  {
+   "t": "2026-11-24 21:05",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Who explicitly owns the TLN resting buy at $355.66, and has anyone re-approved it in writing since the basket fell below its 10-day average? If nobody has, should it be canceled today rather than waiting for the Nov 30 expiry? -> relevant | Has the PJM December 2029/30 capacity-auction delay request been decided? If not, why did TLN bounce roughly 9.6% on a regulatory question nobody has confirmed? -> relevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -212710,7 +212772,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 20:54",
+  "updated": "2026-11-24 21:05",
   "total": 548,
   "week": 448,
   "places": {
@@ -213354,8 +213416,8 @@
   "df371025b77dc13a",
   "4d1201d16c499929",
   "97e5a70ea6902e58",
-  "9e331cf926161f76",
   "96bd0f50c9b41d81",
+  "9e331cf926161f76",
   "37e85b7a7ce58612",
   "f3ccd7a260e2d594",
   "a23df2d3730c8d3b",
@@ -215309,12 +215371,12 @@
    "built": "2026-11-24 20:43"
   }
  ],
- "heartbeat": "2026-11-24 20:54",
+ "heartbeat": "2026-11-24 21:04",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 313,
+ "_pushed_feed": 316,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -215469,8 +215531,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 198,
-   "used": 179,
+   "asked": 199,
+   "used": 180,
    "notes": {
     "TLN Deals and contracts": 9,
     "CCJ Deals and contracts": 41,
@@ -215480,7 +215542,7 @@
     "SECTOR Countries": 34,
     "CEG Deals and contracts": 27,
     "NXE Legal": 4,
-    "NXE Deals and contracts": 9,
+    "NXE Deals and contracts": 10,
     "DNN Deals and contracts": 8,
     "BWXT Legal": 2,
     "LEU Deals and contracts": 29,
@@ -215658,7 +215720,7 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 55,
+   "asked": 56,
    "used": 55,
    "notes": {
     "SECTOR Uranium market": 32,
@@ -215721,14 +215783,14 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 57,
-   "used": 56,
+   "asked": 58,
+   "used": 57,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 3,
     "BWXT Snapshot": 4,
     "SECTOR Uranium market": 20,
-    "TLN Snapshot": 32,
+    "TLN Snapshot": 33,
     "TLN Legal": 4,
     "BWXT Legal": 2,
     "BWXT Leadership and insiders": 2,
@@ -215737,7 +215799,7 @@
     "UEC Leadership and insiders": 2,
     "CCJ Price behavior": 1,
     "SECTOR Rules the bot follows from its discoveries": 1,
-    "TLN Price behavior": 21,
+    "TLN Price behavior": 22,
     "TLN Discoveries": 2,
     "TLN Leadership and insiders": 12,
     "CEG Snapshot": 1,
@@ -215776,24 +215838,24 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 34,
-   "used": 34,
+   "asked": 35,
+   "used": 35,
    "notes": {
-    "TLN Snapshot": 33,
-    "TLN News": 31,
+    "TLN Snapshot": 34,
+    "TLN News": 32,
     "coming_up": 5,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
     "BWXT Legal": 1,
     "CCJ Snapshot": 3,
-    "TLN Leadership and insiders": 30,
+    "TLN Leadership and insiders": 31,
     "CCJ Legal": 1,
     "TLN Legal": 6,
     "SECTOR Market regime": 1,
     "desk_lessons_from_our_mistakes": 3,
     "TLN Ownership and analysts": 4,
     "SECTOR Uranium market": 8,
-    "CEG Snapshot": 4,
+    "CEG Snapshot": 5,
     "uranium_price": 1
    },
    "since": "2026-11-23"
@@ -219678,6 +219740,24 @@
    "answer": "I checked the TLN files for Brad Berryman's Nov 17 sale. The desk's record shows it as a single $19.8M open-market sale at about $345-365 a share, not a planned 10b5-1 sale, which matters because open-market insider selling is the more informative kind. Insider net selling over 12 months is about $23M, and that pattern argues for caution before we rest a buy on TLN.",
    "verdict": "relevant",
    "action": "research"
+  },
+  {
+   "t": "2026-11-24 21:04",
+   "question": "Who explicitly owns the TLN resting buy at $355.66, and has anyone re-approved it in writing since the basket fell below its 10-day average? If nobody has, should it be canceled today rather than waiting for the Nov 30 expiry?",
+   "kind": "odd",
+   "asked": "risk",
+   "answer": "Nothing in the desk's files shows anyone re-approving the TLN resting buy at $355.66 in writing since the basket dropped under its 10-day average, so it should not be live under our rule. I'd cancel it today instead of waiting for the Nov 30 expiry, because a single-day dip could fill it without anyone deciding to buy. I agree with the Questioner that this one is worth acting on now.",
+   "verdict": "relevant",
+   "action": "tell_owner"
+  },
+  {
+   "t": "2026-11-24 21:04",
+   "question": "Has the PJM December 2029/30 capacity-auction delay request been decided? If not, why did TLN bounce roughly 9.6% on a regulatory question nobody has confirmed?",
+   "kind": "unexplained",
+   "asked": "macro",
+   "answer": "I checked the desk's files and the headline set for the PJM December 2029/30 capacity-auction delay. Nothing in our notes or news confirms a decision, and the only related item is a 'pullback opportunity' headline that does not state the outcome, so a 9.6% TLN bounce on an undecided regulatory question should not be treated as confirmed support. I agree with the Risk Manager that the TLN resting buy needs explicit re-approval under the basket gate, since the stock is 4.6% down today and the basket is under its 10-day average.",
+   "verdict": "relevant",
+   "action": "watch"
   }
  ],
  "reactor_view": {
@@ -221791,7 +221871,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 20:54",
+ "watchdog_last": "2026-11-24 21:04",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

@@ -1,0 +1,1 @@
+{"CCJ": {"done": true, "days": 2737, "failed_chunks": 0, "feed": "sip", "err": ""}, "NXE": {"done": false, "days": 2302, "failed_chunks": 5, "feed": "sip", "err": "AttributeError(\"'DataFrame' object has no attribute 'ts'\")"}}
