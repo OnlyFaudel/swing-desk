@@ -134,7 +134,10 @@ def free_cash(st, today):
     pend = st.get("pending_buys") or {}
     for k in [k for k, v in pend.items() if v.get("t", "") < str(today)]:  # never-filled orders stop counting the next day
         pend.pop(k, None)
-    return account.settled_cash(st["book"], today) - sum(a.get("dollars", 0) for a in st["armed"].values()) \
+    book = st["book"]
+    account.settled_cash(book, today)  # drops settled entries
+    settled = book["cash"] - sum(a for a, d in book["unsettled"] if d > str(today))  # NOT floored at $0: an overdraft must show
+    return settled - sum(a.get("dollars", 0) for a in st["armed"].values()) \
         - sum(v.get("usd", 0) for v in pend.values())
 
 
@@ -193,6 +196,15 @@ class Exec:
                 return None
         if tag != "pk":
             self.ensure_cash(notional)
+        # hard $1,000 rule: the broker paper account holds $100k, so it would happily lend us money. Our own books decide.
+        have = free_cash(self.st, market.now_et().date())
+        if notional > have + 0.5:
+            if have >= 5:
+                feed.post("exec", f"{t}: wanted ${notional:.0f}, only ${have:.0f} of our own money is free, so buying ${have:.0f}.", [t], kind="alert")
+                notional = have
+            else:
+                feed.post("exec", f"{t}: skipped ({note}); no free cash of our own (${have:.0f}) and nothing left to sell from parking.", [t], kind="alert")
+                return None
         try:
             o = self.br.market_buy(t, notional, price, tag)
         except Exception as e:
@@ -1500,6 +1512,56 @@ def red_team(st, desk, prices, today, now):
                                                           if worst else "No open positions to stress")})
     except Exception as e:
         print("red team", e)
+
+
+def cover_negative(st, ex, today):
+    """If our books show less than $0 cash (spent money we don't have), sell parked money right away to pay it back."""
+    fc = free_cash(st, today)
+    if fc >= -1 or st["flags"].get(f"cover{int(time.time() // 900)}:{today}"):
+        return
+    st["flags"][f"cover{int(time.time() // 900)}:{today}"] = True  # at most every 15 minutes
+    held = park_ticker(st)
+    L = (st["book"]["lots"].get(held, {}).get("park") or {})
+    px = spy_px(st, held)
+    if not (L.get("qty", 0) > 1e-6 and px):
+        notify("Cash below zero", f"Our books show ${fc:.0f} cash and nothing parked to sell. Check the account.", tags="warning")
+        return
+    q = min(L["qty"], round(-fc * 1.01 / px, 6))
+    try:
+        real = (ex.br.positions() or {}).get(held, {}).get("qty")
+        if real is not None:
+            q = min(q, float(real))
+        log_order(st, ex.br.market_sell(held, round(q, 6), px, "pkx"), f"sold parked {held} to pay back ${-fc:.0f} overspent")
+        time.sleep(0 if ex.br.name == "sim" else 2)
+        process_fills(st, ex.br, ex, today)
+        feed.post("exec", f"Paid back the ${-fc:.0f} we overspent by selling parked {held}. Cash is back at or above $0.", [held], kind="alert")
+    except Exception as e:
+        ops.note_reject(st, CFG, notify, f"cover sale {held}: {e}")
+
+
+def reconcile(st, br, today):
+    """Once a day after the close: does Alpaca hold what our books say we hold? Any gap gets an alert."""
+    if st["flags"].get(f"reconcile:{today}"):
+        return
+    st["flags"][f"reconcile:{today}"] = True
+    try:
+        real = br.positions() or {}
+    except Exception as e:
+        print("reconcile", e); return
+    mine = {}
+    for t, lots in st["book"]["lots"].items():
+        q = sum(v.get("qty", 0) for v in lots.values())
+        if q > 1e-6:
+            mine[t] = q
+    gaps = []
+    for t in sorted(set(mine) | set(real)):
+        a, b = mine.get(t, 0.0), float((real.get(t) or {}).get("qty", 0))
+        if abs(a - b) > max(1e-4, 0.01 * max(a, b)):
+            gaps.append(f"{t}: books {a:.4f}, Alpaca {b:.4f}")
+    st["reconcile"] = {"date": str(today), "gaps": gaps, "ok": not gaps}
+    if gaps:
+        notify("Books vs Alpaca don't match", "; ".join(gaps)[:300], tags="warning")
+        feed.post("officer", "Daily check of our books against Alpaca found differences: " + "; ".join(gaps), [], kind="alert")
 
 
 def park_check(st, ex, prices, today, now):
@@ -3514,6 +3576,10 @@ def cycle(st, desk, br, ex, force=()):
         manage_open(st, ex, prices, today, brk_state)
         process_fills(st, br, ex, today)
         try:
+            cover_negative(st, ex, today)
+        except Exception as e:
+            print("cover", e)
+        try:
             judgment_tick(st, desk, prices, today, now, brk_state)
         except Exception as e:
             print("judgment", e)
@@ -3583,6 +3649,11 @@ def cycle(st, desk, br, ex, force=()):
         if trading_day and dt.time(16, 5) <= now.time() <= dt.time(19, 0):  # a forced test review must not use up the real one
             st["flags"]["review_done"] = str(today)
         review(st, desk, data, prices, today, account.brakes(book, prices, CFG, today))
+    if trading_day and now.time() >= dt.time(16, 10):
+        try:
+            reconcile(st, br, today)
+        except Exception as e:
+            print("reconcile", e)
     for k in [k for k in st["flags"] if ":" in k and k.split(":")[-1][:10] < str(today - dt.timedelta(days=10))]:
         del st["flags"][k]
     os.makedirs(os.path.join(ROOT, "orders"), exist_ok=True)
