@@ -610,6 +610,14 @@
   "night_round_41_2026_11_25": {
    "trials": 2,
    "verdict": "2026-11-25 06:15. ah_dip re-check on fuller data: kept, expectation lowered (see after_hours_dip)."
+  },
+  "panic_orderflow_filters": {
+   "trials": 5,
+   "verdict": "2026-11-25 06:20 (round 42, new: same-day minute features known by 15:30 as filters for the near-close panic buy; 273 panic trades in our 11 stocks 2016-26; 6-session live exit vs S&P). Per trade 2016-20 / 2021-26: hard selling first 15 min +4.04 vs +3.11 / +3.70 vs +3.18; buying first 30 min +2.32 vs +4.22 / +2.44 vs +3.82; 3%+ off the low by 15:30 +5.17 vs +2.81 / +3.94 vs +3.31; low in the last hour +3.29 vs +3.82 / +2.69 vs +3.92; heavy first-15-min volume (>15% of day) -2.93 (n 11) vs +4.34 / -0.05 (n 14) vs +3.76. Counting each panic day once (trades cluster on the same days): heavy first-15 volume -2.20 vs +3.92 (t -2.2) / +4.44 vs +4.54 (t 0.0); others |t| <= 0.8. Rejected: per-trade differences were day-clustering, not stock-level signal."
+  },
+  "night_round_42_2026_11_25": {
+   "trials": 5,
+   "verdict": "2026-11-25 06:20. panic_orderflow_filters rejected after day-clustering."
   }
  }
 }
