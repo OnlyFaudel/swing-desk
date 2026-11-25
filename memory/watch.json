@@ -1800,6 +1800,14 @@
 "surfaced": false
 },
 {
+"date": "2026-12-08",
+"ticker": "UEC",
+"what": "UEC earnings inside the window; avoid resting buys into it.",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
 "date": "2026-12-09",
 "ticker": "CCJ",
 "what": "FOMC rate decision; broad risk-off or risk-on move that can drive the uranium and nuclear names with it.",
@@ -2012,6 +2020,30 @@
 "ticker": "TLN",
 "what": "PJM 2029/30 capacity auction closes; main earnings driver for Talen, expected to clear near the cap, and historically the release-day pop has faded over 20 sessions.",
 "by": "questioner",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "CEG",
+"what": "PJM 2029/30 capacity auction closes; do not chase the release-day pop in power names (CEG, VST, TLN).",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "VST",
+"what": "PJM 2029/30 capacity auction closes. Historically the release-day pop fades; don't chase it, and consider trimming held power stocks into it.",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "TLN",
+"what": "PJM 2029/30 base residual capacity auction closes; expect it to clear near the cap. Historically the release-day pop fades, so don't chase it.",
+"by": "level",
 "written": "2026-11-25",
 "surfaced": false
 },
