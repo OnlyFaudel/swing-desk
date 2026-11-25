@@ -386,6 +386,18 @@
    "name": "night_round_19_2026_11_25",
    "trials": 20,
    "verdict": "2026-11-25 02:20. The bots' own notebook ideas (state.notebook / research_candidates) tested on the practice book (shadow_desk, 9,844 hourly Patient Levels trades 2024-01 to 2026-11, halves at 2025-08-01) plus minute-data order flow joined on 2,362 trades in our 11 nuclear stocks. Consistent in both halves AND in nuclear and other names: open_fill -0.15R / -0.13R (t -2.4 / -2.1); group_up False -0.35R / -0.09R (t -5.8 / -1.5); 8%+ under 10-day avg -0.56R / -0.15R (t -5.0 / -1.3); all still positive or ~0. Not consistent / weak: vol_pct>4 (t -1.0 / -0.9), vol_pct>3, ret5d>10 (t -1.6 / -0.4), ret5d<-10 (older only), Wednesday (+0.09 / -0.03), AI power (+0.08 / +0.04), BWXT (-0.28 / -0.16, t ~-1), hour 15 (newer only), groups: AI chips better both (+0.17 / +0.10, t 2.1 / 1.3), nuclear worse older only, megacap worse newer only. Order flow: prior-day last-30-min selling -0.11 / -0.30R (t -0.7 / -2.1), buying better newer only, prior day sold all day weak, prior close under VWAP weak, pre-market vol 3x nothing. NOT ADOPTED as rules: one era of hourly data only (yfinance hourly stops at 730 days); written to desk_facts as sizing notes for the level/PM agents. Scripts research/round19_*.py."
+  },
+  "volatility_contraction": {
+   "trials": 9,
+   "verdict": "2026-11-25 02:35 (round 20, new family: never tested before). Next close entry vs S&P, 0.2% cost, one per stock per hold; 88 nuclear/related (daily_max) and 140 big stocks (wide), 2008-18 / 2019-26. Bollinger squeeze (width within 10% of 6-month low) then close above upper band, 10d: ours -0.47% (n 731, t -2.5) / -0.39% (n 551); big -0.06% / -0.51% (t -2.4). Same 20d: -0.11 / -0.38; +0.23 / -0.44. Squeeze breakdown 10d: -0.13 / +0.10; +0.14 / +0.20. Tightest squeeze, no direction, 20d: +0.04 / +0.14; +0.26 / -0.02. NR7 break up 5d: -0.19 (n 7545, t -4.1) / -0.16 (t -2.3); -0.18 (t -5.3) / -0.17 (t -3.8). NR7 break in uptrend: -0.22 / -0.19; -0.19 / -0.18. Inside-day breakdown 5d: -0.19 / +0.07; -0.04 / -0.13. Calm uptrend (20d vol bottom 20% of year, above 200d) 20d: -0.24 / +0.67; +0.13 / -0.55 (flips). Own-vol spike in a leader 10d: +0.04 / -0.41; -0.26 / +0.02. ALL REJECTED. Fact for agents: breakouts from tight ranges lose after costs."
+  },
+  "agent_call_bias_2026_11_25": {
+   "trials": 1,
+   "verdict": "2026-11-25 02:35: 72 agent calls (Nov 23-25): 61 down / 11 up; scored at the latest close vs SPY, down calls look right (level 82%, scout 92%, macro 100%) only because the basket fell all week; up calls mostly wrong. 59 cross-agent disagreements, mostly BWXT Nov 23 (investigator/scout up vs everyone else down; BWXT then lagged the S&P 2-3%). None resolved yet: too early to use disagreement as a signal; re-test when 200+ calls are scored. Agents told (desk_facts) not to treat agreement as evidence."
+  },
+  "night_round_20_2026_11_25": {
+   "trials": 10,
+   "verdict": "2026-11-25 02:35. Owner asked for new families, not repeats: checked the ledger first (volatility contraction, NR7, inside days, Bollinger never tested). See volatility_contraction (9 trials, all rejected) and agent_call_bias_2026_11_25. Options data has only 2 days (data/options, options_rec.py), too short to test: left recording."
   }
  }
 }

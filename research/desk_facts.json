@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 02:20",
+ "updated": "2026-11-25 02:35",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -71,6 +71,32 @@
     "researcher",
     "strategist",
     "questioner"
+   ]
+  },
+  {
+   "topic": "Chasing breakouts out of quiet, tight ranges (squeezes, narrow-range days, inside days)",
+   "answer": "Tested 2026-11-25 on 88 nuclear/related stocks and, independently, 140 big stocks, buying the next close vs the S&P after 0.2% costs, 2008-18 and 2019-26. Buying the break above a narrow-range (NR7) day loses about 0.2% in 5 days in all four tests (t -2.3 to -5.3, ~37,000 trades), also in uptrends. Breaking out of the tightest 20-day Bollinger squeeze of the past 6 months: -0.5% / -0.4% (ours), -0.1% / -0.5% (big stocks) over 10 days. Breakdowns from squeezes and inside days: nothing either way. A calm uptrend (own volatility in its lowest 20%) flips sign between eras. Lesson for levels: a quiet stock popping through its range is not a buy signal; our edge is buying at support, not chasing the first move out of a range.",
+   "roles": [
+    "level",
+    "pm",
+    "strategist",
+    "researcher",
+    "scout"
+   ]
+  },
+  {
+   "topic": "How to read the team's own predictions so far (calls list, Nov 23-25)",
+   "answer": "Of the first 72 agent predictions, 61 say 'down' and 11 'up', made in a week the basket fell, so many down calls look right only because everything fell; the up calls are mostly wrong so far. None has reached its scoring date yet (track records are empty). So several agents agreeing on 'down' is not yet evidence: it is one market move counted many times. Make a call only when you would bet on it, say 'no view' otherwise, and wait for the scored record before trusting anyone's calls.",
+   "roles": [
+    "pm",
+    "risk",
+    "questioner",
+    "investigator",
+    "macro",
+    "level",
+    "whale",
+    "researcher",
+    "strategist"
    ]
   }
  ]
