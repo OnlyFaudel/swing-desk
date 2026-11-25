@@ -295,6 +295,17 @@
     "exec",
     "level"
    ]
+  },
+  {
+   "topic": "Selling a trade that is doing well to fund a better new signal (owner's idea, tested 2026-11-25)",
+   "answer": "Whole stack 2008-26, 10% cash floor, costs included; baseline 23.2%/yr (2008-18 17.3%, 2019-26 32.0%), worst drop -40.7%. Swapping when CASH is short almost never happens (6-21 times in 18 years) because idle money is parked and sold on demand, and every version was flat or worse. The real limit is the 3-trade cap per rule. Swapping when the SLOTS are full: (a) panic slots, any version, WORSE (selling stuck panic lots to buy new ones: 21.1%/yr, worst drop -48%); (b) sharp-drop slots, selling the open sharp-drop lot with the biggest gain to buy a fresh 15%+ drop: gain 0%+ worse (22.7%), +3% mixed (16.8/33.7), +5% 17.8/32.7, +6% 17.8/33.3 (24.1%/yr, $59k vs $52k, 27 swaps), +7% 18.0/32.4, +8% 17.6/31.9 (12 swaps), +10% never triggers (the +10% take-profit sells first). Over the next 5 days the new trade beat the sold one by +2.3% (2008-18, n 11) and +1.8% (2019-26, n 16) at +6%, and +4.0/+2.8% at +7%, but -1.1% in 2019-26 at +5%. Selling a stuck loser instead is worse. Read: a sharp-drop rebound that is already up 6-7% has used most of its expected bounce (target +10%), while a fresh 15% drop has all of it ahead. Passes both eras narrowly at 6-7%, roughly 1-2 swaps a year, about +0.5-0.9%/yr; small sample. Candidate for the paper bot: swap a sharp-drop lot up 6%+ for a new sharp-drop signal when all 3 sharp slots are full; never swap panic lots.",
+   "roles": [
+    "pm",
+    "risk",
+    "strategist",
+    "researcher",
+    "exec"
+   ]
   }
  ]
 }
