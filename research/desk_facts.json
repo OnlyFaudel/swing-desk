@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 10:55",
+ "updated": "2026-11-25",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -266,6 +266,20 @@
     "strategist",
     "researcher",
     "investigator"
+   ]
+  },
+  {
+   "topic": "Nov 25 2026 morning drop and recovery: did the desk buy the dip on purpose? Should we keep more cash for days like this?",
+   "answer": "No deliberate dip buy happened. The S&P opened about -2.2% and recovered to about flat; the account went from about $935 at 9:45 to about $1,008 by 2 pm only because lots bought earlier (panic lots Nov 20, Thanksgiving and sharp-drop lots Nov 24) bounced with the market. The only order today was selling parked SPY at 9:38 to repay a $353 overspend, near the low. The level agent skipped every support buy because the basket was below its 10-day average. The panic rule could not have fired anyway: it judges the day at 3:30 pm and the S&P was no longer down 2%. Tested 2026-11-25: (1) Keeping 10-30% cash reserved for panic buys over the whole stack 2008-26 did not help (0% reserve 23.2%/yr, 10% 23.2%, 20% 22.7%, 30% 22.4%; worst drop -41 to -42% in all), because idle cash is already parked and sold on demand and the panic rule is capped at 3 names. (2) Buying stocks that open down 3%+ at the open when the S&P opens down 2%+, holding 5 days: +5.6% a trade and +2.2% vs the S&P in 2008-18, but -1.5% and -0.35% vs the S&P in 2019-26 (25 days), driven by March 2020 when it lost 15-27% in 5 days. Without Feb-Apr 2020 it was +4% in both eras, but crashes can't be left out in real life. So don't buy morning gap-downs as a rule and don't raise the cash floor; a one-day bounce is not evidence the desk learned anything.",
+   "roles": [
+    "pm",
+    "risk",
+    "macro",
+    "strategist",
+    "researcher",
+    "investigator",
+    "exec",
+    "level"
    ]
   }
  ]
