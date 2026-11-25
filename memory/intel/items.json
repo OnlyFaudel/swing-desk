@@ -20973,5 +20973,102 @@
 "submarine",
 "wins"
 ]
+},
+{
+"id": "0b0f26b1460a1db0",
+"date": "2026-11-23",
+"ts": 1795427827,
+"title": "\"They are wrong\": Australia's defence chief slams US report on AUKUS",
+"summary": "",
+"outlet": "Baird Maritime",
+"link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPS3M1V0p5TVh5TDhGSmlXRUt2b3JmMGEzaHVvelJmUkdCM3dSVjlFaXVPUFU2NlBCaGFvNnlWWUNWRmtPdTJvQnRIRVg1Z2JpaUVhYVpHM1YwMGFsTHlPNjk3R3A4a0xhVFFlbWEzcXB6MUlWUlhwV3pGVk1YeW10SmRxMDdmMFBkZDFicjNpV2dhVkc4S3EtWGhrOEdnZG5Rbi1lY3ItdG1ocUhXS2xybkR4dFJ0TV9yYlRMRU42OUtQbzJUek9V0gHUAUFVX3lxTFB2YzRTTVlud2U2bjBPLXBqZWRzLWx1YW84aTlHbmZlZXNkNGx2dkMzUWNTSFQ3Zzl6RGl2Z0M1M3NpX2k4SlhkVVczV041UmZDeG40WElhRkN4dl9KWEhySHIzUm05Wk9fTzdYMEphNmhSVGJPSDlhX25pTjFER0hZSW1ZRHZnR3NZdE5Cc1lqZnE4NG5WUldoZnhPNUZvVjdhNjJVbTN2Tko2LUNRejJQcDRmckprMWFSUU5jZU05Qkh1SEwtRW4xNVBGbVh4dDNlR2t3?oc=5",
+"place": "AUKUS and navies",
+"tickers": [
+"BWXT"
+],
+"tags": [
+"defense"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 3.5,
+"echo_of": "515517f776442fe4",
+"w": [
+"aukus",
+"australia",
+"chief",
+"defence",
+"report",
+"slams",
+"they",
+"wrong"
+]
+},
+{
+"id": "bbc618ab490ec188",
+"date": "2026-11-24",
+"ts": 1795525200,
+"title": "Cosa Identifies Significant Anomalies in Ambient Noise Tomography Survey at the Astro Uranium Project, Athabasca Basin, Saskatchewan",
+"summary": "",
+"outlet": "Yahoo Finance",
+"link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbUpXd21faktvV1hhRzQ3NVhVTUhTd29rQlI5SlJheGVjQmZHUmRXSHY2aHYweDl6QTJoeFdqbWZsRTlYRkpTTnFtM1NUZ0Nkd2dzalg4NmpRWlM5azA0cDJkQlVralc1RDJzWUR6OHVFd0c1UTlLcFJqZ19MTEtXSHp5Z241dkhpZy1tUzNCUXVvbDhSdS1TellHS0xvUGlHdkM5Mw?oc=5",
+"place": "Athabasca Basin",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 1.5,
+"echo_of": "7249344723eb0b21",
+"w": [
+"ambient",
+"anomalies",
+"astro",
+"athabasca",
+"basin",
+"cosa",
+"identifies",
+"noise",
+"project",
+"saskatchewan",
+"significant",
+"survey",
+"tomography",
+"uranium"
+]
+},
+{
+"id": "95d12e5461204a04",
+"date": "2026-11-25",
+"ts": 1795614120,
+"title": "Vistra Underperforms Industry in the Past Year: Time to Buy or Wait?",
+"summary": "",
+"outlet": "Yahoo Finance",
+"link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWUtLRjJPRHZycUl6ZEZvZ3ctNzViZUhzN2pMY3JGTkVNMzROX1Z2NGhfNURCTmJFUmVPNVFHRWlOMzhialB6NVhpNnVXSGY4cC1DR2NIYTZXLW1BamtjcXcyMWltaGsxOEtmV25MOGd2elpzaUtiNk4xSkN3QUxJSnQ0dng1NzJhNzYyVnBtcEN1V1M4emNwVkRiTnU?oc=5",
+"place": "Comanche Peak",
+"tickers": [
+"VST"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.79,
+"score": 3.08,
+"echo_of": null,
+"w": [
+"buy",
+"industry",
+"past",
+"time",
+"underperforms",
+"vistra",
+"wait",
+"year"
+]
 }
 ]
