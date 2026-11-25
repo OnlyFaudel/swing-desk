@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 01:40",
+ "updated": "2026-11-25 01:50",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -55,6 +55,11 @@
    "topic": "Other news types (archive 2019-2026)",
    "answer": "Contract, disruption, geopolitics, jobs, opposition, politics and production headlines show no consistent effect on the named stock over 5 or 20 days. Regulation news for power names leaned positive (+2.0% / +2.3% over 20 days in 2019-22 / 2023-26) but not strongly enough to trade. There is no free daily uranium futures history (UX=F on Yahoo has only today's price).",
    "source": "research/trial_ledger.json: night_round_15_2026_11_25"
+  },
+  {
+   "topic": "After-hours moves overshoot (minute data 2016-2026, our stocks)",
+   "answer": "When one of our stocks moves 3%+ after hours, the next morning's open keeps only about half of the move: after-hours jumps give back about 2.8% by 9:35 (82% of the time) and after-hours drops recover about 3% by the open. Live rule 'ah_dip' buys the drops. For a held position that jumps 3%+ after hours, expect much of it to be gone by 9:35. Separately, heavy buying in the last 30 minutes tends to fade slightly the next day (-0.2% to -0.5% vs the S&P).",
+   "source": "research/trial_ledger.json: after_hours_dip, order_flow_early_2026_11_25"
   }
  ]
 }

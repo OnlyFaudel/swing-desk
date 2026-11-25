@@ -2070,6 +2070,103 @@ def earnings_pop_check(st, ex, prices, today, now, brk_state):
                 break
 
 
+def _ah_bars(t, today):
+    """Today's minute bars from Alpaca (SIP, 15+ min delayed on the free plan; IEX fallback): regular-session volume,
+    after-hours last price and volume."""
+    import intraday, pandas as pd
+    cl = intraday._client()
+    start = dt.datetime.combine(today, dt.time(9, 30)).replace(tzinfo=market.ET)
+    end = dt.datetime.now(dt.timezone.utc) - dt.timedelta(minutes=16)
+    for feed_ in ("sip", "iex"):
+        try:
+            df = intraday._bars(cl, t, start, end, feed_)
+            if not df.empty:
+                break
+        except Exception:
+            df = pd.DataFrame()
+    if df.empty:
+        return None
+    tm = df.ts.dt.time
+    reg, ah = df[(tm >= dt.time(9, 30)) & (tm < dt.time(16, 0))], df[tm >= dt.time(16, 0)]
+    if reg.empty or ah.empty:
+        return None
+    return {"close": float(reg.close.iloc[-1]), "day_vol": int(reg.volume.sum()), "ah_px": float(ah.close.iloc[-1]), "ah_vol": int(ah.volume.sum())}
+
+
+def ah_dip_check(st, ex, today, now):
+    """After-hours dip (research 2026-11-25, after_hours_dip, Alpaca SIP minute bars 2016-2026): one of our stocks trading 3%+
+    under its 4 PM close after hours, on real volume (1%+ of the day's), bought at that after-hours price and sold at 9:35 the
+    next morning: +1.84% (2016-18, n 36, up 69%) / +1.47% (2019-26, n 119, up 65%) after a 1% cost; positive for all 7 names
+    tested. After-hours prices overshoot: the next open keeps only about half the move. Live: 16:30-19:45 ET, 8% of the
+    account per trade, max 2, extended-hours limit buy just above the current price, sold in the first minutes after the open."""
+    cfg = CFG.get("ah_dip", {})
+    if not cfg.get("enabled") or not (dt.time(16, 30) <= now.time() <= dt.time(19, 45)) or now.weekday() >= 5 or market.is_holiday(today):
+        return
+    slot = f"ahdip{now.hour}{now.minute // 15}:{today}"
+    if st["flags"].get(slot):
+        return
+    st["flags"][slot] = True
+    book = st["book"]
+    open_n = sum(1 for l in book["lots"].values() if (l.get("auto") or {}).get("qty", 0) > 1e-6 and l["auto"].get("setup") == "ah_dip")
+    pend = sum(1 for v in (st.get("pending_meta") or {}).values() if isinstance(v, dict) and v.get("setup") == "ah_dip")
+    if open_n + pend >= cfg.get("max_open", 2):
+        return
+    try:
+        live = afterhours._fetch(list(T))  # near-real-time after-hours prices (Yahoo)
+    except Exception:
+        live = {}
+    for t in T:
+        if open_n + pend >= cfg.get("max_open", 2):
+            break
+        L = live.get(t)
+        if not L or L["ah_px"] > L["close"] * (1 - cfg.get("drop_pct", 3) / 100):
+            continue  # not down enough right now
+        if any((book["lots"].get(t, {}).get(k) or {}).get("qty", 0) > 1e-6 for k in ("auto", "panic", "trade")):
+            continue
+        placed = st.setdefault("ah_dip_placed", {})
+        if placed.get(t) == str(today):
+            continue  # one after-hours buy per stock per night, even before the fill shows up
+        b = _ah_bars(t, today)  # confirm on Alpaca's own bars: real after-hours volume, same move
+        if not b or b["ah_vol"] < cfg.get("min_vol_share", 0.01) * b["day_vol"] or b["ah_px"] > b["close"] * (1 - cfg.get("drop_pct", 3) / 100):
+            continue
+        px = float(L["ah_px"])
+        limit = round(px * (1 + cfg.get("limit_buffer_pct", 0.3) / 100), 2)
+        dollars = min(account.equity(book, st.get("last_prices") or {}) * cfg.get("size_pct", 8) / 100 * dd_mult(st), free_cash(st, today))
+        if dollars < 5:
+            feed.post("nightwatch", f"After-hours dip on {t} ({(px / b['close'] - 1) * 100:+.1f}%) but no free cash for it tonight.", [t], kind="alert")
+            continue
+        meta = {"setup": "ah_dip", "by": "rules", "exit_on": sessions_after(str(today), 1), "days": 1,
+                "why": f"after-hours dip: {t} {(px / b['close'] - 1) * 100:+.1f}% vs the 4 PM close on {b['ah_vol']:,} shares"}
+        try:
+            o = ex.br.limit_buy_ext(t, round(dollars / limit, 6), limit, "au", price_now=px)
+        except Exception as e:
+            ops.note_reject(st, CFG, notify, f"after-hours buy {t}: {e}")
+            continue
+        st["pending_meta"][o["client_id"]] = meta
+        st.setdefault("pending_buys", {})[o["client_id"]] = {"usd": float(dollars), "t": str(today)}
+        log_order(st, o, "after-hours dip buy")
+        placed[t] = str(today)
+        for k in [k for k, v in placed.items() if v < str(today - dt.timedelta(days=7))]:
+            placed.pop(k, None)
+        pend += 1
+        feed.post("nightwatch", f"After-hours dip: {t} is {(px / b['close'] - 1) * 100:+.1f}% under its 4 PM close (${b['close']:.2f} -> "
+                  f"${px:.2f}) on real volume. Placed an after-hours limit buy, ${dollars:.0f} at up to ${limit}. It sells in the first "
+                  "minutes after tomorrow's open. Tested 2016-2026: +1.5-1.8% a trade after costs, up about 2 times in 3.", [t], kind="trade",
+                  art={"big": f"{t} after-hours dip", "sub": f"limit ${limit}, sells at the open"})
+        notify(f"After-hours dip buy: {t}", f"{(px / b['close'] - 1) * 100:+.1f}% after hours; limit buy ${dollars:.0f} at ${limit}, sells at the open",
+               tags="crescent_moon")
+
+
+def ah_dip_exit(st, ex, prices, today, now):
+    """Sell after-hours dip lots in the first minutes after the open (the edge is gone by the open)."""
+    if not (dt.time(9, 31) <= now.time() <= dt.time(10, 30)):
+        return
+    for t, lots in list(st["book"]["lots"].items()):
+        L = lots.get("auto") or {}
+        if L.get("qty", 0) > 1e-6 and L.get("setup") == "ah_dip" and L.get("opened") != str(today) and prices.get(t):
+            ex.exit_panic(t, prices[t], "after-hours dip: sold at the open as planned", kind="auto", tag="aux")
+
+
 def thanksgiving_dates(year):
     d = dt.date(year, 11, 1)
     tg = d + dt.timedelta(days=(3 - d.weekday()) % 7 + 21)
@@ -2132,7 +2229,7 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
             if L.get("target") and px >= L["target"]:
                 ex.exit_panic(t, px, f"conviction trade: target ${L['target']} hit", kind="auto", tag="aux"); continue
         if L.get("qty", 0) > 1e-6 and L.get("setup") != "sharp_drop" and L.get("exit_on") and (str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late)):
-            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{ {'conviction': 'conviction', 'year_end': 'year-end bounce', 'uranium_momentum': 'uranium momentum', 'ai_power': 'AI power day', 'fear_fade': 'fear fading', 'thanksgiving': 'Thanksgiving run-up', 'comeback': 'intraday comeback', 'earnings_pop': 'earnings-pop drift'}.get(L.get('setup'), 'discovery') } trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
+            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{ {'conviction': 'conviction', 'year_end': 'year-end bounce', 'uranium_momentum': 'uranium momentum', 'ai_power': 'AI power day', 'fear_fade': 'fear fading', 'thanksgiving': 'Thanksgiving run-up', 'comeback': 'intraday comeback', 'earnings_pop': 'earnings-pop drift', 'ah_dip': 'after-hours dip'}.get(L.get('setup'), 'discovery') } trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
     if not (dt.time(15, 30) <= market.cclock(now) <= dt.time(15, 58)) or st["flags"].get(f"auto:{today}"):
         return
     st["flags"][f"auto:{today}"] = True
@@ -3756,6 +3853,10 @@ def cycle(st, desk, br, ex, force=()):
         manage_open(st, ex, prices, today, brk_state)
         process_fills(st, br, ex, today)
         try:
+            ah_dip_exit(st, ex, prices, today, now)
+        except Exception as e:
+            print("ah dip exit", e)
+        try:
             cover_negative(st, ex, today)
         except Exception as e:
             print("cover", e)
@@ -3801,6 +3902,10 @@ def cycle(st, desk, br, ex, force=()):
         except Exception as e:
             traceback.print_exc()
     intel_tick(st, today, force="intel" in force)
+    try:
+        ah_dip_check(st, ex, today, now)
+    except Exception as e:
+        print("ah dip", e)
     try:  # did every scheduled job run? (alerts + one automatic retry)
         watchdog.check(st, now, market.cclock, market.is_holiday,
                        lambda title, body: notify(title, body, tags="rotating_light", priority="high", who="watchdog"),

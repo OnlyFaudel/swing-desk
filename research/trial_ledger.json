@@ -369,6 +369,14 @@
   "night_round_15_2026_11_25": {
    "trials": 19,
    "verdict": "2026-11-25 01:40. Every news type in memory/archive_events.json (2019-2026) by group, next close, vs S&P, halves 2019-22 / 2023-26 (5d and 20d). Only consistent result: news_restart (all names) 5d -2.77% (n 30, t -2.4) / -2.16% (n 134, t -3.7); history file 2008-18 -2.10% (n 6). Sell-the-news; no shorting, so it becomes a 'no new buys for 5 sessions after restart news' fact for the agents. Others (contract, disruption, geopolitics, jobs, opposition, politics, production, regulation) inconsistent; regulation for power +2.00% (t 1.2) / +2.32% (t 2.2) over 20d, all names +0.69% / +1.86%: not enough. Data: Yahoo has no uranium futures history (UX=F one row)."
+  },
+  "after_hours_dip": {
+   "trials": 14,
+   "verdict": "2026-11-25 01:45, from the new minute data (Alpaca SIP bars 2016-2026, 11 of our stocks, data/intraday). After-hours move vs the 4 PM close -> next open / close, vs the after-hours price: AH up 3%+ -> next open -3.43% (2016-18, n 100, up only 8%) / -2.22% (2019-26, n 341); AH down 3%+ -> next open +3.84% (n 56, up 88%) / +3.17% (n 146, up 75%). Not a data artifact: on real volume (1%+ of the day) the next open still keeps ~50% of the after-hours move (it overshoots by about half). Trade: buy an after-hours drop of 3%+ on real volume at the after-hours price, sell at 9:35: +1.84% (2016-18, n 36, t 3.3, up 69%) / +1.47% (2019-26, n 119, t 3.1, up 65%) after a 1% cost; sell at the open +2.03% / +1.67%; positive for all 7 names (BWXT +2.2%, CCJ +1.8%, DNN +2.4%, LEU +0.8%, NXE +3.0%, UEC +1.2%, UUUU +1.1%); worst 5% of trades -4.9%. Alpaca supports fractional extended-hours limit orders (asset flag fractional_eh_enabled). ADOPTED: 8% per trade, max 2, lineup only, 16:30-19:45 ET, confirmed on Alpaca's own after-hours volume, sold at the first cycle after the open; parking keeps 10% cash (was 3%) to fund it. Mirror (after-hours jump 3%+ gives back ~2.8% by 9:35, 82% of the time): fact for the agents, no rule yet."
+  },
+  "order_flow_early_2026_11_25": {
+   "trials": 10,
+   "verdict": "2026-11-25 01:45, minute data (11 stocks, 2016-2026) ahead of the 05:30 run. (1) Gap-down 5%+, buy 9:35 -> close vs S&P open->close: +0.63% (2016-18, n 31) / +0.43% (2019-26, n 216, t 1.0); first-15-min buying pressure > 0: +1.65% / +0.84% (t 1.4); selling pressure: -0.45% / +0.10%; buy at 9:45: +1.53% / -0.03%. Not enough. (2) Sharp 15%/5-day drop -> 10 days absolute: light selling that day +19.3% (n 16) / +2.85%; heavy selling +1.96% / +3.11% (n 21); volume 2x+ +9.9% / +4.8%: no reliable split (small samples). (3) Last-30-minute buying pressure 0.4+ -> next close vs S&P -0.50% (t -2.9) / -0.18% (t -1.6): late-day buying fades a little; selling pressure +0.24% / +0.10%: nothing to trade, a fact for the agents."
   }
  }
 }

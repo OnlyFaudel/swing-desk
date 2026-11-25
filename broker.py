@@ -67,6 +67,14 @@ class SimBroker:
     def market_sell(self, t, qty, price_now, tag="exit"):
         return self._fill(self._add(symbol=t, side="sell", kind="market", qty=qty6(qty), price=penny(price_now), client_id=cid(tag)), price_now)
 
+    def limit_buy_ext(self, t, qty, limit, tag="au", price_now=None):
+        """Extended-hours limit buy (simulated: fills at once if the current price is at or under the limit)."""
+        o = self.limit_buy(t, qty, limit, tag)
+        if price_now is not None and float(price_now) <= float(limit):
+            o["instant"] = True
+            return self._fill(o, price_now)
+        return o
+
     def cancel(self, oid):
         for o in self.s["orders"]:
             if o["id"] == oid and o["status"] == "open":
@@ -97,8 +105,8 @@ class SimBroker:
         o.update(status="filled", fill_price=penny(px), filled_at=dt.datetime.now().strftime("%Y-%m-%d %H:%M"))
         self.s["fills"].append({k: o[k] for k in ("id", "symbol", "side", "kind", "qty", "fill_price", "filled_at", "client_id")})
         del self.s["fills"][:-500]
-        if o["kind"] == "market":
-            self.s.setdefault("unsynced", []).append(o)  # reported on the next sync()
+        if o["kind"] == "market" or o.get("instant"):
+            self.s.setdefault("unsynced", []).append(o)  # reported on the next sync() (instant fills, incl. simulated after-hours buys)
         return o
 
     def sync(self, intraday):
@@ -140,6 +148,12 @@ class AlpacaBroker:
         kw["side"] = OrderSide.BUY if kw["side"] == "buy" else OrderSide.SELL
         kw["time_in_force"] = TimeInForce.DAY
         return self.c.submit_order(cls(**kw))
+
+    def limit_buy_ext(self, t, qty, limit, tag="au", price_now=None):
+        """Extended-hours (4-8 PM) limit buy; fractional shares need the asset's fractional_eh_enabled flag."""
+        from alpaca.trading.requests import LimitOrderRequest
+        return self._o(self._req(LimitOrderRequest, symbol=t, qty=qty6(qty), side="buy", limit_price=penny(limit),
+                                 extended_hours=True, client_order_id=cid(tag)))
 
     @staticmethod
     def _o(o):
