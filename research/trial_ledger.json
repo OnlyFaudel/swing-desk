@@ -554,6 +554,18 @@
   "night_round_32_2026_11_25": {
    "trials": 5,
    "verdict": "2026-11-25 04:45. sympathy_trim_and_crowded_weeks; corrected the round-31 fact so agents don't cut live rebound trades on sympathy jumps."
+  },
+  "supply_cut_news": {
+   "trials": 3,
+   "verdict": "2026-11-25 04:55 (round 33, new split of news_production by title: supply cut/problem vs more supply vs other; one per 10 sessions per kind). Miners vs S&P 5d / 20d, 2019-22 / 2023-26: supply cut -3.49 / +6.00 (n 2), +0.46 / +1.04 (n 7); more supply -0.48 / +3.14 (n 9), +0.43 / +1.08 (n 22); other -0.48 / +4.46 (n 44), +1.43 / +0.93 (n 60). Nothing: rejected."
+  },
+  "selloff_leadership": {
+   "trials": 12,
+   "verdict": "2026-11-25 04:55 (round 33, new). Group basket 15%+ off its 60-day high crosses back above its 20-day average (one per 40 days); buy the 2 that held up best vs the 2 that fell most, 20d vs S&P. Ours (price>3): fell most +2.80% (n 35, t 0.5) / +5.17% (n 27, t 1.5) vs group +0.78 / +2.74, 00-07 -12.24% (n 4); held up best -0.22 / +0.54 (no price filter). 10d: +5.73 / +0.04. Worst 3: +2.52 / +2.92. 20% trigger: -2.10 / +7.36. Related 78: worst 2 +22.7 (n 3) / +9.3 (n 10) / +20.1 (n 6), worst 5 +16.3 / +4.3 / +16.1: few events, lottery-like. Other groups: semis fell-most +0.40 / -0.50 / +3.63 vs group +0.02 / -0.37 / +2.59; banks no; energy 19-26 only; megatech mixed. 'Leaders lead the recovery' is FALSE for us (laggards bounce harder) but the laggard edge is not significant and fails 2000-07: rejected."
+  },
+  "night_round_33_2026_11_25": {
+   "trials": 15,
+   "verdict": "2026-11-25 04:55. supply_cut_news, selloff_leadership: both rejected. Options data still only 2 days (Nov 23-24)."
   }
  }
 }
