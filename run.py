@@ -1680,6 +1680,32 @@ def seasonal_check(st, ex, data, prices, today, now):
             feed.post("chief", "Year-end bounce: bought " + ", ".join(bought) + ", 10% each, selling around Jan 13. History (2007-2025): "
                       "the 3 worst names of the year rose 13.9% on average from late December to mid-January, up in 15 of 19 years.",
                       [b.split()[0] for b in bought], kind="alert", art={"big": "Year-end bounce", "sub": "Seasonal trade, sells mid-January"})
+        try:  # second tier (research 2026-11-24, year_end_wide): the 5 worst year-to-date among related + big stocks, small size
+            ye = CFG.get("year_end_wide", {})
+            if ye.get("enabled"):
+                import yfinance as yf
+                pool = [t for t in dict.fromkeys((CFG.get("panic_rebound", {}).get("related_universe") or [])
+                                                 + (CFG.get("sharp_drop", {}).get("tier2_universe") or [])) if t not in T]
+                raw = yf.download(pool, start=f"{today.year}-01-01", auto_adjust=True, progress=False)["Close"]
+                ytd2 = {}
+                for t in pool:
+                    c = raw[t].dropna() if t in raw else None
+                    if c is not None and len(c) > 150 and float(c.iloc[-1]) >= 3:
+                        ytd2[t] = (float(c.iloc[-1]) / float(c.iloc[0]) - 1, float(c.iloc[-1]))
+                got = []
+                for t in sorted(ytd2, key=lambda x: ytd2[x][0])[:ye.get("n", 5)]:
+                    if account.lot(book, t, "auto")["qty"] > 1e-6:
+                        continue
+                    meta = {"setup": "year_end", "by": "rules", "exit_on": f"{today.year + 1}-01-15", "days": "mid-January",
+                            "why": f"year-end bounce (wider list): {t} is {ytd2[t][0] * 100:+.0f}% this year, among the 5 worst related/big stocks"}
+                    if ex.buy_market(t, eq * ye.get("size_pct", 3) / 100 * dd_mult(st), ytd2[t][1], "au", meta, "year-end bounce buy (wider list)"):
+                        got.append(f"{t} ({ytd2[t][0] * 100:+.0f}%)")
+                if got:
+                    feed.post("chief", "Year-end bounce, wider list: bought " + ", ".join(got) + f", {ye.get('size_pct', 3)}% each, selling around "
+                              "Jan 15. Tested 2007-2025: the 5 worst related stocks beat the S&P by +0.7%/+5.3% (2008-18/2019-25), the 5 worst "
+                              "big stocks by +3.4%/+3.5%; thin evidence (one trade a year), so small size.", [g.split()[0] for g in got], kind="alert")
+        except Exception as e:
+            print("year-end wide", e)
     up = uprice.summary() or {}
     sp = dict(up.get("spot") or {})
     mon = sp.get("month")

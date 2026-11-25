@@ -309,6 +309,14 @@
   "ideas_2026_11_24_night": {
    "trials": 9,
    "verdict": "2026-11-24 23:10 (owner: more ideas + an after-hours bot). (1) Sympathy selling: a group mate crashes 10%+ on its own (S&P > -1%), buy peers that fell 3-8%: 2008-18 n=1, 2019-26 +1.26% 5d vs S&P (t 0.9): rejected. (2) AI scare day (NVIDIA -6%+) -> buy power names: stock-level 2019-26 +3.84% 10d (t 5.7) but one point per scare day 2008-18 -1.04% (t -1.0), 2019-26 +1.96% (t 1.6); other utilities (independent check) -0.78%/-0.50%; by year only 2024 +4.5, 2025 +9.6, 2026 +12.0: AI-era-only, put in the recent-era practice book (recent.py ai_scare), no money. Lineup on scare days +0.55/+1.23% (noise). (3) Options-expiration week: basket vs S&P -0.05/-0.27% per week; week after +0.45/+0.62% vs +0.05/+0.55% all weeks: noise. After-hours watcher (afterhours.py) built as a no-money practice log scored next day; the historical after-hours test runs on the minute data."
+  },
+  "night_round_3_2026_11_24": {
+   "trials": 14,
+   "verdict": "2026-11-24 23:40 (owner: test all 8 ideas). Santa rally (6 sessions before the last Dec session -> 2nd Jan session): our 10 +8.76%/+1.58% vs S&P (t 1.5/0.8, hindsight names, overlaps the live year-end trade), related +0.29/+0.83, big stocks +0.04/+0.58: rejected. Russell reconstitution (calendar proxy, no membership data), small nuclear names May 15 -> last June Friday: -2.75%/+9.30% vs S&P (t -1.0/1.0), after: -2.13/-3.95: rejected. Kazatomprom (London) +/-4% day -> our miners from the US close: only 11 events since 2019, next day -0.34/-0.91%, the move is already in the same-day close: rejected. Turn of month: already in strategy_sweep_2026_11. Investor days: no historical dates: not testable. Whole-account (all rules + big-stock sharp tier, base 25.2%/yr, 17.7/36.3, worst -40.5%): panic fill with big stocks 24.4% (18.3/33.4): rejected; comeback with big stocks 25.4% (18.1/36.1), worst -41.6%: rejected (mixed); sharp-drop x1.5 when VIX>30: 25.6% (18.2/36.6) but worst -46.3%: rejected; x0.5: 22.8%: rejected."
+  },
+  "year_end_wide": {
+   "trials": 3,
+   "verdict": "2026-11-24: year-end bounce on more stocks: 5 worst year-to-date, buy ~Dec 20, sell ~Jan 15, 2007-2025. Related: +0.73% vs S&P (2008-18, t 0.3, 8/12 years) / +5.34% (2019-25, t 1.5, 5/7). 115 big stocks: +3.38% (t 1.8, 9/12) / +3.53% (t 1.2, 6/7). Live rule (our 10, 3 worst): +6.07% / +3.89%. ADOPTED small: 5 worst related + big stocks at 3% each (one trade a year, thin evidence)."
   }
  }
 }
