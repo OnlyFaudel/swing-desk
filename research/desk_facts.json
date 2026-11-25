@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 01:00",
+ "updated": "2026-11-25 01:30",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -35,6 +35,16 @@
    "topic": "The recurring pattern: buying weakness in our names",
    "answer": "Across nearly every 'buy after weakness' signal (3 down days, stock-level panic days, sector selloffs, volume spikes, 52-week lows), our stocks LOST vs the S&P in 2008-2018 and GAINED in 2019-2026. The live rules that buy crashes (panic, sharp drop, comeback) passed in both eras; looser versions only work in the AI era. If the market regime turns like 2008-2018, the loose versions would hurt: that is why they stay in the practice book.",
    "source": "research/trial_ledger.json: night_round_12_2026_11_25, night_round_4/5/10"
+  },
+  {
+   "topic": "Seasons for our basket (vs the S&P, 2008-2026)",
+   "answer": "January-February has been the best stretch: our 10 beat the S&P by +3.7% (2008-18, 6 of 11 years) and +5.7% (2019-26, 7 of 8); related stocks +0.7% / +3.7%. November has been mildly weak in both eras for both groups (our 10 -1.2% / -3.1%). March was weak for our 10 (-7.9% / -3.2%) but not for related stocks, so treat that as noise. Only ~19 years per month: use as a tilt in the daily stance, not a trade.",
+   "source": "research/trial_ledger.json: night_round_14_2026_11_25"
+  },
+  {
+   "topic": "Fear gauges beyond the VIX",
+   "answer": "SKEW (crash pricing) and VIX9D-over-VIX (short-term panic) did not predict our basket vs the S&P in either era. A VVIX spike (top 5% of the past year) flipped: -3.0% in 2008-18, +3.3% in 2019-26 over 10 days; it is in the practice book, no money.",
+   "source": "research/trial_ledger.json: night_round_14_2026_11_25"
   }
  ]
 }

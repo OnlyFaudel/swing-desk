@@ -21,6 +21,8 @@ RULES = {
     "tech_panic": "Chip stocks (SMH) fall 3%+ while the S&P falls less than 2%: buy our 10 that fell 3%+ and sit 15%+ under their "
                   "20-day high, sell at +10% or after 6 sessions (per day: 2008-18 +0.50% (n 9), 2019-26 +2.21% vs S&P (t 1.7); "
                   "with related stocks -2.46% / +1.13%: flipped between eras)",
+    "vvix_spike": "VVIX (volatility of the VIX) in its top 5% of the past year: buy our 10 at the close, sell after 10 sessions "
+                  "(one point per spike: 2008-18 -2.96% vs S&P (t -2.8), 2019-26 +3.25% (t 2.3): flipped between eras)",
     "ai_scare": "NVIDIA down 6%+ in a day: buy the power trio (CEG, VST, TLN) at the close, sell after 10 sessions (one data point per "
                 "scare: 2008-18 -1.0% vs S&P, 2019-26 +2.0% (t 1.6); 2024 +4.5%, 2025 +9.6%, 2026 +12.0%: an AI-era-only pattern)",
 }
@@ -52,7 +54,7 @@ def run(lineup, related, today=None, breadth=None):
     b = _load()
     if b.get("last_run") == str(today):
         return []
-    names = list(dict.fromkeys(list(lineup) + list(related) + ["SPY", "NVDA", "CEG", "VST", "TLN", "SMH"] + list(breadth or [])))
+    names = list(dict.fromkeys(list(lineup) + list(related) + ["SPY", "NVDA", "CEG", "VST", "TLN", "SMH", "^VVIX"] + list(breadth or [])))
     raw = yf.download(names, period="14mo", auto_adjust=True, progress=False)
     C, V = raw["Close"], raw["Volume"]
     if C.index[-1].date() != today:
@@ -107,6 +109,12 @@ def run(lineup, related, today=None, breadth=None):
                 c = C[t].dropna() if t in C else None
                 if c is not None and len(c) > 21 and float(c.iloc[-1] / c.iloc[-2] - 1) <= -0.03 and float(c.iloc[-1] / c.tail(20).max() - 1) <= -0.15:
                     enter("tech_panic", t, 6)
+    if "^VVIX" in C and len(C["^VVIX"].dropna()) > 250 and b.get("last_vvix", "") < str(today - dt.timedelta(days=14)):
+        vv = C["^VVIX"].dropna()
+        if float(vv.iloc[-1]) >= float(vv.tail(250).quantile(0.95)):
+            b["last_vvix"] = str(today)
+            for t in lineup:
+                enter("vvix_spike", t, 10)
     bl = [t for t in (breadth or []) if t in C and len(C[t].dropna()) > 2]
     if len(bl) >= 50:
         moves = [float(C[t].iloc[-1] / C[t].iloc[-2] - 1) for t in bl if not np.isnan(C[t].iloc[-1]) and not np.isnan(C[t].iloc[-2])]

@@ -361,6 +361,10 @@
   "night_round_13_2026_11_25": {
    "trials": 9,
    "verdict": "2026-11-25 01:10. Earnings-pop refinements on 620 big-stock pops (next close, 20 days vs S&P, <=2018 / 2019+): pop 8-12% +0.61% / +1.47%; 12%+ +0.96% / +1.23%; beaten down 20%+ over the prior 60 days +2.07% (n 55, t 1.0) / +2.74% (n 37, t 1.2); already up 10%+ +0.80% / +0.43%; S&P above 200-day +0.17% / +1.37%; below +1.57% / +1.44%. No filter is significant (t <= 1.5 everywhere): the simple live rule stays, no curve-fitting. Earnings DROP -8% or worse on big stocks -> 20 days +0.26% / -0.07%: no rebound and no continued fall."
+  },
+  "night_round_14_2026_11_25": {
+   "trials": 14,
+   "verdict": "2026-11-25 01:30 (new data: ^VVIX, ^SKEW, ^VIX9D from Yahoo). Our 10 basket vs S&P, 10 days, one point per signal (10-day gap), 2008-18 / 2019-26: VVIX top 5% of past year -2.96% (t -2.8) / +3.25% (t 2.3): flipped -> practice book 'vvix_spike'; VVIX top 5% and falling -0.54% / +2.12%; SKEW top 5% -1.04% / +0.38%; SKEW bottom 5% +0.54% / +0.83%; VIX9D 10%+ over VIX -1.54% / +0.55%; easing -0.22% / -0.55%: nothing. Seasons (per year, buy-and-hold window vs S&P after costs): Jan-Feb our 10 +3.73% (t 1.2, 6/11 yrs) / +5.71% (t 2.2, 7/8), related +0.68% (5/11) / +3.74% (t 1.9, 6/8): weak in 2008-18, overlaps the live year-end trade: not traded, fact for the agents. November our 10 -1.22% / -3.09%, related -0.96% (t -2.2) / -0.73%. March our 10 -7.87% / -3.16% but related +0.36% / +1.04% (not independent). Weekday: no effect (Tuesday -0.24%/day 2008-18 t -2.3 flips to +0.21% 2019-26)."
   }
  }
 }
