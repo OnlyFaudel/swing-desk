@@ -357,6 +357,10 @@
   "night_round_12_2026_11_25": {
    "trials": 12,
    "verdict": "2026-11-25 01:00. Bots' price-event file (memory/price_events.json) re-tested on our prices, buy the NEXT close, 10 days vs S&P, one per stock per 10 days, 2008-18 / 2019-26: 3 down days -0.14% / +1.07%; market panic (stock-level) -1.85% (t -2.2) / +1.11%; sector selloff -1.00% / +0.87%; new 52-week high -0.48% / +1.35%; gap up 5% +1.45% / -0.09%; volume 3x -0.79% / +1.76% (t 2.2); new 52-week low -0.46% / +1.00%; gap down 5% +1.68% (t 1.0) / +1.98% (t 1.5); spike up alone +1.06% / -1.66%; drop alone +5.70% (n 40) / +0.90%. Theme: 'buy weakness in our names' lost 2008-18 and paid 2019-26 (the AI-era pattern the practice book is tracking). Gap-down-5% next close is positive in both eras but weak (t 1.0/1.5): logged, not traded (the live sharp-drop rule already covers most of these). Correction: the 'fresh 52-week highs lag in both eras' fact from round 10 depends on horizon and benchmark; softened in desk_facts."
+  },
+  "night_round_13_2026_11_25": {
+   "trials": 9,
+   "verdict": "2026-11-25 01:10. Earnings-pop refinements on 620 big-stock pops (next close, 20 days vs S&P, <=2018 / 2019+): pop 8-12% +0.61% / +1.47%; 12%+ +0.96% / +1.23%; beaten down 20%+ over the prior 60 days +2.07% (n 55, t 1.0) / +2.74% (n 37, t 1.2); already up 10%+ +0.80% / +0.43%; S&P above 200-day +0.17% / +1.37%; below +1.57% / +1.44%. No filter is significant (t <= 1.5 everywhere): the simple live rule stays, no curve-fitting. Earnings DROP -8% or worse on big stocks -> 20 days +0.26% / -0.07%: no rebound and no continued fall."
   }
  }
 }
