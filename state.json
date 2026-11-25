@@ -587,7 +587,9 @@
   "ahdip162:2026-11-25": true,
   "nightwatch162:2026-11-25": true,
   "ahdip163:2026-11-25": true,
-  "intraday:2026-11-25": true
+  "intraday:2026-11-25": true,
+  "nightwatch170:2026-11-25": true,
+  "ahdip170:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -4171,30 +4173,6 @@
  },
  "news_feed": [
   {
-   "ticker": "TLN",
-   "source": "Google News: \"Talen Energy\"",
-   "title": "Talen Energy CFO Cole Gifts 7,445 Shares to Charity - kalkine.com",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSWpHZHpYN3F5ZFQ0ZFlEc1I1WXY5Q1NvQk1abFA5aUtwd1V5czJVaFA4bWU4OGNBWDZhQlYySEkxYm9iTUhiNnh6ODNNcnFzdFdhNjVIZmIwS3dzUG9ON042QjdOaWNwRkxYcTZPUkdUaTZzenJSOXRKOF9meFp3MWczaEFmbnZNbGhaRzBpbmRZems?oc=5",
-   "ts": 1795482255,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "CFO gifting shares to charity is routine, not a sale for profit."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Price to sales forward of Noble Plains Uranium Corp \u2013 FWB:INE0 - TradingView",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMUNnZEhicmY4X0Uxd3hQcTFYVElyZzdiMW1td0hCYmV6VVpscmExRUFiOHV0bldJWTJwc2tfelFCdjZHMkNjcmFFOVJRSmhudXlfbUdFUHNrYnFtVGU3c24zX0lGcHVMVlg5QXFHSzBBVWdMTTRUbDN3S3JjaElqay10NlpDTnVudjBJdHF3THJyNDdrTXRBbnV3?oc=5",
-   "ts": 1795478088,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Price-to-sales recap for a different uranium company, not new information."
-  },
-  {
    "ticker": "CCJ",
    "source": "Google News: Westinghouse reactor",
    "title": "Westinghouse, BWXT Canada strike AP1000 component manufacturing deal - StreetInsider",
@@ -7169,6 +7147,30 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Kalkine explainer on Patterson Corridor East grade; recycled coverage, no new facts."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "What Triggered The Move In Cameco Stock? - Trefis",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSlNIM3Z2X0NDQ2dMNTlJVi1BU19pbWhiMEQ4UEJuOUJ6Z0Y4aWVvWGpKU1ktbDAxemFwRHFkTWVvSmkxUmN1NUlrcWRrX2VqUzkzRHZTaUFYNzdzU0FFMzRQSDNvTmJUZm01UElxMS1GRl9RU1pFbTljQkJYaU5aOGd4aGk3Y1B6dnZuNEhJdFgxeE9ueVAxZEFlLUtUVm1p?oc=5",
+   "ts": 1795643666,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Trefis explainer on a past price move; generic recap with no new company information."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News",
+   "title": "Constellation Energy Corp. stock falls Wednesday, underperforms market - MarketWatch",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOelFwSG56NEU1TzBPaC1GU2RmX1VPTms5S0pmSXFwZkFnTllheTFCSUVjakZtU0JtWUQzZFBvQVFPNFNMRExzWm1zUlN6dlRCbTVXaDRGNUpVSDdrMlV3S3lvR1o0ZF91bHNEMnp2dl9NekJ1bTl2bzJFLTVfVkVZUVhNZXAtMG1OaElRLXVPZ1dRS09wQU1GdzNoUmVVdFNwWGxCZ2I4YVZ3d0s1Y1dmWWZFYWxVRmFYczNLaVRmMGhpdnlYbndkYnZycnRyX2tlLTA0NENMTzNMX05KSkg4?oc=5",
+   "ts": 1795642920,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Automated MarketWatch recap of a routine daily move; no new fundamental news."
   }
  ],
  "reviews": [
@@ -8928,16 +8930,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.70775,
+  "day_usd": 0.70821,
   "month": "2026-11",
-  "month_usd": 1.89131,
-  "total_usd": 1.89131,
+  "month_usd": 1.89177,
+  "total_usd": 1.89177,
   "by_role": {
    "macro": 0.19063,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.16945,
+   "scout": 0.16991,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9140,7 +9142,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 16:51 ET",
+ "last_cycle": "2026-11-25 17:03 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57787,6 +57789,7 @@
   "572a5262197f803c",
   "5e042fd73e80d40b",
   "a9e4ab3bdf07e0a2",
+  "3154b03af559d946",
   "24958b4b1d92e720",
   "6ae4fd45dc301c0d",
   "1e0f49b9f0b2bcbb",
@@ -57817,6 +57820,7 @@
   "6305a538f3553f7a",
   "9dd14dae753c141a",
   "f301f0be48a8445e",
+  "5f159b11a32384bb",
   "47c56c7f6c4b5614",
   "d6fca5435e577b9f",
   "2d3f6639ab9cea68",
@@ -58141,6 +58145,7 @@
   "95d12e5461204a04",
   "bb6d0befac06c212",
   "48a608e975b439d8",
+  "ee1ba4440d7332de",
   "236832db131afa54",
   "46c5572fb4069bdf",
   "693301ddca2bc8c2",
@@ -58357,10 +58362,9 @@
   "4627bda8dfc98062",
   "15d6f9963fcdf41e",
   "84200faa36eac51a",
-  "688d746cfc31b58f",
-  "5f159b11a32384bb"
+  "688d746cfc31b58f"
  ],
- "news_slow_at": 1795643482.0883203,
+ "news_slow_at": 1795644083.7785077,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219359,7 +219363,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 16:51",
+  "updated": "2026-11-25 17:03",
   "total": 674,
   "week": 509,
   "places": {
@@ -222542,7 +222546,7 @@
    "built": "2026-11-25 16:49"
   }
  ],
- "heartbeat": "2026-11-25 16:51",
+ "heartbeat": "2026-11-25 17:03",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -222767,16 +222771,16 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 286,
-   "used": 258,
+   "asked": 287,
+   "used": 259,
    "notes": {
     "TLN Deals and contracts": 16,
-    "CCJ Deals and contracts": 53,
+    "CCJ Deals and contracts": 54,
     "BWXT Deals and contracts": 37,
     "SECTOR Government and laws": 69,
     "UUUU Deals and contracts": 38,
     "SECTOR Countries": 64,
-    "CEG Deals and contracts": 35,
+    "CEG Deals and contracts": 36,
     "NXE Legal": 11,
     "NXE Deals and contracts": 18,
     "DNN Deals and contracts": 10,
@@ -230728,7 +230732,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 16:51",
+ "watchdog_last": "2026-11-25 17:03",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
