@@ -27504,5 +27504,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "NXE",
+"date": "2026-11-25",
+"title": "NexGen Energy Expands PCE High-Grade Subdomain Vertically to 739m and Along Strike to 238m",
+"type": "intel_disruption",
+"source": "Intel: Kalkine",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "NXE",
+"date": "2026-11-24",
+"title": "NexGen Energy Reports Significant High-Grade Uranium Expansion at Patterson Corridor East - Sharecafe",
+"type": "other",
+"source": "Google News: \"NexGen Energy\"",
+"materiality": 6,
+"direction_called": "up",
+"price": 6.835000038146973,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]

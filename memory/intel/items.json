@@ -17788,5 +17788,73 @@
 "power",
 "site"
 ]
+},
+{
+"id": "15c5ededcaa0a513",
+"date": "2026-11-25",
+"ts": 1795571027,
+"title": "NexGen Energy Expands PCE High-Grade Subdomain Vertically to 739m and Along Strike to 238m",
+"summary": "",
+"outlet": "Kalkine",
+"link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxON0VtUmxySUJ1MlVreVN0bi1GdVlJemRza0RTU1d4VjV5amVBeFp0UDd2MXV3Z0wwSDd4djJyTDh2XzJkWnRoX0lZVU5wVmdGNjQwYVhHUFZmNDQwb2JrbGc4T0ZPY0RjbmpKMTZWYXJIZ0dCNVgwQlhKQUMxNHI4OTBzckFqNXRjMV9PNjVhOGRIVERrQjRiaFkzalRNNWlsR3o2LS14TzFERVFJbGswVUt4M3ZaSks3c1VqVVRRV0gtNmZtMXBvOUxCRUk?oc=5",
+"place": "Workers and jobs",
+"tickers": [
+"NXE"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.61,
+"score": 4.72,
+"echo_of": null,
+"w": [
+"238m",
+"739m",
+"along",
+"energy",
+"expands",
+"grade",
+"high",
+"nexgen",
+"pce",
+"strike",
+"subdomain",
+"vertically"
+]
+},
+{
+"id": "1e64fcaaf9ecb5d1",
+"date": "2026-11-25",
+"ts": 1795573053,
+"title": "NexGen Energy Reports Significant High-Grade Uranium Expansion at Patterson Corridor East",
+"summary": "",
+"outlet": "Sharecafe",
+"link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYXQtcDEzM0FlRjdyM1NwNUdDTnItTDZPNURiTWtvN085NXQzQktUVmItVG1lbjRvTVBLSEJOUXNnSDR4cnY5c0FONVYtVlFMT3RHQzJ5ZEVWMzU4X2JoRXhDdVV5TGpScnp1SVVDR214YklEVTNFQVJHbGY0Z1BPa3pzRWc1RDQ3RGpQXzBfUHNCQ1BiMm1JamlseEd6cUNGX2xDUlpyU3NUQjJEV0lYN213djVNS2ZuLV9PMzJxaDRiY1Jjb2hkemF3?oc=5",
+"place": "Rook I / Arrow",
+"tickers": [
+"NXE",
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.71,
+"score": 3.92,
+"echo_of": null,
+"w": [
+"corridor",
+"east",
+"energy",
+"expansion",
+"grade",
+"high",
+"nexgen",
+"patterson",
+"reports",
+"significant",
+"uranium"
+]
 }
 ]
