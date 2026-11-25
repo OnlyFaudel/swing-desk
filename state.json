@@ -529,11 +529,12 @@
   "radarres:2026-11-24": true,
   "questioner:2026-11-24:9": true,
   "sput:2026-11-24": true,
-  "intraday_backfill_t": 1795585545.9608278,
+  "intraday_backfill_t": 1795589469.905944,
   "reconcile:2026-11-24": true,
   "catalysts:2026-11-25": true,
   "tidy_v1": true,
-  "answered_v1": true
+  "answered_v1": true,
+  "ev:d73f4d09eaf1": true
  },
  "benchmark": {
   "shares": {
@@ -4939,6 +4940,42 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Israeli nuclear weapons debate has no clear link to BWXT's US contracts or earnings."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Kazatomprom",
+   "title": "Kazakhstan detains Kazatomprom executive in corruption investigation - Trend News Agency",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ucjh5Wk1ZTi1MeWRINHN0c1BhQVQyblhGU0U1UDBJZmk0RVJpQkZ6ek9DbzRBX3UyV1pqa0JWTUE4OXBHZ3ZnWnJaX0NrRzZzbHlGeVVDQjdFamVzM09Z?oc=5",
+   "ts": 1795589662,
+   "materiality": 5,
+   "novelty": "new",
+   "direction": "down",
+   "event_type": "other",
+   "why": "Kazakh detention of a Kazatomprom executive is a real supply-side risk for uranium, but a single corruption arrest rarely moves output."
+  },
+  {
+   "ticker": "NXE",
+   "source": "Google News: \"NexGen Energy\"",
+   "title": "Growing Zone: How Much Has NexGen Energy (ASX:NXG) Expanded Patterson Corridor East? - Kalkine Media",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQXZYNE9rUVJLc2RYcV9Ca1Z1M182Y0F1eGFUc3padFZPbFRlZVNNdjJ5S1pYWTBRal8yZzFtMnNxOHdhckctME0wZFIyZVhSNW9BSVhraVFoRlVyRFpzNW5NQnZzS2xvOWtYd2Q1cU15WlJZbE16SmM4U1YtVGtHdHU2WTNfOVg5Q25VdHhvMG5xQVh5MFFyTWg4bk55QmV5SkhjZV9ZUUdJVGZ6eXZvV3VnRW42dzlLVmllQ3h3?oc=5",
+   "ts": 1795588980,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Kalkine Media explainer on an ASX-listed NexGen listing; recap of known project expansion, no new information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Federal Register: uranium",
+   "title": "Orano Enrichment USA, LLC; Uranium Enrichment Facility; Draft Environmental Impact Statement",
+   "link": "https://www.federalregister.gov/documents/2026/11/25/2026-24019/orano-enrichment-usa-llc-uranium-enrichment-facility-draft-environmental-impact-statement",
+   "ts": 1795582800,
+   "materiality": 4,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "policy_tariff",
+   "why": "Draft EIS for Orano's US enrichment plant is a regulatory step, long-dated and mostly expected, so limited near-term price impact."
   }
  ],
  "reviews": [
@@ -6689,16 +6726,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.00186,
+  "day_usd": 0.00328,
   "month": "2026-11",
-  "month_usd": 1.18542,
-  "total_usd": 1.18542,
+  "month_usd": 1.18684,
+  "total_usd": 1.18684,
   "by_role": {
    "macro": 0.12168,
    "whale": 0.01778,
    "crowd": 0.01194,
    "level": 0.11932,
-   "scout": 0.1335,
+   "scout": 0.13406,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -6707,7 +6744,7 @@
    "investigator": 0.21804,
    "postmortem": 0.00035,
    "researcher": 0.01198,
-   "engineer": 0.02902,
+   "engineer": 0.02988,
    "questioner": 0.10432
   }
  },
@@ -6834,7 +6871,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-25 01:09 ET",
+ "last_cycle": "2026-11-25 02:01 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -54524,9 +54561,12 @@
   "d7c07a39ed1d0a97",
   "b550feca111a11b5",
   "7857a65b500ce148",
-  "10ac2b136225e49d"
+  "10ac2b136225e49d",
+  "b8be1271d8cd66fa",
+  "ac2a9a7195fa9144",
+  "60bdf2c0509fb940"
  ],
- "news_slow_at": 1795586845.198903,
+ "news_slow_at": 1795590079.6971216,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -209577,6 +209617,44 @@
    ],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-25 02:01",
+   "who": "engineer",
+   "kind": "agent",
+   "title": null,
+   "text": "This is a draft environmental statement for a proposed Orano enrichment plant in Tennessee, years from producing any fuel. It is a planning document with no construction permit yet, so it changes no pounds of uranium and no reactor timeline for our stocks. Minor and not tradable; the real fuel-supply news for LEU is the Russian waiver and deal flow, not this.\n\nWhy: A draft EIS is an early environmental review, not a license grant, and the desk's license tracker shows no Orano enrichment timeline, so the physical effect is distant. Centrus (LEU) is the only one of our names with direct enrichment exposure, but its supply is still driven by the Russian waiver situation.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 02:01",
+   "who": "engineer",
+   "kind": "alert",
+   "title": null,
+   "text": "Licensing news: Orano Enrichment USA, LLC; Uranium Enrichment Facility; Draft Environmental Impact Statement. 2026 licensing approvals: first-day moves were mixed (Long Mott permit: small-reactor stocks +7% to +14%; Kemmerer: +0% to +4%) and most of it was gone within 5 trading days. Only 3 events, so this is context, not a trading rule.\n\nPlant Engineer: This is a draft environmental statement for a proposed Orano enrichment plant in Tennessee, years from producing any fuel. It is a planning document with no construction permit yet, so it changes no pounds of uranium and no reactor timeline for our stocks. Minor and not tradable; the real fuel-supply news for LEU is the Russian waiver and deal flow, not this.",
+   "tickers": [
+    "LEU",
+    "NNE",
+    "OKLO",
+    "SMR"
+   ],
+   "art": {
+    "big": "NRC LICENSING NEWS",
+    "sub": "Orano Enrichment USA, LLC; Uranium Enrichment Facility; Draft Environmental Impact Stateme"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 02:01",
+   "who": "engineer",
+   "kind": "alert",
+   "title": "NRC LICENSING NEWS",
+   "text": "Orano Enrichment USA, LLC; Uranium Enrichment Facility; Draft Environmental Impact Statement | This is a draft environmental statement for a proposed Orano enrichment plant in Tennessee, years from producing any fuel. It is a planning document with no construction permit yet, so it changes no pounds of uranium and no reactor timeline for our stocks.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -210205,13 +210283,13 @@
    "lesson": null
   }
  ],
- "intel_at": 1795586797.7187972,
+ "intel_at": 1795588819.628739,
  "intel_health": {
-  "at": "2026-11-25 01:07",
+  "at": "2026-11-25 01:41",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
-   "Athabasca Basin": 7,
+   "Athabasca Basin": 6,
    "Saskatchewan wildfires": 1,
    "Rook I / Arrow": 5,
    "Wheeler River / Phoenix": 8,
@@ -210219,48 +210297,48 @@
    "Westinghouse": 9,
    "Kazakhstan": 3,
    "Niger": 5,
-   "Namibia": 31,
+   "Namibia": 30,
    "Russia supply": 3,
    "Piketon": 22,
    "HALEU": 12,
-   "Wyoming ISR": 40,
+   "Wyoming ISR": 41,
    "South Texas ISR": 0,
    "White Mesa / Utah": 14,
-   "Rare earths (Energy Fuels)": 18,
+   "Rare earths (Energy Fuels)": 23,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 4,
+   "Naval reactors": 5,
    "Crane / Three Mile Island": 5,
    "Susquehanna": 4,
    "Comanche Peak": 9,
-   "PJM grid": 13,
+   "PJM grid": 0,
    "ERCOT grid": 12,
    "Data-center nuclear deals": 8,
    "Japan restarts": 6,
-   "China new builds": 9,
+   "China new builds": 11,
    "Congress and laws": 52,
-   "NRC decisions": 10,
-   "Energy Department": 58,
+   "NRC decisions": 17,
+   "Energy Department": 72,
    "White House and executive orders": 30,
    "Tariffs and trade": 2,
    "India": 15,
-   "South Korea": 78,
-   "Europe new builds": 29,
+   "South Korea": 100,
+   "Europe new builds": 56,
    "France and UK": 13,
-   "Middle East": 47,
+   "Middle East": 44,
    "Asia newcomers": 59,
    "Canada SMRs": 10,
-   "Big tech power deals": 30,
-   "Iran": 49,
+   "Big tech power deals": 27,
+   "Iran": 24,
    "North Korea": 100,
-   "War zones": 34,
+   "War zones": 23,
    "AUKUS and navies": 20,
    "Weapons programs": 15,
-   "Stockpiles and reserves": 24,
-   "Sprott trust": 6,
-   "Uranium price": 16,
+   "Stockpiles and reserves": 19,
+   "Sprott trust": 7,
+   "Uranium price": 48,
    "US policy": 0,
    "Lawsuits and investigations": 73,
-   "Workers and jobs": 21,
+   "Workers and jobs": 36,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 51,
    "Federal Register (uranium)": 7,
@@ -210270,30 +210348,30 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 01:09",
-  "total": 562,
-  "week": 450,
+  "updated": "2026-11-25 02:01",
+  "total": 565,
+  "week": 447,
   "places": {
    "Uranium price": 48,
-   "Piketon": 30,
    "South Korea": 30,
+   "Piketon": 28,
    "Europe new builds": 26,
    "World Nuclear News": 25,
    "Weapons programs": 23,
    "Workers and jobs": 20,
    "AUKUS and navies": 18,
    "Rare earths (Energy Fuels)": 14,
-   "PJM grid": 13,
    "Namibia": 13,
-   "Comanche Peak": 12
+   "Comanche Peak": 12,
+   "ERCOT grid": 12
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-25 01:07",
+   "at": "2026-11-25 01:41",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
-    "Athabasca Basin": 7,
+    "Athabasca Basin": 6,
     "Saskatchewan wildfires": 1,
     "Rook I / Arrow": 5,
     "Wheeler River / Phoenix": 8,
@@ -210301,48 +210379,48 @@
     "Westinghouse": 9,
     "Kazakhstan": 3,
     "Niger": 5,
-    "Namibia": 31,
+    "Namibia": 30,
     "Russia supply": 3,
     "Piketon": 22,
     "HALEU": 12,
-    "Wyoming ISR": 40,
+    "Wyoming ISR": 41,
     "South Texas ISR": 0,
     "White Mesa / Utah": 14,
-    "Rare earths (Energy Fuels)": 18,
+    "Rare earths (Energy Fuels)": 23,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 4,
+    "Naval reactors": 5,
     "Crane / Three Mile Island": 5,
     "Susquehanna": 4,
     "Comanche Peak": 9,
-    "PJM grid": 13,
+    "PJM grid": 0,
     "ERCOT grid": 12,
     "Data-center nuclear deals": 8,
     "Japan restarts": 6,
-    "China new builds": 9,
+    "China new builds": 11,
     "Congress and laws": 52,
-    "NRC decisions": 10,
-    "Energy Department": 58,
+    "NRC decisions": 17,
+    "Energy Department": 72,
     "White House and executive orders": 30,
     "Tariffs and trade": 2,
     "India": 15,
-    "South Korea": 78,
-    "Europe new builds": 29,
+    "South Korea": 100,
+    "Europe new builds": 56,
     "France and UK": 13,
-    "Middle East": 47,
+    "Middle East": 44,
     "Asia newcomers": 59,
     "Canada SMRs": 10,
-    "Big tech power deals": 30,
-    "Iran": 49,
+    "Big tech power deals": 27,
+    "Iran": 24,
     "North Korea": 100,
-    "War zones": 34,
+    "War zones": 23,
     "AUKUS and navies": 20,
     "Weapons programs": 15,
-    "Stockpiles and reserves": 24,
-    "Sprott trust": 6,
-    "Uranium price": 16,
+    "Stockpiles and reserves": 19,
+    "Sprott trust": 7,
+    "Uranium price": 48,
     "US policy": 0,
     "Lawsuits and investigations": 73,
-    "Workers and jobs": 21,
+    "Workers and jobs": 36,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 51,
     "Federal Register (uranium)": 7,
@@ -212811,7 +212889,7 @@
    }
   ]
  },
- "dossier_at": 1795586838.9003136,
+ "dossier_at": 1795588906.127723,
  "sector_prices": {
   "_at": 1795579100.9496412,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -212869,80 +212947,80 @@
    "name": "Cameco",
    "price": 59.78,
    "week_pct": -7.33,
-   "built": "2026-11-25 01:07"
+   "built": "2026-11-25 01:41"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.84,
    "week_pct": -6.63,
-   "built": "2026-11-25 01:07"
+   "built": "2026-11-25 01:41"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.58,
    "week_pct": -8.02,
-   "built": "2026-11-25 01:07"
+   "built": "2026-11-25 01:41"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.75,
    "week_pct": -7.41,
-   "built": "2026-11-25 01:07"
+   "built": "2026-11-25 01:42"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.15,
    "week_pct": -13.15,
-   "built": "2026-11-25 01:07"
+   "built": "2026-11-25 01:42"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.12,
    "week_pct": -10.69,
-   "built": "2026-11-25 01:07"
+   "built": "2026-11-25 01:42"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.13,
    "week_pct": -4.57,
-   "built": "2026-11-25 01:07"
+   "built": "2026-11-25 01:42"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 244.84,
    "week_pct": -8.67,
-   "built": "2026-11-25 01:07"
+   "built": "2026-11-25 01:42"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 120.71,
    "week_pct": -5.06,
-   "built": "2026-11-25 01:07"
+   "built": "2026-11-25 01:42"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 347.92,
    "week_pct": -1.91,
-   "built": "2026-11-25 01:07"
+   "built": "2026-11-25 01:42"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-25 01:07"
+   "built": "2026-11-25 01:42"
   }
  ],
- "heartbeat": "2026-11-25 01:09",
+ "heartbeat": "2026-11-25 02:01",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -213102,25 +213180,25 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 210,
-   "used": 190,
+   "asked": 211,
+   "used": 191,
    "notes": {
     "TLN Deals and contracts": 14,
-    "CCJ Deals and contracts": 42,
+    "CCJ Deals and contracts": 43,
     "BWXT Deals and contracts": 30,
-    "SECTOR Government and laws": 45,
+    "SECTOR Government and laws": 46,
     "UUUU Deals and contracts": 34,
     "SECTOR Countries": 35,
     "CEG Deals and contracts": 29,
-    "NXE Legal": 5,
-    "NXE Deals and contracts": 12,
+    "NXE Legal": 6,
+    "NXE Deals and contracts": 13,
     "DNN Deals and contracts": 8,
     "BWXT Legal": 2,
     "LEU Deals and contracts": 29,
     "UEC Deals and contracts": 4,
     "UUUU Legal": 17,
     "SECTOR Uranium market": 3,
-    "CCJ Legal": 8,
+    "CCJ Legal": 9,
     "CEG Legal": 2,
     "VST Deals and contracts": 20,
     "LEU Legal": 1,
@@ -213261,17 +213339,17 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 21,
-   "used": 21,
+   "asked": 22,
+   "used": 22,
    "notes": {
     "SECTOR Reactors and power": 2,
     "CEG Places and operations": 10,
     "UEC Deals and contracts": 1,
     "UEC Places and operations": 5,
-    "license_tracker": 3,
-    "LEU Business": 3,
+    "license_tracker": 4,
+    "LEU Business": 4,
     "plants_now": 5,
-    "LEU Deals and contracts": 4,
+    "LEU Deals and contracts": 5,
     "LEU Places and operations": 4,
     "NRC license tracker": 1,
     "power_deals_and_fuel_policy": 2,
@@ -213281,7 +213359,7 @@
     "plants_now: fleet status and open outages": 1,
     "desk_notes: CEG Places and operations": 1,
     "desk_notes: UUUU Places and operations": 1,
-    "SECTOR Uranium market": 6,
+    "SECTOR Uranium market": 7,
     "TLN Places and operations": 1,
     "UUUU Places and operations": 2,
     "UEC Business": 1,
@@ -217666,6 +217744,17 @@
     "OKLO",
     "LEU"
    ]
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "license",
+   "title": "Orano Enrichment USA, LLC; Uranium Enrichment Facility; Draft Environmental Impact Statement",
+   "tickers": [
+    "OKLO",
+    "SMR",
+    "NNE",
+    "LEU"
+   ]
   }
  ],
  "vp_skipped": [
@@ -219602,7 +219691,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 01:09",
+ "watchdog_last": "2026-11-25 02:01",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

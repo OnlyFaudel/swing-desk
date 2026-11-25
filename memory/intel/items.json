@@ -18240,5 +18240,97 @@
 "waters",
 "why"
 ]
+},
+{
+"id": "af4deb38e3a63079",
+"date": "2026-11-25",
+"ts": 1795570680,
+"title": "Naver Cloud, KHNP and KEPCO KDN agree to cooperate on nuclear AI",
+"summary": "",
+"outlet": "Chosunbiz",
+"link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5fYXROakVpV3BNOGxEZjduZ2Vrd2FiakRVWjJLeHRrR0JaSU1jTDJvSVlib0ljTXhHekE5UU5zS09rNGJVNDNIc0t2Ujk2UG5SWTRyUmJLUnZOWlVFdE5wZ0daVy0yYkF0Q0lBMGFtSEVsRXhoVW9iSjlB0gGOAUFVX3lxTE95VUk0a2tySnltcEFOd2lfd3hyQ3hOZ0F1dTliQmNYaXh0QWxMcVd2eVJmRjY4MnQzZlBwZDgwMkFzQjB2eFRWQTd6bV9nLU5vX3B2VFNobHNaY29CX0c2ckdhYW9jYkhTVFVVZmhBYmMteE5ENWxNeXRkNk8tN2o5YlJHZk00X1F5VldNOFE?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.4,
+"score": 3.3,
+"echo_of": "14d8e4621d601ada",
+"w": [
+"agree",
+"cloud",
+"cooperate",
+"kdn",
+"kepco",
+"khnp",
+"naver",
+"nuclear"
+]
+},
+{
+"id": "941429191a370a2e",
+"date": "2026-11-25",
+"ts": 1795573140,
+"title": "Naver Cloud Teams With KHNP, KEPCO KDN on Nuclear Plant AI",
+"summary": "",
+"outlet": "Seoul Economic Daily",
+"link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQeXBOT3Q0RTlRcGh0XzZrOUkyM1YwVEFjX1l2T3I5VjRFZTJuUXBZVlRRb1Q0QjdfTDJIek1sanhuRDlCS20xQU9JNGpIU0FwdGVIdEJSNllxdVZ4ZEpBcnJOWGZqR2pULXF6VlNza1daemxfRVhDY2hXRGJGQWtFdEQ1cVQ4RzhKOHhua0s4V2JkZWNXcHRSYXBNdURjSk5ycXc?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT",
+"CEG"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.4,
+"score": 3.3,
+"echo_of": "14d8e4621d601ada",
+"w": [
+"cloud",
+"kdn",
+"kepco",
+"khnp",
+"naver",
+"nuclear",
+"plant",
+"teams"
+]
+},
+{
+"id": "e7c56aa7650cf3fa",
+"date": "2026-11-25",
+"ts": 1795585103,
+"title": "Why Australia\u2019s Aukus submarine dream is running into turbulent waters",
+"summary": "",
+"outlet": "South China Morning Post",
+"link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc1Rfa19qQVRoaWtSdEZQYlRMR0NPSVpLSTFMTDRKUllUQVFTTWZKTU1UbGFQdTNNNTlydUxDZnB1MmRmZkVvaEs4RGkwNUpkNHg0X1paajREaEViTVZuZEtVR0tRWG1hTHZLZlNMTVloOENxY0hwa2VWclRpWmZfa2V6R2dqQWlqSXFKNm9VcTdEMDlwQmoyYkt3Y0RHUExqbUJ3SjROaUtlbWVzb1AwLWk5NNIBswFBVV95cUxPc1Rfa19qQVRoaWtSdEZQYlRMR0NPSVpLSTFMTDRKUllUQVFTTWZKTU1UbGFQdTNNNTlydUxDZnB1MmRmZkVvaEs4RGkwNUpkNHg0X1paajREaEViTVZuZEtVR0tRWG1hTHZLZlNMTVloOENxY0hwa2VWclRpWmZfa2V6R2dqQWlqSXFKNm9VcTdEMDlwQmoyYkt3Y0RHUExqbUJ3SjROaUtlbWVzb1AwLWk5NA?oc=5",
+"place": "AUKUS and navies",
+"tickers": [
+"BWXT"
+],
+"tags": [
+"defense"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 3.5,
+"echo_of": "ff034b5c87c95680",
+"w": [
+"aukus",
+"australia",
+"dream",
+"running",
+"submarine",
+"turbulent",
+"waters",
+"why"
+]
 }
 ]
