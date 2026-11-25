@@ -766,6 +766,8 @@ def hawk_stream(st, wake):
             while q and now - q[0][0] > hk["move_window_min"] * 60:
                 q.popleft()
             why = None
+            if t not in T:
+                return  # extra stream names only keep prices fresh; alerts stay on our lineup
             L = account.lot(st["book"], t, "trade")
             if L.get("qty", 0) > 1e-6 and L.get("target") and px >= L["target"]:
                 why = f"{t} touched its target ${L['target']:.2f}"
@@ -776,7 +778,9 @@ def hawk_stream(st, wake):
                 last_wake[0] = now
                 HAWK_EVENTS.append(why)
                 wake.set()
-        ds.subscribe_trades(on_trade, *T)
+        extra = [x for x in hk.get("stream_extra", []) if x not in T]
+        names = list(dict.fromkeys(list(T) + extra))[: hk.get("stream_max", 30)]  # free IEX feed: 30 symbols
+        ds.subscribe_trades(on_trade, *names)
         ds.run()
     except Exception as e:
         print("price stream stopped", e)
@@ -1911,16 +1915,32 @@ def sharp_drop_check(st, ex, prices, today, brk_state, now):
     except Exception as e:
         print("comeback", e)
     hits.sort()  # nuclear + related first, then the big-stock tier; within each, biggest drop today first (as tested)
-    bought = []
-    if room <= 0:
-        hits = []
+    bought, swapped, sw = [], [], cfg.get("swap") or {}
     for _tier, r1, r5, t, px in hits:
-        if room <= 0:
-            break
         if (book["lots"].get(t, {}).get("auto") or {}).get("qty", 0) > 1e-6 or (book["lots"].get(t, {}).get("panic") or {}).get("qty", 0) > 1e-6:
             continue
         if t in (st.get("avoid") or {}) and st["avoid"][t].get("until", "") >= str(today):
             continue
+        if room <= 0:  # slots full: swap out an open sharp-drop trade that already used most of its bounce (research: swap_for_better_trade)
+            if not sw.get("enabled") or len(swapped) >= sw.get("max_per_day", 1):
+                break
+            best = None
+            for u, lu in book["lots"].items():
+                L = lu.get("auto") or {}
+                if L.get("qty", 0) <= 1e-6 or L.get("setup") != "sharp_drop" or L.get("opened") == str(today) or u == t:
+                    continue
+                pu = prices.get(u) or (st.get("last_prices") or {}).get(u)
+                if not pu:
+                    continue
+                g = pu / ((L["cost"] / L["qty"]) if L.get("added") else (L.get("entry") or L["cost"] / L["qty"])) - 1
+                if g >= sw.get("gain_pct", 6) / 100 and (best is None or g > best[0]):
+                    best = (g, u, pu)
+            if not best:
+                break
+            ex.exit_panic(best[1], best[2], f"sharp-drop swap: up {best[0] * 100:.1f}%, sold to fund a fresh {r5 * 100:.0f}% drop in {t}",
+                          kind="auto", tag="aux")
+            swapped.append(f"{best[1]} (+{best[0] * 100:.1f}%) for {t}")
+            room += 1
         big = r5 <= -cfg.get("deep_drop_pct", 20) / 100  # deeper crashes rebounded about twice as hard (research: strength_sizing)
         dollars = min(brk_state["equity"] * cfg.get("deep_size_pct" if big else "size_pct", 15 if big else 10) / 100 * dd_mult(st), spendable(st, today))
         if dollars < 5:
@@ -1931,6 +1951,10 @@ def sharp_drop_check(st, ex, prices, today, brk_state, now):
         if ex.buy_market(t, dollars, px, "au", meta, "sharp-drop rebound"):
             bought.append(f"{t} ({r5 * 100:.0f}% in 5 days) ${dollars:.0f}")
             room -= 1
+    if swapped:
+        feed.post("chief", "Sharp-drop swap: all 3 slots were full, so I sold " + "; ".join(swapped) + ". A rebound that is already up 6%+ "
+                  "has used most of its expected bounce; a fresh 15% drop has all of it ahead (tested 2008-2026: 17.8%/yr vs 17.3% and "
+                  "33.3% vs 32.0%, about 1-2 swaps a year).", [x.split()[0] for x in swapped], kind="trade")
     if bought:
         feed.post("chief", "Sharp-drop rebound: bought " + "; ".join(bought) + ". Rule: a stock down 15%+ in 5 sessions, sell at +10% near "
                   "a close or after 10 sessions. Tested 2008-2026 on our stocks and their neighbors: beat the S&P by about 1% a trade "

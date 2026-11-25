@@ -83,7 +83,7 @@
     "max_rejects_per_hour": 3,
     "stale_minutes": 20
   },
-  "ops_resume": true,
+  "ops_resume": false,
   "min_trade_usd": 50,
   "context_tickers": {
     "CCJ": [
@@ -371,6 +371,8 @@
     "slow_lane_minutes": 10
   },
   "hawk": {
+    "stream_extra": ["SPY", "OKLO", "SMR", "NNE", "LTBR", "GEV", "NRG", "NVDA", "AMD", "MU", "AVGO", "TSM", "VRT", "ETN", "PWR", "MSFT", "META", "GOOGL", "AMZN", "ORCL"],
+    "stream_max": 30,
     "enabled": true,
     "stream_prices": true,
     "move_alert_pct": 1.5,
@@ -547,6 +549,7 @@
     "_note": "Practice book: real put prices, no money. Bearish triggers proven by research only (offerings first)."
   },
   "sharp_drop": {
+    "swap": {"enabled": true, "gain_pct": 6, "max_per_day": 1, "note": "Research 2026-11-25 (swap_for_better_trade, research/round58): when all sharp-drop slots are full and a fresh 15% drop appears, sell the open sharp-drop lot up 6%+ and buy the new one. Whole stack 2008-26: 17.8%/yr vs 17.3% (2008-18), 33.3% vs 32.0% (2019-26), 27 swaps; +5% and +7% also better; never swap panic lots (worse)."},
     "enabled": true,
     "drop_pct": 15,
     "take_profit_pct": 10,
