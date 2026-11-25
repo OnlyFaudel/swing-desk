@@ -593,7 +593,8 @@
   "ahdip171:2026-11-25": true,
   "nightwatch171:2026-11-25": true,
   "earnread:2026-11-25": true,
-  "ahdip172:2026-11-25": true
+  "ahdip172:2026-11-25": true,
+  "nightwatch172:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -4177,18 +4178,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CEG",
-   "source": "Local intel: The National Law Review (NRC decisions)",
-   "title": "Navigating Nuclear: US Nuclear Regulatory Commission Issues Final Rules of Practice and Procedure",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQOUM3cTBlal8tMVV6dklxWnhaTV9Ic09EUnVGaV9FZ3pvQ19WZDAxRjg1SXZwUDdqd0I5d3F3Qzl6VU1uT184dm9KNThSNVZicmlhUG9WaGJ6RWJqWlNIRmd0SVd1a2dWTEc4NkhpUHdZMWkyaDRUcC10WFEtYVU3MjVqaDJlaVFRUUlydllFU2NpQnJvN1lJUGoyZ3haNVJqX1BLam9PWWduYUM5RmVjbW9NczBvN03SAbwBQVVfeXFMT2VidTZGMnFTTUtHQkV1dUZzMXBfLUJyY0JSTWxMVi1Pd0lDQnQyMnNCUXIwRmNGbkNLQzBrZEpKbktMMGpWajhDNGUzRlRyOEpTNnFIZEFlYTN6VjEwMTFFcWdFeEphU1FaVnVzdTlwSGJMdVZUOWJwbGdLV2QxTFBVNVJHdjhsWEN2cWNvWVNKQXBUOGVnNHdYNElrcURBRU5DVHZoclV6SkNfRDVMLXoydnVDVW5TdWJDaFo?oc=5",
-   "ts": 1795481295,
-   "materiality": 4,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "policy_tariff",
-   "why": "NRC final procedural rules; process change, not a specific CEG catalyst."
-  },
-  {
    "ticker": "CCJ",
    "source": "Local intel: Aju Press (South Korea)",
    "title": "Pro-nuclear experts halt role in Korea's reactor debate",
@@ -7175,6 +7164,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "MarketBeat recap of a 3% price move; no new company information."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News",
+   "title": "Constellation Energy (CEG) Stock: Drops 3.90% as LS Power Completes 4.4 GW Acquisition - Blockonomi",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZjB0dzlvY1pXcDJCN1FVU2lWeExpeTc2eXE5RVVBSW5zM2JpRFpud1NoNU00UW9pNHFKVl83M3lqWE41ck9aMVJ5eXAwRWhCQTZPN3dDZlV2eVRaSm1uVlYwcUlnLXQ5Q1FtYzV3MGV1cllhNmVpZjJYdnE3S3d2MkEyNGZ4TEY0Tm5RanNQYzg2cE44MW9WY1BVSGZsOVBmLTl0YzJXTEluZw?oc=5",
+   "ts": 1795645784,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "LS Power closed a 4.4 GW gas plant purchase, a rival's asset deal, not a CEG contract."
   }
  ],
  "reviews": [
@@ -8934,16 +8935,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.71111,
+  "day_usd": 0.71152,
   "month": "2026-11",
-  "month_usd": 1.89467,
-  "total_usd": 1.89467,
+  "month_usd": 1.89508,
+  "total_usd": 1.89508,
   "by_role": {
    "macro": 0.19063,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.17129,
+   "scout": 0.1717,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9146,7 +9147,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 17:30 ET",
+ "last_cycle": "2026-11-25 17:40 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57820,8 +57821,8 @@
   "888d96e0923cd600",
   "aa4b40fcca57bfea",
   "bb70a1f088013762",
-  "d87a1acbb5ff13ef",
   "6305a538f3553f7a",
+  "d87a1acbb5ff13ef",
   "9dd14dae753c141a",
   "f301f0be48a8445e",
   "5f159b11a32384bb",
@@ -58366,13 +58367,14 @@
   "7ffa38b48cb85fdf",
   "991c698e5a396dd1",
   "a35b0d7a547d2276",
+  "0aae6b6b8e76884b",
   "cae29e7e9aefd254",
   "4627bda8dfc98062",
   "15d6f9963fcdf41e",
   "84200faa36eac51a",
   "688d746cfc31b58f"
  ],
- "news_slow_at": 1795645430.4921424,
+ "news_slow_at": 1795646065.9417021,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -218577,6 +218579,30 @@
    ],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-25 17:40",
+   "who": "nightwatch",
+   "kind": "alert",
+   "title": null,
+   "text": "After hours: VST is +7.2% from the 4 PM close ($121.32 -> $130.05), on 597,431 shares reported. Latest headlines: What Are Wall Street Analysts' Target Price for Vistra Corp. Stock? - Barchart.com | Vistra Has Slumped for a Year: Why Morgan Stanley Still Sees 82% Upside - TIKR.com Tomorrow I'll score whether it held at 9:35 and at the close. First after-hours cases on record; no score yet.",
+   "tickers": [
+    "VST"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 17:40",
+   "who": "chief",
+   "kind": "alert",
+   "title": "After hours: VST +7.2%",
+   "text": "$121.32 at 4 PM -> $130.05 now. We hold it. Vistra Has Slumped for a Year: Why Morgan Stanley Still Sees 82% Upside - TIKR.com",
+   "tickers": [
+    "VST"
+   ],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -219392,7 +219418,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 17:30",
+  "updated": "2026-11-25 17:40",
   "total": 676,
   "week": 510,
   "places": {
@@ -222575,12 +222601,12 @@
    "built": "2026-11-25 17:20"
   }
  ],
- "heartbeat": "2026-11-25 17:30",
+ "heartbeat": "2026-11-25 17:40",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 379,
+ "_pushed_feed": 373,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -222800,16 +222826,16 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 290,
-   "used": 261,
+   "asked": 291,
+   "used": 262,
    "notes": {
     "TLN Deals and contracts": 16,
     "CCJ Deals and contracts": 55,
     "BWXT Deals and contracts": 37,
-    "SECTOR Government and laws": 70,
+    "SECTOR Government and laws": 71,
     "UUUU Deals and contracts": 38,
     "SECTOR Countries": 65,
-    "CEG Deals and contracts": 36,
+    "CEG Deals and contracts": 37,
     "NXE Legal": 11,
     "NXE Deals and contracts": 18,
     "DNN Deals and contracts": 10,
@@ -230762,7 +230788,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 17:30",
+ "watchdog_last": "2026-11-25 17:40",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -231462,6 +231488,23 @@
     "Centrus Energy (LEU) Stock May Be Overvalued Despite A Fresh HALEU Supply Deal - Simply Wall St",
     "Steam generators progress for Leningrad II and MBIR",
     "Germany\u2019s Mysterious Business With Uranium Enrichment - theTrumpet.com"
+   ],
+   "held": true
+  },
+  {
+   "date": "2026-11-25",
+   "t": "VST",
+   "close": 121.325,
+   "ah_px": 130.0462,
+   "ah_move": 7.19,
+   "ah_vol": 597431,
+   "vol_share_pct": 14.2,
+   "first_seen": "17:40",
+   "headlines": [
+    "Vistra Underperforms Industry in the Past Year: Time to Buy or Wait? - Yahoo Finance",
+    "Vistra (VST) Stock Looks Below Fair Value After Its Huge Five Year Run - Simply Wall St",
+    "What Are Wall Street Analysts' Target Price for Vistra Corp. Stock? - Barchart.com",
+    "Vistra Has Slumped for a Year: Why Morgan Stanley Still Sees 82% Upside - TIKR.com"
    ],
    "held": true
   }
