@@ -159,7 +159,7 @@
 "France and UK": 4,
 "Canada SMRs": 1,
 "Workers and jobs": 5,
-"Uranium price": 4,
+"Uranium price": 5,
 "Rare earths (Energy Fuels)": 4,
 "CBC Saskatchewan": 1,
 "Comanche Peak": 5,
@@ -173,7 +173,7 @@
 "World Nuclear News": 5,
 "Stockpiles and reserves": 1,
 "Susquehanna": 1,
-"Weapons programs": 4,
+"Weapons programs": 5,
 "Athabasca Basin": 3,
 "Congress and laws": 2,
 "Energy Department": 1,
@@ -181,6 +181,11 @@
 "Sprott trust": 1,
 "HALEU": 1,
 "Kazakhstan": 1,
-"India": 1
+"India": 1,
+"ERCOT grid": 1
+},
+"2026-11-25": {
+"South Korea": 1,
+"Weapons programs": 1
 }
 }
