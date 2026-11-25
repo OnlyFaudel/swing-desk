@@ -11,6 +11,16 @@
    "price": 0.0,
    "status": "pending_new",
    "note": "sold parked SPY to pay back $353 overspent"
+  },
+  {
+   "time": "2026-11-25 15:53",
+   "symbol": "SPY",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.1103,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "parking switch: SPY -> SGOV"
   }
  ]
 }

@@ -1,7 +1,7 @@
 {
  "created": "2026-11-20",
  "book": {
-  "cash": 3.3639308252220417,
+  "cash": 82.44329522522203,
   "lots": {
    "CCJ": {
     "trade": {
@@ -224,8 +224,8 @@
    },
    "SPY": {
     "park": {
-     "qty": 0.110301,
-     "cost": 79.66441054189045
+     "qty": 1e-06,
+     "cost": 0.0007222455874540401
     }
    },
    "AMD": {
@@ -350,6 +350,12 @@
     "date": "2026-11-25",
     "loss": -11.66,
     "note": "Loss likely disallowed now and added to the cost basis of shares you still hold (not lost, deferred)."
+   },
+   {
+    "ticker": "SPY",
+    "date": "2026-11-25",
+    "loss": -0.58,
+    "note": "Loss likely disallowed now and added to the cost basis of shares you still hold (not lost, deferred)."
    }
   ],
   "buys_log": [
@@ -444,7 +450,7 @@
     "auto"
    ]
   ],
-  "realized_st": -12.38,
+  "realized_st": -12.96,
   "core_w": {}
  },
  "flags": {
@@ -565,7 +571,9 @@
   "sharpdrop:2026-11-25": true,
   "signals:2026-11-25": true,
   "epop:2026-11-25": true,
-  "optmark:2026-11-25": true
+  "optmark:2026-11-25": true,
+  "park:2026-11-25": true,
+  "questioner:2026-11-25:8": true
  },
  "benchmark": {
   "shares": {
@@ -4145,18 +4153,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Google News: \"McArthur River\" OR \"Cigar Lake\" uranium",
-   "title": "Uranium One Appoints Jeremy S. Brett as Technical Advisor - TipRanks",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcDF1WGVxT3J1MkpVbjVnemx2anBIbmQxVkJOUnVfLUlWR0xOWTZCX1FmWmRUckIzZEtGSXlFeU5BYzcydkJzUV9vSmxKbmYxTzk4b0N0VlFoc09HZGVKdEs2SC0tWE9pX3p1aVFoVFpUMjM4ZTN3MEMzZ2NyZWpuN0NET0dYcDBNYUNXRjRidHdaakZtenJVU2tIbGg4X1hBSEhXM1B3S20yTk1o?oc=5",
-   "ts": 1795482551,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Routine appointment of a technical advisor at Uranium One, a minor related party."
-  },
-  {
    "ticker": "LEU",
    "source": "Yahoo (BWXT, related to LEU)",
    "title": "Earnings Strength: 3 Companies Raising Guidance",
@@ -7143,6 +7139,18 @@
    "direction": "up",
    "event_type": "supply",
    "why": "Kazatomprom is a huge uranium producer; executive detentions could tighten global supply, a bullish signal for CCJ."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Westinghouse reactor",
+   "title": "Westinghouse awards BWXT qualification contracts for AP1000 components - energynews.pro",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQR09CRUYxR0NQUG0xbGxCOE10LWgwUG01eTFSVWRIWlVETndpWUo0T3ZicG8xdzdScDg2VWtBdU5mNTIyckVETEdQNVZXUFI2S2xtcy03eVVpZXh2VVFlMDdZMVFIcktNWDh3cXYyR1dnTXliMnk2alBqdnNZdmFSMEFmTkhiSkVucnQwMXFuQm4wdDBmdk9Mc1R2Q3c?oc=5",
+   "ts": 1795626223,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Reactor parts qualification for BWXT, a supplier, is only loosely tied to CCJ's uranium supply."
   }
  ],
  "reviews": [
@@ -8749,6 +8757,16 @@
    "price": 0.0,
    "status": "pending_new",
    "note": "sold parked SPY to pay back $353 overspent"
+  },
+  {
+   "time": "2026-11-25 15:53",
+   "symbol": "SPY",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.1103,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "parking switch: SPY -> SGOV"
   }
  ],
  "active": [
@@ -8884,16 +8902,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.67138,
+  "day_usd": 0.6771,
   "month": "2026-11",
-  "month_usd": 1.85494,
-  "total_usd": 1.85494,
+  "month_usd": 1.86066,
+  "total_usd": 1.86066,
   "by_role": {
    "macro": 0.19063,
    "whale": 0.02215,
    "crowd": 0.01446,
-   "level": 0.2341,
-   "scout": 0.16538,
+   "level": 0.23691,
+   "scout": 0.16579,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -8903,7 +8921,7 @@
    "postmortem": 0.00035,
    "researcher": 0.01486,
    "engineer": 0.07932,
-   "questioner": 0.11964
+   "questioner": 0.12214
   }
  },
  "desk_log": [
@@ -9072,6 +9090,7 @@
   "da941e1a-0b19-4558-91d4-bd6e08a970dd",
   "3633f6dd-490a-45d0-972c-942d61021cea",
   "1819a75a-1b7c-4d06-841b-87d77eb5806b",
+  "725eda94-b8eb-40d5-becf-9cefd05e26a3",
   "fbc94e13-8bc9-4b72-becc-b085fe026432",
   "ca94928f-ceb2-4508-8a39-b973f5956ef5",
   "7f3f3a16-8a14-4856-8ff5-bf0763189311",
@@ -9079,23 +9098,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.54,
-  "NXE": 6.95,
-  "UEC": 5.71,
-  "DNN": 1.79,
-  "UUUU": 5.21,
-  "LEU": 83.27,
-  "BWXT": 113.75,
-  "CEG": 235.43,
-  "VST": 121.37,
-  "TLN": 352.46,
-  "AMD": 402.61,
+  "CCJ": 61.52,
+  "NXE": 6.96,
+  "UEC": 5.68,
+  "DNN": 1.8,
+  "UUUU": 5.2,
+  "LEU": 83.13,
+  "BWXT": 113.46,
+  "CEG": 235.16,
+  "VST": 121.32,
+  "TLN": 351.31,
+  "AMD": 406.89,
   "SMR": 3.27,
-  "NNE": 8.91,
-  "SPY": 717.19,
-  "SGOV": 100.67
+  "NNE": 8.88,
+  "SPY": 717.8,
+  "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 15:51 ET",
+ "last_cycle": "2026-11-25 16:00 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -9158,10 +9177,10 @@
   ]
  },
  "brakes": {
-  "equity": 1005.97,
-  "day_pct": -1.04,
-  "week_pct": 0.55,
-  "drawdown_pct": -4.59,
+  "equity": 1005.8,
+  "day_pct": -1.06,
+  "week_pct": 0.53,
+  "drawdown_pct": -4.61,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -13095,6 +13114,26 @@
   [
    "2026-11-25 15:51",
    1005.97
+  ],
+  [
+   "2026-11-25 15:53",
+   1004.74
+  ],
+  [
+   "2026-11-25 15:53",
+   1004.76
+  ],
+  [
+   "2026-11-25 15:54",
+   1003.23
+  ],
+  [
+   "2026-11-25 15:55",
+   1004.24
+  ],
+  [
+   "2026-11-25 15:56",
+   1006.47
   ]
  ],
  "nowcast": {
@@ -57701,7 +57740,7 @@
     0.8517
    ]
   },
-  "time": "2026-11-25 15:52"
+  "time": "2026-11-25 15:56"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -57716,8 +57755,8 @@
   "e250b8758ee96ae8",
   "22a45a3c7284120a",
   "ffa36b0bf7521b7f",
-  "c527b52a6d387b5e",
   "3c0d3789a7b698e6",
+  "c527b52a6d387b5e",
   "a8cf3750b80937f0",
   "9199257f37a8ba75",
   "560f5fcf0c779ea2",
@@ -58003,9 +58042,9 @@
   "10ac2b136225e49d",
   "d315dfa4e1149d87",
   "6a9cba33d2515f5c",
-  "832a5e88c8693db1",
-  "912ca4344a818db7",
   "1e6d0eb0e2b54116",
+  "912ca4344a818db7",
+  "832a5e88c8693db1",
   "5d22d1b6e3da5fb6",
   "855ac1a10429d2f5",
   "37e85b7a7ce58612",
@@ -58089,6 +58128,7 @@
   "2cbbc694a2695e84",
   "013ca9d6cb36da37",
   "adaf4137e3446cd1",
+  "efc408c17da0c385",
   "04dd9aeafd90d9b4",
   "61659cb80b158a77",
   "915b10ab6e0bdc34",
@@ -58287,7 +58327,7 @@
   "8542d5e2ebad2735",
   "b8be1271d8cd66fa"
  ],
- "news_slow_at": 1795639586.6671221,
+ "news_slow_at": 1795640201.8104386,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -213157,6 +213197,33 @@
    ],
    "practice": false,
    "end": "15:38"
+  },
+  {
+   "id": "20261125160015163176",
+   "title": "The Questioner, Nov 25 16:00",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-25 16:00",
+   "msgs": [
+    {
+     "t": "16:00",
+     "who": "questioner",
+     "to": "level",
+     "text": "The basket gate is closed, but there is a concrete unanswered question: TLN's resting buy at $355.66 is far from where the stock trades now (~$351), and the PJM auction is still undecided. I want the Level Analyst to confirm whether this order is still intended or should be canceled, since LIVE_ORDERS_RIGHT_NOW is empty and nothing is actually resting.",
+     "outcome": false,
+     "notes": "question: LIVE_ORDERS_RIGHT_NOW is empty, so is the TLN buy at $355.66 actually resting, or was it only discussed? If it is resting, why was it not canceled after the basket gate closed?\nwhy it might matter: If an order exists, it could fill during a closed-gate session, which breaks the desk's own no-new-buys rule.\nask: level\nkind: odd\nquestion: Is anything else on the setup list resting right now, or is every mention just analysis with no placed orders?\nwhy it might matter: The team's messages describe setups as if they were live; confirming the actual order state keeps us from assuming exposure we do not have.\nask: level\nkind: missed\nwhy: The gate is closed and LIVE_ORDERS_RIGHT_NOW shows nothing resting, so the TLN order mentioned in older posts is either stale or a mistake. Asking the Level Analyst to confirm the actual order state is the cheapest way to check.\nfiles read: TLN News,"
+    },
+    {
+     "t": "16:00",
+     "who": "level",
+     "to": "questioner",
+     "text": "I checked the live order list and it is empty: no resting orders exist, and every order is a day order that expires at its close. So the TLN buy at $355.66 was only discussed, not placed, and nothing can fill during the closed-gate session. The gate is still closed, so the right move is to confirm the order is not in the broker and stay flat on TLN.",
+     "outcome": false,
+     "notes": "verdict: irrelevant\naction: tell_owner\nwhy: The desk's live-order check shows nothing resting, and day orders expire at the close, so the discussed $355.66 buy cannot exist as an open order. Since TLN trades near $351 with the basket gate closed, no new buy should go in regardless.\nticker: TLN\ndirection: down\ndays: 3\nfiles read: LIVE_ORDERS_RIGHT_NOW, TLN Snapshot, open_positions"
+    }
+   ],
+   "practice": false,
+   "end": "16:00"
   }
  ],
  "feed": [
@@ -217590,6 +217657,32 @@
     "sub": "Day 3 of building our own options history"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-25 16:00",
+   "who": "questioner",
+   "kind": "alert",
+   "title": null,
+   "text": "Worth your attention: LIVE_ORDERS_RIGHT_NOW is empty, so is the TLN buy at $355.66 actually resting, or was it only discussed? If it is resting, why was it not canceled after the basket gate closed?\n\nLevel Analyst: I checked the live order list and it is empty: no resting orders exist, and every order is a day order that expires at its close. So the TLN buy at $355.66 was only discussed, not placed, and nothing can fill during the closed-gate session. The gate is still closed, so the right move is to confirm the order is not in the broker and stay flat on TLN.",
+   "tickers": [],
+   "art": {
+    "big": "Something we almost missed",
+    "sub": "The Questioner"
+   },
+   "thread": "20261125160015163176"
+  },
+  {
+   "t": "2026-11-25 16:00",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: LIVE_ORDERS_RIGHT_NOW is empty, so is the TLN buy at $355.66 actually resting, or was it only discussed? If it is resting, why was it not canceled after the basket gate closed? -> irrelevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -218393,7 +218486,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 15:52",
+  "updated": "2026-11-25 16:00",
   "total": 668,
   "week": 505,
   "places": {
@@ -219043,8 +219136,8 @@
   "83f38e65c4d0c42a",
   "15c5ededcaa0a513",
   "c2a1739b2e369eff",
-  "498180393c058995",
   "d4097d0d8db37e23",
+  "498180393c058995",
   "df371025b77dc13a",
   "83fcaa3c1c926472",
   "71bc1051aa67e316",
@@ -221507,7 +221600,7 @@
    "built": "2026-11-25 15:46"
   }
  ],
- "heartbeat": "2026-11-25 15:51",
+ "heartbeat": "2026-11-25 16:00",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -221727,17 +221820,17 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 113.75,
-  "TLN": 352.4599914550781
+  "BWXT": 113.77,
+  "TLN": 352.53
  },
  "notes_audit": {
   "scout": {
-   "asked": 277,
-   "used": 249,
+   "asked": 278,
+   "used": 250,
    "notes": {
     "TLN Deals and contracts": 16,
-    "CCJ Deals and contracts": 52,
-    "BWXT Deals and contracts": 36,
+    "CCJ Deals and contracts": 53,
+    "BWXT Deals and contracts": 37,
     "SECTOR Government and laws": 67,
     "UUUU Deals and contracts": 38,
     "SECTOR Countries": 60,
@@ -221760,10 +221853,10 @@
    "since": "2026-11-23"
   },
   "level": {
-   "asked": 143,
-   "used": 137,
+   "asked": 144,
+   "used": 138,
    "notes": {
-    "TLN Snapshot": 31,
+    "TLN Snapshot": 32,
     "TLN Price behavior": 34,
     "TLN Discoveries": 6,
     "TLN Our trades": 19,
@@ -221832,7 +221925,9 @@
     "Macro Analyst": 1,
     "UEC Discoveries": 1,
     "desk_notes Patient Levels fills: the stock's own long trend ": 1,
-    "desk_notes Chasing breakouts out of quiet, tight ranges": 1
+    "desk_notes Chasing breakouts out of quiet, tight ranges": 1,
+    "LIVE_ORDERS_RIGHT_NOW": 1,
+    "open_positions": 1
    },
    "since": "2026-11-23"
   },
@@ -222114,11 +222209,11 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 47,
-   "used": 47,
+   "asked": 48,
+   "used": 48,
    "notes": {
     "TLN Snapshot": 42,
-    "TLN News": 37,
+    "TLN News": 38,
     "coming_up": 6,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
@@ -222130,7 +222225,7 @@
     "SECTOR Market regime": 1,
     "desk_lessons_from_our_mistakes": 6,
     "TLN Ownership and analysts": 4,
-    "SECTOR Uranium market": 13,
+    "SECTOR Uranium market": 14,
     "CEG Snapshot": 5,
     "uranium_price": 1,
     "PJM capacity auction": 1,
@@ -222140,7 +222235,8 @@
     "Basket gate note: nuclear basket -11.2% vs 10-day average": 1,
     "LIVE_ORDERS_RIGHT_NOW": 2,
     "SECTOR Calendar": 1,
-    "already_asked": 1
+    "already_asked": 1,
+    "Desk lessons": 1
    },
    "since": "2026-11-23"
   },
@@ -222302,7 +222398,7 @@
    ],
    [
     "2026-11-25",
-    61.54
+    61.66
    ]
   ],
   "NXE": [
@@ -222424,7 +222520,7 @@
    ],
    [
     "2026-11-25",
-    6.95
+    6.97
    ]
   ],
   "UEC": [
@@ -222546,7 +222642,7 @@
    ],
    [
     "2026-11-25",
-    5.71
+    5.72
    ]
   ],
   "DNN": [
@@ -222790,7 +222886,7 @@
    ],
    [
     "2026-11-25",
-    5.22
+    5.23
    ]
   ],
   "LEU": [
@@ -222912,7 +223008,7 @@
    ],
    [
     "2026-11-25",
-    83.27
+    83.08
    ]
   ],
   "BWXT": [
@@ -223034,7 +223130,7 @@
    ],
    [
     "2026-11-25",
-    113.78
+    113.57
    ]
   ],
   "CEG": [
@@ -223156,7 +223252,7 @@
    ],
    [
     "2026-11-25",
-    235.44
+    235.36
    ]
   ],
   "VST": [
@@ -223278,7 +223374,7 @@
    ],
    [
     "2026-11-25",
-    121.39
+    121.38
    ]
   ],
   "TLN": [
@@ -223400,7 +223496,7 @@
    ],
    [
     "2026-11-25",
-    352.46
+    351.87
    ]
   ],
   "AMD": [
@@ -223522,7 +223618,7 @@
    ],
    [
     "2026-11-25",
-    402.61
+    406.89
    ]
   ],
   "SMR": [
@@ -223766,7 +223862,7 @@
    ],
    [
     "2026-11-25",
-    8.91
+    8.88
    ]
   ]
  },
@@ -226737,6 +226833,15 @@
    "answer": "Checked the live orders list: it's empty, so nothing is resting right now. The TLN $355.66 buy and the DNN, UUUU, VST and CEG levels in the chat are analysis only, and the basket gate is closed, so none of them could be placed anyway. Anyone quoting those levels as exposure is working from stale information.",
    "verdict": "relevant",
    "action": "tell_owner"
+  },
+  {
+   "t": "2026-11-25 16:00",
+   "question": "LIVE_ORDERS_RIGHT_NOW is empty, so is the TLN buy at $355.66 actually resting, or was it only discussed? If it is resting, why was it not canceled after the basket gate closed?",
+   "kind": "odd",
+   "asked": "level",
+   "answer": "I checked the live order list and it is empty: no resting orders exist, and every order is a day order that expires at its close. So the TLN buy at $355.66 was only discussed, not placed, and nothing can fill during the closed-gate session. The gate is still closed, so the right move is to confirm the order is not in the broker and stay flat on TLN.",
+   "verdict": "irrelevant",
+   "action": "tell_owner"
   }
  ],
  "reactor_view": {
@@ -229669,7 +229774,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 15:51",
+ "watchdog_last": "2026-11-25 16:00",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -229978,36 +230083,48 @@
    "ticker": "UEC",
    "gap_pct": -5.8,
    "px_935": 5.24,
-   "spy_935": 699.6799926757812
+   "spy_935": 699.6799926757812,
+   "close": 5.68,
+   "ret_pct": 8.4,
+   "vs_spy_pct": 5.89
   },
   {
    "date": "2026-11-25",
    "ticker": "DNN",
    "gap_pct": -5.2,
    "px_935": 1.65,
-   "spy_935": 699.6799926757812
+   "spy_935": 699.6799926757812,
+   "close": 1.79,
+   "ret_pct": 8.48,
+   "vs_spy_pct": 5.97
   },
   {
    "date": "2026-11-25",
    "ticker": "UUUU",
    "gap_pct": -6.2,
    "px_935": 4.81,
-   "spy_935": 699.6799926757812
+   "spy_935": 699.6799926757812,
+   "close": 5.21,
+   "ret_pct": 8.32,
+   "vs_spy_pct": 5.81
   },
   {
    "date": "2026-11-25",
    "ticker": "LEU",
    "gap_pct": -7.6,
    "px_935": 77.64,
-   "spy_935": 699.6799926757812
+   "spy_935": 699.6799926757812,
+   "close": 82.92,
+   "ret_pct": 6.8,
+   "vs_spy_pct": 4.29
   }
  ],
  "hawk_sector_until": 1795628411.355496,
  "park_trend": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "above": false,
-  "spy": 718.69,
-  "sma200": 730.62
+  "spy": 717.02,
+  "sma200": 730.77
  },
  "fill_honesty": {
   "checked_trades": 0,
