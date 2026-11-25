@@ -2446,6 +2446,54 @@ def positions_view(st, prices):
     return out
 
 
+def tidy_history(st):
+    """One-time cleanup (owner, 2026-11-25: 'clear up any duplicated convos'): the Questioner loop (flag-cleanup bug) repeated the
+    same questions all night, and 84 messages argued about a TLN order that had expired at the close on Nov 23. Those messages
+    were being fed back to the agents as 'what teammates said'. Removes them, reworded repeat questions, same-story news from
+    several outlets, and exact duplicate posts. Runs once (flag tidy_v1)."""
+    if st["flags"].get("tidy_v1"):
+        return None
+    st["flags"]["tidy_v1"] = True
+    ghost = lambda txt, t: "355.66" in str(txt) and str(t) >= "2026-11-23 16:00"
+    n = {}
+    before = len(st.get("feed", []))
+    seen, out = set(), []
+    for p in st.get("feed", []):
+        key = json.dumps({k: p.get(k) for k in ("who", "title", "text")}, sort_keys=True, default=str)
+        if key in seen or ghost(f"{p.get('title')} {p.get('text')}", p.get("t", "")):
+            continue
+        seen.add(key); out.append(p)
+    st["feed"] = out; n["posts"] = before - len(out)
+    m0 = sum(len(c.get("msgs", [])) for c in st.get("chats", []))
+    chats = []
+    for c in st.get("chats", []):
+        day = (c.get("start") or "")[:10]
+        c["msgs"] = [m for m in c.get("msgs", []) if not ghost(m.get("text"), f"{day} {m.get('t', '')}")]
+        if c["msgs"] and not (c.get("title", "").startswith("The Questioner") and len(c["msgs"]) <= 1):
+            chats.append(c)
+    n["threads"] = len(st.get("chats", [])) - len(chats)
+    st["chats"] = chats
+    n["messages"] = m0 - sum(len(c["msgs"]) for c in chats)
+    qs, keep = st.get("questions", []), []
+    for q in qs:
+        w = _ev_words(q.get("question"))
+        if ghost(q.get("question"), q.get("t", "")) or (w and any(len(w & _ev_words(k["question"])) / max(1, len(w | _ev_words(k["question"]))) >= 0.5 for k in keep)):
+            continue
+        keep.append(q)
+    n["questions"] = len(qs) - len(keep); st["questions"] = keep
+    nf, keepn = st.get("news_feed", []), []
+    for f in nf:
+        w = _ev_words(f.get("title"))
+        if w and any(k.get("ticker") == f.get("ticker") and len(w & _ev_words(k.get("title"))) / max(1, len(w | _ev_words(k.get("title")))) >= 0.6 for k in keepn):
+            continue
+        keepn.append(f)
+    n["news"] = len(nf) - len(keepn); st["news_feed"] = keepn
+    feed.post("officer", f"Cleanup: removed {n['posts']} repeated posts, {n['messages']} chat messages ({n['threads']} empty threads), "
+              f"{n['questions']} repeated questions and {n['news']} same-story news items. Most were the Questioner's loop about a TLN "
+              "order that had already expired; the agents no longer read them back as 'what teammates said'.", [], kind="data")
+    return n
+
+
 def judgment_tick(st, desk, prices, today, now, brk_state):
     """15:00-15:30 ET: the PM reads every rule strategy's note and sets today's stance before the rules trade (judgment.py)."""
     if not (dt.time(15, 0) <= market.cclock(now) <= dt.time(15, 30)):
@@ -2722,6 +2770,14 @@ def handle_news(st, desk, ex, data, prices, today, brk_state):
         print("intel handoff failed", e)
     if not fresh:
         return
+    # same story from another outlet (or already in the feed this week) is dropped before anyone spends time on it
+    kept, seen_w = [], [(f.get("ticker"), _ev_words(f.get("title"))) for f in st.get("news_feed", [])[-250:]]
+    for it in fresh:
+        w = _ev_words(it.get("title"))
+        if w and any(tk == it.get("ticker") and len(w & sw) / max(1, len(w | sw)) >= 0.6 for tk, sw in seen_w):
+            continue
+        seen_w.append((it.get("ticker"), w)); kept.append(it)
+    fresh = kept
     scored = {}
     if desk.available:
         try:
@@ -3788,6 +3844,10 @@ def main():
                     pass
             if due:
                 last_cycle = time.time()
+                try:
+                    tidy_history(st)
+                except Exception as e:
+                    print("tidy", e)
                 try:
                     if now.weekday() == 5 and now.time() >= dt.time(10, 0) and not st["flags"].get(f"research:{now:%F}"):
                         st["flags"][f"research:{now:%F}"] = True  # Saturday research session (was the GitHub 10am run)
