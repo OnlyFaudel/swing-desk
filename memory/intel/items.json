@@ -21519,5 +21519,68 @@
 "kazatomprom",
 "omarbekov"
 ]
+},
+{
+"id": "efc408c17da0c385",
+"date": "2026-11-25",
+"ts": 1795626223,
+"title": "Westinghouse awards BWXT qualification contracts for AP1000 components",
+"summary": "",
+"outlet": "energynews.pro",
+"link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQR09CRUYxR0NQUG0xbGxCOE10LWgwUG01eTFSVWRIWlVETndpWUo0T3ZicG8xdzdScDg2VWtBdU5mNTIyckVETEdQNVZXUFI2S2xtcy03eVVpZXh2VVFlMDdZMVFIcktNWDh3cXYyR1dnTXliMnk2alBqdnNZdmFSMEFmTkhiSkVucnQwMXFuQm4wdDBmdk9Mc1R2Q3c?oc=5",
+"place": "Workers and jobs",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"contract"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.33,
+"score": 4.46,
+"echo_of": "b2e981fc7a2e7302",
+"w": [
+"ap1000",
+"awards",
+"bwxt",
+"components",
+"contracts",
+"qualification",
+"westinghouse"
+]
+},
+{
+"id": "fe03861983913aba",
+"date": "2026-11-25",
+"ts": 1795637979,
+"title": "Kazatomprom stock drops more than 4% after top executives detained",
+"summary": "",
+"outlet": "Kursiv Media",
+"link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdVRxWk9qdGhVN3RqTUFNNUc2ZGlCX3AtM3JqWmFiNFpsS21wclNBSkk3ZE5kVHNWTlRLWXc5S1QzNDhNU2RZaUtYVzJBZDlmOHdSM2JuUWdEc3UtREx4ZkdBRXhXNGFJTk5UN3pFeFhpR1d6US14T2VHVjI0TFczRzdqMEdwS2gwcmJNanU4YVJsR0RXRWhhbUREYWpyU0xpaEkydl9aZ0JDMWdBTl9oOWd5aHg?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [],
+"numbers": [
+"4%"
+],
+"local": true,
+"novelty": 0.78,
+"score": 4.56,
+"echo_of": null,
+"w": [
+"detained",
+"drops",
+"executives",
+"kazatomprom",
+"stock",
+"top"
+]
 }
 ]
