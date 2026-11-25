@@ -642,6 +642,14 @@
   "order_flow_task_2026_11_25": {
    "trials": 0,
    "verdict": "2026-11-25 06:45, the 05:30 order-flow task. Data: data/intraday 131 monthly CSVs, 11 stocks (CCJ, UEC, DNN, UUUU, LEU, BWXT, NXE, CEG, VST, TLN full after the 04:05 backfill fix; OKLO rows without after-hours), SIP feed, 2016-2026, pre_px/ah_px filled. Tests 1-3: order_flow_early_2026_11_25. Test 4: fast_lane_news (rejected). Test 5: after_hours_dip (live, earnings nights skipped, 2024-26 ~+0.8%/trade) and after_hours_bank (off: edge gone since 2024). Alpaca supports fractional extended-hours limit orders (asset flag fractional_eh_enabled)."
+  },
+  "sharp_drop_weekday": {
+   "trials": 5,
+   "verdict": "2026-11-25 06:50 (round 46, new). Sharp-drop trades (live exit) by entry weekday, vs S&P, 00-07 / 08-18 / 19-26: Mon +0.76 / +2.83 / +2.24; Tue +0.61 / +0.65 / -0.63; Wed +1.51 / +1.64 / +4.09; Thu +1.69 / +1.43 / +0.17; Fri +1.34 / +0.11 / +1.98 (n 41-140 each). Tuesday lowest-ish and Wednesday high in all three, but 5 buckets x ~1% standard error each: noise. Rejected."
+  },
+  "night_round_46_2026_11_25": {
+   "trials": 5,
+   "verdict": "2026-11-25 06:50. sharp_drop_weekday rejected. VM 04:42 save: rule_errors {}, backfill VST/TLN pending."
   }
  }
 }
