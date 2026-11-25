@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 06:15",
+ "updated": "2026-11-25 06:30",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -223,6 +223,15 @@
     "risk",
     "strategist",
     "researcher"
+   ]
+  },
+  {
+   "topic": "Sharp-drop rebounds in the speculative reactor/fuel names (OKLO, SMR, NNE, LTBR, ASPI, URG, LEU)",
+   "answer": "2019-2026, live sharp-drop exit, vs the S&P after costs. They rebound about as well on average as everything else (2023-26: +2.59% vs +2.77% a trade; median even higher, +8.4% vs +3.9%), but the worst 5% of trades are about twice as bad (-21.1% vs -12.5%). Same edge, double the tail: in these names take the base size only, never the deep-drop upsizing or the second add, and never two of them at once.",
+   "roles": [
+    "pm",
+    "risk",
+    "strategist"
    ]
   }
  ]

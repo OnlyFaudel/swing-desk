@@ -618,6 +618,14 @@
   "night_round_42_2026_11_25": {
    "trials": 5,
    "verdict": "2026-11-25 06:20. panic_orderflow_filters rejected after day-clustering."
+  },
+  "speculative_sharp_drops": {
+   "trials": 2,
+   "verdict": "2026-11-25 06:30 (round 43). Sharp-drop rule (live exit) split by speculative reactor/fuel names (OKLO, SMR, NNE, LTBR, ASPI, URG, LEU) vs the rest of the 88, vs S&P, 0.2% cost. 2019-22: spec +0.55% (n 12) vs +0.10% (n 286); 2023-26: spec +2.59% (n 144, median +8.36%, worst 5% -21.1%, up 60%) vs +2.77% (n 209, median +3.92%, worst 5% -12.5%, up 67%). Same mean, twice the tail: sizing fact for the PM (base size only), no rule change."
+  },
+  "night_round_43_2026_11_25": {
+   "trials": 2,
+   "verdict": "2026-11-25 06:30. speculative_sharp_drops (fact). Practice book live: 2 open (worst_week UUUU, LEU), 0 closed yet. Morning summary drafted."
   }
  }
 }
