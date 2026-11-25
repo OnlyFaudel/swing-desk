@@ -12,9 +12,10 @@ import os, sys, json, time, datetime as dt
 import pandas as pd
 
 OUT = "data/intraday"
-PROG = os.path.join(OUT, "_progress_v2.json")  # v1 marked stocks done after failed pulls (bug fixed 2026-11-24)
+PROG = os.path.join(OUT, "_progress_v3.json")  # v3 adds pre-market / after-hours columns (v1 had a 0-row bug)
 COLS = ["t", "date", "prev_close", "open", "px935", "px945", "px1000", "px1530", "close", "low", "high", "vol", "vol15",
-        "press15", "press30", "press_last30", "press_day", "vwap", "low_min", "high_min", "feed"]
+        "press15", "press30", "press_last30", "press_day", "vwap", "low_min", "high_min", "feed",
+        "pre_px", "pre_vol", "ah_px", "ah_vol", "ah_high", "ah_low"]  # pre-market 4:00-9:30 (same day), after hours 16:00-20:00
 
 
 def _client():
@@ -46,7 +47,14 @@ def _press(g):
 
 def features(df, t, feed):
     out = []
-    df = df[(df.ts.dt.time >= dt.time(9, 30)) & (df.ts.dt.time < dt.time(16, 0))]
+    tt = df.ts.dt.time
+    ext = {}
+    for day, g in df[(tt < dt.time(9, 30)) | (tt >= dt.time(16, 0))].groupby(df.ts.dt.date):
+        pre, ah = g[g.ts.dt.time < dt.time(9, 30)], g[g.ts.dt.time >= dt.time(16, 0)]
+        ext[day] = {"pre_px": float(pre.close.iloc[-1]) if len(pre) else None, "pre_vol": int(pre.volume.sum()),
+                    "ah_px": float(ah.close.iloc[-1]) if len(ah) else None, "ah_vol": int(ah.volume.sum()),
+                    "ah_high": float(ah.high.max()) if len(ah) else None, "ah_low": float(ah.low.min()) if len(ah) else None}
+    df = df[(tt >= dt.time(9, 30)) & (tt < dt.time(16, 0))]
     for day, g in df.groupby(df.ts.dt.date):
         g = g.sort_values("ts")
         if len(g) < 60:
@@ -60,7 +68,8 @@ def features(df, t, feed):
                     "high": float(g.high.max()), "vol": int(g.volume.sum()), "vol15": int(f15.volume.sum()),
                     "press15": _press(f15), "press30": _press(f30), "press_last30": _press(l30), "press_day": _press(g),
                     "vwap": round(float((g.close * g.volume).sum() / max(1, g.volume.sum())), 4),
-                    "low_min": int(mins.iloc[g.low.values.argmin()]), "high_min": int(mins.iloc[g.high.values.argmax()]), "feed": feed})
+                    "low_min": int(mins.iloc[g.low.values.argmin()]), "high_min": int(mins.iloc[g.high.values.argmax()]), "feed": feed,
+                    **ext.get(day, {"pre_px": None, "pre_vol": 0, "ah_px": None, "ah_vol": 0, "ah_high": None, "ah_low": None})})
     return out
 
 

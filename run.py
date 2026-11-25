@@ -2235,7 +2235,7 @@ def intel_tick(st, today, force=False):
         after_hours = now.time() >= dt.time(16, 45) or now.time() < dt.time(7, 30) or now.weekday() >= 5
         prog = {}
         try:
-            prog = json.load(open(os.path.join(ROOT, "data/intraday/_progress_v2.json")))
+            prog = json.load(open(os.path.join(ROOT, "data/intraday/_progress_v3.json")))
         except Exception:
             pass
         last = st["flags"].get("intraday_backfill_t", 0)
