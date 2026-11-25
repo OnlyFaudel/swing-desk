@@ -2446,6 +2446,19 @@ def positions_view(st, prices):
     return out
 
 
+def clear_answered(st):
+    """Research-queue items answered overnight (research/desk_facts.json) are removed so the lab doesn't redo them."""
+    if st["flags"].get("answered_v1"):
+        return
+    st["flags"]["answered_v1"] = True
+    q = st.get("research_queue", [])
+    st["research_queue"] = [x for x in q if not re.search(r"berryman|10b5-1|pjm|capacity.auction", str(x.get("q", "")), re.I)]
+    if len(q) != len(st["research_queue"]):
+        feed.post("researcher", f"Cleared {len(q) - len(st['research_queue'])} research requests that were answered overnight: TLN's Nov 17 "
+                  "insider sale was a pre-planned 10b5-1 sale (no signal), and the PJM 2029/30 auction is set to close Dec 15 with no "
+                  "ruling on the delay request found. Details are in the checked-facts list every agent now reads.", ["TLN"], kind="learn")
+
+
 def tidy_history(st):
     """One-time cleanup (owner, 2026-11-25: 'clear up any duplicated convos'): the Questioner loop (flag-cleanup bug) repeated the
     same questions all night, and 84 messages argued about a TLN order that had expired at the close on Nov 23. Those messages
@@ -3846,6 +3859,7 @@ def main():
                 last_cycle = time.time()
                 try:
                     tidy_history(st)
+                    clear_answered(st)
                 except Exception as e:
                     print("tidy", e)
                 try:

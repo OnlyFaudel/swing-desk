@@ -341,6 +341,10 @@
   "night_round_9_2026_11_25": {
    "trials": 5,
    "verdict": "2026-11-25 00:25. (Z) Fear-aware parking: also hold the 2x S&P fund while the S&P is below its 200-day if VIX > 30 and falling 2 days. Parking alone (synthetic 2x S&P + T-bills): 2000-06 4.9%/yr, worst -34.1% (vs 0.6%, -45.0%); 2007-18 13.1%, worst -49.3% (vs 11.7%, -37.5%: buys too early in 2008); 2019-26 23.8% vs 21.7%. Whole account 25.6%/yr (18.1 / 36.8) but worst drop -47.0% vs -40.5%: rejected (small gain, much deeper worst case). (X) Sprott uranium trust (SRUUF, from Jul 2021) 5-day +5%/+8%/-5% -> miners next 10 days vs S&P -0.08% / -0.28% / +0.24% (59/41/57 events, t ~0): no lead, rejected."
+  },
+  "night_round_10_2026_11_25": {
+   "trials": 16,
+   "verdict": "2026-11-25 00:45 (owner: test more per round and use the bots' own data and queue). (EE) Hold Thanksgiving trades to Cyber Monday: Fri->Mon vs S&P our 10 +0.14% / -0.40%, related +0.00% / -0.69% (0 of 7 recent years): rejected. Note: the live Tue->Fri trade itself is ~flat vs the S&P (our 10 -0.34% / +0.14%), it only beats idle T-bills; re-score after this week. (FF) Parking only Nov-Apr: 2000-06 2.1%/yr (worst -29%), 2007-18 10.2% (-20%), 2019-26 7.3% vs 21.1%: rejected. Discovery-engine survivors (news archive 2019+, vs basket) re-checked 2008-2026 vs S&P: 3 down days miners -1.30% (t -3.1) / +0.94% (t 2.4), our 10 -0.99% / +0.77%, vs basket -0.22% / 0.00%: recent-only; new 52-week high miners -1.76% / -1.21%, our 10 vs basket -0.95% / -0.50% (t -1.5 each): consistent but small 'don't chase' fact (no shorting, so context for the agents); new 52-week low miners +0.53% / +0.39%, our 10 -0.29% / +1.07% (20d -3.16% / +7.67%): flips. Officer open-market sales (yfinance insiders 2024-26, 129 cases): next 20 days vs basket -0.16% (t -0.1), median -4.06%: no signal. Bot queue answered (research/desk_facts.json): TLN Nov 17 Form 4 marked 10b5-1; PJM 2029/30 auction closes Dec 15 with no delay ruling found."
   }
  }
 }

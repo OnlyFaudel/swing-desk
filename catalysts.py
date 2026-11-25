@@ -19,6 +19,8 @@ CALENDAR = [
     {"date": "2026-11-25", "what": "Wednesday before Thanksgiving. Since 1996 the S&P rose Fri->Wed of this week 73% of years (+0.69% vs +0.14% "
      "normal); our 10 +1.8% (2008-25, up 67%)."},
     {"date": "2026-11-26", "what": "Thanksgiving: market closed."},
+    {"date": "2026-12-15", "what": "PJM 2029/30 capacity auction closes (price floor and cap apply). Matters for TLN, VST, CEG. No FERC ruling found "
+                                  "on the new delay request as of Nov 25; assume it goes ahead.", "kind": "macro"},
     {"date": "2026-11-27", "what": "Black Friday: market closes at 1 pm, volume about half of normal. Black Friday close -> Monday has been weak: "
      "S&P up only 40% of 30 years, our 10 -0.5%, power trio -1.7% (down 6 of 7 years since 2019)."},
     {"date": "2026-11-30", "what": "Monday after Thanksgiving. Power trio over the next 2 weeks: -4.1% on average since 2019 (up 2 of 7 years); "

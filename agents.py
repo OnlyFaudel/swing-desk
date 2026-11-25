@@ -137,6 +137,12 @@ class Desk:
                     payload = {**payload, "after_hours_last_night": ln}
             except Exception:
                 pass
+        if role in ("pm", "risk", "questioner", "investigator", "macro", "level", "whale", "researcher", "strategist") and isinstance(payload, dict):
+            try:  # questions already answered overnight (research/desk_facts.json): use them instead of asking again
+                fx = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "research", "desk_facts.json")))
+                payload = {**payload, "already_checked_facts": [f"{f['topic']}: {f['answer']}" for f in fx.get("facts", [])][-12:]}
+            except Exception:
+                pass
         les = [x["lesson"] for x in self.state.get("lessons", []) if x.get("lesson")][-6:]
         if les and isinstance(payload, dict):  # what the desk learned from its own mistakes, in every agent's head
             payload = {**payload, "desk_lessons_from_our_mistakes": les}

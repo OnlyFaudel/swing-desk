@@ -1,0 +1,25 @@
+{
+ "updated": "2026-11-25 00:45",
+ "facts": [
+  {
+   "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
+   "answer": "The SEC Form 4 for the Nov 17 TLN sales says one or more transactions were made under a Rule 10b5-1(c) trading plan: a pre-scheduled sale, not a signal. Separately, across 129 officer open-market sales in our names (2024-2026) the stock did about the same as our basket over the next 20 days (-0.16%, t -0.1). Give it no weight.",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001622536/000162828026075082/wk-form4_1795122659.xml"
+  },
+  {
+   "topic": "PJM 2029/30 capacity auction delay",
+   "answer": "No FERC ruling on the new delay request was found as of Nov 25. The 2029/30 base residual auction is scheduled to close Dec 15, under the price collar (floor and cap) FERC extended to the 2028/29 and 2029/30 auctions. A Nov 3 2026 complaint (EL27-11) explicitly does not seek to disrupt the 2029/30 auction. Until a ruling appears, assume the Dec 15 auction goes ahead; it is on the calendar.",
+   "source": "https://insidelines.pjm.com/ferc-approves-capacity-auction-price-collar-to-next-two-capacity-auctions/"
+  },
+  {
+   "topic": "Discovery engine survivors checked on 2008-2026 vs the S&P",
+   "answer": "3 down days: miners -1.30% (2008-18) / +0.94% (2019-26) over 5 days: recent-era only (practice book). New 52-week high: lags in BOTH eras (miners -1.76% / -1.21% vs S&P over 5 days; our 10 -0.95% / -0.50% vs the basket): don't chase fresh highs, a good moment to be patient on new buys. New 52-week low: flips between eras, no edge. Offering dilution: already a live exit rule.",
+   "source": "research/trial_ledger.json: night_round_10_2026_11_25"
+  },
+  {
+   "topic": "Insider sales in general",
+   "answer": "Officer open-market sales in our names carry no predictive weight (129 cases, -0.16% vs basket over 20 days). Insider BUYS are rare here (11 in 2 years in our 14 names).",
+   "source": "research/trial_ledger.json: night_round_10_2026_11_25, insider_buys"
+  }
+ ]
+}
