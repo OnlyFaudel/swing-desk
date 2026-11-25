@@ -734,7 +734,7 @@
     "size_pct": 8,
     "max_open": 2,
     "limit_buffer_pct": 0.3,
-    "note": "Research 2026-11-25 (after_hours_dip): AH 3%+ under the 4 PM close on 1%+ of the day volume, buy at the AH price, sell 9:35 next day: +1.84%/+1.47% per trade after 1% cost (2016-18/2019-26), all 7 names positive. Earnings nights excluded (2026-11-25: they did not bounce). Without them: 2016-23 +1.95% (n 110, up 69%), 2024-26 +1.53% (n 26, up 73%)."
+    "note": "Research 2026-11-25 (after_hours_dip): AH 3%+ under the 4 PM close on 1%+ of the day volume, buy at the AH price, sell 9:35 next day: +1.84%/+1.47% per trade after 1% cost (2016-18/2019-26), all 7 names positive. Earnings nights excluded (2026-11-25: they did not bounce). Without them: 2016-23 +1.95% (n 110, up 69%), 2024-26 +1.53% (n 26, up 73%). Re-check 2026-11-25 05:15 on the completed history (CEG/NXE/VST/TLN filled in) with the live 0.3% limit buffer, 1% cost and earnings nights (that day or the day before) skipped: 2016-23 +1.93% (n 113, up 67%), 2024-26 +0.78% (n 42, t 1.4, up 62%). Expect under 1% a trade now."
   },
   "ah_bank": {
     "enabled": false,

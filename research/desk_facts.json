@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 05:40",
+ "updated": "2026-11-25 06:15",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -58,7 +58,7 @@
   },
   {
    "topic": "After-hours moves overshoot (minute data 2016-2026, our stocks)",
-   "answer": "When one of our stocks drops 3%+ after hours on a normal night, the next morning recovers about half of it (live rule 'ah_dip', +1.5% to +1.9% a trade after costs, still working in 2024-26). On EARNINGS nights the after-hours move is real news and does not reverse; the rule skips them. After-hours JUMPS used to fade by the morning, but not since 2024 (+0.1% from selling into them), so the after-hours bank rule is off. Heavy buying in the last 30 minutes fades slightly the next day.",
+   "answer": "When one of our stocks drops 3%+ after hours on a normal night, the next morning recovers about half of it (live rule 'ah_dip': +1.9% a trade 2016-23, about +0.8% in 2024-26 after the limit buffer and costs, n 42; still positive but smaller). On EARNINGS nights the after-hours move is real news and does not reverse; the rule skips them. After-hours JUMPS used to fade by the morning, but not since 2024 (+0.1% from selling into them), so the after-hours bank rule is off. Heavy buying in the last 30 minutes fades slightly the next day.",
    "source": "research/trial_ledger.json: after_hours_dip, order_flow_early_2026_11_25"
   },
   {
