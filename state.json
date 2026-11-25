@@ -547,7 +547,7 @@
   "radarres:2026-11-24": true,
   "questioner:2026-11-24:9": true,
   "sput:2026-11-24": true,
-  "intraday_backfill_t": 1795647036.850422,
+  "intraday_backfill_t": 1795648846.1851737,
   "reconcile:2026-11-24": true,
   "catalysts:2026-11-25": true,
   "tidy_v1": true,
@@ -599,7 +599,10 @@
   "ahdip173:2026-11-25": true,
   "questioner:2026-11-25:9": true,
   "nightwatch180:2026-11-25": true,
-  "ahdip180:2026-11-25": true
+  "ahdip180:2026-11-25": true,
+  "sput:2026-11-25": true,
+  "ahdip181:2026-11-25": true,
+  "nightwatch181:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -4183,42 +4186,6 @@
  },
  "news_feed": [
   {
-   "ticker": "UUUU",
-   "source": "Google News",
-   "title": "Wrapped Energy Fuels Inc. Tokenized Stock (xStock): Funding, Investors, Team and Key Events - CryptoRank",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVmdFSmVUU3Z4OUVvd2dreVMzMnJsclZXSFZOUGtRZEVoYzhVeUpKVFcxTkZIUUhlUzM4ZjdnZS1QQ3N3SVRiOWdUbnpBM0NnMWl6ZndQb05NbnNwSzF2aUFudHNpRUVXSzdXdG9lS1k0cWZHaGE3M1RjaTF6S0hBMg?oc=5",
-   "ts": 1795491712,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Crypto tokenized wrapper page, not new Energy Fuels company information."
-  },
-  {
-   "ticker": "VST",
-   "source": "Google News",
-   "title": "Vistra Corp. (VST) Stock Forecasts - Yahoo Finance",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPU0E4bmtvUTJIRjN0TzJ3bXFUMWUtZlM1X2VtNk81NUd1WmkycWd6b1dOdHpWdVdHeF9URUk5UEZUXzVYRWU3a3VuRUw0N1YxLVJaNUVwMjQtSkU5YlN0UExGWk5HM0REVjBfWktmNV93eW9nU0w2M1VWQlJIUThkR0RiRWtPYW9yREp1dQ?oc=5",
-   "ts": 1795494996,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic Yahoo Finance forecast-page headline with no new company-specific information."
-  },
-  {
-   "ticker": "UUUU",
-   "source": "Google News",
-   "title": "Mining Briefs: Energy Fuels, WIN, Kingsrose, and more... - Mining News Net",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWThCV1BMWGJraFVUV2NPTmczcjFNWURNSlFHUkdGTEVSSklGbWdsNFV5YzNDYjN5LS0zYy1FOEdVdUZOV1k4b25TUE1jQ2tCS2wxQldrZUZhay10QjBBLU9JZ3NueXdjNTAxZlJnQVFyUGhhZWhKM2NBekd5em9HNENPSmtEaVlZWlJidHZBb1NObXQ2SVJzbC1IWEVfTFlyU3p2dVNObEZ6Qk9xYVdtc3N3NA?oc=5",
-   "ts": 1795498321,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Roundup of mining briefs; Energy Fuels is only a minor mention, no new company-specific information."
-  },
-  {
    "ticker": "LEU",
    "source": "Local intel: ExchangeMonitor (Energy Department)",
    "title": "Deep Isolation to receive $20 million from DOE ARPA-E",
@@ -7181,6 +7148,42 @@
    "direction": "neutral",
    "event_type": "war_geopolitics",
    "why": "Kim Jong Un rhetoric on Korean nuclear submarines; no direct uranium supply or contract impact."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News",
+   "title": "Talen Energy Corporation (TLN) Stock Forecasts - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTVRGZHVyUXlQSTlha00zRzlzRVF2WV9PYzgzeFNqY3VxOVptVXU2U2pSV0JIdTVmMll5a3Azc2xkNEZDanJqNHBHTlU1NjBkS1VNSUpSM2wwRVItbzdxMl9xSzNmZGhtYkg2eEE4NUdpeTh6SzNCZUl4UjJvRWZRNzRVNEVKbnY4Z3JELTFjZw?oc=5",
+   "ts": 1795648348,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Generic stock-forecast aggregator page with no new company information."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News",
+   "title": "Constellation Energy (CEG) closes 4.4 GW sale to LS Power - Mugglehead Investment Magazine",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1sUEpNeFBBaHpBMXdsWF9rY0pXb1lxQ25qb1NhTUd3WHY2b2FyVVY5Nm9VNkVBSThncjh5dWEwYjEySE9jOFYxUndpSHlhTDlfSjhwcDJnT2x4d1JPcHB2UEtlZ192dWREcVpHc3Z2STNtMGd4aEtF?oc=5",
+   "ts": 1795646031,
+   "materiality": 4,
+   "novelty": "follow_up",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Closing of a 4.4 GW gas asset sale to LS Power; already in desk notes from 2026-11-25."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "Cameco Corporation (CCJ) Stock Forecasts - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQR09GMXNqUVhlanRPcmxwamxBa0tVbzRwVkg2X3RVckEya1hpem5laTJSYzFIMFVBejdzOE9ZejFJNS1hTlRGS2ZGSTB6R2hSZ1ZPLVp6SjRVR0ZpZzdYSGp2SFFfNjNldy1saDhXWHBERmpnWW5uNnc1aXA0aUlpU3pVVWZNY0FtQkc5ZF80NA?oc=5",
+   "ts": 1795648572,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Yahoo Finance forecast page title; no new company-specific information."
   }
  ],
  "reviews": [
@@ -8940,16 +8943,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.72173,
+  "day_usd": 0.72266,
   "month": "2026-11",
-  "month_usd": 1.90529,
-  "total_usd": 1.90529,
+  "month_usd": 1.90622,
+  "total_usd": 1.90622,
   "by_role": {
    "macro": 0.19341,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.17322,
+   "scout": 0.17415,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9152,7 +9155,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 18:12 ET",
+ "last_cycle": "2026-11-25 18:23 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57883,6 +57886,7 @@
   "7cceea348ff5f82c",
   "9ab10d3c257d1ce5",
   "59ef25447c180fa9",
+  "f8daf794088b79d2",
   "9d0cef749e9a05fd",
   "d315dfa4e1149d87",
   "1d91a3cc917720fa",
@@ -57908,6 +57912,7 @@
   "36bc42fa3067d0c3",
   "dca8857e1d9fca26",
   "0eb4c73d1abac7bb",
+  "734de812d3954952",
   "9f80c9fee3eed575",
   "0f192e3ee6f7d8a7",
   "23a0be3f29f6548a",
@@ -58018,6 +58023,7 @@
   "f3e08d14a67b7dd8",
   "2ddc82c2b5215c74",
   "8a429bbe4d25ae7d",
+  "e408811995374b04",
   "063170773d4b14a2",
   "64586fb72f88087f",
   "418a91931047cecc",
@@ -58381,7 +58387,7 @@
   "84200faa36eac51a",
   "688d746cfc31b58f"
  ],
- "news_slow_at": 1795648004.3619127,
+ "news_slow_at": 1795648608.5681498,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219408,24 +219414,24 @@
    "lesson": null
   }
  ],
- "intel_at": 1795646943.5697882,
+ "intel_at": 1795648754.6573532,
  "intel_health": {
-  "at": "2026-11-25 17:50",
+  "at": "2026-11-25 18:20",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
-   "Athabasca Basin": 7,
+   "Athabasca Basin": 11,
    "Saskatchewan wildfires": 4,
    "Rook I / Arrow": 7,
    "Wheeler River / Phoenix": 9,
    "Port Hope / Blind River": 0,
    "Westinghouse": 12,
-   "Kazakhstan": 16,
+   "Kazakhstan": 24,
    "Niger": 8,
-   "Namibia": 28,
+   "Namibia": 29,
    "Russia supply": 3,
    "Piketon": 26,
-   "HALEU": 11,
+   "HALEU": 12,
    "Wyoming ISR": 23,
    "South Texas ISR": 2,
    "White Mesa / Utah": 14,
@@ -219438,32 +219444,32 @@
    "PJM grid": 13,
    "ERCOT grid": 12,
    "Data-center nuclear deals": 9,
-   "Japan restarts": 8,
-   "China new builds": 14,
+   "Japan restarts": 9,
+   "China new builds": 10,
    "Congress and laws": 28,
    "NRC decisions": 21,
-   "Energy Department": 52,
-   "White House and executive orders": 29,
+   "Energy Department": 69,
+   "White House and executive orders": 24,
    "Tariffs and trade": 2,
    "India": 27,
    "South Korea": 87,
-   "Europe new builds": 59,
+   "Europe new builds": 29,
    "France and UK": 12,
-   "Middle East": 25,
+   "Middle East": 57,
    "Asia newcomers": 49,
    "Canada SMRs": 10,
-   "Big tech power deals": 28,
-   "Iran": 50,
-   "North Korea": 67,
-   "War zones": 33,
-   "AUKUS and navies": 15,
-   "Weapons programs": 21,
+   "Big tech power deals": 29,
+   "Iran": 24,
+   "North Korea": 69,
+   "War zones": 10,
+   "AUKUS and navies": 14,
+   "Weapons programs": 22,
    "Stockpiles and reserves": 24,
    "Sprott trust": 6,
    "Uranium price": 45,
    "US policy": 0,
-   "Lawsuits and investigations": 72,
-   "Workers and jobs": 24,
+   "Lawsuits and investigations": 33,
+   "Workers and jobs": 23,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
    "Federal Register (uranium)": 9,
@@ -219473,9 +219479,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 18:12",
-  "total": 679,
-  "week": 510,
+  "updated": "2026-11-25 18:23",
+  "total": 680,
+  "week": 511,
   "places": {
    "Uranium price": 48,
    "South Korea": 37,
@@ -219488,26 +219494,26 @@
    "AUKUS and navies": 19,
    "War zones": 19,
    "Rare earths (Energy Fuels)": 15,
-   "Asia newcomers": 14
+   "Asia newcomers": 15
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-25 17:50",
+   "at": "2026-11-25 18:20",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
-    "Athabasca Basin": 7,
+    "Athabasca Basin": 11,
     "Saskatchewan wildfires": 4,
     "Rook I / Arrow": 7,
     "Wheeler River / Phoenix": 9,
     "Port Hope / Blind River": 0,
     "Westinghouse": 12,
-    "Kazakhstan": 16,
+    "Kazakhstan": 24,
     "Niger": 8,
-    "Namibia": 28,
+    "Namibia": 29,
     "Russia supply": 3,
     "Piketon": 26,
-    "HALEU": 11,
+    "HALEU": 12,
     "Wyoming ISR": 23,
     "South Texas ISR": 2,
     "White Mesa / Utah": 14,
@@ -219520,32 +219526,32 @@
     "PJM grid": 13,
     "ERCOT grid": 12,
     "Data-center nuclear deals": 9,
-    "Japan restarts": 8,
-    "China new builds": 14,
+    "Japan restarts": 9,
+    "China new builds": 10,
     "Congress and laws": 28,
     "NRC decisions": 21,
-    "Energy Department": 52,
-    "White House and executive orders": 29,
+    "Energy Department": 69,
+    "White House and executive orders": 24,
     "Tariffs and trade": 2,
     "India": 27,
     "South Korea": 87,
-    "Europe new builds": 59,
+    "Europe new builds": 29,
     "France and UK": 12,
-    "Middle East": 25,
+    "Middle East": 57,
     "Asia newcomers": 49,
     "Canada SMRs": 10,
-    "Big tech power deals": 28,
-    "Iran": 50,
-    "North Korea": 67,
-    "War zones": 33,
-    "AUKUS and navies": 15,
-    "Weapons programs": 21,
+    "Big tech power deals": 29,
+    "Iran": 24,
+    "North Korea": 69,
+    "War zones": 10,
+    "AUKUS and navies": 14,
+    "Weapons programs": 22,
     "Stockpiles and reserves": 24,
     "Sprott trust": 6,
     "Uranium price": 45,
     "US policy": 0,
-    "Lawsuits and investigations": 72,
-    "Workers and jobs": 24,
+    "Lawsuits and investigations": 33,
+    "Workers and jobs": 23,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
     "Federal Register (uranium)": 9,
@@ -222529,7 +222535,7 @@
    }
   ]
  },
- "dossier_at": 1795647039.8508737,
+ "dossier_at": 1795648849.4443822,
  "sector_prices": {
   "_at": 1795647108.8290422,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -222587,80 +222593,80 @@
    "name": "Cameco",
    "price": 61.56,
    "week_pct": -1.42,
-   "built": "2026-11-25 17:50"
+   "built": "2026-11-25 18:20"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.95,
    "week_pct": -4.46,
-   "built": "2026-11-25 17:50"
+   "built": "2026-11-25 18:20"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.69,
    "week_pct": -3.89,
-   "built": "2026-11-25 17:50"
+   "built": "2026-11-25 18:21"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.8,
    "week_pct": -1.64,
-   "built": "2026-11-25 17:51"
+   "built": "2026-11-25 18:21"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.2,
    "week_pct": -7.71,
-   "built": "2026-11-25 17:51"
+   "built": "2026-11-25 18:21"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 83.23,
    "week_pct": -9.3,
-   "built": "2026-11-25 17:51"
+   "built": "2026-11-25 18:21"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.49,
    "week_pct": -3.54,
-   "built": "2026-11-25 17:51"
+   "built": "2026-11-25 18:21"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 235.25,
    "week_pct": -10.46,
-   "built": "2026-11-25 17:51"
+   "built": "2026-11-25 18:21"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 121.32,
    "week_pct": -3.39,
-   "built": "2026-11-25 17:51"
+   "built": "2026-11-25 18:21"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 351.55,
    "week_pct": -2.4,
-   "built": "2026-11-25 17:51"
+   "built": "2026-11-25 18:21"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-25 17:51"
+   "built": "2026-11-25 18:21"
   }
  ],
- "heartbeat": "2026-11-25 18:12",
+ "heartbeat": "2026-11-25 18:23",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -222885,16 +222891,16 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 294,
-   "used": 265,
+   "asked": 296,
+   "used": 267,
    "notes": {
-    "TLN Deals and contracts": 16,
-    "CCJ Deals and contracts": 55,
+    "TLN Deals and contracts": 17,
+    "CCJ Deals and contracts": 56,
     "BWXT Deals and contracts": 37,
     "SECTOR Government and laws": 72,
     "UUUU Deals and contracts": 38,
     "SECTOR Countries": 67,
-    "CEG Deals and contracts": 37,
+    "CEG Deals and contracts": 38,
     "NXE Legal": 11,
     "NXE Deals and contracts": 18,
     "DNN Deals and contracts": 11,
@@ -227968,14 +227974,14 @@
   }
  },
  "sput_view": {
-  "premium_pct": -16.99,
+  "premium_pct": -16.37,
   "change_1w_pts": null,
-  "nav": 21.58,
-  "price": 17.91,
-  "implied_spot_usd_lb": 90.91,
+  "nav": 21.55,
+  "price": 18.02,
+  "implied_spot_usd_lb": 90.78,
   "spot_momentum_1m": null,
   "pounds_held": 81697348.0,
-  "as_of": "November 23, 2026",
+  "as_of": "November 24, 2026",
   "what_it_means": "At a premium the trust can raise money and buy uranium (supports spot and miners); at a discount it can't, and a widening discount means investors are leaving uranium. Rising premium months were followed by stronger miner months in a small monthly test (n=11)."
  },
  "license_view": {
@@ -230862,7 +230868,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 18:12",
+ "watchdog_last": "2026-11-25 18:23",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -231540,8 +231546,8 @@
    "date": "2026-11-25",
    "t": "NNE",
    "close": 8.85,
-   "ah_px": 9.18,
-   "ah_move": 3.73,
+   "ah_px": 8.95,
+   "ah_move": 1.13,
    "ah_vol": 650,
    "vol_share_pct": 0.0,
    "first_seen": "16:40",
@@ -231569,9 +231575,9 @@
    "date": "2026-11-25",
    "t": "VST",
    "close": 121.325,
-   "ah_px": 121.7,
-   "ah_move": 0.31,
-   "ah_vol": 597431,
+   "ah_px": 121.6183,
+   "ah_move": 0.24,
+   "ah_vol": 4521303,
    "vol_share_pct": 14.2,
    "first_seen": "17:40",
    "headlines": [
