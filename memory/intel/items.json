@@ -21679,5 +21679,105 @@
 "test",
 "warn"
 ]
+},
+{
+"id": "80c83163eca4e5df",
+"date": "2026-11-23",
+"ts": 1795446711,
+"title": "Talen Energy (TLN) Locks In Long Term PJM Sales, Is The Pullback A Valuation Opportunity?",
+"summary": "",
+"outlet": "Simply Wall St",
+"link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPX0lYVHh4Q0dhZTFQWWozOWsyV0IxTFBKN0dhQ3J2c0FCRXNBT3E3X1dsRHNoZ3pSQkNHNEVNSTdnTl90alZoZUdFYXoza0FIUlMwdW9tUFVEa01fNm9iNU1zbFdwUnZ6cnd6ZmtxTXNpS1RUQ0ZUV3ZqTFdPcmxQM2JSYmdnc25DaXJjU2hldWY3R0FiQ0xReXE1cEdXaFVQMFlydEpTTllXNmUzaHMzakp0ZUIzQmZaazJ2Qm5Bc0tEbXc4OXRQSUtsczF0ZWFY0gHQAUFVX3lxTE9fSVhUeHhDR2FlMVBZajM5azJXQjFMUEo3R2FDcnZzQUJFc0FPcTdfV2xEc2hnelJCQ0c0RU1JN2dOX3RqVmhlR0VhejNrQUhSUzB1b21QVURrTV82b2I1TXNsV3BSdnpyd3pma3FNc2lLVFRDRlRXdmpMV09ybFAzYlJiZ2dzbkNpcmNTaGV1ZjdHQWJDTFF5cTVwR1doVVAwWXJ0SlNOWVc2ZTNoczNqSnRlQjNCZlprMnZCbkFzS0Rtdzg5dFBJS2xzMXRlYVg?oc=5",
+"place": "PJM grid",
+"tickers": [
+"CEG",
+"TLN",
+"VST"
+],
+"tags": [
+"market_chatter"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 0.0,
+"echo_of": "9f80c9fee3eed575",
+"w": [
+"energy",
+"locks",
+"long",
+"opportunity",
+"pjm",
+"pullback",
+"sales",
+"talen",
+"term",
+"tln",
+"valuation"
+]
+},
+{
+"id": "92ec86ec1a3aa358",
+"date": "2026-11-25",
+"ts": 1795622978,
+"title": "IAEA condemns deadly drone strikes near Ukraine nuclear plant",
+"summary": "",
+"outlet": "TRT World",
+"link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1NOWVjdXpXWFh5bG80U0FkRXBiU3FmT0kyaXBDVWQ5aVNEVnpUdnRrZlZSQy1MUkRNdXRTbFF0dWN4WTlGakZJTEFUSVhZbUd3OEo0dndzYVo?oc=5",
+"place": "War zones",
+"tickers": [
+"CCJ",
+"CEG"
+],
+"tags": [
+"disruption",
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.75,
+"score": 7.3,
+"echo_of": null,
+"w": [
+"condemns",
+"deadly",
+"drone",
+"iaea",
+"near",
+"nuclear",
+"plant",
+"strikes",
+"ukraine"
+]
+},
+{
+"id": "64586fb72f88087f",
+"date": "2026-11-25",
+"ts": 1795641413,
+"title": "Kazatomprom operations chief detained in bribery probe",
+"summary": "",
+"outlet": "The Northern Miner",
+"link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQY2ZQV0V6ZHhqbGZLckFFdU4zbkM2LUdNbTNKS01BTDM1d01MMk1Ya0dPZDhhV1V1ZXh4R3VTbEh3RjhfS3hiS1hZaEdvRDBRMU9zRlRFaGVyekhuZUNJd2M0YjFIYXF5OWlKRUpPQmd5U2owNVplZnJxeTVlRnp3ejdrcDZ0R2xaU0x1UUhna3hBcEZtZVJmUnVqVG51RkdVMlFr?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.62,
+"score": 3.74,
+"echo_of": null,
+"w": [
+"bribery",
+"chief",
+"detained",
+"kazatomprom",
+"operations",
+"probe"
+]
 }
 ]

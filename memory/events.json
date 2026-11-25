@@ -28388,5 +28388,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-25",
+"title": "IAEA condemns deadly drone strikes near Ukraine nuclear plant",
+"type": "intel_disruption",
+"source": "Intel: TRT World",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "CEG",
+"date": "2026-11-25",
+"title": "IAEA condemns deadly drone strikes near Ukraine nuclear plant",
+"type": "intel_disruption",
+"source": "Intel: TRT World",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]
