@@ -120,6 +120,14 @@
 "surfaced": false
 },
 {
+"date": "2026-11-27",
+"ticker": "SECTOR",
+"what": "Black Friday half-day session; historically weak Black Friday to Monday period for the power trio and our basket. Re-check whether the basket has reclaimed its 10-day average before any new buys.",
+"by": "risk",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
 "date": "2026-11-28",
 "ticker": "UUUU",
 "what": "Half-day session after Thanksgiving; check whether the basket recovers above its 10-day average before any future resting buy.",
@@ -2052,6 +2060,14 @@
 "ticker": "CEG",
 "what": "PJM 2029/30 capacity auction closes; historically the release-day pop has faded, so do not chase it.",
 "by": "pm",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "VST",
+"what": "PJM 2029/30 capacity auction closes under the price collar; expected to clear near the cap again, so do not buy the release-day pop.",
+"by": "risk",
 "written": "2026-11-25",
 "surfaced": false
 },

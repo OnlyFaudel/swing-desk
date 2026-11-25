@@ -555,7 +555,8 @@
   "cover1995130:2026-11-25": true,
   "gapshadow:2026-11-25": true,
   "questioner:2026-11-25:5": true,
-  "questioner:2026-11-25:6": true
+  "questioner:2026-11-25:6": true,
+  "midday:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -7974,12 +7975,12 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.45569,
+  "day_usd": 0.46216,
   "month": "2026-11",
-  "month_usd": 1.63925,
-  "total_usd": 1.63925,
+  "month_usd": 1.64572,
+  "total_usd": 1.64572,
   "by_role": {
-   "macro": 0.17828,
+   "macro": 0.17953,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.16539,
@@ -7987,8 +7988,8 @@
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.19114,
-   "risk": 0.17251,
+   "pm": 0.19292,
+   "risk": 0.17595,
    "investigator": 0.29871,
    "postmortem": 0.00035,
    "researcher": 0.01486,
@@ -8169,23 +8170,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 59.52,
-  "NXE": 6.73,
+  "CCJ": 59.48,
+  "NXE": 6.74,
   "UEC": 5.42,
   "DNN": 1.72,
-  "UUUU": 4.93,
-  "LEU": 79.44,
-  "BWXT": 111.46,
-  "CEG": 234.88,
-  "VST": 118.65,
-  "TLN": 343.85,
-  "AMD": 384.15,
+  "UUUU": 4.95,
+  "LEU": 79.31,
+  "BWXT": 111.42,
+  "CEG": 234.75,
+  "VST": 118.71,
+  "TLN": 343.72,
+  "AMD": 384.27,
   "SMR": 3.13,
-  "NNE": 8.31,
-  "SPY": 707.01,
-  "SGOV": 100.67
+  "NNE": 8.32,
+  "SPY": 707.25,
+  "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 12:28 ET",
+ "last_cycle": "2026-11-25 12:30 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -8222,10 +8223,10 @@
   ]
  },
  "brakes": {
-  "equity": 965.3,
-  "day_pct": -5.04,
-  "week_pct": -3.52,
-  "drawdown_pct": -8.45,
+  "equity": 965.84,
+  "day_pct": -4.99,
+  "week_pct": -3.47,
+  "drawdown_pct": -8.4,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -11475,6 +11476,10 @@
   [
    "2026-11-25 12:28",
    965.3
+  ],
+  [
+   "2026-11-25 12:30",
+   965.84
   ]
  ],
  "nowcast": {
@@ -56081,7 +56086,7 @@
     0.8731
    ]
   },
-  "time": "2026-11-25 12:28"
+  "time": "2026-11-25 12:30"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -56211,8 +56216,8 @@
   "bf78a7a4b7c697c4",
   "d944f1045c86ab02",
   "8ad0b53ebffe0c90",
-  "52e6c78d06498482",
   "4959c9e24111e1e4",
+  "52e6c78d06498482",
   "0f192e3ee6f7d8a7",
   "c5ba50cbcf752a4f",
   "36bc42fa3067d0c3",
@@ -56360,11 +56365,11 @@
   "7cceea348ff5f82c",
   "323b3d916f8bfaf7",
   "c13d3d6b63c10c3e",
-  "3c0d3789a7b698e6",
-  "656606bd4aff29ca",
   "1e9ac2ee38a1003f",
-  "563c0572b10f43bc",
   "9ac4d1225260d8c6",
+  "3c0d3789a7b698e6",
+  "563c0572b10f43bc",
+  "656606bd4aff29ca",
   "4653461d7ed88855",
   "cda8fbdcb8858d7a",
   "10ac2b136225e49d",
@@ -56637,6 +56642,7 @@
   "c15f742f035fcb1d",
   "023889bc30f2a7cd",
   "26652cf90e01656a",
+  "7b262aa726cb15b8",
   "41ed20a8cec5e591",
   "87e89d05178171d2",
   "454f125376912a43",
@@ -56647,8 +56653,7 @@
   "22a45a3c7284120a",
   "4045069ffe34905f",
   "a73665945ff493c7",
-  "b2e981fc7a2e7302",
-  "7b262aa726cb15b8"
+  "b2e981fc7a2e7302"
  ],
  "news_slow_at": 1795627732.8287113,
  "officer": {
@@ -211001,6 +211006,66 @@
    ],
    "practice": false,
    "end": "12:18"
+  },
+  {
+   "id": "20261125123021007949",
+   "title": "Huddle: midday check-in",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-25 12:30",
+   "msgs": [
+    {
+     "t": "12:30",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: midday check-in.",
+     "outcome": false
+    },
+    {
+     "t": "12:30",
+     "who": "macro",
+     "to": "team",
+     "text": "Market-wide, not stock-specific: the whole nuclear basket is below its 10-day average, the VIX is up sharply (about +24% on the day), and the S&P is down nearly 3%. Every name here is falling together, so this is a risk-off day, and the desk's own rules keep new buys closed until the basket recovers. Nothing here changes my view beyond that.",
+     "outcome": false,
+     "notes": "why: Checked the sector pulse (basket -8% vs 10-day average), the fear gauge, the Asia-based gap estimates (all about -1% to -1.7%), and the fund ETFs (all down 4-6% on the day). The broad selloff, not any one company, is the story, and it argues for patience rather than new entries.\nfiles read: SECTOR Uranium market, SECTOR Government and laws"
+    },
+    {
+     "t": "12:30",
+     "who": "risk",
+     "to": "macro",
+     "text": "I'm the Risk Manager, and I agree with the Macro Analyst: the basket is below its 10-day average and the gate is closed, so no new buys, and every name is falling together, which means no single stock has a setup. The one thing I'd add is caution on the pre-Thanksgiving and Black Friday sessions, which are thin and historically unreliable for this group, so even when the gate reopens, I'd keep sizes small until volume normalizes.",
+     "outcome": false,
+     "notes": "why: The gate closure and the basket-wide selloff are the decisive facts; the desk notes show the Black Friday to Monday period has been weak for the power trio, which argues against any early reopening.\ndate: 2026-11-27\nticker: SECTOR\nwhat: Black Friday half-day session; historically weak Black Friday to Monday period for the power trio and our basket. Re-check whether the basket has reclaimed its 10-day average before any new buys.\ndate: 2026-12-15\nticker: VST\nwhat: PJM 2029/30 capacity auction closes under the price collar; expected to clear near the cap again, so do not buy the release-day pop.\nfiles read: SECTOR Uranium market, CEG Price behavior, VST Snapshot, CEG Snapshot, Patient Levels fills: the stock's own long trend matters (200-day average, distance from its 6-month low)"
+    },
+    {
+     "t": "12:30",
+     "who": "pm",
+     "to": "risk",
+     "text": "The basket is below its 10-day average, so the gate is closed and nothing new gets bought. No resting orders or holdings exist to cancel or exit, so there is nothing to act on. I agree with the Macro Analyst and Risk Manager that this is a market-wide risk-off day, not a stock-specific one.",
+     "outcome": false,
+     "notes": "action: none\nreason: No open positions, no resting buys, and the basket gate is closed. Every name lacks a confirmed setup, so the default is no action.\nwhy: I checked the live order list (none), the holdings (none), and the basket gate (closed at -8% vs its 10-day average). With nothing to skip or exit, doing nothing is the correct call.\nfiles read: SECTOR Uranium market, CEG Snapshot, VST Snapshot"
+    },
+    {
+     "t": "12:30",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "12:30"
   }
  ],
  "feed": [
@@ -215054,7 +215119,7 @@
  ],
  "huddle_trade_count": 1,
  "huddle_seen": {
-  "midday check-in": 1795541409.4796622,
+  "midday check-in": 1795627821.0066943,
   "fast move: UEC moved -1.7% in 9 min": 1795619590.1933,
   "fast move: LEU moved +1.7% in 9 min": 1795542015.445338,
   "BWXT (you asked us to watch it) moved -3.5% since we last looked": 1795617567.948469,
@@ -215085,14 +215150,13 @@
   "fast move: sector move: 4 of our nuclear stocks moving up together (DNN, LEU, UEC, UUUU)": 1795626611.3557541,
   "fast move: UEC moved +1.7% in 9 min": 1795627093.9276268
  },
- "huddle_last": 1795627093.927637,
+ "huddle_last": 1795627821.0067036,
  "huddle_log": [
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
-  "2026-11-23",
   "2026-11-24",
   "2026-11-24",
   "2026-11-24",
@@ -215110,6 +215174,7 @@
   "2026-11-24",
   "2026-11-24",
   "2026-11-24",
+  "2026-11-25",
   "2026-11-25",
   "2026-11-25",
   "2026-11-25",
@@ -215638,7 +215703,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 12:28",
+  "updated": "2026-11-25 12:30",
   "total": 649,
   "week": 500,
   "places": {
@@ -216280,8 +216345,8 @@
   ]
  },
  "intel_handed": [
-  "21888157b537cd9b",
   "a3f7ee9bb9023700",
+  "21888157b537cd9b",
   "d4097d0d8db37e23",
   "498180393c058995",
   "ff034b5c87c95680",
@@ -218748,7 +218813,7 @@
    "built": "2026-11-25 12:13"
   }
  ],
- "heartbeat": "2026-11-25 12:28",
+ "heartbeat": "2026-11-25 12:30",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -218968,8 +219033,8 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 111.45500183105469,
-  "TLN": 343.85
+  "BWXT": 111.425,
+  "TLN": 343.72
  },
  "notes_audit": {
   "scout": {
@@ -219121,21 +219186,21 @@
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 55,
-   "used": 55,
+   "asked": 56,
+   "used": 56,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 9,
     "BWXT Leadership and insiders": 1,
     "TLN Snapshot": 7,
-    "SECTOR Uranium market": 48,
+    "SECTOR Uranium market": 49,
     "BWXT Discoveries": 2,
     "UEC Snapshot": 8,
     "UEC Leadership and insiders": 1,
     "TLN Deals and contracts": 2,
     "TLN Discoveries": 1,
     "SECTOR pulse": 3,
-    "CEG Snapshot": 6,
+    "CEG Snapshot": 7,
     "SECTOR Market backdrop": 1,
     "NXE Snapshot": 3,
     "SECTOR Plants now": 1,
@@ -219143,7 +219208,7 @@
     "LEU Snapshot": 7,
     "SECTOR Plants and power news": 1,
     "LEU Deals and contracts": 1,
-    "VST Snapshot": 2,
+    "VST Snapshot": 3,
     "CEG Leadership and insiders": 1,
     "CCJ Snapshot": 3,
     "desk_lessons_from_our_mistakes": 1,
@@ -219197,14 +219262,14 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 90,
-   "used": 88,
+   "asked": 91,
+   "used": 89,
    "notes": {
-    "SECTOR Uranium market": 61,
+    "SECTOR Uranium market": 62,
     "BWXT Snapshot": 7,
     "CCJ Snapshot": 3,
     "UUUU Snapshot": 5,
-    "SECTOR Government and laws": 56,
+    "SECTOR Government and laws": 57,
     "TLN Snapshot": 38,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
@@ -219267,13 +219332,13 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 89,
-   "used": 88,
+   "asked": 90,
+   "used": 89,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 4,
     "BWXT Snapshot": 5,
-    "SECTOR Uranium market": 39,
+    "SECTOR Uranium market": 40,
     "TLN Snapshot": 38,
     "TLN Legal": 4,
     "BWXT Legal": 2,
@@ -219286,8 +219351,8 @@
     "TLN Price behavior": 24,
     "TLN Discoveries": 3,
     "TLN Leadership and insiders": 14,
-    "CEG Snapshot": 1,
-    "CEG Price behavior": 7,
+    "CEG Snapshot": 2,
+    "CEG Price behavior": 8,
     "NXE Snapshot": 4,
     "NXE Legal": 3,
     "UEC Legal": 1,
@@ -219299,7 +219364,7 @@
     "LEU Discoveries": 1,
     "VST Leadership and insiders": 3,
     "desk_lessons_from_our_mistakes": 1,
-    "VST Snapshot": 1,
+    "VST Snapshot": 2,
     "Discoveries: can we catch a news move early (fast lane)": 1,
     "CCJ Discoveries": 1,
     "DNN Snapshot": 2,
@@ -219312,7 +219377,7 @@
     "already_checked_facts: recurring pattern buying weakness": 1,
     "How to read the team's own predictions": 1,
     "SECTOR basket gate": 1,
-    "Patient Levels fills: the stock's own long trend matters (20": 1,
+    "Patient Levels fills: the stock's own long trend matters (20": 2,
     "How to read the team's own predictions so far (calls list, N": 1,
     "UUUU Price behavior": 1,
     "already_checked_facts": 1
@@ -219527,7 +219592,7 @@
    ],
    [
     "2026-11-25",
-    59.51
+    59.5
    ]
   ],
   "NXE": [
@@ -219893,7 +219958,7 @@
    ],
    [
     "2026-11-25",
-    1.72
+    1.71
    ]
   ],
   "UUUU": [
@@ -220015,7 +220080,7 @@
    ],
    [
     "2026-11-25",
-    4.94
+    4.95
    ]
   ],
   "LEU": [
@@ -220137,7 +220202,7 @@
    ],
    [
     "2026-11-25",
-    79.44
+    79.31
    ]
   ],
   "BWXT": [
@@ -220259,7 +220324,7 @@
    ],
    [
     "2026-11-25",
-    111.46
+    111.39
    ]
   ],
   "CEG": [
@@ -220381,7 +220446,7 @@
    ],
    [
     "2026-11-25",
-    234.88
+    234.87
    ]
   ],
   "VST": [
@@ -220503,7 +220568,7 @@
    ],
    [
     "2026-11-25",
-    118.65
+    118.71
    ]
   ],
   "TLN": [
@@ -220625,7 +220690,7 @@
    ],
    [
     "2026-11-25",
-    344.72
+    343.8
    ]
   ],
   "AMD": [
@@ -220747,7 +220812,7 @@
    ],
    [
     "2026-11-25",
-    384.15
+    384.27
    ]
   ],
   "SMR": [
@@ -220991,7 +221056,7 @@
    ],
    [
     "2026-11-25",
-    8.31
+    8.32
    ]
   ]
  },
@@ -226490,7 +226555,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 12:28",
+ "watchdog_last": "2026-11-25 12:30",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
