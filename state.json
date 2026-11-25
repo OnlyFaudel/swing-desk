@@ -7899,12 +7899,12 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.4066,
+  "day_usd": 0.41718,
   "month": "2026-11",
-  "month_usd": 1.59016,
-  "total_usd": 1.59016,
+  "month_usd": 1.60074,
+  "total_usd": 1.60074,
   "by_role": {
-   "macro": 0.17094,
+   "macro": 0.17341,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.15965,
@@ -7912,12 +7912,12 @@
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.17699,
-   "risk": 0.16438,
-   "investigator": 0.29228,
+   "pm": 0.18054,
+   "risk": 0.16597,
+   "investigator": 0.29357,
    "postmortem": 0.00035,
    "researcher": 0.01486,
-   "engineer": 0.06576,
+   "engineer": 0.06744,
    "questioner": 0.11725
   }
  },
@@ -8095,22 +8095,22 @@
  "broker": "alpaca-paper",
  "last_prices": {
   "CCJ": 59.09,
-  "NXE": 6.71,
-  "UEC": 5.37,
-  "DNN": 1.71,
-  "UUUU": 4.9,
-  "LEU": 79.07,
-  "BWXT": 111.2,
-  "CEG": 234.3,
-  "VST": 117.99,
-  "TLN": 342.8,
-  "AMD": 383.37,
-  "SMR": 3.13,
-  "NNE": 8.28,
-  "SPY": 705.23,
+  "NXE": 6.74,
+  "UEC": 5.39,
+  "DNN": 1.72,
+  "UUUU": 4.93,
+  "LEU": 79.27,
+  "BWXT": 111.36,
+  "CEG": 235.19,
+  "VST": 118.43,
+  "TLN": 344.04,
+  "AMD": 384.8,
+  "SMR": 3.14,
+  "NNE": 8.34,
+  "SPY": 706.41,
   "SGOV": 100.67
  },
- "last_cycle": "2026-11-25 12:06 ET",
+ "last_cycle": "2026-11-25 12:08 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -8147,10 +8147,10 @@
   ]
  },
  "brakes": {
-  "equity": 961.38,
-  "day_pct": -5.43,
-  "week_pct": -3.91,
-  "drawdown_pct": -8.82,
+  "equity": 965.23,
+  "day_pct": -5.05,
+  "week_pct": -3.53,
+  "drawdown_pct": -8.46,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -11324,6 +11324,14 @@
   [
    "2026-11-25 12:06",
    961.38
+  ],
+  [
+   "2026-11-25 12:08",
+   962.99
+  ],
+  [
+   "2026-11-25 12:08",
+   965.23
   ]
  ],
  "nowcast": {
@@ -55930,7 +55938,7 @@
     0.8729
    ]
   },
-  "time": "2026-11-25 12:06"
+  "time": "2026-11-25 12:09"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -56495,7 +56503,7 @@
   "a73665945ff493c7",
   "b2e981fc7a2e7302"
  ],
- "news_slow_at": 1795626426.8279595,
+ "news_slow_at": 1795626556.63899,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -210575,6 +210583,73 @@
    ],
    "practice": false,
    "end": "12:07"
+  },
+  {
+   "id": "20261125120900607295",
+   "title": "Huddle: fast move: UUUU moved +1.5% in 8 min",
+   "tickers": [
+    "UUUU"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-25 12:09",
+   "msgs": [
+    {
+     "t": "12:09",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: UUUU moved +1.5% in 8 min.",
+     "outcome": false
+    },
+    {
+     "t": "12:09",
+     "who": "investigator",
+     "to": "chief",
+     "text": "Nothing new here worth adding. UUUU is down 6% today with a fresh securities investigation filed on Nov 23, and the basket is well below its 10-day average, so the gate is closed. A +1.5% move in 8 minutes is noise on a stock that just dropped, and public news is priced in within minutes anyway.",
+     "outcome": false,
+     "notes": "why: The only fresh UUUU news is an investigation notice on Nov 23, which is a legal overhang rather than a catalyst; the 8-minute bounce carries no information. Basket gate is closed and there is no confirmed support level, so no setup.\nticker: UUUU\ndirection: down\ndays: 3\nfiles read: UUUU Legal, UUUU Snapshot"
+    },
+    {
+     "t": "12:09",
+     "who": "engineer",
+     "to": "investigator",
+     "text": "I checked the plant side for UUUU and there is nothing physical driving this. The plants are running at about 89% fleet-wide, the only open outage is Salem 1 at CEG (routine refueling season), and UUUU's business is the White Mesa mill, which has no reported disruption this week. The +1.5% move is a short-term bounce on a stock that is still below every support level, so I agree with News Investigator that there's no setup to act on.",
+     "outcome": false,
+     "notes": "why: I checked plant status, outages, and the White Mesa mill situation. Nothing physical changed, and the basket gate is closed, so no entry is justified.\nfiles read: SECTOR Uranium market, UUUU Places and operations, CEG Places and operations"
+    },
+    {
+     "t": "12:09",
+     "who": "macro",
+     "to": "team",
+     "text": "This is a sector-wide weak tape, not a UUUU-specific story: the basket is about 10% below its 10-day average, the VIX is up sharply, and every nuclear name's Asia-session signal points to a lower open. A +1.5% bounce in 8 minutes on a stock that's still under every support level is noise, and the basket gate is closed, so I'm not adding anything. I agree with News Investigator and Plant Engineer that there's no setup here.",
+     "outcome": false,
+     "notes": "why: Checked sector pulse (basket -9.7% vs 10-day average, gate closed), the nowcast (all ten names pointing to gaps of roughly -0.8% to -1.7%), and the VIX (+10.5% today, up 66% on the month). The uranium price is firm, but the equities are trading risk-off, so the move is market-driven rather than news-driven.\nticker: UUUU\ndirection: down\ndays: 3\nfiles read: SECTOR Uranium market, SECTOR Government and laws"
+    },
+    {
+     "t": "12:09",
+     "who": "risk",
+     "to": "team",
+     "text": "I agree with the team: UUUU bouncing 1.5% in 8 minutes is noise, not a setup. The basket is about 10% under its 10-day average so the gate is closed, UUUU has no confirmed support below price, and it just drew a fresh securities investigation filed Nov 23. Nothing here gives me a reason to add risk.",
+     "outcome": false,
+     "notes": "why: Checked the gate (basket -9.7% vs 10-day average, closed), the support check (none confirmed, price has been breaking levels), and the legal notes (new investigation filed Nov 23). The desk's own research says intraday bounces on priced-in news are noise and buying into a falling basket has lost in the weak tape.\nfiles read: UUUU Snapshot, UUUU Legal, SECTOR pulse, UUUU Price behavior"
+    },
+    {
+     "t": "12:09",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with the team: UUUU bouncing 1.5% in 8 minutes is noise. The basket is well below its 10-day average so the gate is closed, UUUU has no confirmed support below price, and there is a fresh securities investigation from Nov 23. Nothing here justifies a buy, and I have no open trade to exit on bad news.",
+     "outcome": false,
+     "notes": "action: none\nreason: No waiting buy or resting order exists on any name, and we hold nothing, so skip and exit do not apply. The basket gate is closed (basket about 9.7% below its 10-day average), so no entries are allowed regardless of the 8-minute bounce.\nwhy: Checked the stock table (UUUU has no resting order or holding, and no confirmed support level), the sector pulse (basket -9.7% vs its 10-day average), and the desk notes, which show UUUU down 41.6% over 20 days with a fresh securities investigation. The 1.5% move is a short bounce inside a sharp downtrend, not a setup.\nticker: UUUU\ndirection: down\ndays: 5\nfiles read: UUUU Snapshot, SECTOR Uranium market"
+    },
+    {
+     "t": "12:09",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "12:09"
   }
  ],
  "feed": [
@@ -214342,6 +214417,21 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-25 12:09",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: UUUU moved +1.5% in 8 min. Checking the news for a reason.",
+   "tickers": [
+    "UUUU"
+   ],
+   "art": {
+    "big": "UUUU moved +1.5% in 8 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -214560,9 +214650,10 @@
   "fast move: UUUU moved +1.6% in 9 min": 1795624002.8398726,
   "fast move: LEU moved +1.9% in 9 min": 1795625655.6434803,
   "fast move: LEU moved +1.7% in 4 min": 1795626350.3627925,
-  "fast move: UEC moved +1.6% in 6 min": 1795626414.034472
+  "fast move: UEC moved +1.6% in 6 min": 1795626414.034472,
+  "fast move: UUUU moved +1.5% in 8 min": 1795626540.6050787
  },
- "huddle_last": 1795626414.0344799,
+ "huddle_last": 1795626540.605087,
  "huddle_log": [
   "2026-11-23",
   "2026-11-23",
@@ -214573,7 +214664,6 @@
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
-  "2026-11-23",
   "2026-11-24",
   "2026-11-24",
   "2026-11-24",
@@ -214591,6 +214681,7 @@
   "2026-11-24",
   "2026-11-24",
   "2026-11-24",
+  "2026-11-25",
   "2026-11-25",
   "2026-11-25",
   "2026-11-25",
@@ -215115,7 +215206,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 12:06",
+  "updated": "2026-11-25 12:09",
   "total": 629,
   "week": 482,
   "places": {
@@ -218225,12 +218316,12 @@
    "built": "2026-11-25 11:41"
   }
  ],
- "heartbeat": "2026-11-25 12:06",
+ "heartbeat": "2026-11-25 12:08",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 319,
+ "_pushed_feed": 320,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -218445,8 +218536,8 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 111.2,
-  "TLN": 342.8
+  "BWXT": 111.36,
+  "TLN": 344.035
  },
  "notes_audit": {
   "scout": {
@@ -218539,8 +218630,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 70,
-   "used": 67,
+   "asked": 71,
+   "used": 68,
    "notes": {
     "BWXT Deals and contracts": 2,
     "BWXT Snapshot": 3,
@@ -218579,8 +218670,8 @@
     "NXE Legal": 3,
     "BWXT Legal": 2,
     "plants_now": 1,
-    "UUUU Snapshot": 8,
-    "UUUU Legal": 8,
+    "UUUU Snapshot": 9,
+    "UUUU Legal": 9,
     "SECTOR Fuel policy": 1,
     "SECTOR pulse": 2,
     "TLN Legal": 1,
@@ -218594,14 +218685,14 @@
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 51,
-   "used": 51,
+   "asked": 52,
+   "used": 52,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 9,
     "BWXT Leadership and insiders": 1,
     "TLN Snapshot": 7,
-    "SECTOR Uranium market": 44,
+    "SECTOR Uranium market": 45,
     "BWXT Discoveries": 2,
     "UEC Snapshot": 7,
     "UEC Leadership and insiders": 1,
@@ -218612,7 +218703,7 @@
     "SECTOR Market backdrop": 1,
     "NXE Snapshot": 3,
     "SECTOR Plants now": 1,
-    "UUUU Snapshot": 8,
+    "UUUU Snapshot": 9,
     "LEU Snapshot": 7,
     "SECTOR Plants and power news": 1,
     "LEU Deals and contracts": 1,
@@ -218630,11 +218721,11 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 47,
-   "used": 46,
+   "asked": 48,
+   "used": 47,
    "notes": {
     "SECTOR Reactors and power": 2,
-    "CEG Places and operations": 19,
+    "CEG Places and operations": 20,
     "UEC Deals and contracts": 1,
     "UEC Places and operations": 8,
     "license_tracker": 4,
@@ -218650,9 +218741,9 @@
     "plants_now: fleet status and open outages": 1,
     "desk_notes: CEG Places and operations": 2,
     "desk_notes: UUUU Places and operations": 2,
-    "SECTOR Uranium market": 26,
+    "SECTOR Uranium market": 27,
     "TLN Places and operations": 3,
-    "UUUU Places and operations": 8,
+    "UUUU Places and operations": 9,
     "UEC Business": 1,
     "UUUU Deals and contracts": 1,
     "desk_notes fuel_policy": 1,
@@ -218669,14 +218760,14 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 86,
-   "used": 84,
+   "asked": 87,
+   "used": 85,
    "notes": {
-    "SECTOR Uranium market": 57,
+    "SECTOR Uranium market": 58,
     "BWXT Snapshot": 7,
     "CCJ Snapshot": 3,
     "UUUU Snapshot": 5,
-    "SECTOR Government and laws": 52,
+    "SECTOR Government and laws": 53,
     "TLN Snapshot": 38,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
@@ -218739,8 +218830,8 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 85,
-   "used": 84,
+   "asked": 86,
+   "used": 85,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 4,
@@ -218763,9 +218854,9 @@
     "NXE Snapshot": 3,
     "NXE Legal": 2,
     "UEC Legal": 1,
-    "UUUU Snapshot": 7,
-    "UUUU Legal": 8,
-    "SECTOR pulse": 5,
+    "UUUU Snapshot": 8,
+    "UUUU Legal": 9,
+    "SECTOR pulse": 6,
     "LEU Snapshot": 6,
     "LEU Leadership and insiders": 4,
     "LEU Discoveries": 1,
@@ -218785,7 +218876,8 @@
     "How to read the team's own predictions": 1,
     "SECTOR basket gate": 1,
     "Patient Levels fills: the stock's own long trend matters (20": 1,
-    "How to read the team's own predictions so far (calls list, N": 1
+    "How to read the team's own predictions so far (calls list, N": 1,
+    "UUUU Price behavior": 1
    },
    "since": "2026-11-23"
   },
@@ -218997,7 +219089,7 @@
    ],
    [
     "2026-11-25",
-    58.98
+    59.22
    ]
   ],
   "NXE": [
@@ -219119,7 +219211,7 @@
    ],
    [
     "2026-11-25",
-    6.71
+    6.73
    ]
   ],
   "UEC": [
@@ -219241,7 +219333,7 @@
    ],
    [
     "2026-11-25",
-    5.36
+    5.39
    ]
   ],
   "DNN": [
@@ -219363,7 +219455,7 @@
    ],
    [
     "2026-11-25",
-    1.71
+    1.72
    ]
   ],
   "UUUU": [
@@ -219485,7 +219577,7 @@
    ],
    [
     "2026-11-25",
-    4.91
+    4.93
    ]
   ],
   "LEU": [
@@ -219607,7 +219699,7 @@
    ],
    [
     "2026-11-25",
-    79.31
+    79.29
    ]
   ],
   "BWXT": [
@@ -219729,7 +219821,7 @@
    ],
    [
     "2026-11-25",
-    111.1
+    111.35
    ]
   ],
   "CEG": [
@@ -219851,7 +219943,7 @@
    ],
    [
     "2026-11-25",
-    234.37
+    235.18
    ]
   ],
   "VST": [
@@ -219973,7 +220065,7 @@
    ],
    [
     "2026-11-25",
-    117.96
+    118.43
    ]
   ],
   "TLN": [
@@ -220095,7 +220187,7 @@
    ],
    [
     "2026-11-25",
-    342.97
+    343.93
    ]
   ],
   "AMD": [
@@ -220217,7 +220309,7 @@
    ],
    [
     "2026-11-25",
-    383.37
+    384.8
    ]
   ],
   "SMR": [
@@ -220339,7 +220431,7 @@
    ],
    [
     "2026-11-25",
-    3.13
+    3.14
    ]
   ],
   "NNE": [
@@ -220461,7 +220553,7 @@
    ],
    [
     "2026-11-25",
-    8.28
+    8.34
    ]
   ]
  },
@@ -225471,6 +225563,11 @@
    1795626414.0341911,
    "UEC",
    1
+  ],
+  [
+   1795626540.6048572,
+   "UUUU",
+   1
   ]
  ],
  "auto_log": [],
@@ -225878,7 +225975,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 12:06",
+ "watchdog_last": "2026-11-25 12:08",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
