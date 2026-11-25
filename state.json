@@ -602,7 +602,8 @@
   "ahdip180:2026-11-25": true,
   "sput:2026-11-25": true,
   "ahdip181:2026-11-25": true,
-  "nightwatch181:2026-11-25": true
+  "nightwatch181:2026-11-25": true,
+  "ahdip182:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -4186,30 +4187,6 @@
  },
  "news_feed": [
   {
-   "ticker": "LEU",
-   "source": "Local intel: ExchangeMonitor (Energy Department)",
-   "title": "Deep Isolation to receive $20 million from DOE ARPA-E",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbDVhSFhTYUNSTi1DYmtScjdnNVU4dFpUVnBjNjBZT1M2dVZ6MTJqVkRIS2c5Um1Wb2dEeklsNEQwRkFLMlptNktmOTBGaWhpbE12WDRSSlgxVDBSeFJUZm43NG44Qk9tZ1h2d2xXOVhEdlFfMzR5RWJCVXRINUNuSTQ1TWNKbHUxaTdPaTlB?oc=5",
-   "ts": 1795467548,
-   "materiality": 4,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "contract_deal",
-   "why": "Deep Isolation's $20M DOE grant is for nuclear waste disposal, a small related-sector item for Centrus."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Local intel: Cyprus Mail (War zones)",
-   "title": "Russian attack kills 2 people, wounds 22 in Ukraine\u2019s Zaporizhzhia",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNUhlQnJsVklXN1VOYU9XZXd5d3NfdnZlaUFHQnBWS09xMmlGV2ZMQ2Z6NE1qejZ6TTlQdkFNSF83WnAxR1lWc1VTV2liaXV0eUZ2NndxNFI3bkxiZW1vVXpWcUI1c2FDeHVmY1N0TGcwdlNlNUxHYkVDVjVuMWpXTVVXNWRLdzBWaG12eTBNdnR6N3lOU081US1FWTJWVTVa?oc=5",
-   "ts": 1795500056,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "war_geopolitics",
-   "why": "Russian strike in Ukraine's Zaporizhzhia; no new uranium supply or demand information for CCJ."
-  },
-  {
    "ticker": "VST",
    "source": "Google News: Vistra nuclear",
    "title": "Surprised By Vistra's Slide? What Investors Overlooked - Simply Wall St",
@@ -7184,6 +7161,30 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic Yahoo Finance forecast page title; no new company-specific information."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Yahoo (VST, related to CEG)",
+   "title": "What Are Wall Street Analysts' Target Price for Vistra Corp. Stock?",
+   "link": "https://www.barchart.com/story/news/9006879/what-are-wall-street-analysts-target-price-for-vistra-corp-stock?.tsrc=rss",
+   "ts": 1795626461,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Generic 'what do analysts think' listicle with no new fact or price-target change."
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News",
+   "title": "Vistra Corp. (VST) Stock Forecasts - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNnFQQ21taWlGeW1GMlRUZzBIbUoxand0d3pwN1NkZjhFbVZOYVRqc3NTbnRnbG8wTTlySVMwcVFuckxGM1diU0NEc2cyWUxCMFdjcWd6RWxsSFItMUlIUFl0bWV1Zlo1eThyV19wSV9scGtzS2FXaHpNM3U2S0JBSzBLRnpCRy1PRE0tODE0QQ?oc=5",
+   "ts": 1795649373,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Yahoo Finance forecast page title with no new company-specific information."
   }
  ],
  "reviews": [
@@ -8943,16 +8944,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.72266,
+  "day_usd": 0.72346,
   "month": "2026-11",
-  "month_usd": 1.90622,
-  "total_usd": 1.90622,
+  "month_usd": 1.90702,
+  "total_usd": 1.90702,
   "by_role": {
    "macro": 0.19341,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.17415,
+   "scout": 0.17495,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9155,7 +9156,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 18:23 ET",
+ "last_cycle": "2026-11-25 18:35 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57895,6 +57896,7 @@
   "98254137294b157b",
   "717c47c79d590a65",
   "36f89310fd30fd20",
+  "f1f38ae8ed71a16a",
   "e8576c26f24e8b21",
   "ba95c26fe9cef12b",
   "77be59ff1749d22a",
@@ -58356,6 +58358,7 @@
   "b78359c4e74e2d63",
   "a0d7f4bdb2e62f62",
   "16f5d7a8fa7cf22a",
+  "d33fb0db4fe22304",
   "0028541e109c6801",
   "8c91e31e5f3c4c89",
   "3fe9fc872b222598",
@@ -58387,7 +58390,7 @@
   "84200faa36eac51a",
   "688d746cfc31b58f"
  ],
- "news_slow_at": 1795648608.5681498,
+ "news_slow_at": 1795649262.5529797,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219479,7 +219482,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 18:23",
+  "updated": "2026-11-25 18:35",
   "total": 680,
   "week": 511,
   "places": {
@@ -222666,7 +222669,7 @@
    "built": "2026-11-25 18:21"
   }
  ],
- "heartbeat": "2026-11-25 18:23",
+ "heartbeat": "2026-11-25 18:35",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -222891,8 +222894,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 296,
-   "used": 267,
+   "asked": 298,
+   "used": 269,
    "notes": {
     "TLN Deals and contracts": 17,
     "CCJ Deals and contracts": 56,
@@ -222911,7 +222914,7 @@
     "SECTOR Uranium market": 5,
     "CCJ Legal": 14,
     "CEG Legal": 2,
-    "VST Deals and contracts": 27,
+    "VST Deals and contracts": 29,
     "LEU Legal": 1,
     "VST Legal": 1,
     "TLN Legal": 2
@@ -230868,7 +230871,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 18:23",
+ "watchdog_last": "2026-11-25 18:35",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
