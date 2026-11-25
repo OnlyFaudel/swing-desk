@@ -321,6 +321,12 @@
     1016.74,
     0.0,
     0.0
+   ],
+   [
+    "2026-11-25",
+    1005.55,
+    0.0,
+    0.0
    ]
   ],
   "peak": 1054.400551051144,
@@ -456,7 +462,7 @@
  "flags": {
   "morning_done": "2026-11-25",
   "pulsehold:2026-11-20": true,
-  "review_done": "2026-11-24",
+  "review_done": "2026-11-25",
   "premarket:2026-11-20": true,
   "armednote:CEG:2026-11-20": true,
   "midday:2026-11-20": true,
@@ -591,6 +597,10 @@
    [
     "2026-11-24",
     1004.23
+   ],
+   [
+    "2026-11-25",
+    1001.33
    ]
   ]
  },
@@ -7177,6 +7187,14 @@
    "equity": 1016.74,
    "bh": 1004.23,
    "week_pct": 1.62
+  },
+  {
+   "date": "2026-11-25",
+   "headline": "Down 1.08% today to $1,005.55; still +0.5% on the week, behind the 5% goal",
+   "markdown": "**Account:** $1,005.55 vs $1,000 start. Today -$11.19 (-1.08%); week +0.5% against the +5% goal (not forced). The S&P buy-and-hold would be $1,001.33, so we're slightly ahead since the start, but we lost more than the S&P today (-0.29%).\n\n**Why we fell:** Our uranium/nuclear basket rose 0.86%, so this wasn't the lineup. The losses came from the 'sharp drop' bets outside it: AMD (-1.59 pts of the account's move), SMR (-1.22), and the LEU panic trade (-1.66). UUUU panic added +2.28 and VST panic +0.79. Rules didn't break; this is the normal cost of holding risky stocks. One note: the 'thanksgiving' trades are small $15 positions, so they barely move us. CEG at -3.6% is the weakest of them.\n\n**Open positions (16):** 4 'panic rebound' trades (UUUU +5.4%, VST +5.1%, LEU +2.2%) sell Dec 1. The $15 'thanksgiving' trades sell Friday Nov 27. The AMD/SMR/NNE 'sharp drop' trades sell Dec 9. I don't have the exact stop prices in today's data, so I won't guess them.\n\n**Orders today:** No trades closed. The desk sold parked SPY to repay $353 we overspent, then switched the remaining parked cash from SPY to SGOV (T-bills). The tax system flagged these SPY losses (~$12.85) as wash sales: the loss is deferred, not lost.\n\n**Agent decisions:** CCJ news (Kazakhstan arrested an exec at a top uranium producer): no action, which is reasonable for a headline with unclear impact.\n\n**Tomorrow:** Cash is $82.44. Note that the market is closed Thursday for Thanksgiving. Watch CEG, the LEU stock (down 24% in a month), and the UUUU lawsuit-investigation headlines.",
+   "equity": 1005.55,
+   "bh": 1001.33,
+   "week_pct": 0.5
   }
  ],
  "audits": [
@@ -8902,24 +8920,24 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.6771,
+  "day_usd": 0.70409,
   "month": "2026-11",
-  "month_usd": 1.86066,
-  "total_usd": 1.86066,
+  "month_usd": 1.88765,
+  "total_usd": 1.88765,
   "by_role": {
    "macro": 0.19063,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
    "scout": 0.16579,
-   "review": 0.09001,
+   "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
    "pm": 0.27861,
-   "risk": 0.19237,
+   "risk": 0.1939,
    "investigator": 0.30895,
    "postmortem": 0.00035,
-   "researcher": 0.01486,
+   "researcher": 0.02016,
    "engineer": 0.07932,
    "questioner": 0.12214
   }
@@ -9098,23 +9116,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 61.64,
-  "NXE": 6.97,
-  "UEC": 5.71,
-  "DNN": 1.79,
-  "UUUU": 5.22,
-  "LEU": 83.04,
-  "BWXT": 113.65,
+  "CCJ": 61.54,
+  "NXE": 6.95,
+  "UEC": 5.68,
+  "DNN": 1.8,
+  "UUUU": 5.2,
+  "LEU": 83.14,
+  "BWXT": 113.46,
   "CEG": 235.25,
-  "VST": 121.43,
+  "VST": 121.32,
   "TLN": 351.55,
   "AMD": 406.83,
-  "SMR": 3.28,
-  "NNE": 8.88,
-  "SPY": 717.27,
+  "SMR": 3.26,
+  "NNE": 8.85,
+  "SPY": 716.73,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 16:00 ET",
+ "last_cycle": "2026-11-25 16:05 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -9177,10 +9195,10 @@
   ]
  },
  "brakes": {
-  "equity": 1007.01,
-  "day_pct": -0.94,
-  "week_pct": 0.65,
-  "drawdown_pct": -4.49,
+  "equity": 1005.55,
+  "day_pct": -1.08,
+  "week_pct": 0.5,
+  "drawdown_pct": -4.63,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -58329,22 +58347,34 @@
  ],
  "news_slow_at": 1795640201.8104386,
  "officer": {
-  "settled_cash": 0.0,
-  "cash": -352.92,
-  "realized_short_term_gains": -0.72,
+  "settled_cash": 82.44,
+  "cash": 82.44,
+  "realized_short_term_gains": -12.96,
   "wash_sale_flags": [
    {
     "ticker": "SPY",
     "date": "2026-11-24",
     "loss": -0.61,
     "note": "Loss likely disallowed now and added to the cost basis of shares you still hold (not lost, deferred)."
+   },
+   {
+    "ticker": "SPY",
+    "date": "2026-11-25",
+    "loss": -11.66,
+    "note": "Loss likely disallowed now and added to the cost basis of shares you still hold (not lost, deferred)."
+   },
+   {
+    "ticker": "SPY",
+    "date": "2026-11-25",
+    "loss": -0.58,
+    "note": "Loss likely disallowed now and added to the cost basis of shares you still hold (not lost, deferred)."
    }
   ],
   "brakes": {
-   "equity": 1016.74,
-   "day_pct": -1.24,
-   "week_pct": 1.62,
-   "drawdown_pct": -3.57,
+   "equity": 1005.55,
+   "day_pct": -1.08,
+   "week_pct": 0.5,
+   "drawdown_pct": -4.63,
    "no_new_today": false,
    "no_new_week": false,
    "risk_mult": 1.0,
@@ -58354,59 +58384,59 @@
  },
  "shadow_desk": {
   "seen": {
-   "CCJ": "2026-11-16 13:30",
+   "CCJ": "2026-11-25 09:30",
    "NXE": "2026-11-18 11:30",
-   "UEC": "2026-11-19 09:30",
-   "DNN": "2026-11-19 10:30",
-   "UUUU": "2026-11-18 09:30",
-   "LEU": "2026-11-20 09:30",
+   "UEC": "2026-11-25 09:30",
+   "DNN": "2026-11-25 09:30",
+   "UUUU": "2026-11-24 09:30",
+   "LEU": "2026-11-25 09:30",
    "BWXT": "2026-11-23 11:30",
-   "SMR": "2026-11-18 09:30",
-   "OKLO": "2026-11-24 09:30",
-   "CEG": "2026-11-20 09:30",
+   "SMR": "2026-11-24 09:30",
+   "OKLO": "2026-11-25 09:30",
+   "CEG": "2026-11-25 09:30",
    "VST": "2026-11-20 10:30",
-   "TLN": "2026-11-24 09:30",
-   "URNM": "2026-11-18 09:30",
-   "MP": "2026-11-20 11:30",
-   "ALB": "2026-11-18 15:30",
+   "TLN": "2026-11-25 09:30",
+   "URNM": "2026-11-25 09:30",
+   "MP": "2026-11-24 09:30",
+   "ALB": "2026-11-25 09:30",
    "FCX": "2026-11-19 11:30",
-   "SCCO": "2026-11-24 09:30",
+   "SCCO": "2026-11-25 09:30",
    "NEM": "2026-11-19 10:30",
-   "AEM": "2026-11-19 11:30",
-   "WPM": "2026-11-19 10:30",
-   "SQM": "2026-11-19 09:30",
+   "AEM": "2026-11-24 09:30",
+   "WPM": "2026-11-25 09:30",
+   "SQM": "2026-11-20 15:30",
    "TECK": "2026-11-23 11:30",
-   "NVDA": "2026-11-24 09:30",
-   "AMD": "2026-11-24 09:30",
-   "AVGO": "2026-11-20 09:30",
-   "MU": "2026-11-23 10:30",
-   "TSM": "2026-11-24 09:30",
-   "ASML": "2026-11-24 09:30",
-   "ARM": "2026-11-23 10:30",
-   "MRVL": "2026-11-23 15:30",
-   "SMCI": "2026-11-24 09:30",
+   "NVDA": "2026-11-24 10:30",
+   "AMD": "2026-11-25 09:30",
+   "AVGO": "2026-11-25 09:30",
+   "MU": "2026-11-25 09:30",
+   "TSM": "2026-11-25 09:30",
+   "ASML": "2026-11-25 09:30",
+   "ARM": "2026-11-25 09:30",
+   "MRVL": "2026-11-25 09:30",
+   "SMCI": "2026-11-25 09:30",
    "SMH": "2026-11-24 09:30",
-   "ETN": "2026-11-23 10:30",
-   "VRT": "2026-11-24 09:30",
-   "PWR": "2026-11-24 09:30",
-   "NRG": "2026-11-23 11:30",
-   "PLTR": "2026-11-19 15:30",
-   "TSLA": "2026-11-23 11:30",
-   "COIN": "2026-11-23 10:30",
-   "MSTR": "2026-11-17 09:30",
+   "ETN": "2026-11-25 09:30",
+   "VRT": "2026-11-25 09:30",
+   "PWR": "2026-11-24 10:30",
+   "NRG": "2026-11-24 11:30",
+   "PLTR": "2026-11-25 11:30",
+   "TSLA": "2026-11-25 09:30",
+   "COIN": "2026-11-24 15:30",
+   "MSTR": "2026-11-24 10:30",
    "HOOD": "2026-11-23 11:30",
-   "SOFI": "2026-11-18 09:30",
-   "RKLB": "2026-11-19 11:30",
+   "SOFI": "2026-11-25 09:30",
+   "RKLB": "2026-11-24 09:30",
    "IONQ": "2026-11-23 11:30",
-   "APP": "2026-11-19 12:30",
+   "APP": "2026-11-24 13:30",
    "SHOP": "2026-11-19 09:30",
    "NOK": "2026-11-24 09:30",
-   "META": "2026-11-18 10:30",
-   "AMZN": "2026-11-23 11:30",
+   "META": "2026-11-25 09:30",
+   "AMZN": "2026-11-25 09:30",
    "MSFT": "2026-11-23 10:30",
-   "GOOGL": "2026-11-19 13:30",
+   "GOOGL": "2026-11-24 09:30",
    "NFLX": "2026-11-19 09:30",
-   "GEV": "2026-11-23 11:30"
+   "GEV": "2026-11-25 09:30"
   },
   "trades": [
    {
@@ -206068,9 +206098,624 @@
     "dist_avg_pct": -2.58,
     "vol_pct": 1.5,
     "group_up": false
+   },
+   {
+    "tk": "CCJ",
+    "group": "uranium/nuclear",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -1.623,
+    "R": -1.066,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -7.33,
+    "dist_avg_pct": -8.76,
+    "vol_pct": 1.936,
+    "group_up": false
+   },
+   {
+    "tk": "UEC",
+    "group": "uranium/nuclear",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -8.33,
+    "dist_avg_pct": -9.87,
+    "vol_pct": 2.931,
+    "group_up": false
+   },
+   {
+    "tk": "DNN",
+    "group": "uranium/nuclear",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -1.3,
+    "R": -1.083,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -7.89,
+    "dist_avg_pct": -8.66,
+    "vol_pct": 2.531,
+    "group_up": false
+   },
+   {
+    "tk": "UUUU",
+    "group": "uranium/nuclear",
+    "entry": "2026-11-24 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Tue",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -13.65,
+    "dist_avg_pct": -14.19,
+    "vol_pct": 3.34,
+    "group_up": false
+   },
+   {
+    "tk": "LEU",
+    "group": "uranium/nuclear",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.188,
+    "R": -2.13,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -10.75,
+    "dist_avg_pct": -11.96,
+    "vol_pct": 2.923,
+    "group_up": false
+   },
+   {
+    "tk": "SMR",
+    "group": "uranium/nuclear",
+    "entry": "2026-11-24 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -5.478,
+    "R": -3.438,
+    "weekday": "Tue",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -17.62,
+    "dist_avg_pct": -18.78,
+    "vol_pct": 3.662,
+    "group_up": false
+   },
+   {
+    "tk": "OKLO",
+    "group": "uranium/nuclear",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.1,
+    "R": 0.198,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -14.13,
+    "dist_avg_pct": -14.35,
+    "vol_pct": 3.335,
+    "group_up": false
+   },
+   {
+    "tk": "CEG",
+    "group": "uranium/nuclear",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -8.69,
+    "dist_avg_pct": -7.22,
+    "vol_pct": 1.622,
+    "group_up": false
+   },
+   {
+    "tk": "TLN",
+    "group": "uranium/nuclear",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.1,
+    "R": 0.09,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -1.94,
+    "dist_avg_pct": -3.97,
+    "vol_pct": 2.025,
+    "group_up": false
+   },
+   {
+    "tk": "URNM",
+    "group": "uranium/nuclear",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -7.13,
+    "dist_avg_pct": -7.01,
+    "vol_pct": 1.763,
+    "group_up": false
+   },
+   {
+    "tk": "MP",
+    "group": "scarce materials",
+    "entry": "2026-11-24 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Tue",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -1.62,
+    "dist_avg_pct": -2.83,
+    "vol_pct": 2.572,
+    "group_up": false
+   },
+   {
+    "tk": "ALB",
+    "group": "scarce materials",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.1,
+    "R": 0.103,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -8.03,
+    "dist_avg_pct": -8.14,
+    "vol_pct": 1.332,
+    "group_up": false
+   },
+   {
+    "tk": "SCCO",
+    "group": "scarce materials",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.746,
+    "R": -1.155,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -11.94,
+    "dist_avg_pct": -10.04,
+    "vol_pct": 1.988,
+    "group_up": false
+   },
+   {
+    "tk": "AEM",
+    "group": "scarce materials",
+    "entry": "2026-11-24 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -4.96,
+    "R": -3.113,
+    "weekday": "Tue",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -6.47,
+    "dist_avg_pct": -6.97,
+    "vol_pct": 1.617,
+    "group_up": false
+   },
+   {
+    "tk": "WPM",
+    "group": "scarce materials",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.1,
+    "R": 0.125,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -8.37,
+    "dist_avg_pct": -5.86,
+    "vol_pct": 1.513,
+    "group_up": false
+   },
+   {
+    "tk": "SQM",
+    "group": "scarce materials",
+    "entry": "2026-11-20 15:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -4.604,
+    "R": -2.889,
+    "weekday": "Fri",
+    "open_fill": false,
+    "hour": 15,
+    "ret5d_pct": -12.0,
+    "dist_avg_pct": -9.95,
+    "vol_pct": 1.305,
+    "group_up": false
+   },
+   {
+    "tk": "NVDA",
+    "group": "AI chips",
+    "entry": "2026-11-24 10:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -4.679,
+    "R": -2.936,
+    "weekday": "Tue",
+    "open_fill": false,
+    "hour": 10,
+    "ret5d_pct": -0.78,
+    "dist_avg_pct": -3.53,
+    "vol_pct": 4.746,
+    "group_up": false
+   },
+   {
+    "tk": "AMD",
+    "group": "AI chips",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.1,
+    "R": 0.045,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -17.96,
+    "dist_avg_pct": -17.03,
+    "vol_pct": 3.659,
+    "group_up": false
+   },
+   {
+    "tk": "AVGO",
+    "group": "AI chips",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.215,
+    "R": -1.868,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -11.84,
+    "dist_avg_pct": -10.36,
+    "vol_pct": 2.071,
+    "group_up": false
+   },
+   {
+    "tk": "MU",
+    "group": "AI chips",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.1,
+    "R": 0.174,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -11.6,
+    "dist_avg_pct": -12.0,
+    "vol_pct": 4.027,
+    "group_up": false
+   },
+   {
+    "tk": "TSM",
+    "group": "AI chips",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.1,
+    "R": 0.05,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -2.79,
+    "dist_avg_pct": -5.77,
+    "vol_pct": 2.819,
+    "group_up": false
+   },
+   {
+    "tk": "ASML",
+    "group": "AI chips",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -3.5,
+    "dist_avg_pct": -5.36,
+    "vol_pct": 2.107,
+    "group_up": false
+   },
+   {
+    "tk": "ARM",
+    "group": "AI chips",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.748,
+    "R": -1.154,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -11.87,
+    "dist_avg_pct": -10.8,
+    "vol_pct": 3.763,
+    "group_up": false
+   },
+   {
+    "tk": "MRVL",
+    "group": "AI chips",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -11.58,
+    "dist_avg_pct": -10.74,
+    "vol_pct": 4.123,
+    "group_up": false
+   },
+   {
+    "tk": "SMCI",
+    "group": "AI chips",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.347,
+    "R": -1.404,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -6.34,
+    "dist_avg_pct": -10.38,
+    "vol_pct": 4.104,
+    "group_up": false
+   },
+   {
+    "tk": "ETN",
+    "group": "AI power",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.456,
+    "R": -1.281,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -5.3,
+    "dist_avg_pct": -5.91,
+    "vol_pct": 2.021,
+    "group_up": false
+   },
+   {
+    "tk": "VRT",
+    "group": "AI power",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -1.264,
+    "R": -1.086,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -8.68,
+    "dist_avg_pct": -8.95,
+    "vol_pct": 3.35,
+    "group_up": false
+   },
+   {
+    "tk": "GEV",
+    "group": "AI power",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -1.054,
+    "R": -1.105,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -7.67,
+    "dist_avg_pct": -6.55,
+    "vol_pct": 2.216,
+    "group_up": false
+   },
+   {
+    "tk": "PWR",
+    "group": "AI power",
+    "entry": "2026-11-24 10:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -1.694,
+    "R": -1.063,
+    "weekday": "Tue",
+    "open_fill": false,
+    "hour": 10,
+    "ret5d_pct": -2.12,
+    "dist_avg_pct": -2.53,
+    "vol_pct": 2.136,
+    "group_up": false
+   },
+   {
+    "tk": "NRG",
+    "group": "AI power",
+    "entry": "2026-11-24 11:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -2.957,
+    "R": -1.856,
+    "weekday": "Tue",
+    "open_fill": false,
+    "hour": 11,
+    "ret5d_pct": -0.42,
+    "dist_avg_pct": -2.44,
+    "vol_pct": 2.115,
+    "group_up": false
+   },
+   {
+    "tk": "PLTR",
+    "group": "high beta",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -1.499,
+    "R": -1.072,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": 3.0,
+    "dist_avg_pct": 0.16,
+    "vol_pct": 2.065,
+    "group_up": false
+   },
+   {
+    "tk": "PLTR",
+    "group": "high beta",
+    "entry": "2026-11-25 11:30",
+    "exit": "2026-11-25 12:30",
+    "ret_pct": 2.433,
+    "R": 1.527,
+    "weekday": "Wed",
+    "open_fill": false,
+    "hour": 11,
+    "ret5d_pct": -0.01,
+    "dist_avg_pct": -3.55,
+    "vol_pct": 1.728,
+    "group_up": false
+   },
+   {
+    "tk": "TSLA",
+    "group": "high beta",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.255,
+    "R": -1.645,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": 1.21,
+    "dist_avg_pct": 0.74,
+    "vol_pct": 2.118,
+    "group_up": false
+   },
+   {
+    "tk": "COIN",
+    "group": "high beta",
+    "entry": "2026-11-24 15:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -3.951,
+    "R": -2.479,
+    "weekday": "Tue",
+    "open_fill": false,
+    "hour": 15,
+    "ret5d_pct": -11.99,
+    "dist_avg_pct": -13.05,
+    "vol_pct": 2.277,
+    "group_up": false
+   },
+   {
+    "tk": "MSTR",
+    "group": "high beta",
+    "entry": "2026-11-24 10:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -4.928,
+    "R": -3.092,
+    "weekday": "Tue",
+    "open_fill": false,
+    "hour": 10,
+    "ret5d_pct": -21.92,
+    "dist_avg_pct": -21.45,
+    "vol_pct": 3.766,
+    "group_up": false
+   },
+   {
+    "tk": "SOFI",
+    "group": "high beta",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.916,
+    "R": -1.122,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -9.98,
+    "dist_avg_pct": -10.62,
+    "vol_pct": 2.108,
+    "group_up": false
+   },
+   {
+    "tk": "RKLB",
+    "group": "high beta",
+    "entry": "2026-11-24 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -3.457,
+    "R": -2.17,
+    "weekday": "Tue",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -13.53,
+    "dist_avg_pct": -12.78,
+    "vol_pct": 2.889,
+    "group_up": false
+   },
+   {
+    "tk": "APP",
+    "group": "high beta",
+    "entry": "2026-11-24 13:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -4.385,
+    "R": -2.752,
+    "weekday": "Tue",
+    "open_fill": false,
+    "hour": 13,
+    "ret5d_pct": -4.71,
+    "dist_avg_pct": -1.72,
+    "vol_pct": 2.182,
+    "group_up": false
+   },
+   {
+    "tk": "META",
+    "group": "megacap",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.1,
+    "R": 0.232,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -4.63,
+    "dist_avg_pct": -3.59,
+    "vol_pct": 1.434,
+    "group_up": false
+   },
+   {
+    "tk": "AMZN",
+    "group": "megacap",
+    "entry": "2026-11-25 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -0.426,
+    "R": -1.306,
+    "weekday": "Wed",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -2.14,
+    "dist_avg_pct": -3.17,
+    "vol_pct": 1.393,
+    "group_up": false
+   },
+   {
+    "tk": "GOOGL",
+    "group": "megacap",
+    "entry": "2026-11-24 09:30",
+    "exit": "2026-11-25 09:30",
+    "ret_pct": -5.223,
+    "R": -3.278,
+    "weekday": "Tue",
+    "open_fill": true,
+    "hour": 9,
+    "ret5d_pct": -0.53,
+    "dist_avg_pct": -1.36,
+    "vol_pct": 1.759,
+    "group_up": false
    }
   ],
-  "last_run": "2026-11-24 16:05"
+  "last_run": "2026-11-25 16:05"
  },
  "learn_report": {
   "status": "ok",
@@ -206228,16 +206873,16 @@
  "theses": [],
  "strategy_note": "No strong thesis this week. Today's news (BWXT's Westinghouse AP1000 manufacturing contracts, Energy Fuels' production plan and loan) is already priced in. Our desk notes show BWXT contract wins have tended to fade over 20 days. CCJ's share sale is a dilution event, and the market has already reacted to it. The next scheduled catalyst is UEC earnings on 2026-12-08, followed by the FOMC meeting on 2026-12-09. Neither gives us a testable edge yet. Let the Patient Levels limit orders do the work.",
  "gate": {
-  "days": 3,
-  "trials": 30,
+  "days": 4,
+  "trials": 2088,
   "min_days": 60,
   "passed": false,
-  "dsr": 0.584,
-  "hurdle_sharpe_ann": 1.11,
-  "sharpe_ann": 4.55,
-  "half1_pct": 2.97,
-  "half2_pct": -1.25,
-  "maxdd_pct": -1.3,
+  "dsr": 0.482,
+  "hurdle_sharpe_ann": 1.85,
+  "sharpe_ann": 1.35,
+  "half1_pct": 1.67,
+  "half2_pct": -1.1,
+  "maxdd_pct": -2.3,
   "checks": {
    "dsr": false,
    "both_halves_positive": "False",
@@ -213224,6 +213869,92 @@
    ],
    "practice": false,
    "end": "16:00"
+  },
+  {
+   "id": "20261125160726821300",
+   "title": "Research session Wed Nov 25",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-25 16:07",
+   "msgs": [
+    {
+     "t": "16:07",
+     "who": "chief",
+     "to": "researcher",
+     "text": "Research time. 9,885 practice trades on file, average +0.224R. Research Lead, what should we test? Ideas must be checkable on the practice trades.",
+     "outcome": false
+    },
+    {
+     "t": "16:07",
+     "who": "researcher",
+     "to": "risk",
+     "text": "Most of the obvious feature tests are already done or rejected, so I'll propose only two that have a real economic reason: the 200-day trend filter for level fills is already flagged as a sizing hint, so I'll test whether fills while the stock sits 8%+ below its 10-day average earn less at a tighter threshold, and whether AI-power-group fills under the 200-day average (the owner's thesis group) hold up. I'm skeptical of any of these until they survive a written-rule check, and I'd rather not stack more features on a 3-year, one-era sample.",
+     "outcome": false,
+     "notes": "feature: dist_avg_pct\nop: <\nvalue: -8\nclaim: worse\nwhy: Desk notes show fills 8%+ under the 10-day average earn less in both halves; a test against that pre-set threshold (not one tuned on results) checks whether the falling-knife effect is real or just a few trades.\nfeature: group\nop: ==\nvalue: AI power\nclaim: better\nwhy: The owner's thesis is data-center power demand; the desk's only check so far was a mean-R comparison, so this asks whether AI-power level fills under the 200-day trend still earn more, which tests the thesis directly rather than the raw group average.\nwhy: I checked the owner's thesis group and the falling-knife pattern against the desk's own level-fill findings, and kept only the two ideas that have a stated mechanism. I did not add a call because I have no view on direction I'd bet on, and the team's down calls so far are one market move counted many times.\nfiles rea"
+    },
+    {
+     "t": "16:07",
+     "who": "shadow",
+     "to": "researcher",
+     "text": "Test: trades where dist_avg_pct < -8 (940 of 9885). Older half: -0.196R vs 0.362R for the rest. Newer half: -0.044R vs 0.157R. p=0.0. Verdict: promising.",
+     "outcome": false
+    },
+    {
+     "t": "16:07",
+     "who": "risk",
+     "to": "researcher",
+     "text": "Research Lead's test of fills 8%+ under the 10-day average is a real result, not luck: it holds in both halves, t is -4.7, and the threshold was set before looking at results. But it is trial 8 of many, and the newer half is much weaker (-0.04R vs +0.16R), so I'd treat it as a sizing warning, not a skip rule. I disagree with promoting it to a written rule yet; the same falling-knife pattern already failed in 2008-18 on the stock-level signals.",
+     "outcome": false,
+     "notes": "why: Checked the trial against the family of earlier falling-knife tests in the notes (which mostly lost in 2008-18 and won only in the AI era) and the sample split. The effect is directionally consistent with the desk's existing 'buying weakness' caution and with the 200-day trend finding, so it strengthens the case for smaller size on deep-below-average fills.\nticker: LEU\ndirection: down\ndays: 5\nfiles read: SECTOR Rules the bot follows from its discoveries, SECTOR Panic-day record"
+    },
+    {
+     "t": "16:07",
+     "who": "researcher",
+     "to": "risk",
+     "text": "I agree with the Risk Manager: the 8%-under-average result is real in both halves, but the newer half is much weaker and this is trial 8 of many, so it should be a sizing warning, not a skip rule. The same falling-knife pattern already lost in 2008-18 on our stock-level signals, so I won't write it into rules yet. I'll keep it scored in the practice book and check whether it survives a fresh stretch of trades.",
+     "outcome": false,
+     "notes": "why: I checked the 940-trade split against the newer-half weakness, the trial count, and the 2008-18 falling-knife history from the desk notes, and the evidence supports sizing caution rather than a hard rule.\nkey: dist_avg_pct < -8 op worse\nnote: Patient Levels fills made while the stock sits 8%+ below its 10-day average earned less in both halves (older -0.20R vs +0.36R, newer -0.04R vs +0.16R, t -4.7). Real-looking, but this is trial 8 and the newer edge is roughly a third of the older one.\nnext: Keep scoring it live in the practice book; if it stays negative on fresh fills, consider a smaller size for these fills rather than a skip.\nticker: LEU\ndirection: down\ndays: 5\nfiles read: SECTOR Rules the bot follows from its discoveries, SECTOR Uranium market"
+    }
+   ],
+   "practice": false,
+   "end": "16:07"
+  },
+  {
+   "id": "20261125160739941814",
+   "title": "Daily review Wed Nov 25",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "kind": "review",
+   "start": "2026-11-25 16:07",
+   "msgs": [
+    {
+     "t": "16:07",
+     "who": "officer",
+     "to": "team",
+     "text": "Numbers for the reviewer: account $1,005.55 vs $1,000 start, +0.50% this week; the S&P buy-and-hold would be at $1,001.33. 0 trade(s) closed today. Settled cash $82.44.",
+     "outcome": false
+    },
+    {
+     "t": "16:07",
+     "who": "review",
+     "to": "officer",
+     "text": "We fell 1.08% today even though the nuclear basket rose; AMD, SMR and the LEU panic trade caused it, which I judge normal holding cost, not a rule failure.",
+     "outcome": false,
+     "notes": "Down 1.08% today to $1,005.55; still +0.5% on the week, behind the 5% goal\nreview markdown: **Account:** $1,005.55 vs $1,000 start. Today -$11.19 (-1.08%); week +0.5% against the +5% goal (not forced). The S&P buy-and-hold would be $1,001.33, so we're slightly ahead since the start, but we lost more than the S&P today (-0.29%).\n\n**Why we fell:** Our uranium/nuclear basket rose 0.86%, so this wasn't the lineup. The losses came from the 'sharp drop' bets outside it: AMD (-1.59 pts of the account's move), SMR (-1.22), and the LEU panic trade (-1.66). UUUU panic added +2.28 and VST panic +0.79. Rules didn't break; this is the normal cost of holding risky stocks. One note: the 'thanksgiving' trades are small $15 positions, so they barely move us. CEG at -3.6% is the weakest of them.\n\n**Open positions (16):** 4 'panic rebound' trades (UUUU +5.4%, VST +5.1%, LEU +2.2%) sell Dec 1. The $15 'than"
+    }
+   ],
+   "practice": false,
+   "end": "16:07"
   }
  ],
  "feed": [
@@ -217683,6 +218414,65 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-25 16:05",
+   "who": "officer",
+   "kind": "data",
+   "title": null,
+   "text": "Why today was red: account -1.10% ($-11.19). S&P -0.29%, our basket +0.86% on average. Biggest drags: LEU panic $-1.66, AMD auto $-1.59, SMR auto $-1.22. Rules that acted today: 2. Record so far: 2 red of 4 days; on red days we lost -1.18% on average and did better than the S&P 0 of 2 times.",
+   "tickers": [],
+   "art": {
+    "big": "Red day -1.10%",
+    "sub": "S&P -0.29%, basket +0.86%"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 16:05",
+   "who": "shadow",
+   "kind": "data",
+   "title": null,
+   "text": "41 practice trades closed: 9 wins, 32 losses, -52.44R in total (R = what one trade risks). Best: PLTR +1.53R. 9,885 practice trades on record.",
+   "tickers": [],
+   "art": {
+    "big": "41 practice trades",
+    "sub": "9 won, 32 lost, -52.4R. No money involved."
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 16:07",
+   "who": "researcher",
+   "kind": "learn",
+   "title": null,
+   "text": "Tested: dist_avg_pct < -8 (worse). Verdict: promising. ",
+   "tickers": [],
+   "art": {
+    "big": "Promising: dist_avg_pct < -8",
+    "sub": "Promising. Watching it, not trading on it."
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 16:07",
+   "who": "researcher",
+   "kind": "alert",
+   "title": "Research notes",
+   "text": "Tested 1 idea(s). Promising: dist_avg_pct < -8. Notes are in Team chat.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 16:07",
+   "who": "review",
+   "kind": "alert",
+   "title": "Daily review",
+   "text": "Down 1.08% today to $1,005.55; still +0.5% on the week, behind the 5% goal | week +0.50% vs +5% goal | SPY hold $1001.33",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -218187,7 +218977,7 @@
    "price": 115.71,
    "materiality": 6,
    "direction_called": "up",
-   "r1": null,
+   "r1": -1.94,
    "r5": null,
    "r20": null
   },
@@ -218199,7 +218989,7 @@
    "price": 5.85,
    "materiality": 6,
    "direction_called": "down",
-   "r1": null,
+   "r1": -2.91,
    "r5": null,
    "r20": null
   },
@@ -218211,7 +219001,7 @@
    "price": 86.8,
    "materiality": 6,
    "direction_called": "neutral",
-   "r1": null,
+   "r1": -4.22,
    "r5": null,
    "r20": null
   },
@@ -218223,7 +219013,7 @@
    "price": 86.8,
    "materiality": 6,
    "direction_called": "neutral",
-   "r1": null,
+   "r1": -4.22,
    "r5": null,
    "r20": null
   },
@@ -218235,7 +219025,7 @@
    "price": 251.76,
    "materiality": 6,
    "direction_called": "up",
-   "r1": null,
+   "r1": -6.56,
    "r5": null,
    "r20": null
   },
@@ -218247,7 +219037,7 @@
    "price": 86.8,
    "materiality": 6,
    "direction_called": "up",
-   "r1": null,
+   "r1": 30.71,
    "r5": null,
    "r20": null
   },
@@ -218259,7 +219049,7 @@
    "price": 58.98,
    "materiality": 6,
    "direction_called": "up",
-   "r1": null,
+   "r1": 4.34,
    "r5": null,
    "r20": null
   },
@@ -218271,7 +219061,7 @@
    "price": 4.92,
    "materiality": 6,
    "direction_called": "down",
-   "r1": null,
+   "r1": 5.79,
    "r5": null,
    "r20": null
   },
@@ -218283,7 +219073,7 @@
    "price": 58.83,
    "materiality": 6,
    "direction_called": "up",
-   "r1": null,
+   "r1": 4.61,
    "r5": null,
    "r20": null
   },
@@ -218295,7 +219085,7 @@
    "price": 113.92,
    "materiality": 6,
    "direction_called": "up",
-   "r1": null,
+   "r1": -0.4,
    "r5": null,
    "r20": null
   },
@@ -218307,7 +219097,7 @@
    "price": 84.12,
    "materiality": 6,
    "direction_called": "neutral",
-   "r1": null,
+   "r1": -1.17,
    "r5": null,
    "r20": null
   },
@@ -218319,7 +219109,7 @@
    "price": 6.84,
    "materiality": 6,
    "direction_called": "up",
-   "r1": null,
+   "r1": 1.68,
    "r5": null,
    "r20": null
   },
@@ -218486,7 +219276,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 16:01",
+  "updated": "2026-11-25 16:05",
   "total": 668,
   "week": 505,
   "places": {
@@ -219909,7 +220699,7 @@
     "ticker": "LEU",
     "title": "Researchers estimate Israel\u2019s nuclear arsenal at 90 warheads \u2014 Jerusalem Post",
     "type": "intel_defense",
-    "r0": null,
+    "r0": -1.07,
     "r5": null,
     "r20": null
    },
@@ -219918,7 +220708,7 @@
     "ticker": "CCJ",
     "title": "Kazakhstan detains Kazatomprom executive in corruption investigation",
     "type": "intel_legal",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -219927,7 +220717,7 @@
     "ticker": "NXE",
     "title": "Kazakhstan detains Kazatomprom executive in corruption investigation",
     "type": "intel_legal",
-    "r0": null,
+    "r0": 1.83,
     "r5": null,
     "r20": null
    },
@@ -219936,7 +220726,7 @@
     "ticker": "CCJ",
     "title": "Bank of Namibia grants conditional approval for Opuwo sale",
     "type": "intel_regulation",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -219945,7 +220735,7 @@
     "ticker": "CCJ",
     "title": "Kazakhstan arrests exec at world\u2019s top uranium producer - Macau Business",
     "type": "other",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -219954,7 +220744,7 @@
     "ticker": "CCJ",
     "title": "Kazatomprom (KAP) Dismisses Chief Commercial and Operating Officers in Board-Led Executive Restructuring - Kalkine Media",
     "type": "other",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -219963,7 +220753,7 @@
     "ticker": "CCJ",
     "title": "Kazakhstan detains state uranium miner board member in widening corruption probe - The Standard (HK)",
     "type": "other",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -219972,7 +220762,7 @@
     "ticker": "CCJ",
     "title": "Kazatomprom Announces Investigation Into Former COO Kuanysh Omarbekov For Alleged Corruption",
     "type": "intel_legal",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -219981,7 +220771,7 @@
     "ticker": "NXE",
     "title": "Kazatomprom Announces Investigation Into Former COO Kuanysh Omarbekov For Alleged Corruption",
     "type": "intel_legal",
-    "r0": null,
+    "r0": 1.83,
     "r5": null,
     "r20": null
    },
@@ -219990,7 +220780,7 @@
     "ticker": "CCJ",
     "title": "IAEA: Zaporizhzhia Nuclear Power Plant loses external power and switches to diesel generators",
     "type": "intel_geopolitics",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -219999,7 +220789,7 @@
     "ticker": "CEG",
     "title": "IAEA: Zaporizhzhia Nuclear Power Plant loses external power and switches to diesel generators",
     "type": "intel_geopolitics",
-    "r0": null,
+    "r0": -3.9,
     "r5": null,
     "r20": null
    },
@@ -220008,7 +220798,7 @@
     "ticker": "CCJ",
     "title": "Ukraine reports new power outages as occupied Zaporizhzhia nuclear plant switches to diesel generators",
     "type": "intel_disruption",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -220017,7 +220807,7 @@
     "ticker": "CEG",
     "title": "Ukraine reports new power outages as occupied Zaporizhzhia nuclear plant switches to diesel generators",
     "type": "intel_disruption",
-    "r0": null,
+    "r0": -3.9,
     "r5": null,
     "r20": null
    },
@@ -220026,7 +220816,7 @@
     "ticker": "CCJ",
     "title": "Nuclear power development goes beyond building, operating plants: Vietnamese deputy minister",
     "type": "intel_politics",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -220035,7 +220825,7 @@
     "ticker": "CCJ",
     "title": "Zaporizhzhia NPP loses external power supply after Russian attack",
     "type": "intel_geopolitics",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -220044,7 +220834,7 @@
     "ticker": "CEG",
     "title": "Zaporizhzhia NPP loses external power supply after Russian attack",
     "type": "intel_geopolitics",
-    "r0": null,
+    "r0": -3.9,
     "r5": null,
     "r20": null
    },
@@ -220053,7 +220843,7 @@
     "ticker": "CCJ",
     "title": "The black & white of why South Africa took unique step to destroy its nuclear weapons",
     "type": "intel_defense",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -220062,7 +220852,7 @@
     "ticker": "CCJ",
     "title": "Industry Minister Says Czech Nuclear Deal Must Stay Team Korea",
     "type": "intel_politics",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -220071,7 +220861,7 @@
     "ticker": "BWXT",
     "title": "Industry Minister Says Czech Nuclear Deal Must Stay Team Korea",
     "type": "intel_politics",
-    "r0": null,
+    "r0": 0.28,
     "r5": null,
     "r20": null
    },
@@ -220080,7 +220870,7 @@
     "ticker": "CCJ",
     "title": "Zaporizhzhia Nuclear Plant Loses External Power for 28th Time Since Russia\u2019s 2022 Invasion",
     "type": "intel_geopolitics",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -220089,7 +220879,7 @@
     "ticker": "CEG",
     "title": "Zaporizhzhia Nuclear Plant Loses External Power for 28th Time Since Russia\u2019s 2022 Invasion",
     "type": "intel_geopolitics",
-    "r0": null,
+    "r0": -3.9,
     "r5": null,
     "r20": null
    },
@@ -220098,7 +220888,7 @@
     "ticker": "CCJ",
     "title": "Stallion Uranium Announces Private Placement of Up to $4 Million to Fund Athabasca Basin Exploration",
     "type": "intel_financing",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -220107,7 +220897,7 @@
     "ticker": "NXE",
     "title": "Stallion Uranium Announces Private Placement of Up to $4 Million to Fund Athabasca Basin Exploration",
     "type": "intel_financing",
-    "r0": null,
+    "r0": 1.83,
     "r5": null,
     "r20": null
    },
@@ -220116,7 +220906,7 @@
     "ticker": "CCJ",
     "title": "Kazatomprom COO under investigation",
     "type": "intel_legal",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -220125,7 +220915,7 @@
     "ticker": "NXE",
     "title": "Kazatomprom COO under investigation",
     "type": "intel_legal",
-    "r0": null,
+    "r0": 1.83,
     "r5": null,
     "r20": null
    },
@@ -220134,7 +220924,7 @@
     "ticker": "BWXT",
     "title": "Submarine-launched nuclear missile advances into new development phase for US Navy",
     "type": "intel_defense",
-    "r0": null,
+    "r0": 0.28,
     "r5": null,
     "r20": null
    },
@@ -220143,7 +220933,7 @@
     "ticker": "BWXT",
     "title": "U.S. Navy Contracts Raytheon to Advance Development of Submarine-Launched Nuclear Cruise Missile",
     "type": "intel_contract",
-    "r0": null,
+    "r0": 0.28,
     "r5": null,
     "r20": null
    },
@@ -220152,7 +220942,7 @@
     "ticker": "CCJ",
     "title": "India to triple nuclear power capacity by 2032:Union Minister Jitendra Singh",
     "type": "intel_politics",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -220161,7 +220951,7 @@
     "ticker": "CCJ",
     "title": "Energy Fuels to restart White Mesa as US uranium production falls",
     "type": "intel_production",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -220170,7 +220960,7 @@
     "ticker": "UUUU",
     "title": "Energy Fuels to restart White Mesa as US uranium production falls",
     "type": "intel_production",
-    "r0": null,
+    "r0": 1.46,
     "r5": null,
     "r20": null
    },
@@ -220179,7 +220969,7 @@
     "ticker": "NXE",
     "title": "Indigenous partnerships, worker safety and environmental stewardship feature in NexGen's 2025 report.",
     "type": "intel_contract",
-    "r0": null,
+    "r0": 1.83,
     "r5": null,
     "r20": null
    },
@@ -220188,7 +220978,7 @@
     "ticker": "DNN",
     "title": "Denison Mines shares drop almost 6% after ongoing cost challenges and persistent downside pressure",
     "type": "intel_opposition",
-    "r0": null,
+    "r0": 3.45,
     "r5": null,
     "r20": null
    },
@@ -220197,7 +220987,7 @@
     "ticker": "LEU",
     "title": "Centrus Energy (LEU) Stock May Be Overvalued Despite A Fresh HALEU Supply Deal",
     "type": "intel_contract",
-    "r0": null,
+    "r0": -1.07,
     "r5": null,
     "r20": null
    },
@@ -220206,7 +220996,7 @@
     "ticker": "BWXT",
     "title": "Raytheon wins US Navy deal for submarine-launched nuclear cruise missile",
     "type": "intel_defense",
-    "r0": null,
+    "r0": 0.28,
     "r5": null,
     "r20": null
    },
@@ -220215,7 +221005,7 @@
     "ticker": "BWXT",
     "title": "Divergent Joins Raytheon on Next-Gen Submarine-Launched Nuclear Cruise Missile - News and Statistics",
     "type": "intel_defense",
-    "r0": null,
+    "r0": 0.28,
     "r5": null,
     "r20": null
    },
@@ -220224,7 +221014,7 @@
     "ticker": "CEG",
     "title": "Google\u2019s grid deal in Ohio tests a faster path to data center power - Latitude Media",
     "type": "contract_deal",
-    "r0": null,
+    "r0": -3.9,
     "r5": null,
     "r20": null
    },
@@ -220233,7 +221023,7 @@
     "ticker": "CCJ",
     "title": "IAEA Director General praises India\u2019s major nuclear milestone at Kalpakkam",
     "type": "intel_geopolitics",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -220242,7 +221032,7 @@
     "ticker": "CCJ",
     "title": "Kazatomprom announced cooperation with investigation following Omarbekov's detention",
     "type": "intel_legal",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    },
@@ -220251,7 +221041,7 @@
     "ticker": "NXE",
     "title": "Kazatomprom announced cooperation with investigation following Omarbekov's detention",
     "type": "intel_legal",
-    "r0": null,
+    "r0": 1.83,
     "r5": null,
     "r20": null
    },
@@ -220260,7 +221050,7 @@
     "ticker": "CCJ",
     "title": "Kazatomprom stock drops more than 4% after top executives detained - Kursiv Media",
     "type": "supply",
-    "r0": null,
+    "r0": 2.93,
     "r5": null,
     "r20": null
    }
@@ -221346,6 +222136,40 @@
    "verdict": "not supported",
    "note": "BWXT shows worse results in both halves of the practice book (-0.27R older, -0.15R newer), and it's already been under its 50-day average by about 14%, so I want to check whether it should be removed from the lineup rather than just guarded against, though this may overlap with the falling-sector rule that already canceled a BWXT trade.",
    "next": ""
+  },
+  {
+   "t": "2026-11-25 16:07",
+   "key": "dist_avg_pct < -8",
+   "idea": {
+    "feature": "dist_avg_pct",
+    "op": "<",
+    "value": "-8",
+    "claim": "worse",
+    "why": "Desk notes show fills 8%+ under the 10-day average earn less in both halves; a test against that pre-set threshold (not one tuned on results) checks whether the falling-knife effect is real or just a few trades."
+   },
+   "result": {
+    "n_match": 940,
+    "n_total": 9885,
+    "older": {
+     "n": 436,
+     "avgR_match": -0.196,
+     "avgR_rest": 0.362,
+     "diff": -0.557
+    },
+    "newer": {
+     "n": 504,
+     "avgR_match": -0.044,
+     "avgR_rest": 0.157,
+     "diff": -0.201
+    },
+    "t": -4.69,
+    "p": 0.0,
+    "verdict": "promising",
+    "trial_no": 8
+   },
+   "verdict": "promising",
+   "note": "Desk notes show fills 8%+ under the 10-day average earn less in both halves; a test against that pre-set threshold (not one tuned on results) checks whether the falling-knife effect is real or just a few trades.",
+   "next": ""
   }
  ],
  "research_queue": [],
@@ -221380,6 +222204,37 @@
     "trial_no": 2
    },
    "found": "2026-11-21"
+  },
+  {
+   "key": "dist_avg_pct < -8",
+   "idea": {
+    "feature": "dist_avg_pct",
+    "op": "<",
+    "value": "-8",
+    "claim": "worse",
+    "why": "Desk notes show fills 8%+ under the 10-day average earn less in both halves; a test against that pre-set threshold (not one tuned on results) checks whether the falling-knife effect is real or just a few trades."
+   },
+   "result": {
+    "n_match": 940,
+    "n_total": 9885,
+    "older": {
+     "n": 436,
+     "avgR_match": -0.196,
+     "avgR_rest": 0.362,
+     "diff": -0.557
+    },
+    "newer": {
+     "n": 504,
+     "avgR_match": -0.044,
+     "avgR_rest": 0.157,
+     "diff": -0.201
+    },
+    "t": -4.69,
+    "p": 0.0,
+    "verdict": "promising",
+    "trial_no": 8
+   },
+   "found": "2026-11-25"
   }
  ],
  "reactor_retry_at": 1795421223.6994596,
@@ -221600,7 +222455,7 @@
    "built": "2026-11-25 15:46"
   }
  ],
- "heartbeat": "2026-11-25 16:00",
+ "heartbeat": "2026-11-25 16:05",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -222137,8 +222992,8 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 97,
-   "used": 96,
+   "asked": 98,
+   "used": 97,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 4,
@@ -222152,7 +223007,7 @@
     "UEC Snapshot": 12,
     "UEC Leadership and insiders": 5,
     "CCJ Price behavior": 2,
-    "SECTOR Rules the bot follows from its discoveries": 1,
+    "SECTOR Rules the bot follows from its discoveries": 2,
     "TLN Price behavior": 24,
     "TLN Discoveries": 3,
     "TLN Leadership and insiders": 14,
@@ -222185,26 +223040,27 @@
     "Patient Levels fills: the stock's own long trend matters (20": 2,
     "How to read the team's own predictions so far (calls list, N": 1,
     "UUUU Price behavior": 1,
-    "already_checked_facts": 2
+    "already_checked_facts": 2,
+    "SECTOR Panic-day record": 1
    },
    "since": "2026-11-23"
   },
   "review": {
-   "asked": 5,
-   "used": 4,
+   "asked": 6,
+   "used": 5,
    "notes": {
     "CEG Leadership and insiders": 1,
     "TLN Leadership and insiders": 1,
     "CEG Deals and contracts": 1,
     "CEG Snapshot": 1,
     "TLN Snapshot": 1,
-    "UUUU Snapshot": 2,
+    "UUUU Snapshot": 3,
     "UUUU Leadership and insiders": 1,
     "UUUU Deals and contracts": 1,
-    "LEU Snapshot": 2,
+    "LEU Snapshot": 3,
     "LEU Leadership and insiders": 1,
     "LEU Deals and contracts": 1,
-    "UUUU Legal": 1
+    "UUUU Legal": 2
    },
    "since": "2026-11-23"
   },
@@ -222241,22 +223097,23 @@
    "since": "2026-11-23"
   },
   "researcher": {
-   "asked": 7,
-   "used": 7,
+   "asked": 9,
+   "used": 9,
    "notes": {
     "BWXT Deals and contracts": 3,
-    "BWXT Snapshot": 4,
+    "BWXT Snapshot": 5,
     "BWXT Discoveries": 2,
     "BWXT Leadership and insiders": 2,
     "BWXT Ownership and analysts": 1,
-    "SECTOR Rules the bot follows from its discoveries": 1,
+    "SECTOR Rules the bot follows from its discoveries": 2,
     "desk_lessons_from_our_mistakes": 2,
     "TLN Snapshot": 3,
     "TLN Deals and contracts": 2,
     "TLN Leadership and insiders": 1,
     "CEG Leadership and insiders": 1,
-    "CEG Snapshot": 2,
-    "SECTOR Uranium market": 1
+    "CEG Snapshot": 3,
+    "SECTOR Uranium market": 3,
+    "already_checked_facts: Patient Levels fills 200-day trend": 1
    },
    "since": "2026-11-23"
   },
@@ -222398,7 +223255,7 @@
    ],
    [
     "2026-11-25",
-    61.64
+    61.54
    ]
   ],
   "NXE": [
@@ -222520,7 +223377,7 @@
    ],
    [
     "2026-11-25",
-    6.97
+    6.95
    ]
   ],
   "UEC": [
@@ -222642,7 +223499,7 @@
    ],
    [
     "2026-11-25",
-    5.71
+    5.68
    ]
   ],
   "DNN": [
@@ -222764,7 +223621,7 @@
    ],
    [
     "2026-11-25",
-    1.79
+    1.8
    ]
   ],
   "UUUU": [
@@ -222886,7 +223743,7 @@
    ],
    [
     "2026-11-25",
-    5.22
+    5.2
    ]
   ],
   "LEU": [
@@ -223008,7 +223865,7 @@
    ],
    [
     "2026-11-25",
-    83.04
+    83.14
    ]
   ],
   "BWXT": [
@@ -223130,7 +223987,7 @@
    ],
    [
     "2026-11-25",
-    113.65
+    113.46
    ]
   ],
   "CEG": [
@@ -223374,7 +224231,7 @@
    ],
    [
     "2026-11-25",
-    121.43
+    121.32
    ]
   ],
   "TLN": [
@@ -223740,7 +224597,7 @@
    ],
    [
     "2026-11-25",
-    3.28
+    3.26
    ]
   ],
   "NNE": [
@@ -223862,7 +224719,7 @@
    ],
    [
     "2026-11-25",
-    8.88
+    8.85
    ]
   ]
  },
@@ -225066,6 +225923,16 @@
    "price": 237.4,
    "result": null,
    "why": "The item is genuinely new and relevant to AI power demand, but it does not name CEG as a counterparty. Desk history says CEG's deal announcements tended to fade afterward, so I scored it moderate rath"
+  },
+  {
+   "role": "researcher",
+   "ticker": "LEU",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-25",
+   "price": 83.14,
+   "result": null,
+   "why": "I checked the 940-trade split against the newer-half weakness, the trial count, and the 2008-18 falling-knife history from the desk notes, and the evidence supports sizing caution rather than a hard r"
   }
  ],
  "after_sale": [],
@@ -229662,8 +230529,8 @@
   ]
  },
  "discovery": {
-  "run_at": "2026-11-24 16:07",
-  "events": 47502,
+  "run_at": "2026-11-25 16:07",
+  "events": 47529,
   "tests_tonight": 377,
   "tests_ever": 425,
   "survivors": 9
@@ -229774,7 +230641,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 16:00",
+ "watchdog_last": "2026-11-25 16:05",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -230193,6 +231060,38 @@
     "thanksgiving",
     "thanksgiving",
     "thanksgiving"
+   ],
+   "closed_today": []
+  },
+  {
+   "date": "2026-11-25",
+   "equity": 1005.55,
+   "day_usd": -11.19,
+   "day_pct": -1.1,
+   "spy_pct": -0.29,
+   "basket_pct": 0.86,
+   "spy_above_200d": false,
+   "by_position": {
+    "LEU panic": -1.66,
+    "AMD auto": -1.59,
+    "SMR auto": -1.22,
+    "CEG auto": -0.6,
+    "LEU auto": -0.16,
+    "BWXT auto": 0.04,
+    "VST auto": 0.08,
+    "NNE auto": 0.11,
+    "TLN auto": 0.17,
+    "UUUU auto": 0.22,
+    "NXE auto": 0.28,
+    "UEC auto": 0.3,
+    "CCJ auto": 0.45,
+    "DNN auto": 0.52,
+    "VST panic": 0.79,
+    "UUUU panic": 2.28
+   },
+   "rules_acted": [
+    "sold parked SPY to pay back $353 overspent",
+    "parking switch: SPY -> SGOV"
    ],
    "closed_today": []
   }
