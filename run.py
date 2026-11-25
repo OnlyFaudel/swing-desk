@@ -1558,6 +1558,12 @@ def reconcile(st, br, today):
         a, b = mine.get(t, 0.0), float((real.get(t) or {}).get("qty", 0))
         if abs(a - b) > max(1e-4, 0.01 * max(a, b)):
             gaps.append(f"{t}: books {a:.4f}, Alpaca {b:.4f}")
+    try:  # every order is a day order, so after the close Alpaca should hold none
+        left = [o for o in (br.open_orders() or []) if o.get("status") not in ("filled", "canceled", "expired")]
+    except Exception:
+        left = []
+    if left:
+        gaps.append("open orders after the close: " + ", ".join(f"{o['side']} {o['symbol']} {o.get('kind')} ${o.get('price')}" for o in left[:5]))
     st["reconcile"] = {"date": str(today), "gaps": gaps, "ok": not gaps}
     if gaps:
         notify("Books vs Alpaca don't match", "; ".join(gaps)[:300], tags="warning")

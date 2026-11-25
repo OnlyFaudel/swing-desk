@@ -123,6 +123,12 @@ class Desk:
             payload = {**payload, "power_deals_and_fuel_policy": {
                 "deals": [f"{d['date']}: {d['seller']} with {d['buyer']}, {d['size_mw']} MW ({d['day0_pct']:+.0f}% that day)" for d in dv["deals"]],
                 "how_stocks_reacted": dv["history"], "fuel_policy": [f"{p['item']}: {p['status']}" for p in dv["policy"]]}}
+        if isinstance(payload, dict):  # ground truth on orders, so no agent argues about an order that no longer exists
+            arm = self.state.get("armed") or {}
+            payload = {**payload, "LIVE_ORDERS_RIGHT_NOW": (
+                [f"{t}: buy limit ${a.get('entry')} (${a.get('dollars', 0):.0f}), placed {a.get('armed_at', a.get('date', '?'))}" for t, a in arm.items()]
+                or "NONE. There are no resting orders. Every order we place is a day order that expires at that day's close, so an "
+                   "order mentioned in an older post no longer exists unless it is listed here.")}
         les = [x["lesson"] for x in self.state.get("lessons", []) if x.get("lesson")][-6:]
         if les and isinstance(payload, dict):  # what the desk learned from its own mistakes, in every agent's head
             payload = {**payload, "desk_lessons_from_our_mistakes": les}
