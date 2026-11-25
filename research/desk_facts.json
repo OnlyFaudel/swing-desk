@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 00:55",
+ "updated": "2026-11-25 01:00",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -13,7 +13,7 @@
   },
   {
    "topic": "Discovery engine survivors checked on 2008-2026 vs the S&P",
-   "answer": "3 down days: miners -1.30% (2008-18) / +0.94% (2019-26) over 5 days: recent-era only (practice book). New 52-week high: lags in BOTH eras (miners -1.76% / -1.21% vs S&P over 5 days; our 10 -0.95% / -0.50% vs the basket): don't chase fresh highs, a good moment to be patient on new buys. New 52-week low: flips between eras, no edge. Offering dilution: already a live exit rule.",
+   "answer": "3 down days: lost 2008-18, paid 2019-26 (practice book only). New 52-week high: inconsistent (5 days from the same close: miners -1.76%/-1.21% vs S&P; 10 days from the next close: -0.48%/+1.35%): do not use it either way. New 52-week low: flips between eras, no edge. Offering dilution: already a live exit rule.",
    "source": "research/trial_ledger.json: night_round_10_2026_11_25"
   },
   {
@@ -25,6 +25,16 @@
    "topic": "News and filings that do NOT predict our stocks",
    "answer": "Checked on 2008-2026: a cheered company filing (+3% day) is not a reliable sell signal (-5.4% vs S&P 2008-18 but +0.4% 2019-26); protest/opposition news, analyst upgrades, downgrades and new coverage have no lasting effect. Do not trade or size off them. What DOES carry: a +8% earnings reaction day keeps drifting up for ~20 sessions (live rule 'earnings_pop').",
    "source": "research/trial_ledger.json: night_round_11_2026_11_25, earnings_pop_drift"
+  },
+  {
+   "topic": "Earnings-pop drift (live rule 'earnings_pop'): what to expect",
+   "answer": "Checked on 620 earnings pops in 137 big US stocks: the drift after a +8% earnings day is real but small, about +1% vs the S&P over 20 days and beating it only ~51-52% of the time. Treat each trade as a slight edge, not a sure thing; never size it up on conviction alone.",
+   "source": "research/trial_ledger.json: earnings_pop_drift"
+  },
+  {
+   "topic": "The recurring pattern: buying weakness in our names",
+   "answer": "Across nearly every 'buy after weakness' signal (3 down days, stock-level panic days, sector selloffs, volume spikes, 52-week lows), our stocks LOST vs the S&P in 2008-2018 and GAINED in 2019-2026. The live rules that buy crashes (panic, sharp drop, comeback) passed in both eras; looser versions only work in the AI era. If the market regime turns like 2008-2018, the loose versions would hurt: that is why they stay in the practice book.",
+   "source": "research/trial_ledger.json: night_round_12_2026_11_25, night_round_4/5/10"
   }
  ]
 }
