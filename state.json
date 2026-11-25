@@ -9152,7 +9152,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 18:00 ET",
+ "last_cycle": "2026-11-25 18:12 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -58381,7 +58381,7 @@
   "84200faa36eac51a",
   "688d746cfc31b58f"
  ],
- "news_slow_at": 1795647358.9707363,
+ "news_slow_at": 1795648004.3619127,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219473,9 +219473,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 18:00",
+  "updated": "2026-11-25 18:12",
   "total": 679,
-  "week": 511,
+  "week": 510,
   "places": {
    "Uranium price": 48,
    "South Korea": 37,
@@ -222660,12 +222660,12 @@
    "built": "2026-11-25 17:51"
   }
  ],
- "heartbeat": "2026-11-25 18:00",
+ "heartbeat": "2026-11-25 18:12",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 375,
+ "_pushed_feed": 376,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -230862,7 +230862,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 18:00",
+ "watchdog_last": "2026-11-25 18:12",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
