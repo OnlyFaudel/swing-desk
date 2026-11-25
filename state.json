@@ -591,7 +591,9 @@
   "nightwatch170:2026-11-25": true,
   "ahdip170:2026-11-25": true,
   "ahdip171:2026-11-25": true,
-  "nightwatch171:2026-11-25": true
+  "nightwatch171:2026-11-25": true,
+  "earnread:2026-11-25": true,
+  "ahdip172:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -4175,18 +4177,6 @@
  },
  "news_feed": [
   {
-   "ticker": "TLN",
-   "source": "Google News: \"Talen Energy\"",
-   "title": "Talen Energy price target raised to $514 from $512 at Morgan Stanley - TipRanks",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQVHFMbkp3M0xRZVBLd1k2NlJ0UnZ6aWdQemREQ0RBS2N6WmZUUnNmenlmWHoycjVyVkhqOV9pRWROYmtCbHZ1TE5waGRVVkozQzRKOUFCMl9IM3B4YllVVkkzNHBydzF1ZEMzeThZb3VhZndqek4waEVrMEUzQ2JNQ2hzUHE2MkRJNGpfLWhJMTR3SG9PVEdCSW83ZkNFSU1pSjJ5OUFZU2NmQWZUV0djX3NHMUtPNFU?oc=5",
-   "ts": 1795446764,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "up",
-   "event_type": "analyst",
-   "why": "Routine target bump from one bank; small, modest move expected."
-  },
-  {
    "ticker": "CEG",
    "source": "Local intel: The National Law Review (NRC decisions)",
    "title": "Navigating Nuclear: US Nuclear Regulatory Commission Issues Final Rules of Practice and Procedure",
@@ -7173,6 +7163,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic explainer on Cameco's growth; no new company-specific information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "Cameco (NYSE:CCJ) Stock Jumps 3% - Time to Buy? - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMTZuQzlsN09mRmJNcDJ5MkpVeVNvUERjV0U2dk02VndXc2JyWFU1YVVJMG5Jajd2WjR1clpzZ2JxN3dUVXRmNktzUjhDV1NqWXppbkVXd2tGMVdoNjFLc3duQ0YtaU4tcGZfcWwwNkZEX041TWNPYkcySlZwUkhucm1GQmZtUmswMnNkVjlzaWxlZ2NlZWJZV09OYjZrbnBpcUZZ?oc=5",
+   "ts": 1795645626,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "MarketBeat recap of a 3% price move; no new company information."
   }
  ],
  "reviews": [
@@ -8932,22 +8934,22 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.70917,
+  "day_usd": 0.71111,
   "month": "2026-11",
-  "month_usd": 1.89273,
-  "total_usd": 1.89273,
+  "month_usd": 1.89467,
+  "total_usd": 1.89467,
   "by_role": {
    "macro": 0.19063,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.17087,
+   "scout": 0.17129,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
    "pm": 0.27861,
    "risk": 0.1939,
-   "investigator": 0.30895,
+   "investigator": 0.31047,
    "postmortem": 0.00035,
    "researcher": 0.02016,
    "engineer": 0.07932,
@@ -9144,7 +9146,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 17:26 ET",
+ "last_cycle": "2026-11-25 17:30 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -58079,6 +58081,7 @@
   "c2bfe85469484a37",
   "844065448a881248",
   "bcc1a41f243d6952",
+  "745180d0d8db2d66",
   "dfaa19a96155f693",
   "126369127a97f018",
   "b5cc93f097618cf0",
@@ -58307,6 +58310,7 @@
   "e87b1e4d61fe1cbd",
   "bf01a2cc0277276c",
   "cc273780de04d2de",
+  "3acd3183b0f50c38",
   "2a89ac3dc67ad332",
   "f19e01fb55b5d3b4",
   "e12d3a4edb7295a2",
@@ -213978,6 +213982,27 @@
    ],
    "practice": false,
    "end": "16:07"
+  },
+  {
+   "id": "20261125173031613335",
+   "title": "NXE results, 2026-11-25",
+   "tickers": [
+    "NXE"
+   ],
+   "kind": "news",
+   "start": "2026-11-25 17:30",
+   "msgs": [
+    {
+     "t": "17:30",
+     "who": "investigator",
+     "to": "team",
+     "text": "This is NexGen's sustainability report, not quarterly or annual results, so it contains no financial numbers or guidance I can use. The only company-level items are a construction-progress comment and a previously known Federal approval, which don't change the picture. Nothing here warrants a trade; the stock's recent weakness is about the basket and market, not this release.",
+     "outcome": false,
+     "notes": "is results: False\ntone: same\nwhy: The document is an ESG/sustainability report, not a results release, so the task says to stop. The desk history shows NexGen company-update releases have had no meaningful next-5-day effect (median -0.51%).\nfiles read: NXE Filings and company events, NXE What history says"
+    }
+   ],
+   "practice": false,
+   "end": "17:30"
   }
  ],
  "feed": [
@@ -219367,7 +219392,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 17:26",
+  "updated": "2026-11-25 17:30",
   "total": 676,
   "week": 510,
   "places": {
@@ -222550,7 +222575,7 @@
    "built": "2026-11-25 17:20"
   }
  ],
- "heartbeat": "2026-11-25 17:26",
+ "heartbeat": "2026-11-25 17:30",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -222775,11 +222800,11 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 289,
-   "used": 260,
+   "asked": 290,
+   "used": 261,
    "notes": {
     "TLN Deals and contracts": 16,
-    "CCJ Deals and contracts": 54,
+    "CCJ Deals and contracts": 55,
     "BWXT Deals and contracts": 37,
     "SECTOR Government and laws": 70,
     "UUUU Deals and contracts": 38,
@@ -222882,8 +222907,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 80,
-   "used": 77,
+   "asked": 81,
+   "used": 78,
    "notes": {
     "BWXT Deals and contracts": 2,
     "BWXT Snapshot": 3,
@@ -222901,7 +222926,7 @@
     "SECTOR Government and laws": 2,
     "coming_up": 3,
     "NXE Snapshot": 5,
-    "NXE Filings and company events": 1,
+    "NXE Filings and company events": 2,
     "LEU Snapshot": 11,
     "LEU Legal": 10,
     "LEU Leadership and insiders": 1,
@@ -222934,7 +222959,8 @@
     "LIVE_ORDERS_RIGHT_NOW": 2,
     "open_positions": 1,
     "power_deals_and_fuel_policy": 1,
-    "already_checked_facts": 1
+    "already_checked_facts": 1,
+    "NXE What history says": 1
    },
    "since": "2026-11-23"
   },
@@ -230736,7 +230762,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 17:26",
+ "watchdog_last": "2026-11-25 17:30",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -230744,7 +230770,8 @@
   "0001486957-26-000053",
   "0001868275-26-000116",
   "0001692819-26-000023",
-  "0001622536-26-000084"
+  "0001622536-26-000084",
+  "0001062993-26-006276"
  ],
  "results_notes": {
   "CCJ": [
