@@ -583,7 +583,8 @@
   "reconcile:2026-11-25": true,
   "notecheck:2026-11-25": true,
   "nightwatch161:2026-11-25": true,
-  "recent:2026-11-25": true
+  "recent:2026-11-25": true,
+  "ahdip162:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -4168,18 +4169,6 @@
  "news_feed": [
   {
    "ticker": "BWXT",
-   "source": "Local intel: Seapower Magazine (Naval reactors)",
-   "title": "Karman Awarded $31 Million Navy Contract for Virginia-Class Submarine Propulsor Tailcones",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWC0takxQRTdyVmlYT0RNMXhNSHhYZlhJcWJiTGZBSVVTM3A5Y0JjUGYxbWZIOHYxSnJoVXhlbkRocHFRLVpRRU40ZVNqUXk0VkRjWl8tdU40dzJmWXlabnVGZUQ4QXY5NjhVRVBCZE5MVUFrQjdWcXg4V1RMbWhxQnkySlBDNnk5aFdIekxXNW9ZVVVYdnNXWlA4MXBFd3FQcFNEQlNSU2NvNXVwX1djWUxZLXhuR1k3VXc?oc=5",
-   "ts": 1795473373,
-   "materiality": 4,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "contract_deal",
-   "why": "$31M Navy subcontract to Karman is small and not directly BWXT's contract."
-  },
-  {
-   "ticker": "BWXT",
    "source": "Local intel: Crikey (AUKUS and navies)",
    "title": "Keating: AUKUS \u2018was not about submarines\u2019 \u2014 it was about a US base in Perth",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZjBkdGNGZzVaVE93SktuNEY4WnFydnc5MWpoeTVzcVUxQkp6YW5uSVVEdFJvTUNOdnVzVjJKZ3dIY09rZURkR1pPXzVzMGIySkFSU2tQSDVLVEMzd1FlbXVNZWFKWll1M05SbGk4RllHeDQ0Wklhbm9PRk5IakltOG1IVnFlMXFH?oc=5",
@@ -7165,6 +7154,18 @@
    "direction": "down",
    "event_type": "other",
    "why": "Kazatomprom is a major uranium supplier; an ops chief detained raises supply-risk and governance questions, but it is an unconfirmed probe with no production impact yet."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News",
+   "title": "Five power plants go to LS Power, fulfilling requirements tied to Constellation\u2019s Calpine acquisition - Stock Titan",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNYUVCaTdNdWV2UUdoM29fVGhaZkhnWG1ReEhaOTNNSXBSbEVjSkZuVjJ4cmdqWWFfcG9OaENvd1dGc2NBMkItNFVjTVpsci1EVWFtWllXVnJXVUhRWExQSnhzbVdnWFBXSUdVbmpibktUeUFvb3JIZXlLaDJENFpWTXhRdFV6NkJkVHpzNGo0ajdNLXFUM1A2MmtrUW5rYUxMY2xJcDlESk5XbkxFZTh3MnNOd04tZFJQbTVQQVNDRQ?oc=5",
+   "ts": 1795642200,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Divestiture of plants to LS Power is a required remedy tied to the already-known Calpine deal."
   }
  ],
  "reviews": [
@@ -8924,16 +8925,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.70504,
+  "day_usd": 0.70545,
   "month": "2026-11",
-  "month_usd": 1.8886,
-  "total_usd": 1.8886,
+  "month_usd": 1.88901,
+  "total_usd": 1.88901,
   "by_role": {
    "macro": 0.19063,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.16674,
+   "scout": 0.16715,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9136,7 +9137,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 16:27 ET",
+ "last_cycle": "2026-11-25 16:37 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57790,8 +57791,8 @@
   "a3dd031817a4feeb",
   "fd337937e7471e2a",
   "fe0239e8c69f7365",
-  "3540271e126c026c",
   "e36e8842560640fa",
+  "3540271e126c026c",
   "1e0f49b9f0b2bcbb",
   "e8576c26f24e8b21",
   "59c6f6be8bf3e5a9",
@@ -58235,6 +58236,7 @@
   "96daf38a2007dab1",
   "2d3f6639ab9cea68",
   "f301f0be48a8445e",
+  "7edbbcfb97bdd13d",
   "9dc14db25bfb1dc2",
   "52e6c78d06498482",
   "b695f296dd2e61f0",
@@ -58350,7 +58352,7 @@
   "3fe9fc872b222598",
   "8a429bbe4d25ae7d"
  ],
- "news_slow_at": 1795641620.534998,
+ "news_slow_at": 1795642239.92397,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219291,7 +219293,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 16:27",
+  "updated": "2026-11-25 16:37",
   "total": 671,
   "week": 507,
   "places": {
@@ -222471,7 +222473,7 @@
    "built": "2026-11-25 16:16"
   }
  ],
- "heartbeat": "2026-11-25 16:27",
+ "heartbeat": "2026-11-25 16:37",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -222696,8 +222698,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 280,
-   "used": 252,
+   "asked": 281,
+   "used": 253,
    "notes": {
     "TLN Deals and contracts": 16,
     "CCJ Deals and contracts": 53,
@@ -222705,7 +222707,7 @@
     "SECTOR Government and laws": 68,
     "UUUU Deals and contracts": 38,
     "SECTOR Countries": 62,
-    "CEG Deals and contracts": 32,
+    "CEG Deals and contracts": 33,
     "NXE Legal": 10,
     "NXE Deals and contracts": 17,
     "DNN Deals and contracts": 10,
@@ -230657,7 +230659,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 16:27",
+ "watchdog_last": "2026-11-25 16:37",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
