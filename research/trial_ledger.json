@@ -590,6 +590,10 @@
   "night_round_37_2026_11_25": {
    "trials": 12,
    "verdict": "2026-11-25 05:40. not_working_exit (rejected) + new-low sharp-drop sizing hint (fact)."
+  },
+  "night_round_38_2026_11_25": {
+   "trials": 0,
+   "verdict": "2026-11-25 05:50. judgment.py audit: 7 of 10 setup notes pointed at research entries that do not exist (panic_rebound, sharp_drop, ai_power, cross_market, fear_fade, thanksgiving, year_end, uranium_momentum), so the PM's 3 PM stance call got NO research verdict for panic, sharp drop, AI power, fear fade, Thanksgiving, year-end or uranium momentum; and _ledger_text cut every verdict at 400 characters, dropping the newest checks (appended at the end). Fixed: links point at the real entries (all 10 resolve), long verdicts keep start + end. Stale notes refreshed: earnings_pop expects ~+1% (620-pop check) and warns off peers; ah_dip mentions the earnings-night skip and the bank switched off; thanksgiving ~flat vs the S&P; sharp_drop new-low hint."
   }
  }
 }

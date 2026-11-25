@@ -19,13 +19,13 @@ NOTES = {
                       "at a close, a 5%+ morning gap (bought back near the close), or after 6 sessions.",
               "why": "Forced and fearful selling overshoots on market-wide panic days; nuclear names are high-beta so they overshoot most.",
               "fails": "When the panic is the start of a real bear market (2008, early 2020) and the next leg down comes within days.",
-              "ledger": ["panic_rebound", "gap_bank_panic", "take_profit_early_panic"]},
+              "ledger": ["panic_day_rebound", "panic_rule_2008", "panic_cluster_audit", "gap_bank_panic", "take_profit_early_panic", "rule_collision_and_confirmation"]},
     "sharp_drop": {"name": "Sharp-drop rebound",
                    "what": "Any day: a nuclear or related stock down 15%+ in 5 sessions gets 10% of the account (15% if down 20%+); "
                            "a second buy of the same dollars if it falls another 10%; sell at +10% or after 10 sessions.",
                    "why": "Fast drops are usually forced sellers and stop-loss cascades, not new information; they snap back.",
-                   "fails": "When the drop IS new information: share offering, failed trial/licence, fraud, lost contract. Check the news.",
-                   "ledger": ["sharp_drop", "sharp_drop_add"]},
+                   "fails": "When the drop IS new information: share offering, failed trial/licence, fraud, lost contract. Check the news. In our names, sharp drops that are also a fresh 120-day low earned less in every period (lean small).",
+                   "ledger": ["strategy_round_2026_11_24", "exit_tests_2026_11_24", "sharp_drop_add", "sharp_drop_wide", "exit_method_audit", "not_working_exit"]},
     "comeback": {"name": "Intraday comeback",
                  "what": "With the S&P under its 200-day: a stock that dips 6%+ during the day and gets back above yesterday's close; "
                          "hold 20 sessions, -15% stop.",
@@ -36,33 +36,33 @@ NOTES = {
                  "what": "NVIDIA up 6%+ in a day -> buy the power trio (CEG, VST, TLN), 15% split, 5 sessions.",
                  "why": "Big AI days re-rate the power-demand story; the power names follow with a lag.",
                  "fails": "When NVIDIA's jump is company-specific (one product) rather than AI demand overall.",
-                 "ledger": ["ai_power", "cross_market"]},
+                 "ledger": ["cross_market_signals"]},
     "fear_fade": {"name": "Fear fading",
                   "what": "VIX above 30 and falling 2 days in a row -> buy the lineup, 20%, 20 sessions, at most once in 28 days.",
                   "why": "When fear peaks and starts to ease, the most-sold stocks recover first.",
                   "fails": "A second fear spike (2008, 2022) after a short relief.",
-                  "ledger": ["fear_fade", "cross_market"]},
+                  "ledger": ["cross_market_signals", "whole_stack_all7"]},
     "thanksgiving": {"name": "Thanksgiving run-up",
                      "what": "Buy the lineup (15%) at Tuesday's close, sell at the Black Friday close.",
                      "why": "Holiday-week optimism and thin selling; a long-documented seasonal tendency.",
-                     "fails": "Small edge, a coin-flip in any single year; never worth more than its small size.",
-                     "ledger": ["holidays_quarters_earnings", "thanksgiving"]},
+                     "fails": "Small edge, a coin-flip in any single year; vs the S&P it has been about flat (our 10 -0.34% / +0.14%), it mainly beats idle cash. Never worth more than its small size.",
+                     "ledger": ["holidays_quarters_earnings", "thanksgiving_week", "thanksgiving_trades"]},
     "earnings_pop": {"name": "Earnings-pop drift",
                      "what": "A stock that jumped 8%+ on its earnings reaction day: buy 5% at the next close, hold 20 sessions (max 2 open).",
-                     "why": "After a big earnings beat, investors and analysts adjust slowly, so the stock keeps drifting up (post-earnings drift).",
-                     "fails": "When the jump is a short squeeze or the whole market ripped that day; small sample (41 past cases).",
+                     "why": "After a big earnings beat, investors and analysts adjust slowly, so the stock keeps drifting up (post-earnings drift). Expect only about +1% vs the S&P over 20 sessions (620 big-stock pops: +0.73% / +1.38%).",
+                     "fails": "When the jump is a short squeeze or the whole market ripped that day. Do not buy the reporter's PEERS: in our names group mates jump with it and give it back within 5 days.",
                      "ledger": ["earnings_pop_drift"]},
     "ah_dip": {"name": "After-hours dip",
                "what": "One of our 10 trades 3%+ under its 4 PM close after hours on real volume: buy 8% with an after-hours limit, sell right after the next open (max 2).",
                "why": "After-hours trading is thin, so prices overshoot; by the next open only about half of the move is left.",
-               "fails": "When the after-hours drop is real bad news (an offering, a failed license, fraud) that keeps falling into the open; worst 5% of past trades about -5%.",
+               "fails": "When the after-hours drop is real bad news (an offering, a failed license, fraud) that keeps falling into the open; worst 5% of past trades about -5%. Earnings nights are skipped by the rule (they did not bounce); the after-hours BANK (selling jumps) is switched off because that edge faded after 2023.",
                "ledger": ["after_hours_dip"]},
     "year_end": {"name": "Year-end bounce", "what": "December tax-loss losers bounce into January.",
                  "why": "Tax-loss selling pressure ends at year-end.", "fails": "Years when the losers keep losing (real bad news).",
-                 "ledger": ["year_end"]},
+                 "ledger": ["year_end_bounce", "year_end_wide"]},
     "uranium_momentum": {"name": "Uranium momentum", "what": "Spot uranium strength -> small buys in the miners.",
                          "why": "Miners re-price on the commodity with a lag.", "fails": "Spot moves on thin trading that reverses.",
-                         "ledger": ["uranium_momentum"]},
+                         "ledger": ["uranium_spot_momentum", "sprott_issuance", "uranium_divergence_longterm"]},
 }
 JUDGED = set(NOTES)  # setups whose size the PM can adjust
 
@@ -73,7 +73,10 @@ def _ledger_text(keys):
         L = json.load(open("research/trial_ledger.json"))["strategies"]
     except Exception:
         return []
-    return [f"{k}: {str(L[k].get('verdict'))[:400]}" for k in keys if k in L]
+    def cut(v):  # verdicts grow at the END (newest checks are appended), so keep the start and the end
+        v = str(v)
+        return v if len(v) <= 700 else v[:260] + " ... " + v[-420:]
+    return [f"{k}: {cut(L[k].get('verdict'))}" for k in keys if k in L]
 
 
 def live_record(st, setup):
