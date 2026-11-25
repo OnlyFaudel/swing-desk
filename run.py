@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, re, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, earnings, weekly, weather, shocks, licenses, deals, radarlog, watchdog, recent, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, earnings, weekly, weather, shocks, licenses, deals, radarlog, watchdog, recent, judgment, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -180,6 +180,17 @@ class Exec:
         return o
 
     def buy_market(self, t, notional, price, tag, meta, note):
+        if tag in ("au", "pr") and (meta or {}).get("setup") in judgment.JUDGED:  # the PM's daily stance on this strategy
+            today_ = market.now_et().date()
+            rule_usd = notional
+            notional, why = judgment.apply(self.st, meta["setup"], t, notional, price, today_)
+            if abs(notional - rule_usd) > 0.01:
+                meta = {**meta, "rule_usd": round(rule_usd, 2), "judged": round(notional / rule_usd, 2), "judged_why": why}
+                feed.post("pm", f"{t} {judgment.NOTES[meta['setup']]['name']}: the rule says ${rule_usd:.0f}; I'm doing "
+                          + (f"${notional:.0f}" if notional >= 5 else "nothing today") + f". Why: {why or 'today stance'}. "
+                          "This override gets scored against the plain rule.", [t], kind="decision")
+            if notional < 5:
+                return None
         if tag != "pk":
             self.ensure_cash(notional)
         try:
@@ -435,7 +446,6 @@ def refresh_candidates(st, desk, data, prices, today, brk_state, force=False):
                                                                              and e["date"] >= str(today - dt.timedelta(days=45))][-6:],
                                                 "what_share_offerings_did_before": desk_memory.playbook("offering_dilution", list(T)),
                                                 "desk_memory_playbook": memory.playbook(st, t), "active_theses": active_theses(st, t),
-               "everything_we_know": dossier.for_agent(t), "discoveries": discovery.brief(5),
                                                 "everything_we_know": dossier.for_agent(t), "discoveries": discovery.brief(5),
                                                 "recent_headlines": [f["title"] for f in st["news_feed"] if f["ticker"] == t][-8:]})
                 v = (lv.get("setups") or {}).get(t, {})
@@ -2151,8 +2161,15 @@ def intel_tick(st, today, force=False):
     try:  # order-flow data: one-time backfill (after hours), then a daily top-up after the close (intraday.py)
         import subprocess
         after_hours = now.time() >= dt.time(16, 45) or now.time() < dt.time(7, 30) or now.weekday() >= 5
-        if after_hours and not st["flags"].get("intraday_backfill"):
-            st["flags"]["intraday_backfill"] = str(today)
+        prog = {}
+        try:
+            prog = json.load(open(os.path.join(ROOT, "data/intraday/_progress_v2.json")))
+        except Exception:
+            pass
+        last = st["flags"].get("intraday_backfill_t", 0)
+        # relaunch every 30 min after hours until complete (a restart of the daemon kills the child; it resumes where it stopped)
+        if after_hours and not prog.get("_complete") and time.time() - (last if isinstance(last, (int, float)) else 0) > 1800:
+            st["flags"]["intraday_backfill_t"] = time.time()
             subprocess.Popen([sys.executable, "intraday.py", "backfill"], cwd=ROOT, start_new_session=True,
                              stdout=open("/tmp/intraday_backfill.log", "a"), stderr=subprocess.STDOUT)
         elif now.weekday() < 5 and not market.is_holiday(today) and now.time() >= dt.time(16, 50) and not st["flags"].get(f"intraday:{today}"):
@@ -2323,6 +2340,46 @@ def positions_view(st, prices):
     return out
 
 
+def judgment_tick(st, desk, prices, today, now, brk_state):
+    """15:00-15:30 ET: the PM reads every rule strategy's note and sets today's stance before the rules trade (judgment.py)."""
+    if not (dt.time(15, 0) <= market.cclock(now) <= dt.time(15, 30)):
+        return
+    if ((st.get("judgment") or {}).get("stance") or {}).get("date") == str(today):
+        return
+    pc = lambda t: _prev_close_px(st, t)
+    day = {t: round((prices[t] / pc(t) - 1) * 100, 2) for t in list(T) + ["SPY", "NVDA"] if prices.get(t) and pc(t)}
+    ctx = {"date": str(today), "moves_today_pct": day, "spy_above_200d": (st.get("park_trend") or {}).get("above"),
+           "account": {"day_pct": brk_state.get("day_pct"), "week_pct": brk_state.get("week_pct"), "equity": brk_state.get("equity")},
+           "open_positions": positions_view(st, prices), "recent_headlines": [f"{f['ticker']}: {f['title']}" for f in st["news_feed"]][-15:],
+           "nowcast": st.get("nowcast"), "coming_up": [f"{c['date']}: {c['what']}" for c in (st.get("catalysts") or [])[:6]],
+           "red_day_record": day_book_summary(st).get("line")}
+    S = judgment.daily(st, desk, today, ctx)
+    if not S:
+        return
+    moves = [f"{judgment.NOTES[k]['name']} x{v['mult']}: {v['reason']}" for k, v in S["setups"].items() if v["mult"] != 1]
+    moves += [f"{t} x{v['mult']}: {v['reason']}" for t, v in S["tickers"].items() if v["mult"] != 1]
+    feed.post("pm", "Today's stance on our rule strategies: " + (S.get("summary") or "")
+              + (" Changes from the plain rules: " + " | ".join(moves) if moves else " All strategies at normal size."), [], kind="decision",
+              art={"big": "Daily stance", "sub": f"{len(moves)} change(s) from the plain rules"})
+
+
+def _prev_close_px(st, t):
+    cache = st.get("prev_close") or {}
+    if cache.get("_date") != str(market.now_et().date()):
+        cache = st["prev_close"] = {"_date": str(market.now_et().date())}
+    if cache.get(t):
+        return cache[t]
+    try:
+        import yfinance as yf
+        h = yf.Ticker(t).history(period="5d")["Close"].dropna()
+        h = h[[d < market.now_et().date() for d in h.index.date]]
+        v = float(h.iloc[-1]) if len(h) else None
+        st.setdefault("prev_close", {})[t] = v
+        return v
+    except Exception:
+        return None
+
+
 def handle_owner_posts(st, desk, ex, data, prices, today, brk_state):
     cfg = CFG.get("owner_posts", {})
     if not cfg.get("enabled"):
@@ -2397,6 +2454,7 @@ def owner_scan(st, desk, ex, data, prices, today, brk_state, text):
                                     if o["time"].startswith(str(today))],
                    "account": {"equity": round(account.equity(st["book"], prices), 2), "start": CFG["capital_cap"],
                                "cash": round(st["book"]["cash"], 2), "week_pct": brk_state.get("week_pct"), "day_pct": brk_state.get("day_pct")},
+                   "strategy_notes": judgment.notes_for_agents(st), "todays_stance": (st.get("judgment") or {}).get("stance"),
                    "IMPORTANT": "Support setups (Patient Levels) are only one of our strategies. Rule trades (panic-day rebound, "
                                 "sharp-drop rebound and its second buy, comeback, AI power day, fear fading, Thanksgiving run-up, "
                                 "parking) run on their own schedule. Answer from ALL_POSITIONS_NOW and orders_today, never say "
@@ -3255,6 +3313,13 @@ def review(st, desk, data, prices, today, brk_state):
     eq = account.equity(book, prices)
     book["equity"].append([str(today), round(eq, 2), round(account.core_value(book, prices), 2), round(account.trade_value(book, prices), 2)])
     try:
+        for d in judgment.resolve(st, prices, today):
+            feed.post("officer", f"Scoring the PM's override: {d['t']} {judgment.NOTES[d['setup']]['name']} at x{d['mult']} "
+                      f"({d['reason'][:100]}). The stock moved {d['move_pct']:+.1f}% since, so the override was worth "
+                      f"${d['value']:+.2f} vs the plain rule.", [d["t"]], kind="data")
+    except Exception as e:
+        print("judgment resolve", e)
+    try:
         day_entry = day_attribution(st, data, prices, today, eq)
     except Exception as e:
         day_entry = None
@@ -3448,6 +3513,10 @@ def cycle(st, desk, br, ex, force=()):
             process_fills(st, br, ex, today)
         manage_open(st, ex, prices, today, brk_state)
         process_fills(st, br, ex, today)
+        try:
+            judgment_tick(st, desk, prices, today, now, brk_state)
+        except Exception as e:
+            print("judgment", e)
         try:
             gap_bank(st, ex, data, prices, today, now)
             gapdown_shadow(st, data, prices, today, now)

@@ -12,7 +12,7 @@ import os, sys, json, time, datetime as dt
 import pandas as pd
 
 OUT = "data/intraday"
-PROG = os.path.join(OUT, "_progress.json")
+PROG = os.path.join(OUT, "_progress_v2.json")  # v1 marked stocks done after failed pulls (bug fixed 2026-11-24)
 COLS = ["t", "date", "prev_close", "open", "px935", "px945", "px1000", "px1530", "close", "low", "high", "vol", "vol15",
         "press15", "press30", "press_last30", "press_day", "vwap", "low_min", "high_min", "feed"]
 
@@ -60,7 +60,7 @@ def features(df, t, feed):
                     "high": float(g.high.max()), "vol": int(g.volume.sum()), "vol15": int(f15.volume.sum()),
                     "press15": _press(f15), "press30": _press(f30), "press_last30": _press(l30), "press_day": _press(g),
                     "vwap": round(float((g.close * g.volume).sum() / max(1, g.volume.sum())), 4),
-                    "low_min": int(mins[g.low.values.argmin()]), "high_min": int(mins[g.high.values.argmax()]), "feed": feed})
+                    "low_min": int(mins.iloc[g.low.values.argmin()]), "high_min": int(mins.iloc[g.high.values.argmax()]), "feed": feed})
     return out
 
 
@@ -88,9 +88,9 @@ def pull(tickers, start, end, resume=True):
     cl = _client()
     prog = json.load(open(PROG)) if (resume and os.path.exists(PROG)) else {}
     for t in tickers:
-        if resume and prog.get(t) == "done":
+        if resume and isinstance(prog.get(t), dict) and prog[t].get("done"):
             continue
-        rows, feed = [], "sip"
+        rows, feed, fails, last_err = [], "sip", 0, ""
         y = start
         while y < end:
             y2 = min(end, y + dt.timedelta(days=90))
@@ -107,16 +107,23 @@ def pull(tickers, start, end, resume=True):
                     rows += features(df, t, feed)
                     break
                 except Exception as e:
-                    print("intraday", t, y, e)
+                    print("intraday", t, y, repr(e)[:200], flush=True)
+                    last_err = repr(e)[:200]
+                    if attempt == 2:
+                        fails += 1
                     time.sleep(5 * (attempt + 1))
             y = y2
             time.sleep(0.35)  # stay well under the API rate limit
         _write(rows)
         if resume:
-            prog[t] = "done"
+            # only 'done' if most chunks worked; otherwise the next launch retries this stock
+            prog[t] = {"done": bool(rows) and fails <= 2, "days": len(rows), "failed_chunks": fails, "feed": feed, "err": last_err}
             os.makedirs(OUT, exist_ok=True)
             json.dump(prog, open(PROG, "w"))
-        print(f"intraday {t}: {len(rows)} days ({feed})", flush=True)
+        print(f"intraday {t}: {len(rows)} days ({feed}), {fails} failed chunks {last_err}", flush=True)
+    if resume:
+        prog["_complete"] = all((prog.get(t) or {}).get("done") for t in tickers)
+        json.dump(prog, open(PROG, "w"))
 
 
 def _locked():
