@@ -594,6 +594,10 @@
   "night_round_38_2026_11_25": {
    "trials": 0,
    "verdict": "2026-11-25 05:50. judgment.py audit: 7 of 10 setup notes pointed at research entries that do not exist (panic_rebound, sharp_drop, ai_power, cross_market, fear_fade, thanksgiving, year_end, uranium_momentum), so the PM's 3 PM stance call got NO research verdict for panic, sharp drop, AI power, fear fade, Thanksgiving, year-end or uranium momentum; and _ledger_text cut every verdict at 400 characters, dropping the newest checks (appended at the end). Fixed: links point at the real entries (all 10 resolve), long verdicts keep start + end. Stale notes refreshed: earnings_pop expects ~+1% (620-pop check) and warns off peers; ah_dip mentions the earnings-night skip and the bank switched off; thanksgiving ~flat vs the S&P; sharp_drop new-low hint."
+  },
+  "night_round_39_2026_11_25": {
+   "trials": 0,
+   "verdict": "2026-11-25 06:00. Reference audit: no state key read without a writer, no hard config read missing (one soft default: learning.instant_reviews_per_day), all named ledger references resolve. Found: the promotion gate (real-money switch) deflated the paper Sharpe using only patient_levels' 30 trials, but the account trades every adopted rule and the ledger holds 2,031 trials (143 entries), so the luck hurdle was 1.11 annualized instead of 1.85. Fixed in gate.py: trials = all ledger trials (never fewer than the strategy's own). Current gate: still failing (3 days, halves not both positive, DSR 0.57)."
   }
  }
 }

@@ -43,7 +43,11 @@ def honest_equity(st):
 
 def evaluate(st, cfg):
     c = cfg["promotion_gate"]
-    led = json.load(open(os.path.join(ROOT, "research", "trial_ledger.json")))["strategies"][c["strategy"]]
+    allled = json.load(open(os.path.join(ROOT, "research", "trial_ledger.json")))["strategies"]
+    led = dict(allled[c["strategy"]])
+    # the account trades every adopted rule, and every idea ever tried anywhere was a chance to get lucky: count them all
+    # (was: only the strategy's own 30 trials, which set the luck hurdle far too low)
+    led["trials"] = max(int(led.get("trials") or 1), sum(int(v.get("trials") or 0) for v in allled.values() if isinstance(v, dict)))
     eq = honest_equity(st)  # judged on honest fills, not paper ones
     out = {"days": int(len(eq)), "trials": led["trials"], "min_days": c["min_days"], "passed": False}
     if len(eq) < 3:
