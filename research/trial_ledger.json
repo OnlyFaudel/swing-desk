@@ -666,6 +666,10 @@
   "night_round_49_2026_11_25": {
    "trials": 0,
    "verdict": "2026-11-25 07:05. Full pre-open rehearsal: 4 complete cycles at fake times 9:32, 9:40, 10:00 and 15:45 ET on a copy of the live state (sim broker seeded with the book's positions, agents off, phone alerts off): no crash, state.rule_errors empty every cycle; the morning meeting ran; the overdraft repayment sold 0.496 SPY and free cash went -$352.92 -> +$3.53; no other orders (no setups on yesterday's prices)."
+  },
+  "night_round_50_2026_11_25": {
+   "trials": 0,
+   "verdict": "2026-11-25 07:15. Forced panic-day rehearsal on a copy of the live state (sim broker seeded, every stock and the S&P patched to -5% at 15:45, room made by clearing the copy's panic lots, +$600 book cash). (a) With the real books (3 panic lots held, $3.53 free cash after the repayment) the rule correctly bought nothing. (b) With room: bought UUUU, UEC and CCJ at ~$115 each (10% steps on $1,148 equity), sold parked SPY to fund them, free cash ended +$1.04 (no overdraft), pending_buys cleared, sell date 2026-12-04 = 6 sessions counting the Thanksgiving holiday. rule_errors empty. Note: the first attempt bought nothing because the lineup list T is only filled inside cycle(); not a live issue."
   }
  }
 }
