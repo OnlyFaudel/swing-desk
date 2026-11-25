@@ -1537,6 +1537,9 @@ def cover_negative(st, ex, today):
         real = (ex.br.positions() or {}).get(held, {}).get("qty")
         if real is not None:
             q = min(q, float(real))
+        if q <= 1e-6:  # the broker shows none of the parked fund: don't send a zero-share order or claim it was paid back
+            notify_once(st, f"cover_none:{today}", "Cash below zero", f"Our books show ${fc:.0f} cash, but the broker shows no {held} to sell. Check the account.")
+            return
         log_order(st, ex.br.market_sell(held, round(q, 6), px, "pkx"), f"sold parked {held} to pay back ${-fc:.0f} overspent")
         time.sleep(0 if ex.br.name == "sim" else 2)
         process_fills(st, ex.br, ex, today)

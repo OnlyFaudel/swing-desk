@@ -658,6 +658,10 @@
   "night_round_47_2026_11_25": {
    "trials": 3,
    "verdict": "2026-11-25 06:55. rebound_through_earnings (fact)."
+  },
+  "night_round_48_2026_11_25": {
+   "trials": 0,
+   "verdict": "2026-11-25 07:00. Pre-open dry run of this morning's overdraft repayment (cover_negative) on a copy of the live state with the simulation broker holding the book's positions: sells 0.496 of the 0.620 parked SPY, free cash -$352.92 -> +$3.53. Found: if the broker showed 0 parked shares, it sent a zero-share sell and posted 'paid back'. Fixed: it now alerts the owner instead (once a day)."
   }
  }
 }
