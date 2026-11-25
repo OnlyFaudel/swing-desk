@@ -16,6 +16,8 @@ RULES = {
     "four_down": "4 down closes in a row (our 10 + related stocks): buy the close, sell after 5 sessions (2019-26: 26.2%/yr on related)",
     "quarter_turn": "Buy our 10 at a quarter's last close, sell 3 sessions later (2019-26: +1.56% vs S&P)",
     "momentum_switch": "Each month hold our 10 instead of the S&P when their 12-month return beats the S&P's (2019-26: 41.2%/yr)",
+    "capitulation": "85%+ of the 115 big US stocks fall on the same day: buy our 10 at the close, sell after 10 sessions "
+                    "(one point per day, 5-day gap: 2008-18 -1.44% vs S&P (t -2.6), 2019-26 +2.08% (t 2.6): flipped between eras)",
     "ai_scare": "NVIDIA down 6%+ in a day: buy the power trio (CEG, VST, TLN) at the close, sell after 10 sessions (one data point per "
                 "scare: 2008-18 -1.0% vs S&P, 2019-26 +2.0% (t 1.6); 2024 +4.5%, 2025 +9.6%, 2026 +12.0%: an AI-era-only pattern)",
 }
@@ -39,7 +41,7 @@ def _rsi2(c):
     return 100 - 100 / (1 + up / dn)
 
 
-def run(lineup, related, today=None):
+def run(lineup, related, today=None, breadth=None):
     """Call once after the close (prices final). Returns a short list of what happened."""
     import yfinance as yf
     import pandas as pd
@@ -47,7 +49,7 @@ def run(lineup, related, today=None):
     b = _load()
     if b.get("last_run") == str(today):
         return []
-    names = list(dict.fromkeys(list(lineup) + list(related) + ["SPY", "NVDA", "CEG", "VST", "TLN"]))
+    names = list(dict.fromkeys(list(lineup) + list(related) + ["SPY", "NVDA", "CEG", "VST", "TLN"] + list(breadth or [])))
     raw = yf.download(names, period="14mo", auto_adjust=True, progress=False)
     C, V = raw["Close"], raw["Volume"]
     if C.index[-1].date() != today:
@@ -95,6 +97,13 @@ def run(lineup, related, today=None):
     if "NVDA" in C and len(C["NVDA"].dropna()) > 2 and float(C["NVDA"].iloc[-1] / C["NVDA"].iloc[-2] - 1) <= -0.06:
         for t in ("CEG", "VST", "TLN"):
             enter("ai_scare", t, 10)
+    bl = [t for t in (breadth or []) if t in C and len(C[t].dropna()) > 2]
+    if len(bl) >= 50:
+        moves = [float(C[t].iloc[-1] / C[t].iloc[-2] - 1) for t in bl if not np.isnan(C[t].iloc[-1]) and not np.isnan(C[t].iloc[-2])]
+        if moves and sum(1 for m in moves if m < 0) / len(moves) >= 0.85 and b.get("last_capitulation", "") < str(today - dt.timedelta(days=7)):
+            b["last_capitulation"] = str(today)
+            for t in lineup:
+                enter("capitulation", t, 10)
     nxt = today + dt.timedelta(days=1)
     while nxt.weekday() >= 5:
         nxt += dt.timedelta(days=1)

@@ -317,6 +317,10 @@
   "year_end_wide": {
    "trials": 3,
    "verdict": "2026-11-24: year-end bounce on more stocks: 5 worst year-to-date, buy ~Dec 20, sell ~Jan 15, 2007-2025. Related: +0.73% vs S&P (2008-18, t 0.3, 8/12 years) / +5.34% (2019-25, t 1.5, 5/7). 115 big stocks: +3.38% (t 1.8, 9/12) / +3.53% (t 1.2, 6/7). Live rule (our 10, 3 worst): +6.07% / +3.89%. ADOPTED small: 5 worst related + big stocks at 3% each (one trade a year, thin evidence)."
+  },
+  "night_round_4_2026_11_25": {
+   "trials": 9,
+   "verdict": "2026-11-24 23:45. Sharp-drop trades (live rule, nuclear+related, 1,131 trades: +1.44%/+1.47% vs S&P): (B) group fell 8%+ too: +2.37% (t 3.5) / -0.36% (t -0.4); stock fell alone (group flat): -0.15% / +0.91%: flips between eras, no selection filter. (C) above the 200-day average +0.22% (n 56) / +1.73%; below +1.58% / +1.53%: no filter. (E) capitulation day (85%+ of 140 big stocks down, one point per day, 5-day gap): our 10 vs S&P 5 days -1.13% (t -2.9) / +1.26% (t 2.2), 10 days -1.44% (t -2.6) / +2.08% (t 2.6); 90%+: -1.43% / +0.65%; related ~0. Flipped between eras -> recent-era practice book (recent.py 'capitulation'), no money."
   }
  }
 }

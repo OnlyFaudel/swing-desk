@@ -2286,7 +2286,8 @@ def intel_tick(st, today, force=False):
     if now.weekday() < 5 and not market.is_holiday(today) and now.time() >= dt.time(16, 20) and not st["flags"].get(f"recent:{today}"):
         st["flags"][f"recent:{today}"] = True  # practice book for rules that only worked 2019-2026 (no money)
         try:
-            recent.run(list(T), CFG.get("panic_rebound", {}).get("related_universe") or [], today)
+            recent.run(list(T), CFG.get("panic_rebound", {}).get("related_universe") or [], today,
+                       breadth=CFG.get("sharp_drop", {}).get("tier2_universe") or [])
             rv = recent.summary()
             new_c = [k for k, v in rv["rules"].items() if v.get("candidate") and not (st.get("recent_view") or {}).get("rules", {}).get(k, {}).get("candidate")]
             st["recent_view"] = rv
