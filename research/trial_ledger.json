@@ -325,6 +325,10 @@
   "night_round_5_2026_11_25": {
    "trials": 6,
    "verdict": "2026-11-24 23:55. (I) Tech-panic days (SMH -3%+ while the S&P falls less than 2%; panic-rule stock conditions; one point per day): nuclear+related -2.46% vs S&P (2008-18, t -1.6) / +1.13% (2019-26, t 1.0); our 10 only +0.50% (n 9) / +2.21% (t 1.7); SMH -4%+: -2.78% / +3.18%. Flipped -> practice book (recent.py 'tech_panic'). Reference: live panic days +0.06% / +2.16%. (J) Faster sharp-drop trigger, 12%+ in 3 days not yet 15% in 5: per trade +0.58% (t 1.1) / +1.21% (t 2.4), but whole-account with it as a lower-priority candidate: 20.8%/yr (12.6 / 33.0) vs 25.2% (17.7 / 36.3): crowds out better trades. Rejected. Bug fixed: the minute-data progress file was committed half-written (non-atomic write); writes are now atomic."
+  },
+  "night_round_6_2026_11_25": {
+   "trials": 4,
+   "verdict": "2026-11-25 00:05. Whole-account backtest (all rules + big-stock sharp tier; base 25.2%/yr, 2008-18 17.7%, 2019-26 36.3%, worst -40.5%). (L) Rank sharp-drop candidates by deepest 5-day fall instead of biggest drop today: 23.2%/yr (17.7 / 31.3), worst -46.0%: rejected. (M) Park idle cash in QLD (2x Nasdaq-100) while QQQ is above its 200-day, T-bills below: 28.1%/yr (18.1 / 43.5), worst -43.4%, BUT out-of-sample synthetic 2000-2006 (dot-com): 2x Nasdaq parking -10.4%/yr, worst -83.6%, vs 2x S&P parking +0.6%/yr, -45.0% (2007-18: 15.0 vs 11.7; 2019-26: 31.6 vs 21.1). The gain is hindsight (picking the index that won). Rejected; parking stays SSO/SGOV."
   }
  }
 }
