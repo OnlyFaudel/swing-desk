@@ -124,6 +124,12 @@ def fetch(tickers):
         lv = LIVE.get(t)
         if lv and time.time() - lv[1] < 120:  # a fresher price from the live stream wins
             last[t] = lv[0]
+            today_ts = pd.Timestamp(now_et().date())
+            if t in data and len(data[t]) and data[t].index[-1] == today_ts:  # and updates today's candle, so the 3:30 rules see it
+                data[t].loc[today_ts, "Close"] = lv[0]
+                hi, lo = float(data[t].loc[today_ts, "High"]), float(data[t].loc[today_ts, "Low"])
+                data[t].loc[today_ts, "High"] = lv[0] if hi != hi else max(hi, lv[0])  # (x != x is NaN)
+                data[t].loc[today_ts, "Low"] = lv[0] if lo != lo else min(lo, lv[0])
     return {t: indicators(df) for t, df in data.items()}, last
 
 
