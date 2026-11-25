@@ -686,6 +686,10 @@
   "night_round_54_2026_11_25": {
    "trials": 0,
    "verdict": "2026-11-25 07:40. Today's cash path rehearsed (copy, sim broker): 9:45 overdraft repayment sells 0.4959 SPY (free cash -$352.92 -> +$3.53); 15:55 parking check then sells the last 0.1238 parked SPY to restore the 10% cash floor (free cash $92.55, nothing parked). Equity unchanged ($1,016.59). Expect the parking fund to be empty after today's close until cash frees up (Thanksgiving lots sell Friday)."
+  },
+  "night_round_55_2026_11_25": {
+   "trials": 0,
+   "verdict": "2026-11-25 07:10. VM silent since 04:42 (missed the 05:42 and 06:42 saves; owner messaged 06:52). Causes I can rule in/out from here: the backfill child is small (~10 MB per 90-day chunk), the service has RestartSec=20 so a systemd start-limit is unlikely; most likely a call that never returned in the night cycle, or the machine itself. Added a hang guard to the daemon: a thread exits the process (systemd restarts it 20 s later, pulling the latest code first) if the main loop makes no progress for 90 minutes (config hang_restart_minutes). Takes effect after the next restart."
   }
  }
 }

@@ -4116,7 +4116,22 @@ def main():
             notify("Swing Desk online", f"Always-on mode started ({br.name}). Hawk mode: live prices, news every minute.", tags="green_heart")
         st["online_at"] = time.time()
         last_cycle = 0
+        alive = {"t": time.time()}
+
+        def hang_guard():  # if the loop stops moving (a network call that never returns), exit so systemd restarts us fresh
+            limit = CFG.get("hang_restart_minutes", 90) * 60
+            while True:
+                time.sleep(60)
+                if time.time() - alive["t"] > limit:
+                    print(f"hang guard: no loop progress for {limit // 60} min, exiting for a clean restart", flush=True)
+                    try:
+                        save_state(st)
+                    except Exception:
+                        pass
+                    os._exit(3)
+        threading.Thread(target=hang_guard, daemon=True).start()
         while True:
+            alive["t"] = time.time()
             now = market.now_et()
             weekday = now.weekday() < 5
             active = weekday and dt.time(8, 0) <= now.time() <= dt.time(19, 0)  # every minute while it matters
