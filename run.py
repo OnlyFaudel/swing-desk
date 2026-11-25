@@ -4183,7 +4183,11 @@ def main():
                     st["_pushed_feed"] = fresh
                     before = os.popen(f"git -C {ROOT} rev-parse HEAD").read().strip()
                     rc = os.system(f"cd {ROOT} && for p in state.json docs orders data memory research/trial_ledger.json research/discoveries.json; do [ -e \"$p\" ] && git add -A \"$p\"; done; "
-                                   f"git commit -qm 'desk {now:%F %H:%M}' >/dev/null 2>&1; git pull -q --rebase --autostash -X theirs >/dev/null 2>&1; git push -q")
+                                   f"git commit -qm 'desk {now:%F %H:%M}' >/dev/null 2>&1; "
+                                   # a pull that stops halfway (as on Nov 25, 04:42) used to block every later save; clear it and fall back to a merge
+                                   f"(test -d .git/rebase-merge -o -d .git/rebase-apply) && git rebase --abort >/dev/null 2>&1; "
+                                   f"git pull -q --rebase --autostash -X theirs >/dev/null 2>&1 || {{ git rebase --abort >/dev/null 2>&1; "
+                                   f"git pull -q --no-rebase --no-edit -X ours >/dev/null 2>&1; }}; git push -q")
                     if rc:
                         notify_once(st, "git_push", "Desk can't save to GitHub", "The page won't update until the VM can push (check the deploy key).")
                     last_push = time.time()

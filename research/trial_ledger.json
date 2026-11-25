@@ -690,6 +690,10 @@
   "night_round_55_2026_11_25": {
    "trials": 0,
    "verdict": "2026-11-25 07:10. VM silent since 04:42 (missed the 05:42 and 06:42 saves; owner messaged 06:52). Causes I can rule in/out from here: the backfill child is small (~10 MB per 90-day chunk), the service has RestartSec=20 so a systemd start-limit is unlikely; most likely a call that never returned in the night cycle, or the machine itself. Added a hang guard to the daemon: a thread exits the process (systemd restarts it 20 s later, pulling the latest code first) if the main loop makes no progress for 90 minutes (config hang_restart_minutes). Takes effect after the next restart."
+  },
+  "ops_2026_11_25_stuck_save": {
+   "trials": 0,
+   "verdict": "2026-11-25 10:00. Root cause of the 04:42-09:38 silence: the VM's hourly save ran 'git pull --rebase' which stopped halfway (rebase-merge left behind), so every later pull and push failed ('[rejected]'), the page froze and no new code arrived; the bot itself kept running. Owner reset the VM 09:17 and cleared it by hand 09:38 (rebase --abort, reset to origin, kept the VM's state.json). Fix: the save now clears any half-finished rebase first and, if the rebase pull fails, aborts and merges with the VM's own files winning (-X ours); tested on a throwaway repo with a stuck rebase: cleared and pushed with the VM's state.json. Plus the 90-minute hang guard (07:08)."
   }
  }
 }
