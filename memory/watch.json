@@ -1784,6 +1784,14 @@
 "surfaced": false
 },
 {
+"date": "2026-12-08",
+"ticker": "UEC",
+"what": "Earnings inside the window; avoid resting buys into it",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
 "date": "2026-12-09",
 "ticker": "CCJ",
 "what": "FOMC rate decision; broad risk-off or risk-on move that can drive the uranium and nuclear names with it.",
@@ -1925,6 +1933,54 @@
 "what": "Did CCJ deliver? They promised on 2026-10-30: Pay 2026 annual dividend of $0.24/share on Dec 15 2026",
 "by": "investigator",
 "written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "CCJ",
+"what": "PJM 2029/30 capacity auction closes; power names historically fade the release-day pop (affects CEG/VST/TLN more than miners)",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "CEG",
+"what": "PJM 2029/30 capacity auction closes; expect clearing near the cap. Do not buy the release-day pop; trim into strength rather than add.",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "VST",
+"what": "PJM 2029/30 capacity auction closes; historically the release-day pop fades, so don't chase it.",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "TLN",
+"what": "PJM 2029/30 base residual auction closes; historically the release-day pop fades, so don't chase it",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "VST",
+"what": "PJM 2029/30 capacity auction closes; prior up-clearing releases were sold into within 20 sessions, so do not buy the release-day pop",
+"by": "risk",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "TLN",
+"what": "PJM 2029/30 capacity auction closes; expected to clear at the price cap again, and the power stocks have tended to sell off after an up-auction pop, so don't buy the release-day pop.",
+"by": "pm",
+"written": "2026-11-25",
 "surfaced": false
 },
 {

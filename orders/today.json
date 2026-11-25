@@ -1,5 +1,16 @@
 {
  "date": "2026-11-25",
  "broker": "alpaca-paper",
- "orders": []
+ "orders": [
+  {
+   "time": "2026-11-25 09:38",
+   "symbol": "SPY",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.50945,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "sold parked SPY to pay back $353 overspent"
+  }
+ ]
 }
