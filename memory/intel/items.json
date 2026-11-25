@@ -21070,5 +21070,133 @@
 "wait",
 "year"
 ]
+},
+{
+"id": "7e5efc8d5995af8e",
+"date": "2026-11-23",
+"ts": 1795416180,
+"title": "3 experts suspend participation in Korea's nuclear power deliberations",
+"summary": "",
+"outlet": "Chosunbiz",
+"link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNb3g4STNudG90U1JDc1JmQVhRNXhKUnloMVhZbEZrREtrb25NQVB5S0ZXbnFpX1lZR1Y0dGQxWnN0T3JMZmJfSmxIYmZ1Q3lacHpFWnhLRno2NnhhZ0J1cGNNc0lHLUhuZmNmTWJ0T1hJTWZ2dVZFd255RVZSQnNScmczaFc5bURfb2RUeDM3OXl2SUhEamfSAZYBQVVfeXFMTW94OEkzbnRvdFNSQ3NSZkFYUTV4SlJ5aDFYWWxGa0RLa29uTUFQeUtGV25xaV9ZWUdWNHRkMVpzdE9yTGZiX0psSGJmdUN5WnB6RVp4S0Z6NjZ4YWdCdXBjTXNJRy1IbmZjZk1idE9YSU1mdnVWRXdueUVWUkJzUnJnM2hXOW1EX29kVHgzNzl5dklIRGpn?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 4.5,
+"echo_of": "5298ad87eeddc34f",
+"w": [
+"deliberations",
+"experts",
+"korea",
+"nuclear",
+"participation",
+"power",
+"suspend"
+]
+},
+{
+"id": "ed415aaddf298f13",
+"date": "2026-11-25",
+"ts": 1795598067,
+"title": "Kazakhstan detains state uranium miner board member in widening corruption probe",
+"summary": "",
+"outlet": "marketscreener.com",
+"link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSGh6WjNWdHBlcldnX0xxdVJ0SC1FN0J3VW50aDh6VXdnWVdBaDhVTzJCdUpGYjFqa1NrOVNwQWZvdkdwa2VNSHpMUFFZR2dRTVUwSE9pUjNmN2tjdVRfNU9wdjhmMEZWYzBUdzRndndsZElBUnoyNFVHY3RicDdZRmNOWExLa21HWU5jZTQtOG5WNU9iTVF1MDVvMlE2b0NiSVZUWF82MjJpcV9iOGI5Wk5TSk1fa1M2T0JaeTdtV1hfbEpOazBtUXg5dW1Qdw?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "bf9813326e0bd040",
+"w": [
+"board",
+"corruption",
+"detains",
+"kazakhstan",
+"member",
+"miner",
+"probe",
+"state",
+"uranium",
+"widening"
+]
+},
+{
+"id": "e36e8842560640fa",
+"date": "2026-11-25",
+"ts": 1795628820,
+"title": "S&P/TSX Composite Index in Focus: What Is Energy Fuels (TSX:EFR) Pursuing in Its Uranium Campaign?",
+"summary": "",
+"outlet": "Kalkine Media",
+"link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTXY0VmtBQlZGM29MR2RLS2FuV1hIMnVhSU1HSFZvWHFPclJUQWt1X0RJUHJBWjRNTGllT0tkSFV1MWowajZETUUwMUhaOVhNNXcxSUNJVVE1UWctN1NwODNQb2lHWkFfa0hmOFAyV29OYXJGYU0ydGxVTHlKQXM3N1JqU1hrTzQwYndWYmkwMmlpcmVid0ttTGgtbHNobnp2Y0xpVWd5aWdxeFZNMkRiR25tWUwxcnVqWFdBR29vU1AtZTNYU3NBUUR1TUFKU2dLemhlMkllQXJwUjA?oc=5",
+"place": "Rare earths (Energy Fuels)",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.57,
+"score": 2.64,
+"echo_of": null,
+"w": [
+"campaign",
+"composite",
+"efr",
+"energy",
+"focus",
+"fuels",
+"index",
+"pursuing",
+"tsx",
+"uranium",
+"what"
+]
+},
+{
+"id": "89226f35e5decf62",
+"date": "2026-11-25",
+"ts": 1795629239,
+"title": "Kazakhstan Detains Kazatomprom Executive in Corruption Probe",
+"summary": "",
+"outlet": "SightLine | U308",
+"link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMGtUYjlrMDM4VDN0T0tES0Z1ZjlBV2RiZHBkcWJfTzFlQzFLV2d5c05wYXNqNE5JNkJud3d2b0hTZEVHa2xoQ3kxOHZ2dzcyYzgtWUNraWhiWWxvdkFwbFNoYTBGNHFIdlRJbmt2THdhM0xYdlRjWnZVVDE1SUs2S2ZDNGR4TExydlpiZVFONExKR3hwc0Y2RjM4TQ?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "9dc14db25bfb1dc2",
+"w": [
+"corruption",
+"detains",
+"executive",
+"kazakhstan",
+"kazatomprom",
+"probe"
+]
 }
 ]
