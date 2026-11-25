@@ -7356,12 +7356,12 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.37291,
+  "day_usd": 0.38243,
   "month": "2026-11",
-  "month_usd": 1.10433,
-  "total_usd": 1.10433,
+  "month_usd": 1.11385,
+  "total_usd": 1.11385,
   "by_role": {
-   "macro": 0.10548,
+   "macro": 0.10782,
    "whale": 0.01778,
    "crowd": 0.01194,
    "level": 0.11932,
@@ -7370,12 +7370,12 @@
    "auditor": 0.02993,
    "strategist": 0.11417,
    "pm": 0.07014,
-   "risk": 0.09744,
-   "investigator": 0.20132,
+   "risk": 0.09969,
+   "investigator": 0.20376,
    "postmortem": 0.00035,
    "researcher": 0.01198,
    "engineer": 0.02902,
-   "questioner": 0.07796
+   "questioner": 0.08045
   }
  },
  "desk_log": [
@@ -7501,7 +7501,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-24 20:32 ET",
+ "last_cycle": "2026-11-24 20:42 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -54815,8 +54815,8 @@
   "2ddc82c2b5215c74",
   "d39dc266a3b4dae2",
   "2aa378956ea76132",
-  "0235abc0565d5130",
   "326afd4f7d0093ec",
+  "0235abc0565d5130",
   "a454f891b1c31853",
   "498180393c058995",
   "dc443e4398225bc9",
@@ -54892,6 +54892,7 @@
   "1d91a3cc917720fa",
   "52dee3d37e759da2",
   "586a3a3d084eb114",
+  "5f7aff03201cc4dd",
   "36f89310fd30fd20",
   "7f1ab1d7e538b600",
   "67c5ac967df665b9",
@@ -55171,10 +55172,9 @@
   "3b97ba80a72f6fe4",
   "15fecb83818a0949",
   "f9eb7cbce2793d86",
-  "09bd7b0e348df04b",
-  "5f7aff03201cc4dd"
+  "09bd7b0e348df04b"
  ],
- "news_slow_at": 1795570331.2517745,
+ "news_slow_at": 1795571015.3134782,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -208088,6 +208088,49 @@
    ],
    "practice": false,
    "end": "20:32"
+  },
+  {
+   "id": "20261124204237879111",
+   "title": "The Questioner, Nov 24 20:42",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-24 20:42",
+   "msgs": [
+    {
+     "t": "20:42",
+     "who": "questioner",
+     "to": "risk",
+     "text": "Nobody on the desk has confirmed whether the TLN resting buy at $355.66 is still meant to be live, and the basket is still below its 10-day average, so the no-new-buys rule says it should not be live without a written re-approval. The PJM capacity-auction delay decision is still unconfirmed and is Talen's main earnings driver, so a bounce on that headline is not proof of support.",
+     "outcome": false,
+     "notes": "question: Who explicitly owns the TLN resting buy at $355.66 right now, and has anyone re-approved it in writing since the basket fell below its 10-day average? If nobody has, it should be canceled today rather than waiting for the Nov 30 expiry.\nwhy it might matter: Our own gate says no new buys while the basket is below its 10-day average, and that condition still holds. A resting order with no owner is a live buy the rule forbids.\nask: risk\nkind: odd\nquestion: Has the PJM December 2029/30 capacity-auction delay request been decided? The 'pullback opportunity' headline does not say, and Talen's earnings depend on it.\nwhy it might matter: A regulatory decision on the main earnings driver could push TLN through the support zone at $354.24 in either direction, so a resting buy on that zone is a bet on an undecided outcome.\nask: macro\nkind: unexplained\nquestion: Was TLN's COO Brad Berryman"
+    },
+    {
+     "t": "20:42",
+     "who": "risk",
+     "to": "questioner",
+     "text": "I checked the desk's files and the posted record. Nothing in the notes shows anyone explicitly owning the TLN resting buy at $355.66 or re-approving it in writing, and the basket is still below its 10-day average, which the no-new-buys rule forbids. I'd cancel it today rather than wait for the Nov 30 expiry. I agree with the Risk Manager's concern that a live order with no owner is a buy the rule blocks.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: tell_owner\nwhy: TLN is 2.6% above the close and the basket gate still blocks new buys, and the desk notes show no written re-approval of the order. Canceling today removes a live buy the rule forbids, and the Nov 30 expiry is too far off to justify keeping it.\nticker: TLN\ndirection: down\ndays: 5\nfiles read: TLN Snapshot, TLN Leadership and insiders"
+    },
+    {
+     "t": "20:42",
+     "who": "macro",
+     "to": "questioner",
+     "text": "I checked the desk's files and the PJM capacity-auction delay question is still unconfirmed. Nothing in our notes or the news I can see shows a decision, and Talen's earnings depend on it, so a bounce on a 'pullback opportunity' headline is not evidence of support. I'd treat the TLN support zone as a bet on an undecided regulatory outcome until someone confirms the decision.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: watch\nwatch date: 2026-11-30\nresearch test: Once the PJM decision is confirmed, check whether TLN's next 5 sessions behave differently from the usual pattern around the $354.24 zone, before trusting Patient Levels setups on it.\nwhy: The desk's files and today's headlines contain no confirmation of the PJM December 2029/30 delay decision, and the question directly drives TLN's earnings. The TLN resting buy at $355.66 expires Nov 30, so the decision is worth tracking until then.\ndate: 2026-11-30\nticker: TLN\nwhat: Confirm whether the PJM December 2029/30 capacity-auction delay request has been decided; it drives Talen's earnings and the $354.24 support zone. TLN resting buy at $355.66 expires this day.\nticker: TLN\ndirection: down\ndays: 5\nfiles read: TLN Snapshot"
+    },
+    {
+     "t": "20:42",
+     "who": "investigator",
+     "to": "questioner",
+     "text": "I checked the desk's files for the TLN COO sale. The only record is the Nov 17 Form 4 showing Brad Berryman selling 56,091 shares for about $19.8M at $345-365, with no note saying it was a 10b5-1 plan, so I can't confirm it was planned. Since the desk's rule says open-market insider sales are the ones that carry signal, the sale matters for our TLN resting buy, and I agree with the Risk Manager that the buy should be canceled rather than left live.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: research\nwatch date: 2026-11-30\nresearch test: Pull the filing footnotes for Berryman's Nov 17 Form 4 to see whether the sale was made under a 10b5-1 plan and when that plan was adopted. If it was open-market, log it as a negative insider signal for TLN and check whether the stock's next 20-day move differs from the desk's history of insider sales.\nwhy: The desk's insider record for TLN shows $23.4M sold over 12 months and no buys, and the Berryman trade is the only individual entry, with no 10b5-1 flag recorded. I could not verify the plan status from the files, so the answer stays open.\nticker: TLN\ndirection: down\ndays: 5\nfiles read: TLN Leadership and insiders"
+    }
+   ],
+   "practice": false,
+   "end": "20:42"
   }
  ],
  "feed": [
@@ -211820,6 +211863,32 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-24 20:42",
+   "who": "questioner",
+   "kind": "alert",
+   "title": null,
+   "text": "Worth your attention: Who explicitly owns the TLN resting buy at $355.66 right now, and has anyone re-approved it in writing since the basket fell below its 10-day average? If nobody has, it should be canceled today rather than waiting for the Nov 30 expiry.\n\nRisk Manager: I checked the desk's files and the posted record. Nothing in the notes shows anyone explicitly owning the TLN resting buy at $355.66 or re-approving it in writing, and the basket is still below its 10-day average, which the no-new-buys rule forbids. I'd cancel it today rather than wait for the Nov 30 expiry. I agree with the Risk Manager's concern that a live order with no owner is a buy the rule blocks.",
+   "tickers": [],
+   "art": {
+    "big": "Something we almost missed",
+    "sub": "The Questioner"
+   },
+   "thread": "20261124204237879111"
+  },
+  {
+   "t": "2026-11-24 20:42",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Who explicitly owns the TLN resting buy at $355.66 right now, and has anyone re-approved it in writing since the basket fell below its 10-day average? If nobody has, it should be canceled today rather than waiting for the Nov 30 expiry. -> relevant | Has the PJM December 2029/30 capacity-auction delay request been decided? The 'pullback opportunity' headline does not say, and Talen's earnings depend on it. -> relevant | Was TLN's COO Brad Berryman's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale? -> relevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -212431,13 +212500,13 @@
    "lesson": null
   }
  ],
- "intel_at": 1795569083.2808642,
+ "intel_at": 1795570968.8341873,
  "intel_health": {
-  "at": "2026-11-24 20:12",
+  "at": "2026-11-24 20:43",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
-   "Athabasca Basin": 7,
+   "Athabasca Basin": 6,
    "Saskatchewan wildfires": 1,
    "Rook I / Arrow": 5,
    "Wheeler River / Phoenix": 9,
@@ -212445,11 +212514,11 @@
    "Westinghouse": 9,
    "Kazakhstan": 2,
    "Niger": 4,
-   "Namibia": 29,
+   "Namibia": 33,
    "Russia supply": 3,
    "Piketon": 22,
    "HALEU": 12,
-   "Wyoming ISR": 21,
+   "Wyoming ISR": 22,
    "South Texas ISR": 0,
    "White Mesa / Utah": 13,
    "Rare earths (Energy Fuels)": 18,
@@ -212458,34 +212527,34 @@
    "Crane / Three Mile Island": 5,
    "Susquehanna": 4,
    "Comanche Peak": 9,
-   "PJM grid": 9,
-   "ERCOT grid": 12,
+   "PJM grid": 14,
+   "ERCOT grid": 10,
    "Data-center nuclear deals": 8,
    "Japan restarts": 5,
    "China new builds": 9,
-   "Congress and laws": 53,
+   "Congress and laws": 28,
    "NRC decisions": 19,
-   "Energy Department": 71,
-   "White House and executive orders": 19,
+   "Energy Department": 72,
+   "White House and executive orders": 20,
    "Tariffs and trade": 2,
    "India": 13,
-   "South Korea": 100,
-   "Europe new builds": 54,
-   "France and UK": 7,
+   "South Korea": 83,
+   "Europe new builds": 28,
+   "France and UK": 8,
    "Middle East": 23,
-   "Asia newcomers": 29,
+   "Asia newcomers": 58,
    "Canada SMRs": 10,
-   "Big tech power deals": 55,
-   "Iran": 51,
-   "North Korea": 100,
+   "Big tech power deals": 27,
+   "Iran": 50,
+   "North Korea": 75,
    "War zones": 32,
    "AUKUS and navies": 20,
-   "Weapons programs": 20,
-   "Stockpiles and reserves": 18,
+   "Weapons programs": 15,
+   "Stockpiles and reserves": 23,
    "Sprott trust": 7,
-   "Uranium price": 16,
+   "Uranium price": 47,
    "US policy": 0,
-   "Lawsuits and investigations": 73,
+   "Lawsuits and investigations": 33,
    "Workers and jobs": 21,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 51,
@@ -212496,30 +212565,30 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 20:32",
-  "total": 543,
-  "week": 444,
+  "updated": "2026-11-24 20:43",
+  "total": 548,
+  "week": 448,
   "places": {
-   "Uranium price": 45,
+   "Uranium price": 47,
    "Piketon": 32,
-   "South Korea": 27,
+   "South Korea": 28,
    "World Nuclear News": 26,
    "Europe new builds": 25,
    "Workers and jobs": 21,
    "Weapons programs": 21,
    "AUKUS and navies": 17,
-   "Namibia": 14,
+   "Namibia": 15,
    "PJM grid": 14,
    "Rare earths (Energy Fuels)": 14,
    "Comanche Peak": 12
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-24 20:12",
+   "at": "2026-11-24 20:43",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
-    "Athabasca Basin": 7,
+    "Athabasca Basin": 6,
     "Saskatchewan wildfires": 1,
     "Rook I / Arrow": 5,
     "Wheeler River / Phoenix": 9,
@@ -212527,11 +212596,11 @@
     "Westinghouse": 9,
     "Kazakhstan": 2,
     "Niger": 4,
-    "Namibia": 29,
+    "Namibia": 33,
     "Russia supply": 3,
     "Piketon": 22,
     "HALEU": 12,
-    "Wyoming ISR": 21,
+    "Wyoming ISR": 22,
     "South Texas ISR": 0,
     "White Mesa / Utah": 13,
     "Rare earths (Energy Fuels)": 18,
@@ -212540,34 +212609,34 @@
     "Crane / Three Mile Island": 5,
     "Susquehanna": 4,
     "Comanche Peak": 9,
-    "PJM grid": 9,
-    "ERCOT grid": 12,
+    "PJM grid": 14,
+    "ERCOT grid": 10,
     "Data-center nuclear deals": 8,
     "Japan restarts": 5,
     "China new builds": 9,
-    "Congress and laws": 53,
+    "Congress and laws": 28,
     "NRC decisions": 19,
-    "Energy Department": 71,
-    "White House and executive orders": 19,
+    "Energy Department": 72,
+    "White House and executive orders": 20,
     "Tariffs and trade": 2,
     "India": 13,
-    "South Korea": 100,
-    "Europe new builds": 54,
-    "France and UK": 7,
+    "South Korea": 83,
+    "Europe new builds": 28,
+    "France and UK": 8,
     "Middle East": 23,
-    "Asia newcomers": 29,
+    "Asia newcomers": 58,
     "Canada SMRs": 10,
-    "Big tech power deals": 55,
-    "Iran": 51,
-    "North Korea": 100,
+    "Big tech power deals": 27,
+    "Iran": 50,
+    "North Korea": 75,
     "War zones": 32,
     "AUKUS and navies": 20,
-    "Weapons programs": 20,
-    "Stockpiles and reserves": 18,
+    "Weapons programs": 15,
+    "Stockpiles and reserves": 23,
     "Sprott trust": 7,
-    "Uranium price": 16,
+    "Uranium price": 47,
     "US policy": 0,
-    "Lawsuits and investigations": 73,
+    "Lawsuits and investigations": 33,
     "Workers and jobs": 21,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 51,
@@ -214834,6 +214903,10 @@
   {
    "q": "Questioner: Pull the PJM docket for the December 2029/30 auction delay request and record whether FERC or PJM has ruled. Then compare TLN's daily moves on the decision date against the basket, to see whether the stock reacts to this regulatory event at all.",
    "date": "2026-11-24"
+  },
+  {
+   "q": "Questioner: Pull the filing footnotes for Berryman's Nov 17 Form 4 to see whether the sale was made under a 10b5-1 plan and when that plan was adopted. If it was open-market, log it as a negative insider signal for TLN and check whether the stock's next 20-day move differs from the desk's history of insider sales.",
+   "date": "2026-11-24"
   }
  ],
  "research_candidates": [
@@ -214956,7 +215029,7 @@
    }
   ]
  },
- "dossier_at": 1795569126.3429973,
+ "dossier_at": 1795571010.8601012,
  "sector_prices": {
   "_at": 1795555995.1629455,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -215014,85 +215087,85 @@
    "name": "Cameco",
    "price": 59.78,
    "week_pct": -7.33,
-   "built": "2026-11-24 20:12"
+   "built": "2026-11-24 20:43"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.84,
    "week_pct": -6.63,
-   "built": "2026-11-24 20:12"
+   "built": "2026-11-24 20:43"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.58,
    "week_pct": -8.02,
-   "built": "2026-11-24 20:12"
+   "built": "2026-11-24 20:43"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.75,
    "week_pct": -7.41,
-   "built": "2026-11-24 20:12"
+   "built": "2026-11-24 20:43"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.15,
    "week_pct": -13.15,
-   "built": "2026-11-24 20:12"
+   "built": "2026-11-24 20:43"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.12,
    "week_pct": -10.69,
-   "built": "2026-11-24 20:12"
+   "built": "2026-11-24 20:43"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.13,
    "week_pct": -4.57,
-   "built": "2026-11-24 20:12"
+   "built": "2026-11-24 20:43"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 244.84,
    "week_pct": -8.67,
-   "built": "2026-11-24 20:12"
+   "built": "2026-11-24 20:43"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 120.71,
    "week_pct": -5.06,
-   "built": "2026-11-24 20:12"
+   "built": "2026-11-24 20:43"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 347.92,
    "week_pct": -1.91,
-   "built": "2026-11-24 20:12"
+   "built": "2026-11-24 20:43"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-24 20:12"
+   "built": "2026-11-24 20:43"
   }
  ],
- "heartbeat": "2026-11-24 20:32",
+ "heartbeat": "2026-11-24 20:42",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 318,
+ "_pushed_feed": 307,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -215328,8 +215401,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 39,
-   "used": 37,
+   "asked": 40,
+   "used": 38,
    "notes": {
     "BWXT Deals and contracts": 2,
     "BWXT Snapshot": 2,
@@ -215363,7 +215436,7 @@
     "VST What history says": 1,
     "VST Leadership and insiders": 1,
     "TLN Deals and contracts": 5,
-    "TLN Leadership and insiders": 13,
+    "TLN Leadership and insiders": 14,
     "TLN Filings and company events": 3,
     "NXE Legal": 1,
     "BWXT Legal": 1,
@@ -215436,15 +215509,15 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 52,
-   "used": 52,
+   "asked": 53,
+   "used": 53,
    "notes": {
     "SECTOR Uranium market": 32,
     "BWXT Snapshot": 6,
     "CCJ Snapshot": 2,
     "UUUU Snapshot": 3,
     "SECTOR Government and laws": 37,
-    "TLN Snapshot": 28,
+    "TLN Snapshot": 29,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
     "CEG Legal": 1,
@@ -215499,14 +215572,14 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 54,
-   "used": 53,
+   "asked": 55,
+   "used": 54,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 3,
     "BWXT Snapshot": 4,
     "SECTOR Uranium market": 20,
-    "TLN Snapshot": 29,
+    "TLN Snapshot": 30,
     "TLN Legal": 4,
     "BWXT Legal": 2,
     "BWXT Leadership and insiders": 2,
@@ -215517,7 +215590,7 @@
     "SECTOR Rules the bot follows from its discoveries": 1,
     "TLN Price behavior": 19,
     "TLN Discoveries": 2,
-    "TLN Leadership and insiders": 11,
+    "TLN Leadership and insiders": 12,
     "CEG Snapshot": 1,
     "CEG Price behavior": 3,
     "NXE Snapshot": 1,
@@ -215554,21 +215627,21 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 31,
-   "used": 31,
+   "asked": 32,
+   "used": 32,
    "notes": {
-    "TLN Snapshot": 30,
-    "TLN News": 28,
-    "coming_up": 4,
+    "TLN Snapshot": 31,
+    "TLN News": 29,
+    "coming_up": 5,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
     "BWXT Legal": 1,
     "CCJ Snapshot": 3,
-    "TLN Leadership and insiders": 27,
+    "TLN Leadership and insiders": 28,
     "CCJ Legal": 1,
     "TLN Legal": 5,
     "SECTOR Market regime": 1,
-    "desk_lessons_from_our_mistakes": 2,
+    "desk_lessons_from_our_mistakes": 3,
     "TLN Ownership and analysts": 4,
     "SECTOR Uranium market": 7,
     "CEG Snapshot": 4,
@@ -219384,6 +219457,33 @@
    "answer": "I checked the desk's files and the headlines for the PJM December 2029/30 capacity-auction delay request. Nothing I have confirms a decision, and the only related item is a 'pullback opportunity' headline that doesn't answer the question. That matters for TLN because the support zone sits under an open regulatory fight, so a bounce on an undecided question isn't reliable support. I agree with the Risk Manager that the TLN resting buy should not stay live without an owner while the basket is below its 10-day average.",
    "verdict": "relevant",
    "action": "watch"
+  },
+  {
+   "t": "2026-11-24 20:42",
+   "question": "Who explicitly owns the TLN resting buy at $355.66 right now, and has anyone re-approved it in writing since the basket fell below its 10-day average? If nobody has, it should be canceled today rather than waiting for the Nov 30 expiry.",
+   "kind": "odd",
+   "asked": "risk",
+   "answer": "I checked the desk's files and the posted record. Nothing in the notes shows anyone explicitly owning the TLN resting buy at $355.66 or re-approving it in writing, and the basket is still below its 10-day average, which the no-new-buys rule forbids. I'd cancel it today rather than wait for the Nov 30 expiry. I agree with the Risk Manager's concern that a live order with no owner is a buy the rule blocks.",
+   "verdict": "relevant",
+   "action": "tell_owner"
+  },
+  {
+   "t": "2026-11-24 20:42",
+   "question": "Has the PJM December 2029/30 capacity-auction delay request been decided? The 'pullback opportunity' headline does not say, and Talen's earnings depend on it.",
+   "kind": "unexplained",
+   "asked": "macro",
+   "answer": "I checked the desk's files and the PJM capacity-auction delay question is still unconfirmed. Nothing in our notes or the news I can see shows a decision, and Talen's earnings depend on it, so a bounce on a 'pullback opportunity' headline is not evidence of support. I'd treat the TLN support zone as a bet on an undecided regulatory outcome until someone confirms the decision.",
+   "verdict": "relevant",
+   "action": "watch"
+  },
+  {
+   "t": "2026-11-24 20:42",
+   "question": "Was TLN's COO Brad Berryman's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale?",
+   "kind": "missed",
+   "asked": "investigator",
+   "answer": "I checked the desk's files for the TLN COO sale. The only record is the Nov 17 Form 4 showing Brad Berryman selling 56,091 shares for about $19.8M at $345-365, with no note saying it was a 10b5-1 plan, so I can't confirm it was planned. Since the desk's rule says open-market insider sales are the ones that carry signal, the sale matters for our TLN resting buy, and I agree with the Risk Manager that the buy should be canceled rather than left live.",
+   "verdict": "relevant",
+   "action": "research"
   }
  ],
  "reactor_view": {
@@ -221497,7 +221597,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 20:32",
+ "watchdog_last": "2026-11-24 20:42",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
