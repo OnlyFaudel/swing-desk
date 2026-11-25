@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 02:05",
+ "updated": "2026-11-25 02:20",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -60,6 +60,18 @@
    "topic": "After-hours moves overshoot (minute data 2016-2026, our stocks)",
    "answer": "When one of our stocks drops 3%+ after hours on a normal night, the next morning recovers about half of it (live rule 'ah_dip', +1.5% to +1.9% a trade after costs, still working in 2024-26). On EARNINGS nights the after-hours move is real news and does not reverse; the rule skips them. After-hours JUMPS used to fade by the morning, but not since 2024 (+0.1% from selling into them), so the after-hours bank rule is off. Heavy buying in the last 30 minutes fades slightly the next day.",
    "source": "research/trial_ledger.json: after_hours_dip, order_flow_early_2026_11_25"
+  },
+  {
+   "topic": "Your notebook ideas on Patient Levels fills (vol_pct>4, open_fill, Wednesday, group_up False, ret5d>10, AI power better, BWXT worse)",
+   "answer": "Checked 2026-11-25 on all 9,844 practice-book trades (Jan 2024 to Nov 2026), split at Aug 2025, and separately on nuclear vs other names. Average trade +0.23R. HOLDS in both halves and both name sets: (1) fills at the 9:30 open (gap into the level) earn about 0.13-0.15R less (t -2.4 / -2.1), still positive (+0.23 / +0.09R); (2) fills when the stock's group is below its 10-day average earn less (+0.13 vs +0.48R older, t -5.8; +0.12 vs +0.21R newer, t -1.5); (3) stocks 8%+ under their 10-day average at the fill earn less (-0.21 vs +0.36R older, +0.02 vs +0.17R newer). Weak or NO: hourly swings >4% of price (worse but n small, t -1), ran 10%+ in 5 days (t -1.6 / -0.4), Wednesday (better older, flat newer: no), AI power better (t +0.7 / +0.4: no real edge), BWXT worse (both halves but t about -1, n 165: weak). From minute data on our 11 nuclear stocks: heavy selling in the prior day's last 30 minutes is worse in both halves (t -0.7 / -2.1); pre-market volume 3x normal does nothing. How to use: none of these turn a trade negative, so they are reasons to size a fill smaller or wait for a second look, not to skip it. Only ~3 years of hourly data exist, one market era, so no written rule yet; keep scoring them live.",
+   "roles": [
+    "level",
+    "pm",
+    "risk",
+    "researcher",
+    "strategist",
+    "questioner"
+   ]
   }
  ]
 }
