@@ -7899,12 +7899,12 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.41718,
+  "day_usd": 0.42971,
   "month": "2026-11",
-  "month_usd": 1.60074,
-  "total_usd": 1.60074,
+  "month_usd": 1.61327,
+  "total_usd": 1.61327,
   "by_role": {
-   "macro": 0.17341,
+   "macro": 0.17466,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.15965,
@@ -7912,12 +7912,12 @@
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.18054,
-   "risk": 0.16597,
-   "investigator": 0.29357,
+   "pm": 0.1841,
+   "risk": 0.16928,
+   "investigator": 0.2962,
    "postmortem": 0.00035,
    "researcher": 0.01486,
-   "engineer": 0.06744,
+   "engineer": 0.06922,
    "questioner": 0.11725
   }
  },
@@ -8094,23 +8094,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 59.09,
-  "NXE": 6.74,
-  "UEC": 5.39,
-  "DNN": 1.72,
-  "UUUU": 4.93,
-  "LEU": 79.27,
-  "BWXT": 111.36,
-  "CEG": 235.19,
-  "VST": 118.43,
-  "TLN": 344.04,
-  "AMD": 384.8,
-  "SMR": 3.14,
-  "NNE": 8.34,
-  "SPY": 706.41,
-  "SGOV": 100.67
+  "CCJ": 59.43,
+  "NXE": 6.75,
+  "UEC": 5.42,
+  "DNN": 1.73,
+  "UUUU": 4.95,
+  "LEU": 79.74,
+  "BWXT": 111.88,
+  "CEG": 235.35,
+  "VST": 118.71,
+  "TLN": 344.39,
+  "AMD": 386.18,
+  "SMR": 3.16,
+  "NNE": 8.35,
+  "SPY": 707.23,
+  "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 12:08 ET",
+ "last_cycle": "2026-11-25 12:10 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -8147,10 +8147,10 @@
   ]
  },
  "brakes": {
-  "equity": 965.23,
-  "day_pct": -5.05,
-  "week_pct": -3.53,
-  "drawdown_pct": -8.46,
+  "equity": 968.78,
+  "day_pct": -4.7,
+  "week_pct": -3.17,
+  "drawdown_pct": -8.12,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -11332,6 +11332,10 @@
   [
    "2026-11-25 12:08",
    965.23
+  ],
+  [
+   "2026-11-25 12:10",
+   968.78
   ]
  ],
  "nowcast": {
@@ -55938,7 +55942,7 @@
     0.8729
    ]
   },
-  "time": "2026-11-25 12:09"
+  "time": "2026-11-25 12:10"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -56068,8 +56072,8 @@
   "bf78a7a4b7c697c4",
   "d944f1045c86ab02",
   "8ad0b53ebffe0c90",
-  "4959c9e24111e1e4",
   "52e6c78d06498482",
+  "4959c9e24111e1e4",
   "0f192e3ee6f7d8a7",
   "c5ba50cbcf752a4f",
   "36bc42fa3067d0c3",
@@ -56217,11 +56221,11 @@
   "7cceea348ff5f82c",
   "323b3d916f8bfaf7",
   "c13d3d6b63c10c3e",
-  "1e9ac2ee38a1003f",
-  "9ac4d1225260d8c6",
   "3c0d3789a7b698e6",
-  "563c0572b10f43bc",
   "656606bd4aff29ca",
+  "1e9ac2ee38a1003f",
+  "563c0572b10f43bc",
+  "9ac4d1225260d8c6",
   "4653461d7ed88855",
   "cda8fbdcb8858d7a",
   "10ac2b136225e49d",
@@ -56503,7 +56507,7 @@
   "a73665945ff493c7",
   "b2e981fc7a2e7302"
  ],
- "news_slow_at": 1795626556.63899,
+ "news_slow_at": 1795626628.4467237,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -210650,6 +210654,76 @@
    ],
    "practice": false,
    "end": "12:09"
+  },
+  {
+   "id": "20261125121011356941",
+   "title": "Huddle: fast move: DNN moved +1.8% in 9 min",
+   "tickers": [
+    "DNN",
+    "LEU",
+    "UEC",
+    "UUUU"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-25 12:10",
+   "msgs": [
+    {
+     "t": "12:10",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: DNN moved +1.8% in 9 min; fast move: sector move: 4 of our nuclear stocks moving up together (DNN, LEU, UEC, UUUU).",
+     "outcome": false
+    },
+    {
+     "t": "12:10",
+     "who": "investigator",
+     "to": "chief",
+     "text": "Nothing new here worth adding. The +1.8% DNN move and the group bounce are a small, short-lived move in a basket that is still 9.7% below its 10-day average, and the notes show no fresh company or policy news behind it, just an existing sector pattern. I agree with the Desk Chief that there is no setup to act on, so I'm staying out.",
+     "outcome": false,
+     "notes": "why: I checked the headlines and the desk's notes; the moves are sector-wide with no new company news, and the basket gate is closed (below its 10-day average) so no new buys are allowed anyway. Nothing here changes the picture.\nticker: DNN\ndirection: down\ndays: 3\nfiles read: SECTOR Uranium market, CEG Deals and contracts"
+    },
+    {
+     "t": "12:10",
+     "who": "engineer",
+     "to": "investigator",
+     "text": "I agree with the News Investigator: nothing physical has changed at the plants or mines today. The reactor fleet is 89% running, the only open outage is Salem 1 at Constellation, which is normal refueling-season work, and nothing in this week's plant news touches DNN, LEU, UEC or UUUU. The small group bounce is a basket still 9.7% below its 10-day average, so there is nothing for me to add and no reason to act.",
+     "outcome": false,
+     "notes": "why: I checked the plant outage list, the reactor fleet status, this week's plant news and the uranium supply notes for anything that would explain the bounce. None of it does, and the basket gate remains closed.\nfiles read: CEG Places and operations, LEU Places and operations, UEC Places and operations, SECTOR Uranium market"
+    },
+    {
+     "t": "12:10",
+     "who": "macro",
+     "to": "investigator",
+     "text": "I agree with the News Investigator and Plant Engineer: the group bounce is small and sits inside a basket still about 10% below its 10-day average, with no new policy or plant news behind it. Nothing in the macro picture changes the no-entry gate, so I'd stay out. The desk notes also show the Sprott trust trading about 17% below asset value and not buying uranium, which removes one buyer behind spot.",
+     "outcome": false,
+     "notes": "why: I checked whether this is sector-wide: four miners and enrichers moving up together is real but small, and the basket is still well under its 10-day average, so the entry gate stays closed. Spot uranium is up year over year but the Sprott trust discount means no fresh buying behind it.\nticker: DNN\ndirection: down\ndays: 5\nfiles read: SECTOR Uranium market, SECTOR Government and laws"
+    },
+    {
+     "t": "12:10",
+     "who": "risk",
+     "to": "team",
+     "text": "I'm not adding anything here. The move is a small, short bounce inside a basket still about 10% below its 10-day average, which keeps our no-new-buys gate closed, and nothing in the news or plant data changes that. I agree with the News Investigator, Plant Engineer and Macro Analyst that there's no setup to act on.",
+     "outcome": false,
+     "notes": "why: Checked the basket gate (-9.68% vs 10-day average, pulse_up false), confirmed no open orders or setups, and looked at the sprott trust discount and recent headlines. A brief sympathy bounce doesn't open the gate, so I see no reason to speak further.\nticker: DNN\ndirection: down\ndays: 3\nfiles read: SECTOR Uranium market, DNN Snapshot, LEU Snapshot"
+    },
+    {
+     "t": "12:10",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with the Risk Manager and the others: the basket is still about 9.7% below its 10-day average, so our no-new-buys gate is closed, and the small DNN and group bounce is noise with no fresh news behind it. There's no open trade or waiting order to skip or exit, so the right move is to do nothing.",
+     "outcome": false,
+     "notes": "action: none\nreason: Basket is 9.7% below its 10-day average, the entry gate is closed, there are no live orders or holdings, and the sector bounce is a short, unexplained move with no news or plant change behind it.\nwhy: No open trades or resting orders exist to cancel or sell, and nothing in the headlines, outage data or uranium price changes the picture. The desk notes say sector bounces inside a falling basket are noise, so there is no reason to act today.\nticker: DNN\ndirection: down\ndays: 3\nfiles read: SECTOR Uranium market, SECTOR Plant outages"
+    },
+    {
+     "t": "12:10",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "12:10"
   }
  ],
  "feed": [
@@ -214432,6 +214506,24 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-25 12:10",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: DNN moved +1.8% in 9 min; sector move: 4 of our nuclear stocks moving up together (DNN, LEU, UEC, UUUU). Checking the news for a reason.",
+   "tickers": [
+    "DNN",
+    "LEU",
+    "UEC",
+    "UUUU"
+   ],
+   "art": {
+    "big": "DNN moved +1.8% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -214651,9 +214743,11 @@
   "fast move: LEU moved +1.9% in 9 min": 1795625655.6434803,
   "fast move: LEU moved +1.7% in 4 min": 1795626350.3627925,
   "fast move: UEC moved +1.6% in 6 min": 1795626414.034472,
-  "fast move: UUUU moved +1.5% in 8 min": 1795626540.6050787
+  "fast move: UUUU moved +1.5% in 8 min": 1795626540.6050787,
+  "fast move: DNN moved +1.8% in 9 min": 1795626611.355754,
+  "fast move: sector move: 4 of our nuclear stocks moving up together (DNN, LEU, UEC, UUUU)": 1795626611.3557541
  },
- "huddle_last": 1795626540.605087,
+ "huddle_last": 1795626611.3557618,
  "huddle_log": [
   "2026-11-23",
   "2026-11-23",
@@ -214663,7 +214757,6 @@
   "2026-11-23",
   "2026-11-23",
   "2026-11-23",
-  "2026-11-23",
   "2026-11-24",
   "2026-11-24",
   "2026-11-24",
@@ -214681,6 +214774,7 @@
   "2026-11-24",
   "2026-11-24",
   "2026-11-24",
+  "2026-11-25",
   "2026-11-25",
   "2026-11-25",
   "2026-11-25",
@@ -215206,7 +215300,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 12:09",
+  "updated": "2026-11-25 12:10",
   "total": 629,
   "week": 482,
   "places": {
@@ -215848,8 +215942,8 @@
   ]
  },
  "intel_handed": [
-  "a3f7ee9bb9023700",
   "21888157b537cd9b",
+  "a3f7ee9bb9023700",
   "d4097d0d8db37e23",
   "498180393c058995",
   "ff034b5c87c95680",
@@ -218316,12 +218410,12 @@
    "built": "2026-11-25 11:41"
   }
  ],
- "heartbeat": "2026-11-25 12:08",
+ "heartbeat": "2026-11-25 12:10",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 320,
+ "_pushed_feed": 321,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -218536,8 +218630,8 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 111.36,
-  "TLN": 344.035
+  "BWXT": 111.88,
+  "TLN": 344.39
  },
  "notes_audit": {
   "scout": {
@@ -218630,8 +218724,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 71,
-   "used": 68,
+   "asked": 72,
+   "used": 69,
    "notes": {
     "BWXT Deals and contracts": 2,
     "BWXT Snapshot": 3,
@@ -218639,7 +218733,7 @@
     "BWXT Leadership and insiders": 2,
     "UEC Snapshot": 7,
     "UEC Deals and contracts": 1,
-    "SECTOR Uranium market": 31,
+    "SECTOR Uranium market": 32,
     "TLN Snapshot": 18,
     "TLN What history says": 4,
     "CCJ Snapshot": 3,
@@ -218656,7 +218750,7 @@
     "LEU What history says": 1,
     "LEU Deals and contracts": 1,
     "CEG Snapshot": 3,
-    "CEG Deals and contracts": 2,
+    "CEG Deals and contracts": 3,
     "CEG What history says": 2,
     "CEG Leadership and insiders": 1,
     "CEG Filings and company events": 3,
@@ -218685,14 +218779,14 @@
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 52,
-   "used": 52,
+   "asked": 53,
+   "used": 53,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 9,
     "BWXT Leadership and insiders": 1,
     "TLN Snapshot": 7,
-    "SECTOR Uranium market": 45,
+    "SECTOR Uranium market": 46,
     "BWXT Discoveries": 2,
     "UEC Snapshot": 7,
     "UEC Leadership and insiders": 1,
@@ -218716,23 +218810,24 @@
     "LIVE_ORDERS_RIGHT_NOW": 4,
     "UUUU Legal": 2,
     "VST Deals and contracts": 1,
-    "DNN Snapshot": 1
+    "DNN Snapshot": 1,
+    "SECTOR Plant outages": 1
    },
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 48,
-   "used": 47,
+   "asked": 49,
+   "used": 48,
    "notes": {
     "SECTOR Reactors and power": 2,
-    "CEG Places and operations": 20,
+    "CEG Places and operations": 21,
     "UEC Deals and contracts": 1,
-    "UEC Places and operations": 8,
+    "UEC Places and operations": 9,
     "license_tracker": 4,
     "LEU Business": 5,
     "plants_now": 8,
     "LEU Deals and contracts": 9,
-    "LEU Places and operations": 9,
+    "LEU Places and operations": 10,
     "NRC license tracker": 1,
     "power_deals_and_fuel_policy": 2,
     "VST Places and operations": 6,
@@ -218741,7 +218836,7 @@
     "plants_now: fleet status and open outages": 1,
     "desk_notes: CEG Places and operations": 2,
     "desk_notes: UUUU Places and operations": 2,
-    "SECTOR Uranium market": 27,
+    "SECTOR Uranium market": 28,
     "TLN Places and operations": 3,
     "UUUU Places and operations": 9,
     "UEC Business": 1,
@@ -218760,14 +218855,14 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 87,
-   "used": 85,
+   "asked": 88,
+   "used": 86,
    "notes": {
-    "SECTOR Uranium market": 58,
+    "SECTOR Uranium market": 59,
     "BWXT Snapshot": 7,
     "CCJ Snapshot": 3,
     "UUUU Snapshot": 5,
-    "SECTOR Government and laws": 53,
+    "SECTOR Government and laws": 54,
     "TLN Snapshot": 38,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
@@ -218830,13 +218925,13 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 86,
-   "used": 85,
+   "asked": 87,
+   "used": 86,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 4,
     "BWXT Snapshot": 5,
-    "SECTOR Uranium market": 36,
+    "SECTOR Uranium market": 37,
     "TLN Snapshot": 38,
     "TLN Legal": 4,
     "BWXT Legal": 2,
@@ -218857,7 +218952,7 @@
     "UUUU Snapshot": 8,
     "UUUU Legal": 9,
     "SECTOR pulse": 6,
-    "LEU Snapshot": 6,
+    "LEU Snapshot": 7,
     "LEU Leadership and insiders": 4,
     "LEU Discoveries": 1,
     "VST Leadership and insiders": 3,
@@ -218865,7 +218960,7 @@
     "VST Snapshot": 1,
     "Discoveries: can we catch a news move early (fast lane)": 1,
     "CCJ Discoveries": 1,
-    "DNN Snapshot": 1,
+    "DNN Snapshot": 2,
     "DNN Leadership and insiders": 1,
     "DNN Discoveries": 1,
     "NXE Discoveries": 1,
@@ -219089,7 +219184,7 @@
    ],
    [
     "2026-11-25",
-    59.22
+    59.45
    ]
   ],
   "NXE": [
@@ -219211,7 +219306,7 @@
    ],
    [
     "2026-11-25",
-    6.73
+    6.76
    ]
   ],
   "UEC": [
@@ -219333,7 +219428,7 @@
    ],
    [
     "2026-11-25",
-    5.39
+    5.41
    ]
   ],
   "DNN": [
@@ -219577,7 +219672,7 @@
    ],
    [
     "2026-11-25",
-    4.93
+    4.95
    ]
   ],
   "LEU": [
@@ -219699,7 +219794,7 @@
    ],
    [
     "2026-11-25",
-    79.29
+    79.74
    ]
   ],
   "BWXT": [
@@ -219821,7 +219916,7 @@
    ],
    [
     "2026-11-25",
-    111.35
+    111.78
    ]
   ],
   "CEG": [
@@ -219943,7 +220038,7 @@
    ],
    [
     "2026-11-25",
-    235.18
+    235.46
    ]
   ],
   "VST": [
@@ -220065,7 +220160,7 @@
    ],
    [
     "2026-11-25",
-    118.43
+    118.77
    ]
   ],
   "TLN": [
@@ -220187,7 +220282,7 @@
    ],
    [
     "2026-11-25",
-    343.93
+    345.13
    ]
   ],
   "AMD": [
@@ -220309,7 +220404,7 @@
    ],
    [
     "2026-11-25",
-    384.8
+    386.18
    ]
   ],
   "SMR": [
@@ -220431,7 +220526,7 @@
    ],
    [
     "2026-11-25",
-    3.14
+    3.16
    ]
   ],
   "NNE": [
@@ -220553,7 +220648,7 @@
    ],
    [
     "2026-11-25",
-    8.34
+    8.35
    ]
   ]
  },
@@ -221667,6 +221762,36 @@
    "price": 5.37,
    "result": null,
    "why": "I checked the plant outage and fleet data for our owners, the Kazakhstan and uranium-price headlines for UEC, and the Sprott trust premium (currently -17%, a discount that means investors are leaving "
+  },
+  {
+   "role": "investigator",
+   "ticker": "DNN",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-25",
+   "price": 1.73,
+   "result": null,
+   "why": "I checked the headlines and the desk's notes; the moves are sector-wide with no new company news, and the basket gate is closed (below its 10-day average) so no new buys are allowed anyway. Nothing he"
+  },
+  {
+   "role": "macro",
+   "ticker": "DNN",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-25",
+   "price": 1.73,
+   "result": null,
+   "why": "I checked whether this is sector-wide: four miners and enrichers moving up together is real but small, and the basket is still well under its 10-day average, so the entry gate stays closed. Spot urani"
+  },
+  {
+   "role": "risk",
+   "ticker": "DNN",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-25",
+   "price": 1.73,
+   "result": null,
+   "why": "Checked the basket gate (-9.68% vs 10-day average, pulse_up false), confirmed no open orders or setups, and looked at the sprott trust discount and recent headlines. A brief sympathy bounce doesn't op"
   }
  ],
  "after_sale": [],
@@ -225550,11 +225675,6 @@
  "hawk_cool": {},
  "hawk_recent": [
   [
-   1795625655.6432035,
-   "LEU",
-   1
-  ],
-  [
    1795626350.3623543,
    "LEU",
    1
@@ -225567,6 +225687,11 @@
   [
    1795626540.6048572,
    "UUUU",
+   1
+  ],
+  [
+   1795626611.355496,
+   "DNN",
    1
   ]
  ],
@@ -225975,7 +226100,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 12:08",
+ "watchdog_last": "2026-11-25 12:10",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -226308,7 +226433,7 @@
    "spy_935": 699.6799926757812
   }
  ],
- "hawk_sector_until": 1795619708.2158058,
+ "hawk_sector_until": 1795628411.355496,
  "park_trend": {
   "date": "2026-11-24",
   "above": false,
