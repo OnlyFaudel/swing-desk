@@ -293,12 +293,18 @@ def process_fills(st, br, ex, today):
         elif tag.startswith("core") and CFG["notify"]["trades"]:
             notify(f"CORE {f['side'].upper()} {f['symbol']}", f"{f['qty']:.4f} sh @ ${f['fill_price']:.2f}", tags="moneybag")
         if rec and tag == "prg":
+            ahb = (st.get("ah_banked") or {}).get(rec["ticker"])
             gb = st.setdefault("gap_banked", {}).get(rec["ticker"])
-            if gb:
-                gb["proceeds"] = round(rec["dollars"] + rec["pnl"], 2)
-                gb["sold_at"] = rec["exit"]
-            notify(f"BANKED THE JUMP {rec['ticker']}", f"Opened up big, sold at ${rec['exit']:.2f} ({rec['ret']:+.1f}% on this piece). "
-                   "Buying back near the close unless the trade is done.", tags="moneybag")
+            if ahb and ahb.get("date") == str(today) and not ahb.get("done"):  # after-hours bank: buy back after tomorrow's open
+                ahb["proceeds"], ahb["sold_at"] = round(rec["dollars"] + rec["pnl"], 2), rec["exit"]
+                notify(f"BANKED AFTER HOURS {rec['ticker']}", f"Sold at ${rec['exit']:.2f} ({rec['ret']:+.1f}% on this piece). "
+                       "Buying back right after tomorrow's open unless the trade is done.", tags="moneybag")
+            else:
+                if gb:
+                    gb["proceeds"] = round(rec["dollars"] + rec["pnl"], 2)
+                    gb["sold_at"] = rec["exit"]
+                notify(f"BANKED THE JUMP {rec['ticker']}", f"Opened up big, sold at ${rec['exit']:.2f} ({rec['ret']:+.1f}% on this piece). "
+                       "Buying back near the close unless the trade is done.", tags="moneybag")
             rec = None
         if tag == "prr" and f["side"] == "buy":
             notify(f"BOUGHT BACK {f['symbol']}", f"{f['qty']:.4f} sh @ ${f['fill_price']:.2f} after banking this morning's jump", tags="repeat")
@@ -2157,6 +2163,79 @@ def ah_dip_check(st, ex, today, now):
                tags="crescent_moon")
 
 
+def ah_bank(st, ex, prices, today, now):
+    """After-hours bank (research 2026-11-25, after_hours_bank): a held rule trade that trades 3%+ above its 4 PM close after
+    hours on real volume is sold after hours and bought back at the next morning's first cycle. Minute data 2016-2026 (our
+    stocks): sell at the after-hours price, buy back at 9:35 vs simply holding: +2.61% (2016-18, n 47, up 83%) / +1.90%
+    (2019-26, n 284, up 74%) after a 1% cost. Same overshoot as the after-hours dip, other side. If the sale already reaches
+    the trade's +10% target, or the trade ends tomorrow anyway, the sale is the exit and there is no buy back."""
+    cfg = CFG.get("ah_bank", {})
+    if not cfg.get("enabled"):
+        return
+    bank, book = st.setdefault("ah_banked", {}), st["book"]
+    # evening: sell into an after-hours jump
+    if dt.time(16, 30) <= now.time() <= dt.time(19, 45) and now.weekday() < 5 and not market.is_holiday(today):
+        slot = f"ahbank{now.hour}{now.minute // 15}:{today}"
+        if not st["flags"].get(slot):
+            st["flags"][slot] = True
+            held = [(t, k) for t, lots in book["lots"].items() for k in ("panic", "auto")
+                    if (lots.get(k) or {}).get("qty", 0) > 1e-6 and (lots[k].get("setup") != "ah_dip") and lots[k].get("opened") != str(today)]
+            live = {}
+            if held:
+                try:
+                    live = afterhours._fetch(sorted({t for t, _ in held}))
+                except Exception:
+                    live = {}
+            for t, k in held:
+                Lv = live.get(t)
+                if t in bank or not Lv or Lv["ah_px"] < Lv["close"] * (1 + cfg.get("jump_pct", 3) / 100):
+                    continue
+                b = _ah_bars(t, today)
+                if not b or b["ah_vol"] < cfg.get("min_vol_share", 0.01) * b["day_vol"] or b["ah_px"] < b["close"] * (1 + cfg.get("jump_pct", 3) / 100):
+                    continue
+                L = book["lots"][t][k]
+                px = float(Lv["ah_px"])
+                limit = round(px * (1 - cfg.get("limit_buffer_pct", 0.3) / 100), 2)
+                avg = L["cost"] / L["qty"]
+                try:
+                    o = ex.br.limit_sell_ext(t, L["qty"], limit, "prg" if k == "panic" else "aux", price_now=px)
+                except Exception as e:
+                    ops.note_reject(st, CFG, notify, f"after-hours sell {t}: {e}")
+                    continue
+                L["selling"], L["exit_reason"] = str(today), f"after-hours bank: {(px / b['close'] - 1) * 100:+.1f}% after hours"
+                log_order(st, o, f"after-hours bank: sell {t} into a {(px / b['close'] - 1) * 100:+.1f}% after-hours jump")
+                bank[t] = {"date": str(today), "kind": k, "meta": {x: v for x, v in L.items() if x not in ("qty", "cost", "selling", "exit_reason")},
+                           "anchor": L.get("anchor") or L.get("entry") or avg, "proceeds": round(L["qty"] * limit, 2), "sold_at": limit}
+                feed.post("exec", f"After-hours bank on {t}: it's {(px / b['close'] - 1) * 100:+.1f}% above the 4 PM close after hours, so I put in "
+                          f"an after-hours sale at ${limit}. After-hours jumps in our stocks usually shrink by the next morning (tested: buying "
+                          "back at 9:35 beat holding by about 2% a time). I buy it back right after the open with the same plan, unless "
+                          "the trade is done.", [t], kind="trade", art={"big": f"Banked {t} after hours", "sub": "buy back after the open"})
+                notify(f"After-hours bank: {t}", f"{(px / b['close'] - 1) * 100:+.1f}% after hours; selling at ${limit}, buying back after the open", tags="crescent_moon")
+    # next morning: buy back
+    if dt.time(9, 31) <= now.time() <= dt.time(9, 45):
+        for t, b in list(bank.items()):
+            if b["date"] >= str(today) or b.get("done"):
+                if b["date"] < str(today - dt.timedelta(days=5)):
+                    bank.pop(t, None)
+                continue
+            px = prices.get(t)
+            if not px:
+                continue
+            b["done"] = True
+            if (book["lots"].get(t, {}).get(b["kind"]) or {}).get("qty", 0) > 1e-6:
+                continue  # the after-hours sale never filled: we still hold it
+            m, anchor = b["meta"], b["anchor"]
+            target = 1 + (CFG.get("panic_rebound", {}).get("take_profit_pct", 10) if b["kind"] == "panic" else CFG.get("sharp_drop", {}).get("take_profit_pct", 10)) / 100
+            if str(today) >= str(m.get("exit_on") or "9999") or b["sold_at"] >= anchor * target:
+                feed.post("exec", f"{t}: not buying back; last night's after-hours sale at ${b['sold_at']} was the exit (target reached or the trade "
+                          "was ending).", [t], kind="trade")
+                continue
+            ex.buy_market(t, min(b["proceeds"], spendable(st, today)), px, "prr" if b["kind"] == "panic" else "au", {**m, "anchor": anchor},
+                          f"buy back {t} after the after-hours bank")
+            feed.post("exec", f"Bought {t} back at about ${px:.2f} after selling it last night at ${b['sold_at']} "
+                      f"({(b['sold_at'] / px - 1) * 100:+.1f}% better). Same plan and sell date.", [t], kind="trade")
+
+
 def ah_dip_exit(st, ex, prices, today, now):
     """Sell after-hours dip lots in the first minutes after the open (the edge is gone by the open)."""
     if not (dt.time(9, 31) <= now.time() <= dt.time(10, 30)):
@@ -3854,8 +3933,9 @@ def cycle(st, desk, br, ex, force=()):
         process_fills(st, br, ex, today)
         try:
             ah_dip_exit(st, ex, prices, today, now)
+            ah_bank(st, ex, prices, today, now)
         except Exception as e:
-            print("ah dip exit", e)
+            print("ah dip exit / bank", e)
         try:
             cover_negative(st, ex, today)
         except Exception as e:
@@ -3904,8 +3984,9 @@ def cycle(st, desk, br, ex, force=()):
     intel_tick(st, today, force="intel" in force)
     try:
         ah_dip_check(st, ex, today, now)
+        ah_bank(st, ex, st.get("last_prices") or {}, today, now)
     except Exception as e:
-        print("ah dip", e)
+        print("ah dip / bank", e)
     try:  # did every scheduled job run? (alerts + one automatic retry)
         watchdog.check(st, now, market.cclock, market.is_holiday,
                        lambda title, body: notify(title, body, tags="rotating_light", priority="high", who="watchdog"),

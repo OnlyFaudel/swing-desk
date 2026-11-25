@@ -75,6 +75,14 @@ class SimBroker:
             return self._fill(o, price_now)
         return o
 
+    def limit_sell_ext(self, t, qty, limit, tag="aux", price_now=None):
+        """Extended-hours limit sell (simulated: fills at once if the current price is at or above the limit)."""
+        o = self.limit_sell(t, qty, limit, tag)
+        if price_now is not None and float(price_now) >= float(limit):
+            o["instant"] = True
+            return self._fill(o, price_now)
+        return o
+
     def cancel(self, oid):
         for o in self.s["orders"]:
             if o["id"] == oid and o["status"] == "open":
@@ -148,6 +156,12 @@ class AlpacaBroker:
         kw["side"] = OrderSide.BUY if kw["side"] == "buy" else OrderSide.SELL
         kw["time_in_force"] = TimeInForce.DAY
         return self.c.submit_order(cls(**kw))
+
+    def limit_sell_ext(self, t, qty, limit, tag="aux", price_now=None):
+        """Extended-hours (4-8 PM) limit sell."""
+        from alpaca.trading.requests import LimitOrderRequest
+        return self._o(self._req(LimitOrderRequest, symbol=t, qty=qty6(qty), side="sell", limit_price=penny(limit),
+                                 extended_hours=True, client_order_id=cid(tag)))
 
     def limit_buy_ext(self, t, qty, limit, tag="au", price_now=None):
         """Extended-hours (4-8 PM) limit buy; fractional shares need the asset's fractional_eh_enabled flag."""

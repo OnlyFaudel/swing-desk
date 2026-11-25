@@ -377,6 +377,10 @@
   "order_flow_early_2026_11_25": {
    "trials": 10,
    "verdict": "2026-11-25 01:45, minute data (11 stocks, 2016-2026) ahead of the 05:30 run. (1) Gap-down 5%+, buy 9:35 -> close vs S&P open->close: +0.63% (2016-18, n 31) / +0.43% (2019-26, n 216, t 1.0); first-15-min buying pressure > 0: +1.65% / +0.84% (t 1.4); selling pressure: -0.45% / +0.10%; buy at 9:45: +1.53% / -0.03%. Not enough. (2) Sharp 15%/5-day drop -> 10 days absolute: light selling that day +19.3% (n 16) / +2.85%; heavy selling +1.96% / +3.11% (n 21); volume 2x+ +9.9% / +4.8%: no reliable split (small samples). (3) Last-30-minute buying pressure 0.4+ -> next close vs S&P -0.50% (t -2.9) / -0.18% (t -1.6): late-day buying fades a little; selling pressure +0.24% / +0.10%: nothing to trade, a fact for the agents."
+  },
+  "after_hours_bank": {
+   "trials": 6,
+   "verdict": "2026-11-25 02:00, minute data (Alpaca SIP 2016-2026, 11 of our stocks). A held stock 3%+ above its 4 PM close after hours on real volume (1%+ of the day): sell at the after-hours price and buy back at 9:35 vs simply holding: +2.61% (2016-18, n 47, t 5.7, up 83%) / +1.90% (2019-26, n 284, t 7.4, up 74%) after a 1% cost; buy back at the next close instead: +3.57% / +2.09%; 5%+ jumps: +5.25% / +4.21%. Mirror of after_hours_dip (same overshoot). ADOPTED for held panic and rule trades (not after-hours dip lots): after-hours limit sale 16:30-19:45, buy back 9:31-9:45 with the same plan; no buy back if the sale reached the +10% target or the trade ends that day. Pre-market: buying a 3%+ pre-market dip and selling at 9:35 +1.27% (2016-18) / -0.47% (2019-26, t -3.7): flips, rejected; selling a held stock into a 3%+ pre-market jump vs 9:35 +1.61% / +0.28%: weaker than the after-hours version, not used."
   }
  }
 }
