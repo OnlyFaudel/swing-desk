@@ -650,6 +650,14 @@
   "night_round_46_2026_11_25": {
    "trials": 5,
    "verdict": "2026-11-25 06:50. sharp_drop_weekday rejected. VM 04:42 save: rule_errors {}, backfill VST/TLN pending."
+  },
+  "rebound_through_earnings": {
+   "trials": 3,
+   "verdict": "2026-11-25 06:55 (round 47, new). Panic/sharp-drop trades in our 10 (live exits), by earnings timing (earn_events.pkl), vs S&P, 0.2% cost, 2010-18 / 2019-26: earnings inside the hold -1.68% (n 17, worst 5% -15.0%) / +0.95% (n 26, -16.4%); no earnings nearby +2.95% (n 179, -20.4%) / +1.80% (n 190, -14.3%); the drop was the earnings reaction (report within the prior 5 sessions) -5.31% (n 9) / +2.75% (n 40). Earnings-inside worse in both eras but n small: sizing fact for the PM, no rule."
+  },
+  "night_round_47_2026_11_25": {
+   "trials": 3,
+   "verdict": "2026-11-25 06:55. rebound_through_earnings (fact)."
   }
  }
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 06:45",
+ "updated": "2026-11-25 06:55",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -245,6 +245,15 @@
     "level",
     "strategist",
     "researcher"
+   ]
+  },
+  {
+   "topic": "Panic / sharp-drop trades that would hold through the stock's own earnings report",
+   "answer": "Our 10 stocks, 442 earnings dates 2010-2026, live exits, vs the S&P after costs. When the stock reported earnings inside the hold, the trade averaged -1.68% (2010-18, n 17) and +0.95% (2019-26, n 26), vs +2.95% and +1.80% with no earnings in the window. Small samples but the same direction both times: when a rebound buy would sit through earnings, lean to the small size (the earnings_calendar in the morning packet shows the dates). When the drop itself WAS the earnings reaction, results flip by era (-5.3%, n 9 / +2.8%, n 40): no rule.",
+   "roles": [
+    "pm",
+    "risk",
+    "strategist"
    ]
   }
  ]
