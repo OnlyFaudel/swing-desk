@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 02:35",
+ "updated": "2026-11-25 02:50",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -97,6 +97,30 @@
     "whale",
     "researcher",
     "strategist"
+   ]
+  },
+  {
+   "topic": "What PJM capacity-auction results do to the power stocks (VST, NRG, CEG, TLN, PEG, EXC), for the Dec 15 2029/30 auction",
+   "answer": "The last 10 auction results (2015-2025), stocks vs the utilities ETF (XLU). When the price went UP (5 auctions): +1.8% in the 2 days of the release, then -3.0% over the next 20 sessions (4 of 5 negative: the pop gets sold). When it went DOWN (5): flat reaction, ~0 after. The last one (Dec 17 2025, at the cap again, +1%) gave -1.7% on the day and -5.5% over 20 sessions. The 2029/30 auction will very likely clear at or near the cap again, which is expected: do not buy the release-day pop, and a held power stock is better trimmed into it than added to. Only 5 up-auctions, so this is context for judgment, not a rule.",
+   "roles": [
+    "pm",
+    "risk",
+    "macro",
+    "investigator",
+    "level",
+    "questioner",
+    "strategist"
+   ]
+  },
+  {
+   "topic": "Uranium price vs the miners: divergences and the long-term contract price",
+   "answer": "Monthly Cameco/UxC data back to 1988 vs the miners (CCJ, UEC, DNN, UUUU, NXE) minus the S&P. When spot rises 5%+ but the miners lag, there is NO extra catch-up (next month +2.5% before 2019, n 17) compared with spot up and miners up (+3.3%): the live uranium_momentum rule already covers it. The long-term contract price used to lead (up month -> miners +3.0% next month before 2019, t 2.1; new 3-year high +3.4%) but not since 2019 (+0.6%, -0.1%): don't use it as a timing signal any more. Miners down 10%+ vs the S&P in a month while spot held up: +4.1% / +3.1% next month but t only ~1.",
+   "roles": [
+    "pm",
+    "macro",
+    "researcher",
+    "strategist",
+    "investigator"
    ]
   }
  ]

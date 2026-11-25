@@ -25,6 +25,11 @@ RULES = {
                   "(one point per spike: 2008-18 -2.96% vs S&P (t -2.8), 2019-26 +3.25% (t 2.3): flipped between eras)",
     "ai_scare": "NVIDIA down 6%+ in a day: buy the power trio (CEG, VST, TLN) at the close, sell after 10 sessions (one data point per "
                 "scare: 2008-18 -1.0% vs S&P, 2019-26 +2.0% (t 1.6); 2024 +4.5%, 2025 +9.6%, 2026 +12.0%: an AI-era-only pattern)",
+    "dry_drop": "Our 10 or a related stock falls 8%+ in 10 sessions while its 10-day volume is 30%+ below its prior 50-day average "
+                "(sellers running out): buy the close, sell after 10 sessions (2008-18 -0.45% vs S&P, 2019-26 +2.14% (t 3.3); big US "
+                "stocks -0.18% / +0.22%: recent and nuclear-only)",
+    "dry_rally": "Our 10 or a related stock rises 8%+ in 10 sessions on volume 30%+ below its prior 50-day average: buy the close, sell after "
+                 "10 sessions (2008-18 +0.39%, 2019-26 +1.33% (t 3.3); big US stocks -0.37% / +0.27%: fails the independent check)",
 }
 
 
@@ -99,6 +104,18 @@ def run(lineup, related, today=None, breadth=None):
     for t in names:
         if t != "SPY" and t in C and len(C[t].dropna()) > 6 and (C[t].dropna().diff().tail(4) < 0).all():
             enter("four_down", t, 5)
+    for t in names:  # price moving on drying-up volume (round 21, 2026-11-25)
+        if t in ("SPY", "NVDA", "SMH", "^VVIX") or t in (breadth or []) or t not in C or t not in V:
+            continue
+        c, v = C[t].dropna(), V[t].reindex(C[t].dropna().index)
+        if len(c) < 70:
+            continue
+        r10, v10, v50 = float(c.iloc[-1] / c.iloc[-11] - 1), float(v.tail(10).mean()), float(v.iloc[-60:-10].mean())
+        if v50 > 0 and v10 < 0.7 * v50:
+            if r10 <= -0.08:
+                enter("dry_drop", t, 10)
+            elif r10 >= 0.08:
+                enter("dry_rally", t, 10)
     if "NVDA" in C and len(C["NVDA"].dropna()) > 2 and float(C["NVDA"].iloc[-1] / C["NVDA"].iloc[-2] - 1) <= -0.06:
         for t in ("CEG", "VST", "TLN"):
             enter("ai_scare", t, 10)

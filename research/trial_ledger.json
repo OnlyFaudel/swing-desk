@@ -398,6 +398,22 @@
   "night_round_20_2026_11_25": {
    "trials": 10,
    "verdict": "2026-11-25 02:35. Owner asked for new families, not repeats: checked the ledger first (volatility contraction, NR7, inside days, Bollinger never tested). See volatility_contraction (9 trials, all rejected) and agent_call_bias_2026_11_25. Options data has only 2 days (data/options, options_rec.py), too short to test: left recording."
+  },
+  "pjm_auction_results": {
+   "trials": 4,
+   "verdict": "2026-11-25 02:50 (round 21, new: government/market dates). 10 PJM BRA results (2015-08-21, 2016-05-24, 2017-05-23, 2018-05-23, 2021-06-02, 2022-06-21, 2023-02-27, 2024-07-30, 2025-07-22, 2025-12-17; dates from PJM reports), VST/NRG/CEG/TLN/PEG/EXC vs XLU. Price-up auctions (5): 2-day reaction +1.8%, 10-day run-in -2.3%, next 5 +0.3%, next 20 -3.0% (4 of 5 negative). Price-down (5): reaction 0.0%, next 20 -0.1%. n too small for a rule: fact for the agents (fade the release pop) ahead of the Dec 15 2029/30 auction."
+  },
+  "uranium_divergence_longterm": {
+   "trials": 12,
+   "verdict": "2026-11-25 02:50 (round 21, new: monthly long-term contract price + spot/miner divergence; memory/intel/uranium_price.json 1988-2026). Miners (CCJ,UEC,DNN,UUUU,NXE) minus S&P next month, <=2018 / 2019+: spot +5% & miners lag +2.52% (n 17) / +12.95% (n 4); spot +5% & miners up +3.25% / +5.33%: no extra catch-up. Spot -5% & miners up -2.19% / +3.96%. Miners -10% vs S&P with spot flat/up +4.14% (t 1.0) / +3.06% (t 0.6). Long-term price up +3.02% (t 2.1) / +0.63%; up 3%+ +3.71% / +0.68%; down -2.24% / -0.99%; at 3-year high +3.38% (t 2.3) / -0.14%. REJECTED: the long-term price stopped leading after 2018."
+  },
+  "price_volume_divergence": {
+   "trials": 4,
+   "verdict": "2026-11-25 02:50 (round 21, new family). 10-day move of 8%+ with 10-day volume 30%+ under the prior 50-day average; next close, 10d vs S&P, 0.2% cost; 88 nuclear/related and 140 big stocks, 2008-18 / 2019-26. Rally on drying volume: ours +0.39% (n 362) / +1.33% (n 542, t 3.3); big -0.37% / +0.27%. Drop on drying volume: ours -0.45% (n 209) / +2.14% (n 304, t 3.3); big -0.18% / +0.22%. Drop on heavy volume: +0.06 / -0.24; +0.86 (t 2.9) / -0.64 (t -2.4). Volume at 6-month low in an uptrend, 20d: +0.16 / +0.48; +0.28 / -0.15. No money: dry_drop and dry_rally go to the practice book (recent.py) to collect live evidence."
+  },
+  "night_round_21_2026_11_25": {
+   "trials": 20,
+   "verdict": "2026-11-25 02:50. New families only (ledger checked first): pjm_auction_results, uranium_divergence_longterm, price_volume_divergence. Short interest history and NRC/DOE meeting calendars not available here: skipped. Practice book +2 rules."
   }
  }
 }
