@@ -529,7 +529,7 @@
   "radarres:2026-11-24": true,
   "questioner:2026-11-24:9": true,
   "sput:2026-11-24": true,
-  "intraday_backfill_t": 1795571658.5413904,
+  "intraday_backfill_t": 1795573853.828365,
   "reconcile:2026-11-24": true
  },
  "benchmark": {
@@ -2609,54 +2609,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "What Sent Cameco Stock Lower Again? - Trefis",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcnhUMDVsSE9hNDk3ZGVWeWZ4RUJxb2pnQjVvcl90eWY1eF9DRmFvdkd1VTFTazdiZ3lGV05xWXk4dzAzWmVUc0dROTU5T19lcEgxUHZ4U1g4VGxiaXVLdWY4azVHNzBGb05HNGxwTGpMeDZCVzA4bWtDSllHVDZlenZfb193WEtsNVlmUjZVWnlzRkNSUkl0Vm9R?oc=5",
-   "ts": 1795459240,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Trefis recap of past moves; no new company-specific information in the headline."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Uranium explorers provide leverage to market turnaround - Townsville Bulletin",
-   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPNkRoT1FMZ0dydWxkMm9qSHBqdHVnUERKQXpCRmZjY0s2RWxNSmVpajJHTFJ1OUhtSmhnWmdYZmoyR1FEaXQ2bmxyNm9LNnJrZVYzVlpMR0t2N1NVVUF4alRveDBRNUhtVEtwcXRJbWdUckVGZzE2OTJ6akJIYnVGbVhrLWRpcC1JMm04T29rR0VXamw1eU50djRtZXQyUXpseGVqRWtpRlVvak4waDdBMmd1R080NE5ZWXk0bmp0ZnVUdDRPNnlMLXZXaU0wWW1oSDQxcXV5dzJjSFhnb3RuT0tzd2dlUDdCc3poNE83QzVPM0lONmFiMV9jRFZiOXgxRmxtM0RBY0g0TDZYSk42cWdRZkJLald2WVhV?oc=5",
-   "ts": 1795461355,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic sector commentary on explorers and uranium price; no new company-specific information."
-  },
-  {
-   "ticker": "LEU",
-   "source": "Google News: HALEU fuel",
-   "title": "NRC Reviews Transfer of Uranium De-Conversion License to HALEU Energy Fuel - CASRAI",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdi1vNjVoWGsteXBaX3BwQU82M2pCaWZMMGZVZl85SkRFWnhNNGNrd1BWd3VfeGlpXy1nNkZRNURuNDJQa0h1UXlDb3JBZnhpRmJKTWdGQnhSM1FoVzVQWlBwSjVXNlpxaXhTZl9mM3pQN2ZZLUVIT1QwTXJCNXlBWFlXT3FDUTdSQlU1NXVWSWRObzE0ZURjTXA0bWRsNFRJ?oc=5",
-   "ts": 1795461759,
-   "materiality": 4,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "policy_tariff",
-   "why": "NRC license transfer for a HALEU de-conversion facility; procedural, not a demand or earnings change."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Uranium explorers provide leverage to market turnaround - The Cairns Post",
-   "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQeUU1cFQ4SWpDckNHYWthaE43Nmhrd2FlRklVZHljQ2w4enNkTm1UU1hwMVdXYWJrSmx5UWtvMEw5RTZ0aEdiaGlTUG90UUpobVBOU1c3bHJFU0Zkd0N5U3dzUlEyTGlCQk5zd21xeThPd2Nwek5lVDMxMThOMkx6V3J0bVIzVENvNVpBY3ZDZUpnQjlFNHViYktrT0hJTFJxaUhpa1J1TUtsOW9pelNXY2VXWjJSQXJIdVE5QXAxS1kyTEV0ZzNjNlFwX0F4V0p2RFBzX3hJMDVuWklaU2ZlYlpTY2wxQWdyTHlnN2VTVFlhV0NjUm1Jdy1ITkJMbHJ3R013cWN4OF94cW5sME11eg?oc=5",
-   "ts": 1795461444,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic opinion piece on uranium explorers; not new company-specific information."
-  },
   {
    "ticker": "CCJ",
    "source": "Google News: uranium price",
@@ -5608,6 +5560,54 @@
    "direction": "up",
    "event_type": "other",
    "why": "Expanded high-grade subdomain; positive drill news but exploration-stage."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News: \"Talen Energy\"",
+   "title": "Form 4 Talen Energy Corp: Anthony J. Plagens (SVP & Chief Accounting Officer) For: 23 November - Investing.com Canada",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNQ0JFM043cUhrd1VEblJ5TGZld2VfVXJKVU5VZ1hmbHZIN3loaGNhYXNqdDdGNnhScEFicmlaNndoMV81eF9xRXFvX0oxZmZMYWROeElCYnJvMW9iV3pKc1dpbElEbTR5TWxPTHBKUVBsMTlxV3lHTDg1MERrZ1NjcWNuejRLc0V0ck1kUU9xV1A5S0s2U21MRXpvN2N6VzdJemh6d3dfZnYyMFR6aE15TFZSS016MkVkVlRUMWF2eTlJb3JPUTU4OFN4RFdMYTdxVTZJMnp3T0VlRGpHenpkRlNmUQ?oc=5",
+   "ts": 1795573545,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Routine SVP Form 4 filing; officer sale amount unclear, likely routine."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News",
+   "title": "Talen Energy officer sells $685,921 in company stock By Investing.com - Investing.com Canada",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdV9KSkV5SGR0TlhiQmFaZzNObzBaS2JKSEFNMXpNMS1UNFMwWDlwaFR4ZlJTMV9IZlg3ZUZncjJYcDVXcUU2ZTdwbnNHRW9tOWFGT2JSNDRmcm5uNWVDaWxOd0VtXzVZT0pBQ2lBdFBnVnVWYlRweHVWbXliQXdSbW9qNzRBMDljSFFIQU1tSjVQOVJLSUFhellsaVV5V2VKcnVIeXpmN2U5TmVlNThESg?oc=5",
+   "ts": 1795573545,
+   "materiality": 4,
+   "novelty": "new",
+   "direction": "down",
+   "event_type": "other",
+   "why": "Officer sold about $686k of stock; a single sale is weak signal, planned sales unknown."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "Cameco\u2019s Dividend Isn\u2019t the Reason to Buy, Yet it\u2019s About to Go Nuclear - The Motley Fool Canada",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSVQ2S3hjQWlVQndSdXNpcWE4Z2JiTXoxNUJSb0FIa0pVSlpfUXFWNnpBc2pOWjIzYkxBU1FjU1l0SEdqblZDU3IzUEIwOHBmU3JldlVrZjkyZ09LRzJJdXRlclh1OW5Mem5GMGQzb3E3U2p2dkdYdzQ3dkNHeGhDX0tibFVpajl0Z1J5VnZpNTNRT1A3ZGpYMVlXSzhMcUJz?oc=5",
+   "ts": 1795572900,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Motley Fool opinion/dividend piece; no new company information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Yahoo (CEG, related to CCJ)",
+   "title": "George Soros and 10 Other Big Funds Sold Vistra Last Quarter, While 7 Bought. Who\u2019s Right?",
+   "link": "https://www.tikr.com/blog/george-soros-and-10-other-big-funds-sold-vistra-last-quarter-while-7-bought-whos-right?ref=yahoofinance&tlnk=yf-261124-4r3chgrm&.tsrc=rss",
+   "ts": 1795539570,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "13F fund-flow recap on Vistra; related-company news with no real new information."
   }
  ],
  "reviews": [
@@ -7358,16 +7358,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.4285,
+  "day_usd": 0.43137,
   "month": "2026-11",
-  "month_usd": 1.15992,
-  "total_usd": 1.15992,
+  "month_usd": 1.16279,
+  "total_usd": 1.16279,
   "by_role": {
    "macro": 0.11939,
    "whale": 0.01778,
    "crowd": 0.01194,
    "level": 0.11932,
-   "scout": 0.12897,
+   "scout": 0.12961,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -7377,7 +7377,7 @@
    "postmortem": 0.00035,
    "researcher": 0.01198,
    "engineer": 0.02902,
-   "questioner": 0.09495
+   "questioner": 0.09718
   }
  },
  "desk_log": [
@@ -7503,7 +7503,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-24 21:20 ET",
+ "last_cycle": "2026-11-24 21:30 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -54717,8 +54717,8 @@
   "d1c7122c048b2ed9",
   "b550feca111a11b5",
   "f5de3767d3f1b3c9",
-  "9d0cef749e9a05fd",
   "38012edb5aa4d98f",
+  "9d0cef749e9a05fd",
   "5152638d88885c07",
   "a4aac5316a0eb878",
   "6c319586d5fd38f0",
@@ -54735,10 +54735,10 @@
   "87e89d05178171d2",
   "844469477dae7bae",
   "37e85b7a7ce58612",
+  "7ef53a09d1590d1f",
   "92ab279e132dea09",
   "bb70a1f088013762",
   "70ec56bf0ac9a6fb",
-  "7ef53a09d1590d1f",
   "563c0572b10f43bc",
   "12bf832407de3c00",
   "f309be7c357c35cc",
@@ -55180,9 +55180,13 @@
   "a00037110572bad0",
   "17938eb8e2e8c5e7",
   "1005c86f35a3d1c3",
-  "832a141cb29fe453"
+  "832a141cb29fe453",
+  "e718e5b2b14b2950",
+  "10ac2b136225e49d",
+  "ba50b35a46845e07",
+  "ee60ae2d27d21aba"
  ],
- "news_slow_at": 1795573166.8842382,
+ "news_slow_at": 1795573854.1698594,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -208357,6 +208361,25 @@
    ],
    "practice": false,
    "end": "21:20"
+  },
+  {
+   "id": "20261124213051838249",
+   "title": "The Questioner, Nov 24 21:30",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-24 21:30",
+   "msgs": [
+    {
+     "t": "21:30",
+     "who": "questioner",
+     "to": "risk",
+     "text": "The TLN resting buy at $355.66 has been asked about repeatedly with no one confirming who owns it or re-approving it, and the basket is still below its 10-day average, so our own no-new-buys rule says it should not be live. I'd rather the team stop debating and simply confirm whether anyone re-approved it in writing today. If not, it should be canceled now rather than waiting for the Nov 30 expiry.",
+     "outcome": false,
+     "notes": "why: The same question has been asked dozens of times with no answer, and the rule in standing instructions is clear: no new buys while the basket sits below its 10-day average. A live order that nobody owns is exactly the kind of gap that should be closed today, not after another round of discussion.\nticker: TLN\ndirection: down\ndays: 3\nfiles read: TLN Snapshot, desk_lessons_from_our_mistakes"
+    }
+   ],
+   "practice": false,
+   "end": "21:30"
   }
  ],
  "feed": [
@@ -212284,6 +212307,19 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-24 21:30",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: ",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -212972,7 +213008,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 21:20",
+  "updated": "2026-11-24 21:30",
   "total": 550,
   "week": 449,
   "places": {
@@ -215577,12 +215613,12 @@
    "built": "2026-11-24 21:19"
   }
  ],
- "heartbeat": "2026-11-24 21:20",
+ "heartbeat": "2026-11-24 21:30",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 321,
+ "_pushed_feed": 323,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -215737,16 +215773,16 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 200,
-   "used": 181,
+   "asked": 201,
+   "used": 182,
    "notes": {
-    "TLN Deals and contracts": 10,
+    "TLN Deals and contracts": 11,
     "CCJ Deals and contracts": 41,
     "BWXT Deals and contracts": 29,
     "SECTOR Government and laws": 42,
     "UUUU Deals and contracts": 34,
     "SECTOR Countries": 34,
-    "CEG Deals and contracts": 27,
+    "CEG Deals and contracts": 28,
     "NXE Legal": 5,
     "NXE Deals and contracts": 11,
     "DNN Deals and contracts": 8,
@@ -216044,10 +216080,10 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 38,
-   "used": 38,
+   "asked": 39,
+   "used": 39,
    "notes": {
-    "TLN Snapshot": 37,
+    "TLN Snapshot": 38,
     "TLN News": 35,
     "coming_up": 5,
     "BWXT Snapshot": 2,
@@ -216058,7 +216094,7 @@
     "CCJ Legal": 1,
     "TLN Legal": 6,
     "SECTOR Market regime": 1,
-    "desk_lessons_from_our_mistakes": 4,
+    "desk_lessons_from_our_mistakes": 5,
     "TLN Ownership and analysts": 4,
     "SECTOR Uranium market": 10,
     "CEG Snapshot": 5,
@@ -222131,7 +222167,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 21:20",
+ "watchdog_last": "2026-11-24 21:30",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
