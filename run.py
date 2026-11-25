@@ -2204,7 +2204,7 @@ def ah_dip_check(st, ex, today, now):
         pend += 1
         feed.post("nightwatch", f"After-hours dip: {t} is {(px / b['close'] - 1) * 100:+.1f}% under its 4 PM close (${b['close']:.2f} -> "
                   f"${px:.2f}) on real volume. Placed an after-hours limit buy, ${dollars:.0f} at up to ${limit}. It sells in the first "
-                  "minutes after tomorrow's open. Tested 2016-2026: +1.5-1.8% a trade after costs, up about 2 times in 3.", [t], kind="trade",
+                  "minutes after tomorrow's open. Tested 2016-2026: +1.9% a trade before 2024, under 1% since, after costs; up about 2 times in 3.", [t], kind="trade",
                   art={"big": f"{t} after-hours dip", "sub": f"limit ${limit}, sells at the open"})
         notify(f"After-hours dip buy: {t}", f"{(px / b['close'] - 1) * 100:+.1f}% after hours; limit buy ${dollars:.0f} at ${limit}, sells at the open",
                tags="crescent_moon")

@@ -670,6 +670,10 @@
   "night_round_50_2026_11_25": {
    "trials": 0,
    "verdict": "2026-11-25 07:15. Forced panic-day rehearsal on a copy of the live state (sim broker seeded, every stock and the S&P patched to -5% at 15:45, room made by clearing the copy's panic lots, +$600 book cash). (a) With the real books (3 panic lots held, $3.53 free cash after the repayment) the rule correctly bought nothing. (b) With room: bought UUUU, UEC and CCJ at ~$115 each (10% steps on $1,148 equity), sold parked SPY to fund them, free cash ended +$1.04 (no overdraft), pending_buys cleared, sell date 2026-12-04 = 6 sessions counting the Thanksgiving holiday. rule_errors empty. Note: the first attempt bought nothing because the lineup list T is only filled inside cycle(); not a live issue."
+  },
+  "night_round_51_2026_11_25": {
+   "trials": 0,
+   "verdict": "2026-11-25 07:20. After-hours dip rehearsal (copy, sim broker, UEC patched 4% under its close at 17:00 with real volume, Friday 9:35 exit): (a) with the real books no buy, correctly: every lineup stock holds a ~$15 Thanksgiving 'auto' lot (the rule skips stocks with an open auto/panic/trade lot) and free cash is negative until the morning repayment; so the after-hours dip cannot fire tonight, which is fine. (b) With UEC freed and cash: limit buy $136 at $5.37 (0.3% over the after-hours price), filled, exit date Fri Nov 27 (Thursday holiday skipped), sold at 9:35 Friday +2.05% with the right label. rule_errors empty. Also fixed the stale '+1.5-1.8% a trade' line in the alert text."
   }
  }
 }
