@@ -129,6 +129,14 @@ class Desk:
                 [f"{t}: buy limit ${a.get('entry')} (${a.get('dollars', 0):.0f}), placed {a.get('armed_at', a.get('date', '?'))}" for t, a in arm.items()]
                 or "NONE. There are no resting orders. Every order we place is a day order that expires at that day's close, so an "
                    "order mentioned in an older post no longer exists unless it is listed here.")}
+        if role in ("pm", "macro", "risk", "level", "investigator", "chief") and isinstance(payload, dict) and self.state.get("ah_watch"):
+            try:
+                import afterhours
+                ln = afterhours.last_night(self.state, dt.date.today())
+                if ln and ln["moves"]:
+                    payload = {**payload, "after_hours_last_night": ln}
+            except Exception:
+                pass
         les = [x["lesson"] for x in self.state.get("lessons", []) if x.get("lesson")][-6:]
         if les and isinstance(payload, dict):  # what the desk learned from its own mistakes, in every agent's head
             payload = {**payload, "desk_lessons_from_our_mistakes": les}

@@ -17,7 +17,7 @@ THE PREPARATION:
 import sys, json, os, re, time, traceback, datetime as dt
 import urllib.request
 
-import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, earnings, weekly, weather, shocks, licenses, deals, radarlog, watchdog, recent, judgment, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
+import gate, signals, feed, shadow, options_rec, inbox, research_lab, desk_memory, collector, reactors, archive, discovery, dossier, jobs, peers, world, uprice, congress, price_events, people, notes, plant, optspec, sput, catalysts, redteam, earnings, weekly, weather, shocks, licenses, deals, radarlog, watchdog, recent, judgment, afterhours, market, news, intel, account, learning, ops, memory, patient, broker as brk, dashboard
 from agents import Desk, Budget, MOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -2230,6 +2230,13 @@ def intel_tick(st, today, force=False):
     if not st.get("sput_view"):
         st["sput_view"] = sput.summary()
     st["license_view"] = licenses.summary()
+    try:  # Night Watch: after-hours moves on our stocks and holdings, 16:20-20:00 (afterhours.py)
+        if now.weekday() < 5 and not market.is_holiday(today):
+            held = [t for t, l in st["book"]["lots"].items() if any(v.get("qty", 0) > 1e-6 for k, v in l.items() if k != "park")]
+            afterhours.watch(st, today, now, list(T), held, lambda ti, msg: notify(ti, msg, tags="crescent_moon"),
+                             lambda txt, tk: feed.post("nightwatch", txt, tk, kind="alert"))
+    except Exception as e:
+        print("night watch", e)
     try:  # order-flow data: one-time backfill (after hours), then a daily top-up after the close (intraday.py)
         import subprocess
         after_hours = now.time() >= dt.time(16, 45) or now.time() < dt.time(7, 30) or now.weekday() >= 5
@@ -3609,6 +3616,7 @@ def cycle(st, desk, br, ex, force=()):
         try:
             gap_bank(st, ex, data, prices, today, now)
             gapdown_shadow(st, data, prices, today, now)
+            afterhours.score(st, today, now, prices, market.cclock(now))
             process_fills(st, br, ex, today)
             panic_check(st, desk, ex, data, prices, today, brk_state, now, force="panic" in force)
             auto_check(st, desk, ex, data, prices, today, brk_state, now)

@@ -305,6 +305,10 @@
   "sharp_drop_wide": {
    "trials": 5,
    "verdict": "2026-11-24 (owner: open the crash-rebound trade to more stocks, e.g. NVIDIA). Whole-account backtest 2008-2026, all 7 rules + account brake, $1,000: current list 23.2%/yr (2008-18 17.5%, 2019-26 31.5%), worst -40.7%, $51,226. + 140 big US stocks as a SECOND tier (same 3 slots, nuclear + related first): 25.2%/yr (17.7 / 36.3), worst -40.5%, $69,957, 753 vs 496 sharp trades. Without the 10 biggest winners (NVDA, TSLA, META, AVGO, PLTR, COIN, SHOP, NFLX, AMZN, LLY): 24.2%/yr (18.3 / 32.8), worst -38.6%. 4 slots 24.1%, 5 slots 22.9% (worse: weaker trades crowd in). Earlier per-trade test: big stocks +0.29/+0.69% vs S&P vs +0.83/+1.09% for nuclear + related. Caveat: today's big companies (survivors). ADOPTED as tier 2 (115 names not already in the related list), 3 slots, comeback stays tier 1 only."
+  },
+  "ideas_2026_11_24_night": {
+   "trials": 9,
+   "verdict": "2026-11-24 23:10 (owner: more ideas + an after-hours bot). (1) Sympathy selling: a group mate crashes 10%+ on its own (S&P > -1%), buy peers that fell 3-8%: 2008-18 n=1, 2019-26 +1.26% 5d vs S&P (t 0.9): rejected. (2) AI scare day (NVIDIA -6%+) -> buy power names: stock-level 2019-26 +3.84% 10d (t 5.7) but one point per scare day 2008-18 -1.04% (t -1.0), 2019-26 +1.96% (t 1.6); other utilities (independent check) -0.78%/-0.50%; by year only 2024 +4.5, 2025 +9.6, 2026 +12.0: AI-era-only, put in the recent-era practice book (recent.py ai_scare), no money. Lineup on scare days +0.55/+1.23% (noise). (3) Options-expiration week: basket vs S&P -0.05/-0.27% per week; week after +0.45/+0.62% vs +0.05/+0.55% all weeks: noise. After-hours watcher (afterhours.py) built as a no-money practice log scored next day; the historical after-hours test runs on the minute data."
   }
  }
 }

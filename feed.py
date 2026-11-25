@@ -25,6 +25,7 @@ PEOPLE = {
     "nowcast":   ("Nowcast", "reads Asia's close before the open", 4),
     "drift":     ("Drift Monitor", "checks live results against the research", 5),
     "watchdog":  ("Watchdog", "makes sure every scheduled job actually ran", 5),
+    "nightwatch": ("Night Watch", "after-hours moves 4-8 PM, scored the next day", 5),
     "gate":      ("Promotion Gate", "decides when real money is allowed", 6),
     "shadow":    ("Shadow Desk", "practice trades on 52 stocks, no money", 7),
     "options":   ("Options Recorder", "saves every option price, every day", 8),

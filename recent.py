@@ -16,6 +16,8 @@ RULES = {
     "four_down": "4 down closes in a row (our 10 + related stocks): buy the close, sell after 5 sessions (2019-26: 26.2%/yr on related)",
     "quarter_turn": "Buy our 10 at a quarter's last close, sell 3 sessions later (2019-26: +1.56% vs S&P)",
     "momentum_switch": "Each month hold our 10 instead of the S&P when their 12-month return beats the S&P's (2019-26: 41.2%/yr)",
+    "ai_scare": "NVIDIA down 6%+ in a day: buy the power trio (CEG, VST, TLN) at the close, sell after 10 sessions (one data point per "
+                "scare: 2008-18 -1.0% vs S&P, 2019-26 +2.0% (t 1.6); 2024 +4.5%, 2025 +9.6%, 2026 +12.0%: an AI-era-only pattern)",
 }
 
 
@@ -45,7 +47,7 @@ def run(lineup, related, today=None):
     b = _load()
     if b.get("last_run") == str(today):
         return []
-    names = list(dict.fromkeys(list(lineup) + list(related) + ["SPY"]))
+    names = list(dict.fromkeys(list(lineup) + list(related) + ["SPY", "NVDA", "CEG", "VST", "TLN"]))
     raw = yf.download(names, period="14mo", auto_adjust=True, progress=False)
     C, V = raw["Close"], raw["Volume"]
     if C.index[-1].date() != today:
@@ -90,6 +92,9 @@ def run(lineup, related, today=None):
     for t in names:
         if t != "SPY" and t in C and len(C[t].dropna()) > 6 and (C[t].dropna().diff().tail(4) < 0).all():
             enter("four_down", t, 5)
+    if "NVDA" in C and len(C["NVDA"].dropna()) > 2 and float(C["NVDA"].iloc[-1] / C["NVDA"].iloc[-2] - 1) <= -0.06:
+        for t in ("CEG", "VST", "TLN"):
+            enter("ai_scare", t, 10)
     nxt = today + dt.timedelta(days=1)
     while nxt.weekday() >= 5:
         nxt += dt.timedelta(days=1)
