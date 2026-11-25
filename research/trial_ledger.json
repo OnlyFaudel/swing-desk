@@ -538,6 +538,14 @@
   "night_round_30_2026_11_25": {
    "trials": 0,
    "verdict": "2026-11-25 04:25. Health sweep part 2: also on their own guards now: the morning meeting, manage_open (stops/targets on open trades: previously unguarded, a crash there stopped the whole rest of the cycle), the after-hours exit/bank pair, cover_negative, judgment_tick, the 4 weekly reviews (questioner, mistakes, nuclear weekly, red team: were one block), the evening after-hours dip/bank, and intel_tick (Night Watch included). Full cycle run on a copy of the live state with the simulation broker and --force-close: no rule errors. State size 5.0 MB, largest part shadow_desk 2.5 MB (capped at 20,000 trades, so bounded); chats/feeds trimmed already."
+  },
+  "peer_earnings_sympathy": {
+   "trials": 6,
+   "verdict": "2026-11-25 04:35 (round 31, new: earnings read-through to peers; earn_events.pkl 442 events 2010-2026). Peers in the reporter's group, vs S&P, entry at the reaction-day close, 5d, 0.2% cost; 2010-18 / 2019-26. Reporter +5%: peers same day +5.38 / +3.78, next 5d -3.39% (n 41, t -2.5) / -0.97% (n 123, t -1.4); lagging peers -3.59 / -1.48. Reporter -5%: same day -1.36 / -2.62, next 5d -1.04 (t -1.2) / -0.26. Independent check on 6 big-stock groups (epop_big 620 pops, 2008-26): peers next 5d +0.12% (n 797) / +0.46% (n 577, t 2.0); big sympathy (+3% same day) -0.13 / +1.15: NO fade outside nuclear. Consistent within nuclear but no long trade (we cannot short): fact for the agents (don't buy sympathy pops; trim held peers into them)."
+  },
+  "night_round_31_2026_11_25": {
+   "trials": 6,
+   "verdict": "2026-11-25 04:35. peer_earnings_sympathy (fact). Module sweep: intel_tick already guards each source separately (16 try blocks); lessons list (4) shows no repeated mistake; backfill fix not yet picked up on the VM (progress file unchanged since 03:04 commit)."
   }
  }
 }

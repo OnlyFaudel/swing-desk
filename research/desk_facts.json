@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 03:50",
+ "updated": "2026-11-25 04:35",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -187,6 +187,19 @@
    "roles": [
     "pm",
     "risk",
+    "strategist",
+    "researcher"
+   ]
+  },
+  {
+   "topic": "When one nuclear stock jumps on its earnings, what its peers do (sympathy moves)",
+   "answer": "442 earnings of our 10 stocks, 2010-2026; peers = same group (miners CCJ/UEC/DNN/UUUU/NXE, power CEG/VST/TLN, fuel LEU/BWXT), vs the S&P after costs. When the reporter jumps 5%+, its peers jump with it the same day (+5.4% in 2010-18, +3.8% in 2019-26) and then GIVE IT BACK over the next 5 days (-3.4%, t -2.5; -1.0%, t -1.4); peers that lagged the reporter do no better (-3.6% / -1.5%). After a 5%+ earnings drop, peers slip a little more (-1.0% / -0.3%). Big non-nuclear stocks do NOT fade like this (+0.1% / +0.5%), so it is specific to our crowd-driven names. Use: never buy a peer because a group mate beat earnings; a held peer that jumped in sympathy is a better trim than an add. The reporter itself is the earnings_pop rule's business.",
+   "roles": [
+    "pm",
+    "scout",
+    "level",
+    "risk",
+    "investigator",
     "strategist",
     "researcher"
    ]
