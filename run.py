@@ -2115,6 +2115,29 @@ def earnings_tonight(st, t, today):
     return cache[t]
 
 
+def _safe(st, name, fn, *a, **k):
+    """Run one rule; if it raises, log it, count it, and alert the owner once it keeps failing (3rd, 30th, 300th time in a row)."""
+    errs = st.setdefault("rule_errors", {})
+    try:
+        out = fn(*a, **k)
+        if name in errs:
+            errs.pop(name, None)  # working again
+        return out
+    except Exception as e:
+        traceback.print_exc()
+        r = errs.setdefault(name, {"n": 0})
+        r["n"] += 1
+        r["last"], r["at"] = repr(e)[:240], dt.datetime.now().strftime("%Y-%m-%d %H:%M")
+        if r["n"] in (3, 30, 300):
+            msg = f"{name} has crashed {r['n']} cycles in a row: {r['last'][:160]}"
+            try:
+                feed.post("watchdog", msg, [], kind="alert", art={"big": "Rule failing", "sub": name})
+                notify("Rule failing", msg, tags="rotating_light", priority="high", who="watchdog")
+            except Exception:
+                pass
+        return None
+
+
 def ah_dip_check(st, ex, today, now):
     """After-hours dip (research 2026-11-25, after_hours_dip, Alpaca SIP minute bars 2016-2026): one of our stocks trading 3%+
     under its 4 PM close after hours, on real volume (1%+ of the day's), bought at that after-hours price and sold at 9:35 the
@@ -3965,26 +3988,24 @@ def cycle(st, desk, br, ex, force=()):
             judgment_tick(st, desk, prices, today, now, brk_state)
         except Exception as e:
             print("judgment", e)
-        try:
-            gap_bank(st, ex, data, prices, today, now)
-            gapdown_shadow(st, data, prices, today, now)
-            afterhours.score(st, today, now, prices, market.cclock(now))
-            process_fills(st, br, ex, today)
-            panic_check(st, desk, ex, data, prices, today, brk_state, now, force="panic" in force)
-            auto_check(st, desk, ex, data, prices, today, brk_state, now)
-            sharp_drop_check(st, ex, prices, today, brk_state, now)
-            signal_trades(st, ex, prices, today, brk_state, now)
-            holiday_trades(st, ex, prices, today, brk_state, now)
-            earnings_pop_check(st, ex, prices, today, now, brk_state)
-            seasonal_check(st, ex, data, prices, today, now)
-            process_fills(st, br, ex, today)
-            park_check(st, ex, prices, today, now)
-            process_fills(st, br, ex, today)
-            options_mark(st, today, now)
-            score_calls(st, prices, today)
-            watch_mistakes(st, prices, data, today, now)
-        except Exception as e:
-            traceback.print_exc()
+        # each rule runs on its own: one rule crashing no longer silently skips every rule after it in the cycle
+        _safe(st, "gap_bank", gap_bank, st, ex, data, prices, today, now)
+        _safe(st, "gapdown_shadow", gapdown_shadow, st, data, prices, today, now)
+        _safe(st, "afterhours.score", afterhours.score, st, today, now, prices, market.cclock(now))
+        _safe(st, "process_fills", process_fills, st, br, ex, today)
+        _safe(st, "panic_check", panic_check, st, desk, ex, data, prices, today, brk_state, now, force="panic" in force)
+        _safe(st, "auto_check", auto_check, st, desk, ex, data, prices, today, brk_state, now)
+        _safe(st, "sharp_drop_check", sharp_drop_check, st, ex, prices, today, brk_state, now)
+        _safe(st, "signal_trades", signal_trades, st, ex, prices, today, brk_state, now)
+        _safe(st, "holiday_trades", holiday_trades, st, ex, prices, today, brk_state, now)
+        _safe(st, "earnings_pop_check", earnings_pop_check, st, ex, prices, today, now, brk_state)
+        _safe(st, "seasonal_check", seasonal_check, st, ex, data, prices, today, now)
+        _safe(st, "process_fills", process_fills, st, br, ex, today)
+        _safe(st, "park_check", park_check, st, ex, prices, today, now)
+        _safe(st, "process_fills", process_fills, st, br, ex, today)
+        _safe(st, "options_mark", options_mark, st, today, now)
+        _safe(st, "score_calls", score_calls, st, prices, today)
+        _safe(st, "watch_mistakes", watch_mistakes, st, prices, data, today, now)
         try:
             refresh_candidates(st, desk, data, prices, today, brk_state)
             arm(st, ex, prices, today, brk_state)

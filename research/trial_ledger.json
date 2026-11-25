@@ -530,6 +530,10 @@
   "night_round_28_2026_11_25": {
    "trials": 14,
    "verdict": "2026-11-25 04:00. New families: trend_quality, month_of_quarter, vwap_close_after_drop, ex_dividend_power. All rejected; nothing for the agents worth a new fact (no 'avoid' lesson either)."
+  },
+  "night_round_29_2026_11_25": {
+   "trials": 0,
+   "verdict": "2026-11-25 04:15. Program health sweep (owner: check for mishaps). Found: the market-hours cycle ran 17 rules inside ONE try block (gap_bank, gapdown_shadow, afterhours.score, panic_check, auto_check, sharp_drop_check, signal_trades, holiday_trades, earnings_pop_check, seasonal_check, park_check, options_mark, score_calls, watch_mistakes...): a crash in any early rule silently skipped every later one for that cycle, and a persistent crash (e.g. in the new afterhours.score) would have disabled panic/sharp-drop/parking every cycle with only a server-log traceback. Fixed: each rule runs through _safe() on its own; failures are counted in state.rule_errors and the owner gets a phone alert on the 3rd/30th/300th consecutive failure; the counter clears on success. Other silent handlers (9 'except: pass/continue/return') checked: all wrap optional data fetches, none hides a rule. Earlier tonight: intraday.py empty-chunk bug (fixed 04:05)."
   }
  }
 }
