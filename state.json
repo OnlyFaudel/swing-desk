@@ -2609,18 +2609,6 @@
  "news_feed": [
   {
    "ticker": "CCJ",
-   "source": "Local intel: https://labourhub.org.uk/ (War zones)",
-   "title": "Trade union delegation takes campaign to free the Zaporizhzhia 15 to Downing Street",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSmJfZ3JDUDBkQldmdXUxOWtDbzQ3Vnp0enJfQTJaWVk1cE9WR3F2MnFRQk81OWlLdWtJcm1HMTdCQ0o2NHFlTG5aTThwZC1xRnhfV1o0TTBSVjdpYzMwYWlFZGVGSm4wUWFGN0JhOXRBdlBheWFXSUN6UXNwSGd0VEJRWTlhQUw1TEx5ekVXclhqNHoxOWp5UTU3U3JxbnVOOThQcXhjYWtUTjhmcUVCc01yNm0yQ1R6TnAwWg?oc=5",
-   "ts": 1795457313,
-   "materiality": 0,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Union campaign about Zaporizhzhia workers; no bearing on uranium supply or Cameco."
-  },
-  {
-   "ticker": "CCJ",
    "source": "Local intel: The Arab Weekly (Middle East)",
    "title": "Houthi attacks raise doubts over Trump\u2019s Saudi nuclear pact",
    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS1NwbDcyQWxvMlBoSkp0N25BRVc0SXlJY3dRbnc5N3lSN0tYVXZVM3hBZmdYUV9oRFJjNDFWbUNCaWQ1ZGRxaFhBeHluM3BCcDFrVUhHa3N3M2Y3cHY2aDZlTEJvaXFMODBDT2QwQ1pLeGJQQTlBeWlnYlhBRzBiR1VMUjhJXy1qblpsNA?oc=5",
@@ -5606,6 +5594,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Weapons-arsenal analysis about Israel; no BWXT-specific information."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News: \"uranium enrichment\" United States",
+   "title": "NRC Draft EIS: Orano Oak Ridge Uranium Enrichment - CASRAI",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVDlIYzNKbHhEbC1uaUpVa2o5REVCM29rZkc3S2dWa2hycnJxbllLVjVOWDNQMEl3UTF6aEJIejJmc3JYaXQxZ0JZX1JELVlEa3R1cFJPbUduQV8yaFFYYURnQ2Rva0dFUXB5TzJXVEtYVzhRdWZuRnVvMFBxVU0tdHVzaElab0xxZEhmMGpMenJ6SHRNU2tFWTNxTVZkMGc?oc=5",
+   "ts": 1795568871,
+   "materiality": 4,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "policy_tariff",
+   "why": "NRC draft environmental review of Orano's Oak Ridge enrichment plant; a draft step, not a licence or contract."
   }
  ],
  "reviews": [
@@ -7356,26 +7356,26 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.34854,
+  "day_usd": 0.35595,
   "month": "2026-11",
-  "month_usd": 1.07996,
-  "total_usd": 1.07996,
+  "month_usd": 1.08737,
+  "total_usd": 1.08737,
   "by_role": {
-   "macro": 0.09853,
+   "macro": 0.10083,
    "whale": 0.01778,
    "crowd": 0.01194,
    "level": 0.11932,
-   "scout": 0.12655,
+   "scout": 0.12703,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
    "pm": 0.07014,
-   "risk": 0.09068,
+   "risk": 0.09292,
    "investigator": 0.20132,
    "postmortem": 0.00035,
    "researcher": 0.01198,
    "engineer": 0.02902,
-   "questioner": 0.06824
+   "questioner": 0.07063
   }
  },
  "desk_log": [
@@ -7501,7 +7501,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-24 20:00 ET",
+ "last_cycle": "2026-11-24 20:11 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -54815,8 +54815,8 @@
   "2ddc82c2b5215c74",
   "d39dc266a3b4dae2",
   "2aa378956ea76132",
-  "326afd4f7d0093ec",
   "0235abc0565d5130",
+  "326afd4f7d0093ec",
   "a454f891b1c31853",
   "498180393c058995",
   "dc443e4398225bc9",
@@ -55170,9 +55170,10 @@
   "3b97ba80a72f6fe4",
   "15fecb83818a0949",
   "f9eb7cbce2793d86",
-  "09bd7b0e348df04b"
+  "09bd7b0e348df04b",
+  "7a621ee53898058b"
  ],
- "news_slow_at": 1795568449.5744567,
+ "news_slow_at": 1795569130.9013474,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -207981,6 +207982,41 @@
    ],
    "practice": false,
    "end": "20:00"
+  },
+  {
+   "id": "20261124201115334036",
+   "title": "The Questioner, Nov 24 20:11",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-24 20:11",
+   "msgs": [
+    {
+     "t": "20:11",
+     "who": "questioner",
+     "to": "risk",
+     "text": "The basket is still below its 10-day average, so our no-new-buys rule is in force, yet a live resting buy sits on TLN at $355.66 with no one clearly owning it. I want to know who re-approved it and whether the PJM capacity-auction delay (Talen's main earnings driver) has been decided, since nobody has confirmed that.",
+     "outcome": false,
+     "notes": "question: Who explicitly owns the TLN resting buy at $355.66 right now? The basket is below its 10-day average, so the no-new-buys rule says it should not be live unless someone re-approves it in writing. If nobody does, should it be canceled today instead of waiting for the Nov 30 expiry?\nwhy it might matter: A live order that contradicts the owner's standing instruction is a rule breach, and the team has asked this repeatedly without a clear answer.\nask: risk\nkind: unexplained\nquestion: Has the PJM December 2029/30 capacity-auction delay request been decided? The 'pullback opportunity' headline does not say, and Talen's earnings depend on it, so a bounce on an undecided regulatory question needs an explanation.\nwhy it might matter: Talen's whole earnings story hangs on this decision, and nobody has confirmed it.\nask: macro\nkind: missed\nwhy: TLN is about 2.6% below its resting buy level"
+    },
+    {
+     "t": "20:11",
+     "who": "risk",
+     "to": "questioner",
+     "text": "Nobody on the desk has explicit written re-approval for the TLN resting buy at $355.66, and the basket is still below its 10-day average, so under the standing instruction it should not be live. I'd cancel it today rather than wait for the Nov 30 expiry, and tell the owner, since a live order against his instruction is a rule breach. The desk files show no record of who placed or re-approved it, so I can't confirm an owner.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: tell_owner\nwatch date: 2026-11-30\nwhy: The owner's standing rule blocks new buys while the basket is under its 10-day average, and the desk's data shows the basket still in that state with TLN about 2.6% below the close. No note records a written re-approval or an owner for the order, so the safe call is to cancel and flag it to the owner.\nticker: TLN\ndirection: down\ndays: 3\nfiles read: SECTOR Uranium market, TLN Snapshot"
+    },
+    {
+     "t": "20:11",
+     "who": "macro",
+     "to": "questioner",
+     "text": "I checked the desk's files and the headlines for any decision on the PJM December 2029/30 capacity-auction delay request. Nothing in the files or this week's news shows it was decided, and the 'pullback opportunity' headline doesn't address it, so I can't confirm the outcome. Because Talen's earnings depend on it, I want someone to find the PJM filing record before we trust any bounce in TLN.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: research\nwatch date: 2026-11-30\nresearch test: Pull the PJM docket for the December 2029/30 auction delay request and record whether FERC or PJM has ruled. Then compare TLN's daily moves on the decision date against the basket, to see whether the stock reacts to this regulatory event at all.\nwhy: The files and headlines do not contain a decision, and the TLN resting buy at $355.66 expires Nov 30, so the answer matters before that date. I can't verify the outcome from what's on file.\ndate: 2026-11-30\nticker: TLN\nwhat: Confirm PJM December 2029/30 capacity-auction delay decision; TLN resting buy at $355.66 expires\nticker: TLN\ndirection: down\ndays: 5\nfiles read: TLN Snapshot"
+    }
+   ],
+   "practice": false,
+   "end": "20:11"
   }
  ],
  "feed": [
@@ -211635,6 +211671,32 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-24 20:11",
+   "who": "questioner",
+   "kind": "alert",
+   "title": null,
+   "text": "Worth your attention: Who explicitly owns the TLN resting buy at $355.66 right now? The basket is below its 10-day average, so the no-new-buys rule says it should not be live unless someone re-approves it in writing. If nobody does, should it be canceled today instead of waiting for the Nov 30 expiry?\n\nRisk Manager: Nobody on the desk has explicit written re-approval for the TLN resting buy at $355.66, and the basket is still below its 10-day average, so under the standing instruction it should not be live. I'd cancel it today rather than wait for the Nov 30 expiry, and tell the owner, since a live order against his instruction is a rule breach. The desk files show no record of who placed or re-approved it, so I can't confirm an owner.",
+   "tickers": [],
+   "art": {
+    "big": "Something we almost missed",
+    "sub": "The Questioner"
+   },
+   "thread": "20261124201115334036"
+  },
+  {
+   "t": "2026-11-24 20:11",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Who explicitly owns the TLN resting buy at $355.66 right now? The basket is below its 10-day average, so the no-new-buys rule says it should not be live unless someone re-approves it in writing. If nobody does, should it be canceled today instead of waiting for the Nov 30 expiry? -> relevant | Has the PJM December 2029/30 capacity-auction delay request been decided? The 'pullback opportunity' headline does not say, and Talen's earnings depend on it, so a bounce on an undecided regulatory question needs an explanation. -> relevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -212246,13 +212308,13 @@
    "lesson": null
   }
  ],
- "intel_at": 1795567216.7350614,
+ "intel_at": 1795569083.2808642,
  "intel_health": {
-  "at": "2026-11-24 19:40",
+  "at": "2026-11-24 20:12",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
-   "Athabasca Basin": 6,
+   "Athabasca Basin": 7,
    "Saskatchewan wildfires": 1,
    "Rook I / Arrow": 5,
    "Wheeler River / Phoenix": 9,
@@ -212262,7 +212324,7 @@
    "Niger": 4,
    "Namibia": 29,
    "Russia supply": 3,
-   "Piketon": 21,
+   "Piketon": 22,
    "HALEU": 12,
    "Wyoming ISR": 21,
    "South Texas ISR": 0,
@@ -212272,35 +212334,35 @@
    "Naval reactors": 5,
    "Crane / Three Mile Island": 5,
    "Susquehanna": 4,
-   "Comanche Peak": 8,
-   "PJM grid": 13,
-   "ERCOT grid": 10,
+   "Comanche Peak": 9,
+   "PJM grid": 9,
+   "ERCOT grid": 12,
    "Data-center nuclear deals": 8,
    "Japan restarts": 5,
-   "China new builds": 8,
-   "Congress and laws": 52,
-   "NRC decisions": 11,
-   "Energy Department": 68,
-   "White House and executive orders": 20,
+   "China new builds": 9,
+   "Congress and laws": 53,
+   "NRC decisions": 19,
+   "Energy Department": 71,
+   "White House and executive orders": 19,
    "Tariffs and trade": 2,
    "India": 13,
    "South Korea": 100,
-   "Europe new builds": 56,
-   "France and UK": 8,
-   "Middle East": 46,
+   "Europe new builds": 54,
+   "France and UK": 7,
+   "Middle East": 23,
    "Asia newcomers": 29,
    "Canada SMRs": 10,
-   "Big tech power deals": 28,
-   "Iran": 26,
-   "North Korea": 77,
+   "Big tech power deals": 55,
+   "Iran": 51,
+   "North Korea": 100,
    "War zones": 32,
    "AUKUS and navies": 20,
    "Weapons programs": 20,
    "Stockpiles and reserves": 18,
    "Sprott trust": 7,
-   "Uranium price": 47,
+   "Uranium price": 16,
    "US policy": 0,
-   "Lawsuits and investigations": 74,
+   "Lawsuits and investigations": 73,
    "Workers and jobs": 21,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 51,
@@ -212311,7 +212373,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 20:00",
+  "updated": "2026-11-24 20:12",
   "total": 543,
   "week": 444,
   "places": {
@@ -212330,11 +212392,11 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-24 19:40",
+   "at": "2026-11-24 20:12",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
-    "Athabasca Basin": 6,
+    "Athabasca Basin": 7,
     "Saskatchewan wildfires": 1,
     "Rook I / Arrow": 5,
     "Wheeler River / Phoenix": 9,
@@ -212344,7 +212406,7 @@
     "Niger": 4,
     "Namibia": 29,
     "Russia supply": 3,
-    "Piketon": 21,
+    "Piketon": 22,
     "HALEU": 12,
     "Wyoming ISR": 21,
     "South Texas ISR": 0,
@@ -212354,35 +212416,35 @@
     "Naval reactors": 5,
     "Crane / Three Mile Island": 5,
     "Susquehanna": 4,
-    "Comanche Peak": 8,
-    "PJM grid": 13,
-    "ERCOT grid": 10,
+    "Comanche Peak": 9,
+    "PJM grid": 9,
+    "ERCOT grid": 12,
     "Data-center nuclear deals": 8,
     "Japan restarts": 5,
-    "China new builds": 8,
-    "Congress and laws": 52,
-    "NRC decisions": 11,
-    "Energy Department": 68,
-    "White House and executive orders": 20,
+    "China new builds": 9,
+    "Congress and laws": 53,
+    "NRC decisions": 19,
+    "Energy Department": 71,
+    "White House and executive orders": 19,
     "Tariffs and trade": 2,
     "India": 13,
     "South Korea": 100,
-    "Europe new builds": 56,
-    "France and UK": 8,
-    "Middle East": 46,
+    "Europe new builds": 54,
+    "France and UK": 7,
+    "Middle East": 23,
     "Asia newcomers": 29,
     "Canada SMRs": 10,
-    "Big tech power deals": 28,
-    "Iran": 26,
-    "North Korea": 77,
+    "Big tech power deals": 55,
+    "Iran": 51,
+    "North Korea": 100,
     "War zones": 32,
     "AUKUS and navies": 20,
     "Weapons programs": 20,
     "Stockpiles and reserves": 18,
     "Sprott trust": 7,
-    "Uranium price": 47,
+    "Uranium price": 16,
     "US policy": 0,
-    "Lawsuits and investigations": 74,
+    "Lawsuits and investigations": 73,
     "Workers and jobs": 21,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 51,
@@ -214645,6 +214707,10 @@
   {
    "q": "Questioner: Pull the PJM Interconnection filings and FERC docket for the December 2029/30 capacity auction delay request, and record the decision date and outcome. Then check whether TLN's price moved on that decision day. Until that's confirmed, treat any TLN bounce as unexplained.",
    "date": "2026-11-24"
+  },
+  {
+   "q": "Questioner: Pull the PJM docket for the December 2029/30 auction delay request and record whether FERC or PJM has ruled. Then compare TLN's daily moves on the decision date against the basket, to see whether the stock reacts to this regulatory event at all.",
+   "date": "2026-11-24"
   }
  ],
  "research_candidates": [
@@ -214767,7 +214833,7 @@
    }
   ]
  },
- "dossier_at": 1795567259.5161462,
+ "dossier_at": 1795569126.3429973,
  "sector_prices": {
   "_at": 1795555995.1629455,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -214825,85 +214891,85 @@
    "name": "Cameco",
    "price": 59.78,
    "week_pct": -7.33,
-   "built": "2026-11-24 19:40"
+   "built": "2026-11-24 20:12"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.84,
    "week_pct": -6.63,
-   "built": "2026-11-24 19:40"
+   "built": "2026-11-24 20:12"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.58,
    "week_pct": -8.02,
-   "built": "2026-11-24 19:41"
+   "built": "2026-11-24 20:12"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.75,
    "week_pct": -7.41,
-   "built": "2026-11-24 19:41"
+   "built": "2026-11-24 20:12"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.15,
    "week_pct": -13.15,
-   "built": "2026-11-24 19:41"
+   "built": "2026-11-24 20:12"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.12,
    "week_pct": -10.69,
-   "built": "2026-11-24 19:41"
+   "built": "2026-11-24 20:12"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.13,
    "week_pct": -4.57,
-   "built": "2026-11-24 19:41"
+   "built": "2026-11-24 20:12"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 244.84,
    "week_pct": -8.67,
-   "built": "2026-11-24 19:41"
+   "built": "2026-11-24 20:12"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 120.71,
    "week_pct": -5.06,
-   "built": "2026-11-24 19:41"
+   "built": "2026-11-24 20:12"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 347.92,
    "week_pct": -1.91,
-   "built": "2026-11-24 19:41"
+   "built": "2026-11-24 20:12"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-24 19:41"
+   "built": "2026-11-24 20:12"
   }
  ],
- "heartbeat": "2026-11-24 20:00",
+ "heartbeat": "2026-11-24 20:11",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 315,
+ "_pushed_feed": 316,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -215058,13 +215124,13 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 195,
-   "used": 177,
+   "asked": 196,
+   "used": 178,
    "notes": {
     "TLN Deals and contracts": 9,
     "CCJ Deals and contracts": 41,
     "BWXT Deals and contracts": 29,
-    "SECTOR Government and laws": 41,
+    "SECTOR Government and laws": 42,
     "UUUU Deals and contracts": 34,
     "SECTOR Countries": 34,
     "CEG Deals and contracts": 27,
@@ -215072,7 +215138,7 @@
     "NXE Deals and contracts": 9,
     "DNN Deals and contracts": 8,
     "BWXT Legal": 2,
-    "LEU Deals and contracts": 28,
+    "LEU Deals and contracts": 29,
     "UEC Deals and contracts": 3,
     "UUUU Legal": 17,
     "SECTOR Uranium market": 3,
@@ -215247,15 +215313,15 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 49,
-   "used": 49,
+   "asked": 50,
+   "used": 50,
    "notes": {
     "SECTOR Uranium market": 32,
     "BWXT Snapshot": 6,
     "CCJ Snapshot": 2,
     "UUUU Snapshot": 3,
     "SECTOR Government and laws": 36,
-    "TLN Snapshot": 25,
+    "TLN Snapshot": 26,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
     "CEG Legal": 1,
@@ -215310,14 +215376,14 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 51,
-   "used": 50,
+   "asked": 52,
+   "used": 51,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 3,
     "BWXT Snapshot": 4,
-    "SECTOR Uranium market": 19,
-    "TLN Snapshot": 26,
+    "SECTOR Uranium market": 20,
+    "TLN Snapshot": 27,
     "TLN Legal": 2,
     "BWXT Legal": 2,
     "BWXT Leadership and insiders": 2,
@@ -215365,23 +215431,23 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 28,
-   "used": 28,
+   "asked": 29,
+   "used": 29,
    "notes": {
-    "TLN Snapshot": 27,
-    "TLN News": 25,
+    "TLN Snapshot": 28,
+    "TLN News": 26,
     "coming_up": 4,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
     "BWXT Legal": 1,
     "CCJ Snapshot": 1,
-    "TLN Leadership and insiders": 24,
+    "TLN Leadership and insiders": 25,
     "CCJ Legal": 1,
     "TLN Legal": 5,
     "SECTOR Market regime": 1,
     "desk_lessons_from_our_mistakes": 2,
     "TLN Ownership and analysts": 4,
-    "SECTOR Uranium market": 6,
+    "SECTOR Uranium market": 7,
     "CEG Snapshot": 4,
     "uranium_price": 1
    },
@@ -219141,6 +219207,24 @@
    "answer": "I checked the desk's files and the headlines we've logged. Nothing I can find confirms whether the PJM December 2029/30 capacity-auction delay request has been decided. The 'pullback opportunity' headline doesn't answer it, and I won't treat an unconfirmed regulatory question as known.",
    "verdict": "unsure",
    "action": "research"
+  },
+  {
+   "t": "2026-11-24 20:11",
+   "question": "Who explicitly owns the TLN resting buy at $355.66 right now? The basket is below its 10-day average, so the no-new-buys rule says it should not be live unless someone re-approves it in writing. If nobody does, should it be canceled today instead of waiting for the Nov 30 expiry?",
+   "kind": "unexplained",
+   "asked": "risk",
+   "answer": "Nobody on the desk has explicit written re-approval for the TLN resting buy at $355.66, and the basket is still below its 10-day average, so under the standing instruction it should not be live. I'd cancel it today rather than wait for the Nov 30 expiry, and tell the owner, since a live order against his instruction is a rule breach. The desk files show no record of who placed or re-approved it, so I can't confirm an owner.",
+   "verdict": "relevant",
+   "action": "tell_owner"
+  },
+  {
+   "t": "2026-11-24 20:11",
+   "question": "Has the PJM December 2029/30 capacity-auction delay request been decided? The 'pullback opportunity' headline does not say, and Talen's earnings depend on it, so a bounce on an undecided regulatory question needs an explanation.",
+   "kind": "missed",
+   "asked": "macro",
+   "answer": "I checked the desk's files and the headlines for any decision on the PJM December 2029/30 capacity-auction delay request. Nothing in the files or this week's news shows it was decided, and the 'pullback opportunity' headline doesn't address it, so I can't confirm the outcome. Because Talen's earnings depend on it, I want someone to find the PJM filing record before we trust any bounce in TLN.",
+   "verdict": "relevant",
+   "action": "research"
   }
  ],
  "reactor_view": {
@@ -221254,7 +221338,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 20:00",
+ "watchdog_last": "2026-11-24 20:11",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
