@@ -547,7 +547,7 @@
   "radarres:2026-11-24": true,
   "questioner:2026-11-24:9": true,
   "sput:2026-11-24": true,
-  "intraday_backfill_t": 1795645151.0618885,
+  "intraday_backfill_t": 1795647036.850422,
   "reconcile:2026-11-24": true,
   "catalysts:2026-11-25": true,
   "tidy_v1": true,
@@ -594,7 +594,9 @@
   "nightwatch171:2026-11-25": true,
   "earnread:2026-11-25": true,
   "ahdip172:2026-11-25": true,
-  "nightwatch172:2026-11-25": true
+  "nightwatch172:2026-11-25": true,
+  "radarres:2026-11-25": true,
+  "ahdip173:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -4178,30 +4180,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Local intel: Aju Press (South Korea)",
-   "title": "Pro-nuclear experts halt role in Korea's reactor debate",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBwX3FYYnU5am0wVWhIZHFCeHlheHhEN2tKS0ExVm53Q3pNaDFyZjZTakljd3JfSWZyaEFRakVYX1VNWVY2TXdoeVFVbDdCM1NvMml2ZXVUd2xBcU0?oc=5",
-   "ts": 1795410764,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "policy_tariff",
-   "why": "Korean local debate about reactor policy; no direct effect on Cameco's sales or uranium demand."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Local intel: Windhoek Observer (Namibia)",
-   "title": "Namibia\u2019s Uranium Exports Fuel Nuclear Ambitions",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE54VUVDTllfY1NkemFycHpudGwyckZSd3QwWFJscHh5OXdqUnJudGNnRlVNaDhuLVI2aUstSGhYQ0FXenNKdTNkeG04b3hackcwSktneXdpRWs0djE2UEwtUEpCQjdXdERsd0UyRHRKS3d0amdULWZWcHBFZ3hSTmc?oc=5",
-   "ts": 1795490181,
-   "materiality": 3,
-   "novelty": "follow_up",
-   "direction": "neutral",
-   "event_type": "supply",
-   "why": "Namibia export feature is general sector background, not new company-specific information."
-  },
-  {
    "ticker": "UUUU",
    "source": "Google News",
    "title": "Wrapped Energy Fuels Inc. Tokenized Stock (xStock): Funding, Investors, Team and Key Events - CryptoRank",
@@ -7176,6 +7154,30 @@
    "direction": "neutral",
    "event_type": "contract_deal",
    "why": "LS Power closed a 4.4 GW gas plant purchase, a rival's asset deal, not a CEG contract."
+  },
+  {
+   "ticker": "DNN",
+   "source": "Google News",
+   "title": "Is Denison Mines (TSX:DML) Finding New Support Across Mining Stocks? - Kalkine Media",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQanM3Z1NqcXVSZVItbWhuOUNWd0FuRnhlcFpaeXBFb1ZLbjJYTExGbzRxZVEzSDdXT0VueEVjQU1sdFM5cV90QjNnb1FmX2xXeV9BblRHcEM5ZHpqWUxtYkVLbGlLaW9NYTFRT3pod2gxNElUbE13TzQ4Mnd2bkpycldzQXpHZU8tVDdNT0M1bnpkQ2N1Wjl3N3V5Ui1ncnYwN3JfRWVxQkhtWDdCNjFGb3MwNjQ4RGc?oc=5",
+   "ts": 1795642860,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Generic Kalkine 'finding support' piece; technical commentary, no new company information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: \ud30c\uc774\ub0b8\uc15c\ub274\uc2a4 (South Korea)",
+   "title": "Kim Jong Un Condemns U.S. for 'Transplanting Nuclear Proliferation to Northeast Asia'... Issues Indirect Warning Over South Korea's Nuclear-Powered Submarine",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WUl9FMWFmLU8tT25pc2tvM09MN0dQUnRSVDJ6RlN6Wm8yOHl2QndyZUtNaHFkUUx1UW9la0hPOW9aYXY1b2d1U2JzOU85Q3NwVWtJTXpnOW8?oc=5",
+   "ts": 1795645411,
+   "materiality": 2,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "war_geopolitics",
+   "why": "Kim Jong Un rhetoric on Korean nuclear submarines; no direct uranium supply or contract impact."
   }
  ],
  "reviews": [
@@ -8935,16 +8937,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.71152,
+  "day_usd": 0.71304,
   "month": "2026-11",
-  "month_usd": 1.89508,
-  "total_usd": 1.89508,
+  "month_usd": 1.8966,
+  "total_usd": 1.8966,
   "by_role": {
    "macro": 0.19063,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.1717,
+   "scout": 0.17322,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9147,7 +9149,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 17:40 ET",
+ "last_cycle": "2026-11-25 17:48 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57790,6 +57792,7 @@
   "f7fb21429d8dfc22",
   "cb12badf9a3dbea8",
   "a82f81d0eb01a7ed",
+  "bffbce0b54f324a7",
   "22ca80b609e8130c",
   "572a5262197f803c",
   "5e042fd73e80d40b",
@@ -58366,6 +58369,7 @@
   "34dd3aa515a79d75",
   "7ffa38b48cb85fdf",
   "991c698e5a396dd1",
+  "b16473ea85ef8f5b",
   "a35b0d7a547d2276",
   "0aae6b6b8e76884b",
   "cae29e7e9aefd254",
@@ -58374,7 +58378,7 @@
   "84200faa36eac51a",
   "688d746cfc31b58f"
  ],
- "news_slow_at": 1795646065.9417021,
+ "news_slow_at": 1795646683.3915708,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219353,13 +219357,13 @@
    "lesson": null
   }
  ],
- "intel_at": 1795645062.5537283,
+ "intel_at": 1795646943.5697882,
  "intel_health": {
-  "at": "2026-11-25 17:19",
+  "at": "2026-11-25 17:50",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
-   "Athabasca Basin": 6,
+   "Athabasca Basin": 7,
    "Saskatchewan wildfires": 4,
    "Rook I / Arrow": 7,
    "Wheeler River / Phoenix": 9,
@@ -219367,48 +219371,48 @@
    "Westinghouse": 12,
    "Kazakhstan": 16,
    "Niger": 8,
-   "Namibia": 30,
+   "Namibia": 28,
    "Russia supply": 3,
    "Piketon": 26,
-   "HALEU": 12,
+   "HALEU": 11,
    "Wyoming ISR": 23,
    "South Texas ISR": 2,
    "White Mesa / Utah": 14,
    "Rare earths (Energy Fuels)": 23,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 9,
+   "Naval reactors": 10,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 5,
    "Comanche Peak": 7,
-   "PJM grid": 7,
+   "PJM grid": 13,
    "ERCOT grid": 12,
    "Data-center nuclear deals": 9,
    "Japan restarts": 8,
-   "China new builds": 13,
-   "Congress and laws": 50,
-   "NRC decisions": 13,
-   "Energy Department": 69,
-   "White House and executive orders": 24,
+   "China new builds": 14,
+   "Congress and laws": 28,
+   "NRC decisions": 21,
+   "Energy Department": 52,
+   "White House and executive orders": 29,
    "Tariffs and trade": 2,
-   "India": 25,
+   "India": 27,
    "South Korea": 87,
-   "Europe new builds": 29,
+   "Europe new builds": 59,
    "France and UK": 12,
    "Middle East": 25,
    "Asia newcomers": 49,
    "Canada SMRs": 10,
    "Big tech power deals": 28,
-   "Iran": 25,
-   "North Korea": 65,
-   "War zones": 10,
-   "AUKUS and navies": 14,
-   "Weapons programs": 16,
+   "Iran": 50,
+   "North Korea": 67,
+   "War zones": 33,
+   "AUKUS and navies": 15,
+   "Weapons programs": 21,
    "Stockpiles and reserves": 24,
    "Sprott trust": 6,
-   "Uranium price": 17,
+   "Uranium price": 45,
    "US policy": 0,
-   "Lawsuits and investigations": 33,
-   "Workers and jobs": 42,
+   "Lawsuits and investigations": 72,
+   "Workers and jobs": 24,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
    "Federal Register (uranium)": 9,
@@ -219418,12 +219422,12 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 17:40",
-  "total": 676,
-  "week": 510,
+  "updated": "2026-11-25 17:50",
+  "total": 679,
+  "week": 512,
   "places": {
    "Uranium price": 49,
-   "South Korea": 36,
+   "South Korea": 37,
    "Piketon": 27,
    "Europe new builds": 27,
    "Weapons programs": 26,
@@ -219437,11 +219441,11 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-25 17:19",
+   "at": "2026-11-25 17:50",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
-    "Athabasca Basin": 6,
+    "Athabasca Basin": 7,
     "Saskatchewan wildfires": 4,
     "Rook I / Arrow": 7,
     "Wheeler River / Phoenix": 9,
@@ -219449,48 +219453,48 @@
     "Westinghouse": 12,
     "Kazakhstan": 16,
     "Niger": 8,
-    "Namibia": 30,
+    "Namibia": 28,
     "Russia supply": 3,
     "Piketon": 26,
-    "HALEU": 12,
+    "HALEU": 11,
     "Wyoming ISR": 23,
     "South Texas ISR": 2,
     "White Mesa / Utah": 14,
     "Rare earths (Energy Fuels)": 23,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 9,
+    "Naval reactors": 10,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 5,
     "Comanche Peak": 7,
-    "PJM grid": 7,
+    "PJM grid": 13,
     "ERCOT grid": 12,
     "Data-center nuclear deals": 9,
     "Japan restarts": 8,
-    "China new builds": 13,
-    "Congress and laws": 50,
-    "NRC decisions": 13,
-    "Energy Department": 69,
-    "White House and executive orders": 24,
+    "China new builds": 14,
+    "Congress and laws": 28,
+    "NRC decisions": 21,
+    "Energy Department": 52,
+    "White House and executive orders": 29,
     "Tariffs and trade": 2,
-    "India": 25,
+    "India": 27,
     "South Korea": 87,
-    "Europe new builds": 29,
+    "Europe new builds": 59,
     "France and UK": 12,
     "Middle East": 25,
     "Asia newcomers": 49,
     "Canada SMRs": 10,
     "Big tech power deals": 28,
-    "Iran": 25,
-    "North Korea": 65,
-    "War zones": 10,
-    "AUKUS and navies": 14,
-    "Weapons programs": 16,
+    "Iran": 50,
+    "North Korea": 67,
+    "War zones": 33,
+    "AUKUS and navies": 15,
+    "Weapons programs": 21,
     "Stockpiles and reserves": 24,
     "Sprott trust": 6,
-    "Uranium price": 17,
+    "Uranium price": 45,
     "US policy": 0,
-    "Lawsuits and investigations": 33,
-    "Workers and jobs": 42,
+    "Lawsuits and investigations": 72,
+    "Workers and jobs": 24,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
     "Federal Register (uranium)": 9,
@@ -219902,6 +219906,22 @@
     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeXp6VVZUZUlUUHZxMk1kWjZBak1XYl9sRDhPSlViMi04cW5sa0xfcU9WTWlmcmlXN1lGTVJZY0lINkZxTnllaVBEZ1NkdlRMZEtyX2hKVWxKMlhLOFRWNEE0VnZqdklDSkxvaTZJYTBNZlUzMHppUGgyR1V2QWVpWWQwS2dLbDlmVnNOZi15RlJQanVFNUdqOXU4cFFrVHlRMGxaZGV3NkhodnVXSVBCMEg5NGZlM1V20gG4AUFVX3lxTFB5enpVVlRlSVRQdnEyTWRaNkFqTVdiX2xEOE9KVWIyLThxbmxrTF9xT1ZNaWZyaVc3WUZNUlljSUg2RnFOeWVpUERnU2R2VExkS3JfaEpVbEoyWEs4VFY0QTRWdmp2SUNKTG9pNklhME1mVTMwemlQaDJHVXZBZWlZZDBLZ0tsOWZWc05mLXlGUlBqdUU1R2o5dThwUWtUeVEwbFpkZXc2SGh2dVdJUEIwSDk0ZmUzVXY?oc=5"
    },
    {
+    "date": "2026-11-23",
+    "title": "China Brings Up South Korea in Australian Nuclear Submarine Talks, Wary of Expanding U.S. Allied Capabilities in Western Pacific",
+    "outlet": "https://economy.ac/",
+    "place": "China new builds",
+    "tickers": [
+     "CCJ"
+    ],
+    "tags": [
+     "defense",
+     "geopolitics"
+    ],
+    "numbers": [],
+    "score": 6.44,
+    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE11ZUgwbVdoQU03SjFpM2NuTElpUmxPU09fYjhxeWdfNUdvNHVoQ3YxOTVCMk9CWUVqLTdqVkRWX0paRjRnS092SHphT0ZKVl9kTl80ZklIYw?oc=5"
+   },
+   {
     "date": "2026-11-22",
     "title": "South Korea Seeks IAEA Safeguards for Nuclear Submarines",
     "outlet": "\uc870\uc120\uc77c\ubcf4",
@@ -219917,6 +219937,23 @@
     "numbers": [],
     "score": 6.44,
     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcFoyRnk1Z2Rla0k1RXA0bS1CSG5MdHVjSmZ4dVpMRnlUbzJXc0FaZkItamhmN1A1MFJ1bWtzT05VVFloaHhOZzd5V2VsZG9Db2REejhoZFYwZ1VhUWZvcDN6Vnh4YmozMFhqV21ONDVLYjRTbzBpdTNRZDRLUHJqdUFnb3l0ajl4?oc=5"
+   },
+   {
+    "date": "2026-11-25",
+    "title": "Kim Jong Un Condemns U.S. for 'Transplanting Nuclear Proliferation to Northeast Asia'... Issues Indirect Warning Over South Korea's Nuclear-Powered Submarine",
+    "outlet": "\ud30c\uc774\ub0b8\uc15c\ub274\uc2a4",
+    "place": "South Korea",
+    "tickers": [
+     "CCJ",
+     "BWXT"
+    ],
+    "tags": [
+     "defense",
+     "geopolitics"
+    ],
+    "numbers": [],
+    "score": 6.4,
+    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WUl9FMWFmLU8tT25pc2tvM09MN0dQUnRSVDJ6RlN6Wm8yOHl2QndyZUtNaHFkUUx1UW9la0hPOW9aYXY1b2d1U2JzOU85Q3NwVWtJTXpnOW8?oc=5"
    },
    {
     "date": "2026-11-22",
@@ -220023,41 +220060,6 @@
     ],
     "score": 6.34,
     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1xZEZ3U0VpUTlpN1F0MTF3dXBuY1gxSnZVeEtBWHFFLUYxeTNJbXRyVTFuaklZNzJweU11a0NFZTZnMXJpNXQ3SmlsLWRWN2hZNVBoaE9hclk5T0t2VU81OWY3WWkyM19KSGtjdEh0RDdKNXhZdlE?oc=5"
-   },
-   {
-    "date": "2026-11-23",
-    "title": "Latest Outlook on the $23.5 Billion Savannah River Plutonium Plant Project Ahead of 2038 Completion",
-    "outlet": "Construction Review",
-    "place": "Weapons programs",
-    "tickers": [
-     "BWXT",
-     "LEU"
-    ],
-    "tags": [
-     "regulation"
-    ],
-    "numbers": [
-     "$23.5 Billion"
-    ],
-    "score": 6.3,
-    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPR1gyVG5mTjZfTjdkcWJ0ck1obzVTWDZ2NTEzRVRuQU9oeUNnYjNEN2JwNVg1WHdLUTFUZGJ5cTNtYXFPN2lFYjBObXZWdVRLdzlLbDBUYXZYZE1nZEdXZTBWMVdDMnF3MGxJXzJOdWVEdlkxZTZJLXVmLTBQSlg1enpYWE9GaVp1dXhmbjlFdzAyQjBrVnR0ZzdpV1B2MUhrRElkUkNBNGxieDJScTlVaTM5emFJRkdnNzluOHRYczhDaU0tZlk0d2tsSUNFNlNtQWc?oc=5"
-   },
-   {
-    "date": "2026-11-19",
-    "title": "South Korea's $21.7 Billion Nuclear-Powered Submarine Program Enters Full Swing, Setting Up Hanwha Ocean vs. HD Hyundai Showdown",
-    "outlet": "BigGo Finance",
-    "place": "Naval reactors",
-    "tickers": [
-     "BWXT"
-    ],
-    "tags": [
-     "regulation"
-    ],
-    "numbers": [
-     "$21.7 Billion"
-    ],
-    "score": 6.3,
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5aV3lyTWtySXJZcElFWmNoSkh1Q2pzclptX3o2eDNjVEIwQXhXMEs2Yk5zR2dzQzhTWUY1Ui1YYlFza0FWQS1LYkh4Vlc4SE91UmNSbXJSNnF3MEQ3dVQ1bFpyUEwwMlFtdDludXJMMXN4R05sakE?oc=5"
    }
   ]
  },
@@ -220217,7 +220219,8 @@
   "537b32f5b2133213",
   "53627f4c0e7162ee",
   "688d746cfc31b58f",
-  "7908d2b630649992"
+  "7908d2b630649992",
+  "138f946dbfa677d9"
  ],
  "panic_log": [
   {
@@ -220258,7 +220261,7 @@
   }
  ],
  "memory_view": {
-  "events": 1672,
+  "events": 1675,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -220358,14 +220361,6 @@
    }
   },
   "watch": [
-   {
-    "date": "2026-12-15",
-    "ticker": "VST",
-    "what": "PJM 2029/30 capacity auction closes; past results gave a short-term pop that tended to fade, so avoid chasing a release-day pop.",
-    "by": "macro",
-    "written": "2026-11-25",
-    "surfaced": false
-   },
    {
     "date": "2026-12-21",
     "ticker": "CCJ",
@@ -220578,6 +220573,14 @@
     "date": "2026-12-31",
     "ticker": "CCJ",
     "what": "Check Orano enrichment draft environmental review comment period and next NRC milestone",
+    "by": "scout",
+    "written": "2026-11-25",
+    "surfaced": false
+   },
+   {
+    "date": "2026-12-31",
+    "ticker": "CEG",
+    "what": "Watch Japan Kashiwazaki-Kariwa restart progress and any operator update",
     "by": "scout",
     "written": "2026-11-25",
     "surfaced": false
@@ -220840,24 +220843,6 @@
    }
   ],
   "recent": [
-   {
-    "date": "2026-11-25",
-    "ticker": "CCJ",
-    "title": "Kazatomprom (KAP) Dismisses Chief Commercial and Operating Officers in Board-Led Executive Restructuring - Kalkine Media",
-    "type": "other",
-    "r0": 2.93,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "CCJ",
-    "title": "Kazakhstan detains state uranium miner board member in widening corruption probe - The Standard (HK)",
-    "type": "other",
-    "r0": 2.93,
-    "r5": null,
-    "r20": null
-   },
    {
     "date": "2026-11-25",
     "ticker": "CCJ",
@@ -221196,6 +221181,24 @@
     "ticker": "CEG",
     "title": "IAEA condemns deadly drone strikes near Ukraine nuclear plant",
     "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-25",
+    "ticker": "CCJ",
+    "title": "Kim Jong Un Condemns U.S. for 'Transplanting Nuclear Proliferation to Northeast Asia'... Issues Indirect Warning Over South Korea's Nuclear-Powered Submarine",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-25",
+    "ticker": "BWXT",
+    "title": "Kim Jong Un Condemns U.S. for 'Transplanting Nuclear Proliferation to Northeast Asia'... Issues Indirect Warning Over South Korea's Nuclear-Powered Submarine",
+    "type": "intel_defense",
     "r0": null,
     "r5": null,
     "r20": null
@@ -222470,56 +222473,56 @@
    }
   ]
  },
- "dossier_at": 1795645154.0679042,
+ "dossier_at": 1795647039.8508737,
  "sector_prices": {
-  "_at": 1795624908.0259144,
+  "_at": 1795647108.8290422,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
-   "last": 17.32,
-   "day_pct": -3.67,
-   "week_pct": -5.04,
-   "month_pct": -9.69,
-   "year_pct": -2.1,
-   "under_1y_high_pct": -27.9
+   "last": 17.72,
+   "day_pct": -1.45,
+   "week_pct": -2.85,
+   "month_pct": -7.61,
+   "year_pct": -0.9,
+   "under_1y_high_pct": -26.2
   },
   "Global X Uranium ETF": {
-   "last": 26.08,
-   "day_pct": -5.51,
-   "week_pct": -11.35,
-   "month_pct": -27.27,
-   "year_pct": -37.8,
-   "under_1y_high_pct": -57.8
+   "last": 27.71,
+   "day_pct": 0.4,
+   "week_pct": -5.81,
+   "month_pct": -22.73,
+   "year_pct": -35.2,
+   "under_1y_high_pct": -55.2
   },
   "Sprott Uranium Miners ETF": {
-   "last": 33.08,
-   "day_pct": -5.66,
-   "week_pct": -10.87,
-   "month_pct": -26.07,
-   "year_pct": -37.2,
-   "under_1y_high_pct": -60.6
+   "last": 35.28,
+   "day_pct": 0.6,
+   "week_pct": -4.96,
+   "month_pct": -21.16,
+   "year_pct": -33.7,
+   "under_1y_high_pct": -58.0
   },
   "VanEck Uranium and Nuclear ETF": {
-   "last": 74.28,
-   "day_pct": -4.68,
-   "week_pct": -10.5,
-   "month_pct": -21.74,
-   "year_pct": -39.8,
-   "under_1y_high_pct": -54.8
+   "last": 77.68,
+   "day_pct": -0.32,
+   "week_pct": -6.4,
+   "month_pct": -18.16,
+   "year_pct": -38.0,
+   "under_1y_high_pct": -52.7
   },
   "VIX fear gauge": {
-   "last": 32.74,
-   "day_pct": 24.2,
-   "week_pct": 33.31,
-   "month_pct": 86.87,
-   "year_pct": 76.4,
-   "under_1y_high_pct": -8.8
+   "last": 28.29,
+   "day_pct": 7.32,
+   "week_pct": 15.19,
+   "month_pct": 61.47,
+   "year_pct": 52.4,
+   "under_1y_high_pct": -21.2
   },
   "S&P 500": {
-   "last": 698.73,
-   "day_pct": -2.79,
-   "week_pct": -4.31,
-   "month_pct": -9.22,
-   "year_pct": 4.6,
-   "under_1y_high_pct": -10.3
+   "last": 716.7,
+   "day_pct": -0.29,
+   "week_pct": -1.85,
+   "month_pct": -6.88,
+   "year_pct": 6.6,
+   "under_1y_high_pct": -8.0
   }
  },
  "dossier_index": [
@@ -222528,85 +222531,85 @@
    "name": "Cameco",
    "price": 61.56,
    "week_pct": -1.42,
-   "built": "2026-11-25 17:19"
+   "built": "2026-11-25 17:50"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.95,
    "week_pct": -4.46,
-   "built": "2026-11-25 17:19"
+   "built": "2026-11-25 17:50"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.69,
    "week_pct": -3.89,
-   "built": "2026-11-25 17:19"
+   "built": "2026-11-25 17:50"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.8,
    "week_pct": -1.64,
-   "built": "2026-11-25 17:19"
+   "built": "2026-11-25 17:51"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.2,
    "week_pct": -7.71,
-   "built": "2026-11-25 17:19"
+   "built": "2026-11-25 17:51"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 83.23,
    "week_pct": -9.3,
-   "built": "2026-11-25 17:19"
+   "built": "2026-11-25 17:51"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.49,
    "week_pct": -3.54,
-   "built": "2026-11-25 17:19"
+   "built": "2026-11-25 17:51"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 235.25,
    "week_pct": -10.46,
-   "built": "2026-11-25 17:19"
+   "built": "2026-11-25 17:51"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 121.32,
    "week_pct": -3.39,
-   "built": "2026-11-25 17:20"
+   "built": "2026-11-25 17:51"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 351.55,
    "week_pct": -2.4,
-   "built": "2026-11-25 17:20"
+   "built": "2026-11-25 17:51"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-25 17:20"
+   "built": "2026-11-25 17:51"
   }
  ],
- "heartbeat": "2026-11-25 17:40",
+ "heartbeat": "2026-11-25 17:48",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 373,
+ "_pushed_feed": 375,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -222826,19 +222829,19 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 291,
-   "used": 262,
+   "asked": 294,
+   "used": 265,
    "notes": {
     "TLN Deals and contracts": 16,
     "CCJ Deals and contracts": 55,
     "BWXT Deals and contracts": 37,
-    "SECTOR Government and laws": 71,
+    "SECTOR Government and laws": 72,
     "UUUU Deals and contracts": 38,
-    "SECTOR Countries": 65,
+    "SECTOR Countries": 67,
     "CEG Deals and contracts": 37,
     "NXE Legal": 11,
     "NXE Deals and contracts": 18,
-    "DNN Deals and contracts": 10,
+    "DNN Deals and contracts": 11,
     "BWXT Legal": 2,
     "LEU Deals and contracts": 33,
     "UEC Deals and contracts": 5,
@@ -230788,7 +230791,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 17:40",
+ "watchdog_last": "2026-11-25 17:48",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

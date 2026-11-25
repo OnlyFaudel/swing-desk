@@ -21833,5 +21833,113 @@
 "triggered",
 "what"
 ]
+},
+{
+"id": "59111ba5927f8886",
+"date": "2026-11-23",
+"ts": 1795411470,
+"title": "China Brings Up South Korea in Australian Nuclear Submarine Talks, Wary of Expanding U.S. Allied Capabilities in Western Pacific",
+"summary": "",
+"outlet": "https://economy.ac/",
+"link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE11ZUgwbVdoQU03SjFpM2NuTElpUmxPU09fYjhxeWdfNUdvNHVoQ3YxOTVCMk9CWUVqLTdqVkRWX0paRjRnS092SHphT0ZKVl9kTl80ZklIYw?oc=5",
+"place": "China new builds",
+"tickers": [
+"CCJ"
+],
+"tags": [
+"defense",
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.82,
+"score": 6.44,
+"echo_of": null,
+"w": [
+"allied",
+"australian",
+"brings",
+"capabilities",
+"china",
+"expanding",
+"korea",
+"nuclear",
+"pacific",
+"south",
+"submarine",
+"talks",
+"wary",
+"western"
+]
+},
+{
+"id": "138f946dbfa677d9",
+"date": "2026-11-25",
+"ts": 1795645411,
+"title": "Kim Jong Un Condemns U.S. for 'Transplanting Nuclear Proliferation to Northeast Asia'... Issues Indirect Warning Over South Korea's Nuclear-Powered Submarine",
+"summary": "",
+"outlet": "\ud30c\uc774\ub0b8\uc15c\ub274\uc2a4",
+"link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WUl9FMWFmLU8tT25pc2tvM09MN0dQUnRSVDJ6RlN6Wm8yOHl2QndyZUtNaHFkUUx1UW9la0hPOW9aYXY1b2d1U2JzOU85Q3NwVWtJTXpnOW8?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"defense",
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.8,
+"score": 6.4,
+"echo_of": null,
+"w": [
+"asia",
+"condemns",
+"indirect",
+"issues",
+"jong",
+"kim",
+"korea",
+"northeast",
+"nuclear",
+"powered",
+"proliferation",
+"south",
+"submarine",
+"transplanting",
+"warning"
+]
+},
+{
+"id": "bffbce0b54f324a7",
+"date": "2026-11-25",
+"ts": 1795646225,
+"title": "Kazatomprom operations chief detained in bribery probe",
+"summary": "",
+"outlet": "Mining.com",
+"link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTFR0V01KWU9aUmRSblh2VkNHdkRrRG5vbVp5VmVMeWlTalhRQ29wa1VlVHRhbjJjUmJCeGdiOTE3eG95VUxNWXE3WU5ZaWtpSU41ZnZRYWNGREdMdTB3V3NVMTljNmVCQWxHWkxoUzN2M3U2QXh0dndGckZvaVZVeTRTV1g?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "64586fb72f88087f",
+"w": [
+"bribery",
+"chief",
+"detained",
+"kazatomprom",
+"operations",
+"probe"
+]
 }
 ]
