@@ -584,7 +584,8 @@
   "notecheck:2026-11-25": true,
   "nightwatch161:2026-11-25": true,
   "recent:2026-11-25": true,
-  "ahdip162:2026-11-25": true
+  "ahdip162:2026-11-25": true,
+  "nightwatch162:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -4168,18 +4169,6 @@
  },
  "news_feed": [
   {
-   "ticker": "TLN",
-   "source": "Google News: \"Talen Energy\"",
-   "title": "Form 4 Talen Energy Corp: Cole Muller (CFO) For: 23 November By Investing.com - Investing.com India",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNX0thSm9DNHlhcFk4Y01wcGhhcmxnWGJtbVpBa3pJZlZxa0xhMkluLXFjZndRUXRldGZPWHhTd25DZFZuOTlDYk1WMFRVcHdrdGdsTktuRVQzVWZiMlc3ZjdBblNpcDBGTFQ2UUJCTzhmbVdGSkdlVU8xd3ppbVB1X0p6bHNmeE5oeGcwQm9JOUFMcGNXWVctNVdqSkY1ZWNHTHlSZlQxY2hZdlBlNEdkWVhDcVFKOUJl?oc=5",
-   "ts": 1795483666,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Routine Form 4 CFO filing; no detail on whether it's a buy or planned sale."
-  },
-  {
    "ticker": "CCJ",
    "source": "Google News",
    "title": "Cameco Corp (CCJ) Stock Up 6.0% and Still Undervalued -- GF Scor - GuruFocus",
@@ -7166,6 +7155,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Sale of gas plants that aren't nuclear; a portfolio cleanup, not a demand or earnings change."
+  },
+  {
+   "ticker": "CEG",
+   "source": "PR Newswire energy",
+   "title": "LS Power Completes Acquisition of 4.4 GW Natural Gas Generation Assets from Constellation",
+   "link": "https://www.prnewswire.com/news-releases/ls-power-completes-acquisition-of-4-4-gw-natural-gas-generation-assets-from-constellation-302950859.html",
+   "ts": 1795642680,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "down",
+   "event_type": "contract_deal",
+   "why": "Sells 4.4 GW of gas plants to LS Power; cash and asset-sale news, not nuclear demand."
   }
  ],
  "reviews": [
@@ -8925,16 +8926,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.70585,
+  "day_usd": 0.70628,
   "month": "2026-11",
-  "month_usd": 1.88941,
-  "total_usd": 1.88941,
+  "month_usd": 1.88984,
+  "total_usd": 1.88984,
   "by_role": {
    "macro": 0.19063,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.16755,
+   "scout": 0.16798,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9131,13 +9132,13 @@
   "CEG": 235.25,
   "VST": 121.32,
   "TLN": 351.55,
-  "AMD": 406.83,
+  "AMD": 406.02,
   "SMR": 3.25,
   "NNE": 8.85,
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 16:38 ET",
+ "last_cycle": "2026-11-25 16:40 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -9200,10 +9201,10 @@
   ]
  },
  "brakes": {
-  "equity": 1005.46,
-  "day_pct": -1.09,
-  "week_pct": 0.49,
-  "drawdown_pct": -4.64,
+  "equity": 1005.26,
+  "day_pct": -1.11,
+  "week_pct": 0.47,
+  "drawdown_pct": -4.66,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -57887,6 +57888,7 @@
   "80ca077103e2454d",
   "36bc42fa3067d0c3",
   "dca8857e1d9fca26",
+  "0eb4c73d1abac7bb",
   "9f80c9fee3eed575",
   "0f192e3ee6f7d8a7",
   "23a0be3f29f6548a",
@@ -58351,9 +58353,10 @@
   "15d6f9963fcdf41e",
   "84200faa36eac51a",
   "688d746cfc31b58f",
-  "0eb4c73d1abac7bb"
+  "53fc8faedadd1796",
+  "e6fd6f9a6df879e4"
  ],
- "news_slow_at": 1795642239.92397,
+ "news_slow_at": 1795642857.272894,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -218491,6 +218494,52 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-25 16:40",
+   "who": "nightwatch",
+   "kind": "alert",
+   "title": null,
+   "text": "After hours: NNE is +3.7% from the 4 PM close ($8.85 -> $9.18), on 650 shares reported. No headline on file for it yet; the news collector keeps looking. Tomorrow I'll score whether it held at 9:35 and at the close. First after-hours cases on record; no score yet.",
+   "tickers": [
+    "NNE"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 16:40",
+   "who": "chief",
+   "kind": "alert",
+   "title": "After hours: NNE +3.7%",
+   "text": "$8.85 at 4 PM -> $9.18 now. We hold it.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 16:40",
+   "who": "nightwatch",
+   "kind": "alert",
+   "title": null,
+   "text": "After hours: LEU is +4.5% from the 4 PM close ($83.23 -> $87.00), on 77,215 shares reported. Latest headlines: Steam generators progress for Leningrad II and MBIR | Germany\u2019s Mysterious Business With Uranium Enrichment - theTrumpet.com Tomorrow I'll score whether it held at 9:35 and at the close. First after-hours cases on record; no score yet.",
+   "tickers": [
+    "LEU"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 16:40",
+   "who": "chief",
+   "kind": "alert",
+   "title": "After hours: LEU +4.5%",
+   "text": "$83.23 at 4 PM -> $87.00 now. We hold it. Germany\u2019s Mysterious Business With Uranium Enrichment - theTrumpet.com",
+   "tickers": [
+    "LEU"
+   ],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -219214,6 +219263,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "CEG",
+   "type": "contract_deal",
+   "title": "LS Power Completes Acquisition of 4.4 GW Natural Gas Generation Assets from Constellation",
+   "date": "2026-11-25",
+   "price": 235.25,
+   "materiality": 6,
+   "direction_called": "down",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -219294,7 +219355,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 16:38",
+  "updated": "2026-11-25 16:40",
   "total": 671,
   "week": 507,
   "places": {
@@ -222474,7 +222535,7 @@
    "built": "2026-11-25 16:16"
   }
  ],
- "heartbeat": "2026-11-25 16:38",
+ "heartbeat": "2026-11-25 16:40",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -222699,8 +222760,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 282,
-   "used": 254,
+   "asked": 283,
+   "used": 255,
    "notes": {
     "TLN Deals and contracts": 16,
     "CCJ Deals and contracts": 53,
@@ -222708,7 +222769,7 @@
     "SECTOR Government and laws": 68,
     "UUUU Deals and contracts": 38,
     "SECTOR Countries": 62,
-    "CEG Deals and contracts": 34,
+    "CEG Deals and contracts": 35,
     "NXE Legal": 10,
     "NXE Deals and contracts": 17,
     "DNN Deals and contracts": 10,
@@ -224494,7 +224555,7 @@
    ],
    [
     "2026-11-25",
-    406.83
+    406.02
    ]
   ],
   "SMR": [
@@ -230660,7 +230721,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 16:38",
+ "watchdog_last": "2026-11-25 16:40",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -231332,5 +231393,35 @@
    "summary": "No rule is clearly triggered today, so I am leaving every strategy at its normal size. The only change is a smaller size on CEG, which is falling while AI-power stocks sell off and PJM auction risk looms."
   }
  },
- "ah_watch": []
+ "ah_watch": [
+  {
+   "date": "2026-11-25",
+   "t": "NNE",
+   "close": 8.85,
+   "ah_px": 9.18,
+   "ah_move": 3.73,
+   "ah_vol": 650,
+   "vol_share_pct": 0.0,
+   "first_seen": "16:40",
+   "headlines": [],
+   "held": true
+  },
+  {
+   "date": "2026-11-25",
+   "t": "LEU",
+   "close": 83.23,
+   "ah_px": 87.0,
+   "ah_move": 4.53,
+   "ah_vol": 77215,
+   "vol_share_pct": 10.0,
+   "first_seen": "16:40",
+   "headlines": [
+    "Oklo Sinks 14% in a Week, NuScale Down 19%, as the AI Selloff Hits Nuclear Stocks. Time to Buy?",
+    "Centrus Energy (LEU) Stock May Be Overvalued Despite A Fresh HALEU Supply Deal - Simply Wall St",
+    "Steam generators progress for Leningrad II and MBIR",
+    "Germany\u2019s Mysterious Business With Uranium Enrichment - theTrumpet.com"
+   ],
+   "held": true
+  }
+ ]
 }
