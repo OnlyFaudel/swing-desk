@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 03:20",
+ "updated": "2026-11-25 03:30",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -156,6 +156,17 @@
     "researcher",
     "strategist",
     "investigator",
+    "risk"
+   ]
+  },
+  {
+   "topic": "Calendar and ranking ideas checked: jobs-report Fridays, quarterly index expiration (quad witching), lottery/volatility/reversal rankings",
+   "answer": "Tested 2026-11-25 on 2000-07, 2008-18, 2019-26. Jobs-report Friday: our 10 vs the S&P +0.10% / -0.13% / +0.55%, no reliable edge; the Monday after is slightly better (+0.2-0.3%) but less than a round-trip cost. Quarterly expiration/rebalance Friday (third Friday of Mar/Jun/Sep/Dec): our 10 beat the S&P that day in all three periods (+0.73 / +0.45 / +0.31%) and lagged in the WEEK AFTER in all three (-0.35 / -0.11 / -0.65% vs a normal week of +0.58 / +0.05 / +0.54%); related stocks the same direction. Every t is under 1.6, so it is a mild tilt, not a rule: no reason to rush new discretionary buys into the week after Dec 18, 2026. Ranking our stocks each month by last month's biggest one-day gain ('lottery' stocks), odd volatility, last month's return or closeness to the 52-week high: no consistent winner or loser group; the textbook effects do not show up in our names.",
+   "roles": [
+    "pm",
+    "macro",
+    "strategist",
+    "researcher",
     "risk"
    ]
   }

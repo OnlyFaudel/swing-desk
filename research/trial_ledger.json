@@ -470,6 +470,22 @@
   "night_round_24_2026_11_25": {
    "trials": 12,
    "verdict": "2026-11-25 03:20. New data: share counts (dilution/buybacks) and the Sprott trust's units. Nothing adopted for money; practice book +1 (sprott_issuing). No source here for delisted stocks, so the survivor-free 'fallen stock turning' re-test stays open."
+  },
+  "monthly_rank_anomalies": {
+   "trials": 8,
+   "verdict": "2026-11-25 03:30 (round 25, new family: cross-sectional monthly ranks). Next month vs S&P, 0.2% cost, quintiles low/high vs all; ours (88) 00-07 / 08-18 / 19-26, wide (140) 08-18 / 19-26. MAX: ours high +0.71/+0.04/+1.05 vs all +0.89/-0.14/+0.41; wide high +0.38/+0.89 (t 2.4 in 19-26, opposite of the textbook) vs +0.12/-0.11. IVOL: ours high +0.59/-0.32/+1.30; wide high +0.39/+0.88 (t 2.2). 1-month reversal: ours low +0.51/-0.62/+0.37 (no reversal); wide low +0.30/-0.19. 52-week-high closeness: ours high +1.06/-0.06/+0.27; wide high -0.14/-0.21. Rejected: nothing consistent."
+  },
+  "jobs_report_days": {
+   "trials": 3,
+   "verdict": "2026-11-25 03:30 (round 25, new; first Friday of the month as the release day). Our 10 vs S&P: day +0.10/-0.13/+0.55 (normal +0.12/+0.01/+0.11, t -0.1/-0.5/+1.6); Monday after +0.24/+0.27/+0.32 (t 0.6-0.9); Thursday before +0.35/-0.08/-0.04. S&P moves 0.88% vs 0.80% normal. Rejected."
+  },
+  "quad_witching": {
+   "trials": 6,
+   "verdict": "2026-11-25 03:30 (round 25, new: third Friday of Mar/Jun/Sep/Dec, index rebalance + quarterly expiration). Our 10 vs S&P 00-07 / 08-18 / 19-26: witching day +0.73 (t 1.6) / +0.45 (t 1.1) / +0.31 (t 0.4); week after -0.35 vs normal +0.58 (t -1.1) / -0.11 vs +0.05 (t -0.2) / -0.65 vs +0.54 (t -1.4); related day +0.20 / +0.16 (t 2.3) / -0.08, week after -0.00 vs +0.41 / -0.04 vs +0.05 / +0.00 vs +0.18. Consistent direction, weak: fact only (next one Dec 18, 2026)."
+  },
+  "night_round_25_2026_11_25": {
+   "trials": 17,
+   "verdict": "2026-11-25 03:30. New families: monthly_rank_anomalies, jobs_report_days, quad_witching. Skipped as already covered: Asia overnight lead (ccj_cross_asset, 88 trials), reactor outages (reactor_outages), analyst target history (no history available)."
   }
  }
 }
