@@ -83,7 +83,7 @@
     "max_rejects_per_hour": 3,
     "stale_minutes": 20
   },
-  "ops_resume": false,
+  "ops_resume": true,
   "min_trade_usd": 50,
   "context_tickers": {
     "CCJ": [
