@@ -2099,6 +2099,22 @@ def _ah_bars(t, today):
     return {"close": float(reg.close.iloc[-1]), "day_vol": int(reg.volume.sum()), "ah_px": float(ah.close.iloc[-1]), "ah_vol": int(ah.volume.sum())}
 
 
+def earnings_tonight(st, t, today):
+    """True if t reports around today (after today's close, or before today's open): the after-hours move is then real news.
+    Research 2026-11-25: on earnings nights after-hours drops did NOT bounce (-0.65%, n 19) and jumps did not fade (-0.57%)."""
+    cache = st.setdefault("earn_tonight", {})
+    if cache.get("_date") != str(today):
+        cache.clear(); cache["_date"] = str(today)
+    if t not in cache:
+        try:
+            import yfinance as yf
+            ed = yf.Ticker(t).get_earnings_dates(limit=8)
+            cache[t] = bool(ed is not None and any(d.date() in (today, today + dt.timedelta(days=1)) for d in ed.index))
+        except Exception:
+            cache[t] = True  # unknown: treat as an earnings night and skip, the safe side
+    return cache[t]
+
+
 def ah_dip_check(st, ex, today, now):
     """After-hours dip (research 2026-11-25, after_hours_dip, Alpaca SIP minute bars 2016-2026): one of our stocks trading 3%+
     under its 4 PM close after hours, on real volume (1%+ of the day's), bought at that after-hours price and sold at 9:35 the
@@ -2132,6 +2148,11 @@ def ah_dip_check(st, ex, today, now):
         placed = st.setdefault("ah_dip_placed", {})
         if placed.get(t) == str(today):
             continue  # one after-hours buy per stock per night, even before the fill shows up
+        if earnings_tonight(st, t, today):
+            feed.post("nightwatch", f"{t} is down after hours on an earnings night: that is real news, not an overshoot, so no after-hours "
+                      "dip buy (earnings-night drops did not bounce in the tests).", [t], kind="alert")
+            placed[t] = str(today)
+            continue
         b = _ah_bars(t, today)  # confirm on Alpaca's own bars: real after-hours volume, same move
         if not b or b["ah_vol"] < cfg.get("min_vol_share", 0.01) * b["day_vol"] or b["ah_px"] > b["close"] * (1 - cfg.get("drop_pct", 3) / 100):
             continue
@@ -2170,11 +2191,11 @@ def ah_bank(st, ex, prices, today, now):
     (2019-26, n 284, up 74%) after a 1% cost. Same overshoot as the after-hours dip, other side. If the sale already reaches
     the trade's +10% target, or the trade ends tomorrow anyway, the sale is the exit and there is no buy back."""
     cfg = CFG.get("ah_bank", {})
-    if not cfg.get("enabled"):
-        return
+    if not cfg.get("enabled") and not st.get("ah_banked"):
+        return  # switched off and nothing sold last night that still needs buying back
     bank, book = st.setdefault("ah_banked", {}), st["book"]
-    # evening: sell into an after-hours jump
-    if dt.time(16, 30) <= now.time() <= dt.time(19, 45) and now.weekday() < 5 and not market.is_holiday(today):
+    # evening: sell into an after-hours jump (only while switched on; the morning buy back always runs)
+    if cfg.get("enabled") and dt.time(16, 30) <= now.time() <= dt.time(19, 45) and now.weekday() < 5 and not market.is_holiday(today):
         slot = f"ahbank{now.hour}{now.minute // 15}:{today}"
         if not st["flags"].get(slot):
             st["flags"][slot] = True
@@ -2188,7 +2209,7 @@ def ah_bank(st, ex, prices, today, now):
                     live = {}
             for t, k in held:
                 Lv = live.get(t)
-                if t in bank or not Lv or Lv["ah_px"] < Lv["close"] * (1 + cfg.get("jump_pct", 3) / 100):
+                if t in bank or not Lv or Lv["ah_px"] < Lv["close"] * (1 + cfg.get("jump_pct", 3) / 100) or earnings_tonight(st, t, today):
                     continue
                 b = _ah_bars(t, today)
                 if not b or b["ah_vol"] < cfg.get("min_vol_share", 0.01) * b["day_vol"] or b["ah_px"] < b["close"] * (1 + cfg.get("jump_pct", 3) / 100):

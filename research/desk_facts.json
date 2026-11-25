@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 02:00",
+ "updated": "2026-11-25 02:05",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -58,7 +58,7 @@
   },
   {
    "topic": "After-hours moves overshoot (minute data 2016-2026, our stocks)",
-   "answer": "When one of our stocks moves 3%+ after hours, the next morning's open keeps only about half of the move: after-hours jumps give back about 2.8% by 9:35 (82% of the time) and after-hours drops recover about 3% by the open. Live rule 'ah_dip' buys the drops. For a held position that jumps 3%+ after hours, expect much of it to be gone by 9:35. Separately, heavy buying in the last 30 minutes tends to fade slightly the next day (-0.2% to -0.5% vs the S&P). Live rule 'ah_bank' now sells held rule trades into 3%+ after-hours jumps and buys them back right after the open (tested +1.9% to +2.6% vs holding).",
+   "answer": "When one of our stocks drops 3%+ after hours on a normal night, the next morning recovers about half of it (live rule 'ah_dip', +1.5% to +1.9% a trade after costs, still working in 2024-26). On EARNINGS nights the after-hours move is real news and does not reverse; the rule skips them. After-hours JUMPS used to fade by the morning, but not since 2024 (+0.1% from selling into them), so the after-hours bank rule is off. Heavy buying in the last 30 minutes fades slightly the next day.",
    "source": "research/trial_ledger.json: after_hours_dip, order_flow_early_2026_11_25"
   }
  ]

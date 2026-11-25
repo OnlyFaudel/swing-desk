@@ -734,13 +734,14 @@
     "size_pct": 8,
     "max_open": 2,
     "limit_buffer_pct": 0.3,
-    "note": "Research 2026-11-25 (after_hours_dip): AH 3%+ under the 4 PM close on 1%+ of the day volume, buy at the AH price, sell 9:35 next day: +1.84%/+1.47% per trade after 1% cost (2016-18/2019-26), all 7 names positive."
+    "note": "Research 2026-11-25 (after_hours_dip): AH 3%+ under the 4 PM close on 1%+ of the day volume, buy at the AH price, sell 9:35 next day: +1.84%/+1.47% per trade after 1% cost (2016-18/2019-26), all 7 names positive. Earnings nights excluded (2026-11-25: they did not bounce). Without them: 2016-23 +1.95% (n 110, up 69%), 2024-26 +1.53% (n 26, up 73%)."
   },
   "ah_bank": {
-    "enabled": true,
+    "enabled": false,
     "jump_pct": 3,
     "min_vol_share": 0.01,
     "limit_buffer_pct": 0.3,
-    "note": "Research 2026-11-25 (after_hours_bank): held rule trade 3%+ above the 4 PM close after hours on real volume -> after-hours sale, buy back at 9:31-9:45: +2.61%/+1.90% vs holding (2016-18/2019-26) after 1% cost."
+    "note": "Research 2026-11-25 (after_hours_bank): held rule trade 3%+ above the 4 PM close after hours on real volume -> after-hours sale, buy back at 9:31-9:45: +2.61%/+1.90% vs holding (2016-18/2019-26) after 1% cost.",
+    "off_note": "Switched off 2026-11-25 02:05: without earnings nights it earned +2.66% (2016-23, n 251) but only +0.13% (2024-26, n 57, t 0.2): the edge is gone recently. Night Watch keeps scoring after-hours jumps live (ah_watch); turn back on only if that record shows the fade again."
   }
 }
