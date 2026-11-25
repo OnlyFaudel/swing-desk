@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 02:50",
+ "updated": "2026-11-25 03:00",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -121,6 +121,18 @@
     "researcher",
     "strategist",
     "investigator"
+   ]
+  },
+  {
+   "topic": "Warning signs that turned out NOT to matter for our basket: credit stress, the leader cracking first, gold, correlation, news floods",
+   "answer": "Tested 2026-11-25 on 2000-06, 2008-18 and 2019-26 (our 10 vs the S&P, 20 days). Junk-bond weakness (high-yield fund under its 100-day average, 2%+ off its high, or a 2% 10-day drop): our basket did about as well as or better than normal, so credit stress alone is not a reason to sell or skip buys. The basket's best stock over 60 days cracking 12%+ while the rest hold up: slightly worse for us, but the same pattern in chips, banks, energy and big tech does nothing: no signal. Gold up 5%+ in a month: mixed by era. Our stocks all moving together (high correlation) or all apart: flips by era. A flood of headlines on one stock in a day: -2.0% to -3.4% over the next 5 days but n small and it reverses by 20 days; the first headline after 30 quiet days: nothing reliable.",
+   "roles": [
+    "pm",
+    "risk",
+    "macro",
+    "questioner",
+    "strategist",
+    "researcher"
    ]
   }
  ]
