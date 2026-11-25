@@ -2016,6 +2016,60 @@ def gapdown_shadow(st, data, prices, today, now):
     del log[:-300]
 
 
+def earnings_pop_check(st, ex, prices, today, now, brk_state):
+    """Earnings-pop drift (research 2026-11-25, earnings_pop_drift): a stock that jumped 8%+ on its earnings reaction day keeps
+    beating the S&P over the next 20 sessions, bought at the NEXT close: +3.39% (2008-18, n 20, beat 65%) / +6.43% (2019-26,
+    n 21, t 2.1, beat 71%), across CCJ, MU, NVDA, ETN (post-earnings drift: investors adjust to a big beat slowly).
+    Live: near the close, any lineup/related stock whose previous session was +8%+ with an earnings date on that day or the
+    evening before gets 5% of the account for 20 sessions; at most 2 open. Small because there are only 41 past cases."""
+    cfg = CFG.get("earnings_pop", {})
+    if not cfg.get("enabled") or not (dt.time(15, 40) <= market.cclock(now) <= dt.time(15, 56)) or st["flags"].get(f"epop:{today}"):
+        return
+    st["flags"][f"epop:{today}"] = True
+    if brk_state.get("no_new_today") and not unleashed():
+        return
+    book = st["book"]
+    open_n = sum(1 for l in book["lots"].values() if (l.get("auto") or {}).get("qty", 0) > 1e-6 and l["auto"].get("setup") == "earnings_pop")
+    if open_n >= cfg.get("max_open", 2):
+        return
+    names = list(dict.fromkeys(list(T) + (CFG.get("panic_rebound", {}).get("related_universe") or [])))
+    import yfinance as yf
+    try:
+        raw = yf.download(names, period="1mo", auto_adjust=True, progress=False)["Close"]
+    except Exception as e:
+        print("earnings pop", e); return
+    eq = account.equity(book, prices)
+    for t in names:
+        c = raw[t].dropna() if t in raw else None
+        if c is None:
+            continue
+        c = c[[d < today for d in c.index.date]]  # sessions before today; the reaction day is the last one
+        if len(c) < 3 or float(c.iloc[-1] / c.iloc[-2] - 1) < cfg.get("pop_pct", 8) / 100:
+            continue
+        react = c.index[-1].date()
+        try:
+            ed = yf.Ticker(t).get_earnings_dates(limit=8)
+            dates = {d.date() for d in ed.index} if ed is not None else set()
+        except Exception:
+            dates = set()
+        if not any(d in dates for d in (react, react - dt.timedelta(days=1), react - dt.timedelta(days=3))):
+            continue  # a jump without earnings is a different event
+        if any((book["lots"].get(t, {}).get(k) or {}).get("qty", 0) > 1e-6 for k in ("auto", "panic")):
+            continue
+        px = prices.get(t) or float(yf.Ticker(t).fast_info["last_price"])
+        pop = float(c.iloc[-1] / c.iloc[-2] - 1) * 100
+        meta = {"setup": "earnings_pop", "by": "rules", "exit_on": sessions_after(str(today), cfg.get("hold_sessions", 20)),
+                "days": cfg.get("hold_sessions", 20), "why": f"earnings pop: {t} rose {pop:.1f}% on its earnings reaction day ({react})"}
+        if ex.buy_market(t, eq * cfg.get("size_pct", 5) / 100 * dd_mult(st), px, "au", meta, "earnings-pop drift buy"):
+            feed.post("chief", f"Earnings-pop drift: {t} jumped {pop:.1f}% on its earnings ({react}); bought {cfg.get('size_pct', 5)}% at today's "
+                      "close for 20 sessions. History: big earnings beats keep drifting up, beating the S&P by +3.4%/+6.4% over 20 days "
+                      "(2008-18/2019-26).", [t], kind="trade", art={"big": f"{t} earnings pop", "sub": "20-session hold"})
+            notify(f"Earnings pop: {t}", f"+{pop:.1f}% on earnings; bought {cfg.get('size_pct', 5)}% for 20 sessions", tags="chart_with_upwards_trend")
+            open_n += 1
+            if open_n >= cfg.get("max_open", 2):
+                break
+
+
 def thanksgiving_dates(year):
     d = dt.date(year, 11, 1)
     tg = d + dt.timedelta(days=(3 - d.weekday()) % 7 + 21)
@@ -2078,7 +2132,7 @@ def auto_check(st, desk, ex, data, prices, today, brk_state, now):
             if L.get("target") and px >= L["target"]:
                 ex.exit_panic(t, px, f"conviction trade: target ${L['target']} hit", kind="auto", tag="aux"); continue
         if L.get("qty", 0) > 1e-6 and L.get("setup") != "sharp_drop" and L.get("exit_on") and (str(today) > L["exit_on"] or (str(today) == L["exit_on"] and late)):
-            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{ {'conviction': 'conviction', 'year_end': 'year-end bounce', 'uranium_momentum': 'uranium momentum', 'ai_power': 'AI power day', 'fear_fade': 'fear fading', 'thanksgiving': 'Thanksgiving run-up', 'comeback': 'intraday comeback'}.get(L.get('setup'), 'discovery') } trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
+            ex.exit_panic(t, prices.get(t, L["cost"] / L["qty"]), f"{ {'conviction': 'conviction', 'year_end': 'year-end bounce', 'uranium_momentum': 'uranium momentum', 'ai_power': 'AI power day', 'fear_fade': 'fear fading', 'thanksgiving': 'Thanksgiving run-up', 'comeback': 'intraday comeback', 'earnings_pop': 'earnings-pop drift'}.get(L.get('setup'), 'discovery') } trade: held {L.get('days', '?')} sessions", kind="auto", tag="aux")
     if not (dt.time(15, 30) <= market.cclock(now) <= dt.time(15, 58)) or st["flags"].get(f"auto:{today}"):
         return
     st["flags"][f"auto:{today}"] = True
@@ -3719,6 +3773,7 @@ def cycle(st, desk, br, ex, force=()):
             sharp_drop_check(st, ex, prices, today, brk_state, now)
             signal_trades(st, ex, prices, today, brk_state, now)
             holiday_trades(st, ex, prices, today, brk_state, now)
+            earnings_pop_check(st, ex, prices, today, now, brk_state)
             seasonal_check(st, ex, data, prices, today, now)
             process_fills(st, br, ex, today)
             park_check(st, ex, prices, today, now)

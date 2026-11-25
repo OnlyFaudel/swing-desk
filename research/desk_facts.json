@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 00:45",
+ "updated": "2026-11-25 00:55",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -20,6 +20,11 @@
    "topic": "Insider sales in general",
    "answer": "Officer open-market sales in our names carry no predictive weight (129 cases, -0.16% vs basket over 20 days). Insider BUYS are rare here (11 in 2 years in our 14 names).",
    "source": "research/trial_ledger.json: night_round_10_2026_11_25, insider_buys"
+  },
+  {
+   "topic": "News and filings that do NOT predict our stocks",
+   "answer": "Checked on 2008-2026: a cheered company filing (+3% day) is not a reliable sell signal (-5.4% vs S&P 2008-18 but +0.4% 2019-26); protest/opposition news, analyst upgrades, downgrades and new coverage have no lasting effect. Do not trade or size off them. What DOES carry: a +8% earnings reaction day keeps drifting up for ~20 sessions (live rule 'earnings_pop').",
+   "source": "research/trial_ledger.json: night_round_11_2026_11_25, earnings_pop_drift"
   }
  ]
 }

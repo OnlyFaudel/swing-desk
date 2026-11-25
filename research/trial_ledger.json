@@ -345,6 +345,14 @@
   "night_round_10_2026_11_25": {
    "trials": 16,
    "verdict": "2026-11-25 00:45 (owner: test more per round and use the bots' own data and queue). (EE) Hold Thanksgiving trades to Cyber Monday: Fri->Mon vs S&P our 10 +0.14% / -0.40%, related +0.00% / -0.69% (0 of 7 recent years): rejected. Note: the live Tue->Fri trade itself is ~flat vs the S&P (our 10 -0.34% / +0.14%), it only beats idle T-bills; re-score after this week. (FF) Parking only Nov-Apr: 2000-06 2.1%/yr (worst -29%), 2007-18 10.2% (-20%), 2019-26 7.3% vs 21.1%: rejected. Discovery-engine survivors (news archive 2019+, vs basket) re-checked 2008-2026 vs S&P: 3 down days miners -1.30% (t -3.1) / +0.94% (t 2.4), our 10 -0.99% / +0.77%, vs basket -0.22% / 0.00%: recent-only; new 52-week high miners -1.76% / -1.21%, our 10 vs basket -0.95% / -0.50% (t -1.5 each): consistent but small 'don't chase' fact (no shorting, so context for the agents); new 52-week low miners +0.53% / +0.39%, our 10 -0.29% / +1.07% (20d -3.16% / +7.67%): flips. Officer open-market sales (yfinance insiders 2024-26, 129 cases): next 20 days vs basket -0.16% (t -0.1), median -4.06%: no signal. Bot queue answered (research/desk_facts.json): TLN Nov 17 Form 4 marked 10b5-1; PJM 2029/30 auction closes Dec 15 with no delay ruling found."
+  },
+  "earnings_pop_drift": {
+   "trials": 4,
+   "verdict": "2026-11-25 00:55 (from the bots' own event files: research/event_history.json earnings-day moves 2002-2026). Earnings reaction day +8%+, buy that close, 20 days vs S&P: +7.92% (2008-18, n 13, t 2.2) / +4.94% (2019-26, n 21, t 1.5). Bought the NEXT close (no date-alignment help): +3.39% (n 20, t 1.1, beat 65%, median +4.04%) / +6.43% (n 21, t 2.1, beat 71%, median +3.90%); by name CCJ +10.1% (6), MU +6.6% (15), NVDA +2.4% (16), ETN +2.6% (2), TSM -0.3% (2). Mechanism: post-earnings-announcement drift (well documented). ADOPTED small: 5% per stock, max 2 open, 20 sessions, lineup + related names, trigger = previous session +8% with an earnings date that day or the evening before. Opposite side: earnings drop -8% -> next 10 days -1.34% / -2.29% (n 13 / 6): no rebound to buy."
+  },
+  "night_round_11_2026_11_25": {
+   "trials": 10,
+   "verdict": "2026-11-25 00:55, bots' own data (memory/history_events.json SEC filings since 1998, archive_events.json news 2019+, people_events.json analysts 2024+, events.json). Company filing day cheered +3%+ -> 20d vs S&P: 2008-18 -5.36% (n 114, t -3.2); 2019-26 (events.json) +0.42% (n 164, t 0.3): the discovery engine's 'sell into cheered company updates' does not hold in the recent era: rejected. Jeered filing day -> 20d -0.86% (2008-18): nothing. Opposition/protest news -> 5d: 2019-22 +5.79% (n 16) / 2023-26 +0.46% (n 45): fades, rejected. Analyst upgrades/downgrades/new coverage -> 5d: noise (+0.28/-1.14/+0.89% in 2024-25, reversed in 2026). Earnings pop: adopted (earnings_pop_drift)."
   }
  }
 }

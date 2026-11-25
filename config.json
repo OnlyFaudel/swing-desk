@@ -717,5 +717,13 @@
     "n": 5,
     "size_pct": 3,
     "note": "Research 2026-11-24 (year_end_wide): 5 worst YTD among related + big stocks, buy ~Dec 18-20, sell ~Jan 15. Related +0.73%/+5.34% vs S&P (2008-18/2019-25, t 0.3/1.5), big stocks +3.38%/+3.53% (t 1.8/1.2), beat S&P in 9/12 and 6/7 years. Small size: one trade a year, thin evidence."
+  },
+  "earnings_pop": {
+    "enabled": true,
+    "pop_pct": 8,
+    "size_pct": 5,
+    "max_open": 2,
+    "hold_sessions": 20,
+    "note": "Research 2026-11-25 (earnings_pop_drift): +8%+ earnings reaction day, buy the next close, hold 20 sessions: +3.39%/+6.43% vs S&P (2008-18/2019-26), beat 65%/71%, 41 cases across CCJ, MU, NVDA, ETN."
   }
 }
