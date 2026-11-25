@@ -17856,5 +17856,57 @@
 "significant",
 "uranium"
 ]
+},
+{
+"id": "6ff8465bf47e66b2",
+"date": "2026-11-24",
+"ts": 1795496400,
+"title": "China\u2019s Nuclear Energy Advantage",
+"summary": "",
+"outlet": "www.waynecountynews.net",
+"link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONktGbU1oYjg0RHhsUFZMMl94YVYxdmpzOUMwVEFvbVRCY3ZlMk0xaFZ2UXMyM0FVQlVsbnlPcHNiTzlsRlV4THFCNGMxdThGRjFPMzZrTDljU0ZSbUZlakFyUDRKZ2lZWXV1YzF4dWRBb2V1RFRuaDJnVTRzNDBibGxqNGluZzRHekpYNzZUbENkSmhGU3FUbGR3?oc=5",
+"place": "China new builds",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.57,
+"score": 3.64,
+"echo_of": null,
+"w": [
+"advantage",
+"china",
+"energy",
+"nuclear"
+]
+},
+{
+"id": "f0cc1894933d8f03",
+"date": "2026-11-25",
+"ts": 1795567940,
+"title": "Poland advances procurement for first NPP",
+"summary": "",
+"outlet": "Nuclear Engineering International",
+"link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQeWtET1Z0WE93QWR3QnVHUEtUYXNNdzlycEIxQzZqLTJxeldveFFsUmZ4QUc3bDlCMzZYNGVyMVNVejZfVnR3bWdOVkxxcnZsc0xTQXBrRHJEZVVmU3NQc3oxcm5NMENIRzUxMC1XLWZDU1BnWHNXR0xIaFl3a1JONg?oc=5",
+"place": "Europe new builds",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.78,
+"score": 4.06,
+"echo_of": null,
+"w": [
+"advances",
+"first",
+"npp",
+"poland",
+"procurement"
+]
 }
 ]
