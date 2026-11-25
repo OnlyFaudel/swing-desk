@@ -2453,6 +2453,7 @@ def _prev_close_px(st, t):
 
 
 def handle_owner_posts(st, desk, ex, data, prices, today, brk_state):
+    st["boss_notes"] = [n for n in st.get("boss_notes", []) if n.get("owner_words")]  # notes must quote the owner
     cfg = CFG.get("owner_posts", {})
     if not cfg.get("enabled"):
         return
@@ -2548,10 +2549,11 @@ def owner_scan(st, desk, ex, data, prices, today, brk_state, text):
                                "Portfolio Manager. The OWNER (your boss) posted; the team has answered. Turn his post into action. "
                                "Allowed actions: cancel_buy (drop a waiting/resting buy), exit (sell an open trade), watch (focus a "
                                "ticker: the team checks it in every meeting for 5 days), research (queue a question for the Research "
-                               "Lab), remember (a standing instruction the whole team keeps for 7 days), none. You can never buy "
-                               "outside a support setup. Then answer him in plain English: what the team found and exactly what you did. "
+                               "Lab), remember (ONLY when the boss literally gave an instruction in this post: put his exact words in "
+                               "owner_words; never turn the team's own view into his instruction), none. Rule trades (panic, sharp-drop, "
+                               "comeback, Thanksgiving, parking...) run on their own; you can't place new trades from here. Then answer him in plain English: what the team found and exactly what you did. "
                                '{"say":"","to":"You","post":"one-line headline of what the team is doing",'
-                               '"actions":[{"type":"cancel_buy|exit|watch|research|remember|none","ticker":"","text":""}]}',
+                               '"actions":[{"type":"cancel_buy|exit|watch|research|remember|none","ticker":"","text":"","owner_words":""}]}',
                                ctx, max_tokens=600, to="owner")
             except Exception as e:
                 print("owner answer failed", e)
@@ -2571,8 +2573,13 @@ def owner_scan(st, desk, ex, data, prices, today, brk_state, text):
                 elif typ == "research" and txt:
                     st.setdefault("research_queue", []).append({"q": txt, "date": str(today)}); done.append("queued a research question")
                 elif typ == "remember" and txt:
-                    st.setdefault("boss_notes", []).append({"note": txt, "date": str(today)}); del st["boss_notes"][:-20]
-                    done.append("the team will keep your instruction in mind for a week")
+                    said = str(a.get("owner_words") or "")
+                    norm = lambda x: re.sub(r"[^a-z0-9 ]", "", x.lower()).split()
+                    if len(norm(said)) >= 3 and " ".join(norm(said)) in " ".join(norm(text)):  # must be his own words, quoted
+                        st.setdefault("boss_notes", []).append({"note": txt, "owner_words": said, "date": str(today)}); del st["boss_notes"][:-20]
+                        done.append(f"the team will keep your instruction (\"{said[:80]}\") in mind for a week")
+                    else:
+                        print("refused a 'remember' that was not the owner's own words:", txt[:120])
             if done:
                 feed.say("exec", "Done: " + "; ".join(done) + ".", outcome=True, to="owner")
         headline = (ans or {}).get("post") or (f"Found {len(found)} setup{'s' if len(found) != 1 else ''}" if found else "Nothing safe to buy yet")
@@ -2847,7 +2854,12 @@ def questioner(st, desk, prices, now, force=False):
                            f"teammate who can answer it ({', '.join(ANSWERERS)}). Don't repeat already_asked. "
                            '{"say":"","to":"team","questions":[{"question":"","why_it_might_matter":"","ask":"role","kind":"missed|odd|unexplained|maybe_irrelevant"}]}',
                            pack, max_tokens=900)
+            recent_q = [_ev_words(x["question"]) for x in qs if x.get("t", "") >= (now - dt.timedelta(hours=24)).strftime("%Y-%m-%d %H:%M")]
             for q in [x for x in (out.get("questions") or []) if isinstance(x, dict) and x.get("question")][:5]:
+                w = _ev_words(q["question"])
+                if w and any(len(w & r) / max(1, len(w | r)) >= 0.35 for r in recent_q):
+                    continue  # already asked in the last day, just reworded
+                recent_q.append(w)
                 who = q.get("ask") if q.get("ask") in ANSWERERS else "investigator"
                 a = desk.ask(who, "fast", f"The Questioner asks you: {q['question']} (why it might matter: {q.get('why_it_might_matter', '')}). "
                              "Look into it with your files and the context, answer plainly, and give a verdict: relevant (it matters for "
@@ -3412,6 +3424,7 @@ def review(st, desk, data, prices, today, brk_state):
         officer["position_mismatch"] = f"check failed: {e}"[:120]
     st["officer"] = officer
     packet = {"date": str(today), "weekday": today.strftime("%A"), "goal": "+5% per week (not forced)", "lineup": T,
+              "ALL_POSITIONS_NOW": positions_view(st, prices),
               "equity": round(eq, 2), "start": CFG["capital_cap"], "spy_buy_and_hold": round(bh, 2),
               "week_pct": brk_state["week_pct"], "day_pct": brk_state["day_pct"],
               "open_trades": {t: account.lot(book, t, "trade") for t in traded(st) if account.lot(book, t, "trade")["qty"] > 1e-6},
@@ -3664,7 +3677,8 @@ def cycle(st, desk, br, ex, force=()):
             reconcile(st, br, today)
         except Exception as e:
             print("reconcile", e)
-    for k in [k for k in st["flags"] if ":" in k and k.split(":")[-1][:10] < str(today - dt.timedelta(days=10))]:
+    cutoff = str(today - dt.timedelta(days=10))
+    for k in [k for k in st["flags"] if (m_ := re.search(r"\d{4}-\d\d-\d\d", k)) and m_.group(0) < cutoff]:  # a date anywhere in the key
         del st["flags"][k]
     os.makedirs(os.path.join(ROOT, "orders"), exist_ok=True)
     json.dump({"date": str(today), "broker": br.name, "orders": [o for o in st["orders_log"] if o["time"].startswith(str(today))]},

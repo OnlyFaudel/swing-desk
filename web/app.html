@@ -785,15 +785,18 @@ function stockState(t){
   /* ----- today's brief: what happened, what we hold, what would make us act */
   function brief(){
     const today=new Date().toISOString().slice(0,10), td=ymd(new Date());
-    const fills=(S.orders_log||[]).filter(o=>String(o.time||"").startsWith(td)&&o.status==="filled");
-    const did=fills.length?fills.map(o=>`${o.side==="buy"?"bought":"sold"} ${esc(o.symbol)}`).join(", "):"";
+    // orders are logged when placed (status stays "pending_new"), so count every order today that wasn't rejected or canceled
+    const fills=(S.orders_log||[]).filter(o=>String(o.time||"").startsWith(td)&&!/reject|cancel|expired/.test(String(o.status||"")));
+    const grp={}; fills.forEach(o=>{const why=String(o.note||"").replace(/\$\d+/g,"").replace(/^(sold|parked)\s+of\s+/,"").trim()||"trade";
+      const k=(o.side==="buy"?"bought ":"sold ")+"|"+(/park|SPY|SGOV|SSO/.test(why)?"parking":why); (grp[k]=grp[k]||new Set()).add(o.symbol);});
+    const did=Object.entries(grp).map(([k,set])=>{const [verb,why]=k.split("|");return `${verb}${[...set].map(esc).join(", ")} (${esc(why)})`}).join("; ");
     const closed=(B.trades||[]).filter(x=>String(x.exit_time||"").startsWith(td));
     const done=did?`Today the bot ${did}.`:closed.length?`Closed ${closed.map(x=>`${esc(x.ticker)} ${x.pnl>=0?"+":"−"}$${Math.abs(x.pnl).toFixed(2)}`).join(", ")} today.`:"No buys or sells yet today.";
     const lotsNow=[].concat(...["trade","panic","auto"].map(k=>Object.keys(B.lots||{}).filter(t=>lot(t,k).qty>1e-6).map(t=>[t,k])));
     const parkT=Object.keys((S.book||{}).lots||{}).find(t=>lot(t,"park").qty>1e-6), park=!!parkT;
     const parkWhere=({SSO:"a 2x S&P fund (SSO)",SGOV:"T-bills (SGOV)",SPY:"the S&P"})[parkT]||parkT;
     const tot=lotsNow.reduce((a,[t,k])=>{const L=lot(t,k);return a+((P[t]??L.cost/L.qty)*L.qty-L.cost)},0);
-    const holding=lotsNow.length?`${lotsNow.map(([t])=>esc(t)).join(", ")}, <b class="${tot>=0?"pos":"neg"}">${tot>=0?"+":"−"}$${Math.abs(tot).toFixed(2)}</b> open ${tot>=0?"profit":"loss"}.${park?" The rest is parked in "+parkWhere+".":""}`:park?"No stock trades open; the cash is parked in "+parkWhere+".":"No trades open; holding cash.";
+    const holding=lotsNow.length?`${[...new Set(lotsNow.map(([t])=>t))].map(esc).join(", ")}, <b class="${tot>=0?"pos":"neg"}">${tot>=0?"+":"−"}$${Math.abs(tot).toFixed(2)}</b> open ${tot>=0?"profit":"loss"}.${park?" The rest is parked in "+parkWhere+".":""}`:park?"No stock trades open; the cash is parked in "+parkWhere+".":"No trades open; holding cash.";
     const next=[];
     const pn=lotsNow.filter(([t,k])=>k==="panic").map(([t])=>t);
     if(pn.length){const dates=[...new Set(pn.map(t=>lot(t,"panic").exit_on))];
