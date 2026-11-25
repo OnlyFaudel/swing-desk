@@ -160,7 +160,7 @@ class AlpacaBroker:
     def limit_sell_ext(self, t, qty, limit, tag="aux", price_now=None):
         """Extended-hours (4-8 PM) limit sell."""
         from alpaca.trading.requests import LimitOrderRequest
-        return self._o(self._req(LimitOrderRequest, symbol=t, qty=qty6(qty), side="sell", limit_price=penny(limit),
+        return self._o(self._req(LimitOrderRequest, symbol=t, qty=self._sell_qty(t, qty), side="sell", limit_price=penny(limit),
                                  extended_hours=True, client_order_id=cid(tag)))
 
     def limit_buy_ext(self, t, qty, limit, tag="au", price_now=None):
@@ -198,15 +198,28 @@ class AlpacaBroker:
 
     def stop_sell(self, t, qty, stop, tag="stop"):
         from alpaca.trading.requests import StopOrderRequest
-        return self._o(self._req(StopOrderRequest, symbol=t, qty=qty6(qty), side="sell", stop_price=penny(stop), client_order_id=cid(tag)))
+        return self._o(self._req(StopOrderRequest, symbol=t, qty=self._sell_qty(t, qty), side="sell", stop_price=penny(stop), client_order_id=cid(tag)))
 
     def limit_sell(self, t, qty, limit, tag="tp"):
         from alpaca.trading.requests import LimitOrderRequest
-        return self._o(self._req(LimitOrderRequest, symbol=t, qty=qty6(qty), side="sell", limit_price=penny(limit), client_order_id=cid(tag)))
+        return self._o(self._req(LimitOrderRequest, symbol=t, qty=self._sell_qty(t, qty), side="sell", limit_price=penny(limit), client_order_id=cid(tag)))
 
     def market_sell(self, t, qty, price_now, tag="exit"):
         from alpaca.trading.requests import MarketOrderRequest
-        return self._o(self._req(MarketOrderRequest, symbol=t, qty=qty6(qty), side="sell", client_order_id=cid(tag)))
+        return self._o(self._req(MarketOrderRequest, symbol=t, qty=self._sell_qty(t, qty), side="sell", client_order_id=cid(tag)))
+
+    def _sell_qty(self, t, qty):
+        """Our book can round a fractional lot up by a millionth of a share (Nov 25: 0.110301 vs 0.110300646 held, 3 rejects,
+        halt). Never ask to sell more than Alpaca holds."""
+        q = qty6(qty)
+        try:
+            import math
+            real = float(self.c.get_open_position(t).qty)
+            if q > real:
+                q = math.floor(real * 1e6) / 1e6
+        except Exception:
+            pass
+        return q
 
     def cancel(self, oid):
         try:
