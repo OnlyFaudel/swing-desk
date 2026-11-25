@@ -596,7 +596,10 @@
   "ahdip172:2026-11-25": true,
   "nightwatch172:2026-11-25": true,
   "radarres:2026-11-25": true,
-  "ahdip173:2026-11-25": true
+  "ahdip173:2026-11-25": true,
+  "questioner:2026-11-25:9": true,
+  "nightwatch180:2026-11-25": true,
+  "ahdip180:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -8937,12 +8940,12 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.71304,
+  "day_usd": 0.72173,
   "month": "2026-11",
-  "month_usd": 1.8966,
-  "total_usd": 1.8966,
+  "month_usd": 1.90529,
+  "total_usd": 1.90529,
   "by_role": {
-   "macro": 0.19063,
+   "macro": 0.19341,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
@@ -8954,9 +8957,9 @@
    "risk": 0.1939,
    "investigator": 0.31047,
    "postmortem": 0.00035,
-   "researcher": 0.02016,
+   "researcher": 0.02341,
    "engineer": 0.07932,
-   "questioner": 0.12214
+   "questioner": 0.1248
   }
  },
  "desk_log": [
@@ -9149,7 +9152,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 17:48 ET",
+ "last_cycle": "2026-11-25 18:00 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -58378,7 +58381,7 @@
   "84200faa36eac51a",
   "688d746cfc31b58f"
  ],
- "news_slow_at": 1795646683.3915708,
+ "news_slow_at": 1795647358.9707363,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -214009,6 +214012,41 @@
    ],
    "practice": false,
    "end": "17:30"
+  },
+  {
+   "id": "20261125180038327068",
+   "title": "The Questioner, Nov 25 18:00",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-25 18:00",
+   "msgs": [
+    {
+     "t": "18:00",
+     "who": "questioner",
+     "to": "exec",
+     "text": "Most of the desk's notes already cover what I'd check. The one thing nobody has confirmed is whether the TLN buy at $355.66 is actually resting: LIVE_ORDERS_RIGHT_NOW is empty, so the team has been discussing a level that may not exist. Before anyone talks about canceling it, we need to confirm the live order state.",
+     "outcome": false,
+     "notes": "question: LIVE_ORDERS_RIGHT_NOW is empty and every order is a day order. Is the TLN resting buy at $355.66 actually live right now, or has it only been discussed? If it is live, what is it doing, since the basket gate is closed?\nwhy it might matter: If we think an order is resting when it isn't, the desk is reasoning about a position it doesn't have. If it is resting while the gate is closed, that breaks our own rule.\nask: exec\nkind: unexplained\nquestion: The PJM Dec 15 auction is on the calendar and no FERC ruling on the delay has been found. Should the desk treat that event as the main risk for TLN and VST through the window, and does any of our rule set account for it?\nwhy it might matter: Several agents have leaned on the auction as a catalyst. Our own notes show the auction-result pop tends to fade, so the risk may point to trimming rather than adding.\nask: macro\nkind: maybe_irrelev"
+    },
+    {
+     "t": "18:00",
+     "who": "macro",
+     "to": "questioner",
+     "text": "The desk's notes say the PJM Dec 15 auction is a known calendar event, and no FERC ruling on the delay has been found, so the auction is treated as going ahead. Our own history says the pop on auction results tends to fade (about -3% over 20 sessions after up-auctions), so for TLN and VST the auction is a reason to avoid adding or to trim into a pop, not a reason to buy. I agree with the Macro Analyst that the basket gate is closed right now, so no new buys in either name regardless.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: watch\nwatch date: 2026-12-15\nwhy: The notes confirm the Dec 15 2029/30 PJM auction is on the calendar with no delay ruling found, and past auction-result pops faded in 4 of 5 up-cases. Our rule set has no explicit auction rule, so the desk relies on the basket gate and the fade pattern rather than a specific auction trigger.\ndate: 2026-12-15\nticker: TLN\nwhat: PJM 2029/30 base residual auction closes; check result vs price cap and whether the release-day pop fades\ndate: 2026-12-15\nticker: VST\nwhat: PJM 2029/30 base residual auction closes; check result vs price cap and whether the release-day pop fades\nfiles read: TLN Legal, VST Legal, SECTOR Government and laws, SECTOR Countries, Calendar: PJM auction results"
+    },
+    {
+     "t": "18:00",
+     "who": "researcher",
+     "to": "questioner",
+     "text": "The nuclear basket's slide looks more like the AI-power trade unwinding than an operations problem: the reactor fleet is 89% running with only one long outage (Salem 1), and nothing in the news points to a plant-level fact that would explain a 17% quarterly drop in CEG. Our own notes say the power names kept falling even with normal operations, and the desk's research shows that's positioning, not news. Sentiment is what's driving these, so setups may take longer to work.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: research\nresearch test: Track the nuclear basket's 10-day average and the reactor fleet running percent weekly through December; if the price keeps falling while fleet running stays above ~88%, treat it as positioning and extend the hold window assumptions for Patient Levels setups. Also check whether NVIDIA's sharp drop (AI scare days) keeps lining up with power-name weakness.\nwhy: The desk's plant data shows 89.4% of the US fleet running, with Salem 1 the only open outage among our owners and no adverse plant news this week. Our notes show the AI-scare pattern and the power names' weakness moving together, so the price decline reads as sentiment rather than operations.\nfiles read: SECTOR Plants, SECTOR Uranium market, CEG Snapshot, CEG Ownership and analysts, CEG Discoveries, SECTOR Macro"
+    }
+   ],
+   "practice": false,
+   "end": "18:00"
   }
  ],
  "feed": [
@@ -218607,6 +218645,19 @@
    ],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-25 18:00",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: The PJM Dec 15 auction is on the calendar and no FERC ruling on the delay has been found. Should the desk treat that event as the main risk for TLN and VST through the window, and does any of our rule set account for it? -> relevant | Nothing in our desk's notes explains how the nuclear basket lost ground through the quarter while the reactor fleet stayed about 89% running. Is the selloff about the AI-power trade unwinding, or is there a fact we are missing? -> relevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -219422,11 +219473,11 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 17:50",
+  "updated": "2026-11-25 18:00",
   "total": 679,
-  "week": 512,
+  "week": 511,
   "places": {
-   "Uranium price": 49,
+   "Uranium price": 48,
    "South Korea": 37,
    "Piketon": 27,
    "Europe new builds": 27,
@@ -220148,6 +220199,7 @@
   "23f0910e96eb7de3",
   "325ee9327f3b68ce",
   "97e5a70ea6902e58",
+  "138f946dbfa677d9",
   "88813f2311f7a1b2",
   "43fb66d513a66eee",
   "0f092a6ff0645a2d",
@@ -220219,8 +220271,7 @@
   "537b32f5b2133213",
   "53627f4c0e7162ee",
   "688d746cfc31b58f",
-  "7908d2b630649992",
-  "138f946dbfa677d9"
+  "7908d2b630649992"
  ],
  "panic_log": [
   {
@@ -222321,7 +222372,12 @@
    "next": ""
   }
  ],
- "research_queue": [],
+ "research_queue": [
+  {
+   "q": "Questioner: Track the nuclear basket's 10-day average and the reactor fleet running percent weekly through December; if the price keeps falling while fleet running stays above ~88%, treat it as positioning and extend the hold window assumptions for Patient Levels setups. Also check whether NVIDIA's sharp drop (AI scare days) keeps lining up with power-name weakness.",
+   "date": "2026-11-25"
+  }
+ ],
  "research_candidates": [
   {
    "key": "open_fill == True",
@@ -222604,7 +222660,7 @@
    "built": "2026-11-25 17:51"
   }
  ],
- "heartbeat": "2026-11-25 17:48",
+ "heartbeat": "2026-11-25 18:00",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223072,14 +223128,14 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 98,
-   "used": 96,
+   "asked": 99,
+   "used": 97,
    "notes": {
     "SECTOR Uranium market": 69,
     "BWXT Snapshot": 7,
     "CCJ Snapshot": 3,
     "UUUU Snapshot": 6,
-    "SECTOR Government and laws": 61,
+    "SECTOR Government and laws": 62,
     "TLN Snapshot": 38,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
@@ -223094,7 +223150,11 @@
     "desk_lessons_from_our_mistakes": 1,
     "already_checked_facts: PJM 2029/30 capacity auction delay": 1,
     "already_checked_facts: What PJM capacity-auction results do ": 1,
-    "already_checked_facts: Insider sales in general": 1
+    "already_checked_facts: Insider sales in general": 1,
+    "TLN Legal": 1,
+    "VST Legal": 1,
+    "SECTOR Countries": 1,
+    "Calendar: PJM auction results": 1
    },
    "since": "2026-11-23"
   },
@@ -223215,12 +223275,12 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 48,
-   "used": 48,
+   "asked": 49,
+   "used": 49,
    "notes": {
     "TLN Snapshot": 42,
     "TLN News": 38,
-    "coming_up": 6,
+    "coming_up": 7,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
     "BWXT Legal": 1,
@@ -223229,7 +223289,7 @@
     "CCJ Legal": 2,
     "TLN Legal": 7,
     "SECTOR Market regime": 1,
-    "desk_lessons_from_our_mistakes": 6,
+    "desk_lessons_from_our_mistakes": 7,
     "TLN Ownership and analysts": 4,
     "SECTOR Uranium market": 14,
     "CEG Snapshot": 5,
@@ -223239,16 +223299,17 @@
     "Reminder: Pre-Thanksgiving session (2026-11-25)": 1,
     "Reminder: Thanksgiving run-up rule": 1,
     "Basket gate note: nuclear basket -11.2% vs 10-day average": 1,
-    "LIVE_ORDERS_RIGHT_NOW": 2,
+    "LIVE_ORDERS_RIGHT_NOW": 3,
     "SECTOR Calendar": 1,
-    "already_asked": 1,
-    "Desk lessons": 1
+    "already_asked": 2,
+    "Desk lessons": 1,
+    "plants": 1
    },
    "since": "2026-11-23"
   },
   "researcher": {
-   "asked": 9,
-   "used": 9,
+   "asked": 10,
+   "used": 10,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 5,
@@ -223261,9 +223322,13 @@
     "TLN Deals and contracts": 2,
     "TLN Leadership and insiders": 1,
     "CEG Leadership and insiders": 1,
-    "CEG Snapshot": 3,
-    "SECTOR Uranium market": 3,
-    "already_checked_facts: Patient Levels fills 200-day trend": 1
+    "CEG Snapshot": 4,
+    "SECTOR Uranium market": 4,
+    "already_checked_facts: Patient Levels fills 200-day trend": 1,
+    "SECTOR Plants": 1,
+    "CEG Ownership and analysts": 1,
+    "CEG Discoveries": 1,
+    "SECTOR Macro": 1
    },
    "since": "2026-11-23"
   },
@@ -227859,6 +227924,24 @@
    "answer": "I checked the live order list and it is empty: no resting orders exist, and every order is a day order that expires at its close. So the TLN buy at $355.66 was only discussed, not placed, and nothing can fill during the closed-gate session. The gate is still closed, so the right move is to confirm the order is not in the broker and stay flat on TLN.",
    "verdict": "irrelevant",
    "action": "tell_owner"
+  },
+  {
+   "t": "2026-11-25 18:00",
+   "question": "The PJM Dec 15 auction is on the calendar and no FERC ruling on the delay has been found. Should the desk treat that event as the main risk for TLN and VST through the window, and does any of our rule set account for it?",
+   "kind": "maybe_irrelevant",
+   "asked": "macro",
+   "answer": "The desk's notes say the PJM Dec 15 auction is a known calendar event, and no FERC ruling on the delay has been found, so the auction is treated as going ahead. Our own history says the pop on auction results tends to fade (about -3% over 20 sessions after up-auctions), so for TLN and VST the auction is a reason to avoid adding or to trim into a pop, not a reason to buy. I agree with the Macro Analyst that the basket gate is closed right now, so no new buys in either name regardless.",
+   "verdict": "relevant",
+   "action": "watch"
+  },
+  {
+   "t": "2026-11-25 18:00",
+   "question": "Nothing in our desk's notes explains how the nuclear basket lost ground through the quarter while the reactor fleet stayed about 89% running. Is the selloff about the AI-power trade unwinding, or is there a fact we are missing?",
+   "kind": "unexplained",
+   "asked": "researcher",
+   "answer": "The nuclear basket's slide looks more like the AI-power trade unwinding than an operations problem: the reactor fleet is 89% running with only one long outage (Salem 1), and nothing in the news points to a plant-level fact that would explain a 17% quarterly drop in CEG. Our own notes say the power names kept falling even with normal operations, and the desk's research shows that's positioning, not news. Sentiment is what's driving these, so setups may take longer to work.",
+   "verdict": "relevant",
+   "action": "research"
   }
  ],
  "reactor_view": {
@@ -230499,8 +230582,8 @@
   }
  ],
  "movers": {
-  "at": 1795633251.642544,
-  "time": "2026-11-25 14:00",
+  "at": 1795647638.324766,
+  "time": "2026-11-25 18:00",
   "list": [
    {
     "ticker": "LEU",
@@ -230509,17 +230592,17 @@
     "why": [
      "-55% under its 2-month high"
     ],
-    "price": 82.82,
+    "price": 83.19,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "UEC",
     "core": true,
-    "volatility_pct": 88,
+    "volatility_pct": 89,
     "why": [
-     "-53% under its 2-month high"
+     "-52% under its 2-month high"
     ],
-    "price": 5.61,
+    "price": 5.69,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230527,9 +230610,9 @@
     "core": true,
     "volatility_pct": 76,
     "why": [
-     "-65% under its 2-month high"
+     "-64% under its 2-month high"
     ],
-    "price": 5.12,
+    "price": 5.21,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230537,9 +230620,9 @@
     "core": false,
     "volatility_pct": 153,
     "why": [
-     "-32% under its 2-month high"
+     "-31% under its 2-month high"
     ],
-    "price": 135.63,
+    "price": 136.34,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230549,18 +230632,7 @@
     "why": [
      "-38% under its 2-month high"
     ],
-    "price": 147.86,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "MU",
-    "core": false,
-    "volatility_pct": 134,
-    "why": [
-     "-46% under its 2-month high",
-     "-16% in 5 days"
-    ],
-    "price": 589.8,
+    "price": 149.3,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230568,10 +230640,20 @@
     "core": false,
     "volatility_pct": 133,
     "why": [
-     "-38% under its 2-month high",
-     "-24% in 5 days"
+     "-37% under its 2-month high",
+     "-23% in 5 days"
     ],
-    "price": 401.09,
+    "price": 406.03,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "MU",
+    "core": false,
+    "volatility_pct": 133,
+    "why": [
+     "-45% under its 2-month high"
+    ],
+    "price": 601.25,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230579,9 +230661,9 @@
     "core": false,
     "volatility_pct": 126,
     "why": [
-     "-56% under its 2-month high"
+     "-55% under its 2-month high"
     ],
-    "price": 19.11,
+    "price": 19.47,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230589,9 +230671,9 @@
     "core": false,
     "volatility_pct": 111,
     "why": [
-     "-41% under its 2-month high"
+     "-40% under its 2-month high"
     ],
-    "price": 172.84,
+    "price": 173.37,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230602,7 +230684,7 @@
      "-71% under its 2-month high",
      "-17% in 5 days"
     ],
-    "price": 3.24,
+    "price": 3.25,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230610,9 +230692,9 @@
     "core": false,
     "volatility_pct": 105,
     "why": [
-     "-38% under its 2-month high"
+     "-37% under its 2-month high"
     ],
-    "price": 152.94,
+    "price": 154.17,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230620,10 +230702,9 @@
     "core": false,
     "volatility_pct": 104,
     "why": [
-     "-55% under its 2-month high",
-     "-16% in 5 days"
+     "-54% under its 2-month high"
     ],
-    "price": 8.71,
+    "price": 8.85,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230633,17 +230714,7 @@
     "why": [
      "-40% under its 2-month high"
     ],
-    "price": 103.3,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "TSM",
-    "core": false,
-    "volatility_pct": 89,
-    "why": [
-     "-30% under its 2-month high"
-    ],
-    "price": 339.05,
+    "price": 103.71,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230651,9 +230722,9 @@
     "core": false,
     "volatility_pct": 87,
     "why": [
-     "-35% under its 2-month high"
+     "-36% under its 2-month high"
     ],
-    "price": 104.62,
+    "price": 103.88,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230661,9 +230732,9 @@
     "core": false,
     "volatility_pct": 83,
     "why": [
-     "-17% in 5 days"
+     "-15% in 5 days"
     ],
-    "price": 295.05,
+    "price": 300.86,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230671,9 +230742,9 @@
     "core": false,
     "volatility_pct": 76,
     "why": [
-     "-31% under its 2-month high"
+     "-30% under its 2-month high"
     ],
-    "price": 711.28,
+    "price": 715.0,
     "note": "big moves 5-7x more likely here, in either direction"
    }
   ]
@@ -230791,7 +230862,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 17:48",
+ "watchdog_last": "2026-11-25 18:00",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -231498,8 +231569,8 @@
    "date": "2026-11-25",
    "t": "VST",
    "close": 121.325,
-   "ah_px": 130.0462,
-   "ah_move": 7.19,
+   "ah_px": 121.7,
+   "ah_move": 0.31,
    "ah_vol": 597431,
    "vol_share_pct": 14.2,
    "first_seen": "17:40",
