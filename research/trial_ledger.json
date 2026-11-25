@@ -337,6 +337,10 @@
   "night_round_8_2026_11_25": {
    "trials": 10,
    "verdict": "2026-11-25 00:20. (T) NVIDIA +6% day -> other AI-power names, one point per day vs S&P: live trio CEG/VST/TLN 5d +2.25% (2008-18, n 9) / +1.88% (2019-26, t 2.4), 10d +1.81 / +3.56% (t 3.1); grid/electrical (ETN, PWR, HUBB, POWL, VRT, GEV) 5d -0.15% / +0.81%, 10d +0.30 / +0.92%; utilities (NRG, PEG, ETR) ~0. The edge is specific to the trio: no extension. (S) Fear fading (VIX>30 and falling 2 days) on wider lists, whole account: our 10 (live) 25.2%/yr (17.7 / 36.3); related 22.4% (16.2 / 31.4); 115 big stocks 22.3% (15.8 / 31.9); our 10 + related 22.0%: rejected, live unchanged. Ops: minute-data backfill was ~12 min per stock on the e2-micro (11 stocks in ~2h) and the after-hours columns restarted it; it now runs at low CPU priority and does stocks not yet saved first."
+  },
+  "night_round_9_2026_11_25": {
+   "trials": 5,
+   "verdict": "2026-11-25 00:25. (Z) Fear-aware parking: also hold the 2x S&P fund while the S&P is below its 200-day if VIX > 30 and falling 2 days. Parking alone (synthetic 2x S&P + T-bills): 2000-06 4.9%/yr, worst -34.1% (vs 0.6%, -45.0%); 2007-18 13.1%, worst -49.3% (vs 11.7%, -37.5%: buys too early in 2008); 2019-26 23.8% vs 21.7%. Whole account 25.6%/yr (18.1 / 36.8) but worst drop -47.0% vs -40.5%: rejected (small gain, much deeper worst case). (X) Sprott uranium trust (SRUUF, from Jul 2021) 5-day +5%/+8%/-5% -> miners next 10 days vs S&P -0.08% / -0.28% / +0.24% (59/41/57 events, t ~0): no lead, rejected."
   }
  }
 }
