@@ -534,6 +534,10 @@
   "night_round_29_2026_11_25": {
    "trials": 0,
    "verdict": "2026-11-25 04:15. Program health sweep (owner: check for mishaps). Found: the market-hours cycle ran 17 rules inside ONE try block (gap_bank, gapdown_shadow, afterhours.score, panic_check, auto_check, sharp_drop_check, signal_trades, holiday_trades, earnings_pop_check, seasonal_check, park_check, options_mark, score_calls, watch_mistakes...): a crash in any early rule silently skipped every later one for that cycle, and a persistent crash (e.g. in the new afterhours.score) would have disabled panic/sharp-drop/parking every cycle with only a server-log traceback. Fixed: each rule runs through _safe() on its own; failures are counted in state.rule_errors and the owner gets a phone alert on the 3rd/30th/300th consecutive failure; the counter clears on success. Other silent handlers (9 'except: pass/continue/return') checked: all wrap optional data fetches, none hides a rule. Earlier tonight: intraday.py empty-chunk bug (fixed 04:05)."
+  },
+  "night_round_30_2026_11_25": {
+   "trials": 0,
+   "verdict": "2026-11-25 04:25. Health sweep part 2: also on their own guards now: the morning meeting, manage_open (stops/targets on open trades: previously unguarded, a crash there stopped the whole rest of the cycle), the after-hours exit/bank pair, cover_negative, judgment_tick, the 4 weekly reviews (questioner, mistakes, nuclear weekly, red team: were one block), the evening after-hours dip/bank, and intel_tick (Night Watch included). Full cycle run on a copy of the live state with the simulation broker and --force-close: no rule errors. State size 5.0 MB, largest part shadow_desk 2.5 MB (capped at 20,000 trades, so bounded); chats/feeds trimmed already."
   }
  }
 }

@@ -3960,34 +3960,23 @@ def cycle(st, desk, br, ex, force=()):
         ei = st.setdefault("equity_intraday", [])
         ei.append([now.strftime("%Y-%m-%d %H:%M"), round(brk_state["equity"], 2)])
         del ei[:-4000]
-    try:  # weekly reviews run after the close / on the weekend, so they sit outside the market-hours block
-        questioner(st, desk, prices, now)
-        mistakes_review(st, desk, today, now)
-        nuclear_weekly(st, desk, prices, today, now)
-        red_team(st, desk, prices, today, now)
-    except Exception as e:
-        traceback.print_exc()
+    # weekly reviews run after the close / on the weekend, so they sit outside the market-hours block (each on its own guard)
+    _safe(st, "questioner", questioner, st, desk, prices, now)
+    _safe(st, "mistakes_review", mistakes_review, st, desk, today, now)
+    _safe(st, "nuclear_weekly", nuclear_weekly, st, desk, prices, today, now)
+    _safe(st, "red_team", red_team, st, desk, prices, today, now)
     if is_open:
         if (st["flags"].get("morning_done") != str(today) and now.time() >= dt.time(9, 31)) or "morning" in force:
             if now.time() >= dt.time(9, 31) and market.market_open():  # a forced test meeting before the open must not use up the real one
                 st["flags"]["morning_done"] = str(today)
-            morning(st, desk, br, ex, data, prices, today, brk_state)
-            process_fills(st, br, ex, today)
-        manage_open(st, ex, prices, today, brk_state)
-        process_fills(st, br, ex, today)
-        try:
-            ah_dip_exit(st, ex, prices, today, now)
-            ah_bank(st, ex, prices, today, now)
-        except Exception as e:
-            print("ah dip exit / bank", e)
-        try:
-            cover_negative(st, ex, today)
-        except Exception as e:
-            print("cover", e)
-        try:
-            judgment_tick(st, desk, prices, today, now, brk_state)
-        except Exception as e:
-            print("judgment", e)
+            _safe(st, "morning", morning, st, desk, br, ex, data, prices, today, brk_state)
+            _safe(st, "process_fills", process_fills, st, br, ex, today)
+        _safe(st, "manage_open", manage_open, st, ex, prices, today, brk_state)
+        _safe(st, "process_fills", process_fills, st, br, ex, today)
+        _safe(st, "ah_dip_exit", ah_dip_exit, st, ex, prices, today, now)
+        _safe(st, "ah_bank", ah_bank, st, ex, prices, today, now)
+        _safe(st, "cover_negative", cover_negative, st, ex, today)
+        _safe(st, "judgment_tick", judgment_tick, st, desk, prices, today, now, brk_state)
         # each rule runs on its own: one rule crashing no longer silently skips every rule after it in the cycle
         _safe(st, "gap_bank", gap_bank, st, ex, data, prices, today, now)
         _safe(st, "gapdown_shadow", gapdown_shadow, st, data, prices, today, now)
@@ -4023,12 +4012,9 @@ def cycle(st, desk, br, ex, force=()):
             morning_prep(st, desk, data, prices, today, brk_state)
         except Exception as e:
             traceback.print_exc()
-    intel_tick(st, today, force="intel" in force)
-    try:
-        ah_dip_check(st, ex, today, now)
-        ah_bank(st, ex, st.get("last_prices") or {}, today, now)
-    except Exception as e:
-        print("ah dip / bank", e)
+    _safe(st, "intel_tick", intel_tick, st, today, force="intel" in force)
+    _safe(st, "ah_dip_check", ah_dip_check, st, ex, today, now)
+    _safe(st, "ah_bank", ah_bank, st, ex, st.get("last_prices") or {}, today, now)
     try:  # did every scheduled job run? (alerts + one automatic retry)
         watchdog.check(st, now, market.cclock, market.is_holiday,
                        lambda title, body: notify(title, body, tags="rotating_light", priority="high", who="watchdog"),
