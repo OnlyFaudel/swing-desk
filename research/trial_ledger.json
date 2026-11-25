@@ -634,6 +634,14 @@
   "night_round_44_2026_11_25": {
    "trials": 2,
    "verdict": "2026-11-25 06:35. megacap_earnings_power_readthrough rejected."
+  },
+  "fast_lane_news": {
+   "trials": 14,
+   "verdict": "2026-11-25 06:45 (05:30 order-flow task, test 4: owner's 'can we catch the train' / go big on fresh news). Minute data, our 11 stocks 2016-2026. Named events: 7 power deals (6 with minute data, all 2024-26: gapped +10.5% on the day; buying at 9:35 +0.72% to the close, 20d -3.93%; at 9:45 -0.31% / -4.96%); 2026 NRC approvals (5 stock-events: +1.1 to +2.9% to the close, 20d -4% to -6%). A first pass on '+8% days on 2x volume' looked huge (+8-9% after 9:35) but it chose days by their CLOSE: hindsight, discarded. Honest version (known at the buy: up 5%+ vs yesterday and first-15-min volume 3x normal, S&P day < +2%, one per stock per 14 days), vs S&P, 0.2% cost: buy 9:45 2016-18 n 43: rest of day +0.28%, next close -0.10%, 5d +0.60%, 20d +5.15% (t 2.1), worst 5% 5d -10%; 2019-26 n 197: +0.26% / +0.63% / +1.76% / +5.75% (t 3.1), worst 5% -15.9%; buy 10:00 similar. But these stocks' ordinary 20-day excess was +1.4% / +2.3%, and in the same stock and month +8.9% (2019-26): the 20-day gain is the hot stretch the stock was already in, not the news. The same-day move is gone by 9:45. NO fast lane: rejected; the 30-50% size is not justified."
+  },
+  "order_flow_task_2026_11_25": {
+   "trials": 0,
+   "verdict": "2026-11-25 06:45, the 05:30 order-flow task. Data: data/intraday 131 monthly CSVs, 11 stocks (CCJ, UEC, DNN, UUUU, LEU, BWXT, NXE, CEG, VST, TLN full after the 04:05 backfill fix; OKLO rows without after-hours), SIP feed, 2016-2026, pre_px/ah_px filled. Tests 1-3: order_flow_early_2026_11_25. Test 4: fast_lane_news (rejected). Test 5: after_hours_dip (live, earnings nights skipped, 2024-26 ~+0.8%/trade) and after_hours_bank (off: edge gone since 2024). Alpaca supports fractional extended-hours limit orders (asset flag fractional_eh_enabled)."
   }
  }
 }
