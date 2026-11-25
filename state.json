@@ -603,7 +603,9 @@
   "sput:2026-11-25": true,
   "ahdip181:2026-11-25": true,
   "nightwatch181:2026-11-25": true,
-  "ahdip182:2026-11-25": true
+  "ahdip182:2026-11-25": true,
+  "nightwatch182:2026-11-25": true,
+  "ahdip183:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -4187,18 +4189,6 @@
  },
  "news_feed": [
   {
-   "ticker": "VST",
-   "source": "Google News: Vistra nuclear",
-   "title": "Surprised By Vistra's Slide? What Investors Overlooked - Simply Wall St",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOV1RKYTI4OVBUVzVEMmYzREJ0bTRaT3lXZldlQzVkLTZXS1RWZFBQTzhubThwdDlJNWRaSUZHR1JHYlZDTGx6aWdXbnNPREN4U0J0RVlrU09xSFFkdEwwSGJZalhRb0NGS2ZXbVpPRkcyRldnUjRwTFhzLTJibmhFd2xZTnlXdWYzeW1MVXYtenJ6R2pJbkFaTTdhcjhlcnNrUVlGUHhidWFSc0pGdS12akpoblRrUdIBuwFBVV95cUxOVFI0Sk0yaGIybHlqRTBUYVJKa0hhV0pSRFJjSV9VTF9xY0UwS2tWNFdYUjBnX1plTU1QVktCWVBiY3dNUkQ2aFNtY2JPV0h5d3JxVVdjTTU2RzJGdmVxdWR0YjVGSGNVbVZEdXJ4YWlyMGRiU2pJMWMxUUMzeTAwWEZPVFJ1aVlxc0ZDZ0lVOEJLcjc4Q29QUl9kb19WOHZRc2EyeEVwMGU0U3YxYXFpc0FCZUU2YVFieHFV?oc=5",
-   "ts": 1795502544,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic 'why did it slide' recap with no new company-specific information."
-  },
-  {
    "ticker": "NXE",
    "source": "Google News",
    "title": "4 Drill-Ready Targets & 10% Carried Interests Add Athabasca Exposure for ATHA - Crux Investor",
@@ -7185,6 +7175,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic Yahoo Finance forecast page title with no new company-specific information."
+  },
+  {
+   "ticker": "NXE",
+   "source": "Google News",
+   "title": "NexGen Energy (TSX:NXE): What Should Readers Watch As Markets Cool? - Kalkine Media",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWEd4dmZKdTR6VGU4ZUVyTnFPNlctOE12d09XRTY0b3FKNWdlTkROdDRwUnVFb2xxbklxNzFpRzZMdDhneUNKcVVqZWtpazJOdktuY1huVlNNdVRnNGNPSTdjR3Q4Q05rbklhNFllNFdSV29ZclQxNXB3QXgyMnQ5OFFJS3NqcFRtd2MzNXQ0WTRyRkhjS0RDNVV5WkN5VmhiQ2J5X2N3?oc=5",
+   "ts": 1795646220,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic market-cooling commentary, no new company-specific information."
   }
  ],
  "reviews": [
@@ -8944,16 +8946,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.72346,
+  "day_usd": 0.72431,
   "month": "2026-11",
-  "month_usd": 1.90702,
-  "total_usd": 1.90702,
+  "month_usd": 1.90787,
+  "total_usd": 1.90787,
   "by_role": {
    "macro": 0.19341,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.17495,
+   "scout": 0.1758,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9156,7 +9158,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 18:35 ET",
+ "last_cycle": "2026-11-25 18:47 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57951,6 +57953,7 @@
   "65775a96fb5b5ac6",
   "c1f74bed7bdbed79",
   "3459ed8af9ea8da9",
+  "0b3281c5bdc258d9",
   "c884db536c97a254",
   "52950daaafc92008",
   "4959c9e24111e1e4",
@@ -58197,6 +58200,7 @@
   "855ac1a10429d2f5",
   "4253203526d47c05",
   "2d1b2f9f5b979fb0",
+  "d29fad2b4995b909",
   "bba7be1f52034a41",
   "4a01de3865f16e76",
   "7a634663fcf720f5",
@@ -58390,7 +58394,7 @@
   "84200faa36eac51a",
   "688d746cfc31b58f"
  ],
- "news_slow_at": 1795649262.5529797,
+ "news_slow_at": 1795649964.760593,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219482,7 +219486,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 18:35",
+  "updated": "2026-11-25 18:47",
   "total": 680,
   "week": 511,
   "places": {
@@ -222669,7 +222673,7 @@
    "built": "2026-11-25 18:21"
   }
  ],
- "heartbeat": "2026-11-25 18:35",
+ "heartbeat": "2026-11-25 18:47",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -222894,17 +222898,17 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 298,
-   "used": 269,
+   "asked": 300,
+   "used": 271,
    "notes": {
     "TLN Deals and contracts": 17,
     "CCJ Deals and contracts": 56,
     "BWXT Deals and contracts": 37,
-    "SECTOR Government and laws": 72,
+    "SECTOR Government and laws": 73,
     "UUUU Deals and contracts": 38,
-    "SECTOR Countries": 67,
+    "SECTOR Countries": 68,
     "CEG Deals and contracts": 38,
-    "NXE Legal": 11,
+    "NXE Legal": 12,
     "NXE Deals and contracts": 18,
     "DNN Deals and contracts": 11,
     "BWXT Legal": 2,
@@ -230871,7 +230875,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 18:35",
+ "watchdog_last": "2026-11-25 18:47",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -231563,7 +231567,7 @@
    "close": 83.23,
    "ah_px": 84.1186,
    "ah_move": 1.07,
-   "ah_vol": 77215,
+   "ah_vol": 851591,
    "vol_share_pct": 10.0,
    "first_seen": "16:40",
    "headlines": [
@@ -231578,8 +231582,8 @@
    "date": "2026-11-25",
    "t": "VST",
    "close": 121.325,
-   "ah_px": 121.6183,
-   "ah_move": 0.24,
+   "ah_px": 121.549,
+   "ah_move": 0.18,
    "ah_vol": 4521303,
    "vol_share_pct": 14.2,
    "first_seen": "17:40",
