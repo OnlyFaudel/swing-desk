@@ -140,7 +140,8 @@ class Desk:
         if role in ("pm", "risk", "questioner", "investigator", "macro", "level", "whale", "researcher", "strategist") and isinstance(payload, dict):
             try:  # questions already answered overnight (research/desk_facts.json): use them instead of asking again
                 fx = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "research", "desk_facts.json")))
-                payload = {**payload, "already_checked_facts": [f"{f['topic']}: {f['answer']}" for f in fx.get("facts", [])][-12:]}
+                facts = [f for f in fx.get("facts", []) if role in f.get("roles", [role])]  # every fact for this role, none dropped
+                payload = {**payload, "already_checked_facts": [f"{f['topic']}: {f['answer']}" for f in facts]}
             except Exception:
                 pass
         les = [x["lesson"] for x in self.state.get("lessons", []) if x.get("lesson")][-6:]
