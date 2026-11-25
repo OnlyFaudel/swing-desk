@@ -626,6 +626,14 @@
   "night_round_43_2026_11_25": {
    "trials": 2,
    "verdict": "2026-11-25 06:30. speculative_sharp_drops (fact). Practice book live: 2 open (worst_week UUUU, LEU), 0 closed yet. Morning summary drafted."
+  },
+  "megacap_earnings_power_readthrough": {
+   "trials": 2,
+   "verdict": "2026-11-25 06:35 (round 44, new: MSFT/GOOGL/AMZN/META earnings reactions as a data-center spending read-through for power/electrical names CEG, VST, TLN, NRG, ETN, VRT, GEV, PWR; reaction = next session; vs S&P, 0.2% cost). 2012-22: reaction day +0.12%, next 5d +0.37% (n 130, t 1.6); 2023-26: +0.61%, next 5d +1.21% (n 45, t 1.6); after a +2% power reaction next 5d +0.74 (n 2) / +0.00 (n 8). Mild and clustered in the same weeks (4 reporters overlap): rejected."
+  },
+  "night_round_44_2026_11_25": {
+   "trials": 2,
+   "verdict": "2026-11-25 06:35. megacap_earnings_power_readthrough rejected."
   }
  }
 }
