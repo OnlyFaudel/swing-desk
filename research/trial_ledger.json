@@ -438,6 +438,26 @@
   "night_round_22_2026_11_25": {
    "trials": 18,
    "verdict": "2026-11-25 03:00. New families: credit_spread_switch, basket_correlation_regime, leader_cracks_first, gold_silver_vs_ours, attention_spikes. Nothing adopted; one combined 'does not matter' fact for the agents."
+  },
+  "all_time_high_distance": {
+   "trials": 7,
+   "verdict": "2026-11-25 03:10 (round 23, new). Next close vs S&P, 0.2% cost; ours (88 nuclear/related) / wide (140 big), 2008-18 / 2019-26. New ATH after 60d, 20d: -0.04 / +0.53; +0.07 / +0.44. Within 3% of ATH 20d: -0.13 / -0.05; -0.01 / -0.18. 70%+ off ATH and first close over 50d, 20d: +1.75 (n 220) / +0.96; +2.37 (t 2.4) / +1.39; 40d: +1.12 / +3.17; +2.92 / +1.73; 80% off 20d: +1.86 / +2.37; +0.76 / +1.55; 50% off 20d: +0.27 / +1.62; +1.86 (t 3.2) / +1.46 (t 2.5); 2000-06 ours (70% off) -1.29% (n 91). NOT ADOPTED: fails 2000-06 and survivorship bias is largest exactly for fallen stocks (both lists are today's survivors). Re-test only with a survivor-free list."
+  },
+  "round_numbers": {
+   "trials": 2,
+   "verdict": "2026-11-25 03:10 (round 23, new). First close above a round number (5/10/50/100 grid by price) in 60 days, 10d: ours -0.41 / -0.07; big -0.57 (t -3.7) / -0.20. Within 1.5% under a round number after a 5% run, 10d: -0.10 / -0.15; -0.42 (t -2.6) / +0.20. Rejected (no long edge; mild 'don't chase' before 2019)."
+  },
+  "crash_anniversary": {
+   "trials": 1,
+   "verdict": "2026-11-25 03:10 (round 23). 1 year after a 15%+ one-day crash, 10d: ours -1.12 / -0.71; big +1.09 / -1.50. Rejected."
+  },
+  "canada_holidays": {
+   "trials": 4,
+   "verdict": "2026-11-25 03:10 (round 23, new). TSX closed, NYSE open (Victoria Day, Canada Day, Civic, Canadian Thanksgiving, Boxing Day), CCJ/NXE/DNN vs S&P, 2005-18 / 2019-26: day +0.63% / +0.19% (n 153 / 108), volume 0.58x / 0.68x normal, abs move 2.60% vs 2.29% normal; next day -0.76 / +0.40; next 5 -0.35 / +1.40; after a 3%+ holiday move, next-day reversal +2.90% (n 39) / +0.68% (n 29). Too few trades and weakening: fact only."
+  },
+  "night_round_23_2026_11_25": {
+   "trials": 14,
+   "verdict": "2026-11-25 03:10. New families: all_time_high_distance, round_numbers, crash_anniversary, canada_holidays. Nothing adopted; 'fallen stock turning' is the best-looking idea of the night but is survivor-biased and fails 2000-06."
   }
  }
 }

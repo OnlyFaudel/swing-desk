@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 03:00",
+ "updated": "2026-11-25 03:10",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -133,6 +133,18 @@
     "questioner",
     "strategist",
     "researcher"
+   ]
+  },
+  {
+   "topic": "Price landmarks: all-time highs, round numbers ($50, $100...), fallen stocks turning, and Canadian holidays",
+   "answer": "Tested 2026-11-25 (88 nuclear/related + 140 big stocks, next close vs the S&P after costs, 2008-18 and 2019-26). New all-time high, or within 3% of it: about the same as any day (no 'too high to buy', no breakout bonus). First close above a round number ($5/$10/$50/$100 steps by price): -0.4% to -0.6% over 10 days in 2008-18, ~0 since: crossing a round number is not a reason to buy. A stock 70%+ below its all-time high closing back over its 50-day average: +1.0% to +2.4% over 20 days in all four tests, but -1.3% in 2000-06 and the stock lists are today's survivors (the ones that never came back are missing), so it is not trusted. Canadian market holidays (Victoria Day, Canada Day, Civic Holiday, Canadian Thanksgiving, Boxing Day) when New York is open: CCJ, NXE and DNN trade on ~60% of normal volume; a 3%+ move that day reversed by +2.9% the next day before 2019 (n 39) but only +0.7% since (n 29): don't chase a big move on a Toronto holiday.",
+   "roles": [
+    "pm",
+    "level",
+    "risk",
+    "strategist",
+    "researcher",
+    "scout"
    ]
   }
  ]
