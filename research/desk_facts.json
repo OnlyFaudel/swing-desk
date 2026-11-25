@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 04:45",
+ "updated": "2026-11-25 05:05",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -200,6 +200,17 @@
     "level",
     "risk",
     "investigator",
+    "strategist",
+    "researcher"
+   ]
+  },
+  {
+   "topic": "Patient Levels fills: the stock's own long trend matters (200-day average, distance from its 6-month low)",
+   "answer": "Checked 2026-11-25 on the 9,844 practice-book level trades (2024-2026), split by date AND by nuclear vs other names. A fill while the stock is BELOW its 200-day average earns much less in all four splits: +0.22 vs +0.35R (older), +0.02 vs +0.24R (newer), nuclear +0.05 vs +0.23R, others +0.14 vs +0.31R (t -1.9 to -3.4). A fill within 5% of the stock's 6-month weekly low also earns less (+0.03 to +0.10R vs +0.17 to +0.32R), and a fill 40%+ above that low earns more (t +1.9 to +4.6). Support levels work in uptrends, not as bottoms in downtrends. Use: a level buy in a stock under its 200-day average is a small-size or skip; the same with the group trending down (earlier fact). The S&P's own move during the day before the fill does NOT matter once measured without peeking (a first version that used the fill hour's own S&P bar showed a fake effect). Only one market era of hourly data, so this is sizing judgment, not yet a written rule.",
+   "roles": [
+    "level",
+    "pm",
+    "risk",
     "strategist",
     "researcher"
    ]

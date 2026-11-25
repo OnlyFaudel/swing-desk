@@ -566,6 +566,14 @@
   "night_round_33_2026_11_25": {
    "trials": 15,
    "verdict": "2026-11-25 04:55. supply_cut_news, selloff_leadership: both rejected. Options data still only 2 days (Nov 23-24)."
+  },
+  "level_fill_context": {
+   "trials": 9,
+   "verdict": "2026-11-25 05:05 (round 34, new features on shadow_desk 9,844 hourly level trades 2024-01..2026-11 joined with daily data; halves at 2025-08-01 plus nuclear vs others). Below 200-day: R +0.218 vs +0.345 (t -1.9) / +0.021 vs +0.235 (t -3.4); nuclear +0.052 vs +0.232 (t -2.2), others +0.142 vs +0.313 (t -3.1). Below by 20%+: t -0.4 / -1.6. Above 200-day by 30%+: t +0.6 / +2.9. Within 5% of 6-month weekly low: +0.096 vs +0.320 (t -2.0) / +0.031 vs +0.168 (t -1.3); nuclear t -0.9, others t -2.3. 40%+ above weekly low: t +1.9 / +4.6 / +1.9 / +4.4. S&P move before the fill (strictly earlier bars; 5,246 fills, 9:30 fills excluded): down 1%+ t -0.4 / +0.6 (nothing); up 0.5%+ t +1.7 / +1.2 / +1.6 / +2.4 (weak). A first version used the fill bar's own S&P close and showed t -3.4 / +5.5: LOOK-AHEAD, discarded. Candidate sizing rule (smaller level buys below the 200-day) consistent in 4 splits but one era: fact for agents, re-test as more shadow trades accrue."
+  },
+  "night_round_34_2026_11_25": {
+   "trials": 9,
+   "verdict": "2026-11-25 05:05. level_fill_context. Caught and discarded a look-ahead version of the S&P-at-fill feature."
   }
  }
 }
