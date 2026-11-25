@@ -581,7 +581,9 @@
   "park:2026-11-25": true,
   "questioner:2026-11-25:8": true,
   "reconcile:2026-11-25": true,
-  "notecheck:2026-11-25": true
+  "notecheck:2026-11-25": true,
+  "nightwatch161:2026-11-25": true,
+  "recent:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -4165,18 +4167,6 @@
  },
  "news_feed": [
   {
-   "ticker": "TLN",
-   "source": "Google News: \"Talen Energy\"",
-   "title": "Talen Energy CFO Cole Muller Donates 7,445 Shares to Charity, Reports Form 4 Filing - Kalkine Media",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQd1hZVFFxQzZiendzcXI2ckEwZnZjYmp4dUhrdm54SjFKbnFJQ09nQXhlblhoQVl4TWtCS2hMN3ZhdTR6QTlYRHd2WEJkWHRrQ21RVjhiMFpkU3Vud08wemM3R0M4OFRlUVhwcUx2NW9sd01zVU1PU3VCZUE4aUI3RkVCcU1kV1B3TTdreGl3bHNvenc3U21GNUpFMEsyZ3BtYmZNWEItNkFhVUtiV0dadmdyeWk1VXE4RUFhYW1jNXFTekhDUEhr?oc=5",
-   "ts": 1795482255,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Routine Form 4 charitable share donation by CFO; no trading signal."
-  },
-  {
    "ticker": "BWXT",
    "source": "Local intel: Seapower Magazine (Naval reactors)",
    "title": "Karman Awarded $31 Million Navy Contract for Virginia-Class Submarine Propulsor Tailcones",
@@ -7163,6 +7153,18 @@
    "direction": "neutral",
    "event_type": "war_geopolitics",
    "why": "North Korea nuclear test warning is geopolitical noise with no uranium-demand link."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "Kazatomprom operations chief detained in bribery probe - The Northern Miner",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQY2ZQV0V6ZHhqbGZLckFFdU4zbkM2LUdNbTNKS01BTDM1d01MMk1Ya0dPZDhhV1V1ZXh4R3VTbEh3RjhfS3hiS1hZaEdvRDBRMU9zRlRFaGVyekhuZUNJd2M0YjFIYXF5OWlKRUpPQmd5U2owNVplZnJxeTVlRnp3ejdrcDZ0R2xaU0x1UUhna3hBcEZtZVJmUnVqVG51RkdVMlFr?oc=5",
+   "ts": 1795641413,
+   "materiality": 5,
+   "novelty": "new",
+   "direction": "down",
+   "event_type": "other",
+   "why": "Kazatomprom is a major uranium supplier; an ops chief detained raises supply-risk and governance questions, but it is an unconfirmed probe with no production impact yet."
   }
  ],
  "reviews": [
@@ -8922,16 +8924,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.70455,
+  "day_usd": 0.70504,
   "month": "2026-11",
-  "month_usd": 1.88811,
-  "total_usd": 1.88811,
+  "month_usd": 1.8886,
+  "total_usd": 1.8886,
   "by_role": {
    "macro": 0.19063,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.16625,
+   "scout": 0.16674,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9134,7 +9136,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 16:15 ET",
+ "last_cycle": "2026-11-25 16:27 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57788,8 +57790,8 @@
   "a3dd031817a4feeb",
   "fd337937e7471e2a",
   "fe0239e8c69f7365",
-  "e36e8842560640fa",
   "3540271e126c026c",
+  "e36e8842560640fa",
   "1e0f49b9f0b2bcbb",
   "e8576c26f24e8b21",
   "59c6f6be8bf3e5a9",
@@ -58295,6 +58297,7 @@
   "e356ee82386a78c0",
   "6e29a5daa673e380",
   "f19e01fb55b5d3b4",
+  "64586fb72f88087f",
   "991c698e5a396dd1",
   "688d746cfc31b58f",
   "14550cc72dba894e",
@@ -58347,7 +58350,7 @@
   "3fe9fc872b222598",
   "8a429bbe4d25ae7d"
  ],
- "news_slow_at": 1795640934.6859224,
+ "news_slow_at": 1795641620.534998,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219288,7 +219291,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 16:16",
+  "updated": "2026-11-25 16:27",
   "total": 671,
   "week": 507,
   "places": {
@@ -222468,12 +222471,12 @@
    "built": "2026-11-25 16:16"
   }
  ],
- "heartbeat": "2026-11-25 16:15",
+ "heartbeat": "2026-11-25 16:27",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 374,
+ "_pushed_feed": 375,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -222693,15 +222696,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 279,
-   "used": 251,
+   "asked": 280,
+   "used": 252,
    "notes": {
     "TLN Deals and contracts": 16,
     "CCJ Deals and contracts": 53,
     "BWXT Deals and contracts": 37,
     "SECTOR Government and laws": 68,
     "UUUU Deals and contracts": 38,
-    "SECTOR Countries": 61,
+    "SECTOR Countries": 62,
     "CEG Deals and contracts": 32,
     "NXE Legal": 10,
     "NXE Deals and contracts": 17,
@@ -222711,7 +222714,7 @@
     "UEC Deals and contracts": 5,
     "UUUU Legal": 21,
     "SECTOR Uranium market": 5,
-    "CCJ Legal": 13,
+    "CCJ Legal": 14,
     "CEG Legal": 2,
     "VST Deals and contracts": 27,
     "LEU Legal": 1,
@@ -230654,7 +230657,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 16:15",
+ "watchdog_last": "2026-11-25 16:27",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -231125,7 +231128,7 @@
    "worst_week": {
     "what": "Our 2 worst stocks over the last 5 days: buy the close, sell after 5 sessions (2019-26: 22.4%/yr, -62% worst drop)",
     "closed": 0,
-    "open": 2,
+    "open": 3,
     "avg_pct": null,
     "avg_vs_spy_pct": null,
     "win_pct": null,
@@ -231135,7 +231138,7 @@
    "four_down": {
     "what": "4 down closes in a row (our 10 + related stocks): buy the close, sell after 5 sessions (2019-26: 26.2%/yr on related)",
     "closed": 0,
-    "open": 0,
+    "open": 3,
     "avg_pct": null,
     "avg_vs_spy_pct": null,
     "win_pct": null,
@@ -231158,6 +231161,96 @@
     "open": 0,
     "avg_vs_spy_pct": null,
     "now": "S&P"
+   },
+   "capitulation": {
+    "what": "85%+ of the 115 big US stocks fall on the same day: buy our 10 at the close, sell after 10 sessions (one point per day, 5-day gap: 2008-18 -1.44% vs S&P (t -2.6), 2019-26 +2.08% (t 2.6): flipped between eras)",
+    "closed": 0,
+    "open": 0,
+    "avg_pct": null,
+    "avg_vs_spy_pct": null,
+    "win_pct": null,
+    "t": null,
+    "candidate": false
+   },
+   "tech_panic": {
+    "what": "Chip stocks (SMH) fall 3%+ while the S&P falls less than 2%: buy our 10 that fell 3%+ and sit 15%+ under their 20-day high, sell at +10% or after 6 sessions (per day: 2008-18 +0.50% (n 9), 2019-26 +2.21% vs S&P (t 1.7); with related stocks -2.46% / +1.13%: flipped between eras)",
+    "closed": 0,
+    "open": 0,
+    "avg_pct": null,
+    "avg_vs_spy_pct": null,
+    "win_pct": null,
+    "t": null,
+    "candidate": false
+   },
+   "vvix_spike": {
+    "what": "VVIX (volatility of the VIX) in its top 5% of the past year: buy our 10 at the close, sell after 10 sessions (one point per spike: 2008-18 -2.96% vs S&P (t -2.8), 2019-26 +3.25% (t 2.3): flipped between eras)",
+    "closed": 0,
+    "open": 0,
+    "avg_pct": null,
+    "avg_vs_spy_pct": null,
+    "win_pct": null,
+    "t": null,
+    "candidate": false
+   },
+   "ai_scare": {
+    "what": "NVIDIA down 6%+ in a day: buy the power trio (CEG, VST, TLN) at the close, sell after 10 sessions (one data point per scare: 2008-18 -1.0% vs S&P, 2019-26 +2.0% (t 1.6); 2024 +4.5%, 2025 +9.6%, 2026 +12.0%: an AI-era-only pattern)",
+    "closed": 0,
+    "open": 0,
+    "avg_pct": null,
+    "avg_vs_spy_pct": null,
+    "win_pct": null,
+    "t": null,
+    "candidate": false
+   },
+   "dry_drop": {
+    "what": "Our 10 or a related stock falls 8%+ in 10 sessions while its 10-day volume is 30%+ below its prior 50-day average (sellers running out): buy the close, sell after 10 sessions (2008-18 -0.45% vs S&P, 2019-26 +2.14% (t 3.3); big US stocks -0.18% / +0.22%: recent and nuclear-only)",
+    "closed": 0,
+    "open": 0,
+    "avg_pct": null,
+    "avg_vs_spy_pct": null,
+    "win_pct": null,
+    "t": null,
+    "candidate": false
+   },
+   "dry_rally": {
+    "what": "Our 10 or a related stock rises 8%+ in 10 sessions on volume 30%+ below its prior 50-day average: buy the close, sell after 10 sessions (2008-18 +0.39%, 2019-26 +1.33% (t 3.3); big US stocks -0.37% / +0.27%: fails the independent check)",
+    "closed": 0,
+    "open": 1,
+    "avg_pct": null,
+    "avg_vs_spy_pct": null,
+    "win_pct": null,
+    "t": null,
+    "candidate": false
+   },
+   "tg_week_dip": {
+    "what": "Thanksgiving week (Mon-Wed): one of our 10 trades 5%+ under yesterday's close (a resting limit order would fill at that price, or at the open if it opens lower): buy, sell at the Black Friday close (2007-18 +7.9%/buy vs -0.4% for the same trade in ordinary weeks, 2019-25 +4.5% vs +0.8%; ~600 other stocks +3.5%/+1.9% vs -0.3%/-0.7%; only 14 weeks with fills in our 10, t 1.5-2.5: small, so practice first)",
+    "closed": 0,
+    "open": 7,
+    "avg_pct": null,
+    "avg_vs_spy_pct": null,
+    "win_pct": null,
+    "t": null,
+    "candidate": false
+   },
+   "holiday_dip": {
+    "what": "Any of the 3 sessions before a market holiday: our 10 or a related stock trades 3%+ under yesterday's close (limit fill): buy, sell at the first close after the holiday (2007-18 +0.32%/buy vs -0.05% ordinary days, 2019-25 +0.52% vs +0.12%, t 2.1/2.4; ~600 other stocks show nothing (+0.02 / -0.17): fails the independent check, nuclear-only)",
+    "closed": 0,
+    "open": 44,
+    "avg_pct": null,
+    "avg_vs_spy_pct": null,
+    "win_pct": null,
+    "t": null,
+    "candidate": false
+   },
+   "sprott_issuing": {
+    "what": "The Sprott uranium trust is issuing new units (units outstanding up 1%+ in ~20 sessions, i.e. it is raising money to buy physical uranium) while the 5 miners are already up 10%+ in 20 sessions: buy CCJ, UEC, DNN, UUUU, NXE, sell after 20 sessions (2021-26 only: +6.3% vs S&P, n 12, vs +0.4% for the miners' rally alone, n 37; one era, small)",
+    "closed": 0,
+    "open": 0,
+    "avg_pct": null,
+    "avg_vs_spy_pct": null,
+    "win_pct": null,
+    "t": null,
+    "candidate": false
    }
   }
  },
@@ -231235,5 +231328,6 @@
    },
    "summary": "No rule is clearly triggered today, so I am leaving every strategy at its normal size. The only change is a smaller size on CEG, which is falling while AI-power stocks sell off and PJM auction risk looms."
   }
- }
+ },
+ "ah_watch": []
 }
