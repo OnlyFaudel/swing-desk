@@ -1880,6 +1880,22 @@
 "surfaced": false
 },
 {
+"date": "2026-12-08",
+"ticker": "UEC",
+"what": "Earnings inside the window: avoid resting buys into it",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-08",
+"ticker": "UEC",
+"what": "Earnings report. Avoid resting buy orders into it; re-evaluate the level after the print.",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
 "date": "2026-12-09",
 "ticker": "CCJ",
 "what": "FOMC rate decision; broad risk-off or risk-on move that can drive the uranium and nuclear names with it.",
@@ -2212,6 +2228,30 @@
 "ticker": "VST",
 "what": "PJM 2029/30 capacity auction closes under the price collar; expect clearing at or near the cap. Historically a release-day pop gets sold over 20 sessions, so don't chase it.",
 "by": "macro",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "CEG",
+"what": "PJM 2029/30 capacity auction close (expected near cap); historically the release pop fades, don't chase it",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "CEG",
+"what": "PJM 2029/30 capacity auction closes. Historically the release-day pop fades; do not chase it, and consider trimming held power names into it rather than adding.",
+"by": "level",
+"written": "2026-11-25",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "CEG",
+"what": "PJM 2029/30 capacity auction closes; expected to clear near the cap. Historically the release-day pop fades, so do not chase it.",
+"by": "level",
 "written": "2026-11-25",
 "surfaced": false
 },

@@ -21284,5 +21284,72 @@
 "wait",
 "year"
 ]
+},
+{
+"id": "6e1bf749988598af",
+"date": "2026-11-25",
+"ts": 1795623707,
+"title": "Divergent Joins Raytheon on Next-Gen Submarine-Launched Nuclear Cruise Missile - News and Statistics",
+"summary": "",
+"outlet": "IndexBox",
+"link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQc182Yk9zdkFwRndhVzNrOU1fa0tUQkhkTWx1SDlpZk95N05OY01jdTRqeDZnWjEyMklaMXdacHcwcXJwRkd3a3hEWElHWjdmaVc1Q0VEejZaZ1RFcnN1b09NbFc3RzdPRG1QZkFMR0x2REU4eklJbVZQVm5CNkhTeFUzUHh4a1IwQV9BWE5Kbm5mTmE4R29iUEZGQnVhck9OSG9LcldmbkJqd0dUVy1IeTlrOTQ?oc=5",
+"place": "Naval reactors",
+"tickers": [
+"BWXT"
+],
+"tags": [
+"defense"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.6,
+"score": 4.7,
+"echo_of": null,
+"w": [
+"cruise",
+"divergent",
+"gen",
+"joins",
+"launched",
+"missile",
+"news",
+"next",
+"nuclear",
+"raytheon",
+"statistics",
+"submarine"
+]
+},
+{
+"id": "a1bb2d0032056962",
+"date": "2026-11-25",
+"ts": 1795631702,
+"title": "Amazon Is Backing More Than 5 Gigawatts of New Nuclear by 2039. This Reactor Developer Could Cash In.",
+"summary": "",
+"outlet": "Yahoo Finance",
+"link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWnp4ZjVRLVlaQk8wdVk1UFN0SVI3ZUFnN0tMbGdUamZmZkFaOG1mZFJ3b2ZvN0NnNnhVMEcxY1JvS0ExamxlS0xQbUNGbGNJQmhKdUQ3dERVejVHU1BEVnZNUy1ON1Z1bkc3WWJMcTdONVp2NU1NT0tLTVR4cnljYVlrNXU0WWlXeXVONDQ1OElBdw?oc=5",
+"place": "Big tech power deals",
+"tickers": [
+"CEG",
+"VST",
+"TLN",
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.86,
+"score": 3.22,
+"echo_of": null,
+"w": [
+"2039",
+"amazon",
+"backing",
+"cash",
+"developer",
+"gigawatts",
+"nuclear",
+"reactor"
+]
 }
 ]
