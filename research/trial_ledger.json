@@ -582,6 +582,14 @@
   "night_round_36_2026_11_25": {
    "trials": 4,
    "verdict": "2026-11-25 05:25. Two-era check of the 200-day level idea failed on a daily proxy; fact softened so agents don't skip trades on it."
+  },
+  "not_working_exit": {
+   "trials": 12,
+   "verdict": "2026-11-25 05:40 (round 37, new: time-based early exits; stops were tested before). Panic / sharp-drop trades as live (+10% at a close, 6 / 10 sessions), vs S&P, 0.2% cost, one per stock per 10 days. Ours 00-07 / 08-18 / 19-26: panic live +0.06 / +0.49 / +1.61, exit day 3 if below cost +0.42 / +0.00 / +0.94, day 3 if -5% +0.12 / +0.22 / +1.09, day 2 if -3% +0.29 / -0.03 / +1.11; sharp live +0.60 / +0.89 / +1.44, day 3 if -5% +0.32 / +0.82 / +1.41 (worst 5% -21.9 -> -17.9, -20.6 -> -12.8, -20.6 -> -15.2). Wide 08-18 / 19-26: sharp live +1.46 / +0.24, day 3 if -5% +0.59 / +0.29 (worst -17.1 -> -15.1, -15.2 -> -12.5); panic live +0.50 / +0.15, day 3 if -5% +0.57 / +0.10. Return per unit of tail worse in big stocks 2008-18 and ours 2000-07: rejected. Sharp drop within 3% of the 120-day low: ours -1.33 vs +1.45 / +0.55 vs +1.13 / +0.61 vs +1.67 (n 50 / 88 / 100); wide +1.64 vs +1.34 / -0.35 vs +0.60: fails the independent check; fact for the PM's sizing judgment only."
+  },
+  "night_round_37_2026_11_25": {
+   "trials": 12,
+   "verdict": "2026-11-25 05:40. not_working_exit (rejected) + new-low sharp-drop sizing hint (fact)."
   }
  }
 }
