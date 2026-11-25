@@ -510,6 +510,26 @@
   "night_round_27_2026_11_25": {
    "trials": 6,
    "verdict": "2026-11-25 03:50. rule_collision_and_confirmation (rejected), cash_and_cost_audit. Skipped: sector-ETF hedge (cash account, no shorting; inverse ETFs not in scope), regime sizing for panic (already in panic_rule_2008 / panic_cluster_audit)."
+  },
+  "trend_quality": {
+   "trials": 4,
+   "verdict": "2026-11-25 04:00 (round 28, new). 20-day move of 15%+ split by share of up days; next close, 20d vs S&P, 0.2% cost; ours (88) / wide (140), 08-18 / 19-26. Smooth rally (65%+ up days): +0.28 / +1.16 (t 2.6); +0.02 / +0.24. Choppy rally (<=50%): -0.00 / +1.64; -0.09 / +2.15 (t 2.8). Smooth decline (<=35% up): -0.64 / +1.78 (t 2.9); +1.08 (t 2.0) / +0.32. Choppy decline (50%+ up): +0.73 / +0.60; +0.07 / +1.97 (all four positive, t 0.1-1.7). Rejected."
+  },
+  "month_of_quarter": {
+   "trials": 6,
+   "verdict": "2026-11-25 04:00 (round 28, new). Basket minus S&P per month by position in the quarter, 00-07 / 08-18 / 19-26. Our 10: month 1 +1.12 / +1.82 / +3.54; month 2 +4.14 / +0.26 / +2.06; month 3 +2.30 / -1.92 / +0.47. Related: +1.30 / +0.42 / +1.54; +2.31 / -0.19 / +0.45; +1.66 / +0.26 / +0.33. No consistent order: rejected."
+  },
+  "vwap_close_after_drop": {
+   "trials": 2,
+   "verdict": "2026-11-25 04:00 (round 28, new, minute features). Our 11 stocks on a 5%+ down day, next 5d vs S&P after cost, 2016-20 / 2021-26: closed above VWAP +2.50% (n 31) / +2.24% (n 63); closed 1%+ below VWAP +2.45% (n 320) / +1.34% (n 757); all +2.47 / +1.28. Better only recently: rejected (note: any 5% down day in our names has rebounded ~1.3-2.5% in 5 days, the sharp-drop/panic rules already use this)."
+  },
+  "ex_dividend_power": {
+   "trials": 2,
+   "verdict": "2026-11-25 04:00 (round 28, new). 10 power/utility names (CEG, VST, NRG, PEG, EXC, ETR, D, DUK, SO, AEP), yfinance dividends 2005-2026. 5 days into the ex-date vs S&P: +0.30% (t 1.8) / -0.45% (t -2.3) / -0.16% (2005-12 / 2013-19 / 2020-26, n ~230 each). Holding through ex 5d incl. dividend: -0.15 / -0.06 / +0.37. Flips: rejected."
+  },
+  "night_round_28_2026_11_25": {
+   "trials": 14,
+   "verdict": "2026-11-25 04:00. New families: trend_quality, month_of_quarter, vwap_close_after_drop, ex_dividend_power. All rejected; nothing for the agents worth a new fact (no 'avoid' lesson either)."
   }
  }
 }
