@@ -17908,5 +17908,78 @@
 "poland",
 "procurement"
 ]
+},
+{
+"id": "f8644b8dbeff2121",
+"date": "2026-11-25",
+"ts": 1795573171,
+"title": "First Public Debate on Korea's Nuclear Future Becomes One-Sided Briefing",
+"summary": "",
+"outlet": "Seoul Economic Daily",
+"link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONS1JUHFnOGpCcWQyMUlxR2c3ei1VSTEtUjFaNnAwVjRxazlQeGt6UzJwSTBlMlNwaVhsZEI0LWs4TVZwMTNxOXc0aTFmUWNWOTVhZUNMUXN5SFJOb2VqcVlwRjhEM3F4aDRzTkg3M3g3dzJVNXBKd2p2c1F6c1VZQk1pX2NnaVZXRkVGY0dPR1p3dmNPMGJpc0JLbE0wNG8?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.8,
+"score": 4.1,
+"echo_of": null,
+"w": [
+"becomes",
+"briefing",
+"debate",
+"first",
+"future",
+"korea",
+"nuclear",
+"one",
+"public",
+"sided"
+]
+},
+{
+"id": "545d2401ade15843",
+"date": "2026-11-25",
+"ts": 1795574160,
+"title": "Naver Cloud Teams Up with Korea Hydro & Nuclear Power, KEPCO KDN on AI Transformation of Nuclear Power; Frontline Staff to Build Their Own Agents",
+"summary": "",
+"outlet": "BigGo Finance",
+"link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ORmtZeW9MMlYyQTNxNHFzVEUzMjRCTG1rdGh6eEdIR0hNRFd2clhfeXZKYzV3M2lQLW9aV3FDUlg4QmlxUmVrRjdHalh5S3UwUTVSRWZEWUtNbXBqMTZzUVo5cWQzUFdYdWNqSXByN3Ytd0ZFY1E?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"jobs",
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.67,
+"score": 5.14,
+"echo_of": null,
+"w": [
+"agents",
+"build",
+"cloud",
+"frontline",
+"hydro",
+"kdn",
+"kepco",
+"korea",
+"naver",
+"nuclear",
+"own",
+"power",
+"staff",
+"teams",
+"their",
+"transformation"
+]
 }
 ]
