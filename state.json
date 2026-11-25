@@ -529,7 +529,7 @@
   "radarres:2026-11-24": true,
   "questioner:2026-11-24:9": true,
   "sput:2026-11-24": true,
-  "intraday_backfill_t": 1795597009.1243336,
+  "intraday_backfill_t": 1795598899.1966937,
   "reconcile:2026-11-24": true,
   "catalysts:2026-11-25": true,
   "tidy_v1": true,
@@ -2609,7 +2609,7 @@
   }
  ],
  "cooldown": {
-  "CCJ": 1795198855.6822214,
+  "CCJ": 1795599603.1637194,
   "BWXT": 1795451380.252104
  },
  "news_feed": [
@@ -5012,6 +5012,66 @@
    "direction": "down",
    "event_type": "other",
    "why": "Generic price-recap headline about seller pressure and volatility; no new company information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: Vietnam Economic Times (Asia newcomers)",
+   "title": "Vietnam\u2019s nuclear ambitions: Building the people, institutions and capabilities for success",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOakdtMG04UlVGV21xb2k3aUtYMDdiaVFROGx6aHgxckIxUWZfWUNPdjdhd0x0U3NCWEFDT0hlMUEyWXcyX3AtTGhrQkhUQTIwbXV0cjF6a2tmQlpJRnRGZGE1Q1hIcUtmbWtYTDVWNllIdzhod3hrcjNnSGhTMGtqanJhbFFHR3RYOVpibU9KZ3lRZ25EQXptME5sWTdSMWZlMlpKb0k5ZVg2QXRyRThSS0dEMmp2Smc?oc=5",
+   "ts": 1795597200,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "policy_tariff",
+   "why": "Vietnam nuclear ambitions piece is long-term newcomer planning, not a near-term uranium demand shock."
+  },
+  {
+   "ticker": "NXE",
+   "source": "Google News: \"NexGen Energy\"",
+   "title": "How a Broad Risk-On Rebound Lifted NexGen Energy Ltd. (TSX:NXE) on the S&P/TSX Composite (23 Nov 2026) - kalkine.ca",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWlR2WlBIOEN0VUV0YldqR250N2I2bHYzbnN5Q2xFTjhIMlJnSkJJQmlaaWRlOUJoMXhlLWw5RXhrZ2IwR1FWd2xQemI2OWJhNmFRNll4MjRCZEp1a2hzbnlLVFpqV0xzZ3RmUWFERng1Umg1UlR1MmZpZnJyWDRXY3h6LWN3M3dMVzEzRGJtc2x5OXR2SGNzS1VJc0NwZUl3MWRVcEdhdGNsa2Y3eXA0al85M1lnWnpVY0pqTGZROVV6Ylk?oc=5",
+   "ts": 1795599180,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Recap of a broad market rebound; no company-specific news."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Kazatomprom",
+   "title": "Kazakhstan arrests exec at world\u2019s top uranium producer - Macau Business",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZDF3M3l3X204NzFhX09mS2ZCdUliVDhlNEI5R3BUOXZVckpFMkF5dFhyS3JhQTFRZFJ4OTlXUzg3MkUwV3NWbU1DV3JjczJPc1FrcVJTeElhMWRjN19GR2NqVTEyQkJIcGRqZkg0THQ0Z2J5Sno3Q0FLa0pVcDN4TnhCbE5UenFG?oc=5",
+   "ts": 1795599146,
+   "materiality": 7,
+   "novelty": "new",
+   "direction": "down",
+   "event_type": "other",
+   "why": "Arrest of a Kazatomprom exec signals Kazakh supply and governance risk for uranium."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Kazatomprom",
+   "title": "Kazatomprom (KAP) Dismisses Chief Commercial and Operating Officers in Board-Led Executive Restructuring - Kalkine Media",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNEIzZVdTR3VzUFkzaTRsWUJVMG5xbGs0TTlWM1hSbjFQOHFSbWU5MnpXUmc5YS1IcVZvN3JTN1VCU2dDTFg1SlFUcERFTDkxRDNiNzI0Ym1WVk9pOXhST3QtRDR2YVRTZDRuRzFrZ1pGdk1Mc1NkMHVLckJVZm1xb0cxYVNxaFR2Mi1ldGZiNnEwTmZfR2ZsUWsxb294Rml0ZzREQVpQSU5JYlpIV0VORFkxRkgxQ3VpV0ZXVjVuMjFVSUNyMVNNSnBNN0h5Q25RQzlPdXJBcjNhN2F4THp4U1lRQQ?oc=5",
+   "ts": 1795598732,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "down",
+   "event_type": "other",
+   "why": "Kazatomprom board dismissed chief commercial and operating officers; supply-side uncertainty."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Kazatomprom",
+   "title": "Kazakhstan detains state uranium miner board member in widening corruption probe - The Standard (HK)",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSXVmQVQ0UnpDNnktbzFUZzZHajE5NmhmT1QzazZQSThXb2E0aVlTdGU4MjQ3bl9iUHRsM28wVE9xd0VpY3NkU3lVMFRraC1aNG9CY1BfeTdJVDhZY1ZCN0Z5bnVwU0lGSDFMSDh1NDNaYXhBdk8xb1RHS19RVndVazUwdUN3Q210SWdOMDZRY1dieGFWc1EyWGp0S290N0VoM1ktZ0lEcVBrREl4UGVLeUdfYkJSQlA3OUdIZGl4dGowMi1ONnI1cVpNTXQ?oc=5",
+   "ts": 1795594930,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "down",
+   "event_type": "other",
+   "why": "Board member of Kazatomprom detained in widening probe; same Kazakh supply risk theme."
   }
  ],
  "reviews": [
@@ -6762,25 +6822,25 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.00476,
+  "day_usd": 0.07077,
   "month": "2026-11",
-  "month_usd": 1.18832,
-  "total_usd": 1.18832,
+  "month_usd": 1.25433,
+  "total_usd": 1.25433,
   "by_role": {
    "macro": 0.12168,
    "whale": 0.01778,
    "crowd": 0.01194,
    "level": 0.11932,
-   "scout": 0.13554,
+   "scout": 0.1366,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.07014,
+   "pm": 0.09963,
    "risk": 0.11324,
-   "investigator": 0.21804,
+   "investigator": 0.25255,
    "postmortem": 0.00035,
    "researcher": 0.01198,
-   "engineer": 0.02988,
+   "engineer": 0.03083,
    "questioner": 0.10432
   }
  },
@@ -6865,6 +6925,71 @@
    },
    "result": "no action",
    "time": "2026-11-23 11:29"
+  },
+  {
+   "ticker": "CCJ",
+   "trigger": "news",
+   "headline": "Kazakhstan arrests exec at world\u2019s top uranium producer - Macau Business",
+   "investigator": {
+    "summary": "Kazakhstan detained a Kazatomprom executive in a corruption probe. Kazatomprom is the world's largest uranium producer and Cameco's main rival, so the arrest is a possible supply-disruption headline. The news is not clearly bullish or bearish for CCJ.",
+    "novelty": "partly",
+    "direction": "neutral",
+    "durability": "one_day",
+    "confidence": 30,
+    "key_risk": "The probe could grow into a Kazatomprom production or export disruption, which would lift uranium prices and CCJ. Or CCJ could keep sliding with the basket regardless. CCJ is down 27% in 20 days.",
+    "trade_idea": "none",
+    "say": "News Scout, thanks for flagging it. I don't see a trade here. A corruption probe of one executive doesn't show any lost uranium supply, and our desk archive shows geopolitics and legal headlines haven't moved these stocks consistently. CCJ is already far below its averages and the basket gate is closed, so I won't buy on this.",
+    "to": "News Scout",
+    "why": "I checked the desk notes: geopolitics and other news types show no consistent effect on the named stock, and the basket gate blocks new buys. The headline carries no confirmed supply loss, so I left out a call.",
+    "_cost": 0.0345,
+    "_notes_used": [
+     "CCJ What history says",
+     "CCJ Snapshot"
+    ],
+    "files_read": "CCJ What history says, CCJ Snapshot"
+   },
+   "engineer": {
+    "say": "I'm the Plant Engineer, so my question is physical: does an arrest of a Kazatomprom board member change how much uranium comes out of Kazakhstan? Nothing in the news says production or shipments are disrupted. Kazakhstan is a big supplier to the world, not to Cameco's own mines, so for CCJ this is a headline, not a supply event. I agree with News Investigator: no trade here.",
+    "to": "News Investigator",
+    "real_effect": "No physical change is reported. Kazatomprom's output and shipments are not stated as affected by the arrest of a board member, and Cameco's Canadian mines are not involved. Any effect would be indirect, via sentiment or a higher spot price if Kazakh supply looked less reliable.",
+    "lasts": "days",
+    "routine": false,
+    "why": "I checked whether the event touches physical supply, plant operations or a regulator's decision, and it does not. Spot uranium is about $91.55 and the basket gate is closed, so there is no setup to act on regardless.",
+    "watch": [],
+    "call": null,
+    "_cost": 0.0009,
+    "_notes_used": [
+     "SECTOR Uranium market"
+    ],
+    "files_read": "SECTOR Uranium market"
+   },
+   "pm": {
+    "decisions": {
+     "CCJ": {
+      "action": "SKIP",
+      "size_mult": 1.0,
+      "confidence": 70,
+      "conviction": 2,
+      "target_pct": 10,
+      "stop_pct": 8,
+      "days": 5,
+      "reason": "A corruption probe of one Kazatomprom executive does not show any lost uranium supply, and our archive shows geopolitics and legal headlines have no consistent effect on these stocks. CCJ is down 27% in 20 days, the basket gate is closed, and 'buy weakness' has only worked in the recent era, so I won't buy."
+     }
+    },
+    "plan_summary": "No trade on CCJ. The Kazatomprom arrest is a headline, not a confirmed supply loss, and the basket is below its 10-day average, so new buys are blocked. Re-check if Kazatomprom announces a production or export disruption, or once the basket recovers.",
+    "say": "I agree with the Plant Engineer and News Investigator: the arrest of one executive doesn't change how much uranium comes out of Kazakhstan, so it is a headline and not a supply event. The basket gate is closed and CCJ is still falling, so I'm passing rather than forcing a trade.",
+    "to": "Plant Engineer",
+    "why": "I checked whether the news changes physical supply (it doesn't), whether past geopolitics headlines moved these stocks (no consistent effect), and the basket gate (closed). Together these leave no specific reason for CCJ to rise in the next few days.",
+    "_cost": 0.0295,
+    "_notes_used": [
+     "CCJ What history says",
+     "CCJ Snapshot",
+     "SECTOR Uranium market"
+    ],
+    "files_read": "CCJ What history says, CCJ Snapshot, SECTOR Uranium market"
+   },
+   "result": "no action",
+   "time": "2026-11-25 04:40"
   }
  ],
  "alpaca_seen_fills": [
@@ -6907,7 +7032,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-25 04:08 ET",
+ "last_cycle": "2026-11-25 04:38 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -54135,8 +54260,8 @@
   "f9eb7cbce2793d86",
   "31f128ea376aa942",
   "269219f13ec4aa2f",
-  "6fb969d093a9bc6e",
   "a1266dd4e5f78432",
+  "6fb969d093a9bc6e",
   "2afc300bcf16d7fc",
   "e7f494cb247bf154",
   "1f0c92334f3206aa",
@@ -54229,8 +54354,8 @@
   "4ab58aca5fa3c3af",
   "75dabb316f140f2a",
   "ac86fb04e7eb798b",
-  "a962842bb15ca7cc",
   "1abb33ed0efed0bd",
+  "a962842bb15ca7cc",
   "00667c7b98791b66",
   "fd337937e7471e2a",
   "fa656e6b4ef9de9d",
@@ -54338,11 +54463,11 @@
   "52950daaafc92008",
   "38312f71d35b70bf",
   "9f2e45d00f1961dd",
+  "9ab10d3c257d1ce5",
   "7269a326a498bd44",
   "5af6f5b9a2bf7623",
   "44041d56f140e1b4",
   "2aa378956ea76132",
-  "9ab10d3c257d1ce5",
   "844065448a881248",
   "b8175e38a640e7c2",
   "80ca077103e2454d",
@@ -54395,10 +54520,10 @@
   "de4d277c2d827d97",
   "dbf547d247c12542",
   "15fecb83818a0949",
-  "ad760b57be87fe67",
-  "beef726d305ecaee",
   "6305a538f3553f7a",
+  "beef726d305ecaee",
   "c40403c1e5b7035d",
+  "ad760b57be87fe67",
   "0939c76270a70008",
   "2363faa1cee608b8",
   "306dc38d51c88387",
@@ -54602,9 +54727,13 @@
   "32cfd9ef3704009d",
   "c527b52a6d387b5e",
   "9b6ee47aa4a5262e",
-  "68b8d7111ead5bfd"
+  "68b8d7111ead5bfd",
+  "94b1c7f7834deb36",
+  "2174c4b3413f79aa",
+  "4253203526d47c05",
+  "bf9813326e0bd040"
  ],
- "news_slow_at": 1795597620.627258,
+ "news_slow_at": 1795599523.6383781,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -206793,6 +206922,57 @@
    ],
    "practice": false,
    "end": "21:42"
+  },
+  {
+   "id": "20261125044003452981",
+   "title": "News on CCJ: Kazakhstan arrests exec at world\u2019s top uranium producer - Macau Busine",
+   "tickers": [
+    "CCJ"
+   ],
+   "kind": "news",
+   "start": "2026-11-25 04:40",
+   "msgs": [
+    {
+     "t": "04:40",
+     "who": "scout",
+     "to": "team",
+     "text": "Flagging this for the team: \"Kazakhstan arrests exec at world\u2019s top uranium producer - Macau Business\" (Google News: Kazatomprom). No position in CCJ.",
+     "outcome": false
+    },
+    {
+     "t": "04:40",
+     "who": "investigator",
+     "to": "scout",
+     "text": "News Scout, thanks for flagging it. I don't see a trade here. A corruption probe of one executive doesn't show any lost uranium supply, and our desk archive shows geopolitics and legal headlines haven't moved these stocks consistently. CCJ is already far below its averages and the basket gate is closed, so I won't buy on this.",
+     "outcome": false,
+     "notes": "Kazakhstan detained a Kazatomprom executive in a corruption probe. Kazatomprom is the world's largest uranium producer and Cameco's main rival, so the arrest is a possible supply-disruption headline. The news is not clearly bullish or bearish for CCJ.\nnovelty: partly\ndirection: neutral\ndurability: one_day\nconfidence: 30\nkey risk: The probe could grow into a Kazatomprom production or export disruption, which would lift uranium prices and CCJ. Or CCJ could keep sliding with the basket regardless. CCJ is down 27% in 20 days.\ntrade idea: none\nwhy: I checked the desk notes: geopolitics and other news types show no consistent effect on the named stock, and the basket gate blocks new buys. The headline carries no confirmed supply loss, so I left out a call.\nfiles read: CCJ What history says, CCJ Snapshot"
+    },
+    {
+     "t": "04:40",
+     "who": "engineer",
+     "to": "investigator",
+     "text": "I'm the Plant Engineer, so my question is physical: does an arrest of a Kazatomprom board member change how much uranium comes out of Kazakhstan? Nothing in the news says production or shipments are disrupted. Kazakhstan is a big supplier to the world, not to Cameco's own mines, so for CCJ this is a headline, not a supply event. I agree with News Investigator: no trade here.",
+     "outcome": false,
+     "notes": "real effect: No physical change is reported. Kazatomprom's output and shipments are not stated as affected by the arrest of a board member, and Cameco's Canadian mines are not involved. Any effect would be indirect, via sentiment or a higher spot price if Kazakh supply looked less reliable.\nlasts: days\nroutine: False\nwhy: I checked whether the event touches physical supply, plant operations or a regulator's decision, and it does not. Spot uranium is about $91.55 and the basket gate is closed, so there is no setup to act on regardless.\nfiles read: SECTOR Uranium market"
+    },
+    {
+     "t": "04:40",
+     "who": "pm",
+     "to": "engineer",
+     "text": "I agree with the Plant Engineer and News Investigator: the arrest of one executive doesn't change how much uranium comes out of Kazakhstan, so it is a headline and not a supply event. The basket gate is closed and CCJ is still falling, so I'm passing rather than forcing a trade.",
+     "outcome": false,
+     "notes": "CCJ: action: SKIP; size mult: 1.0; confidence: 70; conviction: 2; target pct: 10; stop pct: 8; days: 5; reason: A corruption probe of one Kazatomprom executive does not show any lost uranium supply, and our archive shows geopolitics and legal headlines have no consistent effect on these stocks. CCJ is do\nplan summary: No trade on CCJ. The Kazatomprom arrest is a headline, not a confirmed supply loss, and the basket is below its 10-day average, so new buys are blocked. Re-check if Kazatomprom announces a production or export disruption, or once the basket recovers.\nwhy: I checked whether the news changes physical supply (it doesn't), whether past geopolitics headlines moved these stocks (no consistent effect), and the basket gate (closed). Together these leave no specific reason for CCJ to rise in the next few days.\nfiles read: CCJ What history says, CCJ Snapshot, SECTOR Uranium market"
+    },
+    {
+     "t": "04:40",
+     "who": "pm",
+     "to": "team",
+     "text": "Desk on CCJ: SKIP (no action). A corruption probe of one Kazatomprom executive does not show any lost uranium supply, and our archive shows geopolitics and legal headlines have no consistent effect on these stocks. CCJ is down 27% in 20 days, the basket gate is closed, and 'buy weakness' has only worked in the recent era, so I wo",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "04:40"
   }
  ],
  "feed": [
@@ -209693,6 +209873,40 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-25 04:40",
+   "who": "scout",
+   "kind": "agent",
+   "title": null,
+   "text": "The three Kazatomprom stories are the only genuinely new items, and they share one theme: governance turmoil at the world's largest uranium producer could disrupt supply, which is bearish for CCJ's price. The NXE item is just a market-rebound recap with no company news, so it scores low.\n\nWhy: Kazakhstan is the world's top uranium producer, so three separate headlines about its executives and board being detained or dismissed are a meaningful supply-risk signal, though speculative since no output impact is reported yet. The NXE piece is a stale market recap. Desk notes show no recent NXE deal or legal catalyst that would change this.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 04:40",
+   "who": "scout",
+   "kind": "alert",
+   "title": "News CCJ (7/10)",
+   "text": "Kazakhstan arrests exec at world\u2019s top uranium producer - Macau Business - desk reviewing",
+   "tickers": [
+    "CCJ"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 04:40",
+   "who": "pm",
+   "kind": "alert",
+   "title": "Desk on CCJ: SKIP (no action)",
+   "text": "A corruption probe of one Kazatomprom executive does not show any lost uranium supply, and our archive shows geopolitics and legal headlines have no consistent effect on these stocks. CCJ is down 27% in 20 days, the basket gate is closed, and 'buy weakness' has only worked in the recent era, so I wo",
+   "tickers": [
+    "CCJ"
+   ],
+   "art": null,
+   "thread": "20261125044003452981"
   }
  ],
  "feed_people": {
@@ -210306,6 +210520,42 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "CCJ",
+   "type": "other",
+   "title": "Kazakhstan arrests exec at world\u2019s top uranium producer - Macau Business",
+   "date": "2026-11-25",
+   "price": 59.78,
+   "materiality": 7,
+   "direction_called": "down",
+   "r1": null,
+   "r5": null,
+   "r20": null
+  },
+  {
+   "ticker": "CCJ",
+   "type": "other",
+   "title": "Kazatomprom (KAP) Dismisses Chief Commercial and Operating Officers in Board-Led Executive Restructuring - Kalkine Media",
+   "date": "2026-11-25",
+   "price": 59.78,
+   "materiality": 6,
+   "direction_called": "down",
+   "r1": null,
+   "r5": null,
+   "r20": null
+  },
+  {
+   "ticker": "CCJ",
+   "type": "other",
+   "title": "Kazakhstan detains state uranium miner board member in widening corruption probe - The Standard (HK)",
+   "date": "2026-11-25",
+   "price": 59.78,
+   "materiality": 6,
+   "direction_called": "down",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -210321,64 +210571,64 @@
    "lesson": null
   }
  ],
- "intel_at": 1795596389.5208337,
+ "intel_at": 1795598291.5332725,
  "intel_health": {
-  "at": "2026-11-25 03:47",
+  "at": "2026-11-25 04:18",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
-   "Athabasca Basin": 7,
+   "Athabasca Basin": 6,
    "Saskatchewan wildfires": 1,
-   "Rook I / Arrow": 5,
+   "Rook I / Arrow": 6,
    "Wheeler River / Phoenix": 8,
    "Port Hope / Blind River": 0,
    "Westinghouse": 9,
-   "Kazakhstan": 4,
+   "Kazakhstan": 5,
    "Niger": 5,
-   "Namibia": 35,
+   "Namibia": 30,
    "Russia supply": 3,
    "Piketon": 20,
    "HALEU": 10,
-   "Wyoming ISR": 22,
+   "Wyoming ISR": 41,
    "South Texas ISR": 0,
    "White Mesa / Utah": 13,
-   "Rare earths (Energy Fuels)": 23,
+   "Rare earths (Energy Fuels)": 17,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 5,
+   "Naval reactors": 4,
    "Crane / Three Mile Island": 5,
    "Susquehanna": 4,
    "Comanche Peak": 8,
    "PJM grid": 8,
-   "ERCOT grid": 12,
+   "ERCOT grid": 9,
    "Data-center nuclear deals": 8,
    "Japan restarts": 6,
    "China new builds": 9,
-   "Congress and laws": 52,
-   "NRC decisions": 19,
-   "Energy Department": 70,
+   "Congress and laws": 28,
+   "NRC decisions": 20,
+   "Energy Department": 69,
    "White House and executive orders": 31,
-   "Tariffs and trade": 0,
-   "India": 16,
-   "South Korea": 73,
-   "Europe new builds": 58,
-   "France and UK": 8,
-   "Middle East": 48,
-   "Asia newcomers": 60,
+   "Tariffs and trade": 2,
+   "India": 17,
+   "South Korea": 100,
+   "Europe new builds": 29,
+   "France and UK": 14,
+   "Middle East": 23,
+   "Asia newcomers": 28,
    "Canada SMRs": 10,
-   "Big tech power deals": 0,
-   "Iran": 48,
-   "North Korea": 100,
-   "War zones": 25,
-   "AUKUS and navies": 0,
-   "Weapons programs": 16,
+   "Big tech power deals": 28,
+   "Iran": 23,
+   "North Korea": 66,
+   "War zones": 34,
+   "AUKUS and navies": 16,
+   "Weapons programs": 21,
    "Stockpiles and reserves": 19,
-   "Sprott trust": 6,
+   "Sprott trust": 7,
    "Uranium price": 16,
    "US policy": 0,
-   "Lawsuits and investigations": 33,
-   "Workers and jobs": 39,
+   "Lawsuits and investigations": 74,
+   "Workers and jobs": 23,
    "CBC Saskatchewan": 20,
-   "World Nuclear News": 51,
+   "World Nuclear News": 50,
    "Federal Register (uranium)": 9,
    "Federal Register (nuclear)": 27,
    "NRC event reports": 4
@@ -210386,9 +210636,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 04:08",
-  "total": 580,
-  "week": 453,
+  "updated": "2026-11-25 04:38",
+  "total": 584,
+  "week": 457,
   "places": {
    "Uranium price": 48,
    "South Korea": 32,
@@ -210405,62 +210655,62 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-25 03:47",
+   "at": "2026-11-25 04:18",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
-    "Athabasca Basin": 7,
+    "Athabasca Basin": 6,
     "Saskatchewan wildfires": 1,
-    "Rook I / Arrow": 5,
+    "Rook I / Arrow": 6,
     "Wheeler River / Phoenix": 8,
     "Port Hope / Blind River": 0,
     "Westinghouse": 9,
-    "Kazakhstan": 4,
+    "Kazakhstan": 5,
     "Niger": 5,
-    "Namibia": 35,
+    "Namibia": 30,
     "Russia supply": 3,
     "Piketon": 20,
     "HALEU": 10,
-    "Wyoming ISR": 22,
+    "Wyoming ISR": 41,
     "South Texas ISR": 0,
     "White Mesa / Utah": 13,
-    "Rare earths (Energy Fuels)": 23,
+    "Rare earths (Energy Fuels)": 17,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 5,
+    "Naval reactors": 4,
     "Crane / Three Mile Island": 5,
     "Susquehanna": 4,
     "Comanche Peak": 8,
     "PJM grid": 8,
-    "ERCOT grid": 12,
+    "ERCOT grid": 9,
     "Data-center nuclear deals": 8,
     "Japan restarts": 6,
     "China new builds": 9,
-    "Congress and laws": 52,
-    "NRC decisions": 19,
-    "Energy Department": 70,
+    "Congress and laws": 28,
+    "NRC decisions": 20,
+    "Energy Department": 69,
     "White House and executive orders": 31,
-    "Tariffs and trade": 0,
-    "India": 16,
-    "South Korea": 73,
-    "Europe new builds": 58,
-    "France and UK": 8,
-    "Middle East": 48,
-    "Asia newcomers": 60,
+    "Tariffs and trade": 2,
+    "India": 17,
+    "South Korea": 100,
+    "Europe new builds": 29,
+    "France and UK": 14,
+    "Middle East": 23,
+    "Asia newcomers": 28,
     "Canada SMRs": 10,
-    "Big tech power deals": 0,
-    "Iran": 48,
-    "North Korea": 100,
-    "War zones": 25,
-    "AUKUS and navies": 0,
-    "Weapons programs": 16,
+    "Big tech power deals": 28,
+    "Iran": 23,
+    "North Korea": 66,
+    "War zones": 34,
+    "AUKUS and navies": 16,
+    "Weapons programs": 21,
     "Stockpiles and reserves": 19,
-    "Sprott trust": 6,
+    "Sprott trust": 7,
     "Uranium price": 16,
     "US policy": 0,
-    "Lawsuits and investigations": 33,
-    "Workers and jobs": 39,
+    "Lawsuits and investigations": 74,
+    "Workers and jobs": 23,
     "CBC Saskatchewan": 20,
-    "World Nuclear News": 51,
+    "World Nuclear News": 50,
     "Federal Register (uranium)": 9,
     "Federal Register (nuclear)": 27,
     "NRC event reports": 4
@@ -211039,6 +211289,7 @@
   "29f141fd08778bc3",
   "97e5a70ea6902e58",
   "b12a42fc746af1e7",
+  "b7a85779670ce939",
   "96bd0f50c9b41d81",
   "85595f527d301d07",
   "0f092a6ff0645a2d",
@@ -211080,8 +211331,8 @@
   "eb9266fa4c912b94",
   "b8be1271d8cd66fa",
   "04e5c0526493eb7e",
-  "004c1f6d9bc3d5b2",
   "9e331cf926161f76",
+  "004c1f6d9bc3d5b2",
   "43fb66d513a66eee",
   "8080c5e15c173c5b",
   "65144e58fd5c26e9",
@@ -213187,7 +213438,7 @@
    }
   ]
  },
- "dossier_at": 1795596455.0680218,
+ "dossier_at": 1795598332.528941,
  "sector_prices": {
   "_at": 1795579100.9496412,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -213245,80 +213496,80 @@
    "name": "Cameco",
    "price": 59.78,
    "week_pct": -7.33,
-   "built": "2026-11-25 03:47"
+   "built": "2026-11-25 04:18"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.84,
    "week_pct": -6.63,
-   "built": "2026-11-25 03:47"
+   "built": "2026-11-25 04:18"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.58,
    "week_pct": -8.02,
-   "built": "2026-11-25 03:47"
+   "built": "2026-11-25 04:18"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.75,
    "week_pct": -7.41,
-   "built": "2026-11-25 03:47"
+   "built": "2026-11-25 04:18"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.15,
    "week_pct": -13.15,
-   "built": "2026-11-25 03:47"
+   "built": "2026-11-25 04:18"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.12,
    "week_pct": -10.69,
-   "built": "2026-11-25 03:48"
+   "built": "2026-11-25 04:18"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.13,
    "week_pct": -4.57,
-   "built": "2026-11-25 03:48"
+   "built": "2026-11-25 04:18"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 244.84,
    "week_pct": -8.67,
-   "built": "2026-11-25 03:48"
+   "built": "2026-11-25 04:18"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 120.71,
    "week_pct": -5.06,
-   "built": "2026-11-25 03:48"
+   "built": "2026-11-25 04:18"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 347.92,
    "week_pct": -1.91,
-   "built": "2026-11-25 03:48"
+   "built": "2026-11-25 04:18"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-25 03:48"
+   "built": "2026-11-25 04:18"
   }
  ],
- "heartbeat": "2026-11-25 04:08",
+ "heartbeat": "2026-11-25 04:38",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -213478,25 +213729,25 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 214,
-   "used": 194,
+   "asked": 216,
+   "used": 196,
    "notes": {
     "TLN Deals and contracts": 14,
-    "CCJ Deals and contracts": 44,
+    "CCJ Deals and contracts": 45,
     "BWXT Deals and contracts": 31,
-    "SECTOR Government and laws": 47,
+    "SECTOR Government and laws": 48,
     "UUUU Deals and contracts": 34,
-    "SECTOR Countries": 36,
+    "SECTOR Countries": 37,
     "CEG Deals and contracts": 29,
-    "NXE Legal": 6,
-    "NXE Deals and contracts": 13,
+    "NXE Legal": 7,
+    "NXE Deals and contracts": 14,
     "DNN Deals and contracts": 9,
     "BWXT Legal": 2,
     "LEU Deals and contracts": 29,
     "UEC Deals and contracts": 4,
     "UUUU Legal": 17,
     "SECTOR Uranium market": 3,
-    "CCJ Legal": 9,
+    "CCJ Legal": 10,
     "CEG Legal": 2,
     "VST Deals and contracts": 20,
     "LEU Legal": 1,
@@ -213559,8 +213810,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 46,
-   "used": 43,
+   "asked": 47,
+   "used": 44,
    "notes": {
     "BWXT Deals and contracts": 2,
     "BWXT Snapshot": 2,
@@ -213571,10 +213822,10 @@
     "SECTOR Uranium market": 13,
     "TLN Snapshot": 17,
     "TLN What history says": 3,
-    "CCJ Snapshot": 1,
+    "CCJ Snapshot": 2,
     "CCJ Deals and contracts": 1,
     "CCJ Leadership and insiders": 1,
-    "CCJ What history says": 1,
+    "CCJ What history says": 2,
     "SECTOR Government and laws": 2,
     "coming_up": 3,
     "NXE Snapshot": 2,
@@ -213607,14 +213858,14 @@
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 26,
-   "used": 26,
+   "asked": 27,
+   "used": 27,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 7,
     "BWXT Leadership and insiders": 1,
     "TLN Snapshot": 5,
-    "SECTOR Uranium market": 20,
+    "SECTOR Uranium market": 21,
     "BWXT Discoveries": 2,
     "UEC Snapshot": 3,
     "UEC Leadership and insiders": 1,
@@ -213631,14 +213882,15 @@
     "LEU Deals and contracts": 1,
     "VST Snapshot": 1,
     "CEG Leadership and insiders": 1,
-    "CCJ Snapshot": 1,
-    "desk_lessons_from_our_mistakes": 1
+    "CCJ Snapshot": 2,
+    "desk_lessons_from_our_mistakes": 1,
+    "CCJ What history says": 1
    },
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 22,
-   "used": 22,
+   "asked": 23,
+   "used": 23,
    "notes": {
     "SECTOR Reactors and power": 2,
     "CEG Places and operations": 10,
@@ -213657,7 +213909,7 @@
     "plants_now: fleet status and open outages": 1,
     "desk_notes: CEG Places and operations": 1,
     "desk_notes: UUUU Places and operations": 1,
-    "SECTOR Uranium market": 7,
+    "SECTOR Uranium market": 8,
     "TLN Places and operations": 1,
     "UUUU Places and operations": 2,
     "UEC Business": 1,
@@ -219989,7 +220241,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 04:08",
+ "watchdog_last": "2026-11-25 04:38",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

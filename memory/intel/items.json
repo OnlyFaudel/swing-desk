@@ -18806,5 +18806,128 @@
 "poland",
 "second"
 ]
+},
+{
+"id": "0a763299e99edb43",
+"date": "2026-11-25",
+"ts": 1795593780,
+"title": "Thailand\u2019s net-zero push puts nuclear, carbon capture and EVs in focus",
+"summary": "",
+"outlet": "Nation Thailand",
+"link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBYck15eVlZYTdxZkhTS3B6U2llTWhMeXJGTEFfT1JWQmVXTWk4dWZVT0RpQ3RXTmd3X3hIbXAxV3VkYnU0WFRwZnN3QVItQklLWk12cGx6Y1NyemdmZEFXMEJn?oc=5",
+"place": "Asia newcomers",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.86,
+"score": 4.22,
+"echo_of": null,
+"w": [
+"capture",
+"carbon",
+"evs",
+"focus",
+"net",
+"nuclear",
+"push",
+"puts",
+"thailand",
+"zero"
+]
+},
+{
+"id": "92dc3fbe9a133a51",
+"date": "2026-11-25",
+"ts": 1795596939,
+"title": "Framatome Inaugurates Major Components Facility As France Prepares For Reactor Rollout",
+"summary": "",
+"outlet": "NucNet",
+"link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPaVB4YS1raERJTHdkdTM3b2hDTzREb1JIT3VTQVdsVlBPaW5aX3hicHREMmQ3U0FWaXhKR256VDFkUS1EdFVGVWdxS1VyeGxzN1NpYkY2eXV4RmpTUUt4Y0JFMk5QOW1fZzdBQzVCdFZzd0ZaWWFZMGlJVTNVamFQTHZMOXhaVHdrOE9CZjVTcnY1NURac0p1eXFtT3c4cVZpdjZGUkYyRWZaNkpYZFJLTmhpcE5Rdzk1VGJuMVMyd3lFdw?oc=5",
+"place": "France and UK",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.64,
+"score": 3.78,
+"echo_of": null,
+"w": [
+"components",
+"facility",
+"framatome",
+"france",
+"inaugurates",
+"major",
+"prepares",
+"reactor",
+"rollout"
+]
+},
+{
+"id": "b7a85779670ce939",
+"date": "2026-11-25",
+"ts": 1795597200,
+"title": "Vietnam\u2019s nuclear ambitions: Building the people, institutions and capabilities for success",
+"summary": "",
+"outlet": "Vietnam Economic Times",
+"link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOakdtMG04UlVGV21xb2k3aUtYMDdiaVFROGx6aHgxckIxUWZfWUNPdjdhd0x0U3NCWEFDT0hlMUEyWXcyX3AtTGhrQkhUQTIwbXV0cjF6a2tmQlpJRnRGZGE1Q1hIcUtmbWtYTDVWNllIdzhod3hrcjNnSGhTMGtqanJhbFFHR3RYOVpibU9KZ3lRZ25EQXptME5sWTdSMWZlMlpKb0k5ZVg2QXRyRThSS0dEMmp2Smc?oc=5",
+"place": "Asia newcomers",
+"tickers": [
+"CCJ"
+],
+"tags": [
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.83,
+"score": 4.86,
+"echo_of": null,
+"w": [
+"ambitions",
+"building",
+"capabilities",
+"institutions",
+"nuclear",
+"people",
+"success",
+"vietnam"
+]
+},
+{
+"id": "ca3938e00fe8b763",
+"date": "2026-11-25",
+"ts": 1795597733,
+"title": "Top manager of national nuclear company detained in Kazakhstan",
+"summary": "",
+"outlet": "\u0634\u0628\u0643\u0629 \u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0625\u062e\u0628\u0627\u0631\u064a\u0629",
+"link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8zNkFjanVFSUY1WGRlRXFyVjZOVHRYNzc2eVhGblljdy16Z3puWFV0SFg0QzcyZ3NGSHU3N0FRN2FJNVJLZHFidjVKMDBUZ0YyYTdZ?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.87,
+"score": 4.24,
+"echo_of": null,
+"w": [
+"company",
+"detained",
+"kazakhstan",
+"manager",
+"national",
+"nuclear",
+"top"
+]
 }
 ]
