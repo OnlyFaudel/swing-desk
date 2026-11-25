@@ -589,7 +589,8 @@
   "ahdip163:2026-11-25": true,
   "intraday:2026-11-25": true,
   "nightwatch170:2026-11-25": true,
-  "ahdip170:2026-11-25": true
+  "ahdip170:2026-11-25": true,
+  "ahdip171:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -4173,18 +4174,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Google News: Westinghouse reactor",
-   "title": "Westinghouse, BWXT Canada strike AP1000 component manufacturing deal - StreetInsider",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPRmhQNWdhU0l6dFgzYlJRbEcxMXJibUlPa3d2Y0tiZ04tTUkybTVrZW9ycC1sdmNtRHhRRHF4VnNLUGQ5ZnB3RTROMG9mTDRLcDJQa21yQUozWUJxdkVwdzFRZHh3TmpySmxXUW5YQzJiN29NMTRnUWtBdWx3cEw1SXZMOUVZQXFTcnhsWngtZFh1YWxpZ1BzTHhSX1psZm02X1l6VExYNVRVUElkV0NoOUpKNkZTSXNoOGtUc0RHNmphbldEcDE1dA?oc=5",
-   "ts": 1795452621,
-   "materiality": 6,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "contract_deal",
-   "why": "BWXT Canada AP1000 component deal is real new demand for the reactor supply chain, but it is indirect for CCJ."
-  },
-  {
    "ticker": "TLN",
    "source": "Google News: \"Talen Energy\"",
    "title": "Talen Energy price target raised to $514 from $512 at Morgan Stanley - TipRanks",
@@ -7171,6 +7160,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Automated MarketWatch recap of a routine daily move; no new fundamental news."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "Can Cameco (TSX:CCO) Sustain Growth Amid a Softer Canadian Market? - Kalkine Media",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZnlSOHdyc3ktOFJyV253YldCM3FiR0RqT0k5SDEtaUI3c0xZSkhvcFFhWWwzc1hCU0trQzlQcHdFdEsxMjNYZE95bFFna29YN2ktaGtJVmwzZkpQa1Nvb24zVXd2QXotdDVORE84RzdrcXBSeHBtOEhrcUtGUWIzMk9HcE13Y2taMmZqQl9PV1JSS0poNVNKTmU3bUc3UF9PSzB2YVVDanRIc2Y0Tlg3c2RjUHE?oc=5",
+   "ts": 1795642800,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic explainer on Cameco's growth; no new company-specific information."
   }
  ],
  "reviews": [
@@ -8930,16 +8931,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.70821,
+  "day_usd": 0.70917,
   "month": "2026-11",
-  "month_usd": 1.89177,
-  "total_usd": 1.89177,
+  "month_usd": 1.89273,
+  "total_usd": 1.89273,
   "by_role": {
    "macro": 0.19063,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.16991,
+   "scout": 0.17087,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9142,7 +9143,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 17:03 ET",
+ "last_cycle": "2026-11-25 17:15 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -58329,6 +58330,7 @@
   "8a17ec5ab2f6dcf8",
   "1179c30a7f3faefa",
   "498180393c058995",
+  "ec2d4b66ce2bb405",
   "085f836ba2eae79d",
   "d377bf4c00b3bccf",
   "26652cf90e01656a",
@@ -58362,9 +58364,10 @@
   "4627bda8dfc98062",
   "15d6f9963fcdf41e",
   "84200faa36eac51a",
-  "688d746cfc31b58f"
+  "688d746cfc31b58f",
+  "375fe5d5d2cd052c"
  ],
- "news_slow_at": 1795644083.7785077,
+ "news_slow_at": 1795644782.6397605,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219363,9 +219366,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 17:03",
+  "updated": "2026-11-25 17:15",
   "total": 674,
-  "week": 509,
+  "week": 508,
   "places": {
    "Uranium price": 49,
    "South Korea": 36,
@@ -222546,7 +222549,7 @@
    "built": "2026-11-25 16:49"
   }
  ],
- "heartbeat": "2026-11-25 17:03",
+ "heartbeat": "2026-11-25 17:15",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -222771,15 +222774,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 287,
-   "used": 259,
+   "asked": 289,
+   "used": 260,
    "notes": {
     "TLN Deals and contracts": 16,
     "CCJ Deals and contracts": 54,
     "BWXT Deals and contracts": 37,
-    "SECTOR Government and laws": 69,
+    "SECTOR Government and laws": 70,
     "UUUU Deals and contracts": 38,
-    "SECTOR Countries": 64,
+    "SECTOR Countries": 65,
     "CEG Deals and contracts": 36,
     "NXE Legal": 11,
     "NXE Deals and contracts": 18,
@@ -230732,7 +230735,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 17:03",
+ "watchdog_last": "2026-11-25 17:15",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
