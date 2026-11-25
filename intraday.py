@@ -111,6 +111,13 @@ def _save_prog(prog):
 def pull(tickers, start, end, resume=True):
     cl = _client()
     prog = _load_prog() if resume else {}
+    if resume:  # stocks the v2 run already saved (without the after-hours columns) go last: new stocks first
+        try:
+            v2 = json.load(open(os.path.join(OUT, "_progress_v2.json")))
+        except Exception:
+            v2 = {}
+        done2 = {t for t, v in v2.items() if isinstance(v, dict) and v.get("done")}
+        tickers = [t for t in tickers if t not in done2] + [t for t in tickers if t in done2]
     for t in tickers:
         if resume and isinstance(prog.get(t), dict) and prog[t].get("done"):
             continue

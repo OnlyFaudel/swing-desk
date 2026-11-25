@@ -333,6 +333,10 @@
   "night_round_7_2026_11_25": {
    "trials": 3,
    "verdict": "2026-11-25 00:10. Panic-day trades (live rule, nuclear+related, one point per panic day). (O) Market-based exit (sell when the S&P closes back above its pre-panic close, or +10%, max 6 days): 2008-18 +0.04% vs live +0.10% (diff t -0.5), 2019-26 +1.46% vs +1.79% (t -1.5): rejected. (Q) Second buy of the same dollars when a panic lot closes 10% under the buy: the second buy alone +2.39% vs S&P (2008-18, t 2.8, 59 days) / +1.16% (2019-26, t 0.8, 32 days); whole-account 25.1%/yr (17.7 / 36.1), worst -42.3% vs 25.2% (17.7 / 36.3), -40.5%: no gain, more risk. Rejected (the sharp-drop second buy stays; panic lots are already large)."
+  },
+  "night_round_8_2026_11_25": {
+   "trials": 10,
+   "verdict": "2026-11-25 00:20. (T) NVIDIA +6% day -> other AI-power names, one point per day vs S&P: live trio CEG/VST/TLN 5d +2.25% (2008-18, n 9) / +1.88% (2019-26, t 2.4), 10d +1.81 / +3.56% (t 3.1); grid/electrical (ETN, PWR, HUBB, POWL, VRT, GEV) 5d -0.15% / +0.81%, 10d +0.30 / +0.92%; utilities (NRG, PEG, ETR) ~0. The edge is specific to the trio: no extension. (S) Fear fading (VIX>30 and falling 2 days) on wider lists, whole account: our 10 (live) 25.2%/yr (17.7 / 36.3); related 22.4% (16.2 / 31.4); 115 big stocks 22.3% (15.8 / 31.9); our 10 + related 22.0%: rejected, live unchanged. Ops: minute-data backfill was ~12 min per stock on the e2-micro (11 stocks in ~2h) and the after-hours columns restarted it; it now runs at low CPU priority and does stocks not yet saved first."
   }
  }
 }

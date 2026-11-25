@@ -2275,7 +2275,7 @@ def intel_tick(st, today, force=False):
         # relaunch every 30 min after hours until complete (a restart of the daemon kills the child; it resumes where it stopped)
         if after_hours and not prog.get("_complete") and time.time() - (last if isinstance(last, (int, float)) else 0) > 1800:
             st["flags"]["intraday_backfill_t"] = time.time()
-            subprocess.Popen([sys.executable, "intraday.py", "backfill"], cwd=ROOT, start_new_session=True,
+            subprocess.Popen(["nice", "-n", "15", sys.executable, "intraday.py", "backfill"], cwd=ROOT, start_new_session=True,
                              stdout=open("/tmp/intraday_backfill.log", "a"), stderr=subprocess.STDOUT)
         elif now.weekday() < 5 and not market.is_holiday(today) and now.time() >= dt.time(16, 50) and not st["flags"].get(f"intraday:{today}"):
             st["flags"][f"intraday:{today}"] = True
