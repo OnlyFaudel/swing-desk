@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 03:30",
+ "updated": "2026-11-25 03:40",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -168,6 +168,17 @@
     "strategist",
     "researcher",
     "risk"
+   ]
+  },
+  {
+   "topic": "How and when our rebound trades should sell (checked against the live rules)",
+   "answer": "Sharp-drop rebounds (down 15%+ in 5 sessions), 88 nuclear/related and 140 big stocks, 2008-18 and 2019-26, vs the S&P after costs: the LIVE exit (sell at a close that is +10% or more, else after 10 sessions) earned +1.55% / +1.51% per trade on ours. A resting limit order at +10% during the day did WORSE in all four tests (+1.03% / +1.08% ours; about 0.5% less), because stocks that touch +10% intraday usually close higher over the following days. +15% target: +1.43% / +1.40%; +6%: +0.92% / +1.47%; no target: +1.69% / +1.17%. Keep the live exit. Time of day (minute data, our 11 stocks 2016-2026): after a stock ran 10%+ over 5 sessions, the first 30 minutes are weak (-0.46% / -0.40% open to 10:00), so never sell a winner at the opening bell unless it is the gap bank; after a 10% drop, 10:00 to the close is positive (+0.41% / +0.29%), so buying near the close (as the rules do) beats buying in the morning.",
+   "roles": [
+    "pm",
+    "risk",
+    "level",
+    "strategist",
+    "researcher"
    ]
   }
  ]

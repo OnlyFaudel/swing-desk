@@ -486,6 +486,18 @@
   "night_round_25_2026_11_25": {
    "trials": 17,
    "verdict": "2026-11-25 03:30. New families: monthly_rank_anomalies, jobs_report_days, quad_witching. Skipped as already covered: Asia overnight lead (ccj_cross_asset, 88 trials), reactor outages (reactor_outages), analyst target history (no history available)."
+  },
+  "exit_method_audit": {
+   "trials": 5,
+   "verdict": "2026-11-25 03:40 (round 26, audit of the live sharp_drop exit). Entry at the close after a -15% 5-session fall, vs S&P, 0.2% cost, one per stock per 10 sessions; ours (88) / wide (140), 08-18 / 19-26. Live (+10% at a close else day 10): +1.55 / +1.51; +1.00 / +0.04. Resting limit at +10%: +1.03 / +1.08; +0.35 / -0.35. No target 10d: +1.69 / +1.17; +1.47 / +0.09. +15% at a close: +1.43 / +1.40; +1.08 / +0.18. +6% at a close: +0.92 / +1.47; +0.81 / -0.06. Live exit confirmed; intraday limit rejected."
+  },
+  "time_of_day_exits": {
+   "trials": 10,
+   "verdict": "2026-11-25 03:40 (round 26, minute features, 11 stocks, 2016-20 / 2021-26; conditions use yesterday's close only). Open->10:00 / 10:00->close / 15:30->close: all days -0.21/+0.05/+0.02 | -0.08/+0.02/+0.01; after +10% in 5d -0.46/+0.07/+0.11 | -0.40/-0.25/+0.03; after -10% in 5d -0.65/+0.41/+0.02 | +0.06/+0.29/-0.01; gap up 3%+ -1.37/+0.29/+0.10 | -0.28/+0.18/-0.02; gap down 3%+ +0.38/+0.51/+0.12 | +0.48/-0.12/+0.11. Confirms near-close buys and exits; no change."
+  },
+  "night_round_26_2026_11_25": {
+   "trials": 15,
+   "verdict": "2026-11-25 03:40. Audits of existing rules (owner: improve what we have): exit_method_audit, time_of_day_exits. Live design confirmed. Skipped: Patient Levels stop/target tuning (already 30 trials in patient_levels), practice-book whole-account mix (those rules fail 2008-18 by construction)."
   }
  }
 }
