@@ -1825,7 +1825,11 @@ def sharp_drop_check(st, ex, prices, today, brk_state, now):
         print("sharp drop add", e)
     open_n = sum(1 for l in book["lots"].values() if (l.get("auto") or {}).get("qty", 0) > 1e-6 and l["auto"].get("setup") == "sharp_drop")
     room = cfg.get("max_open", 3) - open_n
-    names = list(dict.fromkeys(list(T) + (CFG.get("panic_rebound", {}).get("related_universe") or [])))
+    tier1 = list(dict.fromkeys(list(T) + (CFG.get("panic_rebound", {}).get("related_universe") or [])))
+    # second tier (research 2026-11-24, sharp_drop_wide): 140 big US stocks, only for slots nuclear + related don't fill
+    tier2 = [t for t in (cfg.get("tier2_universe") or []) if t not in tier1]
+    names = tier1 + tier2
+    t1set = set(tier1)
     hits, comebacks, cb = [], [], CFG.get("comeback", {})
     try:
         import yfinance as yf
@@ -1853,8 +1857,8 @@ def sharp_drop_check(st, ex, prices, today, brk_state, now):
             if last < cfg.get("min_price", 3) or float((c * v).tail(20).mean()) < cfg.get("min_dollar_volume", 5e6):
                 continue
             if r5 <= -cfg.get("drop_pct", 15) / 100:
-                hits.append((r1, r5, t, last))
-            if cb.get("enabled") and c.index[-1].date() == today and t in raw["Low"]:
+                hits.append((0 if t in t1set else 1, r1, r5, t, last))
+            if cb.get("enabled") and t in t1set and c.index[-1].date() == today and t in raw["Low"]:  # comeback: tested on tier 1 only
                 lo = float(raw["Low"][t].iloc[-1])
                 if lo / float(hist.iloc[-1]) - 1 <= -cb.get("low_pct", 6) / 100 and last > float(hist.iloc[-1]):
                     comebacks.append((lo / float(hist.iloc[-1]) - 1, t, last))
@@ -1865,11 +1869,11 @@ def sharp_drop_check(st, ex, prices, today, brk_state, now):
         comeback_buy(st, ex, today, brk_state, comebacks, cb)
     except Exception as e:
         print("comeback", e)
-    hits.sort()  # biggest drop today first (as tested)
+    hits.sort()  # nuclear + related first, then the big-stock tier; within each, biggest drop today first (as tested)
     bought = []
     if room <= 0:
         hits = []
-    for r1, r5, t, px in hits:
+    for _tier, r1, r5, t, px in hits:
         if room <= 0:
             break
         if (book["lots"].get(t, {}).get("auto") or {}).get("qty", 0) > 1e-6 or (book["lots"].get(t, {}).get("panic") or {}).get("qty", 0) > 1e-6:
