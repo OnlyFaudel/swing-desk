@@ -335,8 +335,8 @@
   ],
   "week": "2026-W48",
   "week_start": 1000.514157479616,
-  "day": "2026-11-24",
-  "day_start": 1029.4871151027255,
+  "day": "2026-11-25",
+  "day_start": 1016.5357804553572,
   "killed": false,
   "wash_flags": [
    {
@@ -529,8 +529,9 @@
   "radarres:2026-11-24": true,
   "questioner:2026-11-24:9": true,
   "sput:2026-11-24": true,
-  "intraday_backfill_t": 1795577708.1633215,
-  "reconcile:2026-11-24": true
+  "intraday_backfill_t": 1795581701.5440238,
+  "reconcile:2026-11-24": true,
+  "catalysts:2026-11-25": true
  },
  "benchmark": {
   "shares": {
@@ -2609,18 +2610,6 @@
   "BWXT": 1795451380.252104
  },
  "news_feed": [
-  {
-   "ticker": "VST",
-   "source": "Google News",
-   "title": "What Could Shape Vistra (NYSE:VST) Dividend Growth Story? - Kalkine Media",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdlVPT3JYWGpsNUN1U0lwZ0NaZnRhZ1Rwa1RBUFRkUnJ0T0FDNlJldmQta1ZUd0RHSVkwMlpBVkxzaXQ0R0xVclduUnBxSlZlUzhXckhZczdHejdiZW9ibWZtekpEVUd2MlplLXZyMUFqXzB4Tnd5YjFnQ1hwUW9yTmNZZk9pd2doYVFCcmtidXlzTHJOa05FOHBaeGlvUQ?oc=5",
-   "ts": 1795464120,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic dividend-story listicle recap with no new company information."
-  },
   {
    "ticker": "CCJ",
    "source": "Local intel: energynews.pro (France and UK)",
@@ -5608,6 +5597,18 @@
    "direction": "down",
    "event_type": "other",
    "why": "Officer sale of $686k; a sale by a non-planned insider is mildly negative but size is small and 10b5-1 status unknown."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News",
+   "title": "Talen Energy Corp (TLN) SVP & Chief Accounting Officer Anthony P - GuruFocus",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbW1pX1c0WnhGSnZrMDVOM1VXWUNSNFlGeXVJWmlHd3B1bkFpS2dHWWdhNjBDTUx1MElCRFlSVnNOQ0ZrRXZPV1hXY2VBTFJlTXJ4cmoxcDQ0c21QdXdWb1M5anFSeTJNLVBzRFhmMFpINFhNSFdpT051allmclhHbXJNZklHQ1hGV052MTF0a0xTYmJsdk9oTDlmbEJoSlk3N29sZGs5clhGUHhDVElKd1BQWEdpbnBMQ1JDN0cwT3g?oc=5",
+   "ts": 1795581372,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Routine insider-role announcement about a Chief Accounting Officer; no business impact."
   }
  ],
  "reviews": [
@@ -7358,16 +7359,16 @@
  },
  "spend": {
   "day": "2026-11-24",
-  "day_usd": 0.45179,
+  "day_usd": 0.45214,
   "month": "2026-11",
-  "month_usd": 1.18321,
-  "total_usd": 1.18321,
+  "month_usd": 1.18356,
+  "total_usd": 1.18356,
   "by_role": {
    "macro": 0.12168,
    "whale": 0.01778,
    "crowd": 0.01194,
    "level": 0.11932,
-   "scout": 0.13129,
+   "scout": 0.13164,
    "review": 0.09001,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -7503,7 +7504,7 @@
   "SPY": 718.79,
   "SGOV": 100.65
  },
- "last_cycle": "2026-11-24 23:00 ET",
+ "last_cycle": "2026-11-25 00:02 ET",
  "ops": {
   "rejects": [
    1795198822.4887166,
@@ -7541,7 +7542,7 @@
  },
  "brakes": {
   "equity": 1016.54,
-  "day_pct": -1.26,
+  "day_pct": 0.0,
   "week_pct": 1.6,
   "drawdown_pct": -3.59,
   "no_new_today": false,
@@ -55010,6 +55011,7 @@
   "d0cdede57b2eba62",
   "912ca4344a818db7",
   "126369127a97f018",
+  "5af6f5b9a2bf7623",
   "e25f2e7759aee0aa",
   "1f0bd29da0672341",
   "0028541e109c6801",
@@ -55190,7 +55192,7 @@
   "22ca80b609e8130c",
   "b1e399ca01445ae4"
  ],
- "news_slow_at": 1795579102.1921897,
+ "news_slow_at": 1795582977.6371655,
  "officer": {
   "settled_cash": 0.0,
   "cash": -352.92,
@@ -213109,9 +213111,9 @@
    "lesson": null
   }
  ],
- "intel_at": 1795578934.6661398,
+ "intel_at": 1795582935.1301749,
  "intel_health": {
-  "at": "2026-11-24 22:57",
+  "at": "2026-11-25 00:02",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
@@ -213123,48 +213125,48 @@
    "Westinghouse": 9,
    "Kazakhstan": 2,
    "Niger": 4,
-   "Namibia": 34,
+   "Namibia": 31,
    "Russia supply": 3,
    "Piketon": 23,
    "HALEU": 12,
-   "Wyoming ISR": 21,
+   "Wyoming ISR": 22,
    "South Texas ISR": 0,
    "White Mesa / Utah": 13,
-   "Rare earths (Energy Fuels)": 18,
+   "Rare earths (Energy Fuels)": 17,
    "Lynchburg / Erwin": 0,
    "Naval reactors": 4,
    "Crane / Three Mile Island": 5,
    "Susquehanna": 4,
-   "Comanche Peak": 10,
+   "Comanche Peak": 9,
    "PJM grid": 8,
    "ERCOT grid": 12,
    "Data-center nuclear deals": 8,
-   "Japan restarts": 5,
+   "Japan restarts": 6,
    "China new builds": 9,
-   "Congress and laws": 52,
-   "NRC decisions": 17,
-   "Energy Department": 76,
-   "White House and executive orders": 19,
+   "Congress and laws": 50,
+   "NRC decisions": 10,
+   "Energy Department": 59,
+   "White House and executive orders": 20,
    "Tariffs and trade": 2,
    "India": 15,
    "South Korea": 100,
    "Europe new builds": 29,
-   "France and UK": 13,
-   "Middle East": 22,
-   "Asia newcomers": 29,
+   "France and UK": 8,
+   "Middle East": 46,
+   "Asia newcomers": 58,
    "Canada SMRs": 10,
    "Big tech power deals": 54,
    "Iran": 27,
    "North Korea": 100,
    "War zones": 23,
    "AUKUS and navies": 19,
-   "Weapons programs": 15,
-   "Stockpiles and reserves": 19,
-   "Sprott trust": 7,
-   "Uranium price": 47,
+   "Weapons programs": 14,
+   "Stockpiles and reserves": 22,
+   "Sprott trust": 6,
+   "Uranium price": 46,
    "US policy": 0,
    "Lawsuits and investigations": 33,
-   "Workers and jobs": 21,
+   "Workers and jobs": 36,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 51,
    "Federal Register (uranium)": 7,
@@ -213174,26 +213176,26 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-24 23:00",
-  "total": 554,
-  "week": 451,
+  "updated": "2026-11-25 00:02",
+  "total": 556,
+  "week": 446,
   "places": {
-   "Uranium price": 46,
-   "Piketon": 32,
+   "Uranium price": 47,
+   "Piketon": 31,
    "South Korea": 30,
-   "World Nuclear News": 26,
    "Europe new builds": 26,
-   "Workers and jobs": 21,
+   "World Nuclear News": 25,
    "Weapons programs": 21,
+   "Workers and jobs": 20,
    "AUKUS and navies": 17,
-   "PJM grid": 14,
-   "Namibia": 14,
    "Rare earths (Energy Fuels)": 14,
+   "PJM grid": 13,
+   "Namibia": 13,
    "Comanche Peak": 12
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-24 22:57",
+   "at": "2026-11-25 00:02",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
@@ -213205,48 +213207,48 @@
     "Westinghouse": 9,
     "Kazakhstan": 2,
     "Niger": 4,
-    "Namibia": 34,
+    "Namibia": 31,
     "Russia supply": 3,
     "Piketon": 23,
     "HALEU": 12,
-    "Wyoming ISR": 21,
+    "Wyoming ISR": 22,
     "South Texas ISR": 0,
     "White Mesa / Utah": 13,
-    "Rare earths (Energy Fuels)": 18,
+    "Rare earths (Energy Fuels)": 17,
     "Lynchburg / Erwin": 0,
     "Naval reactors": 4,
     "Crane / Three Mile Island": 5,
     "Susquehanna": 4,
-    "Comanche Peak": 10,
+    "Comanche Peak": 9,
     "PJM grid": 8,
     "ERCOT grid": 12,
     "Data-center nuclear deals": 8,
-    "Japan restarts": 5,
+    "Japan restarts": 6,
     "China new builds": 9,
-    "Congress and laws": 52,
-    "NRC decisions": 17,
-    "Energy Department": 76,
-    "White House and executive orders": 19,
+    "Congress and laws": 50,
+    "NRC decisions": 10,
+    "Energy Department": 59,
+    "White House and executive orders": 20,
     "Tariffs and trade": 2,
     "India": 15,
     "South Korea": 100,
     "Europe new builds": 29,
-    "France and UK": 13,
-    "Middle East": 22,
-    "Asia newcomers": 29,
+    "France and UK": 8,
+    "Middle East": 46,
+    "Asia newcomers": 58,
     "Canada SMRs": 10,
     "Big tech power deals": 54,
     "Iran": 27,
     "North Korea": 100,
     "War zones": 23,
     "AUKUS and navies": 19,
-    "Weapons programs": 15,
-    "Stockpiles and reserves": 19,
-    "Sprott trust": 7,
-    "Uranium price": 47,
+    "Weapons programs": 14,
+    "Stockpiles and reserves": 22,
+    "Sprott trust": 6,
+    "Uranium price": 46,
     "US policy": 0,
     "Lawsuits and investigations": 33,
-    "Workers and jobs": 21,
+    "Workers and jobs": 36,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 51,
     "Federal Register (uranium)": 7,
@@ -215667,7 +215669,7 @@
    }
   ]
  },
- "dossier_at": 1795579033.2032754,
+ "dossier_at": 1795581192.1612916,
  "sector_prices": {
   "_at": 1795579100.9496412,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -215725,80 +215727,80 @@
    "name": "Cameco",
    "price": 59.78,
    "week_pct": -7.33,
-   "built": "2026-11-24 22:57"
+   "built": "2026-11-24 23:33"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.84,
    "week_pct": -6.63,
-   "built": "2026-11-24 22:57"
+   "built": "2026-11-24 23:33"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.58,
    "week_pct": -8.02,
-   "built": "2026-11-24 22:57"
+   "built": "2026-11-24 23:33"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.75,
    "week_pct": -7.41,
-   "built": "2026-11-24 22:57"
+   "built": "2026-11-24 23:33"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.15,
    "week_pct": -13.15,
-   "built": "2026-11-24 22:57"
+   "built": "2026-11-24 23:33"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.12,
    "week_pct": -10.69,
-   "built": "2026-11-24 22:57"
+   "built": "2026-11-24 23:33"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.13,
    "week_pct": -4.57,
-   "built": "2026-11-24 22:57"
+   "built": "2026-11-24 23:33"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 244.84,
    "week_pct": -8.67,
-   "built": "2026-11-24 22:58"
+   "built": "2026-11-24 23:33"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 120.71,
    "week_pct": -5.06,
-   "built": "2026-11-24 22:58"
+   "built": "2026-11-24 23:34"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 347.92,
    "week_pct": -1.91,
-   "built": "2026-11-24 22:58"
+   "built": "2026-11-24 23:34"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-24 22:58"
+   "built": "2026-11-24 23:34"
   }
  ],
- "heartbeat": "2026-11-24 23:00",
+ "heartbeat": "2026-11-25 00:02",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -215958,7 +215960,7 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 205,
+   "asked": 206,
    "used": 186,
    "notes": {
     "TLN Deals and contracts": 13,
@@ -218653,6 +218655,27 @@
   {
    "date": "2026-11-25",
    "ticker": "",
+   "what": "Pre-Thanksgiving session: seasonal tendency is mildly positive for the S&P, but thin trading makes it a weak signal",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-25",
+   "ticker": "SECTOR",
+   "what": "Pre-Thanksgiving session; seasonal tendency is positive into Wednesday, but the basket gate is currently closed, so no entries until it reopens",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-25",
+   "ticker": "UUUU",
+   "what": "Re-check whether price holds the 4.91 zone or breaks lower; reassess only if the basket recovers above its 10-day average.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-25",
+   "ticker": "",
    "kind": "calendar",
    "what": "Wednesday before Thanksgiving. Since 1996 the S&P rose Fri->Wed of this week 73% of years (+0.69% vs +0.14% normal); our 10 +1.8% (2008-25, up 67%)."
   },
@@ -218664,9 +218687,44 @@
   },
   {
    "date": "2026-11-27",
+   "ticker": "CEG",
+   "what": "Black Friday half-day session; desk notes show power-trio weakness the Monday after in most years, so treat as a sentiment check, not a trade signal",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "CEG",
+   "what": "Re-check whether the basket has reclaimed its 10-day average and whether the $236.82 zone still holds before any new setup.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "CCJ",
+   "what": "Black Friday half-day session; historically weak Black Friday to Monday period for the power trio and our basket",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "VST",
+   "what": "Thanksgiving-window auto trade exits; check whether the basket recovered above its 10-day average before any new VST buys.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-27",
    "ticker": "",
    "kind": "calendar",
    "what": "Black Friday: market closes at 1 pm, volume about half of normal. Black Friday close -> Monday has been weak: S&P up only 40% of 30 years, our 10 -0.5%, power trio -1.7% (down 6 of 7 years since 2019)."
+  },
+  {
+   "date": "2026-11-28",
+   "ticker": "UUUU",
+   "what": "Half-day session after Thanksgiving; check whether the basket recovers above its 10-day average before any future resting buy.",
+   "kind": "reminder",
+   "by": "level"
   },
   {
    "date": "2026-11-30",
@@ -218908,6 +218966,552 @@
   },
   {
    "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; if no one re-approves it, cancel before expiry",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "TLN resting buy at $355.66 expires; confirm whether it was canceled or re-approved and whether the PJM capacity-auction delay has been decided",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "",
+   "what": "Questioner follow-up: Has the PJM December 2029/30 capacity-auction delay request been decided? Talen's earnings depend on it, and nobody has confirmed it.",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CEG",
+   "what": "Salem 1 return to service is still pending; a late return would be a weak signal for CEG's near-term power sales.",
+   "kind": "reminder",
+   "by": "engineer"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; check PJM capacity auction delay decision and whether $354.24 support held.",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "BWXT",
+   "what": "Resting buy at $115.83 expires; check whether the basket recovered above its 10-day average and whether the $113.99-$117.21 zone holds.",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CEG",
+   "what": "Check whether the PJM capacity-auction delay decision has been made and whether CEG holds above its 200-day average.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "PJM December capacity auction delay decision; resting buy expires.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CEG",
+   "what": "Check PJM capacity-auction delay decision and whether the 236.82 zone held; this setup expires after 5 sessions.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting-buy window from the setup expires; check PJM capacity auction delay decision and whether the 354.24 zone held.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "PJM December capacity auction delay decision; check whether the 354.24 support zone held before the resting buy at 355.66 expires",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Check whether the PJM December capacity auction delay has been decided and whether the $354.24 support zone has held before any new entry.",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "BWXT",
+   "what": "Re-check whether the $113.99-$117.21 zone still holds and whether the basket has recovered above its 10-day average before any entry.",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; check whether the PJM capacity auction delay decision is made and whether support at $354.24 holds",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; check whether support at $354.24 has held and whether the PJM capacity auction delay decision is made",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Patient Levels window for the cancelled buy expires; check whether the PJM December capacity auction delay has been decided and whether the basket is back above its 10-day average before any new setup",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CEG",
+   "what": "Check whether Salem 1 returns to service and whether the fleet running rate recovers toward 100%",
+   "kind": "reminder",
+   "by": "engineer"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CEG",
+   "what": "Re-check basket vs 10-day average and whether the Patient Levels buy window and setup expiry still apply before any new entry.",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "BWXT",
+   "what": "Resting buy window at $115.83 expires; re-check the $113.99-$117.21 zone and whether the basket is back above its 10-day average.",
+   "kind": "reminder",
+   "by": "engineer"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "BWXT",
+   "what": "Patient Levels setup valid_until expires; re-check basket vs 10-day average and whether the $113.99-$117.21 zone still holds before any new entry.",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "BWXT",
+   "what": "Resting-buy window and setup validity expire; re-check whether the basket has recovered above its 10-day average and whether the $113.99-$117.21 zone holds before any new entry",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "BWXT",
+   "what": "Re-check whether the basket has recovered above its 10-day average and whether any support zone near $108-$117 holds before any new entry.",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy zone $354.24-$355.66 expires; check whether PJM capacity auction delay decision is out and whether the zone held.",
+   "kind": "reminder",
+   "by": "engineer"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; check whether PJM capacity auction delay is decided and whether 354.24 support holds",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy level at $355.66 (support zone $354.24) expires; confirm whether the PJM capacity auction delay decision has been made before any new setup.",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "TLN resting buy at $355.66 expires; confirm owner and whether the PJM capacity-auction delay has been decided",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "VST",
+   "what": "Check whether the basket is back above its 10-day average and whether the PJM capacity-auction delay decision has landed before any new buy.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "UUUU",
+   "what": "Check whether the basket recovers above its 10-day average before any new buy; White Mesa campaign progress is the physical story to track.",
+   "kind": "reminder",
+   "by": "engineer"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "VST",
+   "what": "Re-check whether the basket recovers above its 10-day average and whether the 114.85 zone holds before considering any new setup.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Setup expires; check PJM capacity auction delay decision and whether the $354.24 zone held.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "UEC",
+   "what": "Check whether the Wyoming uranium mine cyber breach and trading halt have been resolved and whether the basket has recovered above its 10-day average before any new entry.",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CEG",
+   "what": "Check whether the PJM capacity-auction delay decision lands and whether price reclaims the 20-day high area, which would make a future setup more credible.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy window closes; check PJM capacity-auction delay decision and whether the 344.7 zone holds on a re-test.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CEG",
+   "what": "Check whether the PJM 2029/30 capacity auction delay decision has been made and whether it helps or hurts nuclear operators.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Setup expires; check whether the PJM capacity auction delay decision was made and whether the 344.7 zone held.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "VST",
+   "what": "Re-check whether the 114.85 zone held and whether the basket is back above its 10-day average before any future setup.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Check the PJM capacity auction delay decision; a delay would be a headline risk to the thesis, and the resting level is no longer relevant if the zone breaks.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CCJ",
+   "what": "Resting setup at $58.10 expires; re-check only if the basket recovers above its 10-day average.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CEG",
+   "what": "Setup expires; recheck whether price holds above its 50-day average before any future resting buy.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "VST",
+   "what": "Resting setup at $115.31 expires; recheck whether the basket has cleared its 10-day average and whether the $113.47-$114.85 zone held.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting setup window closes; check PJM capacity auction delay decision and whether the $344.70 zone holds.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; check PJM December capacity auction delay decision",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "UUUU",
+   "what": "Resting buy window closes; check whether $4.85-$4.91 support held or broke, and whether the legal investigation developed.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CEG",
+   "what": "Setup valid window ends; check PJM 2029/30 capacity auction delay decision and whether price has recovered above the 50-day average.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "VST",
+   "what": "Resting setup window closes; re-check whether price reclaims its 20-day average and whether the basket clears its 10-day average before any new buy.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy zone at $344.70-$346.08 expires; check whether the PJM capacity-auction delay decision landed and whether the zone held.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CEG",
+   "what": "Check whether the PJM 2029/30 capacity-auction delay decision has been made and whether price has reclaimed its 50-day average.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "VST",
+   "what": "Setup expires after 5 sessions; re-check whether the basket recovers above its 10-day average and whether the 114.85 zone holds.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Setup expires; recheck whether PJM capacity-auction delay is decided and whether the $344.7 zone holds.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; re-check the insider-sale signal, the PJM capacity-auction delay decision, and the basket gate before any order.",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "",
+   "what": "Questioner follow-up: TLN's COO Brad Berryman sold about $19.8M of stock on Nov 17 at roughly $345-365. Was that a planned 10b5-1 sale or an open-market sale?",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CCJ",
+   "what": "Level setup expires; re-check only if the basket recovers above its 10-day average and CCJ holds the 57-58 zone.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CEG",
+   "what": "Setup expires; re-evaluate only if the basket reclaims its 10-day average and CEG holds above $236.82.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "VST",
+   "what": "Setup expires; check whether basket recovered above its 10-day average and PJM capacity-auction delay decision.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting-buy window for the entry around 346 closes; check the PJM capacity-auction delay decision.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CCJ",
+   "what": "Check whether the basket cleared its 10-day average and whether the $57.87-$58.10 zone held; re-evaluate the level only if the gate is clear.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "UUUU",
+   "what": "Resting buy at $4.92 expires; check whether the $4.85-$4.91 zone held or broke.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "VST",
+   "what": "Resting setup expires; re-check whether the basket recovers above its 10-day average and whether the $114.85 zone holds.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy window from the Level Analyst's order expires; check PJM capacity auction delay decision before any new arm.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CCJ",
+   "what": "Patient Levels setup window closes (5 sessions); re-check whether the basket has reclaimed its 10-day average before any new buy.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CEG",
+   "what": "Resting buy window expires; recheck whether the basket is back above its 10-day average and whether the PJM 2029/30 auction delay decision has been made.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "VST",
+   "what": "Confirm whether the basket clears its 10-day average and whether VST holds the $113.47-$114.85 support zone before any re-look.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting setup window closes; check whether the PJM capacity auction delay is decided and whether the $340-346 zone held.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "VST",
+   "what": "Panic-trade sell-by window approaching; check VIX and whether the basket is still above its 10-day average",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm owner and PJM capacity-auction delay decision status",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CEG",
+   "what": "Check whether the PJM capacity-auction delay decision landed and whether the $242.89 zone held or broke.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy window for the $346.08 level closes; PJM capacity-auction delay decision could move the stock.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "TLN resting buy at $355.66 expires; confirm PJM capacity-auction delay decision and whether support at $354.24 holds",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm PJM capacity-auction delay decision and whether support at $354.24 held",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Confirm PJM December 2029/30 capacity-auction delay decision; TLN resting buy at $355.66 expires",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires if unfilled; confirm PJM December capacity-auction delay decision and whether the $354.24 support zone holds",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm owner and whether the PJM capacity-auction delay decision has been made",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires if not filled; confirm whether PJM December capacity auction delay has been decided",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm owner re-approval or cancel before then",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm whether it was canceled or re-approved in writing, and whether the PJM capacity-auction delay has been decided",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "TLN resting buy at $355.66 expires; confirm cancellation or written re-approval before then",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "Resting buy at $355.66 expires; confirm owner and whether PJM capacity-auction delay has been decided",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "TLN",
+   "what": "TLN resting buy at $355.66 expires; confirm whether it was re-approved or canceled, and check PJM capacity-auction delay status",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
    "ticker": "",
    "kind": "calendar",
    "what": "Monday after Thanksgiving. Power trio over the next 2 weeks: -4.1% on average since 2019 (up 2 of 7 years); miners +1.5% (2008-25). Year-end bounce trades start Dec 18."
@@ -219060,6 +219664,167 @@
    "by": "macro"
   },
   {
+   "date": "2026-12-01",
+   "ticker": "TLN",
+   "what": "PJM December 2029/30 capacity auction delay decision; main earnings driver for Talen and unconfirmed as of this check",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "TLN",
+   "what": "PJM December 2029/30 capacity-auction delay decision; main earnings driver for Talen. Confirm before any TLN buy.",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "UUUU",
+   "what": "White Mesa uranium processing campaign begins (targets ~1M lb U3O8 through early 2027)",
+   "kind": "reminder",
+   "by": "scout"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "CEG",
+   "what": "Re-check the support zone and whether the basket has reclaimed its 10-day average; PJM capacity-auction delay decision pending.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "VST",
+   "what": "Open panic-rebound position exits on this date per the rules; review then.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "VST",
+   "what": "Open panic-rebound position exits on this date; check whether the basket recovered above its 10-day average.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "VST",
+   "what": "Scheduled sell date for the VST panic-day trade (rule sells on date or at +10%)",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "LEU",
+   "what": "Scheduled sell date for the LEU panic-day trade (rule sells on date or at +10%)",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "UUUU",
+   "what": "Scheduled sell date for the UUUU panic-day trade (rule sells on date or at +10%)",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Energy Investor Day at American Centrifuge Plant; possible guidance and contract updates",
+   "kind": "reminder",
+   "by": "scout"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Energy Investor Day",
+   "kind": "reminder",
+   "by": "scout"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Energy Investor Day at Piketon, Ohio; watch for guidance, HALEU and contract updates",
+   "kind": "reminder",
+   "by": "scout"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Investor Day (scheduled, check for guidance or waiver updates)",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Investor Day (scheduled; check for guidance or contract updates)",
+   "kind": "reminder",
+   "by": "engineer"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Energy Investor Day (fireside chat with former US energy secretary); check for guidance on Russian-supply waivers and 2027+ deliveries",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Energy Investor Day in Piketon, Ohio; watch for guidance, enrichment capacity, and contract updates",
+   "kind": "reminder",
+   "by": "scout"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Energy Investor Day; possible guidance or contract updates",
+   "kind": "reminder",
+   "by": "scout"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Investor Day in Piketon, Ohio",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Investor Day in Piketon, Ohio (scheduled event, not a fresh catalyst)",
+   "kind": "reminder",
+   "by": "engineer"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Investor Day in Piketon, Ohio; check for guidance on Russian-supply waivers and enrichment contracts.",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Investor Day at Piketon facility (live webcast); watch for contract, capacity, or guidance updates",
+   "kind": "reminder",
+   "by": "scout"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Investor Day at Piketon facility with live webcast",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Investor Day with business and financial outlook updates",
+   "kind": "reminder",
+   "by": "scout"
+  },
+  {
    "date": "2026-12-08",
    "ticker": "UEC",
    "what": "UEC earnings (moves about 4-5% either way on the day)",
@@ -219120,6 +219885,20 @@
    "what": "Questioner follow-up: Was TLN's COO Brad Berryman's Nov 17 sale of about $19.8M a planned 10b5-1 sale or an open-market sale?",
    "kind": "reminder",
    "by": "questioner"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Earnings; event risk for any open position.",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Earnings release; event risk for any position.",
+   "kind": "reminder",
+   "by": "level"
   },
   {
    "date": "2026-12-09",
@@ -219190,6 +219969,13 @@
    "what": "PJM December capacity auction delay decision; a key catalyst for Talen's capacity revenue that could move the stock sharply in either direction.",
    "kind": "reminder",
    "by": "level"
+  },
+  {
+   "date": "2026-12-09",
+   "ticker": "LEU",
+   "what": "FOMC decision; broad macro risk for the basket.",
+   "kind": "reminder",
+   "by": "macro"
   },
   {
    "date": "2026-12-09",
@@ -219364,6 +220150,20 @@
    "what": "Check the DOE FY2027 budget outcome for HALEU cascade funding and whether DOE exercises any further HALEU Operation Contract options",
    "kind": "reminder",
    "by": "investigator"
+  },
+  {
+   "date": "2027-01-01",
+   "ticker": "CCJ",
+   "what": "Poland nuclear plant deal target year; check whether a contract is actually signed",
+   "kind": "reminder",
+   "by": "scout"
+  },
+  {
+   "date": "2027-01-01",
+   "ticker": "CCJ",
+   "what": "Poland nuclear plant deal decision expected around 2027 (per headline; verify timing)",
+   "kind": "reminder",
+   "by": "scout"
   }
  ],
  "weather_view": {
@@ -222397,7 +223197,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-24 23:00",
+ "watchdog_last": "2026-11-25 00:02",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

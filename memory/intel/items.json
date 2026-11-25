@@ -17981,5 +17981,71 @@
 "their",
 "transformation"
 ]
+},
+{
+"id": "01bd07bb33534fdf",
+"date": "2026-11-25",
+"ts": 1795576874,
+"title": "Indonesia lines up US nuclear training, coal gasification but not the know-how",
+"summary": "",
+"outlet": "IntelliNews",
+"link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWXRvdWh4aUVPaFFQM0M5R1RtUzJPSTVYcEhGMXdsdTBWVVFRYVJPWTlsVEc1REZQNFlSdVl2emN1Z1JLZHgtQ2dIVldybFlESHB5YU1xakVxLXptVkFqdHlCX3J6RnlkemRRcll4SVo3VGI1U1ZxQXlac2k2STVuVHZQT01kQWo5Vi1YdDBhbEttMlR3RWZwTXROWEdmRHBac2IxRTNtYnR4WWNjMVVFTlRyRjdmUl9YQU5BZm5oQnU0X2M?oc=5",
+"place": "Asia newcomers",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.88,
+"score": 4.26,
+"echo_of": null,
+"w": [
+"but",
+"coal",
+"gasification",
+"how",
+"indonesia",
+"know",
+"lines",
+"not",
+"nuclear",
+"training"
+]
+},
+{
+"id": "ccdc638af01552e6",
+"date": "2026-11-22",
+"ts": 1795334400,
+"title": "Uranium One Mining (UUUFF) Stock Price, News & Analysis",
+"summary": "",
+"outlet": "Stock Titan",
+"link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9rSjE0cnpFU0szaEJuSGREODRaYksyRF84cDZCaVhmNHFKWTFueklfTk5VTms1bkJ5ZXlxeEM3c0ZMNmhnMkRTb2dRVXpXak84SHYxdg?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [
+"market_chatter"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.67,
+"score": 2.34,
+"echo_of": null,
+"w": [
+"analysis",
+"mining",
+"news",
+"one",
+"price",
+"stock",
+"uranium",
+"uuuff"
+]
 }
 ]
