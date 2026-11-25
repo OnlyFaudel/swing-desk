@@ -329,6 +329,10 @@
   "night_round_6_2026_11_25": {
    "trials": 4,
    "verdict": "2026-11-25 00:05. Whole-account backtest (all rules + big-stock sharp tier; base 25.2%/yr, 2008-18 17.7%, 2019-26 36.3%, worst -40.5%). (L) Rank sharp-drop candidates by deepest 5-day fall instead of biggest drop today: 23.2%/yr (17.7 / 31.3), worst -46.0%: rejected. (M) Park idle cash in QLD (2x Nasdaq-100) while QQQ is above its 200-day, T-bills below: 28.1%/yr (18.1 / 43.5), worst -43.4%, BUT out-of-sample synthetic 2000-2006 (dot-com): 2x Nasdaq parking -10.4%/yr, worst -83.6%, vs 2x S&P parking +0.6%/yr, -45.0% (2007-18: 15.0 vs 11.7; 2019-26: 31.6 vs 21.1). The gain is hindsight (picking the index that won). Rejected; parking stays SSO/SGOV."
+  },
+  "night_round_7_2026_11_25": {
+   "trials": 3,
+   "verdict": "2026-11-25 00:10. Panic-day trades (live rule, nuclear+related, one point per panic day). (O) Market-based exit (sell when the S&P closes back above its pre-panic close, or +10%, max 6 days): 2008-18 +0.04% vs live +0.10% (diff t -0.5), 2019-26 +1.46% vs +1.79% (t -1.5): rejected. (Q) Second buy of the same dollars when a panic lot closes 10% under the buy: the second buy alone +2.39% vs S&P (2008-18, t 2.8, 59 days) / +1.16% (2019-26, t 0.8, 32 days); whole-account 25.1%/yr (17.7 / 36.1), worst -42.3% vs 25.2% (17.7 / 36.3), -40.5%: no gain, more risk. Rejected (the sharp-drop second buy stays; panic lots are already large)."
   }
  }
 }
