@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 06:55",
+ "updated": "2026-11-25 10:55",
  "facts": [
   {
    "topic": "TLN COO Brad Berryman's Nov 17 sale (~$19.8M)",
@@ -254,6 +254,18 @@
     "pm",
     "risk",
     "strategist"
+   ]
+  },
+  {
+   "topic": "AI scare days (NVIDIA -6%+): is buying the power names a real pattern or AI-era luck?",
+   "answer": "Checked 2026-11-25 against past hype booms with the same setup (leader crashes, buy its picks-and-shovels names at the close, 10 sessions, vs the S&P after costs, compared with any day in that boom). AI 2024-26 (NVIDIA -6% -> CEG/VST/TLN): +8.6% vs a normal +1.3%, up 9 of 11 times (edge +7.4%, t 3.3). Dot-com 1998-2002 (Cisco -6% -> network/chip suppliers): edge +0.2% (36 scares). EVs 2019-23 (Tesla -6% -> lithium/battery/charging): -0.5% (34). Crypto 2017-22 (bitcoin -10% -> miners): -3.5% (11). So the pattern is NOT a general law of hype cycles; it has only worked for the AI-power names, possibly because power has real contracted demand while the others were pure sentiment, or because 11 events can be luck. Treat an AI scare day as a good, not guaranteed, setup for the power names: normal size, never oversized. It stays in the practice book (ai_scare) and today (Nov 25, NVIDIA about -8%) is a live test.",
+   "roles": [
+    "pm",
+    "risk",
+    "macro",
+    "strategist",
+    "researcher",
+    "investigator"
    ]
   }
  ]
