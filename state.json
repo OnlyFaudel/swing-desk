@@ -624,7 +624,7 @@
   "plantrep:2026-11-26": true,
   "questioner:2026-11-26:5": true,
   "questioner:2026-11-26:6": true,
-  "candles_backfill_t": 1795716929.545423
+  "candles_backfill_t": 1795718798.2641091
  },
  "benchmark": {
   "shares": {
@@ -9242,7 +9242,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 13:38 ET",
+ "last_cycle": "2026-11-26 13:49 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -58571,7 +58571,7 @@
   "fe808fea77078dbb",
   "61659cb80b158a77"
  ],
- "news_slow_at": 1795717945.2534218,
+ "news_slow_at": 1795718553.4906745,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -220052,7 +220052,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 13:38",
+  "updated": "2026-11-26 13:50",
   "total": 824,
   "week": 580,
   "places": {
@@ -223277,7 +223277,7 @@
    "built": "2026-11-26 13:26"
   }
  ],
- "heartbeat": "2026-11-26 13:38",
+ "heartbeat": "2026-11-26 13:49",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
