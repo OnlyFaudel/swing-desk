@@ -4213,18 +4213,6 @@
  },
  "news_feed": [
   {
-   "ticker": "TLN",
-   "source": "Google News",
-   "title": "A Look at Talen Energy Corp (TLN) After 4.7% Decline -- GF Value $414.10 vs Price $347.68 - GuruFocus",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQc3d0eXc3RFBEVElvaXVUdGV2eHdfNzl6UEN1VTcwVGZWSjlnbnVmOG8tSmVhckpqd3pQVG80Z1c3d1ZHcVZCbmMxTUtSOE05dWNwczZqTGlnQ0pMc1RTeFViQ0Q3WEpCeHRFS1hKelJIX3hjVTloSXd2c3BCSUd4ZzI3TEtpZDl0TE5Tbjgwdi1HQ2JYdGd0aE5sNVY2aU5mSVJHVHpzOFFmd0JzU1RFUGIwclVOWUZm?oc=5",
-   "ts": 1795562559,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Recycled GuruFocus valuation recap with a price decline; no new company information."
-  },
-  {
    "ticker": "LEU",
    "source": "Google News: \"Centrus Energy\"",
    "title": "Centrus Energy to Host Investor Day Dec. 7 with Business and Financial Outlook Updates - TradingView",
@@ -7211,6 +7199,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Kazatomprom is a rival uranium miner; a Freedom buying commentary is opinion, not company news for Cameco."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News",
+   "title": "Can Clean Energy Fuels (NASDAQ:CLNE) Expand Its Renewable Fuel Network? - Kalkine Media",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMXJVbnowQ19oVFkxbTFramY3MFlxNDlTbHBtX3JvOXpGTGRldzU3MmlwUnpISGd2NGRyM3NGQ04wWHk1dUdaYmxpakUzS0ZYekxqQ21wWUl1TjdoM0Y2TlBDdTVGeDdqMHdCWWE5SjI0MkZHWHBuT29aQTc4d25PSUdSSVpKd1FlSW9ZWEZNSjdpV3ZVbUxVdGRWSEtyYzE2cWt6UjBoRGNYNW9yTnc?oc=5",
+   "ts": 1795729260,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Kalkine Media piece about Clean Energy Fuels (CLNE), an unrelated natural gas company; not about UUUU."
   }
  ],
  "reviews": [
@@ -8970,16 +8970,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.07267,
+  "day_usd": 0.07315,
   "month": "2026-11",
-  "month_usd": 2.06744,
-  "total_usd": 2.06744,
+  "month_usd": 2.06792,
+  "total_usd": 2.06792,
   "by_role": {
    "macro": 0.20195,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.21941,
+   "scout": 0.21989,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9247,7 +9247,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 16:46 ET",
+ "last_cycle": "2026-11-26 16:57 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -58061,8 +58061,8 @@
   "dbaa3c361e6d78b5",
   "6f138c10a977c951",
   "82e06a4ced981af5",
-  "40da66ea723efc8f",
   "70ec56bf0ac9a6fb",
+  "40da66ea723efc8f",
   "2cbbc694a2695e84",
   "cdc9a7381e6b445a",
   "9f2e45d00f1961dd",
@@ -58273,6 +58273,7 @@
   "2aa378956ea76132",
   "0364072127de7058",
   "1ed51b1b4a94c209",
+  "fdefdd5e748f28f6",
   "a7baf61adc01832c",
   "1c3f23b5479e5fd7",
   "f3e08d14a67b7dd8",
@@ -58584,7 +58585,7 @@
   "53fc8faedadd1796",
   "7ee1ad6e6041b23e"
  ],
- "news_slow_at": 1795729467.7106888,
+ "news_slow_at": 1795730089.8927445,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -220155,9 +220156,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 16:46",
+  "updated": "2026-11-26 16:57",
   "total": 836,
-  "week": 581,
+  "week": 580,
   "places": {
    "Uranium price": 49,
    "South Korea": 46,
@@ -220837,8 +220838,8 @@
   "85de31670d4daf9d",
   "dd57ba38f81c0a8f",
   "c5a7aa4d347cef23",
-  "4039fa58057275ae",
   "7ffb052a70d145c2",
+  "4039fa58057275ae",
   "d1148d05210e97b6",
   "03c5d2773ef94a7b",
   "a7baf61adc01832c",
@@ -223385,7 +223386,7 @@
    "built": "2026-11-26 16:31"
   }
  ],
- "heartbeat": "2026-11-26 16:46",
+ "heartbeat": "2026-11-26 16:57",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223626,7 +223627,7 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 394,
+   "asked": 395,
    "used": 360,
    "notes": {
     "TLN Deals and contracts": 18,
