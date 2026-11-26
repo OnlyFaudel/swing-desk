@@ -329,6 +329,18 @@
     "exec",
     "level"
    ]
+  },
+  {
+   "topic": "Day trading on real 15-minute candles (opening-range breakouts, VWAP, etc.), tested 2026-11-26",
+   "answer": "Real 15-minute candles (data/candles15, SIP feed, 13 stocks plus SPY, 2016-2026, about 25,000 stock-days). 18 long-only setups, entry only at the close of a finished candle, out by 4 PM, costs 1 tick + 0.1%, eras 2016-18 / 2019-26, clustered by day. All lost after costs in 2019-26 (-0.10% to -0.34% a trade) and all but two tiny-sample ones in 2016-18: 15- and 30-minute opening-range breakouts with a stop at the opening low (-0.14 to -0.21%), the same with SPY above its VWAP (no better), VWAP reclaim (-0.07 to -0.23%), VWAP bounce on up days (-0.12 to -0.19%), first-candle momentum both ways, gap-down fill confirmed by an opening-range break (-0.27%), 2 PM trend and 2 PM weakness, new high of day after 1 PM. Rerun with ZERO costs on $20+ stocks only: everything within about +/-0.1% of buying at 9:45 and selling at the close, nothing significant in both eras. Intraday moves in these stocks are noise at this resolution; there is no day-trading edge to build on. Keep the candles for timing swing entries and exits, not for day trades.",
+   "roles": [
+    "pm",
+    "risk",
+    "strategist",
+    "researcher",
+    "exec",
+    "level"
+   ]
   }
  ]
 }
