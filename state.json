@@ -628,7 +628,8 @@
   "questioner:2026-11-26:7": true,
   "candles5_backfill_t": 1795723085.1277122,
   "catalysts2:2026-11-26": true,
-  "questioner:2026-11-26:8": true
+  "questioner:2026-11-26:8": true,
+  "notecheck:2026-11-26": true
  },
  "benchmark": {
   "shares": {
@@ -9246,7 +9247,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 16:11 ET",
+ "last_cycle": "2026-11-26 16:15 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -58581,7 +58582,7 @@
   "53fc8faedadd1796",
   "7ee1ad6e6041b23e"
  ],
- "news_slow_at": 1795726965.054176,
+ "news_slow_at": 1795727584.6769714,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219279,6 +219280,16 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-26 16:15",
+   "who": "auditor",
+   "kind": "learn",
+   "title": null,
+   "text": "Note check (does each teammate use the stock files?): Scout used them in 92% of 391 answers (mostly SECTOR Countries, SECTOR Government and laws); Level Analyst used them in 96% of 144 answers (mostly SECTOR Uranium market, TLN Price behavior); Macro Analyst used them in 98% of 102 answers (mostly SECTOR Uranium market, SECTOR Government and laws); Risk Manager used them in 99% of 100 answers (mostly SECTOR Uranium market, TLN Snapshot); News Investigator used them in 96% of 82 answers (mostly SECTOR Uranium market, TLN Snapshot); Portfolio Manager used them in 100% of 64 answers (mostly SECTOR Uranium market, BWXT Snapshot); engineer used them in 98% of 59 answers (mostly SECTOR Uranium market, CEG Places and operations); questioner used them in 100% of 56 answers (mostly TLN Snapshot, TLN News); Researcher used them in 100% of 10 answers (mostly BWXT Snapshot, CEG Snapshot); Whale Watcher used them in 100% of 6 answers (mostly CCJ Snapshot, SECTOR Uranium market); Reviewer used them in 83% of 6 answers (mostly UUUU Snapshot, LEU Snapshot); Crowd Reader used them in 100% of 5 answers (mostly SECTOR Uranium market, CCJ Snapshot). Everyone is using them.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -220142,7 +220153,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 16:11",
+  "updated": "2026-11-26 16:15",
   "total": 834,
   "week": 580,
   "places": {
@@ -223371,7 +223382,7 @@
    "built": "2026-11-26 16:01"
   }
  ],
- "heartbeat": "2026-11-26 16:11",
+ "heartbeat": "2026-11-26 16:15",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
