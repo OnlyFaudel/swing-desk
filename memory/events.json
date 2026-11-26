@@ -29340,5 +29340,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-26",
+"title": "Kazatomprom increases uranium production by nearly 10% in nine months",
+"type": "intel_production",
+"source": "Intel: Trend News Agency",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "NXE",
+"date": "2026-11-26",
+"title": "Kazatomprom increases uranium production by nearly 10% in nine months",
+"type": "intel_production",
+"source": "Intel: Trend News Agency",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]

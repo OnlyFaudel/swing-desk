@@ -25199,5 +25199,134 @@
 "nuclear",
 "strengthening"
 ]
+},
+{
+"id": "39324ea49de60632",
+"date": "2026-11-26",
+"ts": 1795659098,
+"title": "$6.4 Million in Workforce Grants Will Train Southern Ohioans for Piketon Campus Jobs",
+"summary": "",
+"outlet": "NewsBreak: Local News & Alerts",
+"link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNHcyVzktSzk3QWk3cGZOaWtsMjVfa183RGN4NzNHN054cklLZlRTVTk5ME5xRE5XYVhLcGpHU3FoTHNrM2pydWg2akhGSmQ4c09LSXpWWTFQN3VHWXBpdXRlTHNwS1hkc29SRVhhR2luSW8xVmFscUk5c1hSYmQ3TWkzTHc4UWFCcTQtWFNBcGEzSUNWTGZKRDBjSGRTTHBpY0ItQ2Q5cFRyMjlJd2xjbXZSdmktWW9VSU1kcFByV2VXUUFiQkZ4Z0N6X1FsZzB0X0g0QkN2N3N6QnFoTm9ta2RB?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [
+"jobs"
+],
+"numbers": [
+"$6.4 Million"
+],
+"local": true,
+"novelty": 0.64,
+"score": 4.88,
+"echo_of": null,
+"w": [
+"campus",
+"grants",
+"jobs",
+"million",
+"ohioans",
+"piketon",
+"southern",
+"train",
+"workforce"
+]
+},
+{
+"id": "2e2b3233da58bfb7",
+"date": "2026-11-26",
+"ts": 1795691208,
+"title": "Talen Energy Corporation $TLN Shares Sold by State Street Corp",
+"summary": "",
+"outlet": "MarketBeat",
+"link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOb1h2c0FKWUhMV1hlalVGdHJ2My1pRHFjZjRSc0NKcUNsem8yRWwyTEJEcFBBUFloU1lDcG42dV9oOVJBYm9vQ1hhZ2R1VjUzUFNlV0x4OTh1clVycmwwNERzTUZmbWwyUWRvWDJ1c2t0dnhoYjdyZV9TN1hwbDZWdEVGVVo0VWstVlE0LTd6SnlWY2VXdDByU3R1RnNkTEQ5Vk1hWHBsSDFvdVhiZXVwNDBVTmdzbmN2QXV0VnRtNA?oc=5",
+"place": "Susquehanna",
+"tickers": [
+"TLN"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.62,
+"score": 2.74,
+"echo_of": null,
+"w": [
+"corporation",
+"energy",
+"shares",
+"sold",
+"state",
+"street",
+"talen",
+"tln"
+]
+},
+{
+"id": "946095cbe66689d4",
+"date": "2026-11-26",
+"ts": 1795698901,
+"title": "Kazatomprom increases uranium production by nearly 10% in nine months",
+"summary": "",
+"outlet": "Trend News Agency",
+"link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE82cF9CX1ZfTE5xQUdyLVFHY284LVhBTWgtVmFZVWhDNGN5Y3FOTWViRUxxQXJ0aGxsT3FNTTNTWDlrN0NCRWJVU0FoaDlBcDRnV29IWm9VQXVvNGtKQjBJ?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [
+"production"
+],
+"numbers": [
+"10%"
+],
+"local": true,
+"novelty": 0.83,
+"score": 5.46,
+"echo_of": null,
+"w": [
+"increases",
+"kazatomprom",
+"months",
+"nearly",
+"nine",
+"production",
+"uranium"
+]
+},
+{
+"id": "de6365b5133e3061",
+"date": "2026-11-26",
+"ts": 1795699800,
+"title": "Energy Fuels vs. Centrus Energy: Which Uranium Stock Has The Edge Now?",
+"summary": "",
+"outlet": "Zacks Investment Research",
+"link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWm9hV3F6a2gtMWEzWjhNRVF3T2txNWczak5rYVg0T2g3TThubG96bFpYN2VENWdTZXJmdG0xYVRIMFNHdlcwajZpVklPdm9Lbi0xUDJLZVdYaDQ2RTBtWWdtTkNaTTM1NVBITVRwLUdZSENSSXVRa2RFQ0UzXzYzcWtfcmhsa21Ic2FPMFV5R3RQT3h6UElGUDVrR1hzaWFaWWxBejMyX0dRekRk?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU",
+"CCJ",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.7,
+"score": 2.9,
+"echo_of": null,
+"w": [
+"centrus",
+"edge",
+"energy",
+"fuels",
+"now",
+"stock",
+"uranium",
+"which"
+]
 }
 ]
