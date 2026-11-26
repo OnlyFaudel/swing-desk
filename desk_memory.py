@@ -152,6 +152,18 @@ def all_playbooks(tickers):
 
 
 # ------------------------------------------------------------------ the watch calendar
+def _words(s):
+    import re
+    return {x for x in re.findall(r"[a-z0-9]+", (s or "").lower()) if len(x) > 2}
+
+
+def _same(a, b, cut=0.35):
+    """Two reminders for the same day and stock that share most of their words are one reminder (Nov 26: about 60 copies of
+    'TLN resting buy at $355.66 expires' crowded real events out of the calendar)."""
+    wa, wb = _words(a), _words(b)
+    return bool(wa and wb) and len(wa & wb) / len(wa | wb) >= cut
+
+
 def watch_add(items, by):
     w = _load(WA, [])
     for it in items or []:
@@ -162,7 +174,8 @@ def watch_add(items, by):
         except ValueError:
             continue
         what = str(it.get("what") or "")[:200]
-        if what and not any(x["date"] == d and x["what"] == what for x in w):
+        tk = str(it.get("ticker") or "")[:6].upper()
+        if what and not any(x["date"] == d and (x["what"] == what or (x.get("ticker") == tk and _same(x["what"], what))) for x in w):
             w.append({"date": d, "ticker": str(it.get("ticker") or "")[:6].upper(), "what": what, "by": by,
                       "written": str(dt.date.today()), "surfaced": False})
     w.sort(key=lambda x: x["date"])
