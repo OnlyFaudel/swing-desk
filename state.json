@@ -619,7 +619,8 @@
   "congress:2026-11-26": true,
   "jobs:2026-11-26": true,
   "weather:2026-11-26": true,
-  "questioner:2026-11-26:4": true
+  "questioner:2026-11-26:4": true,
+  "reactors:2026-11-26": true
  },
  "benchmark": {
   "shares": {
@@ -4203,18 +4204,6 @@
  },
  "news_feed": [
   {
-   "ticker": "UUUU",
-   "source": "Yahoo Finance",
-   "title": "Is USAR Worth Buying With a Sales Premium and Costly Growth Plans?",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/usar-worth-buying-sales-premium-160000737.html?.tsrc=rss",
-   "ts": 1795536000,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Opinion piece on USA Rare Earth valuation; not new information about Energy Fuels."
-  },
-  {
    "ticker": "LEU",
    "source": "Google News: \"Centrus Energy\"",
    "title": "Centrus Energy Investor Day Set for Dec. 7 in Piketon, Ohio - kalkine.com",
@@ -7201,6 +7190,18 @@
    "direction": "neutral",
    "event_type": "analyst",
    "why": "Generic Zacks comparison piece; no new company-specific information."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News",
+   "title": "Talen Energy Corporation $TLN Shares Sold by State Street Corp - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOb1h2c0FKWUhMV1hlalVGdHJ2My1pRHFjZjRSc0NKcUNsem8yRWwyTEJEcFBBUFloU1lDcG42dV9oOVJBYm9vQ1hhZ2R1VjUzUFNlV0x4OTh1clVycmwwNERzTUZmbWwyUWRvWDJ1c2t0dnhoYjdyZV9TN1hwbDZWdEVGVVo0VWstVlE0LTd6SnlWY2VXdDByU3R1RnNkTEQ5Vk1hWHBsSDFvdVhiZXVwNDBVTmdzbmN2QXV0VnRtNA?oc=5",
+   "ts": 1795691208,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "MarketBeat ownership-change recap of a routine 13F filing; no new company information."
   }
  ],
  "reviews": [
@@ -8960,16 +8961,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.02537,
+  "day_usd": 0.02572,
   "month": "2026-11",
-  "month_usd": 2.02013,
-  "total_usd": 2.02013,
+  "month_usd": 2.02048,
+  "total_usd": 2.02048,
   "by_role": {
    "macro": 0.19341,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.19825,
+   "scout": 0.1986,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9237,7 +9238,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 08:22 ET",
+ "last_cycle": "2026-11-26 08:33 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57883,10 +57884,10 @@
   "2a89ac3dc67ad332",
   "8b9f115784388b61",
   "a73665945ff493c7",
-  "bdb801dcb316d6cb",
   "e15990dac5b8bec2",
-  "6f83643eaed2fbc3",
+  "bdb801dcb316d6cb",
   "b695f296dd2e61f0",
+  "6f83643eaed2fbc3",
   "5d0c7240e494c5f9",
   "637530bf82fb0126",
   "0929027bdfefabbd",
@@ -57921,6 +57922,7 @@
   "15c5ededcaa0a513",
   "9ab10d3c257d1ce5",
   "dce4cce47213c16f",
+  "8de24d7e6020d498",
   "563c0572b10f43bc",
   "efa3269c9fa1c644",
   "9dbb51b520d076e7",
@@ -58023,12 +58025,12 @@
   "c527b52a6d387b5e",
   "c2bfe85469484a37",
   "bf78a7a4b7c697c4",
-  "04e5c0526493eb7e",
   "6a0cc1c1f8babcd3",
+  "04e5c0526493eb7e",
   "7ee1ad6e6041b23e",
-  "16c52bc5bc8110db",
-  "f1f8a01f5b2d2080",
   "3a1ae63cc1a72974",
+  "f1f8a01f5b2d2080",
+  "16c52bc5bc8110db",
   "1be96b3daf4578d3",
   "1e64fcaaf9ecb5d1",
   "bf3c957b04f7b01a",
@@ -58236,7 +58238,6 @@
   "8a17ec5ab2f6dcf8",
   "5e042fd73e80d40b",
   "696cc711d13e8558",
-  "aa4b40fcca57bfea",
   "3c1ef04c322d8d99",
   "52dee3d37e759da2",
   "997921d9077a2d67",
@@ -58348,6 +58349,7 @@
   "c928dcc41ecc5a41",
   "e356ee82386a78c0",
   "6fb969d093a9bc6e",
+  "adde5ac42f49ca55",
   "e00ac0592374a28e",
   "ee62a85b77a52900",
   "dca8857e1d9fca26",
@@ -58488,6 +58490,7 @@
   "a4c6592fc0370afc",
   "46e81ab921eb0aa9",
   "95d12e5461204a04",
+  "de6365b5133e3061",
   "3154b03af559d946",
   "04dd9aeafd90d9b4",
   "d1c7122c048b2ed9",
@@ -58496,6 +58499,7 @@
   "832a141cb29fe453",
   "67c5ac967df665b9",
   "e6fd6f9a6df879e4",
+  "2e2b3233da58bfb7",
   "87e89d05178171d2",
   "5f7aff03201cc4dd",
   "60bdf2c0509fb940",
@@ -58530,10 +58534,9 @@
   "418a91931047cecc",
   "52950daaafc92008",
   "c988637e87af140a",
-  "8de24d7e6020d498",
-  "de6365b5133e3061"
+  "aa4b40fcca57bfea"
  ],
- "news_slow_at": 1795699288.4839838,
+ "news_slow_at": 1795699910.54512,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219858,7 +219861,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 08:22",
+  "updated": "2026-11-26 08:33",
   "total": 778,
   "week": 558,
   "places": {
@@ -219940,8 +219943,8 @@
    "failed": []
   },
   "reactors": {
-   "date": "2026-11-23",
-   "us_fleet_running_pct": 89.4,
+   "date": "2026-11-25",
+   "us_fleet_running_pct": 90.2,
    "owners": {
     "CEG": {
      "units": 25,
@@ -219967,7 +219970,7 @@
      "owner": "CEG",
      "start": "2026-10-04",
      "end": null,
-     "days": 50,
+     "days": 52,
      "kind": "refuel_or_long"
     }
    ]
@@ -220496,8 +220499,8 @@
  },
  "intel_handed": [
   "b2e981fc7a2e7302",
-  "2ac262d1779b4fad",
   "958910b51098bafe",
+  "2ac262d1779b4fad",
   "2c7a3976a5596853",
   "0ad3ea7bae8b611c",
   "020569e75e7d456e",
@@ -220506,8 +220509,8 @@
   "36cbbee89c76a1f7",
   "b371c50f261a21f0",
   "4dbfaa309ceb1878",
-  "c2a1739b2e369eff",
   "515517f776442fe4",
+  "c2a1739b2e369eff",
   "797e5c4039060606",
   "5b83027a0cf1a496",
   "37e85b7a7ce58612",
@@ -223071,7 +223074,7 @@
    "built": "2026-11-26 08:18"
   }
  ],
- "heartbeat": "2026-11-26 08:22",
+ "heartbeat": "2026-11-26 08:33",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223312,10 +223315,10 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 346,
-   "used": 317,
+   "asked": 347,
+   "used": 318,
    "notes": {
-    "TLN Deals and contracts": 17,
+    "TLN Deals and contracts": 18,
     "CCJ Deals and contracts": 66,
     "BWXT Deals and contracts": 45,
     "SECTOR Government and laws": 88,
@@ -228664,8 +228667,8 @@
   }
  ],
  "reactor_view": {
-  "date": "2026-11-24",
-  "us_fleet_running_pct": 89.4,
+  "date": "2026-11-25",
+  "us_fleet_running_pct": 90.2,
   "owners": {
    "CEG": {
     "units": 25,

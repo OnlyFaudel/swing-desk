@@ -1,5 +1,5 @@
 {
- "date": "2026-11-23",
+ "date": "2026-11-25",
  "owners": {
   "CEG": {
    "units": 25,
@@ -19,14 +19,14 @@
    "fleet_running_pct": 100.0
   }
  },
- "us_fleet_running_pct": 89.4,
+ "us_fleet_running_pct": 90.2,
  "open_outages": [
   {
    "unit": "Salem 1",
    "owner": "CEG",
    "start": "2026-10-04",
    "end": null,
-   "days": 50,
+   "days": 52,
    "kind": "refuel_or_long"
   }
  ],
@@ -124,7 +124,7 @@
    "owner": "CEG",
    "start": "2026-10-04",
    "end": null,
-   "days": 50,
+   "days": 52,
    "kind": "refuel_or_long"
   },
   {
