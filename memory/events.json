@@ -29544,5 +29544,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "UUUU",
+"date": "2026-11-26",
+"title": "Nuclear Fuel Supplier Energy Fuels (NYSEAMERICAN: UUUU) Lifts Contracted Uranium Sales 35% As Sector Rebounds From AI-Driven Selloff",
+"type": "intel_contract",
+"source": "Intel: Foreign Policy Journal",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-26",
+"title": "Nuclear Fuel Supplier Energy Fuels (NYSEAMERICAN: UUUU) Lifts Contracted Uranium Sales 35% As Sector Rebounds From AI-Driven Selloff",
+"type": "intel_contract",
+"source": "Intel: Foreign Policy Journal",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]
