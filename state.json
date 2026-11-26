@@ -4205,42 +4205,6 @@
  },
  "news_feed": [
   {
-   "ticker": "VST",
-   "source": "Google News",
-   "title": "Midterms provide clarity on data center development: Vistra CEO - Utility Dive",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPOWc1UUNFRzlXVjVFYmpuNmN6ejFOenE0SzhYYl9QNzJ1c3o5NmtWOEthS0hFWDVuNTQyM0VkWUVjWS00TWZ3WEVkbDk0NzE2QlNFaVA5ZjNtYkttalQ4aTR1cU5IRmNlZWh4X2ZKejgyRWc3NGNkSnVLaVVtUF9Va2xVSU8?oc=5",
-   "ts": 1795540267,
-   "materiality": 4,
-   "novelty": "follow_up",
-   "direction": "neutral",
-   "event_type": "policy_tariff",
-   "why": "CEO commentary on midterm election clarity for data centers; general, not new facts."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Cameco Corporation TSX:CCO in Focus Today: S&P/TSX Composite Index, Large Cap and Value Stock as Investors Watch the Next Catalyst - kalkine.ca",
-   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNRFR6a09fV2VZZ3M2Tm8zV0VtYU5ZZm1zTnlkNF9fUWdKbVkxM0dpSVRLZVJWd0JpUVBsTm81VWhRczVUSWdSdjJ0S2ZyV3Y3TmQ2eDNHOWVkRGtYbnkxTmZOQ0hEaGRpcV81elRBSV9abTdXZTVjeEZWdU5zcjFWQ0VtT3dRZ210U0JQeWpLbm1WT0hlZTNIX1pSRlhqVHZoeEI1cWRXVVYxc2tEOU9rNnFsamlUTzcxYXBuZTEzSWxtdHlVZ0k3bnNjTEJ4czljWlR6cVhkUEgyT3pfLWZIZXlHZlU2WkhBZTdueA?oc=5",
-   "ts": 1795540380,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic 'in focus today' listicle-style recap with no new company information."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Cameco Corporation (TSX:CCO): Why This Large Cap Growth Stock Is Trending on the S&P/TSX Composite Index Today - kalkine.ca",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNcXFCUzVlTEp6QnJGRXdWR2ZFQzVCUDhrR1FTNVFSTGZXc2hvdW1BSW43YWFpS2p3dkpNY29KUVBYR2FmNXFaQ0Zpbll5T2dJNTBOZk0xaE1iSG5sZmJPMUZrdXBETGx1czVvLXhjanY2S0w5aVl5STRJWDlvZzdKVHhVYzZZUUIwNXZka2tZemg2MERxR0kzNzkwQ2tOT2FqM1NsTTMtYWdfeWdyX3Y2RnJNa3dLaGtmaHVITEJOcEc0TTJDSHRub1JtdVI1ekZp?oc=5",
-   "ts": 1795540380,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic 'trending' recap of price action with no new company information."
-  },
-  {
    "ticker": "BWXT",
    "source": "Google News: \"BWX Technologies\"",
    "title": "AP1000 Component Deal Could Expand BWX Technologies Stock Role In Nuclear Builds - Yahoo Finance",
@@ -7203,6 +7167,42 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Local Piketon workforce grants for training; small, mostly local job news, not material to Centrus earnings."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Yahoo Finance",
+   "title": "Can BWXT's Antares Deal Boost Its Advanced Nuclear Fuel Business?",
+   "link": "https://finance.yahoo.com/energy/articles/bwxts-antares-deal-boost-advanced-125300079.html?.tsrc=rss",
+   "ts": 1795697580,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Feature piece on BWXT's Antares deal; general sector opinion, not new company information for Cameco."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News: Constellation Energy nuclear",
+   "title": "LS Power completes acquisition of 4.4 GW of gas-fired plants from Constellation - energynews.pro",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcUxRRzRVTU85anlTbDl5aHNabnZ0SjluLWJ1QThWTEFTRjllVnhsLWxuTzVkMXZsVFl4cGtocHZOZ0FjNndOMklBNUdyM2hOT0ZEdHczeVpORDJFdEk2UVV1WnFtMUp0N0s4czBqanNwZFp5TDJHVUtGX2lhODN1cmlUcEhzeUd6RVF0SHAwdFJ2bTUyT1JvQUJSeXNaYXdUU3FNYmRSRQ?oc=5",
+   "ts": 1795696424,
+   "materiality": 4,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Sale of 4.4 GW of gas plants by Constellation is a portfolio sale, not nuclear demand; modest read-through."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News",
+   "title": "Can BWXT's Antares Deal Boost Its Advanced Nuclear Fuel Business? - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONjJYZm16Wk92Ql9XQnA4emdhMm5WZ0hvZjV1TDZKcHNRQ3BUZ1k1eEo4RjJtMDI4Sl8yanczbVYxV0czcmtOYkxTR3BKMjc4MWlOXzg2WnRweUlzbi0yY1dKdTJXeXZQT0NUb1ZvLTRCNTFoYVlKZlk0Ym0xWjc1aHpGcno5aE9sRk5zLWhZYzBiWGtE?oc=5",
+   "ts": 1795697580,
+   "materiality": 4,
+   "novelty": "follow_up",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Speculative analyst-style piece on Antares deal; no confirmed new terms or numbers."
   }
  ],
  "reviews": [
@@ -8962,16 +8962,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.02703,
+  "day_usd": 0.02807,
   "month": "2026-11",
-  "month_usd": 2.02179,
-  "total_usd": 2.02179,
+  "month_usd": 2.02283,
+  "total_usd": 2.02283,
   "by_role": {
    "macro": 0.19341,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.19906,
+   "scout": 0.2001,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9239,7 +9239,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 08:56 ET",
+ "last_cycle": "2026-11-26 09:07 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57885,10 +57885,10 @@
   "2a89ac3dc67ad332",
   "8b9f115784388b61",
   "a73665945ff493c7",
-  "e15990dac5b8bec2",
   "bdb801dcb316d6cb",
-  "b695f296dd2e61f0",
+  "e15990dac5b8bec2",
   "6f83643eaed2fbc3",
+  "b695f296dd2e61f0",
   "5d0c7240e494c5f9",
   "637530bf82fb0126",
   "0929027bdfefabbd",
@@ -57923,13 +57923,13 @@
   "15c5ededcaa0a513",
   "9ab10d3c257d1ce5",
   "dce4cce47213c16f",
-  "8de24d7e6020d498",
   "563c0572b10f43bc",
   "efa3269c9fa1c644",
   "9dbb51b520d076e7",
   "8d0283e176b666a8",
   "ed1aa0f23535adaa",
   "05ad7d5a34131c8c",
+  "cdc9a7381e6b445a",
   "826350094a10cdb2",
   "61b82697d913613b",
   "13880e66390f270d",
@@ -58026,12 +58026,12 @@
   "c527b52a6d387b5e",
   "c2bfe85469484a37",
   "bf78a7a4b7c697c4",
-  "6a0cc1c1f8babcd3",
   "04e5c0526493eb7e",
+  "6a0cc1c1f8babcd3",
   "7ee1ad6e6041b23e",
-  "3a1ae63cc1a72974",
-  "f1f8a01f5b2d2080",
   "16c52bc5bc8110db",
+  "f1f8a01f5b2d2080",
+  "3a1ae63cc1a72974",
   "1be96b3daf4578d3",
   "1e64fcaaf9ecb5d1",
   "bf3c957b04f7b01a",
@@ -58239,6 +58239,7 @@
   "8a17ec5ab2f6dcf8",
   "5e042fd73e80d40b",
   "696cc711d13e8558",
+  "aa4b40fcca57bfea",
   "3c1ef04c322d8d99",
   "52dee3d37e759da2",
   "997921d9077a2d67",
@@ -58377,6 +58378,7 @@
   "898bce48a6f14aa6",
   "22a45a3c7284120a",
   "0b3281c5bdc258d9",
+  "76f5bf1f214e0d9a",
   "17dc2073115cbcc7",
   "a82f81d0eb01a7ed",
   "05bd10e9cace3689",
@@ -58535,9 +58537,10 @@
   "418a91931047cecc",
   "52950daaafc92008",
   "c988637e87af140a",
-  "aa4b40fcca57bfea"
+  "8de24d7e6020d498",
+  "24c13c008d169d2f"
  ],
- "news_slow_at": 1795701139.3987017,
+ "news_slow_at": 1795701761.5121472,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219904,7 +219907,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 08:56",
+  "updated": "2026-11-26 09:07",
   "total": 782,
   "week": 561,
   "places": {
@@ -220542,8 +220545,8 @@
  },
  "intel_handed": [
   "b2e981fc7a2e7302",
-  "958910b51098bafe",
   "2ac262d1779b4fad",
+  "958910b51098bafe",
   "2c7a3976a5596853",
   "0ad3ea7bae8b611c",
   "020569e75e7d456e",
@@ -220552,8 +220555,8 @@
   "36cbbee89c76a1f7",
   "b371c50f261a21f0",
   "4dbfaa309ceb1878",
-  "515517f776442fe4",
   "c2a1739b2e369eff",
+  "515517f776442fe4",
   "797e5c4039060606",
   "5b83027a0cf1a496",
   "37e85b7a7ce58612",
@@ -220871,14 +220874,6 @@
    }
   },
   "watch": [
-   {
-    "date": "2026-12-31",
-    "ticker": "CCJ",
-    "what": "Did CCJ deliver? They promised on 2026-10-30: Fuel Services annual production of 13-14M kgU",
-    "by": "investigator",
-    "written": "2026-11-23",
-    "surfaced": false
-   },
    {
     "date": "2026-12-31",
     "ticker": "CCJ",
@@ -221323,6 +221318,14 @@
     "date": "2029-01-01",
     "ticker": "CEG",
     "what": "Quad Cities reactor relicensing (per desk note; exact date to confirm)",
+    "by": "scout",
+    "written": "2026-11-26",
+    "surfaced": false
+   },
+   {
+    "date": "2029-01-01",
+    "ticker": "CEG",
+    "what": "Quad Cities reactor relicensing decision (2029) per desk notes",
     "by": "scout",
     "written": "2026-11-26",
     "surfaced": false
@@ -223119,7 +223122,7 @@
    "built": "2026-11-26 08:48"
   }
  ],
- "heartbeat": "2026-11-26 08:56",
+ "heartbeat": "2026-11-26 09:07",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223360,16 +223363,16 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 348,
-   "used": 319,
+   "asked": 350,
+   "used": 321,
    "notes": {
     "TLN Deals and contracts": 18,
     "CCJ Deals and contracts": 66,
-    "BWXT Deals and contracts": 45,
+    "BWXT Deals and contracts": 47,
     "SECTOR Government and laws": 89,
     "UUUU Deals and contracts": 40,
     "SECTOR Countries": 85,
-    "CEG Deals and contracts": 46,
+    "CEG Deals and contracts": 47,
     "NXE Legal": 19,
     "NXE Deals and contracts": 19,
     "DNN Deals and contracts": 12,
@@ -226668,6 +226671,16 @@
    "price": 83.23,
    "result": null,
    "why": "Checked the headlines for novelty first: the CCJ item is a rehash and the LEU item is a process update. The desk's LEU deal history (median 20-day move about -4%, only 44% up) argues against reading a"
+  },
+  {
+   "role": "scout",
+   "ticker": "BWXT",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-26",
+   "price": 113.49,
+   "result": null,
+   "why": "The headline asks a question rather than reporting new terms, so it's a follow-up at best. Our notes show BWXT contract news has tended to fade over 20 days, which argues against reading much into it."
   }
  ],
  "after_sale": [],
