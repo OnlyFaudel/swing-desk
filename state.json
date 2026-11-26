@@ -4207,42 +4207,6 @@
  },
  "news_feed": [
   {
-   "ticker": "LEU",
-   "source": "Google News: \"Centrus Energy\"",
-   "title": "Centrus Energy Announces Investor Day on December 7 at Piketon Facility with Live Webcast - Kalkine Media",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPT0pRNVFJUTFjZzI3UDU4VU5PTFJDNHFXM1ZmTXU4aDB4MWtVQzdKUGlzR0psc2RqTnVNcng0YWl3UXVEODRueFNEZ3ZCWS1xZGdaTUUtUFREcnBQWkF0SDBBMkNSYVdCQ094dWJZR2NDVkxmcVdOZ3lMRUtpNm9Qd3lUVXlseGJiSDRIbzhlU1ZfeUZNeW5fN05kVU56ZlV2RXd4NUFjbTZEUmRKYU1LeGJUeHZDcHR1M0NlS0FKdERRdkdwcW9KZjFwVGtsR0RnNUE?oc=5",
-   "ts": 1795523244,
-   "materiality": 4,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Investor Day announcement is a scheduled event, not new financial information yet."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Cameco Corporation Stock 12\u2011Month Price Target Cut to $112.51, Implies 83% Upside - TradingView",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVXBPNXAwSEg2c0xvay03NmJqZE1TNG1sYkRhNjJSTFFvd0tSZnltbFEwVzRZeFgwOVI5YV9IT3lyLUJfM1dhbWdfZWppODd4dEFzS1ItSlctY1lncFdxLVJLQTVILUJaUE9jRU52NXgyb0JyTXdCb1VjVXluV1JuQW96RDREeXgxNE1Ja2ZOVXU5clFLNFktQV9oLWs4WjJlSjI0VXlybEdhWVRtTWF3QXk2M2JTT0poQU9HcjJ0YkJMVUpiTUIwUVg5UzZHUEhoMHlPZWg5QQ?oc=5",
-   "ts": 1795548000,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Price-target cut headline is a recap of an analyst move; no new fundamental information."
-  },
-  {
-   "ticker": "LEU",
-   "source": "Google News",
-   "title": "Centrus Energy Corp. Stock 12\u2011Month Price Target Cut to $170.45, Implies 96% Upside - TradingView",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNYjJOWjVyOEhKdm9Uc0E1TXFOOWdBNHJ4Y3VaTXd3cmlHTWNaaDZGQVpvamk2NmdWMHRMNzBRakVXYTlza2ZuaUIzcVR4REh1RXktWjhVeTZZLUllLUg2SWxqNjN0TE5jSWhNY2piOTFMREhrUGpDcEVFNENCTDRkbjBFeVo4NWJmZWkxb2VfRER4MVR2ZS12ZDRiT19sRXc5YVBqZGJNcGVvY2UxaGlvN3NDdy02N1Vqd2FCdkJkSHl1dUhGRzVhNGZ0dkNTVnlTLWp3a0RBS0Q?oc=5",
-   "ts": 1795548000,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Price-target cut headline is a recap with a generic upside figure; no new company information."
-  },
-  {
    "ticker": "CCJ",
    "source": "Local intel: Yonhap News Agency (South Korea)",
    "title": "N. Korea's Yongbyon nuclear complex expansion may be aimed at boosting weapons-grade uranium production: ISIS",
@@ -7205,6 +7169,42 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Year-in-review recap of a deal announced earlier; not new information."
+  },
+  {
+   "ticker": "DNN",
+   "source": "Google News",
+   "title": "Denison Mines Corp. Stock Watch: What Is Driving TSX:DML Today and What Comes Next | S&P/TSX Composite Index | Mid Cap Growth Stock - kalkine.ca",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQaGVnbnRKVkg5NDF6RHBBZDlTb3Q1NmhRaGd5am9FeWhXSDl2ZmRFRHVLSUlmRkdzRFQ5MXliR0FfMHFHTFUzR1ZTMFZydnlFNXJNOXJ2R3VRWFdSdlVJR1hZaXdKd2RTTkhmUmxDdDJLZ1ZMazlFOWoyQzJ1VFRUd1B2ck1kOXFEUFpaSzlaM3NPTWQ4QXpOOE4tWnIzMzRUaVNVVlZvVnEyeTgxM2huQkRod1NwNTdjZ1VFTUJMR3VKUUJabUZRQ2tNUjdENjlLVlk3ZllGRXNZOVk5azZpRmhqc2k1eWFw?oc=5",
+   "ts": 1795706280,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Kalkine stock-watch piece recapping drivers; no new company-specific information."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News",
+   "title": "Energy Fuels vs. Centrus Energy: Which Uranium Stock Has The Edge Now? - The Globe and Mail",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNTXhjWld6end3U2NoT1lvWnBhSkdnekhvM1ZETXRucFJ0R1hoUUVCSk9KNXFsa1gyM1RoX2pBUExGN3pmNk93VzI5Vmo5c2E2WnVkRVBCdWQxdnF3Tk9MMWVoZjYyeURlLTZkUVd5ZmNZV0ZIamhCb2pQa19IdlVoaGhMX2k0Nzd6T0VUbkJhNlJhQWZaQ052QjYzN3VvLXZUbHNmYnE5Zk9uVkcyNTNXMmpHVVgxeDZiUDVmRFg2ZVRkUGdoSzRCaUpjNTZwSGRSbGs1dGZzbm5YSUNSalQ3d1U2YjIyRTQ?oc=5",
+   "ts": 1795707495,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic side-by-side comparison of two uranium stocks; no new company information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Uranium Market Heats Up as New Fuel Deals Signal a Bigger Nuclear Expansion - CarbonCredits.com",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORzVWYnd1cDZ6VzBtVzlHbVNKd3NmYnotNml1R1JoTEJGR2NXd3hyYnBrYk82X00zSWFzRzVvNklybjJodzNBZ1VWTW5xRlY2UHZyVlJUZGU5LWZpQzFrZ0RRcVBzYks1V1l0MV9yOFVhVm5kTnVubUZSelRUMUpmWVF1TWl1X3pIdk1ZREpZNU1TdnJTMlQ5cmt5Rm0wM0IzemhLeg?oc=5",
+   "ts": 1795712970,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic uranium-market recap; no new company-specific fact or contract."
   }
  ],
  "reviews": [
@@ -8964,16 +8964,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.04899,
+  "day_usd": 0.05094,
   "month": "2026-11",
-  "month_usd": 2.04375,
-  "total_usd": 2.04375,
+  "month_usd": 2.0457,
+  "total_usd": 2.0457,
   "by_role": {
    "macro": 0.19621,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.20955,
+   "scout": 0.2115,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9241,7 +9241,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 12:11 ET",
+ "last_cycle": "2026-11-26 12:21 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57888,10 +57888,10 @@
   "2a89ac3dc67ad332",
   "8b9f115784388b61",
   "a73665945ff493c7",
-  "bdb801dcb316d6cb",
   "e15990dac5b8bec2",
-  "6f83643eaed2fbc3",
+  "bdb801dcb316d6cb",
   "b695f296dd2e61f0",
+  "6f83643eaed2fbc3",
   "5d0c7240e494c5f9",
   "0e427bed53402c8e",
   "637530bf82fb0126",
@@ -57928,6 +57928,7 @@
   "15c5ededcaa0a513",
   "9ab10d3c257d1ce5",
   "dce4cce47213c16f",
+  "8de24d7e6020d498",
   "563c0572b10f43bc",
   "efa3269c9fa1c644",
   "9dbb51b520d076e7",
@@ -58034,12 +58035,12 @@
   "c527b52a6d387b5e",
   "c2bfe85469484a37",
   "bf78a7a4b7c697c4",
-  "04e5c0526493eb7e",
   "6a0cc1c1f8babcd3",
+  "04e5c0526493eb7e",
   "7ee1ad6e6041b23e",
-  "16c52bc5bc8110db",
-  "f1f8a01f5b2d2080",
   "3a1ae63cc1a72974",
+  "f1f8a01f5b2d2080",
+  "16c52bc5bc8110db",
   "1be96b3daf4578d3",
   "1e64fcaaf9ecb5d1",
   "bf3c957b04f7b01a",
@@ -58055,6 +58056,7 @@
   "5302800856129a0a",
   "1e9ac2ee38a1003f",
   "798af83ee364ad63",
+  "d1e0c7c93068d298",
   "1715e61816aa5619",
   "7029f0ef803e6f6a",
   "b71c3bcdcd250f40",
@@ -58171,6 +58173,7 @@
   "4253203526d47c05",
   "0028541e109c6801",
   "a3dd031817a4feeb",
+  "8cda0e7869a5e546",
   "63e7ca0ff352dff7",
   "e6c12a1e5998666c",
   "b4c005bc018874b7",
@@ -58250,7 +58253,6 @@
   "8a17ec5ab2f6dcf8",
   "5e042fd73e80d40b",
   "696cc711d13e8558",
-  "aa4b40fcca57bfea",
   "3c1ef04c322d8d99",
   "52dee3d37e759da2",
   "997921d9077a2d67",
@@ -58287,6 +58289,7 @@
   "0f192e3ee6f7d8a7",
   "fe808fea77078dbb",
   "c049df8a8ab48453",
+  "e05c7b2f0da66261",
   "0e9db4d412c6f84b",
   "cd187ab23fb6b014",
   "2363faa1cee608b8",
@@ -58351,6 +58354,7 @@
   "22ca80b609e8130c",
   "fa5187062c587fa6",
   "4a01de3865f16e76",
+  "a1dd315007490e2f",
   "87234f250d3b987f",
   "3e7d380def120694",
   "d1148d05210e97b6",
@@ -58559,9 +58563,10 @@
   "418a91931047cecc",
   "52950daaafc92008",
   "c988637e87af140a",
-  "8de24d7e6020d498"
+  "aa4b40fcca57bfea",
+  "0f545464420be9ee"
  ],
- "news_slow_at": 1795712925.0730343,
+ "news_slow_at": 1795713551.2419202,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -220032,7 +220037,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 12:11",
+  "updated": "2026-11-26 12:21",
   "total": 808,
   "week": 573,
   "places": {
@@ -220670,8 +220675,8 @@
  },
  "intel_handed": [
   "b2e981fc7a2e7302",
-  "2ac262d1779b4fad",
   "958910b51098bafe",
+  "2ac262d1779b4fad",
   "2c7a3976a5596853",
   "0ad3ea7bae8b611c",
   "020569e75e7d456e",
@@ -220680,8 +220685,8 @@
   "36cbbee89c76a1f7",
   "b371c50f261a21f0",
   "4dbfaa309ceb1878",
-  "c2a1739b2e369eff",
   "515517f776442fe4",
+  "c2a1739b2e369eff",
   "797e5c4039060606",
   "5b83027a0cf1a496",
   "37e85b7a7ce58612",
@@ -223252,7 +223257,7 @@
    "built": "2026-11-26 11:52"
   }
  ],
- "heartbeat": "2026-11-26 12:11",
+ "heartbeat": "2026-11-26 12:21",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223493,21 +223498,21 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 371,
-   "used": 340,
+   "asked": 375,
+   "used": 344,
    "notes": {
     "TLN Deals and contracts": 18,
     "CCJ Deals and contracts": 67,
     "BWXT Deals and contracts": 50,
-    "SECTOR Government and laws": 96,
+    "SECTOR Government and laws": 97,
     "UUUU Deals and contracts": 41,
-    "SECTOR Countries": 97,
+    "SECTOR Countries": 99,
     "CEG Deals and contracts": 50,
     "NXE Legal": 20,
     "NXE Deals and contracts": 19,
-    "DNN Deals and contracts": 13,
+    "DNN Deals and contracts": 14,
     "BWXT Legal": 3,
-    "LEU Deals and contracts": 41,
+    "LEU Deals and contracts": 42,
     "UEC Deals and contracts": 5,
     "UUUU Legal": 22,
     "SECTOR Uranium market": 7,
