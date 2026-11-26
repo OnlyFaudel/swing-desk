@@ -4210,18 +4210,6 @@
  "news_feed": [
   {
    "ticker": "LEU",
-   "source": "Google News: \"Centrus Energy\"",
-   "title": "Centrus Energy Corp. (LEU) latest stock news and headlines - Yahoo Finance UK",
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9mWTRMTUVWN2FpLXRXYmNyZWtpZ214MHRIYVBjRnltc0ZMY1FxaXV4LVB1T3dRc2tOTDRUSFlrVkJKX3VJVUxGOW1MWDdhZTE4SVZsWmhsNA?oc=5",
-   "ts": 1795523754,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic Yahoo quote/headline page with no new company-specific information."
-  },
-  {
-   "ticker": "LEU",
    "source": "Google News",
    "title": "Centrus Energy Announces Investor Day and Strategic Outlook - TipRanks",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWEFyVWJfWGFxeWVManBfYWZyRnVkSklVNm5kTTREV3ZQX1dOVEUza24xdWtPMm1McWdydzYxUTRCcHNpVFdrZEFTOXBnUHRWSGFKV2xobzNBR0x3aEVTUlB0MmVwc0JMY3I0X2RlOUJ3ZlVkWVJ6alUxbUlINDBnT3JTZGE0X0RFYTZIQUNxcFF1OHNrbmZydWNqbU04Y3Z5YVE5bWpyXzFWejFEZ044dg?oc=5",
@@ -7207,6 +7195,18 @@
    "direction": "neutral",
    "event_type": "policy_tariff",
    "why": "Diplomatic reaffirmation of a nuclear partnership; vague, no concrete contract or volume."
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News",
+   "title": "Form 4 Vistra Corp: Kristopher E. Moldovan (EVP and CFO) For: 23 November - Investing.com UK",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQU1RKbjVSY3Z6VVFwbUVRaFp4WXQta2N2eGVHN1o5V3lPY3R2REtLLXlNRm5OZ0xGVEpMNVpkbTR0a09jQzY5aFoySnljMzU2UnVERTBYTkJLME9Kc01DTzBvYXN3TXZUeXl5aVVxT0Vna2JPQWYxcjY5Q0staU15M1Rpd0REMUlfS3RWbGtzTFhXaFlGSE9laXNER1F4NjZzaDZkM0VJNzBsU1ptamZFX2NWUnRCNUcwWExvZndzekZ1NjlOa3B4Yg?oc=5",
+   "ts": 1795719720,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Routine Form 4 filing of a CFO transaction; amount and type not visible in headline."
   }
  ],
  "reviews": [
@@ -8966,16 +8966,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.05747,
+  "day_usd": 0.05824,
   "month": "2026-11",
-  "month_usd": 2.05223,
-  "total_usd": 2.05223,
+  "month_usd": 2.053,
+  "total_usd": 2.053,
   "by_role": {
    "macro": 0.19621,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.21541,
+   "scout": 0.21618,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9243,7 +9243,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 14:01 ET",
+ "last_cycle": "2026-11-26 14:13 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57897,6 +57897,7 @@
   "84200faa36eac51a",
   "4ed9b30682cbb480",
   "00dd4e324f5b633b",
+  "debd7e84cc1920b9",
   "cf312da3056cac36",
   "2ade75a8237021d6",
   "aff7a540bd30b75a",
@@ -58516,6 +58517,7 @@
   "a74aab1c387c2b31",
   "85cd040198b19b4d",
   "42e4688c154f3e5b",
+  "91a450173049d7b5",
   "973920b429b0e9a0",
   "946095cbe66689d4",
   "7a621ee53898058b",
@@ -58573,7 +58575,7 @@
   "fe808fea77078dbb",
   "61659cb80b158a77"
  ],
- "news_slow_at": 1795719158.8506508,
+ "news_slow_at": 1795719844.4411268,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -220086,9 +220088,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 14:02",
+  "updated": "2026-11-26 14:13",
   "total": 827,
-  "week": 582,
+  "week": 581,
   "places": {
    "Uranium price": 50,
    "South Korea": 45,
@@ -223312,12 +223314,12 @@
    "built": "2026-11-26 13:58"
   }
  ],
- "heartbeat": "2026-11-26 14:01",
+ "heartbeat": "2026-11-26 14:13",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 383,
+ "_pushed_feed": 384,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -223553,15 +223555,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 384,
-   "used": 351,
+   "asked": 386,
+   "used": 353,
    "notes": {
     "TLN Deals and contracts": 18,
     "CCJ Deals and contracts": 69,
     "BWXT Deals and contracts": 50,
-    "SECTOR Government and laws": 98,
+    "SECTOR Government and laws": 99,
     "UUUU Deals and contracts": 43,
-    "SECTOR Countries": 100,
+    "SECTOR Countries": 101,
     "CEG Deals and contracts": 50,
     "NXE Legal": 20,
     "NXE Deals and contracts": 19,
@@ -223573,7 +223575,7 @@
     "SECTOR Uranium market": 7,
     "CCJ Legal": 16,
     "CEG Legal": 3,
-    "VST Deals and contracts": 33,
+    "VST Deals and contracts": 34,
     "LEU Legal": 1,
     "VST Legal": 1,
     "TLN Legal": 2
