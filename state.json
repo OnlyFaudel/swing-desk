@@ -4206,30 +4206,6 @@
  },
  "news_feed": [
   {
-   "ticker": "LEU",
-   "source": "Google News: HALEU fuel",
-   "title": "FRM II moves closer to HALEU - Nuclear Engineering International",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB1SUR2UEFHLVExR3BPZThJc3pCbnpzbkVQdnd4aDdBTW9xeWp0aWU0cjk3enNFeTYwcks3SzlxTGxLVG1QaUpyLXp4WEVKd1VPdEw1dEtrdmMwMnFqVzdzaGU5T1BxcmFXMWlHdUNOcw?oc=5",
-   "ts": 1795539154,
-   "materiality": 4,
-   "novelty": "follow_up",
-   "direction": "up",
-   "event_type": "supply",
-   "why": "HALEU fuel progress at a German research reactor is a small, indirect positive for enrichers."
-  },
-  {
-   "ticker": "CEG",
-   "source": "Yahoo Finance",
-   "title": "What Just Happened To Vistra Stock?",
-   "link": "https://www.trefis.com/stock/vst/articles/628627/what-just-happened-to-vistra-stock-2/2026-11-24?.tsrc=rss",
-   "ts": 1795544943,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic market-buzz piece about Nvidia and Vistra; no new company-specific information."
-  },
-  {
    "ticker": "BWXT",
    "source": "Yahoo Finance",
    "title": "BWXT's 2026 Outlook: Record $8.56 billion Backlog Secures Multi-Year Revenue Visibility",
@@ -7204,6 +7180,30 @@
    "direction": "neutral",
    "event_type": "contract_deal",
    "why": "Headline recycles LS Power's acquisition close, already on file as of 2026-11-25."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News",
+   "title": "US, Canada plants to build AP1000 nuclear reactor parts under Westinghouse deal - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOFJQeVI1eU5XNkFEaXBDa2JzQWVBVHFRYzVKT0ljYmhwVmphZ3BwMVJzNjlpMHE4NUFucE5QaWFMZ2M1WnJaUnlYTElhWFlNb2NyM01QdGRTLWtYTHBFMDkxRXhGWkRtOWVnRE1tcU5JVzl3WmRiOE9pcjhfMElnZDhZNmZSQmhoU3A5NkNpZw?oc=5",
+   "ts": 1795704120,
+   "materiality": 6,
+   "novelty": "follow_up",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Westinghouse AP1000 parts work for BWXT Canada, but the same contract appeared in an earlier desk note."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News",
+   "title": "Donald Rare Earths Project Gains A$180M Debt Approval - Wisevoter",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWkxMdEEtRVFIWlo2THZoRWdXV0xRYXNDUmpJd2FxMUVva2ljMTVzTmotU1VyUWJjdE16QkwzdjNDd21hcEtId183TnZld2RaU0hROWh1cUpibmdyMzdkeVhpS1NWVGY0WlB4MjQ4aWpTVjgwYVhIS1ZiSW1FZGxQOVNvUjEzWDREUlRCOE9YbHNtN3Bvd0hz?oc=5",
+   "ts": 1795705879,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Local Australian rare earths project debt approval; not uranium, weak link to UUUU."
   }
  ],
  "reviews": [
@@ -8963,16 +8963,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.04087,
+  "day_usd": 0.04182,
   "month": "2026-11",
-  "month_usd": 2.03563,
-  "total_usd": 2.03563,
+  "month_usd": 2.03658,
+  "total_usd": 2.03658,
   "by_role": {
    "macro": 0.19621,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.20414,
+   "scout": 0.20509,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9240,7 +9240,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 10:52 ET",
+ "last_cycle": "2026-11-26 11:03 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57886,10 +57886,10 @@
   "2a89ac3dc67ad332",
   "8b9f115784388b61",
   "a73665945ff493c7",
-  "bdb801dcb316d6cb",
   "e15990dac5b8bec2",
-  "6f83643eaed2fbc3",
+  "bdb801dcb316d6cb",
   "b695f296dd2e61f0",
+  "6f83643eaed2fbc3",
   "5d0c7240e494c5f9",
   "637530bf82fb0126",
   "0929027bdfefabbd",
@@ -57925,6 +57925,7 @@
   "15c5ededcaa0a513",
   "9ab10d3c257d1ce5",
   "dce4cce47213c16f",
+  "8de24d7e6020d498",
   "563c0572b10f43bc",
   "efa3269c9fa1c644",
   "9dbb51b520d076e7",
@@ -57963,6 +57964,7 @@
   "15fecb83818a0949",
   "a7bb0474e61a7894",
   "b8be1271d8cd66fa",
+  "3d119a9a9458a808",
   "855ac1a10429d2f5",
   "a962842bb15ca7cc",
   "e5f9fd595f7d0f1e",
@@ -58030,12 +58032,12 @@
   "c527b52a6d387b5e",
   "c2bfe85469484a37",
   "bf78a7a4b7c697c4",
-  "04e5c0526493eb7e",
   "6a0cc1c1f8babcd3",
+  "04e5c0526493eb7e",
   "7ee1ad6e6041b23e",
-  "16c52bc5bc8110db",
-  "f1f8a01f5b2d2080",
   "3a1ae63cc1a72974",
+  "f1f8a01f5b2d2080",
+  "16c52bc5bc8110db",
   "1be96b3daf4578d3",
   "1e64fcaaf9ecb5d1",
   "bf3c957b04f7b01a",
@@ -58243,7 +58245,6 @@
   "8a17ec5ab2f6dcf8",
   "5e042fd73e80d40b",
   "696cc711d13e8558",
-  "aa4b40fcca57bfea",
   "3c1ef04c322d8d99",
   "52dee3d37e759da2",
   "997921d9077a2d67",
@@ -58271,6 +58272,7 @@
   "7900f7b732a740d7",
   "e7f494cb247bf154",
   "e4b1017c5e2762a2",
+  "7fa37875ce9e75d9",
   "8e86917f784be639",
   "5b01b61297fa5566",
   "dfaa19a96155f693",
@@ -58511,6 +58513,7 @@
   "832a141cb29fe453",
   "67c5ac967df665b9",
   "e6fd6f9a6df879e4",
+  "3b96138f779eeca6",
   "2e2b3233da58bfb7",
   "87e89d05178171d2",
   "5f7aff03201cc4dd",
@@ -58547,10 +58550,9 @@
   "418a91931047cecc",
   "52950daaafc92008",
   "c988637e87af140a",
-  "8de24d7e6020d498",
-  "7fa37875ce9e75d9"
+  "aa4b40fcca57bfea"
  ],
- "news_slow_at": 1795707969.8200579,
+ "news_slow_at": 1795708576.9188223,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219885,6 +219887,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "BWXT",
+   "type": "contract_deal",
+   "title": "US, Canada plants to build AP1000 nuclear reactor parts under Westinghouse deal - Yahoo Finance",
+   "date": "2026-11-26",
+   "price": 113.49,
+   "materiality": 6,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -219965,7 +219979,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 10:52",
+  "updated": "2026-11-26 11:03",
   "total": 795,
   "week": 565,
   "places": {
@@ -220603,8 +220617,8 @@
  },
  "intel_handed": [
   "b2e981fc7a2e7302",
-  "2ac262d1779b4fad",
   "958910b51098bafe",
+  "2ac262d1779b4fad",
   "2c7a3976a5596853",
   "0ad3ea7bae8b611c",
   "020569e75e7d456e",
@@ -220613,8 +220627,8 @@
   "36cbbee89c76a1f7",
   "b371c50f261a21f0",
   "4dbfaa309ceb1878",
-  "c2a1739b2e369eff",
   "515517f776442fe4",
+  "c2a1739b2e369eff",
   "797e5c4039060606",
   "5b83027a0cf1a496",
   "37e85b7a7ce58612",
@@ -220834,7 +220848,7 @@
   }
  ],
  "memory_view": {
-  "events": 1732,
+  "events": 1733,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -221418,15 +221432,6 @@
   "recent": [
    {
     "date": "2026-11-26",
-    "ticker": "CCJ",
-    "title": "Defense Ministry says N. Korea's tactical nuclear expansion 'grave,' vows stronger deterrence through NCG",
-    "type": "intel_defense",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-26",
     "ticker": "BWXT",
     "title": "Defense Ministry says N. Korea's tactical nuclear expansion 'grave,' vows stronger deterrence through NCG",
     "type": "intel_defense",
@@ -221754,6 +221759,15 @@
     "ticker": "NXE",
     "title": "Kazatomprom's uranium sales rise nearly 10% to 14,030 tonnes in nine months",
     "type": "intel_production",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "BWXT",
+    "title": "US, Canada plants to build AP1000 nuclear reactor parts under Westinghouse deal - Yahoo Finance",
+    "type": "contract_deal",
     "r0": null,
     "r5": null,
     "r20": null
@@ -223182,7 +223196,7 @@
    "built": "2026-11-26 10:51"
   }
  ],
- "heartbeat": "2026-11-26 10:52",
+ "heartbeat": "2026-11-26 11:03",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223423,14 +223437,14 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 359,
-   "used": 328,
+   "asked": 361,
+   "used": 330,
    "notes": {
     "TLN Deals and contracts": 18,
     "CCJ Deals and contracts": 67,
-    "BWXT Deals and contracts": 48,
+    "BWXT Deals and contracts": 49,
     "SECTOR Government and laws": 92,
-    "UUUU Deals and contracts": 40,
+    "UUUU Deals and contracts": 41,
     "SECTOR Countries": 90,
     "CEG Deals and contracts": 49,
     "NXE Legal": 19,
