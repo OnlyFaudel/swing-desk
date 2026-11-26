@@ -631,7 +631,8 @@
   "questioner:2026-11-26:8": true,
   "notecheck:2026-11-26": true,
   "earnread:2026-11-26": true,
-  "radarres:2026-11-26": true
+  "radarres:2026-11-26": true,
+  "questioner:2026-11-26:9": true
  },
  "benchmark": {
   "shares": {
@@ -8972,16 +8973,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.07552,
+  "day_usd": 0.07906,
   "month": "2026-11",
-  "month_usd": 2.07029,
-  "total_usd": 2.07029,
+  "month_usd": 2.07383,
+  "total_usd": 2.07383,
   "by_role": {
    "macro": 0.20195,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.22226,
+   "scout": 0.22311,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -8991,7 +8992,7 @@
    "postmortem": 0.00035,
    "researcher": 0.02341,
    "engineer": 0.08111,
-   "questioner": 0.14585
+   "questioner": 0.14854
   }
  },
  "desk_log": [
@@ -9249,7 +9250,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 17:49 ET",
+ "last_cycle": "2026-11-26 18:00 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -58063,8 +58064,8 @@
   "dbaa3c361e6d78b5",
   "6f138c10a977c951",
   "82e06a4ced981af5",
-  "70ec56bf0ac9a6fb",
   "40da66ea723efc8f",
+  "70ec56bf0ac9a6fb",
   "2cbbc694a2695e84",
   "cdc9a7381e6b445a",
   "9f2e45d00f1961dd",
@@ -58146,6 +58147,7 @@
   "a57032b59ec923e8",
   "6cda49f31f9074ba",
   "c15f742f035fcb1d",
+  "358d3e0acb239451",
   "efc408c17da0c385",
   "17938eb8e2e8c5e7",
   "e15990dac5b8bec2",
@@ -58529,6 +58531,7 @@
   "f8daf794088b79d2",
   "608a6c7d81d54f47",
   "e200acdbc80d7692",
+  "a9c86793253c3ca6",
   "224aaaf7b4461861",
   "ba16c7429b99dacc",
   "734de812d3954952",
@@ -58591,7 +58594,7 @@
   "53fc8faedadd1796",
   "7ee1ad6e6041b23e"
  ],
- "news_slow_at": 1795733167.0071297,
+ "news_slow_at": 1795733790.1240013,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -214506,6 +214509,25 @@
    ],
    "practice": false,
    "end": "16:01"
+  },
+  {
+   "id": "20261126180011422552",
+   "title": "The Questioner, Nov 26 18:00",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-26 18:00",
+   "msgs": [
+    {
+     "t": "18:00",
+     "who": "questioner",
+     "to": "team",
+     "text": "The basket gate is closed, so I'm not asking anyone to add risk, but there's one question nobody has answered: has the PJM December 15 auction been confirmed on schedule? TLN jumped 9.6% on a regulatory item that our files do not show as decided, and the ruling is the main earnings driver. I'd want that resolved before anyone calls the move a fundamental re-rating.",
+     "outcome": false,
+     "notes": "question: Has the PJM 2029/30 capacity auction (scheduled to close Dec 15) been confirmed on schedule, or has the delay request been decided? No ruling is on file, yet TLN jumped 9.6%.\nwhy it might matter: Talen's earnings depend on this auction, and an unconfirmed ruling is a weak reason for a 9.6% move. If nothing was decided, the jump may be unexplained and prone to reversal.\nask: researcher\nkind: unexplained\nquestion: Is the TLN and VST exposure still right given Black Friday's half-day session and the desk's record of weak Mondays for the power trio after it?\nwhy it might matter: The desk's own files flag Black Friday to Monday as a historically weak stretch for CEG, VST and TLN, and the basket gate is closed.\nask: macro\nkind: missed\nwhy: I checked the PJM item against the desk's files and found no FERC ruling on the delay request, so the 9.6% TLN jump rests on an unconfirmed event."
+    }
+   ],
+   "practice": false,
+   "end": "18:00"
   }
  ],
  "feed": [
@@ -219299,6 +219321,19 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-26 18:00",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: ",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -220162,7 +220197,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 17:49",
+  "updated": "2026-11-26 18:00",
   "total": 849,
   "week": 585,
   "places": {
@@ -220842,8 +220877,8 @@
   "85de31670d4daf9d",
   "dd57ba38f81c0a8f",
   "c5a7aa4d347cef23",
-  "7ffb052a70d145c2",
   "4039fa58057275ae",
+  "7ffb052a70d145c2",
   "d1148d05210e97b6",
   "03c5d2773ef94a7b",
   "a7baf61adc01832c",
@@ -223393,7 +223428,7 @@
    "built": "2026-11-26 17:33"
   }
  ],
- "heartbeat": "2026-11-26 17:49",
+ "heartbeat": "2026-11-26 18:00",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223634,15 +223669,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 401,
-   "used": 366,
+   "asked": 403,
+   "used": 368,
    "notes": {
     "TLN Deals and contracts": 19,
     "CCJ Deals and contracts": 72,
     "BWXT Deals and contracts": 51,
-    "SECTOR Government and laws": 108,
+    "SECTOR Government and laws": 110,
     "UUUU Deals and contracts": 43,
-    "SECTOR Countries": 107,
+    "SECTOR Countries": 109,
     "CEG Deals and contracts": 50,
     "NXE Legal": 20,
     "NXE Deals and contracts": 19,
@@ -224028,23 +224063,23 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 56,
-   "used": 56,
+   "asked": 57,
+   "used": 57,
    "notes": {
-    "TLN Snapshot": 43,
-    "TLN News": 39,
+    "TLN Snapshot": 44,
+    "TLN News": 40,
     "coming_up": 8,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
     "BWXT Legal": 1,
     "CCJ Snapshot": 8,
-    "TLN Leadership and insiders": 38,
+    "TLN Leadership and insiders": 39,
     "CCJ Legal": 2,
     "TLN Legal": 8,
     "SECTOR Market regime": 1,
     "desk_lessons_from_our_mistakes": 7,
     "TLN Ownership and analysts": 4,
-    "SECTOR Uranium market": 16,
+    "SECTOR Uranium market": 17,
     "CEG Snapshot": 5,
     "uranium_price": 1,
     "PJM capacity auction": 1,
@@ -224066,7 +224101,7 @@
     "Black Friday / Thanksgiving calendar": 1,
     "calendar": 1,
     "desk lessons": 1,
-    "already_checked_facts": 1,
+    "already_checked_facts": 2,
     "SECTOR Power auctions": 1,
     "coming_up Black Friday entry": 1
    },
@@ -230744,8 +230779,8 @@
   }
  ],
  "movers": {
-  "at": 1795719736.776581,
-  "time": "2026-11-26 14:01",
+  "at": 1795734011.4207847,
+  "time": "2026-11-26 18:00",
   "list": [
    {
     "ticker": "LEU",
