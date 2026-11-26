@@ -2602,6 +2602,21 @@ def intel_tick(st, today, force=False):
             st["flags"][f"candles:{today}"] = True
             subprocess.Popen([sys.executable, "candles.py", "daily"], cwd=ROOT, start_new_session=True,
                              stdout=open("/tmp/candles_daily.log", "a"), stderr=subprocess.STDOUT)
+        c5 = {}
+        try:
+            c5 = json.load(open(os.path.join(ROOT, "data/candles5/_progress.json")))
+        except Exception:
+            pass
+        last5 = st["flags"].get("candles5_backfill_t", 0)
+        if idle and cprog.get("_complete") and not c5.get("_complete") and time.time() - (last5 if isinstance(last5, (int, float)) else 0) > 1800:
+            st["flags"]["candles5_backfill_t"] = time.time()
+            subprocess.Popen(["nice", "-n", "15", sys.executable, "candles.py", "backfill"], cwd=ROOT, start_new_session=True,
+                             env={**os.environ, "CANDLE_MIN": "5"}, stdout=open("/tmp/candles5_backfill.log", "a"), stderr=subprocess.STDOUT)
+        elif c5.get("_complete") and now.weekday() < 5 and not market.is_holiday(today) and now.time() >= dt.time(17, 5) \
+                and not st["flags"].get(f"candles5:{today}"):
+            st["flags"][f"candles5:{today}"] = True
+            subprocess.Popen([sys.executable, "candles.py", "daily"], cwd=ROOT, start_new_session=True,
+                             env={**os.environ, "CANDLE_MIN": "5"}, stdout=open("/tmp/candles5_daily.log", "a"), stderr=subprocess.STDOUT)
     except Exception as e:
         print("candles pull", e)
     if now.weekday() < 5 and not market.is_holiday(today) and now.time() >= dt.time(16, 20) and not st["flags"].get(f"recent:{today}"):

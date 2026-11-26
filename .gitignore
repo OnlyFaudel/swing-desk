@@ -4,3 +4,4 @@ research/*.pkl
 .env
 *.env
 data/candles15/_lock
+data/candles5/_lock
