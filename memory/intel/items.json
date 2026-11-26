@@ -22846,5 +22846,135 @@
 "undervalued",
 "view"
 ]
+},
+{
+"id": "b2a221ad389b66b6",
+"date": "2026-11-25",
+"ts": 1795602290,
+"title": "Vietnam aims for sustainable nuclear power development.",
+"summary": "",
+"outlet": "Vietnam.vn",
+"link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPY0JNV1JzQmFzSW93X0ItRi1WOGhoZFRhQ2FwSGFKXzdJX0lRUElYMUgwbmFwOTktblN4MC1GcW9HYkNndGV3d2RFU3VPQmlSaU4xX2FiaDBOS1pzbjlFcGNWa3NESDZhb0p2cmQ1bGZHOFlkbUllNjhweVU4bHBIUXVTdXc?oc=5",
+"place": "Asia newcomers",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.64,
+"score": 3.78,
+"echo_of": null,
+"w": [
+"aims",
+"development",
+"nuclear",
+"power",
+"sustainable",
+"vietnam"
+]
+},
+{
+"id": "cbb573f92b193688",
+"date": "2026-11-26",
+"ts": 1795658870,
+"title": "Defense Ministry says N. Korea's tactical nuclear expansion 'grave,' vows stronger deterrence through NCG",
+"summary": "",
+"outlet": "\ud5e4\ub7f4\ub4dc\uacbd\uc81c",
+"link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE45bVloTkZkb2p2ODFpTDFXd01NUjUxaXlmRGtqSmhHMFZrdUstb3NuaHgyVlhOYUNKSjVHZ2NId0FCX3dVVGZiRHg3V094Z3VwMEQxZTlTUQ?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"defense"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.82,
+"score": 5.14,
+"echo_of": null,
+"w": [
+"defense",
+"deterrence",
+"expansion",
+"grave",
+"korea",
+"ministry",
+"ncg",
+"nuclear",
+"stronger",
+"tactical",
+"through",
+"vows"
+]
+},
+{
+"id": "2bbb14eb3c5fc03d",
+"date": "2026-11-26",
+"ts": 1795659842,
+"title": "Korea, Turkey discuss expanding cooperation in infrastructure, nuclear energy",
+"summary": "",
+"outlet": "The Korea Times",
+"link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOWG92bHpiaTVFbFI2VXhPMWtnYjBQNlF6RWk1dURQUUwtNV9QSVRHYkdtVmNqUHh5ZVZxNElIakNaT2NkVmd3dExKdjFjVm1uTnVaSVdBM2duRHJoUEFzTXBJVzJYMXN4Qm5VRVZNQzV4cEJqXy1pQnNYZ1lqR1FKa1BKa1pmdjVaekZfSXVaUm1ObGtwRlBOWEw2dVdINVNiZDM1dVhfRjVIYy01Ty1BRU9jN2dzaGJ0YjlqWDh4dlBMSnA3a2MzaU9BWG9kbVhVanRzZjJR0gHWAUFVX3lxTE5Yb3ZsemJpNUVsUjZVeE8xa2diMFA2UXpFaTV1RFBRTC01X1BJVEdiR21WY2pQeHllVnE0SUhqQ1pPY2RWZ3d0TEp2MWNWbW5OdVpJV0EzZ25EcmhQQXNNcElXMlgxc3hCblVFVk1DNXhwQmpfLWlCc1hnWWpHUUprUEprWmZ2NVp6Rl9JdVpSbU5sa3BGUE5YTDZ1V0g1U2JkMzV1WF9GNUhjLTVPLUFFT2M3Z3NoYnRiOWpYOHh2UExKcDdrYzNpT0FYb2RtWFVqdHNmMlE?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "2b9a1a47d07b9669",
+"w": [
+"cooperation",
+"discuss",
+"energy",
+"expanding",
+"infrastructure",
+"korea",
+"nuclear",
+"turkey"
+]
+},
+{
+"id": "468d389b94574242",
+"date": "2026-11-26",
+"ts": 1795666195,
+"title": "In Message to Trump, N. Korea's Kim Jong Un Says \"Nuclear Status Is Irreversible\"; Seoul Urges North to Stop Justifying Nukes (Updated)",
+"summary": "",
+"outlet": "\uc544\uc2dc\uc544\uacbd\uc81c",
+"link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9MeVRiRFd6d0hIQ0M0WDRjNFFmdGZ4ZmRUbTVEZDVnUkg1MUhfeUdKakJSVkxUbmw5bF9KSFNuT2dFcE03S3dVT0dqVU9NX0p3OC1pSnRKbmRXdHZUYmFDTV9jcEtRQjczOUdQeWZ2S2VxZ21SSFQ3STUzNlk?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.82,
+"score": 4.14,
+"echo_of": null,
+"w": [
+"irreversible",
+"jong",
+"justifying",
+"kim",
+"korea",
+"message",
+"north",
+"nuclear",
+"nukes",
+"seoul",
+"status",
+"stop",
+"trump",
+"updated",
+"urges"
+]
 }
 ]
