@@ -4205,18 +4205,6 @@
  },
  "news_feed": [
   {
-   "ticker": "BWXT",
-   "source": "Google News: \"BWX Technologies\"",
-   "title": "AP1000 Component Deal Could Expand BWX Technologies Stock Role In Nuclear Builds - Yahoo Finance",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWGpyX0t3SFFyS3pxenRXUnlIZWlNdkxYRnBHb2daNVRXb0RiYmJVcDRtc2RRZER0N25PV3Nkd2p5cGNiNGREYm1qd3o3OF9DdXE3ekZpdTJZUll4RmlJNnc0bGVrS25MSHl5UVd3Ymd3Z19mdUtHQVNELW9scF9qMVpFenpXNXNrbm5NR1Q5NjYxR0pwMDhja2hwUDFSLTlp?oc=5",
-   "ts": 1795525766,
-   "materiality": 6,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "contract_deal",
-   "why": "Reported AP1000 component deal could widen BWXT's role in new large reactor builds."
-  },
-  {
    "ticker": "UUUU",
    "source": "Google News: \"Energy Fuels\" uranium",
    "title": "Why 2027 Uranium Contracts Are in Focus at Energy Fuels (NYSE American:UUUU) - kalkine.com",
@@ -7203,6 +7191,18 @@
    "direction": "neutral",
    "event_type": "contract_deal",
    "why": "Speculative analyst-style piece on Antares deal; no confirmed new terms or numbers."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Kazatomprom",
+   "title": "Kazatomprom's uranium sales rise nearly 10% to 14,030 tonnes in nine months - www.trend.az",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1fZExVX2ZuNkRkNktIa0JpeldKaEoxT050T2lQTDJBS3E3R09Kd2JOTG1jRU9BTG0wTm5OV24zaks5empLM3FzRFBxMFpYbWJyb09TS2FzWWZhajVvMk5J?oc=5",
+   "ts": 1795702260,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "supply",
+   "why": "Kazatomprom sales growth is an old-style supply update; Kazatom is a rival producer, not CCJ."
   }
  ],
  "reviews": [
@@ -8962,16 +8962,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.02807,
+  "day_usd": 0.02855,
   "month": "2026-11",
-  "month_usd": 2.02283,
-  "total_usd": 2.02283,
+  "month_usd": 2.02331,
+  "total_usd": 2.02331,
   "by_role": {
    "macro": 0.19341,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.2001,
+   "scout": 0.20058,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9239,7 +9239,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 09:07 ET",
+ "last_cycle": "2026-11-26 09:17 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57885,10 +57885,10 @@
   "2a89ac3dc67ad332",
   "8b9f115784388b61",
   "a73665945ff493c7",
-  "bdb801dcb316d6cb",
   "e15990dac5b8bec2",
-  "6f83643eaed2fbc3",
+  "bdb801dcb316d6cb",
   "b695f296dd2e61f0",
+  "6f83643eaed2fbc3",
   "5d0c7240e494c5f9",
   "637530bf82fb0126",
   "0929027bdfefabbd",
@@ -57906,6 +57906,7 @@
   "12835a3b2ed877ca",
   "4317a926c756f33f",
   "c15f742f035fcb1d",
+  "a7acd6a8c1d7c080",
   "88d39974add2ff27",
   "acd35ca94b40c5e4",
   "46ef5d40f9b97a80",
@@ -57923,6 +57924,7 @@
   "15c5ededcaa0a513",
   "9ab10d3c257d1ce5",
   "dce4cce47213c16f",
+  "8de24d7e6020d498",
   "563c0572b10f43bc",
   "efa3269c9fa1c644",
   "9dbb51b520d076e7",
@@ -58014,6 +58016,7 @@
   "ad3a7664003c46d4",
   "f7fb21429d8dfc22",
   "e4d002d912973043",
+  "24c13c008d169d2f",
   "1ed195cb4396cbe7",
   "537b32f5b2133213",
   "a2a8ee32597c7b50",
@@ -58026,12 +58029,12 @@
   "c527b52a6d387b5e",
   "c2bfe85469484a37",
   "bf78a7a4b7c697c4",
-  "04e5c0526493eb7e",
   "6a0cc1c1f8babcd3",
+  "04e5c0526493eb7e",
   "7ee1ad6e6041b23e",
-  "16c52bc5bc8110db",
-  "f1f8a01f5b2d2080",
   "3a1ae63cc1a72974",
+  "f1f8a01f5b2d2080",
+  "16c52bc5bc8110db",
   "1be96b3daf4578d3",
   "1e64fcaaf9ecb5d1",
   "bf3c957b04f7b01a",
@@ -58239,7 +58242,6 @@
   "8a17ec5ab2f6dcf8",
   "5e042fd73e80d40b",
   "696cc711d13e8558",
-  "aa4b40fcca57bfea",
   "3c1ef04c322d8d99",
   "52dee3d37e759da2",
   "997921d9077a2d67",
@@ -58537,10 +58539,9 @@
   "418a91931047cecc",
   "52950daaafc92008",
   "c988637e87af140a",
-  "8de24d7e6020d498",
-  "24c13c008d169d2f"
+  "aa4b40fcca57bfea"
  ],
- "news_slow_at": 1795701761.5121472,
+ "news_slow_at": 1795702390.6467757,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219907,7 +219908,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 09:07",
+  "updated": "2026-11-26 09:17",
   "total": 782,
   "week": 561,
   "places": {
@@ -220545,8 +220546,8 @@
  },
  "intel_handed": [
   "b2e981fc7a2e7302",
-  "2ac262d1779b4fad",
   "958910b51098bafe",
+  "2ac262d1779b4fad",
   "2c7a3976a5596853",
   "0ad3ea7bae8b611c",
   "020569e75e7d456e",
@@ -220555,8 +220556,8 @@
   "36cbbee89c76a1f7",
   "b371c50f261a21f0",
   "4dbfaa309ceb1878",
-  "c2a1739b2e369eff",
   "515517f776442fe4",
+  "c2a1739b2e369eff",
   "797e5c4039060606",
   "5b83027a0cf1a496",
   "37e85b7a7ce58612",
@@ -223122,7 +223123,7 @@
    "built": "2026-11-26 08:48"
   }
  ],
- "heartbeat": "2026-11-26 09:07",
+ "heartbeat": "2026-11-26 09:17",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223363,15 +223364,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 350,
-   "used": 321,
+   "asked": 351,
+   "used": 322,
    "notes": {
     "TLN Deals and contracts": 18,
-    "CCJ Deals and contracts": 66,
+    "CCJ Deals and contracts": 67,
     "BWXT Deals and contracts": 47,
     "SECTOR Government and laws": 89,
     "UUUU Deals and contracts": 40,
-    "SECTOR Countries": 85,
+    "SECTOR Countries": 86,
     "CEG Deals and contracts": 47,
     "NXE Legal": 19,
     "NXE Deals and contracts": 19,
