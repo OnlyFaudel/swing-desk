@@ -2584,6 +2584,26 @@ def intel_tick(st, today, force=False):
                              stdout=open("/tmp/intraday_daily.log", "a"), stderr=subprocess.STDOUT)
     except Exception as e:
         print("intraday pull", e)
+    try:  # 15-minute candles for day-trading research (candles.py): backfill when the market is shut, daily top-up after the close
+        import subprocess
+        idle = now.time() >= dt.time(16, 45) or now.time() < dt.time(7, 30) or now.weekday() >= 5 or market.is_holiday(today)
+        cprog = {}
+        try:
+            cprog = json.load(open(os.path.join(ROOT, "data/candles15/_progress.json")))
+        except Exception:
+            pass
+        last = st["flags"].get("candles_backfill_t", 0)
+        if idle and not cprog.get("_complete") and time.time() - (last if isinstance(last, (int, float)) else 0) > 1800:
+            st["flags"]["candles_backfill_t"] = time.time()
+            subprocess.Popen(["nice", "-n", "15", sys.executable, "candles.py", "backfill"], cwd=ROOT, start_new_session=True,
+                             stdout=open("/tmp/candles_backfill.log", "a"), stderr=subprocess.STDOUT)
+        elif cprog.get("_complete") and now.weekday() < 5 and not market.is_holiday(today) and now.time() >= dt.time(16, 55) \
+                and not st["flags"].get(f"candles:{today}"):
+            st["flags"][f"candles:{today}"] = True
+            subprocess.Popen([sys.executable, "candles.py", "daily"], cwd=ROOT, start_new_session=True,
+                             stdout=open("/tmp/candles_daily.log", "a"), stderr=subprocess.STDOUT)
+    except Exception as e:
+        print("candles pull", e)
     if now.weekday() < 5 and not market.is_holiday(today) and now.time() >= dt.time(16, 20) and not st["flags"].get(f"recent:{today}"):
         st["flags"][f"recent:{today}"] = True  # practice book for rules that only worked 2019-2026 (no money)
         try:
