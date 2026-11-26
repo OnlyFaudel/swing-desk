@@ -29034,5 +29034,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "BWXT",
+"date": "2026-11-26",
+"title": "N Korea's Kim warns US over AUKUS, touts nuclear status",
+"type": "intel_defense",
+"source": "Intel: Eastern Riverina Chronicle",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-26",
+"title": "TEPCO delays restart of No.7 reactor at Kashiwazaki-Kariwa nuclear power plant",
+"type": "intel_disruption",
+"source": "Intel: TradingView",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]
