@@ -27011,5 +27011,68 @@
 "plant",
 "zaporizhzhia"
 ]
+},
+{
+"id": "2035978173577a11",
+"date": "2026-11-25",
+"ts": 1795632694,
+"title": "Amazon Is Backing More Than 5 Gigawatts of New Nuclear by 2039. This Reactor Developer Could Cash In.",
+"summary": "",
+"outlet": "WEEX",
+"link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNb3BWNll3U0lWaEt0enRILUFod182Z1RFTU1KUkJlaFJ5Y0tlbHpuN2gtM2t0dmZZdE9ibktZRHl4YlljdGhNUHRMNGRLa1hpeEl6TEwtRWtTVUU5cGtkQUlaYm45LTZvRnVKRWpyV3R4TUN6Tzh6YVJMWi01OU1ZS0h2bU9WM2JVMW9zM2k0NjZ6LWNfOHdCWWtHdGZQZVFGQnh6bGRBOGZEUV83WEZ5RVlYYVl4Qm9BeVJKbFo0UnI1UzNudHF4b2VxcmRoeC01MWM4LXQ0UEw3N0dfOG5fMTUtM3BOcl9KSmM1ZGhn?oc=5",
+"place": "Big tech power deals",
+"tickers": [
+"CEG",
+"VST",
+"TLN",
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "a1bb2d0032056962",
+"w": [
+"2039",
+"amazon",
+"backing",
+"cash",
+"developer",
+"gigawatts",
+"nuclear",
+"reactor"
+]
+},
+{
+"id": "be3b0d0a977bcac0",
+"date": "2026-11-26",
+"ts": 1795724724,
+"title": "Dukovany nuclear plant: KHNP says new contractor will be Korean",
+"summary": "",
+"outlet": "Around Prague",
+"link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNM2tQVzVGV05WRDhya2I4a3UxVUczOXA4Y21JenBjMXRFeFQ2VmNOWHRLNFE3djl3MGNMTHpEeEJXTXBqRGlsSHJQN291OUxWMlZFZjQ0ZjhOUHhMNC0wUnYxYlNrUEZHUHJPaW9NcWp5RU9lQ0o1TkJZLVV1U3hadk1yNlFLNnh1ZGFjNFJJZmNQU1B6MTUtdXBkM3BhT2lzWXhSY3hucTZyUElscHJfZnRsOFM?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT",
+"CEG"
+],
+"tags": [
+"contract"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.69,
+"score": 5.18,
+"echo_of": null,
+"w": [
+"contractor",
+"dukovany",
+"khnp",
+"korean",
+"nuclear",
+"plant"
+]
 }
 ]
