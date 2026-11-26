@@ -4207,18 +4207,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "DISA Uranium showcases Mary Ann cleanup milestone - Mining.com.au",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA1dUs2bzdWVW9BWmpsZFRZUU5JZXpmN0JHMG5qU0VZVXluOWNURXo0MlZ5TGNwVlpKbk14blYtRFhPNzUyMUMtcTItRlRNLUdjREdydG5QSUFiV04wWlVLYXkyY3NvMDcxbFlXWVNLWEQtSVZ0Ymd2cmphcG0?oc=5",
-   "ts": 1795511161,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Local mine cleanup milestone for a DISA Uranium site; not a Cameco-specific or supply-changing event."
-  },
-  {
    "ticker": "VST",
    "source": "Yahoo Finance",
    "title": "Is Vistra (VST) Still Below Fair Value After Data Center Clarity?",
@@ -7205,6 +7193,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Routine maintenance repair at a French plant; old news, no uranium demand change."
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News",
+   "title": "Vistra buys Cogentrix from Quantum in $4.7B gas-fleet deal - Dealroom",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdExJenhfSTZ5M0NsU3FNQjF1QjlUa3d2MldGQ3FQUkFrMFlQRHBvZXd1MXFNVGtNdzJ1ZEJLTVpCa3VUcGhMMnFsZkZzdGltdkMxRnZzRDVSek0wTl9jbGlhOVhEZjh4UmRDU2syWmxEUlNkRkotMkpZX3NwNkdEd3JpVnB1Z3k0UjVVbFJBQnVpQVBrMHc?oc=5",
+   "ts": 1795716251,
+   "materiality": 5,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Vistra buying a $4.7B gas fleet expands its power business; a real but mid-sized deal."
   }
  ],
  "reviews": [
@@ -8964,16 +8964,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.05225,
+  "day_usd": 0.05265,
   "month": "2026-11",
-  "month_usd": 2.04701,
-  "total_usd": 2.04701,
+  "month_usd": 2.04741,
+  "total_usd": 2.04741,
   "by_role": {
    "macro": 0.19621,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.21281,
+   "scout": 0.21321,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9241,7 +9241,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 13:03 ET",
+ "last_cycle": "2026-11-26 13:14 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57888,10 +57888,10 @@
   "2a89ac3dc67ad332",
   "8b9f115784388b61",
   "a73665945ff493c7",
-  "bdb801dcb316d6cb",
   "e15990dac5b8bec2",
-  "6f83643eaed2fbc3",
+  "bdb801dcb316d6cb",
   "b695f296dd2e61f0",
+  "6f83643eaed2fbc3",
   "5d0c7240e494c5f9",
   "0e427bed53402c8e",
   "637530bf82fb0126",
@@ -57927,7 +57927,9 @@
   "44041d56f140e1b4",
   "15c5ededcaa0a513",
   "9ab10d3c257d1ce5",
+  "6d247b155bfa9a35",
   "dce4cce47213c16f",
+  "8de24d7e6020d498",
   "563c0572b10f43bc",
   "efa3269c9fa1c644",
   "9dbb51b520d076e7",
@@ -58034,12 +58036,12 @@
   "c527b52a6d387b5e",
   "c2bfe85469484a37",
   "bf78a7a4b7c697c4",
-  "04e5c0526493eb7e",
   "6a0cc1c1f8babcd3",
+  "04e5c0526493eb7e",
   "7ee1ad6e6041b23e",
-  "16c52bc5bc8110db",
-  "f1f8a01f5b2d2080",
   "3a1ae63cc1a72974",
+  "f1f8a01f5b2d2080",
+  "16c52bc5bc8110db",
   "1be96b3daf4578d3",
   "1e64fcaaf9ecb5d1",
   "bf3c957b04f7b01a",
@@ -58253,7 +58255,6 @@
   "8a17ec5ab2f6dcf8",
   "5e042fd73e80d40b",
   "696cc711d13e8558",
-  "aa4b40fcca57bfea",
   "3c1ef04c322d8d99",
   "52dee3d37e759da2",
   "997921d9077a2d67",
@@ -58565,9 +58566,9 @@
   "418a91931047cecc",
   "52950daaafc92008",
   "c988637e87af140a",
-  "8de24d7e6020d498"
+  "aa4b40fcca57bfea"
  ],
- "news_slow_at": 1795716008.134432,
+ "news_slow_at": 1795716630.3831766,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -220038,9 +220039,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 13:03",
+  "updated": "2026-11-26 13:14",
   "total": 818,
-  "week": 579,
+  "week": 578,
   "places": {
    "Uranium price": 50,
    "South Korea": 45,
@@ -220676,8 +220677,8 @@
  },
  "intel_handed": [
   "b2e981fc7a2e7302",
-  "2ac262d1779b4fad",
   "958910b51098bafe",
+  "2ac262d1779b4fad",
   "2c7a3976a5596853",
   "0ad3ea7bae8b611c",
   "020569e75e7d456e",
@@ -220686,8 +220687,8 @@
   "36cbbee89c76a1f7",
   "b371c50f261a21f0",
   "4dbfaa309ceb1878",
-  "c2a1739b2e369eff",
   "515517f776442fe4",
+  "c2a1739b2e369eff",
   "797e5c4039060606",
   "5b83027a0cf1a496",
   "37e85b7a7ce58612",
@@ -223260,7 +223261,7 @@
    "built": "2026-11-26 12:54"
   }
  ],
- "heartbeat": "2026-11-26 13:03",
+ "heartbeat": "2026-11-26 13:14",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223501,8 +223502,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 378,
-   "used": 346,
+   "asked": 379,
+   "used": 347,
    "notes": {
     "TLN Deals and contracts": 18,
     "CCJ Deals and contracts": 67,
@@ -223521,7 +223522,7 @@
     "SECTOR Uranium market": 7,
     "CCJ Legal": 16,
     "CEG Legal": 3,
-    "VST Deals and contracts": 32,
+    "VST Deals and contracts": 33,
     "LEU Legal": 1,
     "VST Legal": 1,
     "TLN Legal": 2
