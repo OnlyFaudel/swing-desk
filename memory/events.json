@@ -29646,5 +29646,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-26",
+"title": "Kazakhstan, US Reaffirm Commitment to Nuclear Energy Partnership",
+"type": "intel_contract",
+"source": "Intel: Caspian Post",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "NXE",
+"date": "2026-11-26",
+"title": "Kazakhstan, US Reaffirm Commitment to Nuclear Energy Partnership",
+"type": "intel_contract",
+"source": "Intel: Caspian Post",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]

@@ -26689,5 +26689,98 @@
 "uranium",
 "white"
 ]
+},
+{
+"id": "9a6060ca5503dfab",
+"date": "2026-11-24",
+"ts": 1795507200,
+"title": "NexGen Energy (TSX:NXE) Stock Forecast & Analyst Predictions",
+"summary": "",
+"outlet": "Simply Wall St",
+"link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE81d0hJYmFWLWgzOHZSY3JxUkxMUmJLcGJRQTh0RURUY0FTWHNoanJmd011b1V6WmdtQjhYU0llWlB3cTZOdU1kWlMxaGNFQnJxRkZMMFlzQjlxRU9kWFpNTmpxeVFURjNOcG9IMVdjWUJ2VmxqWHdQSVNyTVFLcmM?oc=5",
+"place": "Workers and jobs",
+"tickers": [
+"NXE"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.55,
+"score": 2.6,
+"echo_of": null,
+"w": [
+"analyst",
+"energy",
+"forecast",
+"nexgen",
+"nxe",
+"predictions",
+"stock",
+"tsx"
+]
+},
+{
+"id": "a747629bd2900fe8",
+"date": "2026-11-24",
+"ts": 1795556449,
+"title": "LEU: Centrus Energy Corp. filed SEC Form 8-K: Regulation FD Disclosure, Financial Statements and Exhibits",
+"summary": "",
+"outlet": "Quantisnow",
+"link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeVhNdWZUSGwzNHJUQXR1U1JucE5QWDhZQTZHV1Jwb3FRYW56Qm5LWlpPZGlValY0UlNXTk9QZW42Wkw5YzRlc1E1TW0yajFJQjY0dzh1VXVzeENtZTR4T0o5M1pmeXp6NmxiR091NTRzNmVaWm1SMUxTcVphWTBpdDNXQlN5N21sQVp5VGxpSTRHdHJtRFBBdFpIY0M5aDdkdmxXNQ?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "490db1d69070bee7",
+"w": [
+"centrus",
+"disclosure",
+"energy",
+"exhibits",
+"filed",
+"financial",
+"form",
+"leu",
+"regulation",
+"sec",
+"statements"
+]
+},
+{
+"id": "7ffb052a70d145c2",
+"date": "2026-11-26",
+"ts": 1795710291,
+"title": "Kazakhstan, US Reaffirm Commitment to Nuclear Energy Partnership",
+"summary": "",
+"outlet": "Caspian Post",
+"link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOOFBMWlFINjFFNlY0X3BKTmVpdFRpNGdmZUZoTmFORS1HbzhXVUE2alpkVkxCaUJWWGVjSXljMnpOTlpHSmtrdXViRm1YTXprSTcwcDZiOFl0d2EzY05xMjRYUTB1ZW02TjZ6QVlzRy1INWE2MDZuVFlHZHMwcjhBSmEtNWtlOElmRDdldzBMZldBOTNsdGZGM1ZQUXhJRkU?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [
+"contract"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.75,
+"score": 5.3,
+"echo_of": null,
+"w": [
+"commitment",
+"energy",
+"kazakhstan",
+"nuclear",
+"partnership",
+"reaffirm"
+]
 }
 ]

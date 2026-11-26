@@ -624,7 +624,8 @@
   "plantrep:2026-11-26": true,
   "questioner:2026-11-26:5": true,
   "questioner:2026-11-26:6": true,
-  "candles_backfill_t": 1795718798.2641091
+  "candles_backfill_t": 1795718798.2641091,
+  "questioner:2026-11-26:7": true
  },
  "benchmark": {
   "shares": {
@@ -4209,30 +4210,6 @@
  "news_feed": [
   {
    "ticker": "LEU",
-   "source": "Google News",
-   "title": "Centrus Energy Corp.: 12-Monats-Kursziel auf $170,45 gesenkt, Aufw\u00e4rtspotenzial von 96% - TradingView",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5YZ281MUNOQmdXcGhueGZhZHFKTkp5VlduOXh5WERhaWZaTWdnWWZwNl85WEtZSW03enNON05SVWtxcGU2bEN5aFQ3UzhDclRFWmltc1g4R2JoUHljcWQ1LTRVTl9MZUdMa1BXREJB?oc=5",
-   "ts": 1795548000,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Routine price-target cut from a TradingView recap; target still implies 96% upside."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: Kazatomprom",
-   "title": "Kazakhstan Signs New Uranium Supply Deal with India and China as Export Markets Expand - Construction Review",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQM2N3aVl3OXktOC1idEk2ZnY0TmlNdmI2ZGw1di1zajNZRWpoVS1OV00wcnNnYkprTFBwclNsNUFhUlhlZEtKMTQxVHVXcXdPZDRhZVJFUzdVUFUtazN6N1BUQ2ZnTENfcmp0UUpvRU1Fa0xFNF9ib3Y0c2dsM1lOd3pzNTNVRlE2UXN6ZzZtMTROdWNEZGI0ZktqM3BSRFQxUFdsNEZpQm9vdWZ2dm1wSnNod25iUGtUellJTk1ZUE9aUQ?oc=5",
-   "ts": 1795553881,
-   "materiality": 5,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "contract_deal",
-   "why": "Kazakh supply deal with India/China is new demand for uranium supply, but Kazatomprom is a supplier peer, not Cameco's direct contract."
-  },
-  {
-   "ticker": "LEU",
    "source": "Google News: \"Centrus Energy\"",
    "title": "Centrus Energy Corp. (LEU) latest stock news and headlines - Yahoo Finance UK",
    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9mWTRMTUVWN2FpLXRXYmNyZWtpZ214MHRIYVBjRnltc0ZMY1FxaXV4LVB1T3dRc2tOTDRUSFlrVkJKX3VJVUxGOW1MWDdhZTE4SVZsWmhsNA?oc=5",
@@ -7206,6 +7183,30 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Adaro Andalan dividend is an Indonesian coal-linked company, unrelated to uranium."
+  },
+  {
+   "ticker": "NXE",
+   "source": "Google News: \"NexGen Energy\"",
+   "title": "Stifel Maintains NexGen Energy(NXE.US) With Buy Rating, Raises Target Price to $21.1 - \u5bcc\u9014\u725b\u725b",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObnpfekdaYzRkc3RjbFV1Z1c1eFptdkJCeEhwV19FNGxmcTJkSW5sbFpWSzNaUm1zeXFtWkNoVDRiS09qcjY3YlJtS1VUVFNMWlIwS0VZU3l3OUV4SEJXVzhsbTY5ZnRTMWFfaFBPUS11czRXcDc5MmNGZmd1a01NRDdyRWJ4Mk8wS1hER0Jjak9Gay05cFZEcFRCX0JHX1R0YWZCSjNrd21aSFhKWnBkcWtR?oc=5",
+   "ts": 1795685325,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Routine analyst target bump on an existing Buy rating; no new company information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: Caspian Post (Kazakhstan)",
+   "title": "Kazakhstan, US Reaffirm Commitment to Nuclear Energy Partnership",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOOFBMWlFINjFFNlY0X3BKTmVpdFRpNGdmZUZoTmFORS1HbzhXVUE2alpkVkxCaUJWWGVjSXljMnpOTlpHSmtrdXViRm1YTXprSTcwcDZiOFl0d2EzY05xMjRYUTB1ZW02TjZ6QVlzRy1INWE2MDZuVFlHZHMwcjhBSmEtNWtlOElmRDdldzBMZldBOTNsdGZGM1ZQUXhJRkU?oc=5",
+   "ts": 1795710291,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "policy_tariff",
+   "why": "Diplomatic reaffirmation of a nuclear partnership; vague, no concrete contract or volume."
   }
  ],
  "reviews": [
@@ -8965,16 +8966,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.05403,
+  "day_usd": 0.05747,
   "month": "2026-11",
-  "month_usd": 2.04879,
-  "total_usd": 2.04879,
+  "month_usd": 2.05223,
+  "total_usd": 2.05223,
   "by_role": {
    "macro": 0.19621,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.21459,
+   "scout": 0.21541,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -8984,7 +8985,7 @@
    "postmortem": 0.00035,
    "researcher": 0.02341,
    "engineer": 0.08111,
-   "questioner": 0.13776
+   "questioner": 0.14038
   }
  },
  "desk_log": [
@@ -9242,7 +9243,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 13:49 ET",
+ "last_cycle": "2026-11-26 14:01 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57889,9 +57890,9 @@
   "fcce01ed145ab804",
   "fa5187062c587fa6",
   "ad40fc2d9e504d93",
-  "0063c1e4976a14e3",
-  "572a5262197f803c",
   "97e9eff63229f754",
+  "572a5262197f803c",
+  "0063c1e4976a14e3",
   "0929027bdfefabbd",
   "84200faa36eac51a",
   "4ed9b30682cbb480",
@@ -57912,8 +57913,8 @@
   "6c0f0f111a586f76",
   "1c3f23b5479e5fd7",
   "f1c6e7a99bef23fc",
-  "8b6a4af8fda47884",
   "46ef5d40f9b97a80",
+  "8b6a4af8fda47884",
   "53fc8faedadd1796",
   "1e64fcaaf9ecb5d1",
   "7269a326a498bd44",
@@ -58059,8 +58060,8 @@
   "7c6fa2664d45ab12",
   "712897a34ec8bffb",
   "e5b877975a222845",
-  "ee1ba4440d7332de",
   "a9943bba60437697",
+  "ee1ba4440d7332de",
   "8c3665c6fa9a193f",
   "59c6f6be8bf3e5a9",
   "5152638d88885c07",
@@ -58228,6 +58229,7 @@
   "5c88c6637836b8c6",
   "009c12e19cf7cb10",
   "4b634efdcf500ae7",
+  "9ba787d9f4ab0369",
   "cdc9a7381e6b445a",
   "caf141826665b9fe",
   "f61fff1c8e93929e",
@@ -58571,7 +58573,7 @@
   "fe808fea77078dbb",
   "61659cb80b158a77"
  ],
- "news_slow_at": 1795718553.4906745,
+ "news_slow_at": 1795719158.8506508,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -214432,6 +214434,25 @@
    ],
    "practice": false,
    "end": "12:00"
+  },
+  {
+   "id": "20261126140216778942",
+   "title": "The Questioner, Nov 26 14:01",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-26 14:02",
+   "msgs": [
+    {
+     "t": "14:02",
+     "who": "questioner",
+     "to": "risk",
+     "text": "Several teammates keep skipping setups because the basket gate is closed, but no one has checked whether the TLN resting buy at $355.66 is actually live: LIVE_ORDERS_RIGHT_NOW is empty and every order is a day order. I want the team to confirm whether that order exists before anyone discusses it further. I also want the PJM Dec 15 auction treated as the main event risk for TLN and VST, since no FERC ruling on the delay has been found.",
+     "outcome": false,
+     "notes": "question: LIVE_ORDERS_RIGHT_NOW is empty. Is the TLN buy at $355.66 actually resting, or was it only discussed? If it is resting, why was it not canceled after the basket gate closed and TLN moved well away from the level?\nwhy it might matter: If a stale order is sitting on the books, we could fill on a setup the desk's own gate says to skip, and the team's posts are describing a state that may not exist.\nask: risk\nkind: odd\nquestion: The PJM 2029/30 auction closes Dec 15 and no ruling on the delay request has been found. Should the desk treat that date as the main risk for TLN and VST through the window, and does any rule account for it?\nwhy it might matter: TLN jumped 9.6% on an unconfirmed regulatory headline, and our own calendar says the auction is still scheduled. Holding into an unresolved binary event is a sizing question, not a level question.\nask: macro\nkind: unexplained\nquesti"
+    }
+   ],
+   "practice": false,
+   "end": "14:02"
   }
  ],
  "feed": [
@@ -219189,6 +219210,19 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-26 14:02",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: ",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -219987,62 +220021,62 @@
    "lesson": null
   }
  ],
- "intel_at": 1795717456.0394924,
+ "intel_at": 1795719262.26828,
  "intel_health": {
-  "at": "2026-11-26 13:25",
+  "at": "2026-11-26 13:55",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
-   "Athabasca Basin": 6,
+   "Athabasca Basin": 5,
    "Saskatchewan wildfires": 5,
    "Rook I / Arrow": 8,
    "Wheeler River / Phoenix": 8,
    "Port Hope / Blind River": 0,
    "Westinghouse": 9,
-   "Kazakhstan": 24,
+   "Kazakhstan": 43,
    "Niger": 7,
    "Namibia": 41,
    "Russia supply": 3,
-   "Piketon": 25,
+   "Piketon": 23,
    "HALEU": 14,
-   "Wyoming ISR": 55,
+   "Wyoming ISR": 28,
    "South Texas ISR": 2,
    "White Mesa / Utah": 8,
    "Rare earths (Energy Fuels)": 13,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 11,
+   "Naval reactors": 10,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 6,
    "Comanche Peak": 5,
-   "PJM grid": 7,
-   "ERCOT grid": 12,
+   "PJM grid": 13,
+   "ERCOT grid": 16,
    "Data-center nuclear deals": 9,
    "Japan restarts": 15,
-   "China new builds": 13,
+   "China new builds": 12,
    "Congress and laws": 25,
    "NRC decisions": 7,
-   "Energy Department": 47,
-   "White House and executive orders": 26,
-   "Tariffs and trade": 1,
-   "India": 20,
+   "Energy Department": 60,
+   "White House and executive orders": 35,
+   "Tariffs and trade": 2,
+   "India": 28,
    "South Korea": 97,
-   "Europe new builds": 30,
-   "France and UK": 17,
-   "Middle East": 24,
-   "Asia newcomers": 45,
+   "Europe new builds": 63,
+   "France and UK": 12,
+   "Middle East": 50,
+   "Asia newcomers": 18,
    "Canada SMRs": 10,
-   "Big tech power deals": 30,
+   "Big tech power deals": 61,
    "Iran": 56,
-   "North Korea": 88,
+   "North Korea": 89,
    "War zones": 10,
-   "AUKUS and navies": 28,
-   "Weapons programs": 30,
-   "Stockpiles and reserves": 29,
+   "AUKUS and navies": 18,
+   "Weapons programs": 20,
+   "Stockpiles and reserves": 28,
    "Sprott trust": 6,
    "Uranium price": 25,
    "US policy": 0,
    "Lawsuits and investigations": 72,
-   "Workers and jobs": 23,
+   "Workers and jobs": 39,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
    "Federal Register (uranium)": 11,
@@ -220052,18 +220086,18 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 13:50",
-  "total": 824,
-  "week": 580,
+  "updated": "2026-11-26 14:02",
+  "total": 827,
+  "week": 582,
   "places": {
    "Uranium price": 50,
    "South Korea": 45,
    "Weapons programs": 32,
    "Europe new builds": 30,
+   "Workers and jobs": 28,
    "AUKUS and navies": 28,
+   "Kazakhstan": 28,
    "Piketon": 27,
-   "Workers and jobs": 27,
-   "Kazakhstan": 27,
    "Asia newcomers": 25,
    "World Nuclear News": 24,
    "War zones": 19,
@@ -220071,60 +220105,60 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-26 13:25",
+   "at": "2026-11-26 13:55",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
-    "Athabasca Basin": 6,
+    "Athabasca Basin": 5,
     "Saskatchewan wildfires": 5,
     "Rook I / Arrow": 8,
     "Wheeler River / Phoenix": 8,
     "Port Hope / Blind River": 0,
     "Westinghouse": 9,
-    "Kazakhstan": 24,
+    "Kazakhstan": 43,
     "Niger": 7,
     "Namibia": 41,
     "Russia supply": 3,
-    "Piketon": 25,
+    "Piketon": 23,
     "HALEU": 14,
-    "Wyoming ISR": 55,
+    "Wyoming ISR": 28,
     "South Texas ISR": 2,
     "White Mesa / Utah": 8,
     "Rare earths (Energy Fuels)": 13,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 11,
+    "Naval reactors": 10,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 6,
     "Comanche Peak": 5,
-    "PJM grid": 7,
-    "ERCOT grid": 12,
+    "PJM grid": 13,
+    "ERCOT grid": 16,
     "Data-center nuclear deals": 9,
     "Japan restarts": 15,
-    "China new builds": 13,
+    "China new builds": 12,
     "Congress and laws": 25,
     "NRC decisions": 7,
-    "Energy Department": 47,
-    "White House and executive orders": 26,
-    "Tariffs and trade": 1,
-    "India": 20,
+    "Energy Department": 60,
+    "White House and executive orders": 35,
+    "Tariffs and trade": 2,
+    "India": 28,
     "South Korea": 97,
-    "Europe new builds": 30,
-    "France and UK": 17,
-    "Middle East": 24,
-    "Asia newcomers": 45,
+    "Europe new builds": 63,
+    "France and UK": 12,
+    "Middle East": 50,
+    "Asia newcomers": 18,
     "Canada SMRs": 10,
-    "Big tech power deals": 30,
+    "Big tech power deals": 61,
     "Iran": 56,
-    "North Korea": 88,
+    "North Korea": 89,
     "War zones": 10,
-    "AUKUS and navies": 28,
-    "Weapons programs": 30,
-    "Stockpiles and reserves": 29,
+    "AUKUS and navies": 18,
+    "Weapons programs": 20,
+    "Stockpiles and reserves": 28,
     "Sprott trust": 6,
     "Uranium price": 25,
     "US policy": 0,
     "Lawsuits and investigations": 72,
-    "Workers and jobs": 23,
+    "Workers and jobs": 39,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
     "Federal Register (uranium)": 11,
@@ -220769,6 +220803,7 @@
   "0dc03d3bc16eea15",
   "545d2401ade15843",
   "67ae0f09ed3add32",
+  "7ffb052a70d145c2",
   "594dee7aa1676956",
   "43b41ce2f49469b8",
   "49be13755057758d",
@@ -220800,7 +220835,6 @@
   "e446f179fb37cbbd",
   "4bcec70e5161a23d",
   "8080c5e15c173c5b",
-  "96bd0f50c9b41d81",
   "e7a28da3db059604",
   "09b7a3e22a2e5a14",
   "1bc8a335514e5e60",
@@ -220886,9 +220920,10 @@
   "5178e5d1234a91bb",
   "e68e9fb8f0fc6b78",
   "23f0910e96eb7de3",
+  "61659cb80b158a77",
   "c4213b53ccaf5e6f",
   "2406fcdcae12e82f",
-  "61659cb80b158a77"
+  "96bd0f50c9b41d81"
  ],
  "panic_log": [
   {
@@ -220929,7 +220964,7 @@
   }
  ],
  "memory_view": {
-  "events": 1744,
+  "events": 1746,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -221513,24 +221548,6 @@
   "recent": [
    {
     "date": "2026-11-26",
-    "ticker": "CEG",
-    "title": "TEPCO delays restart of reactor at Niigata nuclear plant by over 1 year",
-    "type": "intel_disruption",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-26",
-    "ticker": "BWXT",
-    "title": "AUKUS agency in disarray as four in 10 staff plan to quit",
-    "type": "intel_defense",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-26",
     "ticker": "CCJ",
     "title": "Vietnam Weighs Delaying Nuclear Power Plants Beyond 2035 Target",
     "type": "intel_disruption",
@@ -221849,6 +221866,24 @@
     "ticker": "CCJ",
     "title": "Petrosea approves rights issue of up to 170 million shares",
     "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CCJ",
+    "title": "Kazakhstan, US Reaffirm Commitment to Nuclear Energy Partnership",
+    "type": "intel_contract",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "NXE",
+    "title": "Kazakhstan, US Reaffirm Commitment to Nuclear Energy Partnership",
+    "type": "intel_contract",
     "r0": null,
     "r5": null,
     "r20": null
@@ -223146,7 +223181,7 @@
    }
   ]
  },
- "dossier_at": 1795717547.2220163,
+ "dossier_at": 1795719452.441431,
  "sector_prices": {
   "_at": 1795715668.9582324,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -223204,80 +223239,80 @@
    "name": "Cameco",
    "price": 61.56,
    "week_pct": -1.42,
-   "built": "2026-11-26 13:25"
+   "built": "2026-11-26 13:57"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.95,
    "week_pct": -4.46,
-   "built": "2026-11-26 13:25"
+   "built": "2026-11-26 13:57"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.69,
    "week_pct": -3.89,
-   "built": "2026-11-26 13:25"
+   "built": "2026-11-26 13:57"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.8,
    "week_pct": -1.64,
-   "built": "2026-11-26 13:26"
+   "built": "2026-11-26 13:57"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.2,
    "week_pct": -7.71,
-   "built": "2026-11-26 13:26"
+   "built": "2026-11-26 13:57"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 83.23,
    "week_pct": -9.3,
-   "built": "2026-11-26 13:26"
+   "built": "2026-11-26 13:57"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.49,
    "week_pct": -3.54,
-   "built": "2026-11-26 13:26"
+   "built": "2026-11-26 13:58"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 235.25,
    "week_pct": -10.46,
-   "built": "2026-11-26 13:26"
+   "built": "2026-11-26 13:58"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 121.32,
    "week_pct": -3.39,
-   "built": "2026-11-26 13:26"
+   "built": "2026-11-26 13:58"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 351.55,
    "week_pct": -2.4,
-   "built": "2026-11-26 13:26"
+   "built": "2026-11-26 13:58"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-26 13:26"
+   "built": "2026-11-26 13:58"
   }
  ],
- "heartbeat": "2026-11-26 13:49",
+ "heartbeat": "2026-11-26 14:01",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223518,13 +223553,13 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 382,
-   "used": 350,
+   "asked": 384,
+   "used": 351,
    "notes": {
     "TLN Deals and contracts": 18,
     "CCJ Deals and contracts": 69,
     "BWXT Deals and contracts": 50,
-    "SECTOR Government and laws": 97,
+    "SECTOR Government and laws": 98,
     "UUUU Deals and contracts": 43,
     "SECTOR Countries": 100,
     "CEG Deals and contracts": 50,
@@ -223912,12 +223947,12 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 54,
-   "used": 54,
+   "asked": 55,
+   "used": 55,
    "notes": {
     "TLN Snapshot": 42,
     "TLN News": 38,
-    "coming_up": 7,
+    "coming_up": 8,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
     "BWXT Legal": 1,
@@ -223936,7 +223971,7 @@
     "Reminder: Pre-Thanksgiving session (2026-11-25)": 1,
     "Reminder: Thanksgiving run-up rule": 1,
     "Basket gate note: nuclear basket -11.2% vs 10-day average": 1,
-    "LIVE_ORDERS_RIGHT_NOW": 6,
+    "LIVE_ORDERS_RIGHT_NOW": 7,
     "SECTOR Calendar": 1,
     "already_asked": 3,
     "Desk lessons": 1,
@@ -223949,7 +223984,8 @@
     "BWXT Leadership and insiders": 1,
     "Black Friday / Thanksgiving calendar": 1,
     "calendar": 1,
-    "desk lessons": 1
+    "desk lessons": 1,
+    "already_checked_facts": 1
    },
    "since": "2026-11-23"
   },
@@ -231553,8 +231589,8 @@
   }
  ],
  "movers": {
-  "at": 1795705285.3458369,
-  "time": "2026-11-26 10:01",
+  "at": 1795719736.776581,
+  "time": "2026-11-26 14:01",
   "list": [
    {
     "ticker": "LEU",
