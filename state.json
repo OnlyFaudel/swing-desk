@@ -4206,18 +4206,6 @@
  },
  "news_feed": [
   {
-   "ticker": "NXE",
-   "source": "Google News",
-   "title": "NexGen Energy (TSX:NXE): TSX Composite Large Cap Growth Stock in Focus as Investors Track the Next Catalyst - kalkine.ca",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPVWdncEZoQ3dFdUhJSExnVTVaMUN2SFBmeGhwNFJ4eTZFb25pd3lYcDJfekZfWThiQUxyVHE3Sk9wSzI5Z254d3Y0TmhScHdldFd5MkhpMzNkRTVPeFdXZEd3eWNkenluVkV1ZzNhaEJlLVFZX1YwbnhfQ2Ric1VVYWF1eGpEZlRSSi1jcUt4NGRGNWtsZjBQY3hPcHhOV3p6SjFWZF9rNjlVbkdnN0RvbUktWEtHRExzeHJkTE9PcklGQ3A1YUNmVTJPUE10WnM?oc=5",
-   "ts": 1795540440,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic Kalkine 'in focus' listicle with no new company-specific information."
-  },
-  {
    "ticker": "VST",
    "source": "Google News",
    "title": "George Soros and 10 Other Big Funds Sold Vistra Last Quarter, While 7 Bought. Who\u2019s Right? - TIKR.com",
@@ -7204,6 +7192,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Kalkine explainer on Darby update; recap-style, mostly rehashed company news"
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "enCore Energy Shares Rally as Uranium Market Optimism and Nuclear Energy Demand Strengthen Growth Prospects - kalkine.ca",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUVFQTF83UHZNSWpFUDVQdDluWXlsNXI1Q0Vhd3BJTjZXYUIxNDdLVVdDaF96cXBiYW1BRkhoUEl0bzBlV2ZvMDJid1AzN2F0SndTaGZuVU1lSVRiOE9mZ0oxQWVmQlBqRXJIQTRPbGlDQzU5cU5ubTlQTDVadzBWN1Vpby1XMXJzNFY2bGZsSHZuaUV2RUplNkdjRjVBOHFRZjNsZDZxSjI5VHU5ZUxTT2d6Zjg0a2ZSRnozeUdyMzVSYkt6RVFFVFVla1g5am5hclFPQQ?oc=5",
+   "ts": 1795704600,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Rally piece on a different miner (enCore); recaps sentiment, no new CCJ-specific information."
   }
  ],
  "reviews": [
@@ -8963,16 +8963,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.04406,
+  "day_usd": 0.04451,
   "month": "2026-11",
-  "month_usd": 2.03882,
-  "total_usd": 2.03882,
+  "month_usd": 2.03927,
+  "total_usd": 2.03927,
   "by_role": {
    "macro": 0.19621,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.20733,
+   "scout": 0.20778,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9240,7 +9240,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 11:34 ET",
+ "last_cycle": "2026-11-26 11:44 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57887,10 +57887,10 @@
   "2a89ac3dc67ad332",
   "8b9f115784388b61",
   "a73665945ff493c7",
-  "e15990dac5b8bec2",
   "bdb801dcb316d6cb",
-  "b695f296dd2e61f0",
+  "e15990dac5b8bec2",
   "6f83643eaed2fbc3",
+  "b695f296dd2e61f0",
   "5d0c7240e494c5f9",
   "0e427bed53402c8e",
   "637530bf82fb0126",
@@ -57927,7 +57927,6 @@
   "15c5ededcaa0a513",
   "9ab10d3c257d1ce5",
   "dce4cce47213c16f",
-  "8de24d7e6020d498",
   "563c0572b10f43bc",
   "efa3269c9fa1c644",
   "9dbb51b520d076e7",
@@ -58034,12 +58033,12 @@
   "c527b52a6d387b5e",
   "c2bfe85469484a37",
   "bf78a7a4b7c697c4",
-  "6a0cc1c1f8babcd3",
   "04e5c0526493eb7e",
+  "6a0cc1c1f8babcd3",
   "7ee1ad6e6041b23e",
-  "3a1ae63cc1a72974",
-  "f1f8a01f5b2d2080",
   "16c52bc5bc8110db",
+  "f1f8a01f5b2d2080",
+  "3a1ae63cc1a72974",
   "1be96b3daf4578d3",
   "1e64fcaaf9ecb5d1",
   "bf3c957b04f7b01a",
@@ -58085,6 +58084,7 @@
   "326afd4f7d0093ec",
   "41ed20a8cec5e591",
   "d0cdede57b2eba62",
+  "38009e1826fb0bca",
   "ae7c33e465128eb8",
   "d315dfa4e1149d87",
   "6709ae4e03dfb11b",
@@ -58248,6 +58248,7 @@
   "8a17ec5ab2f6dcf8",
   "5e042fd73e80d40b",
   "696cc711d13e8558",
+  "aa4b40fcca57bfea",
   "3c1ef04c322d8d99",
   "52dee3d37e759da2",
   "997921d9077a2d67",
@@ -58554,9 +58555,9 @@
   "418a91931047cecc",
   "52950daaafc92008",
   "c988637e87af140a",
-  "aa4b40fcca57bfea"
+  "8de24d7e6020d498"
  ],
- "news_slow_at": 1795710441.6065538,
+ "news_slow_at": 1795711065.30803,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219983,9 +219984,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 11:34",
+  "updated": "2026-11-26 11:44",
   "total": 800,
-  "week": 570,
+  "week": 568,
   "places": {
    "Uranium price": 47,
    "South Korea": 45,
@@ -219995,8 +219996,8 @@
    "Piketon": 27,
    "Workers and jobs": 27,
    "Kazakhstan": 26,
-   "World Nuclear News": 22,
    "Asia newcomers": 22,
+   "World Nuclear News": 21,
    "War zones": 19,
    "Rare earths (Energy Fuels)": 15
   },
@@ -220621,8 +220622,8 @@
  },
  "intel_handed": [
   "b2e981fc7a2e7302",
-  "958910b51098bafe",
   "2ac262d1779b4fad",
+  "958910b51098bafe",
   "2c7a3976a5596853",
   "0ad3ea7bae8b611c",
   "020569e75e7d456e",
@@ -220631,8 +220632,8 @@
   "36cbbee89c76a1f7",
   "b371c50f261a21f0",
   "4dbfaa309ceb1878",
-  "515517f776442fe4",
   "c2a1739b2e369eff",
+  "515517f776442fe4",
   "797e5c4039060606",
   "5b83027a0cf1a496",
   "37e85b7a7ce58612",
@@ -223201,7 +223202,7 @@
    "built": "2026-11-26 11:21"
   }
  ],
- "heartbeat": "2026-11-26 11:34",
+ "heartbeat": "2026-11-26 11:44",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223442,15 +223443,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 366,
-   "used": 335,
+   "asked": 367,
+   "used": 336,
    "notes": {
     "TLN Deals and contracts": 18,
     "CCJ Deals and contracts": 67,
     "BWXT Deals and contracts": 49,
     "SECTOR Government and laws": 95,
     "UUUU Deals and contracts": 41,
-    "SECTOR Countries": 94,
+    "SECTOR Countries": 95,
     "CEG Deals and contracts": 49,
     "NXE Legal": 20,
     "NXE Deals and contracts": 19,
