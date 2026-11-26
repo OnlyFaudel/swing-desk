@@ -4213,18 +4213,6 @@
  },
  "news_feed": [
   {
-   "ticker": "LEU",
-   "source": "Google News: \"Centrus Energy\"",
-   "title": "Centrus Energy Plans Investor Day at Piketon Facility Dec. 7 - kalkine.com",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRm9taUd0cTdHTlFWUElSZjFBaXpabzliVVFENDEyRHIyZHczOVdLb2Zka2V2UDByQ0g3ZzIxOFpFcGtZZmtEQ1BCNnBuMGRUUjNUQWp3TGt3TjdQLVFBenZDd05aeHJ4eEI0c2NBakxhUkNaSHVWbW02dUtObXNtTHNCbExleTB4NklvcFVPT01odmdrczBGNEw2SHNPMEk?oc=5",
-   "ts": 1795559078,
-   "materiality": 4,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Investor day announcement is an event, but it contains no new financial or contract information."
-  },
-  {
    "ticker": "BWXT",
    "source": "Local intel: Merkley (.gov) (Weapons programs)",
    "title": "Senators Markey and Merkley Demand Trump Administration Drop Strategy to Deploy Dangerous Tactical Nuclear Weapons",
@@ -7211,6 +7199,18 @@
    "direction": "neutral",
    "event_type": "supply",
    "why": "Kazakh reserve plan is a policy talk piece; mostly known strategy, not new supply data."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News",
+   "title": "Form 4 Talen Energy Corp For: 26 November By Investing.com - Investing.com Nigeria",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaEE1bkphVEtBekFOcnNxWE5xZ3Z4dUJEZFpYdzdyRkJDR2Rucmc2cVY5enFQWV9oWk5rTGc4dXI0UjdtTURKR3BKYTIycVpjRGd1LV9TRFhFbFFYWGY0MVpmQlV6cHd5eWVHQ3RoV01WVnpfS09pNVZzLTY4TElodWpVRTZpQ1dRRVpRQW5FdjFRSTNYUTl0aTBwblZnWFJCdlZB?oc=5",
+   "ts": 1795731498,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Form 4 insider-filing headline with no detail; routine filing, likely a planned sale or small transaction."
   }
  ],
  "reviews": [
@@ -8970,16 +8970,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.0739,
+  "day_usd": 0.07513,
   "month": "2026-11",
-  "month_usd": 2.06867,
-  "total_usd": 2.06867,
+  "month_usd": 2.0699,
+  "total_usd": 2.0699,
   "by_role": {
    "macro": 0.20195,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.22064,
+   "scout": 0.22187,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9247,7 +9247,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 17:18 ET",
+ "last_cycle": "2026-11-26 17:29 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -58061,13 +58061,14 @@
   "dbaa3c361e6d78b5",
   "6f138c10a977c951",
   "82e06a4ced981af5",
-  "70ec56bf0ac9a6fb",
   "40da66ea723efc8f",
+  "70ec56bf0ac9a6fb",
   "2cbbc694a2695e84",
   "cdc9a7381e6b445a",
   "9f2e45d00f1961dd",
   "fd4e2b9a2f429dd7",
   "563c0572b10f43bc",
+  "eb12d8083b06d4a8",
   "b78359c4e74e2d63",
   "c4bedc144af05ef5",
   "9cbd1f425af5c610",
@@ -58217,6 +58218,7 @@
   "e00c509cd96087a7",
   "844065448a881248",
   "d1c7122c048b2ed9",
+  "e7dbe4ad6ad7c861",
   "306dc38d51c88387",
   "1715e61816aa5619",
   "c71238280e152d73",
@@ -58334,6 +58336,7 @@
   "af6eb78442aeb47e",
   "80ca077103e2454d",
   "6903f08684a06b0c",
+  "c3be852342e66f22",
   "adde5ac42f49ca55",
   "4653461d7ed88855",
   "cb12badf9a3dbea8",
@@ -58586,7 +58589,7 @@
   "53fc8faedadd1796",
   "7ee1ad6e6041b23e"
  ],
- "news_slow_at": 1795731312.344129,
+ "news_slow_at": 1795731938.712555,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -220157,9 +220160,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 17:18",
+  "updated": "2026-11-26 17:29",
   "total": 842,
-  "week": 583,
+  "week": 581,
   "places": {
    "Uranium price": 50,
    "South Korea": 46,
@@ -220377,24 +220380,6 @@
     "numbers": [],
     "score": 7.3,
     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1NOWVjdXpXWFh5bG80U0FkRXBiU3FmT0kyaXBDVWQ5aVNEVnpUdnRrZlZSQy1MUkRNdXRTbFF0dWN4WTlGakZJTEFUSVhZbUd3OEo0dndzYVo?oc=5"
-   },
-   {
-    "date": "2026-11-19",
-    "title": "Utility Dive: PA Consumer Advocate Darryl Lawrence Joins Advocates In 7 Other PJM States, Independent PJM Market Monitor Urging PJM To Delay December Generation Auction To Avoid Billions In Added Costs To Consumers - PA ",
-    "outlet": "PA Environment Digest Blog",
-    "place": "PJM grid",
-    "tickers": [
-     "CEG",
-     "TLN",
-     "VST"
-    ],
-    "tags": [
-     "disruption",
-     "regulation"
-    ],
-    "numbers": [],
-    "score": 7.3,
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVmR4aWJTOGRXeVg5Vms4cHRvTFJna1A3SnpYVm0wMEl0Q25IMnUtYjZPalJuaGhkSV8wUnJqNFRWNjJMY3hnNXpFcnBkN1lTY0VJeElKd0lyWDhLUWVGTUUxNk0yckQxemp5UnRkRDVhYTRTSlBpSVJVaDRudHB4V2JuQ1d6X2MwWVl0YWdn?oc=5"
    },
    {
     "date": "2026-11-21",
@@ -220790,6 +220775,22 @@
     "numbers": [],
     "score": 6.36,
     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUkhJWUVIb1h2d2JjUzhQSTN2eF96SHk2QzVOTGJ1aWR1ODBFX1lLZkFIOGV1bzFhNU1mUW8xNDQzOWp4UVNVSHVaUC1YcWR3TUthendKNDM3UTY1TTdka0llbHA1ZXVJTUtERm01U1BiSXJKbmJaYmNwd0I1dHh4cW1Qc2pGbUFuZS04eHNGazV3dEpROTg5V3BRbmFQV3J0RUNNa0hZb19RcHlBTlhOU1Z3?oc=5"
+   },
+   {
+    "date": "2026-11-22",
+    "title": "'They are wrong': Defence minister denies US report on AUKUS submarines",
+    "outlet": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+    "place": "AUKUS and navies",
+    "tickers": [
+     "BWXT"
+    ],
+    "tags": [
+     "politics",
+     "defense"
+    ],
+    "numbers": [],
+    "score": 6.36,
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOWtpN1dKN09aTmh2clZaSmp6X0ZDZ3dicUp4NDl0b3JtT21ZTlp5MjNoM3UxX1VTQnNTRXhiUDNTc095U3luZ1IyZ0g1NUY2SG9ldjV6a3RSSHpDR2ZEOFV0S1BlT3plVnk4SGpVd0FIVUJHYm5XanBGTld4b0tnUWtEaDBVdTBUQno2T0U3emdJYUk3Wk5lT1o2THU1MUZ4dnphb0R5Q1M0ZDVFcFpwM1JB?oc=5"
    }
   ]
  },
@@ -220839,8 +220840,8 @@
   "85de31670d4daf9d",
   "dd57ba38f81c0a8f",
   "c5a7aa4d347cef23",
-  "7ffb052a70d145c2",
   "4039fa58057275ae",
+  "7ffb052a70d145c2",
   "d1148d05210e97b6",
   "03c5d2773ef94a7b",
   "a7baf61adc01832c",
@@ -223388,7 +223389,7 @@
    "built": "2026-11-26 17:02"
   }
  ],
- "heartbeat": "2026-11-26 17:18",
+ "heartbeat": "2026-11-26 17:29",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223629,15 +223630,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 397,
-   "used": 362,
+   "asked": 400,
+   "used": 365,
    "notes": {
-    "TLN Deals and contracts": 18,
+    "TLN Deals and contracts": 19,
     "CCJ Deals and contracts": 72,
     "BWXT Deals and contracts": 51,
-    "SECTOR Government and laws": 105,
+    "SECTOR Government and laws": 107,
     "UUUU Deals and contracts": 43,
-    "SECTOR Countries": 105,
+    "SECTOR Countries": 107,
     "CEG Deals and contracts": 50,
     "NXE Legal": 20,
     "NXE Deals and contracts": 19,
@@ -226978,6 +226979,16 @@
    "price": 351.55,
    "result": null,
    "why": "The desk notes give Black Friday to Monday a weak record for the power trio, but the holiday-dip and pre-holiday tests in the notes do not support a trade on it, and the PJM auction is the event that "
+  },
+  {
+   "role": "scout",
+   "ticker": "TLN",
+   "direction": "up",
+   "days": 3,
+   "date": "2026-11-26",
+   "price": 351.55,
+   "result": null,
+   "why": "The headline gives no buyer or seller, size, or whether it's a 10b5-1 plan. The desk notes show no related new deal or legal event, so there's nothing to tie it to."
   }
  ],
  "after_sale": [],
