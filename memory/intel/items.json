@@ -22976,5 +22976,373 @@
 "updated",
 "urges"
 ]
+},
+{
+"id": "e4ac8a636f9671f7",
+"date": "2026-11-24",
+"ts": 1795535564,
+"title": "12 RAN sailors and officers graduate from AUKUS n-power school",
+"summary": "",
+"outlet": "OwnedCore",
+"link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcmRSR3MwSEE2SUJKd3VMNFFTV2RfSk1oenZlNlVoTkJCTTF2aUFXQllQLXVtUUN1LTFleWtBWFc4ZGUxQXVFTFFWVTNSenJLT1I3eHctMnVWZURrRUZpa3ZoVHR4elFCdFBDaXB2Z1otWks0YnlEZXA1Y09TemROSnlvamwwa3VLMVJFMHFRWk0wWktrUmlLb3ZvNS1BSFZYSml0NFhNUQ?oc=5",
+"place": "AUKUS and navies",
+"tickers": [
+"BWXT"
+],
+"tags": [
+"defense"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.91,
+"score": 5.32,
+"echo_of": null,
+"w": [
+"aukus",
+"graduate",
+"officers",
+"power",
+"ran",
+"sailors",
+"school"
+]
+},
+{
+"id": "b500cde2f0b6d317",
+"date": "2026-11-26",
+"ts": 1795666980,
+"title": "Japan\u2019s Tepco Delays Nuclear Reactor Restart on Building Issue",
+"summary": "",
+"outlet": "Bloomberg",
+"link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZGNMMkhLY2VERnJQSldVcFJZTTE4djRCUVFRb1JUWE5SdGUxOXZvY0gtM0pDSHAzc1c4c2xyVHN4bzZwLUItdDV1Yi1uTUttVVZxbVNsX2FvNmdaYUVCMXFISlZZd2VGM3hzMGE3eUp0Y3JFYkpTYlEydTNib283d3N5Z2FORng0Y2JMckZNNlktZmdjc3hwVkt2Zk5iTlZSNURycExxUDNTa3BJaTg4cy1JOA?oc=5",
+"place": "Japan restarts",
+"tickers": [
+"CCJ",
+"CEG"
+],
+"tags": [
+"disruption",
+"restart"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.85,
+"score": 5.9,
+"echo_of": null,
+"w": [
+"building",
+"delays",
+"issue",
+"japan",
+"nuclear",
+"reactor",
+"restart",
+"tepco"
+]
+},
+{
+"id": "2406fcdcae12e82f",
+"date": "2026-11-26",
+"ts": 1795667585,
+"title": "\"South Korea's Pressurized-Water SMRs Among World's Top Three ... Uranium Enrichment Facilities Also Needed\"",
+"summary": "",
+"outlet": "\uc544\uc2dc\uc544\uacbd\uc81c",
+"link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1kam1VYUlvQ19Iejhtb0NWQUV5YkRESkhaUHdkWV9vWkdUSWtsNXBfRnBZQXV6ME5ZOUd0ejY0T3kwR05LcS12emt0WHhUOVRGalJWclNaS3M3bE5ybGFGNGFERFBFNktHRUtKd0c2aw?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT",
+"LEU"
+],
+"tags": [
+"restart",
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.83,
+"score": 6.16,
+"echo_of": null,
+"w": [
+"also",
+"among",
+"enrichment",
+"facilities",
+"korea",
+"needed",
+"pressurized",
+"smrs",
+"south",
+"three",
+"top",
+"uranium",
+"water",
+"world"
+]
+},
+{
+"id": "a57032b59ec923e8",
+"date": "2026-11-26",
+"ts": 1795668060,
+"title": "Kazakhstan's security committee detains Kazatomprom board member in corruption probe",
+"summary": "",
+"outlet": "AKIpress News Agency",
+"link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQLUhiNGxPWGdscWlVdWcxOXhIT0FVcllnZzRpbjN5OVFwWjlUbEZHSWd0LVhPN0Z1VXVsNXVkVEJTLWVFSXFnU1pVUGNDUWY4UTE4OUtPTjdRM3JZZVdiZEc5bktwMldCT1pGNE1BZ3B2LWVMRVhMdWZ2c1VjZ3lZVkhoYjRrS0hMS0xjMjVHbmkwdEI0U2ZLQjdieHRNNDExNnktUlN1aVRtNmRfSlZ6ZnlnYVVSWWxQOGc?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.4,
+"score": 3.3,
+"echo_of": "dcc0edd83779cab0",
+"w": [
+"board",
+"committee",
+"corruption",
+"detains",
+"kazakhstan",
+"kazatomprom",
+"member",
+"probe",
+"security"
+]
+},
+{
+"id": "a1458fceb950e78c",
+"date": "2026-11-26",
+"ts": 1795669572,
+"title": "South Korea Speeds New Contractor Selection for Czech Nuclear Project",
+"summary": "",
+"outlet": "\uc870\uc120\uc77c\ubcf4",
+"link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRUVQMkk2V0NJT3dqTWxFVktOeHlaWFpmUEJyS1NVN2xpSkl3cEFOQUpsN3lQMXVQUnRjMnJtbUhkajJCaGNOelRza2dDa2pGWHJtX2ZrMDdBME04Ujg4OFhpMGtoZWhUSzVzX3VIRXFyelFpaXpGQ21peFNXVmhrRFoySmFWQnI3Z0xmek93?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"contract"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.67,
+"score": 5.14,
+"echo_of": null,
+"w": [
+"contractor",
+"czech",
+"korea",
+"nuclear",
+"project",
+"selection",
+"south",
+"speeds"
+]
+},
+{
+"id": "83fedaaf2862448a",
+"date": "2026-11-26",
+"ts": 1795669740,
+"title": "Korea, Turkey push deeper nuclear energy and infrastructure cooperation",
+"summary": "",
+"outlet": "Korea JoongAng Daily",
+"link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNOFFFUUpvZDZ2QXJ3cFZpbVRmUWNEMEJjY1pUMXNrOGJ1aHhVRGQzZkxEY3hoSUw0MWJhc0k2NHczV1kzZU1JZ0l5R1hfZWdBWXNaLVhKcEtNLWFIZ3N2cHY4Ql9FeGNXRXBsd09HaGlDMzVGYWJvZ3ZsYlhkU0Zob0VGM3ItcjI0ejRSczR6eFRrWlZIeHdpS2xobTQzS2VMV29UVnM1ODZkWjVhMElTeVpMQmJQRXNEZmx0ag?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.4,
+"score": 3.3,
+"echo_of": "2b9a1a47d07b9669",
+"w": [
+"cooperation",
+"deeper",
+"energy",
+"infrastructure",
+"korea",
+"nuclear",
+"push",
+"turkey"
+]
+},
+{
+"id": "6c80f44c55ac31e7",
+"date": "2026-11-26",
+"ts": 1795669864,
+"title": "Kazakhstan Detains Operations Chief of Kazatomprom, World's Top Uranium Producer, in Corruption Probe",
+"summary": "",
+"outlet": "the deep dive",
+"link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSU9QWUVaY0NXaHp6X05reDFkYUhYbzBMNHFMTEtnc3NVNnZPbTFmbF85UC1PNmZLZWN0VlI1UXNzSnJkLUpTT0tDVl9Kcmx4R3BLSUNoV2VyZjlCa0t1QzFOOHlsMWtLcUd3UldPVUJHN0NnMG5uQXRTamY5VVh5M2VUX25IODBKZjRrOWZvOVh3OHZzb3BBMXpPeTBfdERveXdlYno1b2NYQVl4WGFSOWdpMHpVZ2prN3V4MmdqNA?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.58,
+"score": 3.66,
+"echo_of": null,
+"w": [
+"chief",
+"corruption",
+"detains",
+"kazakhstan",
+"kazatomprom",
+"operations",
+"probe",
+"producer",
+"top",
+"uranium",
+"world"
+]
+},
+{
+"id": "5af3e6f198a988c8",
+"date": "2026-11-25",
+"ts": 1795649580,
+"title": "BREAKING NEWS: N. Korea media release photos of Kim inspecting apparent nuclear warheads",
+"summary": "",
+"outlet": "Japan Wire by Kyodo News",
+"link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9lSnRhMlRRZUVpLXE5WVRiQ2pQRWpBQ0FhVlhpNC13Zk1CV2c0U1Vmb3BuaFpwRWxRaTJibEdTYTFzeFpqVmZMcXY4ZjBnSG9hck5qeWh6RXY1QQ?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"defense",
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.85,
+"score": 6.5,
+"echo_of": null,
+"w": [
+"apparent",
+"breaking",
+"inspecting",
+"kim",
+"korea",
+"media",
+"news",
+"nuclear",
+"photos",
+"release",
+"warheads"
+]
+},
+{
+"id": "3c77cda707b00d0a",
+"date": "2026-11-26",
+"ts": 1795661015,
+"title": "N. Korea's Kim inspects nuclear material sites, calls for broader use of tactical nukes",
+"summary": "",
+"outlet": "The Korea Herald",
+"link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAyUVNIZW5adjdhTDZ4LTQzNkhqSEJKRzVUc2tZQXMxVmtVdWlTekYwWW5vZ2gtc0t2WjRwemNlMVB0MTVvVGpyN29QNk5OdER1NWR6bXRCVQ?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.08,
+"score": 2.66,
+"echo_of": "0f53098d8dc70479",
+"w": [
+"broader",
+"calls",
+"inspects",
+"kim",
+"korea",
+"material",
+"nuclear",
+"nukes",
+"sites",
+"tactical",
+"use"
+]
+},
+{
+"id": "7574e0b98bf014d1",
+"date": "2026-11-26",
+"ts": 1795669860,
+"title": "TEPCO delays restart of reactor at Niigata nuclear plant by over 1 year",
+"summary": "",
+"outlet": "Japan Wire by Kyodo News",
+"link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1fUFRPTGRsbFVUc3NNck1NcU5aeFFhMzJNZDcxZndwZDZxWUxLTUs1dDNLV1J3U01iLWk5ZTRWY3lKM3lpTGVDcWxqVUQzTXNQeHFUX1luR01UQQ?oc=5",
+"place": "Japan restarts",
+"tickers": [
+"CCJ",
+"CEG"
+],
+"tags": [
+"disruption",
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.55,
+"score": 6.3,
+"echo_of": null,
+"w": [
+"delays",
+"niigata",
+"nuclear",
+"plant",
+"reactor",
+"restart",
+"tepco",
+"year"
+]
+},
+{
+"id": "e68e9fb8f0fc6b78",
+"date": "2026-11-26",
+"ts": 1795671277,
+"title": "Samsung C&T joins project to build Korea\u2019s next-gen fusion reactor",
+"summary": "",
+"outlet": "mkbn.mk.co.kr",
+"link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA0MGlWQVMwek94SG9wSVNfcXFjTE1nR1NkNHhmZVpHa3F2TWpmZkRtdVlBTHdYeFhBQ0lTdmk1SklFbGlLdzJub0ZIUzgtakpQZm5Xc0NR?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.83,
+"score": 4.86,
+"echo_of": null,
+"w": [
+"build",
+"fusion",
+"gen",
+"joins",
+"korea",
+"next",
+"project",
+"reactor",
+"samsung"
+]
 }
 ]

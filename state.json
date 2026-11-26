@@ -341,8 +341,8 @@
   ],
   "week": "2026-W48",
   "week_start": 1000.514157479616,
-  "day": "2026-11-25",
-  "day_start": 1016.5357804553572,
+  "day": "2026-11-26",
+  "day_start": 1005.4579269604731,
   "killed": false,
   "wash_flags": [
    {
@@ -547,7 +547,7 @@
   "radarres:2026-11-24": true,
   "questioner:2026-11-24:9": true,
   "sput:2026-11-24": true,
-  "intraday_backfill_t": 1795668419.8298786,
+  "intraday_backfill_t": 1795672615.5724978,
   "reconcile:2026-11-24": true,
   "catalysts:2026-11-25": true,
   "tidy_v1": true,
@@ -612,7 +612,8 @@
   "nightwatch191:2026-11-25": true,
   "ahdip192:2026-11-25": true,
   "nightwatch192:2026-11-25": true,
-  "questioner:2026-11-25:10": true
+  "questioner:2026-11-25:10": true,
+  "catalysts:2026-11-26": true
  },
  "benchmark": {
   "shares": {
@@ -4196,162 +4197,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CEG",
-   "source": "Local intel: OrangeSlices AI (NRC decisions)",
-   "title": "Cygnus secures Nuclear Regulatory Commission (NRC) CLE Support contract",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZUUzbDkyUFVvTzVkTHFlN2M2cnRKSE03eDJKeGF4Y09pYkpXNUgwdGplMlJDdWFuTTRCQTZYdDNxV28teFNEWm1jWC1lRFJCV1JEMGM5X2U3RUktYXZoU1BOTjRya0VyaldWQkF4UUNxcjBleXlVVlRZRFlvbGlaLXNobXlUQ3RVYm9zWWpoVVpWVFhRMEpnc0VB?oc=5",
-   "ts": 1795493985,
-   "materiality": 3,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "contract_deal",
-   "why": "Cygnus is a small NRC support contractor, not a Constellation deal, so little effect on CEG."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Aura Energy (ASX:AEE): Tiris Uranium Study Outcomes, Funding Plan and December 2026 Decision Point - Kalkine",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWUp4Snhyd3h2MnNYYmtIa3I0aUhsRDBfWnNNb3pzLVVXekJ4cmVTeDNxU3RUUXBBSFQyWFN4S19OWVQ3cW1Ud0YwSS1OVVlZSG9aa2ZnRVJodktMdEU0VzJ0Z25fRkU4TWZqdjg5eDdmRVBXRjRmUjFOQ2tjUGVkb1ZHSTFuMVZjNzdDTjRHVDhMSXNscWpWOXZueUo0UnlVTGlZeGxpSGNFa0pMc3JtYUtDVTVXTFRrTnppSUpyYjN0TWlKdktz?oc=5",
-   "ts": 1795517700,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Promotional Kalkine piece about Aura Energy, an unrelated ASX uranium developer; no CCJ news."
-  },
-  {
-   "ticker": "LEU",
-   "source": "Google News",
-   "title": "Centrus Energy Stock Gets Oklo HALEU Supply Deal Backed By Meta - Simply Wall St",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWWdLblRJY3RtM2xIYkRSeE1KQ0xHX3ZXN0dJbDlkdUs3YVVQMDJvQkZqNkl3ZnNKajFRVVloakR1WUxFQUVZZGJ3YkdMS2F4U1d0c1QyV0ViZVBfalRCVmVlQm1QSGhheW1JQ0wzenlQWk9ZZmtFQ29WR3FTbmlrX1FSdlJxUUdzaEd5Q2xzNjBLSWpDd1llZHVLQ3Zfa2RjalF5azZJTzc2bmlRdUZoNWl4QUY2QWwtb09HWVRwai1xaDN1YlFn0gHMAUFVX3lxTE92VFBzeGY3RTZQNHJIOUg3dTF4MnA5RzZzWEJJbzBtcC1fRmdCeDBMRkJxNVZrRVI4bGVVREZFR1kxaXNleWdIN052VVlnejZ4YXRvekdCSDNGZjJPNjFWc29mYXhuRXdzdUozdWZqemk3UEtYSzNGaTljOXRnX3BnZXVreHB4NVFocmdaWDhMaDJqYTRIdjNPT1M5d2tUQ3htWV9mX29fNllscjFGNnVRODQ4Q3ZkcmY2QkFlMzBtTm1Udi1MWVRvZ1RsSg?oc=5",
-   "ts": 1795518786,
-   "materiality": 4,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "contract_deal",
-   "why": "Oklo HALEU supply deal already reported in desk notes Nov 18; this is a recap."
-  },
-  {
-   "ticker": "DNN",
-   "source": "Google News",
-   "title": "Denison Mines Stock In Focus As Phoenix Build Advances And Darby Drilling Adds Support - Simply Wall St",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNcEM3dkMzY2Q5aW5PaXpLNW12WVU5Q2t2RlRSWENVQXN0bEk3bkxhSFA4V29nVlJOTy1Za0ZEMncwWjBnUVFzVDNYVi1FTTdKQ1lRNHdLS2tJSnhUQ1ltRlI2b0N5cXE2cno1QVhJbTl3OFp0YkdYMTFuMVBzX1ppS0xMWjlUbzVoWEtmNG5fLTdTMlR6LU1BUEJXZ2hIcWdheU0tNVhMZ2Y2RHFibXVRNWlHMVVuMlVCZzhwZ2dkajZwX0FDWXpRMHRtd3RvZ9IB0wFBVV95cUxQMkpHZjRxR2FFeUFWTkNhbF9iN1JMdzNGVmNVenp6c3Etc1k4RXRPTHVlRnMycXgyaWpJSTBWNzlIZEF0UnZUNFlZM0loU2JrX3QyQ0pmY0p0LXhWU1dZdFVVa1dqLVNaT2YwWkVxeEJUVVY3VnlZNEdod2Jwem92Uk1ZVUMxNXM4NWlDZnR2OWx4a2hKbjZPSFZfZGhLY3ZXVUJBb2RGZEQ1NkgtcVRTUUdrLWpLblVTa0ZMWEZ1dGk3VWNVQmFZcVVDS0pGQ2FuUTI0?oc=5",
-   "ts": 1795518784,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Simply Wall St feature recapping Phoenix build and drilling; no new company information."
-  },
-  {
-   "ticker": "NXE",
-   "source": "Google News: \"NexGen Energy\"",
-   "title": "NXE: SEC Form 6-K filed by Nexgen Energy Ltd. - Quantisnow",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWUJDOE9CWFNySm4tSzZPWV95STNjVlE5ZDJkT293amlZS1pHMWtlRmJkVkZZREVLYzlrb3RMQ2ItSlA3dGh3R1dPMUt4eTY4TnFDLXRlY0UxVWZWbGVPNTc0U3ZPaFB0VWIyU0k3REdwR3diNE1WUGxUTzNhaWtwdkJCRUY?oc=5",
-   "ts": 1795520498,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic SEC 6-K filing notice with no substantive content shown."
-  },
-  {
-   "ticker": "NXE",
-   "source": "Google News",
-   "title": "NexGen Energy Ltd.: NexGen Grows High-Grade Subdomain Vertically and Along Strike and Further Confirms Strong Continuity of Intense High-Grade Mineralization at Patterson Corridor East (PCE) - FinanzN",
-   "link": "https://news.google.com/rss/articles/CBMivwJBVV95cUxQNE03ZGprOV9Dd1ViZVVad1BHUHo4VHZqd05NSHpYNzNQeXBVWER3bS1XWUZHeXN1UldxMlpJMVhuUm9KQWtyd3FmbzdoV2UxYVZmVzRYTXVGMk5rVjZPZTEzTElYTEppVEp1T2RsNDBRemYxZ2pzcXBDWXc2Rzh5emFMVF96SHNzVFNPMjNjMVd4bTNHUk9nN3VONzhHRnBHeEhSdUdaVkp1MHgtVmxpbURDR2JpanVwQmg0ZTA2TFFMc3JxR0dtWlJrNWFaZFhSTnh4VEhGaUdGVVhXMWRwVWt4VDM2RVlxNFA3ckc3YkM3a25QcjJEU1NSWVhQcVRFQXNweVg2WFAzYTNSU1dnSUdqZUVIZDZtVjItenROLXVnVlZuLWlCR2pmMzdlamdkc0YydjM1T2p5c2tpMERz?oc=5",
-   "ts": 1795520280,
-   "materiality": 5,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "other",
-   "why": "Fresh high-grade drill results at Patterson Corridor East, a real company-specific resource signal."
-  },
-  {
-   "ticker": "NXE",
-   "source": "SEC filing",
-   "title": "SEC 6-K filed: FORM 6-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1698535/000106299326006241/form6k.htm",
-   "ts": 1795519852,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Bare 6-K filing title with no information about its contents."
-  },
-  {
-   "ticker": "LEU",
-   "source": "Yahoo (BWXT, related to LEU)",
-   "title": "BWX Technologies (BWXT) Could Be 43% Undervalued As AP1000 Qualification Expands Its Nuclear Reach",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/bwx-technologies-bwxt-could-43-111259220.html?.tsrc=rss",
-   "ts": 1795518779,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "contract_deal",
-   "why": "BWXT-related Canadian AP1000 qualification; valuation piece, mainly a BWXT story, weak for LEU."
-  },
-  {
-   "ticker": "UUUU",
-   "source": "Yahoo Finance",
-   "title": "Energy Fuels (TSX:EFR) Targets 1 Million Pounds Of U3O8 At White Mesa Mill",
-   "link": "https://finance.yahoo.com/energy/articles/energy-fuels-tsx-efr-targets-111032564.html?.tsrc=rss",
-   "ts": 1795518632,
-   "materiality": 4,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "supply",
-   "why": "Plan to process 1M lb U3O8 at White Mesa is real volume news, but it's a plan, not yet sales."
-  },
-  {
-   "ticker": "UEC",
-   "source": "Local intel: SQ Magazine (Wyoming ISR)",
-   "title": "Peninsula Energy Halts Trading After Breach Hits Wyoming Uranium Mine",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9XUkl3aVB3SVJxR2pUWXdMSG1lbnAyeTJMWGxGZzlPdXVlbHhZZXdHdWg5U0tIRlZ6NEtaOWNRV3VrRVhNNldzQTFJcDZqZDRXSDhiYXdGdlhsWi1pZ01IT3Njb0hRMkgyVldEUlhZYWFRLTgzQld4WQ?oc=5",
-   "ts": 1795520321,
-   "materiality": 6,
-   "novelty": "new",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Security breach halting trading at a Wyoming ISR mine; operational risk, but peer Peninsula is the affected company, not UEC."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Local intel: oEnergetice.cz (South Korea)",
-   "title": "KHNP to commission study to calculate Czech firms\u2019 share in Dukovany, promises 60 percent",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTU1FQng2a2k0Qm9EWE5EUl91UWJjVVRaWnFkb3F5bC0tZmxLa3Y5aHlPZi10bjg1cWZNZTJvbm9FTmVBbThOY3ExR2ZCdy1qbE5sMG1VOEM1UXBqeWZua1c5eXNUVmVpVDJlLVc3UndZcjZ4akhBaVVueVMxdmtMTkN5QkQxaDlGTTVqbXRaWUg5ZkFJMHY3Q2lsMXBVRlZscHJoWjQwRkRRVndkSEE3TkFsM3poenA0R1I5NnZmV0xMaG1FMHc?oc=5",
-   "ts": 1795517220,
-   "materiality": 2,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "contract_deal",
-   "why": "Czech Dukovany localization study by KHNP; vague, no dated outcome, and CCJ's direct exposure is indirect."
-  },
-  {
-   "ticker": "LEU",
-   "source": "PR Newswire energy",
-   "title": "Centrus Energy to Host Investor Day on December 7, 2026",
-   "link": "https://www.prnewswire.com/news-releases/centrus-energy-to-host-investor-day-on-december-7-2026-302948891.html",
-   "ts": 1795521600,
-   "materiality": 6,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Investor Day announcement; logistics only, real content comes Dec 7."
-  },
-  {
-   "ticker": "BWXT",
-   "source": "Google News: \"BWX Technologies\"",
-   "title": "BWX Technologies (BWXT) Could Be 43% Undervalued As AP1000 Qualification Expands Its Nuclear Reach - Yahoo Finance",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSFkxNTFlTnMxMk9kVVluZ0ktRmoydHJwQmhoWG0tblV1cVFacW1BU0FGU0hEVnlsWlZMdmJGT0FSVHh5TGJXV1liaHEyeFBQdnM1dDdWUEZ4bGdTaEZ5ZjV4blJKekhLUWFodFRTWlh0RXFELUpZV1VSU0dvMVRVTW5WWUNnWXhORmJQZXVIWWZUMUlwR25sbGZnaw?oc=5",
-   "ts": 1795518779,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Valuation opinion piece on AP1000 qualification; recap, not new information."
-  },
-  {
    "ticker": "UEC",
    "source": "Google News: \"Uranium Energy Corp\"",
    "title": "Uranium Energy Corp. (UEC) options chain \u2013 Yahoo Finance - Yahoo Finance Singapore",
@@ -7194,6 +7039,162 @@
    "direction": "neutral",
    "event_type": "war_geopolitics",
    "why": "South Korean defense ministry statement on North Korea's nuclear arms; no uranium supply or demand link."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Yahoo (NXE, related to CCJ)",
+   "title": "Federal Approval Could Be A Big Moment For NexGen Energy Stock (TSX:NXE)",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/federal-approval-could-big-moment-043756388.html?.tsrc=rss",
+   "ts": 1795667876,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Annual sustainability report is routine ESG filing, not new financial or regulatory information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Kazatomprom",
+   "title": "Kazakhstan Detains Operations Chief of Kazatomprom, World's Top Uranium Producer, in Corruption Probe - the deep dive",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSU9QWUVaY0NXaHp6X05reDFkYUhYbzBMNHFMTEtnc3NVNnZPbTFmbF85UC1PNmZLZWN0VlI1UXNzSnJkLUpTT0tDVl9Kcmx4R3BLSUNoV2VyZjlCa0t1QzFOOHlsMWtLcUd3UldPVUJHN0NnMG5uQXRTamY5VVh5M2VUX25IODBKZjRrOWZvOVh3OHZzb3BBMXpPeTBfdERveXdlYno1b2NYQVl4WGFSOWdpMHpVZ2prN3V4MmdqNA?oc=5",
+   "ts": 1795669864,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "down",
+   "event_type": "war_geopolitics",
+   "why": "Kazakh arrest of Kazatomprom's operations chief raises supply-disruption and governance risk for the world's top uranium producer."
+  },
+  {
+   "ticker": "NXE",
+   "source": "Google News: \"NexGen Energy\"",
+   "title": "Federal Approval Could Be A Big Moment For NexGen Energy Stock (TSX:NXE) - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOczlKb2VocHZPNDc1ZnRqRElqaFE5cnlqOHJGcUxybHgybW1hTmY4TlJ0QXFkY3ZCcFZNVU45TGIxeGUtZnBuRjFTbzBhRFZISERYY2VNQTJ6WURCREJqWTE0OTlFWWhlN3ozZGVoTXR2cnFHYkFIM3hSbUhwNTNua0t4SlZRNWlJMDIxbFBkaGE0eHFCTkQzaERrUS1KNzQ?oc=5",
+   "ts": 1795667820,
+   "materiality": 5,
+   "novelty": "follow_up",
+   "direction": "up",
+   "event_type": "policy_tariff",
+   "why": "Federal approval for NexGen is a real regulatory step, but the Rook 1 CNSC license was already issued in March and this is a rehash."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News: \"uranium enrichment\" United States",
+   "title": "\"South Korea's Pressurized-Water SMRs Among World's Top Three ... Uranium Enrichment Facilities Also Needed\" - \uc544\uc2dc\uc544\uacbd\uc81c",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1kam1VYUlvQ19Iejhtb0NWQUV5YkRESkhaUHdkWV9vWkdUSWtsNXBfRnBZQXV6ME5ZOUd0ejY0T3kwR05LcS12emt0WHhUOVRGalJWclNaS3M3bE5ybGFGNGFERFBFNktHRUtKd0c2aw?oc=5",
+   "ts": 1795667585,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic South Korea SMR article about enrichment capacity; no company-specific news for Centrus."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: \uc544\uc2dc\uc544\uacbd\uc81c (South Korea)",
+   "title": "\"South Korea's Pressurized-Water SMRs Among World's Top Three ... Uranium Enrichment Facilities Also Needed\"",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1kam1VYUlvQ19Iejhtb0NWQUV5YkRESkhaUHdkWV9vWkdUSWtsNXBfRnBZQXV6ME5ZOUd0ejY0T3kwR05LcS12emt0WHhUOVRGalJWclNaS3M3bE5ybGFGNGFERFBFNktHRUtKd0c2aw?oc=5",
+   "ts": 1795667585,
+   "materiality": 4,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "policy_tariff",
+   "why": "Korean SMR and enrichment plans are long-dated demand signals, not near-term contracts."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: Bloomberg (Japan restarts)",
+   "title": "Japan\u2019s Tepco Delays Nuclear Reactor Restart on Building Issue",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZGNMMkhLY2VERnJQSldVcFJZTTE4djRCUVFRb1JUWE5SdGUxOXZvY0gtM0pDSHAzc1c4c2xyVHN4bzZwLUItdDV1Yi1uTUttVVZxbVNsX2FvNmdaYUVCMXFISlZZd2VGM3hzMGE3eUp0Y3JFYkpTYlEydTNib283d3N5Z2FORng0Y2JMckZNNlktZmdjc3hwVkt2Zk5iTlZSNURycExxUDNTa3BJaTg4cy1JOA?oc=5",
+   "ts": 1795666980,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "down",
+   "event_type": "other",
+   "why": "Tepco restart delay is a Japan utility setback; minor, indirect effect on uranium demand."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: \uc870\uc120\uc77c\ubcf4 (South Korea)",
+   "title": "South Korea Speeds New Contractor Selection for Czech Nuclear Project",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRUVQMkk2V0NJT3dqTWxFVktOeHlaWFpmUEJyS1NVN2xpSkl3cEFOQUpsN3lQMXVQUnRjMnJtbUhkajJCaGNOelRza2dDa2pGWHJtX2ZrMDdBME04Ujg4OFhpMGtoZWhUSzVzX3VIRXFyelFpaXpGQ21peFNXVmhrRFoySmFWQnI3Z0xmek93?oc=5",
+   "ts": 1795669572,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Czech contractor selection is a procurement step; no direct uranium volume for CCJ."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Yahoo (NXE, related to CCJ)",
+   "title": "NexGen Energy (TSX:NXE) Stock Looks Overvalued On Its 74% Five Year Run",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/nexgen-energy-tsx-nxe-stock-051628722.html?.tsrc=rss",
+   "ts": 1795670188,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Valuation opinion piece on a stock already down sharply; no new company information."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News: nuclear plant restart",
+   "title": "TEPCO delays restart of reactor at Niigata nuclear plant by over 1 year - Japan Wire by Kyodo News",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1fUFRPTGRsbFVUc3NNck1NcU5aeFFhMzJNZDcxZndwZDZxWUxLTUs1dDNLV1J3U01iLWk5ZTRWY3lKM3lpTGVDcWxqVUQzTXNQeHFUX1luR01UQQ?oc=5",
+   "ts": 1795669860,
+   "materiality": 4,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "TEPCO delays a Japanese reactor restart; a foreign plant, not Constellation's own fleet."
+  },
+  {
+   "ticker": "NXE",
+   "source": "Google News: \"NexGen Energy\"",
+   "title": "NexGen Energy (TSX:NXE) Stock Looks Overvalued On Its 74% Five Year Run - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUi1CRXJSRzVyQWx6bjdBM0x4eEtkWW9acTZENHFOQVZqQ1RiOE9ZejkybmVxSkxTNWl5aS1vdTQ2MEo4cmRUemllWjBKS1RGRjcyb2ZKM25OQ2lHZXBRc3lib2J6dnFlNG5WVG9iUjdFR29pRFNfQUpFR1VfWG5yT1BKWmQwMkl0M2FEMFc4ZUNvNWhVS2I0?oc=5",
+   "ts": 1795670160,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Opinion piece on valuation after a past rally; no new company information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: Japan Wire by Kyodo News (South Korea)",
+   "title": "BREAKING NEWS: N. Korea media release photos of Kim inspecting apparent nuclear warheads",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9lSnRhMlRRZUVpLXE5WVRiQ2pQRWpBQ0FhVlhpNC13Zk1CV2c0U1Vmb3BuaFpwRWxRaTJibEdTYTFzeFpqVmZMcXY4ZjBnSG9hck5qeWh6RXY1QQ?oc=5",
+   "ts": 1795649580,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "North Korea weapons news has no direct link to uranium miner demand or supply."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: Japan Wire by Kyodo News (Japan restarts)",
+   "title": "TEPCO delays restart of reactor at Niigata nuclear plant by over 1 year",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1fUFRPTGRsbFVUc3NNck1NcU5aeFFhMzJNZDcxZndwZDZxWUxLTUs1dDNLV1J3U01iLWk5ZTRWY3lKM3lpTGVDcWxqVUQzTXNQeHFUX1luR01UQQ?oc=5",
+   "ts": 1795669860,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "down",
+   "event_type": "other",
+   "why": "Delayed Niigata reactor restart is a small negative for Japanese nuclear fuel demand."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: mkbn.mk.co.kr (South Korea)",
+   "title": "Samsung C&T joins project to build Korea\u2019s next-gen fusion reactor",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA0MGlWQVMwek94SG9wSVNfcXFjTE1nR1NkNHhmZVpHa3F2TWpmZkRtdVlBTHdYeFhBQ0lTdmk1SklFbGlLdzJub0ZIUzgtakpQZm5Xc0NR?oc=5",
+   "ts": 1795671277,
+   "materiality": 2,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Fusion reactor project is long-dated and unlikely to affect near-term uranium demand."
   }
  ],
  "reviews": [
@@ -8952,17 +8953,17 @@
   "mode": "fixed"
  },
  "spend": {
-  "day": "2026-11-25",
-  "day_usd": 0.8112,
+  "day": "2026-11-26",
+  "day_usd": 0.00261,
   "month": "2026-11",
-  "month_usd": 1.99476,
-  "total_usd": 1.99476,
+  "month_usd": 1.99737,
+  "total_usd": 1.99737,
   "by_role": {
    "macro": 0.19341,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.18121,
+   "scout": 0.18382,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9230,7 +9231,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 23:52 ET",
+ "last_cycle": "2026-11-26 00:55 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -9294,7 +9295,7 @@
  },
  "brakes": {
   "equity": 1005.46,
-  "day_pct": -1.09,
+  "day_pct": 0.0,
   "week_pct": 0.49,
   "drawdown_pct": -4.64,
   "no_new_today": false,
@@ -57913,6 +57914,7 @@
   "e979a258e0a7a737",
   "7cabb45f8b0c2778",
   "85342e1a4ce58044",
+  "3a1ae63cc1a72974",
   "ba16c7429b99dacc",
   "1e9ac2ee38a1003f",
   "42e4688c154f3e5b",
@@ -58173,6 +58175,7 @@
   "4253203526d47c05",
   "9cd5f827ff39e8aa",
   "87e89d05178171d2",
+  "5b01b61297fa5566",
   "5e042fd73e80d40b",
   "ba95c26fe9cef12b",
   "ca2a5c0a1baa2527",
@@ -58183,6 +58186,7 @@
   "be5409ee82f38fd4",
   "f95adf233d7e88ad",
   "b3d0414ef4889ee9",
+  "2406fcdcae12e82f",
   "22706e6619f0e685",
   "d677eaa6f8d45c1c",
   "5f7aff03201cc4dd",
@@ -58307,6 +58311,7 @@
   "d94f7a7a6e8a9559",
   "59c6f6be8bf3e5a9",
   "6a9cba33d2515f5c",
+  "8b7430f97f534e3f",
   "2cbbc694a2695e84",
   "f1f8a01f5b2d2080",
   "ca43d60a172846f5",
@@ -58358,6 +58363,7 @@
   "67a6b806516eadaf",
   "a7baf61adc01832c",
   "00667c7b98791b66",
+  "6c80f44c55ac31e7",
   "9f80c9fee3eed575",
   "23858b9754409f40",
   "e00ac0592374a28e",
@@ -58375,6 +58381,7 @@
   "e7f494cb247bf154",
   "ed1aa0f23535adaa",
   "acd35ca94b40c5e4",
+  "7574e0b98bf014d1",
   "5bc99c203ef396a3",
   "48bd8b45af68192c",
   "bba7be1f52034a41",
@@ -58425,6 +58432,7 @@
   "8010bdf39626577f",
   "9f1e3828f2663395",
   "cb12badf9a3dbea8",
+  "1ed51b1b4a94c209",
   "0aae6b6b8e76884b",
   "745180d0d8db2d66",
   "1e0cc3bcfe7407b4",
@@ -58436,6 +58444,7 @@
   "1715e61816aa5619",
   "e12d3a4edb7295a2",
   "b1e399ca01445ae4",
+  "a57032b59ec923e8",
   "15fecb83818a0949",
   "63e7ca0ff352dff7",
   "a82f81d0eb01a7ed",
@@ -58474,9 +58483,10 @@
   "a4aac5316a0eb878",
   "c527b52a6d387b5e",
   "973920b429b0e9a0",
-  "21888157b537cd9b"
+  "21888157b537cd9b",
+  "712897a34ec8bffb"
  ],
- "news_slow_at": 1795668485.8197043,
+ "news_slow_at": 1795672683.3636713,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219627,6 +219637,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "CCJ",
+   "type": "war_geopolitics",
+   "title": "Kazakhstan Detains Operations Chief of Kazatomprom, World's Top Uranium Producer, in Corruption Probe - the deep dive",
+   "date": "2026-11-26",
+   "price": 61.56,
+   "materiality": 6,
+   "direction_called": "down",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -219642,148 +219664,148 @@
    "lesson": null
   }
  ],
- "intel_at": 1795668321.3170552,
+ "intel_at": 1795672520.9606824,
  "intel_health": {
-  "at": "2026-11-25 23:46",
+  "at": "2026-11-26 00:56",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
-   "Athabasca Basin": 6,
+   "Athabasca Basin": 10,
    "Saskatchewan wildfires": 5,
    "Rook I / Arrow": 7,
    "Wheeler River / Phoenix": 8,
    "Port Hope / Blind River": 0,
    "Westinghouse": 12,
-   "Kazakhstan": 26,
+   "Kazakhstan": 19,
    "Niger": 7,
-   "Namibia": 28,
+   "Namibia": 35,
    "Russia supply": 3,
    "Piketon": 24,
    "HALEU": 11,
-   "Wyoming ISR": 43,
+   "Wyoming ISR": 22,
    "South Texas ISR": 2,
    "White Mesa / Utah": 14,
-   "Rare earths (Energy Fuels)": 21,
+   "Rare earths (Energy Fuels)": 17,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 11,
+   "Naval reactors": 10,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 5,
-   "Comanche Peak": 6,
+   "Comanche Peak": 7,
    "PJM grid": 14,
-   "ERCOT grid": 0,
+   "ERCOT grid": 12,
    "Data-center nuclear deals": 8,
-   "Japan restarts": 0,
-   "China new builds": 10,
-   "Congress and laws": 0,
-   "NRC decisions": 11,
-   "Energy Department": 72,
+   "Japan restarts": 9,
+   "China new builds": 13,
+   "Congress and laws": 49,
+   "NRC decisions": 20,
+   "Energy Department": 70,
    "White House and executive orders": 40,
-   "Tariffs and trade": 1,
-   "India": 0,
+   "Tariffs and trade": 2,
+   "India": 24,
    "South Korea": 100,
-   "Europe new builds": 63,
-   "France and UK": 11,
-   "Middle East": 56,
-   "Asia newcomers": 23,
+   "Europe new builds": 30,
+   "France and UK": 17,
+   "Middle East": 28,
+   "Asia newcomers": 50,
    "Canada SMRs": 10,
-   "Big tech power deals": 65,
-   "Iran": 51,
-   "North Korea": 75,
+   "Big tech power deals": 27,
+   "Iran": 27,
+   "North Korea": 81,
    "War zones": 32,
-   "AUKUS and navies": 15,
-   "Weapons programs": 24,
-   "Stockpiles and reserves": 26,
+   "AUKUS and navies": 22,
+   "Weapons programs": 18,
+   "Stockpiles and reserves": 25,
    "Sprott trust": 7,
-   "Uranium price": 16,
+   "Uranium price": 41,
    "US policy": 0,
    "Lawsuits and investigations": 72,
-   "Workers and jobs": 24,
+   "Workers and jobs": 45,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
    "Federal Register (uranium)": 9,
-   "Federal Register (nuclear)": 27,
+   "Federal Register (nuclear)": 25,
    "NRC event reports": 3
   },
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 23:52",
-  "total": 711,
-  "week": 525,
+  "updated": "2026-11-26 00:56",
+  "total": 722,
+  "week": 532,
   "places": {
-   "Uranium price": 48,
-   "South Korea": 41,
+   "Uranium price": 47,
+   "South Korea": 45,
    "Weapons programs": 28,
    "Europe new builds": 27,
    "Workers and jobs": 26,
    "Piketon": 26,
    "World Nuclear News": 24,
-   "Kazakhstan": 21,
-   "AUKUS and navies": 20,
+   "Kazakhstan": 22,
+   "AUKUS and navies": 21,
    "War zones": 19,
    "Asia newcomers": 17,
    "Rare earths (Energy Fuels)": 15
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-25 23:46",
+   "at": "2026-11-26 00:56",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
-    "Athabasca Basin": 6,
+    "Athabasca Basin": 10,
     "Saskatchewan wildfires": 5,
     "Rook I / Arrow": 7,
     "Wheeler River / Phoenix": 8,
     "Port Hope / Blind River": 0,
     "Westinghouse": 12,
-    "Kazakhstan": 26,
+    "Kazakhstan": 19,
     "Niger": 7,
-    "Namibia": 28,
+    "Namibia": 35,
     "Russia supply": 3,
     "Piketon": 24,
     "HALEU": 11,
-    "Wyoming ISR": 43,
+    "Wyoming ISR": 22,
     "South Texas ISR": 2,
     "White Mesa / Utah": 14,
-    "Rare earths (Energy Fuels)": 21,
+    "Rare earths (Energy Fuels)": 17,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 11,
+    "Naval reactors": 10,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 5,
-    "Comanche Peak": 6,
+    "Comanche Peak": 7,
     "PJM grid": 14,
-    "ERCOT grid": 0,
+    "ERCOT grid": 12,
     "Data-center nuclear deals": 8,
-    "Japan restarts": 0,
-    "China new builds": 10,
-    "Congress and laws": 0,
-    "NRC decisions": 11,
-    "Energy Department": 72,
+    "Japan restarts": 9,
+    "China new builds": 13,
+    "Congress and laws": 49,
+    "NRC decisions": 20,
+    "Energy Department": 70,
     "White House and executive orders": 40,
-    "Tariffs and trade": 1,
-    "India": 0,
+    "Tariffs and trade": 2,
+    "India": 24,
     "South Korea": 100,
-    "Europe new builds": 63,
-    "France and UK": 11,
-    "Middle East": 56,
-    "Asia newcomers": 23,
+    "Europe new builds": 30,
+    "France and UK": 17,
+    "Middle East": 28,
+    "Asia newcomers": 50,
     "Canada SMRs": 10,
-    "Big tech power deals": 65,
-    "Iran": 51,
-    "North Korea": 75,
+    "Big tech power deals": 27,
+    "Iran": 27,
+    "North Korea": 81,
     "War zones": 32,
-    "AUKUS and navies": 15,
-    "Weapons programs": 24,
-    "Stockpiles and reserves": 26,
+    "AUKUS and navies": 22,
+    "Weapons programs": 18,
+    "Stockpiles and reserves": 25,
     "Sprott trust": 7,
-    "Uranium price": 16,
+    "Uranium price": 41,
     "US policy": 0,
     "Lawsuits and investigations": 72,
-    "Workers and jobs": 24,
+    "Workers and jobs": 45,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
     "Federal Register (uranium)": 9,
-    "Federal Register (nuclear)": 27,
+    "Federal Register (nuclear)": 25,
     "NRC event reports": 3
    },
    "failed": []
@@ -220138,6 +220160,23 @@
     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5FTWs4Tm1GVGwwdFpTMy0tVEZwMGtsWkRLdHRiOXZYVi16Wkl3NkhEQWFpdlhYVS1ObTBJT0dwR3NxelhHbVlibndYa20zaFFVZXV6bjVn?oc=5"
    },
    {
+    "date": "2026-11-25",
+    "title": "BREAKING NEWS: N. Korea media release photos of Kim inspecting apparent nuclear warheads",
+    "outlet": "Japan Wire by Kyodo News",
+    "place": "South Korea",
+    "tickers": [
+     "CCJ",
+     "BWXT"
+    ],
+    "tags": [
+     "defense",
+     "geopolitics"
+    ],
+    "numbers": [],
+    "score": 6.5,
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9lSnRhMlRRZUVpLXE5WVRiQ2pQRWpBQ0FhVlhpNC13Zk1CV2c0U1Vmb3BuaFpwRWxRaTJibEdTYTFzeFpqVmZMcXY4ZjBnSG9hck5qeWh6RXY1QQ?oc=5"
+   },
+   {
     "date": "2026-11-22",
     "title": "Rosatom signs world's first export agreement with Indonesia for floating nuclear power unit",
     "outlet": "The Bangladesh Monitor",
@@ -220327,24 +220366,6 @@
     ],
     "score": 6.34,
     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUnhCdmNVWkZUb1dfSmRoUDhXZFNxUG5yQlV3VURnX0FOR0hleDBTV1BWNmlfUzZSeTk5MTBBZnMwUkN6d3lTVnAxZVg2Y2pMRWtRQ3FiNm5BTEJ5a3V6M1lCa2JwNzlqSVpyQjRsZUwzTXlFdmVubTJTWXFtWFFqS3ZXZVQ?oc=5"
-   },
-   {
-    "date": "2026-11-20",
-    "title": "Japan's Niigata Prefecture to Subsidize Electricity Bills for 6 Cities Near Kashiwazaki-Kariwa Nuclear Plant with \u00a53.24 Billion; Supplementary Budget to Go Before December Assembly",
-    "outlet": "BigGo Finance",
-    "place": "Japan restarts",
-    "tickers": [
-     "CCJ",
-     "CEG"
-    ],
-    "tags": [
-     "regulation"
-    ],
-    "numbers": [
-     "3.24 Billion"
-    ],
-    "score": 6.34,
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1xZEZ3U0VpUTlpN1F0MTF3dXBuY1gxSnZVeEtBWHFFLUYxeTNJbXRyVTFuaklZNzJweU11a0NFZTZnMXJpNXQ3SmlsLWRWN2hZNVBoaE9hclk5T0t2VU81OWY3WWkyM19KSGtjdEh0RDdKNXhZdlE?oc=5"
    }
   ]
  },
@@ -220457,6 +220478,7 @@
   "0ad3ea7bae8b611c",
   "c514d93df786acd1",
   "33461799e841c77f",
+  "a1458fceb950e78c",
   "4bcec70e5161a23d",
   "d4097d0d8db37e23",
   "e350e3c2ce700f95",
@@ -220509,9 +220531,14 @@
   "c2a1739b2e369eff",
   "ffdf4cb6e7b285b1",
   "710e26d86c88952c",
+  "2406fcdcae12e82f",
+  "b500cde2f0b6d317",
   "fe69041743af20f6",
   "ab0e3af3b9cf67c3",
-  "21888157b537cd9b"
+  "21888157b537cd9b",
+  "5af3e6f198a988c8",
+  "7574e0b98bf014d1",
+  "e68e9fb8f0fc6b78"
  ],
  "panic_log": [
   {
@@ -220552,7 +220579,7 @@
   }
  ],
  "memory_view": {
-  "events": 1689,
+  "events": 1701,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -221137,105 +221164,6 @@
    {
     "date": "2026-11-25",
     "ticker": "CCJ",
-    "title": "Industry Minister Says Czech Nuclear Deal Must Stay Team Korea",
-    "type": "intel_politics",
-    "r0": 2.93,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "BWXT",
-    "title": "Industry Minister Says Czech Nuclear Deal Must Stay Team Korea",
-    "type": "intel_politics",
-    "r0": 0.28,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "CCJ",
-    "title": "Zaporizhzhia Nuclear Plant Loses External Power for 28th Time Since Russia\u2019s 2022 Invasion",
-    "type": "intel_geopolitics",
-    "r0": 2.93,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "CEG",
-    "title": "Zaporizhzhia Nuclear Plant Loses External Power for 28th Time Since Russia\u2019s 2022 Invasion",
-    "type": "intel_geopolitics",
-    "r0": -3.9,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "CCJ",
-    "title": "Stallion Uranium Announces Private Placement of Up to $4 Million to Fund Athabasca Basin Exploration",
-    "type": "intel_financing",
-    "r0": 2.93,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "NXE",
-    "title": "Stallion Uranium Announces Private Placement of Up to $4 Million to Fund Athabasca Basin Exploration",
-    "type": "intel_financing",
-    "r0": 1.83,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "CCJ",
-    "title": "Kazatomprom COO under investigation",
-    "type": "intel_legal",
-    "r0": 2.93,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "NXE",
-    "title": "Kazatomprom COO under investigation",
-    "type": "intel_legal",
-    "r0": 1.83,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "BWXT",
-    "title": "Submarine-launched nuclear missile advances into new development phase for US Navy",
-    "type": "intel_defense",
-    "r0": 0.28,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "BWXT",
-    "title": "U.S. Navy Contracts Raytheon to Advance Development of Submarine-Launched Nuclear Cruise Missile",
-    "type": "intel_contract",
-    "r0": 0.28,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "CCJ",
-    "title": "India to triple nuclear power capacity by 2032:Union Minister Jitendra Singh",
-    "type": "intel_politics",
-    "r0": 2.93,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "CCJ",
     "title": "Energy Fuels to restart White Mesa as US uranium production falls",
     "type": "intel_production",
     "r0": 2.93,
@@ -221423,6 +221351,24 @@
     "r20": null
    },
    {
+    "date": "2026-11-25",
+    "ticker": "CCJ",
+    "title": "BREAKING NEWS: N. Korea media release photos of Kim inspecting apparent nuclear warheads",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-25",
+    "ticker": "BWXT",
+    "title": "BREAKING NEWS: N. Korea media release photos of Kim inspecting apparent nuclear warheads",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
     "date": "2026-11-26",
     "ticker": "BWXT",
     "title": "Kim Jong Un Pushes Wider Tactical Nuclear Weapons Deployment",
@@ -221490,6 +221436,87 @@
     "ticker": "BWXT",
     "title": "Defense Ministry says N. Korea's tactical nuclear expansion 'grave,' vows stronger deterrence through NCG",
     "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CCJ",
+    "title": "Kazakhstan Detains Operations Chief of Kazatomprom, World's Top Uranium Producer, in Corruption Probe - the deep dive",
+    "type": "war_geopolitics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CCJ",
+    "title": "Japan\u2019s Tepco Delays Nuclear Reactor Restart on Building Issue",
+    "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CEG",
+    "title": "Japan\u2019s Tepco Delays Nuclear Reactor Restart on Building Issue",
+    "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CCJ",
+    "title": "\"South Korea's Pressurized-Water SMRs Among World's Top Three ... Uranium Enrichment Facilities Also Needed\"",
+    "type": "intel_geopolitics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "BWXT",
+    "title": "\"South Korea's Pressurized-Water SMRs Among World's Top Three ... Uranium Enrichment Facilities Also Needed\"",
+    "type": "intel_geopolitics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CCJ",
+    "title": "South Korea Speeds New Contractor Selection for Czech Nuclear Project",
+    "type": "intel_contract",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "BWXT",
+    "title": "South Korea Speeds New Contractor Selection for Czech Nuclear Project",
+    "type": "intel_contract",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CCJ",
+    "title": "TEPCO delays restart of reactor at Niigata nuclear plant by over 1 year",
+    "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CEG",
+    "title": "TEPCO delays restart of reactor at Niigata nuclear plant by over 1 year",
+    "type": "intel_disruption",
     "r0": null,
     "r5": null,
     "r20": null
@@ -222769,16 +222796,16 @@
    }
   ]
  },
- "dossier_at": 1795668424.0931213,
+ "dossier_at": 1795672620.5640879,
  "sector_prices": {
-  "_at": 1795647108.8290422,
+  "_at": 1795670651.512631,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
-   "last": 17.72,
-   "day_pct": -1.45,
-   "week_pct": -2.85,
-   "month_pct": -7.61,
-   "year_pct": -0.9,
-   "under_1y_high_pct": -26.2
+   "last": 17.71,
+   "day_pct": -1.5,
+   "week_pct": -2.9,
+   "month_pct": -7.65,
+   "year_pct": -1.0,
+   "under_1y_high_pct": -26.3
   },
   "Global X Uranium ETF": {
    "last": 27.71,
@@ -222827,85 +222854,85 @@
    "name": "Cameco",
    "price": 61.56,
    "week_pct": -1.42,
-   "built": "2026-11-25 23:47"
+   "built": "2026-11-26 00:57"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.95,
    "week_pct": -4.46,
-   "built": "2026-11-25 23:47"
+   "built": "2026-11-26 00:57"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.69,
    "week_pct": -3.89,
-   "built": "2026-11-25 23:47"
+   "built": "2026-11-26 00:57"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.8,
    "week_pct": -1.64,
-   "built": "2026-11-25 23:47"
+   "built": "2026-11-26 00:57"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.2,
    "week_pct": -7.71,
-   "built": "2026-11-25 23:47"
+   "built": "2026-11-26 00:57"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 83.23,
    "week_pct": -9.3,
-   "built": "2026-11-25 23:47"
+   "built": "2026-11-26 00:57"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.49,
    "week_pct": -3.54,
-   "built": "2026-11-25 23:47"
+   "built": "2026-11-26 00:57"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 235.25,
    "week_pct": -10.46,
-   "built": "2026-11-25 23:47"
+   "built": "2026-11-26 00:57"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 121.32,
    "week_pct": -3.39,
-   "built": "2026-11-25 23:47"
+   "built": "2026-11-26 00:57"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 351.55,
    "week_pct": -2.4,
-   "built": "2026-11-25 23:47"
+   "built": "2026-11-26 00:57"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-25 23:48"
+   "built": "2026-11-26 00:58"
   }
  ],
- "heartbeat": "2026-11-25 23:52",
+ "heartbeat": "2026-11-26 00:55",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 379,
+ "_pushed_feed": 380,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -223125,25 +223152,25 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 312,
-   "used": 283,
+   "asked": 317,
+   "used": 288,
    "notes": {
     "TLN Deals and contracts": 17,
-    "CCJ Deals and contracts": 56,
+    "CCJ Deals and contracts": 58,
     "BWXT Deals and contracts": 40,
-    "SECTOR Government and laws": 77,
+    "SECTOR Government and laws": 79,
     "UUUU Deals and contracts": 38,
-    "SECTOR Countries": 74,
-    "CEG Deals and contracts": 40,
-    "NXE Legal": 13,
+    "SECTOR Countries": 75,
+    "CEG Deals and contracts": 41,
+    "NXE Legal": 16,
     "NXE Deals and contracts": 19,
     "DNN Deals and contracts": 12,
     "BWXT Legal": 2,
-    "LEU Deals and contracts": 34,
+    "LEU Deals and contracts": 35,
     "UEC Deals and contracts": 5,
     "UUUU Legal": 21,
     "SECTOR Uranium market": 5,
-    "CCJ Legal": 14,
+    "CCJ Legal": 16,
     "CEG Legal": 2,
     "VST Deals and contracts": 29,
     "LEU Legal": 1,
@@ -226389,6 +226416,16 @@
    "price": 83.14,
    "result": null,
    "why": "I checked the 940-trade split against the newer-half weakness, the trial count, and the 2008-18 falling-knife history from the desk notes, and the evidence supports sizing caution rather than a hard r"
+  },
+  {
+   "role": "scout",
+   "ticker": "CCJ",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-26",
+   "price": 61.56,
+   "result": null,
+   "why": "The Kazakh detention is new and touches the top uranium supplier, so it earns a 6 with a downside lean. The NXE item repeats the March CNSC license in our notes, and the LEU item has no Centrus-specif"
   }
  ],
  "after_sale": [],
@@ -226417,33 +226454,6 @@
   }
  ],
  "catalysts": [
-  {
-   "date": "2026-11-25",
-   "ticker": "",
-   "what": "Pre-Thanksgiving session: seasonal tendency is mildly positive for the S&P, but thin trading makes it a weak signal",
-   "kind": "reminder",
-   "by": "macro"
-  },
-  {
-   "date": "2026-11-25",
-   "ticker": "SECTOR",
-   "what": "Pre-Thanksgiving session; seasonal tendency is positive into Wednesday, but the basket gate is currently closed, so no entries until it reopens",
-   "kind": "reminder",
-   "by": "macro"
-  },
-  {
-   "date": "2026-11-25",
-   "ticker": "UUUU",
-   "what": "Re-check whether price holds the 4.91 zone or breaks lower; reassess only if the basket recovers above its 10-day average.",
-   "kind": "reminder",
-   "by": "level"
-  },
-  {
-   "date": "2026-11-25",
-   "ticker": "",
-   "kind": "calendar",
-   "what": "Wednesday before Thanksgiving. Since 1996 the S&P rose Fri->Wed of this week 73% of years (+0.69% vs +0.14% normal); our 10 +1.8% (2008-25, up 67%)."
-  },
   {
    "date": "2026-11-26",
    "ticker": "",
@@ -227492,6 +227502,13 @@
    "by": "risk"
   },
   {
+   "date": "2026-12-01",
+   "ticker": "VST",
+   "what": "Panic-day trade sell date; sell at +10% near a close or on this date, per the rule.",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
    "date": "2026-12-07",
    "ticker": "LEU",
    "what": "Centrus Energy Investor Day at American Centrifuge Plant; possible guidance and contract updates",
@@ -227590,6 +227607,13 @@
    "by": "scout"
   },
   {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Investor Day at Piketon with business and financial outlook updates",
+   "kind": "reminder",
+   "by": "engineer"
+  },
+  {
    "date": "2026-12-08",
    "ticker": "UEC",
    "what": "UEC earnings (moves about 4-5% either way on the day)",
@@ -227662,6 +227686,69 @@
    "date": "2026-12-08",
    "ticker": "UEC",
    "what": "Earnings release; event risk for any position.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Earnings inside the window; avoid resting buys into it",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "UEC earnings inside the window; avoid resting buys into it.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Earnings inside the window; avoid resting buys into it.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Earnings inside the patient-level hold window; avoid resting buys into it",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Earnings inside the window: avoid resting buys into it",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Earnings report. Avoid resting buy orders into it; re-evaluate the level after the print.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Earnings report inside the setup window; reassess UEC support after the print",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "UEC earnings; avoid resting buys into it.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Earnings report; avoid resting buys into the event",
    "kind": "reminder",
    "by": "level"
   },
@@ -227761,6 +227848,180 @@
    "what": "Did CCJ deliver? They promised on 2026-10-30: Pay 2026 annual dividend of $0.24/share on Dec 15 2026",
    "kind": "reminder",
    "by": "investigator"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "CCJ",
+   "what": "PJM 2029/30 capacity auction closes; power names historically fade the release-day pop (affects CEG/VST/TLN more than miners)",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "CEG",
+   "what": "PJM 2029/30 capacity auction closes; expect clearing near the cap. Do not buy the release-day pop; trim into strength rather than add.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "VST",
+   "what": "PJM 2029/30 capacity auction closes; historically the release-day pop fades, so don't chase it.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "TLN",
+   "what": "PJM 2029/30 base residual auction closes; historically the release-day pop fades, so don't chase it",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "VST",
+   "what": "PJM 2029/30 capacity auction closes; prior up-clearing releases were sold into within 20 sessions, so do not buy the release-day pop",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "TLN",
+   "what": "PJM 2029/30 capacity auction closes; expected to clear at the price cap again, and the power stocks have tended to sell off after an up-auction pop, so don't buy the release-day pop.",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "VST",
+   "what": "PJM 2029/30 capacity auction closes; likely clears at the cap again, and a release-day pop has historically faded, so don't chase it",
+   "kind": "reminder",
+   "by": "investigator"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "VST",
+   "what": "PJM 2029/30 capacity auction closes; desk notes say expect clearing near the cap, and do not buy the release-day pop.",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "TLN",
+   "what": "PJM 2029/30 capacity auction closes; main earnings driver for Talen, expected to clear near the cap, and historically the release-day pop has faded over 20 sessions.",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "CEG",
+   "what": "PJM 2029/30 capacity auction closes; do not chase the release-day pop in power names (CEG, VST, TLN).",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "VST",
+   "what": "PJM 2029/30 capacity auction closes. Historically the release-day pop fades; don't chase it, and consider trimming held power stocks into it.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "TLN",
+   "what": "PJM 2029/30 base residual capacity auction closes; expect it to clear near the cap. Historically the release-day pop fades, so don't chase it.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "VST",
+   "what": "PJM 2029/30 capacity auction closes under the price collar; expected to clear near the cap again, so do not buy the release-day pop.",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "VST",
+   "what": "PJM 2029/30 capacity auction closes; expect a release-day pop that historically fades, so do not chase it",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "TLN",
+   "what": "PJM 2029/30 capacity auction closes; desk notes suggest the release-day pop tends to fade, so don't chase it.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "VST",
+   "what": "PJM 2029/30 capacity auction closes; expected to clear near the cap. Historically the release-day pop fades, so don't chase it.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "TLN",
+   "what": "PJM 2029/30 capacity auction closes; no FERC ruling on the delay request found as of Nov 25, so assume it proceeds. Power stocks often pop on the release and then fade over 20 sessions.",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "CEG",
+   "what": "PJM 2029/30 capacity auction close (expected near cap); historically the release pop fades, don't chase it",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "CEG",
+   "what": "PJM 2029/30 capacity auction closes; do not buy the release-day pop, historically it fades",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "VST",
+   "what": "PJM 2029/30 capacity auction closes; expect a cap-level clearing, historically a release-day pop that fades over 20 sessions, so don't chase it.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "TLN",
+   "what": "PJM 2029/30 capacity auction closes; desk notes say the release-day pop tends to fade, so don't chase it.",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "VST",
+   "what": "PJM 2029/30 capacity auction closes; past results gave a short-term pop that tended to fade, so avoid chasing a release-day pop.",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "TLN",
+   "what": "PJM 2029/30 base residual auction closes; check result vs price cap and whether the release-day pop fades",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "",
+   "what": "Questioner follow-up: The PJM Dec 15 auction is on the calendar and no FERC ruling on the delay has been found. Should the desk treat that event as the main risk for TLN and VST through the window, an",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "",
+   "kind": "calendar",
+   "what": "PJM 2029/30 capacity auction closes (price floor and cap apply). Matters for TLN, VST, CEG. No FERC ruling found on the new delay request as of Nov 25; assume it goes ahead."
   },
   {
    "date": "2026-12-21",
@@ -227901,6 +228162,20 @@
    "what": "Did TLN deliver? They promised on 2026-11-03: Deliver 2026 adjusted EBITDA within $2,050M-$2,200M",
    "kind": "reminder",
    "by": "investigator"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "CCJ",
+   "what": "Check Orano enrichment draft environmental review comment period and next NRC milestone",
+   "kind": "reminder",
+   "by": "scout"
+  },
+  {
+   "date": "2026-12-31",
+   "ticker": "CEG",
+   "what": "Watch Japan Kashiwazaki-Kariwa restart progress and any operator update",
+   "kind": "reminder",
+   "by": "scout"
   },
   {
    "date": "2027-01-01",
