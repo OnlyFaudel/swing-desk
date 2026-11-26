@@ -29459,5 +29459,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-26",
+"title": "Japan delays nuclear reactor restart by over 1 year",
+"type": "intel_disruption",
+"source": "Intel: US Muslims",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "CEG",
+"date": "2026-11-26",
+"title": "Japan delays nuclear reactor restart by over 1 year",
+"type": "intel_disruption",
+"source": "Intel: US Muslims",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]
