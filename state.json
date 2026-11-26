@@ -4208,54 +4208,6 @@
  },
  "news_feed": [
   {
-   "ticker": "BWXT",
-   "source": "Local intel: Independent Catholic News (Weapons programs)",
-   "title": "Bishop John Arnold supports review of new treaty prohibiting nuclear weapons",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5jcDQzZlVWbFZpbW5RMmNGeWQwMHA5a0ZhQ2p1QjZtUlE3TVNsVFlnZnRPZm0wNm12MlNYZVR2MHdhTjVqRnpwYlVoOUVWMWl3dzFNUA?oc=5",
-   "ts": 1795531799,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Catholic bishop backing a weapons treaty review; no BWXT-specific business news."
-  },
-  {
-   "ticker": "LEU",
-   "source": "SEC filing",
-   "title": "SEC 8-K filed (items 7.01,9.01): 8-K",
-   "link": "https://www.sec.gov/Archives/edgar/data/1065059/000162828026075756/leu-20261124.htm",
-   "ts": 1795556222,
-   "materiality": 4,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "An SEC 8-K with only routine items 7.01 and 9.01 usually means a press release or exhibit, not a material event."
-  },
-  {
-   "ticker": "LEU",
-   "source": "Google News",
-   "title": "LEU: Centrus Energy Corp. filed SEC Form 8-K: Regulation FD Disclosure, Financial Statements and Exhibits - Quantisnow",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWUlKcGxCMmtSeUlEbnJ2YWtOblFkeFZkWFFxRDNDc3pLUl9pUEdZRHJFTVBFVVpqN1RBb2p4SHZ6VzdRaHgtVkozY1hGTlRyS3hfRHVJamQzRU1CTzNDbmJVemtTNzg3X2twUVJwTXBlanR2U1FONFNUVE1FeDhNWEpBT0lyVnVzc2dKZmtEWFRIVUtXZFNrQzBLQ3VEWWh5eFpSYjlSV01HQQ?oc=5",
-   "ts": 1795556449,
-   "materiality": 4,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic SEC 8-K filing headline with no disclosed content; the substance is unknown."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Cameco Corporation: 12-Monats-Kursziel auf $112,51 gesenkt, Aufw\u00e4rtspotenzial von 83% - TradingView",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1PMjlPQ0VFX0JtRmdhallXYm95cm82WDU4cEE1T0ozLXpKVDFpb1Jqb1piSmtOOHd1SkVZTEg2VW1iQS1LbE4wUko3czhBQW1oN0IwUWVZSEVRTHoxSlFQUjBsbzJ6WTZrOVFTZFhR?oc=5",
-   "ts": 1795548000,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Price target cut to $112.51 is an analyst recap; the cut itself is old news and the upside % is derived from the current price."
-  },
-  {
    "ticker": "LEU",
    "source": "Google News",
    "title": "Centrus Energy Corp.: 12-Monats-Kursziel auf $170,45 gesenkt, Aufw\u00e4rtspotenzial von 96% - TradingView",
@@ -7206,6 +7158,54 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic 24/7 Wall St. ETF holdings listicle; no new company-specific information."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News: \"Energy Fuels\" uranium",
+   "title": "Is White Mesa Uranium Run Altering The Investment Case For Energy Fuels Stock (TSX:EFR)? - Simply Wall St",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRGR1WFNsc2tySF9FVmU5dmh1dER4M25CSXd1YXNpaE5MOFJEYTZ1UHQ0TzRZUy1vNEJwYUNRdF9ITDlOMUFTcnJEQjA4UENiVUVLc0ZMRzNhd3ExNzVTa3pSZWpQbzhiS3lMZVVfWXFidmd4eUJmWHBaazIzaGV4bmdBRUJNbnRBenY3ekhkM05Bc2NhUlFGdXRiSEtQQ004VV9jRGd5cVVYYUVtLTkzR29HQ1M0aGppVkRKRG5jbllKUUNZbGUxenZOQmbSAdIBQVVfeXFMTURuT3ZFWksxX1ZHQnVUdmtBSG1ONWdHb2pyeHhoZE9DVHpiQ3g5a2g4LWVYQWJ3aWEtVXdFNkdtbmFNMUVzV3hORS1hTWJKNnJxZ2ZDek8xWDlWMEkwYWVIaTBEMlVLa3lfQTJ5S1BrQlRxdElRODhfM1lBdUZscjhPcng2NmxCZzdzNkxsMlpTNC0tYXVmc0hPVWtkOGxTSmZmbWxyVl9yMlBFMzJYNUR2NlUyZk5acDVlLS14eWNHQ1JHRXBBTHpZb0NLSGI4TTFR?oc=5",
+   "ts": 1795716597,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Simply Wall St opinion/recap piece on Energy Fuels' White Mesa mill; no new company information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: Indonesia Business Post (Asia newcomers)",
+   "title": "Petrosea approves rights issue of up to 170 million shares",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQldyUnlvRXFzVXhfT3VISHMzODFhSWxGZHFNRHBmSE82a2VELVFnVE5JMkJ5ZlNqSU5oWEoyNkt0N1EyVjk4MTY5dFZlcmNCZGh4ZmUxSlZyUXl4MWVabXEyb01xMDNDM3RYeVlhSWs5LVVLQ2VGTGtQSDd2S0RqWlMxVlpkdi1fZVo0VlFxcXNod0ZxTlVYSmtNY2NiM2d3VnE0cERqYXVsWlhsMENjNkZHUnhHcXBp?oc=5",
+   "ts": 1795713669,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "offering_dilution",
+   "why": "Rights issue is at Petrosea, an Indonesian mining services firm, unrelated to Cameco."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: Indonesia Business Post (Asia newcomers)",
+   "title": "Adhi Karya secures US$70.6 million in irrigation contracts",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVTktY0Q0YTBJZTctVE5XdnZaUFo5N3hud2tIZDZkRmxCa2g3RzFfN0VheTh0amo4bjFjUjNUQWZYTDEwb0dBQTlWU0t4RzM3d1dURVVOSlBoeGNORzh1c3VxZXZCRVVyT2dobnF5NzhnRzlJbE9BVk90NzctVXlhbzUyeGMzQlNNakREb3R2aG93bU9rdmNuTzBSV2xwMW1zQVN0T3Y5NlpSNi1xQU1wLTUxaEJIUTBKRjNnd2ZB?oc=5",
+   "ts": 1795713669,
+   "materiality": 0,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Adhi Karya irrigation contracts in Indonesia have no link to uranium or Cameco."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: Indonesia Business Post (Asia newcomers)",
+   "title": "Adaro Andalan Indonesia declares US$500 million interim dividend",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdmUxNlQzNXkwLWZoOUhQVjNOc0NYVlNoLUJsU3dvbXRNWF9fX3JvYzFyc3RwZUFqc0tEanZNT1ROZ0NUQ01PWUtmeTNvTkpwSkJDLXhfYXBCc0lBcjJ2WGlrei1Bb292WnVNc2VLSHdVbGNGZXV5UnZpZHpLd2N5OHhhOS03YWN4Ymp4YXBTYWYySTZiOFdRQ0x5SThnYVR1WDN0V3UtMHVTS21hWmo2ODk3MEE5ZTdYMllxM3k5R1g?oc=5",
+   "ts": 1795713971,
+   "materiality": 0,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Adaro Andalan dividend is an Indonesian coal-linked company, unrelated to uranium."
   }
  ],
  "reviews": [
@@ -8965,16 +8965,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.05309,
+  "day_usd": 0.05403,
   "month": "2026-11",
-  "month_usd": 2.04785,
-  "total_usd": 2.04785,
+  "month_usd": 2.04879,
+  "total_usd": 2.04879,
   "by_role": {
    "macro": 0.19621,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.21365,
+   "scout": 0.21459,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9242,7 +9242,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 13:15 ET",
+ "last_cycle": "2026-11-26 13:24 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57889,9 +57889,9 @@
   "fcce01ed145ab804",
   "fa5187062c587fa6",
   "ad40fc2d9e504d93",
+  "0063c1e4976a14e3",
   "572a5262197f803c",
   "97e9eff63229f754",
-  "0063c1e4976a14e3",
   "0929027bdfefabbd",
   "84200faa36eac51a",
   "4ed9b30682cbb480",
@@ -57912,8 +57912,8 @@
   "6c0f0f111a586f76",
   "1c3f23b5479e5fd7",
   "f1c6e7a99bef23fc",
-  "46ef5d40f9b97a80",
   "8b6a4af8fda47884",
+  "46ef5d40f9b97a80",
   "53fc8faedadd1796",
   "1e64fcaaf9ecb5d1",
   "7269a326a498bd44",
@@ -58059,8 +58059,8 @@
   "7c6fa2664d45ab12",
   "712897a34ec8bffb",
   "e5b877975a222845",
-  "a9943bba60437697",
   "ee1ba4440d7332de",
+  "a9943bba60437697",
   "8c3665c6fa9a193f",
   "59c6f6be8bf3e5a9",
   "5152638d88885c07",
@@ -58165,10 +58165,10 @@
   "0b72ff8258c89cb0",
   "c71238280e152d73",
   "9f80c9fee3eed575",
+  "7b262aa726cb15b8",
   "560f5fcf0c779ea2",
   "bcc1a41f243d6952",
   "6709ae4e03dfb11b",
-  "7b262aa726cb15b8",
   "9f2e45d00f1961dd",
   "b550feca111a11b5",
   "b7c4207fbc45894d",
@@ -58324,6 +58324,7 @@
   "8b9f115784388b61",
   "fd4e2b9a2f429dd7",
   "8fb46f7035449802",
+  "f2233e80ef88e49b",
   "032f537039c80fee",
   "1d91a3cc917720fa",
   "15c5ededcaa0a513",
@@ -58529,6 +58530,7 @@
   "1be96b3daf4578d3",
   "80ca077103e2454d",
   "e250b8758ee96ae8",
+  "2e5dffacee6915ca",
   "7ffa38b48cb85fdf",
   "c884db536c97a254",
   "fe03861983913aba",
@@ -58567,10 +58569,9 @@
   "ffa36b0bf7521b7f",
   "ad6bb6ac1dcb6674",
   "fe808fea77078dbb",
-  "61659cb80b158a77",
-  "f2233e80ef88e49b"
+  "61659cb80b158a77"
  ],
- "news_slow_at": 1795716630.3831766,
+ "news_slow_at": 1795717307.496673,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219986,11 +219987,11 @@
    "lesson": null
   }
  ],
- "intel_at": 1795715622.035526,
+ "intel_at": 1795717456.0394924,
  "intel_health": {
-  "at": "2026-11-26 12:54",
+  "at": "2026-11-26 13:25",
   "sources": {
-   "Cigar Lake": 5,
+   "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
    "Athabasca Basin": 6,
    "Saskatchewan wildfires": 5,
@@ -219998,49 +219999,49 @@
    "Wheeler River / Phoenix": 8,
    "Port Hope / Blind River": 0,
    "Westinghouse": 9,
-   "Kazakhstan": 25,
+   "Kazakhstan": 24,
    "Niger": 7,
-   "Namibia": 28,
+   "Namibia": 41,
    "Russia supply": 3,
-   "Piketon": 24,
+   "Piketon": 25,
    "HALEU": 14,
-   "Wyoming ISR": 28,
+   "Wyoming ISR": 55,
    "South Texas ISR": 2,
-   "White Mesa / Utah": 9,
-   "Rare earths (Energy Fuels)": 12,
+   "White Mesa / Utah": 8,
+   "Rare earths (Energy Fuels)": 13,
    "Lynchburg / Erwin": 0,
    "Naval reactors": 11,
-   "Crane / Three Mile Island": 5,
+   "Crane / Three Mile Island": 4,
    "Susquehanna": 6,
    "Comanche Peak": 5,
    "PJM grid": 7,
-   "ERCOT grid": 17,
-   "Data-center nuclear deals": 10,
+   "ERCOT grid": 12,
+   "Data-center nuclear deals": 9,
    "Japan restarts": 15,
-   "China new builds": 11,
+   "China new builds": 13,
    "Congress and laws": 25,
    "NRC decisions": 7,
-   "Energy Department": 63,
-   "White House and executive orders": 27,
+   "Energy Department": 47,
+   "White House and executive orders": 26,
    "Tariffs and trade": 1,
    "India": 20,
-   "South Korea": 95,
-   "Europe new builds": 63,
-   "France and UK": 13,
-   "Middle East": 50,
-   "Asia newcomers": 18,
+   "South Korea": 97,
+   "Europe new builds": 30,
+   "France and UK": 17,
+   "Middle East": 24,
+   "Asia newcomers": 45,
    "Canada SMRs": 10,
-   "Big tech power deals": 29,
-   "Iran": 27,
-   "North Korea": 100,
+   "Big tech power deals": 30,
+   "Iran": 56,
+   "North Korea": 88,
    "War zones": 10,
    "AUKUS and navies": 28,
-   "Weapons programs": 21,
-   "Stockpiles and reserves": 28,
-   "Sprott trust": 5,
-   "Uranium price": 24,
+   "Weapons programs": 30,
+   "Stockpiles and reserves": 29,
+   "Sprott trust": 6,
+   "Uranium price": 25,
    "US policy": 0,
-   "Lawsuits and investigations": 33,
+   "Lawsuits and investigations": 72,
    "Workers and jobs": 23,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
@@ -220051,9 +220052,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 13:15",
-  "total": 818,
-  "week": 578,
+  "updated": "2026-11-26 13:25",
+  "total": 824,
+  "week": 580,
   "places": {
    "Uranium price": 50,
    "South Korea": 45,
@@ -220063,16 +220064,16 @@
    "Piketon": 27,
    "Workers and jobs": 27,
    "Kazakhstan": 27,
+   "Asia newcomers": 25,
    "World Nuclear News": 24,
-   "Asia newcomers": 22,
    "War zones": 19,
-   "Westinghouse": 15
+   "Rare earths (Energy Fuels)": 16
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-26 12:54",
+   "at": "2026-11-26 13:25",
    "sources": {
-    "Cigar Lake": 5,
+    "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
     "Athabasca Basin": 6,
     "Saskatchewan wildfires": 5,
@@ -220080,49 +220081,49 @@
     "Wheeler River / Phoenix": 8,
     "Port Hope / Blind River": 0,
     "Westinghouse": 9,
-    "Kazakhstan": 25,
+    "Kazakhstan": 24,
     "Niger": 7,
-    "Namibia": 28,
+    "Namibia": 41,
     "Russia supply": 3,
-    "Piketon": 24,
+    "Piketon": 25,
     "HALEU": 14,
-    "Wyoming ISR": 28,
+    "Wyoming ISR": 55,
     "South Texas ISR": 2,
-    "White Mesa / Utah": 9,
-    "Rare earths (Energy Fuels)": 12,
+    "White Mesa / Utah": 8,
+    "Rare earths (Energy Fuels)": 13,
     "Lynchburg / Erwin": 0,
     "Naval reactors": 11,
-    "Crane / Three Mile Island": 5,
+    "Crane / Three Mile Island": 4,
     "Susquehanna": 6,
     "Comanche Peak": 5,
     "PJM grid": 7,
-    "ERCOT grid": 17,
-    "Data-center nuclear deals": 10,
+    "ERCOT grid": 12,
+    "Data-center nuclear deals": 9,
     "Japan restarts": 15,
-    "China new builds": 11,
+    "China new builds": 13,
     "Congress and laws": 25,
     "NRC decisions": 7,
-    "Energy Department": 63,
-    "White House and executive orders": 27,
+    "Energy Department": 47,
+    "White House and executive orders": 26,
     "Tariffs and trade": 1,
     "India": 20,
-    "South Korea": 95,
-    "Europe new builds": 63,
-    "France and UK": 13,
-    "Middle East": 50,
-    "Asia newcomers": 18,
+    "South Korea": 97,
+    "Europe new builds": 30,
+    "France and UK": 17,
+    "Middle East": 24,
+    "Asia newcomers": 45,
     "Canada SMRs": 10,
-    "Big tech power deals": 29,
-    "Iran": 27,
-    "North Korea": 100,
+    "Big tech power deals": 30,
+    "Iran": 56,
+    "North Korea": 88,
     "War zones": 10,
     "AUKUS and navies": 28,
-    "Weapons programs": 21,
-    "Stockpiles and reserves": 28,
-    "Sprott trust": 5,
-    "Uranium price": 24,
+    "Weapons programs": 30,
+    "Stockpiles and reserves": 29,
+    "Sprott trust": 6,
+    "Uranium price": 25,
     "US policy": 0,
-    "Lawsuits and investigations": 33,
+    "Lawsuits and investigations": 72,
     "Workers and jobs": 23,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
@@ -220797,6 +220798,7 @@
   "7baea97af7cc8870",
   "4bcec70e5161a23d",
   "8080c5e15c173c5b",
+  "96bd0f50c9b41d81",
   "e7a28da3db059604",
   "09b7a3e22a2e5a14",
   "1bc8a335514e5e60",
@@ -220879,12 +220881,14 @@
   "e0b3ad48c50895f3",
   "453975be9f57dcf8",
   "5178e5d1234a91bb",
-  "61659cb80b158a77",
   "e68e9fb8f0fc6b78",
   "23f0910e96eb7de3",
   "c4213b53ccaf5e6f",
   "2406fcdcae12e82f",
-  "96bd0f50c9b41d81"
+  "61659cb80b158a77",
+  "e446f179fb37cbbd",
+  "4ac0ee39c366c3b4",
+  "4fd2a62de9871c6c"
  ],
  "panic_log": [
   {
@@ -220925,7 +220929,7 @@
   }
  ],
  "memory_view": {
-  "events": 1740,
+  "events": 1744,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -221509,24 +221513,6 @@
   "recent": [
    {
     "date": "2026-11-26",
-    "ticker": "BWXT",
-    "title": "South Korea Speeds New Contractor Selection for Czech Nuclear Project",
-    "type": "intel_contract",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-26",
-    "ticker": "CCJ",
-    "title": "TEPCO delays restart of reactor at Niigata nuclear plant by over 1 year",
-    "type": "intel_disruption",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-26",
     "ticker": "CEG",
     "title": "TEPCO delays restart of reactor at Niigata nuclear plant by over 1 year",
     "type": "intel_disruption",
@@ -221845,6 +221831,24 @@
     "ticker": "CCJ",
     "title": "Nuclear Fuel Supplier Energy Fuels (NYSEAMERICAN: UUUU) Lifts Contracted Uranium Sales 35% As Sector Rebounds From AI-Driven Selloff",
     "type": "intel_contract",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CCJ",
+    "title": "Adhi Karya secures US$70.6 million in irrigation contracts",
+    "type": "intel_contract",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CCJ",
+    "title": "Petrosea approves rights issue of up to 170 million shares",
+    "type": "intel_regulation",
     "r0": null,
     "r5": null,
     "r20": null
@@ -223142,7 +223146,7 @@
    }
   ]
  },
- "dossier_at": 1795715664.2402759,
+ "dossier_at": 1795717547.2220163,
  "sector_prices": {
   "_at": 1795715668.9582324,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -223200,85 +223204,85 @@
    "name": "Cameco",
    "price": 61.56,
    "week_pct": -1.42,
-   "built": "2026-11-26 12:54"
+   "built": "2026-11-26 13:25"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.95,
    "week_pct": -4.46,
-   "built": "2026-11-26 12:54"
+   "built": "2026-11-26 13:25"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.69,
    "week_pct": -3.89,
-   "built": "2026-11-26 12:54"
+   "built": "2026-11-26 13:25"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.8,
    "week_pct": -1.64,
-   "built": "2026-11-26 12:54"
+   "built": "2026-11-26 13:26"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.2,
    "week_pct": -7.71,
-   "built": "2026-11-26 12:54"
+   "built": "2026-11-26 13:26"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 83.23,
    "week_pct": -9.3,
-   "built": "2026-11-26 12:54"
+   "built": "2026-11-26 13:26"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.49,
    "week_pct": -3.54,
-   "built": "2026-11-26 12:54"
+   "built": "2026-11-26 13:26"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 235.25,
    "week_pct": -10.46,
-   "built": "2026-11-26 12:54"
+   "built": "2026-11-26 13:26"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 121.32,
    "week_pct": -3.39,
-   "built": "2026-11-26 12:54"
+   "built": "2026-11-26 13:26"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 351.55,
    "week_pct": -2.4,
-   "built": "2026-11-26 12:54"
+   "built": "2026-11-26 13:26"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-26 12:54"
+   "built": "2026-11-26 13:26"
   }
  ],
- "heartbeat": "2026-11-26 13:15",
+ "heartbeat": "2026-11-26 13:24",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 382,
+ "_pushed_feed": 383,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -223514,14 +223518,14 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 380,
-   "used": 348,
+   "asked": 382,
+   "used": 350,
    "notes": {
     "TLN Deals and contracts": 18,
-    "CCJ Deals and contracts": 68,
+    "CCJ Deals and contracts": 69,
     "BWXT Deals and contracts": 50,
     "SECTOR Government and laws": 97,
-    "UUUU Deals and contracts": 42,
+    "UUUU Deals and contracts": 43,
     "SECTOR Countries": 100,
     "CEG Deals and contracts": 50,
     "NXE Legal": 20,
@@ -223530,7 +223534,7 @@
     "BWXT Legal": 3,
     "LEU Deals and contracts": 42,
     "UEC Deals and contracts": 5,
-    "UUUU Legal": 23,
+    "UUUU Legal": 24,
     "SECTOR Uranium market": 7,
     "CCJ Legal": 16,
     "CEG Legal": 3,
