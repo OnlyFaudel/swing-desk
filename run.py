@@ -2653,10 +2653,10 @@ def intel_tick(st, today, force=False):
             st["radar_score"] = radarlog.summary()
         except Exception as e:
             print("radar resolve", e)
-    if not st["flags"].get(f"catalysts:{today}"):  # the catalyst calendar, refreshed once a day
-        st["flags"][f"catalysts:{today}"] = True
+    if not st["flags"].get(f"catalysts2:{today}"):  # the catalyst calendar, refreshed once a day
+        st["flags"][f"catalysts2:{today}"] = True
         try:
-            st["catalysts"] = sorted(catalysts.upcoming(list(T)) + licenses.dated(), key=lambda x: x["date"])
+            st["catalysts"] = sorted(catalysts.upcoming(list(T), live_orders=set(st.get("armed") or {})) + licenses.dated(), key=lambda x: x["date"])
         except Exception as e:
             print("catalysts", e)
     if now.time() >= dt.time(18, 15) and today.weekday() < 5 and not st["flags"].get(f"sput:{today}"):  # Sprott publishes NAV ~6pm
@@ -3283,17 +3283,18 @@ def questioner(st, desk, prices, now, force=False):
             "mover_radar_big_moves_likely": mover_radar(st, now),
             "recent_debates": st.get("debates", [])[-3:], "open_positions": {t: list(l) for t, l in st["book"]["lots"].items()
                                                                             if any(v.get("qty", 0) > 1e-6 for v in l.values())},
-            "already_asked": [q["question"] for q in qs[-40:]]}
+            "already_asked_and_answered": [f"Q: {q['question'][:160]} -> A: {str(q.get('answer') or '')[:160]}" for q in qs[-30:]],
+            "recently_canceled_orders": [f"{c.get('ticker')} buy ${c.get('entry')} from {c.get('date')}: canceled, no longer exists" for c in (st.get("cancels") or [])[-5:]]}
     try:
         with feed.thread(f"The Questioner, {now:%b %d %H:%M}", [], kind="research"):
             out = desk.ask("questioner", "fast", "You are THE QUESTIONER. Your only job is to notice what the rest of the team hasn't: a stock "
                            "that moved with no explanation, a headline nobody discussed, a number that changed quietly (short interest, "
                            "insiders, the Sprott discount, a reactor), something that contradicts what the team believes, a reminder that "
                            "came due, or something that looks irrelevant but might not be. Ask up to 5 sharp questions, each routed to ONE "
-                           f"teammate who can answer it ({', '.join(ANSWERERS)}). Don't repeat already_asked. "
+                           f"teammate who can answer it ({', '.join(ANSWERERS)}). Don't repeat or reword anything in already_asked_and_answered, and don't ask about orders in recently_canceled_orders. "
                            '{"say":"","to":"team","questions":[{"question":"","why_it_might_matter":"","ask":"role","kind":"missed|odd|unexplained|maybe_irrelevant"}]}',
                            pack, max_tokens=900)
-            recent_q = [_ev_words(x["question"]) for x in qs if x.get("t", "") >= (now - dt.timedelta(hours=24)).strftime("%Y-%m-%d %H:%M")]
+            recent_q = [_ev_words(x["question"]) for x in qs if x.get("t", "") >= (now - dt.timedelta(days=7)).strftime("%Y-%m-%d %H:%M")]  # a week, not a day: TLN $355.66 was re-asked daily
             for q in [x for x in (out.get("questions") or []) if isinstance(x, dict) and x.get("question")][:5]:
                 w = _ev_words(q["question"])
                 if w and any(len(w & r) / max(1, len(w | r)) >= 0.35 for r in recent_q):

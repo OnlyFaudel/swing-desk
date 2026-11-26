@@ -28,7 +28,9 @@ CALENDAR = [
 ]
 
 
-def upcoming(tickers, days=45, today=None):
+def upcoming(tickers, days=45, today=None, live_orders=None):
+    """live_orders: tickers with an order resting right now. Reminders about a 'resting buy/order' on any other ticker are
+    stale (the order was canceled, filled or expired) and are dropped, so agents stop asking about orders that don't exist."""
     today = today or dt.date.today()
     end = str(today + dt.timedelta(days=days))
     out = []
@@ -39,8 +41,15 @@ def upcoming(tickers, days=45, today=None):
             d = None
         if d and str(today) <= d <= end:
             out.append({"date": d, "ticker": t, "what": f"{t} earnings (moves about 4-5% either way on the day)", "kind": "earnings"})
+    kept = []
     for w in desk_memory.watch_all():
         if str(today) <= w["date"] <= end:
+            low = w["what"].lower()
+            if live_orders is not None and w.get("ticker") not in live_orders and any(k in low for k in ("resting buy", "resting order", "resting entry", "resting limit")):
+                continue
+            if any(k["date"] == w["date"] and k.get("ticker") == w.get("ticker") and desk_memory._same(k["what"], w["what"]) for k in kept):
+                continue
+            kept.append(w)
             out.append({"date": w["date"], "ticker": w.get("ticker") or "", "what": w["what"], "kind": "reminder", "by": w.get("by")})
     for c in CALENDAR:
         if str(today) <= c["date"] <= end:

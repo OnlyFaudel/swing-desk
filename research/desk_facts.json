@@ -341,6 +341,18 @@
     "exec",
     "level"
    ]
+  },
+  {
+   "topic": "Day trading on 5-minute candles (what real day traders use), tested 2026-11-26",
+   "answer": "5-minute candles (data/candles5, SIP) for the 6 most-traded names (CCJ, VST, CEG, BWXT, LEU, OKLO) 2016-2026, 15 setups incl. 5/15/30-minute opening-range breakouts with stops and 2x-range targets, VWAP reclaim, VWAP bounce, opening drive then first VWAP pullback, volume-burst momentum scalps (+1%/-0.5%), volume-flush reversals, 2 PM trend. Costs 1 tick + 0.1%. Every one is negative or about zero after costs in both eras (-0.25% to +0.03% a trade). With ZERO costs: all within about +/-0.1% except the opening-drive pullback (+0.14% in 2019-26, t 2.0, but -0.06% in 2016-18 on 24 trades, +0.03% after costs) and flush-then-hold-30-minutes (+0.34% gross, +0.14% after costs, t 1.0, only 2 trades before 2019): too small and too untested. 1-minute candles would only add more trades and more cost per trade on the same noise. Conclusion stands: no day-trading edge in our stocks; the edge is multi-day.",
+   "roles": [
+    "pm",
+    "risk",
+    "strategist",
+    "researcher",
+    "exec",
+    "level"
+   ]
   }
  ]
 }
