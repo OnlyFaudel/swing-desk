@@ -4213,18 +4213,6 @@
  },
  "news_feed": [
   {
-   "ticker": "VST",
-   "source": "Google News: Vistra nuclear",
-   "title": "Why Vistra Fell 14% Despite Record Earnings and ERCOT Load Growth - Discovery Alert",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQX2F4UTZnY0Ewd3Zka1YwM2VyLW1YdXF0WTNvQTBtTWR1YTAxdW1EczNGa0J3Y3pCSHU0Zm9vNjVfTzhiaDFwLUhiSW9rbktnc09jQ2pUSHBEMDk4YzUtTzlUR3VQSjF5WUJYWWV1MHcxUTRLeEZVNDUyZk1CQ0lFcmVMWjNBMl9GWm9rTERIbw?oc=5",
-   "ts": 1795552066,
-   "materiality": 4,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "analyst",
-   "why": "Recap-style headline about a past 14% drop; price history, not new company information."
-  },
-  {
    "ticker": "LEU",
    "source": "Google News: \"Centrus Energy\"",
    "title": "Centrus Energy Plans Investor Day at Piketon Facility Dec. 7 - kalkine.com",
@@ -7211,6 +7199,18 @@
    "direction": "neutral",
    "event_type": "policy_tariff",
    "why": "Poland nuclear plant spending is real but distant; CCJ impact is indirect and slow."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Kazatomprom",
+   "title": "How Kazakhstan will build a uranium reserve worth 7 years of Kazatomprom output - Kursiv Media",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbldGSTB4eGFjQUo1RHFlM1daZXRsQUpzSnVzRWRGUWExZ2k5RDcwTWg2MzFPSGZJNV9mZ0JxeHFlS0otWENDQkRsSW9aQzduejZHYXJvbmxEQUNpRnBsRHlnZWhxWU9GbW55Y0lDb3p3Nm1sb3BwYnlYcllwb050TlBjX1IyZ2pWeWRDdVhWSGNaWnoxdDROMDk5TjBFdm1NZWFYS1ZfTDRzdG5VRldKdTQ0dmMydDV0WURjbnpQby1ULUpx?oc=5",
+   "ts": 1795731162,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "supply",
+   "why": "Kazakh reserve plan is a policy talk piece; mostly known strategy, not new supply data."
   }
  ],
  "reviews": [
@@ -8970,16 +8970,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.07352,
+  "day_usd": 0.0739,
   "month": "2026-11",
-  "month_usd": 2.06829,
-  "total_usd": 2.06829,
+  "month_usd": 2.06867,
+  "total_usd": 2.06867,
   "by_role": {
    "macro": 0.20195,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.22026,
+   "scout": 0.22064,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9247,7 +9247,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 17:08 ET",
+ "last_cycle": "2026-11-26 17:18 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -58061,8 +58061,8 @@
   "dbaa3c361e6d78b5",
   "6f138c10a977c951",
   "82e06a4ced981af5",
-  "40da66ea723efc8f",
   "70ec56bf0ac9a6fb",
+  "40da66ea723efc8f",
   "2cbbc694a2695e84",
   "cdc9a7381e6b445a",
   "9f2e45d00f1961dd",
@@ -58169,6 +58169,7 @@
   "4317a926c756f33f",
   "9850b181472b7c24",
   "7f1ab1d7e538b600",
+  "60587edfeb80b4cf",
   "1be96b3daf4578d3",
   "515406ebde80edc1",
   "ceb6205483ccef34",
@@ -58585,7 +58586,7 @@
   "53fc8faedadd1796",
   "7ee1ad6e6041b23e"
  ],
- "news_slow_at": 1795730690.3760068,
+ "news_slow_at": 1795731312.344129,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -220156,7 +220157,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 17:08",
+  "updated": "2026-11-26 17:18",
   "total": 842,
   "week": 583,
   "places": {
@@ -220838,8 +220839,8 @@
   "85de31670d4daf9d",
   "dd57ba38f81c0a8f",
   "c5a7aa4d347cef23",
-  "4039fa58057275ae",
   "7ffb052a70d145c2",
+  "4039fa58057275ae",
   "d1148d05210e97b6",
   "03c5d2773ef94a7b",
   "a7baf61adc01832c",
@@ -223387,7 +223388,7 @@
    "built": "2026-11-26 17:02"
   }
  ],
- "heartbeat": "2026-11-26 17:08",
+ "heartbeat": "2026-11-26 17:18",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223628,8 +223629,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 396,
-   "used": 361,
+   "asked": 397,
+   "used": 362,
    "notes": {
     "TLN Deals and contracts": 18,
     "CCJ Deals and contracts": 72,
@@ -223645,7 +223646,7 @@
     "LEU Deals and contracts": 42,
     "UEC Deals and contracts": 5,
     "UUUU Legal": 24,
-    "SECTOR Uranium market": 7,
+    "SECTOR Uranium market": 8,
     "CCJ Legal": 16,
     "CEG Legal": 3,
     "VST Deals and contracts": 34,
