@@ -4206,18 +4206,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CEG",
-   "source": "Yahoo Finance",
-   "title": "How Has Vistra Stock's Story Changed?",
-   "link": "https://www.trefis.com/stock/vst/articles/628443/how-has-vistra-stock-s-story-changed/2026-11-24?.tsrc=rss",
-   "ts": 1795543525,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Valuation recap of Vistra (VST), not CEG; no new company-specific information."
-  },
-  {
    "ticker": "LEU",
    "source": "Google News: HALEU fuel",
    "title": "FRM II moves closer to HALEU - Nuclear Engineering International",
@@ -7204,6 +7192,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic price-volatility piece about a different uranium company, WUC, with no new CCJ information."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News",
+   "title": "Constellation Energy stock: LS Power closes $5 billion asset sale - ad-hoc-news.de",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZi16bHVSZHN0TllRdDJ5Y216eksxd1QyTnJmcjhfaFhPc0Q0YnAxZ29KM3N1UGtOZGExVzdaZDJVd3VsTDRvY3BWWFdHUWlNVUVsZTVGY05UZXJ0dXVqaC1xYVRfYzNBeDRLMXByMENIaGNQR2dlRG5rQTZVQmR6THpJTFVhWVdBdS1lcFpZNEhzWk9vVzQyVS1JOHNJT1BYVnpPT3lkMkJRRDZvNFlLQWRTa2t3SnozRHpVUVN2WGttZWtT?oc=5",
+   "ts": 1795706498,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Headline recycles LS Power's acquisition close, already on file as of 2026-11-25."
   }
  ],
  "reviews": [
@@ -8963,16 +8963,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.04005,
+  "day_usd": 0.04043,
   "month": "2026-11",
-  "month_usd": 2.03481,
-  "total_usd": 2.03481,
+  "month_usd": 2.03519,
+  "total_usd": 2.03519,
   "by_role": {
    "macro": 0.19621,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.20332,
+   "scout": 0.2037,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9240,7 +9240,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 10:21 ET",
+ "last_cycle": "2026-11-26 10:32 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57886,10 +57886,10 @@
   "2a89ac3dc67ad332",
   "8b9f115784388b61",
   "a73665945ff493c7",
-  "bdb801dcb316d6cb",
   "e15990dac5b8bec2",
-  "6f83643eaed2fbc3",
+  "bdb801dcb316d6cb",
   "b695f296dd2e61f0",
+  "6f83643eaed2fbc3",
   "5d0c7240e494c5f9",
   "637530bf82fb0126",
   "0929027bdfefabbd",
@@ -57925,6 +57925,7 @@
   "15c5ededcaa0a513",
   "9ab10d3c257d1ce5",
   "dce4cce47213c16f",
+  "8de24d7e6020d498",
   "563c0572b10f43bc",
   "efa3269c9fa1c644",
   "9dbb51b520d076e7",
@@ -58024,17 +58025,18 @@
   "a454f891b1c31853",
   "c273aa391fa20158",
   "82a0f9c44d82898b",
+  "cba8b57c8151e2de",
   "351691d26ec6208e",
   "c022c2ee571f9126",
   "c527b52a6d387b5e",
   "c2bfe85469484a37",
   "bf78a7a4b7c697c4",
-  "04e5c0526493eb7e",
   "6a0cc1c1f8babcd3",
+  "04e5c0526493eb7e",
   "7ee1ad6e6041b23e",
-  "16c52bc5bc8110db",
-  "f1f8a01f5b2d2080",
   "3a1ae63cc1a72974",
+  "f1f8a01f5b2d2080",
+  "16c52bc5bc8110db",
   "1be96b3daf4578d3",
   "1e64fcaaf9ecb5d1",
   "bf3c957b04f7b01a",
@@ -58242,7 +58244,6 @@
   "8a17ec5ab2f6dcf8",
   "5e042fd73e80d40b",
   "696cc711d13e8558",
-  "aa4b40fcca57bfea",
   "3c1ef04c322d8d99",
   "52dee3d37e759da2",
   "997921d9077a2d67",
@@ -58546,9 +58547,9 @@
   "418a91931047cecc",
   "52950daaafc92008",
   "c988637e87af140a",
-  "8de24d7e6020d498"
+  "aa4b40fcca57bfea"
  ],
- "news_slow_at": 1795706121.8561633,
+ "news_slow_at": 1795706725.499469,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219963,11 +219964,11 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 10:21",
+  "updated": "2026-11-26 10:32",
   "total": 789,
-  "week": 564,
+  "week": 562,
   "places": {
-   "Uranium price": 48,
+   "Uranium price": 47,
    "South Korea": 45,
    "Weapons programs": 31,
    "AUKUS and navies": 28,
@@ -219976,7 +219977,7 @@
    "Workers and jobs": 26,
    "Kazakhstan": 26,
    "Asia newcomers": 22,
-   "World Nuclear News": 21,
+   "World Nuclear News": 20,
    "War zones": 19,
    "Rare earths (Energy Fuels)": 15
   },
@@ -220601,8 +220602,8 @@
  },
  "intel_handed": [
   "b2e981fc7a2e7302",
-  "2ac262d1779b4fad",
   "958910b51098bafe",
+  "2ac262d1779b4fad",
   "2c7a3976a5596853",
   "0ad3ea7bae8b611c",
   "020569e75e7d456e",
@@ -220611,8 +220612,8 @@
   "36cbbee89c76a1f7",
   "b371c50f261a21f0",
   "4dbfaa309ceb1878",
-  "c2a1739b2e369eff",
   "515517f776442fe4",
+  "c2a1739b2e369eff",
   "797e5c4039060606",
   "5b83027a0cf1a496",
   "37e85b7a7ce58612",
@@ -223180,7 +223181,7 @@
    "built": "2026-11-26 10:20"
   }
  ],
- "heartbeat": "2026-11-26 10:21",
+ "heartbeat": "2026-11-26 10:32",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223421,8 +223422,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 357,
-   "used": 326,
+   "asked": 358,
+   "used": 327,
    "notes": {
     "TLN Deals and contracts": 18,
     "CCJ Deals and contracts": 67,
@@ -223430,7 +223431,7 @@
     "SECTOR Government and laws": 91,
     "UUUU Deals and contracts": 40,
     "SECTOR Countries": 89,
-    "CEG Deals and contracts": 48,
+    "CEG Deals and contracts": 49,
     "NXE Legal": 19,
     "NXE Deals and contracts": 19,
     "DNN Deals and contracts": 12,
