@@ -8967,16 +8967,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.05824,
+  "day_usd": 0.05869,
   "month": "2026-11",
-  "month_usd": 2.053,
-  "total_usd": 2.053,
+  "month_usd": 2.05345,
+  "total_usd": 2.05345,
   "by_role": {
    "macro": 0.19621,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.21618,
+   "scout": 0.21663,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9244,7 +9244,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 14:27 ET",
+ "last_cycle": "2026-11-26 14:37 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57885,8 +57885,8 @@
   "48bd8b45af68192c",
   "fa31367a940baeaa",
   "a3dd031817a4feeb",
-  "a580f7b834592fce",
   "0f192e3ee6f7d8a7",
+  "a580f7b834592fce",
   "de4d277c2d827d97",
   "238b8e6cc65235f2",
   "ce86bbd653f8c85b",
@@ -58508,6 +58508,7 @@
   "34707f4cf6abf5e9",
   "e2c2d566a7566dea",
   "7574e0b98bf014d1",
+  "831dd0676195114e",
   "960af125712d07b2",
   "997921d9077a2d67",
   "dfaa19a96155f693",
@@ -58576,7 +58577,7 @@
   "94b1c7f7834deb36",
   "265232f2ff4096bc"
  ],
- "news_slow_at": 1795721225.2330904,
+ "news_slow_at": 1795721890.6472642,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -220089,7 +220090,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 14:27",
+  "updated": "2026-11-26 14:38",
   "total": 828,
   "week": 581,
   "places": {
@@ -220891,7 +220892,6 @@
   "82aaff9e4512c732",
   "e446f179fb37cbbd",
   "c2a1739b2e369eff",
-  "e0b3ad48c50895f3",
   "b12a42fc746af1e7",
   "325ee9327f3b68ce",
   "7908d2b630649992",
@@ -220913,6 +220913,7 @@
   "9e7ebdf62031eeaf",
   "4039fa58057275ae",
   "80fb77ce5844a24e",
+  "c71238280e152d73",
   "a9bcbfe54ba12f7e",
   "83f38e65c4d0c42a",
   "ff034b5c87c95680",
@@ -220923,7 +220924,7 @@
   "797e5c4039060606",
   "c7de49c3980c6cbf",
   "f7754a30445ba4ee",
-  "c71238280e152d73",
+  "e0b3ad48c50895f3",
   "09b7a3e22a2e5a14",
   "dd908034b43ee500",
   "f6eef16e9608400a"
@@ -223184,7 +223185,7 @@
    }
   ]
  },
- "dossier_at": 1795719452.441431,
+ "dossier_at": 1795721315.581874,
  "sector_prices": {
   "_at": 1795715668.9582324,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -223242,80 +223243,80 @@
    "name": "Cameco",
    "price": 61.56,
    "week_pct": -1.42,
-   "built": "2026-11-26 13:57"
+   "built": "2026-11-26 14:28"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.95,
    "week_pct": -4.46,
-   "built": "2026-11-26 13:57"
+   "built": "2026-11-26 14:28"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.69,
    "week_pct": -3.89,
-   "built": "2026-11-26 13:57"
+   "built": "2026-11-26 14:28"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.8,
    "week_pct": -1.64,
-   "built": "2026-11-26 13:57"
+   "built": "2026-11-26 14:28"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.2,
    "week_pct": -7.71,
-   "built": "2026-11-26 13:57"
+   "built": "2026-11-26 14:28"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 83.23,
    "week_pct": -9.3,
-   "built": "2026-11-26 13:57"
+   "built": "2026-11-26 14:29"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.49,
    "week_pct": -3.54,
-   "built": "2026-11-26 13:58"
+   "built": "2026-11-26 14:29"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 235.25,
    "week_pct": -10.46,
-   "built": "2026-11-26 13:58"
+   "built": "2026-11-26 14:29"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 121.32,
    "week_pct": -3.39,
-   "built": "2026-11-26 13:58"
+   "built": "2026-11-26 14:29"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 351.55,
    "week_pct": -2.4,
-   "built": "2026-11-26 13:58"
+   "built": "2026-11-26 14:29"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-26 13:58"
+   "built": "2026-11-26 14:29"
   }
  ],
- "heartbeat": "2026-11-26 14:27",
+ "heartbeat": "2026-11-26 14:37",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223556,15 +223557,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 386,
-   "used": 353,
+   "asked": 387,
+   "used": 354,
    "notes": {
     "TLN Deals and contracts": 18,
     "CCJ Deals and contracts": 69,
     "BWXT Deals and contracts": 50,
-    "SECTOR Government and laws": 99,
+    "SECTOR Government and laws": 100,
     "UUUU Deals and contracts": 43,
-    "SECTOR Countries": 101,
+    "SECTOR Countries": 102,
     "CEG Deals and contracts": 50,
     "NXE Legal": 20,
     "NXE Deals and contracts": 19,
