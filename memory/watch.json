@@ -2360,6 +2360,38 @@
 "surfaced": false
 },
 {
+"date": "2026-12-15",
+"ticker": "TLN",
+"what": "PJM 2029/30 base residual capacity auction closes; desk notes say assume it runs on schedule under the price collar.",
+"by": "questioner",
+"written": "2026-11-26",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "TLN",
+"what": "PJM 2029/30 capacity auction close; check whether FERC has ruled on the delay request and how the result compares with the price cap",
+"by": "risk",
+"written": "2026-11-26",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "VST",
+"what": "PJM 2029/30 capacity auction close; same regulatory risk as TLN",
+"by": "risk",
+"written": "2026-11-26",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "",
+"what": "Questioner follow-up: Has anyone confirmed whether the PJM December 2029/30 capacity auction (Dec 15) is still on schedule? Talen's earnings depend on it, and the 9.6% jump on an unconfirmed ruling ha",
+"by": "questioner",
+"written": "2026-11-26",
+"surfaced": false
+},
+{
 "date": "2026-12-21",
 "ticker": "CCJ",
 "what": "NRC public comment period closes on draft EA/PA for Crownpoint ISR project",
@@ -2861,6 +2893,14 @@
 "what": "Did CEG deliver? They promised on 2026-11-09: Deliver Calvert Cliffs 190 MW capacity expansion for Amazon",
 "by": "investigator",
 "written": "2026-11-23",
+"surfaced": false
+},
+{
+"date": "2034-01-01",
+"ticker": "CCJ",
+"what": "Indonesia PLN's targeted first nuclear plant year; tracks whether the 7 GW target becomes real procurement.",
+"by": "scout",
+"written": "2026-11-26",
 "surfaced": false
 }
 ]

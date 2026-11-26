@@ -29289,5 +29289,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "BWXT",
+"date": "2026-11-26",
+"title": "Major GBP8Bn Investment to Upgrade UK Nuclear Submarine Availability and Warfighting Readiness",
+"type": "intel_defense",
+"source": "Intel: ASDNews",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "BWXT",
+"date": "2026-11-26",
+"title": "AUKUS in the Indian Ocean: What It Means for India",
+"type": "intel_defense",
+"source": "Intel: orfonline.org",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]
