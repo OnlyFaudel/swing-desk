@@ -621,7 +621,8 @@
   "weather:2026-11-26": true,
   "questioner:2026-11-26:4": true,
   "reactors:2026-11-26": true,
-  "plantrep:2026-11-26": true
+  "plantrep:2026-11-26": true,
+  "questioner:2026-11-26:5": true
  },
  "benchmark": {
   "shares": {
@@ -8962,12 +8963,12 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.03089,
+  "day_usd": 0.03965,
   "month": "2026-11",
-  "month_usd": 2.02565,
-  "total_usd": 2.02565,
+  "month_usd": 2.03441,
+  "total_usd": 2.03441,
   "by_role": {
-   "macro": 0.19341,
+   "macro": 0.19621,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
@@ -8976,12 +8977,12 @@
    "auditor": 0.02993,
    "strategist": 0.11417,
    "pm": 0.31734,
-   "risk": 0.19713,
+   "risk": 0.20039,
    "investigator": 0.34983,
    "postmortem": 0.00035,
    "researcher": 0.02341,
    "engineer": 0.08111,
-   "questioner": 0.13235
+   "questioner": 0.13505
   }
  },
  "desk_log": [
@@ -9239,7 +9240,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 09:59 ET",
+ "last_cycle": "2026-11-26 10:01 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57885,10 +57886,10 @@
   "2a89ac3dc67ad332",
   "8b9f115784388b61",
   "a73665945ff493c7",
-  "bdb801dcb316d6cb",
   "e15990dac5b8bec2",
-  "6f83643eaed2fbc3",
+  "bdb801dcb316d6cb",
   "b695f296dd2e61f0",
+  "6f83643eaed2fbc3",
   "5d0c7240e494c5f9",
   "637530bf82fb0126",
   "0929027bdfefabbd",
@@ -57924,6 +57925,7 @@
   "15c5ededcaa0a513",
   "9ab10d3c257d1ce5",
   "dce4cce47213c16f",
+  "8de24d7e6020d498",
   "563c0572b10f43bc",
   "efa3269c9fa1c644",
   "9dbb51b520d076e7",
@@ -58028,12 +58030,12 @@
   "c527b52a6d387b5e",
   "c2bfe85469484a37",
   "bf78a7a4b7c697c4",
-  "04e5c0526493eb7e",
   "6a0cc1c1f8babcd3",
+  "04e5c0526493eb7e",
   "7ee1ad6e6041b23e",
-  "16c52bc5bc8110db",
-  "f1f8a01f5b2d2080",
   "3a1ae63cc1a72974",
+  "f1f8a01f5b2d2080",
+  "16c52bc5bc8110db",
   "1be96b3daf4578d3",
   "1e64fcaaf9ecb5d1",
   "bf3c957b04f7b01a",
@@ -58241,7 +58243,6 @@
   "8a17ec5ab2f6dcf8",
   "5e042fd73e80d40b",
   "696cc711d13e8558",
-  "aa4b40fcca57bfea",
   "3c1ef04c322d8d99",
   "52dee3d37e759da2",
   "997921d9077a2d67",
@@ -58544,7 +58545,7 @@
   "418a91931047cecc",
   "52950daaafc92008",
   "c988637e87af140a",
-  "8de24d7e6020d498"
+  "aa4b40fcca57bfea"
  ],
  "news_slow_at": 1795704850.9921243,
  "officer": {
@@ -214353,6 +214354,41 @@
    ],
    "practice": false,
    "end": "08:35"
+  },
+  {
+   "id": "20261126100125347493",
+   "title": "The Questioner, Nov 26 10:01",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-26 10:01",
+   "msgs": [
+    {
+     "t": "10:01",
+     "who": "questioner",
+     "to": "team",
+     "text": "Questions for the team after the close: the TLN resting buy at $355.66 is still listed as a live plan, but LIVE_ORDERS_RIGHT_NOW says nothing is resting, and the basket gate is closed. I want to know whether that order exists or was only discussed, since the desk has already asked this and it still hasn't been answered. Also, the PJM Dec 15 auction is the main earnings risk for TLN and VST, and no FERC ruling on the delay has been found, so the desk should not treat that catalyst as settled.",
+     "outcome": false,
+     "notes": "question: LIVE_ORDERS_RIGHT_NOW is empty. Is the TLN buy at $355.66 actually resting at the broker, or was it only discussed? If it is resting, why was it not canceled when the basket gate closed?\nwhy it might matter: A stale resting order could fill on a move the desk no longer intends, and the desk's own rule says no new buys while the basket is below its 10-day average.\nask: chief\nkind: unexplained\nquestion: Has the PJM 2029/30 capacity auction (scheduled to close Dec 15) been confirmed on schedule, or has the delay request been decided? No ruling has been found, yet TLN jumped 9.6% on the headline.\nwhy it might matter: This is the main earnings driver for Talen and Vistra. Holding into an unresolved regulatory outcome is a different risk than a normal setup.\nask: macro\nkind: missed\nquestion: Does the desk's Thanksgiving run-up rule get blocked by the closed basket gate, and would any"
+    },
+    {
+     "t": "10:01",
+     "who": "macro",
+     "to": "questioner",
+     "text": "I checked the PJM 2029/30 auction question against the desk's notes. No FERC ruling on the delay request has been found as of Nov 25, so the Dec 15 auction should be treated as on schedule, and that makes it a real catalyst for TLN and VST. The 9.6% jump on an unconfirmed headline is the kind of move we should not chase. I agree with the Questioner that this is a risk to hold, not a setup to add to.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: watch\nwatch date: 2026-12-15\nwhy: The desk's checked facts say no ruling on the delay has been found and the auction is on the calendar, so the Dec 15 close is the event that decides Talen's and Vistra's earnings driver. The desk's own PJM-auction study also shows that release-day pops in power stocks tended to fade over the next 20 sessions.\ndate: 2026-12-15\nticker: TLN\nwhat: PJM 2029/30 base residual auction closes; no FERC ruling on the delay request found as of Nov 25. Main earnings driver for TLN and VST.\ndate: 2026-12-15\nticker: VST\nwhat: PJM 2029/30 base residual auction closes; main earnings driver for Vistra alongside TLN.\nfiles read: TLN Snapshot, SECTOR Government and laws, PJM capacity auction (desk fact check)"
+    },
+    {
+     "t": "10:01",
+     "who": "risk",
+     "to": "questioner",
+     "text": "The Thanksgiving run-up rule is not blocked by the closed basket gate, because the gate only stops new buys and the desk's notes show no active Thanksgiving-window order to cancel. Black Friday weakness for the power names is a sentiment check, not a trade signal, so it does not change the open setups.",
+     "outcome": false,
+     "notes": "verdict: irrelevant\naction: none\nwhy: The desk's notes say the Thanksgiving dip-buy variants that survived were small and sit in the practice book with no money behind them, and the basket gate is closed today anyway, so no new buys go in regardless. The calendar's Black Friday to Monday weakness for the power trio (down 6 of 7 years) is only a sentiment read, and the notes show TLN and VST resting orders are not live, so no open setup is affected.\nfiles read: SECTOR Calendar and ranking ideas checked, SECTOR Does the market drop most Thanksgivings, and can we catch holiday dips?"
+    }
+   ],
+   "practice": false,
+   "end": "10:01"
   }
  ],
  "feed": [
@@ -219074,6 +219110,19 @@
     "sub": "Reactors, mines and fuel, Nov 26"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-26 10:01",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Has the PJM 2029/30 capacity auction (scheduled to close Dec 15) been confirmed on schedule, or has the delay request been decided? No ruling has been found, yet TLN jumped 9.6% on the headline. -> relevant | Does the desk's Thanksgiving run-up rule get blocked by the closed basket gate, and would any of the open setups (TLN, VST, CEG) be affected by Black Friday's half-day weakness? -> irrelevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -219913,7 +219962,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 09:59",
+  "updated": "2026-11-26 10:01",
   "total": 789,
   "week": 564,
   "places": {
@@ -220551,8 +220600,8 @@
  },
  "intel_handed": [
   "b2e981fc7a2e7302",
-  "2ac262d1779b4fad",
   "958910b51098bafe",
+  "2ac262d1779b4fad",
   "2c7a3976a5596853",
   "0ad3ea7bae8b611c",
   "020569e75e7d456e",
@@ -220561,8 +220610,8 @@
   "36cbbee89c76a1f7",
   "b371c50f261a21f0",
   "4dbfaa309ceb1878",
-  "c2a1739b2e369eff",
   "515517f776442fe4",
+  "c2a1739b2e369eff",
   "797e5c4039060606",
   "5b83027a0cf1a496",
   "37e85b7a7ce58612",
@@ -223130,7 +223179,7 @@
    "built": "2026-11-26 09:50"
   }
  ],
- "heartbeat": "2026-11-26 09:59",
+ "heartbeat": "2026-11-26 10:01",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223615,15 +223664,15 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 99,
-   "used": 97,
+   "asked": 100,
+   "used": 98,
    "notes": {
     "SECTOR Uranium market": 69,
     "BWXT Snapshot": 7,
     "CCJ Snapshot": 3,
     "UUUU Snapshot": 6,
-    "SECTOR Government and laws": 62,
-    "TLN Snapshot": 38,
+    "SECTOR Government and laws": 63,
+    "TLN Snapshot": 39,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
     "CEG Legal": 1,
@@ -223641,7 +223690,8 @@
     "TLN Legal": 1,
     "VST Legal": 1,
     "SECTOR Countries": 1,
-    "Calendar: PJM auction results": 1
+    "Calendar: PJM auction results": 1,
+    "PJM capacity auction (desk fact check)": 1
    },
    "since": "2026-11-23"
   },
@@ -223689,8 +223739,8 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 99,
-   "used": 98,
+   "asked": 100,
+   "used": 99,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 4,
@@ -223738,7 +223788,9 @@
     "How to read the team's own predictions so far (calls list, N": 1,
     "UUUU Price behavior": 1,
     "already_checked_facts": 2,
-    "SECTOR Panic-day record": 1
+    "SECTOR Panic-day record": 1,
+    "SECTOR Calendar and ranking ideas checked": 1,
+    "SECTOR Does the market drop most Thanksgivings, and can we c": 1
    },
    "since": "2026-11-23"
   },
@@ -223762,8 +223814,8 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 52,
-   "used": 52,
+   "asked": 53,
+   "used": 53,
    "notes": {
     "TLN Snapshot": 42,
     "TLN News": 38,
@@ -223771,7 +223823,7 @@
     "BWXT Snapshot": 2,
     "BWXT News": 1,
     "BWXT Legal": 1,
-    "CCJ Snapshot": 6,
+    "CCJ Snapshot": 7,
     "TLN Leadership and insiders": 37,
     "CCJ Legal": 2,
     "TLN Legal": 7,
@@ -223786,7 +223838,7 @@
     "Reminder: Pre-Thanksgiving session (2026-11-25)": 1,
     "Reminder: Thanksgiving run-up rule": 1,
     "Basket gate note: nuclear basket -11.2% vs 10-day average": 1,
-    "LIVE_ORDERS_RIGHT_NOW": 5,
+    "LIVE_ORDERS_RIGHT_NOW": 6,
     "SECTOR Calendar": 1,
     "already_asked": 3,
     "Desk lessons": 1,
@@ -223794,7 +223846,10 @@
     "TLN earnings calendar": 1,
     "SECTOR Countries": 1,
     "TLN Calendar": 1,
-    "SECTOR Power regulation": 1
+    "SECTOR Power regulation": 1,
+    "PJM 2029/30 capacity auction delay": 1,
+    "BWXT Leadership and insiders": 1,
+    "Black Friday / Thanksgiving calendar": 1
    },
    "since": "2026-11-23"
   },
@@ -226689,6 +226744,16 @@
    "price": 113.49,
    "result": null,
    "why": "The headline asks a question rather than reporting new terms, so it's a follow-up at best. Our notes show BWXT contract news has tended to fade over 20 days, which argues against reading much into it."
+  },
+  {
+   "role": "questioner",
+   "ticker": "TLN",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-26",
+   "price": 351.55,
+   "result": null,
+   "why": "The desk's notes say no orders are resting, yet the TLN plan is still discussed as live, which is a contradiction worth a direct answer. The PJM auction is the stated earnings catalyst and nothing con"
   }
  ],
  "after_sale": [],
@@ -228730,6 +228795,24 @@
    "answer": "I checked the desk files and found no confirmation that the PJM December 15 auction has been delayed or decided. The only delay request is unruled, so the auction should be assumed to go ahead on schedule, and the TLN and VST moves are being discussed as if the outcome were known. That makes this a real risk to watch, not something to trade on.",
    "verdict": "relevant",
    "action": "watch"
+  },
+  {
+   "t": "2026-11-26 10:01",
+   "question": "Has the PJM 2029/30 capacity auction (scheduled to close Dec 15) been confirmed on schedule, or has the delay request been decided? No ruling has been found, yet TLN jumped 9.6% on the headline.",
+   "kind": "missed",
+   "asked": "macro",
+   "answer": "I checked the PJM 2029/30 auction question against the desk's notes. No FERC ruling on the delay request has been found as of Nov 25, so the Dec 15 auction should be treated as on schedule, and that makes it a real catalyst for TLN and VST. The 9.6% jump on an unconfirmed headline is the kind of move we should not chase. I agree with the Questioner that this is a risk to hold, not a setup to add to.",
+   "verdict": "relevant",
+   "action": "watch"
+  },
+  {
+   "t": "2026-11-26 10:01",
+   "question": "Does the desk's Thanksgiving run-up rule get blocked by the closed basket gate, and would any of the open setups (TLN, VST, CEG) be affected by Black Friday's half-day weakness?",
+   "kind": "maybe_irrelevant",
+   "asked": "risk",
+   "answer": "The Thanksgiving run-up rule is not blocked by the closed basket gate, because the gate only stops new buys and the desk's notes show no active Thanksgiving-window order to cancel. Black Friday weakness for the power names is a sentiment check, not a trade signal, so it does not change the open setups.",
+   "verdict": "irrelevant",
+   "action": "none"
   }
  ],
  "reactor_view": {
@@ -231370,8 +231453,8 @@
   }
  ],
  "movers": {
-  "at": 1795694738.9420397,
-  "time": "2026-11-26 07:05",
+  "at": 1795705285.3458369,
+  "time": "2026-11-26 10:01",
   "list": [
    {
     "ticker": "LEU",

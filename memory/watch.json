@@ -2400,6 +2400,30 @@
 "surfaced": false
 },
 {
+"date": "2026-12-15",
+"ticker": "TLN",
+"what": "PJM 2029/30 base residual auction closes; no FERC ruling on the delay request found as of Nov 25. Main earnings driver for TLN and VST.",
+"by": "macro",
+"written": "2026-11-26",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "VST",
+"what": "PJM 2029/30 base residual auction closes; main earnings driver for Vistra alongside TLN.",
+"by": "macro",
+"written": "2026-11-26",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "",
+"what": "Questioner follow-up: Has the PJM 2029/30 capacity auction (scheduled to close Dec 15) been confirmed on schedule, or has the delay request been decided? No ruling has been found, yet TLN jumped 9.6% ",
+"by": "questioner",
+"written": "2026-11-26",
+"surfaced": false
+},
+{
 "date": "2026-12-21",
 "ticker": "CCJ",
 "what": "NRC public comment period closes on draft EA/PA for Crownpoint ISR project",
