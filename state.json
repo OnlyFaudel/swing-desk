@@ -8969,16 +8969,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.07111,
+  "day_usd": 0.07153,
   "month": "2026-11",
-  "month_usd": 2.06588,
-  "total_usd": 2.06588,
+  "month_usd": 2.0663,
+  "total_usd": 2.0663,
   "by_role": {
    "macro": 0.20195,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.21785,
+   "scout": 0.21827,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9246,7 +9246,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 16:01 ET",
+ "last_cycle": "2026-11-26 16:11 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -58043,6 +58043,7 @@
   "61b82697d913613b",
   "75dabb316f140f2a",
   "5a9bda0556d8a1b9",
+  "784c0ad43d4d3c29",
   "d7a4322b710f8594",
   "0d70d57b39a4409a",
   "4a665786ac37d007",
@@ -58057,8 +58058,8 @@
   "dbaa3c361e6d78b5",
   "6f138c10a977c951",
   "82e06a4ced981af5",
-  "40da66ea723efc8f",
   "70ec56bf0ac9a6fb",
+  "40da66ea723efc8f",
   "2cbbc694a2695e84",
   "cdc9a7381e6b445a",
   "9f2e45d00f1961dd",
@@ -58460,6 +58461,7 @@
   "a43ea8518bf9236b",
   "e2c2d566a7566dea",
   "19fb88d62a25326f",
+  "b15e05abe9bd71a5",
   "d315dfa4e1149d87",
   "991c698e5a396dd1",
   "454f125376912a43",
@@ -58577,10 +58579,9 @@
   "a82f81d0eb01a7ed",
   "1815c15f02a1bb79",
   "53fc8faedadd1796",
-  "7ee1ad6e6041b23e",
-  "b15e05abe9bd71a5"
+  "7ee1ad6e6041b23e"
  ],
- "news_slow_at": 1795726333.3128724,
+ "news_slow_at": 1795726965.054176,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -220141,11 +220142,11 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 16:01",
+  "updated": "2026-11-26 16:11",
   "total": 834,
-  "week": 581,
+  "week": 580,
   "places": {
-   "Uranium price": 50,
+   "Uranium price": 49,
    "South Korea": 45,
    "Weapons programs": 34,
    "Europe new builds": 30,
@@ -220822,8 +220823,8 @@
   "85de31670d4daf9d",
   "dd57ba38f81c0a8f",
   "c5a7aa4d347cef23",
-  "4039fa58057275ae",
   "7ffb052a70d145c2",
+  "4039fa58057275ae",
   "d1148d05210e97b6",
   "03c5d2773ef94a7b",
   "a7baf61adc01832c",
@@ -223370,12 +223371,12 @@
    "built": "2026-11-26 16:01"
   }
  ],
- "heartbeat": "2026-11-26 16:01",
+ "heartbeat": "2026-11-26 16:11",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 384,
+ "_pushed_feed": 386,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -223611,15 +223612,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 390,
-   "used": 357,
+   "asked": 391,
+   "used": 358,
    "notes": {
     "TLN Deals and contracts": 18,
     "CCJ Deals and contracts": 70,
     "BWXT Deals and contracts": 51,
-    "SECTOR Government and laws": 102,
+    "SECTOR Government and laws": 103,
     "UUUU Deals and contracts": 43,
-    "SECTOR Countries": 103,
+    "SECTOR Countries": 104,
     "CEG Deals and contracts": 50,
     "NXE Legal": 20,
     "NXE Deals and contracts": 19,
