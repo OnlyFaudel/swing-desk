@@ -21968,5 +21968,109 @@
 "nuclear",
 "time"
 ]
+},
+{
+"id": "aad9662b31e771ba",
+"date": "2026-11-24",
+"ts": 1795543996,
+"title": "BofA favors copper and uranium, downgrades Pan American Silver",
+"summary": "",
+"outlet": "TradingView",
+"link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOcHdETGJzZjBNQXZoRGJMOWpYWmlWTVNPV3B5R3VsTzhEblhyT012Mi1FQzluY3gwb1ZEZVdGTVVzdGN1YTdvbEdTOXEwb3FMM2s3WlhteEIzU2RMN0lWckV3WkVDTFVfMktCZkhSSjBJSFNPam0zclF4NzZFX3pZZG5FdjZJZzJxNzBJV3ZiNGlab011dm5jbUlNQ2pMREY4U2hpNFlUWXU0STVndjd1SnpITlFXWFhWcDBXQlFRVkRqbGRreDNjV2lQUDJfTEZZNy0za0REX0IzVWs?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 1.5,
+"echo_of": "cc273780de04d2de",
+"w": [
+"american",
+"bofa",
+"copper",
+"downgrades",
+"favors",
+"pan",
+"silver",
+"uranium"
+]
+},
+{
+"id": "aff7a540bd30b75a",
+"date": "2026-11-26",
+"ts": 1795651255,
+"title": "Kazatomprom bribery probe: operational and project risk notes for mine planners",
+"summary": "",
+"outlet": "Geomechanics.io",
+"link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQ2poc3lhbkIxZmxUNHJKN3U2d3V3OWMzSG1hb2l1ZDdzejZqdy1RaWt0Z1RGWFlGaDBOX3lqZjJyMXpkcnRGTzJJb2NMY2l0YlRNbWx6QVZ5NWhPVVNYeUF0aHRuQk9XWkpkbUV4SldRLVlzbDVzZUgzbGVDRmdYdFFoWWFBZmhyakliX3EwZDM5ZnJwS25IT1ZrNXdGSk95SXh1eDVRc0JfakppOFJaVDlIc2lUX093Nm1B?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.75,
+"score": 4.0,
+"echo_of": null,
+"w": [
+"bribery",
+"kazatomprom",
+"mine",
+"notes",
+"operational",
+"planners",
+"probe",
+"project",
+"risk"
+]
+},
+{
+"id": "b891066a77c3478b",
+"date": "2026-11-26",
+"ts": 1795653120,
+"title": "Paladin Energy (ASX:PDN): Can the ASX 200 Uranium Miner's Fresh Funding Power Its Canadian Plans?",
+"summary": "",
+"outlet": "Kalkine Media",
+"link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNR0hEMmFmdkphUlBDUUR5dXNHRFJ0aldTNVhwTHdKbk1xblpWMExicWE3Zy1NWVVBS1RaRlQtZTI0UlhFakMtcmRfcFhROTFhY1FBSHRleU10Q28xdGMtTGRGeTM4NGRjTm4tVkFTVklNMlZrOWVWTmZvOVlmTE9HRExZbDJJb3hiVm9neThOOWtoTUU4MkdNRktxTFdaZ3dvb25Od2c4N3pYQ3hrLUNtb1FZaFhTZ0FQbzBTNXJwcGVWM0pRa25JWWw1dWNPQQ?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.53,
+"score": 2.56,
+"echo_of": null,
+"w": [
+"200",
+"asx",
+"can",
+"canadian",
+"energy",
+"fresh",
+"funding",
+"miner",
+"paladin",
+"pdn",
+"plans",
+"power",
+"uranium"
+]
 }
 ]

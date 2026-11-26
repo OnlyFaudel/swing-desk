@@ -547,7 +547,7 @@
   "radarres:2026-11-24": true,
   "questioner:2026-11-24:9": true,
   "sput:2026-11-24": true,
-  "intraday_backfill_t": 1795650688.2223353,
+  "intraday_backfill_t": 1795655031.4718764,
   "reconcile:2026-11-24": true,
   "catalysts:2026-11-25": true,
   "tidy_v1": true,
@@ -605,7 +605,14 @@
   "nightwatch181:2026-11-25": true,
   "ahdip182:2026-11-25": true,
   "nightwatch182:2026-11-25": true,
-  "ahdip183:2026-11-25": true
+  "ahdip183:2026-11-25": true,
+  "nightwatch190:2026-11-25": true,
+  "ahdip190:2026-11-25": true,
+  "ahdip191:2026-11-25": true,
+  "nightwatch191:2026-11-25": true,
+  "ahdip192:2026-11-25": true,
+  "nightwatch192:2026-11-25": true,
+  "questioner:2026-11-25:10": true
  },
  "benchmark": {
   "shares": {
@@ -4189,18 +4196,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Local intel: RTO Insider (Canada SMRs)",
-   "title": "Darlington SMR Faces Cost Overrun; Construction Interest Remains Recoverable",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdXluVE13NkNkVlhEZFdISUtncWZSWlk5SnoxU01fZ3B0RnRoVVp6QWtZZ2dQeUxoUUtaRGhrc3ViTS0zd0lGTE1JZWliQXZUTjdENi1LV2ZkY213TTNCZnhoUTE3WFBEU2hUYy00bkRzNTF0TTE3cVZDSHBtQ2pMVUR4NUttYVgyVmdob2VTOGtKbGlSUDlhbVF5Q28xTXRBSFFNX1lMaHk5RHJaSzFr?oc=5",
-   "ts": 1795493009,
-   "materiality": null,
-   "novelty": null,
-   "direction": null,
-   "event_type": null,
-   "why": null
-  },
-  {
    "ticker": "VST",
    "source": "Google News",
    "title": "Vistra (VST) Stock Price Prediction: Analyst targets stay constructive as price action remains below key moving averages - Blockchain News",
@@ -7187,6 +7182,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Routine annual sustainability report; no new financial or project information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Kazatomprom",
+   "title": "Kazatomprom bribery probe: operational and project risk notes for mine planners - Geomechanics.io",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQ2poc3lhbkIxZmxUNHJKN3U2d3V3OWMzSG1hb2l1ZDdzejZqdy1RaWt0Z1RGWFlGaDBOX3lqZjJyMXpkcnRGTzJJb2NMY2l0YlRNbWx6QVZ5NWhPVVNYeUF0aHRuQk9XWkpkbUV4SldRLVlzbDVzZUgzbGVDRmdYdFFoWWFBZmhyakliX3EwZDM5ZnJwS25IT1ZrNXdGSk95SXh1eDVRc0JfakppOFJaVDlIc2lUX093Nm1B?oc=5",
+   "ts": 1795651255,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Kazatomprom bribery-probe risk piece from a niche consultancy blog; no new fact on CCJ."
   }
  ],
  "reviews": [
@@ -8946,16 +8953,16 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.72474,
+  "day_usd": 0.72806,
   "month": "2026-11",
-  "month_usd": 1.9083,
-  "total_usd": 1.9083,
+  "month_usd": 1.91162,
+  "total_usd": 1.91162,
   "by_role": {
    "macro": 0.19341,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.17623,
+   "scout": 0.1771,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -8965,7 +8972,7 @@
    "postmortem": 0.00035,
    "researcher": 0.02341,
    "engineer": 0.07932,
-   "questioner": 0.1248
+   "questioner": 0.12725
   }
  },
  "desk_log": [
@@ -9158,7 +9165,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 18:58 ET",
+ "last_cycle": "2026-11-25 20:01 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57853,6 +57860,7 @@
   "5ca17a18c47750da",
   "0d77f1d2373bb03d",
   "e6fd6f9a6df879e4",
+  "8e86917f784be639",
   "53fc8faedadd1796",
   "bd4b01979593b573",
   "52fac14cf9cff90b",
@@ -58328,6 +58336,7 @@
   "15fecb83818a0949",
   "12fc0c7a240e4fef",
   "e87b1e4d61fe1cbd",
+  "aff7a540bd30b75a",
   "bf01a2cc0277276c",
   "cc273780de04d2de",
   "3acd3183b0f50c38",
@@ -58395,7 +58404,7 @@
   "84200faa36eac51a",
   "688d746cfc31b58f"
  ],
- "news_slow_at": 1795650754.4498582,
+ "news_slow_at": 1795655093.2115998,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -214061,6 +214070,25 @@
    ],
    "practice": false,
    "end": "18:00"
+  },
+  {
+   "id": "20261125200215213312",
+   "title": "The Questioner, Nov 25 20:01",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-25 20:02",
+   "msgs": [
+    {
+     "t": "20:02",
+     "who": "questioner",
+     "to": "exec",
+     "text": "Most of the questions in my notes are already asked. The one open question is LIVE_ORDERS_RIGHT_NOW: it is empty, so the TLN $355.66 buy the team keeps discussing is not actually resting. I want that confirmed before anyone treats it as a live plan.",
+     "outcome": false,
+     "notes": "question: LIVE_ORDERS_RIGHT_NOW is empty. Is the TLN buy at $355.66 actually resting at the broker, or was it only discussed? If it is resting, why was it not canceled when the basket gate closed?\nwhy it might matter: Several posts describe the TLN level as a plan. If the order exists while the gate says no new buys, it breaks our rule; if it does not exist, the team is discussing a trade that was never placed.\nask: exec\nkind: odd\nwhy: The desk notes say no resting orders exist, yet the team posts keep discussing the TLN buy as if it were live. Every other question in this batch was already asked and answered in the notes, so I am asking only the one that remains unresolved.\nfiles read: LIVE_ORDERS_RIGHT_NOW, already_asked"
+    }
+   ],
+   "practice": false,
+   "end": "20:02"
   }
  ],
  "feed": [
@@ -218672,6 +218700,19 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-25 20:02",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: ",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -219422,62 +219463,62 @@
    "lesson": null
   }
  ],
- "intel_at": 1795650598.1027482,
+ "intel_at": 1795654938.4612815,
  "intel_health": {
-  "at": "2026-11-25 18:51",
+  "at": "2026-11-25 20:03",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
-   "Athabasca Basin": 7,
+   "Athabasca Basin": 11,
    "Saskatchewan wildfires": 5,
    "Rook I / Arrow": 7,
    "Wheeler River / Phoenix": 9,
    "Port Hope / Blind River": 0,
-   "Westinghouse": 11,
-   "Kazakhstan": 16,
-   "Niger": 8,
-   "Namibia": 30,
+   "Westinghouse": 12,
+   "Kazakhstan": 25,
+   "Niger": 7,
+   "Namibia": 34,
    "Russia supply": 3,
    "Piketon": 26,
    "HALEU": 12,
-   "Wyoming ISR": 23,
+   "Wyoming ISR": 43,
    "South Texas ISR": 2,
    "White Mesa / Utah": 14,
-   "Rare earths (Energy Fuels)": 17,
+   "Rare earths (Energy Fuels)": 22,
    "Lynchburg / Erwin": 0,
    "Naval reactors": 10,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 5,
-   "Comanche Peak": 8,
-   "PJM grid": 14,
-   "ERCOT grid": 16,
+   "Comanche Peak": 7,
+   "PJM grid": 7,
+   "ERCOT grid": 12,
    "Data-center nuclear deals": 9,
    "Japan restarts": 8,
    "China new builds": 14,
-   "Congress and laws": 28,
-   "NRC decisions": 21,
+   "Congress and laws": 47,
+   "NRC decisions": 20,
    "Energy Department": 69,
-   "White House and executive orders": 25,
+   "White House and executive orders": 36,
    "Tariffs and trade": 2,
-   "India": 25,
-   "South Korea": 87,
-   "Europe new builds": 60,
-   "France and UK": 18,
-   "Middle East": 57,
-   "Asia newcomers": 48,
+   "India": 26,
+   "South Korea": 84,
+   "Europe new builds": 61,
+   "France and UK": 12,
+   "Middle East": 56,
+   "Asia newcomers": 49,
    "Canada SMRs": 10,
-   "Big tech power deals": 29,
-   "Iran": 0,
-   "North Korea": 0,
-   "War zones": 32,
-   "AUKUS and navies": 15,
+   "Big tech power deals": 68,
+   "Iran": 25,
+   "North Korea": 100,
+   "War zones": 10,
+   "AUKUS and navies": 14,
    "Weapons programs": 20,
-   "Stockpiles and reserves": 30,
+   "Stockpiles and reserves": 25,
    "Sprott trust": 6,
-   "Uranium price": 45,
+   "Uranium price": 44,
    "US policy": 0,
-   "Lawsuits and investigations": 33,
-   "Workers and jobs": 24,
+   "Lawsuits and investigations": 73,
+   "Workers and jobs": 25,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
    "Federal Register (uranium)": 9,
@@ -219487,18 +219528,18 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 18:58",
-  "total": 680,
-  "week": 509,
+  "updated": "2026-11-25 20:03",
+  "total": 683,
+  "week": 510,
   "places": {
-   "Uranium price": 47,
+   "Uranium price": 48,
    "South Korea": 37,
-   "Piketon": 27,
    "Europe new builds": 27,
+   "Piketon": 26,
    "Weapons programs": 26,
    "World Nuclear News": 24,
    "Workers and jobs": 22,
-   "Kazakhstan": 20,
+   "Kazakhstan": 21,
    "AUKUS and navies": 19,
    "War zones": 19,
    "Rare earths (Energy Fuels)": 15,
@@ -219506,60 +219547,60 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-25 18:51",
+   "at": "2026-11-25 20:03",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
-    "Athabasca Basin": 7,
+    "Athabasca Basin": 11,
     "Saskatchewan wildfires": 5,
     "Rook I / Arrow": 7,
     "Wheeler River / Phoenix": 9,
     "Port Hope / Blind River": 0,
-    "Westinghouse": 11,
-    "Kazakhstan": 16,
-    "Niger": 8,
-    "Namibia": 30,
+    "Westinghouse": 12,
+    "Kazakhstan": 25,
+    "Niger": 7,
+    "Namibia": 34,
     "Russia supply": 3,
     "Piketon": 26,
     "HALEU": 12,
-    "Wyoming ISR": 23,
+    "Wyoming ISR": 43,
     "South Texas ISR": 2,
     "White Mesa / Utah": 14,
-    "Rare earths (Energy Fuels)": 17,
+    "Rare earths (Energy Fuels)": 22,
     "Lynchburg / Erwin": 0,
     "Naval reactors": 10,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 5,
-    "Comanche Peak": 8,
-    "PJM grid": 14,
-    "ERCOT grid": 16,
+    "Comanche Peak": 7,
+    "PJM grid": 7,
+    "ERCOT grid": 12,
     "Data-center nuclear deals": 9,
     "Japan restarts": 8,
     "China new builds": 14,
-    "Congress and laws": 28,
-    "NRC decisions": 21,
+    "Congress and laws": 47,
+    "NRC decisions": 20,
     "Energy Department": 69,
-    "White House and executive orders": 25,
+    "White House and executive orders": 36,
     "Tariffs and trade": 2,
-    "India": 25,
-    "South Korea": 87,
-    "Europe new builds": 60,
-    "France and UK": 18,
-    "Middle East": 57,
-    "Asia newcomers": 48,
+    "India": 26,
+    "South Korea": 84,
+    "Europe new builds": 61,
+    "France and UK": 12,
+    "Middle East": 56,
+    "Asia newcomers": 49,
     "Canada SMRs": 10,
-    "Big tech power deals": 29,
-    "Iran": 0,
-    "North Korea": 0,
-    "War zones": 32,
-    "AUKUS and navies": 15,
+    "Big tech power deals": 68,
+    "Iran": 25,
+    "North Korea": 100,
+    "War zones": 10,
+    "AUKUS and navies": 14,
     "Weapons programs": 20,
-    "Stockpiles and reserves": 30,
+    "Stockpiles and reserves": 25,
     "Sprott trust": 6,
-    "Uranium price": 45,
+    "Uranium price": 44,
     "US policy": 0,
-    "Lawsuits and investigations": 33,
-    "Workers and jobs": 24,
+    "Lawsuits and investigations": 73,
+    "Workers and jobs": 25,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
     "Federal Register (uranium)": 9,
@@ -222543,7 +222584,7 @@
    }
   ]
  },
- "dossier_at": 1795650691.450335,
+ "dossier_at": 1795655034.7314432,
  "sector_prices": {
   "_at": 1795647108.8290422,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -222601,80 +222642,80 @@
    "name": "Cameco",
    "price": 61.56,
    "week_pct": -1.42,
-   "built": "2026-11-25 18:51"
+   "built": "2026-11-25 20:03"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.95,
    "week_pct": -4.46,
-   "built": "2026-11-25 18:51"
+   "built": "2026-11-25 20:04"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.69,
    "week_pct": -3.89,
-   "built": "2026-11-25 18:51"
+   "built": "2026-11-25 20:04"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.8,
    "week_pct": -1.64,
-   "built": "2026-11-25 18:51"
+   "built": "2026-11-25 20:04"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.2,
    "week_pct": -7.71,
-   "built": "2026-11-25 18:51"
+   "built": "2026-11-25 20:04"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 83.23,
    "week_pct": -9.3,
-   "built": "2026-11-25 18:52"
+   "built": "2026-11-25 20:04"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.49,
    "week_pct": -3.54,
-   "built": "2026-11-25 18:52"
+   "built": "2026-11-25 20:04"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 235.25,
    "week_pct": -10.46,
-   "built": "2026-11-25 18:52"
+   "built": "2026-11-25 20:04"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 121.32,
    "week_pct": -3.39,
-   "built": "2026-11-25 18:52"
+   "built": "2026-11-25 20:04"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 351.55,
    "week_pct": -2.4,
-   "built": "2026-11-25 18:52"
+   "built": "2026-11-25 20:04"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-25 18:52"
+   "built": "2026-11-25 20:04"
   }
  ],
- "heartbeat": "2026-11-25 18:58",
+ "heartbeat": "2026-11-25 20:01",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -222899,15 +222940,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 301,
-   "used": 272,
+   "asked": 303,
+   "used": 274,
    "notes": {
     "TLN Deals and contracts": 17,
     "CCJ Deals and contracts": 56,
     "BWXT Deals and contracts": 37,
-    "SECTOR Government and laws": 73,
+    "SECTOR Government and laws": 74,
     "UUUU Deals and contracts": 38,
-    "SECTOR Countries": 68,
+    "SECTOR Countries": 70,
     "CEG Deals and contracts": 38,
     "NXE Legal": 13,
     "NXE Deals and contracts": 19,
@@ -223289,8 +223330,8 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 49,
-   "used": 49,
+   "asked": 50,
+   "used": 50,
    "notes": {
     "TLN Snapshot": 42,
     "TLN News": 38,
@@ -223313,9 +223354,9 @@
     "Reminder: Pre-Thanksgiving session (2026-11-25)": 1,
     "Reminder: Thanksgiving run-up rule": 1,
     "Basket gate note: nuclear basket -11.2% vs 10-day average": 1,
-    "LIVE_ORDERS_RIGHT_NOW": 3,
+    "LIVE_ORDERS_RIGHT_NOW": 4,
     "SECTOR Calendar": 1,
-    "already_asked": 2,
+    "already_asked": 3,
     "Desk lessons": 1,
     "plants": 1
    },
@@ -230596,8 +230637,8 @@
   }
  ],
  "movers": {
-  "at": 1795647638.324766,
-  "time": "2026-11-25 18:00",
+  "at": 1795654935.2108176,
+  "time": "2026-11-25 20:01",
   "list": [
    {
     "ticker": "LEU",
@@ -230606,37 +230647,37 @@
     "why": [
      "-55% under its 2-month high"
     ],
-    "price": 83.19,
+    "price": 84.04,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "UEC",
     "core": true,
-    "volatility_pct": 89,
+    "volatility_pct": 90,
     "why": [
-     "-52% under its 2-month high"
+     "-53% under its 2-month high"
     ],
-    "price": 5.69,
+    "price": 5.57,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "UUUU",
     "core": true,
-    "volatility_pct": 76,
+    "volatility_pct": 77,
     "why": [
-     "-64% under its 2-month high"
+     "-65% under its 2-month high"
     ],
-    "price": 5.21,
+    "price": 5.13,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "MOD",
     "core": false,
-    "volatility_pct": 153,
+    "volatility_pct": 154,
     "why": [
-     "-31% under its 2-month high"
+     "-34% under its 2-month high"
     ],
-    "price": 136.34,
+    "price": 131.13,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230644,30 +230685,40 @@
     "core": false,
     "volatility_pct": 138,
     "why": [
-     "-38% under its 2-month high"
+     "-35% under its 2-month high"
     ],
-    "price": 149.3,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "AMD",
-    "core": false,
-    "volatility_pct": 133,
-    "why": [
-     "-37% under its 2-month high",
-     "-23% in 5 days"
-    ],
-    "price": 406.03,
+    "price": 155.38,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "MU",
     "core": false,
-    "volatility_pct": 133,
+    "volatility_pct": 136,
     "why": [
-     "-45% under its 2-month high"
+     "-43% under its 2-month high"
     ],
-    "price": 601.25,
+    "price": 629.79,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "AMD",
+    "core": false,
+    "volatility_pct": 134,
+    "why": [
+     "-36% under its 2-month high",
+     "-18% in 5 days"
+    ],
+    "price": 413.27,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "VRT",
+    "core": false,
+    "volatility_pct": 128,
+    "why": [
+     "-40% under its 2-month high"
+    ],
+    "price": 173.82,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230675,19 +230726,9 @@
     "core": false,
     "volatility_pct": 126,
     "why": [
-     "-55% under its 2-month high"
+     "-56% under its 2-month high"
     ],
-    "price": 19.47,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "VRT",
-    "core": false,
-    "volatility_pct": 111,
-    "why": [
-     "-40% under its 2-month high"
-    ],
-    "price": 173.37,
+    "price": 19.2,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230695,20 +230736,20 @@
     "core": false,
     "volatility_pct": 110,
     "why": [
-     "-71% under its 2-month high",
-     "-17% in 5 days"
+     "-70% under its 2-month high",
+     "-19% in 5 days"
     ],
-    "price": 3.25,
+    "price": 3.3,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "MTZ",
     "core": false,
-    "volatility_pct": 105,
+    "volatility_pct": 106,
     "why": [
-     "-37% under its 2-month high"
+     "-38% under its 2-month high"
     ],
-    "price": 154.17,
+    "price": 152.44,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -230716,49 +230757,30 @@
     "core": false,
     "volatility_pct": 104,
     "why": [
-     "-54% under its 2-month high"
+     "-54% under its 2-month high",
+     "-16% in 5 days"
     ],
-    "price": 8.85,
+    "price": 8.84,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "NVT",
     "core": false,
-    "volatility_pct": 99,
+    "volatility_pct": 101,
     "why": [
      "-40% under its 2-month high"
     ],
-    "price": 103.71,
+    "price": 104.58,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "ORCL",
     "core": false,
-    "volatility_pct": 87,
+    "volatility_pct": 96,
     "why": [
-     "-36% under its 2-month high"
+     "-32% under its 2-month high"
     ],
-    "price": 103.88,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "AVGO",
-    "core": false,
-    "volatility_pct": 83,
-    "why": [
-     "-15% in 5 days"
-    ],
-    "price": 300.86,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "GEV",
-    "core": false,
-    "volatility_pct": 76,
-    "why": [
-     "-30% under its 2-month high"
-    ],
-    "price": 715.0,
+    "price": 109.5,
     "note": "big moves 5-7x more likely here, in either direction"
    }
   ]
@@ -230876,7 +230898,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 18:58",
+ "watchdog_last": "2026-11-25 20:01",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -231554,8 +231576,8 @@
    "date": "2026-11-25",
    "t": "NNE",
    "close": 8.85,
-   "ah_px": 8.95,
-   "ah_move": 1.13,
+   "ah_px": 9.05,
+   "ah_move": 2.26,
    "ah_vol": 650,
    "vol_share_pct": 0.0,
    "first_seen": "16:40",
@@ -231583,8 +231605,8 @@
    "date": "2026-11-25",
    "t": "VST",
    "close": 121.325,
-   "ah_px": 121.549,
-   "ah_move": 0.18,
+   "ah_px": 121.75,
+   "ah_move": 0.35,
    "ah_vol": 4521303,
    "vol_share_pct": 14.2,
    "first_seen": "17:40",
