@@ -622,7 +622,8 @@
   "questioner:2026-11-26:4": true,
   "reactors:2026-11-26": true,
   "plantrep:2026-11-26": true,
-  "questioner:2026-11-26:5": true
+  "questioner:2026-11-26:5": true,
+  "questioner:2026-11-26:6": true
  },
  "benchmark": {
   "shares": {
@@ -4206,30 +4207,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Google News: Kazatomprom",
-   "title": "Kazatomprom (LSE:KAP) Stock May Trade Below Fair Value On Earnings - Simply Wall St",
-   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOVFZMQVFLUUd2bVRSTDNpM05iUWs2S1UwLU1IdXZDYUVZM3Baa2RtQkc1ekxrdzA2d0liQjRCZTJhTDRjTi1iLVVWRFNwWkU2U1AyVG50THJWTlF5aFBtbHc1R3kwSGJXRGFoZjFCdDRLUV8yOElUOTdxa3NkT1NUQ1lTeGJpdWxmSWIyX3lZaXJGbnQ4OHhSb08xLWE3aElyLTRUZDhfcU1PSGJFM3dEeDJZbW1oUFRQa0VBQ1ktVlVZcUlRYkVPTk42SU51cmY2T2VpYTlOUTkzb1NfdXNuQjFBYnpFcGh6ajdOYUYybEvSAfYBQVVfeXFMUDhMS1dlRTMyWFJRSmJWUmY1QWJoZUVCZDEydzZFY0V4RzlYY29HS2k5WnA1Q2RZVkZEd2lyb2MtU2M1WkhEbmRTdk9kcmF2Q3oyelNobDdtcDFRNWEzNlJ4MFZIQTFrdUVzUDRsUk9DcThvXzdTVG5NUE14a2ZDSUJLR2FOa0tGd0hxN3FMU1paZDdFc0xjZHFfRFp4YmZHZU1MUU56TDByREU1UktNOWlhb0RNUFFLcXBFS09XaktaNU50aGlHOUlmS0Vid2JURFppRTl3TWcySXVPakZIczgzcnB6Rmt4bnc1YmxOR0EwOWxFQVpR?oc=5",
-   "ts": 1795547379,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Simply Wall St valuation piece on Kazatomprom, a Kazakh peer; generic, no new fact."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Local intel: American Nuclear Society (Congress and laws)",
-   "title": "Senate approves permitting bill with nuclear energy amendments\u2014what\u2019s next?",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZ2ItREx5X2JZNl9zZ2F2T3JBYXZhSXdMeFp2cjRjOV9pZWtsUlZGTEx1VE53Zm81Q1k2ZHh4WXZuV3QwdThveE1kbElTNXlaNUFCV3gzUFgtdVc2MVNrWHlqbGNyV1l5OV9mQjVVMW9MUVl5dDFPNndFZ3g3V0lDYW8teWwwdU9yR2pjS09DUkVCbWpIQjJLcTRsOUJRa3F1VUh6RWIzZEVMN0hZS1BBeQ?oc=5",
-   "ts": 1795545593,
-   "materiality": 5,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "policy_tariff",
-   "why": "Permitting reform helps future reactor builds, but effects are years away and the bill still needs House passage."
-  },
-  {
    "ticker": "BWXT",
    "source": "Local intel: Hoodline (Weapons programs)",
    "title": "Navajo Uranium Miners and America's Nuclear Weapons Cost",
@@ -7204,6 +7181,30 @@
    "direction": "up",
    "event_type": "contract_deal",
    "why": "Poland's $50B US-consortium reactor deal is new reactor demand, but it is an unconfirmed exclusive."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News: \"BWX Technologies\"",
+   "title": "BWXT advances AP1000 components - Nuclear Engineering International",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5tRGN0THVYM2Q0X24yeWIweHlycEJXZElNY2hRTjJEOHRRLXMySlREa2lWNWREXzhhTXdFaW5VMU9EMU5GeTdyMTRzMGNXRTRDbi1rWDh2T0pHblliNmlXZENHU2JmM3ZBWWEwbHQ0WENkNmM?oc=5",
+   "ts": 1795654432,
+   "materiality": 5,
+   "novelty": "follow_up",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "AP1000 component work in US and Canada is real demand but a known program update."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Yahoo Finance",
+   "title": "NEE or CEG: Which Clean Energy Stock Is Better Positioned for Growth?",
+   "link": "https://finance.yahoo.com/energy/articles/nee-ceg-clean-energy-stock-154500861.html?.tsrc=rss",
+   "ts": 1795707900,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Generic comparison piece; no new company-specific information."
   }
  ],
  "reviews": [
@@ -8963,16 +8964,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.04506,
+  "day_usd": 0.04861,
   "month": "2026-11",
-  "month_usd": 2.03982,
-  "total_usd": 2.03982,
+  "month_usd": 2.04337,
+  "total_usd": 2.04337,
   "by_role": {
    "macro": 0.19621,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.20833,
+   "scout": 0.20917,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -8982,7 +8983,7 @@
    "postmortem": 0.00035,
    "researcher": 0.02341,
    "engineer": 0.08111,
-   "questioner": 0.13505
+   "questioner": 0.13776
   }
  },
  "desk_log": [
@@ -9240,7 +9241,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 11:54 ET",
+ "last_cycle": "2026-11-26 12:00 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57887,10 +57888,10 @@
   "2a89ac3dc67ad332",
   "8b9f115784388b61",
   "a73665945ff493c7",
-  "bdb801dcb316d6cb",
   "e15990dac5b8bec2",
-  "6f83643eaed2fbc3",
+  "bdb801dcb316d6cb",
   "b695f296dd2e61f0",
+  "6f83643eaed2fbc3",
   "5d0c7240e494c5f9",
   "0e427bed53402c8e",
   "637530bf82fb0126",
@@ -57927,6 +57928,7 @@
   "15c5ededcaa0a513",
   "9ab10d3c257d1ce5",
   "dce4cce47213c16f",
+  "8de24d7e6020d498",
   "563c0572b10f43bc",
   "efa3269c9fa1c644",
   "9dbb51b520d076e7",
@@ -58033,12 +58035,12 @@
   "c527b52a6d387b5e",
   "c2bfe85469484a37",
   "bf78a7a4b7c697c4",
-  "04e5c0526493eb7e",
   "6a0cc1c1f8babcd3",
+  "04e5c0526493eb7e",
   "7ee1ad6e6041b23e",
-  "16c52bc5bc8110db",
-  "f1f8a01f5b2d2080",
   "3a1ae63cc1a72974",
+  "f1f8a01f5b2d2080",
+  "16c52bc5bc8110db",
   "1be96b3daf4578d3",
   "1e64fcaaf9ecb5d1",
   "bf3c957b04f7b01a",
@@ -58248,7 +58250,6 @@
   "8a17ec5ab2f6dcf8",
   "5e042fd73e80d40b",
   "696cc711d13e8558",
-  "aa4b40fcca57bfea",
   "3c1ef04c322d8d99",
   "52dee3d37e759da2",
   "997921d9077a2d67",
@@ -58278,6 +58279,7 @@
   "e4b1017c5e2762a2",
   "7fa37875ce9e75d9",
   "8e86917f784be639",
+  "67735d27f14864b4",
   "5b01b61297fa5566",
   "dfaa19a96155f693",
   "d4097d0d8db37e23",
@@ -58555,9 +58557,10 @@
   "418a91931047cecc",
   "52950daaafc92008",
   "c988637e87af140a",
-  "8de24d7e6020d498"
+  "aa4b40fcca57bfea",
+  "0897bf3e2e63fca9"
  ],
- "news_slow_at": 1795711687.5059354,
+ "news_slow_at": 1795712293.390951,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -214399,6 +214402,25 @@
    ],
    "practice": false,
    "end": "10:01"
+  },
+  {
+   "id": "20261126120043352543",
+   "title": "The Questioner, Nov 26 12:00",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-26 12:00",
+   "msgs": [
+    {
+     "t": "12:00",
+     "who": "questioner",
+     "to": "team",
+     "text": "Nothing new in the feed is a clean, unexplained move on our names; most of what's happened is already on the desk's books. The one thing that still needs a plain answer is the TLN resting buy at $355.66: the feed says no live orders exist, so either the buy is not resting (and the team should stop describing it as placed) or it is and nobody canceled it. I'd like the Executor to confirm before anyone calls it a plan.",
+     "outcome": false,
+     "notes": "question: LIVE_ORDERS_RIGHT_NOW says NONE, yet several posts describe a TLN resting buy at $355.66 expiring Nov 30. Is that order actually live at the broker right now, and if so, why was it not canceled when the basket gate closed?\nwhy it might matter: If we believe an order is resting when it isn't, the desk makes decisions on a position it doesn't hold; if it is resting while the gate is closed, we're breaking our own rule.\nask: executor\nkind: missed\nquestion: The PJM 2029/30 auction (scheduled to close Dec 15) is the main earnings driver for TLN and VST, and no FERC ruling on a delay has been found. Does any desk rule account for that event, or is it simply an outside risk we are carrying unhedged?\nwhy it might matter: TLN jumped 9.6% on an unconfirmed headline and the desk's own notes say the release-day pop tends to get sold; a held power stock into a known catalyst is a sizing que"
+    }
+   ],
+   "practice": false,
+   "end": "12:00"
   }
  ],
  "feed": [
@@ -219133,6 +219155,19 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-26 12:00",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: ",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -219996,9 +220031,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 11:54",
+  "updated": "2026-11-26 12:00",
   "total": 808,
-  "week": 575,
+  "week": 573,
   "places": {
    "Uranium price": 49,
    "South Korea": 45,
@@ -220634,8 +220669,8 @@
  },
  "intel_handed": [
   "b2e981fc7a2e7302",
-  "2ac262d1779b4fad",
   "958910b51098bafe",
+  "2ac262d1779b4fad",
   "2c7a3976a5596853",
   "0ad3ea7bae8b611c",
   "020569e75e7d456e",
@@ -220644,8 +220679,8 @@
   "36cbbee89c76a1f7",
   "b371c50f261a21f0",
   "4dbfaa309ceb1878",
-  "c2a1739b2e369eff",
   "515517f776442fe4",
+  "c2a1739b2e369eff",
   "797e5c4039060606",
   "5b83027a0cf1a496",
   "37e85b7a7ce58612",
@@ -223216,7 +223251,7 @@
    "built": "2026-11-26 11:52"
   }
  ],
- "heartbeat": "2026-11-26 11:54",
+ "heartbeat": "2026-11-26 12:00",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223457,16 +223492,16 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 368,
-   "used": 337,
+   "asked": 370,
+   "used": 339,
    "notes": {
     "TLN Deals and contracts": 18,
     "CCJ Deals and contracts": 67,
-    "BWXT Deals and contracts": 49,
+    "BWXT Deals and contracts": 50,
     "SECTOR Government and laws": 96,
     "UUUU Deals and contracts": 41,
-    "SECTOR Countries": 96,
-    "CEG Deals and contracts": 49,
+    "SECTOR Countries": 97,
+    "CEG Deals and contracts": 50,
     "NXE Legal": 20,
     "NXE Deals and contracts": 19,
     "DNN Deals and contracts": 13,
@@ -223851,8 +223886,8 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 53,
-   "used": 53,
+   "asked": 54,
+   "used": 54,
    "notes": {
     "TLN Snapshot": 42,
     "TLN News": 38,
@@ -223860,14 +223895,14 @@
     "BWXT Snapshot": 2,
     "BWXT News": 1,
     "BWXT Legal": 1,
-    "CCJ Snapshot": 7,
-    "TLN Leadership and insiders": 37,
+    "CCJ Snapshot": 8,
+    "TLN Leadership and insiders": 38,
     "CCJ Legal": 2,
-    "TLN Legal": 7,
+    "TLN Legal": 8,
     "SECTOR Market regime": 1,
     "desk_lessons_from_our_mistakes": 7,
     "TLN Ownership and analysts": 4,
-    "SECTOR Uranium market": 15,
+    "SECTOR Uranium market": 16,
     "CEG Snapshot": 5,
     "uranium_price": 1,
     "PJM capacity auction": 1,
@@ -223886,7 +223921,9 @@
     "SECTOR Power regulation": 1,
     "PJM 2029/30 capacity auction delay": 1,
     "BWXT Leadership and insiders": 1,
-    "Black Friday / Thanksgiving calendar": 1
+    "Black Friday / Thanksgiving calendar": 1,
+    "calendar": 1,
+    "desk lessons": 1
    },
    "since": "2026-11-23"
   },
