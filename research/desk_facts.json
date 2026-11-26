@@ -317,6 +317,18 @@
     "strategist",
     "researcher"
    ]
+  },
+  {
+   "topic": "Should we run a day-trading bot on candles? (owner's idea, tested 2026-11-25)",
+   "answer": "Tested 13 long-only day trades on our 11 stocks' minute data 2016-2026 (entries at 9:35, 10:00 or 3:30, out by the close), costs 1 tick + 0.1% per round trip, eras 2016-18 and 2019-26. Nothing passes. Gap-down fill (opens 2%+ down, buy 9:35): -0.21% / -0.02%. Morning momentum (up 1% by 10:00): +0.16% / -0.14%. Morning dip (down 3% by 10:00): +0.43% / -0.28%. Strong first-30-minute buying: -0.08% / -0.19%. Academic intraday momentum (up at 10:00, buy 3:30 sell close): -0.19% / -0.24%, the last half hour loses to costs. Late 3% selloff bought at 3:30: -0.47% / -0.18%. Best was gap-and-go (opens 3%+ up and still rising at 9:35, sell close): +3.14% (n 19) / +0.39% (n 384) but t 0.4-1.8, 2016-18 is one year (2016 +11.7%), 2019-26 rests on OKLO (+3.9%) while LEU, NXE and VST lost, and doubling costs halves it. One apparent winner (day low in the first 15 minutes) was look-ahead, since the day's low is only known at the close; discarded. The $25,000 pattern-day-trader rule ended in June 2026, so day trading is allowed, but there is no tested edge: don't build a day-trading bot on these stocks.",
+   "roles": [
+    "pm",
+    "risk",
+    "strategist",
+    "researcher",
+    "exec",
+    "level"
+   ]
   }
  ]
 }
