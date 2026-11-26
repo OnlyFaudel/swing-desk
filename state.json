@@ -4205,18 +4205,6 @@
  },
  "news_feed": [
   {
-   "ticker": "DNN",
-   "source": "Google News: \"Denison Mines\"",
-   "title": "Denison Mines Corp. TSX:DML in Focus Today: S&P/TSX Composite Index, Mid Cap and Growth Stock as Investors Watch the Next Catalyst - kalkine.ca",
-   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPUnZiVVJ1YUh5WTUwYlJnbk52ZERNQXpkZ1doUU16SVhJbXB0aXhlVHNfZHVDcG9UdDUtV29JQ2hvYUZjMi11X2wtU29fQ2VtbFlHaVBjT3lldUtQSjd3V1V5Y0NZUGd1NkhuZkRlQk1WYVpWdU5XZkdsdm5vc1F5cGpfdnFlVkdnUjQxVWdJZ0c5Zl9yeHVZckw3SmFFM21BTHBWdUVOZGMzc3k0SUxGYkVraGhpLWtrYWFUam9jVmZVaG44dHJyYUdYTDBteDA4YXl1bUluQWQ2V0MyTGpISXA4TTBVWDFJUzE0?oc=5",
-   "ts": 1795540380,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic Kalkine 'in focus' listicle with no new company information; they cover TSX:DML price-watch pieces routinely."
-  },
-  {
    "ticker": "CEG",
    "source": "Yahoo Finance",
    "title": "How Has Vistra Stock's Story Changed?",
@@ -7203,6 +7191,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic explainer on dividend milestones; no new facts or price-moving information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Western Uranium & Vanadium Corp. (WUC): Decoding the Volatility Signals in Its High-Beta Equity Profile - kalkine.ca",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQWtveDc1dl96XzUzd25oWVJKaDFCSG1XZFdHRlhZLTNjSHE1WUMzSTFsZ2l2YXAyOHkzLURJdVRMVDl5RDdCcnM5MUxuX3JxT0FUbjdsRUFaWUo4eDFiRVJYNHQ5blRZLWRpN0hJZmhGYjhkOWtnOHJfZklheEpBQ2ljbWNRTzM5bFl2cGZYWE5QUlZHVGpxd2U3OVgtQzd6ZGl4SXpTcTRmM0RiMXZaX2xzcTVuMjNoQ3ZnajFBcGVxZ0ZpTmJB?oc=5",
+   "ts": 1795680120,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic price-volatility piece about a different uranium company, WUC, with no new CCJ information."
   }
  ],
  "reviews": [
@@ -8962,16 +8962,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.03043,
+  "day_usd": 0.03089,
   "month": "2026-11",
-  "month_usd": 2.02519,
-  "total_usd": 2.02519,
+  "month_usd": 2.02565,
+  "total_usd": 2.02565,
   "by_role": {
    "macro": 0.19341,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.20246,
+   "scout": 0.20292,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9239,7 +9239,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 09:38 ET",
+ "last_cycle": "2026-11-26 09:48 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57885,10 +57885,10 @@
   "2a89ac3dc67ad332",
   "8b9f115784388b61",
   "a73665945ff493c7",
-  "bdb801dcb316d6cb",
   "e15990dac5b8bec2",
-  "6f83643eaed2fbc3",
+  "bdb801dcb316d6cb",
   "b695f296dd2e61f0",
+  "6f83643eaed2fbc3",
   "5d0c7240e494c5f9",
   "637530bf82fb0126",
   "0929027bdfefabbd",
@@ -57924,6 +57924,7 @@
   "15c5ededcaa0a513",
   "9ab10d3c257d1ce5",
   "dce4cce47213c16f",
+  "8de24d7e6020d498",
   "563c0572b10f43bc",
   "efa3269c9fa1c644",
   "9dbb51b520d076e7",
@@ -58028,12 +58029,12 @@
   "c527b52a6d387b5e",
   "c2bfe85469484a37",
   "bf78a7a4b7c697c4",
-  "04e5c0526493eb7e",
   "6a0cc1c1f8babcd3",
+  "04e5c0526493eb7e",
   "7ee1ad6e6041b23e",
-  "16c52bc5bc8110db",
-  "f1f8a01f5b2d2080",
   "3a1ae63cc1a72974",
+  "f1f8a01f5b2d2080",
+  "16c52bc5bc8110db",
   "1be96b3daf4578d3",
   "1e64fcaaf9ecb5d1",
   "bf3c957b04f7b01a",
@@ -58241,7 +58242,6 @@
   "8a17ec5ab2f6dcf8",
   "5e042fd73e80d40b",
   "696cc711d13e8558",
-  "aa4b40fcca57bfea",
   "3c1ef04c322d8d99",
   "52dee3d37e759da2",
   "997921d9077a2d67",
@@ -58305,6 +58305,7 @@
   "3459ed8af9ea8da9",
   "7337fd4f3c0c2722",
   "43e977044e9b9f2b",
+  "fd4e2b9a2f429dd7",
   "e36e8842560640fa",
   "05752eb0e8aadb3e",
   "d39dc266a3b4dae2",
@@ -58543,9 +58544,9 @@
   "418a91931047cecc",
   "52950daaafc92008",
   "c988637e87af140a",
-  "8de24d7e6020d498"
+  "aa4b40fcca57bfea"
  ],
- "news_slow_at": 1795703625.0054214,
+ "news_slow_at": 1795704246.7297664,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219912,9 +219913,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 09:38",
+  "updated": "2026-11-26 09:48",
   "total": 786,
-  "week": 564,
+  "week": 563,
   "places": {
    "Uranium price": 46,
    "South Korea": 45,
@@ -220550,8 +220551,8 @@
  },
  "intel_handed": [
   "b2e981fc7a2e7302",
-  "2ac262d1779b4fad",
   "958910b51098bafe",
+  "2ac262d1779b4fad",
   "2c7a3976a5596853",
   "0ad3ea7bae8b611c",
   "020569e75e7d456e",
@@ -220560,8 +220561,8 @@
   "36cbbee89c76a1f7",
   "b371c50f261a21f0",
   "4dbfaa309ceb1878",
-  "c2a1739b2e369eff",
   "515517f776442fe4",
+  "c2a1739b2e369eff",
   "797e5c4039060606",
   "5b83027a0cf1a496",
   "37e85b7a7ce58612",
@@ -223129,7 +223130,7 @@
    "built": "2026-11-26 09:19"
   }
  ],
- "heartbeat": "2026-11-26 09:38",
+ "heartbeat": "2026-11-26 09:48",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223370,7 +223371,7 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 355,
+   "asked": 356,
    "used": 325,
    "notes": {
     "TLN Deals and contracts": 18,
