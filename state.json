@@ -632,7 +632,8 @@
   "notecheck:2026-11-26": true,
   "earnread:2026-11-26": true,
   "radarres:2026-11-26": true,
-  "questioner:2026-11-26:9": true
+  "questioner:2026-11-26:9": true,
+  "sput:2026-11-26": true
  },
  "benchmark": {
   "shares": {
@@ -9250,7 +9251,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 18:10 ET",
+ "last_cycle": "2026-11-26 18:20 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -58064,8 +58065,8 @@
   "dbaa3c361e6d78b5",
   "6f138c10a977c951",
   "82e06a4ced981af5",
-  "40da66ea723efc8f",
   "70ec56bf0ac9a6fb",
+  "40da66ea723efc8f",
   "2cbbc694a2695e84",
   "65a1a264f8fa87ba",
   "cdc9a7381e6b445a",
@@ -58596,7 +58597,7 @@
   "53fc8faedadd1796",
   "7ee1ad6e6041b23e"
  ],
- "news_slow_at": 1795734406.589738,
+ "news_slow_at": 1795735029.5310802,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -220199,7 +220200,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 18:10",
+  "updated": "2026-11-26 18:20",
   "total": 852,
   "week": 588,
   "places": {
@@ -220879,8 +220880,8 @@
   "85de31670d4daf9d",
   "dd57ba38f81c0a8f",
   "c5a7aa4d347cef23",
-  "4039fa58057275ae",
   "7ffb052a70d145c2",
+  "4039fa58057275ae",
   "d1148d05210e97b6",
   "03c5d2773ef94a7b",
   "a7baf61adc01832c",
@@ -223430,7 +223431,7 @@
    "built": "2026-11-26 18:04"
   }
  ],
- "heartbeat": "2026-11-26 18:10",
+ "heartbeat": "2026-11-26 18:20",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -228167,14 +228168,14 @@
   }
  },
  "sput_view": {
-  "premium_pct": -16.37,
+  "premium_pct": -17.66,
   "change_1w_pts": null,
-  "nav": 21.55,
-  "price": 18.02,
-  "implied_spot_usd_lb": 90.78,
+  "nav": 21.53,
+  "price": 17.73,
+  "implied_spot_usd_lb": 90.7,
   "spot_momentum_1m": null,
   "pounds_held": 81697348.0,
-  "as_of": "November 24, 2026",
+  "as_of": "November 25, 2026",
   "what_it_means": "At a premium the trust can raise money and buy uranium (supports spot and miners); at a discount it can't, and a widening discount means investors are leaving uranium. Rising premium months were followed by stronger miner months in a small monthly test (n=11)."
  },
  "license_view": {
