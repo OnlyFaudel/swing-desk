@@ -27604,5 +27604,39 @@
 "walk",
 "white"
 ]
+},
+{
+"id": "6ba8d19870d9aa6c",
+"date": "2026-11-24",
+"ts": 1795549565,
+"title": "FERC order extends PJM price cap as Exelon pushes for lower energy costs",
+"summary": "",
+"outlet": "Daily Energy Insider",
+"link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORjg2NnBLSnlUeWd0cnVvNl9IZ1h4T29NNEp6RTJwV28ybExEeFBYTUxpQnY5QWpsQjVFR3Q1S1ZFbFlwWDlENzRnOFdIWnNKZ3Q0bUExS21wX1Q1OEprbE9FRkJtNENudWU0Z1N6ZV9PTGl4cVVCRkZJcmhTYWpLYXA5LWhRbmxvbHJtZVd4Z1NUcHZ5a1RHN0RJb2hwZkdiUHN1eDUwTmxHei1uMGxBMkc0a3J5TnlpdXdF?oc=5",
+"place": "PJM grid",
+"tickers": [
+"CEG",
+"TLN",
+"VST"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.83,
+"score": 4.16,
+"echo_of": null,
+"w": [
+"cap",
+"costs",
+"energy",
+"exelon",
+"extends",
+"ferc",
+"lower",
+"order",
+"pjm",
+"price",
+"pushes"
+]
 }
 ]
