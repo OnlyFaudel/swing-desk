@@ -627,7 +627,8 @@
   "candles_backfill_t": 1795718798.2641091,
   "questioner:2026-11-26:7": true,
   "candles5_backfill_t": 1795723085.1277122,
-  "catalysts2:2026-11-26": true
+  "catalysts2:2026-11-26": true,
+  "questioner:2026-11-26:8": true
  },
  "benchmark": {
   "shares": {
@@ -4211,18 +4212,6 @@
  },
  "news_feed": [
   {
-   "ticker": "BWXT",
-   "source": "Google News",
-   "title": "BWX Technologies (NYSE:BWXT) Stock Price Down 2.4% - What's Next? - MarketBeat",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNM0t3M0g0R3ZDSTBKNVJwSXpiMlBmNnBDZENPbjFFWndhUllBMDVtWUtuZmlsdHhtdDdOV3h0RGRpUG8yMlI4bVg5NkMyZDkwQW95M2FpUmlzdUs0bTJEaDRrQXdxck5iMllZZklfMTRLa0h5VmNKSFlBaWZLM2MzODVGM2VGY0RqOXlic0t5WEo0YU8tSURsWHV0TjBxY2QzbXlYdmlMWjZEdTZpZGluZUxmUjVwTkdC?oc=5",
-   "ts": 1795560582,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Automated MarketBeat price recap of a 2.4% dip; no new company information."
-  },
-  {
    "ticker": "CCJ",
    "source": "Google News",
    "title": "Cameco (NYSE:CCJ) Stock Falls 2.8% - Time to Sell? - MarketBeat",
@@ -7209,6 +7198,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Namibian gold mine timeline is unrelated to Cameco's uranium business."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: Egyptian Gazette (War zones)",
+   "title": "IAEA negotiating ceasefire at Zaporizhzhia nuclear plant",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNk9qZVVNS0xCa3FvRXZxMml5M1NVUzF0NzBsaTZpdzJiazk3SDZQNG5neVpROEtyQnNFclBiVHVXaDZrV1RJcnF4UE5iUF9mazZlUzRGWnR1VHpJaG1CNlBhZ2xTWmowTmdPMndReklPcGE0OVJqV18xYXNGVGR6UXlyeHFYZ1hKS2hVUW9SYXR4dEpwRmFB?oc=5",
+   "ts": 1795720218,
+   "materiality": 2,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "war_geopolitics",
+   "why": "IAEA ceasefire talks at Zaporizhzhia are a Ukraine plant safety story, not a uranium supply change."
   }
  ],
  "reviews": [
@@ -8968,16 +8969,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.05913,
+  "day_usd": 0.07111,
   "month": "2026-11",
-  "month_usd": 2.05389,
-  "total_usd": 2.05389,
+  "month_usd": 2.06588,
+  "total_usd": 2.06588,
   "by_role": {
-   "macro": 0.19621,
+   "macro": 0.20195,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.21707,
+   "scout": 0.21785,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -8987,7 +8988,7 @@
    "postmortem": 0.00035,
    "researcher": 0.02341,
    "engineer": 0.08111,
-   "questioner": 0.14038
+   "questioner": 0.14585
   }
  },
  "desk_log": [
@@ -9245,7 +9246,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 15:56 ET",
+ "last_cycle": "2026-11-26 16:01 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -58056,8 +58057,8 @@
   "dbaa3c361e6d78b5",
   "6f138c10a977c951",
   "82e06a4ced981af5",
-  "70ec56bf0ac9a6fb",
   "40da66ea723efc8f",
+  "70ec56bf0ac9a6fb",
   "2cbbc694a2695e84",
   "cdc9a7381e6b445a",
   "9f2e45d00f1961dd",
@@ -58576,7 +58577,8 @@
   "a82f81d0eb01a7ed",
   "1815c15f02a1bb79",
   "53fc8faedadd1796",
-  "7ee1ad6e6041b23e"
+  "7ee1ad6e6041b23e",
+  "b15e05abe9bd71a5"
  ],
  "news_slow_at": 1795726333.3128724,
  "officer": {
@@ -214458,6 +214460,41 @@
    ],
    "practice": false,
    "end": "14:02"
+  },
+  {
+   "id": "20261126160110200550",
+   "title": "The Questioner, Nov 26 16:01",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-26 16:01",
+   "msgs": [
+    {
+     "t": "16:01",
+     "who": "questioner",
+     "to": "macro",
+     "text": "Most of the open questions in the queue are already answered in the desk notes, so I'm not repeating them. One thing still looks unchecked: the Black Friday half-day and the Monday after are coming, and the desk's own notes say the power trio has been weak that Monday in 6 of the last 7 years. I want the macro and risk teammates to say whether that changes how we handle the TLN and VST positions into Friday.",
+     "outcome": false,
+     "notes": "question: With Black Friday on Nov 27 and the desk's history of weak Mondays after it for the power trio, should we hold, trim, or leave CEG, VST and TLN as they are going into the half-day session?\nwhy it might matter: Our open positions in CEG, VST and TLN all carry exposure into the holiday window, and the desk notes show a recurring weak pattern that week.\nask: macro\nkind: maybe_irrelevant\nquestion: TLN was up 9.6% on a PJM auction-delay item that the desk files do not confirm, and the Dec 15 auction is still on the calendar. Is the stock now pricing in an outcome that hasn't been decided?\nwhy it might matter: If the auction result is the real driver for Talen, a held position has a dated binary risk we are not tracking closely.\nask: macro\nkind: unexplained\nwhy: The desk notes already answer most of the earlier questions, including the PJM status and the TLN COO sale, so I focused on"
+    },
+    {
+     "t": "16:01",
+     "who": "macro",
+     "to": "questioner",
+     "text": "Black Friday is a half-day session with about half normal volume, and the desk's notes show the power trio (CEG, VST, TLN) has been weak the following Monday in 6 of the last 7 years, but 7 years is a small sample and the notes' own tests show the holiday-week effects are small and not reliable enough to trade. I would not trim or exit on that basis alone. The real exposure is that TLN is tied to the PJM December 15 capacity auction, which is a bigger known event than the holiday, so I'd hold the existing positions as they are and let the normal exit rules handle it.",
+     "outcome": false,
+     "notes": "verdict: irrelevant\naction: watch\nwatch date: 2026-11-30\nwhy: The desk notes give Black Friday to Monday a weak record for the power trio, but the holiday-dip and pre-holiday tests in the notes do not support a trade on it, and the PJM auction is the event that actually matters for TLN. I'd check the Monday's move against the rules rather than act on the calendar pattern.\nticker: TLN\ndirection: down\ndays: 3\nfiles read: SECTOR Government and laws, CEG Snapshot, TLN Snapshot, VST Snapshot"
+    },
+    {
+     "t": "16:01",
+     "who": "macro",
+     "to": "questioner",
+     "text": "The desk files confirm the PJM December 15 auction is still on the calendar, and I found no FERC ruling on the delay request, so the 9.6% jump on TLN rests on an unconfirmed item. I agree with the Macro Analyst that the auction is a bigger known event than the Black Friday holiday, and that it deserves a dated watch rather than an exit. TLN is a held position, so the binary auction risk is real and worth tracking closely.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: watch\nwatch date: 2026-12-15\nwhy: The desk notes say the 2029/30 PJM auction is scheduled to close Dec 15 under the price collar, and no FERC ruling on the delay request has been found, so that auction is the dated risk for TLN. The notes also say the auction result and the pre-auction news have historically produced a pop that then fades, so a held position should not add into the pop.\ndate: 2026-12-15\nticker: TLN\nwhat: PJM 2029/30 base residual capacity auction closes; result (likely at or near the price cap) and any FERC ruling on the delay request. Held position: consider trimming into a release-day pop rather than adding.\nticker: TLN\ndirection: down\ndays: 5\nfiles read: TLN Snapshot, SECTOR Government and laws, SECTOR Uranium market"
+    }
+   ],
+   "practice": false,
+   "end": "16:01"
   }
  ],
  "feed": [
@@ -219228,6 +219265,19 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-26 16:01",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: With Black Friday on Nov 27 and the desk's history of weak Mondays after it for the power trio, should we hold, trim, or leave CEG, VST and TLN as they are going into the half-day session? -> irrelevant | TLN was up 9.6% on a PJM auction-delay item that the desk files do not confirm, and the Dec 15 auction is still on the calendar. Is the stock now pricing in an outcome that hasn't been decided? -> relevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -220026,62 +220076,62 @@
    "lesson": null
   }
  ],
- "intel_at": 1795724896.839345,
+ "intel_at": 1795726756.5022545,
  "intel_health": {
-  "at": "2026-11-26 15:28",
+  "at": "2026-11-26 15:59",
   "sources": {
-   "Cigar Lake": 6,
+   "Cigar Lake": 5,
    "McArthur River / Key Lake": 4,
-   "Athabasca Basin": 8,
+   "Athabasca Basin": 7,
    "Saskatchewan wildfires": 4,
    "Rook I / Arrow": 7,
    "Wheeler River / Phoenix": 8,
    "Port Hope / Blind River": 0,
    "Westinghouse": 9,
-   "Kazakhstan": 24,
+   "Kazakhstan": 0,
    "Niger": 8,
-   "Namibia": 42,
-   "Russia supply": 3,
+   "Namibia": 28,
+   "Russia supply": 1,
    "Piketon": 24,
-   "HALEU": 13,
-   "Wyoming ISR": 48,
+   "HALEU": 12,
+   "Wyoming ISR": 28,
    "South Texas ISR": 2,
    "White Mesa / Utah": 8,
    "Rare earths (Energy Fuels)": 15,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 10,
-   "Crane / Three Mile Island": 4,
+   "Naval reactors": 11,
+   "Crane / Three Mile Island": 5,
    "Susquehanna": 6,
-   "Comanche Peak": 5,
+   "Comanche Peak": 4,
    "PJM grid": 7,
-   "ERCOT grid": 17,
+   "ERCOT grid": 12,
    "Data-center nuclear deals": 9,
-   "Japan restarts": 10,
-   "China new builds": 11,
-   "Congress and laws": 44,
-   "NRC decisions": 15,
-   "Energy Department": 45,
-   "White House and executive orders": 33,
+   "Japan restarts": 15,
+   "China new builds": 14,
+   "Congress and laws": 25,
+   "NRC decisions": 16,
+   "Energy Department": 41,
+   "White House and executive orders": 24,
    "Tariffs and trade": 2,
-   "India": 27,
-   "South Korea": 98,
+   "India": 19,
+   "South Korea": 100,
    "Europe new builds": 65,
-   "France and UK": 16,
-   "Middle East": 26,
+   "France and UK": 12,
+   "Middle East": 27,
    "Asia newcomers": 19,
    "Canada SMRs": 10,
-   "Big tech power deals": 60,
-   "Iran": 55,
-   "North Korea": 100,
-   "War zones": 10,
+   "Big tech power deals": 61,
+   "Iran": 27,
+   "North Korea": 87,
+   "War zones": 30,
    "AUKUS and navies": 18,
-   "Weapons programs": 29,
-   "Stockpiles and reserves": 27,
-   "Sprott trust": 4,
-   "Uranium price": 27,
+   "Weapons programs": 30,
+   "Stockpiles and reserves": 22,
+   "Sprott trust": 6,
+   "Uranium price": 26,
    "US policy": 0,
-   "Lawsuits and investigations": 72,
-   "Workers and jobs": 22,
+   "Lawsuits and investigations": 71,
+   "Workers and jobs": 39,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
    "Federal Register (uranium)": 11,
@@ -220091,13 +220141,13 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 15:56",
-  "total": 831,
-  "week": 579,
+  "updated": "2026-11-26 16:01",
+  "total": 834,
+  "week": 581,
   "places": {
    "Uranium price": 50,
    "South Korea": 45,
-   "Weapons programs": 33,
+   "Weapons programs": 34,
    "Europe new builds": 30,
    "Workers and jobs": 28,
    "AUKUS and navies": 28,
@@ -220105,65 +220155,65 @@
    "Piketon": 27,
    "Asia newcomers": 25,
    "World Nuclear News": 24,
-   "War zones": 19,
+   "War zones": 20,
    "Rare earths (Energy Fuels)": 16
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-26 15:28",
+   "at": "2026-11-26 15:59",
    "sources": {
-    "Cigar Lake": 6,
+    "Cigar Lake": 5,
     "McArthur River / Key Lake": 4,
-    "Athabasca Basin": 8,
+    "Athabasca Basin": 7,
     "Saskatchewan wildfires": 4,
     "Rook I / Arrow": 7,
     "Wheeler River / Phoenix": 8,
     "Port Hope / Blind River": 0,
     "Westinghouse": 9,
-    "Kazakhstan": 24,
+    "Kazakhstan": 0,
     "Niger": 8,
-    "Namibia": 42,
-    "Russia supply": 3,
+    "Namibia": 28,
+    "Russia supply": 1,
     "Piketon": 24,
-    "HALEU": 13,
-    "Wyoming ISR": 48,
+    "HALEU": 12,
+    "Wyoming ISR": 28,
     "South Texas ISR": 2,
     "White Mesa / Utah": 8,
     "Rare earths (Energy Fuels)": 15,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 10,
-    "Crane / Three Mile Island": 4,
+    "Naval reactors": 11,
+    "Crane / Three Mile Island": 5,
     "Susquehanna": 6,
-    "Comanche Peak": 5,
+    "Comanche Peak": 4,
     "PJM grid": 7,
-    "ERCOT grid": 17,
+    "ERCOT grid": 12,
     "Data-center nuclear deals": 9,
-    "Japan restarts": 10,
-    "China new builds": 11,
-    "Congress and laws": 44,
-    "NRC decisions": 15,
-    "Energy Department": 45,
-    "White House and executive orders": 33,
+    "Japan restarts": 15,
+    "China new builds": 14,
+    "Congress and laws": 25,
+    "NRC decisions": 16,
+    "Energy Department": 41,
+    "White House and executive orders": 24,
     "Tariffs and trade": 2,
-    "India": 27,
-    "South Korea": 98,
+    "India": 19,
+    "South Korea": 100,
     "Europe new builds": 65,
-    "France and UK": 16,
-    "Middle East": 26,
+    "France and UK": 12,
+    "Middle East": 27,
     "Asia newcomers": 19,
     "Canada SMRs": 10,
-    "Big tech power deals": 60,
-    "Iran": 55,
-    "North Korea": 100,
-    "War zones": 10,
+    "Big tech power deals": 61,
+    "Iran": 27,
+    "North Korea": 87,
+    "War zones": 30,
     "AUKUS and navies": 18,
-    "Weapons programs": 29,
-    "Stockpiles and reserves": 27,
-    "Sprott trust": 4,
-    "Uranium price": 27,
+    "Weapons programs": 30,
+    "Stockpiles and reserves": 22,
+    "Sprott trust": 6,
+    "Uranium price": 26,
     "US policy": 0,
-    "Lawsuits and investigations": 72,
-    "Workers and jobs": 22,
+    "Lawsuits and investigations": 71,
+    "Workers and jobs": 39,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
     "Federal Register (uranium)": 11,
@@ -220742,6 +220792,7 @@
   "7574e0b98bf014d1",
   "b8be1271d8cd66fa",
   "1bc8a335514e5e60",
+  "afd8290622043c62",
   "7c9070babbad9d71",
   "0e9b00b62cdb9a3a",
   "946095cbe66689d4",
@@ -220771,8 +220822,8 @@
   "85de31670d4daf9d",
   "dd57ba38f81c0a8f",
   "c5a7aa4d347cef23",
-  "7ffb052a70d145c2",
   "4039fa58057275ae",
+  "7ffb052a70d145c2",
   "d1148d05210e97b6",
   "03c5d2773ef94a7b",
   "a7baf61adc01832c",
@@ -220971,7 +221022,7 @@
   }
  ],
  "memory_view": {
-  "events": 1749,
+  "events": 1753,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -221555,42 +221606,6 @@
   "recent": [
    {
     "date": "2026-11-26",
-    "ticker": "BWXT",
-    "title": "Australia receives first Virginia-class submarine training systems under AUKUS",
-    "type": "intel_defense",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-26",
-    "ticker": "BWXT",
-    "title": "N Korea's Kim warns US over AUKUS, touts nuclear status",
-    "type": "intel_defense",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-26",
-    "ticker": "CCJ",
-    "title": "TEPCO delays restart of No.7 reactor at Kashiwazaki-Kariwa nuclear power plant",
-    "type": "intel_disruption",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-26",
-    "ticker": "BWXT",
-    "title": "Babcock signs record \u00a38.7 billion deal to keep Royal Navy nuclear submarines at sea",
-    "type": "intel_regulation",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-26",
     "ticker": "CCJ",
     "title": "Kim Jong Un Shows His Nuclear Warheads, Days After Snubbing Trump's Offer To Talk",
     "type": "intel_defense",
@@ -221891,6 +221906,42 @@
     "ticker": "LEU",
     "title": "Israel\u2019s nuclear arsenal: It has 90 nuclear warheads and enough plutonium to produce another 250 bombs",
     "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "BWXT",
+    "title": "Israel's nuclear arsenal/ Media: Plutonium reserves could enable production of up to 250 more bombs",
+    "type": "intel_production",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "LEU",
+    "title": "Israel's nuclear arsenal/ Media: Plutonium reserves could enable production of up to 250 more bombs",
+    "type": "intel_production",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CCJ",
+    "title": "IAEA negotiating ceasefire at Zaporizhzhia nuclear plant",
+    "type": "intel_geopolitics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CEG",
+    "title": "IAEA negotiating ceasefire at Zaporizhzhia nuclear plant",
+    "type": "intel_geopolitics",
     "r0": null,
     "r5": null,
     "r20": null
@@ -223188,7 +223239,7 @@
    }
   ]
  },
- "dossier_at": 1795725008.9413393,
+ "dossier_at": 1795726884.894413,
  "sector_prices": {
   "_at": 1795715668.9582324,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -223246,80 +223297,80 @@
    "name": "Cameco",
    "price": 61.56,
    "week_pct": -1.42,
-   "built": "2026-11-26 15:30"
+   "built": "2026-11-26 16:01"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.95,
    "week_pct": -4.46,
-   "built": "2026-11-26 15:30"
+   "built": "2026-11-26 16:01"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.69,
    "week_pct": -3.89,
-   "built": "2026-11-26 15:30"
+   "built": "2026-11-26 16:01"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.8,
    "week_pct": -1.64,
-   "built": "2026-11-26 15:30"
+   "built": "2026-11-26 16:01"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.2,
    "week_pct": -7.71,
-   "built": "2026-11-26 15:30"
+   "built": "2026-11-26 16:01"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 83.23,
    "week_pct": -9.3,
-   "built": "2026-11-26 15:30"
+   "built": "2026-11-26 16:01"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.49,
    "week_pct": -3.54,
-   "built": "2026-11-26 15:30"
+   "built": "2026-11-26 16:01"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 235.25,
    "week_pct": -10.46,
-   "built": "2026-11-26 15:30"
+   "built": "2026-11-26 16:01"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 121.32,
    "week_pct": -3.39,
-   "built": "2026-11-26 15:30"
+   "built": "2026-11-26 16:01"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 351.55,
    "week_pct": -2.4,
-   "built": "2026-11-26 15:30"
+   "built": "2026-11-26 16:01"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-26 15:30"
+   "built": "2026-11-26 16:01"
   }
  ],
- "heartbeat": "2026-11-26 15:56",
+ "heartbeat": "2026-11-26 16:01",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223560,15 +223611,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 388,
-   "used": 355,
+   "asked": 390,
+   "used": 357,
    "notes": {
     "TLN Deals and contracts": 18,
     "CCJ Deals and contracts": 70,
     "BWXT Deals and contracts": 51,
-    "SECTOR Government and laws": 100,
+    "SECTOR Government and laws": 102,
     "UUUU Deals and contracts": 43,
-    "SECTOR Countries": 102,
+    "SECTOR Countries": 103,
     "CEG Deals and contracts": 50,
     "NXE Legal": 20,
     "NXE Deals and contracts": 19,
@@ -223804,21 +223855,21 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 100,
-   "used": 98,
+   "asked": 102,
+   "used": 100,
    "notes": {
-    "SECTOR Uranium market": 69,
+    "SECTOR Uranium market": 70,
     "BWXT Snapshot": 7,
     "CCJ Snapshot": 3,
     "UUUU Snapshot": 6,
-    "SECTOR Government and laws": 63,
-    "TLN Snapshot": 39,
+    "SECTOR Government and laws": 65,
+    "TLN Snapshot": 41,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
     "CEG Legal": 1,
     "coming_up: PJM December capacity auction delay": 1,
-    "VST Snapshot": 5,
-    "CEG Snapshot": 7,
+    "VST Snapshot": 6,
+    "CEG Snapshot": 8,
     "NXE Snapshot": 3,
     "plants_now": 2,
     "UEC Snapshot": 6,
@@ -223954,11 +224005,11 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 55,
-   "used": 55,
+   "asked": 56,
+   "used": 56,
    "notes": {
-    "TLN Snapshot": 42,
-    "TLN News": 38,
+    "TLN Snapshot": 43,
+    "TLN News": 39,
     "coming_up": 8,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
@@ -223992,7 +224043,9 @@
     "Black Friday / Thanksgiving calendar": 1,
     "calendar": 1,
     "desk lessons": 1,
-    "already_checked_facts": 1
+    "already_checked_facts": 1,
+    "SECTOR Power auctions": 1,
+    "coming_up Black Friday entry": 1
    },
    "since": "2026-11-23"
   },
@@ -226897,6 +226950,16 @@
    "price": 351.55,
    "result": null,
    "why": "The desk's notes say no orders are resting, yet the TLN plan is still discussed as live, which is a contradiction worth a direct answer. The PJM auction is the stated earnings catalyst and nothing con"
+  },
+  {
+   "role": "macro",
+   "ticker": "TLN",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-26",
+   "price": 351.55,
+   "result": null,
+   "why": "The desk notes give Black Friday to Monday a weak record for the power trio, but the holiday-dip and pre-holiday tests in the notes do not support a trade on it, and the PJM auction is the event that "
   }
  ],
  "after_sale": [],
@@ -227990,6 +228053,24 @@
    "answer": "The Thanksgiving run-up rule is not blocked by the closed basket gate, because the gate only stops new buys and the desk's notes show no active Thanksgiving-window order to cancel. Black Friday weakness for the power names is a sentiment check, not a trade signal, so it does not change the open setups.",
    "verdict": "irrelevant",
    "action": "none"
+  },
+  {
+   "t": "2026-11-26 16:01",
+   "question": "With Black Friday on Nov 27 and the desk's history of weak Mondays after it for the power trio, should we hold, trim, or leave CEG, VST and TLN as they are going into the half-day session?",
+   "kind": "maybe_irrelevant",
+   "asked": "macro",
+   "answer": "Black Friday is a half-day session with about half normal volume, and the desk's notes show the power trio (CEG, VST, TLN) has been weak the following Monday in 6 of the last 7 years, but 7 years is a small sample and the notes' own tests show the holiday-week effects are small and not reliable enough to trade. I would not trim or exit on that basis alone. The real exposure is that TLN is tied to the PJM December 15 capacity auction, which is a bigger known event than the holiday, so I'd hold the existing positions as they are and let the normal exit rules handle it.",
+   "verdict": "irrelevant",
+   "action": "watch"
+  },
+  {
+   "t": "2026-11-26 16:01",
+   "question": "TLN was up 9.6% on a PJM auction-delay item that the desk files do not confirm, and the Dec 15 auction is still on the calendar. Is the stock now pricing in an outcome that hasn't been decided?",
+   "kind": "unexplained",
+   "asked": "macro",
+   "answer": "The desk files confirm the PJM December 15 auction is still on the calendar, and I found no FERC ruling on the delay request, so the 9.6% jump on TLN rests on an unconfirmed item. I agree with the Macro Analyst that the auction is a bigger known event than the Black Friday holiday, and that it deserves a dated watch rather than an exit. TLN is a held position, so the binary auction risk is real and worth tracking closely.",
+   "verdict": "relevant",
+   "action": "watch"
   }
  ],
  "reactor_view": {

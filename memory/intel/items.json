@@ -26911,5 +26911,105 @@
 "produce",
 "warheads"
 ]
+},
+{
+"id": "53838268a590779a",
+"date": "2026-11-24",
+"ts": 1795481118,
+"title": "Navigating Nuclear: US Nuclear Regulatory Commission Issues Final Rules of Practice and Procedure",
+"summary": "",
+"outlet": "K&L Gates",
+"link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQN09vTFpSTVpsS3AtZlZNMHE5VW81d0k3VUhWRWRURklaZWR6TWdORzhfWWNMa19udGhZeFNRZmo4RU1hbGZJQW5naWcyNWdNYVkwZHVXd1N4Q0RuSmpabFNxLThRRGdrVk5iMzZfSDdXUnlYQXNjUEFoTm91TnR2Q2VINzAyOFg1ZDNMNTJnMmNzZWVYZTBVNW5lUVJTSGFST3BETkp0VkhRZnBfdVdhN1N3c1h6cUhZSXZSTVExQ1VXYURqZUVNVzh1MEFmN0dyZDFJczFUaF93NFU4SVJEWHRHUzg?oc=5",
+"place": "NRC decisions",
+"tickers": [
+"CEG",
+"VST",
+"TLN",
+"LEU",
+"BWXT"
+],
+"tags": [
+"regulation"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 4.0,
+"echo_of": "ed609e22ce9351ef",
+"w": [
+"commission",
+"final",
+"issues",
+"navigating",
+"nuclear",
+"practice",
+"procedure",
+"regulatory",
+"rules"
+]
+},
+{
+"id": "86f593e27967cede",
+"date": "2026-11-26",
+"ts": 1795716960,
+"title": "Israel's nuclear arsenal/ Media: Plutonium reserves could enable production of up to 250 more bombs",
+"summary": "",
+"outlet": "Balkanweb.com",
+"link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbDFqcWc2ejlUb1Bydk1FM0Zyb2VLYXBUM2pJaHZmeTdwbmtUQThyV3NJZDkwSklGVUsxZERwb2JoMEpiaXI2RzRnZm9lNXQ0V1JucFNkcnk4TElUc0JpdWotYXdROTRyQ0JlYzVSX05TZC1LakRobXdWRnRnT2FLYlZwaTJXZjNOdnRJRHZNU05NY0JCLWQtTmdNUXp6TzVKaWFZNmwzc0hEdlNfaDBYelRJM0dRMzB1WWhuX0JEVEZmZnRrdloySmJn?oc=5",
+"place": "Weapons programs",
+"tickers": [
+"BWXT",
+"LEU"
+],
+"tags": [
+"production"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.57,
+"score": 4.44,
+"echo_of": null,
+"w": [
+"250",
+"arsenal",
+"bombs",
+"enable",
+"israel",
+"media",
+"nuclear",
+"plutonium",
+"production",
+"reserves"
+]
+},
+{
+"id": "afd8290622043c62",
+"date": "2026-11-26",
+"ts": 1795720218,
+"title": "IAEA negotiating ceasefire at Zaporizhzhia nuclear plant",
+"summary": "",
+"outlet": "Egyptian Gazette",
+"link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNk9qZVVNS0xCa3FvRXZxMml5M1NVUzF0NzBsaTZpdzJiazk3SDZQNG5neVpROEtyQnNFclBiVHVXaDZrV1RJcnF4UE5iUF9mazZlUzRGWnR1VHpJaG1CNlBhZ2xTWmowTmdPMndReklPcGE0OVJqV18xYXNGVGR6UXlyeHFYZ1hKS2hVUW9SYXR4dEpwRmFB?oc=5",
+"place": "War zones",
+"tickers": [
+"CCJ",
+"CEG"
+],
+"tags": [
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.67,
+"score": 5.14,
+"echo_of": null,
+"w": [
+"ceasefire",
+"iaea",
+"negotiating",
+"nuclear",
+"plant",
+"zaporizhzhia"
+]
 }
 ]
