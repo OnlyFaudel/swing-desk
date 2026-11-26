@@ -547,7 +547,7 @@
   "radarres:2026-11-24": true,
   "questioner:2026-11-24:9": true,
   "sput:2026-11-24": true,
-  "intraday_backfill_t": 1795658813.0970097,
+  "intraday_backfill_t": 1795660749.0233426,
   "reconcile:2026-11-24": true,
   "catalysts:2026-11-25": true,
   "tidy_v1": true,
@@ -4192,45 +4192,9 @@
  ],
  "cooldown": {
   "CCJ": 1795599603.1637194,
-  "BWXT": 1795451380.252104
+  "BWXT": 1795660900.5294535
  },
  "news_feed": [
-  {
-   "ticker": "CCJ",
-   "source": "Local intel: Crux Investor (Uranium price)",
-   "title": "Share-Paid Stake Purchase Extends IsoEnergy's C$33.2 Million Uranium Holdings",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVGJlNXZjV0M1TzlwYWsxWUk5bDNyRl9mR2ZZR2FEdEt4NTllcFBHcFVLYnVNTm4yNjRObWg4TnZucWR2WW9Kcm5wanU0WEVETW8yLUhjelNTaURQaGk4SUFfLWNMVkIyNHJfTjdocWZzdHM1YzJlbjE4dWhubEtqUk9jQnBuU3JmZ2w0Tk01TlFYTlZvSGM5MEFEQktuRThDRFdhUUVmVnpwWWZJa2xBSw?oc=5",
-   "ts": 1795505940,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Share-paid stake purchase in IsoEnergy, a junior miner; not Cameco news, only sector background."
-  },
-  {
-   "ticker": "DNN",
-   "source": "Google News",
-   "title": "Denison Mines shares technical analysis: Upward price move lifts stock toward $1.88 resistance - Traders Union",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPVWFXeDk0WENPTmZWcTNiYVM5aUxnUWszN3JYeG5LYjYtT2ZsUFRhSEpIbjFEMHRHNXgzMkx5RU9FN0JRcmpNOWNZN2Izak9uUG9hSVo3d2ZXMjQ2a21QMFV5Sm1ZSjYtVWQ2YWdlU045S1VQMGs1MWVGVjIyaGdkaGZFdURUS1NSWGc?oc=5",
-   "ts": 1795510104,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic technical-analysis price recap with no new company information."
-  },
-  {
-   "ticker": "VST",
-   "source": "Google News",
-   "title": "Vistra Corp. (NYSE:VST) Stock Rated \"Moderate Buy\" by Wall Street Analysts - MarketBeat",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPUG54Zl84Y1dmeDg3aHYwTE9wVkI0TktNRXhYb1ljZVY2cEwyeFJxQUhmQlhkQl9CQkpJTDBxY2tTYmZRaVlsNWlpUGhNajN4VVlxYVJiRlFaWkNkSU9Bam5najd3Y0ltcVZreXhRVUNmLS15b2ZvYm5NdjZNS1daNmZmSzB5S2JjbnItNHktN1ZPMTkzWkF0bk1RUS1TeEJabjRkb2ZvZFRQOXFPMFN2UFlWTG1KRDdyN3ZfcmVib3Q1UW9yVU83YVRXSVpWUQ?oc=5",
-   "ts": 1795505892,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Routine MarketBeat consensus rating roundup; no new rating change or catalyst."
-  },
   {
    "ticker": "UUUU",
    "source": "Google News",
@@ -7194,6 +7158,42 @@
    "direction": "neutral",
    "event_type": "policy_tariff",
    "why": "Saudi nuclear bid and Houthi/Congress concerns are a general geopolitical backdrop, not new CCJ-specific information."
+  },
+  {
+   "ticker": "DNN",
+   "source": "Google News: \"Denison Mines\"",
+   "title": "Denison Mines (TSX:DML) Flags Darby Progress, Is The 60% Undervalued View Too Optimistic? - Simply Wall St",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTVVMazB4WDQ3aVRpc0ZiQXNRU2pCVDNuMXlTU01DWWdRUmJNcnpfcmxKVU15MnNIeXBPaDhtNElKa19ScWprUmRoMjJvTThwT2tmZkl2T2RwUWNyNTFtVUZOU3pFTklyOWJlZVFJbzB2OUc0VEVPcXdzb2l2LXFjcUJYT1JQcWphM0M5OXo2Z0xwV1lUdnE5bklkUF9jQmE1MEhLeEdLZk5YZUZTRTdsLWQ5dEI2SmNubUUzMlZZWFhZNzRkdlZ5YS1GODNhZ9IB0wFBVV95cUxNX1o3bEN2djg5Zl9RVmNIallqcEhCVFp3V2oxUGtKVjFOYm5ING5tRnBGVVVFTDl2S2gwMXg4cHdHeC1JQnhyUVUwNUk1cU9XQWI5WkN4R0VLd3lHQUExWmUteFVER2RWc0dwbFpXb1NVSWJpOEtWRFIxSW9taV93SmJCTi1zZW1MZzZTei1pMXhnVC0tX3FtX0FEM0NGRG5hS0NjS1hUWGRyR3dlbnBXMzFmeHd5a0hUSWZCV21ITkJQQXVkT1p5Vk96TldFZUV3RHp3?oc=5",
+   "ts": 1795659107,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Simply Wall St valuation piece, opinion-style recap of Darby progress, nothing new."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News",
+   "title": "Westinghouse Awards AP1000 Contracts to BWXT Canada - Wisevoter",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNV0trb1V2M1NYOUs3aWJyMHNXeVJrSnA4bUdHUWpsaGU2N3pjSDE2ZkZVcTJyTHZEbWlZN3VLbGx4ck5LMFByaUI2ZnFuc0FOaGpDOG1pZ1pyR0g4ZkdPOHZsLVdVb1JtY3lhbGt2djFDWUdPSmVZdGg4TUpFNzVvYmZGNXJZMklIeWNWU1FKTlNERV9iR2lpdFRn?oc=5",
+   "ts": 1795657415,
+   "materiality": 7,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Westinghouse awarding AP1000 contracts to BWXT Canada is a concrete, new reactor-parts award."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Local intel: ANI News (Weapons programs)",
+   "title": "Kim Jong Un calls tactical nuclear weapons deployment across multiple domains \"urgent\"; vows to expand nuclear arsenal",
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNaW81dXlhRG5CaEJ3V3VpeEdoTEtxaUljUVJuaVNFMnBZX095bEZFUFE1RWx0bnFuN2FDcG9tY2dsNTN6a0c0U1RJR0pnN0VIS3VWVVhETEZMc09RTjJPSVZpNzZ4NFdwc0IzejNsR0hPTjJWb1Zkc1h5ajRLVUY0bVZZa3J4YWM5Y2JQYnAxRXlNdHNPanFJR0JEWHQ3T1h5cllCVGFXcXVEWktCd2FzZ29HSVc3SldBem9PVU5sU1pIT19PQTBrLTBzYU9zckI2YVFVdk5iSlBweXZodUtON0lFQ1RKOGcxS1FKQ0M2YnRuTm14MFlHNVp1X2E?oc=5",
+   "ts": 1795660080,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "war_geopolitics",
+   "why": "North Korea weapons rhetoric is generic and not specific to BWXT's business."
   }
  ],
  "reviews": [
@@ -8953,25 +8953,25 @@
  },
  "spend": {
   "day": "2026-11-25",
-  "day_usd": 0.72902,
+  "day_usd": 0.80904,
   "month": "2026-11",
-  "month_usd": 1.91258,
-  "total_usd": 1.91258,
+  "month_usd": 1.9926,
+  "total_usd": 1.9926,
   "by_role": {
    "macro": 0.19341,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.17806,
+   "scout": 0.17905,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.27861,
+   "pm": 0.31734,
    "risk": 0.1939,
-   "investigator": 0.31047,
+   "investigator": 0.34983,
    "postmortem": 0.00035,
    "researcher": 0.02341,
-   "engineer": 0.07932,
+   "engineer": 0.08026,
    "questioner": 0.12725
   }
  },
@@ -9121,6 +9121,71 @@
    },
    "result": "no action",
    "time": "2026-11-25 04:40"
+  },
+  {
+   "ticker": "BWXT",
+   "trigger": "news",
+   "headline": "Westinghouse Awards AP1000 Contracts to BWXT Canada - Wisevoter",
+   "investigator": {
+    "summary": "Westinghouse awarded AP1000 component contracts to BWXT Canada. The Wisevoter item looks like a recycled aggregator repost, since the desk's own deal note dates it Nov 24 and a Simply Wall St piece already discusses it. The stock is still down about 16% over 20 days, so the market does not seem to be treating it as a catalyst.",
+    "novelty": "priced_in",
+    "direction": "neutral",
+    "durability": "days",
+    "confidence": 65,
+    "key_risk": "Orders are small relative to BWXT's market cap and have no stated dollar value. Real AP1000 construction starts are 2027 or later. The basket is below its 10-day average, so the desk can't buy now anyway.",
+    "trade_idea": "none",
+    "say": "News Scout, thanks for flagging it. I don't think it gives us an edge: the story is a day or more old and has been reposted by aggregators, and recycled news tends to reverse within a week. Past BWXT contract headlines did about -2.8% over 20 days, and the basket gate is closed, so I'd skip it.",
+    "to": "News Scout",
+    "why": "I checked the desk's deal history for BWXT, the timing of the headline (it was already discussed elsewhere), and the price action. The stock hasn't responded, and past BWXT contract news has not led to gains.",
+    "_cost": 0.0394,
+    "_notes_used": [
+     "BWXT Deals and contracts",
+     "BWXT What history says",
+     "BWXT Snapshot"
+    ],
+    "files_read": "BWXT Deals and contracts, BWXT What history says, BWXT Snapshot"
+   },
+   "engineer": {
+    "say": "I agree with News Investigator that this isn't something to trade. From a plant standpoint, an AP1000 contract for BWXT Canada is a supplier award inside Westinghouse's reactor program, so it's real but slow: the actual revenue arrives over years of construction, not in the next few sessions. And BWXT's main business is US Navy reactors, so this is a small piece of its picture.",
+    "to": "News Investigator",
+    "real_effect": "Supplier work for AP1000 reactor builds (Westinghouse's design), which only convert to meaningful BWXT revenue as construction proceeds over several years. No immediate change to any plant's output.",
+    "lasts": "years",
+    "routine": false,
+    "why": "I checked the plant and fleet data: no outage or power event touches BWXT, and the AP1000 contract is a multi-year supply item. The basket gate is closed and the story is aggregator-recycled, so there's no timely edge.",
+    "watch": [],
+    "_cost": 0.0009,
+    "_notes_used": [
+     "BWXT Business"
+    ],
+    "files_read": "BWXT Business"
+   },
+   "pm": {
+    "decisions": {
+     "BWXT": {
+      "action": "SKIP",
+      "size_mult": 1.0,
+      "confidence": 75,
+      "conviction": 2,
+      "target_pct": 0,
+      "stop_pct": 0,
+      "days": 0,
+      "reason": "The AP1000 supplier award is a recycled headline (the desk's own deal note dates it Nov 24) with no stated dollar value, and revenue from it arrives over years, not days. BWXT is also below its 50-day and 200-day averages, the basket is under its 10-day average so no new buys are allowed, and past BWXT contract news averaged -2.8% over 20 days."
+     }
+    },
+    "plan_summary": "No trade in BWXT. Stale, small, slow-payoff news, a downtrending stock, and the basket gate is closed.",
+    "to": "News Investigator",
+    "say": "I agree with News Investigator and Plant Engineer: this is recycled news about slow, multi-year revenue, so it is not a reason to buy. BWXT is down about 16% in 20 days and under its 200-day average, the basket gate is shut, and past contract headlines did slightly worse than the basket afterward, so I'm skipping.",
+    "why": "I checked the deal history, the age of the headline, the trend and the basket gate. Every check pointed to no edge, so I'd rather not trade.",
+    "_cost": 0.0387,
+    "_notes_used": [
+     "BWXT Deals and contracts",
+     "BWXT Snapshot",
+     "BWXT Leadership and insiders"
+    ],
+    "files_read": "BWXT Deals and contracts, BWXT Snapshot, BWXT Leadership and insiders"
+   },
+   "result": "no action",
+   "time": "2026-11-25 21:41"
   }
  ],
  "alpaca_seen_fills": [
@@ -9165,7 +9230,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-25 21:05 ET",
+ "last_cycle": "2026-11-25 21:37 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57840,8 +57905,8 @@
   "888d96e0923cd600",
   "aa4b40fcca57bfea",
   "bb70a1f088013762",
-  "6305a538f3553f7a",
   "d87a1acbb5ff13ef",
+  "6305a538f3553f7a",
   "9dd14dae753c141a",
   "f301f0be48a8445e",
   "5f159b11a32384bb",
@@ -58058,6 +58123,7 @@
   "68b8d7111ead5bfd",
   "6709ae4e03dfb11b",
   "7c221cf76c2854cd",
+  "1bfe98b37ffa04f5",
   "2cbbc694a2695e84",
   "f21913021e43c03f",
   "8a3d5e1cda9320c3",
@@ -58402,9 +58468,10 @@
   "4627bda8dfc98062",
   "15d6f9963fcdf41e",
   "84200faa36eac51a",
-  "688d746cfc31b58f"
+  "688d746cfc31b58f",
+  "74e17fa746f38e12"
  ],
- "news_slow_at": 1795658877.5738,
+ "news_slow_at": 1795660820.744907,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -214089,6 +214156,57 @@
    ],
    "practice": false,
    "end": "20:02"
+  },
+  {
+   "id": "20261125214141030431",
+   "title": "News on BWXT: Westinghouse Awards AP1000 Contracts to BWXT Canada - Wisevoter",
+   "tickers": [
+    "BWXT"
+   ],
+   "kind": "news",
+   "start": "2026-11-25 21:41",
+   "msgs": [
+    {
+     "t": "21:41",
+     "who": "scout",
+     "to": "team",
+     "text": "Flagging this for the team: \"Westinghouse Awards AP1000 Contracts to BWXT Canada - Wisevoter\" (Google News). No position in BWXT.",
+     "outcome": false
+    },
+    {
+     "t": "21:41",
+     "who": "investigator",
+     "to": "scout",
+     "text": "News Scout, thanks for flagging it. I don't think it gives us an edge: the story is a day or more old and has been reposted by aggregators, and recycled news tends to reverse within a week. Past BWXT contract headlines did about -2.8% over 20 days, and the basket gate is closed, so I'd skip it.",
+     "outcome": false,
+     "notes": "Westinghouse awarded AP1000 component contracts to BWXT Canada. The Wisevoter item looks like a recycled aggregator repost, since the desk's own deal note dates it Nov 24 and a Simply Wall St piece already discusses it. The stock is still down about 16% over 20 days, so the market does not seem to be treating it as a catalyst.\nnovelty: priced_in\ndirection: neutral\ndurability: days\nconfidence: 65\nkey risk: Orders are small relative to BWXT's market cap and have no stated dollar value. Real AP1000 construction starts are 2027 or later. The basket is below its 10-day average, so the desk can't buy now anyway.\ntrade idea: none\nwhy: I checked the desk's deal history for BWXT, the timing of the headline (it was already discussed elsewhere), and the price action. The stock hasn't responded, and past BWXT contract news has not led to gains.\nfiles read: BWXT Deals and contracts, BWXT What history"
+    },
+    {
+     "t": "21:41",
+     "who": "engineer",
+     "to": "investigator",
+     "text": "I agree with News Investigator that this isn't something to trade. From a plant standpoint, an AP1000 contract for BWXT Canada is a supplier award inside Westinghouse's reactor program, so it's real but slow: the actual revenue arrives over years of construction, not in the next few sessions. And BWXT's main business is US Navy reactors, so this is a small piece of its picture.",
+     "outcome": false,
+     "notes": "real effect: Supplier work for AP1000 reactor builds (Westinghouse's design), which only convert to meaningful BWXT revenue as construction proceeds over several years. No immediate change to any plant's output.\nlasts: years\nroutine: False\nwhy: I checked the plant and fleet data: no outage or power event touches BWXT, and the AP1000 contract is a multi-year supply item. The basket gate is closed and the story is aggregator-recycled, so there's no timely edge.\nfiles read: BWXT Business"
+    },
+    {
+     "t": "21:41",
+     "who": "pm",
+     "to": "investigator",
+     "text": "I agree with News Investigator and Plant Engineer: this is recycled news about slow, multi-year revenue, so it is not a reason to buy. BWXT is down about 16% in 20 days and under its 200-day average, the basket gate is shut, and past contract headlines did slightly worse than the basket afterward, so I'm skipping.",
+     "outcome": false,
+     "notes": "BWXT: action: SKIP; size mult: 1.0; confidence: 75; conviction: 2; target pct: 0; stop pct: 0; days: 0; reason: The AP1000 supplier award is a recycled headline (the desk's own deal note dates it Nov 24) with no stated dollar value, and revenue from it arrives over years, not days. BWXT is also below its \nplan summary: No trade in BWXT. Stale, small, slow-payoff news, a downtrending stock, and the basket gate is closed.\nwhy: I checked the deal history, the age of the headline, the trend and the basket gate. Every check pointed to no edge, so I'd rather not trade.\nfiles read: BWXT Deals and contracts, BWXT Snapshot, BWXT Leadership and insiders"
+    },
+    {
+     "t": "21:41",
+     "who": "pm",
+     "to": "team",
+     "text": "Desk on BWXT: SKIP (no action). The AP1000 supplier award is a recycled headline (the desk's own deal note dates it Nov 24) with no stated dollar value, and revenue from it arrives over years, not days. BWXT is also below its 50-day and 200-day averages, the basket is under its 10-day average so no new buys are allowed, and past B",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "21:41"
   }
  ],
  "feed": [
@@ -218713,6 +218831,40 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-25 21:41",
+   "who": "scout",
+   "kind": "agent",
+   "title": null,
+   "text": "I rate the Westinghouse AP1000 contract as the one real new item here, since it's a fresh award for BWXT's reactor parts. The desk's own history shows BWXT deal headlines have usually faded within a month, so I'm not calling a lasting move. The North Korea item is just noise for this stock.\n\nWhy: The AP1000 award is a genuine new contract for BWXT, but the desk's history shows BWXT contract news has often faded over 20 days, with median 20-day returns of -2.8% after past deals. So I score it high on materiality but don't expect a sustained rally. The North Korea item is rhetoric with no direct link to BWXT's earnings or contracts.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 21:41",
+   "who": "scout",
+   "kind": "alert",
+   "title": "News BWXT (7/10)",
+   "text": "Westinghouse Awards AP1000 Contracts to BWXT Canada - Wisevoter - desk reviewing",
+   "tickers": [
+    "BWXT"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-25 21:41",
+   "who": "pm",
+   "kind": "alert",
+   "title": "Desk on BWXT: SKIP (no action)",
+   "text": "The AP1000 supplier award is a recycled headline (the desk's own deal note dates it Nov 24) with no stated dollar value, and revenue from it arrives over years, not days. BWXT is also below its 50-day and 200-day averages, the basket is under its 10-day average so no new buys are allowed, and past B",
+   "tickers": [
+    "BWXT"
+   ],
+   "art": null,
+   "thread": "20261125214141030431"
   }
  ],
  "feed_people": {
@@ -219448,6 +219600,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "BWXT",
+   "type": "contract_deal",
+   "title": "Westinghouse Awards AP1000 Contracts to BWXT Canada - Wisevoter",
+   "date": "2026-11-25",
+   "price": 113.49,
+   "materiality": 7,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -219463,62 +219627,62 @@
    "lesson": null
   }
  ],
- "intel_at": 1795658716.5643957,
+ "intel_at": 1795660655.402179,
  "intel_health": {
-  "at": "2026-11-25 21:06",
+  "at": "2026-11-25 21:39",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
-   "Athabasca Basin": 7,
+   "Athabasca Basin": 11,
    "Saskatchewan wildfires": 5,
    "Rook I / Arrow": 7,
    "Wheeler River / Phoenix": 9,
    "Port Hope / Blind River": 0,
-   "Westinghouse": 12,
-   "Kazakhstan": 26,
+   "Westinghouse": 11,
+   "Kazakhstan": 17,
    "Niger": 7,
-   "Namibia": 35,
+   "Namibia": 29,
    "Russia supply": 3,
-   "Piketon": 25,
-   "HALEU": 12,
-   "Wyoming ISR": 44,
+   "Piketon": 26,
+   "HALEU": 11,
+   "Wyoming ISR": 0,
    "South Texas ISR": 2,
    "White Mesa / Utah": 15,
-   "Rare earths (Energy Fuels)": 17,
+   "Rare earths (Energy Fuels)": 21,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 10,
+   "Naval reactors": 9,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 5,
    "Comanche Peak": 6,
    "PJM grid": 14,
-   "ERCOT grid": 13,
+   "ERCOT grid": 12,
    "Data-center nuclear deals": 9,
-   "Japan restarts": 8,
-   "China new builds": 9,
-   "Congress and laws": 45,
+   "Japan restarts": 9,
+   "China new builds": 15,
+   "Congress and laws": 48,
    "NRC decisions": 20,
-   "Energy Department": 56,
+   "Energy Department": 57,
    "White House and executive orders": 25,
-   "Tariffs and trade": 1,
+   "Tariffs and trade": 2,
    "India": 29,
    "South Korea": 100,
-   "Europe new builds": 61,
+   "Europe new builds": 62,
    "France and UK": 18,
    "Middle East": 26,
-   "Asia newcomers": 48,
+   "Asia newcomers": 23,
    "Canada SMRs": 10,
-   "Big tech power deals": 69,
-   "Iran": 53,
+   "Big tech power deals": 67,
+   "Iran": 52,
    "North Korea": 70,
    "War zones": 32,
-   "AUKUS and navies": 15,
-   "Weapons programs": 15,
+   "AUKUS and navies": 18,
+   "Weapons programs": 23,
    "Stockpiles and reserves": 31,
-   "Sprott trust": 6,
-   "Uranium price": 44,
+   "Sprott trust": 7,
+   "Uranium price": 43,
    "US policy": 0,
-   "Lawsuits and investigations": 33,
-   "Workers and jobs": 24,
+   "Lawsuits and investigations": 73,
+   "Workers and jobs": 46,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
    "Federal Register (uranium)": 9,
@@ -219528,17 +219692,17 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-25 21:06",
-  "total": 689,
-  "week": 515,
+  "updated": "2026-11-25 21:39",
+  "total": 701,
+  "week": 522,
   "places": {
    "Uranium price": 48,
-   "South Korea": 38,
+   "South Korea": 39,
+   "Weapons programs": 28,
    "Europe new builds": 27,
-   "Weapons programs": 27,
+   "Workers and jobs": 26,
    "Piketon": 26,
    "World Nuclear News": 24,
-   "Workers and jobs": 22,
    "Kazakhstan": 21,
    "AUKUS and navies": 19,
    "War zones": 19,
@@ -219547,60 +219711,60 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-25 21:06",
+   "at": "2026-11-25 21:39",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
-    "Athabasca Basin": 7,
+    "Athabasca Basin": 11,
     "Saskatchewan wildfires": 5,
     "Rook I / Arrow": 7,
     "Wheeler River / Phoenix": 9,
     "Port Hope / Blind River": 0,
-    "Westinghouse": 12,
-    "Kazakhstan": 26,
+    "Westinghouse": 11,
+    "Kazakhstan": 17,
     "Niger": 7,
-    "Namibia": 35,
+    "Namibia": 29,
     "Russia supply": 3,
-    "Piketon": 25,
-    "HALEU": 12,
-    "Wyoming ISR": 44,
+    "Piketon": 26,
+    "HALEU": 11,
+    "Wyoming ISR": 0,
     "South Texas ISR": 2,
     "White Mesa / Utah": 15,
-    "Rare earths (Energy Fuels)": 17,
+    "Rare earths (Energy Fuels)": 21,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 10,
+    "Naval reactors": 9,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 5,
     "Comanche Peak": 6,
     "PJM grid": 14,
-    "ERCOT grid": 13,
+    "ERCOT grid": 12,
     "Data-center nuclear deals": 9,
-    "Japan restarts": 8,
-    "China new builds": 9,
-    "Congress and laws": 45,
+    "Japan restarts": 9,
+    "China new builds": 15,
+    "Congress and laws": 48,
     "NRC decisions": 20,
-    "Energy Department": 56,
+    "Energy Department": 57,
     "White House and executive orders": 25,
-    "Tariffs and trade": 1,
+    "Tariffs and trade": 2,
     "India": 29,
     "South Korea": 100,
-    "Europe new builds": 61,
+    "Europe new builds": 62,
     "France and UK": 18,
     "Middle East": 26,
-    "Asia newcomers": 48,
+    "Asia newcomers": 23,
     "Canada SMRs": 10,
-    "Big tech power deals": 69,
-    "Iran": 53,
+    "Big tech power deals": 67,
+    "Iran": 52,
     "North Korea": 70,
     "War zones": 32,
-    "AUKUS and navies": 15,
-    "Weapons programs": 15,
+    "AUKUS and navies": 18,
+    "Weapons programs": 23,
     "Stockpiles and reserves": 31,
-    "Sprott trust": 6,
-    "Uranium price": 44,
+    "Sprott trust": 7,
+    "Uranium price": 43,
     "US policy": 0,
-    "Lawsuits and investigations": 33,
-    "Workers and jobs": 24,
+    "Lawsuits and investigations": 73,
+    "Workers and jobs": 46,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
     "Federal Register (uranium)": 9,
@@ -220326,9 +220490,11 @@
   "4039fa58057275ae",
   "537b32f5b2133213",
   "53627f4c0e7162ee",
+  "1cb683a826f1a87b",
   "688d746cfc31b58f",
   "7908d2b630649992",
-  "1cb683a826f1a87b"
+  "7baea97af7cc8870",
+  "23df247dfa485e38"
  ],
  "panic_log": [
   {
@@ -220369,7 +220535,7 @@
   }
  ],
  "memory_view": {
-  "events": 1681,
+  "events": 1685,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -220954,24 +221120,6 @@
    {
     "date": "2026-11-25",
     "ticker": "CCJ",
-    "title": "Ukraine reports new power outages as occupied Zaporizhzhia nuclear plant switches to diesel generators",
-    "type": "intel_disruption",
-    "r0": 2.93,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "CEG",
-    "title": "Ukraine reports new power outages as occupied Zaporizhzhia nuclear plant switches to diesel generators",
-    "type": "intel_disruption",
-    "r0": -3.9,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "CCJ",
     "title": "Nuclear power development goes beyond building, operating plants: Vietnamese deputy minister",
     "type": "intel_politics",
     "r0": 2.93,
@@ -221307,6 +221455,24 @@
     "ticker": "LEU",
     "title": "Houthi attacks and US Congress cloud Saudi nuclear bid",
     "type": "intel_geopolitics",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "BWXT",
+    "title": "Kim Jong Un calls tactical nuclear weapons deployment across multiple domains \"urgent\"; vows to expand nuclear arsenal",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "LEU",
+    "title": "Kim Jong Un calls tactical nuclear weapons deployment across multiple domains \"urgent\"; vows to expand nuclear arsenal",
+    "type": "intel_defense",
     "r0": null,
     "r5": null,
     "r20": null
@@ -222586,7 +222752,7 @@
    }
   ]
  },
- "dossier_at": 1795658816.3485448,
+ "dossier_at": 1795660752.2529113,
  "sector_prices": {
   "_at": 1795647108.8290422,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -222644,80 +222810,80 @@
    "name": "Cameco",
    "price": 61.56,
    "week_pct": -1.42,
-   "built": "2026-11-25 21:06"
+   "built": "2026-11-25 21:39"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.95,
    "week_pct": -4.46,
-   "built": "2026-11-25 21:07"
+   "built": "2026-11-25 21:39"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.69,
    "week_pct": -3.89,
-   "built": "2026-11-25 21:07"
+   "built": "2026-11-25 21:39"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.8,
    "week_pct": -1.64,
-   "built": "2026-11-25 21:07"
+   "built": "2026-11-25 21:39"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.2,
    "week_pct": -7.71,
-   "built": "2026-11-25 21:07"
+   "built": "2026-11-25 21:39"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 83.23,
    "week_pct": -9.3,
-   "built": "2026-11-25 21:07"
+   "built": "2026-11-25 21:39"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.49,
    "week_pct": -3.54,
-   "built": "2026-11-25 21:07"
+   "built": "2026-11-25 21:39"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 235.25,
    "week_pct": -10.46,
-   "built": "2026-11-25 21:07"
+   "built": "2026-11-25 21:40"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 121.32,
    "week_pct": -3.39,
-   "built": "2026-11-25 21:07"
+   "built": "2026-11-25 21:40"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 351.55,
    "week_pct": -2.4,
-   "built": "2026-11-25 21:07"
+   "built": "2026-11-25 21:40"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-25 21:07"
+   "built": "2026-11-25 21:40"
   }
  ],
- "heartbeat": "2026-11-25 21:05",
+ "heartbeat": "2026-11-25 21:37",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -222942,19 +223108,19 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 305,
-   "used": 276,
+   "asked": 307,
+   "used": 278,
    "notes": {
     "TLN Deals and contracts": 17,
     "CCJ Deals and contracts": 56,
-    "BWXT Deals and contracts": 38,
+    "BWXT Deals and contracts": 39,
     "SECTOR Government and laws": 75,
     "UUUU Deals and contracts": 38,
-    "SECTOR Countries": 72,
+    "SECTOR Countries": 73,
     "CEG Deals and contracts": 38,
     "NXE Legal": 13,
     "NXE Deals and contracts": 19,
-    "DNN Deals and contracts": 11,
+    "DNN Deals and contracts": 12,
     "BWXT Legal": 2,
     "LEU Deals and contracts": 33,
     "UEC Deals and contracts": 5,
@@ -223049,12 +223215,12 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 81,
-   "used": 78,
+   "asked": 82,
+   "used": 79,
    "notes": {
-    "BWXT Deals and contracts": 2,
-    "BWXT Snapshot": 3,
-    "BWXT What history says": 2,
+    "BWXT Deals and contracts": 3,
+    "BWXT Snapshot": 4,
+    "BWXT What history says": 3,
     "BWXT Leadership and insiders": 2,
     "UEC Snapshot": 9,
     "UEC Deals and contracts": 1,
@@ -223107,12 +223273,12 @@
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 63,
-   "used": 63,
+   "asked": 64,
+   "used": 64,
    "notes": {
-    "BWXT Deals and contracts": 3,
-    "BWXT Snapshot": 9,
-    "BWXT Leadership and insiders": 1,
+    "BWXT Deals and contracts": 4,
+    "BWXT Snapshot": 10,
+    "BWXT Leadership and insiders": 2,
     "TLN Snapshot": 7,
     "SECTOR Uranium market": 56,
     "BWXT Discoveries": 2,
@@ -223146,8 +223312,8 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 57,
-   "used": 56,
+   "asked": 58,
+   "used": 57,
    "notes": {
     "SECTOR Reactors and power": 2,
     "CEG Places and operations": 25,
@@ -223180,7 +223346,8 @@
     "NXE Business": 2,
     "BWXT Places and operations": 1,
     "DNN Business": 1,
-    "DNN Places and operations": 1
+    "DNN Places and operations": 1,
+    "BWXT Business": 1
    },
    "since": "2026-11-23"
   },
@@ -230900,7 +231067,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-25 21:05",
+ "watchdog_last": "2026-11-25 21:37",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
