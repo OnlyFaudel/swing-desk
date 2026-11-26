@@ -27505,5 +27505,104 @@
 "worth",
 "years"
 ]
+},
+{
+"id": "dbaa3c361e6d78b5",
+"date": "2026-11-26",
+"ts": 1795687799,
+"title": "Cameco: Long And Steady Road To Higher Uranium Prices",
+"summary": "",
+"outlet": "Seeking Alpha",
+"link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNak81OW44d3VYN0xiR1dYakVxczhlU29LVm1oRTRnSXczYWg1TmdWT1JuWThud0poLTA4TTEyQzhsc05HUU41dmdQczZjd1l5Vzh0MDctcUxFbDVEeFdINlF0dDRaRTQzWWtaTWtEdGdxSHJ1UVR6WmxEWWJzTFRiUE5UMjNnSjM4TzkxOXZZMWtUQTQyNXd3SA?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [
+"price"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.77,
+"score": 3.84,
+"echo_of": null,
+"w": [
+"cameco",
+"higher",
+"long",
+"prices",
+"road",
+"steady",
+"uranium"
+]
+},
+{
+"id": "6a42ab81fd6c3ce2",
+"date": "2026-11-26",
+"ts": 1795729776,
+"title": "TEPCO Reviews Kashiwazaki-Kariwa Nuclear Facility Schedule After Construction Problems",
+"summary": "",
+"outlet": "Construction Review",
+"link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNc1dnWFJBcGJRbkZBV3dWQWZsRjRCMmg2dGFsQVZfVlhQWllqWXRoTlM4enNGRk9zeHQ2Y2RpdkUyTTF4ODBqeExRbV9ialo3YlVUdnUzNU12WnRONnRDUDF1TEg3cmg5Yk1FUm5TVlEzRy1YRUt1R01lNG0yZlcxbGMtcUZqb1Z4YU90Z1B0VTU3U29zcl91Vk9kQ2d1d1dISXFfYklxdlJ0M0VVRVV1dzVrVmZ6a2JPXzFtOVZSY3E0Zw?oc=5",
+"place": "Japan restarts",
+"tickers": [
+"CCJ"
+],
+"tags": [
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.64,
+"score": 4.48,
+"echo_of": null,
+"w": [
+"construction",
+"facility",
+"kariwa",
+"kashiwazaki",
+"nuclear",
+"problems",
+"reviews",
+"schedule",
+"tepco"
+]
+},
+{
+"id": "6a0898de16d87b61",
+"date": "2026-11-26",
+"ts": 1795731451,
+"title": "10th Annual Walk Against Uranium Brings Hundreds to White Mesa Ute Community",
+"summary": "",
+"outlet": "Unicorn Riot",
+"link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMjd1QUY3YmFSZHJBakFCY2xNeG90aC1ZZ083NjdPV19WUWtiX2Jic2UySzFqWmdkdDZCRkowMFhla1A3UjdMd3BVemFacDhmNFg5NjdfS3RFTDdiM1U2WE9qTC0zY1BUVkh5QVBzdEpnMmdPLV9uY2p3SjRNSlZPZmpjU3FPMHlMci1hOXhqWHRNNXhhQXN3d1BwZXpXY0F4QWZBeDBlWnpVWGZP?oc=5",
+"place": "White Mesa / Utah",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.8,
+"score": 4.1,
+"echo_of": null,
+"w": [
+"10th",
+"against",
+"annual",
+"brings",
+"community",
+"hundreds",
+"mesa",
+"uranium",
+"ute",
+"walk",
+"white"
+]
 }
 ]
