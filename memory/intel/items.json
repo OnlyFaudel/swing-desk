@@ -25459,5 +25459,107 @@
 "tonnes",
 "uranium"
 ]
+},
+{
+"id": "4404fd8f751c29a3",
+"date": "2026-11-24",
+"ts": 1795507200,
+"title": "Uranium Royalty (Nasdaq:UROY) - Stock Analysis",
+"summary": "",
+"outlet": "Simply Wall St",
+"link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1PM0NIaXVVdGhSbGFkQXVlLUxwcXNjM2FzNkhlZ1NhcXdNQ0M2ckxpRWFnTzVRZk5BczU2YzRPUmZDQTV3Sl9jRllWTTZmUzR4SUFES21OTHUzOHhMdVdwa3B1Mm1FQnRrUEIxWDlPZjFhbjRnR1JaVA?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.67,
+"score": 2.84,
+"echo_of": null,
+"w": [
+"analysis",
+"nasdaq",
+"royalty",
+"stock",
+"uranium",
+"uroy"
+]
+},
+{
+"id": "5ce96e2f4d3ff867",
+"date": "2026-11-25",
+"ts": 1795608727,
+"title": "Senate approves permitting bill with nuclear energy amendments\u2014what\u2019s next?",
+"summary": "",
+"outlet": "CGEP",
+"link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYmVTNDYyN19qUUItQnl1eHVySU9idWJZZjJsZkJOMGxJVGlNMVl5Z3dlRDZodXdTN0VIbzd5TlhvVnlGbnZ1QXpINjVibTNqMVdNSzVhaU9mSDliMWlsNG9Tc3ZwdzhyRVJISDQ4bmlWdE9hNmwtV1NPd25WeDhnV3R0SE12Q1dQdU5yTzhmYjlxZ2E1b3JsVHI3RldHQ2NjZjNsVmltemZ5XzFxcms2SjhR?oc=5",
+"place": "Congress and laws",
+"tickers": [
+"CCJ",
+"LEU",
+"CEG",
+"UEC",
+"UUUU"
+],
+"tags": [
+"regulation"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 4.0,
+"echo_of": "004c1f6d9bc3d5b2",
+"w": [
+"amendments",
+"approves",
+"bill",
+"energy",
+"next",
+"nuclear",
+"permitting",
+"senate",
+"what"
+]
+},
+{
+"id": "3786b7d85db9a732",
+"date": "2026-11-26",
+"ts": 1795703580,
+"title": "Refined Energy Corp. (CN:RUU) Declines as Market Attention Turns to Uranium And Energy Mineral Exploration",
+"summary": "",
+"outlet": "kalkine.ca",
+"link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNVpmbi1CeGppSmdDZFdSa196WXVrWHA1Y1FFN2otTVJFemlEZVVKZ0NDVHFFdEJUNUNfVzJuREh0ckVBWXBobGVaTjZ4b25ldmcxdzhwRlN1b2dFdXk2VnhTcjlrbXNKNE5VeU1IOENCbnZ5VFk3SlBWcktLU1VxZEloZGRsaGtHWE4zTDhNdmVNRmlTaDdWc3VsRHNyTGZzT3k1RTZaX21KeFVfd0JCZ1plRDZiNDZVbEFkcVhHVURHQW1iNEFlc2QyUFZuQQ?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.82,
+"score": 3.14,
+"echo_of": null,
+"w": [
+"attention",
+"declines",
+"energy",
+"exploration",
+"market",
+"mineral",
+"refined",
+"ruu",
+"turns",
+"uranium"
+]
 }
 ]
