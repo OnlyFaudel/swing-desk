@@ -613,7 +613,12 @@
   "ahdip192:2026-11-25": true,
   "nightwatch192:2026-11-25": true,
   "questioner:2026-11-25:10": true,
-  "catalysts:2026-11-26": true
+  "catalysts:2026-11-26": true,
+  "questioner:2026-11-26:3": true,
+  "uprice:2026-11-26": true,
+  "congress:2026-11-26": true,
+  "jobs:2026-11-26": true,
+  "weather:2026-11-26": true
  },
  "benchmark": {
   "shares": {
@@ -4197,78 +4202,6 @@
  },
  "news_feed": [
   {
-   "ticker": "UUUU",
-   "source": "Google News",
-   "title": "Energy Fuels stock hits 52-week low at $4.91 By Investing.com - Investing.com UK",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOYnFBWUF0NDRnMjY0Ti15WERoZDRLbU02eHNRczZxQVRyUjJrUHJQSGFkQXBEaEJaelZneVBxUE8zRnkyYUl3RjA2eHFNWkRSaDNvWC1xUEFmVUt5MGlLRXVNbkxZZS1wUzhsdWVMd1ZGWE0xdkpPWkhLLUJ2dGR6aGRLeGJ6Y0E3YTUtMVp0ZzU5cE1vV1lIUE1VOVhtd1l2d1lSaw?oc=5",
-   "ts": 1795533480,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "other",
-   "why": "52-week low is a price recap, not new information; the price move itself is what matters."
-  },
-  {
-   "ticker": "VST",
-   "source": "Google News",
-   "title": "How Has Vistra Stock\u2019s Story Changed? - Trefis",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRnJqUjVobDFUMHNiWWNwbFE4by1UbmZMeGdQeUsxMGRNWTVlRzdYaTVBUUxqeWdDRVc1Q21oOU4wQmR5TW14M1VRRk9wTVZSb093UW5aeTNzTEY1SDJxZnE2Y2R3REp1bHJhQm9hVURpeWRjNHFhNG1uemNLMFVtT0owUjdoa21KTjV4dUFMSkxGZ2cyZmVmeHpFaUU?oc=5",
-   "ts": 1795534277,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic explainer on how the story changed; no new company-specific information."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Poland eyes 2027 deal for $75.15 billion nuclear plant - Mining.com.au",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQWxjMEg1ejhIckRqV3ROdUlGTTRRdW44S0lrTVlOOXd6ZW9iM0p2QWg2SXk2Qm1GN3hFejBybFIwTjltcnlLeTFUTWRsQUhPbXlrem1NNkQyZEZBek0tLTVUZW1ZTkhlMWNrUWk4ZUpXc21NUmRpU21PZW02OWZUYWhn?oc=5",
-   "ts": 1795535100,
-   "materiality": 4,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "contract_deal",
-   "why": "Poland nuclear plant deal is sector demand news, but it's a 2027 plan, not a signed contract."
-  },
-  {
-   "ticker": "VST",
-   "source": "Google News: Vistra nuclear",
-   "title": "What Just Happened To Vistra Stock? - Trefis",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdXV4M2lRc2lFX1BpU3RRdU9RUzlWWXR5X1lqSnRBajJzYjNVcldFQV9vZEtzTkljWnhqeDVJdkNndjYtRHhoR05wdGRTOFBtT2VUZUxISkFrRmtxRzFwam9uS1VYZVB3QTZ6VlJUZGJUQzgwdVN4OUZiNUJvSElJNlA0bG9hM2kyUkY1M3ZfWU5wdWFTVHRiNUVsLVE?oc=5",
-   "ts": 1795534818,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Trefis explainer piece recapping price moves, no new company information."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Westinghouse Eyes Ontario Parts Deal With BWX - Wisevoter",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNYzZlWlh4MV9WVlBmbGt2NEdpdXR2OG9mSlR1QWt6M054NWpMNU5pN1NkUHIwbVRodXN6MHlUWnVZREdSWmhlSXhzT1Z1aW9tNEdvbEpBd2JqZkN4TU5EbmJDdzdDTjBkZnF2ZjNpQUVjYjJ4Y0pHd29TOE1rSG1NVTZWZ0lZeG1jeC0yMmhzY0x0N21VeUlJeC1oMzZ1T0RJOUE?oc=5",
-   "ts": 1795536476,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "contract_deal",
-   "why": "Headline is a vague 'eyes a deal' report, about a reactor parts maker, not uranium supply."
-  },
-  {
-   "ticker": "CEG",
-   "source": "Yahoo Finance",
-   "title": "Can CEG's Improving Cash Flow Support Its Expanding Investment Plans?",
-   "link": "https://finance.yahoo.com/energy/articles/cegs-improving-cash-flow-support-150500837.html?.tsrc=rss",
-   "ts": 1795532700,
-   "materiality": 3,
-   "novelty": "follow_up",
-   "direction": "neutral",
-   "event_type": "earnings",
-   "why": "Cash flow growth headline on a known Calpine deal; mostly already priced in."
-  },
-  {
    "ticker": "CCJ",
    "source": "Google News: Westinghouse reactor",
    "title": "BWXT Canada approved to make parts for Westinghouse AP 1000 reactors - www.exchangemonitor.com",
@@ -7195,6 +7128,78 @@
    "direction": "up",
    "event_type": "contract_deal",
    "why": "HALEU (high-assay fuel) production prep at SRS is sector news, but a preparation step, not a signed contract."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Paladin Energy (ASX:PDN): Can the ASX 200 Uranium Miner's Fresh Funding Power Its Canadian Plans? - Kalkine Media",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNR0hEMmFmdkphUlBDUUR5dXNHRFJ0aldTNVhwTHdKbk1xblpWMExicWE3Zy1NWVVBS1RaRlQtZTI0UlhFakMtcmRfcFhROTFhY1FBSHRleU10Q28xdGMtTGRGeTM4NGRjTm4tVkFTVklNMlZrOWVWTmZvOVlmTE9HRExZbDJJb3hiVm9neThOOWtoTUU4MkdNRktxTFdaZ3dvb25Od2c4N3pYQ3hrLUNtb1FZaFhTZ0FQbzBTNXJwcGVWM0pRa25JWWw1dWNPQQ?oc=5",
+   "ts": 1795653120,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Paladin Energy funding story about a different uranium miner; generic recap."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: UA.NEWS (Japan restarts)",
+   "title": "Japanese energy company TEPCO to delay reactor restart at world\u2019s largest nuclear power plant \u2014 OilPrice",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUmtjcVk0N3BUZ1gtYkRzZi1FUDlIV2x3Sjh4VGNfOXFSRmxiQVVvMWVnSUltOE9ad0xtWV9fbEVxekFNQVNLS0NjUUQ4N0J2LTl5TEM0eUZYcmJPWS1fUHdleDlMSVh3bFM2LWZlejZzVmw0enhtcmJTRm5paDFiYkswVFMwVENOYWtSdlZvaV94MEx5NVl6MGEtUDdPVUhYdjZRYmNkdWJ4V3VFRlRBZmstblJqdXpyNWNOSW96QnVOanhMLUE?oc=5",
+   "ts": 1795691546,
+   "materiality": 5,
+   "novelty": "new",
+   "direction": "down",
+   "event_type": "supply",
+   "why": "TEPCO delaying a Japanese reactor restart means less near-term uranium demand, a modest negative for CCJ."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: MLQ.ai (Japan restarts)",
+   "title": "TEPCO delays Kashiwazaki-Kariwa unit 7 restart after concrete flaw found",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOGM0ZHdCbUx4bjNpSnlKTTFVTjcydXdkQWpFMGFheV8waW5oODNiVDZPSld5T0hCbzRkUEN4b1dDbXlianRQTTlhelNhamM1MEh5bmhwVDljbTJZUzRBU3NzV3JBY1NLejQ3MW5xRkd3TkZoZnFBN0tRQlE2MlZIenIySGs1cDNDcVcxLTg1WG95VUd4a1ZhQw?oc=5",
+   "ts": 1795693458,
+   "materiality": 5,
+   "novelty": "follow_up",
+   "direction": "down",
+   "event_type": "supply",
+   "why": "Same Kashiwazaki-Kariwa delay, now with a concrete flaw cause; a follow-up on the same news."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News: \"Centrus Energy\"",
+   "title": "Centrus Energy to Host Investor Day on December 7, 2026 - Investing News Network",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxORklROXktd3lYdFJxYlhSbWZDOFUtYkVlWGh5SUJBREVfSkZUVm54YS03dTVsNVcySHlpZ3JpSTdDVGRBWlNDaUtoYmw3bGJtUXNJaEJ0WWEtT1pFQUJBWjR6Qm5oOS1reDBSNktTbG1nTzFrSUhvUGVVeTlYdHdsYWo5VXJNY0p6?oc=5",
+   "ts": 1795624906,
+   "materiality": 4,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Investor Day date announced; informational, no new financials or deals yet."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Nuclear Fuel Supplier Energy Fuels (NYSEAMERICAN: UUUU) Lifts Contracted Uranium Sales 35% As Sector Rebounds From AI-Driven Selloff - www.foreignpolicyjournal.com",
+   "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNLWgxUk52cUExQWx2aFc0d3VUeUFLUi1SbVgzUjM1LVphTVhWU2UwUE82TDQxWEtlcERqSUZHRk1sNGZ0dFJ3RzNibTRwaUJINTZMeXVWanRSSlpVMms4RGhPMnNKT3ZlUEc2NTJoVUFJY1ZjZVVkYjRwZ1BEQlFJSmVibk5DTDZpS05MSk5VUWprMVZqNDUwWEZvR3V1WUVEaC1SS3B6QVBSRHptUVlQVTc3RUhyZWlkam9LUDkyc2tXYVJ5dzF3Y0NpZGJQVS1saXNRbVNUTW1GWmNyNzlZeEpKRF9pMEdHaktqV3ZnQXlURFdyeV9aSG8xSExfcTR5ZHNWLXZZSlI?oc=5",
+   "ts": 1795695180,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Sector rebound recap; Energy Fuels sales news is about a peer, not Cameco."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "3 Australian Uranium Stocks With P B At 0.3 To Watch - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOHAtQmRNeWd1dFhqMlhXZHphZkRUWk9Fc0YyaWQ3SXBkYU9tMnc4M2ZuVkJlTTZ5cWs1Vjk4NlJhUWtlY3NoY2poVGU2QlJyYXdLTkpRWGJmWmx1a2VXR3RYWTRseC1iNlZQQm11RkVCZ3hRanN1N3JEVDNWTVRPaTBLUHQ2UHdFYXBiSHZsRQ?oc=5",
+   "ts": 1795637488,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Listicle of Australian small caps with low P/B; no new company-specific information."
   }
  ],
  "reviews": [
@@ -8954,16 +8959,16 @@
  },
  "spend": {
   "day": "2026-11-26",
-  "day_usd": 0.01257,
+  "day_usd": 0.01664,
   "month": "2026-11",
-  "month_usd": 2.00733,
-  "total_usd": 2.00733,
+  "month_usd": 2.0114,
+  "total_usd": 2.0114,
   "by_role": {
    "macro": 0.19341,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.19378,
+   "scout": 0.19529,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -8973,7 +8978,7 @@
    "postmortem": 0.00035,
    "researcher": 0.02341,
    "engineer": 0.08026,
-   "questioner": 0.12725
+   "questioner": 0.12981
   }
  },
  "desk_log": [
@@ -9231,7 +9236,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 06:34 ET",
+ "last_cycle": "2026-11-26 07:36 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57980,6 +57985,8 @@
   "29dae386e051dd8c",
   "5af6f5b9a2bf7623",
   "7f1ab1d7e538b600",
+  "60d3ef98bb203206",
+  "b891066a77c3478b",
   "0eb4c73d1abac7bb",
   "9850b181472b7c24",
   "46b8f5e53f987c51",
@@ -58016,11 +58023,11 @@
   "c2bfe85469484a37",
   "bf78a7a4b7c697c4",
   "6a0cc1c1f8babcd3",
-  "7ee1ad6e6041b23e",
   "04e5c0526493eb7e",
+  "7ee1ad6e6041b23e",
   "3a1ae63cc1a72974",
-  "16c52bc5bc8110db",
   "f1f8a01f5b2d2080",
+  "16c52bc5bc8110db",
   "1be96b3daf4578d3",
   "1e64fcaaf9ecb5d1",
   "bf3c957b04f7b01a",
@@ -58312,12 +58319,14 @@
   "edbad492ece75d90",
   "fcee5932b3cdffea",
   "a1266dd4e5f78432",
+  "078f8b181a953e94",
   "c884db536c97a254",
   "e200acdbc80d7692",
   "6c319586d5fd38f0",
   "22ca80b609e8130c",
   "fa5187062c587fa6",
   "4a01de3865f16e76",
+  "87234f250d3b987f",
   "3e7d380def120694",
   "d1148d05210e97b6",
   "f4eb8bc49d44f35e",
@@ -58362,6 +58371,7 @@
   "0b3281c5bdc258d9",
   "17dc2073115cbcc7",
   "a82f81d0eb01a7ed",
+  "05bd10e9cace3689",
   "bb70a1f088013762",
   "973920b429b0e9a0",
   "2d5c6f3b4f1c4c83",
@@ -58410,6 +58420,7 @@
   "734de812d3954952",
   "cdf09ab4dc83c609",
   "a971dbe271ea0831",
+  "0063c1e4976a14e3",
   "3cb7c6d262ed9f5f",
   "bf01a2cc0277276c",
   "b3d0414ef4889ee9",
@@ -58455,6 +58466,7 @@
   "f3199a560c9b7560",
   "4eac1671b4b9f9c4",
   "8b7430f97f534e3f",
+  "c7de49c3980c6cbf",
   "4b634efdcf500ae7",
   "34dd3aa515a79d75",
   "81753ce9636874d7",
@@ -58512,12 +58524,9 @@
   "67ae6099beae1657",
   "418a91931047cecc",
   "52950daaafc92008",
-  "aa4b40fcca57bfea",
-  "60d3ef98bb203206",
-  "05bd10e9cace3689",
-  "87234f250d3b987f"
+  "aa4b40fcca57bfea"
  ],
- "news_slow_at": 1795692872.940518,
+ "news_slow_at": 1795696565.35978,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -214253,6 +214262,25 @@
    ],
    "practice": false,
    "end": "21:41"
+  },
+  {
+   "id": "20261126070538943631",
+   "title": "The Questioner, Nov 26 07:05",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-26 07:05",
+   "msgs": [
+    {
+     "t": "07:05",
+     "who": "questioner",
+     "to": "risk",
+     "text": "Several things look unresolved. The biggest is the TLN resting buy at $355.66: the desk says no live orders exist, yet the team keeps discussing it as if it might be working, and the basket gate is closed. I also want to know whether the PJM December auction delay was decided, since TLN and VST depend on it and no ruling has been confirmed.",
+     "outcome": false,
+     "notes": "question: LIVE_ORDERS_RIGHT_NOW is empty, so is the TLN buy at $355.66 actually resting? If it is, why was it not canceled when the basket gate closed?\nwhy it might matter: If an order is live while the gate is closed, we are breaking our own rule and risking a fill we never meant to take.\nask: risk\nkind: unexplained\nquestion: Has the PJM December 2029/30 capacity-auction delay request been decided? Talen and Vistra earnings depend on it, and no ruling appears in our notes.\nwhy it might matter: TLN and VST are being discussed as pullback buys, but the main driver is an open regulatory question the team keeps assuming.\nask: macro\nkind: missed\nquestion: Nothing in our notes explains how the nuclear basket fell through the quarter while the reactor fleet stayed about 89% running. Is the selloff the AI-power trade unwinding, or is there a fact we are missing?\nwhy it might matter: If the fund"
+    }
+   ],
+   "practice": false,
+   "end": "07:05"
   }
  ],
  "feed": [
@@ -218931,6 +218959,19 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-26 07:05",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: ",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -219705,9 +219746,9 @@
    "lesson": null
   }
  ],
- "intel_at": 1795691543.9889407,
+ "intel_at": 1795695347.0104594,
  "intel_health": {
-  "at": "2026-11-26 06:13",
+  "at": "2026-11-26 07:16",
   "sources": {
    "Cigar Lake": 6,
    "McArthur River / Key Lake": 4,
@@ -219716,53 +219757,53 @@
    "Rook I / Arrow": 8,
    "Wheeler River / Phoenix": 8,
    "Port Hope / Blind River": 0,
-   "Westinghouse": 11,
-   "Kazakhstan": 21,
+   "Westinghouse": 12,
+   "Kazakhstan": 23,
    "Niger": 7,
-   "Namibia": 27,
+   "Namibia": 38,
    "Russia supply": 3,
-   "Piketon": 24,
-   "HALEU": 11,
-   "Wyoming ISR": 22,
+   "Piketon": 23,
+   "HALEU": 0,
+   "Wyoming ISR": 25,
    "South Texas ISR": 2,
-   "White Mesa / Utah": 14,
-   "Rare earths (Energy Fuels)": 20,
+   "White Mesa / Utah": 12,
+   "Rare earths (Energy Fuels)": 18,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 12,
-   "Crane / Three Mile Island": 4,
+   "Naval reactors": 9,
+   "Crane / Three Mile Island": 5,
    "Susquehanna": 4,
    "Comanche Peak": 7,
-   "PJM grid": 8,
-   "ERCOT grid": 17,
-   "Data-center nuclear deals": 8,
+   "PJM grid": 14,
+   "ERCOT grid": 12,
+   "Data-center nuclear deals": 9,
    "Japan restarts": 8,
-   "China new builds": 11,
-   "Congress and laws": 25,
-   "NRC decisions": 20,
-   "Energy Department": 69,
-   "White House and executive orders": 27,
-   "Tariffs and trade": 2,
-   "India": 26,
+   "China new builds": 13,
+   "Congress and laws": 45,
+   "NRC decisions": 9,
+   "Energy Department": 55,
+   "White House and executive orders": 39,
+   "Tariffs and trade": 1,
+   "India": 27,
    "South Korea": 100,
-   "Europe new builds": 62,
-   "France and UK": 10,
-   "Middle East": 46,
-   "Asia newcomers": 43,
+   "Europe new builds": 31,
+   "France and UK": 11,
+   "Middle East": 25,
+   "Asia newcomers": 41,
    "Canada SMRs": 10,
-   "Big tech power deals": 59,
+   "Big tech power deals": 64,
    "Iran": 28,
-   "North Korea": 86,
+   "North Korea": 90,
    "War zones": 10,
    "AUKUS and navies": 26,
    "Weapons programs": 20,
-   "Stockpiles and reserves": 25,
-   "Sprott trust": 5,
-   "Uranium price": 16,
+   "Stockpiles and reserves": 24,
+   "Sprott trust": 6,
+   "Uranium price": 22,
    "US policy": 0,
    "Lawsuits and investigations": 33,
-   "Workers and jobs": 23,
+   "Workers and jobs": 41,
    "CBC Saskatchewan": 20,
-   "World Nuclear News": 48,
+   "World Nuclear News": 46,
    "Federal Register (uranium)": 11,
    "Federal Register (nuclear)": 25,
    "NRC event reports": 3
@@ -219770,26 +219811,26 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 06:34",
-  "total": 762,
-  "week": 552,
+  "updated": "2026-11-26 07:36",
+  "total": 771,
+  "week": 554,
   "places": {
-   "Uranium price": 50,
+   "Uranium price": 47,
    "South Korea": 45,
    "Weapons programs": 30,
    "Europe new builds": 28,
    "AUKUS and navies": 27,
    "Workers and jobs": 26,
-   "Piketon": 25,
-   "Kazakhstan": 23,
+   "Piketon": 24,
+   "Kazakhstan": 24,
    "World Nuclear News": 21,
+   "Asia newcomers": 20,
    "War zones": 19,
-   "Asia newcomers": 19,
    "Rare earths (Energy Fuels)": 15
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-26 06:13",
+   "at": "2026-11-26 07:16",
    "sources": {
     "Cigar Lake": 6,
     "McArthur River / Key Lake": 4,
@@ -219798,53 +219839,53 @@
     "Rook I / Arrow": 8,
     "Wheeler River / Phoenix": 8,
     "Port Hope / Blind River": 0,
-    "Westinghouse": 11,
-    "Kazakhstan": 21,
+    "Westinghouse": 12,
+    "Kazakhstan": 23,
     "Niger": 7,
-    "Namibia": 27,
+    "Namibia": 38,
     "Russia supply": 3,
-    "Piketon": 24,
-    "HALEU": 11,
-    "Wyoming ISR": 22,
+    "Piketon": 23,
+    "HALEU": 0,
+    "Wyoming ISR": 25,
     "South Texas ISR": 2,
-    "White Mesa / Utah": 14,
-    "Rare earths (Energy Fuels)": 20,
+    "White Mesa / Utah": 12,
+    "Rare earths (Energy Fuels)": 18,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 12,
-    "Crane / Three Mile Island": 4,
+    "Naval reactors": 9,
+    "Crane / Three Mile Island": 5,
     "Susquehanna": 4,
     "Comanche Peak": 7,
-    "PJM grid": 8,
-    "ERCOT grid": 17,
-    "Data-center nuclear deals": 8,
+    "PJM grid": 14,
+    "ERCOT grid": 12,
+    "Data-center nuclear deals": 9,
     "Japan restarts": 8,
-    "China new builds": 11,
-    "Congress and laws": 25,
-    "NRC decisions": 20,
-    "Energy Department": 69,
-    "White House and executive orders": 27,
-    "Tariffs and trade": 2,
-    "India": 26,
+    "China new builds": 13,
+    "Congress and laws": 45,
+    "NRC decisions": 9,
+    "Energy Department": 55,
+    "White House and executive orders": 39,
+    "Tariffs and trade": 1,
+    "India": 27,
     "South Korea": 100,
-    "Europe new builds": 62,
-    "France and UK": 10,
-    "Middle East": 46,
-    "Asia newcomers": 43,
+    "Europe new builds": 31,
+    "France and UK": 11,
+    "Middle East": 25,
+    "Asia newcomers": 41,
     "Canada SMRs": 10,
-    "Big tech power deals": 59,
+    "Big tech power deals": 64,
     "Iran": 28,
-    "North Korea": 86,
+    "North Korea": 90,
     "War zones": 10,
     "AUKUS and navies": 26,
     "Weapons programs": 20,
-    "Stockpiles and reserves": 25,
-    "Sprott trust": 5,
-    "Uranium price": 16,
+    "Stockpiles and reserves": 24,
+    "Sprott trust": 6,
+    "Uranium price": 22,
     "US policy": 0,
     "Lawsuits and investigations": 33,
-    "Workers and jobs": 23,
+    "Workers and jobs": 41,
     "CBC Saskatchewan": 20,
-    "World Nuclear News": 48,
+    "World Nuclear News": 46,
     "Federal Register (uranium)": 11,
     "Federal Register (nuclear)": 25,
     "NRC event reports": 3
@@ -220045,26 +220086,6 @@
     "numbers": [],
     "score": 7.22,
     "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQUGVLcFRsOTRYblpONE1NQW1Vc1VxVU14Nms2ZFlfd3JMckh4RUdMZVFmZm8zQTVTZGFDVmFOdE50ZFJBLV9VYU1MeUllMGpCaTJyeGtuUUZuMzNJWnRxNzViQW5pdFNsQUxub3NXR3BfSmtXcHd5N0pFWklPY3VXQjA1RlVXeDlkZngzM29iNW0tS284a3BBRWVnNW5iSExoUTVDYVUyYW5sVC0yd3I5bnAwTWJodWNFcHN1THFIZ1RJTEQ1X1hJZ0xUNjV3UjkxdGtxVkNlVVRWZ2tJQ2VjU2gwLVVDald3NFV1a01zZHRjalnSAfMBQVVfeXFMUFBlS3BUbDk0WG5aTjRNTUFtVXNVcVVNeDZrNmRZX3dyTHJIeEVHTGVRZmZvM0E1U2RhQ1ZhTnROdGRSQS1fVWFNTHlJZTBqQmkycnhrblFGbjMzSVp0cTc1YkFuaXRTbEFMbm9zV0dwX0prV3B3eTdKRVpJT2N1V0IwNUZVV3g5ZGZ4MzNvYjVtLUtvOGtwQUVlZzVuYkhMaFE1Q2FVMmFubFQtMndyOW5wME1iaHVjRXBzdUxxSGdUSUxENV9YSWdMVDY1d1I5MXRrcVZDZVVUVmdrSUNlY1NoMC1VQ2pXdzRVdWtNc2R0Y2pZ?oc=5"
-   },
-   {
-    "date": "2026-11-19",
-    "title": "Standard Uranium Closes Final Tranche of LIFE Offering",
-    "outlet": "www.marketscreener.com",
-    "place": "Uranium price",
-    "tickers": [
-     "CCJ",
-     "NXE",
-     "DNN",
-     "UEC",
-     "UUUU"
-    ],
-    "tags": [
-     "disruption",
-     "financing"
-    ],
-    "numbers": [],
-    "score": 7.2,
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQ2VrZE90bnBwLXBJVEtUWmRYLUszR3hYQnVJcHhyUVFPLWMxOXkzc0hkY3phWHRZQlVtWkxEeWk3by1Pck1fSXNnOWxLaXhHcENudFFXcy1OWTV5Rnd0Q0hQbDNnWDZPcmV4cDkzMVhOZVdRaUliZ2E1Y3NjMGtHZDl6WGVTVTV0d0szSEZLNjR2UmlDcTVtelpGRU1GT3VlTXhGT2dDOS1hZFU?oc=5"
    },
    {
     "date": "2026-11-26",
@@ -220290,6 +220311,23 @@
     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYTRZRlgyVDZmNjd0Q1ZKYVZ3SzY3ZG5tY1RUWmxrX0tSd3l3Tkhobm5ROWFQdUg5LWxucTdaMGtzeTJGQUY3dHNhY3ZTeGdwczVyeE9mWkMtQjJWYkN1eHZyNWNGOXVtSGpXanp4cHVGdllRZWZQYlZtS1llbWI2aXRreGUxRk9pSjdRc01vOVh0aGRjdmpxd0tEeEpRbXZMYmNlTy1zekdMajVFcVI2eDY1UGFkUQ?oc=5"
    },
    {
+    "date": "2026-11-26",
+    "title": "Japanese energy company TEPCO to delay reactor restart at world\u2019s largest nuclear power plant \u2014 OilPrice",
+    "outlet": "UA.NEWS",
+    "place": "Japan restarts",
+    "tickers": [
+     "CCJ",
+     "CEG"
+    ],
+    "tags": [
+     "disruption",
+     "restart"
+    ],
+    "numbers": [],
+    "score": 6.44,
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUmtjcVk0N3BUZ1gtYkRzZi1FUDlIV2x3Sjh4VGNfOXFSRmxiQVVvMWVnSUltOE9ad0xtWV9fbEVxekFNQVNLS0NjUUQ4N0J2LTl5TEM0eUZYcmJPWS1fUHdleDlMSVh3bFM2LWZlejZzVmw0enhtcmJTRm5paDFiYkswVFMwVENOYWtSdlZvaV94MEx5NVl6MGEtUDdPVUhYdjZRYmNkdWJ4V3VFRlRBZmstblJqdXpyNWNOSW96QnVOanhMLUE?oc=5"
+   },
+   {
     "date": "2026-11-24",
     "title": "Kazakhstan Signs New Uranium Supply Deal with India and China as Export Markets Expand",
     "outlet": "Construction Review",
@@ -220411,9 +220449,9 @@
  },
  "intel_handed": [
   "b2e981fc7a2e7302",
-  "2c7a3976a5596853",
-  "2ac262d1779b4fad",
   "958910b51098bafe",
+  "2ac262d1779b4fad",
+  "2c7a3976a5596853",
   "0ad3ea7bae8b611c",
   "020569e75e7d456e",
   "80fb77ce5844a24e",
@@ -220513,6 +220551,7 @@
   "df371025b77dc13a",
   "15fecb83818a0949",
   "545d2401ade15843",
+  "dd908034b43ee500",
   "b8be1271d8cd66fa",
   "c73b8f1be49ed29e",
   "c4213b53ccaf5e6f",
@@ -220527,6 +220566,7 @@
   "b6bd97b3b3412412",
   "1cb683a826f1a87b",
   "2a04cfe019ecd570",
+  "e5f9fd595f7d0f1e",
   "1f0c92334f3206aa",
   "68240c37371f3e26",
   "ed609e22ce9351ef",
@@ -220570,6 +220610,7 @@
   "004c1f6d9bc3d5b2",
   "dbd18bd6c4654ec8",
   "1c8b6a226669bacb",
+  "87234f250d3b987f",
   "d53204586a89fe6b",
   "d1148d05210e97b6",
   "b7a85779670ce939",
@@ -220631,7 +220672,7 @@
   }
  ],
  "memory_view": {
-  "events": 1716,
+  "events": 1723,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -221215,51 +221256,6 @@
   "recent": [
    {
     "date": "2026-11-25",
-    "ticker": "CCJ",
-    "title": "IAEA condemns deadly drone strikes near Ukraine nuclear plant",
-    "type": "intel_disruption",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "CEG",
-    "title": "IAEA condemns deadly drone strikes near Ukraine nuclear plant",
-    "type": "intel_disruption",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "CCJ",
-    "title": "Kim Jong Un Condemns U.S. for 'Transplanting Nuclear Proliferation to Northeast Asia'... Issues Indirect Warning Over South Korea's Nuclear-Powered Submarine",
-    "type": "intel_defense",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "BWXT",
-    "title": "Kim Jong Un Condemns U.S. for 'Transplanting Nuclear Proliferation to Northeast Asia'... Issues Indirect Warning Over South Korea's Nuclear-Powered Submarine",
-    "type": "intel_defense",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
-    "ticker": "BWXT",
-    "title": "Westinghouse Awards AP1000 Contracts to BWXT Canada - Wisevoter",
-    "type": "contract_deal",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-25",
     "ticker": "BWXT",
     "title": "Why former leaders say AUKUS puts Australia on the wrong front line",
     "type": "intel_defense",
@@ -221550,6 +221546,51 @@
     "date": "2026-11-26",
     "ticker": "CEG",
     "title": "Japan's Nuclear Revival Hits a Snag as TEPCO Delays Reactor Restart",
+    "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "LEU",
+    "title": "SRS prepares for HALEU production",
+    "type": "intel_production",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "BWXT",
+    "title": "SRS prepares for HALEU production",
+    "type": "intel_production",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CCJ",
+    "title": "Japanese energy company TEPCO to delay reactor restart at world\u2019s largest nuclear power plant \u2014 OilPrice",
+    "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CEG",
+    "title": "Japanese energy company TEPCO to delay reactor restart at world\u2019s largest nuclear power plant \u2014 OilPrice",
+    "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-26",
+    "ticker": "CCJ",
+    "title": "TEPCO delays Kashiwazaki-Kariwa unit 7 restart after concrete flaw found",
     "type": "intel_disruption",
     "r0": null,
     "r5": null,
@@ -222848,9 +222889,9 @@
    }
   ]
  },
- "dossier_at": 1795691586.2745025,
+ "dossier_at": 1795695388.9685676,
  "sector_prices": {
-  "_at": 1795670651.512631,
+  "_at": 1795693559.2782636,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
    "last": 17.71,
    "day_pct": -1.5,
@@ -222884,12 +222925,12 @@
    "under_1y_high_pct": -52.7
   },
   "VIX fear gauge": {
-   "last": 28.29,
-   "day_pct": 7.32,
-   "week_pct": 15.19,
-   "month_pct": 61.47,
-   "year_pct": 52.4,
-   "under_1y_high_pct": -21.2
+   "last": 27.06,
+   "day_pct": -4.35,
+   "week_pct": -4.85,
+   "month_pct": 60.02,
+   "year_pct": 57.4,
+   "under_1y_high_pct": -24.6
   },
   "S&P 500": {
    "last": 716.7,
@@ -222906,85 +222947,85 @@
    "name": "Cameco",
    "price": 61.56,
    "week_pct": -1.42,
-   "built": "2026-11-26 06:13"
+   "built": "2026-11-26 07:16"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.95,
    "week_pct": -4.46,
-   "built": "2026-11-26 06:13"
+   "built": "2026-11-26 07:16"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.69,
    "week_pct": -3.89,
-   "built": "2026-11-26 06:13"
+   "built": "2026-11-26 07:16"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.8,
    "week_pct": -1.64,
-   "built": "2026-11-26 06:13"
+   "built": "2026-11-26 07:16"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.2,
    "week_pct": -7.71,
-   "built": "2026-11-26 06:13"
+   "built": "2026-11-26 07:16"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 83.23,
    "week_pct": -9.3,
-   "built": "2026-11-26 06:13"
+   "built": "2026-11-26 07:16"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.49,
    "week_pct": -3.54,
-   "built": "2026-11-26 06:13"
+   "built": "2026-11-26 07:16"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 235.25,
    "week_pct": -10.46,
-   "built": "2026-11-26 06:13"
+   "built": "2026-11-26 07:16"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 121.32,
    "week_pct": -3.39,
-   "built": "2026-11-26 06:13"
+   "built": "2026-11-26 07:16"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 351.55,
    "week_pct": -2.4,
-   "built": "2026-11-26 06:13"
+   "built": "2026-11-26 07:16"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-26 06:13"
+   "built": "2026-11-26 07:16"
   }
  ],
- "heartbeat": "2026-11-26 06:34",
+ "heartbeat": "2026-11-26 07:36",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 380,
+ "_pushed_feed": 381,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -223075,17 +223116,17 @@
   "spot_minus_long_term": -6.45
  },
  "jobs_view": {
-  "as_of": "2026-11-25",
+  "as_of": "2026-11-26",
   "open_jobs_by_company": {
    "Oklo": 54,
-   "Kairos Power": 83,
-   "Valar Atomics": 123,
+   "Kairos Power": 85,
+   "Valar Atomics": 122,
    "Radiant": 45,
    "Antares": 84,
    "Constellation": 7
   },
-  "sector_open_jobs": 396,
-  "change_vs_30_days_ago": 3,
+  "sector_open_jobs": 397,
+  "change_vs_30_days_ago": 4,
   "days_tracked": 3,
   "new_postings_30d_by_theme": {
    "licensing": 1,
@@ -223093,7 +223134,7 @@
   },
   "latest_new_postings": [
    {
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "company": "Antares",
     "ticker": "sector",
     "title": "Staff Turbomachinery Aerodynamics Engineer ",
@@ -223101,7 +223142,7 @@
     "link": "https://jobs.ashbyhq.com/Antares/6abf05d8-b943-42d1-99a5-b88e2f121085"
    },
    {
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "company": "Antares",
     "ticker": "sector",
     "title": "Radiation Protection and Radioactive Materials Program Lead",
@@ -223109,7 +223150,31 @@
     "link": "https://jobs.ashbyhq.com/Antares/d115f105-6648-493e-ad45-d749097f64e5"
    },
    {
-    "date": "2026-11-25",
+    "date": "2026-11-26",
+    "company": "Valar Atomics",
+    "ticker": "sector",
+    "title": "Weld Engineer - Nuclear Fabrication & Pressure Systems",
+    "where": "Torrance, California, United States",
+    "link": "https://job-boards.greenhouse.io/valaratomics/jobs/4524122009"
+   },
+   {
+    "date": "2026-11-26",
+    "company": "Valar Atomics",
+    "ticker": "sector",
+    "title": "Turbomachinery Responsible Engineer",
+    "where": "Torrance, California, United States",
+    "link": "https://job-boards.greenhouse.io/valaratomics/jobs/4521093009"
+   },
+   {
+    "date": "2026-11-26",
+    "company": "Valar Atomics",
+    "ticker": "sector",
+    "title": "Electric Generator Lead",
+    "where": "Torrance, California, United States",
+    "link": "https://job-boards.greenhouse.io/valaratomics/jobs/4521281009"
+   },
+   {
+    "date": "2026-11-26",
     "company": "Kairos Power",
     "ticker": "sector",
     "title": "Senior Manufacturing Engineer ",
@@ -223117,7 +223182,7 @@
     "link": "https://job-boards.greenhouse.io/kairospower/jobs/6236532004"
    },
    {
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "company": "Kairos Power",
     "ticker": "sector",
     "title": "Principal Engineer, Balance of Plant Auxiliary Systems",
@@ -223125,7 +223190,7 @@
     "link": "https://job-boards.greenhouse.io/kairospower/jobs/6248348004"
    },
    {
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "company": "Kairos Power",
     "ticker": "sector",
     "title": "Lead Machinist",
@@ -223133,7 +223198,15 @@
     "link": "https://job-boards.greenhouse.io/kairospower/jobs/6239418004"
    },
    {
-    "date": "2026-11-25",
+    "date": "2026-11-26",
+    "company": "Kairos Power",
+    "ticker": "sector",
+    "title": "Executive Assistant",
+    "where": "Alameda, CA",
+    "link": "https://job-boards.greenhouse.io/kairospower/jobs/6229994004"
+   },
+   {
+    "date": "2026-11-26",
     "company": "Kairos Power",
     "ticker": "sector",
     "title": "Distinguished Engineer, Safety Analysis",
@@ -223141,7 +223214,7 @@
     "link": "https://job-boards.greenhouse.io/kairospower/jobs/6241877004"
    },
    {
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "company": "Kairos Power",
     "ticker": "sector",
     "title": "Administrative Assistant ",
@@ -223149,12 +223222,20 @@
     "link": "https://job-boards.greenhouse.io/kairospower/jobs/6227553004"
    },
    {
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "company": "Oklo",
     "ticker": "sector",
     "title": "Project Delivery Lead",
     "where": "Santa Clara, CA or Remote",
     "link": "https://job-boards.greenhouse.io/oklo/jobs/6269324004"
+   },
+   {
+    "date": "2026-11-26",
+    "company": "Oklo",
+    "ticker": "sector",
+    "title": "People Operations Associate ",
+    "where": "Remote",
+    "link": "https://job-boards.greenhouse.io/oklo/jobs/6271554004"
    },
    {
     "date": "2026-11-24",
@@ -223171,30 +223252,6 @@
     "title": "Senior Beamline Scientist",
     "where": "Los Angeles",
     "link": "https://jobs.ashbyhq.com/Antares/257248f1-7279-4045-8fb1-8d9770d822c2"
-   },
-   {
-    "date": "2026-11-24",
-    "company": "Valar Atomics",
-    "ticker": "sector",
-    "title": "Principal Instrumentation & Controls Engineer \u2013 Reactor",
-    "where": "Torrance, California, United States",
-    "link": "https://job-boards.greenhouse.io/valaratomics/jobs/4519186009"
-   },
-   {
-    "date": "2026-11-24",
-    "company": "Oklo",
-    "ticker": "sector",
-    "title": "Senior Mechanical Design Engineer - Rapid Concept Engineering",
-    "where": "Santa Clara, CA or Remote",
-    "link": "https://job-boards.greenhouse.io/oklo/jobs/6233469004"
-   },
-   {
-    "date": "2026-11-24",
-    "company": "Oklo",
-    "ticker": "sector",
-    "title": "New York City Office Manager",
-    "where": "New York, New York",
-    "link": "https://job-boards.greenhouse.io/oklo/jobs/6240827004"
    }
   ]
  },
@@ -223204,21 +223261,21 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 337,
-   "used": 308,
+   "asked": 340,
+   "used": 311,
    "notes": {
     "TLN Deals and contracts": 17,
     "CCJ Deals and contracts": 65,
     "BWXT Deals and contracts": 44,
-    "SECTOR Government and laws": 85,
+    "SECTOR Government and laws": 86,
     "UUUU Deals and contracts": 39,
-    "SECTOR Countries": 81,
+    "SECTOR Countries": 82,
     "CEG Deals and contracts": 46,
     "NXE Legal": 19,
     "NXE Deals and contracts": 19,
     "DNN Deals and contracts": 12,
     "BWXT Legal": 3,
-    "LEU Deals and contracts": 38,
+    "LEU Deals and contracts": 39,
     "UEC Deals and contracts": 5,
     "UUUU Legal": 22,
     "SECTOR Uranium market": 7,
@@ -223595,8 +223652,8 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 50,
-   "used": 50,
+   "asked": 51,
+   "used": 51,
    "notes": {
     "TLN Snapshot": 42,
     "TLN News": 38,
@@ -223611,7 +223668,7 @@
     "SECTOR Market regime": 1,
     "desk_lessons_from_our_mistakes": 7,
     "TLN Ownership and analysts": 4,
-    "SECTOR Uranium market": 14,
+    "SECTOR Uranium market": 15,
     "CEG Snapshot": 5,
     "uranium_price": 1,
     "PJM capacity auction": 1,
@@ -223623,7 +223680,9 @@
     "SECTOR Calendar": 1,
     "already_asked": 3,
     "Desk lessons": 1,
-    "plants": 1
+    "plants": 1,
+    "TLN earnings calendar": 1,
+    "SECTOR Countries": 1
    },
    "since": "2026-11-23"
   },
@@ -228295,39 +228354,39 @@
    ],
    "next7": [
     {
-     "date": "2026-11-25",
-     "high_f": 54,
-     "low_f": 37
-    },
-    {
      "date": "2026-11-26",
-     "high_f": 51,
-     "low_f": 34
+     "high_f": 53,
+     "low_f": 35
     },
     {
      "date": "2026-11-27",
-     "high_f": 63,
-     "low_f": 47
+     "high_f": 64,
+     "low_f": 34
     },
     {
      "date": "2026-11-28",
      "high_f": 72,
-     "low_f": 53
+     "low_f": 52
     },
     {
      "date": "2026-11-29",
      "high_f": 69,
-     "low_f": 57
+     "low_f": 55
     },
     {
      "date": "2026-11-30",
      "high_f": 64,
-     "low_f": 51
+     "low_f": 50
     },
     {
      "date": "2026-12-01",
-     "high_f": 71,
-     "low_f": 53
+     "high_f": 70,
+     "low_f": 52
+    },
+    {
+     "date": "2026-12-02",
+     "high_f": 75,
+     "low_f": 58
     }
    ],
    "extremes": []
@@ -228340,39 +228399,39 @@
    ],
    "next7": [
     {
-     "date": "2026-11-25",
-     "high_f": 45,
-     "low_f": 33
-    },
-    {
      "date": "2026-11-26",
-     "high_f": 52,
+     "high_f": 51,
      "low_f": 42
     },
     {
      "date": "2026-11-27",
-     "high_f": 53,
-     "low_f": 41
+     "high_f": 49,
+     "low_f": 38
     },
     {
      "date": "2026-11-28",
      "high_f": 51,
-     "low_f": 40
+     "low_f": 41
     },
     {
      "date": "2026-11-29",
-     "high_f": 50,
-     "low_f": 40
+     "high_f": 49,
+     "low_f": 39
     },
     {
      "date": "2026-11-30",
      "high_f": 47,
-     "low_f": 38
+     "low_f": 36
     },
     {
      "date": "2026-12-01",
-     "high_f": 46,
-     "low_f": 38
+     "high_f": 45,
+     "low_f": 36
+    },
+    {
+     "date": "2026-12-02",
+     "high_f": 51,
+     "low_f": 41
     }
    ],
    "extremes": []
@@ -231180,8 +231239,8 @@
   }
  ],
  "movers": {
-  "at": 1795654935.2108176,
-  "time": "2026-11-25 20:01",
+  "at": 1795694738.9420397,
+  "time": "2026-11-26 07:05",
   "list": [
    {
     "ticker": "LEU",
@@ -231190,37 +231249,37 @@
     "why": [
      "-55% under its 2-month high"
     ],
-    "price": 84.04,
+    "price": 83.19,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "UEC",
     "core": true,
-    "volatility_pct": 90,
+    "volatility_pct": 89,
     "why": [
-     "-53% under its 2-month high"
+     "-52% under its 2-month high"
     ],
-    "price": 5.57,
+    "price": 5.69,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "UUUU",
     "core": true,
-    "volatility_pct": 77,
+    "volatility_pct": 76,
     "why": [
-     "-65% under its 2-month high"
+     "-64% under its 2-month high"
     ],
-    "price": 5.13,
+    "price": 5.21,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "MOD",
     "core": false,
-    "volatility_pct": 154,
+    "volatility_pct": 153,
     "why": [
-     "-34% under its 2-month high"
+     "-31% under its 2-month high"
     ],
-    "price": 131.13,
+    "price": 136.34,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -231228,40 +231287,30 @@
     "core": false,
     "volatility_pct": 138,
     "why": [
-     "-35% under its 2-month high"
+     "-38% under its 2-month high"
     ],
-    "price": 155.38,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "MU",
-    "core": false,
-    "volatility_pct": 136,
-    "why": [
-     "-43% under its 2-month high"
-    ],
-    "price": 629.79,
+    "price": 149.3,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "AMD",
     "core": false,
-    "volatility_pct": 134,
+    "volatility_pct": 133,
     "why": [
-     "-36% under its 2-month high",
-     "-18% in 5 days"
+     "-37% under its 2-month high",
+     "-23% in 5 days"
     ],
-    "price": 413.27,
+    "price": 406.03,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
-    "ticker": "VRT",
+    "ticker": "MU",
     "core": false,
-    "volatility_pct": 128,
+    "volatility_pct": 133,
     "why": [
-     "-40% under its 2-month high"
+     "-45% under its 2-month high"
     ],
-    "price": 173.82,
+    "price": 601.25,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -231269,9 +231318,19 @@
     "core": false,
     "volatility_pct": 126,
     "why": [
-     "-56% under its 2-month high"
+     "-55% under its 2-month high"
     ],
-    "price": 19.2,
+    "price": 19.47,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "VRT",
+    "core": false,
+    "volatility_pct": 111,
+    "why": [
+     "-40% under its 2-month high"
+    ],
+    "price": 173.37,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -231279,20 +231338,20 @@
     "core": false,
     "volatility_pct": 110,
     "why": [
-     "-70% under its 2-month high",
-     "-19% in 5 days"
+     "-71% under its 2-month high",
+     "-17% in 5 days"
     ],
-    "price": 3.3,
+    "price": 3.25,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "MTZ",
     "core": false,
-    "volatility_pct": 106,
+    "volatility_pct": 105,
     "why": [
-     "-38% under its 2-month high"
+     "-37% under its 2-month high"
     ],
-    "price": 152.44,
+    "price": 154.17,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -231300,30 +231359,49 @@
     "core": false,
     "volatility_pct": 104,
     "why": [
-     "-54% under its 2-month high",
-     "-16% in 5 days"
+     "-54% under its 2-month high"
     ],
-    "price": 8.84,
+    "price": 8.85,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "NVT",
     "core": false,
-    "volatility_pct": 101,
+    "volatility_pct": 99,
     "why": [
      "-40% under its 2-month high"
     ],
-    "price": 104.58,
+    "price": 103.71,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "ORCL",
     "core": false,
-    "volatility_pct": 96,
+    "volatility_pct": 87,
     "why": [
-     "-32% under its 2-month high"
+     "-36% under its 2-month high"
     ],
-    "price": 109.5,
+    "price": 103.88,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "AVGO",
+    "core": false,
+    "volatility_pct": 83,
+    "why": [
+     "-15% in 5 days"
+    ],
+    "price": 300.86,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "GEV",
+    "core": false,
+    "volatility_pct": 76,
+    "why": [
+     "-30% under its 2-month high"
+    ],
+    "price": 715.0,
     "note": "big moves 5-7x more likely here, in either direction"
    }
   ]
