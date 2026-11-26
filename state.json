@@ -9240,7 +9240,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-26 10:01 ET",
+ "last_cycle": "2026-11-26 10:11 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57886,10 +57886,10 @@
   "2a89ac3dc67ad332",
   "8b9f115784388b61",
   "a73665945ff493c7",
-  "e15990dac5b8bec2",
   "bdb801dcb316d6cb",
-  "b695f296dd2e61f0",
+  "e15990dac5b8bec2",
   "6f83643eaed2fbc3",
+  "b695f296dd2e61f0",
   "5d0c7240e494c5f9",
   "637530bf82fb0126",
   "0929027bdfefabbd",
@@ -57925,7 +57925,6 @@
   "15c5ededcaa0a513",
   "9ab10d3c257d1ce5",
   "dce4cce47213c16f",
-  "8de24d7e6020d498",
   "563c0572b10f43bc",
   "efa3269c9fa1c644",
   "9dbb51b520d076e7",
@@ -58030,12 +58029,12 @@
   "c527b52a6d387b5e",
   "c2bfe85469484a37",
   "bf78a7a4b7c697c4",
-  "6a0cc1c1f8babcd3",
   "04e5c0526493eb7e",
+  "6a0cc1c1f8babcd3",
   "7ee1ad6e6041b23e",
-  "3a1ae63cc1a72974",
-  "f1f8a01f5b2d2080",
   "16c52bc5bc8110db",
+  "f1f8a01f5b2d2080",
+  "3a1ae63cc1a72974",
   "1be96b3daf4578d3",
   "1e64fcaaf9ecb5d1",
   "bf3c957b04f7b01a",
@@ -58243,6 +58242,7 @@
   "8a17ec5ab2f6dcf8",
   "5e042fd73e80d40b",
   "696cc711d13e8558",
+  "aa4b40fcca57bfea",
   "3c1ef04c322d8d99",
   "52dee3d37e759da2",
   "997921d9077a2d67",
@@ -58545,9 +58545,9 @@
   "418a91931047cecc",
   "52950daaafc92008",
   "c988637e87af140a",
-  "aa4b40fcca57bfea"
+  "8de24d7e6020d498"
  ],
- "news_slow_at": 1795704850.9921243,
+ "news_slow_at": 1795705499.909349,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219962,7 +219962,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-26 10:01",
+  "updated": "2026-11-26 10:11",
   "total": 789,
   "week": 564,
   "places": {
@@ -220600,8 +220600,8 @@
  },
  "intel_handed": [
   "b2e981fc7a2e7302",
-  "958910b51098bafe",
   "2ac262d1779b4fad",
+  "958910b51098bafe",
   "2c7a3976a5596853",
   "0ad3ea7bae8b611c",
   "020569e75e7d456e",
@@ -220610,8 +220610,8 @@
   "36cbbee89c76a1f7",
   "b371c50f261a21f0",
   "4dbfaa309ceb1878",
-  "515517f776442fe4",
   "c2a1739b2e369eff",
+  "515517f776442fe4",
   "797e5c4039060606",
   "5b83027a0cf1a496",
   "37e85b7a7ce58612",
@@ -223179,12 +223179,12 @@
    "built": "2026-11-26 09:50"
   }
  ],
- "heartbeat": "2026-11-26 10:01",
+ "heartbeat": "2026-11-26 10:11",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 382,
+ "_pushed_feed": 385,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
