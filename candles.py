@@ -12,10 +12,13 @@ import os, sys, json, time, datetime as dt
 import pandas as pd
 import intraday
 
-OUT = "data/candles15"
+FREQ = int(os.environ.get("CANDLE_MIN", "15"))
+OUT = "data/candles15" if FREQ == 15 else f"data/candles{FREQ}"
 PROG = os.path.join(OUT, "_progress.json")
 COLS = ["t", "ts", "open", "high", "low", "close", "volume", "vwap"]
 LIST = ["CCJ", "NXE", "UEC", "DNN", "UUUU", "LEU", "BWXT", "CEG", "VST", "TLN", "OKLO", "SMR", "NNE", "SPY"]
+if FREQ != 15:  # finer candles are big: only the most-traded names (tight spreads, where day trading has a chance)
+    LIST = ["CCJ", "VST", "CEG", "BWXT", "LEU", "OKLO", "SPY"]
 
 
 def to15(df, t):
@@ -26,7 +29,7 @@ def to15(df, t):
     if df.empty:
         return pd.DataFrame(columns=COLS)
     df["pv"] = df.close * df.volume
-    g = df.set_index("ts").resample("15min", origin="start_day", offset="30min", label="left", closed="left")
+    g = df.set_index("ts").resample(f"{FREQ}min", origin="start_day", offset="30min", label="left", closed="left")
     c = pd.DataFrame({"open": g.open.first(), "high": g.high.max(), "low": g.low.min(), "close": g.close.last(),
                       "volume": g.volume.sum(), "pv": g.pv.sum()}).dropna(subset=["open"])
     c["vwap"] = (c.pv / c.volume.where(c.volume > 0)).round(4)
