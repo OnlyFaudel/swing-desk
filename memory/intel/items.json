@@ -25561,5 +25561,182 @@
 "turns",
 "uranium"
 ]
+},
+{
+"id": "d175eb099be6c25a",
+"date": "2026-11-26",
+"ts": 1795657392,
+"title": "N Korea's Kim warns US over AUKUS, touts nuclear status",
+"summary": "",
+"outlet": "Inner East Review",
+"link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPY3FCSTVwWWd2SFpPeGtvSWhSWXBINmE0bDFCbVM3UFpqcEw3ZHZQYlN6dXBoNlA5ZDF4eExHQVpjSldEZ1p3aloyUTZiSFkzUlg0NnBMZ1FEam5YMzAxNTk0MHNhQVNmb0JDX3U3X0VrRXFQb3ZRZlFwdnMzU3ZQSnpOVlBkSTJRRXdObmpoN3Vsa1RwMVZORmpSajZkR24xWXh1WHRn?oc=5",
+"place": "AUKUS and navies",
+"tickers": [
+"BWXT"
+],
+"tags": [
+"defense",
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 4.8,
+"echo_of": "b92a30725d959e1f",
+"w": [
+"aukus",
+"kim",
+"korea",
+"nuclear",
+"status",
+"touts",
+"warns"
+]
+},
+{
+"id": "d816e5d974421019",
+"date": "2026-11-26",
+"ts": 1795685891,
+"title": "TEPCO delays restart of No.7 reactor at Kashiwazaki-Kariwa nuclear power plant",
+"summary": "",
+"outlet": "marketscreener.com",
+"link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOU0pPU0NHWm9QWUtFNk11N0gtMXFYX0cyalVLbk04LUEtdlJ1bWJ2ckkwN2tmYUVaY2p2OE9qVzlDNkQ3MXdxZnJ3YkRkMnVfTFg1TlFTZVlNOEJLeERaVmhqeS1uTThpMzRzY2RTN3lRTlg4UkItVWJBdllnVnJWa25xd19JNWhFU1JhWTFSUThxdmdkY0tFdVRyejFwOFFDNmNSd0sxTHRrdGV2OHFEVlE2b0lLajZpN00xR0JzMGxJbnVTVTQwRS1IVQ?oc=5",
+"place": "Japan restarts",
+"tickers": [
+"CCJ"
+],
+"tags": [
+"disruption",
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 5.2,
+"echo_of": "5cd7136060831d45",
+"w": [
+"delays",
+"kariwa",
+"kashiwazaki",
+"nuclear",
+"plant",
+"power",
+"reactor",
+"restart",
+"tepco"
+]
+},
+{
+"id": "3abd39694d6745cb",
+"date": "2026-11-26",
+"ts": 1795692608,
+"title": "Twice-recycled fuel loaded into BN-800 fast neutron reactor",
+"summary": "Recycled uranium-plutonium MOX fuel, manufactured using plutonium extracted from a MOX fuel assembly which had already completed a full cycle, has been loaded into the Beloyarsk Nuclear Power Plant's BN-800 fast-neutron reactor.",
+"outlet": "World Nuclear News",
+"link": "https://www.world-nuclear-news.org/articles/twice-recycled-fuel-loaded-into-bn-800-fast-neutron-reactor",
+"place": "World Nuclear News",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.87,
+"score": 4.24,
+"echo_of": null,
+"w": [
+"800",
+"fast",
+"fuel",
+"loaded",
+"neutron",
+"reactor",
+"recycled",
+"twice"
+]
+},
+{
+"id": "81587bec7bac0a85",
+"date": "2026-11-26",
+"ts": 1795697436,
+"title": "How the Princess of Wales found \u201cjoy alongside uncertainty\u201d",
+"summary": "",
+"outlet": "Denison Forum",
+"link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPS21zOXNrTWtxcEEyZUNiTmpTaXpGNHJGX0Y1bWFaQ3ZYaVkwMm84Yk9KN0NHS0xiaUpSYUsxaGo4Q3FaXzJXTzd0WVY2bVgtT1d5T0o2aVRkY296ak9ZVktJdzQ5MmU1aldqQW5wYVBLQ1NKZDB6WV9ZdUN5a3ZQcHFyc3ZLbHpJMjJsNEY4UWV3dnkwZXo5R2pNeFFlNW9VbERB?oc=5",
+"place": "Workers and jobs",
+"tickers": [],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.91,
+"score": 2.82,
+"echo_of": null,
+"w": [
+"alongside",
+"found",
+"how",
+"joy",
+"princess",
+"uncertainty",
+"wales"
+]
+},
+{
+"id": "4ed9b30682cbb480",
+"date": "2026-11-26",
+"ts": 1795698960,
+"title": "Energy Fuels vs. Centrus Energy: Which Uranium Stock Has The Edge Now?",
+"summary": "",
+"outlet": "Yahoo Finance",
+"link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdmxJci1rSEI0TDZteFJHOHB0aDdQbjdSbTVzbXdUTzBhb1dkejFmeXlSai1MN1NiRWFpUFVUaTJTM0kyQnJmc1YyRm1rbDJsT2dVTlM2a3hQS3NzbXFZM0NkUTdTOWNoWW94TGhaVk8tQUVBRll5ajN6bzNVdkFraGtRVzBEMVR2OGJxeWpVMEY?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU",
+"CCJ",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 1.5,
+"echo_of": "de6365b5133e3061",
+"w": [
+"centrus",
+"edge",
+"energy",
+"fuels",
+"now",
+"stock",
+"uranium",
+"which"
+]
+},
+{
+"id": "0401f6dbfa85c9a6",
+"date": "2026-11-26",
+"ts": 1795703413,
+"title": "New approach to very low radiation doses needed, says nuclear industry",
+"summary": "The current regulation of exposures to very low doses of radiation needs to be modified to end the \"double standard\" where doses received from things like food, the environment and airline flights are not controlled, yet those from human-made planned exposure are regulated, however small the dose, W",
+"outlet": "World Nuclear News",
+"link": "https://www.world-nuclear-news.org/articles/nuclear-industry-calls-for-new-approach-to-very-low-radiation-doses",
+"place": "World Nuclear News",
+"tickers": [],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.87,
+"score": 2.74,
+"echo_of": null,
+"w": [
+"approach",
+"doses",
+"industry",
+"low",
+"needed",
+"nuclear",
+"radiation",
+"very"
+]
 }
 ]
