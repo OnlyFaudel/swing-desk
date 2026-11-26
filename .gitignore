@@ -3,3 +3,4 @@ __pycache__/
 research/*.pkl
 .env
 *.env
+data/candles15/_lock
