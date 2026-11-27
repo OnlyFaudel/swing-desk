@@ -646,7 +646,8 @@
   "jobs:2026-11-27": true,
   "ev:39c7e07040ee": true,
   "weather:2026-11-27": true,
-  "questioner:2026-11-27:4": true
+  "questioner:2026-11-27:4": true,
+  "reactors:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -9258,13 +9259,13 @@
   "CEG": 235.25,
   "VST": 121.32,
   "TLN": 351.55,
-  "AMD": 425.0,
+  "AMD": 406.83,
   "SMR": 3.25,
   "NNE": 8.85,
-  "SPY": 728.9,
+  "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-27 08:22 ET",
+ "last_cycle": "2026-11-27 08:33 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -9327,10 +9328,10 @@
   ]
  },
  "brakes": {
-  "equity": 1009.93,
-  "day_pct": 0.45,
-  "week_pct": 0.94,
-  "drawdown_pct": -4.22,
+  "equity": 1005.46,
+  "day_pct": 0.0,
+  "week_pct": 0.49,
+  "drawdown_pct": -4.64,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -57911,8 +57912,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "4ee30073db1990ac",
   "7cabb45f8b0c2778",
+  "4ee30073db1990ac",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -57953,8 +57954,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1acc6842cd4f6e64",
   "1715e61816aa5619",
+  "1acc6842cd4f6e64",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -58081,14 +58082,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "7c380c991c59f9ba",
   "1ed195cb4396cbe7",
+  "7c380c991c59f9ba",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -58664,7 +58665,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795785680.202598,
+ "news_slow_at": 1795786303.788112,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -220831,7 +220832,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 08:22",
+  "updated": "2026-11-27 08:33",
   "total": 932,
   "week": 600,
   "places": {
@@ -221470,8 +221471,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "fd337937e7471e2a",
   "b2362be41ae616f1",
+  "fd337937e7471e2a",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -221517,10 +221518,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "688d746cfc31b58f",
   "22ab37dfabeba433",
-  "f815e45da305cee7",
+  "688d746cfc31b58f",
   "85de31670d4daf9d",
+  "f815e45da305cee7",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -224086,7 +224087,7 @@
    "built": "2026-11-27 08:16"
   }
  ],
- "heartbeat": "2026-11-27 08:22",
+ "heartbeat": "2026-11-27 08:33",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -231887,7 +231888,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 08:22",
+ "watchdog_last": "2026-11-27 08:33",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
