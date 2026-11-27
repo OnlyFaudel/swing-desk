@@ -2617,6 +2617,16 @@ def intel_tick(st, today, force=False):
             st["flags"][f"candles5:{today}"] = True
             subprocess.Popen([sys.executable, "candles.py", "daily"], cwd=ROOT, start_new_session=True,
                              env={**os.environ, "CANDLE_MIN": "5"}, stdout=open("/tmp/candles5_daily.log", "a"), stderr=subprocess.STDOUT)
+        op = {}
+        try:
+            op = json.load(open(os.path.join(ROOT, "data/orbsip/_progress.json")))
+        except Exception:
+            pass
+        lo = st["flags"].get("orbsip_t", 0)
+        if idle and c5.get("_complete") and not op.get("complete") and time.time() - (lo if isinstance(lo, (int, float)) else 0) > 1800:
+            st["flags"]["orbsip_t"] = time.time()  # stocks-in-play opening-range breakout replay (orbsip.py), resumable
+            subprocess.Popen(["nice", "-n", "15", sys.executable, "orbsip.py"], cwd=ROOT, start_new_session=True,
+                             stdout=open("/tmp/orbsip.log", "a"), stderr=subprocess.STDOUT)
     except Exception as e:
         print("candles pull", e)
     if now.weekday() < 5 and not market.is_holiday(today) and now.time() >= dt.time(16, 20) and not st["flags"].get(f"recent:{today}"):
