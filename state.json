@@ -5776,18 +5776,6 @@
  },
  "news_feed": [
   {
-   "ticker": "UUUU",
-   "source": "Google News",
-   "title": "NYSE American: Energy Fuels Inc. (NYSE American:EFR) \u2014 Mid-Cap Value Stock: Why This Energy Stock Is Suddenly Back on Investors' Radar - kalkine.ca",
-   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPX1VoVTk2cEFDZ2tGRU5UVFlTVUcwb2stM2E3Mjc2Y0NaMVlWb1RmWWdjY1k1eHVLZjhKaDdSLU1SeUNuUlNwYW5QVERzOE1zU1FLeVNGZUphTjQzN3dDYkxsLUNpRV8zUU01MnVLcklkMnFIRlpEeDlTNXVBZnZERVRUa19FWHBlX0NhdDJyUk9WMUlqamJycnR4ekgtYUFQX3hvM2twU1oydk50cm1tWFlSNWUxLVhzelZHWVNsRFZlTUw3VTJhYkRybWk1U2JReDJMWWJUQnJrWUw5NUVvYWo0TF9wbDNBWmRVeQ?oc=5",
-   "ts": 1795622460,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic 'mid-cap value' recap of a stock already in the news; no new company-specific information."
-  },
-  {
    "ticker": "CCJ",
    "source": "Google News: Kazatomprom",
    "title": "Kazatomprom management board member detained in Samruk-Kazyna corruption scheme case - \u041a\u0430\u0437\u0422\u0410\u0413",
@@ -8774,6 +8762,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic price-momentum commentary recap, no new company-specific information."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News",
+   "title": "Brianne Gardner\u2019s Past Picks: Constellation Energy, Microsoft & Boston Scientific - BNN Bloomberg",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZVgzMGNWcy1FTWFsSkRNSTFLNm10RDhVLVlKcU9yR3U4T0ppM1paUVRLX0ZEMUtlVDlTVXQ4ZVo0OXk4VEl0MjNPbHNKT0tMMU54S1hBamNuSHFxcTF2d3RiYVdDMEtuZGNWTUpIdkRFMkl2cnR1NnVlSEd5cGRYWDA2ZlMtTkRucDFtc3loMHphdGNRVDRURlpZS2JqT3lDV0dEYlVHRE9kaTlkY19Za0lldXlsVlhqV3dWZlpoZlZWSkk1S0MzSDhaMUNMMXlpTi1sYnpjSQ?oc=5",
+   "ts": 1795803343,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic investor-pick profile piece; no new company information in the headline."
   }
  ],
  "reviews": [
@@ -10666,16 +10666,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.48319,
+  "day_usd": 0.48399,
   "month": "2026-11",
-  "month_usd": 2.57737,
-  "total_usd": 2.57737,
+  "month_usd": 2.57817,
+  "total_usd": 2.57817,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.25664,
+   "scout": 0.25744,
    "review": 0.11073,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -10940,23 +10940,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 64.03,
-  "NXE": 7.35,
-  "UEC": 5.99,
+  "CCJ": 63.97,
+  "NXE": 7.34,
+  "UEC": 5.98,
   "DNN": 1.93,
-  "UUUU": 5.72,
-  "LEU": 85.63,
+  "UUUU": 5.66,
+  "LEU": 84.79,
   "BWXT": 116.51,
   "CEG": 238.15,
-  "VST": 122.66,
+  "VST": 122.35,
   "TLN": 359.64,
-  "AMD": 425.86,
-  "SMR": 3.47,
+  "AMD": 423.01,
+  "SMR": 3.45,
   "NNE": 9.56,
-  "SPY": 728.73,
+  "SPY": 728.35,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 13:09 ET",
+ "last_cycle": "2026-11-27 13:19 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -11019,10 +11019,10 @@
   ]
  },
  "brakes": {
-  "equity": 1041.66,
-  "day_pct": 3.6,
-  "week_pct": 4.11,
-  "drawdown_pct": -1.21,
+  "equity": 1040.2,
+  "day_pct": 3.45,
+  "week_pct": 3.97,
+  "drawdown_pct": -1.35,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -60377,8 +60377,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "4ee30073db1990ac",
   "7cabb45f8b0c2778",
+  "4ee30073db1990ac",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -60421,8 +60421,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1acc6842cd4f6e64",
   "1715e61816aa5619",
+  "1acc6842cd4f6e64",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -60491,6 +60491,7 @@
   "4627bda8dfc98062",
   "ac86fb04e7eb798b",
   "8e674e0f71a09e02",
+  "40afea413dfa193c",
   "c7fdc4969083b831",
   "745180d0d8db2d66",
   "b2e981fc7a2e7302",
@@ -60552,14 +60553,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "7c380c991c59f9ba",
   "1ed195cb4396cbe7",
+  "7c380c991c59f9ba",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -60875,6 +60876,7 @@
   "6709ae4e03dfb11b",
   "b500cde2f0b6d317",
   "e8314e5f69056db0",
+  "d9e3f5ec91672020",
   "7c221cf76c2854cd",
   "52e6c78d06498482",
   "60bdf2c0509fb940",
@@ -61157,7 +61159,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795802973.137045,
+ "news_slow_at": 1795803600.2326374,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -226266,17 +226268,17 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 13:09",
+  "updated": "2026-11-27 13:19",
   "total": 965,
-  "week": 590,
+  "week": 589,
   "places": {
    "South Korea": 56,
    "Uranium price": 52,
    "Kazakhstan": 41,
    "Weapons programs": 34,
    "Workers and jobs": 30,
-   "Asia newcomers": 30,
    "AUKUS and navies": 29,
+   "Asia newcomers": 29,
    "Europe new builds": 26,
    "Piketon": 24,
    "World Nuclear News": 23,
@@ -226905,8 +226907,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "fd337937e7471e2a",
   "b2362be41ae616f1",
+  "fd337937e7471e2a",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -226954,10 +226956,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "688d746cfc31b58f",
   "22ab37dfabeba433",
-  "f815e45da305cee7",
+  "688d746cfc31b58f",
   "85de31670d4daf9d",
+  "f815e45da305cee7",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -229534,7 +229536,7 @@
    "built": "2026-11-27 12:53"
   }
  ],
- "heartbeat": "2026-11-27 13:09",
+ "heartbeat": "2026-11-27 13:19",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -229775,16 +229777,16 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 477,
-   "used": 437,
+   "asked": 479,
+   "used": 439,
    "notes": {
     "TLN Deals and contracts": 21,
     "CCJ Deals and contracts": 80,
     "BWXT Deals and contracts": 56,
-    "SECTOR Government and laws": 132,
+    "SECTOR Government and laws": 133,
     "UUUU Deals and contracts": 44,
-    "SECTOR Countries": 136,
-    "CEG Deals and contracts": 62,
+    "SECTOR Countries": 137,
+    "CEG Deals and contracts": 63,
     "NXE Legal": 23,
     "NXE Deals and contracts": 19,
     "DNN Deals and contracts": 16,
@@ -230475,7 +230477,7 @@
    ],
    [
     "2026-11-27",
-    64.03
+    63.97
    ]
   ],
   "NXE": [
@@ -230597,7 +230599,7 @@
    ],
    [
     "2026-11-27",
-    7.35
+    7.34
    ]
   ],
   "UEC": [
@@ -230719,7 +230721,7 @@
    ],
    [
     "2026-11-27",
-    5.99
+    5.98
    ]
   ],
   "DNN": [
@@ -230963,7 +230965,7 @@
    ],
    [
     "2026-11-27",
-    5.72
+    5.66
    ]
   ],
   "LEU": [
@@ -231085,7 +231087,7 @@
    ],
    [
     "2026-11-27",
-    85.63
+    84.79
    ]
   ],
   "BWXT": [
@@ -231451,7 +231453,7 @@
    ],
    [
     "2026-11-27",
-    122.66
+    122.35
    ]
   ],
   "TLN": [
@@ -231695,7 +231697,7 @@
    ],
    [
     "2026-11-27",
-    425.86
+    423.01
    ]
   ],
   "SMR": [
@@ -231817,7 +231819,7 @@
    ],
    [
     "2026-11-27",
-    3.47
+    3.45
    ]
   ],
   "NNE": [
@@ -238365,7 +238367,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 13:09",
+ "watchdog_last": "2026-11-27 13:19",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
