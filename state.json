@@ -892,7 +892,8 @@
   "epop:2026-11-27": true,
   "bfexit:2026-11-27": true,
   "optmark:2026-11-27": true,
-  "park:2026-11-27": true
+  "park:2026-11-27": true,
+  "questioner:2026-11-27:7": true
  },
  "benchmark": {
   "shares": {
@@ -5776,30 +5777,6 @@
  },
  "news_feed": [
   {
-   "ticker": "LEU",
-   "source": "World Nuclear News",
-   "title": "Steam generators progress for Leningrad II and MBIR",
-   "link": "https://www.world-nuclear-news.org/articles/steam-generator-progress-for-lenningrad-ii-and-mbir",
-   "ts": 1795602495,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Russian reactor steam generator deliveries; not about enrichment or LEU's business."
-  },
-  {
-   "ticker": "NXE",
-   "source": "Google News: \"NexGen Energy\"",
-   "title": "NexGen Energy Publishes Sixth Annual Sustainability Report Covering 2025 Operations at Rook I Project - kalkine.ca",
-   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPM29XczdFemhrNnd6dlNENmpGOWNybk9XR2ladmo2NmxSd3ZTdmhEY3BNOHYydzRXNnV4Z01zTFNidWNERVY0NjlLcUk5THEzenJHMHNOTjRObHFNOE1pOUxhcXJuaGFhMEN4SFFkOXZzTkljQUdFVndEYlFCUzRJYTdBQjZreURKNjEyQ0ctTWJhVGtlZEZVdjBwclkwVXlzQkpUOVo3Ulk2NDNPWXYxNHExUHRQV0g2SnJWa0lXenZKMzhwVmgtQThqMWo3TXU5LTVHRzZR?oc=5",
-   "ts": 1795606200,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Routine annual sustainability report; no new financial or project information."
-  },
-  {
    "ticker": "UUUU",
    "source": "Google News",
    "title": "Oklo and NuScale Power Retreat 8% as AI Power Selloff Deepens; Energy Fuels Drops 6% - 24/7 Wall St.",
@@ -8774,6 +8751,30 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic Kalkine Media pipeline piece on a Toronto-listed ticker; rehash, no new facts."
+  },
+  {
+   "ticker": "UEC",
+   "source": "Local intel: Digg (Wyoming ISR)",
+   "title": "Peninsula Energy says cyber incident halted Wyoming uranium operations",
+   "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1mRWlwa0pudGpZNDFHZzByQ3FrYnBnUHlpTHRYQnB0OGpQdDdERTRiRzVWWmZrNm5tN3F1cW03OHA1OENK?oc=5",
+   "ts": 1795804501,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "down",
+   "event_type": "other",
+   "why": "Cyber incident halting a Wyoming ISR operation is a real, company-specific operational hit."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: Business Review (Europe new builds)",
+   "title": "Wolf Theiss advises on the financing for Romania\u2019s refurbishment of Unit 1 of Cernavod\u0103 nuclear power plant",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNS3FFM01XRE1OcUw5VFZxaXBBbTYweFM1aUd5RkV6N2dXdHlDT190dy1Ob01lbEVtaTJnQUhERmpjLW0zZHRaMDdsQ3VSdUg2SHZRcXJ2VUdOTkE1bmRrbzVxNXNNQkkybWZURVhQdWJ1YU9hc2t4Wk1fTUVSb1RGZ0o4UTduOVBLNnJLc19zLWRra3FKTDdNekwyWlZHTEIzU0RvNE9HWmVpNnBwYmM2VnZlcmlOeVFnVjcyTjhFWlFYOFRLd0lRSzREa2lPMW1MZzdFYWU2Yk8wcmxaaDgzazdKV3pmeUVfaEU4?oc=5",
+   "ts": 1795794642,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "contract_deal",
+   "why": "Romanian refurbishment financing is a Wolf Theiss legal-advisory note, indirect and small for Cameco."
   }
  ],
  "reviews": [
@@ -10666,26 +10667,26 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.48495,
+  "day_usd": 0.49178,
   "month": "2026-11",
-  "month_usd": 2.57913,
-  "total_usd": 2.57913,
+  "month_usd": 2.58596,
+  "total_usd": 2.58596,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.2584,
+   "scout": 0.2589,
    "review": 0.11073,
    "auditor": 0.02993,
    "strategist": 0.11417,
    "pm": 0.45311,
-   "risk": 0.25688,
+   "risk": 0.26041,
    "investigator": 0.38839,
    "postmortem": 0.01905,
    "researcher": 0.02341,
    "engineer": 0.10979,
-   "questioner": 0.1708
+   "questioner": 0.1736
   }
  },
  "desk_log": [
@@ -10956,7 +10957,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 13:50 ET",
+ "last_cycle": "2026-11-27 14:01 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -61039,6 +61040,7 @@
   "24c13c008d169d2f",
   "a74aab1c387c2b31",
   "4c474a21ada49911",
+  "e901047b889cef66",
   "3eac8010f88c321c",
   "aa4b40fcca57bfea",
   "734de812d3954952",
@@ -61157,10 +61159,9 @@
   "5d22d1b6e3da5fb6",
   "068e5507f464ca6e",
   "16c52bc5bc8110db",
-  "46c5572fb4069bdf",
-  "e901047b889cef66"
+  "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795805454.9969196,
+ "news_slow_at": 1795806076.4434683,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -218916,6 +218917,33 @@
    ],
    "practice": false,
    "end": "12:56"
+  },
+  {
+   "id": "20261127140110456472",
+   "title": "The Questioner, Nov 27 14:01",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-27 14:01",
+   "msgs": [
+    {
+     "t": "14:01",
+     "who": "questioner",
+     "to": "macro",
+     "text": "Nothing in the Black Friday or Thanksgiving-window posts has changed my view, so I'll ask one clean question: is the PJM 2029/30 auction's December 15 close still on schedule? The desk notes say no FERC ruling on the delay has been found, but TLN jumped 9.6% on that very item, and nobody has confirmed what drove the move.",
+     "outcome": false,
+     "notes": "question: TLN rose 9.6% on the PJM capacity-auction delay request, yet the desk files show no FERC ruling. What is the confirmed status of the December 15 auction, and what explains the jump if the outcome is still unknown?\nwhy it might matter: Talen's earnings depend on the auction result, so an unconfirmed headline driving a big move is either a mispricing or a sign we're missing a filing.\nask: macro\nkind: unexplained\nquestion: Is the halt on SPY parking sales still in force, and has anyone checked the broker for stale or partially filled orders from the three rejected sales?\nwhy it might matter: The live orders list is empty, but a halt after three malfunction-coded rejections could mean something is still open at the broker.\nask: risk\nkind: odd\nwhy: I checked the PJM auction status in the desk files and found no ruling, while TLN's 9.6% move rests on that unconfirmed item. I also fla"
+    },
+    {
+     "t": "14:01",
+     "who": "risk",
+     "to": "questioner",
+     "text": "I checked the desk files and the live state: LIVE_ORDERS_RIGHT_NOW is empty and the recently canceled list shows only the TLN and BWXT buys, with no record of any SPY parking sale, rejection, or partial fill. The files don't mention the three rejected SPY sales or the halt at all, so I can't confirm whether anything is still open at the broker. That gap is worth checking directly, since the halt itself was raised for a reason.",
+     "outcome": false,
+     "notes": "verdict: unsure\naction: tell_owner\nwhy: The desk's live orders list and recent cancel log are the only broker-side records I have, and neither mentions SPY, so I can't confirm the halt status or whether any rejected sale left a partial fill. Only the broker's own order history can settle it."
+    }
+   ],
+   "practice": false,
+   "end": "14:01"
   }
  ],
  "feed": [
@@ -225265,6 +225293,32 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-27 14:01",
+   "who": "questioner",
+   "kind": "alert",
+   "title": null,
+   "text": "Worth your attention: Is the halt on SPY parking sales still in force, and has anyone checked the broker for stale or partially filled orders from the three rejected sales?\n\nRisk Manager: I checked the desk files and the live state: LIVE_ORDERS_RIGHT_NOW is empty and the recently canceled list shows only the TLN and BWXT buys, with no record of any SPY parking sale, rejection, or partial fill. The files don't mention the three rejected SPY sales or the halt at all, so I can't confirm whether anything is still open at the broker. That gap is worth checking directly, since the halt itself was raised for a reason.",
+   "tickers": [],
+   "art": {
+    "big": "Something we almost missed",
+    "sub": "The Questioner"
+   },
+   "thread": "20261127140110456472"
+  },
+  {
+   "t": "2026-11-27 14:01",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Is the halt on SPY parking sales still in force, and has anyone checked the broker for stale or partially filled orders from the three rejected sales? -> unsure",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -226057,6 +226111,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "UEC",
+   "type": "other",
+   "title": "Peninsula Energy says cyber incident halted Wyoming uranium operations",
+   "date": "2026-11-27",
+   "price": 5.93,
+   "materiality": 6,
+   "direction_called": "down",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -226204,62 +226270,62 @@
    "lesson": "A panic_rebound buy must pass the basket-below-10-day-average block before entry, even when the stock looks oversold and the trade later wins."
   }
  ],
- "intel_at": 1795803818.464408,
+ "intel_at": 1795805675.1675138,
  "intel_health": {
-  "at": "2026-11-27 13:24",
+  "at": "2026-11-27 13:55",
   "sources": {
-   "Cigar Lake": 2,
+   "Cigar Lake": 3,
    "McArthur River / Key Lake": 3,
-   "Athabasca Basin": 10,
+   "Athabasca Basin": 9,
    "Saskatchewan wildfires": 4,
-   "Rook I / Arrow": 8,
-   "Wheeler River / Phoenix": 5,
+   "Rook I / Arrow": 7,
+   "Wheeler River / Phoenix": 7,
    "Port Hope / Blind River": 0,
    "Westinghouse": 8,
-   "Kazakhstan": 38,
+   "Kazakhstan": 51,
    "Niger": 11,
-   "Namibia": 31,
+   "Namibia": 30,
    "Russia supply": 2,
-   "Piketon": 19,
-   "HALEU": 9,
-   "Wyoming ISR": 16,
+   "Piketon": 20,
+   "HALEU": 10,
+   "Wyoming ISR": 17,
    "South Texas ISR": 2,
    "White Mesa / Utah": 8,
-   "Rare earths (Energy Fuels)": 6,
+   "Rare earths (Energy Fuels)": 7,
    "Lynchburg / Erwin": 0,
    "Naval reactors": 12,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 4,
    "Comanche Peak": 4,
-   "PJM grid": 8,
+   "PJM grid": 6,
    "ERCOT grid": 11,
    "Data-center nuclear deals": 10,
-   "Japan restarts": 12,
-   "China new builds": 7,
-   "Congress and laws": 27,
-   "NRC decisions": 5,
-   "Energy Department": 34,
+   "Japan restarts": 8,
+   "China new builds": 6,
+   "Congress and laws": 38,
+   "NRC decisions": 6,
+   "Energy Department": 41,
    "White House and executive orders": 30,
    "Tariffs and trade": 4,
    "India": 18,
    "South Korea": 100,
-   "Europe new builds": 63,
-   "France and UK": 14,
-   "Middle East": 30,
-   "Asia newcomers": 38,
-   "Canada SMRs": 7,
+   "Europe new builds": 30,
+   "France and UK": 11,
+   "Middle East": 58,
+   "Asia newcomers": 37,
+   "Canada SMRs": 8,
    "Big tech power deals": 29,
-   "Iran": 27,
-   "North Korea": 66,
+   "Iran": 55,
+   "North Korea": 100,
    "War zones": 15,
    "AUKUS and navies": 25,
-   "Weapons programs": 32,
-   "Stockpiles and reserves": 25,
+   "Weapons programs": 30,
+   "Stockpiles and reserves": 28,
    "Sprott trust": 3,
    "Uranium price": 20,
    "US policy": 0,
-   "Lawsuits and investigations": 33,
-   "Workers and jobs": 24,
+   "Lawsuits and investigations": 71,
+   "Workers and jobs": 23,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 52,
    "Federal Register (uranium)": 11,
@@ -226269,9 +226335,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 13:50",
-  "total": 967,
-  "week": 590,
+  "updated": "2026-11-27 14:01",
+  "total": 971,
+  "week": 593,
   "places": {
    "South Korea": 56,
    "Uranium price": 52,
@@ -226280,7 +226346,7 @@
    "Workers and jobs": 30,
    "AUKUS and navies": 29,
    "Asia newcomers": 29,
-   "Europe new builds": 26,
+   "Europe new builds": 27,
    "Piketon": 24,
    "World Nuclear News": 23,
    "War zones": 20,
@@ -226288,60 +226354,60 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-27 13:24",
+   "at": "2026-11-27 13:55",
    "sources": {
-    "Cigar Lake": 2,
+    "Cigar Lake": 3,
     "McArthur River / Key Lake": 3,
-    "Athabasca Basin": 10,
+    "Athabasca Basin": 9,
     "Saskatchewan wildfires": 4,
-    "Rook I / Arrow": 8,
-    "Wheeler River / Phoenix": 5,
+    "Rook I / Arrow": 7,
+    "Wheeler River / Phoenix": 7,
     "Port Hope / Blind River": 0,
     "Westinghouse": 8,
-    "Kazakhstan": 38,
+    "Kazakhstan": 51,
     "Niger": 11,
-    "Namibia": 31,
+    "Namibia": 30,
     "Russia supply": 2,
-    "Piketon": 19,
-    "HALEU": 9,
-    "Wyoming ISR": 16,
+    "Piketon": 20,
+    "HALEU": 10,
+    "Wyoming ISR": 17,
     "South Texas ISR": 2,
     "White Mesa / Utah": 8,
-    "Rare earths (Energy Fuels)": 6,
+    "Rare earths (Energy Fuels)": 7,
     "Lynchburg / Erwin": 0,
     "Naval reactors": 12,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 4,
     "Comanche Peak": 4,
-    "PJM grid": 8,
+    "PJM grid": 6,
     "ERCOT grid": 11,
     "Data-center nuclear deals": 10,
-    "Japan restarts": 12,
-    "China new builds": 7,
-    "Congress and laws": 27,
-    "NRC decisions": 5,
-    "Energy Department": 34,
+    "Japan restarts": 8,
+    "China new builds": 6,
+    "Congress and laws": 38,
+    "NRC decisions": 6,
+    "Energy Department": 41,
     "White House and executive orders": 30,
     "Tariffs and trade": 4,
     "India": 18,
     "South Korea": 100,
-    "Europe new builds": 63,
-    "France and UK": 14,
-    "Middle East": 30,
-    "Asia newcomers": 38,
-    "Canada SMRs": 7,
+    "Europe new builds": 30,
+    "France and UK": 11,
+    "Middle East": 58,
+    "Asia newcomers": 37,
+    "Canada SMRs": 8,
     "Big tech power deals": 29,
-    "Iran": 27,
-    "North Korea": 66,
+    "Iran": 55,
+    "North Korea": 100,
     "War zones": 15,
     "AUKUS and navies": 25,
-    "Weapons programs": 32,
-    "Stockpiles and reserves": 25,
+    "Weapons programs": 30,
+    "Stockpiles and reserves": 28,
     "Sprott trust": 3,
     "Uranium price": 20,
     "US policy": 0,
-    "Lawsuits and investigations": 33,
-    "Workers and jobs": 24,
+    "Lawsuits and investigations": 71,
+    "Workers and jobs": 23,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 52,
     "Federal Register (uranium)": 11,
@@ -226920,6 +226986,7 @@
   "8a28d1476a656cf6",
   "1cb683a826f1a87b",
   "88813f2311f7a1b2",
+  "a5ec9af335b90cac",
   "501faa7313e92ba8",
   "7574e0b98bf014d1",
   "a3f7ee9bb9023700",
@@ -227113,6 +227180,7 @@
   "fe69041743af20f6",
   "004c1f6d9bc3d5b2",
   "498180393c058995",
+  "ce302b059c64a82f",
   "4039fa58057275ae",
   "dfc77f4fe94ea6ba",
   "60f43d37a2701c1f",
@@ -227179,7 +227247,7 @@
   }
  ],
  "memory_view": {
-  "events": 1798,
+  "events": 1802,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -227762,42 +227830,6 @@
   ],
   "recent": [
    {
-    "date": "2026-11-26",
-    "ticker": "CCJ",
-    "title": "Niger uranium project targets 2028 production",
-    "type": "intel_production",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-26",
-    "ticker": "UEC",
-    "title": "Niger uranium project targets 2028 production",
-    "type": "intel_production",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-27",
-    "ticker": "CCJ",
-    "title": "General Matter, Inc.; General Matter Paducah Enrichment Facility; Notice of Intent To Conduct Scoping Process and Prepare an Environmental Impact Statement",
-    "type": "intel_regulation",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-27",
-    "ticker": "LEU",
-    "title": "General Matter, Inc.; General Matter Paducah Enrichment Facility; Notice of Intent To Conduct Scoping Process and Prepare an Environmental Impact Statement",
-    "type": "intel_regulation",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
     "date": "2026-11-27",
     "ticker": "CCJ",
     "title": "Uranium and gold anchor exports amid mining output decline Staff Reporter NAMIBIA\u2019S mining sector is facing declining production, falling diamond revenues and r",
@@ -228117,6 +228149,42 @@
     "ticker": "CEG",
     "title": "9-billion-kWh reactor: China begins building new unit at Taishan nuclear plant",
     "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-27",
+    "ticker": "CCJ",
+    "title": "Wolf Theiss advises on the financing for Romania\u2019s refurbishment of Unit 1 of Cernavod\u0103 nuclear power plant",
+    "type": "intel_financing",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-27",
+    "ticker": "BWXT",
+    "title": "Wolf Theiss advises on the financing for Romania\u2019s refurbishment of Unit 1 of Cernavod\u0103 nuclear power plant",
+    "type": "intel_financing",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-27",
+    "ticker": "UEC",
+    "title": "Peninsula Energy says cyber incident halted Wyoming uranium operations",
+    "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-27",
+    "ticker": "CCJ",
+    "title": "Peninsula Energy says cyber incident halted Wyoming uranium operations",
+    "type": "intel_disruption",
     "r0": null,
     "r5": null,
     "r20": null
@@ -229408,138 +229476,138 @@
    }
   ]
  },
- "dossier_at": 1795803860.778447,
+ "dossier_at": 1795805718.5220106,
  "sector_prices": {
-  "_at": 1795783563.8004794,
+  "_at": 1795805723.732425,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
-   "last": 17.71,
-   "day_pct": -1.5,
-   "week_pct": -2.9,
-   "month_pct": -7.65,
-   "year_pct": -1.0,
-   "under_1y_high_pct": -26.3
+   "last": 18.16,
+   "day_pct": 2.54,
+   "week_pct": 1.4,
+   "month_pct": -6.39,
+   "year_pct": 1.0,
+   "under_1y_high_pct": -24.4
   },
   "Global X Uranium ETF": {
-   "last": 27.71,
-   "day_pct": 0.4,
-   "week_pct": -5.81,
-   "month_pct": -22.73,
-   "year_pct": -35.2,
-   "under_1y_high_pct": -55.2
+   "last": 29.17,
+   "day_pct": 5.27,
+   "week_pct": 1.74,
+   "month_pct": -20.19,
+   "year_pct": -32.5,
+   "under_1y_high_pct": -52.8
   },
   "Sprott Uranium Miners ETF": {
-   "last": 35.28,
-   "day_pct": 0.6,
-   "week_pct": -4.96,
-   "month_pct": -21.16,
-   "year_pct": -33.7,
-   "under_1y_high_pct": -58.0
+   "last": 37.27,
+   "day_pct": 5.64,
+   "week_pct": 3.64,
+   "month_pct": -18.61,
+   "year_pct": -30.7,
+   "under_1y_high_pct": -55.6
   },
   "VanEck Uranium and Nuclear ETF": {
-   "last": 77.68,
-   "day_pct": -0.32,
-   "week_pct": -6.4,
-   "month_pct": -18.16,
-   "year_pct": -38.0,
-   "under_1y_high_pct": -52.7
+   "last": 80.6,
+   "day_pct": 3.76,
+   "week_pct": -0.24,
+   "month_pct": -16.03,
+   "year_pct": -36.4,
+   "under_1y_high_pct": -51.0
   },
   "VIX fear gauge": {
-   "last": 25.4,
-   "day_pct": -5.22,
-   "week_pct": -29.23,
-   "month_pct": 47.67,
-   "year_pct": 55.4,
-   "under_1y_high_pct": -29.2
+   "last": 23.81,
+   "day_pct": -11.16,
+   "week_pct": -33.66,
+   "month_pct": 38.43,
+   "year_pct": 45.6,
+   "under_1y_high_pct": -33.7
   },
   "S&P 500": {
-   "last": 716.7,
-   "day_pct": -0.29,
-   "week_pct": -1.85,
-   "month_pct": -6.88,
-   "year_pct": 6.6,
-   "under_1y_high_pct": -8.0
+   "last": 728.32,
+   "day_pct": 1.62,
+   "week_pct": 1.74,
+   "month_pct": -5.7,
+   "year_pct": 7.7,
+   "under_1y_high_pct": -6.5
   }
  },
  "dossier_index": [
   {
    "ticker": "CCJ",
    "name": "Cameco",
-   "price": 63.97,
-   "week_pct": 4.15,
-   "built": "2026-11-27 13:24"
+   "price": 63.56,
+   "week_pct": 3.48,
+   "built": "2026-11-27 13:55"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
-   "price": 7.34,
-   "week_pct": 5.92,
-   "built": "2026-11-27 13:24"
+   "price": 7.28,
+   "week_pct": 5.05,
+   "built": "2026-11-27 13:55"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
-   "price": 5.98,
-   "week_pct": 3.82,
-   "built": "2026-11-27 13:24"
+   "price": 5.93,
+   "week_pct": 2.86,
+   "built": "2026-11-27 13:55"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
-   "price": 1.93,
-   "week_pct": 6.63,
-   "built": "2026-11-27 13:24"
+   "price": 1.91,
+   "week_pct": 5.8,
+   "built": "2026-11-27 13:55"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.66,
    "week_pct": 3.28,
-   "built": "2026-11-27 13:24"
+   "built": "2026-11-27 13:55"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.79,
    "week_pct": -5.47,
-   "built": "2026-11-27 13:24"
+   "built": "2026-11-27 13:55"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
-   "price": 116.51,
-   "week_pct": -0.47,
-   "built": "2026-11-27 13:24"
+   "price": 115.57,
+   "week_pct": -1.27,
+   "built": "2026-11-27 13:55"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 238.15,
    "week_pct": -5.51,
-   "built": "2026-11-27 13:24"
+   "built": "2026-11-27 13:55"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 122.35,
    "week_pct": -1.45,
-   "built": "2026-11-27 13:24"
+   "built": "2026-11-27 13:55"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 359.64,
    "week_pct": 1.05,
-   "built": "2026-11-27 13:24"
+   "built": "2026-11-27 13:55"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-27 13:24"
+   "built": "2026-11-27 13:55"
   }
  ],
- "heartbeat": "2026-11-27 13:50",
+ "heartbeat": "2026-11-27 14:01",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -229780,7 +229848,7 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 481,
+   "asked": 482,
    "used": 441,
    "notes": {
     "TLN Deals and contracts": 21,
@@ -230146,7 +230214,7 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 119,
+   "asked": 120,
    "used": 117,
    "notes": {
     "BWXT Price behavior": 3,
@@ -230236,11 +230304,11 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 62,
-   "used": 62,
+   "asked": 63,
+   "used": 63,
    "notes": {
     "TLN Snapshot": 45,
-    "TLN News": 41,
+    "TLN News": 42,
     "coming_up": 9,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
@@ -230252,8 +230320,8 @@
     "SECTOR Market regime": 1,
     "desk_lessons_from_our_mistakes": 7,
     "TLN Ownership and analysts": 4,
-    "SECTOR Uranium market": 18,
-    "CEG Snapshot": 6,
+    "SECTOR Uranium market": 19,
+    "CEG Snapshot": 7,
     "uranium_price": 1,
     "PJM capacity auction": 1,
     "PJM auction": 1,
@@ -230282,7 +230350,8 @@
     "SPY parking halt (questioner history)": 1,
     "PJM / Centrus items in already_asked": 1,
     "plants open_outages": 1,
-    "coming_up Federal Register reminders": 1
+    "coming_up Federal Register reminders": 1,
+    "SECTOR Desk history": 1
    },
    "since": "2026-11-23"
   },
@@ -234967,6 +235036,15 @@
    "answer": "Salem 1 has been out since Oct 4, now 52 days, which is long but falls inside normal refueling season, and CEG's fleet is about 96% running, so this looks like planned maintenance rather than trouble. I have no filing or NRC notice in the desk files showing a planned end date being pushed out, so I can't confirm an extension either way. I agree with the Questioner that a planned outage is routine and shouldn't move our stocks on its own.",
    "verdict": "irrelevant",
    "action": "watch"
+  },
+  {
+   "t": "2026-11-27 14:01",
+   "question": "Is the halt on SPY parking sales still in force, and has anyone checked the broker for stale or partially filled orders from the three rejected sales?",
+   "kind": "odd",
+   "asked": "risk",
+   "answer": "I checked the desk files and the live state: LIVE_ORDERS_RIGHT_NOW is empty and the recently canceled list shows only the TLN and BWXT buys, with no record of any SPY parking sale, rejection, or partial fill. The files don't mention the three rejected SPY sales or the halt at all, so I can't confirm whether anything is still open at the broker. That gap is worth checking directly, since the halt itself was raised for a reason.",
+   "verdict": "unsure",
+   "action": "tell_owner"
   }
  ],
  "reactor_view": {
@@ -238101,47 +238179,37 @@
   }
  ],
  "movers": {
-  "at": 1795791673.7971299,
-  "time": "2026-11-27 10:01",
+  "at": 1795806070.4547346,
+  "time": "2026-11-27 14:01",
   "list": [
    {
     "ticker": "LEU",
     "core": true,
-    "volatility_pct": 107,
+    "volatility_pct": 108,
     "why": [
-     "-55% under its 2-month high"
+     "-54% under its 2-month high"
     ],
-    "price": 83.75,
+    "price": 85.43,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "UEC",
     "core": true,
-    "volatility_pct": 90,
+    "volatility_pct": 92,
     "why": [
-     "-51% under its 2-month high"
+     "-50% under its 2-month high"
     ],
-    "price": 5.84,
+    "price": 5.98,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "UUUU",
     "core": true,
-    "volatility_pct": 80,
+    "volatility_pct": 87,
     "why": [
-     "-63% under its 2-month high"
+     "-61% under its 2-month high"
     ],
-    "price": 5.44,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "MOD",
-    "core": false,
-    "volatility_pct": 153,
-    "why": [
-     "-31% under its 2-month high"
-    ],
-    "price": 136.77,
+    "price": 5.71,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -238149,70 +238217,69 @@
     "core": false,
     "volatility_pct": 138,
     "why": [
-     "-39% under its 2-month high"
+     "-37% under its 2-month high"
     ],
-    "price": 146.16,
+    "price": 150.49,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "MU",
     "core": false,
-    "volatility_pct": 134,
+    "volatility_pct": 137,
     "why": [
-     "-44% under its 2-month high"
+     "-41% under its 2-month high"
     ],
-    "price": 614.01,
+    "price": 646.95,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "AMD",
     "core": false,
-    "volatility_pct": 133,
+    "volatility_pct": 135,
     "why": [
-     "-38% under its 2-month high",
-     "-18% in 5 days"
+     "-35% under its 2-month high"
     ],
-    "price": 402.25,
+    "price": 424.54,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "OKLO",
     "core": false,
-    "volatility_pct": 126,
+    "volatility_pct": 130,
     "why": [
-     "-55% under its 2-month high"
+     "-52% under its 2-month high"
     ],
-    "price": 19.66,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "VRT",
-    "core": false,
-    "volatility_pct": 111,
-    "why": [
-     "-40% under its 2-month high"
-    ],
-    "price": 174.52,
+    "price": 20.85,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "SMR",
     "core": false,
-    "volatility_pct": 108,
+    "volatility_pct": 112,
     "why": [
-     "-70% under its 2-month high"
+     "-69% under its 2-month high"
     ],
-    "price": 3.34,
+    "price": 3.48,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "VRT",
+    "core": false,
+    "volatility_pct": 112,
+    "why": [
+     "-39% under its 2-month high"
+    ],
+    "price": 178.71,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "NNE",
     "core": false,
-    "volatility_pct": 106,
+    "volatility_pct": 109,
     "why": [
-     "-52% under its 2-month high"
+     "-51% under its 2-month high"
     ],
-    "price": 9.21,
+    "price": 9.54,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -238222,37 +238289,37 @@
     "why": [
      "-36% under its 2-month high"
     ],
-    "price": 156.48,
+    "price": 157.65,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "NVT",
     "core": false,
-    "volatility_pct": 99,
+    "volatility_pct": 100,
     "why": [
-     "-39% under its 2-month high"
+     "-38% under its 2-month high"
     ],
-    "price": 105.35,
+    "price": 107.47,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "ORCL",
     "core": false,
-    "volatility_pct": 87,
+    "volatility_pct": 88,
     "why": [
-     "-35% under its 2-month high"
+     "-34% under its 2-month high"
     ],
-    "price": 104.58,
+    "price": 107.13,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "FCX",
     "core": false,
-    "volatility_pct": 70,
+    "volatility_pct": 72,
     "why": [
-     "-35% under its 2-month high"
+     "-34% under its 2-month high"
     ],
-    "price": 49.95,
+    "price": 50.77,
     "note": "big moves 5-7x more likely here, in either direction"
    }
   ]
@@ -238370,7 +238437,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 13:50",
+ "watchdog_last": "2026-11-27 14:01",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

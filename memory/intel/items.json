@@ -31302,5 +31302,135 @@
 "taishan",
 "unit"
 ]
+},
+{
+"id": "853ad53b9e585146",
+"date": "2026-11-26",
+"ts": 1795680000,
+"title": "A look back at mixed or offshore upstream E&P stocks\u2019 Q3 earnings: Centrus Energy vs the rest of the pack",
+"summary": "",
+"outlet": "The Globe and Mail",
+"link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPcWpONkRHRkQxb1lvbEtERXhtNkJNQWJHTTk1QXV0SkUxSTR5alNuczNpLWoxbm5HVGpwdmhuenNwc0FuOXM1X3o3MmszSHRkLUROUDNyRlB1QTlwZG5abXFMT0pJbjJ1d1FGWXdpNk12UHBFbTBLa2wyT2VMMVB4UWNwT2FETXAta3k3cGoyQ25ZWlM5Z2tRUmNGenNPUlA1TWs0bVB5dnlncGZXSkszS0xZRTdtZ2p5dmUxbVBYVTdfLTVINzJoWHZOQUdvOGthSWJPRjhEZC1ZREw1My03TzRiZmlsOC1hMU8wZ21zbV9XOTN6VXdFZ3J6cnFSTTNkLVNGZVJFLTFVMG00eWR0UHYtUzc0Qlk?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 1.5,
+"echo_of": "c2b163604a47c989",
+"w": [
+"back",
+"centrus",
+"earnings",
+"energy",
+"look",
+"mixed",
+"offshore",
+"pack",
+"rest",
+"stocks",
+"upstream"
+]
+},
+{
+"id": "a5ec9af335b90cac",
+"date": "2026-11-27",
+"ts": 1795794642,
+"title": "Wolf Theiss advises on the financing for Romania\u2019s refurbishment of Unit 1 of Cernavod\u0103 nuclear power plant",
+"summary": "",
+"outlet": "Business Review",
+"link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNS3FFM01XRE1OcUw5VFZxaXBBbTYweFM1aUd5RkV6N2dXdHlDT190dy1Ob01lbEVtaTJnQUhERmpjLW0zZHRaMDdsQ3VSdUg2SHZRcXJ2VUdOTkE1bmRrbzVxNXNNQkkybWZURVhQdWJ1YU9hc2t4Wk1fTUVSb1RGZ0o4UTduOVBLNnJLc19zLWRra3FKTDdNekwyWlZHTEIzU0RvNE9HWmVpNnBwYmM2VnZlcmlOeVFnVjcyTjhFWlFYOFRLd0lRSzREa2lPMW1MZzdFYWU2Yk8wcmxaaDgzazdKV3pmeUVfaEU4?oc=5",
+"place": "Europe new builds",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"financing"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.79,
+"score": 5.28,
+"echo_of": null,
+"w": [
+"advises",
+"cernavod",
+"financing",
+"nuclear",
+"plant",
+"power",
+"refurbishment",
+"romania",
+"theiss",
+"unit",
+"wolf"
+]
+},
+{
+"id": "ce302b059c64a82f",
+"date": "2026-11-27",
+"ts": 1795804501,
+"title": "Peninsula Energy says cyber incident halted Wyoming uranium operations",
+"summary": "",
+"outlet": "Digg",
+"link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1mRWlwa0pudGpZNDFHZzByQ3FrYnBnUHlpTHRYQnB0OGpQdDdERTRiRzVWWmZrNm5tN3F1cW03OHA1OENK?oc=5",
+"place": "Wyoming ISR",
+"tickers": [
+"UEC",
+"CCJ"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.69,
+"score": 5.88,
+"echo_of": null,
+"w": [
+"cyber",
+"energy",
+"halted",
+"incident",
+"operations",
+"peninsula",
+"uranium",
+"wyoming"
+]
+},
+{
+"id": "e901047b889cef66",
+"date": "2026-11-27",
+"ts": 1795805040,
+"title": "Is Denison Mines (TSX:DML) Steadily Advancing Its Uranium Project Pipeline?",
+"summary": "",
+"outlet": "Kalkine Media",
+"link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaW54d0t0cTQyRnVXaXJBSnprWFZRZ0E3cVlOMldicGFsX25CRHNWdTA0V3VlTTl3bkt1WXRUYVN5YTR1bVI5ZUR2TE1xRWd6dUxsYko4aDhzV1NtaU8zSEw3c3VEU3ExOUZzYk5SV283Ul93c0FFcXllQmlETFQ5SXhrOUFJU3o4V1dkaHAwZUV6dVdMOV96STJ4MFg4M2V0T19LN1RocWhWeElVRWp0blNSYw?oc=5",
+"place": "Wheeler River / Phoenix",
+"tickers": [
+"DNN",
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.69,
+"score": 2.88,
+"echo_of": null,
+"w": [
+"advancing",
+"denison",
+"dml",
+"mines",
+"pipeline",
+"project",
+"steadily",
+"tsx",
+"uranium"
+]
 }
 ]
