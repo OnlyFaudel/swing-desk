@@ -9344,12 +9344,12 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.1389,
+  "day_usd": 0.15173,
   "month": "2026-11",
-  "month_usd": 2.23308,
-  "total_usd": 2.23308,
+  "month_usd": 2.24591,
+  "total_usd": 2.24591,
   "by_role": {
-   "macro": 0.22257,
+   "macro": 0.22393,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.26798,
@@ -9357,12 +9357,12 @@
    "review": 0.11073,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.3394,
-   "risk": 0.2156,
-   "investigator": 0.36573,
+   "pm": 0.34375,
+   "risk": 0.21972,
+   "investigator": 0.36713,
    "postmortem": 0.00035,
    "researcher": 0.02341,
-   "engineer": 0.08853,
+   "engineer": 0.09013,
    "questioner": 0.1625
   }
  },
@@ -9605,23 +9605,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 63.87,
-  "NXE": 7.22,
+  "CCJ": 63.88,
+  "NXE": 7.24,
   "UEC": 5.91,
-  "DNN": 1.86,
+  "DNN": 1.85,
   "UUUU": 5.45,
-  "LEU": 84.28,
-  "BWXT": 116.04,
-  "CEG": 237.05,
-  "VST": 122.38,
-  "TLN": 355.42,
-  "AMD": 407.14,
-  "SMR": 3.35,
-  "NNE": 9.15,
-  "SPY": 721.18,
+  "LEU": 84.78,
+  "BWXT": 116.01,
+  "CEG": 236.75,
+  "VST": 122.76,
+  "TLN": 355.84,
+  "AMD": 408.2,
+  "SMR": 3.38,
+  "NNE": 9.09,
+  "SPY": 722.76,
   "SGOV": 100.7
  },
- "last_cycle": "2026-11-27 09:42 ET",
+ "last_cycle": "2026-11-27 09:45 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -9684,10 +9684,10 @@
   ]
  },
  "brakes": {
-  "equity": 1026.72,
-  "day_pct": 2.11,
-  "week_pct": 2.62,
-  "drawdown_pct": -2.63,
+  "equity": 1028.57,
+  "day_pct": 2.3,
+  "week_pct": 2.8,
+  "drawdown_pct": -2.45,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -13673,6 +13673,14 @@
   [
    "2026-11-27 09:42",
    1026.72
+  ],
+  [
+   "2026-11-27 09:43",
+   1029.5
+  ],
+  [
+   "2026-11-27 09:45",
+   1028.57
   ]
  ],
  "nowcast": {
@@ -58369,7 +58377,7 @@
     0.8428
    ]
   },
-  "time": "2026-11-27 09:42"
+  "time": "2026-11-27 09:45"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -59146,7 +59154,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795790598.6299686,
+ "news_slow_at": 1795790634.5375867,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -215618,6 +215626,73 @@
    ],
    "practice": false,
    "end": "09:43"
+  },
+  {
+   "id": "20261127094339552975",
+   "title": "Huddle: fast move: DNN moved -1.6% in 9 min",
+   "tickers": [
+    "DNN"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-27 09:43",
+   "msgs": [
+    {
+     "t": "09:43",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: DNN moved -1.6% in 9 min.",
+     "outcome": false
+    },
+    {
+     "t": "09:43",
+     "who": "investigator",
+     "to": "chief",
+     "text": "DNN is up 3.5% today and about 24% down over the month, but the move looks like an oversold bounce, not news. I found no new filing, deal, or company event behind it, just recycled headlines about cost pressure and the Darby update. Nothing here changes the no-buy rule while the basket is below its 10-day average.",
+     "outcome": false,
+     "notes": "why: I checked the DNN notes and recent headlines; the headlines are old or generic (cost pressure, a bounce article, a Darby update already known), and no fresh catalyst appeared. The basket is still below its 10-day average, so the rule keeps us out.\nticker: DNN\ndirection: down\ndays: 3\nfiles read: DNN Snapshot, DNN Legal, SECTOR Uranium market"
+    },
+    {
+     "t": "09:43",
+     "who": "engineer",
+     "to": "investigator",
+     "text": "I'm not seeing a plant-side reason for DNN's move. DNN is a developer with no operating reactors, so the fleet outages and refuelings on the board (CEG's Salem 1, VST and TLN fleets) don't touch it. The real drivers for DNN are uranium price and Athabasca sentiment, which I agree with News Investigator are a bounce, not news.",
+     "outcome": false,
+     "notes": "why: I checked the plant outage list and the owner fleet status; DNN has no reactors and none of the open outages map to it. The basket is still below its 10-day average, so the no-new-buy rule holds.\nfiles read: SECTOR Uranium market, DNN Places and operations"
+    },
+    {
+     "t": "09:43",
+     "who": "macro",
+     "to": "team",
+     "text": "DNN's move is a small oversold bounce, not news, and I see no macro signal for it. The uranium spot price is up about 2% this month and sector ETFs are down, so this is stock-specific noise against a weak basket. I agree with News Investigator and Plant Engineer that nothing here changes the no-buy rule while the basket is below its 10-day average.",
+     "outcome": false,
+     "notes": "why: I checked the sector pulse (basket -2.4% vs its 10-day average, pulse_up false), the uranium spot and long-term prices, and the sector ETFs. The uranium market is not moving DNN; it is a bounce inside a sector that is still falling.\nticker: DNN\ndirection: down\ndays: 5\nfiles read: SECTOR Uranium market, CEG Snapshot, DNN Snapshot"
+    },
+    {
+     "t": "09:43",
+     "who": "risk",
+     "to": "chief",
+     "text": "I agree with the team that DNN's bounce is noise, not news, so I see no reason to act on it. The bigger risk is the setup: DNN is 24% down on the month, 22% under its 50-day average, and the basket is below its 10-day average, which means our no-buy rule still blocks new entries. Chasing a bounce in a name that has lost half its value in a quarter is exactly how a small account gets hurt.",
+     "outcome": false,
+     "notes": "why: DNN's day move is a bounce inside a downtrend, and the desk's own notes show buying weakness in these names has hurt in the 2008-2018 regime and only worked in the AI era; the basket rule blocks new buys anyway. Nothing in the desk notes or headlines supports overriding that.\nfiles read: DNN Snapshot, DNN Discoveries, SECTOR Uranium market, DNN Leadership and insiders"
+    },
+    {
+     "t": "09:43",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with Risk Manager and the team: DNN's bounce is noise, not news, and we hold no DNN position and no resting order, so there is nothing to exit or cancel. The basket is below its 10-day average, so the no-buy rule stays in force and I'm not adding anything.",
+     "outcome": false,
+     "notes": "action: none\nreason: No open trade or waiting buy in DNN, so exit and skip don't apply. The move is an oversold bounce with no new company event, and the basket is below its 10-day average, so I'm leaving the desk in its default state.\nwhy: I checked the live order list (none exist), the DNN snapshot (down about 25% over the month, 22% below its 50-day average), and the sector pulse (basket -2.4% vs its average). No trigger for an exit or skip was met.\nfiles read: DNN Snapshot, LIVE_ORDERS_RIGHT_NOW, SECTOR pulse"
+    },
+    {
+     "t": "09:43",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:43"
   }
  ],
  "feed": [
@@ -221072,6 +221147,21 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-27 09:43",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: DNN moved -1.6% in 9 min. Checking the news for a reason.",
+   "tickers": [
+    "DNN"
+   ],
+   "art": {
+    "big": "DNN moved -1.6% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -221269,9 +221359,10 @@
   "BWXT (you asked us to watch it) moved +1.8% since we last looked": 1795790180.741888,
   "fast move: NXE moved -1.7% in 9 min": 1795790407.1959515,
   "fast move: UEC moved -1.5% in 9 min": 1795790577.3833144,
-  "fast move: sector move: 4 of our nuclear stocks moving down together (LEU, NXE, UEC, UUUU)": 1795790577.3833146
+  "fast move: sector move: 4 of our nuclear stocks moving down together (LEU, NXE, UEC, UUUU)": 1795790577.3833146,
+  "fast move: DNN moved -1.6% in 9 min": 1795790619.5515804
  },
- "huddle_last": 1795790577.3833172,
+ "huddle_last": 1795790619.5515845,
  "huddle_log": [
   "2026-11-24",
   "2026-11-24",
@@ -221285,7 +221376,6 @@
   "2026-11-24",
   "2026-11-24",
   "2026-11-24",
-  "2026-11-24",
   "2026-11-25",
   "2026-11-25",
   "2026-11-25",
@@ -221320,6 +221410,7 @@
   "2026-11-25",
   "2026-11-25",
   "2026-11-25",
+  "2026-11-27",
   "2026-11-27",
   "2026-11-27",
   "2026-11-27"
@@ -221920,9 +222011,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 09:42",
+  "updated": "2026-11-27 09:45",
   "total": 940,
-  "week": 596,
+  "week": 595,
   "places": {
    "South Korea": 53,
    "Uranium price": 51,
@@ -221931,7 +222022,7 @@
    "Workers and jobs": 31,
    "Asia newcomers": 31,
    "AUKUS and navies": 30,
-   "Europe new builds": 28,
+   "Europe new builds": 27,
    "Piketon": 24,
    "World Nuclear News": 21,
    "War zones": 20,
@@ -225181,12 +225272,12 @@
    "built": "2026-11-27 09:18"
   }
  ],
- "heartbeat": "2026-11-27 09:42",
+ "heartbeat": "2026-11-27 09:45",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 454,
+ "_pushed_feed": 461,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -225417,8 +225508,8 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 116.04499816894531,
-  "TLN": 355.42
+  "BWXT": 116.01,
+  "TLN": 355.84
  },
  "notes_audit": {
   "scout": {
@@ -225539,8 +225630,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 88,
-   "used": 84,
+   "asked": 89,
+   "used": 85,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 5,
@@ -225548,7 +225639,7 @@
     "BWXT Leadership and insiders": 2,
     "UEC Snapshot": 9,
     "UEC Deals and contracts": 2,
-    "SECTOR Uranium market": 42,
+    "SECTOR Uranium market": 43,
     "TLN Snapshot": 18,
     "TLN What history says": 4,
     "CCJ Snapshot": 3,
@@ -225587,7 +225678,7 @@
     "VST Filings and company events": 1,
     "SECTOR Fast-lane checks": 1,
     "CCJ Legal": 1,
-    "DNN Snapshot": 1,
+    "DNN Snapshot": 2,
     "LIVE_ORDERS_RIGHT_NOW": 2,
     "open_positions": 1,
     "power_deals_and_fuel_policy": 1,
@@ -225596,13 +225687,14 @@
     "NXE Deals and contracts": 1,
     "NXE Leadership and insiders": 1,
     "SECTOR Uranium price": 1,
-    "UEC Filings and company events": 1
+    "UEC Filings and company events": 1,
+    "DNN Legal": 1
    },
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 68,
-   "used": 68,
+   "asked": 69,
+   "used": 69,
    "notes": {
     "BWXT Deals and contracts": 4,
     "BWXT Snapshot": 11,
@@ -225614,7 +225706,7 @@
     "UEC Leadership and insiders": 1,
     "TLN Deals and contracts": 3,
     "TLN Discoveries": 1,
-    "SECTOR pulse": 3,
+    "SECTOR pulse": 4,
     "CEG Snapshot": 9,
     "SECTOR Market backdrop": 1,
     "NXE Snapshot": 4,
@@ -225629,10 +225721,10 @@
     "desk_lessons_from_our_mistakes": 1,
     "CCJ What history says": 1,
     "TLN Leadership and insiders": 1,
-    "LIVE_ORDERS_RIGHT_NOW": 8,
+    "LIVE_ORDERS_RIGHT_NOW": 9,
     "UUUU Legal": 2,
     "VST Deals and contracts": 1,
-    "DNN Snapshot": 1,
+    "DNN Snapshot": 2,
     "SECTOR Plant outages": 1,
     "LEU Legal": 1,
     "Patient Levels fills: the stock's own long trend matters (20": 1,
@@ -225642,8 +225734,8 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 65,
-   "used": 64,
+   "asked": 66,
+   "used": 65,
    "notes": {
     "SECTOR Reactors and power": 2,
     "CEG Places and operations": 29,
@@ -225662,7 +225754,7 @@
     "plants_now: fleet status and open outages": 1,
     "desk_notes: CEG Places and operations": 2,
     "desk_notes: UUUU Places and operations": 2,
-    "SECTOR Uranium market": 39,
+    "SECTOR Uranium market": 40,
     "TLN Places and operations": 3,
     "UUUU Places and operations": 10,
     "UEC Business": 2,
@@ -225676,17 +225768,17 @@
     "NXE Business": 3,
     "BWXT Places and operations": 2,
     "DNN Business": 1,
-    "DNN Places and operations": 1,
+    "DNN Places and operations": 2,
     "BWXT Business": 1,
     "CEG Deals and contracts": 1
    },
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 108,
-   "used": 106,
+   "asked": 109,
+   "used": 107,
    "notes": {
-    "SECTOR Uranium market": 76,
+    "SECTOR Uranium market": 77,
     "BWXT Snapshot": 8,
     "CCJ Snapshot": 3,
     "UUUU Snapshot": 6,
@@ -225697,7 +225789,7 @@
     "CEG Legal": 1,
     "coming_up: PJM December capacity auction delay": 1,
     "VST Snapshot": 7,
-    "CEG Snapshot": 8,
+    "CEG Snapshot": 9,
     "NXE Snapshot": 3,
     "plants_now": 2,
     "UEC Snapshot": 6,
@@ -225711,7 +225803,8 @@
     "SECTOR Countries": 1,
     "Calendar: PJM auction results": 1,
     "PJM capacity auction (desk fact check)": 1,
-    "CCJ Legal": 1
+    "CCJ Legal": 1,
+    "DNN Snapshot": 1
    },
    "since": "2026-11-23"
   },
@@ -225760,13 +225853,13 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 105,
-   "used": 103,
+   "asked": 106,
+   "used": 104,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 4,
     "BWXT Snapshot": 6,
-    "SECTOR Uranium market": 50,
+    "SECTOR Uranium market": 51,
     "TLN Snapshot": 39,
     "TLN Legal": 4,
     "BWXT Legal": 3,
@@ -225795,9 +225888,9 @@
     "VST Snapshot": 2,
     "Discoveries: can we catch a news move early (fast lane)": 1,
     "CCJ Discoveries": 2,
-    "DNN Snapshot": 2,
-    "DNN Leadership and insiders": 1,
-    "DNN Discoveries": 1,
+    "DNN Snapshot": 3,
+    "DNN Leadership and insiders": 2,
+    "DNN Discoveries": 2,
     "NXE Discoveries": 1,
     "sector_pulse": 1,
     "Desk lessons": 1,
@@ -226053,7 +226146,7 @@
    ],
    [
     "2026-11-27",
-    63.87
+    63.88
    ]
   ],
   "NXE": [
@@ -226175,7 +226268,7 @@
    ],
    [
     "2026-11-27",
-    7.22
+    7.24
    ]
   ],
   "UEC": [
@@ -226419,7 +226512,7 @@
    ],
    [
     "2026-11-27",
-    1.86
+    1.85
    ]
   ],
   "UUUU": [
@@ -226663,7 +226756,7 @@
    ],
    [
     "2026-11-27",
-    84.28
+    84.78
    ]
   ],
   "BWXT": [
@@ -226785,7 +226878,7 @@
    ],
    [
     "2026-11-27",
-    116.04
+    116.01
    ]
   ],
   "CEG": [
@@ -226907,7 +227000,7 @@
    ],
    [
     "2026-11-27",
-    237.05
+    236.75
    ]
   ],
   "VST": [
@@ -227029,7 +227122,7 @@
    ],
    [
     "2026-11-27",
-    122.38
+    122.76
    ]
   ],
   "TLN": [
@@ -227151,7 +227244,7 @@
    ],
    [
     "2026-11-27",
-    355.42
+    355.84
    ]
   ],
   "AMD": [
@@ -227273,7 +227366,7 @@
    ],
    [
     "2026-11-27",
-    407.14
+    408.2
    ]
   ],
   "SMR": [
@@ -227395,7 +227488,7 @@
    ],
    [
     "2026-11-27",
-    3.35
+    3.38
    ]
   ],
   "NNE": [
@@ -227517,7 +227610,7 @@
    ],
    [
     "2026-11-27",
-    9.15
+    9.09
    ]
   ]
  },
@@ -229018,6 +229111,26 @@
    "price": 5.91,
    "result": null,
    "why": "I checked the live order list (none), the basket versus its 10-day average (below), the headlines (routine, no fresh catalyst), and the desk notes on UEC and the fuel chain. Nothing there gives a reas"
+  },
+  {
+   "role": "investigator",
+   "ticker": "DNN",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-27",
+   "price": 1.85,
+   "result": null,
+   "why": "I checked the DNN notes and recent headlines; the headlines are old or generic (cost pressure, a bounce article, a Darby update already known), and no fresh catalyst appeared. The basket is still belo"
+  },
+  {
+   "role": "macro",
+   "ticker": "DNN",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-27",
+   "price": 1.85,
+   "result": null,
+   "why": "I checked the sector pulse (basket -2.4% vs its 10-day average, pulse_up false), the uranium spot and long-term prices, and the sector ETFs. The uranium market is not moving DNN; it is a bounce inside"
   }
  ],
  "after_sale": [],
@@ -232754,6 +232867,11 @@
    1795790577.3828573,
    "UEC",
    -1
+  ],
+  [
+   1795790619.5513551,
+   "DNN",
+   -1
   ]
  ],
  "auto_log": [],
@@ -233235,7 +233353,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 09:42",
+ "watchdog_last": "2026-11-27 09:45",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
