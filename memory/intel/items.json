@@ -30517,5 +30517,87 @@
 "remain",
 "unchanged"
 ]
+},
+{
+"id": "7e18baf454e05749",
+"date": "2026-11-27",
+"ts": 1795788586,
+"title": "Decommissioning projects in Germany and Switzerland near completion",
+"summary": "The dismantling of the steal sphere of the containment vessel has begun at the decommissioned Stade nuclear power plant in Germany. Meanwhile, the demolition of the remaining concrete structure of Switzerland's Saphir research reactor is set to start.",
+"outlet": "World Nuclear News",
+"link": "https://www.world-nuclear-news.org/articles/decommissioning-projects-in-germany-and-switzerland-near-completion",
+"place": "World Nuclear News",
+"tickers": [],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.9,
+"score": 2.8,
+"echo_of": null,
+"w": [
+"completion",
+"decommissioning",
+"germany",
+"near",
+"projects",
+"switzerland"
+]
+},
+{
+"id": "185217c34bf96ae1",
+"date": "2026-11-27",
+"ts": 1795791318,
+"title": "South Korea, Vietnam expand nuclear and semiconductor ties",
+"summary": "",
+"outlet": "upi",
+"link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQczBYdk1LdlN3Sk1hSW5qUUpkWlBsLWtGclk0V3gzMUpoeWRjNkQzRWhmZ1FLVGVvbWYyVnJxUmZKYTR1NmxTTHBKTGczbG9Jd1daQmZTUlpKRDhhU3ktMUU4T3ljUnpXSmUyNnBDVzRSOFB5Vjcxd2Q3T3dDVm1NbEVGV0hyR0J3VUczR2hFVWphcjhtV2ZtdzZSV3N3Ujd1M28zZEd0YmZPQdIBrwFBVV95cUxNY2k0LVlNa3p4a21ZY1ZBU05vZGRVQWFycGc4S3ZnMFQ2ckxlN1dSU0NfTWpIUjFDcTgzZDVrdDIyblJiaVJFWTBRbnpGSUQySWlYUnlzakg3UTVqSXNtLVN6SmxhcUZGWUVuOVpuNVdicXRYZHdlYUlxWjRkUnowaWxGRkFQR3U0WjNDNm00b1EyZUZrZER0dnFtSDA0dElmQzNRaUlUckRweHRHd19j?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.73,
+"score": 3.96,
+"echo_of": null,
+"w": [
+"expand",
+"korea",
+"nuclear",
+"semiconductor",
+"south",
+"ties",
+"vietnam"
+]
+},
+{
+"id": "c66b57b7325f2386",
+"date": "2026-11-27",
+"ts": 1795792101,
+"title": "UK-Korea Civil Nuclear Cooperation Protocol 2026",
+"summary": "",
+"outlet": "CASRAI",
+"link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdzNhd0NvOXhVTFBXZGc0UVpVcWNlS2FldUFKTmV0UVRvUm5NUndOZVZCbGc2UmtuLWpDbWZ4V3NWd1NOX3U3czFpTmd5b09nNFAtVzR2QnYyNFpDOEdUOG5jZ2s0aVBMM2lwOTZLcGxLR00tUW5yN2UzcndCc1E4UG16MGhlcmlQRW5neG5tWWNFM1ZaT3FORg?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.73,
+"score": 3.96,
+"echo_of": null,
+"w": [
+"2026",
+"civil",
+"cooperation",
+"korea",
+"nuclear",
+"protocol"
+]
 }
 ]
