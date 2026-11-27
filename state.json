@@ -1,7 +1,7 @@
 {
  "created": "2026-11-20",
  "book": {
-  "cash": 82.44329522522203,
+  "cash": 248.503194009872,
   "lots": {
    "CCJ": {
     "trade": {
@@ -81,19 +81,8 @@
      "cost": 0.0
     },
     "panic": {
-     "qty": 30.358299595,
-     "cost": 149.9699999993,
-     "setup": "panic_rebound",
-     "by": "rules",
-     "exit_on": "2026-12-01",
-     "stop": null,
-     "target": null,
-     "why": "market -3.6%, UUUU -10.0% today and -41% under its 20-day high",
-     "opened": "2026-11-20",
-     "entry_time": "2026-11-20 15:34",
-     "entry": 4.94,
-     "exit_reason": "banked the jump: opened +5.4% vs yesterday's close; buying back near the close",
-     "selling": "2026-11-27"
+     "qty": 0.0,
+     "cost": 0.0
     },
     "auto": {
      "qty": 2.976424361,
@@ -303,6 +292,27 @@
     "stop": 244.04,
     "target": 256.79,
     "zone": 247.0
+   },
+   {
+    "ticker": "UUUU",
+    "setup": "panic_rebound",
+    "by": "rules",
+    "entry_time": "2026-11-20 15:34",
+    "entry": 4.94,
+    "exit_time": "2026-11-27 09:53",
+    "exit": 5.47,
+    "dollars": 149.97,
+    "pnl": 16.09,
+    "ret": 10.73,
+    "why_in": "market -3.6%, UUUU -10.0% today and -41% under its 20-day high",
+    "why_out": "banked the jump: opened +5.4% vs yesterday's close; buying back near the close",
+    "risk_pct": null,
+    "stop": null,
+    "target": null,
+    "zone": null,
+    "entry_fill": null,
+    "realistic_cost": 0.45,
+    "realistic_pnl": 15.64
    }
   ],
   "equity": [
@@ -332,7 +342,12 @@
    ]
   ],
   "peak": 1054.400551051144,
-  "unsettled": [],
+  "unsettled": [
+   [
+    166.05989878465,
+    "2026-11-30"
+   ]
+  ],
   "weeks": [
    {
     "week": "2026-W47",
@@ -458,8 +473,9 @@
     "auto"
    ]
   ],
-  "realized_st": -12.96,
-  "core_w": {}
+  "realized_st": 3.13,
+  "core_w": {},
+  "realistic_costs": 0.45
  },
  "flags": {
   "morning_done": "2026-11-27",
@@ -9357,12 +9373,12 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.16216,
+  "day_usd": 0.16795,
   "month": "2026-11",
-  "month_usd": 2.25634,
-  "total_usd": 2.25634,
+  "month_usd": 2.26213,
+  "total_usd": 2.26213,
   "by_role": {
-   "macro": 0.22528,
+   "macro": 0.22671,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.26798,
@@ -9370,8 +9386,8 @@
    "review": 0.11073,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.34593,
-   "risk": 0.22173,
+   "pm": 0.34817,
+   "risk": 0.22385,
    "investigator": 0.36991,
    "postmortem": 0.00035,
    "researcher": 0.02341,
@@ -9600,6 +9616,7 @@
   "19be7f56-6d3e-4d2c-a41d-8cbe5100f1f5",
   "511293ba-a9a6-418d-a9d5-19f9c326bf14",
   "4953f2fd-a7cf-4aa1-819b-3a19040f2a9f",
+  "e44231a4-0da6-4012-834a-619048d8d2de",
   "f71259b8-bee2-4957-bbbd-daaf86218385",
   "7f3f3a16-8a14-4856-8ff5-bf0763189311",
   "3633f6dd-490a-45d0-972c-942d61021cea",
@@ -9618,23 +9635,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 64.13,
-  "NXE": 7.24,
-  "UEC": 5.88,
+  "CCJ": 64.1,
+  "NXE": 7.25,
+  "UEC": 5.89,
   "DNN": 1.86,
-  "UUUU": 5.49,
-  "LEU": 84.47,
+  "UUUU": 5.5,
+  "LEU": 84.29,
   "BWXT": 115.4,
-  "CEG": 234.77,
-  "VST": 121.75,
-  "TLN": 354.22,
-  "AMD": 403.89,
+  "CEG": 234.44,
+  "VST": 121.54,
+  "TLN": 353.57,
+  "AMD": 402.86,
   "SMR": 3.35,
-  "NNE": 9.22,
-  "SPY": 721.76,
+  "NNE": 9.21,
+  "SPY": 721.43,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 09:53 ET",
+ "last_cycle": "2026-11-27 09:54 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -9697,10 +9714,10 @@
   ]
  },
  "brakes": {
-  "equity": 1027.14,
-  "day_pct": 2.16,
-  "week_pct": 2.66,
-  "drawdown_pct": -2.58,
+  "equity": 1025.45,
+  "day_pct": 1.99,
+  "week_pct": 2.49,
+  "drawdown_pct": -2.75,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -13722,6 +13739,14 @@
   [
    "2026-11-27 09:53",
    1027.14
+  ],
+  [
+   "2026-11-27 09:53",
+   1025.95
+  ],
+  [
+   "2026-11-27 09:54",
+   1025.45
   ]
  ],
  "nowcast": {
@@ -58418,7 +58443,7 @@
     0.8428
    ]
   },
-  "time": "2026-11-27 09:53"
+  "time": "2026-11-27 09:54"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -215802,6 +215827,66 @@
    ],
    "practice": false,
    "end": "09:48"
+  },
+  {
+   "id": "20261127095344852059",
+   "title": "Huddle: a trade opened or closed since the last huddle",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-27 09:53",
+   "msgs": [
+    {
+     "t": "09:53",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: a trade opened or closed since the last huddle.",
+     "outcome": false
+    },
+    {
+     "t": "09:53",
+     "who": "macro",
+     "to": "chief",
+     "text": "Market-wide weakness is the story here: the basket sits about 2.4% under its 10-day average, the S&P is down about 7% this month, and the VIX has fallen sharply, so this is not a fear spike. Our nuclear names are moving with the group, not on their own news, so I see no stock-specific reason to act. I'd stay out of new buys until the basket reclaims its 10-day average.",
+     "outcome": false,
+     "notes": "why: Checked the sector pulse (below the 10-day average), the S&P trend, and the VIX; the sell-off looks broad, and the desk notes say weak basket regimes tend to lose for our names, so no new buys today.\nfiles read: SECTOR Uranium market, SECTOR Government and laws"
+    },
+    {
+     "t": "09:53",
+     "who": "risk",
+     "to": "macro",
+     "text": "Basket is below its 10-day average, so the desk's no-new-buys rule applies and no setup is valid. I agree with Macro Analyst: the drop is group-wide, not stock-specific news, so there is nothing to act on today. We stay flat until the basket reclaims its 10-day average.",
+     "outcome": false,
+     "notes": "why: The basket sits about 2.4% under its 10-day average, which blocks every new buy under the desk rule. Level setups for NXE, UEC, DNN, UUUU, LEU, VST and TLN were all skipped for that reason, and the notes show buying weakness in this group lost to the S&P in 2008-18.\nfiles read: SECTOR Uranium market, CEG Discoveries, CEG Price behavior"
+    },
+    {
+     "t": "09:53",
+     "who": "pm",
+     "to": "risk",
+     "text": "Nothing to act on. The basket is still below its 10-day average, which blocks any new buys, and no trades are open or waiting, so there is nothing to sell or cancel. I agree with Risk Manager and Macro Analyst that the drop is group-wide, not stock-specific news.",
+     "outcome": false,
+     "notes": "action: none\nreason: No open trades or resting orders exist, the basket is below its 10-day average so the no-new-buys rule applies, and the weakness is sector-wide rather than company news, so there is nothing to exit or skip.\ndate: 2026-11-30\nwhat: Patient Levels buy window expires; re-check whether the basket has reclaimed its 10-day average before any new setup.\nfiles read: SECTOR Uranium market"
+    },
+    {
+     "t": "09:53",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:53"
   }
  ],
  "feed": [
@@ -221301,6 +221386,18 @@
     "sub": "Buying back near the close"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-27 09:53",
+   "who": "chief",
+   "kind": "alert",
+   "title": "BANKED THE JUMP UUUU",
+   "text": "Opened up big, sold at $5.47 (+10.7% on this piece). Buying back near the close unless the trade is done.",
+   "tickers": [
+    "UUUU"
+   ],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -221492,7 +221589,7 @@
    "text": "How are we looking team, progress wise are we learning and getting better? I can see that we have minimized the loss for today pretty well as we were below the initial investment at some point."
   }
  ],
- "huddle_trade_count": 1,
+ "huddle_trade_count": 2,
  "huddle_seen": {
   "fast move: LEU moved -1.5% in 3 min": 1795790180.7418876,
   "BWXT (you asked us to watch it) moved +1.8% since we last looked": 1795790180.741888,
@@ -221500,9 +221597,10 @@
   "fast move: UEC moved -1.5% in 9 min": 1795790577.3833144,
   "fast move: sector move: 4 of our nuclear stocks moving down together (LEU, NXE, UEC, UUUU)": 1795790577.3833146,
   "fast move: DNN moved -1.6% in 9 min": 1795790619.5515804,
-  "fast move: UEC moved -1.5% in 4 min": 1795790868.81404
+  "fast move: UEC moved -1.5% in 4 min": 1795790868.81404,
+  "a trade opened or closed since the last huddle": 1795791224.850664
  },
- "huddle_last": 1795790868.8140447,
+ "huddle_last": 1795791224.8506684,
  "huddle_log": [
   "2026-11-24",
   "2026-11-24",
@@ -221514,7 +221612,6 @@
   "2026-11-24",
   "2026-11-24",
   "2026-11-24",
-  "2026-11-24",
   "2026-11-25",
   "2026-11-25",
   "2026-11-25",
@@ -221549,6 +221646,7 @@
   "2026-11-25",
   "2026-11-25",
   "2026-11-25",
+  "2026-11-27",
   "2026-11-27",
   "2026-11-27",
   "2026-11-27",
@@ -222151,7 +222249,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 09:53",
+  "updated": "2026-11-27 09:54",
   "total": 942,
   "week": 596,
   "places": {
@@ -225412,12 +225510,12 @@
    "built": "2026-11-27 09:50"
   }
  ],
- "heartbeat": "2026-11-27 09:53",
+ "heartbeat": "2026-11-27 09:54",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 463,
+ "_pushed_feed": 464,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -225649,7 +225747,7 @@
  },
  "boss_watch_px": {
   "BWXT": 115.4,
-  "TLN": 354.22
+  "TLN": 353.575
  },
  "notes_audit": {
   "scout": {
@@ -225833,14 +225931,14 @@
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 70,
-   "used": 70,
+   "asked": 71,
+   "used": 71,
    "notes": {
     "BWXT Deals and contracts": 4,
     "BWXT Snapshot": 11,
     "BWXT Leadership and insiders": 2,
     "TLN Snapshot": 8,
-    "SECTOR Uranium market": 61,
+    "SECTOR Uranium market": 62,
     "BWXT Discoveries": 2,
     "UEC Snapshot": 12,
     "UEC Leadership and insiders": 1,
@@ -225915,14 +226013,14 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 110,
-   "used": 108,
+   "asked": 111,
+   "used": 109,
    "notes": {
-    "SECTOR Uranium market": 78,
+    "SECTOR Uranium market": 79,
     "BWXT Snapshot": 8,
     "CCJ Snapshot": 3,
     "UUUU Snapshot": 6,
-    "SECTOR Government and laws": 72,
+    "SECTOR Government and laws": 73,
     "TLN Snapshot": 43,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
@@ -225993,13 +226091,13 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 107,
-   "used": 105,
+   "asked": 108,
+   "used": 106,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 4,
     "BWXT Snapshot": 6,
-    "SECTOR Uranium market": 52,
+    "SECTOR Uranium market": 53,
     "TLN Snapshot": 39,
     "TLN Legal": 4,
     "BWXT Legal": 3,
@@ -226013,7 +226111,7 @@
     "TLN Discoveries": 3,
     "TLN Leadership and insiders": 15,
     "CEG Snapshot": 2,
-    "CEG Price behavior": 8,
+    "CEG Price behavior": 9,
     "NXE Snapshot": 5,
     "NXE Legal": 4,
     "UEC Legal": 1,
@@ -226034,7 +226132,7 @@
     "NXE Discoveries": 1,
     "sector_pulse": 1,
     "Desk lessons": 1,
-    "CEG Discoveries": 2,
+    "CEG Discoveries": 3,
     "already_checked_facts: recurring pattern buying weakness": 1,
     "How to read the team's own predictions": 1,
     "SECTOR basket gate": 1,
@@ -226286,7 +226384,7 @@
    ],
    [
     "2026-11-27",
-    64.13
+    64.1
    ]
   ],
   "NXE": [
@@ -226408,7 +226506,7 @@
    ],
    [
     "2026-11-27",
-    7.24
+    7.25
    ]
   ],
   "UEC": [
@@ -226530,7 +226628,7 @@
    ],
    [
     "2026-11-27",
-    5.88
+    5.89
    ]
   ],
   "DNN": [
@@ -226774,7 +226872,7 @@
    ],
    [
     "2026-11-27",
-    5.49
+    5.5
    ]
   ],
   "LEU": [
@@ -226896,7 +226994,7 @@
    ],
    [
     "2026-11-27",
-    84.47
+    84.29
    ]
   ],
   "BWXT": [
@@ -227140,7 +227238,7 @@
    ],
    [
     "2026-11-27",
-    234.77
+    234.44
    ]
   ],
   "VST": [
@@ -227262,7 +227360,7 @@
    ],
    [
     "2026-11-27",
-    121.75
+    121.54
    ]
   ],
   "TLN": [
@@ -227384,7 +227482,7 @@
    ],
    [
     "2026-11-27",
-    354.22
+    353.57
    ]
   ],
   "AMD": [
@@ -227506,7 +227604,7 @@
    ],
    [
     "2026-11-27",
-    403.89
+    402.86
    ]
   ],
   "SMR": [
@@ -227750,7 +227848,7 @@
    ],
    [
     "2026-11-27",
-    9.22
+    9.21
    ]
   ]
  },
@@ -233498,7 +233596,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 09:53",
+ "watchdog_last": "2026-11-27 09:54",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -233816,8 +233914,9 @@
     "entry": 4.94
    },
    "anchor": 4.94,
-   "proceeds": 166.67,
-   "jump_pct": 5.4
+   "proceeds": 166.06,
+   "jump_pct": 5.4,
+   "sold_at": 5.47
   }
  },
  "gapdown_shadow": [
