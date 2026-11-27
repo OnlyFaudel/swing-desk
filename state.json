@@ -918,7 +918,8 @@
   "ahdip171:2026-11-27": true,
   "nightwatch171:2026-11-27": true,
   "earnread:2026-11-27": true,
-  "ahdip172:2026-11-27": true
+  "ahdip172:2026-11-27": true,
+  "nightwatch172:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -5807,42 +5808,6 @@
  "news_feed": [
   {
    "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Jaguar Uranium Reports Initial Mineral Resource Estimate of 15.3 Million Pounds U3O8 at Berlin Project - Kalkine Media",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPTjgzWmQ5YzBIRUFoZGJGVDBBam40WlVsMGV2dDZqOVc0SVEzRzF2dF9rcFFrQjR1U1N5aUZ4Z210ZGQ5TUQ0WVlIcDBQaVdzZG1EbHBmTDZ4Y09BOG9TSE1mR2oydDJrcEFidlluT0lhU3A1cU5xb3JBV3Y3Szk3Q1oxTEF0NzZJUlNKRUt2SEdlSW1hV0pfWWhwamY4Y0tMVnktVkpVb3Y3Tld5c1l4VFg4SFlheUpJYmFoRlcxeF9PQlZkSDVST1hFaDItcWN2S2ZBTlVhMFpYWDhxWWo3VHdR?oc=5",
-   "ts": 1795608016,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Junior explorer's resource estimate at a different project; not new information for Cameco."
-  },
-  {
-   "ticker": "CEG",
-   "source": "Google News: nuclear power data center deal",
-   "title": "Google\u2019s grid deal in Ohio tests a faster path to data center power - Latitude Media",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNVZKQnpyT1U4c0NYRkozZXk4VlgxQ2hhdU9ZajJDRVowZkxmSzBCMF9vSWM5cHFvSTg3MU5FZ2p0aW5MTEo1TnU4MUFic291NmFoVzd6YkNwcjlBajVfTmZuYnJfeGZuVHZEZVgwX0JiZ0hIRmVUcmxKbko3VTQyTFBmRV9qckM2WVhKRnhyOVdhWnloMHFxQnZtYzFtcHhoV210Zg?oc=5",
-   "ts": 1795630824,
-   "materiality": 6,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "contract_deal",
-   "why": "Google grid deal in Ohio is a new data-center power route, but mostly a template, not a signed CEG contract."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Boss Energy (ASX:BOE): What Does the FY27 Guidance Say About Honeymoon Uranium Output? - Kalkine",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSkExSnROeFF5WVByUGJFRmtBanNwQ3JlOHRuN1ZyTDFudHh0dERhNlRBcEZnY09aeVVvdThMM3dQU2ZvblRTbWlvVDVuVnlRQkttNjVHMUp2M3ZfR196WUl5cFh4bFJnc1R0YklfWGJ5Q1JpdC1zcUZmejJ5Mjl1bWljWjhZZE5iZUJLbERRLW9hQ1ZQNTJyWXRoMDhRZGtRZmExSGFFQ05UbjFDYTdXeVg1b09USEU?oc=5",
-   "ts": 1795584360,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Headline is about Boss Energy (an Australian miner) guidance, not Cameco; only indirect sector read."
-  },
-  {
-   "ticker": "CCJ",
    "source": "Local intel: DD News (India)",
    "title": "IAEA Director General praises India\u2019s major nuclear milestone at Kalpakkam",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVWxGS0E3OGdYNERrUXpFUVJGeUZrSjBjQ21HeU9vOXNZSFZzYkRqaG9zX1ZnZmFmNVoySG1SR1duNHY4VTJKUUFtbW95Z0dUdTljOHpHc203ZTI0dXhsRXg2S1l2Tl9xNDFRYTFQdjRHQmdTX3NCNGpfMGRrZUlFSzhsd2xvMTF2UHlFM3BMbHJaS0Q4UEdXcWswRjY4Z2RE?oc=5",
@@ -8804,6 +8769,42 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic price recap of a stock rise; no new company-specific information."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News",
+   "title": "BWX Technologies (NYSE:BWXT) Stock Jumps 2.9% - Should You Buy? - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSlBGZlJ0dUd4SEl1LTA0SEhvSkM3YWt2eFFiOTJCcXNEUkpHMWdudjFfWHBTQXREbkREaGZFZzA0ZVRvNnR4RzlVMGJCTDlXaENaT1dXbC1NbFZvWUhDclhONEF4ZEpuTS1rZlZ2bHZEZXluWTFGM3lwUzhXS2lVbFNQYjFVUnNLdG1nSi1yc0xjV0ZFT3VNel9xTGtTdElCTHY5ZURJMEFpbjFQODk5Qjh6OHJGUXM?oc=5",
+   "ts": 1795818859,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Routine MarketBeat price recap of a 2.9% jump; no new company information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "Cameco (NYSE:CCJ) Stock Jumps 4% - What's Next? - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaERWT0hQck5vUFBsUG96SHBwZjY1U3oxQ0s4RjRubUZKamNHTUVteGpNMWxoSFE1OGRwSmJNckhiWlF2Q3JsN21yVHA5S0RFc0VPeVhVd0p2M0pKRVA4SWkwOWxQSGNhX1J5SDJtUUVSdXQ2bXc2QWl3UDd5SFJBSlJ0MjlnN284Tk9Pa2ZobG5JeUZUTExuNXlfaUpxdGVUTHc?oc=5",
+   "ts": 1795818868,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic MarketBeat price-move recap with no new company information."
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News",
+   "title": "Vistra (NYSE:VST) Shares Up 1.2% - What's Next? - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcTlpbExqanFPWGxoZTVTYTJUN2ZZZ21McDVRcnBiV2hCN3ZyT2NGMEZhejhtR3NyZWk4WnNBTTg5d3h4VExhNGdHNjY5QWlfTE9vSUtDOXVPTVNtV1g0SFFhZEtBVFp0VkIxcGd0OG52NFV5VFBYdEQ0WTlXQ1ppM0p2N0xrUXpoellJRW05U1JhRFgzcDl1aU1peGVZTWs1?oc=5",
+   "ts": 1795818858,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic MarketBeat price-move recap; a 1.2% move is routine noise."
   }
  ],
  "reviews": [
@@ -9231,7 +9232,7 @@
      "whale": 0.02631,
      "crowd": 0.01703,
      "level": 0.35215,
-     "scout": 0.26549,
+     "scout": 0.26641,
      "review": 0.23667,
      "auditor": 0.04723,
      "strategist": 0.18937,
@@ -10935,16 +10936,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.73376,
+  "day_usd": 0.73468,
   "month": "2026-11",
-  "month_usd": 2.82795,
-  "total_usd": 2.82795,
+  "month_usd": 2.82887,
+  "total_usd": 2.82887,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.26549,
+   "scout": 0.26641,
    "review": 0.23667,
    "auditor": 0.04723,
    "strategist": 0.18937,
@@ -11225,7 +11226,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 17:33 ET",
+ "last_cycle": "2026-11-27 17:43 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -60646,8 +60647,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "7cabb45f8b0c2778",
   "4ee30073db1990ac",
+  "7cabb45f8b0c2778",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -60689,10 +60690,10 @@
   "80ca077103e2454d",
   "bfa4d042201cf513",
   "982ae178b039d112",
-  "5152638d88885c07",
   "c58aba704a7847d3",
-  "1715e61816aa5619",
+  "5152638d88885c07",
   "1acc6842cd4f6e64",
+  "1715e61816aa5619",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -60824,14 +60825,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "1ed195cb4396cbe7",
   "7c380c991c59f9ba",
+  "1ed195cb4396cbe7",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -60883,6 +60884,7 @@
   "1744c42d9aa30cb5",
   "29d23ebb15d8cf15",
   "351691d26ec6208e",
+  "8a2e5bc8d94458f2",
   "d4097d0d8db37e23",
   "746b7e054f7d3025",
   "c049df8a8ab48453",
@@ -61069,6 +61071,7 @@
   "7d5bb02004db2606",
   "db717c49c87232b4",
   "15d6f9963fcdf41e",
+  "1fe9b8a9e95575d8",
   "0028541e109c6801",
   "61659cb80b158a77",
   "aff7a540bd30b75a",
@@ -61385,6 +61388,7 @@
   "00dd4e324f5b633b",
   "f9eb7cbce2793d86",
   "2a342a93243dcfd4",
+  "3c98890f5cc721ed",
   "32e4d8b7ad987963",
   "7f7a05be6b3ac1f5",
   "ba95c26fe9cef12b",
@@ -61443,7 +61447,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795818592.9668489,
+ "news_slow_at": 1795819199.8611832,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -227080,14 +227084,14 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 17:33",
+  "updated": "2026-11-27 17:43",
   "total": 985,
-  "week": 595,
+  "week": 594,
   "places": {
    "South Korea": 56,
    "Uranium price": 52,
    "Kazakhstan": 42,
-   "Weapons programs": 34,
+   "Weapons programs": 33,
    "Workers and jobs": 32,
    "AUKUS and navies": 29,
    "Asia newcomers": 29,
@@ -227319,24 +227323,6 @@
     ],
     "score": 7.22,
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdk00SVRqT1A0Uk1tcFZIYk81SmJJckRVYlR0R2QyajFMSExkZWN2QVhDdjFFY3EwR3NJWnNvLTNmeXJ2RXFZQWlzZmVzNXJEVWZtc0ZmUVhiWVd1Z1RON0hBRDg1R2ZKN1FPeDhQVi1DYWZfbnRfZlhBeEc4OWFTWldIYmNuMjczRGliSDl5WmZEQ19EWXZnYjNtMlZfbmJVazBuUXNDX1hfejFlUEJ1bFFIMA?oc=5"
-   },
-   {
-    "date": "2026-11-20",
-    "title": "Trump says China is building nuclear weapons \u2018hot and heavy\u2019, warns it could catch US in 10 years | World News",
-    "outlet": "Hindustan Times",
-    "place": "Weapons programs",
-    "tickers": [
-     "BWXT",
-     "LEU"
-    ],
-    "tags": [
-     "restart",
-     "defense",
-     "geopolitics"
-    ],
-    "numbers": [],
-    "score": 7.22,
-    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQUGVLcFRsOTRYblpONE1NQW1Vc1VxVU14Nms2ZFlfd3JMckh4RUdMZVFmZm8zQTVTZGFDVmFOdE50ZFJBLV9VYU1MeUllMGpCaTJyeGtuUUZuMzNJWnRxNzViQW5pdFNsQUxub3NXR3BfSmtXcHd5N0pFWklPY3VXQjA1RlVXeDlkZngzM29iNW0tS284a3BBRWVnNW5iSExoUTVDYVUyYW5sVC0yd3I5bnAwTWJodWNFcHN1THFIZ1RJTEQ1X1hJZ0xUNjV3UjkxdGtxVkNlVVRWZ2tJQ2VjU2gwLVVDald3NFV1a01zZHRjalnSAfMBQVVfeXFMUFBlS3BUbDk0WG5aTjRNTUFtVXNVcVVNeDZrNmRZX3dyTHJIeEVHTGVRZmZvM0E1U2RhQ1ZhTnROdGRSQS1fVWFNTHlJZTBqQmkycnhrblFGbjMzSVp0cTc1YkFuaXRTbEFMbm9zV0dwX0prV3B3eTdKRVpJT2N1V0IwNUZVV3g5ZGZ4MzNvYjVtLUtvOGtwQUVlZzVuYkhMaFE1Q2FVMmFubFQtMndyOW5wME1iaHVjRXBzdUxxSGdUSUxENV9YSWdMVDY1d1I5MXRrcVZDZVVUVmdrSUNlY1NoMC1VQ2pXdzRVdWtNc2R0Y2pZ?oc=5"
    },
    {
     "date": "2026-11-26",
@@ -227713,14 +227699,30 @@
     "numbers": [],
     "score": 6.36,
     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUkhJWUVIb1h2d2JjUzhQSTN2eF96SHk2QzVOTGJ1aWR1ODBFX1lLZkFIOGV1bzFhNU1mUW8xNDQzOWp4UVNVSHVaUC1YcWR3TUthendKNDM3UTY1TTdka0llbHA1ZXVJTUtERm01U1BiSXJKbmJaYmNwd0I1dHh4cW1Qc2pGbUFuZS04eHNGazV3dEpROTg5V3BRbmFQV3J0RUNNa0hZb19RcHlBTlhOU1Z3?oc=5"
+   },
+   {
+    "date": "2026-11-22",
+    "title": "'They are wrong': Defence minister denies US report on AUKUS submarines",
+    "outlet": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
+    "place": "AUKUS and navies",
+    "tickers": [
+     "BWXT"
+    ],
+    "tags": [
+     "politics",
+     "defense"
+    ],
+    "numbers": [],
+    "score": 6.36,
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOWtpN1dKN09aTmh2clZaSmp6X0ZDZ3dicUp4NDl0b3JtT21ZTlp5MjNoM3UxX1VTQnNTRXhiUDNTc095U3luZ1IyZ0g1NUY2SG9ldjV6a3RSSHpDR2ZEOFV0S1BlT3plVnk4SGpVd0FIVUJHYm5XanBGTld4b0tnUWtEaDBVdTBUQno2T0U3emdJYUk3Wk5lT1o2THU1MUZ4dnphb0R5Q1M0ZDVFcFpwM1JB?oc=5"
    }
   ]
  },
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "b2362be41ae616f1",
   "fd337937e7471e2a",
+  "b2362be41ae616f1",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -227769,10 +227771,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "22ab37dfabeba433",
   "688d746cfc31b58f",
-  "85de31670d4daf9d",
+  "22ab37dfabeba433",
   "f815e45da305cee7",
+  "85de31670d4daf9d",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -230475,7 +230477,7 @@
    "built": "2026-11-27 17:32"
   }
  ],
- "heartbeat": "2026-11-27 17:33",
+ "heartbeat": "2026-11-27 17:43",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -230716,12 +230718,12 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 498,
-   "used": 457,
+   "asked": 500,
+   "used": 459,
    "notes": {
     "TLN Deals and contracts": 21,
-    "CCJ Deals and contracts": 82,
-    "BWXT Deals and contracts": 56,
+    "CCJ Deals and contracts": 83,
+    "BWXT Deals and contracts": 57,
     "SECTOR Government and laws": 138,
     "UUUU Deals and contracts": 47,
     "SECTOR Countries": 143,
@@ -230736,7 +230738,7 @@
     "SECTOR Uranium market": 11,
     "CCJ Legal": 18,
     "CEG Legal": 5,
-    "VST Deals and contracts": 39,
+    "VST Deals and contracts": 40,
     "LEU Legal": 1,
     "VST Legal": 2,
     "TLN Legal": 2
@@ -239342,7 +239344,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 17:33",
+ "watchdog_last": "2026-11-27 17:43",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
