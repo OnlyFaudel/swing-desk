@@ -638,13 +638,15 @@
   "orbsip_t": 1795760026.701552,
   "catalysts2:2026-11-27": true,
   "ev:f5e72e5ea293": true,
-  "orbsip_fix_t": 1795780401.0686438,
+  "orbsip_fix_t": 1795782280.5885315,
   "questioner:2026-11-27:3": true,
   "premarket:2026-11-27": true,
   "uprice:2026-11-27": true,
   "congress:2026-11-27": true,
   "jobs:2026-11-27": true,
-  "ev:39c7e07040ee": true
+  "ev:39c7e07040ee": true,
+  "weather:2026-11-27": true,
+  "questioner:2026-11-27:4": true
  },
  "benchmark": {
   "shares": {
@@ -4228,66 +4230,6 @@
  },
  "news_feed": [
   {
-   "ticker": "TLN",
-   "source": "Google News: \"Talen Energy\"",
-   "title": "Talen Energy Corporation $TLN Holdings Reduced by Sachem Head Capital Management LP - MarketBeat",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZzZRNjFrQ3FDaWFQa1AyNXV3LVJSVGtnZS1qN091ZDdCQTByOTRKRTJYTFQ1Y0dSbzdBWkNCcm5ja2hiaHNOcXc1RnFOQ3Y3bXRZbUhpS3Z5bDdxSlA0MXRWbzN6WXdmV0Njb09qbEI3MjlYSEdpUlZpRUlURlptNTRJTHM0Qkh2ck92cVV1ZFlHOFlBWlpOWkxhaXI5azhwQnVZZ0Y5ZmdLNXZiYXlTbVkxRUFiN0g4OENFSm1Pa0dEOXZsVVB4TEt1ZWdoc0FhVEdfRk9tYXRLUjQ?oc=5",
-   "ts": 1795606868,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Routine 13F-style holdings change by one fund; no company news."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: Kazatomprom",
-   "title": "Kazatomprom board member detained in Kazakhstan corruption probe - Operativ M\u0259lumat M\u0259rk\u0259zi",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUENxVTlNVEc3RUlJam5Zel9kQUZiMXFxQjc5cE9wTkxKejg4YW51NWxUd2NGNUhCZlBYWjg3UXg2cTBPaFlEZGNxTkdDeVJ1VmlDNUVtOU45VW53NHpGbFM1MkdmU0RscmdMSkpZdXctZ016eDExQjJqSHVybGF5WTY3am5pQkw5NjdZUGpNVVkzMjhPaWNqSTBxX2Z2MzhhTnc?oc=5",
-   "ts": 1795606361,
-   "materiality": 5,
-   "novelty": "new",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Kazakh board member detained could raise governance and supply worries for Kazatomprom, Cameco's key partner."
-  },
-  {
-   "ticker": "NXE",
-   "source": "Google News: \"NexGen Energy\"",
-   "title": "NexGen Energy Ltd. (NXE) Says Rook I Construction Is Advancing - TradingView",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZGV4YldPalZiUzZlVURWc1Y2OG5uQmxtNWN3OHh1ZTEzaFZpSFBCcjY0Z1FWU2c3YjZQWlNzR1k5c2tBZmJrVjFIanpLZDhQeGgtNXduVFRRWGZhSVJxS1dOLUpKTXVHWHJXOVEtaF9WWERwWmFGdmpUVWRDRE9TZl83ZEhnaXhqWFR0bFRKZVpiNUQzY3JKcU9ZR2lFSDhuTXg5c0pqM3FtZUNnTDZxYjdoUk5OQUt4SmRTaU13?oc=5",
-   "ts": 1795606200,
-   "materiality": 2,
-   "novelty": "follow_up",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Routine construction progress update; already expected after CNSC license."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "PR Newswire energy",
-   "title": "JAGUAR URANIUM ANNOUNCES MAIDEN MINERAL RESOURCE ESTIMATE AT THE BERLIN POLYMETALLIC PROJECT IN COLOMBIA",
-   "link": "https://www.prnewswire.com/news-releases/jaguar-uranium-announces-maiden-mineral-resource-estimate-at-the-berlin-polymetallic-project-in-colombia-302950016.html",
-   "ts": 1795607700,
-   "materiality": 2,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Exploration-stage resource in Colombia, a different project, small and not a producing asset for CCJ."
-  },
-  {
-   "ticker": "UUUU",
-   "source": "Google News: \"Energy Fuels\" uranium",
-   "title": "Energy Fuels to restart White Mesa as US uranium production falls - energynews.pro",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX3lwSzNWWnlvaVppTVJRSVhhQ18wRlZkd1NtMVhXZlpqSVZnWXEyYzlYUjZEdVRuMDByLW54OHRsUmNDaXMzdnFNMFlLRmdvS0lLcW9CdldaYll6QjFxY2FobXlpd3NvandUcEZRY0lWT3NNTUQ2cE9hZzJTXzktNjY0REE5V1h6eE5yWG5hRDllODhEcVE?oc=5",
-   "ts": 1795589345,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Restart of White Mesa is old news, and the article is a rehash of known production plans."
-  },
-  {
    "ticker": "CCJ",
    "source": "Local intel: Businesskorea (South Korea)",
    "title": "Industry Minister Says Czech Nuclear Deal Must Stay Team Korea",
@@ -7226,6 +7168,66 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Kazatomprom revenue growth is a rehash of already-reported production and pricing data."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Kazatomprom",
+   "title": "Kazatomprom\u2019s assets increase 3.2% to about $9 billion as of September - Trend News Agency",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBuQlJ6ZTZwUzJKQ1dGaE0zY0Q4cmF3eE83T2pFRnhLTlFHMHdfLWdWdVVTRFVjUDBWUVFqcW5wRE1OQVJ4MXE4b0hwLTFVTEhVdUhudUNieWdJUS1FQUNv?oc=5",
+   "ts": 1795781768,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Kazatomprom asset growth is a financial-size headline, not production or pricing news."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News",
+   "title": "Constellation Energy Sinks 10% in a Week, NuScale 17%, as \u201cthe Jensen Huang Stock Put Is Fading\u201d - TIKR.com",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNZF85UFViZmMwbWVwYTNKZkZHSmNTS2hqcVRFd2RhdjFvZ3ZIRXRrU0t5dmlIaXJUMS1CRkRCUko3aXJNMzNDcVlNSWN0QTltQUNqUEdfeUJSX3pfWTh0WWl2MGJOMDRnX0FHeVdnc25oQUZaT3RJdXRQVjVRbzJTNElNMXlPcU10akhpN2xTWGlmOHlzYjM4a182Szlob09PQmVPU2M1Q3dBM2x0TUhsNGljbG5TUkxSMWt0VDVjUWNaOTM3MHN5c1N0QzQwYk5UeXFKN1NPLVN2RUpNcmhJbFNoS0hPMV9zeUw0OHhR?oc=5",
+   "ts": 1795783444,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "down",
+   "event_type": "analyst",
+   "why": "Recap of a past week's price drop tied to a sentiment shift; not new company information."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Yahoo (VST, related to CEG)",
+   "title": "Which Gives You More Power Demand, Exelon Or Vistra?",
+   "link": "https://www.trefis.com/stock/exc/articles/629337/which-gives-you-more-power-demand-exelon-or-vistra/2026-11-27?.tsrc=rss",
+   "ts": 1795781766,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Comparison piece on power demand; opinion, and the headline pairing is unrelated noise."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Kazatomprom",
+   "title": "Kazatomprom says management changes will not affect operations or 2026 outlook - Trend News Agency",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBPdldkUEVxeDdqWVFKY1p0MGVUeEtKX0s4bTJEbWpnSDNodm1UQlFybzdPWHd4Rlloc1FBbXU1T0ZYaGhTWlBqcVNmaDhaekVYc1gxQ3hLZHNCQnN6Yy0w?oc=5",
+   "ts": 1795784141,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Kazatomprom management shuffle, company says operations and 2026 outlook unchanged."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Yahoo (CEG, related to CCJ)",
+   "title": "Constellation Completes $5B Sale of 4.4GW PJM Assets to LS Power",
+   "link": "https://finance.yahoo.com/energy/articles/constellation-completes-5b-sale-4-163543407.html?.tsrc=rss",
+   "ts": 1795710943,
+   "materiality": 2,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "CEG selling gas plants to LS Power; gas assets, not nuclear, little uranium demand effect."
   }
  ],
  "reviews": [
@@ -8985,26 +8987,26 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.04294,
+  "day_usd": 0.05103,
   "month": "2026-11",
-  "month_usd": 2.13713,
-  "total_usd": 2.13713,
+  "month_usd": 2.14522,
+  "total_usd": 2.14522,
   "by_role": {
    "macro": 0.21206,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.24203,
+   "scout": 0.24393,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
    "pm": 0.32595,
-   "risk": 0.20378,
+   "risk": 0.2073,
    "investigator": 0.35857,
    "postmortem": 0.00035,
    "researcher": 0.02341,
    "engineer": 0.08335,
-   "questioner": 0.15983
+   "questioner": 0.1625
   }
  },
  "desk_log": [
@@ -9259,10 +9261,10 @@
   "AMD": 406.83,
   "SMR": 3.25,
   "NNE": 8.85,
-  "SPY": 716.76,
+  "SPY": 728.81,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-27 07:14 ET",
+ "last_cycle": "2026-11-27 08:00 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57909,8 +57911,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "7cabb45f8b0c2778",
   "4ee30073db1990ac",
+  "7cabb45f8b0c2778",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -57935,6 +57937,7 @@
   "ca43d60a172846f5",
   "a9943bba60437697",
   "ee60ae2d27d21aba",
+  "93f5b5547f94be51",
   "21512a406503e470",
   "9ab10d3c257d1ce5",
   "b15e05abe9bd71a5",
@@ -57950,8 +57953,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1715e61816aa5619",
   "1acc6842cd4f6e64",
+  "1715e61816aa5619",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -58071,19 +58074,20 @@
   "ad6bb6ac1dcb6674",
   "95d12e5461204a04",
   "9cbd1f425af5c610",
+  "149f6782b8941ab4",
   "75200584c12556c4",
   "6d247b155bfa9a35",
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "1ed195cb4396cbe7",
   "7c380c991c59f9ba",
+  "1ed195cb4396cbe7",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -58223,6 +58227,7 @@
   "8ad0b53ebffe0c90",
   "c4bedc144af05ef5",
   "03f68611aa06c533",
+  "2532586ce9770ac5",
   "065e0289f5f77d47",
   "fd2731052f33e27f",
   "9408b138c7557b10",
@@ -58574,6 +58579,7 @@
   "d29fad2b4995b909",
   "81924e0d9ee0143f",
   "3a1ae63cc1a72974",
+  "c9409a33e3394652",
   "87aebc088e19e85e",
   "a7baf61adc01832c",
   "b7c4207fbc45894d",
@@ -58653,9 +58659,11 @@
   "4abce8dfecf110ac",
   "5d22d1b6e3da5fb6",
   "16c52bc5bc8110db",
-  "46c5572fb4069bdf"
+  "46c5572fb4069bdf",
+  "752c73b44d65a337",
+  "c71760b1cd34c0aa"
  ],
- "news_slow_at": 1795781715.6264915,
+ "news_slow_at": 1795784451.6551275,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -214726,6 +214734,33 @@
    ],
    "practice": false,
    "end": "07:04"
+  },
+  {
+   "id": "20261127080045164616",
+   "title": "The Questioner, Nov 27 08:00",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-27 08:00",
+   "msgs": [
+    {
+     "t": "08:00",
+     "who": "questioner",
+     "to": "risk",
+     "text": "I'm asking the team to confirm whether any order is actually resting. The live order list is empty, but the bot reported a halt after three order rejections on a SPY parking sale, and nobody has explained what those rejected orders were or whether any position was left half-open.",
+     "outcome": false,
+     "notes": "question: The bot halted after 3 SPY parking-sale rejections with a malfunction code, yet LIVE_ORDERS_RIGHT_NOW is empty. Can someone confirm from the broker's order history (not our notes) that no rejected order was partially filled, and that the account holds no unintended position?\nwhy it might matter: If a rejected sale actually half-filled or a stale order is still live at the broker, the desk could be holding or selling a position it thinks it closed, and the halt would be hiding a real problem.\nask: risk\nkind: odd\nquestion: Is the halt on SPY parking sales a safety stop that will keep blocking the desk, and who decides when it lifts?\nwhy it might matter: The owner needs to know whether the desk can trade tomorrow or whether a human must clear the halt first.\nask: risk\nkind: unexplained\nwhy: The desk's files say nothing is resting, but the bot's own rejection and halt are unexplain"
+    },
+    {
+     "t": "08:00",
+     "who": "risk",
+     "to": "questioner",
+     "text": "Reading the files: the halt is a safety stop the bot raised after three SPY parking-sale rejections with a malfunction code, and the files don't show any automatic lift condition or a named decider. From the desk notes, the only documented unlock is the basket gate reopening, which is a market condition and doesn't clear a bot safety halt, so a human has to review the rejections and clear it. Nothing in the files says those rejected orders left a position half-open, and LIVE_ORDERS_RIGHT_NOW is empty, so nothing is resting now. Agree with the Questioner that this needs an owner check before tomorrow's session.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: tell_owner\nwatch date: 2026-11-27\nwhy: The desk files confirm the basket gate is closed and the live order list is empty, but they contain no record of the three SPY rejections or any rule for lifting a bot halt. The owner has to check the broker's rejected-order log and clear the halt, since the files can't establish either.\nfiles read: LIVE_ORDERS_RIGHT_NOW, recently_canceled_orders"
+    }
+   ],
+   "practice": false,
+   "end": "08:00"
   }
  ],
  "feed": [
@@ -219894,6 +219929,32 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-27 08:00",
+   "who": "questioner",
+   "kind": "alert",
+   "title": null,
+   "text": "Worth your attention: Is the halt on SPY parking sales a safety stop that will keep blocking the desk, and who decides when it lifts?\n\nRisk Manager: Reading the files: the halt is a safety stop the bot raised after three SPY parking-sale rejections with a malfunction code, and the files don't show any automatic lift condition or a named decider. From the desk notes, the only documented unlock is the basket gate reopening, which is a market condition and doesn't clear a bot safety halt, so a human has to review the rejections and clear it. Nothing in the files says those rejected orders left a position half-open, and LIVE_ORDERS_RIGHT_NOW is empty, so nothing is resting now. Agree with the Questioner that this needs an owner check before tomorrow's session.",
+   "tickers": [],
+   "art": {
+    "big": "Something we almost missed",
+    "sub": "The Questioner"
+   },
+   "thread": "20261127080045164616"
+  },
+  {
+   "t": "2026-11-27 08:00",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Is the halt on SPY parking sales a safety stop that will keep blocking the desk, and who decides when it lifts? -> relevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -220704,9 +220765,9 @@
    "lesson": null
   }
  ],
- "intel_at": 1795781664.1890624,
+ "intel_at": 1795783515.5496252,
  "intel_health": {
-  "at": "2026-11-27 07:15",
+  "at": "2026-11-27 07:45",
   "sources": {
    "Cigar Lake": 1,
    "McArthur River / Key Lake": 5,
@@ -220716,50 +220777,50 @@
    "Wheeler River / Phoenix": 7,
    "Port Hope / Blind River": 0,
    "Westinghouse": 9,
-   "Kazakhstan": 44,
-   "Niger": 9,
+   "Kazakhstan": 32,
+   "Niger": 8,
    "Namibia": 30,
    "Russia supply": 1,
-   "Piketon": 21,
-   "HALEU": 12,
-   "Wyoming ISR": 20,
+   "Piketon": 19,
+   "HALEU": 11,
+   "Wyoming ISR": 18,
    "South Texas ISR": 2,
    "White Mesa / Utah": 7,
-   "Rare earths (Energy Fuels)": 11,
+   "Rare earths (Energy Fuels)": 10,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 11,
+   "Naval reactors": 13,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 4,
    "Comanche Peak": 4,
-   "PJM grid": 6,
-   "ERCOT grid": 14,
+   "PJM grid": 10,
+   "ERCOT grid": 12,
    "Data-center nuclear deals": 9,
-   "Japan restarts": 12,
-   "China new builds": 7,
-   "Congress and laws": 43,
-   "NRC decisions": 5,
+   "Japan restarts": 9,
+   "China new builds": 9,
+   "Congress and laws": 28,
+   "NRC decisions": 8,
    "Energy Department": 38,
-   "White House and executive orders": 32,
-   "Tariffs and trade": 2,
+   "White House and executive orders": 28,
+   "Tariffs and trade": 3,
    "India": 19,
-   "South Korea": 86,
-   "Europe new builds": 28,
-   "France and UK": 12,
-   "Middle East": 27,
-   "Asia newcomers": 20,
+   "South Korea": 100,
+   "Europe new builds": 62,
+   "France and UK": 15,
+   "Middle East": 53,
+   "Asia newcomers": 38,
    "Canada SMRs": 7,
-   "Big tech power deals": 29,
-   "Iran": 55,
-   "North Korea": 63,
-   "War zones": 37,
-   "AUKUS and navies": 25,
-   "Weapons programs": 31,
-   "Stockpiles and reserves": 29,
+   "Big tech power deals": 63,
+   "Iran": 27,
+   "North Korea": 100,
+   "War zones": 16,
+   "AUKUS and navies": 17,
+   "Weapons programs": 21,
+   "Stockpiles and reserves": 28,
    "Sprott trust": 3,
-   "Uranium price": 51,
+   "Uranium price": 26,
    "US policy": 0,
-   "Lawsuits and investigations": 33,
-   "Workers and jobs": 23,
+   "Lawsuits and investigations": 71,
+   "Workers and jobs": 24,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 49,
    "Federal Register (uranium)": 11,
@@ -220769,13 +220830,13 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 07:15",
-  "total": 923,
-  "week": 603,
+  "updated": "2026-11-27 08:00",
+  "total": 927,
+  "week": 600,
   "places": {
    "South Korea": 53,
-   "Uranium price": 51,
-   "Kazakhstan": 35,
+   "Uranium price": 50,
+   "Kazakhstan": 36,
    "Weapons programs": 34,
    "Europe new builds": 31,
    "Workers and jobs": 30,
@@ -220788,7 +220849,7 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-27 07:15",
+   "at": "2026-11-27 07:45",
    "sources": {
     "Cigar Lake": 1,
     "McArthur River / Key Lake": 5,
@@ -220798,50 +220859,50 @@
     "Wheeler River / Phoenix": 7,
     "Port Hope / Blind River": 0,
     "Westinghouse": 9,
-    "Kazakhstan": 44,
-    "Niger": 9,
+    "Kazakhstan": 32,
+    "Niger": 8,
     "Namibia": 30,
     "Russia supply": 1,
-    "Piketon": 21,
-    "HALEU": 12,
-    "Wyoming ISR": 20,
+    "Piketon": 19,
+    "HALEU": 11,
+    "Wyoming ISR": 18,
     "South Texas ISR": 2,
     "White Mesa / Utah": 7,
-    "Rare earths (Energy Fuels)": 11,
+    "Rare earths (Energy Fuels)": 10,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 11,
+    "Naval reactors": 13,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 4,
     "Comanche Peak": 4,
-    "PJM grid": 6,
-    "ERCOT grid": 14,
+    "PJM grid": 10,
+    "ERCOT grid": 12,
     "Data-center nuclear deals": 9,
-    "Japan restarts": 12,
-    "China new builds": 7,
-    "Congress and laws": 43,
-    "NRC decisions": 5,
+    "Japan restarts": 9,
+    "China new builds": 9,
+    "Congress and laws": 28,
+    "NRC decisions": 8,
     "Energy Department": 38,
-    "White House and executive orders": 32,
-    "Tariffs and trade": 2,
+    "White House and executive orders": 28,
+    "Tariffs and trade": 3,
     "India": 19,
-    "South Korea": 86,
-    "Europe new builds": 28,
-    "France and UK": 12,
-    "Middle East": 27,
-    "Asia newcomers": 20,
+    "South Korea": 100,
+    "Europe new builds": 62,
+    "France and UK": 15,
+    "Middle East": 53,
+    "Asia newcomers": 38,
     "Canada SMRs": 7,
-    "Big tech power deals": 29,
-    "Iran": 55,
-    "North Korea": 63,
-    "War zones": 37,
-    "AUKUS and navies": 25,
-    "Weapons programs": 31,
-    "Stockpiles and reserves": 29,
+    "Big tech power deals": 63,
+    "Iran": 27,
+    "North Korea": 100,
+    "War zones": 16,
+    "AUKUS and navies": 17,
+    "Weapons programs": 21,
+    "Stockpiles and reserves": 28,
     "Sprott trust": 3,
-    "Uranium price": 51,
+    "Uranium price": 26,
     "US policy": 0,
-    "Lawsuits and investigations": 33,
-    "Workers and jobs": 23,
+    "Lawsuits and investigations": 71,
+    "Workers and jobs": 24,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 49,
     "Federal Register (uranium)": 11,
@@ -221408,8 +221469,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "b2362be41ae616f1",
   "fd337937e7471e2a",
+  "b2362be41ae616f1",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -221436,6 +221497,7 @@
   "36cbbee89c76a1f7",
   "fe094eef9f0aabee",
   "a6599a087809f578",
+  "93f5b5547f94be51",
   "0dc03d3bc16eea15",
   "c10f62c3161fa59d",
   "e5d3e8f47385ea5b",
@@ -221454,10 +221516,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "22ab37dfabeba433",
   "688d746cfc31b58f",
-  "85de31670d4daf9d",
+  "22ab37dfabeba433",
   "f815e45da305cee7",
+  "85de31670d4daf9d",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -221671,7 +221733,7 @@
   }
  ],
  "memory_view": {
-  "events": 1785,
+  "events": 1787,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -222256,24 +222318,6 @@
    {
     "date": "2026-11-26",
     "ticker": "BWXT",
-    "title": "Israel\u2019s nuclear arsenal: It has 90 nuclear warheads and enough plutonium to produce another 250 bombs",
-    "type": "intel_defense",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-26",
-    "ticker": "LEU",
-    "title": "Israel\u2019s nuclear arsenal: It has 90 nuclear warheads and enough plutonium to produce another 250 bombs",
-    "type": "intel_defense",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-26",
-    "ticker": "BWXT",
     "title": "Israel's nuclear arsenal/ Media: Plutonium reserves could enable production of up to 250 more bombs",
     "type": "intel_production",
     "r0": null,
@@ -222609,6 +222653,24 @@
     "ticker": "CCJ",
     "title": "REG - JSC NAC Kazatomprom - Statement from Kazatomprom\u2019s Board of Directors - TradingView",
     "type": "supply",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-27",
+    "ticker": "CCJ",
+    "title": "Kazatomprom\u2019s assets increase 3.2% to about $9 billion as of September",
+    "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-27",
+    "ticker": "NXE",
+    "title": "Kazatomprom\u2019s assets increase 3.2% to about $9 billion as of September",
+    "type": "intel_regulation",
     "r0": null,
     "r5": null,
     "r20": null
@@ -223892,9 +223954,9 @@
    }
   ]
  },
- "dossier_at": 1795781710.2708995,
+ "dossier_at": 1795783558.1008012,
  "sector_prices": {
-  "_at": 1795760734.0715742,
+  "_at": 1795783563.8004794,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
    "last": 17.71,
    "day_pct": -1.5,
@@ -223928,12 +223990,12 @@
    "under_1y_high_pct": -52.7
   },
   "VIX fear gauge": {
-   "last": 26.8,
-   "day_pct": -5.27,
-   "week_pct": -5.77,
-   "month_pct": 58.49,
-   "year_pct": 55.9,
-   "under_1y_high_pct": -25.3
+   "last": 25.4,
+   "day_pct": -5.22,
+   "week_pct": -29.23,
+   "month_pct": 47.67,
+   "year_pct": 55.4,
+   "under_1y_high_pct": -29.2
   },
   "S&P 500": {
    "last": 716.7,
@@ -223950,85 +224012,85 @@
    "name": "Cameco",
    "price": 61.56,
    "week_pct": -1.42,
-   "built": "2026-11-27 07:15"
+   "built": "2026-11-27 07:45"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.95,
    "week_pct": -4.46,
-   "built": "2026-11-27 07:15"
+   "built": "2026-11-27 07:45"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.69,
    "week_pct": -3.89,
-   "built": "2026-11-27 07:15"
+   "built": "2026-11-27 07:45"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.8,
    "week_pct": -1.64,
-   "built": "2026-11-27 07:15"
+   "built": "2026-11-27 07:45"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.2,
    "week_pct": -7.71,
-   "built": "2026-11-27 07:15"
+   "built": "2026-11-27 07:46"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 83.23,
    "week_pct": -9.3,
-   "built": "2026-11-27 07:15"
+   "built": "2026-11-27 07:46"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.49,
    "week_pct": -3.54,
-   "built": "2026-11-27 07:15"
+   "built": "2026-11-27 07:46"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 235.25,
    "week_pct": -10.46,
-   "built": "2026-11-27 07:15"
+   "built": "2026-11-27 07:46"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 121.32,
    "week_pct": -3.39,
-   "built": "2026-11-27 07:15"
+   "built": "2026-11-27 07:46"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 351.55,
    "week_pct": -2.4,
-   "built": "2026-11-27 07:15"
+   "built": "2026-11-27 07:46"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-27 07:15"
+   "built": "2026-11-27 07:46"
   }
  ],
- "heartbeat": "2026-11-27 07:14",
+ "heartbeat": "2026-11-27 08:00",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 419,
+ "_pushed_feed": 422,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -224264,16 +224326,16 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 444,
-   "used": 406,
+   "asked": 448,
+   "used": 410,
    "notes": {
     "TLN Deals and contracts": 20,
     "CCJ Deals and contracts": 77,
     "BWXT Deals and contracts": 56,
-    "SECTOR Government and laws": 122,
+    "SECTOR Government and laws": 123,
     "UUUU Deals and contracts": 44,
-    "SECTOR Countries": 126,
-    "CEG Deals and contracts": 54,
+    "SECTOR Countries": 127,
+    "CEG Deals and contracts": 56,
     "NXE Legal": 22,
     "NXE Deals and contracts": 19,
     "DNN Deals and contracts": 14,
@@ -224281,9 +224343,9 @@
     "LEU Deals and contracts": 44,
     "UEC Deals and contracts": 6,
     "UUUU Legal": 25,
-    "SECTOR Uranium market": 9,
-    "CCJ Legal": 17,
-    "CEG Legal": 4,
+    "SECTOR Uranium market": 10,
+    "CCJ Legal": 18,
+    "CEG Legal": 5,
     "VST Deals and contracts": 37,
     "LEU Legal": 1,
     "VST Legal": 1,
@@ -224584,8 +224646,8 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 101,
-   "used": 99,
+   "asked": 102,
+   "used": 100,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 4,
@@ -224635,7 +224697,9 @@
     "already_checked_facts": 2,
     "SECTOR Panic-day record": 1,
     "SECTOR Calendar and ranking ideas checked": 1,
-    "SECTOR Does the market drop most Thanksgivings, and can we c": 1
+    "SECTOR Does the market drop most Thanksgivings, and can we c": 1,
+    "LIVE_ORDERS_RIGHT_NOW": 1,
+    "recently_canceled_orders": 1
    },
    "since": "2026-11-23"
   },
@@ -224659,8 +224723,8 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 59,
-   "used": 59,
+   "asked": 60,
+   "used": 60,
    "notes": {
     "TLN Snapshot": 45,
     "TLN News": 41,
@@ -224683,7 +224747,7 @@
     "Reminder: Pre-Thanksgiving session (2026-11-25)": 1,
     "Reminder: Thanksgiving run-up rule": 1,
     "Basket gate note: nuclear basket -11.2% vs 10-day average": 1,
-    "LIVE_ORDERS_RIGHT_NOW": 8,
+    "LIVE_ORDERS_RIGHT_NOW": 9,
     "SECTOR Calendar": 1,
     "already_asked": 3,
     "Desk lessons": 1,
@@ -224700,7 +224764,7 @@
     "already_checked_facts": 2,
     "SECTOR Power auctions": 1,
     "coming_up Black Friday entry": 1,
-    "recently_canceled_orders": 1,
+    "recently_canceled_orders": 2,
     "SECTOR PJM auction": 1
    },
    "since": "2026-11-23"
@@ -227686,6 +227750,16 @@
    "price": 235.25,
    "result": null,
    "why": "Asia's close and the nowcast show a mild gap-up that is already priced in, and the overnight headlines are mostly regulatory or geopolitical background with no same-day trigger. The seasonal Black Fri"
+  },
+  {
+   "role": "scout",
+   "ticker": "CEG",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-27",
+   "price": 235.25,
+   "result": null,
+   "why": "Headline 1 is a price recap with no new company facts; headline 2 is a generic demand comparison. Desk notes show CEG's deal history skews negative over 5 days, reinforcing caution."
   }
  ],
  "after_sale": [],
@@ -228529,39 +228603,39 @@
    ],
    "next7": [
     {
-     "date": "2026-11-26",
-     "high_f": 53,
-     "low_f": 35
-    },
-    {
      "date": "2026-11-27",
-     "high_f": 64,
-     "low_f": 34
+     "high_f": 66,
+     "low_f": 38
     },
     {
      "date": "2026-11-28",
-     "high_f": 72,
-     "low_f": 52
+     "high_f": 71,
+     "low_f": 44
     },
     {
      "date": "2026-11-29",
-     "high_f": 69,
-     "low_f": 55
+     "high_f": 67,
+     "low_f": 56
     },
     {
      "date": "2026-11-30",
      "high_f": 64,
-     "low_f": 50
+     "low_f": 51
     },
     {
      "date": "2026-12-01",
-     "high_f": 70,
+     "high_f": 71,
      "low_f": 52
     },
     {
      "date": "2026-12-02",
      "high_f": 75,
-     "low_f": 58
+     "low_f": 60
+    },
+    {
+     "date": "2026-12-03",
+     "high_f": 71,
+     "low_f": 63
     }
    ],
    "extremes": []
@@ -228574,39 +228648,39 @@
    ],
    "next7": [
     {
-     "date": "2026-11-26",
-     "high_f": 51,
-     "low_f": 42
-    },
-    {
      "date": "2026-11-27",
-     "high_f": 49,
-     "low_f": 38
+     "high_f": 50,
+     "low_f": 37
     },
     {
      "date": "2026-11-28",
-     "high_f": 51,
-     "low_f": 41
+     "high_f": 48,
+     "low_f": 36
     },
     {
      "date": "2026-11-29",
-     "high_f": 49,
+     "high_f": 50,
      "low_f": 39
     },
     {
      "date": "2026-11-30",
-     "high_f": 47,
+     "high_f": 48,
      "low_f": 36
     },
     {
      "date": "2026-12-01",
      "high_f": 45,
-     "low_f": 36
+     "low_f": 37
     },
     {
      "date": "2026-12-02",
      "high_f": 51,
-     "low_f": 41
+     "low_f": 40
+    },
+    {
+     "date": "2026-12-03",
+     "high_f": 54,
+     "low_f": 43
     }
    ],
    "extremes": []
@@ -228864,6 +228938,15 @@
    "answer": "I checked the desk's files on General Matter's Paducah notice. It is a Federal Register scoping notice, the first step in an environmental review for an enrichment plant that doesn't exist yet and is years from running, so it doesn't change Centrus's near-term enrichment competition. I agree with the News Investigator's point that this is a separate matter from the halt, and I'd keep it off the trading agenda.",
    "verdict": "irrelevant",
    "action": "none"
+  },
+  {
+   "t": "2026-11-27 08:00",
+   "question": "Is the halt on SPY parking sales a safety stop that will keep blocking the desk, and who decides when it lifts?",
+   "kind": "unexplained",
+   "asked": "risk",
+   "answer": "Reading the files: the halt is a safety stop the bot raised after three SPY parking-sale rejections with a malfunction code, and the files don't show any automatic lift condition or a named decider. From the desk notes, the only documented unlock is the basket gate reopening, which is a market condition and doesn't clear a bot safety halt, so a human has to review the rejections and clear it. Nothing in the files says those rejected orders left a position half-open, and LIVE_ORDERS_RIGHT_NOW is empty, so nothing is resting now. Agree with the Questioner that this needs an owner check before tomorrow's session.",
+   "verdict": "relevant",
+   "action": "tell_owner"
   }
  ],
  "reactor_view": {
@@ -231803,7 +231886,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 07:14",
+ "watchdog_last": "2026-11-27 08:00",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
