@@ -870,7 +870,7 @@
   "orbsip_t": 1795760026.701552,
   "catalysts2:2026-11-27": true,
   "ev:f5e72e5ea293": true,
-  "orbsip_fix_t": 1795815949.3843002,
+  "orbsip_fix_t": 1795817766.4350827,
   "questioner:2026-11-27:3": true,
   "premarket:2026-11-27": true,
   "uprice:2026-11-27": true,
@@ -914,7 +914,9 @@
   "weekly:2026-11-27": true,
   "nightwatch170:2026-11-27": true,
   "ahdip170:2026-11-27": true,
-  "candles5:2026-11-27": true
+  "candles5:2026-11-27": true,
+  "ahdip171:2026-11-27": true,
+  "nightwatch171:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -11221,7 +11223,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 17:12 ET",
+ "last_cycle": "2026-11-27 17:23 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -60642,8 +60644,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "4ee30073db1990ac",
   "7cabb45f8b0c2778",
+  "4ee30073db1990ac",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -60685,10 +60687,10 @@
   "80ca077103e2454d",
   "bfa4d042201cf513",
   "982ae178b039d112",
-  "c58aba704a7847d3",
   "5152638d88885c07",
-  "1acc6842cd4f6e64",
+  "c58aba704a7847d3",
   "1715e61816aa5619",
+  "1acc6842cd4f6e64",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -60820,14 +60822,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "7c380c991c59f9ba",
   "1ed195cb4396cbe7",
+  "7c380c991c59f9ba",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -61439,7 +61441,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795817346.8121884,
+ "news_slow_at": 1795817969.7486055,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -227076,9 +227078,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 17:12",
+  "updated": "2026-11-27 17:23",
   "total": 985,
-  "week": 597,
+  "week": 595,
   "places": {
    "South Korea": 56,
    "Uranium price": 52,
@@ -227087,8 +227089,8 @@
    "Workers and jobs": 32,
    "AUKUS and navies": 29,
    "Asia newcomers": 29,
-   "Europe new builds": 26,
    "Piketon": 25,
+   "Europe new builds": 25,
    "World Nuclear News": 23,
    "War zones": 20,
    "Rare earths (Energy Fuels)": 15
@@ -227715,8 +227717,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "fd337937e7471e2a",
   "b2362be41ae616f1",
+  "fd337937e7471e2a",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -227765,10 +227767,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "688d746cfc31b58f",
   "22ab37dfabeba433",
-  "f815e45da305cee7",
+  "688d746cfc31b58f",
   "85de31670d4daf9d",
+  "f815e45da305cee7",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -230471,7 +230473,7 @@
    "built": "2026-11-27 17:00"
   }
  ],
- "heartbeat": "2026-11-27 17:12",
+ "heartbeat": "2026-11-27 17:23",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -239338,7 +239340,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 17:12",
+ "watchdog_last": "2026-11-27 17:23",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
