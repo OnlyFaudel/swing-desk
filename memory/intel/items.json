@@ -27638,5 +27638,150 @@
 "price",
 "pushes"
 ]
+},
+{
+"id": "ca7e365ca74ada75",
+"date": "2026-11-24",
+"ts": 1795507200,
+"title": "Vistra (NYSE:VST) previsi\u00f3n de las acciones y estimaciones de analistas",
+"summary": "",
+"outlet": "Simply Wall St",
+"link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB3dEZBSG8yR2xlbWIwb21HNEtMRWsxNlRYU0JlT3lfTkFRbUsxU0NpWl9kWXZKbTlBbEZQVGxjdmlOR1hfaWRMeF9jYndfbnJhT1JZaUVIMEs3WmllV3p6NmlPTGZvRVFHUzRrakhuemY1ejlzZVE?oc=5",
+"place": "Comanche Peak",
+"tickers": [
+"VST"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.75,
+"score": 3.0,
+"echo_of": null,
+"w": [
+"acciones",
+"analistas",
+"estimaciones",
+"las",
+"nyse",
+"previsi",
+"vistra",
+"vst"
+]
+},
+{
+"id": "9f738d00ef91bcdf",
+"date": "2026-11-26",
+"ts": 1795676671,
+"title": "Major \u00a38 billion investment to upgrade UK nuclear submarine availability and warfighting readiness",
+"summary": "",
+"outlet": "GOV.UK",
+"link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZE1QYW5HS2ZYdi1NOFdSQ3I3ZDNvdHZzd3ZOUnVlYndwamVxY3ZUeFAxaDNuVjBlRGZzT0ctdy1QaHVsbXI5THdnUURiekxvX0pLZHhWeTdnbDh5VVdHYWRIZklqOVpVdm5CUmd1NEpGSkdsYktPVm1lSWlUNFlYVGRoMGJ6X0k5NkhHLVJaelloT1p2U1hXcy1QZGZJc0FlVUc4MzZIU3VJeS1DYWNkbjlSMWFtOGJjbFB1YlhWOU1DVVNuZkN2TVltWmE?oc=5",
+"place": "AUKUS and navies",
+"tickers": [
+"BWXT"
+],
+"tags": [
+"regulation",
+"defense",
+"geopolitics"
+],
+"numbers": [
+"8 billion"
+],
+"local": true,
+"novelty": 0.2,
+"score": 7.2,
+"echo_of": "db4fa681da60626b",
+"w": [
+"availability",
+"billion",
+"investment",
+"major",
+"nuclear",
+"readiness",
+"submarine",
+"upgrade",
+"warfighting"
+]
+},
+{
+"id": "914fe6ebd8c27805",
+"date": "2026-11-27",
+"ts": 1795737613,
+"title": "Uranium and gold anchor exports amid mining output decline Staff Reporter NAMIBIA\u2019S mining sector is facing declining production, falling diamond revenues and rising operating costs, despite uranium and gold continuing t",
+"summary": "",
+"outlet": "Instagram",
+"link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9GYUo3U1VMUjBWUkwxZGNzOUNiTkRQTVMwcUNQWUdsa1Z3ZjVJQ3RweEJwTVlNR180NGVHM0NnT09QUlNBYWstT0stZFRHcG1mclE?oc=5",
+"place": "Namibia",
+"tickers": [
+"CCJ"
+],
+"tags": [
+"politics",
+"jobs",
+"production"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.88,
+"score": 6.66,
+"echo_of": null,
+"w": [
+"amid",
+"anchor",
+"continuing",
+"costs",
+"decline",
+"declining",
+"despite",
+"diamond",
+"exports",
+"facing",
+"falling",
+"gold",
+"mining",
+"namibia",
+"operating",
+"output",
+"production",
+"reporter",
+"revenues",
+"rising",
+"sector",
+"staff",
+"uranium"
+]
+},
+{
+"id": "6349838daf2dcdc6",
+"date": "2026-11-25",
+"ts": 1795600560,
+"title": "Zaporizhzhia NPP loses external power supply after Russian attack",
+"summary": "",
+"outlet": "Ukrinform",
+"link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObGdmN3ZYVEVRbE5WbGpuNnpzRzZJTmdWRldwbkd6Sk9GTUZFTlBPZ0FXcmVYUGRnM050c05iOFROemNwdnBQTm1DTnhnUEw1bVE3ZFFXNDQwWm9UQWgwREhUWTVkZ0NmdDhoM21ZcTh3NU5CM08tSFpfRnA3U0NpVmpjdnVQUTdmaG11QWtPUUtoZ0w3Z2psRzRRTnZtNEZfeFVkcE1RMkFFaGNqMHVwNEU3M0JCS0stME9R0gHAAUFVX3lxTFAtc1VJRW5tWEYzcGEwRk8xb2RlUGczTGpFVnZwNFlOdUhfdGRaOVJRSFo4ZnY5dm8waTZUMWJyOHAyQVFfRmtkemM2bGg3aWxWVXpaNnY0TFV2T1FkMnJFbFR4dU41VVh6TUxiVzg4dy1oMnJHcWR3a2FxY09lcTc1TGxkMVVreEJULURYRy1kX0huTFZmRHlQa2RQeEtlVXJNeG1Gek42Z3h6RUE5WFZJXzg3V0hhbW5XbHJjbnhiRA?oc=5",
+"place": "War zones",
+"tickers": [
+"CCJ",
+"CEG"
+],
+"tags": [
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 3.8,
+"echo_of": "60c268f204c64f22",
+"w": [
+"attack",
+"external",
+"loses",
+"npp",
+"power",
+"russian",
+"supply",
+"zaporizhzhia"
+]
 }
 ]
