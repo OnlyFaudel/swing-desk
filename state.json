@@ -4224,6 +4224,181 @@
    "decision": "SKIP",
    "reason": "The basket is below its 10-day average, so the market gate is closed and no new buys are allowed. TLN also has a restart-style news cycle with PJM auction delay headlines, and the desk note says sell-",
    "evaluated": false
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "NXE",
+   "setup": "patient_level",
+   "zone": 6.54,
+   "entry": 6.57,
+   "stop": 6.46,
+   "target": 7.07,
+   "reward_risk": 4.81,
+   "dist_to_entry_pct": 5.92,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 6.57,
+    "value_high": 8.68,
+    "heaviest_price": 7.97,
+    "position": "at value low",
+    "node": "normal",
+    "node_ratio": 1.21,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The basket is below its 10-day average, which is a standing no-new-buys condition, and NXE is 17% below its 50-day average and 33% below its 200-day, so this support is more likely to break than hold.",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "UEC",
+   "setup": "patient_level",
+   "zone": 5.46,
+   "entry": 5.48,
+   "stop": 5.39,
+   "target": 5.87,
+   "reward_risk": 4.44,
+   "dist_to_entry_pct": 3.8,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 5.4,
+    "value_high": 7.76,
+    "heaviest_price": 7.57,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 0.85,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The basket is below its 10-day average, which blocks new buys. UEC is also 29% down over the month, 52-week-low territory, and 28.8% under its 50-day average. Our own fill tests show level buys well b",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "DNN",
+   "setup": "patient_level",
+   "zone": 1.69,
+   "entry": 1.7,
+   "stop": 1.67,
+   "target": 1.88,
+   "reward_risk": 6.78,
+   "dist_to_entry_pct": 6.08,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 1.69,
+    "value_high": 2.23,
+    "heaviest_price": 2.21,
+    "position": "at value low",
+    "node": "normal",
+    "node_ratio": 1.13,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The whole basket is below its 10-day average, which blocks new buys under our rules. DNN is also 22% under its 50-day average and 43% under its 200-day average, and our own fill tests earn less when a",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "UUUU",
+   "setup": "patient_level",
+   "zone": 4.91,
+   "entry": 4.92,
+   "stop": 4.85,
+   "target": 5.7,
+   "reward_risk": 9.88,
+   "dist_to_entry_pct": 5.69,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 4.82,
+    "value_high": 7.29,
+    "heaviest_price": 6.67,
+    "position": "inside value",
+    "node": "thick",
+    "node_ratio": 1.79,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The whole basket is below its 10-day average, which blocks new buys. UUUU is also far under its 50-day (-38.9%) and 200-day (-65%) averages, and our fill tests show level buys below the 200-day earn l",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "LEU",
+   "setup": "patient_level",
+   "zone": 81.32,
+   "entry": 81.65,
+   "stop": 80.35,
+   "target": 93.4,
+   "reward_risk": 9.03,
+   "dist_to_entry_pct": 1.93,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 82.27,
+    "value_high": 117.23,
+    "heaviest_price": 88.09,
+    "position": "at value low",
+    "node": "normal",
+    "node_ratio": 0.85,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The basket is below its 10-day average, which blocks new buys, and LEU sits about 30% under its 50-day average and about 50% under its 200-day average. Our own fill tests show level buys below the 200",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "VST",
+   "setup": "patient_level",
+   "zone": 115.51,
+   "entry": 115.97,
+   "stop": 114.12,
+   "target": 125.85,
+   "reward_risk": 5.34,
+   "dist_to_entry_pct": 4.62,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 111.73,
+    "value_high": 137.07,
+    "heaviest_price": 119.76,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 0.68,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The basket is below its 10-day average, which blocks new buys under our rules. VST is also 19% under its 200-day average and 13% under its 50-day, and our own fill tests earn less when a fill sits bel",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "TLN",
+   "setup": "patient_level",
+   "zone": 344.7,
+   "entry": 346.08,
+   "stop": 340.56,
+   "target": 358.21,
+   "reward_risk": 2.2,
+   "dist_to_entry_pct": 1.58,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 312.55,
+    "value_high": 366.37,
+    "heaviest_price": 360.99,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 0.68,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "Basket is below its 10-day average, which blocks all new buys under desk rules. TLN itself is above its 50-day average, but the group weakness and the pending PJM auction (Dec 15) make a support bounc",
+   "evaluated": false
   }
  ],
  "cooldown": {
@@ -7585,23 +7760,31 @@
   }
  ],
  "brief": {
-  "built": "2026-11-25 09:01",
+  "built": "2026-11-27 09:00",
   "tickers": {
    "CCJ": {
-    "price": 59.779998779296875,
+    "price": 61.55500030517578,
     "options": {
      "put_wall": 50.0,
-     "put_wall_oi": 2840,
-     "call_wall": 85.0,
-     "call_wall_oi": 20361,
-     "put_call_oi": 0.1,
-     "put_call_volume": 0.54,
-     "net_dealer_gamma_musd_per_1pct": 0.0,
-     "biggest_gamma_strike": 58.0,
-     "implied_move_pct_next_expiry": 2.7,
+     "put_wall_oi": 3607,
+     "call_wall": 90.0,
+     "call_wall_oi": 3410,
+     "put_call_oi": 0.28,
+     "put_call_volume": 0.87,
+     "net_dealer_gamma_musd_per_1pct": 0.07,
+     "biggest_gamma_strike": 62.0,
+     "implied_move_pct_next_expiry": 2.8,
      "atm_iv_pct": 6.3,
      "put_skew_pts": 6.2,
-     "unusual": [],
+     "unusual": [
+      {
+       "type": "put",
+       "strike": 55.0,
+       "exp": "2026-12-18",
+       "volume": 1420,
+       "open_interest": 0
+      }
+     ],
      "expiries_used": [
       "2026-11-27",
       "2026-12-04",
@@ -7625,15 +7808,15 @@
      "beta": 1.126,
      "recommendationMean": 1.52381,
      "recommendationKey": "buy",
-     "targetMeanPrice": 113.778534,
-     "targetLowPrice": 82.29115,
-     "targetHighPrice": 169.18188,
+     "targetMeanPrice": 113.8001,
+     "targetLowPrice": 82.306755,
+     "targetHighPrice": 169.21396,
      "numberOfAnalystOpinions": 9,
-     "heldPercentInstitutions": 0.68819,
+     "heldPercentInstitutions": 0.68806,
      "heldPercentInsiders": 0.0014200001,
      "fiftyTwoWeekHigh": 135.24,
-     "fiftyTwoWeekLow": 57.87,
-     "marketCap": 26040518656
+     "fiftyTwoWeekLow": 56.75,
+     "marketCap": 26807054336
     },
     "insiders": {
      "open_market_buys": 0,
@@ -7646,25 +7829,25 @@
      "note": "Open-market insider BUYS (especially several insiders) are the meaningful signal; planned sales mostly aren't."
     },
     "reddit": {
-     "rank": 462,
+     "rank": 399,
      "mentions_24h": 1,
      "mentions_prev_24h": 1,
-     "upvotes": 1
+     "upvotes": 2
     },
     "reddit_note": "Retail herding spikes tend to reverse over 5-20 days: a buzz surge is a don't-chase flag."
    },
    "NXE": {
-    "price": 6.835000038146973,
+    "price": 6.954999923706055,
     "options": {
-     "put_wall": 6.0,
-     "put_wall_oi": 170,
-     "call_wall": 9.0,
-     "call_wall_oi": 2702,
-     "put_call_oi": 0.02,
-     "put_call_volume": 0.19,
+     "put_wall": 5.0,
+     "put_wall_oi": 2,
+     "call_wall": 10.0,
+     "call_wall_oi": 2232,
+     "put_call_oi": 0.0,
+     "put_call_volume": 0.31,
      "net_dealer_gamma_musd_per_1pct": 0.0,
      "biggest_gamma_strike": 10.0,
-     "implied_move_pct_next_expiry": 1.8,
+     "implied_move_pct_next_expiry": 1.4,
      "atm_iv_pct": 12.5,
      "put_skew_pts": 0.0,
      "unusual": [],
@@ -7686,15 +7869,15 @@
      "beta": 1.659,
      "recommendationMean": 1.5625,
      "recommendationKey": "buy",
-     "targetMeanPrice": 15.422665,
-     "targetLowPrice": 11.968688,
-     "targetHighPrice": 18.876642,
+     "targetMeanPrice": 15.42602,
+     "targetLowPrice": 11.971292,
+     "targetHighPrice": 18.880749,
      "numberOfAnalystOpinions": 2,
-     "heldPercentInstitutions": 0.54389,
+     "heldPercentInstitutions": 0.54385,
      "heldPercentInsiders": 0.07706,
      "fiftyTwoWeekHigh": 13.96,
      "fiftyTwoWeekLow": 6.38,
-     "marketCap": 4699277312
+     "marketCap": 4788721664
     },
     "insiders": {
      "open_market_buys": 0,
@@ -7710,20 +7893,28 @@
     "reddit_note": "Retail herding spikes tend to reverse over 5-20 days: a buzz surge is a don't-chase flag."
    },
    "UEC": {
-    "price": 5.583000183105469,
+    "price": 5.690000057220459,
     "options": {
-     "put_wall": 5.0,
-     "put_wall_oi": 782,
-     "call_wall": 7.5,
-     "call_wall_oi": 2572,
-     "put_call_oi": 0.09,
-     "put_call_volume": 0.1,
+     "put_wall": 5.5,
+     "put_wall_oi": 576,
+     "call_wall": 6.0,
+     "call_wall_oi": 1685,
+     "put_call_oi": 0.14,
+     "put_call_volume": 0.15,
      "net_dealer_gamma_musd_per_1pct": 0.0,
      "biggest_gamma_strike": 6.0,
-     "implied_move_pct_next_expiry": 3.0,
-     "atm_iv_pct": 12.5,
-     "put_skew_pts": 12.5,
-     "unusual": [],
+     "implied_move_pct_next_expiry": 4.2,
+     "atm_iv_pct": 6.3,
+     "put_skew_pts": 18.7,
+     "unusual": [
+      {
+       "type": "call",
+       "strike": 6.0,
+       "exp": "2026-12-18",
+       "volume": 767,
+       "open_interest": 0
+      }
+     ],
      "expiries_used": [
       "2026-11-27",
       "2026-12-04",
@@ -7747,15 +7938,15 @@
      "beta": 1.371,
      "recommendationMean": 1.72727,
      "recommendationKey": "buy",
-     "targetMeanPrice": 15.84545,
-     "targetLowPrice": 10.0,
+     "targetMeanPrice": 15.66364,
+     "targetLowPrice": 8.0,
      "targetHighPrice": 26.75,
      "numberOfAnalystOpinions": 11,
-     "heldPercentInstitutions": 0.86617,
+     "heldPercentInstitutions": 0.86569,
      "heldPercentInsiders": 0.01816,
      "fiftyTwoWeekHigh": 20.34,
-     "fiftyTwoWeekLow": 5.29,
-     "marketCap": 2760406784
+     "fiftyTwoWeekLow": 5.16,
+     "marketCap": 2819876864
     },
     "insiders": {
      "open_market_buys": 0,
@@ -7771,19 +7962,19 @@
     "reddit_note": "Retail herding spikes tend to reverse over 5-20 days: a buzz surge is a don't-chase flag."
    },
    "DNN": {
-    "price": 1.75,
+    "price": 1.7999999523162842,
     "options": {
      "put_wall": 1.5,
-     "put_wall_oi": 93,
+     "put_wall_oi": 84,
      "call_wall": 2.5,
-     "call_wall_oi": 7943,
+     "call_wall_oi": 7939,
      "put_call_oi": 0.01,
-     "put_call_volume": 0.03,
+     "put_call_volume": 0.04,
      "net_dealer_gamma_musd_per_1pct": 0.0,
-     "biggest_gamma_strike": 2.0,
-     "implied_move_pct_next_expiry": 3.4,
+     "biggest_gamma_strike": 2.5,
+     "implied_move_pct_next_expiry": 3.3,
      "atm_iv_pct": 25.0,
-     "put_skew_pts": 0.0,
+     "put_skew_pts": 25.0,
      "unusual": [],
      "expiries_used": [
       "2026-11-27",
@@ -7808,15 +7999,15 @@
      "beta": 1.777,
      "recommendationMean": 1.375,
      "recommendationKey": "strong_buy",
-     "targetMeanPrice": 4.2516217,
-     "targetLowPrice": 3.4718323,
-     "targetHighPrice": 5.6483097,
+     "targetMeanPrice": 4.2524877,
+     "targetLowPrice": 3.4725394,
+     "targetHighPrice": 5.64946,
      "numberOfAnalystOpinions": 3,
-     "heldPercentInstitutions": 0.64141,
+     "heldPercentInstitutions": 0.64154,
      "heldPercentInsiders": 0.0031,
      "fiftyTwoWeekHigh": 4.43,
-     "fiftyTwoWeekLow": 1.68,
-     "marketCap": 1575474944
+     "fiftyTwoWeekLow": 1.63,
+     "marketCap": 1620747136
     },
     "insiders": {
      "open_market_buys": 0,
@@ -7832,19 +8023,19 @@
     "reddit_note": "Retail herding spikes tend to reverse over 5-20 days: a buzz surge is a don't-chase flag."
    },
    "UUUU": {
-    "price": 5.150000095367432,
+    "price": 5.204999923706055,
     "options": {
-     "put_wall": 4.5,
-     "put_wall_oi": 417,
-     "call_wall": 8.5,
-     "call_wall_oi": 5256,
-     "put_call_oi": 0.04,
-     "put_call_volume": 0.1,
-     "net_dealer_gamma_musd_per_1pct": 0.0,
-     "biggest_gamma_strike": 6.0,
-     "implied_move_pct_next_expiry": 5.2,
-     "atm_iv_pct": 6.3,
-     "put_skew_pts": 18.7,
+     "put_wall": 5.0,
+     "put_wall_oi": 1319,
+     "call_wall": 9.0,
+     "call_wall_oi": 4801,
+     "put_call_oi": 0.12,
+     "put_call_volume": 0.47,
+     "net_dealer_gamma_musd_per_1pct": -0.0,
+     "biggest_gamma_strike": 5.0,
+     "implied_move_pct_next_expiry": 4.0,
+     "atm_iv_pct": 12.5,
+     "put_skew_pts": 12.5,
      "unusual": [],
      "expiries_used": [
       "2026-11-27",
@@ -7873,11 +8064,11 @@
      "targetLowPrice": 14.0,
      "targetHighPrice": 22.5,
      "numberOfAnalystOpinions": 4,
-     "heldPercentInstitutions": 0.75247,
+     "heldPercentInstitutions": 0.75261,
      "heldPercentInsiders": 0.01166,
      "fiftyTwoWeekHigh": 27.9,
-     "fiftyTwoWeekLow": 4.85,
-     "marketCap": 1358567296
+     "fiftyTwoWeekLow": 4.725,
+     "marketCap": 1379753600
     },
     "insiders": {
      "open_market_buys": 0,
@@ -7890,22 +8081,22 @@
      "note": "Open-market insider BUYS (especially several insiders) are the meaningful signal; planned sales mostly aren't."
     },
     "reddit": {
-     "rank": 410,
+     "rank": 344,
      "mentions_24h": 1,
-     "mentions_prev_24h": 1,
-     "upvotes": 1
+     "mentions_prev_24h": 3,
+     "upvotes": 2
     },
     "reddit_note": "Retail herding spikes tend to reverse over 5-20 days: a buzz surge is a don't-chase flag."
    },
    "LEU": {
-    "price": 84.12000274658203,
+    "price": 83.2300033569336,
     "options": {
-     "put_wall": 75.0,
-     "put_wall_oi": 464,
-     "call_wall": 100.0,
-     "call_wall_oi": 708,
-     "put_call_oi": 0.12,
-     "put_call_volume": 0.06,
+     "put_wall": 55.0,
+     "put_wall_oi": 479,
+     "call_wall": 240.0,
+     "call_wall_oi": 674,
+     "put_call_oi": 0.29,
+     "put_call_volume": 0.76,
      "net_dealer_gamma_musd_per_1pct": 0.0,
      "biggest_gamma_strike": 340.0,
      "implied_move_pct_next_expiry": 6.6,
@@ -7934,11 +8125,11 @@
      "targetLowPrice": 100.0,
      "targetHighPrice": 300.0,
      "numberOfAnalystOpinions": 20,
-     "heldPercentInstitutions": 0.94269997,
+     "heldPercentInstitutions": 0.94316,
      "heldPercentInsiders": 0.01056,
      "fiftyTwoWeekHigh": 345.6,
-     "fiftyTwoWeekLow": 80.9,
-     "marketCap": 1732774528
+     "fiftyTwoWeekLow": 75.91,
+     "marketCap": 1715248896
     },
     "insiders": {
      "open_market_buys": 0,
@@ -7954,17 +8145,17 @@
     "reddit_note": "Retail herding spikes tend to reverse over 5-20 days: a buzz surge is a don't-chase flag."
    },
    "BWXT": {
-    "price": 113.12999725341797,
+    "price": 113.48999786376953,
     "options": {
      "put_wall": 100.0,
      "put_wall_oi": 128,
      "call_wall": 125.0,
-     "call_wall_oi": 266,
-     "put_call_oi": 0.22,
-     "put_call_volume": 0.08,
+     "call_wall_oi": 246,
+     "put_call_oi": 0.42,
+     "put_call_volume": 0.32,
      "net_dealer_gamma_musd_per_1pct": 0.0,
      "biggest_gamma_strike": 125.0,
-     "implied_move_pct_next_expiry": 3.2,
+     "implied_move_pct_next_expiry": 2.3,
      "atm_iv_pct": 6.3,
      "put_skew_pts": 6.2,
      "unusual": [],
@@ -7990,11 +8181,11 @@
      "targetLowPrice": 140.0,
      "targetHighPrice": 250.0,
      "numberOfAnalystOpinions": 16,
-     "heldPercentInstitutions": 0.92653,
+     "heldPercentInstitutions": 0.92667997,
      "heldPercentInsiders": 0.0035899999,
      "fiftyTwoWeekHigh": 241.82,
      "fiftyTwoWeekLow": 108.17,
-     "marketCap": 10366475264
+     "marketCap": 10404041728
     },
     "insiders": {
      "open_market_buys": 0,
@@ -8006,21 +8197,26 @@
      "window_days": 90,
      "note": "Open-market insider BUYS (especially several insiders) are the meaningful signal; planned sales mostly aren't."
     },
-    "reddit": null,
+    "reddit": {
+     "rank": 306,
+     "mentions_24h": 1,
+     "mentions_prev_24h": 1,
+     "upvotes": 1
+    },
     "reddit_note": "Retail herding spikes tend to reverse over 5-20 days: a buzz surge is a don't-chase flag."
    },
    "CEG": {
-    "price": 244.83999633789062,
+    "price": 235.25,
     "options": {
      "put_wall": 200.0,
-     "put_wall_oi": 4939,
-     "call_wall": 300.0,
-     "call_wall_oi": 2784,
-     "put_call_oi": 0.65,
-     "put_call_volume": 0.36,
-     "net_dealer_gamma_musd_per_1pct": -0.02,
-     "biggest_gamma_strike": 165.0,
-     "implied_move_pct_next_expiry": 1.8,
+     "put_wall_oi": 4945,
+     "call_wall": 290.0,
+     "call_wall_oi": 2273,
+     "put_call_oi": 0.53,
+     "put_call_volume": 0.3,
+     "net_dealer_gamma_musd_per_1pct": 0.02,
+     "biggest_gamma_strike": 580.0,
+     "implied_move_pct_next_expiry": 2.0,
      "atm_iv_pct": 6.3,
      "put_skew_pts": 6.2,
      "unusual": [],
@@ -8047,15 +8243,15 @@
      "beta": 1.127,
      "recommendationMean": 1.64,
      "recommendationKey": "buy",
-     "targetMeanPrice": 340.37564,
+     "targetMeanPrice": 339.68,
      "targetLowPrice": 240.0,
      "targetHighPrice": 399.0,
      "numberOfAnalystOpinions": 23,
-     "heldPercentInstitutions": 0.85039,
+     "heldPercentInstitutions": 0.85038,
      "heldPercentInsiders": 0.00347,
      "fiftyTwoWeekHigh": 380.78,
      "fiftyTwoWeekLow": 228.63,
-     "marketCap": 86087827456
+     "marketCap": 82726453248
     },
     "insiders": {
      "open_market_buys": 0,
@@ -8071,17 +8267,17 @@
     "reddit_note": "Retail herding spikes tend to reverse over 5-20 days: a buzz surge is a don't-chase flag."
    },
    "VST": {
-    "price": 120.70999908447266,
+    "price": 121.32499694824219,
     "options": {
      "put_wall": 95.0,
-     "put_wall_oi": 9132,
-     "call_wall": 165.0,
-     "call_wall_oi": 8356,
-     "put_call_oi": 0.53,
-     "put_call_volume": 0.43,
-     "net_dealer_gamma_musd_per_1pct": -0.09,
-     "biggest_gamma_strike": 115.0,
-     "implied_move_pct_next_expiry": 2.5,
+     "put_wall_oi": 9202,
+     "call_wall": 210.0,
+     "call_wall_oi": 5614,
+     "put_call_oi": 0.61,
+     "put_call_volume": 0.67,
+     "net_dealer_gamma_musd_per_1pct": -0.02,
+     "biggest_gamma_strike": 110.0,
+     "implied_move_pct_next_expiry": 2.6,
      "atm_iv_pct": 6.3,
      "put_skew_pts": 6.2,
      "unusual": [],
@@ -8106,17 +8302,17 @@
      "shortPercentOfFloat": 0.031600002,
      "shortRatio": 1.36,
      "beta": 1.375,
-     "recommendationMean": 1.36,
+     "recommendationMean": 1.32,
      "recommendationKey": "strong_buy",
-     "targetMeanPrice": 197.18262,
+     "targetMeanPrice": 197.05217,
      "targetLowPrice": 106.0,
      "targetHighPrice": 270.0,
      "numberOfAnalystOpinions": 23,
-     "heldPercentInstitutions": 0.88446,
+     "heldPercentInstitutions": 0.88443,
      "heldPercentInsiders": 0.00765,
      "fiftyTwoWeekHigh": 182.56,
      "fiftyTwoWeekLow": 110.89,
-     "marketCap": 40971726848
+     "marketCap": 41175363584
     },
     "insiders": {
      "open_market_buys": 2,
@@ -8131,28 +8327,36 @@
      "note": "Open-market insider BUYS (especially several insiders) are the meaningful signal; planned sales mostly aren't."
     },
     "reddit": {
-     "rank": 367,
+     "rank": 299,
      "mentions_24h": 1,
      "mentions_prev_24h": 1,
-     "upvotes": 9
+     "upvotes": 1
     },
     "reddit_note": "Retail herding spikes tend to reverse over 5-20 days: a buzz surge is a don't-chase flag."
    },
    "TLN": {
-    "price": 347.9200134277344,
+    "price": 351.5450134277344,
     "options": {
-     "put_wall": 310.0,
-     "put_wall_oi": 3791,
+     "put_wall": 330.0,
+     "put_wall_oi": 2430,
      "call_wall": 430.0,
-     "call_wall_oi": 4709,
-     "put_call_oi": 0.84,
-     "put_call_volume": 0.33,
-     "net_dealer_gamma_musd_per_1pct": -0.07,
-     "biggest_gamma_strike": 330.0,
-     "implied_move_pct_next_expiry": 2.4,
+     "call_wall_oi": 4711,
+     "put_call_oi": 0.66,
+     "put_call_volume": 0.36,
+     "net_dealer_gamma_musd_per_1pct": 0.07,
+     "biggest_gamma_strike": 370.0,
+     "implied_move_pct_next_expiry": 3.2,
      "atm_iv_pct": 6.3,
      "put_skew_pts": 6.2,
-     "unusual": [],
+     "unusual": [
+      {
+       "type": "call",
+       "strike": 385.0,
+       "exp": "2026-12-18",
+       "volume": 1200,
+       "open_interest": 0
+      }
+     ],
      "expiries_used": [
       "2026-11-27",
       "2026-12-04",
@@ -8180,11 +8384,11 @@
      "targetLowPrice": 307.0,
      "targetHighPrice": 560.0,
      "numberOfAnalystOpinions": 20,
-     "heldPercentInstitutions": 1.14668,
+     "heldPercentInstitutions": 1.1391101,
      "heldPercentInsiders": 0.01343,
      "fiftyTwoWeekHigh": 449.841,
      "fiftyTwoWeekLow": 279.77,
-     "marketCap": 15125926912
+     "marketCap": 15296902144
     },
     "insiders": {
      "open_market_buys": 0,
@@ -8203,141 +8407,139 @@
   "market": {
    "peers": {
     "9503.T": {
-     "last": 2580.0,
-     "date": "2026-11-25",
-     "chg_pct": 2.3,
-     "chg_5d_pct": -4.21
+     "last": 2597.0,
+     "date": "2026-11-27",
+     "chg_pct": 1.33,
+     "chg_5d_pct": -2.5
     },
     "BTC-USD": {
-     "last": 58081.44,
-     "date": "2026-11-25",
-     "chg_pct": -2.79,
-     "chg_5d_pct": -1.22
+     "last": 61390.77,
+     "date": "2026-11-27",
+     "chg_pct": 1.48,
+     "chg_5d_pct": 0.37
     },
     "BWXT": {
-     "last": 113.14,
-     "date": "2026-11-24",
-     "chg_pct": -2.32,
-     "chg_5d_pct": -4.56
+     "last": 113.55,
+     "date": "2026-11-25",
+     "chg_pct": 0.36,
+     "chg_5d_pct": -3.49
     },
     "ES=F": {
-     "last": 7067.25,
-     "date": "2026-11-25",
-     "chg_pct": -2.08,
-     "chg_5d_pct": -3.72
+     "last": 7307.25,
+     "date": "2026-11-27",
+     "chg_pct": 1.55,
+     "chg_5d_pct": 1.53
     },
     "ETH-USD": {
-     "last": 1631.24,
-     "date": "2026-11-25",
-     "chg_pct": -2.77,
-     "chg_5d_pct": 0.73
+     "last": 1722.74,
+     "date": "2026-11-27",
+     "chg_pct": 2.07,
+     "chg_5d_pct": 0.1
     },
     "KAP.L": {
-     "last": 55.3,
-     "date": "2026-11-24",
-     "chg_pct": -2.47,
-     "chg_5d_pct": -7.53
+     "last": 53.8,
+     "date": "2026-11-26",
+     "chg_pct": 8.03,
+     "chg_5d_pct": -6.43
     },
     "SPY": {
-     "last": 718.78,
-     "date": "2026-11-24",
-     "chg_pct": -0.49,
-     "chg_5d_pct": -1.86
+     "last": 716.7,
+     "date": "2026-11-25",
+     "chg_pct": -0.29,
+     "chg_5d_pct": -1.85
     },
     "SRUUF": {
-     "last": 17.98,
-     "date": "2026-11-24",
-     "chg_pct": 0.45,
-     "chg_5d_pct": -2.39
+     "last": 17.71,
+     "date": "2026-11-25",
+     "chg_pct": -1.5,
+     "chg_5d_pct": -2.9
     },
     "TLN": {
-     "last": 347.68,
-     "date": "2026-11-24",
-     "chg_pct": -4.7,
-     "chg_5d_pct": -1.98
+     "last": 351.61,
+     "date": "2026-11-25",
+     "chg_pct": 1.13,
+     "chg_5d_pct": -2.38
     },
     "URNM": {
-     "last": 35.07,
-     "date": "2026-11-24",
-     "chg_pct": -1.98,
-     "chg_5d_pct": -7.1
+     "last": 35.28,
+     "date": "2026-11-25",
+     "chg_pct": 0.6,
+     "chg_5d_pct": -4.96
     },
     "VST": {
-     "last": 120.72,
-     "date": "2026-11-24",
-     "chg_pct": -2.54,
-     "chg_5d_pct": -5.06
+     "last": 121.32,
+     "date": "2026-11-25",
+     "chg_pct": 0.5,
+     "chg_5d_pct": -3.39
     },
     "XLU": {
-     "last": 43.4,
-     "date": "2026-11-24",
-     "chg_pct": 0.18,
-     "chg_5d_pct": -0.05
+     "last": 43.61,
+     "date": "2026-11-25",
+     "chg_pct": 0.48,
+     "chg_5d_pct": 0.14
     },
     "^N225": {
-     "last": 57011.62,
-     "date": "2026-11-25",
-     "chg_pct": -2.78,
-     "chg_5d_pct": -3.14
+     "last": 58711.11,
+     "date": "2026-11-27",
+     "chg_pct": 2.11,
+     "chg_5d_pct": -1.23
     },
     "^VIX": {
-     "last": 31.45,
-     "date": "2026-11-25",
-     "chg_pct": 19.31,
-     "chg_5d_pct": 28.05
+     "last": 25.36,
+     "date": "2026-11-27",
+     "chg_pct": -5.37,
+     "chg_5d_pct": -29.34
     },
     "^VIX3M": {
-     "last": 25.47,
-     "date": "2026-11-24",
-     "chg_pct": -0.12,
-     "chg_5d_pct": 1.96
+     "last": 26.29,
+     "date": "2026-11-25",
+     "chg_pct": 3.22,
+     "chg_5d_pct": 8.23
     }
    },
    "regime": {
-    "spy": 718.78,
-    "spy_200d": 730.62,
+    "spy": 716.7,
+    "spy_200d": 730.77,
     "market_healthy": false,
-    "spy_vs_200d_pct": -1.62,
-    "vix": 31.45,
-    "vix3m": 25.47,
-    "vix_backwardation": true
+    "spy_vs_200d_pct": -1.93,
+    "vix": 25.36,
+    "vix3m": 26.29,
+    "vix_backwardation": false
    },
    "leads": {
     "CCJ": {
-     "KAP.L": -2.47,
-     "URNM": -1.98,
-     "SRUUF": 0.45,
-     "^N225": -2.78
+     "KAP.L": 8.03,
+     "URNM": 0.6,
+     "SRUUF": -1.5,
+     "^N225": 2.11
     },
     "NXE": {},
     "UEC": {},
     "DNN": {},
     "UUUU": {},
     "LEU": {
-     "SRUUF": 0.45,
-     "BWXT": -2.32,
-     "URNM": -1.98
+     "SRUUF": -1.5,
+     "BWXT": 0.36,
+     "URNM": 0.6
     },
     "BWXT": {},
     "CEG": {
-     "VST": -2.54,
-     "TLN": -4.7,
-     "XLU": 0.18,
-     "9503.T": 2.3
+     "VST": 0.5,
+     "TLN": 1.13,
+     "XLU": 0.48,
+     "9503.T": 1.33
     },
     "VST": {},
     "TLN": {}
    },
    "crypto_weekend": {
-    "btc_since_friday_pct": -1.17,
+    "btc_since_friday_pct": 0.0,
     "note": "Weekend bitcoin moves hint at Monday's opening gap for the trio; the gap tends to partly fade after the open."
    }
   },
   "calendar": {
    "market_open_today": true,
-   "holidays_next_3w": [
-    "2026-11-26"
-   ],
+   "holidays_next_3w": [],
    "half_days_next_3w": [
     "2026-11-27"
    ],
@@ -8346,7 +8548,9 @@
    "fomc_next_3w": [
     "2026-12-09"
    ],
-   "monthly_opex_next_3w": [],
+   "monthly_opex_next_3w": [
+    "2026-12-18"
+   ],
    "earnings": {
     "CCJ": "2027-02-12",
     "NXE": null,
@@ -8360,248 +8564,222 @@
     "TLN": null
    }
   },
-  "seconds": 61.0
+  "seconds": 14.2
  },
  "morning": {
-  "date": "2026-11-25",
+  "date": "2026-11-27",
   "prepped": true,
-  "nc_line": " | Asia says open: CCJ -1.1%, NXE -1.3%, UEC -1.4%, DNN -1.3%, UUUU -1.2%, LEU -1.7%, BWXT -0.8%, CEG -0.9%, VST -1.4%, TLN -1.2%",
+  "nc_line": " | Asia says open: CCJ +0.9%, NXE +0.9%, UEC +1.2%, DNN +0.9%, UUUU +1.3%, LEU +1.6%, BWXT +0.9%, CEG +1.0%, VST +1.1%, TLN +1.2%",
   "macro": {
-   "risk_level": "high",
-   "market_note": "Market regime is closed for new buys: S&P is 1.6% below its 200-day average, VIX at 31.5 and above its 3-month level (backwardation), and the basket is well below its 10-day average. Pre-Thanksgiving thin trading and the Black Friday half-day add noise. Stay flat; no new Patient Levels buys until the basket reclaims its 10-day average.",
+   "say": "Macro is cautious: S&P is below its 200-day average and the basket is weak, so I'd keep risk at elevated and place no new buys until the basket reclaims its 10-day average. The VIX is falling, but that alone doesn't make the market healthy. Nothing in the peer data gives a clear directional edge on our names today.",
+   "to": "team",
+   "watch": [
+    {
+     "date": "2026-12-09",
+     "ticker": "",
+     "what": "FOMC decision; a macro volatility event that could move the whole basket"
+    },
+    {
+     "date": "2026-12-08",
+     "ticker": "UEC",
+     "what": "Uranium Energy Corp earnings; company-specific move risk for the miner"
+    },
+    {
+     "date": "2026-12-15",
+     "ticker": "CEG",
+     "what": "PJM 2029/30 capacity auction closes; auctions near the price cap have tended to produce a release-day pop that fades, so don't chase it"
+    },
+    {
+     "date": "2026-12-18",
+     "ticker": "",
+     "what": "Monthly opex and quarterly expiration week; the desk's data shows a mild tilt toward weakness in the week after"
+    }
+   ],
+   "risk_level": "elevated",
+   "market_note": "S&P sits about 1.9% below its 200-day average, so the market regime is not healthy. VIX fell 5% to about 25 and is not in backwardation, which is calmer but still elevated. Black Friday is a half-day with thin volume, and the desk's notes show power names tending to be weak the Monday after. Peer moves are mixed: uranium spot is firm but the uranium ETFs are down about 22% over the month, and Japan's Kansai/Asian moves are not a reliable read on our names.",
    "tickers": {
     "CCJ": {
-     "note": "Kazatomprom -2.5%, URNM -2%, Nikkei -2.8% overnight; uranium spot ~$91.55 is up 14% y/y but the uranium ETFs are down 20-35%, so miners are de-rating. No entry while basket gate is closed.",
-     "event_risk": "Next earnings 2027-02-12, outside the window."
+     "note": "Kazatomprom-linked Asian strength (KAP.L +8%) is a one-day echo and may not carry into the US open. Spot uranium is up about 2% monthly but the miners are down about 21%, so there is no clear catch-up edge.",
+     "event_risk": "No scheduled Cameco catalyst in the window; earnings Feb 12."
     },
     "NXE": {
-     "note": "No peer lead data. Basket-gate closed; no entry.",
-     "event_risk": "No scheduled event in window."
+     "note": "No direct peer signal. Follows the sector tape; the miner selloff is the main risk.",
+     "event_risk": "No date confirmed."
     },
     "UEC": {
-     "note": "No peer lead data. Basket-gate closed; no entry.",
-     "event_risk": "Earnings 2026-12-08, inside the window; avoid resting buys into it."
+     "note": "Sector-level weakness with the miners down about 21% this month; no peer edge to act on.",
+     "event_risk": "Earnings Dec 8 (company-specific move risk)."
     },
     "DNN": {
-     "note": "No peer lead data. Basket-gate closed; no entry.",
-     "event_risk": "No scheduled event in window."
+     "note": "No peer signal; trade only if the basket reclaims its 10-day average.",
+     "event_risk": "No date confirmed."
     },
     "UUUU": {
-     "note": "No peer lead data. Basket-gate closed; no entry.",
-     "event_risk": "No scheduled event in window."
+     "note": "No peer signal; sector weakness applies.",
+     "event_risk": "No date confirmed."
     },
     "LEU": {
-     "note": "BWXT -2.3% overnight, URNM -2%; enrichment name tracking the sector selloff. Basket-gate closed; no entry. Federal Register draft EA for Orano enrichment is a mild positive for the enrichment supply story, but not tradeable on its own.",
-     "event_risk": "Earnings 2027-02-10, outside window."
+     "note": "Pre-market SRUUF and URNM are both muted. A Federal Register notice on General Matter's Paducah enrichment facility could add competition to Centrus, but the impact is unconfirmed and this is not an actionable signal today.",
+     "event_risk": "Paducah licensing steps (watch); earnings Feb 10."
     },
     "BWXT": {
-     "note": "Already down 13.6% over the month and 18% under its 20-day high; the 5-day trend is weak. Basket-gate closed; no entry.",
-     "event_risk": "Earnings 2027-02-22, outside window."
+     "note": "BWXT is down about 15% over the month and about 17.5% under its 20-day high. No peer edge.",
+     "event_risk": "Earnings Feb 22."
     },
     "CEG": {
-     "note": "VST -2.5%, TLN -4.7% overnight; power trio weak. Black Friday to Monday has been weak for the power trio in most years. Nothing to buy.",
-     "event_risk": "PJM 2029/30 capacity auction closes Dec 15 (assumed to proceed, clears near cap). Historically the release-day pop fades, so don't chase it."
+     "note": "Japan's 9503.T and utility peers are up slightly, but the desk's data says these overnight moves echo prior sessions. The power trio is weak the Monday after Black Friday in most years.",
+     "event_risk": "PJM 2029/30 auction Dec 15; desk data says a release-day pop tends to fade, so don't buy into it."
     },
     "VST": {
-     "note": "Down 5% over the week and 15% under its 20-day high. Basket-gate closed; no entry.",
-     "event_risk": "PJM auction Dec 15 as above."
+     "note": "Down about 17% over the month and 13% under its 20-day high; the Monday-after-Black-Friday weakness pattern applies.",
+     "event_risk": "PJM auction Dec 15 (same caution as CEG)."
     },
     "TLN": {
-     "note": "Fell 4.6% on the day; the COO sale is a pre-scheduled 10b5-1 plan, so no signal. Basket-gate closed; no entry.",
-     "event_risk": "PJM auction Dec 15 as above."
+     "note": "Relatively stronger, up about 2% on the month, but the COO's 10b5-1 sale is a scheduled sale and gets no weight.",
+     "event_risk": "PJM auction Dec 15."
     }
    },
-   "_cost": 0.0027
+   "why": "I checked the S&P's position against its 200-day average, the VIX level, and the calendar (half-day Black Friday, FOMC Dec 9, PJM auction Dec 15, opex Dec 18). The regime is unhealthy and the desk's own tests show buy-the-dip rules have failed in 2008-18 and don't generalize, so the stance is cautious.",
+   "call": {
+    "ticker": "VST",
+    "direction": "down",
+    "days": 3
+   },
+   "_cost": 0.0035,
+   "_notes_used": [
+    "SECTOR Uranium market",
+    "SECTOR Government and laws",
+    "CCJ Legal",
+    "VST Snapshot",
+    "TLN Snapshot",
+    "BWXT Snapshot"
+   ],
+   "files_read": "SECTOR Uranium market, SECTOR Government and laws, CCJ Legal, VST Snapshot, TLN Snapshot, BWXT Snapshot"
   },
   "whale": {
-   "say": "I'm going flat on the whole nuclear lineup for now. The basket is below its 10-day average and the market gate is closed, so no new buys. The whale data is mostly quiet: no unusual options or insider buying, and the only real skew is a bearish put skew in UUUU and UEC, which is a weak months-long signal, not a 1-2 week one. I agree with the Macro Analyst's stay-flat call.",
-   "to": "Macro Analyst",
    "tickers": {
     "CCJ": {
      "bias": "neutral",
      "conviction": "low",
      "watch_levels": [
       50.0,
-      58.0,
       85.0
      ],
      "swing_expectation": "normal",
-     "notes": "No insider buys, 0 open-market sales, analyst mean target $115 (buy rating) but the stock is 55% below its 1-year high. Put/call OI is low (0.12) and volume ratio 0.29, so no hedging rush. Skew is moderately steep but CCJ has no strong signal either way. Watch $58 (largest gamma strike) and $50 (put wall) as levels, not support."
+     "notes": "Steep put skew (6.2 pts) is mildly bearish over months, but short-term it is weak evidence. Short volume z -0.67 is no signal. No insider buys; CEO has not bought. Put wall at 50 and call wall at 85 are levels to watch only."
     },
     "NXE": {
      "bias": "neutral",
      "conviction": "low",
      "watch_levels": [
       6.0,
-      7.0,
       9.0
      ],
      "swing_expectation": "normal",
-     "notes": "Short ratio is high (9.2 days to cover) but short volume z-score is -1.24, so no unusual short pressure. No insider trades in 90 days. Options show no unusual activity. No signal."
+     "notes": "No signal. Thin options book, short volume z -1.24 (below |2|), no insider buys. Insider ownership is high (7.7%) but no open-market buys recorded in 90 days."
     },
     "UEC": {
-     "bias": "bearish",
+     "bias": "neutral",
      "conviction": "low",
      "watch_levels": [
-      5.0,
-      6.0,
-      7.5
+      5.5,
+      6.0
      ],
-     "swing_expectation": "bigger",
-     "notes": "Put skew is 12.5 points, the steepest in the uranium group, which matches the bearish-over-months pattern. Stock is down 33% from its 20-day high and 72% off the 1-year high. No insider buying. Short-ratio 6.8 days. Low conviction because skew alone is weak evidence."
+     "swing_expectation": "normal",
+     "notes": "Put skew is 18.7 pts, steep, but mildly bearish over months only. Unusual 767-contract call volume at 6.0 for Dec 18 with 0 OI is not a confirmed bullish bet. Short volume z -0.87 is no signal. No insider buys."
     },
     "DNN": {
      "bias": "neutral",
      "conviction": "low",
      "watch_levels": [
       1.5,
-      2.0,
       2.5
      ],
      "swing_expectation": "bigger",
-     "notes": "Implied vol is 25%, the highest here, and short volume is elevated (z +1.2). Penny-size price means ~3% implied moves are sizeable. No insider trades, no unusual options flow. No directional signal."
+     "notes": "Short volume z +1.2, below the |2| threshold, so no signal. Implied vol is high (25%) and skew steep, so expect bigger swings. No insider buys."
     },
     "UUUU": {
-     "bias": "bearish",
+     "bias": "neutral",
      "conviction": "low",
      "watch_levels": [
-      4.5,
-      6.0,
-      8.5
+      5.0,
+      9.0
      ],
-     "swing_expectation": "bigger",
-     "notes": "Put skew is 18.7 points, the steepest in the group, and implied move 5.2% for the next expiry. Short float is 22.7%. No insider buys. Bearish lean is from put skew only, low conviction."
+     "swing_expectation": "normal",
+     "notes": "No signal. Short volume z +0.34, no insider buys, put/call OI 0.12. Options positioning is ordinary."
     },
     "LEU": {
      "bias": "neutral",
      "conviction": "low",
      "watch_levels": [
-      75.0,
-      84.0,
-      100.0
+      55.0,
+      240.0
      ],
      "swing_expectation": "normal",
-     "notes": "Options are thin (about 700 call OI at the wall) and short volume is normal (z -0.04). Implied move 6.6% on the 12/18 expiry is wide but there is no positioning signal. No insider trades."
+     "notes": "No signal. No unusual flow, short volume z -0.04, no insider buys. Options book is thin, so the 240 call wall is not a meaningful level."
     },
     "BWXT": {
      "bias": "neutral",
      "conviction": "low",
      "watch_levels": [
       100.0,
-      113.0,
       125.0
      ],
      "swing_expectation": "normal",
-     "notes": "Quiet on every whale metric: short volume normal, no insider trades, put/call OI 0.22 with very few contracts. No signal."
+     "notes": "No signal. Short volume z 0.1, no insider buys, thin options book."
     },
     "CEG": {
      "bias": "neutral",
-     "conviction": "med",
+     "conviction": "low",
      "watch_levels": [
       200.0,
-      245.0,
-      300.0
+      290.0
      ],
-     "swing_expectation": "bigger",
-     "notes": "Short volume is sharply down (z -2.8, latest 28.5% vs 44.8% average), which is an unusual drop in off-exchange shorting. Negative dealer gamma suggests bigger swings. Put/call OI 0.65 with a large put wall at $200 (4,939 OI). No insider buys. Short volume drop is the only notable reading; it is weak evidence, so I'm not calling direction."
+     "swing_expectation": "normal",
+     "notes": "No signal. Short volume z -2.8 is unusually low selling, but this is a weak, short-term reading with no insider buys to confirm it. Do not read as bullish."
     },
     "VST": {
      "bias": "neutral",
      "conviction": "low",
      "watch_levels": [
       95.0,
-      115.0,
-      165.0
+      210.0
      ],
-     "swing_expectation": "bigger",
-     "notes": "Two insider open-market buys by James Burke worth $903k, the only real insider buying in the group, but it's a single buyer over 90 days and the stock's 16.6% gain since then makes it weak. Sales ($16.6M) were nearly all under 10b5-1 plans, which we discount. Negative gamma points to bigger swings. Short-volume is normal."
+     "swing_expectation": "normal",
+     "notes": "Two open-market insider buys ($903k, incl. James Burke) are the one meaningful insider signal in the basket, but they are small against a 90-day window and were not paired with a clear price move. Sales of $16.6M are almost all 10b5-1 planned sales, so ignore them. Mild, not high, conviction."
     },
     "TLN": {
      "bias": "neutral",
      "conviction": "low",
      "watch_levels": [
-      310.0,
-      348.0,
+      330.0,
       430.0
      ],
-     "swing_expectation": "bigger",
-     "notes": "Short volume z is +1.9, the highest in the group. But 19 of 22 insider sales ($23M) were under 10b5-1 plans, so those are scheduled and not a signal. Negative gamma suggests bigger swings. Desk note says sell-the-news pattern after restart headlines, so don't add new buys here for 5 sessions after any restart news."
+     "swing_expectation": "normal",
+     "notes": "Short volume z +1.9, just under the |2| threshold, so no signal. The $23M of insider sales are mostly 10b5-1 planned sales and carry no predictive weight, per desk research. Unusual 1,200-contract call at 385 (Dec 18, 0 OI) is not confirmed. No insider buys."
     }
    },
-   "why": "Most of the data is quiet or uses plans-based sales that the desk discounts, so I'm mostly saying 'neutral, no signal' across the board. The two weak bearish reads (UEC and UUUU) are only put skew, which the desk notes flag as weak evidence over months, not 1-2 weeks.",
-   "call": {
-    "ticker": "UUUU",
-    "direction": "down",
-    "days": 5
-   },
-   "_cost": 0.0044,
+   "why": "Most of the basket shows no real signal: short volume readings are inside |2| and options positioning is ordinary. The only real insider signal is VST's two small open-market buys, which I rate as mild, and the TLN sales are planned 10b5-1 sales the desk has already ruled out.",
+   "say": "Nothing in the big-money data is strong enough to call a direction for the basket today. The only real insider signal is VST's two small open-market buys, which I treat as mild. I agree with the Macro Analyst's caution: no new buys are warranted while the basket is weak.",
+   "to": "Macro Analyst",
+   "call": null,
+   "_cost": 0.0042,
    "_notes_used": [
+    "CCJ Options and big money",
     "CCJ Ownership and analysts",
     "CCJ Leadership and insiders",
-    "CCJ Options and big money",
-    "NXE Ownership and analysts",
     "NXE Options and big money",
+    "NXE Leadership and insiders",
     "UEC Ownership and analysts",
-    "SECTOR"
+    "desk_notes already_checked_facts (TLN 10b5-1 sale, officer sales, put/call and short volume rules)"
    ],
-   "files_read": "CCJ Ownership and analysts, CCJ Leadership and insiders, CCJ Options and big money, NXE Ownership and analysts, NXE Options and big money, UEC Ownership and analysts, SECTOR"
+   "files_read": "CCJ Options and big money, CCJ Ownership and analysts, CCJ Leadership and insiders, NXE Options and big money, NXE Leadership and insiders, UEC Ownership and analysts, desk_notes already_checked_facts (TLN 10b5-1 sale, officer sales, put/call and short volume rules)"
   },
   "crowd": {
-   "tickers": {
-    "CCJ": {
-     "chase_risk": "med",
-     "note": "Crowd is bearish (12 bearish vs 2 bullish on Stocktwits), price is down about 28% from its 20-day high and 25% below its 50-day average. Analyst consensus is a buy with a mean target around $114, but targets lag and the mention count is tiny (rank 462 on Reddit), so there is no hype to fade, just negative sentiment."
-    },
-    "NXE": {
-     "chase_risk": "low",
-     "note": "Stocktwits is mostly promotional link posts with no real crowd conviction, and Reddit has no data. Short ratio is high (about 9 days to cover), so any squeeze is a possibility, not a signal."
-    },
-    "UEC": {
-     "chase_risk": "low",
-     "note": "Bullish sentiment on Stocktwits (14 bullish vs 3 bearish) but the stock is down about 57% over a quarter and 72% below its 1-year high. Mentions are modest and the bullish posts read like hopium, so this is neglect-plus-rebound talk, not a crowd chase."
-    },
-    "DNN": {
-     "chase_risk": "low",
-     "note": "Little substantive chatter; the posts are about averaging down after a brutal drop. No crowding signal in either direction."
-    },
-    "UUUU": {
-     "chase_risk": "low",
-     "note": "Reddit rank 410 with one mention, so no real spike. Stocktwits posts mention critical-mineral tariff headlines and \u2018algos\u2019 pushing the group down, which is headline noise rather than a crowd signal."
-    },
-    "LEU": {
-     "chase_risk": "low",
-     "note": "Stocktwits sentiment is light and mixed (7 bullish, 2 bearish). The stock is far off its 52-week high and the analyst target spread is very wide ($100 to $300), so consensus is not a reliable anchor."
-    },
-    "BWXT": {
-     "chase_risk": "low",
-     "note": "Almost all posts are price-chatter ('114 incoming', 'double bottom') with no fundamental crowd. Analyst consensus is a buy with a mean target near $199, well above the current level; the target lags, so I don't read it as a catalyst."
-    },
-    "CEG": {
-     "chase_risk": "low",
-     "note": "Crowd is quiet (4 bullish vs 1 bearish). Recent posts raise a ratepayer and regulatory cost question, which is a real risk worth watching but not a crowding signal. Analyst mean target is about $340 against a price in the mid-$200s to $300s range."
-    },
-    "VST": {
-     "chase_risk": "low",
-     "note": "Crowd is mixed and small; the bearish posts are about the stock falling and \u2018pump and dump\u2019 accusations, with no clear hype to fade. Analyst consensus is strong buy."
-    },
-    "TLN": {
-     "chase_risk": "low",
-     "note": "Only price-level chart posts and a Oppenheimer target raise. Analyst mean target sits well above the price, but targets lag; no mention spike."
-    }
-   },
-   "say": "Crowd picture is mostly quiet or negative, with no mention spike to fade, so nothing here changes the answer. I agree with the Macro Analyst and Whale Watcher: the market gate is closed (basket below its 10-day average), so no new buys, and I'm staying flat.",
+   "_raw": "{\"say\": \"I'm the Crowd Analyst, and the crowd picture is mixed-to-cautious for the basket. CCJ hit a fresh 52-week low, its Reddit mentions are negligible, and the StockTwits feed is more bearish than bullish; I agree with the Macro Analyst and Whale Watcher that no new buys make sense while the basket is below its 10-day average. The mention counts are tiny everywhere, so there's no meaningful hype to chase or fade, and I don't see a clean directional edge in the crowd data.\", \"to\": \"Macro Analyst\", \"tickers\": {\"CCJ\": {\"chase_risk\": \"low\", \"note\": \"Reddit mentions are near zero (1 in 24h), and StockTwits is 3 bullish vs 7 bearish with a fresh 52-week low printed. Analyst mean target sits far above price, but targets lag, so that isn't a reason to chase. Crowd is neglecting it, not crowding it.\"}, \"NXE\": {\"chase_risk\": \"med\", \"note\": \"StockTwits is 16 bullish vs 0 bearish, which is a one-sided tilt on a stock down about 21% over the month. Short ratio is high at 9.2. Bullish chatter after a drop can mean early buyers, but the volume is thin and the posts are mostly promo links, so I'd not chase it.\"}, \"UEC\": {\"chase_risk\": \"med\", \"note\": \"Bullish StockTwits (16 vs 4) with 'huge run coming' posts, while the stock is down about 29% over the month and hit a 52-week low. Crowd optimism against a broken chart is a classic 'don't catch the falling knife' setup; I'd want the basket to recover before any entry.\"}, \"DNN\": {\"chase_risk\": \"low\", \"note\": \"Very quiet: no Reddit presence a",
+   "say": "I'm the Crowd Analyst, and the crowd picture is mixed-to-cautious for the basket. CCJ hit a fresh 52-week low, its Reddit mentions are negligible, and the StockTwits feed is more bearish than bullish; I agree with the Macro Analyst and Whale Watcher that no new buys make sense while the basket is below its 10-day average. The mention counts are tiny everywhere, so there's no meaningful hype to chase or fade, and I don't see a clean directional edge in the crowd data.",
    "to": "Macro Analyst",
-   "why": "Checked Stocktwits, Reddit counts, analyst targets and the desk notes; the only meaningful crowd signal is bearish sentiment in CCJ, which argues against chasing, not for buying, and the basket gate is closed anyway.",
-   "watch": [],
-   "_cost": 0.0025,
-   "_notes_used": [
-    "CCJ Crowd",
-    "CCJ Snapshot",
-    "UEC Crowd",
-    "NXE Crowd",
-    "CCJ News"
-   ],
-   "files_read": "CCJ Crowd, CCJ Snapshot, UEC Crowd, NXE Crowd, CCJ News"
+   "_cost": 0.0026
   }
  },
  "orders_log": [
@@ -8989,16 +9167,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.05403,
+  "day_usd": 0.08049,
   "month": "2026-11",
-  "month_usd": 2.14822,
-  "total_usd": 2.14822,
+  "month_usd": 2.17468,
+  "total_usd": 2.17468,
   "by_role": {
-   "macro": 0.21206,
-   "whale": 0.02215,
-   "crowd": 0.01446,
-   "level": 0.23691,
-   "scout": 0.24605,
+   "macro": 0.21558,
+   "whale": 0.02631,
+   "crowd": 0.01703,
+   "level": 0.2527,
+   "scout": 0.24647,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9266,7 +9444,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-27 08:55 ET",
+ "last_cycle": "2026-11-27 09:00 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -54957,7 +55135,7 @@
    }
   },
   "fomc": {
-   "fetched": "2026-11-25",
+   "fetched": "2026-11-27",
    "dates": [
     "2021-01-27",
     "2021-03-17",
@@ -55987,10 +56165,92 @@
     "short_z": 1.9,
     "reddit": null
    }
+  },
+  "2026-11-27": {
+   "CCJ": {
+    "skew": 6.2,
+    "gex": 0.07,
+    "iv": 6.3,
+    "pc_oi": 0.28,
+    "short_z": -0.67,
+    "reddit": 1
+   },
+   "NXE": {
+    "skew": 0.0,
+    "gex": 0.0,
+    "iv": 12.5,
+    "pc_oi": 0.0,
+    "short_z": -1.24,
+    "reddit": null
+   },
+   "UEC": {
+    "skew": 18.7,
+    "gex": 0.0,
+    "iv": 6.3,
+    "pc_oi": 0.14,
+    "short_z": -0.87,
+    "reddit": null
+   },
+   "DNN": {
+    "skew": 25.0,
+    "gex": 0.0,
+    "iv": 25.0,
+    "pc_oi": 0.01,
+    "short_z": 1.2,
+    "reddit": null
+   },
+   "UUUU": {
+    "skew": 12.5,
+    "gex": -0.0,
+    "iv": 12.5,
+    "pc_oi": 0.12,
+    "short_z": 0.34,
+    "reddit": 1
+   },
+   "LEU": {
+    "skew": 6.2,
+    "gex": 0.0,
+    "iv": 6.3,
+    "pc_oi": 0.29,
+    "short_z": -0.04,
+    "reddit": null
+   },
+   "BWXT": {
+    "skew": 6.2,
+    "gex": 0.0,
+    "iv": 6.3,
+    "pc_oi": 0.42,
+    "short_z": 0.1,
+    "reddit": 1
+   },
+   "CEG": {
+    "skew": 6.2,
+    "gex": 0.02,
+    "iv": 6.3,
+    "pc_oi": 0.53,
+    "short_z": -2.8,
+    "reddit": null
+   },
+   "VST": {
+    "skew": 6.2,
+    "gex": -0.02,
+    "iv": 6.3,
+    "pc_oi": 0.61,
+    "short_z": 0.44,
+    "reddit": 1
+   },
+   "TLN": {
+    "skew": 6.2,
+    "gex": 0.07,
+    "iv": 6.3,
+    "pc_oi": 0.66,
+    "short_z": 1.9,
+    "reddit": null
+   }
   }
  },
  "radar": {
-  "date": "2026-11-25",
+  "date": "2026-11-27",
   "results": {
    "UEC": {
     "ticker": "UEC",
@@ -55998,7 +56258,7 @@
     "expiry": "2026-12-11",
     "strike": 5.5,
     "implied_move_pct": 0.0,
-    "history_expected_move_pct": 12.8,
+    "history_expected_move_pct": 11.7,
     "cheapness_ratio": null,
     "looks_cheap": false,
     "straddle_cost_usd": 0,
@@ -56013,37 +56273,37 @@
   "CCJ": {
    "messages": 30,
    "bullish": 3,
-   "bearish": 11,
+   "bearish": 7,
    "latest": [
-    "$OKLO I might understand why Oklo is down. But $CCJ? $BE? $URA? And oil and gas? And solar? The list goes on. Energy needs are rising, regar",
-    "I think the market is pricing $CCJ as a \"only AI\" related trade. People miss the point that countries are going to be in great need for ener",
-    "$URA $UEC $URNM Fundamentally bullish, but short-term bearish Growing AI and data-centre energy demand, bipartisan US nuclear support, 78\u201380",
-    "$CCJ interested at $41, but a bit worried the DEMs will shelve nuclear in favor of solar and wind within two years.",
-    "$CCJ is down 2.52% so far today, one of the biggest moves among large energy stocks. Here's the sector on Stock Meadow's heatmap: https://st"
+    "$OKLO $SMR $CCJ $NNE $LEU AI data centers need way more power, and nuclear is the long-term answer. Which one's the best buy on this pullbac",
+    "I think $CCJ is up to something. I have been buying this company on the downtrend. Because for me just a missed earnings does not make a com",
+    "$CCJ AWAKEN OH CAMECO",
+    "Cameco Corporation ($CCJ) is undergoing a wave II corrective pullback, which is expected to attract long-term buyers around the $59.74 \u2013 $47",
+    "$CCJ printed a new 52-week low today"
    ]
   },
   "NXE": {
    "messages": 30,
-   "bullish": 16,
+   "bullish": 17,
    "bearish": 0,
    "latest": [
+    "$NXE Here we gooooo!!",
     "https://nfne.ws/325796 $NXE $NXE.TSX @NexGen #NuclearEnergy #NXE #RookI #Uranium #Energy #EnergyMetals #Mining #MiningStocks #Utilities #NY",
     "https://nfne.ws/325505 $NXE $NXE.TSX @NexGen #NuclearEnergy #NXE #RookI #Uranium #Energy #EnergyMetals #Mining #MiningStocks #Utilities #NY",
     "hallador $HNRG owns the coal mine and the power plant that burns it its sunrise coal unit mines coal in the illinois basin and feeds the mer",
-    "I learned a lot about nuclear demand and uranium from Monica who runs corp dev for $NXE - Interviewed her at tomorrow x",
-    "$LTBR $NXE $DNN $CCJ $URNM We need more uranium, and in the future we need to change to more effective, better performing fuel. IAEA Directo"
+    "I learned a lot about nuclear demand and uranium from Monica who runs corp dev for $NXE - Interviewed her at tomorrow x"
    ]
   },
   "UEC": {
    "messages": 30,
-   "bullish": 16,
+   "bullish": 17,
    "bearish": 4,
    "latest": [
-    "$UEC quietly seeing more institutional flow lately. Doesn't take much to notice the uranium space getting attention from bigger players agai",
-    "$UEC anyone know why this has been absolutely decimated the last 5 months?",
-    "$URA $UEC $URNM Fundamentally bullish, but short-term bearish Growing AI and data-centre energy demand, bipartisan US nuclear support, 78\u201380",
-    "$UEC",
-    "$UEC What now shorties. Calling for 2 dollars is called FUD!"
+    "$UUUU $USAR $MP $UEC UEC is about to blow up!",
+    "$SMR I like this but $UEC is better fundamentally",
+    "$UUUU $USAR $MP $UEC why are these falling actually? its not like we dont need their stuff. we do need them and we need them a lot. what is ",
+    "$UEC Huge run comming!",
+    "$UEC Bullish Hammer! https://chatgpt.com/share/6b07f825-85c4-83ea-bf7b-aa397d1774f8?ogimg=plain"
    ]
   },
   "DNN": {
@@ -56051,35 +56311,35 @@
    "bullish": 8,
    "bearish": 0,
    "latest": [
+    "$DNN gonna be like $10 in a couple years",
+    "$DNN Shiz. Another market beatdown day",
     "$DNN I can and ride out a storm. The killer of any stock is the r/s and dilution cycle.",
     "If you\u2019ve ever wanted to catch a short squeeze early instead of watching it rip after the fact, this group is built for that. Sharing moment",
-    "$DNN this has been a brutal drop. only thing we have to blame is the overall market at the moment, definitely adding 1k shares here next wek",
-    "$DNN $URG Another 200 shares of both. Down so much at this point I hope it sticks around for a few more months so I can build up some funds ",
-    "$LTBR $NXE $DNN $CCJ $URNM We need more uranium, and in the future we need to change to more effective, better performing fuel. IAEA Directo"
+    "$DNN this has been a brutal drop. only thing we have to blame is the overall market at the moment, definitely adding 1k shares here next wek"
    ]
   },
   "UUUU": {
    "messages": 30,
-   "bullish": 7,
-   "bearish": 2,
+   "bullish": 12,
+   "bearish": 1,
    "latest": [
-    "$UUUU how much blood can they extract from this turnip? Fukk \ud83d\ude06",
-    "$AREC $MP $USAR $UUUU $UAMY",
-    "Latest company news on $UUUU, Nov 23: Energy Fuels is targeting an additional one million pounds of U.S. uranium in its upcoming processing ",
-    "\ud83d\udea8 NEW CHINA TARIFFS INCOMING \u2014 THE CRITICAL MINERALS SECTOR COULD BE ONE OF THE BIGGEST BENEFICIARIES. \ud83c\uddfa\ud83c\uddf8 $MP $USAR $UUUU $CRML $ALOY REA/ U",
-    "Algos run critical mineral companies like $USAR and $MP and $UUUU down due to markets reaction for tariffs on China and more. However when t"
+    "$UUUU squeeze?!",
+    "$ALOY $MP $UAMY $USAR $UUUU God is GREAT",
+    "$UUUU $GDX $GDXJ KAMANITE PADAT. PADAT OT NEBETO",
+    "$UUUU $USAR $MP $UEC UEC is about to blow up!",
+    "$UUUU So I think this is a good deal and want to keep buying but now I\u2019m running out of cash."
    ]
   },
   "LEU": {
    "messages": 30,
-   "bullish": 7,
+   "bullish": 9,
    "bearish": 2,
    "latest": [
-    "$LEU no logic or reason here. Just stuck in algorithms",
-    "$UUUU comes out on top when you rank Nuclear and Uranium stocks on highest growth at lowest valuation This looks for the fastest forward gro",
-    "$LEU $QQQ $SPY $SMH The future of energy down 64% YTD. Y\u2019all crazy Keep chasing the businesses with zero moats..",
-    "$LEU go up my child",
-    "$LEU unfortunately theres no real news i expext over next few months that can turn the narrative around. maybe another oklo like contract or"
+    "$OKLO $SMR $CCJ $NNE $LEU AI data centers need way more power, and nuclear is the long-term answer. Which one's the best buy on this pullbac",
+    "$ALT 10Y coming down, thats key and why I think market is bullish going foward. $SPY $DIA $LEU $XBI",
+    "$LEU added",
+    "$LEU Doubled my position here, I like the risk/reward. It can fall some more -but with long perspective this is a bargain. Investor update 7",
+    "$LEU what?"
    ]
   },
   "BWXT": {
@@ -56087,35 +56347,35 @@
    "bullish": 9,
    "bearish": 0,
    "latest": [
+    "$BW historical company, don\u2019t know much about it but I\u2019m long on BWXT. This is an industrial at a peak low that likely isn\u2019t going anywhere.",
+    "$BWXT 120 soon!",
+    "$BWXT Commons at 110.03 Thanks for the deal!",
     "Latest company news on $BWXT, Nov 23: Westinghouse Canada awarded BWXT AP1000 manufacturing qualification contracts. Full FREE hub with cata",
-    "$BWXT 114 incoming!",
-    "$BWXT Haha",
-    "$BWXT Double bottom 112.20",
-    "$BWXT Up from here!"
+    "$BWXT 114 incoming!"
    ]
   },
   "CEG": {
    "messages": 30,
-   "bullish": 4,
+   "bullish": 8,
    "bearish": 1,
    "latest": [
-    "$CEG This stock should be at 350",
-    "$CEG seems like power for ai is a great story until ratepayers and regulators ask who pays for the grid. demand is real, permission and pric",
-    "$MU $SNDK Exactly. I haven\u2019t heard anything mentioned about Google, Meta etc who have already sighned 20 year power commitments with $CEG wh",
-    "$CEG seems like the grid upgrade bill for the ai build lands on ratepayers who never bought a chip. towns get the power lines and the higher",
-    "$CEG seems like power contracts looked like the safest ai trade. safe until the buyer needs less power, later than promised. then the utilit"
+    "nextera $NEE depends on 9 types of suppliers and sells to 6 groups of customers, and the supply chain page shows a business that makes much ",
+    "$BE $VRT $GEV $CEG $VST \ud83c\udfaf BULLSEYE STRONG BUY ALERT \ud83c\udfaf On July 1 premarket, near the peak of the AI trade, we called a mass strong sell on AI",
+    "$CEG seems like pension money is long the power build whether it signed up or not. index funds hold the utilities, the hyperscalers, and the",
+    "I think the market is so wrong about $CEG . They have some great deals running and it is not a company like $BE . I thin $CEG is such a grea",
+    "$CEG Building a fatty"
    ]
   },
   "VST": {
    "messages": 30,
-   "bullish": 9,
-   "bearish": 3,
+   "bullish": 8,
+   "bearish": 2,
    "latest": [
-    "$VST excellent",
-    "Accidentally asked my uncle about bottleneck stocks at thanksgiving dinner\u2026 $AAOI $SIVEF $VST $BE $SPY",
-    "$VST just buy puts this stock is dog sh it. Again everyday it\u2019s red drastically. Garbage pump and dump scam",
-    "$VST does anyone in here know how to read financials? Everyone trying to make a buck in a week. Leverage is manageable the demand is undiabl",
-    "$VST why is this down so much"
+    "$BE $VRT $GEV $CEG $VST \ud83c\udfaf BULLSEYE STRONG BUY ALERT \ud83c\udfaf On July 1 premarket, near the peak of the AI trade, we called a mass strong sell on AI",
+    "$VST stock about to pump for the first week of December",
+    "$VST ended green today, nice!",
+    "IHT stock is the most undervalued company in the market Massive merger coming any day and they are profitable already performing at record f",
+    "When you rank Clean Energy: Grid & Renewable Power stocks on highest growth at lowest valuation, $VST comes out on top This looks for the fa"
    ]
   },
   "TLN": {
@@ -56132,28 +56392,28 @@
   }
  },
  "last_scan": {
-  "CCJ": 1795637707.7859347,
-  "NXE": 1795637708.09272,
-  "UEC": 1795637711.158042,
-  "DNN": 1795637714.166815,
-  "UUUU": 1795637717.0509694,
-  "LEU": 1795637719.7941146,
-  "BWXT": 1795637719.8745418,
-  "CEG": 1795637719.9584074,
-  "VST": 1795637720.0313993,
-  "TLN": 1795637722.5285704
+  "CCJ": 1795788085.9668355,
+  "NXE": 1795788085.974906,
+  "UEC": 1795788088.8157287,
+  "DNN": 1795788091.1092403,
+  "UUUU": 1795788093.151423,
+  "LEU": 1795788095.2986836,
+  "BWXT": 1795788097.7920842,
+  "CEG": 1795788097.8003418,
+  "VST": 1795788097.81416,
+  "TLN": 1795788099.843176
  },
  "setup_status": {
   "CCJ": "a level at $58.44 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
-  "NXE": "the Level Analyst skipped the setup: The basket is below its 10-day average, so the market gate is closed and no new buys are allowed. NXE is also 17% under its 50-day average and 33% under its 200-da",
-  "UEC": "the Level Analyst skipped the setup: Basket is below its 10-day average, so the market gate is closed and no new buys are allowed. The stock is also 30% below its 20-day high, down 72% from the 1-year",
-  "DNN": "the Level Analyst skipped the setup: The basket gate is closed (the whole nuclear lineup is below its 10-day average, and the macro desk says stay flat), so no new buys. On top of that, DNN is 22% bel",
-  "UUUU": "the Level Analyst skipped the setup: The basket is below its 10-day average, so the market gate is closed and no new buys are allowed. The stock is also down about 37% over the month and sits far belo",
-  "LEU": "a level at $81.32 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
-  "BWXT": "a level at $111.12 but it sits in a thin, low-volume zone over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
+  "NXE": "the Level Analyst skipped the setup: The basket is below its 10-day average, which is a standing no-new-buys condition, and NXE is 17% below its 50-day average and 33% below its 200-day, so this suppo",
+  "UEC": "the Level Analyst skipped the setup: The basket is below its 10-day average, which blocks new buys. UEC is also 29% down over the month, 52-week-low territory, and 28.8% under its 50-day average. Our ",
+  "DNN": "the Level Analyst skipped the setup: The whole basket is below its 10-day average, which blocks new buys under our rules. DNN is also 22% under its 50-day average and 43% under its 200-day average, an",
+  "UUUU": "the Level Analyst skipped the setup: The whole basket is below its 10-day average, which blocks new buys. UUUU is also far under its 50-day (-38.9%) and 200-day (-65%) averages, and our fill tests sho",
+  "LEU": "the Level Analyst skipped the setup: The basket is below its 10-day average, which blocks new buys, and LEU sits about 30% under its 50-day average and about 50% under its 200-day average. Our own fil",
+  "BWXT": "a level at $111.12 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
   "CEG": "no confirmed support level below the price (it has been falling through them)",
-  "VST": "the Level Analyst skipped the setup: Basket is below its 10-day average, so the market gate is closed and no new buys are allowed. VST is also 14% under its 20-day high and below its 200-day average, ",
-  "TLN": "the Level Analyst skipped the setup: The basket is below its 10-day average, so the market gate is closed and no new buys are allowed. TLN also has a restart-style news cycle with PJM auction delay he"
+  "VST": "the Level Analyst skipped the setup: The basket is below its 10-day average, which blocks new buys under our rules. VST is also 19% under its 200-day average and 13% under its 50-day, and our own fill",
+  "TLN": "the Level Analyst skipped the setup: Basket is below its 10-day average, which blocks all new buys under desk rules. TLN itself is above its 50-day average, but the group weakness and the pending PJM "
  },
  "sync": {
   "pulse_up": false,
@@ -58669,7 +58929,8 @@
   "4abce8dfecf110ac",
   "5d22d1b6e3da5fb6",
   "16c52bc5bc8110db",
-  "46c5572fb4069bdf"
+  "46c5572fb4069bdf",
+  "1ba32eb74ecded03"
  ],
  "news_slow_at": 1795787539.006358,
  "officer": {
@@ -214794,6 +215055,128 @@
    ],
    "practice": false,
    "end": "08:35"
+  },
+  {
+   "id": "20261127090027339642",
+   "title": "Morning meeting Fri Nov 27",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "kind": "morning",
+   "start": "2026-11-27 09:00",
+   "msgs": [
+    {
+     "t": "09:00",
+     "who": "chief",
+     "to": "team",
+     "text": "Morning, team. The bell is at 9:30; let's be ready before it. Lineup CCJ, NXE, UEC, DNN, UUUU, LEU, BWXT, CEG, VST, TLN. Account $1,005.46, +0.49% this week. Open trades: none. Nowcast first, then macro, whales and the crowd; the Level Analyst picks the buys. Orders go in once the open prints.",
+     "outcome": false
+    },
+    {
+     "t": "09:00",
+     "who": "nowcast",
+     "to": "team",
+     "text": "Asia's close points to these opens: CCJ +0.9%, NXE +0.9%, UEC +1.2%, DNN +0.9%, UUUU +1.3%, LEU +1.6%, BWXT +0.9%, CEG +1.0%, VST +1.1%, TLN +1.2%. That's priced in at 9:30, so treat it as context, not a trade.",
+     "outcome": false
+    },
+    {
+     "t": "09:01",
+     "who": "macro",
+     "to": "team",
+     "text": "Macro is cautious: S&P is below its 200-day average and the basket is weak, so I'd keep risk at elevated and place no new buys until the basket reclaims its 10-day average. The VIX is falling, but that alone doesn't make the market healthy. Nothing in the peer data gives a clear directional edge on our names today.",
+     "outcome": false,
+     "notes": "date: 2026-12-09\nwhat: FOMC decision; a macro volatility event that could move the whole basket\ndate: 2026-12-08\nticker: UEC\nwhat: Uranium Energy Corp earnings; company-specific move risk for the miner\ndate: 2026-12-15\nticker: CEG\nwhat: PJM 2029/30 capacity auction closes; auctions near the price cap have tended to produce a release-day pop that fades, so don't chase it\ndate: 2026-12-18\nwhat: Monthly opex and quarterly expiration week; the desk's data shows a mild tilt toward weakness in the week after\nrisk level: elevated\nS&P sits about 1.9% below its 200-day average, so the market regime is not healthy. VIX fell 5% to about 25 and is not in backwardation, which is calmer but still elevated. Black Friday is a half-day with thin volume, and the desk's notes show power names tending to be weak the Monday after. Peer moves are mixed: uranium spot is firm but the uranium ETFs are down about"
+    },
+    {
+     "t": "09:01",
+     "who": "whale",
+     "to": "macro",
+     "text": "Nothing in the big-money data is strong enough to call a direction for the basket today. The only real insider signal is VST's two small open-market buys, which I treat as mild. I agree with the Macro Analyst's caution: no new buys are warranted while the basket is weak.",
+     "outcome": false,
+     "notes": "CCJ: bias: neutral; conviction: low; swing expectation: normal; notes: Steep put skew (6.2 pts) is mildly bearish over months, but short-term it is weak evidence. Short volume z -0.67 is no signal. No insider buys; CEO has not bought. Put wall at 50 and call wall at 85 are levels to watch only.\nNXE: bias: neutral; conviction: low; swing expectation: normal; notes: No signal. Thin options book, short volume z -1.24 (below |2|), no insider buys. Insider ownership is high (7.7%) but no open-market buys recorded in 90 days.\nUEC: bias: neutral; conviction: low; swing expectation: normal; notes: Put skew is 18.7 pts, steep, but mildly bearish over months only. Unusual 767-contract call volume at 6.0 for Dec 18 with 0 OI is not a confirmed bullish bet. Short volume z -0.87 is no signal. No insider buys.\nDNN: bias: neutral; conviction: low; swing expectation: bigger; notes: Short volume z +1.2, "
+    },
+    {
+     "t": "09:01",
+     "who": "crowd",
+     "to": "macro",
+     "text": "I'm the Crowd Analyst, and the crowd picture is mixed-to-cautious for the basket. CCJ hit a fresh 52-week low, its Reddit mentions are negligible, and the StockTwits feed is more bearish than bullish; I agree with the Macro Analyst and Whale Watcher that no new buys make sense while the basket is below its 10-day average. The mention counts are tiny everywhere, so there's no meaningful hype to chase or fade, and I don't see a clean directional edge in the crowd data.",
+     "outcome": false
+    },
+    {
+     "t": "09:01",
+     "who": "level",
+     "to": "macro",
+     "text": "I'm skipping the NXE level buy. The basket is below its 10-day average, which blocks new buys, and NXE sits well under its 50-day and 200-day averages, where our own fill tests have earned less. I agree with the Macro Analyst that there is no clear edge today.",
+     "outcome": false,
+     "notes": "NXE: decision: SKIP; reason: The basket is below its 10-day average, which is a standing no-new-buys condition, and NXE is 17% below its 50-day average and 33% below its 200-day, so this support is more likely to break than hold. Our own notebook shows fills below the 200-day average and fills 8%+ under \nwhy: The basket is below its 10-day average, so the no-new-buys rule applies, and NXE is well under its 50- and 200-day averages, which the desk's fill tests say earn less. The desk's notes on fills below the 200-day average and fills under the 10-day average both point toward skipping this one.\nticker: NXE\ndirection: down\ndays: 3\nfiles read: SECTOR Uranium market, NXE Snapshot, NXE Our trades, desk_notes already_checked_facts"
+    },
+    {
+     "t": "09:01",
+     "who": "level",
+     "to": "macro",
+     "text": "I'm skipping the UEC level buy. The whole basket is below its 10-day average, which blocks new buys, and UEC is far under its 50-day and 200-day averages, where our fill tests have earned less. I agree with the Macro Analyst and Level Analyst that the basket needs to recover before we buy.",
+     "outcome": false,
+     "notes": "UEC: decision: SKIP; reason: The basket is below its 10-day average, which blocks new buys. UEC is also 29% down over the month, 52-week-low territory, and 28.8% under its 50-day average. Our own fill tests show level buys well below the 50-day and 200-day averages earn less, and the crowd is bullish int\nwhy: The desk rule blocks new buys while the basket is below its 10-day average, and the chart and fill history both point to a falling knife. The UEC earnings date on Dec 8 adds company-specific risk on top of that.\ndate: 2026-12-08\nticker: UEC\nwhat: Earnings; company-specific move risk\nfiles read: UEC Snapshot, UEC What history says, UEC Our trades, desk_lessons_from_our_mistakes"
+    },
+    {
+     "t": "09:01",
+     "who": "level",
+     "to": "macro",
+     "text": "I'm skipping the DNN level buy. The basket is below its 10-day average, which blocks new buys, and DNN sits far under its 50-day and 200-day averages, where our own fill tests have earned less. I agree with the Macro Analyst that there is no clear edge today.",
+     "outcome": false,
+     "notes": "DNN: decision: SKIP; reason: The whole basket is below its 10-day average, which blocks new buys under our rules. DNN is also 22% under its 50-day average and 43% under its 200-day average, and our own fill tests earn less when a stock is far below its long-term average. The support at $1.69 is a thin le\nwhy: I checked the basket's position against its 10-day average, DNN's distance from its 50-day and 200-day averages, and the desk's fill tests. The basket block alone is enough to skip.\nfiles read: SECTOR Uranium market, DNN Snapshot, DNN Price behavior, desk_notes already_checked_facts"
+    },
+    {
+     "t": "09:01",
+     "who": "level",
+     "to": "macro",
+     "text": "I'm skipping the UUUU level buy. The whole basket is below its 10-day average, which blocks new buys, and UUUU is far under its 50-day and 200-day averages, where our own fill tests have earned less. I agree with the Macro Analyst that there's no clear edge today.",
+     "outcome": false,
+     "notes": "UUUU: decision: SKIP; reason: The whole basket is below its 10-day average, which blocks new buys. UUUU is also far under its 50-day (-38.9%) and 200-day (-65%) averages, and our fill tests show level buys below the 200-day earn less. The zone itself sits at a fresh 52-week low area, so a break is a real \nwhy: The basket-wide block on new buys applies, and UUUU's price is far below its long-term averages where our fill history is weaker. The zone sits near a fresh 52-week low, so the support is at real break risk.\nfiles read: SECTOR Uranium market, UUUU Snapshot, UUUU Price behavior, Patient Levels fills: the stock's own long trend matters (200-day average, distance from its 6-month low)"
+    },
+    {
+     "t": "09:01",
+     "who": "level",
+     "to": "macro",
+     "text": "I'm skipping the LEU level buy. The whole basket is below its 10-day average, which blocks new buys, and LEU is far under its 50-day and 200-day averages, where our own fill tests have earned less. I agree with the Macro Analyst that there is no clear edge today.",
+     "outcome": false,
+     "notes": "LEU: decision: SKIP; reason: The basket is below its 10-day average, which blocks new buys, and LEU sits about 30% under its 50-day average and about 50% under its 200-day average. Our own fill tests show level buys below the 200-day earn less, and the stock fell 9% this week with a heavy volume node jus\nwhy: The basket filter blocks new buys and LEU is well below its long-term averages, where our fill tests have earned less. Nothing in the data gives a clear reason to override the skip.\nSECTOR Uranium market\nLEU Snapshot\nfiles read: SECTOR Uranium market, LEU Snapshot, LEU Price behavior, desk_notes already_checked_facts (Patient Levels fills and 200-day trend, basket below 10-day average rule)"
+    },
+    {
+     "t": "09:01",
+     "who": "level",
+     "to": "macro",
+     "text": "I'm skipping the VST level buy. The whole basket is below its 10-day average, which blocks new buys, and VST sits well under its 50-day and 200-day averages, where our fill tests have earned less. I agree with the Macro Analyst that there is no clear edge today.",
+     "outcome": false,
+     "notes": "VST: decision: SKIP; reason: The basket is below its 10-day average, which blocks new buys under our rules. VST is also 19% under its 200-day average and 13% under its 50-day, and our own fill tests earn less when a fill sits below the 200-day average. Macro and the other analysts agree the basket needs \nwhy: The basket filter blocks new buys and the desk's own tests show level buys under the 200-day average earn less. Nothing in the big-money, crowd or macro data overrides that.\nfiles read: VST Snapshot, VST Price behavior, desk_notes already_checked_facts (Patient Levels fills and the 200-day average)"
+    },
+    {
+     "t": "09:01",
+     "who": "level",
+     "to": "macro",
+     "text": "I'm skipping the TLN level buy because the whole basket is below its 10-day average, which blocks new buys. TLN is holding up better than most of the group, but I agree with the Macro Analyst that the group needs to recover before we buy.",
+     "outcome": false,
+     "notes": "TLN: decision: SKIP; reason: Basket is below its 10-day average, which blocks all new buys under desk rules. TLN itself is above its 50-day average, but the group weakness and the pending PJM auction (Dec 15) make a support bounce unreliable right now.\nwhy: The basket-wide 10-day average rule is the deciding check, and the PJM auction on Dec 15 adds event risk the desk's own tests say tends to fade power-stock pops. The stock's own trend is fine, so this is a group-level skip, not a stock-level one.\ndate: 2026-12-15\nticker: TLN\nwhat: PJM 2029/30 capacity auction closes; desk data says release-day pops in power names tend to fade, so no chasing\nfiles read: SECTOR Uranium market, TLN Snapshot, TLN What history says, already_checked_facts (PJM capacity-auction results, the basket below its 10-day average rule)"
+    },
+    {
+     "t": "09:01",
+     "who": "chief",
+     "to": "team",
+     "text": "Ready for the bell. No safe buys yet; we watch the open.",
+     "outcome": false
+    }
+   ],
+   "practice": false,
+   "end": "09:01"
   }
  ],
  "feed": [
@@ -220005,6 +220388,51 @@
     "sub": "Reactors, mines and fuel, Nov 27"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-27 09:00",
+   "who": "nowcast",
+   "kind": "data",
+   "title": null,
+   "text": "Asia's close points to these opens: CCJ +0.9%, NXE +0.9%, UEC +1.2%, DNN +0.9%, UUUU +1.3%, LEU +1.6%, BWXT +0.9%, CEG +1.0%, VST +1.1%, TLN +1.2%. Information only: the open prices this in, so it never places a trade.",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "art": {
+    "big": "Asia says: CCJ +0.9%, NXE +0.9%, UEC +1.2%, DNN +0.9%, UUUU +1.3%, LEU +1.6%, BWXT +0.9%, CEG +1.0%, VST +1.1%, TLN +1.2%",
+    "sub": "Expected opening moves. Background only."
+   },
+   "thread": "20261127090027339642"
+  },
+  {
+   "t": "2026-11-27 09:01",
+   "who": "chief",
+   "kind": "alert",
+   "title": "Morning meeting done",
+   "text": "Ready before the bell | risk elevated | buys planned: none | Asia says open: CCJ +0.9%, NXE +0.9%, UEC +1.2%, DNN +0.9%, UUUU +1.3%, LEU +1.6%, BWXT +0.9%, CEG +1.0%, VST +1.1%, TLN +1.2%",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -220880,9 +221308,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 08:55",
+  "updated": "2026-11-27 09:01",
   "total": 935,
-  "week": 599,
+  "week": 598,
   "places": {
    "South Korea": 53,
    "Uranium price": 52,
@@ -220893,7 +221321,7 @@
    "AUKUS and navies": 30,
    "Europe new builds": 29,
    "Piketon": 24,
-   "World Nuclear News": 23,
+   "World Nuclear News": 22,
    "War zones": 20,
    "Rare earths (Energy Fuels)": 16
   },
@@ -224135,7 +224563,7 @@
    "built": "2026-11-27 08:47"
   }
  ],
- "heartbeat": "2026-11-27 08:55",
+ "heartbeat": "2026-11-27 09:00",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -224376,15 +224804,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 453,
-   "used": 415,
+   "asked": 454,
+   "used": 416,
    "notes": {
     "TLN Deals and contracts": 20,
     "CCJ Deals and contracts": 78,
     "BWXT Deals and contracts": 56,
-    "SECTOR Government and laws": 124,
+    "SECTOR Government and laws": 125,
     "UUUU Deals and contracts": 44,
-    "SECTOR Countries": 128,
+    "SECTOR Countries": 129,
     "CEG Deals and contracts": 57,
     "NXE Legal": 22,
     "NXE Deals and contracts": 19,
@@ -224404,23 +224832,23 @@
    "since": "2026-11-23"
   },
   "level": {
-   "asked": 144,
-   "used": 138,
+   "asked": 151,
+   "used": 145,
    "notes": {
-    "TLN Snapshot": 32,
+    "TLN Snapshot": 33,
     "TLN Price behavior": 34,
     "TLN Discoveries": 6,
     "TLN Our trades": 19,
-    "VST Snapshot": 32,
-    "VST Price behavior": 27,
-    "TLN What history says": 24,
+    "VST Snapshot": 33,
+    "VST Price behavior": 28,
+    "TLN What history says": 25,
     "desk_notes intel: PJM capacity auction delay": 1,
     "TLN intel_disruption (PJM auction delay)": 1,
     "SECTOR macro: market regime": 1,
     "BWXT Snapshot": 9,
     "BWXT What history says": 6,
     "BWXT Price behavior": 8,
-    "SECTOR Uranium market": 96,
+    "SECTOR Uranium market": 101,
     "BWXT Our trades": 7,
     "sector_pulse": 1,
     "BWXT Discoveries": 1,
@@ -224433,11 +224861,11 @@
     "CEG What history says": 17,
     "CEG Discoveries": 3,
     "SECTOR Government and laws": 8,
-    "desk_lessons_from_our_mistakes": 1,
+    "desk_lessons_from_our_mistakes": 2,
     "CCJ Snapshot": 7,
     "CCJ Options and big money": 1,
-    "UUUU Snapshot": 14,
-    "UUUU Price behavior": 14,
+    "UUUU Snapshot": 15,
+    "UUUU Price behavior": 15,
     "UUUU What history says": 3,
     "CCJ Price behavior": 7,
     "CCJ Our trades": 3,
@@ -224446,11 +224874,11 @@
     "CCJ What history says": 4,
     "UUUU Legal": 3,
     "UUUU Discoveries": 3,
-    "UEC Snapshot": 5,
+    "UEC Snapshot": 6,
     "UEC Earnings": 1,
     "UEC Cyber breach": 1,
-    "DNN Snapshot": 9,
-    "DNN Price behavior": 8,
+    "DNN Snapshot": 10,
+    "DNN Price behavior": 9,
     "DNN Discoveries": 3,
     "UUUU Our trades": 4,
     "Patient Levels fills: the stock's own long trend matters": 1,
@@ -224458,27 +224886,34 @@
     "PJM 2029/30 capacity auction delay": 4,
     "SECTOR": 7,
     "macro market_note": 1,
-    "Patient Levels fills: the stock's own long trend matters (20": 4,
+    "Patient Levels fills: the stock's own long trend matters (20": 5,
     "What PJM capacity-auction results do to the power stocks (VS": 1,
     "PJM auction history": 1,
-    "NXE Snapshot": 5,
+    "NXE Snapshot": 6,
     "NXE What history says": 4,
     "NXE Price behavior": 6,
     "What PJM capacity-auction results do to the power stocks": 1,
-    "NXE Our trades": 4,
+    "NXE Our trades": 5,
     "NXE Options and big money": 1,
     "desk_memory_playbook": 2,
     "desk_notes patient levels 200-day": 1,
     "TLN Lessons": 1,
     "UEC Ownership and analysts": 2,
     "UEC Price behavior": 3,
-    "UEC Our trades": 2,
+    "UEC Our trades": 3,
     "Macro Analyst": 1,
     "UEC Discoveries": 1,
     "desk_notes Patient Levels fills: the stock's own long trend ": 1,
     "desk_notes Chasing breakouts out of quiet, tight ranges": 1,
     "LIVE_ORDERS_RIGHT_NOW": 1,
-    "open_positions": 1
+    "open_positions": 1,
+    "desk_notes already_checked_facts": 2,
+    "UEC What history says": 1,
+    "LEU Snapshot": 1,
+    "LEU Price behavior": 1,
+    "desk_notes already_checked_facts (Patient Levels fills and 2": 1,
+    "desk_notes already_checked_facts (Patient Levels fills and t": 1,
+    "already_checked_facts (PJM capacity-auction results, the bas": 1
    },
    "since": "2026-11-23"
   },
@@ -224621,20 +225056,20 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 104,
-   "used": 102,
+   "asked": 105,
+   "used": 103,
    "notes": {
-    "SECTOR Uranium market": 72,
-    "BWXT Snapshot": 7,
+    "SECTOR Uranium market": 73,
+    "BWXT Snapshot": 8,
     "CCJ Snapshot": 3,
     "UUUU Snapshot": 6,
-    "SECTOR Government and laws": 67,
-    "TLN Snapshot": 42,
+    "SECTOR Government and laws": 68,
+    "TLN Snapshot": 43,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
     "CEG Legal": 1,
     "coming_up: PJM December capacity auction delay": 1,
-    "VST Snapshot": 6,
+    "VST Snapshot": 7,
     "CEG Snapshot": 8,
     "NXE Snapshot": 3,
     "plants_now": 2,
@@ -224648,13 +225083,14 @@
     "VST Legal": 1,
     "SECTOR Countries": 1,
     "Calendar: PJM auction results": 1,
-    "PJM capacity auction (desk fact check)": 1
+    "PJM capacity auction (desk fact check)": 1,
+    "CCJ Legal": 1
    },
    "since": "2026-11-23"
   },
   "whale": {
-   "asked": 6,
-   "used": 6,
+   "asked": 7,
+   "used": 7,
    "notes": {
     "TLN Legal": 1,
     "SECTOR Uranium market": 2,
@@ -224664,20 +225100,21 @@
     "UUUU Options and big money": 1,
     "TLN Leadership and insiders": 1,
     "TLN Snapshot": 1,
-    "CCJ Ownership and analysts": 2,
-    "CCJ Leadership and insiders": 2,
-    "CCJ Options and big money": 2,
+    "CCJ Ownership and analysts": 3,
+    "CCJ Leadership and insiders": 3,
+    "CCJ Options and big money": 3,
     "NXE Snapshot": 1,
     "NXE Ownership and analysts": 2,
-    "NXE Leadership and insiders": 1,
-    "NXE Options and big money": 2,
-    "UEC Ownership and analysts": 1,
-    "SECTOR": 1
+    "NXE Leadership and insiders": 2,
+    "NXE Options and big money": 3,
+    "UEC Ownership and analysts": 2,
+    "SECTOR": 1,
+    "desk_notes already_checked_facts (TLN 10b5-1 sale, officer s": 1
    },
    "since": "2026-11-23"
   },
   "crowd": {
-   "asked": 5,
+   "asked": 6,
    "used": 5,
    "notes": {
     "TLN Legal": 1,
@@ -227810,6 +228247,26 @@
    "price": 235.25,
    "result": null,
    "why": "Headline 1 is a price recap with no new company facts; headline 2 is a generic demand comparison. Desk notes show CEG's deal history skews negative over 5 days, reinforcing caution."
+  },
+  {
+   "role": "macro",
+   "ticker": "VST",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-27",
+   "price": 121.32,
+   "result": null,
+   "why": "I checked the S&P's position against its 200-day average, the VIX level, and the calendar (half-day Black Friday, FOMC Dec 9, PJM auction Dec 15, opex Dec 18). The regime is unhealthy and the desk's o"
+  },
+  {
+   "role": "level",
+   "ticker": "NXE",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-27",
+   "price": 6.95,
+   "result": null,
+   "why": "The basket is below its 10-day average, so the no-new-buys rule applies, and NXE is well under its 50- and 200-day averages, which the desk's fill tests say earn less. The desk's notes on fills below "
   }
  ],
  "after_sale": [],
@@ -231450,6 +231907,40 @@
     "node_ratio": 0.46,
     "skip": "True"
    }
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "CCJ",
+   "zone": 58.44,
+   "entry": 58.67,
+   "stop": 57.74,
+   "target": 63.68,
+   "vp": {
+    "value_low": 59.55,
+    "value_high": 76.35,
+    "heaviest_price": 74.6,
+    "position": "below value",
+    "node": "normal",
+    "node_ratio": 0.96,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "BWXT",
+   "zone": 111.12,
+   "entry": 111.57,
+   "stop": 109.79,
+   "target": 117.21,
+   "vp": {
+    "value_low": 112.89,
+    "value_high": 131.75,
+    "heaviest_price": 117.21,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.47,
+    "skip": true
+   }
   }
  ],
  "hawk_cool": {},
@@ -231936,7 +232427,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 08:55",
+ "watchdog_last": "2026-11-27 09:00",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
