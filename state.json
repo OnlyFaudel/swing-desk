@@ -5777,30 +5777,6 @@
  },
  "news_feed": [
   {
-   "ticker": "BWXT",
-   "source": "Google News",
-   "title": "Powering Up: BWX Technologies Helps Build the Nuclear Grid - MarketBeat",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdk82YmNyQzZpT1F3ZzV0Y1l1a1k1MWs3eUlRVkZpUGU3T01wdUU4SGtFNmlPUXdBajQzY01OZW1MdmpDOGQySzN1WnBJb2l6SzBvZ2F3dWVvcGFwVHNZaGxDUmF0cXNObzJqM2FNU3RCUDl1TmVWbDFNNGFNYWR5Q3lSY3RhOF8tcnRMNTZxN3NtcnBzQ3ZKLUhB?oc=5",
-   "ts": 1795627379,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic explainer on BWXT's grid role; no new company-specific information."
-  },
-  {
-   "ticker": "UUUU",
-   "source": "Google News",
-   "title": "S&P/TSX Composite Index in Focus: What Is Energy Fuels (TSX:EFR) Pursuing in Its Uranium Campaign? - Kalkine Media",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTXY0VmtBQlZGM29MR2RLS2FuV1hIMnVhSU1HSFZvWHFPclJUQWt1X0RJUHJBWjRNTGllT0tkSFV1MWowajZETUUwMUhaOVhNNXcxSUNJVVE1UWctN1NwODNQb2lHWkFfa0hmOFAyV29OYXJGYU0ydGxVTHlKQXM3N1JqU1hrTzQwYndWYmkwMmlpcmVid0ttTGgtbHNobnp2Y0xpVWd5aWdxeFZNMkRiR25tWUwxcnVqWFdBR29vU1AtZTNYU3NBUUR1TUFKU2dLemhlMkllQXJwUjA?oc=5",
-   "ts": 1795628820,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Kalkine explainer on Energy Fuels' uranium plans; no new company-specific fact, mostly recap of known strategy."
-  },
-  {
    "ticker": "CCJ",
    "source": "Google News: uranium price",
    "title": "Jaguar Uranium releases first resource estimate for Colombia project - StreetInsider",
@@ -8775,6 +8751,30 @@
    "direction": "neutral",
    "event_type": "analyst",
    "why": "Recap of UEC's bounce from a 52-week low; mostly price commentary, not CCJ news."
+  },
+  {
+   "ticker": "NXE",
+   "source": "Google News",
+   "title": "What Is Shaping NexGen Energy (TSX:NXE) Uranium Stock Interest Now? - Kalkine Media",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNzJNR0tseEFKMmdsbXdXSTJEcEtQdFF0a21HNGd4Xzd5anJxeUQxTU0zQ2JvUElLS2s4bnZ0cEl1WVpScmQwZGxnbkVFZnA5OEotaWJuS2JNbFBuQjFEOTR1eWlRUXluNVZlVDlsWEljWXEzeGpXeTdWLUhzandabUpXbTlTMVhFUC1WSENqeEVzcEVxQWhFVzJ0QnZuNU9PS1FWaEFrNng?oc=5",
+   "ts": 1795810620,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Kalkine Media 'what is shaping interest' recap with no new company-specific fact."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News",
+   "title": "Constellation Energy raises 2026 earnings guida... - Pluang",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdlNtcW9ndHFLbjdqRVI4T2pnMER1Y3duVFZQY3BlX3ZTNlBSa2xTNnV1LUQ1Zk5JdVdOTjMwSm1paEljSDhISXBXZG95TVJ4bndkWU5aTFRNTXEtYVhlbUp4QkRTS1hwemROWllxQ29uNjhBRXN5aXNvM2MwTUk3UTdITUdJZnVBZG43YktUakxtYXF4eEp5ZG5ybHlidw?oc=5",
+   "ts": 1795811579,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "earnings",
+   "why": "Raised 2026 earnings guidance is genuinely new company-specific information, though a guidance raise may already be partly priced in."
   }
  ],
  "reviews": [
@@ -10667,16 +10667,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.49431,
+  "day_usd": 0.49512,
   "month": "2026-11",
-  "month_usd": 2.58849,
-  "total_usd": 2.58849,
+  "month_usd": 2.5893,
+  "total_usd": 2.5893,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.26143,
+   "scout": 0.26224,
    "review": 0.11073,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -10957,7 +10957,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 15:25 ET",
+ "last_cycle": "2026-11-27 15:35 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -60873,6 +60873,7 @@
   "2ac262d1779b4fad",
   "f2233e80ef88e49b",
   "f61fff1c8e93929e",
+  "fa91cb3e0cdef10d",
   "85cd040198b19b4d",
   "34dd3aa515a79d75",
   "e00c509cd96087a7",
@@ -60891,6 +60892,7 @@
   "a35b0d7a547d2276",
   "38629ab9e2136e24",
   "1e9ac2ee38a1003f",
+  "ddce217566986389",
   "5af6f5b9a2bf7623",
   "a43ea8518bf9236b",
   "432bc29342a671c0",
@@ -61088,6 +61090,7 @@
   "218c03437d0aa187",
   "03db21174a437149",
   "5ca17a18c47750da",
+  "3c95bce323439d09",
   "2406fcdcae12e82f",
   "9dd14dae753c141a",
   "05ad7d5a34131c8c",
@@ -61163,10 +61166,9 @@
   "5d22d1b6e3da5fb6",
   "068e5507f464ca6e",
   "16c52bc5bc8110db",
-  "46c5572fb4069bdf",
-  "3c95bce323439d09"
+  "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795811051.3538234,
+ "news_slow_at": 1795811658.49147,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -226128,6 +226130,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "CEG",
+   "type": "earnings",
+   "title": "Constellation Energy raises 2026 earnings guida... - Pluang",
+   "date": "2026-11-27",
+   "price": 238.15,
+   "materiality": 6,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -226275,11 +226289,11 @@
    "lesson": "A panic_rebound buy must pass the basket-below-10-day-average block before entry, even when the stock looks oversold and the trade later wins."
   }
  ],
- "intel_at": 1795809349.8190937,
+ "intel_at": 1795811203.0314803,
  "intel_health": {
-  "at": "2026-11-27 14:56",
+  "at": "2026-11-27 15:27",
   "sources": {
-   "Cigar Lake": 3,
+   "Cigar Lake": 2,
    "McArthur River / Key Lake": 3,
    "Athabasca Basin": 10,
    "Saskatchewan wildfires": 4,
@@ -226287,47 +226301,47 @@
    "Wheeler River / Phoenix": 7,
    "Port Hope / Blind River": 0,
    "Westinghouse": 8,
-   "Kazakhstan": 50,
+   "Kazakhstan": 38,
    "Niger": 11,
-   "Namibia": 28,
+   "Namibia": 25,
    "Russia supply": 2,
    "Piketon": 17,
    "HALEU": 10,
-   "Wyoming ISR": 18,
+   "Wyoming ISR": 29,
    "South Texas ISR": 2,
    "White Mesa / Utah": 8,
-   "Rare earths (Energy Fuels)": 6,
+   "Rare earths (Energy Fuels)": 7,
    "Lynchburg / Erwin": 0,
    "Naval reactors": 11,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 4,
-   "Comanche Peak": 4,
+   "Comanche Peak": 3,
    "PJM grid": 8,
-   "ERCOT grid": 12,
+   "ERCOT grid": 11,
    "Data-center nuclear deals": 10,
-   "Japan restarts": 13,
-   "China new builds": 5,
+   "Japan restarts": 9,
+   "China new builds": 2,
    "Congress and laws": 26,
    "NRC decisions": 6,
-   "Energy Department": 30,
-   "White House and executive orders": 29,
+   "Energy Department": 39,
+   "White House and executive orders": 27,
    "Tariffs and trade": 3,
    "India": 18,
-   "South Korea": 94,
-   "Europe new builds": 30,
-   "France and UK": 14,
+   "South Korea": 95,
+   "Europe new builds": 62,
+   "France and UK": 13,
    "Middle East": 29,
    "Asia newcomers": 37,
-   "Canada SMRs": 8,
-   "Big tech power deals": 29,
-   "Iran": 55,
-   "North Korea": 67,
-   "War zones": 15,
+   "Canada SMRs": 7,
+   "Big tech power deals": 59,
+   "Iran": 26,
+   "North Korea": 100,
+   "War zones": 34,
    "AUKUS and navies": 17,
-   "Weapons programs": 20,
-   "Stockpiles and reserves": 27,
+   "Weapons programs": 31,
+   "Stockpiles and reserves": 24,
    "Sprott trust": 3,
-   "Uranium price": 20,
+   "Uranium price": 43,
    "US policy": 0,
    "Lawsuits and investigations": 33,
    "Workers and jobs": 23,
@@ -226340,9 +226354,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 15:25",
+  "updated": "2026-11-27 15:35",
   "total": 976,
-  "week": 595,
+  "week": 594,
   "places": {
    "South Korea": 56,
    "Uranium price": 52,
@@ -226359,9 +226373,9 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-27 14:56",
+   "at": "2026-11-27 15:27",
    "sources": {
-    "Cigar Lake": 3,
+    "Cigar Lake": 2,
     "McArthur River / Key Lake": 3,
     "Athabasca Basin": 10,
     "Saskatchewan wildfires": 4,
@@ -226369,47 +226383,47 @@
     "Wheeler River / Phoenix": 7,
     "Port Hope / Blind River": 0,
     "Westinghouse": 8,
-    "Kazakhstan": 50,
+    "Kazakhstan": 38,
     "Niger": 11,
-    "Namibia": 28,
+    "Namibia": 25,
     "Russia supply": 2,
     "Piketon": 17,
     "HALEU": 10,
-    "Wyoming ISR": 18,
+    "Wyoming ISR": 29,
     "South Texas ISR": 2,
     "White Mesa / Utah": 8,
-    "Rare earths (Energy Fuels)": 6,
+    "Rare earths (Energy Fuels)": 7,
     "Lynchburg / Erwin": 0,
     "Naval reactors": 11,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 4,
-    "Comanche Peak": 4,
+    "Comanche Peak": 3,
     "PJM grid": 8,
-    "ERCOT grid": 12,
+    "ERCOT grid": 11,
     "Data-center nuclear deals": 10,
-    "Japan restarts": 13,
-    "China new builds": 5,
+    "Japan restarts": 9,
+    "China new builds": 2,
     "Congress and laws": 26,
     "NRC decisions": 6,
-    "Energy Department": 30,
-    "White House and executive orders": 29,
+    "Energy Department": 39,
+    "White House and executive orders": 27,
     "Tariffs and trade": 3,
     "India": 18,
-    "South Korea": 94,
-    "Europe new builds": 30,
-    "France and UK": 14,
+    "South Korea": 95,
+    "Europe new builds": 62,
+    "France and UK": 13,
     "Middle East": 29,
     "Asia newcomers": 37,
-    "Canada SMRs": 8,
-    "Big tech power deals": 29,
-    "Iran": 55,
-    "North Korea": 67,
-    "War zones": 15,
+    "Canada SMRs": 7,
+    "Big tech power deals": 59,
+    "Iran": 26,
+    "North Korea": 100,
+    "War zones": 34,
     "AUKUS and navies": 17,
-    "Weapons programs": 20,
-    "Stockpiles and reserves": 27,
+    "Weapons programs": 31,
+    "Stockpiles and reserves": 24,
     "Sprott trust": 3,
-    "Uranium price": 20,
+    "Uranium price": 43,
     "US policy": 0,
     "Lawsuits and investigations": 33,
     "Workers and jobs": 23,
@@ -227253,7 +227267,7 @@
   }
  ],
  "memory_view": {
-  "events": 1804,
+  "events": 1805,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -227837,15 +227851,6 @@
   "recent": [
    {
     "date": "2026-11-27",
-    "ticker": "CCJ",
-    "title": "IAEA working with Russia, Ukraine on ceasefire to repair power link at Zaporizhzhia nuclear plant",
-    "type": "intel_geopolitics",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-27",
     "ticker": "CEG",
     "title": "IAEA working with Russia, Ukraine on ceasefire to repair power link at Zaporizhzhia nuclear plant",
     "type": "intel_geopolitics",
@@ -228191,6 +228196,15 @@
     "ticker": "CCJ",
     "title": "Peninsula Energy halts Wyoming uranium operations after cyberattack",
     "type": "intel_disruption",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-27",
+    "ticker": "CEG",
+    "title": "Constellation Energy raises 2026 earnings guida... - Pluang",
+    "type": "earnings",
     "r0": null,
     "r5": null,
     "r20": null
@@ -229482,7 +229496,7 @@
    }
   ]
  },
- "dossier_at": 1795809391.6901278,
+ "dossier_at": 1795811244.6974115,
  "sector_prices": {
   "_at": 1795805723.732425,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -229540,80 +229554,80 @@
    "name": "Cameco",
    "price": 63.56,
    "week_pct": 3.48,
-   "built": "2026-11-27 14:56"
+   "built": "2026-11-27 15:27"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 7.28,
    "week_pct": 5.05,
-   "built": "2026-11-27 14:56"
+   "built": "2026-11-27 15:27"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.93,
    "week_pct": 2.86,
-   "built": "2026-11-27 14:56"
+   "built": "2026-11-27 15:27"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.91,
    "week_pct": 5.8,
-   "built": "2026-11-27 14:56"
+   "built": "2026-11-27 15:27"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.66,
    "week_pct": 3.28,
-   "built": "2026-11-27 14:56"
+   "built": "2026-11-27 15:27"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.79,
    "week_pct": -5.47,
-   "built": "2026-11-27 14:56"
+   "built": "2026-11-27 15:27"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.57,
    "week_pct": -1.27,
-   "built": "2026-11-27 14:56"
+   "built": "2026-11-27 15:27"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 238.15,
    "week_pct": -5.51,
-   "built": "2026-11-27 14:56"
+   "built": "2026-11-27 15:27"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 122.35,
    "week_pct": -1.45,
-   "built": "2026-11-27 14:56"
+   "built": "2026-11-27 15:27"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 359.64,
    "week_pct": 1.05,
-   "built": "2026-11-27 14:56"
+   "built": "2026-11-27 15:27"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-27 14:56"
+   "built": "2026-11-27 15:27"
   }
  ],
- "heartbeat": "2026-11-27 15:25",
+ "heartbeat": "2026-11-27 15:35",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -229854,8 +229868,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 488,
-   "used": 447,
+   "asked": 490,
+   "used": 449,
    "notes": {
     "TLN Deals and contracts": 21,
     "CCJ Deals and contracts": 81,
@@ -229863,8 +229877,8 @@
     "SECTOR Government and laws": 134,
     "UUUU Deals and contracts": 46,
     "SECTOR Countries": 140,
-    "CEG Deals and contracts": 64,
-    "NXE Legal": 23,
+    "CEG Deals and contracts": 65,
+    "NXE Legal": 24,
     "NXE Deals and contracts": 19,
     "DNN Deals and contracts": 17,
     "BWXT Legal": 3,
@@ -238443,7 +238457,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 15:25",
+ "watchdog_last": "2026-11-27 15:35",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
