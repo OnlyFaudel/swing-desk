@@ -638,7 +638,12 @@
   "orbsip_t": 1795760026.701552,
   "catalysts2:2026-11-27": true,
   "ev:f5e72e5ea293": true,
-  "orbsip_fix_t": 1795780401.0686438
+  "orbsip_fix_t": 1795780401.0686438,
+  "questioner:2026-11-27:3": true,
+  "premarket:2026-11-27": true,
+  "uprice:2026-11-27": true,
+  "congress:2026-11-27": true,
+  "jobs:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -8979,12 +8984,12 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.01124,
+  "day_usd": 0.04143,
   "month": "2026-11",
-  "month_usd": 2.10543,
-  "total_usd": 2.10543,
+  "month_usd": 2.13562,
+  "total_usd": 2.13562,
   "by_role": {
-   "macro": 0.20195,
+   "macro": 0.21206,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
@@ -8992,13 +8997,13 @@
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.31734,
+   "pm": 0.32595,
    "risk": 0.20378,
-   "investigator": 0.35274,
+   "investigator": 0.35857,
    "postmortem": 0.00035,
    "researcher": 0.02341,
    "engineer": 0.08184,
-   "questioner": 0.15419
+   "questioner": 0.15983
   }
  },
  "desk_log": [
@@ -9256,7 +9261,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-27 06:53 ET",
+ "last_cycle": "2026-11-27 07:03 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -13280,64 +13285,64 @@
  ],
  "nowcast": {
   "CCJ": {
-   "asia_z": -1.18,
-   "expected_gap_pct": -1.07,
-   "corr_120d": 0.48,
-   "last_close": 59.79
+   "asia_z": 0.7,
+   "expected_gap_pct": 0.89,
+   "corr_120d": 0.49,
+   "last_close": 61.55
   },
   "NXE": {
-   "asia_z": -1.34,
-   "expected_gap_pct": -1.27,
+   "asia_z": 0.73,
+   "expected_gap_pct": 0.95,
    "corr_120d": 0.5,
-   "last_close": 6.83
+   "last_close": 6.96
   },
   "UEC": {
-   "asia_z": -1.12,
-   "expected_gap_pct": -1.38,
+   "asia_z": 0.73,
+   "expected_gap_pct": 1.19,
    "corr_120d": 0.42,
-   "last_close": 5.57
+   "last_close": 5.69
   },
   "DNN": {
-   "asia_z": -1.21,
-   "expected_gap_pct": -1.27,
+   "asia_z": 0.71,
+   "expected_gap_pct": 0.89,
    "corr_120d": 0.42,
-   "last_close": 1.74
+   "last_close": 1.79
   },
   "UUUU": {
-   "asia_z": -1.24,
-   "expected_gap_pct": -1.18,
+   "asia_z": 0.77,
+   "expected_gap_pct": 1.31,
    "corr_120d": 0.42,
-   "last_close": 5.13
+   "last_close": 5.21
   },
   "LEU": {
-   "asia_z": -1.22,
-   "expected_gap_pct": -1.7,
-   "corr_120d": 0.44,
-   "last_close": 84.04
+   "asia_z": 0.84,
+   "expected_gap_pct": 1.56,
+   "corr_120d": 0.45,
+   "last_close": 83.19
   },
   "BWXT": {
-   "asia_z": -1.22,
-   "expected_gap_pct": -0.82,
-   "corr_120d": 0.49,
-   "last_close": 113.14
+   "asia_z": 0.82,
+   "expected_gap_pct": 0.86,
+   "corr_120d": 0.5,
+   "last_close": 113.55
   },
   "CEG": {
-   "asia_z": -1.23,
-   "expected_gap_pct": -0.89,
-   "corr_120d": 0.39,
-   "last_close": 244.84
+   "asia_z": 0.87,
+   "expected_gap_pct": 1.02,
+   "corr_120d": 0.4,
+   "last_close": 235.28
   },
   "VST": {
-   "asia_z": -1.24,
-   "expected_gap_pct": -1.36,
+   "asia_z": 0.82,
+   "expected_gap_pct": 1.11,
    "corr_120d": 0.48,
-   "last_close": 120.72
+   "last_close": 121.32
   },
   "TLN": {
-   "asia_z": -1.19,
-   "expected_gap_pct": -1.22,
+   "asia_z": 0.8,
+   "expected_gap_pct": 1.22,
    "corr_120d": 0.54,
-   "last_close": 347.68
+   "last_close": 351.61
   }
  },
  "cache": {
@@ -57903,8 +57908,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "7cabb45f8b0c2778",
   "4ee30073db1990ac",
+  "7cabb45f8b0c2778",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -57944,8 +57949,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1715e61816aa5619",
   "1acc6842cd4f6e64",
+  "1715e61816aa5619",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -58070,14 +58075,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "1ed195cb4396cbe7",
   "7c380c991c59f9ba",
+  "1ed195cb4396cbe7",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -58649,7 +58654,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795780401.478948,
+ "news_slow_at": 1795781099.7596529,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -214618,6 +214623,108 @@
    ],
    "practice": false,
    "end": "20:00"
+  },
+  {
+   "id": "20261127070358298342",
+   "title": "The Questioner, Nov 27 07:03",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-27 07:03",
+   "msgs": [
+    {
+     "t": "07:04",
+     "who": "questioner",
+     "to": "team",
+     "text": "Three things stand out to me. The live orders list is empty, yet the bot reports a halt from a SPY parking-sale malfunction, so the desk's own records and the broker disagree about what is actually resting. Also, the PJM auction delay is still unconfirmed in our files, so I'd like the team to confirm rather than assume. Finally, the Federal Register notice on General Matter's Paducah plant reads as a routine scoping step, not a near-term threat to Centrus.",
+     "outcome": false,
+     "notes": "question: The bot reported a halt after 3 order rejections on a SPY parking sale with a malfunction code, yet LIVE_ORDERS_RIGHT_NOW is empty and nothing is resting. Are any of the rejected orders still open at the broker, or did they all fail cleanly? Before ops_resume is set true, the team should confirm the rejected SPY sales did not leave a partial position or a stray order that could fill later.\nwhy it might matter: A halted bot with hidden leftover orders could fill unexpectedly, or the desk could restart trading on a bad state.\nask: chief\nkind: odd\nquestion: Is the PJM 2029/30 capacity-auction delay request still undecided as of today, and has anyone checked the FERC docket directly rather than news summaries? TLN's 9.6% move rests on that headline.\nwhy it might matter: If the delay is ruled on before Dec 15, TLN and VST could gap sharply, and the desk should size that risk before "
+    },
+    {
+     "t": "07:04",
+     "who": "investigator",
+     "to": "questioner",
+     "text": "I checked the halt against the desk's own records. LIVE_ORDERS_RIGHT_NOW is empty, so nothing is resting at the broker that we know of, and the desk's notes say every order is a day order that expires at its close. But the file does not show whether the three rejected SPY sales were fully rejected or partly filled, so I can't confirm the account has no stray position. Ops should check the broker's order and position history directly before ops_resume is set true.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: research\nresearch test: Pull the broker's order history and current SPY position for the last hour, confirm the three rejected sales show status rejected with zero filled quantity, and confirm no open orders exist, before setting ops_resume true.\nwhy: The halt came from a malfunction code on SPY parking sales, and the desk's live-order list being empty only covers what the bot tracks, not what the broker holds. Without a broker-side check, a partial fill or a stray order could still be sitting there."
+    },
+    {
+     "t": "07:04",
+     "who": "macro",
+     "to": "questioner",
+     "text": "I checked the desk files and the headlines we have for PJM. Nothing here confirms that the December capacity-auction delay has been decided, and I found no FERC ruling; the Dec 15 auction is still on the calendar. The 9.6% TLN jump therefore rests on an unconfirmed headline, so I'd treat PJM as a live risk for TLN and VST into Dec 15, not a closed question.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: watch\nwatch date: 2026-12-15\nresearch test: Pull the FERC docket for the PJM 2029/30 delay request (EL27-11 and related filings) directly, not news summaries, and record whether a ruling has issued. Then compare TLN and VST moves in the 2 days around any ruling against the utilities ETF.\nwhy: I checked the desk's PJM notes and headlines: no decision on the delay request is on file, and the Dec 15 auction is still scheduled, so the desk should assume it goes ahead. The notes also show PJM auction-result releases have usually produced a pop that fades over 20 sessions, so the risk runs both ways and is worth sizing before the window.\ndate: 2026-12-15\nticker: TLN\nwhat: PJM 2029/30 base residual auction close; confirm FERC docket status of the delay request beforehand\ndate: 2026-12-15\nticker: VST\nwhat: PJM 2029/30 base residual auction close; same capacity-price ris"
+    },
+    {
+     "t": "07:04",
+     "who": "investigator",
+     "to": "questioner",
+     "text": "I checked the desk's files on General Matter's Paducah notice. It is a Federal Register scoping notice, the first step in an environmental review for an enrichment plant that doesn't exist yet and is years from running, so it doesn't change Centrus's near-term enrichment competition. I agree with the News Investigator's point that this is a separate matter from the halt, and I'd keep it off the trading agenda.",
+     "outcome": false,
+     "notes": "verdict: irrelevant\naction: none\nwhy: The desk notes don't tie a scoping notice to any near-term LEU revenue, and the desk's own data shows Centrus's business depends on existing Russian-supply waivers and contracted deliveries, not on a plant that hasn't been licensed. Scoping is routine and years from any operating facility.\nticker: LEU\ndirection: up\ndays: 5\nfiles read: LEU Legal, SECTOR Uranium market"
+    }
+   ],
+   "practice": false,
+   "end": "07:04"
+  },
+  {
+   "id": "20261127070417935623",
+   "title": "Pre-market check-in Fri Nov 27",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "kind": "morning",
+   "start": "2026-11-27 07:04",
+   "msgs": [
+    {
+     "t": "07:04",
+     "who": "chief",
+     "to": "team",
+     "text": "From the memory, due now: Centrus Investor Day at Piketon with business and financial outlook updates (noted 2026-11-25); US midterm elections: policy and permitting clarity for data center power demand (noted 2026-11-24); Pre-Thanksgiving session: seasonal tendency is mildly positive for the S&P, but thin trading makes it a weak signal (noted 2026-11-24); Pre-Thanksgiving session; seasonal tendency is positive into Wednesday, but the basket gate is currently closed, so no entries until it reopens (noted 2026-11-24); Re-check whether price holds the 4.91 zone or breaks lower; reassess only if the basket recovers above its 10-day average. (noted 2026-11-24); Orano Enrichment USA draft environmental review (Federal Register) for an enrichment facility; watch for comment deadlines and any follow-on NRC decision affecting enrichment supply (noted 2026-11-25); Orano Enrichment USA uranium enr",
+     "outcome": false
+    },
+    {
+     "t": "07:04",
+     "who": "chief",
+     "to": "nowcast",
+     "text": "Morning, team. Market opens at 9:30. Watching 10 stocks; setups waiting on none yet. Nowcast, what did Asia say?",
+     "outcome": false
+    },
+    {
+     "t": "07:04",
+     "who": "nowcast",
+     "to": "chief",
+     "text": "Asia's close points to these opens: CCJ +0.9%, NXE +0.9%, UEC +1.2%, DNN +0.9%, UUUU +1.3%, LEU +1.6%, BWXT +0.9%, CEG +1.0%, VST +1.1%, TLN +1.2%. That gets priced in at 9:30, so it's context, not a trade.",
+     "outcome": false
+    },
+    {
+     "t": "07:04",
+     "who": "macro",
+     "to": "chief",
+     "text": "Pre-market, Asia points to a mild gap-up across the basket (about +1% for most names), but that is already priced in at the open and is context, not a trade. Overnight news is mostly noise: the Kazatomprom executive exit and audit delay are a real but distant supply-side question, and the Federal Register Paducah enrichment notice is a possible long-term competitive item for Centrus, not a today event. The Black Friday half-day and the weak Monday-after history for the power trio argue for caution, not action.",
+     "outcome": false,
+     "notes": "date: 2026-11-27\nticker: LEU\nwhat: Federal Register notice on General Matter Paducah enrichment facility: check for licensing steps that affect enrichment competition to Centrus\ndate: 2026-11-27\nticker: CEG\nwhat: Black Friday half-day session; power-trio Monday-after weakness history, treat as sentiment check only\nwhy: Asia's close and the nowcast show a mild gap-up that is already priced in, and the overnight headlines are mostly regulatory or geopolitical background with no same-day trigger. The seasonal Black Friday pattern and the basket being near its 10-day average gate both argue against new buys today.\nticker: CEG\ndirection: down\ndays: 3\nfiles read: SECTOR Uranium market, SECTOR Government and laws"
+    },
+    {
+     "t": "07:04",
+     "who": "pm",
+     "to": "team",
+     "text": "Pre-market, the Asia read is a mild gap-up (around +1%) across the basket, but that is already priced in at the open, so it is context, not a trade. No waiting setups are active, so nothing to buy at 9:30 and no setup to cancel. The Black Friday half-day and weak Monday-after history for the power trio argue for caution, and the Talen resting-buy references are stale since no order is live.",
+     "outcome": false,
+     "notes": "why: No live resting orders exist and no waiting setups are listed, so there is nothing to act on at the open. I checked the basket's Asia gap (about +1%), the Black Friday seasonal weakness, and the PJM auction status, and nothing changes today's stance.\nfiles read: TLN Snapshot, CEG Snapshot, TLN Deals and contracts, SECTOR Uranium market"
+    }
+   ],
+   "practice": false,
+   "end": "07:04"
   }
  ],
  "feed": [
@@ -219508,6 +219615,249 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: The bot reported a halt after 3 order rejections on a SPY parking sale with a malfunction code, yet LIVE_ORDERS_RIGHT_NOW is empty and nothing is resting. Are any of the rejected orders still open at the broker, or did they all fail cleanly? Before ops_resume is set true, the team should confirm the rejected SPY sales did not leave a partial position or a stray order that could fill later. -> relevant | Is the PJM 2029/30 capacity-auction delay request still undecided as of today, and has anyone checked the FERC docket directly rather than news summaries? TLN's 9.6% move rests on that headline. -> relevant | Does the General Matter Paducah scoping notice change anything for Centrus (LEU), or is it simply the first step in a years-long licensing process for a plant that isn't built yet? -> irrelevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "engineer",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-25: Centrus Investor Day at Piketon with business and financial outlook updates",
+   "tickers": [
+    "LEU"
+   ],
+   "art": {
+    "big": "Today: Centrus Investor Day at Piketon with business and ",
+    "sub": "Noted by the team on 2026-11-25"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "scout",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-24: US midterm elections: policy and permitting clarity for data center power demand",
+   "tickers": [
+    "VST"
+   ],
+   "art": {
+    "big": "Today: US midterm elections: policy and permitting clarit",
+    "sub": "Noted by the team on 2026-11-24"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "macro",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-24: Pre-Thanksgiving session: seasonal tendency is mildly positive for the S&P, but thin trading makes it a weak signal",
+   "tickers": [],
+   "art": {
+    "big": "Today: Pre-Thanksgiving session: seasonal tendency is mil",
+    "sub": "Noted by the team on 2026-11-24"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "macro",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-24: Pre-Thanksgiving session; seasonal tendency is positive into Wednesday, but the basket gate is currently closed, so no entries until it reopens",
+   "tickers": [],
+   "art": {
+    "big": "Today: Pre-Thanksgiving session; seasonal tendency is pos",
+    "sub": "Noted by the team on 2026-11-24"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "level",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-24: Re-check whether price holds the 4.91 zone or breaks lower; reassess only if the basket recovers above its 10-day average.",
+   "tickers": [
+    "UUUU"
+   ],
+   "art": {
+    "big": "Today: Re-check whether price holds the 4.91 zone or brea",
+    "sub": "Noted by the team on 2026-11-24"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "scout",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-25: Orano Enrichment USA draft environmental review (Federal Register) for an enrichment facility; watch for comment deadlines and any follow-on NRC decision affecting enrichment supply",
+   "tickers": [
+    "LEU"
+   ],
+   "art": {
+    "big": "Today: Orano Enrichment USA draft environmental review (F",
+    "sub": "Noted by the team on 2026-11-25"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "scout",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-25: Orano Enrichment USA uranium enrichment facility draft environmental review (Federal Register) may matter for enricher capacity; check comment and decision dates",
+   "tickers": [
+    "LEU"
+   ],
+   "art": {
+    "big": "Today: Orano Enrichment USA uranium enrichment facility d",
+    "sub": "Noted by the team on 2026-11-25"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "macro",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-24: Black Friday half-day session; desk notes show power-trio weakness the Monday after in most years, so treat as a sentiment check, not a trade signal",
+   "tickers": [
+    "CEG"
+   ],
+   "art": {
+    "big": "Today: Black Friday half-day session; desk notes show pow",
+    "sub": "Noted by the team on 2026-11-24"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "level",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-24: Re-check whether the basket has reclaimed its 10-day average and whether the $236.82 zone still holds before any new setup.",
+   "tickers": [
+    "CEG"
+   ],
+   "art": {
+    "big": "Today: Re-check whether the basket has reclaimed its 10-d",
+    "sub": "Noted by the team on 2026-11-24"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "macro",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-24: Black Friday half-day session; historically weak Black Friday to Monday period for the power trio and our basket",
+   "tickers": [
+    "CCJ"
+   ],
+   "art": {
+    "big": "Today: Black Friday half-day session; historically weak B",
+    "sub": "Noted by the team on 2026-11-24"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "level",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-24: Thanksgiving-window auto trade exits; check whether the basket recovered above its 10-day average before any new VST buys.",
+   "tickers": [
+    "VST"
+   ],
+   "art": {
+    "big": "Today: Thanksgiving-window auto trade exits; check whethe",
+    "sub": "Noted by the team on 2026-11-24"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "risk",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-25: Black Friday half-day session; historically weak Black Friday to Monday period for the power trio and our basket. Re-check whether the basket has reclaimed its 10-day average before any new buys.",
+   "tickers": [],
+   "art": {
+    "big": "Today: Black Friday half-day session; historically weak B",
+    "sub": "Noted by the team on 2026-11-25"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "scout",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-26: General Matter Paducah enrichment facility Federal Register notice: possible competitive read-through to Centrus enrichment demand, unconfirmed impact",
+   "tickers": [
+    "LEU"
+   ],
+   "art": {
+    "big": "Today: General Matter Paducah enrichment facility Federal",
+    "sub": "Noted by the team on 2026-11-26"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "scout",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-26: Federal Register notice on General Matter Paducah enrichment facility; check for licensing steps that affect enrichment supply competition",
+   "tickers": [
+    "LEU"
+   ],
+   "art": {
+    "big": "Today: Federal Register notice on General Matter Paducah ",
+    "sub": "Noted by the team on 2026-11-26"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "questioner",
+   "kind": "alert",
+   "title": null,
+   "text": "Reminder written 2026-11-26: Questioner follow-up: The Federal Register notice on the General Matter Paducah enrichment facility could compete with Centrus (LEU), which is a major holding. Does this change LEU's enrichment outloo",
+   "tickers": [],
+   "art": {
+    "big": "Today: Questioner follow-up: The Federal Register notice ",
+    "sub": "Noted by the team on 2026-11-26"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:04",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Pre-market check-in done: Asia points to CCJ +0.9%, NXE +0.9%, UEC +1.2%, DNN +0.9%, UUUU +1.3%, LEU +1.6%, BWXT +0.9%, CEG +1.0%, VST +1.1%, TLN +1.2%. No setups waiting yet. Morning meeting at 9:31.",
+   "tickers": [],
+   "art": {
+    "big": "Good morning",
+    "sub": "Pre-market check-in. Open the conversation to see the plan."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -220383,9 +220733,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 06:53",
+  "updated": "2026-11-27 07:04",
   "total": 919,
-  "week": 603,
+  "week": 601,
   "places": {
    "South Korea": 53,
    "Uranium price": 51,
@@ -221022,8 +221372,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "b2362be41ae616f1",
   "fd337937e7471e2a",
+  "b2362be41ae616f1",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -221068,10 +221418,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "22ab37dfabeba433",
   "688d746cfc31b58f",
-  "85de31670d4daf9d",
+  "22ab37dfabeba433",
   "f815e45da305cee7",
+  "85de31670d4daf9d",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -223349,6 +223699,10 @@
   {
    "q": "Questioner: Track the nuclear basket's 10-day average and the reactor fleet running percent weekly through December; if the price keeps falling while fleet running stays above ~88%, treat it as positioning and extend the hold window assumptions for Patient Levels setups. Also check whether NVIDIA's sharp drop (AI scare days) keeps lining up with power-name weakness.",
    "date": "2026-11-25"
+  },
+  {
+   "q": "Questioner: Pull the broker's order history and current SPY position for the last hour, confirm the three rejected sales show status rejected with zero filled quantity, and confirm no open orders exist, before setting ops_resume true.",
+   "date": "2026-11-27"
   }
  ],
  "research_candidates": [
@@ -223633,7 +223987,7 @@
    "built": "2026-11-27 06:38"
   }
  ],
- "heartbeat": "2026-11-27 06:53",
+ "heartbeat": "2026-11-27 07:03",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223729,18 +224083,18 @@
   "spot_minus_long_term": -6.45
  },
  "jobs_view": {
-  "as_of": "2026-11-26",
+  "as_of": "2026-11-27",
   "open_jobs_by_company": {
    "Oklo": 54,
    "Kairos Power": 85,
    "Valar Atomics": 122,
-   "Radiant": 45,
+   "Radiant": 44,
    "Antares": 84,
    "Constellation": 7
   },
-  "sector_open_jobs": 397,
-  "change_vs_30_days_ago": 4,
-  "days_tracked": 3,
+  "sector_open_jobs": 396,
+  "change_vs_30_days_ago": 3,
+  "days_tracked": 4,
   "new_postings_30d_by_theme": {
    "licensing": 1,
    "manufacturing": 1
@@ -223981,8 +224335,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 83,
-   "used": 80,
+   "asked": 85,
+   "used": 81,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 4,
@@ -223990,7 +224344,7 @@
     "BWXT Leadership and insiders": 2,
     "UEC Snapshot": 9,
     "UEC Deals and contracts": 1,
-    "SECTOR Uranium market": 39,
+    "SECTOR Uranium market": 40,
     "TLN Snapshot": 18,
     "TLN What history says": 4,
     "CCJ Snapshot": 3,
@@ -224002,7 +224356,7 @@
     "NXE Snapshot": 5,
     "NXE Filings and company events": 2,
     "LEU Snapshot": 12,
-    "LEU Legal": 10,
+    "LEU Legal": 11,
     "LEU Leadership and insiders": 1,
     "LEU What history says": 1,
     "LEU Deals and contracts": 1,
@@ -224039,21 +224393,21 @@
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 64,
-   "used": 64,
+   "asked": 65,
+   "used": 65,
    "notes": {
     "BWXT Deals and contracts": 4,
     "BWXT Snapshot": 10,
     "BWXT Leadership and insiders": 2,
-    "TLN Snapshot": 7,
-    "SECTOR Uranium market": 56,
+    "TLN Snapshot": 8,
+    "SECTOR Uranium market": 57,
     "BWXT Discoveries": 2,
     "UEC Snapshot": 10,
     "UEC Leadership and insiders": 1,
-    "TLN Deals and contracts": 2,
+    "TLN Deals and contracts": 3,
     "TLN Discoveries": 1,
     "SECTOR pulse": 3,
-    "CEG Snapshot": 8,
+    "CEG Snapshot": 9,
     "SECTOR Market backdrop": 1,
     "NXE Snapshot": 3,
     "SECTOR Plants now": 1,
@@ -224118,15 +224472,15 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 102,
-   "used": 100,
+   "asked": 104,
+   "used": 102,
    "notes": {
-    "SECTOR Uranium market": 70,
+    "SECTOR Uranium market": 72,
     "BWXT Snapshot": 7,
     "CCJ Snapshot": 3,
     "UUUU Snapshot": 6,
-    "SECTOR Government and laws": 65,
-    "TLN Snapshot": 41,
+    "SECTOR Government and laws": 67,
+    "TLN Snapshot": 42,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
     "CEG Legal": 1,
@@ -224268,19 +224622,19 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 58,
-   "used": 58,
+   "asked": 59,
+   "used": 59,
    "notes": {
     "TLN Snapshot": 45,
     "TLN News": 41,
-    "coming_up": 8,
+    "coming_up": 9,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
     "BWXT Legal": 1,
     "CCJ Snapshot": 9,
     "TLN Leadership and insiders": 39,
     "CCJ Legal": 2,
-    "TLN Legal": 8,
+    "TLN Legal": 9,
     "SECTOR Market regime": 1,
     "desk_lessons_from_our_mistakes": 7,
     "TLN Ownership and analysts": 4,
@@ -224292,7 +224646,7 @@
     "Reminder: Pre-Thanksgiving session (2026-11-25)": 1,
     "Reminder: Thanksgiving run-up rule": 1,
     "Basket gate note: nuclear basket -11.2% vs 10-day average": 1,
-    "LIVE_ORDERS_RIGHT_NOW": 7,
+    "LIVE_ORDERS_RIGHT_NOW": 8,
     "SECTOR Calendar": 1,
     "already_asked": 3,
     "Desk lessons": 1,
@@ -224308,7 +224662,9 @@
     "desk lessons": 1,
     "already_checked_facts": 2,
     "SECTOR Power auctions": 1,
-    "coming_up Black Friday entry": 1
+    "coming_up Black Friday entry": 1,
+    "recently_canceled_orders": 1,
+    "SECTOR PJM auction": 1
    },
    "since": "2026-11-23"
   },
@@ -227253,6 +227609,46 @@
    "price": 61.56,
    "result": null,
    "why": "Checked each headline for whether it is new and whether it changes near-term demand or supply for our traded names; geopolitics and routine maintenance scored low, the Poland deal and enrichment filin"
+  },
+  {
+   "role": "questioner",
+   "ticker": "TLN",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-27",
+   "price": 351.55,
+   "result": null,
+   "why": "The live order list is empty but the bot reports a halt with rejected SPY sales, a mismatch worth confirming before any restart. The PJM delay is still unconfirmed in the files, and the Paducah notice"
+  },
+  {
+   "role": "macro",
+   "ticker": "TLN",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-27",
+   "price": 351.55,
+   "result": null,
+   "why": "I checked the desk's PJM notes and headlines: no decision on the delay request is on file, and the Dec 15 auction is still scheduled, so the desk should assume it goes ahead. The notes also show PJM a"
+  },
+  {
+   "role": "investigator",
+   "ticker": "LEU",
+   "direction": "up",
+   "days": 5,
+   "date": "2026-11-27",
+   "price": 83.23,
+   "result": null,
+   "why": "The desk notes don't tie a scoping notice to any near-term LEU revenue, and the desk's own data shows Centrus's business depends on existing Russian-supply waivers and contracted deliveries, not on a "
+  },
+  {
+   "role": "macro",
+   "ticker": "CEG",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-27",
+   "price": 235.25,
+   "result": null,
+   "why": "Asia's close and the nowcast show a mild gap-up that is already priced in, and the overnight headlines are mostly regulatory or geopolitical background with no same-day trigger. The seasonal Black Fri"
   }
  ],
  "after_sale": [],
@@ -228404,6 +228800,33 @@
    "answer": "General Matter's Paducah notice is a routine scoping notice: it starts an environmental review for a planned enrichment plant, and that plant is years from operating. Centrus's enrichment outlook doesn't change on this filing alone, so I'm leaving LEU as it is.",
    "verdict": "irrelevant",
    "action": "watch"
+  },
+  {
+   "t": "2026-11-27 07:03",
+   "question": "The bot reported a halt after 3 order rejections on a SPY parking sale with a malfunction code, yet LIVE_ORDERS_RIGHT_NOW is empty and nothing is resting. Are any of the rejected orders still open at the broker, or did they all fail cleanly? Before ops_resume is set true, the team should confirm the rejected SPY sales did not leave a partial position or a stray order that could fill later.",
+   "kind": "odd",
+   "asked": "investigator",
+   "answer": "I checked the halt against the desk's own records. LIVE_ORDERS_RIGHT_NOW is empty, so nothing is resting at the broker that we know of, and the desk's notes say every order is a day order that expires at its close. But the file does not show whether the three rejected SPY sales were fully rejected or partly filled, so I can't confirm the account has no stray position. Ops should check the broker's order and position history directly before ops_resume is set true.",
+   "verdict": "relevant",
+   "action": "research"
+  },
+  {
+   "t": "2026-11-27 07:03",
+   "question": "Is the PJM 2029/30 capacity-auction delay request still undecided as of today, and has anyone checked the FERC docket directly rather than news summaries? TLN's 9.6% move rests on that headline.",
+   "kind": "unexplained",
+   "asked": "macro",
+   "answer": "I checked the desk files and the headlines we have for PJM. Nothing here confirms that the December capacity-auction delay has been decided, and I found no FERC ruling; the Dec 15 auction is still on the calendar. The 9.6% TLN jump therefore rests on an unconfirmed headline, so I'd treat PJM as a live risk for TLN and VST into Dec 15, not a closed question.",
+   "verdict": "relevant",
+   "action": "watch"
+  },
+  {
+   "t": "2026-11-27 07:03",
+   "question": "Does the General Matter Paducah scoping notice change anything for Centrus (LEU), or is it simply the first step in a years-long licensing process for a plant that isn't built yet?",
+   "kind": "maybe_irrelevant",
+   "asked": "investigator",
+   "answer": "I checked the desk's files on General Matter's Paducah notice. It is a Federal Register scoping notice, the first step in an environmental review for an enrichment plant that doesn't exist yet and is years from running, so it doesn't change Centrus's near-term enrichment competition. I agree with the News Investigator's point that this is a separate matter from the halt, and I'd keep it off the trading agenda.",
+   "verdict": "irrelevant",
+   "action": "none"
   }
  ],
  "reactor_view": {
@@ -231055,8 +231478,8 @@
   }
  ],
  "movers": {
-  "at": 1795741241.8046298,
-  "time": "2026-11-26 20:00",
+  "at": 1795781038.2965593,
+  "time": "2026-11-27 07:03",
   "list": [
    {
     "ticker": "LEU",
@@ -231335,7 +231758,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 06:53",
+ "watchdog_last": "2026-11-27 07:03",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -231637,7 +232060,7 @@
   "resolved": 0,
   "note": "No earnings options readings have expired yet."
  },
- "nowcast_date": "2026-11-25",
+ "nowcast_date": "2026-11-27",
  "gap_banked": {},
  "gapdown_shadow": [
   {

@@ -13,7 +13,7 @@
 "what": "Centrus Investor Day at Piketon with business and financial outlook updates",
 "by": "engineer",
 "written": "2026-11-25",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2025-12-31",
@@ -29,7 +29,7 @@
 "what": "US midterm elections: policy and permitting clarity for data center power demand",
 "by": "scout",
 "written": "2026-11-24",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-09",
@@ -69,7 +69,7 @@
 "what": "Pre-Thanksgiving session: seasonal tendency is mildly positive for the S&P, but thin trading makes it a weak signal",
 "by": "macro",
 "written": "2026-11-24",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-25",
@@ -77,7 +77,7 @@
 "what": "Pre-Thanksgiving session; seasonal tendency is positive into Wednesday, but the basket gate is currently closed, so no entries until it reopens",
 "by": "macro",
 "written": "2026-11-24",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-25",
@@ -85,7 +85,7 @@
 "what": "Re-check whether price holds the 4.91 zone or breaks lower; reassess only if the basket recovers above its 10-day average.",
 "by": "level",
 "written": "2026-11-24",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-25",
@@ -93,7 +93,7 @@
 "what": "Orano Enrichment USA draft environmental review (Federal Register) for an enrichment facility; watch for comment deadlines and any follow-on NRC decision affecting enrichment supply",
 "by": "scout",
 "written": "2026-11-25",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-25",
@@ -101,7 +101,7 @@
 "what": "Orano Enrichment USA uranium enrichment facility draft environmental review (Federal Register) may matter for enricher capacity; check comment and decision dates",
 "by": "scout",
 "written": "2026-11-25",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-27",
@@ -109,7 +109,7 @@
 "what": "Black Friday half-day session; desk notes show power-trio weakness the Monday after in most years, so treat as a sentiment check, not a trade signal",
 "by": "macro",
 "written": "2026-11-24",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-27",
@@ -117,7 +117,7 @@
 "what": "Re-check whether the basket has reclaimed its 10-day average and whether the $236.82 zone still holds before any new setup.",
 "by": "level",
 "written": "2026-11-24",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-27",
@@ -125,7 +125,7 @@
 "what": "Black Friday half-day session; historically weak Black Friday to Monday period for the power trio and our basket",
 "by": "macro",
 "written": "2026-11-24",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-27",
@@ -133,7 +133,7 @@
 "what": "Thanksgiving-window auto trade exits; check whether the basket recovered above its 10-day average before any new VST buys.",
 "by": "level",
 "written": "2026-11-24",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-27",
@@ -141,7 +141,7 @@
 "what": "Black Friday half-day session; historically weak Black Friday to Monday period for the power trio and our basket. Re-check whether the basket has reclaimed its 10-day average before any new buys.",
 "by": "risk",
 "written": "2026-11-25",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-27",
@@ -149,7 +149,7 @@
 "what": "General Matter Paducah enrichment facility Federal Register notice: possible competitive read-through to Centrus enrichment demand, unconfirmed impact",
 "by": "scout",
 "written": "2026-11-26",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-27",
@@ -157,7 +157,7 @@
 "what": "Federal Register notice on General Matter Paducah enrichment facility; check for licensing steps that affect enrichment supply competition",
 "by": "scout",
 "written": "2026-11-26",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-27",
@@ -165,7 +165,7 @@
 "what": "Questioner follow-up: The Federal Register notice on the General Matter Paducah enrichment facility could compete with Centrus (LEU), which is a major holding. Does this change LEU's enrichment outloo",
 "by": "questioner",
 "written": "2026-11-26",
-"surfaced": false
+"surfaced": true
 },
 {
 "date": "2026-11-28",
@@ -2453,6 +2453,14 @@
 "what": "Questioner follow-up: TLN was up 9.6% on a PJM auction-delay item that the desk files do not confirm, and the Dec 15 auction is still on the calendar. Is the stock now pricing in an outcome that hasn'",
 "by": "questioner",
 "written": "2026-11-26",
+"surfaced": false
+},
+{
+"date": "2026-12-15",
+"ticker": "",
+"what": "Questioner follow-up: Is the PJM 2029/30 capacity-auction delay request still undecided as of today, and has anyone checked the FERC docket directly rather than news summaries? TLN's 9.6% move rests o",
+"by": "questioner",
+"written": "2026-11-27",
 "surfaced": false
 },
 {
