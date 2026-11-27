@@ -4232,30 +4232,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Is Yellow Cake (LSE:YCA) a Uranium Play for FTSE 100 Investors? - Kalkine Media",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdjlhNldRMHdWWGkyZ0tWOW8wZWtHSG1jVy1Fd1hlcHRDVkJiUUVMMFZyTDc4azl5OHl1cTIxcWtLRDBlRWNLU09ja0N2c1hLbm9wLTAtRjliaVpyMGE4NlpMOF9abUg3RGJ1cW9VYmlnT2Q1cXJ0YUpaV2U4UE90dGVZakQ1VVdpbnpQV1diYUo0TFZkLUF1SEthSUFTX1FBNk5J?oc=5",
-   "ts": 1795602360,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic UK-listed uranium ETF explainer; no new company or sector information."
-  },
-  {
-   "ticker": "LEU",
-   "source": "Google News: HALEU fuel",
-   "title": "SRS Clears Key Milestone Toward Producing HALEU for Next-Generation Reactors - Department of Energy (.gov)",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQOWxnanFGZXpJa2dCYjd2aHA1WWxxWlVtd2hmeWREOWUtVmswdEFQUmZKSFNuT0FnNGFxWUsxeXROcFJPcDU0VFhaVmNfYjlma3o0VmFxSWEzcXkwNUs4Y0FhT1RQMkNPQzdsc3h6ejRaWXdRMkhpU05rekxaWDZjMnQwN1pzbDV4RThSRnhCRkh4ZnhEX0ZpazVKd1BXMFd1NGZMRE1ZZEU2VnM?oc=5",
-   "ts": 1795544904,
-   "materiality": 4,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "policy_tariff",
-   "why": "SRS milestone toward HALEU is real progress but a government step, not a contract or revenue."
-  },
-  {
    "ticker": "UUUU",
    "source": "Google News",
    "title": "Puma Energy fuels FoodForward SA\u2019s drive to reach 190,000 people in rural communities - Bizcommunity",
@@ -7230,6 +7206,30 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic 'what you own' explainer piece with no new company-specific information."
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News",
+   "title": "Vistra flags pay transparency and cross-border hiring challenges for 2027 - International Accounting Bulletin",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMGptbzZUdUJzYjJ5eVdZeVhYODRVYUpiclY3WVJjU3RqcUJneHNrZUZvOUxpb0JDUzY4U2hlU0dZaUZsLW1WNlp0bmUwaThaQVVaSHZIa3Exckctc0hZb1RhSW9OemdzVlFGUzJKN1hLb25ZM0FtZ2Z2LU03THFFemoySW9DSHpLRHFZ?oc=5",
+   "ts": 1795784947,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic HR/compliance outlook for 2027 pay transparency; no new company-specific financial information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "As legacy mine cleanup lags, companies push for new uranium projects - news8000.com",
+   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOQWVyZ2UtTHB4NVFwYTNIUTRVZ3dQeXFzZEFiamt2TDRra0tKT3g3TVViYkwxOWdBa3VjZG45STREdWg2a1VDV3FsVVB4WUdUaXM0b0QyN2JyYnptemxnSk1hMDE2SDJqWnhzMWdTRTM3eEFDcmRtV0ZmUVJSdmcycWNTSFBRcnRTclFMSnRhOXJYNk84cll6cUtEM09fTzNNckVDaGUxaVh1QWNfQlptNVNId2tNakd0MzZ1NWY4RFh3al9XdnZJSF80THNNMTh6ckNtSHNfV0xYdHgtcG80dkZ1YlpCYlJTekNVRE40X2lNQ0dv?oc=5",
+   "ts": 1795780800,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic piece on legacy mine cleanup lagging; no new company-specific information for Cameco."
   }
  ],
  "reviews": [
@@ -8989,16 +8989,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.05227,
+  "day_usd": 0.05354,
   "month": "2026-11",
-  "month_usd": 2.14646,
-  "total_usd": 2.14646,
+  "month_usd": 2.14773,
+  "total_usd": 2.14773,
   "by_role": {
    "macro": 0.21206,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.24429,
+   "scout": 0.24556,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9263,10 +9263,10 @@
   "AMD": 406.83,
   "SMR": 3.25,
   "NNE": 8.85,
-  "SPY": 728.04,
+  "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-27 08:35 ET",
+ "last_cycle": "2026-11-27 08:45 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57913,12 +57913,13 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "7cabb45f8b0c2778",
   "4ee30073db1990ac",
+  "7cabb45f8b0c2778",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
   "7b76af7ea219b7aa",
+  "ba830687f88c0b83",
   "140a95c576e25d5d",
   "8d0283e176b666a8",
   "4720f4810691bed4",
@@ -57955,8 +57956,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1715e61816aa5619",
   "1acc6842cd4f6e64",
+  "1715e61816aa5619",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -58083,14 +58084,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "1ed195cb4396cbe7",
   "7c380c991c59f9ba",
+  "1ed195cb4396cbe7",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -58437,6 +58438,7 @@
   "d968a977d69481b7",
   "236832db131afa54",
   "7269a326a498bd44",
+  "60fb38a6cd3c6caf",
   "81753ce9636874d7",
   "cdf09ab4dc83c609",
   "8a3d5e1cda9320c3",
@@ -58444,6 +58446,7 @@
   "7900f7b732a740d7",
   "2363faa1cee608b8",
   "560f5fcf0c779ea2",
+  "0213820c428c0788",
   "da48af2ddf551928",
   "6c0f0f111a586f76",
   "f5de3767d3f1b3c9",
@@ -58666,7 +58669,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795786303.788112,
+ "news_slow_at": 1795786935.9423034,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -220875,7 +220878,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 08:35",
+  "updated": "2026-11-27 08:45",
   "total": 932,
   "week": 599,
   "places": {
@@ -221514,8 +221517,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "b2362be41ae616f1",
   "fd337937e7471e2a",
+  "b2362be41ae616f1",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -221561,10 +221564,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "22ab37dfabeba433",
   "688d746cfc31b58f",
-  "85de31670d4daf9d",
+  "22ab37dfabeba433",
   "f815e45da305cee7",
+  "85de31670d4daf9d",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -224130,12 +224133,12 @@
    "built": "2026-11-27 08:16"
   }
  ],
- "heartbeat": "2026-11-27 08:35",
+ "heartbeat": "2026-11-27 08:45",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 423,
+ "_pushed_feed": 424,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -224371,15 +224374,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 449,
-   "used": 411,
+   "asked": 452,
+   "used": 414,
    "notes": {
     "TLN Deals and contracts": 20,
     "CCJ Deals and contracts": 77,
     "BWXT Deals and contracts": 56,
-    "SECTOR Government and laws": 123,
+    "SECTOR Government and laws": 124,
     "UUUU Deals and contracts": 44,
-    "SECTOR Countries": 127,
+    "SECTOR Countries": 128,
     "CEG Deals and contracts": 56,
     "NXE Legal": 22,
     "NXE Deals and contracts": 19,
@@ -224388,12 +224391,12 @@
     "LEU Deals and contracts": 44,
     "UEC Deals and contracts": 6,
     "UUUU Legal": 25,
-    "SECTOR Uranium market": 10,
+    "SECTOR Uranium market": 11,
     "CCJ Legal": 18,
     "CEG Legal": 5,
     "VST Deals and contracts": 38,
     "LEU Legal": 1,
-    "VST Legal": 1,
+    "VST Legal": 2,
     "TLN Legal": 2
    },
    "since": "2026-11-23"
@@ -231931,7 +231934,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 08:35",
+ "watchdog_last": "2026-11-27 08:45",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
