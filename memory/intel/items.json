@@ -30599,5 +30599,133 @@
 "nuclear",
 "protocol"
 ]
+},
+{
+"id": "54c80a45fc3d12fa",
+"date": "2026-11-27",
+"ts": 1795767562,
+"title": "Another top manager leaves Kazatomprom amid corruption scandal",
+"summary": "",
+"outlet": "\u041a\u0430\u0437\u0422\u0410\u0413",
+"link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZ0REdnlkTERwSWlLY29feWlzY2ZfVWpvWGlSSUpWR0pOcUdaYnJFUjk4WTdkVEl6NExFM19JYmpselNjYm1ZWkFCVVZLcU5mMDRFcWNsV1hGQV9DUGlraVlnTlJZd2NGMTBRMDkxTTJUelRySzBFT1NHRVJEU01KQ1J4T291bXZQcm0tTGR3SWxTdw?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.81,
+"score": 4.12,
+"echo_of": null,
+"w": [
+"amid",
+"another",
+"corruption",
+"kazatomprom",
+"leaves",
+"manager",
+"scandal",
+"top"
+]
+},
+{
+"id": "d0ab837acd682126",
+"date": "2026-11-27",
+"ts": 1795782288,
+"title": "IAEA seeks fresh local ceasefire for Zaporizhzhia power line repairs",
+"summary": "The International Atomic Energy Agency is seeking to arrange a ninth localised ceasefire after Zaporizhzhia Nuclear Power Plant lost external power and is having to rely again on its emergency generators.",
+"outlet": "World Nuclear News",
+"link": "https://www.world-nuclear-news.org/articles/iaea-seeks-fresh-local-ceasefire-for-zaporizhzhia-power-line-repairs",
+"place": "World Nuclear News",
+"tickers": [],
+"tags": [
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.67,
+"score": 3.64,
+"echo_of": null,
+"w": [
+"ceasefire",
+"fresh",
+"iaea",
+"line",
+"local",
+"power",
+"repairs",
+"seeks",
+"zaporizhzhia"
+]
+},
+{
+"id": "196d3eaa6d160cc7",
+"date": "2026-11-27",
+"ts": 1795785075,
+"title": "Did Darlington Nuclear Delays Just Shift AtkinsR\u00e9alis Group's (TSX:ATRL) Investment Narrative?",
+"summary": "",
+"outlet": "Simply Wall St",
+"link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcmFvWHU2S2Y4WF9Ma1F2YVJaVFNuU0ZxdjZCdnZRYlBqMXdDVUc1QlVlNE9oeXJKSFpQUzVJYlJWNGpjMjRfYTFlUGNWVnpYcG5PRGJWNXg4QVhaZzZ4MHVnR0VwZjNrWUlWRWFQbUFmbUxac1NrSEs2QTNaZmpPb2xGSm5BSHZTMDVLS1k2WlZTZl9Ec3BJS1NIcDZkd2FaQkNXTW5jaXNaRXcxaE4wclNDeFpUaWw1MXA0VW83OGhjQkUtWklaVGllcXRBMUVORzVRSTZMSU1wV2wtQ3fSAeMBQVVfeXFMTXpTTjJzbVpCXzlaTnlJRVRMWkZvQTdNZzFOQ1B4RjVmUGhqYlN6SFg0SnNmd200ZVJUYWNQWGdWWllxeTJFWGZnSmpZRnVpTGVrQUtFcWRHV3Z0S3pDVmk5NUo2N1NMU2NBZG44X1pPVkNfR1k5SFBya0EzVWZiWHJnYWhQaURfNk9icFVaNUpvQXJCM01Oc0ZjMmJSSVRqTHllc2w5MjNKRUZRVm9wVDN0VHF0QmpoNF9PdFpKbldVZ1pSc0RzSTRpaHphZXpNaDJJcjl1cnFtZmdEb1F6THIwYnM?oc=5",
+"place": "Canada SMRs",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 3.5,
+"echo_of": "62f4bcb997863972",
+"w": [
+"alis",
+"atkinsr",
+"atrl",
+"darlington",
+"delays",
+"did",
+"group",
+"investment",
+"just",
+"narrative",
+"nuclear",
+"shift",
+"tsx"
+]
+},
+{
+"id": "5dbb8036d55ff74b",
+"date": "2026-11-27",
+"ts": 1795791352,
+"title": "South Korea, Vietnam expand nuclear and semiconductor ties",
+"summary": "",
+"outlet": "NewsBreak: Local News & Alerts",
+"link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbE1JSTVFbzh5eEhMUEhoY2lfa2EyUjRocjNYazNreW94T1FEdzVTLXZzSVRNR3hKUTU0LUNLUTJSZnUtcU95VHVlTDRRLUsxNU9QYVRXWWRhMzJ0eGxCVlZxLUszNEUxTGp0a1JNQWw1dW5EbmMxYkJfZXdhX3RHd3NyS1dCczNoRFl4MWczbGpvSjFZNWRITlZfeUZEQVFXMVE1Q2l1b0ZoN1V5UjVWREFJYw?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "185217c34bf96ae1",
+"w": [
+"expand",
+"korea",
+"nuclear",
+"semiconductor",
+"south",
+"ties",
+"vietnam"
+]
 }
 ]
