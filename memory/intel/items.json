@@ -31117,5 +31117,127 @@
 "supply",
 "valuation"
 ]
+},
+{
+"id": "c34cb31b389275a6",
+"date": "2026-11-25",
+"ts": 1795642195,
+"title": "N. Korea's Kim Jong-un inspects nuclear facility, with focus on tactical nuclear multi-domain use",
+"summary": "",
+"outlet": "\ud5e4\ub7f4\ub4dc\uacbd\uc81c",
+"link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBTemVzQWc2MWl5cVlXMHNTdG9LTmIxclhzck9XMWE3WEFnM0tXUjdFYm9VTDY2LW9wbjJsOVNTOHNmcGxMMk1JazJiV1pCeW8zMElaUmNjNA?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.62,
+"score": 3.74,
+"echo_of": null,
+"w": [
+"domain",
+"facility",
+"focus",
+"inspects",
+"jong",
+"kim",
+"korea",
+"multi",
+"nuclear",
+"tactical",
+"use"
+]
+},
+{
+"id": "d0314ff05b975317",
+"date": "2026-11-27",
+"ts": 1795788153,
+"title": "IAEA SMR School in the Republic of Korea Highlights Pathways to Deployment",
+"summary": "",
+"outlet": "International Atomic Energy Agency",
+"link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMUJNNzN5Qko0eHFJNHcwSmZtRlAtamlzSklVOTdhakdYOHZucnRRVUtETVk5Z0toR2NJUGVnOVRaa1JxcVZpT3NQTXVyTWVjOW51bGU0bFN2SmtCWl84bElGUlFNSGdRZHRBSHVqbk9oYzJwSUlWR1B1YmVKN3BkR1dwc3NJMXNDUWtsaGtFS0k4Y2xzUzFnYVF4X3ZETUozcWxkd3FTYlVrQ2NKcnQ3bQ?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"restart",
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.83,
+"score": 6.16,
+"echo_of": null,
+"w": [
+"deployment",
+"highlights",
+"iaea",
+"korea",
+"pathways",
+"republic",
+"school",
+"smr"
+]
+},
+{
+"id": "d84a8d631f31f32c",
+"date": "2026-11-27",
+"ts": 1795791300,
+"title": "South Korea, Vietnam expand nuclear and semiconductor ties",
+"summary": "",
+"outlet": "upi",
+"link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNY2k0LVlNa3p4a21ZY1ZBU05vZGRVQWFycGc4S3ZnMFQ2ckxlN1dSU0NfTWpIUjFDcTgzZDVrdDIyblJiaVJFWTBRbnpGSUQySWlYUnlzakg3UTVqSXNtLVN6SmxhcUZGWUVuOVpuNVdicXRYZHdlYUlxWjRkUnowaWxGRkFQR3U0WjNDNm00b1EyZUZrZER0dnFtSDA0dElmQzNRaUlUckRweHRHd19j0gGvAUFVX3lxTE1jaTQtWU1renhrbVljVkFTTm9kZFVBYXJwZzhLdmcwVDZyTGU3V1JTQ19NakhSMUNxODNkNWt0MjJuUmJpUkVZMFFuekZJRDJJaVhSeXNqSDdRNWpJc20tU3pKbGFxRkZZRW45Wm41V2JxdFhkd2VhSXFaNGRSejBpbEZGQVBHdTRaM0M2bTRvUTJlRmtkRHR2cW1IMDR0SWZDM1FpSVRyRHB4dEd3X2M?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "185217c34bf96ae1",
+"w": [
+"expand",
+"korea",
+"nuclear",
+"semiconductor",
+"south",
+"ties",
+"vietnam"
+]
+},
+{
+"id": "f6a8dc8098cd3b3b",
+"date": "2026-11-27",
+"ts": 1795796180,
+"title": "Work begins on Husab heap leach plant",
+"summary": "",
+"outlet": "World Nuclear News",
+"link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLV83OWxRS3A4cUhlNFVCQ1I0QlE0WWZSVGgzb0U1c0cxUXB0aEpHNXR1TjBBaS1xN2laM1VJQ0NaRWJiNW9MbmswY01IenpSS0Vwa0owSUlIZTlIaFdiUkk5ZjcxdUlwWVVEUlRnZU1oOE03THVtRW9kNkxBQm5OQTd3anJGTTEy?oc=5",
+"place": "Namibia",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "8a28d1476a656cf6",
+"w": [
+"begins",
+"heap",
+"husab",
+"leach",
+"plant",
+"work"
+]
 }
 ]
