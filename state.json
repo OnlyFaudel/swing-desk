@@ -9344,12 +9344,12 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.12242,
+  "day_usd": 0.1389,
   "month": "2026-11",
-  "month_usd": 2.2166,
-  "total_usd": 2.2166,
+  "month_usd": 2.23308,
+  "total_usd": 2.23308,
   "by_role": {
-   "macro": 0.2197,
+   "macro": 0.22257,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.26798,
@@ -9357,12 +9357,12 @@
    "review": 0.11073,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.33477,
-   "risk": 0.21133,
-   "investigator": 0.36285,
+   "pm": 0.3394,
+   "risk": 0.2156,
+   "investigator": 0.36573,
    "postmortem": 0.00035,
    "researcher": 0.02341,
-   "engineer": 0.0867,
+   "engineer": 0.08853,
    "questioner": 0.1625
   }
  },
@@ -9605,23 +9605,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 63.92,
-  "NXE": 7.21,
-  "UEC": 5.89,
+  "CCJ": 63.87,
+  "NXE": 7.22,
+  "UEC": 5.91,
   "DNN": 1.86,
-  "UUUU": 5.41,
-  "LEU": 84.03,
-  "BWXT": 116.25,
-  "CEG": 237.48,
-  "VST": 122.69,
-  "TLN": 356.05,
-  "AMD": 406.18,
+  "UUUU": 5.45,
+  "LEU": 84.28,
+  "BWXT": 116.04,
+  "CEG": 237.05,
+  "VST": 122.38,
+  "TLN": 355.42,
+  "AMD": 407.14,
   "SMR": 3.35,
-  "NNE": 9.16,
-  "SPY": 721.66,
-  "SGOV": 100.71
+  "NNE": 9.15,
+  "SPY": 721.18,
+  "SGOV": 100.7
  },
- "last_cycle": "2026-11-27 09:40 ET",
+ "last_cycle": "2026-11-27 09:42 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -9684,10 +9684,10 @@
   ]
  },
  "brakes": {
-  "equity": 1024.91,
-  "day_pct": 1.93,
-  "week_pct": 2.44,
-  "drawdown_pct": -2.8,
+  "equity": 1026.72,
+  "day_pct": 2.11,
+  "week_pct": 2.62,
+  "drawdown_pct": -2.63,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -13661,6 +13661,18 @@
   [
    "2026-11-27 09:40",
    1024.91
+  ],
+  [
+   "2026-11-27 09:41",
+   1027.24
+  ],
+  [
+   "2026-11-27 09:42",
+   1026.31
+  ],
+  [
+   "2026-11-27 09:42",
+   1026.72
   ]
  ],
  "nowcast": {
@@ -58357,7 +58369,7 @@
     0.8428
    ]
   },
-  "time": "2026-11-27 09:40"
+  "time": "2026-11-27 09:42"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -58370,8 +58382,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "7cabb45f8b0c2778",
   "4ee30073db1990ac",
+  "7cabb45f8b0c2778",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -58413,8 +58425,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1715e61816aa5619",
   "1acc6842cd4f6e64",
+  "1715e61816aa5619",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -58541,14 +58553,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "1ed195cb4396cbe7",
   "7c380c991c59f9ba",
+  "1ed195cb4396cbe7",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -59134,7 +59146,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795790418.107411,
+ "news_slow_at": 1795790598.6299686,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -215536,6 +215548,76 @@
    ],
    "practice": false,
    "end": "09:40"
+  },
+  {
+   "id": "20261127094257384891",
+   "title": "Huddle: fast move: UEC moved -1.5% in 9 min",
+   "tickers": [
+    "LEU",
+    "NXE",
+    "UEC",
+    "UUUU"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-27 09:42",
+   "msgs": [
+    {
+     "t": "09:42",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: fast move: UEC moved -1.5% in 9 min; fast move: sector move: 4 of our nuclear stocks moving down together (LEU, NXE, UEC, UUUU).",
+     "outcome": false
+    },
+    {
+     "t": "09:43",
+     "who": "investigator",
+     "to": "team",
+     "text": "Nothing new here that I can add. The sector dip is a basket-wide move in the nuclear fuel names, and the desk's own notes show no reliable headline behind UEC's drop; the only fresh UEC items (a Niger project timeline and a supply deal from Nov 5) are old or routine. I'm not calling a direction, and I'd rather wait than add noise to the huddle.",
+     "outcome": false,
+     "notes": "why: I checked the recent headlines and UEC's filings and deal history; nothing dated today explains the 1.5% drop, and the basket is below its 10-day average, so there is no setup to add to.\nfiles read: UEC Deals and contracts, UEC Filings and company events, SECTOR Uranium market"
+    },
+    {
+     "t": "09:43",
+     "who": "engineer",
+     "to": "investigator",
+     "text": "Nothing physical at the plants or mines explains this dip. The four fuel names are falling together as a sector move, and our Plant data shows no new outage affecting our fuel suppliers; the open outage (Salem 1, CEG) is a normal refueling outage and mostly already known. I agree with the News Investigator that waiting is right: the basket is below its 10-day average, so no new buys are allowed anyway.",
+     "outcome": false,
+     "notes": "why: I checked the open and recent outages (all planned refueling, Salem 1 at CEG is the only open one, and CEG runs at 95.8% fleet), the uranium spot price (about $91.55, up 14% over 12 months), and the sector pulse (basket down about 2.4% vs its average). Nothing physical changed today, so the dip is market sentiment, not a supply event.\ndate: 2026-11-30\nticker: LEU\nwhat: Patient Levels buy window expires; re-check basket vs 10-day average before any order. Also watch the General Matter Paducah enrichment filing (Federal Register, Nov 27) as a possible competitive read-through for Centrus.\nfiles read: plants_now, SECTOR Uranium market"
+    },
+    {
+     "t": "09:43",
+     "who": "macro",
+     "to": "team",
+     "text": "This looks like a sector-wide move rather than stock-specific: LEU, NXE, UEC and UUUU are all sliding together, and the whole nuclear basket is below its 10-day average, so the no-new-buys rule applies. The sector pulse is -2.4% against its average, and uranium spot is up 2% on the month, so the fuel-chain weakness isn't coming from the commodity. I agree with the Plant Engineer and News Investigator that waiting is right; no action.",
+     "outcome": false,
+     "notes": "why: Checked the sector pulse, the uranium spot and long-term prices, the Sprott trust, and the sector ETFs; the miners are weaker than the commodity, which points to sentiment or positioning rather than a physical shock, and the desk rule blocks new buys anyway.\nticker: UEC\ndirection: down\ndays: 3\nfiles read: SECTOR Uranium market, SECTOR Government and laws"
+    },
+    {
+     "t": "09:43",
+     "who": "risk",
+     "to": "team",
+     "text": "Everyone so far is agreeing to wait, and I agree, but I want to push on the one thing that could make waiting a mistake. The basket is below its 10-day average, so no new buys are allowed; the level agent skipped LEU, NXE, UEC and UUUU for exactly that reason. My concern is that the sector fall is being treated as just noise when the notes show sector-wide drops in this group have been followed by more weakness, and LEU's 200-day gap is huge. I'm not calling a direction, just saying nothing here justifies overriding the rule.",
+     "outcome": false,
+     "notes": "ask: Plant Engineer: is there anything in the 1 plant news or outage list that would change how we read a four-stock fuel drop at the same time?\nwhy: I checked the basket rule against the nowcast, the level-agent skip reasons, and the 200-day gaps on LEU and UEC, and none of the desk notes provide a reason to bypass the no-buys condition today. The fuel names being down together is the sector risk that the rule exists for.\nticker: UEC\ndirection: down\ndays: 3\nfiles read: SECTOR Uranium market, UEC Snapshot, UEC Price behavior"
+    },
+    {
+     "t": "09:43",
+     "who": "pm",
+     "to": "risk",
+     "text": "I agree with the team that there's nothing to act on here. The four fuel names are falling together as a sector move, no news or plant event explains it, and the basket is below its 10-day average, so the no-new-buys rule blocks any entry. I also agree with the Risk Manager that waiting is the right default, since LEU sits far under its long-term average and sector drops in this group have often kept going.",
+     "outcome": false,
+     "notes": "action: none\nreason: No open positions or waiting buys, so there is nothing to exit or skip. The basket is below its 10-day average, which blocks new buys, and the fast moves reflect a sector-wide dip with no company-specific news behind it.\nwhy: I checked the live order list (none), the basket versus its 10-day average (below), the headlines (routine, no fresh catalyst), and the desk notes on UEC and the fuel chain. Nothing there gives a reason to act.\ndate: 2026-11-27\nticker: LEU\nwhat: Re-check whether the basket has reclaimed its 10-day average and whether the Federal Register notice on General Matter Paducah affects enrichment competition.\ndate: 2026-12-15\nticker: CEG\nwhat: PJM 2029/30 capacity auction closes under the price collar; expect a cap-level clear, so don't chase the release-day pop in power names.\nticker: UEC\ndirection: down\ndays: 3\nfiles read: SECTOR Uranium market, UEC S"
+    },
+    {
+     "t": "09:43",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "09:43"
   }
  ],
  "feed": [
@@ -220972,6 +221054,24 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-27 09:42",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: UEC moved -1.5% in 9 min; sector move: 4 of our nuclear stocks moving down together (LEU, NXE, UEC, UUUU). Checking the news for a reason.",
+   "tickers": [
+    "LEU",
+    "NXE",
+    "UEC",
+    "UUUU"
+   ],
+   "art": {
+    "big": "UEC moved -1.5% in 9 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -221167,9 +221267,11 @@
  "huddle_seen": {
   "fast move: LEU moved -1.5% in 3 min": 1795790180.7418876,
   "BWXT (you asked us to watch it) moved +1.8% since we last looked": 1795790180.741888,
-  "fast move: NXE moved -1.7% in 9 min": 1795790407.1959515
+  "fast move: NXE moved -1.7% in 9 min": 1795790407.1959515,
+  "fast move: UEC moved -1.5% in 9 min": 1795790577.3833144,
+  "fast move: sector move: 4 of our nuclear stocks moving down together (LEU, NXE, UEC, UUUU)": 1795790577.3833146
  },
- "huddle_last": 1795790407.1959553,
+ "huddle_last": 1795790577.3833172,
  "huddle_log": [
   "2026-11-24",
   "2026-11-24",
@@ -221184,7 +221286,6 @@
   "2026-11-24",
   "2026-11-24",
   "2026-11-24",
-  "2026-11-24",
   "2026-11-25",
   "2026-11-25",
   "2026-11-25",
@@ -221219,6 +221320,7 @@
   "2026-11-25",
   "2026-11-25",
   "2026-11-25",
+  "2026-11-27",
   "2026-11-27",
   "2026-11-27"
  ],
@@ -221818,7 +221920,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 09:40",
+  "updated": "2026-11-27 09:42",
   "total": 940,
   "week": 596,
   "places": {
@@ -222457,8 +222559,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "b2362be41ae616f1",
   "fd337937e7471e2a",
+  "b2362be41ae616f1",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -222505,10 +222607,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "22ab37dfabeba433",
   "688d746cfc31b58f",
-  "85de31670d4daf9d",
+  "22ab37dfabeba433",
   "f815e45da305cee7",
+  "85de31670d4daf9d",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -225079,12 +225181,12 @@
    "built": "2026-11-27 09:18"
   }
  ],
- "heartbeat": "2026-11-27 09:40",
+ "heartbeat": "2026-11-27 09:42",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 448,
+ "_pushed_feed": 454,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -225315,8 +225417,8 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 116.25,
-  "TLN": 356.05
+  "BWXT": 116.04499816894531,
+  "TLN": 355.42
  },
  "notes_audit": {
   "scout": {
@@ -225437,16 +225539,16 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 87,
-   "used": 83,
+   "asked": 88,
+   "used": 84,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 5,
     "BWXT What history says": 3,
     "BWXT Leadership and insiders": 2,
     "UEC Snapshot": 9,
-    "UEC Deals and contracts": 1,
-    "SECTOR Uranium market": 41,
+    "UEC Deals and contracts": 2,
+    "SECTOR Uranium market": 42,
     "TLN Snapshot": 18,
     "TLN What history says": 4,
     "CCJ Snapshot": 3,
@@ -225493,21 +225595,22 @@
     "NXE What history says": 1,
     "NXE Deals and contracts": 1,
     "NXE Leadership and insiders": 1,
-    "SECTOR Uranium price": 1
+    "SECTOR Uranium price": 1,
+    "UEC Filings and company events": 1
    },
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 67,
-   "used": 67,
+   "asked": 68,
+   "used": 68,
    "notes": {
     "BWXT Deals and contracts": 4,
     "BWXT Snapshot": 11,
     "BWXT Leadership and insiders": 2,
     "TLN Snapshot": 8,
-    "SECTOR Uranium market": 59,
+    "SECTOR Uranium market": 60,
     "BWXT Discoveries": 2,
-    "UEC Snapshot": 10,
+    "UEC Snapshot": 11,
     "UEC Leadership and insiders": 1,
     "TLN Deals and contracts": 3,
     "TLN Discoveries": 1,
@@ -225517,7 +225620,7 @@
     "NXE Snapshot": 4,
     "SECTOR Plants now": 1,
     "UUUU Snapshot": 10,
-    "LEU Snapshot": 11,
+    "LEU Snapshot": 12,
     "SECTOR Plants and power news": 1,
     "LEU Deals and contracts": 2,
     "VST Snapshot": 3,
@@ -225539,8 +225642,8 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 64,
-   "used": 63,
+   "asked": 65,
+   "used": 64,
    "notes": {
     "SECTOR Reactors and power": 2,
     "CEG Places and operations": 29,
@@ -225548,7 +225651,7 @@
     "UEC Places and operations": 12,
     "license_tracker": 4,
     "LEU Business": 6,
-    "plants_now": 9,
+    "plants_now": 10,
     "LEU Deals and contracts": 11,
     "LEU Places and operations": 17,
     "NRC license tracker": 1,
@@ -225559,7 +225662,7 @@
     "plants_now: fleet status and open outages": 1,
     "desk_notes: CEG Places and operations": 2,
     "desk_notes: UUUU Places and operations": 2,
-    "SECTOR Uranium market": 38,
+    "SECTOR Uranium market": 39,
     "TLN Places and operations": 3,
     "UUUU Places and operations": 10,
     "UEC Business": 2,
@@ -225580,14 +225683,14 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 107,
-   "used": 105,
+   "asked": 108,
+   "used": 106,
    "notes": {
-    "SECTOR Uranium market": 75,
+    "SECTOR Uranium market": 76,
     "BWXT Snapshot": 8,
     "CCJ Snapshot": 3,
     "UUUU Snapshot": 6,
-    "SECTOR Government and laws": 70,
+    "SECTOR Government and laws": 71,
     "TLN Snapshot": 43,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
@@ -225657,19 +225760,19 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 104,
-   "used": 102,
+   "asked": 105,
+   "used": 103,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 4,
     "BWXT Snapshot": 6,
-    "SECTOR Uranium market": 49,
+    "SECTOR Uranium market": 50,
     "TLN Snapshot": 39,
     "TLN Legal": 4,
     "BWXT Legal": 3,
     "BWXT Leadership and insiders": 2,
     "BWXT Discoveries": 3,
-    "UEC Snapshot": 12,
+    "UEC Snapshot": 13,
     "UEC Leadership and insiders": 5,
     "CCJ Price behavior": 2,
     "SECTOR Rules the bot follows from its discoveries": 2,
@@ -225711,7 +225814,8 @@
     "SECTOR Does the market drop most Thanksgivings, and can we c": 1,
     "LIVE_ORDERS_RIGHT_NOW": 1,
     "recently_canceled_orders": 1,
-    "NXE Price behavior": 1
+    "NXE Price behavior": 1,
+    "UEC Price behavior": 1
    },
    "since": "2026-11-23"
   },
@@ -225949,7 +226053,7 @@
    ],
    [
     "2026-11-27",
-    63.92
+    63.87
    ]
   ],
   "NXE": [
@@ -226071,7 +226175,7 @@
    ],
    [
     "2026-11-27",
-    7.21
+    7.22
    ]
   ],
   "UEC": [
@@ -226193,7 +226297,7 @@
    ],
    [
     "2026-11-27",
-    5.89
+    5.91
    ]
   ],
   "DNN": [
@@ -226437,7 +226541,7 @@
    ],
    [
     "2026-11-27",
-    5.41
+    5.45
    ]
   ],
   "LEU": [
@@ -226559,7 +226663,7 @@
    ],
    [
     "2026-11-27",
-    84.03
+    84.28
    ]
   ],
   "BWXT": [
@@ -226681,7 +226785,7 @@
    ],
    [
     "2026-11-27",
-    116.25
+    116.04
    ]
   ],
   "CEG": [
@@ -226803,7 +226907,7 @@
    ],
    [
     "2026-11-27",
-    237.48
+    237.05
    ]
   ],
   "VST": [
@@ -226925,7 +227029,7 @@
    ],
    [
     "2026-11-27",
-    122.69
+    122.38
    ]
   ],
   "TLN": [
@@ -227047,7 +227151,7 @@
    ],
    [
     "2026-11-27",
-    356.05
+    355.42
    ]
   ],
   "AMD": [
@@ -227169,7 +227273,7 @@
    ],
    [
     "2026-11-27",
-    406.18
+    407.14
    ]
   ],
   "SMR": [
@@ -227413,7 +227517,7 @@
    ],
    [
     "2026-11-27",
-    9.16
+    9.15
    ]
   ]
  },
@@ -228884,6 +228988,36 @@
    "price": 7.21,
    "result": null,
    "why": "I checked NXE's snapshot, legal and deal notes, and the sector pulse, and found no company-specific trigger. There are no live orders, so the default of doing nothing applies."
+  },
+  {
+   "role": "macro",
+   "ticker": "UEC",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-27",
+   "price": 5.91,
+   "result": null,
+   "why": "Checked the sector pulse, the uranium spot and long-term prices, the Sprott trust, and the sector ETFs; the miners are weaker than the commodity, which points to sentiment or positioning rather than a"
+  },
+  {
+   "role": "risk",
+   "ticker": "UEC",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-27",
+   "price": 5.91,
+   "result": null,
+   "why": "I checked the basket rule against the nowcast, the level-agent skip reasons, and the 200-day gaps on LEU and UEC, and none of the desk notes provide a reason to bypass the no-buys condition today. The"
+  },
+  {
+   "role": "pm",
+   "ticker": "UEC",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-27",
+   "price": 5.91,
+   "result": null,
+   "why": "I checked the live order list (none), the basket versus its 10-day average (below), the headlines (routine, no fresh catalyst), and the desk notes on UEC and the fuel chain. Nothing there gives a reas"
   }
  ],
  "after_sale": [],
@@ -232615,6 +232749,11 @@
    1795790407.195725,
    "NXE",
    -1
+  ],
+  [
+   1795790577.3828573,
+   "UEC",
+   -1
   ]
  ],
  "auto_log": [],
@@ -233096,7 +233235,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 09:40",
+ "watchdog_last": "2026-11-27 09:42",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -233442,7 +233581,7 @@
    "vs_spy_pct": 4.29
   }
  ],
- "hawk_sector_until": 1795628411.355496,
+ "hawk_sector_until": 1795792377.3828573,
  "park_trend": {
   "date": "2026-11-25",
   "above": false,

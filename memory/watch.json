@@ -168,6 +168,14 @@
 "surfaced": true
 },
 {
+"date": "2026-11-27",
+"ticker": "LEU",
+"what": "Re-check whether the basket has reclaimed its 10-day average and whether the Federal Register notice on General Matter Paducah affects enrichment competition.",
+"by": "pm",
+"written": "2026-11-27",
+"surfaced": false
+},
+{
 "date": "2026-11-28",
 "ticker": "UUUU",
 "what": "Half-day session after Thanksgiving; check whether the basket recovers above its 10-day average before any future resting buy.",
@@ -1387,6 +1395,14 @@
 "date": "2026-11-30",
 "ticker": "LEU",
 "what": "General Matter Paducah enrichment facility Federal Register notice: check for licensing steps that could add competing enrichment supply",
+"by": "engineer",
+"written": "2026-11-27",
+"surfaced": false
+},
+{
+"date": "2026-11-30",
+"ticker": "LEU",
+"what": "Patient Levels buy window expires; re-check basket vs 10-day average before any order. Also watch the General Matter Paducah enrichment filing (Federal Register, Nov 27) as a possible competitive read",
 "by": "engineer",
 "written": "2026-11-27",
 "surfaced": false
