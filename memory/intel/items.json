@@ -31432,5 +31432,159 @@
 "tsx",
 "uranium"
 ]
+},
+{
+"id": "ce99e2e2d1e0a8b2",
+"date": "2026-11-24",
+"ts": 1795554855,
+"title": "Tracing the history of our Thanksgiving traditions",
+"summary": "",
+"outlet": "Denison Forum",
+"link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZGx1T0NoYUFBN1pZWTF3aGVGakNlSjY5WlB2MHJXa0ZqTTFMOW5mc3pNemdhVTZjYnlJLUw2MzFfYWFBMTdwcEZnaDhJVEhUOElzVWw5WF9qeUlPc0lsQ1VwOEg3TzV1YUpQY0MxNGExREtIV0JWbkpxQnZ1aXVURWRzOVF3QjRxM3JkM3kyUFV5TnRrQW9aWHdGMERmSGZRWWxj?oc=5",
+"place": "Workers and jobs",
+"tickers": [],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.92,
+"score": 2.84,
+"echo_of": null,
+"w": [
+"history",
+"our",
+"thanksgiving",
+"tracing",
+"traditions"
+]
+},
+{
+"id": "590ae008b1a61923",
+"date": "2026-11-25",
+"ts": 1795603801,
+"title": "Kazatomprom Shares Fall Amid Detentions Among Company Executives",
+"summary": "",
+"outlet": "Oninvest",
+"link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNODAxajRNWVZFYkRiWHM0SmJWenNYMzdLU0pkaW9DVDBLcWszUHdfdWNPMjZHWjRVeXFUZ2NkXzgwRHBMSERxYW9mY2NBdy1fd3ZZTzIyZEF6TWdHUlY0R3lWclQ3b0xhZEUyTHNmVWp0RklmWll2VHlUaW9FYXZ1WGptbmNkYzNNQ2dZQWhpbXZncU5VTjlZbXRMRTE?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [
+"market_chatter"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.83,
+"score": 2.66,
+"echo_of": null,
+"w": [
+"amid",
+"among",
+"company",
+"detentions",
+"executives",
+"fall",
+"kazatomprom",
+"shares"
+]
+},
+{
+"id": "2320b70b2ec09ea4",
+"date": "2026-11-25",
+"ts": 1795623610,
+"title": "Uranium recovery for HALEU ready to go at SRS, DOE says",
+"summary": "",
+"outlet": "ExchangeMonitor",
+"link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdk1tZ01uaUtJdDFxXzZQaWVqcTZFeGFNZG1xVDVFWEV3QnJ2OEN4NWs5b2tBTE9IRGZqbEtVU3l6blJDdnNwbnRGN2Q5NEVQcWp1a3ltXzBsQ1R5bl9DS1pkTGFwMWJvRmlZS0tZbjl5ZTl1WTJ3SFFBcXhHbnZoejBhNDhndUplZkVSd3JQM3lMcERFVHAwZ2hMcDIwQ3Bl?oc=5",
+"place": "Energy Department",
+"tickers": [
+"LEU",
+"BWXT",
+"CCJ",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "9da192d70e99c8b9",
+"w": [
+"doe",
+"haleu",
+"ready",
+"recovery",
+"srs",
+"uranium"
+]
+},
+{
+"id": "968cdd13292c56ca",
+"date": "2026-11-27",
+"ts": 1795806763,
+"title": "Peninsula Energy halts Wyoming uranium operations after cyberattack",
+"summary": "",
+"outlet": "Mezha.net",
+"link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRk1QZHVPRVV1QWlIemlZaUZUTFhFYmU2eTJiNU1rQmhkSHBvMEJSQkMwOTlnNXctbFFaNVN3ZzhLNHVJUGpwZUZHLThNYUFlOXZMU0k2cl9GTWdLRGJlb1dHMk9iUzB6RTZTTmZQcGxKbFVtLWtfZFFTVGZTNDM4NGtaVXp5YU15?oc=5",
+"place": "Wyoming ISR",
+"tickers": [
+"UEC",
+"CCJ"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.45,
+"score": 5.4,
+"echo_of": null,
+"w": [
+"cyberattack",
+"energy",
+"halts",
+"operations",
+"peninsula",
+"uranium",
+"wyoming"
+]
+},
+{
+"id": "d88f4bef469871ef",
+"date": "2026-11-27",
+"ts": 1795807057,
+"title": "Energy Fuels Shares Rise Nearly 11% as Uranium Peers Advance",
+"summary": "",
+"outlet": "www.tokenpost.com",
+"link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wS29QUC1ucVV5UWpjdm5EZGpMOXVDcy1sQ0lhejZuRXNmaG40SllqMU9WYzZaVXpoOHFSYi1KNmhxdVBCUUN4M1M4cWwzZmVfUmlnRllXcVR2dw?oc=5",
+"place": "Rare earths (Energy Fuels)",
+"tickers": [
+"UUUU",
+"CCJ"
+],
+"tags": [
+"market_chatter"
+],
+"numbers": [
+"11%"
+],
+"local": true,
+"novelty": 0.7,
+"score": 2.9,
+"echo_of": null,
+"w": [
+"advance",
+"energy",
+"fuels",
+"nearly",
+"peers",
+"rise",
+"shares",
+"uranium"
+]
 }
 ]
