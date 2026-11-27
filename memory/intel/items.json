@@ -31239,5 +31239,68 @@
 "plant",
 "work"
 ]
+},
+{
+"id": "10f3994dd55c7c0c",
+"date": "2026-11-27",
+"ts": 1795798406,
+"title": "Tepco delays Kashiwazaki restart",
+"summary": "",
+"outlet": "Nuclear Engineering International",
+"link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE94eUNRdy1GbG9yUmVOM3dFX0JBYmZhUzlPbWZVNEp5WTVsaS15eENRZkVfek1HYkQ1ZnFNR3p4TFdRUmJBTU9BZ2xmRmJFWEozelpwcDdkMmdSbUFGS3djTlZhMFdwLTFobWRuUjlUbi0tUVBEcTNPakJEWEQ?oc=5",
+"place": "Japan restarts",
+"tickers": [
+"CCJ"
+],
+"tags": [
+"disruption",
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.56,
+"score": 6.32,
+"echo_of": null,
+"w": [
+"delays",
+"kashiwazaki",
+"restart",
+"tepco"
+]
+},
+{
+"id": "7c1d939b2f4b8a58",
+"date": "2026-11-27",
+"ts": 1795801454,
+"title": "9-billion-kWh reactor: China begins building new unit at Taishan nuclear plant",
+"summary": "",
+"outlet": "Yahoo",
+"link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZWFMY2pTT2dBMjU3T3FmZmNiY1QwMjJvS2ZBbWhqeGRJYVRkX1Bxdm1nTjF2VFc5a1YxSHFWMHQ0WFRRQTR1eFA0U0VlckU4NjgzdERFZWVuYVQ4V2F2RWgzOXo2QnI4SkstNnVMb2pXTWdoN01uVnRWNVN2S05kdHFXR3RkanJEY0lLcjJXOA?oc=5",
+"place": "China new builds",
+"tickers": [
+"CCJ",
+"CEG"
+],
+"tags": [
+"regulation",
+"restart"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.75,
+"score": 5.2,
+"echo_of": null,
+"w": [
+"begins",
+"billion",
+"building",
+"china",
+"kwh",
+"nuclear",
+"plant",
+"reactor",
+"taishan",
+"unit"
+]
 }
 ]
