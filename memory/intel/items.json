@@ -30727,5 +30727,158 @@
 "ties",
 "vietnam"
 ]
+},
+{
+"id": "ee9564fa66211969",
+"date": "2026-11-27",
+"ts": 1795770896,
+"title": "Construction of pilot Elena-AM microreactor 'under way'",
+"summary": "The Strategy for the Development of the Arctic Zone of the Russian Federation and Ensuring National Security in the Arctic says that construction is under way on a pilot Elena-AM microreactor.",
+"outlet": "World Nuclear News",
+"link": "https://www.world-nuclear-news.org/articles/construction-of-pilot-elena-am-microreactor-under-way",
+"place": "World Nuclear News",
+"tickers": [],
+"tags": [
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.82,
+"score": 3.34,
+"echo_of": null,
+"w": [
+"construction",
+"elena",
+"microreactor",
+"pilot",
+"under",
+"way"
+]
+},
+{
+"id": "8a28d1476a656cf6",
+"date": "2026-11-27",
+"ts": 1795781656,
+"title": "Work begins on Husab heap leach plant",
+"summary": "China General Nuclear has announced the start of construction of an industrial-scale heap-leaching plant for low-grade uranium ore at its Husab project in Namibia.",
+"outlet": "World Nuclear News",
+"link": "https://www.world-nuclear-news.org/articles/work-begins-on-husab-heap-leach-plant",
+"place": "World Nuclear News",
+"tickers": [
+"CCJ"
+],
+"tags": [
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.9,
+"score": 5.0,
+"echo_of": null,
+"w": [
+"begins",
+"heap",
+"husab",
+"leach",
+"plant",
+"work"
+]
+},
+{
+"id": "047ea7c9d81639ed",
+"date": "2026-11-27",
+"ts": 1795782202,
+"title": "Construction milestones reached at fourth Zhangzhou unit",
+"summary": "The inner safety dome has been installed on the containment building of unit 4 at the Zhangzhou nuclear power plant, the fourth of six Hualong One (HPR1000) reactors planned for the site in China's Fujian province. The milestone comes six days after the third and final steam generator was moved into",
+"outlet": "World Nuclear News",
+"link": "https://www.world-nuclear-news.org/articles/construction-milestones-reached-at-fourth-zhangzhou-unit",
+"place": "World Nuclear News",
+"tickers": [],
+"tags": [
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.78,
+"score": 3.26,
+"echo_of": null,
+"w": [
+"construction",
+"fourth",
+"milestones",
+"reached",
+"unit",
+"zhangzhou"
+]
+},
+{
+"id": "daf9365e531be22e",
+"date": "2026-11-27",
+"ts": 1795784022,
+"title": "Malaysia plans phased introduction of nuclear power from 2040 to meet surging electricity demand and net-zero target",
+"summary": "",
+"outlet": "\u8054\u5408\u65e9\u62a5",
+"link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNZmZyWVYtaUY0M0JlN1VlSVZJSDlYaDJpMFRNeVA0ODhRUnY0SUFjWjQ3T0lPYTFXb0NMTFhhUmhqVTVtUVRrclhaLWxnUExoZVBYZzAyT08tUy1xOXA1RWtoX0RkRHg0QXlLY1lJSzVLLW05cUhfNmZGQVlvQ0NxWUpKSW5OOEFKbm9iZ0Z6aDFvU1lpT1NoeUcyOXl1a1N3aEFRVDlOMnJPSWxuMkpOTlZHTnFsUWdTXzdOazU3bmlJVWc5UUlIcG1NRnp6VVAwWkF0MlotNGd4Z1M1WUtQd3RSRzNHTDhZeF9UZ3RR?oc=5",
+"place": "Asia newcomers",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "cb4e14ab239c2bf4",
+"w": [
+"2040",
+"demand",
+"electricity",
+"introduction",
+"malaysia",
+"meet",
+"net",
+"nuclear",
+"phased",
+"plans",
+"power",
+"surging",
+"target",
+"zero"
+]
+},
+{
+"id": "fe0c5238d621aa01",
+"date": "2026-11-27",
+"ts": 1795785420,
+"title": "Can FuelCell Energy's 99.873% PJM Rating Win Data Center Deals?",
+"summary": "",
+"outlet": "TradingView",
+"link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNaGVOckZoTXVHcC1fZ2JrSU5IYTZuZXFPaTU4Rm5EbDJ2cXZEWkVQWGx0Z1N5eEY1Z3dUcmRsaWJFWGJ0RG1QVnJWNlJuQUVja2l1aWFUMkVEbl9SaGdpdUFxQUZyUEZfRVc3MU5EbTZKdHpSU2MyLS05QjcwaURfNGlqcUVnelE1WWhxMjNuay12bUtrTndnVDkwNGxHMTNYaWdyYkZGb294bkw2YXlxT0x1WVdPY1JI?oc=5",
+"place": "PJM grid",
+"tickers": [
+"CEG",
+"TLN",
+"VST"
+],
+"tags": [],
+"numbers": [
+"99.873%"
+],
+"local": false,
+"novelty": 0.83,
+"score": 3.66,
+"echo_of": null,
+"w": [
+"873",
+"can",
+"center",
+"data",
+"deals",
+"energy",
+"fuelcell",
+"pjm",
+"rating",
+"win"
+]
 }
 ]
