@@ -4231,18 +4231,6 @@
  "news_feed": [
   {
    "ticker": "CCJ",
-   "source": "Local intel: Businesskorea (South Korea)",
-   "title": "Industry Minister Says Czech Nuclear Deal Must Stay Team Korea",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE40XzFDQ0pzbmNWOUhqYWNseFlPOExhMG1hTVI3S1dXb2ZNcnRtZjBfSFVsU01PQUN2T3h5U3VqMlV3ZnloZHQ5SkpKR2M2VzU0bHRWVjgxODF3WFhXZFBwZjVybWFmTUNRUW5YOVl4ZE13ZUR1?oc=5",
-   "ts": 1795606981,
-   "materiality": 3,
-   "novelty": "follow_up",
-   "direction": "neutral",
-   "event_type": "policy_tariff",
-   "why": "Korean minister comments on a Czech reactor deal, which is not a direct uranium demand change for CCJ."
-  },
-  {
-   "ticker": "CCJ",
    "source": "Google News: uranium price",
    "title": "Is Yellow Cake (LSE:YCA) a Uranium Play for FTSE 100 Investors? - Kalkine Media",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdjlhNldRMHdWWGkyZ0tWOW8wZWtHSG1jVy1Fd1hlcHRDVkJiUUVMMFZyTDc4azl5OHl1cTIxcWtLRDBlRWNLU09ja0N2c1hLbm9wLTAtRjliaVpyMGE4NlpMOF9abUg3RGJ1cW9VYmlnT2Q1cXJ0YUpaV2U4UE90dGVZakQ1VVdpbnpQV1diYUo0TFZkLUF1SEthSUFTX1FBNk5J?oc=5",
@@ -7228,6 +7216,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "CEG selling gas plants to LS Power; gas assets, not nuclear, little uranium demand effect."
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News",
+   "title": "Has Vistra Changed What You Own? - Trefis",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOcUhuV1ZiM2VxT1ZhbHl1MjVXclhueDQzM3JIM3NjLUE4bGVhUGVESnV1enNYM2NZT3B4WFZubzl6ZG84X2lWTTJTbmxVMjdmV3BiejRpdF9iMUZzN2lqdmtkWl9LUWNQSGJGVmIyNDU0dW1yMm11ZFAydmhYQnFWQjA4VjBucXBNNFQ5TjdlWnFaVFdvRHc?oc=5",
+   "ts": 1795780816,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic 'what you own' explainer piece with no new company-specific information."
   }
  ],
  "reviews": [
@@ -8987,16 +8987,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.05103,
+  "day_usd": 0.05139,
   "month": "2026-11",
-  "month_usd": 2.14522,
-  "total_usd": 2.14522,
+  "month_usd": 2.14558,
+  "total_usd": 2.14558,
   "by_role": {
    "macro": 0.21206,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.24393,
+   "scout": 0.24429,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9261,10 +9261,10 @@
   "AMD": 406.83,
   "SMR": 3.25,
   "NNE": 8.85,
-  "SPY": 728.81,
+  "SPY": 729.1,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-27 08:00 ET",
+ "last_cycle": "2026-11-27 08:11 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57911,8 +57911,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "4ee30073db1990ac",
   "7cabb45f8b0c2778",
+  "4ee30073db1990ac",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -57953,8 +57953,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1acc6842cd4f6e64",
   "1715e61816aa5619",
+  "1acc6842cd4f6e64",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -58080,14 +58080,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "7c380c991c59f9ba",
   "1ed195cb4396cbe7",
+  "7c380c991c59f9ba",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -58201,6 +58201,7 @@
   "f4eb8bc49d44f35e",
   "d0bbf22385e6b07a",
   "013ca9d6cb36da37",
+  "c71760b1cd34c0aa",
   "6b0fa55da5b71c74",
   "8868199eaca25050",
   "63e7ca0ff352dff7",
@@ -58500,6 +58501,7 @@
   "96daf38a2007dab1",
   "cb12badf9a3dbea8",
   "806c34008624cc55",
+  "752c73b44d65a337",
   "dbf547d247c12542",
   "36f89310fd30fd20",
   "48bd8b45af68192c",
@@ -58660,10 +58662,9 @@
   "5d22d1b6e3da5fb6",
   "16c52bc5bc8110db",
   "46c5572fb4069bdf",
-  "752c73b44d65a337",
-  "c71760b1cd34c0aa"
+  "19f2085c3065f354"
  ],
- "news_slow_at": 1795784451.6551275,
+ "news_slow_at": 1795785077.490771,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -220830,9 +220831,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 08:00",
+  "updated": "2026-11-27 08:11",
   "total": 927,
-  "week": 600,
+  "week": 599,
   "places": {
    "South Korea": 53,
    "Uranium price": 50,
@@ -221469,8 +221470,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "fd337937e7471e2a",
   "b2362be41ae616f1",
+  "fd337937e7471e2a",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -221516,10 +221517,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "688d746cfc31b58f",
   "22ab37dfabeba433",
-  "f815e45da305cee7",
+  "688d746cfc31b58f",
   "85de31670d4daf9d",
+  "f815e45da305cee7",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -224085,12 +224086,12 @@
    "built": "2026-11-27 07:46"
   }
  ],
- "heartbeat": "2026-11-27 08:00",
+ "heartbeat": "2026-11-27 08:11",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 422,
+ "_pushed_feed": 423,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -224326,8 +224327,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 448,
-   "used": 410,
+   "asked": 449,
+   "used": 411,
    "notes": {
     "TLN Deals and contracts": 20,
     "CCJ Deals and contracts": 77,
@@ -224346,7 +224347,7 @@
     "SECTOR Uranium market": 10,
     "CCJ Legal": 18,
     "CEG Legal": 5,
-    "VST Deals and contracts": 37,
+    "VST Deals and contracts": 38,
     "LEU Legal": 1,
     "VST Legal": 1,
     "TLN Legal": 2
@@ -231886,7 +231887,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 08:00",
+ "watchdog_last": "2026-11-27 08:11",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
