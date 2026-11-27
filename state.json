@@ -5104,18 +5104,6 @@
  },
  "news_feed": [
   {
-   "ticker": "UEC",
-   "source": "Google News: \"Uranium Energy Corp\"",
-   "title": "Uranium Energy Corp (UEC) Stock Price, Trades & News - GuruFocus",
-   "link": "https://news.google.com/rss/articles/CBMikANBVV95cUxPQkNMUk1QcEJYQk52WEk0cUtTejlhVkVHSGFPLWJSTHhWV2xFa2FEOWFaQnc1TEFTeUpxelE0OHZoWEIxV0paSldsS0IxbUJaQmM2eDBXZ0t5aHh5LVY5MU9XamNOT0pMZFhWRE1uRUNaQVRUSFoyZnBsaDFpYmpuR0NqcWcyQWMyTldVRjdkSkJFSUxaZFRDcW9sZC1KODVGN3hjSFJUNkFnaGhWTWtJUGViRXN1RVRheEJGODJfb2FGbGxrVldwbWtQYWxtV1NoVzV2U1FJTmxmZ3RxV0Y0WnJ4ZzduSWZOMFVqWFU5RlpwdjY1SXZxWkFvXy1YQU9JXzBuZEI5clE1NUUwVXF2YnJISzE5dUp3MmQ3eFhQWkdHekF2OUtRS1ZYRTNIcVd3RjZHaTU2Nzd2R1lfbVI2WnVyRjJid2ZKM21yUlFHRTNfUkowRW81dkticnpHdHVRTVZNTWpkWGk5U1MwWmx6Tlg0dHNtV2xwem5mRHppZDJBM2Q4ZnNCdncyWUJhSWUy?oc=5",
-   "ts": 1795556358,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic quote and stock-page listing with no new company information."
-  },
-  {
    "ticker": "CCJ",
    "source": "Google News: uranium price",
    "title": "AI\u2019s hunger for compute could break uranium\u2019s boom-bust cycle - BetaKit",
@@ -8102,6 +8090,18 @@
    "direction": "neutral",
    "event_type": "analyst",
    "why": "Opinion-style recap of a past share drop; no new company information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Uranium Selloff Masks Strong Sales Growth at Select Producers - ChartMill",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSVRydjVQcDM0dnl4aVZyOEw5QkFXQlpzM2lpY09fQnJrbXh3TmFOemZ4ek9sWnB0RDM1ZEpYUGRsRnlicjA1d0RhWGV6amUwTkNETEpCLU5SaExWUlRPUU9uRU1zTkhtU0xLdld2ZlpyZ19zNmlyWDhGTVZkc3FVT3ZUMFNHM0lBb3Y4NHFwZF9PRUhyYzVGaWpXV2xac3BJOXk2Q2RwNHhiOW9hR3BjY0VB?oc=5",
+   "ts": 1795786586,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic sector commentary on a uranium selloff; the headline is a recap, not new company-specific information."
   }
  ],
  "reviews": [
@@ -9874,16 +9874,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.31415,
+  "day_usd": 0.31462,
   "month": "2026-11",
-  "month_usd": 2.40833,
-  "total_usd": 2.40833,
+  "month_usd": 2.4088,
+  "total_usd": 2.4088,
   "by_role": {
    "macro": 0.24318,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.31204,
-   "scout": 0.25104,
+   "scout": 0.25151,
    "review": 0.11073,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -10136,23 +10136,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 63.41,
-  "NXE": 7.29,
+  "CCJ": 63.31,
+  "NXE": 7.28,
   "UEC": 5.9,
   "DNN": 1.88,
-  "UUUU": 5.54,
-  "LEU": 85.08,
-  "BWXT": 115.75,
-  "CEG": 234.91,
-  "VST": 122.01,
-  "TLN": 355.31,
-  "AMD": 415.93,
+  "UUUU": 5.53,
+  "LEU": 84.66,
+  "BWXT": 115.61,
+  "CEG": 236.14,
+  "VST": 122.22,
+  "TLN": 355.99,
+  "AMD": 415.71,
   "SMR": 3.44,
-  "NNE": 9.56,
-  "SPY": 725.27,
+  "NNE": 9.54,
+  "SPY": 724.7,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 11:06 ET",
+ "last_cycle": "2026-11-27 11:17 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -10215,10 +10215,10 @@
   ]
  },
  "brakes": {
-  "equity": 1038.44,
-  "day_pct": 3.28,
-  "week_pct": 3.79,
-  "drawdown_pct": -1.51,
+  "equity": 1037.65,
+  "day_pct": 3.2,
+  "week_pct": 3.71,
+  "drawdown_pct": -1.59,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -14500,6 +14500,42 @@
   [
    "2026-11-27 11:06",
    1038.44
+  ],
+  [
+   "2026-11-27 11:08",
+   1039.58
+  ],
+  [
+   "2026-11-27 11:09",
+   1040.49
+  ],
+  [
+   "2026-11-27 11:10",
+   1039.86
+  ],
+  [
+   "2026-11-27 11:11",
+   1038.54
+  ],
+  [
+   "2026-11-27 11:12",
+   1038.64
+  ],
+  [
+   "2026-11-27 11:13",
+   1038.54
+  ],
+  [
+   "2026-11-27 11:14",
+   1038.42
+  ],
+  [
+   "2026-11-27 11:16",
+   1038.13
+  ],
+  [
+   "2026-11-27 11:17",
+   1037.65
   ]
  ],
  "nowcast": {
@@ -59196,7 +59232,7 @@
     0.8408
    ]
   },
-  "time": "2026-11-27 11:06"
+  "time": "2026-11-27 11:17"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -59209,8 +59245,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "4ee30073db1990ac",
   "7cabb45f8b0c2778",
+  "4ee30073db1990ac",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -59253,8 +59289,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1acc6842cd4f6e64",
   "1715e61816aa5619",
+  "1acc6842cd4f6e64",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -59383,14 +59419,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "7c380c991c59f9ba",
   "1ed195cb4396cbe7",
+  "7c380c991c59f9ba",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -59904,6 +59940,7 @@
   "fe808fea77078dbb",
   "23858b9754409f40",
   "08d8363ed1ddeb47",
+  "03db21174a437149",
   "5ca17a18c47750da",
   "2406fcdcae12e82f",
   "9dd14dae753c141a",
@@ -59979,7 +60016,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795795450.9444575,
+ "news_slow_at": 1795796094.9931428,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -223926,7 +223963,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 11:06",
+  "updated": "2026-11-27 11:17",
   "total": 949,
   "week": 589,
   "places": {
@@ -224565,8 +224602,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "fd337937e7471e2a",
   "b2362be41ae616f1",
+  "fd337937e7471e2a",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -224613,10 +224650,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "688d746cfc31b58f",
   "22ab37dfabeba433",
-  "f815e45da305cee7",
+  "688d746cfc31b58f",
   "85de31670d4daf9d",
+  "f815e45da305cee7",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -227191,12 +227228,12 @@
    "built": "2026-11-27 10:51"
   }
  ],
- "heartbeat": "2026-11-27 11:06",
+ "heartbeat": "2026-11-27 11:17",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 489,
+ "_pushed_feed": 495,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -227427,20 +227464,20 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 115.755,
-  "TLN": 355.31
+  "BWXT": 115.61,
+  "TLN": 355.99
  },
  "notes_audit": {
   "scout": {
-   "asked": 464,
-   "used": 425,
+   "asked": 465,
+   "used": 426,
    "notes": {
     "TLN Deals and contracts": 20,
-    "CCJ Deals and contracts": 79,
+    "CCJ Deals and contracts": 80,
     "BWXT Deals and contracts": 56,
     "SECTOR Government and laws": 129,
     "UUUU Deals and contracts": 44,
-    "SECTOR Countries": 131,
+    "SECTOR Countries": 132,
     "CEG Deals and contracts": 61,
     "NXE Legal": 22,
     "NXE Deals and contracts": 19,
@@ -228087,7 +228124,7 @@
    ],
    [
     "2026-11-27",
-    63.41
+    63.31
    ]
   ],
   "NXE": [
@@ -228209,7 +228246,7 @@
    ],
    [
     "2026-11-27",
-    7.29
+    7.28
    ]
   ],
   "UEC": [
@@ -228575,7 +228612,7 @@
    ],
    [
     "2026-11-27",
-    5.54
+    5.53
    ]
   ],
   "LEU": [
@@ -228697,7 +228734,7 @@
    ],
    [
     "2026-11-27",
-    85.08
+    84.66
    ]
   ],
   "BWXT": [
@@ -228819,7 +228856,7 @@
    ],
    [
     "2026-11-27",
-    115.75
+    115.61
    ]
   ],
   "CEG": [
@@ -228941,7 +228978,7 @@
    ],
    [
     "2026-11-27",
-    234.91
+    236.14
    ]
   ],
   "VST": [
@@ -229063,7 +229100,7 @@
    ],
    [
     "2026-11-27",
-    122.01
+    122.22
    ]
   ],
   "TLN": [
@@ -229185,7 +229222,7 @@
    ],
    [
     "2026-11-27",
-    355.31
+    355.99
    ]
   ],
   "AMD": [
@@ -229307,7 +229344,7 @@
    ],
    [
     "2026-11-27",
-    415.93
+    415.71
    ]
   ],
   "SMR": [
@@ -229551,7 +229588,7 @@
    ],
    [
     "2026-11-27",
-    9.56
+    9.54
    ]
   ]
  },
@@ -235518,7 +235555,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 11:06",
+ "watchdog_last": "2026-11-27 11:17",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
