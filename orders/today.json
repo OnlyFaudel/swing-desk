@@ -1,5 +1,16 @@
 {
  "date": "2026-11-27",
  "broker": "alpaca-paper",
- "orders": []
+ "orders": [
+  {
+   "time": "2026-11-27 09:53",
+   "symbol": "UUUU",
+   "side": "sell",
+   "kind": "market",
+   "qty": 30.3583,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "banked the jump: opened +5.4% vs yesterday's close; buying back near the close"
+  }
+ ]
 }

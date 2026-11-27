@@ -30455,5 +30455,67 @@
 "test",
 "trump"
 ]
+},
+{
+"id": "6353c197ed6e24fb",
+"date": "2026-11-25",
+"ts": 1795614120,
+"title": "Vistra Underperforms Industry in the Past Year: Time to Buy or Wait?",
+"summary": "",
+"outlet": "TradingView",
+"link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdzZmWG9YQmdsYkFVQ2hOalRhR2pHN0JvdTliWnU3MEVWZXcwbXpuVVBFSFd5aWM2REpkX091Rl8yeHViam5YQ2dvbHhsZDJNNlV1a292UUlCdFRDMkpfM0JZVExja2ZQa1NPbzh0VURzSURGUHUtVWQ3RTFyakctV1Z1UnQ5UGVYS1ItcWx2bWF0dUZENVhjbHZfcW50VzZ6VUg2blBsRjZDREMwSXJZMlFBd2Z4QzhFZmg0R3JR?oc=5",
+"place": "Comanche Peak",
+"tickers": [
+"VST"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 1.5,
+"echo_of": "95d12e5461204a04",
+"w": [
+"buy",
+"industry",
+"past",
+"time",
+"underperforms",
+"vistra",
+"wait",
+"year"
+]
+},
+{
+"id": "38629ab9e2136e24",
+"date": "2026-11-27",
+"ts": 1795783029,
+"title": "Kazatomprom Says 2026 Production And Financial Guidance Remain Unchanged",
+"summary": "",
+"outlet": "TradingView",
+"link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZldmZ2wwT2hQYWdNem51bjJnOEcyekN0NzUwSjV4S2xfc1FNQ20tUTFrSTB1RWRWQTMtM0dPTlZSdXFZdUxZdUJxTlB1S1ZxNGhyQ0xqQksxbHp2Tm0yN1VRemQzQUZma3NSZ0tvQkIyMGs4V3NvRjVMWW44b1pnQWk5bFhSdmc2dXNGT3lEWXNuRFZQV0hRWWxpMnh1X0R2UVNnejN1V2dYSWdBdjFuWUx5UjN6LXpfODNaM2w4UFVIWnEtbWp2eFhQZzBWQXB2anMtbW5Jc0hGZw?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [
+"production"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.82,
+"score": 3.94,
+"echo_of": null,
+"w": [
+"2026",
+"financial",
+"guidance",
+"kazatomprom",
+"production",
+"remain",
+"unchanged"
+]
 }
 ]

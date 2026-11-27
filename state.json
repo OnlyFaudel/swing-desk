@@ -91,7 +91,9 @@
      "why": "market -3.6%, UUUU -10.0% today and -41% under its 20-day high",
      "opened": "2026-11-20",
      "entry_time": "2026-11-20 15:34",
-     "entry": 4.94
+     "entry": 4.94,
+     "exit_reason": "banked the jump: opened +5.4% vs yesterday's close; buying back near the close",
+     "selling": "2026-11-27"
     },
     "auto": {
      "qty": 2.976424361,
@@ -650,7 +652,8 @@
   "reactors:2026-11-27": true,
   "plantrep:2026-11-27": true,
   "pulsehold:2026-11-27": true,
-  "gapshadow:2026-11-27": true
+  "gapshadow:2026-11-27": true,
+  "gapbank:UUUU:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -9209,6 +9212,16 @@
    "price": 0.0,
    "status": "pending_new",
    "note": "parking switch: SPY -> SGOV"
+  },
+  {
+   "time": "2026-11-27 09:53",
+   "symbol": "UUUU",
+   "side": "sell",
+   "kind": "market",
+   "qty": 30.3583,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "banked the jump: opened +5.4% vs yesterday's close; buying back near the close"
   }
  ],
  "active": [
@@ -9605,23 +9618,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 63.64,
-  "NXE": 7.18,
-  "UEC": 5.82,
-  "DNN": 1.84,
-  "UUUU": 5.41,
-  "LEU": 84.5,
-  "BWXT": 115.43,
-  "CEG": 235.2,
-  "VST": 121.96,
-  "TLN": 354.68,
-  "AMD": 403.37,
-  "SMR": 3.32,
-  "NNE": 9.02,
-  "SPY": 720.67,
+  "CCJ": 64.13,
+  "NXE": 7.24,
+  "UEC": 5.88,
+  "DNN": 1.86,
+  "UUUU": 5.49,
+  "LEU": 84.47,
+  "BWXT": 115.4,
+  "CEG": 234.77,
+  "VST": 121.75,
+  "TLN": 354.22,
+  "AMD": 403.89,
+  "SMR": 3.35,
+  "NNE": 9.22,
+  "SPY": 721.76,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 09:47 ET",
+ "last_cycle": "2026-11-27 09:53 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -9684,10 +9697,10 @@
   ]
  },
  "brakes": {
-  "equity": 1021.12,
-  "day_pct": 1.56,
-  "week_pct": 2.06,
-  "drawdown_pct": -3.16,
+  "equity": 1027.14,
+  "day_pct": 2.16,
+  "week_pct": 2.66,
+  "drawdown_pct": -2.58,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -13693,6 +13706,22 @@
   [
    "2026-11-27 09:47",
    1021.12
+  ],
+  [
+   "2026-11-27 09:49",
+   1021.64
+  ],
+  [
+   "2026-11-27 09:51",
+   1023.58
+  ],
+  [
+   "2026-11-27 09:52",
+   1023.53
+  ],
+  [
+   "2026-11-27 09:53",
+   1027.14
   ]
  ],
  "nowcast": {
@@ -58389,7 +58418,7 @@
     0.8428
    ]
   },
-  "time": "2026-11-27 09:47"
+  "time": "2026-11-27 09:53"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -58530,6 +58559,7 @@
   "4317a926c756f33f",
   "0d70d57b39a4409a",
   "a73665945ff493c7",
+  "92b3bee5be06536b",
   "29dae386e051dd8c",
   "0aae6b6b8e76884b",
   "cab53e09b478cbb5",
@@ -59164,8 +59194,7 @@
   "4abce8dfecf110ac",
   "5d22d1b6e3da5fb6",
   "16c52bc5bc8110db",
-  "46c5572fb4069bdf",
-  "92b3bee5be06536b"
+  "46c5572fb4069bdf"
  ],
  "news_slow_at": 1795790881.2321837,
  "officer": {
@@ -221257,6 +221286,21 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-27 09:53",
+   "who": "exec",
+   "kind": "trade",
+   "title": null,
+   "text": "Banked the jump on UUUU: it opened +5.4% above yesterday's close, so I sold right after the open. Our stocks usually give back part of a big morning jump during the day and make their gains overnight. I buy it back near the close, unless the trade is due to end today or it's already +10% from where we bought.",
+   "tickers": [
+    "UUUU"
+   ],
+   "art": {
+    "big": "Banked UUUU +5.4%",
+    "sub": "Buying back near the close"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -222042,16 +222086,16 @@
    "lesson": null
   }
  ],
- "intel_at": 1795789084.28696,
+ "intel_at": 1795790964.256295,
  "intel_health": {
-  "at": "2026-11-27 09:18",
+  "at": "2026-11-27 09:50",
   "sources": {
    "Cigar Lake": 2,
    "McArthur River / Key Lake": 5,
-   "Athabasca Basin": 10,
+   "Athabasca Basin": 9,
    "Saskatchewan wildfires": 4,
-   "Rook I / Arrow": 9,
-   "Wheeler River / Phoenix": 8,
+   "Rook I / Arrow": 7,
+   "Wheeler River / Phoenix": 7,
    "Port Hope / Blind River": 0,
    "Westinghouse": 9,
    "Kazakhstan": 46,
@@ -222059,45 +222103,45 @@
    "Namibia": 29,
    "Russia supply": 1,
    "Piketon": 19,
-   "HALEU": 11,
-   "Wyoming ISR": 18,
+   "HALEU": 10,
+   "Wyoming ISR": 21,
    "South Texas ISR": 2,
-   "White Mesa / Utah": 7,
+   "White Mesa / Utah": 6,
    "Rare earths (Energy Fuels)": 9,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 13,
-   "Crane / Three Mile Island": 5,
+   "Naval reactors": 11,
+   "Crane / Three Mile Island": 4,
    "Susquehanna": 4,
    "Comanche Peak": 4,
-   "PJM grid": 10,
+   "PJM grid": 7,
    "ERCOT grid": 14,
-   "Data-center nuclear deals": 10,
+   "Data-center nuclear deals": 9,
    "Japan restarts": 9,
-   "China new builds": 5,
-   "Congress and laws": 28,
-   "NRC decisions": 6,
-   "Energy Department": 49,
+   "China new builds": 8,
+   "Congress and laws": 27,
+   "NRC decisions": 7,
+   "Energy Department": 37,
    "White House and executive orders": 28,
    "Tariffs and trade": 3,
    "India": 18,
-   "South Korea": 86,
-   "Europe new builds": 62,
-   "France and UK": 15,
+   "South Korea": 83,
+   "Europe new builds": 30,
+   "France and UK": 12,
    "Middle East": 56,
    "Asia newcomers": 37,
-   "Canada SMRs": 8,
-   "Big tech power deals": 62,
+   "Canada SMRs": 7,
+   "Big tech power deals": 28,
    "Iran": 56,
-   "North Korea": 100,
-   "War zones": 36,
-   "AUKUS and navies": 17,
-   "Weapons programs": 20,
+   "North Korea": 62,
+   "War zones": 16,
+   "AUKUS and navies": 0,
+   "Weapons programs": 31,
    "Stockpiles and reserves": 28,
    "Sprott trust": 3,
-   "Uranium price": 51,
+   "Uranium price": 27,
    "US policy": 0,
    "Lawsuits and investigations": 72,
-   "Workers and jobs": 38,
+   "Workers and jobs": 37,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 48,
    "Federal Register (uranium)": 11,
@@ -222107,13 +222151,13 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 09:47",
-  "total": 940,
-  "week": 595,
+  "updated": "2026-11-27 09:53",
+  "total": 942,
+  "week": 596,
   "places": {
    "South Korea": 53,
    "Uranium price": 51,
-   "Kazakhstan": 39,
+   "Kazakhstan": 40,
    "Weapons programs": 34,
    "Workers and jobs": 31,
    "Asia newcomers": 31,
@@ -222126,14 +222170,14 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-27 09:18",
+   "at": "2026-11-27 09:50",
    "sources": {
     "Cigar Lake": 2,
     "McArthur River / Key Lake": 5,
-    "Athabasca Basin": 10,
+    "Athabasca Basin": 9,
     "Saskatchewan wildfires": 4,
-    "Rook I / Arrow": 9,
-    "Wheeler River / Phoenix": 8,
+    "Rook I / Arrow": 7,
+    "Wheeler River / Phoenix": 7,
     "Port Hope / Blind River": 0,
     "Westinghouse": 9,
     "Kazakhstan": 46,
@@ -222141,45 +222185,45 @@
     "Namibia": 29,
     "Russia supply": 1,
     "Piketon": 19,
-    "HALEU": 11,
-    "Wyoming ISR": 18,
+    "HALEU": 10,
+    "Wyoming ISR": 21,
     "South Texas ISR": 2,
-    "White Mesa / Utah": 7,
+    "White Mesa / Utah": 6,
     "Rare earths (Energy Fuels)": 9,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 13,
-    "Crane / Three Mile Island": 5,
+    "Naval reactors": 11,
+    "Crane / Three Mile Island": 4,
     "Susquehanna": 4,
     "Comanche Peak": 4,
-    "PJM grid": 10,
+    "PJM grid": 7,
     "ERCOT grid": 14,
-    "Data-center nuclear deals": 10,
+    "Data-center nuclear deals": 9,
     "Japan restarts": 9,
-    "China new builds": 5,
-    "Congress and laws": 28,
-    "NRC decisions": 6,
-    "Energy Department": 49,
+    "China new builds": 8,
+    "Congress and laws": 27,
+    "NRC decisions": 7,
+    "Energy Department": 37,
     "White House and executive orders": 28,
     "Tariffs and trade": 3,
     "India": 18,
-    "South Korea": 86,
-    "Europe new builds": 62,
-    "France and UK": 15,
+    "South Korea": 83,
+    "Europe new builds": 30,
+    "France and UK": 12,
     "Middle East": 56,
     "Asia newcomers": 37,
-    "Canada SMRs": 8,
-    "Big tech power deals": 62,
+    "Canada SMRs": 7,
+    "Big tech power deals": 28,
     "Iran": 56,
-    "North Korea": 100,
-    "War zones": 36,
-    "AUKUS and navies": 17,
-    "Weapons programs": 20,
+    "North Korea": 62,
+    "War zones": 16,
+    "AUKUS and navies": 0,
+    "Weapons programs": 31,
     "Stockpiles and reserves": 28,
     "Sprott trust": 3,
-    "Uranium price": 51,
+    "Uranium price": 27,
     "US policy": 0,
     "Lawsuits and investigations": 72,
-    "Workers and jobs": 38,
+    "Workers and jobs": 37,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 48,
     "Federal Register (uranium)": 11,
@@ -225237,7 +225281,7 @@
    }
   ]
  },
- "dossier_at": 1795789128.0834703,
+ "dossier_at": 1795791006.2945175,
  "sector_prices": {
   "_at": 1795783563.8004794,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -225293,87 +225337,87 @@
   {
    "ticker": "CCJ",
    "name": "Cameco",
-   "price": 61.56,
-   "week_pct": -1.42,
-   "built": "2026-11-27 09:18"
+   "price": 63.88,
+   "week_pct": 4.01,
+   "built": "2026-11-27 09:50"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
-   "price": 6.95,
-   "week_pct": -4.46,
-   "built": "2026-11-27 09:18"
+   "price": 7.2,
+   "week_pct": 3.9,
+   "built": "2026-11-27 09:50"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
-   "price": 5.69,
-   "week_pct": -3.89,
-   "built": "2026-11-27 09:18"
+   "price": 5.86,
+   "week_pct": 1.65,
+   "built": "2026-11-27 09:50"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
-   "price": 1.8,
-   "week_pct": -1.64,
-   "built": "2026-11-27 09:18"
+   "price": 1.84,
+   "week_pct": 1.93,
+   "built": "2026-11-27 09:50"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
-   "price": 5.2,
-   "week_pct": -7.71,
-   "built": "2026-11-27 09:18"
+   "price": 5.45,
+   "week_pct": -0.55,
+   "built": "2026-11-27 09:50"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
-   "price": 83.23,
-   "week_pct": -9.3,
-   "built": "2026-11-27 09:18"
+   "price": 84.21,
+   "week_pct": -6.12,
+   "built": "2026-11-27 09:50"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
-   "price": 113.49,
-   "week_pct": -3.54,
-   "built": "2026-11-27 09:18"
+   "price": 115.36,
+   "week_pct": -1.45,
+   "built": "2026-11-27 09:50"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
-   "price": 235.25,
-   "week_pct": -10.46,
-   "built": "2026-11-27 09:18"
+   "price": 234.67,
+   "week_pct": -6.89,
+   "built": "2026-11-27 09:50"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
-   "price": 121.32,
-   "week_pct": -3.39,
-   "built": "2026-11-27 09:18"
+   "price": 121.73,
+   "week_pct": -1.95,
+   "built": "2026-11-27 09:50"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
-   "price": 351.55,
-   "week_pct": -2.4,
-   "built": "2026-11-27 09:18"
+   "price": 353.77,
+   "week_pct": -0.6,
+   "built": "2026-11-27 09:50"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-27 09:18"
+   "built": "2026-11-27 09:50"
   }
  ],
- "heartbeat": "2026-11-27 09:47",
+ "heartbeat": "2026-11-27 09:53",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 456,
+ "_pushed_feed": 463,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -225604,8 +225648,8 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 115.42749786376953,
-  "TLN": 354.675
+  "BWXT": 115.4,
+  "TLN": 354.22
  },
  "notes_audit": {
   "scout": {
@@ -226242,7 +226286,7 @@
    ],
    [
     "2026-11-27",
-    63.64
+    64.13
    ]
   ],
   "NXE": [
@@ -226364,7 +226408,7 @@
    ],
    [
     "2026-11-27",
-    7.18
+    7.24
    ]
   ],
   "UEC": [
@@ -226486,7 +226530,7 @@
    ],
    [
     "2026-11-27",
-    5.82
+    5.88
    ]
   ],
   "DNN": [
@@ -226608,7 +226652,7 @@
    ],
    [
     "2026-11-27",
-    1.84
+    1.86
    ]
   ],
   "UUUU": [
@@ -226730,7 +226774,7 @@
    ],
    [
     "2026-11-27",
-    5.41
+    5.49
    ]
   ],
   "LEU": [
@@ -226852,7 +226896,7 @@
    ],
    [
     "2026-11-27",
-    84.5
+    84.47
    ]
   ],
   "BWXT": [
@@ -226974,7 +227018,7 @@
    ],
    [
     "2026-11-27",
-    115.43
+    115.4
    ]
   ],
   "CEG": [
@@ -227096,7 +227140,7 @@
    ],
    [
     "2026-11-27",
-    235.2
+    234.77
    ]
   ],
   "VST": [
@@ -227218,7 +227262,7 @@
    ],
    [
     "2026-11-27",
-    121.96
+    121.75
    ]
   ],
   "TLN": [
@@ -227340,7 +227384,7 @@
    ],
    [
     "2026-11-27",
-    354.68
+    354.22
    ]
   ],
   "AMD": [
@@ -227462,7 +227506,7 @@
    ],
    [
     "2026-11-27",
-    403.37
+    403.89
    ]
   ],
   "SMR": [
@@ -227584,7 +227628,7 @@
    ],
    [
     "2026-11-27",
-    3.32
+    3.35
    ]
   ],
   "NNE": [
@@ -227706,7 +227750,7 @@
    ],
    [
     "2026-11-27",
-    9.02
+    9.22
    ]
   ]
  },
@@ -233454,7 +233498,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 09:47",
+ "watchdog_last": "2026-11-27 09:53",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -233757,7 +233801,25 @@
   "note": "No earnings options readings have expired yet."
  },
  "nowcast_date": "2026-11-27",
- "gap_banked": {},
+ "gap_banked": {
+  "UUUU": {
+   "date": "2026-11-27",
+   "meta": {
+    "setup": "panic_rebound",
+    "by": "rules",
+    "exit_on": "2026-12-01",
+    "stop": null,
+    "target": null,
+    "why": "market -3.6%, UUUU -10.0% today and -41% under its 20-day high",
+    "opened": "2026-11-20",
+    "entry_time": "2026-11-20 15:34",
+    "entry": 4.94
+   },
+   "anchor": 4.94,
+   "proceeds": 166.67,
+   "jump_pct": 5.4
+  }
+ },
  "gapdown_shadow": [
   {
    "date": "2026-11-25",
