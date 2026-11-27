@@ -30189,5 +30189,102 @@
 "operations",
 "outlook"
 ]
+},
+{
+"id": "affa5e22b2bc66fe",
+"date": "2026-11-27",
+"ts": 1795737600,
+"title": "Kazatomprom Board Responds to Executive Exits and Corruption Detention, Confirms 2026 Targets Unaffected",
+"summary": "",
+"outlet": "Kalkine Media",
+"link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNOU5CUm5HdHNBYXk4b0ROYXRzNk9odkI2X2gya2hlRXhvTkNqT0gxdWlETDMyNUxiblY5ei1lM3FBRXVGV3lkU0hJU3NuUjc0YkR6a1NWRnZCVF96R3hiSVNkVC1UUG5VTG9hS1Y3UEs3OER3X0FneEF6UkVvRVFlUHllTE5rNnhyT0I5LTNyMFU1YzlxVWwwMXhhSFIwbFZrUlllZFNnRzAyaV9JSV92ZXNNUlo4MmJXNmtSUzYwdW1qSEpCRU5mXy12Y1JfYjRoY3Z5QWVpWmpxUmpOUTJKLWJQMHg?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.71,
+"score": 2.92,
+"echo_of": null,
+"w": [
+"2026",
+"board",
+"confirms",
+"corruption",
+"detention",
+"executive",
+"exits",
+"kazatomprom",
+"responds",
+"targets",
+"unaffected"
+]
+},
+{
+"id": "b5100c5ffc819f6e",
+"date": "2026-11-27",
+"ts": 1795764904,
+"title": "Barry FitzGerald: Despite sell-off, uranium demand growing with upside from AI",
+"summary": "",
+"outlet": "Stockhead",
+"link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZkpWdGtPRkdtdHE5SnN1N0g0a1J6cGVFZWloWWktclJueGlfZEVkSzVLVTlVUlY2RUFwTHZ0UHEzM0QxT0I3MEE0dVhnQW42M1RuTDg0YXhmZTQwOFdhUGZpZWlwUHIxUUdZdGxwUG1UdTFnVzVyazA4REtheWtyck9fRUhzeUduZXZfcmdMVzAxQ05pdHBWdzlaUkIzM18zVkhRZm9sUWN2X0VHSWF0NDBB?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.8,
+"score": 4.1,
+"echo_of": null,
+"w": [
+"barry",
+"demand",
+"despite",
+"fitzgerald",
+"growing",
+"off",
+"sell",
+"upside",
+"uranium"
+]
+},
+{
+"id": "78ecc586233c07ef",
+"date": "2026-11-27",
+"ts": 1795786293,
+"title": "Vietnam shares international experience in nuclear power development.",
+"summary": "",
+"outlet": "Vietnam.vn",
+"link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZVYtLV83Y2RmOWpuUWJndlNnRUdBdzNpNGZtU3NaWUVzLXZNQ3hTXzZiNW1QRkRFSnBGTXJKb09pZlY4clVialUxNnBuUktGZGpjbEpmUVI3TWdfX3JHNGNibi1OTjJEX1JsYjVueGhieG1XaE9oWlFtRTZhcGRJaV9vakdaeGxZS1JzaF9uSVdkM3RQanBLblBn?oc=5",
+"place": "Asia newcomers",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.56,
+"score": 3.62,
+"echo_of": null,
+"w": [
+"development",
+"experience",
+"international",
+"nuclear",
+"power",
+"shares",
+"vietnam"
+]
 }
 ]
