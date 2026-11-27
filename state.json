@@ -919,7 +919,9 @@
   "nightwatch171:2026-11-27": true,
   "earnread:2026-11-27": true,
   "ahdip172:2026-11-27": true,
-  "nightwatch172:2026-11-27": true
+  "nightwatch172:2026-11-27": true,
+  "radarres:2026-11-27": true,
+  "ahdip173:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -5808,18 +5810,6 @@
  "news_feed": [
   {
    "ticker": "CCJ",
-   "source": "Local intel: DD News (India)",
-   "title": "IAEA Director General praises India\u2019s major nuclear milestone at Kalpakkam",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVWxGS0E3OGdYNERrUXpFUVJGeUZrSjBjQ21HeU9vOXNZSFZzYkRqaG9zX1ZnZmFmNVoySG1SR1duNHY4VTJKUUFtbW95Z0dUdTljOHpHc203ZTI0dXhsRXg2S1l2Tl9xNDFRYTFQdjRHQmdTX3NCNGpfMGRrZUlFSzhsd2xvMTF2UHlFM3BMbHJaS0Q4UEdXcWswRjY4Z2RE?oc=5",
-   "ts": 1795588965,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "policy_tariff",
-   "why": "IAEA praise for India's Kalpakkam milestone is general, not new CCJ-specific demand."
-  },
-  {
-   "ticker": "CCJ",
    "source": "Google News",
    "title": "CanAlaska Uranium (TSXV:CVV): What Did West McArthur Summer Drilling Show? - Kalkine Media",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOakJLUExZNG9wWVRNblN2RldxLTVKd193TXE1a2hNbDdPV0pnem1iLXlxTWFuRmZCZkk3OXB4b2FVeUIyUndWZFBIZ2FwNkxkS2Y0R0Vyb2s3RkRYVnJtYXFZNGV2X1dvcnNLbXZoeFNQSGQ0eGFSd3c1aG9vcElCV1RSWHpNbk15UlNhbjI3VlBPd1FGeG0wa0VHYVRfRzhXYmp6OWkxUlVMakYzZEhF?oc=5",
@@ -8805,6 +8795,18 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Generic MarketBeat price-move recap; a 1.2% move is routine noise."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: Kazatomprom",
+   "title": "Kazatomprom R (0ZQ.HM) Q4 FY2025 earnings call transcript - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPLUZrcHdBamFINFZGdEFnWnNDVW1NUUpUNXpoWERiMmxCSzV2NzhVVEVQOWtNdjNYUlBiSC0yakplWHNUU2Fpc09obXJxWk4zUldkOXlzcXQtZnU2UWZNdmNsNlpnQ0w1OVpPazNJTFBUdWhjNmdnYWhNc1lYZ0VrTFA1OTRmaU9hVGlsOTJ3MEU2QQ?oc=5",
+   "ts": 1795816469,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "supply",
+   "why": "Kazatomprom quarterly earnings call transcript; a Yahoo recap of an older call, mostly restating known production guidance."
   }
  ],
  "reviews": [
@@ -9232,7 +9234,7 @@
      "whale": 0.02631,
      "crowd": 0.01703,
      "level": 0.35215,
-     "scout": 0.26641,
+     "scout": 0.26689,
      "review": 0.23667,
      "auditor": 0.04723,
      "strategist": 0.18937,
@@ -10936,16 +10938,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.73468,
+  "day_usd": 0.73516,
   "month": "2026-11",
-  "month_usd": 2.82887,
-  "total_usd": 2.82887,
+  "month_usd": 2.82935,
+  "total_usd": 2.82935,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.26641,
+   "scout": 0.26689,
    "review": 0.23667,
    "auditor": 0.04723,
    "strategist": 0.18937,
@@ -11226,7 +11228,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 17:43 ET",
+ "last_cycle": "2026-11-27 17:53 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -60647,8 +60649,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "4ee30073db1990ac",
   "7cabb45f8b0c2778",
+  "4ee30073db1990ac",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -60690,10 +60692,10 @@
   "80ca077103e2454d",
   "bfa4d042201cf513",
   "982ae178b039d112",
-  "c58aba704a7847d3",
   "5152638d88885c07",
-  "1acc6842cd4f6e64",
+  "c58aba704a7847d3",
   "1715e61816aa5619",
+  "1acc6842cd4f6e64",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -60825,14 +60827,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "7c380c991c59f9ba",
   "1ed195cb4396cbe7",
+  "7c380c991c59f9ba",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -61265,6 +61267,7 @@
   "14550cc72dba894e",
   "fede063cc0d1b0b3",
   "7574e0b98bf014d1",
+  "9cb14500a3a670ba",
   "de4d277c2d827d97",
   "6c80f44c55ac31e7",
   "fe0239e8c69f7365",
@@ -61447,7 +61450,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795819199.8611832,
+ "news_slow_at": 1795819821.7920673,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -227084,12 +227087,12 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 17:43",
+  "updated": "2026-11-27 17:53",
   "total": 985,
-  "week": 594,
+  "week": 593,
   "places": {
    "South Korea": 56,
-   "Uranium price": 52,
+   "Uranium price": 51,
    "Kazakhstan": 42,
    "Weapons programs": 33,
    "Workers and jobs": 32,
@@ -227721,8 +227724,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "fd337937e7471e2a",
   "b2362be41ae616f1",
+  "fd337937e7471e2a",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -227771,10 +227774,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "688d746cfc31b58f",
   "22ab37dfabeba433",
-  "f815e45da305cee7",
+  "688d746cfc31b58f",
   "85de31670d4daf9d",
+  "f815e45da305cee7",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -230477,7 +230480,7 @@
    "built": "2026-11-27 17:32"
   }
  ],
- "heartbeat": "2026-11-27 17:43",
+ "heartbeat": "2026-11-27 17:53",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -230718,15 +230721,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 500,
-   "used": 459,
+   "asked": 501,
+   "used": 460,
    "notes": {
     "TLN Deals and contracts": 21,
     "CCJ Deals and contracts": 83,
     "BWXT Deals and contracts": 57,
     "SECTOR Government and laws": 138,
     "UUUU Deals and contracts": 47,
-    "SECTOR Countries": 143,
+    "SECTOR Countries": 144,
     "CEG Deals and contracts": 68,
     "NXE Legal": 24,
     "NXE Deals and contracts": 19,
@@ -239344,7 +239347,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 17:43",
+ "watchdog_last": "2026-11-27 17:53",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
