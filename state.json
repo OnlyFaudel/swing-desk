@@ -647,7 +647,8 @@
   "ev:39c7e07040ee": true,
   "weather:2026-11-27": true,
   "questioner:2026-11-27:4": true,
-  "reactors:2026-11-27": true
+  "reactors:2026-11-27": true,
+  "plantrep:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -8988,10 +8989,10 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.05139,
+  "day_usd": 0.05227,
   "month": "2026-11",
-  "month_usd": 2.14558,
-  "total_usd": 2.14558,
+  "month_usd": 2.14646,
+  "total_usd": 2.14646,
   "by_role": {
    "macro": 0.21206,
    "whale": 0.02215,
@@ -9006,7 +9007,7 @@
    "investigator": 0.35857,
    "postmortem": 0.00035,
    "researcher": 0.02341,
-   "engineer": 0.08335,
+   "engineer": 0.08423,
    "questioner": 0.1625
   }
  },
@@ -9262,10 +9263,10 @@
   "AMD": 406.83,
   "SMR": 3.25,
   "NNE": 8.85,
-  "SPY": 716.76,
+  "SPY": 728.04,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-27 08:33 ET",
+ "last_cycle": "2026-11-27 08:35 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -214763,6 +214764,31 @@
    ],
    "practice": false,
    "end": "08:00"
+  },
+  {
+   "id": "20261127083520683450",
+   "title": "Plant report Nov 27",
+   "tickers": [
+    "CCJ",
+    "CEG",
+    "LEU",
+    "TLN",
+    "VST"
+   ],
+   "kind": "research",
+   "start": "2026-11-27 08:35",
+   "msgs": [
+    {
+     "t": "08:35",
+     "who": "engineer",
+     "to": "team",
+     "text": "Plant report: Salem 1 at Constellation (CEG) is the only one of our owners' reactors down, in a planned 52-day outage that started Oct 4, during refueling season, so it's routine and shouldn't move the stock today. Vistra (VST) and Talen (TLN) are fully running, and the fleet is at 90% with no surprises. Nothing at the mines or enrichment plants changes today's picture, so no plant-driven trade.",
+     "outcome": false,
+     "notes": "why: I checked the open and recent outages against the normal refueling pattern, and all of CEG's, VST's and TLN's current downtime is planned work at this time of year. The only item with any bite is the Federal Register notice on the General Matter enrichment plant, which could matter for Centrus (LEU) over time but is not a near-term plant issue.\ndate: 2026-11-30\nticker: LEU\nwhat: General Matter Paducah enrichment facility Federal Register notice: check for licensing steps that could add competing enrichment supply\nfiles read: CEG Places and operations, VST Places and operations, LEU Places and operations"
+    }
+   ],
+   "practice": false,
+   "end": "08:35"
   }
  ],
  "feed": [
@@ -219957,6 +219983,23 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-27 08:35",
+   "who": "engineer",
+   "kind": "data",
+   "title": null,
+   "text": "Plant report: Salem 1 at Constellation (CEG) is the only one of our owners' reactors down, in a planned 52-day outage that started Oct 4, during refueling season, so it's routine and shouldn't move the stock today. Vistra (VST) and Talen (TLN) are fully running, and the fleet is at 90% with no surprises. Nothing at the mines or enrichment plants changes today's picture, so no plant-driven trade.",
+   "tickers": [
+    "CEG",
+    "TLN",
+    "VST"
+   ],
+   "art": {
+    "big": "Plant report",
+    "sub": "Reactors, mines and fuel, Nov 27"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -220832,9 +220875,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 08:33",
+  "updated": "2026-11-27 08:35",
   "total": 932,
-  "week": 600,
+  "week": 599,
   "places": {
    "South Korea": 53,
    "Uranium price": 51,
@@ -220844,7 +220887,7 @@
    "Europe new builds": 30,
    "AUKUS and navies": 30,
    "Asia newcomers": 30,
-   "Piketon": 25,
+   "Piketon": 24,
    "World Nuclear News": 23,
    "War zones": 21,
    "Rare earths (Energy Fuels)": 16
@@ -224087,7 +224130,7 @@
    "built": "2026-11-27 08:16"
   }
  ],
- "heartbeat": "2026-11-27 08:33",
+ "heartbeat": "2026-11-27 08:35",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -224532,21 +224575,21 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 61,
-   "used": 60,
+   "asked": 62,
+   "used": 61,
    "notes": {
     "SECTOR Reactors and power": 2,
-    "CEG Places and operations": 26,
+    "CEG Places and operations": 27,
     "UEC Deals and contracts": 1,
     "UEC Places and operations": 12,
     "license_tracker": 4,
     "LEU Business": 6,
     "plants_now": 9,
     "LEU Deals and contracts": 11,
-    "LEU Places and operations": 15,
+    "LEU Places and operations": 16,
     "NRC license tracker": 1,
     "power_deals_and_fuel_policy": 2,
-    "VST Places and operations": 7,
+    "VST Places and operations": 8,
     "CEG Business": 1,
     "NXE Places and operations": 5,
     "plants_now: fleet status and open outages": 1,
@@ -231888,7 +231931,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 08:33",
+ "watchdog_last": "2026-11-27 08:35",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
