@@ -921,7 +921,10 @@
   "ahdip172:2026-11-27": true,
   "nightwatch172:2026-11-27": true,
   "radarres:2026-11-27": true,
-  "ahdip173:2026-11-27": true
+  "ahdip173:2026-11-27": true,
+  "questioner:2026-11-27:9": true,
+  "nightwatch180:2026-11-27": true,
+  "ahdip180:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -9244,7 +9247,7 @@
      "postmortem": 0.01905,
      "researcher": 0.02986,
      "engineer": 0.10979,
-     "questioner": 0.17926
+     "questioner": 0.18192
     },
     "shadow": {
      "gap_down": {
@@ -10938,10 +10941,10 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.73516,
+  "day_usd": 0.73782,
   "month": "2026-11",
-  "month_usd": 2.82935,
-  "total_usd": 2.82935,
+  "month_usd": 2.83201,
+  "total_usd": 2.83201,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
@@ -10957,7 +10960,7 @@
    "postmortem": 0.01905,
    "researcher": 0.02986,
    "engineer": 0.10979,
-   "questioner": 0.17926
+   "questioner": 0.18192
   }
  },
  "desk_log": [
@@ -11228,7 +11231,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 17:53 ET",
+ "last_cycle": "2026-11-27 18:04 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -61450,7 +61453,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795819821.7920673,
+ "news_slow_at": 1795820455.0509558,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -219502,6 +219505,25 @@
    ],
    "practice": false,
    "end": "16:30"
+  },
+  {
+   "id": "20261127180050923747",
+   "title": "The Questioner, Nov 27 18:00",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-27 18:00",
+   "msgs": [
+    {
+     "t": "18:00",
+     "who": "questioner",
+     "to": "team",
+     "text": "Nothing here looks new or unexplained to me that the team hasn't already chased. The basket gate is closed, the PJM auction and SPY halt have been checked and answered, and the Federal Register notices and Salem 1 outage are already covered. I'll pass this round rather than repeat questions.",
+     "outcome": false,
+     "notes": "why: I checked the already-answered list, the live order list (empty), and the recent headlines and outage data. Every candidate question I could form duplicates something answered this week, so I'm asking none.\ndate: 2026-12-15\nticker: TLN\nwhat: PJM 2029/30 capacity auction close; no FERC ruling on the delay request found as of Nov 25, so treat the auction as on schedule. Talen's earnings depend on it.\ndate: 2026-12-15\nticker: VST\nwhat: PJM 2029/30 capacity auction close; past auctions that cleared at the cap were followed by weak stock performance, so don't chase a release-day pop.\nticker: CEG\ndirection: down\ndays: 5\nfiles read: SECTOR Uranium market, CEG Snapshot, TLN Snapshot"
+    }
+   ],
+   "practice": false,
+   "end": "18:00"
   }
  ],
  "feed": [
@@ -226047,6 +226069,19 @@
     "sub": "Nuclear Weekly: Uranium firm, stocks still deep in a drawdown, and a lucky week "
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-27 18:00",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: ",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -227022,62 +227057,62 @@
    "lesson": "A panic_rebound buy must pass the basket-below-10-day-average block before entry, even when the stock looks oversold and the trade later wins."
   }
  ],
- "intel_at": 1795818669.8915834,
+ "intel_at": 1795820533.2466223,
  "intel_health": {
-  "at": "2026-11-27 17:31",
+  "at": "2026-11-27 18:02",
   "sources": {
    "Cigar Lake": 3,
    "McArthur River / Key Lake": 3,
-   "Athabasca Basin": 9,
-   "Saskatchewan wildfires": 0,
+   "Athabasca Basin": 10,
+   "Saskatchewan wildfires": 3,
    "Rook I / Arrow": 6,
    "Wheeler River / Phoenix": 7,
    "Port Hope / Blind River": 0,
    "Westinghouse": 8,
-   "Kazakhstan": 38,
+   "Kazakhstan": 50,
    "Niger": 11,
-   "Namibia": 27,
+   "Namibia": 24,
    "Russia supply": 2,
-   "Piketon": 14,
-   "HALEU": 10,
+   "Piketon": 13,
+   "HALEU": 9,
    "Wyoming ISR": 20,
    "South Texas ISR": 2,
    "White Mesa / Utah": 8,
-   "Rare earths (Energy Fuels)": 6,
+   "Rare earths (Energy Fuels)": 7,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 11,
+   "Naval reactors": 13,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 4,
    "Comanche Peak": 4,
-   "PJM grid": 7,
+   "PJM grid": 5,
    "ERCOT grid": 9,
    "Data-center nuclear deals": 10,
    "Japan restarts": 12,
-   "China new builds": 4,
-   "Congress and laws": 24,
+   "China new builds": 5,
+   "Congress and laws": 32,
    "NRC decisions": 6,
-   "Energy Department": 25,
+   "Energy Department": 26,
    "White House and executive orders": 23,
-   "Tariffs and trade": 4,
-   "India": 18,
-   "South Korea": 97,
-   "Europe new builds": 0,
-   "France and UK": 11,
+   "Tariffs and trade": 5,
+   "India": 32,
+   "South Korea": 100,
+   "Europe new builds": 61,
+   "France and UK": 13,
    "Middle East": 29,
-   "Asia newcomers": 0,
-   "Canada SMRs": 0,
-   "Big tech power deals": 29,
-   "Iran": 26,
-   "North Korea": 100,
-   "War zones": 15,
-   "AUKUS and navies": 17,
-   "Weapons programs": 20,
-   "Stockpiles and reserves": 23,
-   "Sprott trust": 4,
-   "Uranium price": 45,
+   "Asia newcomers": 37,
+   "Canada SMRs": 8,
+   "Big tech power deals": 28,
+   "Iran": 54,
+   "North Korea": 70,
+   "War zones": 35,
+   "AUKUS and navies": 23,
+   "Weapons programs": 21,
+   "Stockpiles and reserves": 22,
+   "Sprott trust": 3,
+   "Uranium price": 21,
    "US policy": 0,
-   "Lawsuits and investigations": 33,
-   "Workers and jobs": 35,
+   "Lawsuits and investigations": 72,
+   "Workers and jobs": 34,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 52,
    "Federal Register (uranium)": 11,
@@ -227087,13 +227122,13 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 17:53",
-  "total": 985,
-  "week": 593,
+  "updated": "2026-11-27 18:04",
+  "total": 987,
+  "week": 595,
   "places": {
    "South Korea": 56,
-   "Uranium price": 51,
-   "Kazakhstan": 42,
+   "Uranium price": 52,
+   "Kazakhstan": 43,
    "Weapons programs": 33,
    "Workers and jobs": 32,
    "AUKUS and navies": 29,
@@ -227106,60 +227141,60 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-27 17:31",
+   "at": "2026-11-27 18:02",
    "sources": {
     "Cigar Lake": 3,
     "McArthur River / Key Lake": 3,
-    "Athabasca Basin": 9,
-    "Saskatchewan wildfires": 0,
+    "Athabasca Basin": 10,
+    "Saskatchewan wildfires": 3,
     "Rook I / Arrow": 6,
     "Wheeler River / Phoenix": 7,
     "Port Hope / Blind River": 0,
     "Westinghouse": 8,
-    "Kazakhstan": 38,
+    "Kazakhstan": 50,
     "Niger": 11,
-    "Namibia": 27,
+    "Namibia": 24,
     "Russia supply": 2,
-    "Piketon": 14,
-    "HALEU": 10,
+    "Piketon": 13,
+    "HALEU": 9,
     "Wyoming ISR": 20,
     "South Texas ISR": 2,
     "White Mesa / Utah": 8,
-    "Rare earths (Energy Fuels)": 6,
+    "Rare earths (Energy Fuels)": 7,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 11,
+    "Naval reactors": 13,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 4,
     "Comanche Peak": 4,
-    "PJM grid": 7,
+    "PJM grid": 5,
     "ERCOT grid": 9,
     "Data-center nuclear deals": 10,
     "Japan restarts": 12,
-    "China new builds": 4,
-    "Congress and laws": 24,
+    "China new builds": 5,
+    "Congress and laws": 32,
     "NRC decisions": 6,
-    "Energy Department": 25,
+    "Energy Department": 26,
     "White House and executive orders": 23,
-    "Tariffs and trade": 4,
-    "India": 18,
-    "South Korea": 97,
-    "Europe new builds": 0,
-    "France and UK": 11,
+    "Tariffs and trade": 5,
+    "India": 32,
+    "South Korea": 100,
+    "Europe new builds": 61,
+    "France and UK": 13,
     "Middle East": 29,
-    "Asia newcomers": 0,
-    "Canada SMRs": 0,
-    "Big tech power deals": 29,
-    "Iran": 26,
-    "North Korea": 100,
-    "War zones": 15,
-    "AUKUS and navies": 17,
-    "Weapons programs": 20,
-    "Stockpiles and reserves": 23,
-    "Sprott trust": 4,
-    "Uranium price": 45,
+    "Asia newcomers": 37,
+    "Canada SMRs": 8,
+    "Big tech power deals": 28,
+    "Iran": 54,
+    "North Korea": 70,
+    "War zones": 35,
+    "AUKUS and navies": 23,
+    "Weapons programs": 21,
+    "Stockpiles and reserves": 22,
+    "Sprott trust": 3,
+    "Uranium price": 21,
     "US policy": 0,
-    "Lawsuits and investigations": 33,
-    "Workers and jobs": 35,
+    "Lawsuits and investigations": 72,
+    "Workers and jobs": 34,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 52,
     "Federal Register (uranium)": 11,
@@ -230349,7 +230384,7 @@
    }
   ]
  },
- "dossier_at": 1795818715.8758988,
+ "dossier_at": 1795820574.432404,
  "sector_prices": {
   "_at": 1795805723.732425,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -230407,80 +230442,80 @@
    "name": "Cameco",
    "price": 63.56,
    "week_pct": 3.48,
-   "built": "2026-11-27 17:31"
+   "built": "2026-11-27 18:02"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 7.28,
    "week_pct": 5.05,
-   "built": "2026-11-27 17:31"
+   "built": "2026-11-27 18:02"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.93,
    "week_pct": 2.86,
-   "built": "2026-11-27 17:31"
+   "built": "2026-11-27 18:02"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.91,
    "week_pct": 5.8,
-   "built": "2026-11-27 17:31"
+   "built": "2026-11-27 18:02"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.66,
    "week_pct": 3.28,
-   "built": "2026-11-27 17:31"
+   "built": "2026-11-27 18:02"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.79,
    "week_pct": -5.47,
-   "built": "2026-11-27 17:31"
+   "built": "2026-11-27 18:02"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.57,
    "week_pct": -1.27,
-   "built": "2026-11-27 17:31"
+   "built": "2026-11-27 18:02"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 238.15,
    "week_pct": -5.51,
-   "built": "2026-11-27 17:31"
+   "built": "2026-11-27 18:02"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 122.35,
    "week_pct": -1.45,
-   "built": "2026-11-27 17:31"
+   "built": "2026-11-27 18:02"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 359.64,
    "week_pct": 1.05,
-   "built": "2026-11-27 17:32"
+   "built": "2026-11-27 18:02"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-27 17:32"
+   "built": "2026-11-27 18:02"
   }
  ],
- "heartbeat": "2026-11-27 17:53",
+ "heartbeat": "2026-11-27 18:04",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -231181,10 +231216,10 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 64,
-   "used": 64,
+   "asked": 65,
+   "used": 65,
    "notes": {
-    "TLN Snapshot": 45,
+    "TLN Snapshot": 46,
     "TLN News": 42,
     "coming_up": 9,
     "BWXT Snapshot": 2,
@@ -231197,8 +231232,8 @@
     "SECTOR Market regime": 1,
     "desk_lessons_from_our_mistakes": 7,
     "TLN Ownership and analysts": 4,
-    "SECTOR Uranium market": 19,
-    "CEG Snapshot": 7,
+    "SECTOR Uranium market": 20,
+    "CEG Snapshot": 8,
     "uranium_price": 1,
     "PJM capacity auction": 1,
     "PJM auction": 1,
@@ -234635,6 +234670,16 @@
    "price": 238.15,
    "result": null,
    "why": "I compared each closed trade against the desk lessons and the basket status in the payload, and saw that the same gate error repeated six times despite being logged, so I proposed enforcing it in code"
+  },
+  {
+   "role": "questioner",
+   "ticker": "CEG",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-27",
+   "price": 238.15,
+   "result": null,
+   "why": "I checked the already-answered list, the live order list (empty), and the recent headlines and outage data. Every candidate question I could form duplicates something answered this week, so I'm asking"
   }
  ],
  "after_sale": [
@@ -239089,8 +239134,8 @@
   }
  ],
  "movers": {
-  "at": 1795806070.4547346,
-  "time": "2026-11-27 14:01",
+  "at": 1795820450.9221125,
+  "time": "2026-11-27 18:00",
   "list": [
    {
     "ticker": "LEU",
@@ -239347,7 +239392,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 17:53",
+ "watchdog_last": "2026-11-27 18:04",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
