@@ -31689,5 +31689,105 @@
 "rebuild",
 "replacing"
 ]
+},
+{
+"id": "6fb596032e689896",
+"date": "2026-11-27",
+"ts": 1795810104,
+"title": "Peninsula Energy Halts Wyoming Uranium Mine After Cyberattack",
+"summary": "",
+"outlet": "Wisevoter",
+"link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYXo5NkRHd1FsQWZQMTVSUUFFRkpUeTBuNGxSX3VDVHFDdWZ6bGc1cFFlUDVFWHhPZTFMUloyQmEwc1ZzZUJkTjZpMDlyRGl0NldJeFV0MVk2cFp2VTVsN1NfT1VIX2pYVTdrWmlENmU0NGZFcHluZzRWWGVYc01BZ0E4S0I1X2xUV2FNMEl0RlAxdmdBNlM0OEdUQmYzWWZDanc?oc=5",
+"place": "Wyoming ISR",
+"tickers": [
+"UEC",
+"CCJ"
+],
+"tags": [
+"disruption"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.25,
+"score": 5.0,
+"echo_of": "968cdd13292c56ca",
+"w": [
+"cyberattack",
+"energy",
+"halts",
+"mine",
+"peninsula",
+"uranium",
+"wyoming"
+]
+},
+{
+"id": "e4d20302e19e3f93",
+"date": "2026-11-27",
+"ts": 1795813980,
+"title": "Congress Could Let Nuclear Builders Skip A Step Nobody Asked For",
+"summary": "",
+"outlet": "The Daily Caller",
+"link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQW5mRTVLaTczREI3emtoVWZnT0ZDMERzd1RXMERldVU2Wms3TEtFaC1uQ1pKZzRhZzZ2ZHYweWJYd2lDaE1NZGVfd3F2VTViVVZKWG41b0pIU3JLblE2VVZLaHBtaklZSEhqb0RrczJkMjZWT0tkWkRZVmRGM2FRQTk1Z1IxYlljVlJlVDZyRVRmaGtYWnFldFplZ1A5Wk1y?oc=5",
+"place": "Congress and laws",
+"tickers": [
+"CCJ",
+"LEU",
+"CEG",
+"UEC",
+"UUUU"
+],
+"tags": [
+"restart"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.8,
+"score": 4.8,
+"echo_of": null,
+"w": [
+"asked",
+"builders",
+"congress",
+"let",
+"nobody",
+"nuclear",
+"skip",
+"step"
+]
+},
+{
+"id": "bed226bec332d153",
+"date": "2026-11-27",
+"ts": 1795814113,
+"title": "Energy Fuels stock targets one million pounds from White Mesa run",
+"summary": "",
+"outlet": "ad-hoc-news.de",
+"link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOX0F4M0o2MzJ3bm12U1pBWjlSRVRYcmgzRXBUT01UOEczTTR6bGFOTWw5SUNtMlNacDROU0NWOUk4UmJBTE5HSkFPSzcySGE4d0xlT1pFS2lTT2ZsMVJtMHJFak5INHhlUUlYZ3k3dE16cE5QOHBFcHZpRWFNX2V3emtpd0VwNTFwa293Mk1ieFdyU2FiRWQ5QXlWWDhzejl6SEdmZ1luT3NKNnRMSnVmVXo5bFBJUXJpLW80bURLaDRvdEZ2QjVR?oc=5",
+"place": "White Mesa / Utah",
+"tickers": [
+"UUUU"
+],
+"tags": [
+"production",
+"market_chatter"
+],
+"numbers": [],
+"local": false,
+"novelty": 0.27,
+"score": 1.34,
+"echo_of": "1f0c92334f3206aa",
+"w": [
+"energy",
+"fuels",
+"mesa",
+"million",
+"one",
+"pounds",
+"run",
+"stock",
+"targets",
+"white"
+]
 }
 ]

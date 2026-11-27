@@ -904,7 +904,9 @@
   "reconcile:2026-11-27": true,
   "notecheck:2026-11-27": true,
   "nightwatch161:2026-11-27": true,
-  "recent:2026-11-27": true
+  "recent:2026-11-27": true,
+  "mistakes:2026-11-27": true,
+  "ahdip162:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -5792,30 +5794,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
-   "title": "Sprott Uranium Miners ETF (URNM) Price Prediction: Bearish structure meets oversold conditions as support comes into focus - Blockchain News",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZ3VVMHJBMEE3Tm5LckIxSUViN1JYa2NTUlp3MWpoaDVuU2s0bVV6U1RRZUV1ekdNMjhNRFF1al93ZDN4S0pKU3Z0M0xCYkZBdnY4TTJncFEtSU81a1kyMW1MMDBISktmTkZ3TG5EMkNJelFQdTkxdXZfNkZkR2ZJeVNJLWVRLWE3Wm9PTHZVZ3JIdmtScXpHbDV1R2VGVENZTE1jX0tpZjhwQQ?oc=5",
-   "ts": 1795602120,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Technical-analysis recap of an ETF (URNM), no new company information."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: Kazatomprom",
-   "title": "Kazatomprom announced cooperation with investigation following Omarbekov's detention - \u041a\u0430\u0437\u0422\u0410\u0413",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTEZ2Q1R1VV9JM1YyODJNRkhhS1R3bzd1MmZyS3ZrcG4xRWIxUDdrci11UHQ1SWNOWlgtMjVuODdxNWM3anZ0ZzVGTzFuTUVwN0loUjI4OHhIQThlQmczSnJSQTZDcnRCQ3dMUjZBWF9zMnpVamdDNTZMc3ExY1JFVVhDRVNMSDlFUlVQSHkxR3YyNzRLMkd3ZzFtSEF1U25laXFSUTJwWVBneEo3cl9F?oc=5",
-   "ts": 1795600860,
-   "materiality": 3,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Kazatomprom (CCJ's key supplier) cooperating after an executive's detention; no output or contract impact stated."
-  },
-  {
    "ticker": "BWXT",
    "source": "Google News",
    "title": "Is BWX Technologies (BWXT) A Bargain After Its AP1000 Manufacturing Win? - Simply Wall St",
@@ -8790,6 +8768,30 @@
    "direction": "up",
    "event_type": "earnings",
    "why": "Raised full-year earnings guidance is company-specific and new, though headline is a single-source aggregator item."
+  },
+  {
+   "ticker": "UUUU",
+   "source": "Google News",
+   "title": "Energy Fuels stock targets one million pounds from White Mesa run - ad-hoc-news.de",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOX0F4M0o2MzJ3bm12U1pBWjlSRVRYcmgzRXBUT01UOEczTTR6bGFOTWw5SUNtMlNacDROU0NWOUk4UmJBTE5HSkFPSzcySGE4d0xlT1pFS2lTT2ZsMVJtMHJFak5INHhlUUlYZ3k3dE16cE5QOHBFcHZpRWFNX2V3emtpd0VwNTFwa293Mk1ieFdyU2FiRWQ5QXlWWDhzejl6SEdmZ1luT3NKNnRMSnVmVXo5bFBJUXJpLW80bURLaDRvdEZ2QjVR?oc=5",
+   "ts": 1795814113,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Price-target promo piece from ad-hoc-news.de; no new company information."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: The Daily Caller (Congress and laws)",
+   "title": "Congress Could Let Nuclear Builders Skip A Step Nobody Asked For",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQW5mRTVLaTczREI3emtoVWZnT0ZDMERzd1RXMERldVU2Wms3TEtFaC1uQ1pKZzRhZzZ2ZHYweWJYd2lDaE1NZGVfd3F2VTViVVZKWG41b0pIU3JLblE2VVZLaHBtaklZSEhqb0RrczJkMjZWT0tkWkRZVmRGM2FRQTk1Z1IxYlljVlJlVDZyRVRmaGtYWnFldFplZ1A5Wk1y?oc=5",
+   "ts": 1795813980,
+   "materiality": 3,
+   "novelty": "new",
+   "direction": "neutral",
+   "event_type": "policy_tariff",
+   "why": "Congress proposal to skip a reactor-building step; not yet law, indirect for uranium miners."
   }
  ],
  "reviews": [
@@ -9217,8 +9219,8 @@
      "whale": 0.02631,
      "crowd": 0.01703,
      "level": 0.35215,
-     "scout": 0.26304,
-     "review": 0.1389,
+     "scout": 0.26395,
+     "review": 0.18537,
      "auditor": 0.04723,
      "strategist": 0.18937,
      "pm": 0.45311,
@@ -10921,17 +10923,17 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.63355,
+  "day_usd": 0.68092,
   "month": "2026-11",
-  "month_usd": 2.72773,
-  "total_usd": 2.72773,
+  "month_usd": 2.77511,
+  "total_usd": 2.77511,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.26304,
-   "review": 0.1389,
+   "scout": 0.26395,
+   "review": 0.18537,
    "auditor": 0.04723,
    "strategist": 0.18937,
    "pm": 0.45311,
@@ -11211,7 +11213,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 16:20 ET",
+ "last_cycle": "2026-11-27 16:30 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -61155,6 +61157,7 @@
   "bff980bdf8e71c8b",
   "38c360c66c8cdeee",
   "855ac1a10429d2f5",
+  "bed226bec332d153",
   "b891066a77c3478b",
   "009c12e19cf7cb10",
   "e2c2d566a7566dea",
@@ -61424,7 +61427,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795814200.1245112,
+ "news_slow_at": 1795814841.6934018,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -219457,6 +219460,25 @@
    ],
    "practice": false,
    "end": "16:08"
+  },
+  {
+   "id": "20261127163036336596",
+   "title": "Mistakes review, week of Nov 23",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-27 16:30",
+   "msgs": [
+    {
+     "t": "16:30",
+     "who": "review",
+     "to": "team",
+     "text": "This week's real mistake was process, not money: we made about +$34 net, but the Thanksgiving and panic_rebound trades skipped our 'no buys while the basket is below its 10-day average' check, so we got lucky rather than disciplined. The only true loss was a CEG patient-level trade that entered and exited in the same minute with no stop (-$0.11), which should never have been allowed.",
+     "outcome": false,
+     "notes": "what: 11 Thanksgiving run-up and panic_rebound trades opened while the basket was below its 10-day average (about -6% to -11%), which breaks our hard block. They happened to win.\ncost: No dollar loss (about +$34 realized), but it is unmeasured risk: CEG in the Thanksgiving basket lost -3.15% on a single name, and the same rule breach in a falling tape could have cost far more.\nlesson: A win does not validate a rule breach. The lesson has been logged six times in desk lessons and the gate still isn't enforced in code, so the fix needs to be a hard check in the code, not a note.\nwhat: CEG patient-level order filled at 244.12 and closed at 243.87 with the reason 'no stop could be placed'. The stop (244.04) was only 0.03% under entry, because the zone was $247 and price had already fallen through it.\ncost: -$0.11 (-0.1%), tiny, but it shows we filled a support buy after price was already wel"
+    }
+   ],
+   "practice": false,
+   "end": "16:30"
   }
  ],
  "feed": [
@@ -225966,6 +225988,19 @@
     "sub": "Is this market different? Live scores"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-27 16:30",
+   "who": "review",
+   "kind": "learn",
+   "title": null,
+   "text": "This week's real mistake was process, not money: we made about +$34 net, but the Thanksgiving and panic_rebound trades skipped our 'no buys while the basket is below its 10-day average' check, so we got lucky rather than disciplined. The only true loss was a CEG patient-level trade that entered and exited in the same minute with no stop (-$0.11), which should never have been allowed.\n\n- 11 Thanksgiving run-up and panic_rebound trades opened while the basket was below its 10-day average (about -6% to -11%), which breaks our hard block. They happened to win. (cost: No dollar loss (about +$34 realized), but it is unmeasured risk: CEG in the Thanksgiving basket lost -3.15% on a single name, and the same rule breach in a falling tape could have cost far more.). Lesson: A win does not validate a rule breach. The lesson has been logged six times in desk lessons and the gate still isn't enforced in code, so the fix needs to be a hard check in the code, not a note.\n- CEG patient-level order filled at 244.12 and closed at 243.87 with the reason 'no stop could be placed'. The stop (244.04) was only 0.03% under entry, because the zone was $247 and price had already fallen through it. (cost: -$",
+   "tickers": [],
+   "art": {
+    "big": "Mistakes review",
+    "sub": "4 mistakes found, 1 fix to test"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -226941,11 +226976,11 @@
    "lesson": "A panic_rebound buy must pass the basket-below-10-day-average block before entry, even when the stock looks oversold and the trade later wins."
   }
  ],
- "intel_at": 1795813062.8994415,
+ "intel_at": 1795814918.7276316,
  "intel_health": {
-  "at": "2026-11-27 15:58",
+  "at": "2026-11-27 16:29",
   "sources": {
-   "Cigar Lake": 2,
+   "Cigar Lake": 3,
    "McArthur River / Key Lake": 3,
    "Athabasca Basin": 10,
    "Saskatchewan wildfires": 4,
@@ -226953,50 +226988,50 @@
    "Wheeler River / Phoenix": 7,
    "Port Hope / Blind River": 0,
    "Westinghouse": 8,
-   "Kazakhstan": 38,
+   "Kazakhstan": 49,
    "Niger": 11,
    "Namibia": 28,
    "Russia supply": 2,
    "Piketon": 18,
    "HALEU": 10,
-   "Wyoming ISR": 29,
+   "Wyoming ISR": 20,
    "South Texas ISR": 2,
-   "White Mesa / Utah": 8,
-   "Rare earths (Energy Fuels)": 6,
+   "White Mesa / Utah": 7,
+   "Rare earths (Energy Fuels)": 7,
    "Lynchburg / Erwin": 0,
    "Naval reactors": 13,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 4,
    "Comanche Peak": 4,
-   "PJM grid": 6,
+   "PJM grid": 8,
    "ERCOT grid": 10,
    "Data-center nuclear deals": 10,
    "Japan restarts": 9,
-   "China new builds": 6,
-   "Congress and laws": 25,
+   "China new builds": 3,
+   "Congress and laws": 24,
    "NRC decisions": 6,
    "Energy Department": 38,
-   "White House and executive orders": 27,
+   "White House and executive orders": 26,
    "Tariffs and trade": 4,
    "India": 18,
-   "South Korea": 100,
-   "Europe new builds": 31,
-   "France and UK": 13,
-   "Middle East": 57,
-   "Asia newcomers": 25,
+   "South Korea": 94,
+   "Europe new builds": 62,
+   "France and UK": 11,
+   "Middle East": 58,
+   "Asia newcomers": 26,
    "Canada SMRs": 8,
    "Big tech power deals": 29,
-   "Iran": 54,
-   "North Korea": 68,
+   "Iran": 26,
+   "North Korea": 100,
    "War zones": 15,
    "AUKUS and navies": 24,
-   "Weapons programs": 31,
-   "Stockpiles and reserves": 22,
+   "Weapons programs": 20,
+   "Stockpiles and reserves": 26,
    "Sprott trust": 3,
-   "Uranium price": 21,
+   "Uranium price": 43,
    "US policy": 0,
-   "Lawsuits and investigations": 72,
-   "Workers and jobs": 34,
+   "Lawsuits and investigations": 33,
+   "Workers and jobs": 24,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 52,
    "Federal Register (uranium)": 11,
@@ -227006,9 +227041,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 16:20",
-  "total": 979,
-  "week": 595,
+  "updated": "2026-11-27 16:30",
+  "total": 982,
+  "week": 596,
   "places": {
    "South Korea": 56,
    "Uranium price": 52,
@@ -227025,9 +227060,9 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-27 15:58",
+   "at": "2026-11-27 16:29",
    "sources": {
-    "Cigar Lake": 2,
+    "Cigar Lake": 3,
     "McArthur River / Key Lake": 3,
     "Athabasca Basin": 10,
     "Saskatchewan wildfires": 4,
@@ -227035,50 +227070,50 @@
     "Wheeler River / Phoenix": 7,
     "Port Hope / Blind River": 0,
     "Westinghouse": 8,
-    "Kazakhstan": 38,
+    "Kazakhstan": 49,
     "Niger": 11,
     "Namibia": 28,
     "Russia supply": 2,
     "Piketon": 18,
     "HALEU": 10,
-    "Wyoming ISR": 29,
+    "Wyoming ISR": 20,
     "South Texas ISR": 2,
-    "White Mesa / Utah": 8,
-    "Rare earths (Energy Fuels)": 6,
+    "White Mesa / Utah": 7,
+    "Rare earths (Energy Fuels)": 7,
     "Lynchburg / Erwin": 0,
     "Naval reactors": 13,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 4,
     "Comanche Peak": 4,
-    "PJM grid": 6,
+    "PJM grid": 8,
     "ERCOT grid": 10,
     "Data-center nuclear deals": 10,
     "Japan restarts": 9,
-    "China new builds": 6,
-    "Congress and laws": 25,
+    "China new builds": 3,
+    "Congress and laws": 24,
     "NRC decisions": 6,
     "Energy Department": 38,
-    "White House and executive orders": 27,
+    "White House and executive orders": 26,
     "Tariffs and trade": 4,
     "India": 18,
-    "South Korea": 100,
-    "Europe new builds": 31,
-    "France and UK": 13,
-    "Middle East": 57,
-    "Asia newcomers": 25,
+    "South Korea": 94,
+    "Europe new builds": 62,
+    "France and UK": 11,
+    "Middle East": 58,
+    "Asia newcomers": 26,
     "Canada SMRs": 8,
     "Big tech power deals": 29,
-    "Iran": 54,
-    "North Korea": 68,
+    "Iran": 26,
+    "North Korea": 100,
     "War zones": 15,
     "AUKUS and navies": 24,
-    "Weapons programs": 31,
-    "Stockpiles and reserves": 22,
+    "Weapons programs": 20,
+    "Stockpiles and reserves": 26,
     "Sprott trust": 3,
-    "Uranium price": 21,
+    "Uranium price": 43,
     "US policy": 0,
-    "Lawsuits and investigations": 72,
-    "Workers and jobs": 34,
+    "Lawsuits and investigations": 33,
+    "Workers and jobs": 24,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 52,
     "Federal Register (uranium)": 11,
@@ -227733,6 +227768,7 @@
   "f88ba68b2c94d1a7",
   "23d621a5d325d1ec",
   "37e85b7a7ce58612",
+  "e4d20302e19e3f93",
   "7ffb052a70d145c2",
   "5af3e6f198a988c8",
   "46e81ab921eb0aa9",
@@ -230050,7 +230086,12 @@
    "next": ""
   }
  ],
- "research_queue": [],
+ "research_queue": [
+  {
+   "q": "Mistakes review fix: Add a hard code-level gate: no order of ANY setup (patient_level, panic_rebound, thanksgiving or other calendar rules) can open while the nuclear basket is below its 10-day average. Also reject any patient-level fill where the computed stop is under 0.5% from entry. Test: Replay the last 3-5 years of all setups with and without the gate. Adopt if the gated version has equal or better average return per trade and a smaller worst drawdown. Check specifically whether panic_rebound and Thanksgiving still earn money when blocked, because if the gate removes most of their profits, those rules need an explicit, tested exception rather than silently skipping the check.",
+   "date": "2026-11-27"
+  }
+ ],
  "research_candidates": [
   {
    "key": "open_fill == True",
@@ -230264,7 +230305,7 @@
    }
   ]
  },
- "dossier_at": 1795813104.6375008,
+ "dossier_at": 1795814960.2292745,
  "sector_prices": {
   "_at": 1795805723.732425,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -230322,85 +230363,85 @@
    "name": "Cameco",
    "price": 63.56,
    "week_pct": 3.48,
-   "built": "2026-11-27 15:58"
+   "built": "2026-11-27 16:29"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 7.28,
    "week_pct": 5.05,
-   "built": "2026-11-27 15:58"
+   "built": "2026-11-27 16:29"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.93,
    "week_pct": 2.86,
-   "built": "2026-11-27 15:58"
+   "built": "2026-11-27 16:29"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.91,
    "week_pct": 5.8,
-   "built": "2026-11-27 15:58"
+   "built": "2026-11-27 16:29"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.66,
    "week_pct": 3.28,
-   "built": "2026-11-27 15:58"
+   "built": "2026-11-27 16:29"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.79,
    "week_pct": -5.47,
-   "built": "2026-11-27 15:58"
+   "built": "2026-11-27 16:29"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.57,
    "week_pct": -1.27,
-   "built": "2026-11-27 15:58"
+   "built": "2026-11-27 16:29"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 238.15,
    "week_pct": -5.51,
-   "built": "2026-11-27 15:58"
+   "built": "2026-11-27 16:29"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 122.35,
    "week_pct": -1.45,
-   "built": "2026-11-27 15:58"
+   "built": "2026-11-27 16:29"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 359.64,
    "week_pct": 1.05,
-   "built": "2026-11-27 15:58"
+   "built": "2026-11-27 16:29"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-27 15:58"
+   "built": "2026-11-27 16:29"
   }
  ],
- "heartbeat": "2026-11-27 16:20",
+ "heartbeat": "2026-11-27 16:30",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 535,
+ "_pushed_feed": 536,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -230636,14 +230677,14 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 492,
-   "used": 451,
+   "asked": 494,
+   "used": 453,
    "notes": {
     "TLN Deals and contracts": 21,
-    "CCJ Deals and contracts": 81,
+    "CCJ Deals and contracts": 82,
     "BWXT Deals and contracts": 56,
-    "SECTOR Government and laws": 135,
-    "UUUU Deals and contracts": 46,
+    "SECTOR Government and laws": 136,
+    "UUUU Deals and contracts": 47,
     "SECTOR Countries": 141,
     "CEG Deals and contracts": 66,
     "NXE Legal": 24,
@@ -231070,7 +231111,7 @@
    "since": "2026-11-23"
   },
   "review": {
-   "asked": 8,
+   "asked": 9,
    "used": 7,
    "notes": {
     "CEG Leadership and insiders": 1,
@@ -234538,6 +234579,16 @@
    "price": 63.56,
    "result": null,
    "why": "I checked both results against the stored notes: the sharp-drop and group effects match earlier findings, but two slices of one dataset that flip direction versus an earlier test are weak evidence on "
+  },
+  {
+   "role": "review",
+   "ticker": "CEG",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-27",
+   "price": 238.15,
+   "result": null,
+   "why": "I compared each closed trade against the desk lessons and the basket status in the payload, and saw that the same gate error repeated six times despite being logged, so I proposed enforcing it in code"
   }
  ],
  "after_sale": [
@@ -239250,7 +239301,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 16:20",
+ "watchdog_last": "2026-11-27 16:30",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -240042,6 +240093,37 @@
    "close_next": 122.5,
    "next_day_pct_from_ah": 0.62,
    "kept_going": true
+  }
+ ],
+ "mistakes_log": [
+  {
+   "date": "2026-11-27",
+   "mistakes": [
+    {
+     "what": "11 Thanksgiving run-up and panic_rebound trades opened while the basket was below its 10-day average (about -6% to -11%), which breaks our hard block. They happened to win.",
+     "cost": "No dollar loss (about +$34 realized), but it is unmeasured risk: CEG in the Thanksgiving basket lost -3.15% on a single name, and the same rule breach in a falling tape could have cost far more.",
+     "lesson": "A win does not validate a rule breach. The lesson has been logged six times in desk lessons and the gate still isn't enforced in code, so the fix needs to be a hard check in the code, not a note."
+    },
+    {
+     "what": "CEG patient-level order filled at 244.12 and closed at 243.87 with the reason 'no stop could be placed'. The stop (244.04) was only 0.03% under entry, because the zone was $247 and price had already fallen through it.",
+     "cost": "-$0.11 (-0.1%), tiny, but it shows we filled a support buy after price was already well below the support level.",
+     "lesson": "If price is already under the zone, the order is a falling-knife fill, not a bounce off support. Skip any order where the stop distance is too small to be placed."
+    },
+    {
+     "what": "Scout called UEC down and CCJ down (3 days). Both were wrong: UEC +2.1%, CCJ +4.6%. Scout is 0 for 2.",
+     "cost": "No money lost since calls aren't trades, but CCJ's +4.6% was a move we sat out.",
+     "lesson": "CCJ 'down' was based on a stale recap headline, and a market-wide bounce overrode it. Don't fade a sector bounce off a stale-news call."
+    },
+    {
+     "what": "Panic_rebound exits: UUUU was sold after a +5.4% gap-up open, which the owner flagged as a chance to take profit and re-enter. VST and LEU were closed by a Black Friday exit rule on a 22-year seasonal.",
+     "cost": "UUUU banked +$16, but the extra rule-based exits on VST and LEU are unproven. The owner had to point out we were below 3% when we could have taken profits.",
+     "lesson": "The owner is spotting exit timing the rules miss. We have no tested profit-taking rule beyond the gap-up one."
+    }
+   ],
+   "fix": {
+    "rule": "Add a hard code-level gate: no order of ANY setup (patient_level, panic_rebound, thanksgiving or other calendar rules) can open while the nuclear basket is below its 10-day average. Also reject any patient-level fill where the computed stop is under 0.5% from entry.",
+    "test": "Replay the last 3-5 years of all setups with and without the gate. Adopt if the gated version has equal or better average return per trade and a smaller worst drawdown. Check specifically whether panic_rebound and Thanksgiving still earn money when blocked, because if the gate removes most of their profits, those rules need an explicit, tested exception rather than silently skipping the check."
+   }
   }
  ]
 }
