@@ -636,7 +636,8 @@
   "sput:2026-11-26": true,
   "questioner:2026-11-26:10": true,
   "orbsip_t": 1795760026.701552,
-  "catalysts2:2026-11-27": true
+  "catalysts2:2026-11-27": true,
+  "ev:f5e72e5ea293": true
  },
  "benchmark": {
   "shares": {
@@ -4220,30 +4221,6 @@
  },
  "news_feed": [
   {
-   "ticker": "DNN",
-   "source": "Google News",
-   "title": "DNN declines as seller pressure builds and volatility persists - Traders Union",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcXVpUzNaNU9XY3ZpZzQ4cWFfZ3lsV1NsQU5CZmRZYmIwQzZoZ0hQWWVsaWJvanlFSVNndUFYVng5Ry1odlJIQS1nWmRCYXZnWmlwN2tkLVJTN1JrSWU5VFJLQWNrS2dLVzB5d0xQSVdGZUFyb3lnYnB6dkpEUzlXOGtiMXV1WUk1eWlaaVJn?oc=5",
-   "ts": 1795596400,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Generic price-recap headline about seller pressure and volatility; no new company information."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Local intel: Vietnam Economic Times (Asia newcomers)",
-   "title": "Vietnam\u2019s nuclear ambitions: Building the people, institutions and capabilities for success",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOakdtMG04UlVGV21xb2k3aUtYMDdiaVFROGx6aHgxckIxUWZfWUNPdjdhd0x0U3NCWEFDT0hlMUEyWXcyX3AtTGhrQkhUQTIwbXV0cjF6a2tmQlpJRnRGZGE1Q1hIcUtmbWtYTDVWNllIdzhod3hrcjNnSGhTMGtqanJhbFFHR3RYOVpibU9KZ3lRZ25EQXptME5sWTdSMWZlMlpKb0k5ZVg2QXRyRThSS0dEMmp2Smc?oc=5",
-   "ts": 1795597200,
-   "materiality": 3,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "policy_tariff",
-   "why": "Vietnam nuclear ambitions piece is long-term newcomer planning, not a near-term uranium demand shock."
-  },
-  {
    "ticker": "NXE",
    "source": "Google News: \"NexGen Energy\"",
    "title": "How a Broad Risk-On Rebound Lifted NexGen Energy Ltd. (TSX:NXE) on the S&P/TSX Composite (23 Nov 2026) - kalkine.ca",
@@ -7218,6 +7195,30 @@
    "direction": "neutral",
    "event_type": "war_geopolitics",
    "why": "IAEA truce talks at Zaporizhzhia plant are a local war story, not a uranium supply change."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "Barry FitzGerald: Despite sell-off, uranium demand growing with upside from AI - Stockhead",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZkpWdGtPRkdtdHE5SnN1N0g0a1J6cGVFZWloWWktclJueGlfZEVkSzVLVTlVUlY2RUFwTHZ0UHEzM0QxT0I3MEE0dVhnQW42M1RuTDg0YXhmZTQwOFdhUGZpZWlwUHIxUUdZdGxwUG1UdTFnVzVyazA4REtheWtyck9fRUhzeUduZXZfcmdMVzAxQ05pdHBWdzlaUkIzM18zVkhRZm9sUWN2X0VHSWF0NDBB?oc=5",
+   "ts": 1795764904,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Opinion piece on uranium demand; restates a known AI-power thesis, no new company data."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News: uranium price",
+   "title": "National Atomic Company Kazatomprom JSC: Higher uranium sales lifted revenue, but costs and FX losses reduced 9M profit - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxOYndWQkxPQ2FmbUxocldLRmZIRzE2cGozM0FnZVRvRmY5SUd0b2JTT3d1bmV5X0RDa2cyWEY0dUdmdzRaMU1qbEZSRzFWSk93T0U1VUxMMy1CVi1sSlZ5U0tXR0NsTFJmbUFITE1WQW5CLTRNamNBeC0xTTk1XzYwVXpBMkxRX0ozOVhrQTh3ZXBqd3BCdGN5RDR2TEphVjdrQ0JGT0pMb1g1SkFxM0pfYnhxYmExUVY2VXQ5eGJmYkoyQ0Z0LXZIdHROTUlyS0RrQ2ctQWJiQTJPMlM0aVZ1bTNadER3OEx6RXhUbFBOeG5vSlpxd1o2N2RrUnZMbkRZd2pIcjBadFZBY2l0RGV1VlA2Q0JaS3dWa1ExNzVWRXJKTWNrWUdN?oc=5",
+   "ts": 1795763640,
+   "materiality": 3,
+   "novelty": "follow_up",
+   "direction": "neutral",
+   "event_type": "supply",
+   "why": "Kazatomprom's sales and profit are a related uranium supplier's results, a mild sector read-through only."
   }
  ],
  "reviews": [
@@ -8977,16 +8978,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.00295,
+  "day_usd": 0.00419,
   "month": "2026-11",
-  "month_usd": 2.09714,
-  "total_usd": 2.09714,
+  "month_usd": 2.09838,
+  "total_usd": 2.09838,
   "by_role": {
    "macro": 0.20195,
    "whale": 0.02215,
    "crowd": 0.01446,
    "level": 0.23691,
-   "scout": 0.23447,
+   "scout": 0.23498,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -8995,7 +8996,7 @@
    "investigator": 0.35274,
    "postmortem": 0.00035,
    "researcher": 0.02341,
-   "engineer": 0.08111,
+   "engineer": 0.08184,
    "questioner": 0.15419
   }
  },
@@ -9254,7 +9255,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-27 02:15 ET",
+ "last_cycle": "2026-11-27 02:46 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57945,8 +57946,8 @@
   "9342c1346e3b9a91",
   "82e06a4ced981af5",
   "f7fb21429d8dfc22",
-  "503a7ef14b3cb3d2",
   "95d12e5461204a04",
+  "503a7ef14b3cb3d2",
   "92ab279e132dea09",
   "515406ebde80edc1",
   "586a3a3d084eb114",
@@ -58010,6 +58011,7 @@
   "746b7e054f7d3025",
   "c014dc203c86d5d1",
   "3fe9fc872b222598",
+  "1be96b3daf4578d3",
   "113ecd31dc858e1b",
   "915b10ab6e0bdc34",
   "28519b0d409dc260",
@@ -58086,8 +58088,8 @@
   "32cfd9ef3704009d",
   "87234f250d3b987f",
   "88d39974add2ff27",
-  "1005c86f35a3d1c3",
   "66abfa595ddf0659",
+  "1005c86f35a3d1c3",
   "608a6c7d81d54f47",
   "c3a24ba02dad5302",
   "8df7edb48605a27d",
@@ -58205,7 +58207,6 @@
   "8fb46f7035449802",
   "e200acdbc80d7692",
   "52e6c78d06498482",
-  "94b1c7f7834deb36",
   "9cee24c18c288d5e",
   "e7ffbd404b2679a4",
   "5e042fd73e80d40b",
@@ -58336,6 +58337,7 @@
   "e979a258e0a7a737",
   "cda8fbdcb8858d7a",
   "d7c07a39ed1d0a97",
+  "a7acd6a8c1d7c080",
   "52fac14cf9cff90b",
   "b891066a77c3478b",
   "1acc6842cd4f6e64",
@@ -58375,7 +58377,6 @@
   "b8be1271d8cd66fa",
   "7f7a05be6b3ac1f5",
   "c2efd0a13998190b",
-  "702ca5529e4f7aeb",
   "d29fad2b4995b909",
   "bc3a0aeff821ab5b",
   "6305a538f3553f7a",
@@ -58614,11 +58615,13 @@
   "a82f81d0eb01a7ed",
   "020569e75e7d456e",
   "fdefdd5e748f28f6",
-  "a7acd6a8c1d7c080",
-  "1be96b3daf4578d3",
-  "91a450173049d7b5"
+  "702ca5529e4f7aeb",
+  "94b1c7f7834deb36",
+  "91a450173049d7b5",
+  "b5100c5ffc819f6e",
+  "8f95d9665eb92e6c"
  ],
- "news_slow_at": 1795763745.5588753,
+ "news_slow_at": 1795765589.1516197,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219429,6 +219432,44 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-27 02:46",
+   "who": "engineer",
+   "kind": "agent",
+   "title": null,
+   "text": "This headline is a Kazatomprom earnings note: they sold more uranium, but costs and currency losses cut profit. Physically nothing new changes for pounds of uranium or reactor timelines, and the market has already seen Kazatomprom's numbers. It mostly touches the miners, and it is minor for us.\n\nWhy: The headline is an earnings update about a Kazakh producer, not a change in reactor licensing or supply, and our plant data shows no outage or licence change tied to it. Uranium spot at about $91.55/lb means the price backdrop is firm, so this is noise rather than a new trigger.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 02:46",
+   "who": "engineer",
+   "kind": "alert",
+   "title": null,
+   "text": "Supply shock watch: National Atomic Company Kazatomprom JSC: Higher uranium sales lifted revenue, but costs and FX losses reduced 9M profit - TradingView. In the last 14 big producer cuts, the other miners averaged +3.0% over 5 days and +9.5% over 20 days, but only 8 of 14 went up. All 2026 cut announcements were followed by falls: the market now often reads cuts as weak demand. Watching CCJ, NXE, DNN, UEC.\n\nPlant Engineer: This headline is a Kazatomprom earnings note: they sold more uranium, but costs and currency losses cut profit. Physically nothing new changes for pounds of uranium or reactor timelines, and the market has already seen Kazatomprom's numbers. It mostly touches the miners, and it is minor for us.",
+   "tickers": [
+    "CCJ",
+    "DNN",
+    "NXE",
+    "UEC"
+   ],
+   "art": {
+    "big": "SUPPLY SHOCK? Kazatomprom",
+    "sub": "National Atomic Company Kazatomprom JSC: Higher uranium sales lifted revenue, but costs an"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 02:46",
+   "who": "engineer",
+   "kind": "alert",
+   "title": "SUPPLY SHOCK? Kazatomprom",
+   "text": "National Atomic Company Kazatomprom JSC: Higher uranium sales lifted revenue, but costs and FX losses reduced 9M profit - TradingView | This headline is a Kazatomprom earnings note: they sold more uranium, but costs and currency losses cut profit. Physically nothing new changes for pounds of uranium or reactor timelines, and the market has already seen Kazatomprom's numbers.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -220227,9 +220268,9 @@
    "lesson": null
   }
  ],
- "intel_at": 1795762525.9779074,
+ "intel_at": 1795764374.0358722,
  "intel_health": {
-  "at": "2026-11-27 01:56",
+  "at": "2026-11-27 02:26",
   "sources": {
    "Cigar Lake": 3,
    "McArthur River / Key Lake": 4,
@@ -220241,48 +220282,48 @@
    "Westinghouse": 9,
    "Kazakhstan": 43,
    "Niger": 9,
-   "Namibia": 29,
+   "Namibia": 42,
    "Russia supply": 1,
    "Piketon": 23,
    "HALEU": 12,
-   "Wyoming ISR": 34,
+   "Wyoming ISR": 27,
    "South Texas ISR": 2,
    "White Mesa / Utah": 8,
-   "Rare earths (Energy Fuels)": 11,
+   "Rare earths (Energy Fuels)": 13,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 11,
+   "Naval reactors": 14,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 5,
-   "Comanche Peak": 5,
+   "Comanche Peak": 4,
    "PJM grid": 7,
-   "ERCOT grid": 15,
+   "ERCOT grid": 12,
    "Data-center nuclear deals": 10,
-   "Japan restarts": 10,
+   "Japan restarts": 15,
    "China new builds": 9,
    "Congress and laws": 45,
    "NRC decisions": 10,
-   "Energy Department": 54,
+   "Energy Department": 51,
    "White House and executive orders": 30,
    "Tariffs and trade": 2,
-   "India": 19,
-   "South Korea": 82,
+   "India": 30,
+   "South Korea": 100,
    "Europe new builds": 65,
    "France and UK": 17,
-   "Middle East": 55,
-   "Asia newcomers": 17,
+   "Middle East": 54,
+   "Asia newcomers": 41,
    "Canada SMRs": 8,
-   "Big tech power deals": 62,
-   "Iran": 27,
-   "North Korea": 62,
-   "War zones": 37,
-   "AUKUS and navies": 17,
-   "Weapons programs": 21,
+   "Big tech power deals": 59,
+   "Iran": 55,
+   "North Korea": 61,
+   "War zones": 15,
+   "AUKUS and navies": 27,
+   "Weapons programs": 31,
    "Stockpiles and reserves": 29,
-   "Sprott trust": 4,
-   "Uranium price": 50,
+   "Sprott trust": 6,
+   "Uranium price": 27,
    "US policy": 0,
    "Lawsuits and investigations": 33,
-   "Workers and jobs": 34,
+   "Workers and jobs": 43,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 50,
    "Federal Register (uranium)": 11,
@@ -220292,16 +220333,16 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 02:15",
-  "total": 891,
-  "week": 607,
+  "updated": "2026-11-27 02:46",
+  "total": 893,
+  "week": 606,
   "places": {
+   "South Korea": 53,
    "Uranium price": 52,
-   "South Korea": 52,
    "Weapons programs": 34,
    "Europe new builds": 33,
-   "AUKUS and navies": 31,
    "Workers and jobs": 30,
+   "AUKUS and navies": 30,
    "Kazakhstan": 30,
    "Asia newcomers": 27,
    "Piketon": 26,
@@ -220311,7 +220352,7 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-27 01:56",
+   "at": "2026-11-27 02:26",
    "sources": {
     "Cigar Lake": 3,
     "McArthur River / Key Lake": 4,
@@ -220323,48 +220364,48 @@
     "Westinghouse": 9,
     "Kazakhstan": 43,
     "Niger": 9,
-    "Namibia": 29,
+    "Namibia": 42,
     "Russia supply": 1,
     "Piketon": 23,
     "HALEU": 12,
-    "Wyoming ISR": 34,
+    "Wyoming ISR": 27,
     "South Texas ISR": 2,
     "White Mesa / Utah": 8,
-    "Rare earths (Energy Fuels)": 11,
+    "Rare earths (Energy Fuels)": 13,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 11,
+    "Naval reactors": 14,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 5,
-    "Comanche Peak": 5,
+    "Comanche Peak": 4,
     "PJM grid": 7,
-    "ERCOT grid": 15,
+    "ERCOT grid": 12,
     "Data-center nuclear deals": 10,
-    "Japan restarts": 10,
+    "Japan restarts": 15,
     "China new builds": 9,
     "Congress and laws": 45,
     "NRC decisions": 10,
-    "Energy Department": 54,
+    "Energy Department": 51,
     "White House and executive orders": 30,
     "Tariffs and trade": 2,
-    "India": 19,
-    "South Korea": 82,
+    "India": 30,
+    "South Korea": 100,
     "Europe new builds": 65,
     "France and UK": 17,
-    "Middle East": 55,
-    "Asia newcomers": 17,
+    "Middle East": 54,
+    "Asia newcomers": 41,
     "Canada SMRs": 8,
-    "Big tech power deals": 62,
-    "Iran": 27,
-    "North Korea": 62,
-    "War zones": 37,
-    "AUKUS and navies": 17,
-    "Weapons programs": 21,
+    "Big tech power deals": 59,
+    "Iran": 55,
+    "North Korea": 61,
+    "War zones": 15,
+    "AUKUS and navies": 27,
+    "Weapons programs": 31,
     "Stockpiles and reserves": 29,
-    "Sprott trust": 4,
-    "Uranium price": 50,
+    "Sprott trust": 6,
+    "Uranium price": 27,
     "US policy": 0,
     "Lawsuits and investigations": 33,
-    "Workers and jobs": 34,
+    "Workers and jobs": 43,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 50,
     "Federal Register (uranium)": 11,
@@ -220938,9 +220979,9 @@
   "e446f179fb37cbbd",
   "1bc8a335514e5e60",
   "d53204586a89fe6b",
-  "dd69a7c047abb2b3",
-  "a7baf61adc01832c",
   "b371c50f261a21f0",
+  "a7baf61adc01832c",
+  "dd69a7c047abb2b3",
   "9072aaac75f7221f",
   "7ffb052a70d145c2",
   "8080c5e15c173c5b",
@@ -220972,8 +221013,8 @@
   "b6bd97b3b3412412",
   "da0462559a103d97",
   "28eaa442b6a19a6f",
-  "09bd7b0e348df04b",
   "971d34934a9a192f",
+  "09bd7b0e348df04b",
   "cfc2e129443bfb4f",
   "5b83027a0cf1a496",
   "b92a30725d959e1f",
@@ -220988,6 +221029,7 @@
   "5479a139d625bca1",
   "138f946dbfa677d9",
   "36cbbee89c76a1f7",
+  "a7acd6a8c1d7c080",
   "2c7a3976a5596853",
   "004c1f6d9bc3d5b2",
   "dfc77f4fe94ea6ba",
@@ -221042,7 +221084,6 @@
   "c71238280e152d73",
   "7ba235a2dfd4b4b4",
   "e0b3ad48c50895f3",
-  "87234f250d3b987f",
   "dbd18bd6c4654ec8",
   "21f82ecada6221ca",
   "545d2401ade15843",
@@ -221143,7 +221184,7 @@
   "cf819bf3ea1da08c",
   "020569e75e7d456e",
   "5cd7136060831d45",
-  "a7acd6a8c1d7c080",
+  "87234f250d3b987f",
   "dbc709a6c5911027",
   "73c8ecdc752b197b"
  ],
@@ -223403,7 +223444,7 @@
    }
   ]
  },
- "dossier_at": 1795762567.1880825,
+ "dossier_at": 1795764415.7033923,
  "sector_prices": {
   "_at": 1795760734.0715742,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -223461,80 +223502,80 @@
    "name": "Cameco",
    "price": 61.56,
    "week_pct": -1.42,
-   "built": "2026-11-27 01:56"
+   "built": "2026-11-27 02:26"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.95,
    "week_pct": -4.46,
-   "built": "2026-11-27 01:56"
+   "built": "2026-11-27 02:26"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.69,
    "week_pct": -3.89,
-   "built": "2026-11-27 01:56"
+   "built": "2026-11-27 02:26"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.8,
    "week_pct": -1.64,
-   "built": "2026-11-27 01:56"
+   "built": "2026-11-27 02:26"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.2,
    "week_pct": -7.71,
-   "built": "2026-11-27 01:56"
+   "built": "2026-11-27 02:26"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 83.23,
    "week_pct": -9.3,
-   "built": "2026-11-27 01:56"
+   "built": "2026-11-27 02:26"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.49,
    "week_pct": -3.54,
-   "built": "2026-11-27 01:56"
+   "built": "2026-11-27 02:26"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 235.25,
    "week_pct": -10.46,
-   "built": "2026-11-27 01:56"
+   "built": "2026-11-27 02:26"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 121.32,
    "week_pct": -3.39,
-   "built": "2026-11-27 01:56"
+   "built": "2026-11-27 02:26"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 351.55,
    "week_pct": -2.4,
-   "built": "2026-11-27 01:56"
+   "built": "2026-11-27 02:26"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-27 01:56"
+   "built": "2026-11-27 02:27"
   }
  ],
- "heartbeat": "2026-11-27 02:15",
+ "heartbeat": "2026-11-27 02:46",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -223775,15 +223816,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 428,
-   "used": 390,
+   "asked": 429,
+   "used": 391,
    "notes": {
     "TLN Deals and contracts": 19,
     "CCJ Deals and contracts": 73,
     "BWXT Deals and contracts": 56,
-    "SECTOR Government and laws": 119,
+    "SECTOR Government and laws": 120,
     "UUUU Deals and contracts": 44,
-    "SECTOR Countries": 117,
+    "SECTOR Countries": 118,
     "CEG Deals and contracts": 51,
     "NXE Legal": 22,
     "NXE Deals and contracts": 19,
@@ -223979,8 +224020,8 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 59,
-   "used": 58,
+   "asked": 60,
+   "used": 59,
    "notes": {
     "SECTOR Reactors and power": 2,
     "CEG Places and operations": 26,
@@ -223988,7 +224029,7 @@
     "UEC Places and operations": 12,
     "license_tracker": 4,
     "LEU Business": 5,
-    "plants_now": 8,
+    "plants_now": 9,
     "LEU Deals and contracts": 11,
     "LEU Places and operations": 14,
     "NRC license tracker": 1,
@@ -223999,7 +224040,7 @@
     "plants_now: fleet status and open outages": 1,
     "desk_notes: CEG Places and operations": 2,
     "desk_notes: UUUU Places and operations": 2,
-    "SECTOR Uranium market": 35,
+    "SECTOR Uranium market": 36,
     "TLN Places and operations": 3,
     "UUUU Places and operations": 10,
     "UEC Business": 2,
@@ -228493,6 +228534,17 @@
     "NNE",
     "LEU"
    ]
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "supply",
+   "title": "National Atomic Company Kazatomprom JSC: Higher uranium sales lifted revenue, but costs and FX losses reduced 9M profit - TradingView",
+   "tickers": [
+    "CCJ",
+    "NXE",
+    "DNN",
+    "UEC"
+   ]
   }
  ],
  "vp_skipped": [
@@ -231225,7 +231277,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 02:15",
+ "watchdog_last": "2026-11-27 02:46",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

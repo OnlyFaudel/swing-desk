@@ -28853,5 +28853,70 @@
 "truce",
 "zaporizhzhia"
 ]
+},
+{
+"id": "3aa6c37407351a34",
+"date": "2026-11-26",
+"ts": 1795681080,
+"title": "Kim Jong Un warns of nuclear arsenal expansion: We will not give up, our weapons are an irreversible choice",
+"summary": "",
+"outlet": "Balkanweb.com",
+"link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOM0FlY2lVZVdPUF94dTd0dG5LbFpvZTMxbno3Y0UwWW1iZEMxREJPVDdiMVIzNjdFeFRPaTNZVFpVSFFLbHgyaFh6WnZoaHoxSDJlOGg3ckNPc3RfaDktaEpaSnAtQkpzU21JMEl3QnJDenZJRmx3ZVlZT1dIT0RrQlg0Mnl1cl9FdG95amUwSHJ3R3o2dmtEVGJmSlVDVE1Nek56dkJ2UXFMUm90S0FiV0JaUFJneW0wMHJka184WDhldWdaYXNZOUNtNFJ6dEhRQk1hWDdB?oc=5",
+"place": "Weapons programs",
+"tickers": [
+"BWXT",
+"LEU"
+],
+"tags": [
+"defense",
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 4.8,
+"echo_of": "a6599a087809f578",
+"w": [
+"arsenal",
+"choice",
+"expansion",
+"give",
+"irreversible",
+"jong",
+"kim",
+"not",
+"nuclear",
+"our",
+"warns",
+"weapons"
+]
+},
+{
+"id": "9c87da5481cbb1dd",
+"date": "2026-11-27",
+"ts": 1795740949,
+"title": "KHNP Reviews Dukovany Nuclear Project Preparations",
+"summary": "",
+"outlet": "Businesskorea",
+"link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBVX09TV3JKVnpNX2t0QnNuUHZHbFJRQTJrQW1wUFlqeEdQMUt5QmVVLVIzcTVOaHQtZzBLeHZjWUxjMVdpRE0tNW84bEl0c2FuTUhpa0MxX1pQTTQwSE1KQ19tc2hVOXBxTVZ0TmFwR1d1OTFC?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.56,
+"score": 3.62,
+"echo_of": null,
+"w": [
+"dukovany",
+"khnp",
+"nuclear",
+"preparations",
+"project",
+"reviews"
+]
 }
 ]
