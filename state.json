@@ -906,7 +906,8 @@
   "nightwatch161:2026-11-27": true,
   "recent:2026-11-27": true,
   "mistakes:2026-11-27": true,
-  "ahdip162:2026-11-27": true
+  "ahdip162:2026-11-27": true,
+  "nightwatch162:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -5795,18 +5796,6 @@
  "news_feed": [
   {
    "ticker": "BWXT",
-   "source": "Google News",
-   "title": "Is BWX Technologies (BWXT) A Bargain After Its AP1000 Manufacturing Win? - Simply Wall St",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPQ1BLcG9SNURkNS1lOS1xUjlSekFBdEN0d19ZRlI3NEZyLTZ2OWltZ3ljd0Y5czdjMkZNWmJZWjROV1ZoS0hBekYxdGJqSC1HYUtJY0RRTTNOMUl2c0pDOW15ano1dFg1R1daaXNBR0xXX3BTaXUtOFQzaUJtTWtVd044QnFhMzZYNUxFa2VsSXhYM1FuRHNUN3kxVGpBaTdzS0NRa1RYZlo5QWxkbnZ6VHdGN1o1M2tmS1EtX3VqZW9rbTI5ZHh6bmNFczlWcmVILU1Hb9IB2gFBVV95cUxNWTdaelF1a1FPbHVaOFB1RnEtNVFxbVdjbldVR0EtTGd4eGFWNkFUVmZVQWxKNDFGQnFQZldsNXU3bzlnOGQ0eWZhc05zU0I5dFFZNVJqaDhULTVST1dTM1pnelZpTFF5V1BYRWszM3ZUSl9TQjJ0aFRITENyQVN4blNMUGtvVVd2TTdmYlZpNFpjb29WUk5nVnNTTXU5bkVjVnRTMGRjVUhUUnN0RXhFZnhBeXFsc3dxZVRzZ2prWldUNmN3eVY4bWFtYjh4NFJ5bkJ1R1dwWlRVQQ?oc=5",
-   "ts": 1795633886,
-   "materiality": 4,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "contract_deal",
-   "why": "Simply Wall St valuation recap of an AP1000 win already reported in the desk's deal file."
-  },
-  {
-   "ticker": "BWXT",
    "source": "Local intel: IndexBox (Naval reactors)",
    "title": "Divergent Joins Raytheon on Next-Gen Submarine-Launched Nuclear Cruise Missile - News and Statistics",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQc182Yk9zdkFwRndhVzNrOU1fa0tUQkhkTWx1SDlpZk95N05OY01jdTRqeDZnWjEyMklaMXdacHcwcXJwRkd3a3hEWElHWjdmaVc1Q0VEejZaZ1RFcnN1b09NbFc3RzdPRG1QZkFMR0x2REU4eklJbVZQVm5CNkhTeFUzUHh4a1IwQV9BWE5Kbm5mTmE4R29iUEZGQnVhck9OSG9LcldmbkJqd0dUVy1IeTlrOTQ?oc=5",
@@ -8792,6 +8781,18 @@
    "direction": "neutral",
    "event_type": "policy_tariff",
    "why": "Congress proposal to skip a reactor-building step; not yet law, indirect for uranium miners."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Yahoo Finance",
+   "title": "Is Constellation Energy (CEG) Below Fair Value After Its $5b Asset Sale?",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/constellation-energy-ceg-below-fair-211346306.html?.tsrc=rss",
+   "ts": 1795814026,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Valuation opinion piece on a $5b asset sale that is an old, already-known event."
   }
  ],
  "reviews": [
@@ -9219,7 +9220,7 @@
      "whale": 0.02631,
      "crowd": 0.01703,
      "level": 0.35215,
-     "scout": 0.26395,
+     "scout": 0.26432,
      "review": 0.18537,
      "auditor": 0.04723,
      "strategist": 0.18937,
@@ -10923,16 +10924,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.68092,
+  "day_usd": 0.68129,
   "month": "2026-11",
-  "month_usd": 2.77511,
-  "total_usd": 2.77511,
+  "month_usd": 2.77548,
+  "total_usd": 2.77548,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.26395,
+   "scout": 0.26432,
    "review": 0.18537,
    "auditor": 0.04723,
    "strategist": 0.18937,
@@ -11213,7 +11214,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 16:30 ET",
+ "last_cycle": "2026-11-27 16:41 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -60634,8 +60635,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "7cabb45f8b0c2778",
   "4ee30073db1990ac",
+  "7cabb45f8b0c2778",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -60678,8 +60679,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1715e61816aa5619",
   "1acc6842cd4f6e64",
+  "1715e61816aa5619",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -60810,14 +60811,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "1ed195cb4396cbe7",
   "7c380c991c59f9ba",
+  "1ed195cb4396cbe7",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -61082,6 +61083,7 @@
   "75dabb316f140f2a",
   "ddbc089b36bcfcea",
   "ee1ba4440d7332de",
+  "4a7ba867dc1a1b45",
   "32d10c819f70dc10",
   "78ae44d8def2c746",
   "7c5af14d321efc0e",
@@ -61427,7 +61429,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795814841.6934018,
+ "news_slow_at": 1795815458.9457467,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -227041,7 +227043,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 16:30",
+  "updated": "2026-11-27 16:41",
   "total": 982,
   "week": 596,
   "places": {
@@ -227680,8 +227682,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "b2362be41ae616f1",
   "fd337937e7471e2a",
+  "b2362be41ae616f1",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -227730,10 +227732,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "22ab37dfabeba433",
   "688d746cfc31b58f",
-  "85de31670d4daf9d",
+  "22ab37dfabeba433",
   "f815e45da305cee7",
+  "85de31670d4daf9d",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -230436,12 +230438,12 @@
    "built": "2026-11-27 16:29"
   }
  ],
- "heartbeat": "2026-11-27 16:30",
+ "heartbeat": "2026-11-27 16:41",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 536,
+ "_pushed_feed": 531,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -230677,8 +230679,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 494,
-   "used": 453,
+   "asked": 495,
+   "used": 454,
    "notes": {
     "TLN Deals and contracts": 21,
     "CCJ Deals and contracts": 82,
@@ -230686,7 +230688,7 @@
     "SECTOR Government and laws": 136,
     "UUUU Deals and contracts": 47,
     "SECTOR Countries": 141,
-    "CEG Deals and contracts": 66,
+    "CEG Deals and contracts": 67,
     "NXE Legal": 24,
     "NXE Deals and contracts": 19,
     "DNN Deals and contracts": 17,
@@ -239301,7 +239303,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 16:30",
+ "watchdog_last": "2026-11-27 16:41",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
