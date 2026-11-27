@@ -73,7 +73,9 @@
      "why": "market -3.6%, LEU -9.4% today and -31% under its 20-day high",
      "opened": "2026-11-20",
      "entry_time": "2026-11-20 15:34",
-     "entry": 81.35
+     "entry": 81.35,
+     "exit_reason": "Black Friday exit: our stocks fell from Black Friday's close to Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway",
+     "selling": "2026-11-27"
     },
     "auto": {
      "qty": 0.0,
@@ -116,7 +118,9 @@
      "why": "market -3.6%, VST -7.1% today and -21% under its 20-day high",
      "opened": "2026-11-20",
      "entry_time": "2026-11-20 15:34",
-     "entry": 115.39
+     "entry": 115.39,
+     "exit_reason": "Black Friday exit: our stocks fell from Black Friday's close to Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway",
+     "selling": "2026-11-27"
     },
     "auto": {
      "qty": 0.0,
@@ -857,7 +861,9 @@
   "panic_check:2026-11-27": true,
   "sharpdrop:2026-11-27": true,
   "signals:2026-11-27": true,
-  "epop:2026-11-27": true
+  "epop:2026-11-27": true,
+  "bfexit:2026-11-27": true,
+  "optmark:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -10476,6 +10482,26 @@
    "price": 0.0,
    "status": "pending_new",
    "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:45",
+   "symbol": "LEU",
+   "side": "sell",
+   "kind": "market",
+   "qty": 1.843561,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Black Friday exit: our stocks fell from Black Friday's close to Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway"
+  },
+  {
+   "time": "2026-11-27 12:45",
+   "symbol": "VST",
+   "side": "sell",
+   "kind": "market",
+   "qty": 1.299679,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Black Friday exit: our stocks fell from Black Friday's close to Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway"
   }
  ],
  "active": [
@@ -10883,23 +10909,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 63.44,
-  "NXE": 7.27,
-  "UEC": 5.91,
-  "DNN": 1.9,
-  "UUUU": 5.63,
-  "LEU": 85.18,
-  "BWXT": 115.61,
-  "CEG": 236.59,
-  "VST": 122.3,
-  "TLN": 355.71,
-  "AMD": 414.78,
-  "SMR": 3.45,
-  "NNE": 9.43,
-  "SPY": 725.84,
+  "CCJ": 63.56,
+  "NXE": 7.28,
+  "UEC": 5.92,
+  "DNN": 1.92,
+  "UUUU": 5.64,
+  "LEU": 84.72,
+  "BWXT": 115.59,
+  "CEG": 237.01,
+  "VST": 122.33,
+  "TLN": 356.99,
+  "AMD": 415.99,
+  "SMR": 3.46,
+  "NNE": 9.41,
+  "SPY": 725.97,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 12:40 ET",
+ "last_cycle": "2026-11-27 12:45 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -10962,10 +10988,10 @@
   ]
  },
  "brakes": {
-  "equity": 1037.92,
-  "day_pct": 3.23,
-  "week_pct": 3.74,
-  "drawdown_pct": -1.56,
+  "equity": 1037.5,
+  "day_pct": 3.19,
+  "week_pct": 3.7,
+  "drawdown_pct": -1.6,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -15555,6 +15581,22 @@
   [
    "2026-11-27 12:40",
    1037.92
+  ],
+  [
+   "2026-11-27 12:42",
+   1038.18
+  ],
+  [
+   "2026-11-27 12:43",
+   1037.97
+  ],
+  [
+   "2026-11-27 12:44",
+   1038.18
+  ],
+  [
+   "2026-11-27 12:45",
+   1037.5
   ]
  ],
  "nowcast": {
@@ -60251,7 +60293,7 @@
     0.8549
    ]
   },
-  "time": "2026-11-27 12:41"
+  "time": "2026-11-27 12:45"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -224943,6 +224985,34 @@
     "sub": "Day 4 of building our own options history"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-27 12:45",
+   "who": "exec",
+   "kind": "trade",
+   "title": null,
+   "text": "UUUU: not buying back. The trade was due to end today (or it's already +10% from our buy), so this morning's sale at $5.47 was the exit.",
+   "tickers": [
+    "UUUU"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:45",
+   "who": "chief",
+   "kind": "trade",
+   "title": null,
+   "text": "Black Friday exit: sold LEU, VST early. They were due to sell within 3 sessions, and our stocks have dropped from Black Friday's close to Monday in 15 of the last 22 years (-1.7% on average since 2019).",
+   "tickers": [
+    "LEU",
+    "VST"
+   ],
+   "art": {
+    "big": "Black Friday exit",
+    "sub": "LEU, VST"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -225925,7 +225995,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 12:41",
+  "updated": "2026-11-27 12:45",
   "total": 961,
   "week": 589,
   "places": {
@@ -229192,12 +229262,12 @@
    "built": "2026-11-27 12:22"
   }
  ],
- "heartbeat": "2026-11-27 12:40",
+ "heartbeat": "2026-11-27 12:45",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 509,
+ "_pushed_feed": 510,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -229428,8 +229498,8 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 115.61,
-  "TLN": 355.715
+  "BWXT": 115.59,
+  "TLN": 356.985
  },
  "notes_audit": {
   "scout": {
@@ -230129,7 +230199,7 @@
    ],
    [
     "2026-11-27",
-    63.44
+    63.56
    ]
   ],
   "NXE": [
@@ -230251,7 +230321,7 @@
    ],
    [
     "2026-11-27",
-    7.27
+    7.28
    ]
   ],
   "UEC": [
@@ -230373,7 +230443,7 @@
    ],
    [
     "2026-11-27",
-    5.91
+    5.92
    ]
   ],
   "DNN": [
@@ -230495,7 +230565,7 @@
    ],
    [
     "2026-11-27",
-    1.9
+    1.92
    ]
   ],
   "UUUU": [
@@ -230617,7 +230687,7 @@
    ],
    [
     "2026-11-27",
-    5.63
+    5.64
    ]
   ],
   "LEU": [
@@ -230739,7 +230809,7 @@
    ],
    [
     "2026-11-27",
-    85.18
+    84.72
    ]
   ],
   "BWXT": [
@@ -230861,7 +230931,7 @@
    ],
    [
     "2026-11-27",
-    115.61
+    115.59
    ]
   ],
   "CEG": [
@@ -230983,7 +231053,7 @@
    ],
    [
     "2026-11-27",
-    236.59
+    237.01
    ]
   ],
   "VST": [
@@ -231105,7 +231175,7 @@
    ],
    [
     "2026-11-27",
-    122.3
+    122.33
    ]
   ],
   "TLN": [
@@ -231227,7 +231297,7 @@
    ],
    [
     "2026-11-27",
-    355.71
+    356.99
    ]
   ],
   "AMD": [
@@ -231349,7 +231419,7 @@
    ],
    [
     "2026-11-27",
-    414.78
+    415.99
    ]
   ],
   "SMR": [
@@ -231471,7 +231541,7 @@
    ],
    [
     "2026-11-27",
-    3.45
+    3.46
    ]
   ],
   "NNE": [
@@ -231593,7 +231663,7 @@
    ],
    [
     "2026-11-27",
-    9.43
+    9.41
    ]
   ]
  },
@@ -237969,7 +238039,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 12:40",
+ "watchdog_last": "2026-11-27 12:45",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -238289,7 +238359,8 @@
    "anchor": 4.94,
    "proceeds": 166.06,
    "jump_pct": 5.4,
-   "sold_at": 5.47
+   "sold_at": 5.47,
+   "done": true
   }
  },
  "gapdown_shadow": [

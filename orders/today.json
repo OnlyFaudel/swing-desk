@@ -111,6 +111,26 @@
    "price": 0.0,
    "status": "pending_new",
    "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:45",
+   "symbol": "LEU",
+   "side": "sell",
+   "kind": "market",
+   "qty": 1.843561,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Black Friday exit: our stocks fell from Black Friday's close to Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway"
+  },
+  {
+   "time": "2026-11-27 12:45",
+   "symbol": "VST",
+   "side": "sell",
+   "kind": "market",
+   "qty": 1.299679,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Black Friday exit: our stocks fell from Black Friday's close to Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway"
   }
  ]
 }
