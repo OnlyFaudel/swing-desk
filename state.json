@@ -669,7 +669,8 @@
   "plantrep:2026-11-27": true,
   "pulsehold:2026-11-27": true,
   "gapshadow:2026-11-27": true,
-  "gapbank:UUUU:2026-11-27": true
+  "gapbank:UUUU:2026-11-27": true,
+  "questioner:2026-11-27:5": true
  },
  "benchmark": {
   "shares": {
@@ -9373,10 +9374,10 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.18911,
+  "day_usd": 0.1943,
   "month": "2026-11",
-  "month_usd": 2.28329,
-  "total_usd": 2.28329,
+  "month_usd": 2.28848,
+  "total_usd": 2.28848,
   "by_role": {
    "macro": 0.23078,
    "whale": 0.02631,
@@ -9391,8 +9392,8 @@
    "investigator": 0.3741,
    "postmortem": 0.00035,
    "researcher": 0.02341,
-   "engineer": 0.0942,
-   "questioner": 0.1625
+   "engineer": 0.09659,
+   "questioner": 0.1653
   }
  },
  "desk_log": [
@@ -9635,23 +9636,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 64.14,
-  "NXE": 7.24,
-  "UEC": 5.91,
-  "DNN": 1.87,
-  "UUUU": 5.49,
-  "LEU": 84.82,
-  "BWXT": 115.33,
-  "CEG": 234.67,
-  "VST": 121.49,
-  "TLN": 352.83,
-  "AMD": 403.57,
-  "SMR": 3.35,
-  "NNE": 9.3,
-  "SPY": 721.33,
-  "SGOV": 100.71
+  "CCJ": 63.85,
+  "NXE": 7.2,
+  "UEC": 5.84,
+  "DNN": 1.86,
+  "UUUU": 5.43,
+  "LEU": 83.83,
+  "BWXT": 114.95,
+  "CEG": 234.13,
+  "VST": 120.99,
+  "TLN": 352.48,
+  "AMD": 402.2,
+  "SMR": 3.33,
+  "NNE": 9.21,
+  "SPY": 720.55,
+  "SGOV": 100.7
  },
- "last_cycle": "2026-11-27 09:57 ET",
+ "last_cycle": "2026-11-27 10:01 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -9714,10 +9715,10 @@
   ]
  },
  "brakes": {
-  "equity": 1027.8,
-  "day_pct": 2.22,
-  "week_pct": 2.73,
-  "drawdown_pct": -2.52,
+  "equity": 1022.39,
+  "day_pct": 1.68,
+  "week_pct": 2.19,
+  "drawdown_pct": -3.04,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -13759,6 +13760,18 @@
   [
    "2026-11-27 09:57",
    1027.8
+  ],
+  [
+   "2026-11-27 09:58",
+   1027.78
+  ],
+  [
+   "2026-11-27 09:59",
+   1024.31
+  ],
+  [
+   "2026-11-27 10:01",
+   1022.39
   ]
  ],
  "nowcast": {
@@ -58455,7 +58468,7 @@
     0.8427
    ]
   },
-  "time": "2026-11-27 09:57"
+  "time": "2026-11-27 10:01"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -58468,8 +58481,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "4ee30073db1990ac",
   "7cabb45f8b0c2778",
+  "4ee30073db1990ac",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -58511,8 +58524,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1acc6842cd4f6e64",
   "1715e61816aa5619",
+  "1acc6842cd4f6e64",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -58640,14 +58653,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "7c380c991c59f9ba",
   "1ed195cb4396cbe7",
+  "7c380c991c59f9ba",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -216033,6 +216046,33 @@
    ],
    "practice": false,
    "end": "09:57"
+  },
+  {
+   "id": "20261127100113798890",
+   "title": "The Questioner, Nov 27 10:01",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-27 10:01",
+   "msgs": [
+    {
+     "t": "10:01",
+     "who": "questioner",
+     "to": "team",
+     "text": "I'm the Questioner, so I'm not weighing in on trades. Two things stand out: the SPY parking-sale halt is still unexplained (who lifts it and whether it blocks the desk), and the General Matter Paducah scoping notice has been raised three times but never answered on whether it touches Centrus. Both are worth an answer before the next session.",
+     "outcome": false,
+     "notes": "question: Who lifts the halt on SPY parking sales, and does it block the desk's other orders until someone clears it?\nwhy it might matter: A halt that quietly stops everything could leave us unable to act on setups or exit positions when we need to.\nask: risk\nkind: unexplained\nquestion: Does the General Matter Paducah enrichment scoping notice change Centrus's (LEU) enrichment outlook, or is it years of licensing away from producing anything?\nwhy it might matter: LEU is a core holding and the notice is a possible new competitor; the team has asked this before without a clear written answer.\nask: scout\nkind: maybe_irrelevant\nquestion: Salem 1 at Constellation has been down since Oct 4, now 52 days, the only open outage among our owners. Has anyone checked whether it is still on its planned refueling schedule or running long?\nwhy it might matter: A long outage that runs past its plan could"
+    },
+    {
+     "t": "10:01",
+     "who": "engineer",
+     "to": "questioner",
+     "text": "Salem 1 has been out since Oct 4 for 52 days, but this is refueling season and the fleet is about 96% running for CEG, so a planned outage is routine. Our files show Byron 2, Peach Bottom 2, and Dresden 3 all ran 25-29 days in the same season, so 52 days is long but not alarming. The desk has no schedule or expected-return date for Salem 1, so I can't confirm it's on plan, and I'd rather be honest about that gap than guess.",
+     "outcome": false,
+     "notes": "verdict: unsure\naction: research\nresearch test: Pull Salem 1's planned refueling end date from the owner's outage schedule or NRC event reports; if the return is past plan by more than ~2 weeks, flag CEG as a risk to its earnings guidance and re-check the outage count.\nwhy: Salem 1 is the only CEG unit down and 52 days is well past the 25-29 day norm for this season, but the files have no planned end date, so I can't tell whether it's on schedule. Fleet is 95.8% running, so the effect on CEG is small unless the outage overruns.\nticker: CEG\ndirection: up\ndays: 5\nfiles read: CEG Places and operations, SECTOR Plant outages"
+    }
+   ],
+   "practice": false,
+   "end": "10:01"
   }
  ],
  "feed": [
@@ -221574,6 +221614,19 @@
     "sub": "Live price alert. The team is checking the news."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-27 10:01",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Salem 1 at Constellation has been down since Oct 4, now 52 days, the only open outage among our owners. Has anyone checked whether it is still on its planned refueling schedule or running long? -> unsure",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -222427,7 +222480,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 09:57",
+  "updated": "2026-11-27 10:01",
   "total": 942,
   "week": 595,
   "places": {
@@ -223066,8 +223119,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "fd337937e7471e2a",
   "b2362be41ae616f1",
+  "fd337937e7471e2a",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -223114,10 +223167,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "688d746cfc31b58f",
   "22ab37dfabeba433",
-  "f815e45da305cee7",
+  "688d746cfc31b58f",
   "85de31670d4daf9d",
+  "f815e45da305cee7",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -225404,6 +225457,10 @@
   {
    "q": "Instant review fix (wrong_calls): Track scout calls with a required 'why' field and review hit rate over at least 50 calls before changing any rule.",
    "date": "2026-11-27"
+  },
+  {
+   "q": "Questioner: Pull Salem 1's planned refueling end date from the owner's outage schedule or NRC event reports; if the return is past plan by more than ~2 weeks, flag CEG as a risk to its earnings guidance and re-check the outage count.",
+   "date": "2026-11-27"
   }
  ],
  "research_candidates": [
@@ -225688,12 +225745,12 @@
    "built": "2026-11-27 09:50"
   }
  ],
- "heartbeat": "2026-11-27 09:57",
+ "heartbeat": "2026-11-27 10:01",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 464,
+ "_pushed_feed": 465,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -225924,8 +225981,8 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 115.33,
-  "TLN": 352.83
+  "BWXT": 114.95,
+  "TLN": 352.48
  },
  "notes_audit": {
   "scout": {
@@ -226153,11 +226210,11 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 69,
-   "used": 68,
+   "asked": 70,
+   "used": 69,
    "notes": {
     "SECTOR Reactors and power": 2,
-    "CEG Places and operations": 31,
+    "CEG Places and operations": 32,
     "UEC Deals and contracts": 1,
     "UEC Places and operations": 14,
     "license_tracker": 4,
@@ -226190,7 +226247,8 @@
     "DNN Places and operations": 3,
     "BWXT Business": 1,
     "CEG Deals and contracts": 1,
-    "SECTOR Plants now": 1
+    "SECTOR Plants now": 1,
+    "SECTOR Plant outages": 1
    },
    "since": "2026-11-23"
   },
@@ -226358,8 +226416,8 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 60,
-   "used": 60,
+   "asked": 61,
+   "used": 61,
    "notes": {
     "TLN Snapshot": 45,
     "TLN News": 41,
@@ -226400,7 +226458,11 @@
     "SECTOR Power auctions": 1,
     "coming_up Black Friday entry": 1,
     "recently_canceled_orders": 2,
-    "SECTOR PJM auction": 1
+    "SECTOR PJM auction": 1,
+    "SPY parking halt (questioner history)": 1,
+    "PJM / Centrus items in already_asked": 1,
+    "plants open_outages": 1,
+    "coming_up Federal Register reminders": 1
    },
    "since": "2026-11-23"
   },
@@ -226567,7 +226629,7 @@
    ],
    [
     "2026-11-27",
-    64.14
+    63.85
    ]
   ],
   "NXE": [
@@ -226689,7 +226751,7 @@
    ],
    [
     "2026-11-27",
-    7.24
+    7.2
    ]
   ],
   "UEC": [
@@ -226811,7 +226873,7 @@
    ],
    [
     "2026-11-27",
-    5.91
+    5.84
    ]
   ],
   "DNN": [
@@ -226933,7 +226995,7 @@
    ],
    [
     "2026-11-27",
-    1.87
+    1.86
    ]
   ],
   "UUUU": [
@@ -227055,7 +227117,7 @@
    ],
    [
     "2026-11-27",
-    5.49
+    5.43
    ]
   ],
   "LEU": [
@@ -227177,7 +227239,7 @@
    ],
    [
     "2026-11-27",
-    84.82
+    83.83
    ]
   ],
   "BWXT": [
@@ -227299,7 +227361,7 @@
    ],
    [
     "2026-11-27",
-    115.33
+    114.95
    ]
   ],
   "CEG": [
@@ -227421,7 +227483,7 @@
    ],
    [
     "2026-11-27",
-    234.67
+    234.13
    ]
   ],
   "VST": [
@@ -227543,7 +227605,7 @@
    ],
    [
     "2026-11-27",
-    121.49
+    120.99
    ]
   ],
   "TLN": [
@@ -227665,7 +227727,7 @@
    ],
    [
     "2026-11-27",
-    352.83
+    352.48
    ]
   ],
   "AMD": [
@@ -227787,7 +227849,7 @@
    ],
    [
     "2026-11-27",
-    403.57
+    402.2
    ]
   ],
   "SMR": [
@@ -227909,7 +227971,7 @@
    ],
    [
     "2026-11-27",
-    3.35
+    3.33
    ]
   ],
   "NNE": [
@@ -228031,7 +228093,7 @@
    ],
    [
     "2026-11-27",
-    9.3
+    9.21
    ]
   ]
  },
@@ -229582,6 +229644,16 @@
    "price": 1.87,
    "result": null,
    "why": "The basket is below its 10-day average, DNN is 19-22% below its 50- and 20-day averages, and the notes show drift after weakness is unreliable in this regime. Headlines are recycled and there is no da"
+  },
+  {
+   "role": "engineer",
+   "ticker": "CEG",
+   "direction": "up",
+   "days": 5,
+   "date": "2026-11-27",
+   "price": 234.13,
+   "result": null,
+   "why": "Salem 1 is the only CEG unit down and 52 days is well past the 25-29 day norm for this season, but the files have no planned end date, so I can't tell whether it's on schedule. Fleet is 95.8% running,"
   }
  ],
  "after_sale": [],
@@ -230769,6 +230841,15 @@
    "answer": "Reading the files: the halt is a safety stop the bot raised after three SPY parking-sale rejections with a malfunction code, and the files don't show any automatic lift condition or a named decider. From the desk notes, the only documented unlock is the basket gate reopening, which is a market condition and doesn't clear a bot safety halt, so a human has to review the rejections and clear it. Nothing in the files says those rejected orders left a position half-open, and LIVE_ORDERS_RIGHT_NOW is empty, so nothing is resting now. Agree with the Questioner that this needs an owner check before tomorrow's session.",
    "verdict": "relevant",
    "action": "tell_owner"
+  },
+  {
+   "t": "2026-11-27 10:01",
+   "question": "Salem 1 at Constellation has been down since Oct 4, now 52 days, the only open outage among our owners. Has anyone checked whether it is still on its planned refueling schedule or running long?",
+   "kind": "odd",
+   "asked": "engineer",
+   "answer": "Salem 1 has been out since Oct 4 for 52 days, but this is refueling season and the fleet is about 96% running for CEG, so a planned outage is routine. Our files show Byron 2, Peach Bottom 2, and Dresden 3 all ran 25-29 days in the same season, so 52 days is long but not alarming. The desk has no schedule or expected-return date for Salem 1, so I can't confirm it's on plan, and I'd rather be honest about that gap than guess.",
+   "verdict": "unsure",
+   "action": "research"
   }
  ],
  "reactor_view": {
@@ -233519,8 +233600,8 @@
   }
  ],
  "movers": {
-  "at": 1795781038.2965593,
-  "time": "2026-11-27 07:03",
+  "at": 1795791673.7971299,
+  "time": "2026-11-27 10:01",
   "list": [
    {
     "ticker": "LEU",
@@ -233529,27 +233610,27 @@
     "why": [
      "-55% under its 2-month high"
     ],
-    "price": 83.19,
+    "price": 83.75,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "UEC",
     "core": true,
-    "volatility_pct": 89,
+    "volatility_pct": 90,
     "why": [
-     "-52% under its 2-month high"
+     "-51% under its 2-month high"
     ],
-    "price": 5.69,
+    "price": 5.84,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "UUUU",
     "core": true,
-    "volatility_pct": 76,
+    "volatility_pct": 80,
     "why": [
-     "-64% under its 2-month high"
+     "-63% under its 2-month high"
     ],
-    "price": 5.21,
+    "price": 5.44,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -233559,7 +233640,7 @@
     "why": [
      "-31% under its 2-month high"
     ],
-    "price": 136.34,
+    "price": 136.77,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -233567,9 +233648,19 @@
     "core": false,
     "volatility_pct": 138,
     "why": [
-     "-38% under its 2-month high"
+     "-39% under its 2-month high"
     ],
-    "price": 149.3,
+    "price": 146.16,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "MU",
+    "core": false,
+    "volatility_pct": 134,
+    "why": [
+     "-44% under its 2-month high"
+    ],
+    "price": 614.01,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -233577,20 +233668,10 @@
     "core": false,
     "volatility_pct": 133,
     "why": [
-     "-37% under its 2-month high",
-     "-23% in 5 days"
+     "-38% under its 2-month high",
+     "-18% in 5 days"
     ],
-    "price": 406.03,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "MU",
-    "core": false,
-    "volatility_pct": 133,
-    "why": [
-     "-45% under its 2-month high"
-    ],
-    "price": 601.25,
+    "price": 402.25,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -233600,7 +233681,7 @@
     "why": [
      "-55% under its 2-month high"
     ],
-    "price": 19.47,
+    "price": 19.66,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -233610,18 +233691,27 @@
     "why": [
      "-40% under its 2-month high"
     ],
-    "price": 173.37,
+    "price": 174.52,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
     "ticker": "SMR",
     "core": false,
-    "volatility_pct": 110,
+    "volatility_pct": 108,
     "why": [
-     "-71% under its 2-month high",
-     "-17% in 5 days"
+     "-70% under its 2-month high"
     ],
-    "price": 3.25,
+    "price": 3.34,
+    "note": "big moves 5-7x more likely here, in either direction"
+   },
+   {
+    "ticker": "NNE",
+    "core": false,
+    "volatility_pct": 106,
+    "why": [
+     "-52% under its 2-month high"
+    ],
+    "price": 9.21,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -233629,19 +233719,9 @@
     "core": false,
     "volatility_pct": 105,
     "why": [
-     "-37% under its 2-month high"
+     "-36% under its 2-month high"
     ],
-    "price": 154.17,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "NNE",
-    "core": false,
-    "volatility_pct": 104,
-    "why": [
-     "-54% under its 2-month high"
-    ],
-    "price": 8.85,
+    "price": 156.48,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -233649,9 +233729,9 @@
     "core": false,
     "volatility_pct": 99,
     "why": [
-     "-40% under its 2-month high"
+     "-39% under its 2-month high"
     ],
-    "price": 103.71,
+    "price": 105.35,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
@@ -233659,29 +233739,19 @@
     "core": false,
     "volatility_pct": 87,
     "why": [
-     "-36% under its 2-month high"
+     "-35% under its 2-month high"
     ],
-    "price": 103.88,
+    "price": 104.58,
     "note": "big moves 5-7x more likely here, in either direction"
    },
    {
-    "ticker": "AVGO",
+    "ticker": "FCX",
     "core": false,
-    "volatility_pct": 83,
+    "volatility_pct": 70,
     "why": [
-     "-15% in 5 days"
+     "-35% under its 2-month high"
     ],
-    "price": 300.86,
-    "note": "big moves 5-7x more likely here, in either direction"
-   },
-   {
-    "ticker": "GEV",
-    "core": false,
-    "volatility_pct": 76,
-    "why": [
-     "-30% under its 2-month high"
-    ],
-    "price": 715.0,
+    "price": 49.95,
     "note": "big moves 5-7x more likely here, in either direction"
    }
   ]
@@ -233799,7 +233869,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 09:57",
+ "watchdog_last": "2026-11-27 10:01",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
