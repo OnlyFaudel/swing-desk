@@ -870,7 +870,7 @@
   "orbsip_t": 1795760026.701552,
   "catalysts2:2026-11-27": true,
   "ev:f5e72e5ea293": true,
-  "orbsip_fix_t": 1795782280.5885315,
+  "orbsip_fix_t": 1795815949.3843002,
   "questioner:2026-11-27:3": true,
   "premarket:2026-11-27": true,
   "uprice:2026-11-27": true,
@@ -907,7 +907,9 @@
   "recent:2026-11-27": true,
   "mistakes:2026-11-27": true,
   "ahdip162:2026-11-27": true,
-  "nightwatch162:2026-11-27": true
+  "nightwatch162:2026-11-27": true,
+  "ahdip163:2026-11-27": true,
+  "intraday:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -9220,7 +9222,7 @@
      "whale": 0.02631,
      "crowd": 0.01703,
      "level": 0.35215,
-     "scout": 0.26432,
+     "scout": 0.26472,
      "review": 0.18537,
      "auditor": 0.04723,
      "strategist": 0.18937,
@@ -10924,16 +10926,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.68129,
+  "day_usd": 0.68169,
   "month": "2026-11",
-  "month_usd": 2.77548,
-  "total_usd": 2.77548,
+  "month_usd": 2.77588,
+  "total_usd": 2.77588,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.26432,
+   "scout": 0.26472,
    "review": 0.18537,
    "auditor": 0.04723,
    "strategist": 0.18937,
@@ -11214,7 +11216,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 16:41 ET",
+ "last_cycle": "2026-11-27 16:51 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -60635,8 +60637,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "4ee30073db1990ac",
   "7cabb45f8b0c2778",
+  "4ee30073db1990ac",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -60679,8 +60681,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1acc6842cd4f6e64",
   "1715e61816aa5619",
+  "1acc6842cd4f6e64",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -60811,14 +60813,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "7c380c991c59f9ba",
   "1ed195cb4396cbe7",
+  "7c380c991c59f9ba",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -61070,6 +61072,7 @@
   "efc408c17da0c385",
   "6305a538f3553f7a",
   "5b01b61297fa5566",
+  "bc7af840aa242e64",
   "be66564c2d2d0a07",
   "5e042fd73e80d40b",
   "04dd9aeafd90d9b4",
@@ -61429,7 +61432,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795815458.9457467,
+ "news_slow_at": 1795816086.218779,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -227043,7 +227046,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 16:41",
+  "updated": "2026-11-27 16:51",
   "total": 982,
   "week": 596,
   "places": {
@@ -227682,8 +227685,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "fd337937e7471e2a",
   "b2362be41ae616f1",
+  "fd337937e7471e2a",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -227732,10 +227735,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "688d746cfc31b58f",
   "22ab37dfabeba433",
-  "f815e45da305cee7",
+  "688d746cfc31b58f",
   "85de31670d4daf9d",
+  "f815e45da305cee7",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -230438,7 +230441,7 @@
    "built": "2026-11-27 16:29"
   }
  ],
- "heartbeat": "2026-11-27 16:41",
+ "heartbeat": "2026-11-27 16:51",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -230679,15 +230682,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 495,
-   "used": 454,
+   "asked": 496,
+   "used": 455,
    "notes": {
     "TLN Deals and contracts": 21,
     "CCJ Deals and contracts": 82,
     "BWXT Deals and contracts": 56,
-    "SECTOR Government and laws": 136,
+    "SECTOR Government and laws": 137,
     "UUUU Deals and contracts": 47,
-    "SECTOR Countries": 141,
+    "SECTOR Countries": 142,
     "CEG Deals and contracts": 67,
     "NXE Legal": 24,
     "NXE Deals and contracts": 19,
@@ -239303,7 +239306,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 16:41",
+ "watchdog_last": "2026-11-27 16:51",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
