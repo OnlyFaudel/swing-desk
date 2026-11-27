@@ -928,7 +928,9 @@
   "sput:2026-11-27": true,
   "ahdip181:2026-11-27": true,
   "nightwatch181:2026-11-27": true,
-  "ahdip182:2026-11-27": true
+  "ahdip182:2026-11-27": true,
+  "nightwatch182:2026-11-27": true,
+  "ahdip183:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -5817,18 +5819,6 @@
  "news_feed": [
   {
    "ticker": "CCJ",
-   "source": "Google News",
-   "title": "CanAlaska Uranium (TSXV:CVV): What Did West McArthur Summer Drilling Show? - Kalkine Media",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOakJLUExZNG9wWVRNblN2RldxLTVKd193TXE1a2hNbDdPV0pnem1iLXlxTWFuRmZCZkk3OXB4b2FVeUIyUndWZFBIZ2FwNkxkS2Y0R0Vyb2s3RkRYVnJtYXFZNGV2X1dvcnNLbXZoeFNQSGQ0eGFSd3c1aG9vcElCV1RSWHpNbk15UlNhbjI3VlBPd1FGeG0wa0VHYVRfRzhXYmp6OWkxUlVMakYzZEhF?oc=5",
-   "ts": 1795632780,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Exploration drill results for CanAlaska, a separate junior miner; not Cameco news."
-  },
-  {
-   "ticker": "CCJ",
    "source": "Google News: Kazatomprom",
    "title": "Kazatomprom stock drops more than 4% after top executives detained - Kursiv Media",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdVRxWk9qdGhVN3RqTUFNNUc2ZGlCX3AtM3JqWmFiNFpsS21wclNBSkk3ZE5kVHNWTlRLWXc5S1QzNDhNU2RZaUtYVzJBZDlmOHdSM2JuUWdEc3UtREx4ZkdBRXhXNGFJTk5UN3pFeFhpR1d6US14T2VHVjI0TFczRzdqMEdwS2gwcmJNanU4YVJsR0RXRWhhbUREYWpyU0xpaEkydl9aZ0JDMWdBTl9oOWd5aHg?oc=5",
@@ -8814,6 +8804,18 @@
    "direction": "neutral",
    "event_type": "supply",
    "why": "Kazatomprom quarterly earnings call transcript; a Yahoo recap of an older call, mostly restating known production guidance."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "A Look at Cameco Corp (CCJ) After 3.9% Gain -- GF Value $69.03 v - GuruFocus",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONlowVDloV3JOYzBobU9BX1IzR0FIRTd5SFAwNUlTR205SDZYOThWZU5sbS1paVBMZ1hlREJhSENlWWNYWEt4RWtIZmZOWGJjNmszRElYSGxqcTdsby1QeTF5VlpmaG9rUHB1VTZWbW5qcVI3bk1GQ0FRaVNGck5rZ0dlNjlrR3BXM2VBNTFSMVJoX0dYbnFKMm5XT19rQy0yR2d3YzQ1U21oUQ?oc=5",
+   "ts": 1795822922,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Recap of a past 3.9% price move citing a GuruFocus fair-value estimate; no new company information."
   }
  ],
  "reviews": [
@@ -9241,7 +9243,7 @@
      "whale": 0.02631,
      "crowd": 0.01703,
      "level": 0.35215,
-     "scout": 0.26689,
+     "scout": 0.26734,
      "review": 0.23667,
      "auditor": 0.04723,
      "strategist": 0.18937,
@@ -10945,16 +10947,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.73782,
+  "day_usd": 0.73827,
   "month": "2026-11",
-  "month_usd": 2.83201,
-  "total_usd": 2.83201,
+  "month_usd": 2.83246,
+  "total_usd": 2.83246,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.26689,
+   "scout": 0.26734,
    "review": 0.23667,
    "auditor": 0.04723,
    "strategist": 0.18937,
@@ -11235,7 +11237,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 18:35 ET",
+ "last_cycle": "2026-11-27 18:46 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -60656,8 +60658,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "4ee30073db1990ac",
   "7cabb45f8b0c2778",
+  "4ee30073db1990ac",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -60699,10 +60701,10 @@
   "80ca077103e2454d",
   "bfa4d042201cf513",
   "982ae178b039d112",
-  "c58aba704a7847d3",
   "5152638d88885c07",
-  "1acc6842cd4f6e64",
+  "c58aba704a7847d3",
   "1715e61816aa5619",
+  "1acc6842cd4f6e64",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -60834,14 +60836,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "7c380c991c59f9ba",
   "1ed195cb4396cbe7",
+  "7c380c991c59f9ba",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -60908,6 +60910,7 @@
   "5c37ae2a5c6cc9a0",
   "844469477dae7bae",
   "126369127a97f018",
+  "2d7effa483cf87a2",
   "ca2a5c0a1baa2527",
   "7baea97af7cc8870",
   "bda020c3d80b2be8",
@@ -61457,7 +61460,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795822297.018175,
+ "news_slow_at": 1795822962.1035423,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -227126,7 +227129,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 18:35",
+  "updated": "2026-11-27 18:46",
   "total": 987,
   "week": 594,
   "places": {
@@ -227763,8 +227766,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "fd337937e7471e2a",
   "b2362be41ae616f1",
+  "fd337937e7471e2a",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -227813,10 +227816,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "688d746cfc31b58f",
   "22ab37dfabeba433",
-  "f815e45da305cee7",
+  "688d746cfc31b58f",
   "85de31670d4daf9d",
+  "f815e45da305cee7",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -230519,7 +230522,7 @@
    "built": "2026-11-27 18:33"
   }
  ],
- "heartbeat": "2026-11-27 18:35",
+ "heartbeat": "2026-11-27 18:46",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -230760,11 +230763,11 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 501,
-   "used": 460,
+   "asked": 502,
+   "used": 461,
    "notes": {
     "TLN Deals and contracts": 21,
-    "CCJ Deals and contracts": 83,
+    "CCJ Deals and contracts": 84,
     "BWXT Deals and contracts": 57,
     "SECTOR Government and laws": 138,
     "UUUU Deals and contracts": 47,
@@ -239396,7 +239399,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 18:35",
+ "watchdog_last": "2026-11-27 18:46",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
