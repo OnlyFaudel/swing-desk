@@ -902,7 +902,9 @@
   "questioner:2026-11-27:7": true,
   "questioner:2026-11-27:8": true,
   "reconcile:2026-11-27": true,
-  "notecheck:2026-11-27": true
+  "notecheck:2026-11-27": true,
+  "nightwatch161:2026-11-27": true,
+  "recent:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -5792,18 +5794,6 @@
   {
    "ticker": "CCJ",
    "source": "Google News: uranium price",
-   "title": "Jaguar Uranium releases first resource estimate for Colombia project - StreetInsider",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMVRlZmtGUTUtRUR2VXJ5ZktjQlZULUtKY1hpT0FVdnFEaUJ5Z1lJR2VSYUxuaXVrbmFLYWJMU0dnRHZzYm1LUVZHcE1aNmdraXFFbHdRNk5JbG5PSllpZUhZTmctZnpNN2IyR0lKS0R3MTY0LVAtR3V1LU1uNnFRZUNqenVhRkJ4RTBDYWw2V0lhNTNvQUtFOE83LXdfa3JkZXZaQmNHZGI1bmtCVVR6ZW1mTVNwZnRNZ1kwbzRCdzFRak1Zbnc?oc=5",
-   "ts": 1795607871,
-   "materiality": 3,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Early-stage resource estimate for a Colombia uranium project; small, distant, and not a near-term supply change."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: uranium price",
    "title": "Sprott Uranium Miners ETF (URNM) Price Prediction: Bearish structure meets oversold conditions as support comes into focus - Blockchain News",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZ3VVMHJBMEE3Tm5LckIxSUViN1JYa2NTUlp3MWpoaDVuU2s0bVV6U1RRZUV1ekdNMjhNRFF1al93ZDN4S0pKU3Z0M0xCYkZBdnY4TTJncFEtSU81a1kyMW1MMDBISktmTkZ3TG5EMkNJelFQdTkxdXZfNkZkR2ZJeVNJLWVRLWE3Wm9PTHZVZ3JIdmtScXpHbDV1R2VGVENZTE1jX0tpZjhwQQ?oc=5",
    "ts": 1795602120,
@@ -8788,6 +8778,18 @@
    "direction": "up",
    "event_type": "earnings",
    "why": "Raised 2026 earnings guidance is genuinely new company-specific information, though a guidance raise may already be partly priced in."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News",
+   "title": "Constellation Energy Raises Full-Year Earnings Guidance - Wisevoter",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNekp4YnV1V0xEemdFVGNlUS1acnNLRWZ6emRQVjNFTEFCcTlHc2tjSTUwYUNicy1hRHJPcWdsbUNxUFNOemdhQXdDcE5aU3lvSXktX2YyRS1icEgybExhVHk0elhQQlVRWElEaUdSbGNrU25Hd0dqaTVtV1RzV3pjZm9haEtaOFFZTXBQTEJlZWFZLXgxU3dR?oc=5",
+   "ts": 1795813429,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "earnings",
+   "why": "Raised full-year earnings guidance is company-specific and new, though headline is a single-source aggregator item."
   }
  ],
  "reviews": [
@@ -9215,7 +9217,7 @@
      "whale": 0.02631,
      "crowd": 0.01703,
      "level": 0.35215,
-     "scout": 0.26264,
+     "scout": 0.26304,
      "review": 0.1389,
      "auditor": 0.04723,
      "strategist": 0.18937,
@@ -10919,16 +10921,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.63315,
+  "day_usd": 0.63355,
   "month": "2026-11",
-  "month_usd": 2.72733,
-  "total_usd": 2.72733,
+  "month_usd": 2.72773,
+  "total_usd": 2.72773,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.26264,
+   "scout": 0.26304,
    "review": 0.1389,
    "auditor": 0.04723,
    "strategist": 0.18937,
@@ -11209,7 +11211,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 16:15 ET",
+ "last_cycle": "2026-11-27 16:20 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -61037,6 +61039,7 @@
   "af6eb78442aeb47e",
   "fd3ef0ec3b126f84",
   "62c6f2554fde23d5",
+  "ddce98ff234d4a00",
   "2b8ac242c7c5754f",
   "ce4e13f4ad219801",
   "ffa36b0bf7521b7f",
@@ -61268,6 +61271,7 @@
   "bffbce0b54f324a7",
   "f16660c269a6613c",
   "a580f7b834592fce",
+  "81ec808bf3d0652b",
   "a82f81d0eb01a7ed",
   "3d2ffec4f5d12080",
   "cdc78121c1406bce",
@@ -61418,10 +61422,9 @@
   "5d22d1b6e3da5fb6",
   "068e5507f464ca6e",
   "16c52bc5bc8110db",
-  "46c5572fb4069bdf",
-  "ddce98ff234d4a00"
+  "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795813529.7240336,
+ "news_slow_at": 1795814200.1245112,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -225950,6 +225953,19 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-27 16:20",
+   "who": "researcher",
+   "kind": "data",
+   "title": null,
+   "text": "Recent-era practice book (rules that only worked since 2019, no money): rsi2_dip: 0 closed, no results yet; worst_week: 0 closed, no results yet; four_down: 0 closed, no results yet; quarter_turn: 0 closed, no results yet; momentum_switch: 0 closed, no results yet; capitulation: 0 closed, no results yet; tech_panic: 0 closed, no results yet; vvix_spike: 0 closed, no results yet; ai_scare: 0 closed, no results yet; dry_drop: 0 closed, no results yet; dry_rally: 0 closed, no results yet; tg_week_dip: 7 closed, +9.07% vs S&P each; holiday_dip: 44 closed, +5.91% vs S&P each; sprott_issuing: 0 closed, no results yet.",
+   "tickers": [],
+   "art": {
+    "big": "Recent-era practice book",
+    "sub": "Is this market different? Live scores"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -226766,6 +226782,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "CEG",
+   "type": "earnings",
+   "title": "Constellation Energy Raises Full-Year Earnings Guidance - Wisevoter",
+   "date": "2026-11-27",
+   "price": 238.15,
+   "materiality": 6,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -226978,7 +227006,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 16:15",
+  "updated": "2026-11-27 16:20",
   "total": 979,
   "week": 595,
   "places": {
@@ -227891,7 +227919,7 @@
   }
  ],
  "memory_view": {
-  "events": 1805,
+  "events": 1806,
   "with_outcomes": 1337,
   "playbooks": {
    "acquisition": {
@@ -228478,15 +228506,6 @@
   "recent": [
    {
     "date": "2026-11-27",
-    "ticker": "CEG",
-    "title": "IAEA working with Russia, Ukraine on ceasefire to repair power link at Zaporizhzhia nuclear plant",
-    "type": "intel_geopolitics",
-    "r0": 1.2,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-27",
     "ticker": "CCJ",
     "title": "Kim Jong-un Unveils Seven Nuclear Warheads Targeting South Korea",
     "type": "intel_defense",
@@ -228833,6 +228852,15 @@
     "title": "Constellation Energy raises 2026 earnings guida... - Pluang",
     "type": "earnings",
     "r0": 1.2,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-27",
+    "ticker": "CEG",
+    "title": "Constellation Energy Raises Full-Year Earnings Guidance - Wisevoter",
+    "type": "earnings",
+    "r0": null,
     "r5": null,
     "r20": null
    }
@@ -230367,12 +230395,12 @@
    "built": "2026-11-27 15:58"
   }
  ],
- "heartbeat": "2026-11-27 16:15",
+ "heartbeat": "2026-11-27 16:20",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 534,
+ "_pushed_feed": 535,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -230608,8 +230636,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 491,
-   "used": 450,
+   "asked": 492,
+   "used": 451,
    "notes": {
     "TLN Deals and contracts": 21,
     "CCJ Deals and contracts": 81,
@@ -230617,7 +230645,7 @@
     "SECTOR Government and laws": 135,
     "UUUU Deals and contracts": 46,
     "SECTOR Countries": 141,
-    "CEG Deals and contracts": 65,
+    "CEG Deals and contracts": 66,
     "NXE Legal": 24,
     "NXE Deals and contracts": 19,
     "DNN Deals and contracts": 17,
@@ -239222,7 +239250,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 16:15",
+ "watchdog_last": "2026-11-27 16:20",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -239834,7 +239862,7 @@
    "dry_drop": {
     "what": "Our 10 or a related stock falls 8%+ in 10 sessions while its 10-day volume is 30%+ below its prior 50-day average (sellers running out): buy the close, sell after 10 sessions (2008-18 -0.45% vs S&P, 2019-26 +2.14% (t 3.3); big US stocks -0.18% / +0.22%: recent and nuclear-only)",
     "closed": 0,
-    "open": 0,
+    "open": 1,
     "avg_pct": null,
     "avg_vs_spy_pct": null,
     "win_pct": null,
@@ -239853,21 +239881,21 @@
    },
    "tg_week_dip": {
     "what": "Thanksgiving week (Mon-Wed): one of our 10 trades 5%+ under yesterday's close (a resting limit order would fill at that price, or at the open if it opens lower): buy, sell at the Black Friday close (2007-18 +7.9%/buy vs -0.4% for the same trade in ordinary weeks, 2019-25 +4.5% vs +0.8%; ~600 other stocks +3.5%/+1.9% vs -0.3%/-0.7%; only 14 weeks with fills in our 10, t 1.5-2.5: small, so practice first)",
-    "closed": 0,
-    "open": 7,
-    "avg_pct": null,
-    "avg_vs_spy_pct": null,
-    "win_pct": null,
+    "closed": 7,
+    "open": 0,
+    "avg_pct": 10.39,
+    "avg_vs_spy_pct": 9.07,
+    "win_pct": 100,
     "t": null,
     "candidate": false
    },
    "holiday_dip": {
     "what": "Any of the 3 sessions before a market holiday: our 10 or a related stock trades 3%+ under yesterday's close (limit fill): buy, sell at the first close after the holiday (2007-18 +0.32%/buy vs -0.05% ordinary days, 2019-25 +0.52% vs +0.12%, t 2.1/2.4; ~600 other stocks show nothing (+0.02 / -0.17): fails the independent check, nuclear-only)",
-    "closed": 0,
-    "open": 44,
-    "avg_pct": null,
-    "avg_vs_spy_pct": null,
-    "win_pct": null,
+    "closed": 44,
+    "open": 0,
+    "avg_pct": 7.24,
+    "avg_vs_spy_pct": 5.91,
+    "win_pct": 98,
     "t": null,
     "candidate": false
    },
