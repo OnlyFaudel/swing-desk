@@ -900,7 +900,9 @@
   "optmark:2026-11-27": true,
   "park:2026-11-27": true,
   "questioner:2026-11-27:7": true,
-  "questioner:2026-11-27:8": true
+  "questioner:2026-11-27:8": true,
+  "reconcile:2026-11-27": true,
+  "notecheck:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -9213,7 +9215,7 @@
      "whale": 0.02631,
      "crowd": 0.01703,
      "level": 0.35215,
-     "scout": 0.26224,
+     "scout": 0.26264,
      "review": 0.1389,
      "auditor": 0.04723,
      "strategist": 0.18937,
@@ -10917,16 +10919,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.63275,
+  "day_usd": 0.63315,
   "month": "2026-11",
-  "month_usd": 2.72693,
-  "total_usd": 2.72693,
+  "month_usd": 2.72733,
+  "total_usd": 2.72733,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.26224,
+   "scout": 0.26264,
    "review": 0.1389,
    "auditor": 0.04723,
    "strategist": 0.18937,
@@ -11207,7 +11209,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 16:05 ET",
+ "last_cycle": "2026-11-27 16:15 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -61416,7 +61418,8 @@
   "5d22d1b6e3da5fb6",
   "068e5507f464ca6e",
   "16c52bc5bc8110db",
-  "46c5572fb4069bdf"
+  "46c5572fb4069bdf",
+  "ddce98ff234d4a00"
  ],
  "news_slow_at": 1795813529.7240336,
  "officer": {
@@ -225937,6 +225940,16 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-27 16:15",
+   "who": "auditor",
+   "kind": "learn",
+   "title": null,
+   "text": "Note check (does each teammate use the stock files?): Scout used them in 92% of 490 answers (mostly SECTOR Countries, SECTOR Government and laws); Level Analyst used them in 95% of 196 answers (mostly SECTOR Uranium market, VST Snapshot); Macro Analyst used them in 98% of 122 answers (mostly SECTOR Uranium market, SECTOR Government and laws); Risk Manager used them in 98% of 121 answers (mostly SECTOR Uranium market, TLN Snapshot); News Investigator used them in 96% of 100 answers (mostly SECTOR Uranium market, TLN Snapshot); Portfolio Manager used them in 100% of 82 answers (mostly SECTOR Uranium market, UEC Snapshot); engineer used them in 99% of 79 answers (mostly SECTOR Uranium market, CEG Places and operations); questioner used them in 100% of 64 answers (mostly TLN Snapshot, TLN News); Researcher used them in 100% of 12 answers (mostly BWXT Snapshot, SECTOR Uranium market); Postmortem used them in 100% of 12 answers (mostly SECTOR Uranium market, BWXT Our trades); Reviewer used them in 88% of 8 answers (mostly UUUU Snapshot, LEU Snapshot); Whale Watcher used them in 100% of 7 answers (mostly CCJ Snapshot, CCJ Ownership and analysts); Crowd Reader used them in 83% of 6 answers",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -226965,7 +226978,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 16:05",
+  "updated": "2026-11-27 16:15",
   "total": 979,
   "week": 595,
   "places": {
@@ -228883,7 +228896,7 @@
   },
   {
    "name": "shadow_patterns",
-   "trials": 8,
+   "trials": 10,
    "verdict": "background research lab"
   },
   {
@@ -228893,8 +228906,8 @@
   },
   {
    "name": "auto_discovery",
-   "trials": 425,
-   "verdict": "2026-11-25 16:07: the bot tested 377 event patterns on 47,529 events (older vs newer half, corrected for the number of tests). 9 hold up: price_3_down_days (miners) -> +1.12% vs the basket (or its normal trend) over the next 5 days (n=1065, up 55%); price_3_down_days (all our stocks) -> +1.10% vs the basket (or its normal trend) over the next 5 days (n=1515, up 55%); price_new_52w_high (miners) -> -1.31% vs the basket (or its normal trend) over the next 5 days (n=348, up 35%); offering_dilution (all our stocks) -> -4.46% vs the basket (or its normal trend) over the next 5 days (n=55, up 24%); price_new_52w_high (all our stocks) -> -0.86% vs the basket (or its normal trend) over the next 5 days (n=704, up 42%); offering_dilution (miners) -> -4.10% vs the basket (or its normal trend) over the next 5 days (n=44, up 25%)"
+   "trials": 426,
+   "verdict": "2026-11-27 16:07: the bot tested 378 event patterns on 47,587 events (older vs newer half, corrected for the number of tests). 9 hold up: price_3_down_days (miners) -> +1.12% vs the basket (or its normal trend) over the next 5 days (n=1065, up 55%); price_3_down_days (all our stocks) -> +1.10% vs the basket (or its normal trend) over the next 5 days (n=1515, up 55%); price_new_52w_high (miners) -> -1.31% vs the basket (or its normal trend) over the next 5 days (n=348, up 35%); offering_dilution (all our stocks) -> -4.46% vs the basket (or its normal trend) over the next 5 days (n=55, up 24%); price_new_52w_high (all our stocks) -> -0.85% vs the basket (or its normal trend) over the next 5 days (n=704, up 42%); offering_dilution (miners) -> -4.10% vs the basket (or its normal trend) over the next 5 days (n=44, up 25%)"
   },
   {
    "name": "macro_drivers",
@@ -230354,12 +230367,12 @@
    "built": "2026-11-27 15:58"
   }
  ],
- "heartbeat": "2026-11-27 16:05",
+ "heartbeat": "2026-11-27 16:15",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 521,
+ "_pushed_feed": 534,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -230595,15 +230608,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 490,
-   "used": 449,
+   "asked": 491,
+   "used": 450,
    "notes": {
     "TLN Deals and contracts": 21,
     "CCJ Deals and contracts": 81,
     "BWXT Deals and contracts": 56,
-    "SECTOR Government and laws": 134,
+    "SECTOR Government and laws": 135,
     "UUUU Deals and contracts": 46,
-    "SECTOR Countries": 140,
+    "SECTOR Countries": 141,
     "CEG Deals and contracts": 65,
     "NXE Legal": 24,
     "NXE Deals and contracts": 19,
@@ -239209,7 +239222,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 16:05",
+ "watchdog_last": "2026-11-27 16:15",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -239872,7 +239885,7 @@
  },
  "boss_notes": [],
  "reconcile": {
-  "date": "2026-11-25",
+  "date": "2026-11-27",
   "gaps": [],
   "ok": true
  },
