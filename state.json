@@ -853,7 +853,8 @@
   "panic:2026-11-27": true,
   "auto:2026-11-27": true,
   "seasonal:2026-11-27": true,
-  "midday:2026-11-27": true
+  "midday:2026-11-27": true,
+  "panic_check:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -10607,12 +10608,12 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.46119,
+  "day_usd": 0.46837,
   "month": "2026-11",
-  "month_usd": 2.55537,
-  "total_usd": 2.55537,
+  "month_usd": 2.56255,
+  "total_usd": 2.56255,
   "by_role": {
-   "macro": 0.24465,
+   "macro": 0.24757,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
@@ -10621,7 +10622,7 @@
    "auditor": 0.02993,
    "strategist": 0.11417,
    "pm": 0.4509,
-   "risk": 0.2485,
+   "risk": 0.25276,
    "investigator": 0.38694,
    "postmortem": 0.01595,
    "researcher": 0.02341,
@@ -10879,23 +10880,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 63.56,
+  "CCJ": 63.49,
   "NXE": 7.26,
   "UEC": 5.89,
-  "DNN": 1.91,
+  "DNN": 1.9,
   "UUUU": 5.62,
-  "LEU": 85.2,
-  "BWXT": 115.92,
-  "CEG": 236.71,
-  "VST": 122.45,
-  "TLN": 356.03,
-  "AMD": 417.05,
-  "SMR": 3.46,
-  "NNE": 9.49,
-  "SPY": 727.02,
+  "LEU": 85.14,
+  "BWXT": 115.77,
+  "CEG": 236.76,
+  "VST": 122.35,
+  "TLN": 355.8,
+  "AMD": 415.88,
+  "SMR": 3.45,
+  "NNE": 9.44,
+  "SPY": 726.57,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 12:37 ET",
+ "last_cycle": "2026-11-27 12:39 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -10958,10 +10959,10 @@
   ]
  },
  "brakes": {
-  "equity": 1039.87,
-  "day_pct": 3.42,
-  "week_pct": 3.93,
-  "drawdown_pct": -1.38,
+  "equity": 1038.3,
+  "day_pct": 3.27,
+  "week_pct": 3.78,
+  "drawdown_pct": -1.53,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -15543,6 +15544,10 @@
   [
    "2026-11-27 12:37",
    1039.87
+  ],
+  [
+   "2026-11-27 12:39",
+   1038.3
   ]
  ],
  "nowcast": {
@@ -60239,7 +60244,7 @@
     0.8455
    ]
   },
-  "time": "2026-11-27 12:37"
+  "time": "2026-11-27 12:39"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -60252,8 +60257,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "7cabb45f8b0c2778",
   "4ee30073db1990ac",
+  "7cabb45f8b0c2778",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -60296,8 +60301,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1715e61816aa5619",
   "1acc6842cd4f6e64",
+  "1715e61816aa5619",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -60427,14 +60432,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "1ed195cb4396cbe7",
   "7c380c991c59f9ba",
+  "1ed195cb4396cbe7",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -61031,7 +61036,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795800508.138617,
+ "news_slow_at": 1795801160.6929827,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -218627,6 +218632,43 @@
    ],
    "practice": false,
    "end": "12:31"
+  },
+  {
+   "id": "20261127123911401954",
+   "title": "Panic trades check-in Nov 27",
+   "tickers": [
+    "LEU",
+    "VST"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-27 12:39",
+   "msgs": [
+    {
+     "t": "12:39",
+     "who": "exec",
+     "to": "team",
+     "text": "Where the panic-day trades stand: LEU +4.7% (bought $81.35, now $85.14, sells 2026-12-01); VST +6.0% (bought $115.39, now $122.35, sells 2026-12-01). Rule: sell at +10% near a close, otherwise on the sell date.",
+     "outcome": false
+    },
+    {
+     "t": "12:39",
+     "who": "macro",
+     "to": "exec",
+     "text": "Macro view: the market is calming, not crashing. The S&P is only down about 0.3% today after a bigger morning drop, the VIX fear gauge fell 5% and is down 29% this week, and the market itself is up 1.4%. Both panic-trade stocks are in profit, so the rebound is on track as of now, though the Black Friday half-day has thin volume and the Monday after has been weak historically.",
+     "outcome": false,
+     "notes": "why: The fear gauge and the S&P moves point to calming, not a crash, and the desk notes say Black Friday to Monday has been weak, so I'd keep the existing exits and not add risk. I checked the desk's seasonal and holiday notes and the Monday-after pattern is only a sentiment check, not a signal.\ndate: 2026-11-27\nticker: LEU\nwhat: Black Friday half-day session; re-check whether the basket reclaims its 10-day average and whether the Federal Register Paducah enrichment notice affects LEU's enrichment outlook\ndate: 2026-12-01\nticker: LEU\nwhat: Panic-trade sell date for LEU (bought $81.35, now $85.14)\ndate: 2026-12-01\nticker: VST\nwhat: Panic-trade sell date for VST (bought $115.39, now $122.35)\nfiles read: SECTOR Uranium market, already_checked_facts"
+    },
+    {
+     "t": "12:39",
+     "who": "risk",
+     "to": "macro",
+     "text": "I agree with the Macro Analyst that the market is calming, but the basket is still below its 10-day average and LEU and VST sit in profit with only a few days to go. My concern is the Black Friday half-day: thin volume and the historically weak Monday after mean the sell date could land in a choppy tape. Nothing I see changes the rule, so I'd just have the owner aware that the Dec 1 exit could be a poor-liquidity day.",
+     "outcome": false,
+     "notes": "why: Checked the panic positions against the latest headlines and the open-outage list; nothing company-specific hits LEU or VST, and the Discoveries file shows the basket weakness-to-rebound pattern is only reliable in the AI era. Nothing I found changes the risk on these two names.\ndate: 2026-11-27\nticker: LEU\nwhat: Federal Register notice on General Matter Paducah enrichment facility; possible competition read-through, impact unconfirmed\ndate: 2026-12-01\nticker: LEU\nwhat: Panic-day trade sell date; Black Friday half-day liquidity may affect execution\ndate: 2026-12-01\nticker: VST\nwhat: Panic-day trade sell date; Black Friday half-day liquidity may affect execution\nfiles read: SECTOR Uranium market, CEG Price behavior"
+    }
+   ],
+   "practice": false,
+   "end": "12:39"
   }
  ],
  "feed": [
@@ -225852,7 +225894,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 12:37",
+  "updated": "2026-11-27 12:39",
   "total": 961,
   "week": 589,
   "places": {
@@ -226491,8 +226533,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "b2362be41ae616f1",
   "fd337937e7471e2a",
+  "b2362be41ae616f1",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -226540,10 +226582,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "22ab37dfabeba433",
   "688d746cfc31b58f",
-  "85de31670d4daf9d",
+  "22ab37dfabeba433",
   "f815e45da305cee7",
+  "85de31670d4daf9d",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -229119,12 +229161,12 @@
    "built": "2026-11-27 12:22"
   }
  ],
- "heartbeat": "2026-11-27 12:37",
+ "heartbeat": "2026-11-27 12:39",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 502,
+ "_pushed_feed": 508,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -229355,8 +229397,8 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 115.92,
-  "TLN": 356.03
+  "BWXT": 115.77,
+  "TLN": 355.8
  },
  "notes_audit": {
   "scout": {
@@ -229647,10 +229689,10 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 120,
-   "used": 118,
+   "asked": 121,
+   "used": 119,
    "notes": {
-    "SECTOR Uranium market": 87,
+    "SECTOR Uranium market": 88,
     "BWXT Snapshot": 8,
     "CCJ Snapshot": 3,
     "UUUU Snapshot": 9,
@@ -229677,7 +229719,7 @@
     "PJM capacity auction (desk fact check)": 1,
     "CCJ Legal": 1,
     "DNN Snapshot": 2,
-    "already_checked_facts": 1
+    "already_checked_facts": 2
    },
    "since": "2026-11-23"
   },
@@ -229726,13 +229768,13 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 117,
-   "used": 115,
+   "asked": 118,
+   "used": 116,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 4,
     "BWXT Snapshot": 6,
-    "SECTOR Uranium market": 58,
+    "SECTOR Uranium market": 59,
     "TLN Snapshot": 39,
     "TLN Legal": 4,
     "BWXT Legal": 3,
@@ -229746,7 +229788,7 @@
     "TLN Discoveries": 3,
     "TLN Leadership and insiders": 15,
     "CEG Snapshot": 2,
-    "CEG Price behavior": 9,
+    "CEG Price behavior": 10,
     "NXE Snapshot": 5,
     "NXE Legal": 4,
     "UEC Legal": 1,
@@ -230056,7 +230098,7 @@
    ],
    [
     "2026-11-27",
-    63.56
+    63.49
    ]
   ],
   "NXE": [
@@ -230422,7 +230464,7 @@
    ],
    [
     "2026-11-27",
-    1.91
+    1.9
    ]
   ],
   "UUUU": [
@@ -230666,7 +230708,7 @@
    ],
    [
     "2026-11-27",
-    85.2
+    85.14
    ]
   ],
   "BWXT": [
@@ -230788,7 +230830,7 @@
    ],
    [
     "2026-11-27",
-    115.92
+    115.77
    ]
   ],
   "CEG": [
@@ -230910,7 +230952,7 @@
    ],
    [
     "2026-11-27",
-    236.71
+    236.76
    ]
   ],
   "VST": [
@@ -231032,7 +231074,7 @@
    ],
    [
     "2026-11-27",
-    122.45
+    122.35
    ]
   ],
   "TLN": [
@@ -231154,7 +231196,7 @@
    ],
    [
     "2026-11-27",
-    356.03
+    355.8
    ]
   ],
   "AMD": [
@@ -231276,7 +231318,7 @@
    ],
    [
     "2026-11-27",
-    417.05
+    415.88
    ]
   ],
   "SMR": [
@@ -231398,7 +231440,7 @@
    ],
    [
     "2026-11-27",
-    3.46
+    3.45
    ]
   ],
   "NNE": [
@@ -231520,7 +231562,7 @@
    ],
    [
     "2026-11-27",
-    9.49
+    9.44
    ]
   ]
  },
@@ -237896,7 +237938,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 12:37",
+ "watchdog_last": "2026-11-27 12:39",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
