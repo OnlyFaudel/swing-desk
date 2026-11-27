@@ -1,0 +1,8 @@
+day,sym,side,entry,exit,reason,ret
+2016-02-12,BG,long,49.3800,51.4700,close,0.042325
+2016-02-12,HLF,short,21.3000,21.3771,stop_same_minute_ticks,-0.003607
+2016-02-12,NUS,short,24.2000,24.3352,stop_same_minute_ticks,-0.005556
+2016-02-12,SSNC,short,25.9700,26.0989,stop_same_minute_ticks,-0.004939
+2016-02-12,Z,short,17.5400,17.6721,stop_same_minute_ticks,-0.007475
+2016-02-16,CSIQ,long,18.6500,18.5311,stop,-0.006375
+2016-02-16,OPLN,long,32.7800,32.6700,stop,-0.003356
