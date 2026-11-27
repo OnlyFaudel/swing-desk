@@ -1,7 +1,7 @@
 {
  "created": "2026-11-20",
  "book": {
-  "cash": 406.3350294824119,
+  "cash": 721.0721142488819,
   "lots": {
    "CCJ": {
     "trade": {
@@ -63,19 +63,8 @@
      "cost": 0.0
     },
     "panic": {
-     "qty": 1.843560997,
-     "cost": 149.969999983956,
-     "setup": "panic_rebound",
-     "by": "rules",
-     "exit_on": "2026-12-01",
-     "stop": null,
-     "target": null,
-     "why": "market -3.6%, LEU -9.4% today and -31% under its 20-day high",
-     "opened": "2026-11-20",
-     "entry_time": "2026-11-20 15:34",
-     "entry": 81.35,
-     "exit_reason": "Black Friday exit: our stocks fell from Black Friday's close to Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway",
-     "selling": "2026-11-27"
+     "qty": 0.0,
+     "cost": 0.0
     },
     "auto": {
      "qty": 0.0,
@@ -108,19 +97,8 @@
      "cost": 0.0
     },
     "panic": {
-     "qty": 1.299679348,
-     "cost": 149.96999996572,
-     "setup": "panic_rebound",
-     "by": "rules",
-     "exit_on": "2026-12-01",
-     "stop": null,
-     "target": null,
-     "why": "market -3.6%, VST -7.1% today and -21% under its 20-day high",
-     "opened": "2026-11-20",
-     "entry_time": "2026-11-20 15:34",
-     "entry": 115.39,
-     "exit_reason": "Black Friday exit: our stocks fell from Black Friday's close to Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway",
-     "selling": "2026-11-27"
+     "qty": 0.0,
+     "cost": 0.0
     },
     "auto": {
      "qty": 0.0,
@@ -447,6 +425,48 @@
     "entry_fill": null,
     "realistic_cost": 0.05,
     "realistic_pnl": 0.9
+   },
+   {
+    "ticker": "VST",
+    "setup": "panic_rebound",
+    "by": "rules",
+    "entry_time": "2026-11-20 15:34",
+    "entry": 115.39,
+    "exit_time": "2026-11-27 12:45",
+    "exit": 122.29,
+    "dollars": 149.97,
+    "pnl": 8.97,
+    "ret": 5.98,
+    "why_in": "market -3.6%, VST -7.1% today and -21% under its 20-day high",
+    "why_out": "Black Friday exit: our stocks fell from Black Friday's close to Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway",
+    "risk_pct": null,
+    "stop": null,
+    "target": null,
+    "zone": null,
+    "entry_fill": null,
+    "realistic_cost": 0.15,
+    "realistic_pnl": 8.82
+   },
+   {
+    "ticker": "LEU",
+    "setup": "panic_rebound",
+    "by": "rules",
+    "entry_time": "2026-11-20 15:34",
+    "entry": 81.35,
+    "exit_time": "2026-11-27 12:45",
+    "exit": 84.51,
+    "dollars": 149.97,
+    "pnl": 5.83,
+    "ret": 3.89,
+    "why_in": "market -3.6%, LEU -9.4% today and -31% under its 20-day high",
+    "why_out": "Black Friday exit: our stocks fell from Black Friday's close to Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway",
+    "risk_pct": null,
+    "stop": null,
+    "target": null,
+    "zone": null,
+    "entry_fill": null,
+    "realistic_cost": 0.15,
+    "realistic_pnl": 5.68
    }
   ],
   "equity": [
@@ -519,6 +539,14 @@
    ],
    [
     16.102410239999998,
+    "2026-11-30"
+   ],
+   [
+    158.93774491000002,
+    "2026-11-30"
+   ],
+   [
+    155.79933985647,
     "2026-11-30"
    ]
   ],
@@ -653,9 +681,9 @@
     "auto"
    ]
   ],
-  "realized_st": 9.44,
+  "realized_st": 24.24,
   "core_w": {},
-  "realistic_costs": 0.77
+  "realistic_costs": 1.07
  },
  "flags": {
   "morning_done": "2026-11-27",
@@ -10637,10 +10665,10 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.46837,
+  "day_usd": 0.47147,
   "month": "2026-11",
-  "month_usd": 2.56255,
-  "total_usd": 2.56255,
+  "month_usd": 2.56565,
+  "total_usd": 2.56565,
   "by_role": {
    "macro": 0.24757,
    "whale": 0.02631,
@@ -10653,7 +10681,7 @@
    "pm": 0.4509,
    "risk": 0.25276,
    "investigator": 0.38694,
-   "postmortem": 0.01595,
+   "postmortem": 0.01905,
    "researcher": 0.02341,
    "engineer": 0.10808,
    "questioner": 0.1708
@@ -10874,9 +10902,11 @@
  ],
  "alpaca_seen_fills": [
   "4767d4ef-b8d5-470f-b36b-c9f8fadebc27",
+  "788ce5c3-e98b-4ed9-aa2d-237f31a52b3a",
   "da941e1a-0b19-4558-91d4-bd6e08a970dd",
   "1819a75a-1b7c-4d06-841b-87d77eb5806b",
   "b652c156-a906-4ef5-952f-b5c45144fe09",
+  "fe248a2e-df5e-4a19-9ba2-64b984b25a41",
   "fbc94e13-8bc9-4b72-becc-b085fe026432",
   "19be7f56-6d3e-4d2c-a41d-8cbe5100f1f5",
   "511293ba-a9a6-418d-a9d5-19f9c326bf14",
@@ -10909,23 +10939,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 63.56,
+  "CCJ": 63.49,
   "NXE": 7.28,
   "UEC": 5.92,
   "DNN": 1.92,
-  "UUUU": 5.64,
-  "LEU": 84.72,
-  "BWXT": 115.59,
-  "CEG": 237.01,
-  "VST": 122.33,
-  "TLN": 356.99,
-  "AMD": 415.99,
-  "SMR": 3.46,
-  "NNE": 9.41,
-  "SPY": 725.97,
-  "SGOV": 100.71
+  "UUUU": 5.66,
+  "LEU": 84.58,
+  "BWXT": 115.66,
+  "CEG": 237.02,
+  "VST": 122.19,
+  "TLN": 357.0,
+  "AMD": 415.51,
+  "SMR": 3.45,
+  "NNE": 9.36,
+  "SPY": 725.43,
+  "SGOV": 100.7
  },
- "last_cycle": "2026-11-27 12:45 ET",
+ "last_cycle": "2026-11-27 12:47 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -10988,10 +11018,10 @@
   ]
  },
  "brakes": {
-  "equity": 1037.5,
-  "day_pct": 3.19,
-  "week_pct": 3.7,
-  "drawdown_pct": -1.6,
+  "equity": 1036.06,
+  "day_pct": 3.04,
+  "week_pct": 3.55,
+  "drawdown_pct": -1.74,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -15597,6 +15627,14 @@
   [
    "2026-11-27 12:45",
    1037.5
+  ],
+  [
+   "2026-11-27 12:45",
+   1037.0
+  ],
+  [
+   "2026-11-27 12:47",
+   1036.06
   ]
  ],
  "nowcast": {
@@ -60293,7 +60331,7 @@
     0.8549
    ]
   },
-  "time": "2026-11-27 12:45"
+  "time": "2026-11-27 12:47"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -218718,6 +218756,62 @@
    ],
    "practice": false,
    "end": "12:39"
+  },
+  {
+   "id": "20261127124555952156",
+   "title": "Postmortem VST: +8.97 on the trade",
+   "tickers": [
+    "VST"
+   ],
+   "kind": "postmortem",
+   "start": "2026-11-27 12:45",
+   "msgs": [
+    {
+     "t": "12:45",
+     "who": "exec",
+     "to": "team",
+     "text": "Closing note on VST: bought $115.39, sold $122.29, result $+8.97. Why did it go this way?",
+     "outcome": false
+    },
+    {
+     "t": "12:46",
+     "who": "postmortem",
+     "to": "exec",
+     "text": "I disagree with reading this as a good trade because it made money. The entry broke our own rule that no new buys happen while the basket is below its 10-day average, so the process was wrong even though the outcome was positive.",
+     "outcome": false,
+     "notes": "verdict: bad_setup\ndecision quality: poor\nwhat happened: VST was bought on a panic_rebound rule at $115.39 while the basket was below its 10-day average, which the desk's rules forbid for new buys. It was sold at $122.29 for a gain of about $8.97 (about 6%), after the Black Friday exit fired, so the gain came from a rule that should not have opened the trade.\nlesson: Panic_rebound and any other buy setup must pass the basket-below-10-day-average block before entry; this trade should not have been opened even though it made money.\nwhy: The trade was supposed to be blocked by the basket filter and it was not, so the process failed even though the result was positive. The outcome is a lucky winner, and the desk's tests show buy-the-dip setups have a weak edge, so I am not crediting the rule.\nticker: VST\ndirection: down\ndays: 3\nfiles read: VST Snapshot, VST Our trades, SECTOR Uranium market"
+    }
+   ],
+   "practice": false,
+   "end": "12:46"
+  },
+  {
+   "id": "20261127124600563158",
+   "title": "Postmortem LEU: +5.83 on the trade",
+   "tickers": [
+    "LEU"
+   ],
+   "kind": "postmortem",
+   "start": "2026-11-27 12:46",
+   "msgs": [
+    {
+     "t": "12:46",
+     "who": "exec",
+     "to": "team",
+     "text": "Closing note on LEU: bought $81.35, sold $84.51, result $+5.83. Why did it go this way?",
+     "outcome": false
+    },
+    {
+     "t": "12:46",
+     "who": "postmortem",
+     "to": "exec",
+     "text": "I agree with the Execution Trader that the fill itself was clean, but this trade should never have been opened. The basket was below its 10-day average, and the rules block new buys there, so the profit was luck and I'd count it as a poor decision.",
+     "outcome": false,
+     "notes": "verdict: bad_setup\ndecision quality: poor\nwhat happened: The LEU panic_rebound entry at $81.35 was made while the whole basket was below its 10-day average, which the desk's rules block for new buys. It made $5.83 on the trade, but the gain came from an entry the rules should have rejected, so it is a lucky win, not a valid one.\nlesson: A panic_rebound buy must pass the basket-below-10-day-average block before entry, even when the stock looks oversold and the trade later wins.\nwhy: I checked the trade against the rules, the desk lessons on the same failure, and the LEU snapshot, which shows the stock about 27% below its 50-day average. The win does not change that the entry broke the filter that exists to stop this kind of buy.\nticker: LEU\ndirection: down\ndays: 3\nfiles read: LEU Snapshot, LEU Our trades, desk_lessons_from_our_mistakes"
+    }
+   ],
+   "practice": false,
+   "end": "12:46"
   }
  ],
  "feed": [
@@ -225013,6 +225107,30 @@
     "sub": "LEU, VST"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-27 12:45",
+   "who": "exec",
+   "kind": "alert",
+   "title": "SOLD VST +6.0%",
+   "text": "P&L +$8.97 | Black Friday exit: our stocks fell from Black Friday's close to Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway",
+   "tickers": [
+    "VST"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:46",
+   "who": "exec",
+   "kind": "alert",
+   "title": "SOLD LEU +3.9%",
+   "text": "P&L +$5.83 | Black Friday exit: our stocks fell from Black Friday's close to Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway",
+   "tickers": [
+    "LEU"
+   ],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -225204,7 +225322,7 @@
    "text": "How are we looking team, progress wise are we learning and getting better? I can see that we have minimized the loss for today pretty well as we were below the initial investment at some point."
   }
  ],
- "huddle_trade_count": 12,
+ "huddle_trade_count": 14,
  "huddle_seen": {
   "fast move: LEU moved -1.5% in 3 min": 1795790180.7418876,
   "BWXT (you asked us to watch it) moved +1.8% since we last looked": 1795790180.741888,
@@ -225928,6 +226046,28 @@
    "decision_quality": "poor",
    "what_happened": "The Thanksgiving run-up rule bought NXE at $6.84 on Nov 24 and sold at $7.27 on Nov 27, a +6.3% gross result on a $15 position. The trade should not have been allowed to open: the basket was below its 10-day average, which the desk's rules block for any new buy, and the seasonal rule did not get that check.",
    "lesson": "Any calendar or seasonal rule (including the Thanksgiving run-up) must pass the basket-below-10-day-average block before it can open a trade; the seasonal pattern does not override it."
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "VST",
+   "setup": "panic_rebound",
+   "pnl": 8.97,
+   "ret": 5.98,
+   "verdict": "bad_setup",
+   "decision_quality": "poor",
+   "what_happened": "VST was bought on a panic_rebound rule at $115.39 while the basket was below its 10-day average, which the desk's rules forbid for new buys. It was sold at $122.29 for a gain of about $8.97 (about 6%), after the Black Friday exit fired, so the gain came from a rule that should not have opened the trade.",
+   "lesson": "Panic_rebound and any other buy setup must pass the basket-below-10-day-average block before entry; this trade should not have been opened even though it made money."
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "LEU",
+   "setup": "panic_rebound",
+   "pnl": 5.83,
+   "ret": 3.89,
+   "verdict": "bad_setup",
+   "decision_quality": "poor",
+   "what_happened": "The LEU panic_rebound entry at $81.35 was made while the whole basket was below its 10-day average, which the desk's rules block for new buys. It made $5.83 on the trade, but the gain came from an entry the rules should have rejected, so it is a lucky win, not a valid one.",
+   "lesson": "A panic_rebound buy must pass the basket-below-10-day-average block before entry, even when the stock looks oversold and the trade later wins."
   }
  ],
  "intel_at": 1795800120.1610093,
@@ -225995,7 +226135,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 12:45",
+  "updated": "2026-11-27 12:47",
   "total": 961,
   "week": 589,
   "places": {
@@ -229262,12 +229402,12 @@
    "built": "2026-11-27 12:22"
   }
  ],
- "heartbeat": "2026-11-27 12:45",
+ "heartbeat": "2026-11-27 12:47",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 510,
+ "_pushed_feed": 512,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -229498,8 +229638,8 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 115.59,
-  "TLN": 356.985
+  "BWXT": 115.66,
+  "TLN": 357.0
  },
  "notes_audit": {
   "scout": {
@@ -230049,16 +230189,16 @@
    "since": "2026-11-23"
   },
   "postmortem": {
-   "asked": 10,
-   "used": 10,
+   "asked": 12,
+   "used": 12,
    "notes": {
     "TLN Snapshot": 2,
     "TLN Our trades": 1,
-    "SECTOR Uranium market": 6,
+    "SECTOR Uranium market": 7,
     "TLN What history says": 1,
-    "VST Snapshot": 2,
-    "VST Our trades": 1,
-    "desk_lessons_from_our_mistakes": 1,
+    "VST Snapshot": 3,
+    "VST Our trades": 2,
+    "desk_lessons_from_our_mistakes": 2,
     "CEG Snapshot": 1,
     "CEG What history says": 1,
     "BWXT Snapshot": 2,
@@ -230073,7 +230213,9 @@
     "UEC Snapshot": 1,
     "UEC Our trades": 1,
     "NXE Our trades": 1,
-    "NXE Snapshot": 1
+    "NXE Snapshot": 1,
+    "LEU Snapshot": 1,
+    "LEU Our trades": 1
    },
    "since": "2026-11-27"
   }
@@ -230199,7 +230341,7 @@
    ],
    [
     "2026-11-27",
-    63.56
+    63.49
    ]
   ],
   "NXE": [
@@ -230687,7 +230829,7 @@
    ],
    [
     "2026-11-27",
-    5.64
+    5.66
    ]
   ],
   "LEU": [
@@ -230809,7 +230951,7 @@
    ],
    [
     "2026-11-27",
-    84.72
+    84.58
    ]
   ],
   "BWXT": [
@@ -230931,7 +231073,7 @@
    ],
    [
     "2026-11-27",
-    115.59
+    115.66
    ]
   ],
   "CEG": [
@@ -231053,7 +231195,7 @@
    ],
    [
     "2026-11-27",
-    237.01
+    237.02
    ]
   ],
   "VST": [
@@ -231175,7 +231317,7 @@
    ],
    [
     "2026-11-27",
-    122.33
+    122.19
    ]
   ],
   "TLN": [
@@ -231297,7 +231439,7 @@
    ],
    [
     "2026-11-27",
-    356.99
+    357.0
    ]
   ],
   "AMD": [
@@ -231419,7 +231561,7 @@
    ],
    [
     "2026-11-27",
-    415.99
+    415.51
    ]
   ],
   "SMR": [
@@ -231541,7 +231683,7 @@
    ],
    [
     "2026-11-27",
-    3.46
+    3.45
    ]
   ],
   "NNE": [
@@ -231663,7 +231805,7 @@
    ],
    [
     "2026-11-27",
-    9.41
+    9.36
    ]
   ]
  },
@@ -233364,6 +233506,16 @@
    "price": 5.62,
    "result": null,
    "why": "The zone at $4.91 coincides with a fresh 52-week low in a stock that is down a third this month and far below its long-term average, while the whole basket is weak. Desk tests say level buys under the"
+  },
+  {
+   "role": "postmortem",
+   "ticker": "LEU",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-27",
+   "price": 84.72,
+   "result": null,
+   "why": "I checked the trade against the rules, the desk lessons on the same failure, and the LEU snapshot, which shows the stock about 27% below its 50-day average. The win does not change that the entry brok"
   }
  ],
  "after_sale": [
@@ -233446,6 +233598,22 @@
    "pnl": 0.95,
    "why_out": "Thanksgiving run-up trade: held 2 sessions",
    "setup": "thanksgiving"
+  },
+  {
+   "ticker": "VST",
+   "exit": 122.29,
+   "date": "2026-11-27",
+   "pnl": 8.97,
+   "why_out": "Black Friday exit: our stocks fell from Black Friday's close to Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway",
+   "setup": "panic_rebound"
+  },
+  {
+   "ticker": "LEU",
+   "exit": 84.51,
+   "date": "2026-11-27",
+   "pnl": 5.83,
+   "why_out": "Black Friday exit: our stocks fell from Black Friday's close to Monday in 15 of the last 22 years, and this trade was due to end within 3 sessions anyway",
+   "setup": "panic_rebound"
   }
  ],
  "cancels": [
@@ -237630,6 +237798,20 @@
    "title": "NXE trade +0.95",
    "lesson": "Any calendar or seasonal rule (including the Thanksgiving run-up) must pass the basket-below-10-day-average block before it can open a trade; the seasonal pattern does not override it.",
    "cause": "bad_setup"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "closed_trade",
+   "title": "VST trade +8.97",
+   "lesson": "Panic_rebound and any other buy setup must pass the basket-below-10-day-average block before entry; this trade should not have been opened even though it made money.",
+   "cause": "bad_setup"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "closed_trade",
+   "title": "LEU trade +5.83",
+   "lesson": "A panic_rebound buy must pass the basket-below-10-day-average block before entry, even when the stock looks oversold and the trade later wins.",
+   "cause": "bad_setup"
   }
  ],
  "shadow": [
@@ -238039,7 +238221,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 12:45",
+ "watchdog_last": "2026-11-27 12:47",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
