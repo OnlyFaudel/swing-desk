@@ -5,3 +5,4 @@ research/*.pkl
 *.env
 data/candles15/_lock
 data/candles5/_lock
+data/orbsip/_lock
