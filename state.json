@@ -1,7 +1,7 @@
 {
  "created": "2026-11-20",
  "book": {
-  "cash": 248.503194009872,
+  "cash": 406.3350294824119,
   "lots": {
    "CCJ": {
     "trade": {
@@ -9,16 +9,8 @@
      "cost": 0.0
     },
     "auto": {
-     "qty": 0.254638967,
-     "cost": 15.149999980632,
-     "setup": "thanksgiving",
-     "by": "rule",
-     "exit_on": "2026-11-27",
-     "days": 2,
-     "why": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
-     "opened": "2026-11-24",
-     "entry_time": "2026-11-24 15:40",
-     "entry": 59.5
+     "qty": 0.0,
+     "cost": 0.0
     }
    },
    "NXE": {
@@ -27,16 +19,8 @@
      "cost": 0.0
     },
     "auto": {
-     "qty": 2.21491228,
-     "cost": 15.1499999952,
-     "setup": "thanksgiving",
-     "by": "rule",
-     "exit_on": "2026-11-27",
-     "days": 2,
-     "why": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
-     "opened": "2026-11-24",
-     "entry_time": "2026-11-24 15:40",
-     "entry": 6.84
+     "qty": 0.0,
+     "cost": 0.0
     }
    },
    "UEC": {
@@ -45,16 +29,8 @@
      "cost": 0.0
     },
     "auto": {
-     "qty": 2.695729537,
-     "cost": 15.14999999794,
-     "setup": "thanksgiving",
-     "by": "rule",
-     "exit_on": "2026-11-27",
-     "days": 2,
-     "why": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
-     "opened": "2026-11-24",
-     "entry_time": "2026-11-24 15:40",
-     "entry": 5.62
+     "qty": 0.0,
+     "cost": 0.0
     }
    },
    "DNN": {
@@ -63,16 +39,8 @@
      "cost": 0.0
     },
     "auto": {
-     "qty": 8.706896551,
-     "cost": 15.14999999874,
-     "setup": "thanksgiving",
-     "by": "rule",
-     "exit_on": "2026-11-27",
-     "days": 2,
-     "why": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
-     "opened": "2026-11-24",
-     "entry_time": "2026-11-24 15:40",
-     "entry": 1.74
+     "qty": 0.0,
+     "cost": 0.0
     }
    },
    "UUUU": {
@@ -85,16 +53,8 @@
      "cost": 0.0
     },
     "auto": {
-     "qty": 2.976424361,
-     "cost": 15.14999999749,
-     "setup": "thanksgiving",
-     "by": "rule",
-     "exit_on": "2026-11-27",
-     "days": 2,
-     "why": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
-     "opened": "2026-11-24",
-     "entry_time": "2026-11-24 15:40",
-     "entry": 5.09
+     "qty": 0.0,
+     "cost": 0.0
     }
    },
    "LEU": {
@@ -116,16 +76,8 @@
      "entry": 81.35
     },
     "auto": {
-     "qty": 0.180973313,
-     "cost": 15.149999924482,
-     "setup": "thanksgiving",
-     "by": "rule",
-     "exit_on": "2026-11-27",
-     "days": 2,
-     "why": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
-     "opened": "2026-11-24",
-     "entry_time": "2026-11-24 15:40",
-     "entry": 83.71
+     "qty": 0.0,
+     "cost": 0.0
     }
    },
    "BWXT": {
@@ -134,16 +86,8 @@
      "cost": 0.0
     },
     "auto": {
-     "qty": 0.133221948,
-     "cost": 15.149999926560001,
-     "setup": "thanksgiving",
-     "by": "rule",
-     "exit_on": "2026-11-27",
-     "days": 2,
-     "why": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
-     "opened": "2026-11-24",
-     "entry_time": "2026-11-24 15:40",
-     "entry": 113.72
+     "qty": 0.0,
+     "cost": 0.0
     }
    },
    "CEG": {
@@ -152,16 +96,8 @@
      "cost": 0.0
     },
     "auto": {
-     "qty": 0.062085074,
-     "cost": 15.14999975748,
-     "setup": "thanksgiving",
-     "by": "rule",
-     "exit_on": "2026-11-27",
-     "days": 2,
-     "why": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
-     "opened": "2026-11-24",
-     "entry_time": "2026-11-24 15:40",
-     "entry": 244.02
+     "qty": 0.0,
+     "cost": 0.0
     }
    },
    "VST": {
@@ -183,16 +119,8 @@
      "entry": 115.39
     },
     "auto": {
-     "qty": 0.126146979,
-     "cost": 15.149999883942,
-     "setup": "thanksgiving",
-     "by": "rule",
-     "exit_on": "2026-11-27",
-     "days": 2,
-     "why": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
-     "opened": "2026-11-24",
-     "entry_time": "2026-11-24 15:40",
-     "entry": 120.1
+     "qty": 0.0,
+     "cost": 0.0
     }
    },
    "TLN": {
@@ -201,16 +129,8 @@
      "cost": 0.0
     },
     "auto": {
-     "qty": 0.043538486,
-     "cost": 15.149999896448001,
-     "setup": "thanksgiving",
-     "by": "rule",
-     "exit_on": "2026-11-27",
-     "days": 2,
-     "why": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
-     "opened": "2026-11-24",
-     "entry_time": "2026-11-24 15:40",
-     "entry": 347.97
+     "qty": 0.0,
+     "cost": 0.0
     }
    },
    "SPY": {
@@ -313,6 +233,216 @@
     "entry_fill": null,
     "realistic_cost": 0.45,
     "realistic_pnl": 15.64
+   },
+   {
+    "ticker": "TLN",
+    "setup": "thanksgiving",
+    "by": "rule",
+    "entry_time": "2026-11-24 15:40",
+    "entry": 347.97,
+    "exit_time": "2026-11-27 12:30",
+    "exit": 355.65,
+    "dollars": 15.15,
+    "pnl": 0.33,
+    "ret": 2.21,
+    "why_in": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
+    "why_out": "Thanksgiving run-up trade: held 2 sessions",
+    "risk_pct": null,
+    "stop": null,
+    "target": null,
+    "zone": null,
+    "entry_fill": null,
+    "realistic_cost": 0.02,
+    "realistic_pnl": 0.31
+   },
+   {
+    "ticker": "VST",
+    "setup": "thanksgiving",
+    "by": "rule",
+    "entry_time": "2026-11-24 15:40",
+    "entry": 120.1,
+    "exit_time": "2026-11-27 12:30",
+    "exit": 122.26,
+    "dollars": 15.15,
+    "pnl": 0.27,
+    "ret": 1.8,
+    "why_in": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
+    "why_out": "Thanksgiving run-up trade: held 2 sessions",
+    "risk_pct": null,
+    "stop": null,
+    "target": null,
+    "zone": null,
+    "entry_fill": null,
+    "realistic_cost": 0.02,
+    "realistic_pnl": 0.25
+   },
+   {
+    "ticker": "CEG",
+    "setup": "thanksgiving",
+    "by": "rule",
+    "entry_time": "2026-11-24 15:40",
+    "entry": 244.02,
+    "exit_time": "2026-11-27 12:30",
+    "exit": 236.34,
+    "dollars": 15.15,
+    "pnl": -0.48,
+    "ret": -3.15,
+    "why_in": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
+    "why_out": "Thanksgiving run-up trade: held 2 sessions",
+    "risk_pct": null,
+    "stop": null,
+    "target": null,
+    "zone": null,
+    "entry_fill": null,
+    "realistic_cost": 0.02,
+    "realistic_pnl": -0.5
+   },
+   {
+    "ticker": "BWXT",
+    "setup": "thanksgiving",
+    "by": "rule",
+    "entry_time": "2026-11-24 15:40",
+    "entry": 113.72,
+    "exit_time": "2026-11-27 12:30",
+    "exit": 115.85,
+    "dollars": 15.15,
+    "pnl": 0.28,
+    "ret": 1.87,
+    "why_in": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
+    "why_out": "Thanksgiving run-up trade: held 2 sessions",
+    "risk_pct": null,
+    "stop": null,
+    "target": null,
+    "zone": null,
+    "entry_fill": null,
+    "realistic_cost": 0.02,
+    "realistic_pnl": 0.26
+   },
+   {
+    "ticker": "LEU",
+    "setup": "thanksgiving",
+    "by": "rule",
+    "entry_time": "2026-11-24 15:40",
+    "entry": 83.71,
+    "exit_time": "2026-11-27 12:30",
+    "exit": 85.15,
+    "dollars": 15.15,
+    "pnl": 0.26,
+    "ret": 1.72,
+    "why_in": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
+    "why_out": "Thanksgiving run-up trade: held 2 sessions",
+    "risk_pct": null,
+    "stop": null,
+    "target": null,
+    "zone": null,
+    "entry_fill": null,
+    "realistic_cost": 0.02,
+    "realistic_pnl": 0.24
+   },
+   {
+    "ticker": "CCJ",
+    "setup": "thanksgiving",
+    "by": "rule",
+    "entry_time": "2026-11-24 15:40",
+    "entry": 59.5,
+    "exit_time": "2026-11-27 12:30",
+    "exit": 63.58,
+    "dollars": 15.15,
+    "pnl": 1.04,
+    "ret": 6.86,
+    "why_in": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
+    "why_out": "Thanksgiving run-up trade: held 2 sessions",
+    "risk_pct": null,
+    "stop": null,
+    "target": null,
+    "zone": null,
+    "entry_fill": null,
+    "realistic_cost": 0.02,
+    "realistic_pnl": 1.02
+   },
+   {
+    "ticker": "UUUU",
+    "setup": "thanksgiving",
+    "by": "rule",
+    "entry_time": "2026-11-24 15:40",
+    "entry": 5.09,
+    "exit_time": "2026-11-27 12:30",
+    "exit": 5.6,
+    "dollars": 15.15,
+    "pnl": 1.52,
+    "ret": 10.02,
+    "why_in": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
+    "why_out": "Thanksgiving run-up trade: held 2 sessions",
+    "risk_pct": null,
+    "stop": null,
+    "target": null,
+    "zone": null,
+    "entry_fill": null,
+    "realistic_cost": 0.05,
+    "realistic_pnl": 1.47
+   },
+   {
+    "ticker": "DNN",
+    "setup": "thanksgiving",
+    "by": "rule",
+    "entry_time": "2026-11-24 15:40",
+    "entry": 1.74,
+    "exit_time": "2026-11-27 12:31",
+    "exit": 1.9,
+    "dollars": 15.15,
+    "pnl": 1.39,
+    "ret": 9.2,
+    "why_in": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
+    "why_out": "Thanksgiving run-up trade: held 2 sessions",
+    "risk_pct": null,
+    "stop": null,
+    "target": null,
+    "zone": null,
+    "entry_fill": null,
+    "realistic_cost": 0.05,
+    "realistic_pnl": 1.34
+   },
+   {
+    "ticker": "UEC",
+    "setup": "thanksgiving",
+    "by": "rule",
+    "entry_time": "2026-11-24 15:40",
+    "entry": 5.62,
+    "exit_time": "2026-11-27 12:30",
+    "exit": 5.9,
+    "dollars": 15.15,
+    "pnl": 0.75,
+    "ret": 4.98,
+    "why_in": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
+    "why_out": "Thanksgiving run-up trade: held 2 sessions",
+    "risk_pct": null,
+    "stop": null,
+    "target": null,
+    "zone": null,
+    "entry_fill": null,
+    "realistic_cost": 0.05,
+    "realistic_pnl": 0.7
+   },
+   {
+    "ticker": "NXE",
+    "setup": "thanksgiving",
+    "by": "rule",
+    "entry_time": "2026-11-24 15:40",
+    "entry": 6.84,
+    "exit_time": "2026-11-27 12:30",
+    "exit": 7.27,
+    "dollars": 15.15,
+    "pnl": 0.95,
+    "ret": 6.29,
+    "why_in": "Thanksgiving run-up: Tuesday's close to Black Friday's close was positive for our stocks in every era since 1998.",
+    "why_out": "Thanksgiving run-up trade: held 2 sessions",
+    "risk_pct": null,
+    "stop": null,
+    "target": null,
+    "zone": null,
+    "entry_fill": null,
+    "realistic_cost": 0.05,
+    "realistic_pnl": 0.9
    }
   ],
   "equity": [
@@ -346,6 +476,46 @@
    [
     166.05989878465,
     "2026-11-30"
+   ],
+   [
+    15.4842897,
+    "2026-11-30"
+   ],
+   [
+    15.42272965254,
+    "2026-11-30"
+   ],
+   [
+    14.673293070000001,
+    "2026-11-30"
+   ],
+   [
+    15.43365285,
+    "2026-11-30"
+   ],
+   [
+    15.410212895999999,
+    "2026-11-30"
+   ],
+   [
+    16.189374764,
+    "2026-11-30"
+   ],
+   [
+    16.6679688,
+    "2026-11-30"
+   ],
+   [
+    16.5431024,
+    "2026-11-30"
+   ],
+   [
+    15.904801100000002,
+    "2026-11-30"
+   ],
+   [
+    16.102410239999998,
+    "2026-11-30"
    ]
   ],
   "weeks": [
@@ -378,6 +548,12 @@
     "ticker": "SPY",
     "date": "2026-11-25",
     "loss": -0.58,
+    "note": "Loss likely disallowed now and added to the cost basis of shares you still hold (not lost, deferred)."
+   },
+   {
+    "ticker": "CEG",
+    "date": "2026-11-27",
+    "loss": -0.48,
     "note": "Loss likely disallowed now and added to the cost basis of shares you still hold (not lost, deferred)."
    }
   ],
@@ -473,9 +649,9 @@
     "auto"
    ]
   ],
-  "realized_st": 3.13,
+  "realized_st": 9.44,
   "core_w": {},
-  "realistic_costs": 0.45
+  "realistic_costs": 0.77
  },
  "flags": {
   "morning_done": "2026-11-27",
@@ -673,7 +849,11 @@
   "questioner:2026-11-27:5": true,
   "ev:961370b47f9f": true,
   "questioner:2026-11-27:6": true,
-  "ev:23692361d77f": true
+  "ev:23692361d77f": true,
+  "panic:2026-11-27": true,
+  "auto:2026-11-27": true,
+  "seasonal:2026-11-27": true,
+  "midday:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -10042,6 +10222,106 @@
    "price": 0.0,
    "status": "pending_new",
    "note": "banked the jump: opened +5.4% vs yesterday's close; buying back near the close"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "CCJ",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.254638,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "NXE",
+   "side": "sell",
+   "kind": "market",
+   "qty": 2.214912,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "UEC",
+   "side": "sell",
+   "kind": "market",
+   "qty": 2.695729,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "DNN",
+   "side": "sell",
+   "kind": "market",
+   "qty": 8.706896,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "UUUU",
+   "side": "sell",
+   "kind": "market",
+   "qty": 2.976423,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "LEU",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.180973,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "BWXT",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.133221,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "CEG",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.062085,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "VST",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.126147,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "TLN",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.043538,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
   }
  ],
  "active": [
@@ -10177,12 +10457,12 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.42577,
+  "day_usd": 0.44723,
   "month": "2026-11",
-  "month_usd": 2.51995,
-  "total_usd": 2.51995,
+  "month_usd": 2.54141,
+  "total_usd": 2.54141,
   "by_role": {
-   "macro": 0.24318,
+   "macro": 0.24465,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.33855,
@@ -10190,10 +10470,10 @@
    "review": 0.11073,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.44865,
-   "risk": 0.24636,
+   "pm": 0.4509,
+   "risk": 0.2485,
    "investigator": 0.38694,
-   "postmortem": 0.00035,
+   "postmortem": 0.01595,
    "researcher": 0.02341,
    "engineer": 0.10808,
    "questioner": 0.1708
@@ -10416,6 +10696,7 @@
   "4767d4ef-b8d5-470f-b36b-c9f8fadebc27",
   "da941e1a-0b19-4558-91d4-bd6e08a970dd",
   "1819a75a-1b7c-4d06-841b-87d77eb5806b",
+  "b652c156-a906-4ef5-952f-b5c45144fe09",
   "fbc94e13-8bc9-4b72-becc-b085fe026432",
   "19be7f56-6d3e-4d2c-a41d-8cbe5100f1f5",
   "511293ba-a9a6-418d-a9d5-19f9c326bf14",
@@ -10423,14 +10704,23 @@
   "e44231a4-0da6-4012-834a-619048d8d2de",
   "f71259b8-bee2-4957-bbbd-daaf86218385",
   "7f3f3a16-8a14-4856-8ff5-bf0763189311",
+  "a56e0a95-9020-49c2-a81b-5275e83d725a",
+  "979eee08-ff10-482b-88ac-f88efd2c01c5",
   "3633f6dd-490a-45d0-972c-942d61021cea",
   "4d9f95e1-6b62-4225-8256-f57a6f35d48f",
   "c20cd4c7-9056-4cda-ae92-7bd75bc3966f",
+  "a6ab1cfd-63f3-4962-8499-6a09531d2f33",
+  "bbfb399f-088c-4f95-9ee4-b1ae1c68312a",
+  "d14648a4-11ba-4eaa-ac7a-d54991dd73d5",
   "22f9ed61-dfff-4eb2-9fa2-87cdddcfb621",
+  "3031b491-411e-470a-a59a-3a9a8c2b0d7c",
+  "4cd8a9e4-7d5c-461f-842b-bd10d4a2b351",
   "a4b6688a-48cc-4b25-abf6-9fc538e33134",
   "afd75068-631d-4a4d-af54-fd4d85142ff2",
   "c3f6e7fc-53ce-4608-a034-26e39d4682b5",
   "ca94928f-ceb2-4508-8a39-b973f5956ef5",
+  "7f2e44fa-01de-4b11-9551-46478ac91ef6",
+  "1a4e75c1-1513-475f-9ea6-f32610c0ef6d",
   "7cd755ad-f884-4ef0-9ab4-71974c65606b",
   "725eda94-b8eb-40d5-becf-9cefd05e26a3",
   "5e5b39a9-f516-4853-bdb8-2fced02d5dab",
@@ -10439,23 +10729,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 63.66,
-  "NXE": 7.29,
-  "UEC": 5.92,
+  "CCJ": 63.6,
+  "NXE": 7.28,
+  "UEC": 5.91,
   "DNN": 1.91,
-  "UUUU": 5.62,
-  "LEU": 85.33,
-  "BWXT": 115.96,
-  "CEG": 236.43,
-  "VST": 122.48,
-  "TLN": 356.03,
-  "AMD": 419.33,
-  "SMR": 3.5,
-  "NNE": 9.59,
-  "SPY": 727.32,
+  "UUUU": 5.6,
+  "LEU": 85.26,
+  "BWXT": 115.9,
+  "CEG": 236.39,
+  "VST": 122.3,
+  "TLN": 355.89,
+  "AMD": 418.1,
+  "SMR": 3.46,
+  "NNE": 9.54,
+  "SPY": 726.54,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 12:28 ET",
+ "last_cycle": "2026-11-27 12:30 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -10518,10 +10808,10 @@
   ]
  },
  "brakes": {
-  "equity": 1043.07,
-  "day_pct": 3.74,
-  "week_pct": 4.25,
-  "drawdown_pct": -1.07,
+  "equity": 1040.77,
+  "day_pct": 3.51,
+  "week_pct": 4.02,
+  "drawdown_pct": -1.29,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -15071,6 +15361,14 @@
   [
    "2026-11-27 12:28",
    1043.07
+  ],
+  [
+   "2026-11-27 12:29",
+   1042.52
+  ],
+  [
+   "2026-11-27 12:30",
+   1040.77
   ]
  ],
  "nowcast": {
@@ -59767,7 +60065,7 @@
     0.8455
    ]
   },
-  "time": "2026-11-27 12:28"
+  "time": "2026-11-27 12:31"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -217814,6 +218112,346 @@
    ],
    "practice": false,
    "end": "12:00"
+  },
+  {
+   "id": "20261127123059190941",
+   "title": "Postmortem TLN: +0.33 on the trade",
+   "tickers": [
+    "TLN"
+   ],
+   "kind": "postmortem",
+   "start": "2026-11-27 12:30",
+   "msgs": [
+    {
+     "t": "12:30",
+     "who": "exec",
+     "to": "team",
+     "text": "Closing note on TLN: bought $347.97, sold $355.65, result $+0.33. Why did it go this way?",
+     "outcome": false
+    },
+    {
+     "t": "12:31",
+     "who": "postmortem",
+     "to": "exec",
+     "text": "I agree with the Execution Trader that the $0.33 result needs a closer look: the trade made money, but it was a seasonal bet entered while the basket was below its 10-day average, which our own filter says to avoid. One winning holiday trade is noise, not proof the Thanksgiving rule works.",
+     "outcome": false,
+     "notes": "verdict: noise\ndecision quality: ok\nwhat happened: The Thanksgiving run-up rule bought TLN at 347.97 on Nov 24 and sold at 355.65 on Nov 27, a +2.21% gross return worth $0.33 after a realistic cost of about $0.02. The trade made money, but it was a single pre-holiday seasonal bet on a basket that was already below its 10-day average, which the desk's own rule says should block new buys.\nlesson: Do not let a seasonal rule such as the Thanksgiving run-up override the basket-below-10-day-average block; the rule should be checked against that filter before any entry.\nwhy: I checked the trade record, the desk's regime note (S&P below its 200-day, basket weak, no new buys until the 10-day is reclaimed) and the TLN history. The gain is too small and too few samples to call the seasonal rule good, and the entry broke the stated basket filter, so the decision is ok rather than good.\ndate: 2026-12"
+    }
+   ],
+   "practice": false,
+   "end": "12:31"
+  },
+  {
+   "id": "20261127123104621605",
+   "title": "Postmortem VST: +0.27 on the trade",
+   "tickers": [
+    "VST"
+   ],
+   "kind": "postmortem",
+   "start": "2026-11-27 12:31",
+   "msgs": [
+    {
+     "t": "12:31",
+     "who": "exec",
+     "to": "team",
+     "text": "Closing note on VST: bought $120.1, sold $122.26, result $+0.27. Why did it go this way?",
+     "outcome": false
+    },
+    {
+     "t": "12:31",
+     "who": "postmortem",
+     "to": "exec",
+     "text": "I'm disagreeing with the idea that this was a sound trade: the rule fired while the basket was in a falling regime, and our own filter says no new buys there. The small gain is luck, not evidence the seasonal rule works. The Execution Trader is right to flag it, but the real problem is that the filter was skipped, not the fill.",
+     "outcome": false,
+     "notes": "verdict: noise\ndecision quality: poor\nwhat happened: The Thanksgiving run-up rule bought VST at $120.10 on Nov 24 and sold at $122.26 on Nov 27 for a $0.27 gain (about 1.8%, or $0.25 after estimated costs). The trade was taken while the basket was below its 10-day average, which the desk's own rule forbids for new buys.\nlesson: Before any seasonal or calendar rule enters, check the basket-below-10-day-average filter first; a seasonal pattern does not override it.\nwhy: The trade was a seasonal entry, and VST was about 12% under its 50-day average with the basket weak, so the no-new-buys filter should have blocked it. The profit is too small to validate the rule, and the desk's notes already warn against letting seasonal patterns override that filter.\nticker: VST\ndirection: down\ndays: 3\nfiles read: VST Snapshot, VST Our trades, desk_lessons_from_our_mistakes"
+    }
+   ],
+   "practice": false,
+   "end": "12:31"
+  },
+  {
+   "id": "20261127123109458201",
+   "title": "Postmortem CEG: -0.48 on the trade",
+   "tickers": [
+    "CEG"
+   ],
+   "kind": "postmortem",
+   "start": "2026-11-27 12:31",
+   "msgs": [
+    {
+     "t": "12:31",
+     "who": "exec",
+     "to": "team",
+     "text": "Closing note on CEG: bought $244.02, sold $236.34, result $-0.48. Why did it go this way?",
+     "outcome": false
+    },
+    {
+     "t": "12:31",
+     "who": "postmortem",
+     "to": "exec",
+     "text": "I disagree with the entry, and this one is on the setup, not the market. The Thanksgiving run-up was a calendar pattern that ignored our rule that no new buys happen while the basket is below its 10-day average, and CEG was clearly in that state. The loss is small, about $0.48, but the process error is the lesson.",
+     "outcome": false,
+     "notes": "verdict: bad_setup\ndecision quality: poor\nwhat happened: The Thanksgiving run-up rule bought CEG at $244.02 on Tuesday and sold at $236.34 on Thursday, a 3.15% loss. The rule was entered even though the basket was below its 10-day average, which the desk's own filter should have blocked.\nlesson: Before any seasonal or calendar rule enters, check the basket-below-10-day-average filter first; the Thanksgiving run-up does not override it.\nwhy: CEG was down 6% on the week and 10.5% below its 50-day average, so the no-new-buys filter applied and the entry should have been blocked. The Thanksgiving history was a calendar tendency, not a valid override, and the desk's notes already flag this exact conflict.\nticker: CEG\ndirection: down\ndays: 3\nfiles read: CEG Snapshot, CEG What history says, SECTOR Uranium market"
+    }
+   ],
+   "practice": false,
+   "end": "12:31"
+  },
+  {
+   "id": "20261127123114190146",
+   "title": "Postmortem BWXT: +0.28 on the trade",
+   "tickers": [
+    "BWXT"
+   ],
+   "kind": "postmortem",
+   "start": "2026-11-27 12:31",
+   "msgs": [
+    {
+     "t": "12:31",
+     "who": "exec",
+     "to": "team",
+     "text": "Closing note on BWXT: bought $113.72, sold $115.85, result $+0.28. Why did it go this way?",
+     "outcome": false
+    },
+    {
+     "t": "12:31",
+     "who": "postmortem",
+     "to": "exec",
+     "text": "I disagree with treating this as a good trade because it made money. The Thanksgiving rule should have been blocked by the basket-below-10-day-average filter, so this was a process failure even though the result was a small win. Execution Trader, your question is the right one, and the answer is that the seasonal rule was allowed to skip our safety check.",
+     "outcome": false,
+     "notes": "verdict: bad_setup\ndecision quality: poor\nwhat happened: The Thanksgiving run-up rule bought BWXT at $113.72 while the basket was below its 10-day average, which our own rules block. It was a small +$0.28 win, but the entry should not have been allowed.\nlesson: Check the basket-below-10-day-average filter before any seasonal or calendar rule can open a trade; the Thanksgiving run-up does not override it.\nwhy: The rule was supposed to be blocked by the basket filter, and the market brief says the basket is weak and the S&P sits below its 200-day average. I checked the entry against that filter, and a small win does not make the decision good.\nticker: BWXT\ndirection: down\ndays: 3\nfiles read: BWXT Snapshot, BWXT Our trades, SECTOR Uranium market"
+    }
+   ],
+   "practice": false,
+   "end": "12:31"
+  },
+  {
+   "id": "20261127123118411702",
+   "title": "Postmortem LEU: +0.26 on the trade",
+   "tickers": [
+    "LEU"
+   ],
+   "kind": "postmortem",
+   "start": "2026-11-27 12:31",
+   "msgs": [
+    {
+     "t": "12:31",
+     "who": "exec",
+     "to": "team",
+     "text": "Closing note on LEU: bought $83.71, sold $85.15, result $+0.26. Why did it go this way?",
+     "outcome": false
+    },
+    {
+     "t": "12:31",
+     "who": "postmortem",
+     "to": "exec",
+     "text": "I agree with the Execution Trader's question: this LEU trade made $0.26, but the bigger problem is the setup. The Thanksgiving rule should never have opened while the basket was weak, and the desk's own lessons say a seasonal pattern does not override the 10-day-average filter. We won a small amount on a rule that was not allowed to trade.",
+     "outcome": false,
+     "notes": "verdict: bad_setup\ndecision quality: poor\nwhat happened: The Thanksgiving run-up rule bought LEU at $83.71 on 2026-11-24 and sold at $85.15 two sessions later, a small +1.72% gain worth $0.26 after costs. The win was tiny and the setup itself was not valid, so the outcome is not evidence the rule works.\nlesson: A seasonal or calendar rule like the Thanksgiving run-up must pass the basket-below-10-day-average block before it can open any trade, and it did not get that check.\nwhy: I checked the trade record, the desk's repeated lessons about the 10-day-average filter, and the market brief showing the basket weak and the S&P below its 200-day average. The rule should have been blocked, so I judged the decision poor even though it made a small profit.\ndate: 2026-12-09\nwhat: FOMC decision; whole-basket volatility event\ndate: 2026-12-15\nticker: CEG\nwhat: PJM 2029/30 capacity auction; release-d"
+    }
+   ],
+   "practice": false,
+   "end": "12:31"
+  },
+  {
+   "id": "20261127123123142848",
+   "title": "Postmortem CCJ: +1.04 on the trade",
+   "tickers": [
+    "CCJ"
+   ],
+   "kind": "postmortem",
+   "start": "2026-11-27 12:31",
+   "msgs": [
+    {
+     "t": "12:31",
+     "who": "exec",
+     "to": "team",
+     "text": "Closing note on CCJ: bought $59.5, sold $63.58, result $+1.04. Why did it go this way?",
+     "outcome": false
+    },
+    {
+     "t": "12:31",
+     "who": "postmortem",
+     "to": "exec",
+     "text": "I'm classifying this as a bad setup, not good execution. The Thanksgiving rule bought CCJ while the basket was below its 10-day average, which our rules say should block every new buy, so the rule itself let a trade through it should not have. The $1.04 profit doesn't change that; a lucky win from a broken rule is still a poor decision that we should fix before it happens again.",
+     "outcome": false,
+     "notes": "verdict: bad_setup\ndecision quality: poor\nwhat happened: The Thanksgiving run-up rule bought CCJ at $59.50 on 2026-11-24 while the basket was below its 10-day average, which should have blocked any new buy. It sold at $63.58 two sessions later for a small gain of about $1.04, a win that came from a rule that should not have fired.\nlesson: A calendar or seasonal rule must pass the basket-below-10-day-average filter before it can open any trade; the Thanksgiving run-up did not get that check, so it is a bad setup for this desk's rules.\nwhy: I checked the entry against the basket-below-10-day-average block, which the desk notes say the Thanksgiving rule skipped. The result was a small win, but the decision was poor because the rule overrode a filter it was never supposed to bypass.\nfiles read: CCJ Snapshot, CCJ Our trades, BWXT Our trades, SECTOR Uranium market"
+    }
+   ],
+   "practice": false,
+   "end": "12:31"
+  },
+  {
+   "id": "20261127123127870904",
+   "title": "Postmortem UUUU: +1.52 on the trade",
+   "tickers": [
+    "UUUU"
+   ],
+   "kind": "postmortem",
+   "start": "2026-11-27 12:31",
+   "msgs": [
+    {
+     "t": "12:31",
+     "who": "exec",
+     "to": "team",
+     "text": "Closing note on UUUU: bought $5.09, sold $5.6, result $+1.52. Why did it go this way?",
+     "outcome": false
+    },
+    {
+     "t": "12:31",
+     "who": "postmortem",
+     "to": "exec",
+     "text": "I'm agreeing with the Execution Trader that the fill was fine, but the decision was the problem: the Thanksgiving rule bought while the basket was below its 10-day average, which is a hard block. The $1.52 win is luck on a tiny position, not evidence the rule works, and the realistic result after costs is about $1.47.",
+     "outcome": false,
+     "notes": "verdict: bad_setup\ndecision quality: poor\nwhat happened: The Thanksgiving run-up rule bought UUUU at $5.09 on Tuesday and sold at $5.60 on Black Friday for a $1.52 gain on about $15 deployed. The entry skipped the desk's basket-below-10-day-average block, which should have stopped any new buy while the whole basket was falling.\nlesson: Any calendar or seasonal rule (including the Thanksgiving run-up) must pass the basket-below-10-day-average filter before it can open a trade; the seasonal pattern does not override it.\nwhy: I checked the basket filter against the entry, the 27-day UUUU drawdown (down about 33% over the month), and the desk's own lesson list, which flags this exact failure more than once. A seasonal rule that skips the filter is a bad setup regardless of this trade's profit.\nticker: UUUU\ndirection: down\ndays: 5\nfiles read: UUUU Snapshot, UUUU Our trades, SECTOR Uranium mar"
+    }
+   ],
+   "practice": false,
+   "end": "12:31"
+  },
+  {
+   "id": "20261127123132266583",
+   "title": "Postmortem DNN: +1.39 on the trade",
+   "tickers": [
+    "DNN"
+   ],
+   "kind": "postmortem",
+   "start": "2026-11-27 12:31",
+   "msgs": [
+    {
+     "t": "12:31",
+     "who": "exec",
+     "to": "team",
+     "text": "Closing note on DNN: bought $1.74, sold $1.9, result $+1.39. Why did it go this way?",
+     "outcome": false
+    },
+    {
+     "t": "12:31",
+     "who": "postmortem",
+     "to": "exec",
+     "text": "I'm disagreeing with the Execution Trader's framing: the fill and exit were fine, but the entry should never have happened. The basket was below its 10-day average, so the no-new-buys rule applied and the Thanksgiving pattern did not override it. A winning trade that broke the rules is still a bad decision, and I'd rather we fix the gate than credit the setup.",
+     "outcome": false,
+     "notes": "verdict: bad_setup\ndecision quality: poor\nwhat happened: The Thanksgiving run-up rule bought DNN at $1.74 on Nov 24 while the whole basket was below its 10-day average, which the desk's own filter forbids. The trade made $1.39 (about 9%) over two sessions, but that gain came from an entry the rules should have blocked.\nlesson: Any calendar or seasonal rule must pass the basket-below-10-day-average block before it can open a trade; the Thanksgiving run-up skipped that check and should be gated first.\nwhy: I checked the entry against the desk's filter, which blocks new buys while the basket is below its 10-day average, and the position was opened anyway. The P&L is positive, but the desk's own rules say this trade should not have been placed, so the decision is poor regardless of outcome.\nticker: DNN\ndirection: down\ndays: 3\nfiles read: DNN Snapshot, DNN Our trades, market_brief"
+    }
+   ],
+   "practice": false,
+   "end": "12:31"
+  },
+  {
+   "id": "20261127123137060467",
+   "title": "Postmortem UEC: +0.75 on the trade",
+   "tickers": [
+    "UEC"
+   ],
+   "kind": "postmortem",
+   "start": "2026-11-27 12:31",
+   "msgs": [
+    {
+     "t": "12:31",
+     "who": "exec",
+     "to": "team",
+     "text": "Closing note on UEC: bought $5.62, sold $5.9, result $+0.75. Why did it go this way?",
+     "outcome": false
+    },
+    {
+     "t": "12:31",
+     "who": "postmortem",
+     "to": "exec",
+     "text": "I'm answering Execution Trader: the fill and exit were fine, but this trade should never have been placed. The basket was below its 10-day average, and that filter blocks all new buys regardless of seasonal patterns, so the win is luck and doesn't validate the rule.",
+     "outcome": false,
+     "notes": "verdict: bad_setup\ndecision quality: poor\nwhat happened: The Thanksgiving run-up rule bought UEC at $5.62 on 2026-11-24 while the basket was below its 10-day average, which the desk's rules forbid for new buys. It sold at $5.90 two sessions later for a gross gain of $0.75, or about $0.70 after costs, a win that should not have happened under the rules.\nlesson: Calendar and seasonal rules like the Thanksgiving run-up must pass the basket-below-10-day-average block before they can open any trade; this one skipped that check.\nwhy: I checked the basket filter and the rule's entry conditions and found the seasonal rule bypassed the 10-day-average block. The desk's own lessons flag this exact gap, so the decision is judged poor even though the outcome was positive.\ndate: 2026-12-08\nticker: UEC\nwhat: Uranium Energy Corp earnings; company-specific move risk, and the desk's history shows earnings"
+    }
+   ],
+   "practice": false,
+   "end": "12:31"
+  },
+  {
+   "id": "20261127123141884805",
+   "title": "Postmortem NXE: +0.95 on the trade",
+   "tickers": [
+    "NXE"
+   ],
+   "kind": "postmortem",
+   "start": "2026-11-27 12:31",
+   "msgs": [
+    {
+     "t": "12:31",
+     "who": "exec",
+     "to": "team",
+     "text": "Closing note on NXE: bought $6.84, sold $7.27, result $+0.95. Why did it go this way?",
+     "outcome": false
+    },
+    {
+     "t": "12:31",
+     "who": "postmortem",
+     "to": "exec",
+     "text": "I'm answering the Execution Trader's question: the fill was fine, but the decision was wrong. The basket was below its 10-day average, so this buy should have been blocked, and a seasonal rule is not an exception to that filter. The +$0.95 is a lucky outcome on a tiny position, not evidence the setup works.",
+     "outcome": false,
+     "notes": "verdict: bad_setup\ndecision quality: poor\nwhat happened: The Thanksgiving run-up rule bought NXE at $6.84 on Nov 24 and sold at $7.27 on Nov 27, a +6.3% gross result on a $15 position. The trade should not have been allowed to open: the basket was below its 10-day average, which the desk's rules block for any new buy, and the seasonal rule did not get that check.\nlesson: Any calendar or seasonal rule (including the Thanksgiving run-up) must pass the basket-below-10-day-average block before it can open a trade; the seasonal pattern does not override it.\nwhy: I checked the trade against the desk's basket filter (the basket was weak, and the lessons list records this same gap) and the NXE/BWXT notes, which show no company-specific reason to buy. The profit was small, the realistic net after cost is about $0.90, and the desk's history of this exact gap decided the classification.\nticker: VST"
+    }
+   ],
+   "practice": false,
+   "end": "12:31"
+  },
+  {
+   "id": "20261127123146825223",
+   "title": "Huddle: a trade opened or closed since the last huddle",
+   "tickers": [
+    "BWXT",
+    "CCJ",
+    "CEG",
+    "DNN",
+    "LEU",
+    "NXE",
+    "TLN",
+    "UEC",
+    "UUUU",
+    "VST"
+   ],
+   "kind": "huddle",
+   "start": "2026-11-27 12:31",
+   "msgs": [
+    {
+     "t": "12:31",
+     "who": "chief",
+     "to": "team",
+     "text": "Quick huddle. Why: a trade opened or closed since the last huddle; midday check-in.",
+     "outcome": false
+    },
+    {
+     "t": "12:31",
+     "who": "macro",
+     "to": "team",
+     "text": "Nothing in the uranium or power data today looks like a market-wide or sector-wide signal I can add to. The whole basket is below its 10-day average, the VIX is falling, and the uranium spot price is roughly flat, so the broad picture is mixed rather than clearly risk-off or risk-on. I have no new view to add beyond what the Desk Chief already has, so I'm staying quiet on direction.",
+     "outcome": false,
+     "notes": "why: I checked the sector pulse (basket 1.8% below its 10-day average), the uranium spot and long-term prices, the Sprott trust discount, and the S&P and VIX moves. Nothing points to a clear sector-wide move, and the desk's own notes say the Black Friday to Monday pattern is weak evidence, not a trade signal.\nfiles read: SECTOR Uranium market, SECTOR Government and laws"
+    },
+    {
+     "t": "12:31",
+     "who": "risk",
+     "to": "team",
+     "text": "I'm not adding a new view here, but I'd push back on any idea to chase the Thanksgiving or pre-holiday pattern right now. The desk's own notes show the basket is below its 10-day average, which blocks new buys, and the seasonal edge was too small and too unreliable to override that. Nothing is resting and no setup is live, so the right move is to wait.",
+     "outcome": false,
+     "notes": "why: I checked the live order list (none), the basket-vs-10-day-average gate (blocking), and the holiday-dip research, which only passed narrowly and is still in the practice book. Those together say no trade today.\nfiles read: SECTOR Pulse, SECTOR Seasonal and holiday research, SECTOR Desk lessons"
+    },
+    {
+     "t": "12:31",
+     "who": "pm",
+     "to": "risk",
+     "text": "I checked the book: nothing is open, no resting orders exist, and every level setup was blocked or too close to its risk. The basket sits below its 10-day average, which keeps new buys off the table, and I agree with the Risk Manager that the holiday pattern does not override that rule. With nothing to sell and no buy allowed, I'm standing pat.",
+     "outcome": false,
+     "notes": "action: none\nreason: No open trades or resting orders to exit or cancel, and the basket is below its 10-day average, so no new buys are possible. The holiday and seasonal ideas are only practice-book tests and do not override the desk's entry block.\nfiles read: SECTOR Basket vs 10-day average, LIVE_ORDERS_RIGHT_NOW"
+    },
+    {
+     "t": "12:31",
+     "who": "exec",
+     "to": "team",
+     "text": "No action. Everything stays as it is.",
+     "outcome": true
+    }
+   ],
+   "practice": false,
+   "end": "12:31"
   }
  ],
  "feed": [
@@ -223865,6 +224503,138 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-27 12:30",
+   "who": "exec",
+   "kind": "alert",
+   "title": "SOLD TLN +2.2%",
+   "text": "P&L +$0.33 | Thanksgiving run-up trade: held 2 sessions",
+   "tickers": [
+    "TLN"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:31",
+   "who": "exec",
+   "kind": "alert",
+   "title": "SOLD VST +1.8%",
+   "text": "P&L +$0.27 | Thanksgiving run-up trade: held 2 sessions",
+   "tickers": [
+    "VST"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:31",
+   "who": "exec",
+   "kind": "alert",
+   "title": "SOLD CEG -3.1%",
+   "text": "P&L -$0.48 | Thanksgiving run-up trade: held 2 sessions",
+   "tickers": [
+    "CEG"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:31",
+   "who": "chief",
+   "kind": "alert",
+   "title": "Why CEG lost: bad_setup",
+   "text": "The Thanksgiving run-up rule bought CEG at $244.02 on Tuesday and sold at $236.34 on Thursday, a 3.15% loss. The rule was entered even though the basket was below its 10-day averag Lesson: Before any seasonal or calendar rule enters, check the basket-below-10-day-average filter first; the Thanksgiving run-up does not override it.",
+   "tickers": [
+    "CEG"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:31",
+   "who": "exec",
+   "kind": "alert",
+   "title": "SOLD BWXT +1.9%",
+   "text": "P&L +$0.28 | Thanksgiving run-up trade: held 2 sessions",
+   "tickers": [
+    "BWXT"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:31",
+   "who": "exec",
+   "kind": "alert",
+   "title": "SOLD LEU +1.7%",
+   "text": "P&L +$0.26 | Thanksgiving run-up trade: held 2 sessions",
+   "tickers": [
+    "LEU"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:31",
+   "who": "exec",
+   "kind": "alert",
+   "title": "SOLD CCJ +6.9%",
+   "text": "P&L +$1.04 | Thanksgiving run-up trade: held 2 sessions",
+   "tickers": [
+    "CCJ"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:31",
+   "who": "exec",
+   "kind": "alert",
+   "title": "SOLD UUUU +10.0%",
+   "text": "P&L +$1.52 | Thanksgiving run-up trade: held 2 sessions",
+   "tickers": [
+    "UUUU"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:31",
+   "who": "exec",
+   "kind": "alert",
+   "title": "SOLD DNN +9.2%",
+   "text": "P&L +$1.39 | Thanksgiving run-up trade: held 2 sessions",
+   "tickers": [
+    "DNN"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:31",
+   "who": "exec",
+   "kind": "alert",
+   "title": "SOLD UEC +5.0%",
+   "text": "P&L +$0.75 | Thanksgiving run-up trade: held 2 sessions",
+   "tickers": [
+    "UEC"
+   ],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:31",
+   "who": "exec",
+   "kind": "alert",
+   "title": "SOLD NXE +6.3%",
+   "text": "P&L +$0.95 | Thanksgiving run-up trade: held 2 sessions",
+   "tickers": [
+    "NXE"
+   ],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -224056,7 +224826,7 @@
    "text": "How are we looking team, progress wise are we learning and getting better? I can see that we have minimized the loss for today pretty well as we were below the initial investment at some point."
   }
  ],
- "huddle_trade_count": 2,
+ "huddle_trade_count": 12,
  "huddle_seen": {
   "fast move: LEU moved -1.5% in 3 min": 1795790180.7418876,
   "BWXT (you asked us to watch it) moved +1.8% since we last looked": 1795790180.741888,
@@ -224065,7 +224835,7 @@
   "fast move: sector move: 4 of our nuclear stocks moving down together (LEU, NXE, UEC, UUUU)": 1795790577.3833146,
   "fast move: DNN moved -1.6% in 9 min": 1795790619.5515804,
   "fast move: UEC moved -1.5% in 4 min": 1795790868.81404,
-  "a trade opened or closed since the last huddle": 1795791224.850664,
+  "a trade opened or closed since the last huddle": 1795800706.8235662,
   "fast move: UEC moved +1.5% in 7 min": 1795791318.194457,
   "fast move: DNN moved +1.6% in 9 min": 1795791445.0639284,
   "fast move: UEC moved -1.7% in 6 min": 1795791702.5976295,
@@ -224073,12 +224843,12 @@
   "fast move: UUUU moved +1.7% in 8 min": 1795792229.2436535,
   "fast move: LEU moved +1.5% in 8 min": 1795792520.3776698,
   "fast move: UUUU moved +1.5% in 9 min": 1795793960.485136,
-  "fast move: LEU moved +1.5% in 9 min": 1795794202.6802647
+  "fast move: LEU moved +1.5% in 9 min": 1795794202.6802647,
+  "midday check-in": 1795800706.8235667
  },
- "huddle_last": 1795794202.680273,
+ "huddle_last": 1795800706.8235807,
  "huddle_log": [
   "2026-11-24",
-  "2026-11-24",
   "2026-11-25",
   "2026-11-25",
   "2026-11-25",
@@ -224113,6 +224883,7 @@
   "2026-11-25",
   "2026-11-25",
   "2026-11-25",
+  "2026-11-27",
   "2026-11-27",
   "2026-11-27",
   "2026-11-27",
@@ -224669,6 +225440,116 @@
    "decision_quality": null,
    "what_happened": null,
    "lesson": null
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "TLN",
+   "setup": "thanksgiving",
+   "pnl": 0.33,
+   "ret": 2.21,
+   "verdict": "noise",
+   "decision_quality": "ok",
+   "what_happened": "The Thanksgiving run-up rule bought TLN at 347.97 on Nov 24 and sold at 355.65 on Nov 27, a +2.21% gross return worth $0.33 after a realistic cost of about $0.02. The trade made money, but it was a single pre-holiday seasonal bet on a basket that was already below its 10-day average, which the desk's own rule says should block new buys.",
+   "lesson": "Do not let a seasonal rule such as the Thanksgiving run-up override the basket-below-10-day-average block; the rule should be checked against that filter before any entry."
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "VST",
+   "setup": "thanksgiving",
+   "pnl": 0.27,
+   "ret": 1.8,
+   "verdict": "noise",
+   "decision_quality": "poor",
+   "what_happened": "The Thanksgiving run-up rule bought VST at $120.10 on Nov 24 and sold at $122.26 on Nov 27 for a $0.27 gain (about 1.8%, or $0.25 after estimated costs). The trade was taken while the basket was below its 10-day average, which the desk's own rule forbids for new buys.",
+   "lesson": "Before any seasonal or calendar rule enters, check the basket-below-10-day-average filter first; a seasonal pattern does not override it."
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "CEG",
+   "setup": "thanksgiving",
+   "pnl": -0.48,
+   "ret": -3.15,
+   "verdict": "bad_setup",
+   "decision_quality": "poor",
+   "what_happened": "The Thanksgiving run-up rule bought CEG at $244.02 on Tuesday and sold at $236.34 on Thursday, a 3.15% loss. The rule was entered even though the basket was below its 10-day average, which the desk's own filter should have blocked.",
+   "lesson": "Before any seasonal or calendar rule enters, check the basket-below-10-day-average filter first; the Thanksgiving run-up does not override it."
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "BWXT",
+   "setup": "thanksgiving",
+   "pnl": 0.28,
+   "ret": 1.87,
+   "verdict": "bad_setup",
+   "decision_quality": "poor",
+   "what_happened": "The Thanksgiving run-up rule bought BWXT at $113.72 while the basket was below its 10-day average, which our own rules block. It was a small +$0.28 win, but the entry should not have been allowed.",
+   "lesson": "Check the basket-below-10-day-average filter before any seasonal or calendar rule can open a trade; the Thanksgiving run-up does not override it."
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "LEU",
+   "setup": "thanksgiving",
+   "pnl": 0.26,
+   "ret": 1.72,
+   "verdict": "bad_setup",
+   "decision_quality": "poor",
+   "what_happened": "The Thanksgiving run-up rule bought LEU at $83.71 on 2026-11-24 and sold at $85.15 two sessions later, a small +1.72% gain worth $0.26 after costs. The win was tiny and the setup itself was not valid, so the outcome is not evidence the rule works.",
+   "lesson": "A seasonal or calendar rule like the Thanksgiving run-up must pass the basket-below-10-day-average block before it can open any trade, and it did not get that check."
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "CCJ",
+   "setup": "thanksgiving",
+   "pnl": 1.04,
+   "ret": 6.86,
+   "verdict": "bad_setup",
+   "decision_quality": "poor",
+   "what_happened": "The Thanksgiving run-up rule bought CCJ at $59.50 on 2026-11-24 while the basket was below its 10-day average, which should have blocked any new buy. It sold at $63.58 two sessions later for a small gain of about $1.04, a win that came from a rule that should not have fired.",
+   "lesson": "A calendar or seasonal rule must pass the basket-below-10-day-average filter before it can open any trade; the Thanksgiving run-up did not get that check, so it is a bad setup for this desk's rules."
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "UUUU",
+   "setup": "thanksgiving",
+   "pnl": 1.52,
+   "ret": 10.02,
+   "verdict": "bad_setup",
+   "decision_quality": "poor",
+   "what_happened": "The Thanksgiving run-up rule bought UUUU at $5.09 on Tuesday and sold at $5.60 on Black Friday for a $1.52 gain on about $15 deployed. The entry skipped the desk's basket-below-10-day-average block, which should have stopped any new buy while the whole basket was falling.",
+   "lesson": "Any calendar or seasonal rule (including the Thanksgiving run-up) must pass the basket-below-10-day-average filter before it can open a trade; the seasonal pattern does not override it."
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "DNN",
+   "setup": "thanksgiving",
+   "pnl": 1.39,
+   "ret": 9.2,
+   "verdict": "bad_setup",
+   "decision_quality": "poor",
+   "what_happened": "The Thanksgiving run-up rule bought DNN at $1.74 on Nov 24 while the whole basket was below its 10-day average, which the desk's own filter forbids. The trade made $1.39 (about 9%) over two sessions, but that gain came from an entry the rules should have blocked.",
+   "lesson": "Any calendar or seasonal rule must pass the basket-below-10-day-average block before it can open a trade; the Thanksgiving run-up skipped that check and should be gated first."
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "UEC",
+   "setup": "thanksgiving",
+   "pnl": 0.75,
+   "ret": 4.98,
+   "verdict": "bad_setup",
+   "decision_quality": "poor",
+   "what_happened": "The Thanksgiving run-up rule bought UEC at $5.62 on 2026-11-24 while the basket was below its 10-day average, which the desk's rules forbid for new buys. It sold at $5.90 two sessions later for a gross gain of $0.75, or about $0.70 after costs, a win that should not have happened under the rules.",
+   "lesson": "Calendar and seasonal rules like the Thanksgiving run-up must pass the basket-below-10-day-average block before they can open any trade; this one skipped that check."
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "NXE",
+   "setup": "thanksgiving",
+   "pnl": 0.95,
+   "ret": 6.29,
+   "verdict": "bad_setup",
+   "decision_quality": "poor",
+   "what_happened": "The Thanksgiving run-up rule bought NXE at $6.84 on Nov 24 and sold at $7.27 on Nov 27, a +6.3% gross result on a $15 position. The trade should not have been allowed to open: the basket was below its 10-day average, which the desk's rules block for any new buy, and the seasonal rule did not get that check.",
+   "lesson": "Any calendar or seasonal rule (including the Thanksgiving run-up) must pass the basket-below-10-day-average block before it can open a trade; the seasonal pattern does not override it."
   }
  ],
  "intel_at": 1795800120.1610093,
@@ -224736,7 +225617,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 12:28",
+  "updated": "2026-11-27 12:31",
   "total": 961,
   "week": 589,
   "places": {
@@ -228003,7 +228884,7 @@
    "built": "2026-11-27 12:22"
   }
  ],
- "heartbeat": "2026-11-27 12:28",
+ "heartbeat": "2026-11-27 12:30",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -228239,8 +229120,8 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 115.96,
-  "TLN": 356.03
+  "BWXT": 115.9,
+  "TLN": 355.89
  },
  "notes_audit": {
   "scout": {
@@ -228442,8 +229323,8 @@
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 80,
-   "used": 80,
+   "asked": 81,
+   "used": 81,
    "notes": {
     "BWXT Deals and contracts": 4,
     "BWXT Snapshot": 11,
@@ -228470,7 +229351,7 @@
     "desk_lessons_from_our_mistakes": 1,
     "CCJ What history says": 1,
     "TLN Leadership and insiders": 1,
-    "LIVE_ORDERS_RIGHT_NOW": 10,
+    "LIVE_ORDERS_RIGHT_NOW": 11,
     "UUUU Legal": 3,
     "VST Deals and contracts": 1,
     "DNN Snapshot": 3,
@@ -228480,7 +229361,8 @@
     "NXE Legal": 1,
     "NXE Deals and contracts": 1,
     "SECTOR Sector pulse": 1,
-    "UEC Deals and contracts": 1
+    "UEC Deals and contracts": 1,
+    "SECTOR Basket vs 10-day average": 1
    },
    "since": "2026-11-23"
   },
@@ -228528,14 +229410,14 @@
    "since": "2026-11-23"
   },
   "macro": {
-   "asked": 119,
-   "used": 117,
+   "asked": 120,
+   "used": 118,
    "notes": {
-    "SECTOR Uranium market": 86,
+    "SECTOR Uranium market": 87,
     "BWXT Snapshot": 8,
     "CCJ Snapshot": 3,
     "UUUU Snapshot": 9,
-    "SECTOR Government and laws": 78,
+    "SECTOR Government and laws": 79,
     "TLN Snapshot": 43,
     "2026-11-30: Resting buy at $355.66 expires if not filled; ch": 1,
     "2026-12-01: Watch PJM December capacity auction delay reques": 1,
@@ -228607,8 +229489,8 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 116,
-   "used": 114,
+   "asked": 117,
+   "used": 115,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 4,
@@ -228663,7 +229545,10 @@
     "recently_canceled_orders": 1,
     "NXE Price behavior": 1,
     "UEC Price behavior": 4,
-    "UEC Discoveries": 1
+    "UEC Discoveries": 1,
+    "SECTOR Pulse": 1,
+    "SECTOR Seasonal and holiday research": 1,
+    "SECTOR Desk lessons": 1
    },
    "since": "2026-11-23"
   },
@@ -228782,6 +229667,35 @@
     "UUUU Snapshot": 1
    },
    "since": "2026-11-23"
+  },
+  "postmortem": {
+   "asked": 10,
+   "used": 10,
+   "notes": {
+    "TLN Snapshot": 2,
+    "TLN Our trades": 1,
+    "SECTOR Uranium market": 6,
+    "TLN What history says": 1,
+    "VST Snapshot": 2,
+    "VST Our trades": 1,
+    "desk_lessons_from_our_mistakes": 1,
+    "CEG Snapshot": 1,
+    "CEG What history says": 1,
+    "BWXT Snapshot": 2,
+    "BWXT Our trades": 4,
+    "CCJ Snapshot": 1,
+    "CCJ Our trades": 1,
+    "UUUU Snapshot": 1,
+    "UUUU Our trades": 1,
+    "DNN Snapshot": 1,
+    "DNN Our trades": 1,
+    "market_brief": 1,
+    "UEC Snapshot": 1,
+    "UEC Our trades": 1,
+    "NXE Our trades": 1,
+    "NXE Snapshot": 1
+   },
+   "since": "2026-11-27"
   }
  },
  "online_at": 1795776723.2990437,
@@ -228905,7 +229819,7 @@
    ],
    [
     "2026-11-27",
-    63.66
+    63.6
    ]
   ],
   "NXE": [
@@ -229027,7 +229941,7 @@
    ],
    [
     "2026-11-27",
-    7.29
+    7.28
    ]
   ],
   "UEC": [
@@ -229149,7 +230063,7 @@
    ],
    [
     "2026-11-27",
-    5.92
+    5.91
    ]
   ],
   "DNN": [
@@ -229393,7 +230307,7 @@
    ],
    [
     "2026-11-27",
-    5.62
+    5.6
    ]
   ],
   "LEU": [
@@ -229515,7 +230429,7 @@
    ],
    [
     "2026-11-27",
-    85.33
+    85.26
    ]
   ],
   "BWXT": [
@@ -229637,7 +230551,7 @@
    ],
    [
     "2026-11-27",
-    115.96
+    115.9
    ]
   ],
   "CEG": [
@@ -229759,7 +230673,7 @@
    ],
    [
     "2026-11-27",
-    236.43
+    236.39
    ]
   ],
   "VST": [
@@ -229881,7 +230795,7 @@
    ],
    [
     "2026-11-27",
-    122.48
+    122.3
    ]
   ],
   "TLN": [
@@ -230003,7 +230917,7 @@
    ],
    [
     "2026-11-27",
-    356.03
+    355.89
    ]
   ],
   "AMD": [
@@ -230125,7 +231039,7 @@
    ],
    [
     "2026-11-27",
-    419.33
+    418.1
    ]
   ],
   "SMR": [
@@ -230247,7 +231161,7 @@
    ],
    [
     "2026-11-27",
-    3.5
+    3.46
    ]
   ],
   "NNE": [
@@ -230369,7 +231283,7 @@
    ],
    [
     "2026-11-27",
-    9.59
+    9.54
    ]
   ]
  },
@@ -232010,9 +232924,140 @@
    "price": 1.9,
    "result": null,
    "why": "The basket-below-10-day-average rule blocks new buys, and DNN is far below its 200-day average, where the desk's fill data shows level buys underperform. The support zone is also thinly traded (0.28x "
+  },
+  {
+   "role": "postmortem",
+   "ticker": "VST",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-27",
+   "price": 122.3,
+   "result": null,
+   "why": "The trade was a seasonal entry, and VST was about 12% under its 50-day average with the basket weak, so the no-new-buys filter should have blocked it. The profit is too small to validate the rule, and"
+  },
+  {
+   "role": "postmortem",
+   "ticker": "CEG",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-27",
+   "price": 236.39,
+   "result": null,
+   "why": "CEG was down 6% on the week and 10.5% below its 50-day average, so the no-new-buys filter applied and the entry should have been blocked. The Thanksgiving history was a calendar tendency, not a valid "
+  },
+  {
+   "role": "postmortem",
+   "ticker": "BWXT",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-27",
+   "price": 115.9,
+   "result": null,
+   "why": "The rule was supposed to be blocked by the basket filter, and the market brief says the basket is weak and the S&P sits below its 200-day average. I checked the entry against that filter, and a small "
+  },
+  {
+   "role": "postmortem",
+   "ticker": "UUUU",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-27",
+   "price": 5.6,
+   "result": null,
+   "why": "I checked the basket filter against the entry, the 27-day UUUU drawdown (down about 33% over the month), and the desk's own lesson list, which flags this exact failure more than once. A seasonal rule "
+  },
+  {
+   "role": "postmortem",
+   "ticker": "DNN",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-27",
+   "price": 1.91,
+   "result": null,
+   "why": "I checked the entry against the desk's filter, which blocks new buys while the basket is below its 10-day average, and the position was opened anyway. The P&L is positive, but the desk's own rules say"
   }
  ],
- "after_sale": [],
+ "after_sale": [
+  {
+   "ticker": "TLN",
+   "exit": 355.65,
+   "date": "2026-11-27",
+   "pnl": 0.33,
+   "why_out": "Thanksgiving run-up trade: held 2 sessions",
+   "setup": "thanksgiving"
+  },
+  {
+   "ticker": "VST",
+   "exit": 122.26,
+   "date": "2026-11-27",
+   "pnl": 0.27,
+   "why_out": "Thanksgiving run-up trade: held 2 sessions",
+   "setup": "thanksgiving"
+  },
+  {
+   "ticker": "CEG",
+   "exit": 236.34,
+   "date": "2026-11-27",
+   "pnl": -0.48,
+   "why_out": "Thanksgiving run-up trade: held 2 sessions",
+   "setup": "thanksgiving"
+  },
+  {
+   "ticker": "BWXT",
+   "exit": 115.85,
+   "date": "2026-11-27",
+   "pnl": 0.28,
+   "why_out": "Thanksgiving run-up trade: held 2 sessions",
+   "setup": "thanksgiving"
+  },
+  {
+   "ticker": "LEU",
+   "exit": 85.15,
+   "date": "2026-11-27",
+   "pnl": 0.26,
+   "why_out": "Thanksgiving run-up trade: held 2 sessions",
+   "setup": "thanksgiving"
+  },
+  {
+   "ticker": "CCJ",
+   "exit": 63.58,
+   "date": "2026-11-27",
+   "pnl": 1.04,
+   "why_out": "Thanksgiving run-up trade: held 2 sessions",
+   "setup": "thanksgiving"
+  },
+  {
+   "ticker": "UUUU",
+   "exit": 5.6,
+   "date": "2026-11-27",
+   "pnl": 1.52,
+   "why_out": "Thanksgiving run-up trade: held 2 sessions",
+   "setup": "thanksgiving"
+  },
+  {
+   "ticker": "DNN",
+   "exit": 1.9,
+   "date": "2026-11-27",
+   "pnl": 1.39,
+   "why_out": "Thanksgiving run-up trade: held 2 sessions",
+   "setup": "thanksgiving"
+  },
+  {
+   "ticker": "UEC",
+   "exit": 5.9,
+   "date": "2026-11-27",
+   "pnl": 0.75,
+   "why_out": "Thanksgiving run-up trade: held 2 sessions",
+   "setup": "thanksgiving"
+  },
+  {
+   "ticker": "NXE",
+   "exit": 7.27,
+   "date": "2026-11-27",
+   "pnl": 0.95,
+   "why_out": "Thanksgiving run-up trade: held 2 sessions",
+   "setup": "thanksgiving"
+  }
+ ],
  "cancels": [
   {
    "ticker": "TLN",
@@ -236074,6 +237119,76 @@
    "lesson": "Two wrong 3-day calls are noise; judge scout calls only on the full sample, and always write down the reason for a call.",
    "cause": "luck",
    "fix": "Track scout calls with a required 'why' field and review hit rate over at least 50 calls before changing any rule."
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "closed_trade",
+   "title": "TLN trade +0.33",
+   "lesson": "Do not let a seasonal rule such as the Thanksgiving run-up override the basket-below-10-day-average block; the rule should be checked against that filter before any entry.",
+   "cause": "noise"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "closed_trade",
+   "title": "VST trade +0.27",
+   "lesson": "Before any seasonal or calendar rule enters, check the basket-below-10-day-average filter first; a seasonal pattern does not override it.",
+   "cause": "noise"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "closed_trade",
+   "title": "CEG trade -0.48",
+   "lesson": "Before any seasonal or calendar rule enters, check the basket-below-10-day-average filter first; the Thanksgiving run-up does not override it.",
+   "cause": "bad_setup"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "closed_trade",
+   "title": "BWXT trade +0.28",
+   "lesson": "Check the basket-below-10-day-average filter before any seasonal or calendar rule can open a trade; the Thanksgiving run-up does not override it.",
+   "cause": "bad_setup"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "closed_trade",
+   "title": "LEU trade +0.26",
+   "lesson": "A seasonal or calendar rule like the Thanksgiving run-up must pass the basket-below-10-day-average block before it can open any trade, and it did not get that check.",
+   "cause": "bad_setup"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "closed_trade",
+   "title": "CCJ trade +1.04",
+   "lesson": "A calendar or seasonal rule must pass the basket-below-10-day-average filter before it can open any trade; the Thanksgiving run-up did not get that check, so it is a bad setup for this desk's rules.",
+   "cause": "bad_setup"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "closed_trade",
+   "title": "UUUU trade +1.52",
+   "lesson": "Any calendar or seasonal rule (including the Thanksgiving run-up) must pass the basket-below-10-day-average filter before it can open a trade; the seasonal pattern does not override it.",
+   "cause": "bad_setup"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "closed_trade",
+   "title": "DNN trade +1.39",
+   "lesson": "Any calendar or seasonal rule must pass the basket-below-10-day-average block before it can open a trade; the Thanksgiving run-up skipped that check and should be gated first.",
+   "cause": "bad_setup"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "closed_trade",
+   "title": "UEC trade +0.75",
+   "lesson": "Calendar and seasonal rules like the Thanksgiving run-up must pass the basket-below-10-day-average block before they can open any trade; this one skipped that check.",
+   "cause": "bad_setup"
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "closed_trade",
+   "title": "NXE trade +0.95",
+   "lesson": "Any calendar or seasonal rule (including the Thanksgiving run-up) must pass the basket-below-10-day-average block before it can open a trade; the seasonal pattern does not override it.",
+   "cause": "bad_setup"
   }
  ],
  "shadow": [
@@ -236483,7 +237598,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 12:28",
+ "watchdog_last": "2026-11-27 12:30",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

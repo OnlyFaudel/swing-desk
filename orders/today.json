@@ -11,6 +11,106 @@
    "price": 0.0,
    "status": "pending_new",
    "note": "banked the jump: opened +5.4% vs yesterday's close; buying back near the close"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "CCJ",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.254638,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "NXE",
+   "side": "sell",
+   "kind": "market",
+   "qty": 2.214912,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "UEC",
+   "side": "sell",
+   "kind": "market",
+   "qty": 2.695729,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "DNN",
+   "side": "sell",
+   "kind": "market",
+   "qty": 8.706896,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "UUUU",
+   "side": "sell",
+   "kind": "market",
+   "qty": 2.976423,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "LEU",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.180973,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "BWXT",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.133221,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "CEG",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.062085,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "VST",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.126147,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
+  },
+  {
+   "time": "2026-11-27 12:30",
+   "symbol": "TLN",
+   "side": "sell",
+   "kind": "market",
+   "qty": 0.043538,
+   "price": 0.0,
+   "status": "pending_new",
+   "note": "Thanksgiving run-up trade: held 2 sessions"
   }
  ]
 }
