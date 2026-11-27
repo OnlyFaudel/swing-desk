@@ -31789,5 +31789,83 @@
 "targets",
 "white"
 ]
+},
+{
+"id": "9c8e1d3915c13af9",
+"date": "2026-11-24",
+"ts": 1795557777,
+"title": "Form 8K Centrus Energy For: 24 November By Investing.com",
+"summary": "",
+"outlet": "Investing.com India",
+"link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONkljb0dISFVRMlMtVHVZYmFhbjZFdEswaUc2VXFxZ2VnNG0tV2hBeC1IcUdCNG8wcUpvTVRUTGxmREhndzBxa0tlSWxwbEFJeDFGMmlWZXZ3a2V3WTdPVG5WbC00cnpzZXhiUElybk1IY2pHQXhsd1RrdXkyWXR6blp0OUl1TlB6dXp2cUxSUzhNdHpib2QwUjQxMnBmNzZQ?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.56,
+"score": 2.62,
+"echo_of": null,
+"w": [
+"centrus",
+"com",
+"energy",
+"form",
+"investing",
+"november"
+]
+},
+{
+"id": "c6d4d0c5b65ab7d8",
+"date": "2026-11-25",
+"ts": 1795593600,
+"title": "Nuclear Power in China",
+"summary": "",
+"outlet": "World Nuclear Association",
+"link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNTkxdWE1SEpHMnBsNXpseVRQYXliTm9SUk9RZEtsTC05ZV82OUhxek0tLVVFX096LUd0OGoydmI4Q25pOWZiR2F0Nk50SzNpbUplNmpycDBrWFBWUEdhZkd2NGpBX2oweGNGQXd1Y25lMWlWbjdnNXQzdWo5V1d0V0JfamptSDRScVJwM2NRVHY2UkcxMmNPa3dIU2U?oc=5",
+"place": "China new builds",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.6,
+"score": 3.7,
+"echo_of": null,
+"w": [
+"china",
+"nuclear",
+"power"
+]
+},
+{
+"id": "311d74b4f5c34771",
+"date": "2026-11-27",
+"ts": 1795814877,
+"title": "NexGen: 3 Key Takeaways for Long-Term Investors",
+"summary": "",
+"outlet": "The Motley Fool",
+"link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWEtRbXVWX3NGNnZaYV9tVGM0NXAyLUdfX2dEYzNOcHNieWRJNnlLamoxYkVLMXhTTUxJNWJndVlyUk80a3hZNkR2QUhVdUFWd3ZIbGZOcE81dE10YTNDdjlITGVLZzRBUjYzTXFsQjlVYWlzbXBPcE45Y2ZGSnowY0JzeVh3OUlsOW1zb0pCU1c1OHpvcUdfUDMzc3dfbDA?oc=5",
+"place": "Rook I / Arrow",
+"tickers": [
+"NXE"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.85,
+"score": 3.2,
+"echo_of": null,
+"w": [
+"investors",
+"key",
+"long",
+"nexgen",
+"takeaways",
+"term"
+]
 }
 ]
