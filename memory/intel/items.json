@@ -28522,5 +28522,124 @@
 "power",
 "targeted"
 ]
+},
+{
+"id": "8aebb4afa140bcc3",
+"date": "2026-11-24",
+"ts": 1795507200,
+"title": "Radiant Uranium (CNSX:RUC) - Stock Analysis",
+"summary": "",
+"outlet": "Simply Wall St",
+"link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5uQlVIRTFXb1Z5dlFsQ2xzdUo1YkpkS1pYeV9DNnFJTVFlQlBSMi1vQnN5aGxobnl0ODctZEhpS2R2akpiM2gzSTFTY245MkdEN2JXV281a1BEOVpzV2tpSlBHanJ5ZlhXdUxyOWNtMUNFb1dKdTFacA?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.67,
+"score": 2.84,
+"echo_of": null,
+"w": [
+"analysis",
+"cnsx",
+"radiant",
+"ruc",
+"stock",
+"uranium"
+]
+},
+{
+"id": "af7d18f1b98ada70",
+"date": "2026-11-26",
+"ts": 1795656382,
+"title": "Centrus Energy Corp. (LEU) Stock Forecasts",
+"summary": "",
+"outlet": "Yahoo Finance",
+"link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOd3dCcjFqZXd3cE16OUhVd3R3XzB5dTgweWtiUnF2c1QyOEpzQS1GNFNhcE5OQk9ZUEpGdUFmdS1HRW9qQkJrdXJFN1FJeG5OWUxwR2U3UjhSMVpQakRHaWlwQ2xVZ3c1eTR1ZmppZzY2amxjUXFMSHJRNVJhLTJ1ZmVKYTBnMHVFbnBUNTduRUs?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 1.5,
+"echo_of": "af00b5bc77a616ec",
+"w": [
+"centrus",
+"energy",
+"forecasts",
+"leu",
+"stock"
+]
+},
+{
+"id": "90a40619b0fcc5bb",
+"date": "2026-11-27",
+"ts": 1795754700,
+"title": "NexGen Energy (ASX:NXG): Will the Uranium Developer Keep Rook I on Track?",
+"summary": "",
+"outlet": "Kalkine Media",
+"link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTTlMUUVLLTNnT3ZFd3liUUlLYTBHX05McWtqVzRNN3dxSTJSejg5WHNJU3N1X2Vnck5BTjE3NlYxMmZfc0ZqcnJoX0FWQ0k5ZkFBYW50ZnFiaS1ISVpLUWZrT2NCTDBYY3hTY3VvQ0FYNkoxNzhJa0M2OXpkVzFOR1VQWXYtMUE4bXBLZDFlT1VySHE0WFNiSGpjd2ljN3VTT0w5OWpZdkYzYWI0Z1RR?oc=5",
+"place": "Rook I / Arrow",
+"tickers": [
+"NXE",
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.6,
+"score": 2.7,
+"echo_of": null,
+"w": [
+"asx",
+"developer",
+"energy",
+"keep",
+"nexgen",
+"nxg",
+"rook",
+"track",
+"uranium"
+]
+},
+{
+"id": "8227b8e060dd131f",
+"date": "2026-11-27",
+"ts": 1795757673,
+"title": "IAEA discusses local ceasefire at Zaporizhzhia nuclear plant",
+"summary": "",
+"outlet": "Operativ M\u0259lumat M\u0259rk\u0259zi",
+"link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOXzhwUzU1U3VPMkcxZ21xQUMyX3VROFhmRC05VDZRQ0NoYmlSLVkzaHJEU1Bpbm8zZDNkand3ZEJ6a19ualN0aU4zeUF4OHhjWnQ0UU5DZ3I3dFdOc3BWcGFpNjlaVS1OMXV0eWdhNVFRSHEySDFicUtyM2k1QW5oT3cxNUN3QThmR0E5dGtycHJ3ZGdCLUNkcXZEVlg?oc=5",
+"place": "War zones",
+"tickers": [
+"CCJ",
+"CEG"
+],
+"tags": [
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.38,
+"score": 4.56,
+"echo_of": "afd8290622043c62",
+"w": [
+"ceasefire",
+"discusses",
+"iaea",
+"local",
+"nuclear",
+"plant",
+"zaporizhzhia"
+]
 }
 ]
