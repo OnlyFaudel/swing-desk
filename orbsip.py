@@ -48,7 +48,24 @@ def _data():
     return StockHistoricalDataClient(os.environ["ALPACA_KEY"], os.environ["ALPACA_SECRET"])
 
 
+def _market_hours():
+    """True from 7:30 to 16:45 on a trading day: the live bot needs the Alpaca request budget then, so this job pauses."""
+    now = pd.Timestamp.now(tz=NY)
+    if now.weekday() >= 5:
+        return False
+    try:
+        import market
+        if market.is_holiday(now.date()):
+            return False
+    except Exception:
+        pass
+    return dt.time(7, 30) <= now.time() < dt.time(16, 45)
+
+
 def _get(cl, syms, tf, start, end, tries=4):
+    if _market_hours():
+        log("market hours: pausing until after the close")
+        sys.exit(0)
     from alpaca.data.requests import StockBarsRequest
     from alpaca.data.enums import Adjustment, DataFeed
     for k in range(tries):
