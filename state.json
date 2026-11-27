@@ -670,7 +670,8 @@
   "pulsehold:2026-11-27": true,
   "gapshadow:2026-11-27": true,
   "gapbank:UUUU:2026-11-27": true,
-  "questioner:2026-11-27:5": true
+  "questioner:2026-11-27:5": true,
+  "ev:961370b47f9f": true
  },
  "benchmark": {
   "shares": {
@@ -5254,30 +5255,6 @@
  },
  "news_feed": [
   {
-   "ticker": "DNN",
-   "source": "Google News",
-   "title": "Denison Mines shares drop almost 6% after ongoing cost challenges and persistent downside pressure - Traders Union",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRGhZQ2F0c081R1l1SU1wR3ZpQ0tyV2dsOU9sU3NOZzAxYmtUSEpuYjd1OTV1RHJVWWc5QWplanpSVzA2MjRxYWNhM25CNlJGSHl4NmNReXpvemZwZTFZQXZxb04tdXNXSkdTeURRbndqT0tzOTEtQ2ZkOHFKWlNtcVVNZDUxRDBCOXNfb0NKbXk1QQ?oc=5",
-   "ts": 1795617701,
-   "materiality": 4,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Price-move recap citing vague 'cost challenges'; no new company-specific fact disclosed."
-  },
-  {
-   "ticker": "CEG",
-   "source": "Yahoo Finance",
-   "title": "Vistra Underperforms Industry in the Past Year: Time to Buy or Wait?",
-   "link": "https://finance.yahoo.com/energy/articles/vistra-underperforms-industry-past-time-134200801.html?.tsrc=rss",
-   "ts": 1795614120,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Generic Yahoo valuation opinion piece on a stock already down 31%; no new company-specific information."
-  },
-  {
    "ticker": "VST",
    "source": "Google News",
    "title": "Vistra Underperforms Industry in the Past Year: Time to Buy or Wait? - Yahoo Finance",
@@ -8252,6 +8229,30 @@
    "direction": "down",
    "event_type": "other",
    "why": "Headline is a price recap of a 33% drop; no new company-specific information."
+  },
+  {
+   "ticker": "DNN",
+   "source": "Google News",
+   "title": "DNN climbs as upward price move continues on short-term strength - Traders Union",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMmhlX21sZzZCbHZXaF9PYmQwSHBrbGhuQ3BxNUhkU1pnS0RnVHViWXFrMHgzcHMzdHdmejQ4NS1nck1HQ3BabFhpVXJvWXZlT3VUX2taSmVkYXQtVXBfOWxPWTNpOGVFTkctMFp2MVNsaTgwLVo4ZzNsSW5kSEo1YzZBUXBNcmprRTdjLTB3?oc=5",
+   "ts": 1795797695,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic technical price-move recap; no company-specific new information."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Local intel: The Daily Caller (Russia supply)",
+   "title": "Regulators Move Two Uranium Plants Forward That Could Loosen Russia\u2019s Grip On US Nuclear Fuel",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaDJtY3NDdjBic1BHUUpIUDNYU2JvVmV4R0tGUUZvR25QYk4yR2pkOENDZzVtTmFXcXN4elgzRkQ0Nnlic1RGeWpRdmlRUUpBRUt5UFREUTFPTHRvWFJ5NGJldGExdFN4aC0ybjlHRHQ0aDZ5aXA5QzJWX3NqUmE1ZHpsNlhGS21zR0hmcVFRSGpwWUF5V05OU1YxRFBqdGc0US1uNjJ3?oc=5",
+   "ts": 1795796820,
+   "materiality": 6,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "policy_tariff",
+   "why": "Regulators advancing two enrichment plants could reduce reliance on Russian enriched uranium, a direct competitive angle for LEU."
   }
  ],
  "reviews": [
@@ -10024,16 +10025,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.3296,
+  "day_usd": 0.33132,
   "month": "2026-11",
-  "month_usd": 2.42378,
-  "total_usd": 2.42378,
+  "month_usd": 2.4255,
+  "total_usd": 2.4255,
   "by_role": {
    "macro": 0.24318,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.32531,
-   "scout": 0.25322,
+   "scout": 0.25419,
    "review": 0.11073,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -10042,7 +10043,7 @@
    "investigator": 0.38694,
    "postmortem": 0.00035,
    "researcher": 0.02341,
-   "engineer": 0.10496,
+   "engineer": 0.10571,
    "questioner": 0.1653
   }
  },
@@ -10286,23 +10287,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 63.76,
+  "CCJ": 63.78,
   "NXE": 7.33,
-  "UEC": 5.95,
+  "UEC": 5.93,
   "DNN": 1.9,
-  "UUUU": 5.61,
-  "LEU": 85.62,
-  "BWXT": 116.07,
-  "CEG": 237.55,
-  "VST": 123.01,
-  "TLN": 358.02,
-  "AMD": 418.9,
+  "UUUU": 5.59,
+  "LEU": 85.7,
+  "BWXT": 116.45,
+  "CEG": 237.05,
+  "VST": 123.02,
+  "TLN": 358.99,
+  "AMD": 419.56,
   "SMR": 3.54,
   "NNE": 9.62,
-  "SPY": 726.67,
-  "SGOV": 100.71
+  "SPY": 727.4,
+  "SGOV": 100.7
  },
- "last_cycle": "2026-11-27 11:47 ET",
+ "last_cycle": "2026-11-27 11:51 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -10365,10 +10366,10 @@
   ]
  },
  "brakes": {
-  "equity": 1046.05,
-  "day_pct": 4.04,
-  "week_pct": 4.55,
-  "drawdown_pct": -0.79,
+  "equity": 1046.45,
+  "day_pct": 4.08,
+  "week_pct": 4.59,
+  "drawdown_pct": -0.75,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -14786,6 +14787,18 @@
   [
    "2026-11-27 11:47",
    1046.05
+  ],
+  [
+   "2026-11-27 11:48",
+   1046.95
+  ],
+  [
+   "2026-11-27 11:50",
+   1046.72
+  ],
+  [
+   "2026-11-27 11:51",
+   1046.45
   ]
  ],
  "nowcast": {
@@ -59482,7 +59495,7 @@
     0.8455
    ]
   },
-  "time": "2026-11-27 11:47"
+  "time": "2026-11-27 11:51"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -59495,8 +59508,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "4ee30073db1990ac",
   "7cabb45f8b0c2778",
+  "4ee30073db1990ac",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -59539,8 +59552,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1acc6842cd4f6e64",
   "1715e61816aa5619",
+  "1acc6842cd4f6e64",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -59670,14 +59683,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "7c380c991c59f9ba",
   "1ed195cb4396cbe7",
+  "7c380c991c59f9ba",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -60266,6 +60279,7 @@
   "89226f35e5decf62",
   "4abce8dfecf110ac",
   "5d22d1b6e3da5fb6",
+  "068e5507f464ca6e",
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
@@ -223417,6 +223431,42 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-27 11:52",
+   "who": "engineer",
+   "kind": "agent",
+   "title": null,
+   "text": "Two NRC-style regulatory steps (a Paducah enrichment facility notice and reactor licensing) don't change pounds of uranium or reactor timelines this week. The Paducah notice is the only one that touches our names: it's a possible future competitor to Centrus (LEU) enrichment, but it's a Federal Register notice with no confirmed impact, so I'd call it minor for now.\n\nWhy: The desk notes show the Paducah item is a licensing notice, not a supply change, and Centrus's Russian waivers and fuel-policy status are unchanged. Power-deal history is context only and doesn't apply to a fuel-licensing headline.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 11:52",
+   "who": "engineer",
+   "kind": "alert",
+   "title": null,
+   "text": "Fuel policy news: Regulators Move Two Uranium Plants Forward That Could Loosen Russia\u2019s Grip On US Nuclear Fuel. The US ban on Russian enriched uranium allows exceptions only until Jan 1 2028; Centrus (LEU) gets well over half its supply through 2027 from Russia.\n\nPlant Engineer: Two NRC-style regulatory steps (a Paducah enrichment facility notice and reactor licensing) don't change pounds of uranium or reactor timelines this week. The Paducah notice is the only one that touches our names: it's a possible future competitor to Centrus (LEU) enrichment, but it's a Federal Register notice with no confirmed impact, so I'd call it minor for now.",
+   "tickers": [
+    "CCJ",
+    "LEU"
+   ],
+   "art": {
+    "big": "RUSSIAN URANIUM NEWS",
+    "sub": "Regulators Move Two Uranium Plants Forward That Could Loosen Russia\u2019s Grip On US Nuclear F"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 11:52",
+   "who": "engineer",
+   "kind": "alert",
+   "title": "RUSSIAN URANIUM NEWS",
+   "text": "Regulators Move Two Uranium Plants Forward That Could Loosen Russia\u2019s Grip On US Nuclear Fuel | Two NRC-style regulatory steps (a Paducah enrichment facility notice and reactor licensing) don't change pounds of uranium or reactor timelines this week.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -224196,6 +224246,18 @@
    "r1": null,
    "r5": null,
    "r20": null
+  },
+  {
+   "ticker": "LEU",
+   "type": "policy_tariff",
+   "title": "Regulators Move Two Uranium Plants Forward That Could Loosen Russia\u2019s Grip On US Nuclear Fuel",
+   "date": "2026-11-27",
+   "price": 85.7,
+   "materiality": 6,
+   "direction_called": "up",
+   "r1": null,
+   "r5": null,
+   "r20": null
   }
  ],
  "postmortems": [
@@ -224211,62 +224273,62 @@
    "lesson": null
   }
  ],
- "intel_at": 1795796452.9914112,
+ "intel_at": 1795798276.9371717,
  "intel_health": {
-  "at": "2026-11-27 11:21",
+  "at": "2026-11-27 11:51",
   "sources": {
-   "Cigar Lake": 1,
-   "McArthur River / Key Lake": 5,
+   "Cigar Lake": 2,
+   "McArthur River / Key Lake": 0,
    "Athabasca Basin": 10,
    "Saskatchewan wildfires": 4,
-   "Rook I / Arrow": 7,
+   "Rook I / Arrow": 8,
    "Wheeler River / Phoenix": 7,
    "Port Hope / Blind River": 0,
-   "Westinghouse": 9,
-   "Kazakhstan": 0,
+   "Westinghouse": 8,
+   "Kazakhstan": 38,
    "Niger": 11,
    "Namibia": 26,
-   "Russia supply": 1,
+   "Russia supply": 2,
    "Piketon": 19,
    "HALEU": 9,
-   "Wyoming ISR": 21,
+   "Wyoming ISR": 17,
    "South Texas ISR": 2,
-   "White Mesa / Utah": 7,
-   "Rare earths (Energy Fuels)": 0,
+   "White Mesa / Utah": 6,
+   "Rare earths (Energy Fuels)": 7,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 12,
+   "Naval reactors": 10,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 4,
    "Comanche Peak": 4,
    "PJM grid": 9,
    "ERCOT grid": 12,
-   "Data-center nuclear deals": 10,
+   "Data-center nuclear deals": 9,
    "Japan restarts": 12,
-   "China new builds": 7,
+   "China new builds": 6,
    "Congress and laws": 26,
    "NRC decisions": 6,
-   "Energy Department": 35,
-   "White House and executive orders": 31,
+   "Energy Department": 43,
+   "White House and executive orders": 28,
    "Tariffs and trade": 3,
    "India": 18,
-   "South Korea": 88,
-   "Europe new builds": 63,
-   "France and UK": 14,
+   "South Korea": 89,
+   "Europe new builds": 29,
+   "France and UK": 11,
    "Middle East": 58,
-   "Asia newcomers": 24,
-   "Canada SMRs": 8,
-   "Big tech power deals": 29,
-   "Iran": 28,
+   "Asia newcomers": 38,
+   "Canada SMRs": 7,
+   "Big tech power deals": 30,
+   "Iran": 55,
    "North Korea": 65,
    "War zones": 35,
    "AUKUS and navies": 25,
-   "Weapons programs": 20,
-   "Stockpiles and reserves": 29,
+   "Weapons programs": 32,
+   "Stockpiles and reserves": 24,
    "Sprott trust": 3,
-   "Uranium price": 26,
+   "Uranium price": 51,
    "US policy": 0,
-   "Lawsuits and investigations": 33,
-   "Workers and jobs": 38,
+   "Lawsuits and investigations": 72,
+   "Workers and jobs": 37,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 52,
    "Federal Register (uranium)": 11,
@@ -224276,8 +224338,8 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 11:47",
-  "total": 954,
+  "updated": "2026-11-27 11:52",
+  "total": 956,
   "week": 589,
   "places": {
    "South Korea": 55,
@@ -224287,7 +224349,7 @@
    "Workers and jobs": 30,
    "Asia newcomers": 30,
    "AUKUS and navies": 29,
-   "Europe new builds": 27,
+   "Europe new builds": 26,
    "Piketon": 23,
    "World Nuclear News": 23,
    "War zones": 20,
@@ -224295,60 +224357,60 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-27 11:21",
+   "at": "2026-11-27 11:51",
    "sources": {
-    "Cigar Lake": 1,
-    "McArthur River / Key Lake": 5,
+    "Cigar Lake": 2,
+    "McArthur River / Key Lake": 0,
     "Athabasca Basin": 10,
     "Saskatchewan wildfires": 4,
-    "Rook I / Arrow": 7,
+    "Rook I / Arrow": 8,
     "Wheeler River / Phoenix": 7,
     "Port Hope / Blind River": 0,
-    "Westinghouse": 9,
-    "Kazakhstan": 0,
+    "Westinghouse": 8,
+    "Kazakhstan": 38,
     "Niger": 11,
     "Namibia": 26,
-    "Russia supply": 1,
+    "Russia supply": 2,
     "Piketon": 19,
     "HALEU": 9,
-    "Wyoming ISR": 21,
+    "Wyoming ISR": 17,
     "South Texas ISR": 2,
-    "White Mesa / Utah": 7,
-    "Rare earths (Energy Fuels)": 0,
+    "White Mesa / Utah": 6,
+    "Rare earths (Energy Fuels)": 7,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 12,
+    "Naval reactors": 10,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 4,
     "Comanche Peak": 4,
     "PJM grid": 9,
     "ERCOT grid": 12,
-    "Data-center nuclear deals": 10,
+    "Data-center nuclear deals": 9,
     "Japan restarts": 12,
-    "China new builds": 7,
+    "China new builds": 6,
     "Congress and laws": 26,
     "NRC decisions": 6,
-    "Energy Department": 35,
-    "White House and executive orders": 31,
+    "Energy Department": 43,
+    "White House and executive orders": 28,
     "Tariffs and trade": 3,
     "India": 18,
-    "South Korea": 88,
-    "Europe new builds": 63,
-    "France and UK": 14,
+    "South Korea": 89,
+    "Europe new builds": 29,
+    "France and UK": 11,
     "Middle East": 58,
-    "Asia newcomers": 24,
-    "Canada SMRs": 8,
-    "Big tech power deals": 29,
-    "Iran": 28,
+    "Asia newcomers": 38,
+    "Canada SMRs": 7,
+    "Big tech power deals": 30,
+    "Iran": 55,
     "North Korea": 65,
     "War zones": 35,
     "AUKUS and navies": 25,
-    "Weapons programs": 20,
-    "Stockpiles and reserves": 29,
+    "Weapons programs": 32,
+    "Stockpiles and reserves": 24,
     "Sprott trust": 3,
-    "Uranium price": 26,
+    "Uranium price": 51,
     "US policy": 0,
-    "Lawsuits and investigations": 33,
-    "Workers and jobs": 38,
+    "Lawsuits and investigations": 72,
+    "Workers and jobs": 37,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 52,
     "Federal Register (uranium)": 11,
@@ -224915,8 +224977,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "fd337937e7471e2a",
   "b2362be41ae616f1",
+  "fd337937e7471e2a",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -224964,10 +225026,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "688d746cfc31b58f",
   "22ab37dfabeba433",
-  "f815e45da305cee7",
+  "688d746cfc31b58f",
   "85de31670d4daf9d",
+  "f815e45da305cee7",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -225141,7 +225203,8 @@
   "09bd7b0e348df04b",
   "958910b51098bafe",
   "cf0b8d35ede4612a",
-  "53627f4c0e7162ee"
+  "53627f4c0e7162ee",
+  "ecc9cf8f7327ef77"
  ],
  "panic_log": [
   {
@@ -225182,7 +225245,7 @@
   }
  ],
  "memory_view": {
-  "events": 1791,
+  "events": 1793,
   "with_outcomes": 1336,
   "playbooks": {
    "acquisition": {
@@ -225767,24 +225830,6 @@
    {
     "date": "2026-11-26",
     "ticker": "CCJ",
-    "title": "Dukovany nuclear plant: KHNP says new contractor will be Korean",
-    "type": "intel_contract",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-26",
-    "ticker": "BWXT",
-    "title": "Dukovany nuclear plant: KHNP says new contractor will be Korean",
-    "type": "intel_contract",
-    "r0": null,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-26",
-    "ticker": "CCJ",
     "title": "Poland Advances $50 Billion Nuclear Power Plant With New Equipment Procurement Steps",
     "type": "intel_regulation",
     "r0": null,
@@ -226120,6 +226165,24 @@
     "ticker": "LEU",
     "title": "Trump\u2019s Saudi nuclear deal faces Senate test as Democrats challenge safeguards",
     "type": "intel_opposition",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-27",
+    "ticker": "LEU",
+    "title": "Regulators Move Two Uranium Plants Forward That Could Loosen Russia\u2019s Grip On US Nuclear Fuel",
+    "type": "intel_regulation",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-27",
+    "ticker": "CCJ",
+    "title": "Regulators Move Two Uranium Plants Forward That Could Loosen Russia\u2019s Grip On US Nuclear Fuel",
+    "type": "intel_regulation",
     "r0": null,
     "r5": null,
     "r20": null
@@ -227411,7 +227474,7 @@
    }
   ]
  },
- "dossier_at": 1795796495.9649363,
+ "dossier_at": 1795798321.739751,
  "sector_prices": {
   "_at": 1795783563.8004794,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -227467,82 +227530,82 @@
   {
    "ticker": "CCJ",
    "name": "Cameco",
-   "price": 63.28,
-   "week_pct": 3.03,
-   "built": "2026-11-27 11:21"
+   "price": 63.78,
+   "week_pct": 3.84,
+   "built": "2026-11-27 11:52"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
-   "price": 7.29,
-   "week_pct": 5.12,
-   "built": "2026-11-27 11:21"
+   "price": 7.33,
+   "week_pct": 5.7,
+   "built": "2026-11-27 11:52"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
-   "price": 5.91,
-   "week_pct": 2.6,
-   "built": "2026-11-27 11:21"
+   "price": 5.93,
+   "week_pct": 3.04,
+   "built": "2026-11-27 11:52"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
-   "price": 1.88,
-   "week_pct": 4.14,
-   "built": "2026-11-27 11:21"
+   "price": 1.9,
+   "week_pct": 4.7,
+   "built": "2026-11-27 11:52"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
-   "price": 5.54,
-   "week_pct": 1.19,
-   "built": "2026-11-27 11:21"
+   "price": 5.59,
+   "week_pct": 2.1,
+   "built": "2026-11-27 11:52"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
-   "price": 84.52,
-   "week_pct": -5.77,
-   "built": "2026-11-27 11:21"
+   "price": 85.7,
+   "week_pct": -4.46,
+   "built": "2026-11-27 11:52"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
-   "price": 115.6,
-   "week_pct": -1.25,
-   "built": "2026-11-27 11:21"
+   "price": 116.45,
+   "week_pct": -0.52,
+   "built": "2026-11-27 11:52"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
-   "price": 235.95,
-   "week_pct": -6.38,
-   "built": "2026-11-27 11:21"
+   "price": 237.05,
+   "week_pct": -5.94,
+   "built": "2026-11-27 11:52"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
-   "price": 122.15,
-   "week_pct": -1.61,
-   "built": "2026-11-27 11:21"
+   "price": 123.02,
+   "week_pct": -0.91,
+   "built": "2026-11-27 11:52"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
-   "price": 355.9,
-   "week_pct": -0.0,
-   "built": "2026-11-27 11:21"
+   "price": 358.99,
+   "week_pct": 0.87,
+   "built": "2026-11-27 11:52"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-27 11:21"
+   "built": "2026-11-27 11:52"
   }
  ],
- "heartbeat": "2026-11-27 11:47",
+ "heartbeat": "2026-11-27 11:51",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -227778,26 +227841,26 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 116.06999969482422,
-  "TLN": 358.02
+  "BWXT": 116.45,
+  "TLN": 358.99
  },
  "notes_audit": {
   "scout": {
-   "asked": 469,
-   "used": 430,
+   "asked": 471,
+   "used": 432,
    "notes": {
     "TLN Deals and contracts": 20,
     "CCJ Deals and contracts": 80,
     "BWXT Deals and contracts": 56,
-    "SECTOR Government and laws": 130,
+    "SECTOR Government and laws": 131,
     "UUUU Deals and contracts": 44,
     "SECTOR Countries": 134,
     "CEG Deals and contracts": 62,
     "NXE Legal": 23,
     "NXE Deals and contracts": 19,
-    "DNN Deals and contracts": 15,
+    "DNN Deals and contracts": 16,
     "BWXT Legal": 3,
-    "LEU Deals and contracts": 44,
+    "LEU Deals and contracts": 45,
     "UEC Deals and contracts": 8,
     "UUUU Legal": 25,
     "SECTOR Uranium market": 11,
@@ -228023,8 +228086,8 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 76,
-   "used": 75,
+   "asked": 77,
+   "used": 76,
    "notes": {
     "SECTOR Reactors and power": 2,
     "CEG Places and operations": 34,
@@ -228033,8 +228096,8 @@
     "license_tracker": 4,
     "LEU Business": 7,
     "plants_now": 10,
-    "LEU Deals and contracts": 13,
-    "LEU Places and operations": 19,
+    "LEU Deals and contracts": 14,
+    "LEU Places and operations": 20,
     "NRC license tracker": 1,
     "power_deals_and_fuel_policy": 2,
     "VST Places and operations": 9,
@@ -228043,7 +228106,7 @@
     "plants_now: fleet status and open outages": 1,
     "desk_notes: CEG Places and operations": 2,
     "desk_notes: UUUU Places and operations": 2,
-    "SECTOR Uranium market": 47,
+    "SECTOR Uranium market": 48,
     "TLN Places and operations": 3,
     "UUUU Places and operations": 13,
     "UEC Business": 2,
@@ -228443,7 +228506,7 @@
    ],
    [
     "2026-11-27",
-    63.76
+    63.78
    ]
   ],
   "NXE": [
@@ -228687,7 +228750,7 @@
    ],
    [
     "2026-11-27",
-    5.95
+    5.93
    ]
   ],
   "DNN": [
@@ -228931,7 +228994,7 @@
    ],
    [
     "2026-11-27",
-    5.61
+    5.59
    ]
   ],
   "LEU": [
@@ -229053,7 +229116,7 @@
    ],
    [
     "2026-11-27",
-    85.62
+    85.7
    ]
   ],
   "BWXT": [
@@ -229175,7 +229238,7 @@
    ],
    [
     "2026-11-27",
-    116.07
+    116.45
    ]
   ],
   "CEG": [
@@ -229297,7 +229360,7 @@
    ],
    [
     "2026-11-27",
-    237.55
+    237.05
    ]
   ],
   "VST": [
@@ -229419,7 +229482,7 @@
    ],
    [
     "2026-11-27",
-    123.01
+    123.02
    ]
   ],
   "TLN": [
@@ -229541,7 +229604,7 @@
    ],
    [
     "2026-11-27",
-    358.02
+    358.99
    ]
   ],
   "AMD": [
@@ -229663,7 +229726,7 @@
    ],
    [
     "2026-11-27",
-    418.9
+    419.56
    ]
   ],
   "SMR": [
@@ -232941,6 +233004,15 @@
    "tickers": [
     "CEG"
    ]
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "policy",
+   "title": "Regulators Move Two Uranium Plants Forward That Could Loosen Russia\u2019s Grip On US Nuclear Fuel",
+   "tickers": [
+    "LEU",
+    "CCJ"
+   ]
   }
  ],
  "vp_skipped": [
@@ -235942,7 +236014,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 11:47",
+ "watchdog_last": "2026-11-27 11:51",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

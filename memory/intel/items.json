@@ -30880,5 +30880,69 @@
 "rating",
 "win"
 ]
+},
+{
+"id": "ecc9cf8f7327ef77",
+"date": "2026-11-27",
+"ts": 1795796820,
+"title": "Regulators Move Two Uranium Plants Forward That Could Loosen Russia\u2019s Grip On US Nuclear Fuel",
+"summary": "",
+"outlet": "The Daily Caller",
+"link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaDJtY3NDdjBic1BHUUpIUDNYU2JvVmV4R0tGUUZvR25QYk4yR2pkOENDZzVtTmFXcXN4elgzRkQ0Nnlic1RGeWpRdmlRUUpBRUt5UFREUTFPTHRvWFJ5NGJldGExdFN4aC0ybjlHRHQ0aDZ5aXA5QzJWX3NqUmE1ZHpsNlhGS21zR0hmcVFRSGpwWUF5V05OU1YxRFBqdGc0US1uNjJ3?oc=5",
+"place": "Russia supply",
+"tickers": [
+"LEU",
+"CCJ"
+],
+"tags": [
+"regulation"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.79,
+"score": 5.58,
+"echo_of": null,
+"w": [
+"forward",
+"fuel",
+"grip",
+"loosen",
+"move",
+"nuclear",
+"plants",
+"regulators",
+"russia",
+"two",
+"uranium"
+]
+},
+{
+"id": "b0f0902f7927088a",
+"date": "2026-11-27",
+"ts": 1795798093,
+"title": "South Korea, Vietnam Expand Nuclear, Chip, AI Ties",
+"summary": "",
+"outlet": "Wisevoter",
+"link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMHprOTJCVGN1NlV4ZnE5MGg4Qk9handDRVVxMk9MV1lUVDNXT1NhRjNBdU1hWWtjUmh4clVrOENkNko1TmU1cmJxYVJDM3hDTE9KeWloNkhDUlA0VHY4WDN5RzliQTZZODZHNW9oTV9pV3ZFLXFTRmpCemxsRy00eXpXMWNob1pGWVNIU1BzTQ?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.25,
+"score": 3.0,
+"echo_of": "185217c34bf96ae1",
+"w": [
+"chip",
+"expand",
+"korea",
+"nuclear",
+"south",
+"ties",
+"vietnam"
+]
 }
 ]

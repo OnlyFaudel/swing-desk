@@ -30445,5 +30445,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "LEU",
+"date": "2026-11-27",
+"title": "Regulators Move Two Uranium Plants Forward That Could Loosen Russia\u2019s Grip On US Nuclear Fuel",
+"type": "intel_regulation",
+"source": "Intel: The Daily Caller",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-27",
+"title": "Regulators Move Two Uranium Plants Forward That Could Loosen Russia\u2019s Grip On US Nuclear Fuel",
+"type": "intel_regulation",
+"source": "Intel: The Daily Caller",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]
