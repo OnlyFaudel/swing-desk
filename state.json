@@ -5579,6 +5579,156 @@
    "decision": "SKIP",
    "reason": "The basket is below its 10-day average, so the desk's rule blocks new buys. The fill would also land under the 200-day average, and the desk's data shows level fills there earn less. Price sits about ",
    "evaluated": false
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "NXE",
+   "setup": "patient_level",
+   "zone": 7.26,
+   "entry": 7.29,
+   "stop": 7.18,
+   "target": 7.54,
+   "reward_risk": 2.12,
+   "dist_to_entry_pct": 0.36,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 6.56,
+    "value_high": 8.33,
+    "heaviest_price": 7.94,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 1.41,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "Basket is below its 10-day average, which is a hard block on new buys for this desk. The zone sits at 7.26 with the stock 13% under its 50-day average and 29.5% under its 200-day. Our own research sho",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "DNN",
+   "setup": "patient_level",
+   "zone": 1.87,
+   "entry": 1.88,
+   "stop": 1.85,
+   "target": 1.95,
+   "reward_risk": 2.42,
+   "dist_to_entry_pct": 0.67,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 1.69,
+    "value_high": 2.23,
+    "heaviest_price": 2.21,
+    "position": "inside value",
+    "node": "thick",
+    "node_ratio": 1.52,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The basket is weak (below its 10-day average, a block under our rules), so no new buys. DNN is also 17% below its 50-day average and about 40% below its 200-day, and fills under the 200-day have earne",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "UUUU",
+   "setup": "patient_level",
+   "zone": 4.91,
+   "entry": 4.92,
+   "stop": 4.85,
+   "target": 5.7,
+   "reward_risk": 9.88,
+   "dist_to_entry_pct": 13.85,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 4.92,
+    "value_high": 7.29,
+    "heaviest_price": 6.67,
+    "position": "at value low",
+    "node": "thick",
+    "node_ratio": 1.77,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The stock is 33% down over the month and 62% below its 200-day average, and it just printed a fresh 52-week low at $4.91, right on our zone. Desk research says fills while a stock sits well below its ",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "LEU",
+   "setup": "patient_level",
+   "zone": 81.32,
+   "entry": 81.65,
+   "stop": 80.35,
+   "target": 93.4,
+   "reward_risk": 9.03,
+   "dist_to_entry_pct": 4.59,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 82.27,
+    "value_high": 117.23,
+    "heaviest_price": 88.09,
+    "position": "at value low",
+    "node": "normal",
+    "node_ratio": 0.85,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "Price is 85.13, about 27% under its 20-day high, and well under its 50-day and 200-day averages. The basket is below its 10-day average, which blocks new buys. Also the setup's own volume profile puts",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "VST",
+   "setup": "patient_level",
+   "zone": 115.51,
+   "entry": 115.97,
+   "stop": 114.12,
+   "target": 125.85,
+   "reward_risk": 5.34,
+   "dist_to_entry_pct": 5.7,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 112.55,
+    "value_high": 140.74,
+    "heaviest_price": 119.6,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 0.85,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The basket is below its 10-day average, which is a hard block on new buys in this desk's rules. VST is also 12% under its 20-day high with a falling 50-day and 200-day trend, and the desk's notes say ",
+   "evaluated": false
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "TLN",
+   "setup": "patient_level",
+   "zone": 344.7,
+   "entry": 346.08,
+   "stop": 340.56,
+   "target": 364.4,
+   "reward_risk": 3.32,
+   "dist_to_entry_pct": 3.4,
+   "max_days": 3,
+   "valid_sessions": 5,
+   "volume": {
+    "value_low": 312.55,
+    "value_high": 366.37,
+    "heaviest_price": 360.99,
+    "position": "inside value",
+    "node": "normal",
+    "node_ratio": 0.66,
+    "skip": "False"
+   },
+   "decision": "SKIP",
+   "reason": "The zone sits near the 200-day average with the basket below its 10-day average, and the desk's own notes show level buys under the 200-day earn less in the current regime. The stop is only about 1.6%",
+   "evaluated": false
   }
  ],
  "cooldown": {
@@ -5586,18 +5736,6 @@
   "BWXT": 1795660900.5294535
  },
  "news_feed": [
-  {
-   "ticker": "CCJ",
-   "source": "American Nuclear Society",
-   "title": "Report looks at reasons for Vogtle construction delays",
-   "link": "https://www.ans.org/news/2026-11-25/article-8619/report-looks-at-reasons-for-vogtle-construction-delays/",
-   "ts": 1795620240,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Vogtle delay post-mortem is old news about past construction problems, not new CCJ information."
-  },
   {
    "ticker": "CCJ",
    "source": "Google News",
@@ -8585,6 +8723,18 @@
    "direction": "neutral",
    "event_type": "analyst",
    "why": "Valuation opinion piece rehashing an older HALEU supply deal; not new information."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News",
+   "title": "Can Constellation Energy (NASDAQ:CEG) Navigate the Next Market Shift? - Kalkine Media",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbVpoN2RTZFl6dHJtZk8xRXNLQ1VOd0IzcGRmdmQ4V0lrWUV5UDZUdDItOEg4eEdVMERwZWhQVTdBNDFHMGZVWmVGNVpUTkh3cXpweHdhRUN3NXhObDd1WGthMTZiR3RZRExRcmhfc2lvSVAwT1pYOUo2QzJrR3pfZ2JRU2o4Y3dRZF9FbmJESHM4c2xJZGlNVG9IM3A2RDJOclNGaTRCM1hhM0E?oc=5",
+   "ts": 1795800600,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic explainer-style headline with no new company-specific fact."
   }
  ],
  "reviews": [
@@ -10457,16 +10607,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.44723,
+  "day_usd": 0.46119,
   "month": "2026-11",
-  "month_usd": 2.54141,
-  "total_usd": 2.54141,
+  "month_usd": 2.55537,
+  "total_usd": 2.55537,
   "by_role": {
    "macro": 0.24465,
    "whale": 0.02631,
    "crowd": 0.01703,
-   "level": 0.33855,
-   "scout": 0.25546,
+   "level": 0.35215,
+   "scout": 0.25582,
    "review": 0.11073,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -10729,23 +10879,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 63.6,
-  "NXE": 7.28,
-  "UEC": 5.91,
+  "CCJ": 63.56,
+  "NXE": 7.26,
+  "UEC": 5.89,
   "DNN": 1.91,
-  "UUUU": 5.6,
-  "LEU": 85.26,
-  "BWXT": 115.9,
-  "CEG": 236.39,
-  "VST": 122.3,
-  "TLN": 355.89,
-  "AMD": 418.1,
+  "UUUU": 5.62,
+  "LEU": 85.2,
+  "BWXT": 115.92,
+  "CEG": 236.71,
+  "VST": 122.45,
+  "TLN": 356.03,
+  "AMD": 417.05,
   "SMR": 3.46,
-  "NNE": 9.54,
-  "SPY": 726.54,
+  "NNE": 9.49,
+  "SPY": 727.02,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 12:30 ET",
+ "last_cycle": "2026-11-27 12:37 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -10808,10 +10958,10 @@
   ]
  },
  "brakes": {
-  "equity": 1040.77,
-  "day_pct": 3.51,
-  "week_pct": 4.02,
-  "drawdown_pct": -1.29,
+  "equity": 1039.87,
+  "day_pct": 3.42,
+  "week_pct": 3.93,
+  "drawdown_pct": -1.38,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -15369,6 +15519,30 @@
   [
    "2026-11-27 12:30",
    1040.77
+  ],
+  [
+   "2026-11-27 12:32",
+   1041.06
+  ],
+  [
+   "2026-11-27 12:33",
+   1041.21
+  ],
+  [
+   "2026-11-27 12:34",
+   1040.71
+  ],
+  [
+   "2026-11-27 12:35",
+   1041.1
+  ],
+  [
+   "2026-11-27 12:36",
+   1040.3
+  ],
+  [
+   "2026-11-27 12:37",
+   1039.87
   ]
  ],
  "nowcast": {
@@ -58297,28 +58471,28 @@
   }
  },
  "last_scan": {
-  "CCJ": 1795799258.1947384,
-  "NXE": 1795799258.205283,
-  "UEC": 1795799260.802137,
-  "DNN": 1795799260.8178844,
-  "UUUU": 1795799264.005136,
-  "LEU": 1795799266.7261066,
-  "BWXT": 1795799269.4880044,
-  "CEG": 1795799269.4966755,
-  "VST": 1795799269.5044613,
-  "TLN": 1795799272.147819
+  "CCJ": 1795801063.1258378,
+  "NXE": 1795801063.1334507,
+  "UEC": 1795801066.030454,
+  "DNN": 1795801066.0477595,
+  "UUUU": 1795801068.6423135,
+  "LEU": 1795801071.8335207,
+  "BWXT": 1795801074.4778972,
+  "CEG": 1795801074.4875257,
+  "VST": 1795801074.4953296,
+  "TLN": 1795801076.8305893
  },
  "setup_status": {
   "CCJ": "a level at $58.44 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
-  "NXE": "the Level Analyst skipped the setup: Basket is below its 10-day average, which blocks new buys. Also the zone sits in a thin, low-volume area, and the stock is under its 200-day average, where level f",
+  "NXE": "the Level Analyst skipped the setup: Basket is below its 10-day average, which is a hard block on new buys for this desk. The zone sits at 7.26 with the stock 13% under its 50-day average and 29.5% un",
   "UEC": "the next resistance ($6.03) is too close to make the trade worth its risk",
-  "DNN": "the Level Analyst skipped the setup: The basket is below its 10-day average, so the desk's rule blocks new buys. DNN is also 17% below its 50-day average and 40% below its 200-day, and the desk's fill",
-  "UUUU": "the Level Analyst skipped the setup: The basket is below its 10-day average, which is the desk's no-new-buy condition. UUUU is also down about 33% over the month and about 28% under its 20-day high, a",
-  "LEU": "the Level Analyst skipped the setup: The level at 81.32 sits well below the 200-day average (about 49% below it), and the stock is down about 27% from its 20-day high. Desk history says level buys und",
+  "DNN": "the Level Analyst skipped the setup: The basket is weak (below its 10-day average, a block under our rules), so no new buys. DNN is also 17% below its 50-day average and about 40% below its 200-day, a",
+  "UUUU": "the Level Analyst skipped the setup: The stock is 33% down over the month and 62% below its 200-day average, and it just printed a fresh 52-week low at $4.91, right on our zone. Desk research says fil",
+  "LEU": "the Level Analyst skipped the setup: Price is 85.13, about 27% under its 20-day high, and well under its 50-day and 200-day averages. The basket is below its 10-day average, which blocks new buys. Als",
   "BWXT": "a level at $111.12 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
   "CEG": "a level at $230.57 but it sits below where most shares traded over the last 20 sessions; levels like that averaged nothing in 9,877 practice trades, so it sits out",
-  "VST": "the Level Analyst skipped the setup: Basket is below its 10-day average, so the desk's rule blocks new buys. The entry sits 5.7% above the current price and the stock is under its 50-day and 200-day a",
-  "TLN": "the Level Analyst skipped the setup: The basket is below its 10-day average, so the desk's rule blocks new buys. The fill would also land under the 200-day average, and the desk's data shows level fil"
+  "VST": "the Level Analyst skipped the setup: The basket is below its 10-day average, which is a hard block on new buys in this desk's rules. VST is also 12% under its 20-day high with a falling 50-day and 200",
+  "TLN": "the Level Analyst skipped the setup: The zone sits near the 200-day average with the basket below its 10-day average, and the desk's own notes show level buys under the 200-day earn less in the curren"
  },
  "sync": {
   "pulse_up": false,
@@ -60065,7 +60239,7 @@
     0.8455
    ]
   },
-  "time": "2026-11-27 12:31"
+  "time": "2026-11-27 12:37"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -60774,6 +60948,7 @@
   "b7c4207fbc45894d",
   "a4c6592fc0370afc",
   "fe808fea77078dbb",
+  "fe4e539a771671e2",
   "23858b9754409f40",
   "08d8363ed1ddeb47",
   "218c03437d0aa187",
@@ -224635,6 +224810,66 @@
    ],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-27 12:37",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping the NXE level buy. The whole basket is below its 10-day average, which is a hard block on new buys, and the stock sits well under its 200-day average, a condition where our own fills have earned less. I agree with the Macro Analyst that this is a poor time to buy support.\n\nWhy: Basket-below-10-day-average is a hard block, and the level sits under the 200-day and 8%+ under the 10-day, both of which our fill research flags as weak. The setup does not clear the bar even before looking at the chart.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:37",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping DNN. The basket is below its 10-day average, which blocks new buys under our rules, and DNN is in a deep downtrend that makes this support level less trustworthy. I agree with the Macro Analyst's caution.\n\nWhy: I checked the basket filter, DNN's position against its 50- and 200-day averages, and the desk's finding that level fills below the 200-day earn less. The basket filter alone is enough to skip.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:37",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping UUUU because the level is the new 52-week low of $4.91, in a stock down a third this month and far below its 200-day average. Our own tests show support buys in that kind of downtrend earn much less, and the basket is below its 10-day average, so I'd rather wait for the chart to stabilize.\n\nWhy: The zone at $4.91 coincides with a fresh 52-week low in a stock that is down a third this month and far below its long-term average, while the whole basket is weak. Desk tests say level buys under the 200-day average and fills in deep drawdowns underperform, so the support is more likely to fail than hold.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:37",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping the LEU level buy. The whole basket is below its 10-day average, which is our hard block on new buys, and LEU is stuck in a long downtrend well under its 200-day average. I agree with the Macro Analyst that no new buys are warranted while the basket is weak.\n\nWhy: The basket-below-10-day-average block alone rules out the entry, and LEU's trend (well under its 50- and 200-day averages, down about 74.8% from its 1-year high) makes the support zone more likely to break than hold. The desk's own fill tests show these conditions earn less, so I'm not making an exception.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:37",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping the VST setup. The basket is below its 10-day average, which blocks new buys under our rules, and VST is in a downtrend under its 200-day average. I agree with the Macro Analyst that we should wait for the basket to recover before placing any new buys.\n\nWhy: The hard basket-below-10-day-average rule blocks the setup regardless of how clean the level looks. Even without that rule, VST is in a downtrend below its 200-day average, which is where the desk's own data says level buys work worse.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:37",
+   "who": "level",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm skipping TLN. The basket is below its 10-day average, which blocks new buys, and the desk's own research shows level buys under the 200-day average have underperformed in this market, so this one doesn't clear the bar. I agree with the Macro Analyst that the regime is unhealthy and no new buys belong until the basket recovers.\n\nWhy: The basket filter (below its 10-day average) blocks new buys, and the desk's notes say level buys under the 200-day average earned less in the current regime. Nothing else in the setup, including the planned insider sales, gives enough reason to override that.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -225617,7 +225852,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 12:31",
+  "updated": "2026-11-27 12:37",
   "total": 961,
   "week": 589,
   "places": {
@@ -228884,12 +229119,12 @@
    "built": "2026-11-27 12:22"
   }
  ],
- "heartbeat": "2026-11-27 12:30",
+ "heartbeat": "2026-11-27 12:37",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 508,
+ "_pushed_feed": 502,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -229120,12 +229355,12 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 115.9,
-  "TLN": 355.89
+  "BWXT": 115.92,
+  "TLN": 356.03
  },
  "notes_audit": {
   "scout": {
-   "asked": 474,
+   "asked": 475,
    "used": 435,
    "notes": {
     "TLN Deals and contracts": 21,
@@ -229153,23 +229388,23 @@
    "since": "2026-11-23"
   },
   "level": {
-   "asked": 190,
-   "used": 181,
+   "asked": 196,
+   "used": 187,
    "notes": {
     "TLN Snapshot": 38,
-    "TLN Price behavior": 36,
+    "TLN Price behavior": 37,
     "TLN Discoveries": 7,
     "TLN Our trades": 23,
-    "VST Snapshot": 39,
-    "VST Price behavior": 31,
-    "TLN What history says": 25,
+    "VST Snapshot": 40,
+    "VST Price behavior": 32,
+    "TLN What history says": 26,
     "desk_notes intel: PJM capacity auction delay": 1,
     "TLN intel_disruption (PJM auction delay)": 1,
     "SECTOR macro: market regime": 1,
     "BWXT Snapshot": 9,
     "BWXT What history says": 6,
     "BWXT Price behavior": 8,
-    "SECTOR Uranium market": 123,
+    "SECTOR Uranium market": 125,
     "BWXT Our trades": 7,
     "sector_pulse": 1,
     "BWXT Discoveries": 1,
@@ -229185,8 +229420,8 @@
     "desk_lessons_from_our_mistakes": 4,
     "CCJ Snapshot": 9,
     "CCJ Options and big money": 1,
-    "UUUU Snapshot": 21,
-    "UUUU Price behavior": 21,
+    "UUUU Snapshot": 22,
+    "UUUU Price behavior": 22,
     "UUUU What history says": 3,
     "CCJ Price behavior": 7,
     "CCJ Our trades": 3,
@@ -229198,7 +229433,7 @@
     "UEC Snapshot": 9,
     "UEC Earnings": 1,
     "UEC Cyber breach": 1,
-    "DNN Snapshot": 15,
+    "DNN Snapshot": 16,
     "DNN Price behavior": 13,
     "DNN Discoveries": 4,
     "UUUU Our trades": 5,
@@ -229210,11 +229445,11 @@
     "Patient Levels fills: the stock's own long trend matters (20": 8,
     "What PJM capacity-auction results do to the power stocks (VS": 2,
     "PJM auction history": 1,
-    "NXE Snapshot": 9,
+    "NXE Snapshot": 10,
     "NXE What history says": 5,
     "NXE Price behavior": 9,
     "What PJM capacity-auction results do to the power stocks": 1,
-    "NXE Our trades": 7,
+    "NXE Our trades": 8,
     "NXE Options and big money": 1,
     "desk_memory_playbook": 4,
     "desk_notes patient levels 200-day": 1,
@@ -229230,12 +229465,12 @@
     "open_positions": 1,
     "desk_notes already_checked_facts": 3,
     "UEC What history says": 2,
-    "LEU Snapshot": 7,
-    "LEU Price behavior": 6,
-    "desk_notes already_checked_facts (Patient Levels fills and 2": 5,
+    "LEU Snapshot": 8,
+    "LEU Price behavior": 7,
+    "desk_notes already_checked_facts (Patient Levels fills and 2": 6,
     "desk_notes already_checked_facts (Patient Levels fills and t": 2,
     "already_checked_facts (PJM capacity-auction results, the bas": 1,
-    "desk_notes already_checked_facts (Patient Levels fills, 200-": 3,
+    "desk_notes already_checked_facts (Patient Levels fills, 200-": 4,
     "desk_notes already_checked_facts (200-day fills, basket rule": 1,
     "LEU What history says": 4,
     "desk_notes: Patient Levels fills (200-day average finding)": 1,
@@ -229245,14 +229480,16 @@
     "already_checked_facts (level fills under 200-day average)": 1,
     "already_checked_facts (Patient Levels fills: 200-day average": 2,
     "already_checked_facts (Patient Levels fills: 200-day and 10-": 1,
-    "desk_notes already_checked_facts (Patient Levels fills: 200-": 1,
-    "desk_notes already_checked_facts (level fills under 200-day ": 2,
+    "desk_notes already_checked_facts (Patient Levels fills: 200-": 2,
+    "desk_notes already_checked_facts (level fills under 200-day ": 3,
     "desk_notes already_checked_facts (Patient Levels fills vs 20": 1,
     "desk_notes: Patient Levels fills: the stock's own long trend": 1,
     "desk_notes: Price landmarks": 1,
     "The recurring pattern: buying weakness in our names": 1,
     "desk_notes already_checked_facts (buying weakness in our nam": 1,
-    "desk_notes already_checked_facts (Patient Levels fills: stoc": 1
+    "desk_notes already_checked_facts (Patient Levels fills: stoc": 1,
+    "desk_notes already_checked_facts (200-day trend and fill qua": 1,
+    "desk_notes already_checked_facts (10b5-1 sale, Patient Level": 1
    },
    "since": "2026-11-23"
   },
@@ -229819,7 +230056,7 @@
    ],
    [
     "2026-11-27",
-    63.6
+    63.56
    ]
   ],
   "NXE": [
@@ -229941,7 +230178,7 @@
    ],
    [
     "2026-11-27",
-    7.28
+    7.26
    ]
   ],
   "UEC": [
@@ -230063,7 +230300,7 @@
    ],
    [
     "2026-11-27",
-    5.91
+    5.89
    ]
   ],
   "DNN": [
@@ -230307,7 +230544,7 @@
    ],
    [
     "2026-11-27",
-    5.6
+    5.62
    ]
   ],
   "LEU": [
@@ -230429,7 +230666,7 @@
    ],
    [
     "2026-11-27",
-    85.26
+    85.2
    ]
   ],
   "BWXT": [
@@ -230551,7 +230788,7 @@
    ],
    [
     "2026-11-27",
-    115.9
+    115.92
    ]
   ],
   "CEG": [
@@ -230673,7 +230910,7 @@
    ],
    [
     "2026-11-27",
-    236.39
+    236.71
    ]
   ],
   "VST": [
@@ -230795,7 +231032,7 @@
    ],
    [
     "2026-11-27",
-    122.3
+    122.45
    ]
   ],
   "TLN": [
@@ -230917,7 +231154,7 @@
    ],
    [
     "2026-11-27",
-    355.89
+    356.03
    ]
   ],
   "AMD": [
@@ -231039,7 +231276,7 @@
    ],
    [
     "2026-11-27",
-    418.1
+    417.05
    ]
   ],
   "SMR": [
@@ -231283,7 +231520,7 @@
    ],
    [
     "2026-11-27",
-    9.54
+    9.49
    ]
   ]
  },
@@ -232974,6 +233211,16 @@
    "price": 1.91,
    "result": null,
    "why": "I checked the entry against the desk's filter, which blocks new buys while the basket is below its 10-day average, and the position was opened anyway. The P&L is positive, but the desk's own rules say"
+  },
+  {
+   "role": "level",
+   "ticker": "UUUU",
+   "direction": "down",
+   "days": 3,
+   "date": "2026-11-27",
+   "price": 5.62,
+   "result": null,
+   "why": "The zone at $4.91 coincides with a fresh 52-week low in a stock that is down a third this month and far below its long-term average, while the whole basket is weak. Desk tests say level buys under the"
   }
  ],
  "after_sale": [
@@ -237045,6 +237292,57 @@
     "node_ratio": 0.28,
     "skip": true
    }
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "CCJ",
+   "zone": 58.44,
+   "entry": 58.67,
+   "stop": 57.74,
+   "target": 71.85,
+   "vp": {
+    "value_low": 59.55,
+    "value_high": 76.35,
+    "heaviest_price": 74.6,
+    "position": "below value",
+    "node": "normal",
+    "node_ratio": 0.95,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "BWXT",
+   "zone": 111.12,
+   "entry": 111.57,
+   "stop": 109.79,
+   "target": 117.21,
+   "vp": {
+    "value_low": 112.89,
+    "value_high": 131.75,
+    "heaviest_price": 117.21,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.47,
+    "skip": true
+   }
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "CEG",
+   "zone": 230.57,
+   "entry": 231.5,
+   "stop": 227.81,
+   "target": 257.5,
+   "vp": {
+    "value_low": 236.01,
+    "value_high": 278.17,
+    "heaviest_price": 251.65,
+    "position": "below value",
+    "node": "thin",
+    "node_ratio": 0.28,
+    "skip": true
+   }
   }
  ],
  "hawk_cool": {},
@@ -237598,7 +237896,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 12:30",
+ "watchdog_last": "2026-11-27 12:37",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
