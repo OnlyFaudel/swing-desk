@@ -893,7 +893,8 @@
   "bfexit:2026-11-27": true,
   "optmark:2026-11-27": true,
   "park:2026-11-27": true,
-  "questioner:2026-11-27:7": true
+  "questioner:2026-11-27:7": true,
+  "questioner:2026-11-27:8": true
  },
  "benchmark": {
   "shares": {
@@ -10667,10 +10668,10 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.49512,
+  "day_usd": 0.5038,
   "month": "2026-11",
-  "month_usd": 2.5893,
-  "total_usd": 2.5893,
+  "month_usd": 2.59798,
+  "total_usd": 2.59798,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
@@ -10682,11 +10683,11 @@
    "strategist": 0.11417,
    "pm": 0.45311,
    "risk": 0.26041,
-   "investigator": 0.38839,
+   "investigator": 0.39141,
    "postmortem": 0.01905,
    "researcher": 0.02341,
    "engineer": 0.10979,
-   "questioner": 0.1736
+   "questioner": 0.17926
   }
  },
  "desk_log": [
@@ -10957,7 +10958,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 15:56 ET",
+ "last_cycle": "2026-11-27 16:00 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -60378,8 +60379,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "4ee30073db1990ac",
   "7cabb45f8b0c2778",
+  "4ee30073db1990ac",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -60422,8 +60423,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1acc6842cd4f6e64",
   "1715e61816aa5619",
+  "1acc6842cd4f6e64",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -60554,14 +60555,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "7c380c991c59f9ba",
   "1ed195cb4396cbe7",
+  "7c380c991c59f9ba",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -218951,6 +218952,33 @@
    ],
    "practice": false,
    "end": "14:01"
+  },
+  {
+   "id": "20261127160044378273",
+   "title": "The Questioner, Nov 27 16:00",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-27 16:00",
+   "msgs": [
+    {
+     "t": "16:00",
+     "who": "questioner",
+     "to": "risk",
+     "text": "Before anything else, I checked the open items. The Salem 1 outage question was already answered, and the SPY parking halt is a real safety stop that nobody has cleared yet, so I'm going to ask about that one. The basket gate is closed and the live order list is empty, so this is about the bot's state, not a trade.",
+     "outcome": false,
+     "notes": "question: The bot halted after three SPY parking-sale rejections with a malfunction code. Has anyone confirmed the broker side (the three rejected sales, and whether any were partially filled or are still live at the broker) and cleared the halt, or is the halt still active?\nwhy it might matter: A halt that nobody has cleared means either an order is still working at the broker or the desk is running with a stop nobody owns. The desk's live list is empty, but that list only shows what we think is resting, not what the broker holds.\nask: risk\nkind: unexplained\nquestion: Who has authority to lift the SPY parking halt, and what would a clear look like in writing before the next session?\nwhy it might matter: A halt with no named owner tends to stay on indefinitely, and the Black Friday half-day is the next session where a stale or partial order could fill at a bad price.\nask: pm\nkind: missed"
+    },
+    {
+     "t": "16:00",
+     "who": "investigator",
+     "to": "questioner",
+     "text": "I checked the desk files on the SPY parking halt. Nothing in our notes names an owner who can lift it or describes a written clearance, and the only live-order record is empty with the recent cancels being TLN and BWXT, so I can't confirm there are no stale or partial fills from the three rejected sales. That matters because Black Friday is a half-day with thin volume, so I'd want a named owner and a written check of the broker before the next session. I agree with the Questioner that a halt with no owner tends to stay on indefinitely.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: tell_owner\nwatch date: 2026-11-27\nresearch test: Before Black Friday's 1 pm close, pull the broker's full order and fill history for the SPY parking sales and confirm in writing whether any of the three rejected orders is still open or partially filled.\nwhy: The desk notes show LIVE_ORDERS_RIGHT_NOW is empty and the only recent cancels are TLN and BWXT, but nothing records who owns the SPY halt or confirms the rejected sales left no stale or partial fills. The halt matters now because the next session is a thin half-day.\nfiles read: SPY parking halt (not in desk notes; open question), LIVE_ORDERS_RIGHT_NOW, recently_canceled_orders, coming_up"
+    }
+   ],
+   "practice": false,
+   "end": "16:00"
   }
  ],
  "feed": [
@@ -225326,6 +225354,32 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-27 16:00",
+   "who": "questioner",
+   "kind": "alert",
+   "title": null,
+   "text": "Worth your attention: Who has authority to lift the SPY parking halt, and what would a clear look like in writing before the next session?\n\nNews Investigator: I checked the desk files on the SPY parking halt. Nothing in our notes names an owner who can lift it or describes a written clearance, and the only live-order record is empty with the recent cancels being TLN and BWXT, so I can't confirm there are no stale or partial fills from the three rejected sales. That matters because Black Friday is a half-day with thin volume, so I'd want a named owner and a written check of the broker before the next session. I agree with the Questioner that a halt with no owner tends to stay on indefinitely.",
+   "tickers": [],
+   "art": {
+    "big": "Something we almost missed",
+    "sub": "The Questioner"
+   },
+   "thread": "20261127160044378273"
+  },
+  {
+   "t": "2026-11-27 16:00",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Who has authority to lift the SPY parking halt, and what would a clear look like in writing before the next session? -> relevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -226289,9 +226343,9 @@
    "lesson": "A panic_rebound buy must pass the basket-below-10-day-average block before entry, even when the stock looks oversold and the trade later wins."
   }
  ],
- "intel_at": 1795811203.0314803,
+ "intel_at": 1795813062.8994415,
  "intel_health": {
-  "at": "2026-11-27 15:27",
+  "at": "2026-11-27 15:58",
   "sources": {
    "Cigar Lake": 2,
    "McArthur River / Key Lake": 3,
@@ -226303,48 +226357,48 @@
    "Westinghouse": 8,
    "Kazakhstan": 38,
    "Niger": 11,
-   "Namibia": 25,
+   "Namibia": 28,
    "Russia supply": 2,
-   "Piketon": 17,
+   "Piketon": 18,
    "HALEU": 10,
    "Wyoming ISR": 29,
    "South Texas ISR": 2,
    "White Mesa / Utah": 8,
-   "Rare earths (Energy Fuels)": 7,
+   "Rare earths (Energy Fuels)": 6,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 11,
+   "Naval reactors": 13,
    "Crane / Three Mile Island": 4,
    "Susquehanna": 4,
-   "Comanche Peak": 3,
-   "PJM grid": 8,
-   "ERCOT grid": 11,
+   "Comanche Peak": 4,
+   "PJM grid": 6,
+   "ERCOT grid": 10,
    "Data-center nuclear deals": 10,
    "Japan restarts": 9,
-   "China new builds": 2,
-   "Congress and laws": 26,
+   "China new builds": 6,
+   "Congress and laws": 25,
    "NRC decisions": 6,
-   "Energy Department": 39,
+   "Energy Department": 38,
    "White House and executive orders": 27,
-   "Tariffs and trade": 3,
+   "Tariffs and trade": 4,
    "India": 18,
-   "South Korea": 95,
-   "Europe new builds": 62,
+   "South Korea": 100,
+   "Europe new builds": 31,
    "France and UK": 13,
-   "Middle East": 29,
-   "Asia newcomers": 37,
-   "Canada SMRs": 7,
-   "Big tech power deals": 59,
-   "Iran": 26,
-   "North Korea": 100,
-   "War zones": 34,
-   "AUKUS and navies": 17,
+   "Middle East": 57,
+   "Asia newcomers": 25,
+   "Canada SMRs": 8,
+   "Big tech power deals": 29,
+   "Iran": 54,
+   "North Korea": 68,
+   "War zones": 15,
+   "AUKUS and navies": 24,
    "Weapons programs": 31,
-   "Stockpiles and reserves": 24,
+   "Stockpiles and reserves": 22,
    "Sprott trust": 3,
-   "Uranium price": 43,
+   "Uranium price": 21,
    "US policy": 0,
-   "Lawsuits and investigations": 33,
-   "Workers and jobs": 23,
+   "Lawsuits and investigations": 72,
+   "Workers and jobs": 34,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 52,
    "Federal Register (uranium)": 11,
@@ -226354,15 +226408,15 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 15:56",
-  "total": 976,
-  "week": 593,
+  "updated": "2026-11-27 16:00",
+  "total": 979,
+  "week": 595,
   "places": {
    "South Korea": 56,
    "Uranium price": 52,
    "Kazakhstan": 42,
    "Weapons programs": 34,
-   "Workers and jobs": 31,
+   "Workers and jobs": 32,
    "AUKUS and navies": 29,
    "Asia newcomers": 29,
    "Europe new builds": 26,
@@ -226373,7 +226427,7 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-27 15:27",
+   "at": "2026-11-27 15:58",
    "sources": {
     "Cigar Lake": 2,
     "McArthur River / Key Lake": 3,
@@ -226385,48 +226439,48 @@
     "Westinghouse": 8,
     "Kazakhstan": 38,
     "Niger": 11,
-    "Namibia": 25,
+    "Namibia": 28,
     "Russia supply": 2,
-    "Piketon": 17,
+    "Piketon": 18,
     "HALEU": 10,
     "Wyoming ISR": 29,
     "South Texas ISR": 2,
     "White Mesa / Utah": 8,
-    "Rare earths (Energy Fuels)": 7,
+    "Rare earths (Energy Fuels)": 6,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 11,
+    "Naval reactors": 13,
     "Crane / Three Mile Island": 4,
     "Susquehanna": 4,
-    "Comanche Peak": 3,
-    "PJM grid": 8,
-    "ERCOT grid": 11,
+    "Comanche Peak": 4,
+    "PJM grid": 6,
+    "ERCOT grid": 10,
     "Data-center nuclear deals": 10,
     "Japan restarts": 9,
-    "China new builds": 2,
-    "Congress and laws": 26,
+    "China new builds": 6,
+    "Congress and laws": 25,
     "NRC decisions": 6,
-    "Energy Department": 39,
+    "Energy Department": 38,
     "White House and executive orders": 27,
-    "Tariffs and trade": 3,
+    "Tariffs and trade": 4,
     "India": 18,
-    "South Korea": 95,
-    "Europe new builds": 62,
+    "South Korea": 100,
+    "Europe new builds": 31,
     "France and UK": 13,
-    "Middle East": 29,
-    "Asia newcomers": 37,
-    "Canada SMRs": 7,
-    "Big tech power deals": 59,
-    "Iran": 26,
-    "North Korea": 100,
-    "War zones": 34,
-    "AUKUS and navies": 17,
+    "Middle East": 57,
+    "Asia newcomers": 25,
+    "Canada SMRs": 8,
+    "Big tech power deals": 29,
+    "Iran": 54,
+    "North Korea": 68,
+    "War zones": 15,
+    "AUKUS and navies": 24,
     "Weapons programs": 31,
-    "Stockpiles and reserves": 24,
+    "Stockpiles and reserves": 22,
     "Sprott trust": 3,
-    "Uranium price": 43,
+    "Uranium price": 21,
     "US policy": 0,
-    "Lawsuits and investigations": 33,
-    "Workers and jobs": 23,
+    "Lawsuits and investigations": 72,
+    "Workers and jobs": 34,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 52,
     "Federal Register (uranium)": 11,
@@ -226993,8 +227047,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "fd337937e7471e2a",
   "b2362be41ae616f1",
+  "fd337937e7471e2a",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -227043,10 +227097,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "688d746cfc31b58f",
   "22ab37dfabeba433",
-  "f815e45da305cee7",
+  "688d746cfc31b58f",
   "85de31670d4daf9d",
+  "f815e45da305cee7",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -229496,7 +229550,7 @@
    }
   ]
  },
- "dossier_at": 1795811244.6974115,
+ "dossier_at": 1795813104.6375008,
  "sector_prices": {
   "_at": 1795805723.732425,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -229554,80 +229608,80 @@
    "name": "Cameco",
    "price": 63.56,
    "week_pct": 3.48,
-   "built": "2026-11-27 15:27"
+   "built": "2026-11-27 15:58"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 7.28,
    "week_pct": 5.05,
-   "built": "2026-11-27 15:27"
+   "built": "2026-11-27 15:58"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.93,
    "week_pct": 2.86,
-   "built": "2026-11-27 15:27"
+   "built": "2026-11-27 15:58"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.91,
    "week_pct": 5.8,
-   "built": "2026-11-27 15:27"
+   "built": "2026-11-27 15:58"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.66,
    "week_pct": 3.28,
-   "built": "2026-11-27 15:27"
+   "built": "2026-11-27 15:58"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.79,
    "week_pct": -5.47,
-   "built": "2026-11-27 15:27"
+   "built": "2026-11-27 15:58"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.57,
    "week_pct": -1.27,
-   "built": "2026-11-27 15:27"
+   "built": "2026-11-27 15:58"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 238.15,
    "week_pct": -5.51,
-   "built": "2026-11-27 15:27"
+   "built": "2026-11-27 15:58"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 122.35,
    "week_pct": -1.45,
-   "built": "2026-11-27 15:27"
+   "built": "2026-11-27 15:58"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 359.64,
    "week_pct": 1.05,
-   "built": "2026-11-27 15:27"
+   "built": "2026-11-27 15:58"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-27 15:27"
+   "built": "2026-11-27 15:58"
   }
  ],
- "heartbeat": "2026-11-27 15:56",
+ "heartbeat": "2026-11-27 16:00",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -230002,8 +230056,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 99,
-   "used": 95,
+   "asked": 100,
+   "used": 96,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 5,
@@ -230019,7 +230073,7 @@
     "CCJ Leadership and insiders": 1,
     "CCJ What history says": 2,
     "SECTOR Government and laws": 2,
-    "coming_up": 4,
+    "coming_up": 5,
     "NXE Snapshot": 6,
     "NXE Filings and company events": 3,
     "LEU Snapshot": 14,
@@ -230051,7 +230105,7 @@
     "SECTOR Fast-lane checks": 1,
     "CCJ Legal": 1,
     "DNN Snapshot": 3,
-    "LIVE_ORDERS_RIGHT_NOW": 2,
+    "LIVE_ORDERS_RIGHT_NOW": 3,
     "open_positions": 1,
     "power_deals_and_fuel_policy": 1,
     "already_checked_facts": 1,
@@ -230063,7 +230117,9 @@
     "DNN Legal": 1,
     "UEC What history says": 1,
     "recent_headlines": 1,
-    "SECTOR Pulse": 1
+    "SECTOR Pulse": 1,
+    "SPY parking halt (not in desk notes; open question)": 1,
+    "recently_canceled_orders": 1
    },
    "since": "2026-11-23"
   },
@@ -230324,8 +230380,8 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 63,
-   "used": 63,
+   "asked": 64,
+   "used": 64,
    "notes": {
     "TLN Snapshot": 45,
     "TLN News": 42,
@@ -230348,7 +230404,7 @@
     "Reminder: Pre-Thanksgiving session (2026-11-25)": 1,
     "Reminder: Thanksgiving run-up rule": 1,
     "Basket gate note: nuclear basket -11.2% vs 10-day average": 1,
-    "LIVE_ORDERS_RIGHT_NOW": 9,
+    "LIVE_ORDERS_RIGHT_NOW": 10,
     "SECTOR Calendar": 1,
     "already_asked": 3,
     "Desk lessons": 1,
@@ -230365,7 +230421,7 @@
     "already_checked_facts": 2,
     "SECTOR Power auctions": 1,
     "coming_up Black Friday entry": 1,
-    "recently_canceled_orders": 2,
+    "recently_canceled_orders": 3,
     "SECTOR PJM auction": 1,
     "SPY parking halt (questioner history)": 1,
     "PJM / Centrus items in already_asked": 1,
@@ -235065,6 +235121,15 @@
    "answer": "I checked the desk files and the live state: LIVE_ORDERS_RIGHT_NOW is empty and the recently canceled list shows only the TLN and BWXT buys, with no record of any SPY parking sale, rejection, or partial fill. The files don't mention the three rejected SPY sales or the halt at all, so I can't confirm whether anything is still open at the broker. That gap is worth checking directly, since the halt itself was raised for a reason.",
    "verdict": "unsure",
    "action": "tell_owner"
+  },
+  {
+   "t": "2026-11-27 16:00",
+   "question": "Who has authority to lift the SPY parking halt, and what would a clear look like in writing before the next session?",
+   "kind": "missed",
+   "asked": "investigator",
+   "answer": "I checked the desk files on the SPY parking halt. Nothing in our notes names an owner who can lift it or describes a written clearance, and the only live-order record is empty with the recent cancels being TLN and BWXT, so I can't confirm there are no stale or partial fills from the three rejected sales. That matters because Black Friday is a half-day with thin volume, so I'd want a named owner and a written check of the broker before the next session. I agree with the Questioner that a halt with no owner tends to stay on indefinitely.",
+   "verdict": "relevant",
+   "action": "tell_owner"
   }
  ],
  "reactor_view": {
@@ -238457,7 +238522,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 15:56",
+ "watchdog_last": "2026-11-27 16:00",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
