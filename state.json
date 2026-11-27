@@ -913,7 +913,8 @@
   "candles:2026-11-27": true,
   "weekly:2026-11-27": true,
   "nightwatch170:2026-11-27": true,
-  "ahdip170:2026-11-27": true
+  "ahdip170:2026-11-27": true,
+  "candles5:2026-11-27": true
  },
  "benchmark": {
   "shares": {
@@ -11220,7 +11221,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 17:01 ET",
+ "last_cycle": "2026-11-27 17:12 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -60641,8 +60642,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "7cabb45f8b0c2778",
   "4ee30073db1990ac",
+  "7cabb45f8b0c2778",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -60684,10 +60685,10 @@
   "80ca077103e2454d",
   "bfa4d042201cf513",
   "982ae178b039d112",
-  "5152638d88885c07",
   "c58aba704a7847d3",
-  "1715e61816aa5619",
+  "5152638d88885c07",
   "1acc6842cd4f6e64",
+  "1715e61816aa5619",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -60819,14 +60820,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "1ed195cb4396cbe7",
   "7c380c991c59f9ba",
+  "1ed195cb4396cbe7",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -61438,7 +61439,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795816715.8579273,
+ "news_slow_at": 1795817346.8121884,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -227075,9 +227076,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 17:02",
+  "updated": "2026-11-27 17:12",
   "total": 985,
-  "week": 598,
+  "week": 597,
   "places": {
    "South Korea": 56,
    "Uranium price": 52,
@@ -227455,22 +227456,6 @@
     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWC0takxQRTdyVmlYT0RNMXhNSHhYZlhJcWJiTGZBSVVTM3A5Y0JjUGYxbWZIOHYxSnJoVXhlbkRocHFRLVpRRU40ZVNqUXk0VkRjWl8tdU40dzJmWXlabnVGZUQ4QXY5NjhVRVBCZE5MVUFrQjdWcXg4V1RMbWhxQnkySlBDNnk5aFdIekxXNW9ZVVVYdnNXWlA4MXBFd3FQcFNEQlNSU2NvNXVwX1djWUxZLXhuR1k3VXc?oc=5"
    },
    {
-    "date": "2026-11-20",
-    "title": "ERCOT approves CEO Pablo Vegas\u2019 contract months after backlash",
-    "outlet": "San Antonio Express-News",
-    "place": "ERCOT grid",
-    "tickers": [
-     "VST"
-    ],
-    "tags": [
-     "regulation",
-     "contract"
-    ],
-    "numbers": [],
-    "score": 6.72,
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUDlpa2hmUXVSb2k4MkpJa2t1b1FxR1Nqb3p1OUVaNUVhdjNFQV9XUFdGbEEyNWZaVTVuVDNTN0J2cThVR2NYRGJLM0ZXdnd2RFE1RnNQRm82TWl6WGtud1o4MEFlSGFHRTVCNWlmLWg1QWxOVkNwZjZPMnp1T1p5ZjV4WnlYZXcwa0Q2NjJjVXhvS1V1TGRFN3dlcW1zZG4xYloySFo3TQ?oc=5"
-   },
-   {
     "date": "2026-11-27",
     "title": "Uranium and gold anchor exports amid mining output decline Staff Reporter NAMIBIA\u2019S mining sector is facing declining production, falling diamond revenues and rising operating costs, despite uranium and gold continuing t",
     "outlet": "Instagram",
@@ -227708,14 +227693,30 @@
     "numbers": [],
     "score": 6.4,
     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WUl9FMWFmLU8tT25pc2tvM09MN0dQUnRSVDJ6RlN6Wm8yOHl2QndyZUtNaHFkUUx1UW9la0hPOW9aYXY1b2d1U2JzOU85Q3NwVWtJTXpnOW8?oc=5"
+   },
+   {
+    "date": "2026-11-26",
+    "title": "N Korea's Kim warns US over AUKUS, touts nuclear status",
+    "outlet": "Eastern Riverina Chronicle",
+    "place": "AUKUS and navies",
+    "tickers": [
+     "BWXT"
+    ],
+    "tags": [
+     "defense",
+     "geopolitics"
+    ],
+    "numbers": [],
+    "score": 6.36,
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUkhJWUVIb1h2d2JjUzhQSTN2eF96SHk2QzVOTGJ1aWR1ODBFX1lLZkFIOGV1bzFhNU1mUW8xNDQzOWp4UVNVSHVaUC1YcWR3TUthendKNDM3UTY1TTdka0llbHA1ZXVJTUtERm01U1BiSXJKbmJaYmNwd0I1dHh4cW1Qc2pGbUFuZS04eHNGazV3dEpROTg5V3BRbmFQV3J0RUNNa0hZb19RcHlBTlhOU1Z3?oc=5"
    }
   ]
  },
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "b2362be41ae616f1",
   "fd337937e7471e2a",
+  "b2362be41ae616f1",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -227764,10 +227765,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "22ab37dfabeba433",
   "688d746cfc31b58f",
-  "85de31670d4daf9d",
+  "22ab37dfabeba433",
   "f815e45da305cee7",
+  "85de31670d4daf9d",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -230470,12 +230471,12 @@
    "built": "2026-11-27 17:00"
   }
  ],
- "heartbeat": "2026-11-27 17:01",
+ "heartbeat": "2026-11-27 17:12",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 531,
+ "_pushed_feed": 533,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -239337,7 +239338,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 17:01",
+ "watchdog_last": "2026-11-27 17:12",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
