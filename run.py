@@ -2627,6 +2627,16 @@ def intel_tick(st, today, force=False):
             st["flags"]["orbsip_t"] = time.time()  # stocks-in-play opening-range breakout replay (orbsip.py), resumable
             subprocess.Popen(["nice", "-n", "15", sys.executable, "orbsip.py"], cwd=ROOT, start_new_session=True,
                              stdout=open("/tmp/orbsip.log", "a"), stderr=subprocess.STDOUT)
+        ofx = {}
+        try:
+            ofx = json.load(open(os.path.join(ROOT, "data/orbsip/_progress_fix.json")))
+        except Exception:
+            pass
+        lf = st["flags"].get("orbsip_fix_t", 0)
+        if idle and op.get("complete") and not ofx.get("complete") and time.time() - (lf if isinstance(lf, (int, float)) else 0) > 1800:
+            st["flags"]["orbsip_fix_t"] = time.time()  # settle same-minute entry/stop trades with tick data (orbsip_fix.py)
+            subprocess.Popen(["nice", "-n", "15", sys.executable, "orbsip_fix.py"], cwd=ROOT, start_new_session=True,
+                             stdout=open("/tmp/orbsip_fix.log", "a"), stderr=subprocess.STDOUT)
     except Exception as e:
         print("candles pull", e)
     if now.weekday() < 5 and not market.is_holiday(today) and now.time() >= dt.time(16, 20) and not st["flags"].get(f"recent:{today}"):

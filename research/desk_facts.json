@@ -353,6 +353,17 @@
     "exec",
     "level"
    ]
+  },
+  {
+   "topic": "Stocks-in-play 5-minute opening-range breakout (Zarattini/Barbon/Aziz 2024) replayed on real 1-minute bars, 2026-11-27 (PRELIMINARY)",
+   "answer": "orbsip.py replayed the paper's rules on every active US stock 2016-Nov 2026: 43,759 trades, 2,713 days, 2,988 stocks (top 20 by first-5-minute relative volume, median 5.1x; stop 10% of 14-day ATR, median 0.32% of price). Counting every trade that touched both the entry and the stop inside one 1-minute bar as stopped (43% of trades), it loses in every era even before costs (-0.07R 2016-18, -0.10R 2019-23, -0.24R 2024-26) and the paper-sized portfolio goes to near zero, versus the paper's +1,600% 2016-2023. Dropping those same-minute trades instead gives about +0.5R a trade in both eras, so the verdict hinges on what happened inside that first minute, which 1-minute bars can't show. orbsip_fix.py is settling those 18,650 trades with tick data (data/orbsip/same_minute_resolved.csv). Also: in our replay only 12% of trades reach the close (avg +6.4R) and 88% are stopped (-1R), so the strategy is a few big winners paying for many small losses; it needs very cheap execution (paper's $0.0035/share), which a $1k account at 1% risk per trade can't get with tick-size spreads. Survivorship bias: Alpaca lists only stocks still trading. Not tradeable for us yet; wait for the tick-resolved result.",
+   "roles": [
+    "pm",
+    "risk",
+    "strategist",
+    "researcher",
+    "exec"
+   ]
   }
  ]
 }
