@@ -29986,5 +29986,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-27",
+"title": "Kim Jong-un Unveils Seven Nuclear Warheads Targeting South Korea",
+"type": "intel_defense",
+"source": "Intel: \uc870\uc120\uc77c\ubcf4",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "BWXT",
+"date": "2026-11-27",
+"title": "Kim Jong-un Unveils Seven Nuclear Warheads Targeting South Korea",
+"type": "intel_defense",
+"source": "Intel: \uc870\uc120\uc77c\ubcf4",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]
