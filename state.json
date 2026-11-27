@@ -643,7 +643,8 @@
   "premarket:2026-11-27": true,
   "uprice:2026-11-27": true,
   "congress:2026-11-27": true,
-  "jobs:2026-11-27": true
+  "jobs:2026-11-27": true,
+  "ev:39c7e07040ee": true
  },
  "benchmark": {
   "shares": {
@@ -8984,10 +8985,10 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.04143,
+  "day_usd": 0.04294,
   "month": "2026-11",
-  "month_usd": 2.13562,
-  "total_usd": 2.13562,
+  "month_usd": 2.13713,
+  "total_usd": 2.13713,
   "by_role": {
    "macro": 0.21206,
    "whale": 0.02215,
@@ -9002,7 +9003,7 @@
    "investigator": 0.35857,
    "postmortem": 0.00035,
    "researcher": 0.02341,
-   "engineer": 0.08184,
+   "engineer": 0.08335,
    "questioner": 0.15983
   }
  },
@@ -9261,7 +9262,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-27 07:03 ET",
+ "last_cycle": "2026-11-27 07:14 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -57908,8 +57909,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "4ee30073db1990ac",
   "7cabb45f8b0c2778",
+  "4ee30073db1990ac",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -57949,8 +57950,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1acc6842cd4f6e64",
   "1715e61816aa5619",
+  "1acc6842cd4f6e64",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -58075,14 +58076,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "7c380c991c59f9ba",
   "1ed195cb4396cbe7",
+  "7c380c991c59f9ba",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -58654,7 +58655,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795781099.7596529,
+ "news_slow_at": 1795781715.6264915,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -219858,6 +219859,41 @@
     "sub": "Pre-market check-in. Open the conversation to see the plan."
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-27 07:15",
+   "who": "engineer",
+   "kind": "agent",
+   "title": null,
+   "text": "This headline is about a Constellation-Google power deal and a Federal Register notice on a competing enrichment facility, not a change in physical uranium supply. The deal is a months-old-style contract story already reflected in CEG's history, and the General Matter notice is a licensing filing that does not change pounds of enrichment capacity today. Minor for us; if anything it is a slow read-through to LEU's enrichment competition.\n\nWhy: Checked the CEG deal history: past signings produced a one-day pop that was not reliably followed by gains, so this is not a fresh signal. The Federal Register item is a filing with unconfirmed impact on Centrus, and no uranium output or reactor timeline changes this week.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:15",
+   "who": "engineer",
+   "kind": "alert",
+   "title": null,
+   "text": "Power deal news: Has Nuclear Energy Trade Seen Its Bottom? What Jan Van Eck Sees In The Constellation-Google Deal. Past deals: the stock that signed jumped +8.8% on average on the day (median +10.5%) and its rivals +5%. Buying after the day's close was a coin flip: 5 days later -7% to +18%, and the 2026 deals were lower 20 days later. 7 deals only: context, not a rule.\n\nPlant Engineer: This headline is about a Constellation-Google power deal and a Federal Register notice on a competing enrichment facility, not a change in physical uranium supply. The deal is a months-old-style contract story already reflected in CEG's history, and the General Matter notice is a licensing filing that does not change pounds of enrichment capacity today. Minor for us; if anything it is a slow read-through to LEU's enrichment competition.",
+   "tickers": [
+    "CEG"
+   ],
+   "art": {
+    "big": "POWER DEAL NEWS",
+    "sub": "Has Nuclear Energy Trade Seen Its Bottom? What Jan Van Eck Sees In The Constellation-Googl"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 07:15",
+   "who": "engineer",
+   "kind": "alert",
+   "title": "POWER DEAL NEWS",
+   "text": "Has Nuclear Energy Trade Seen Its Bottom? What Jan Van Eck Sees In The Constellation-Google Deal | This headline is about a Constellation-Google power deal and a Federal Register notice on a competing enrichment facility, not a change in physical uranium supply.",
+   "tickers": [],
+   "art": null,
+   "thread": null
   }
  ],
  "feed_people": {
@@ -220668,62 +220704,62 @@
    "lesson": null
   }
  ],
- "intel_at": 1795779315.3466218,
+ "intel_at": 1795781664.1890624,
  "intel_health": {
-  "at": "2026-11-27 06:36",
+  "at": "2026-11-27 07:15",
   "sources": {
    "Cigar Lake": 1,
    "McArthur River / Key Lake": 5,
-   "Athabasca Basin": 6,
+   "Athabasca Basin": 8,
    "Saskatchewan wildfires": 4,
-   "Rook I / Arrow": 8,
+   "Rook I / Arrow": 9,
    "Wheeler River / Phoenix": 7,
    "Port Hope / Blind River": 0,
    "Westinghouse": 9,
-   "Kazakhstan": 32,
-   "Niger": 8,
-   "Namibia": 29,
+   "Kazakhstan": 44,
+   "Niger": 9,
+   "Namibia": 30,
    "Russia supply": 1,
    "Piketon": 21,
-   "HALEU": 11,
-   "Wyoming ISR": 21,
+   "HALEU": 12,
+   "Wyoming ISR": 20,
    "South Texas ISR": 2,
    "White Mesa / Utah": 7,
-   "Rare earths (Energy Fuels)": 12,
+   "Rare earths (Energy Fuels)": 11,
    "Lynchburg / Erwin": 0,
    "Naval reactors": 11,
    "Crane / Three Mile Island": 4,
-   "Susquehanna": 5,
+   "Susquehanna": 4,
    "Comanche Peak": 4,
-   "PJM grid": 11,
-   "ERCOT grid": 12,
-   "Data-center nuclear deals": 10,
-   "Japan restarts": 9,
-   "China new builds": 10,
-   "Congress and laws": 41,
-   "NRC decisions": 8,
-   "Energy Department": 50,
+   "PJM grid": 6,
+   "ERCOT grid": 14,
+   "Data-center nuclear deals": 9,
+   "Japan restarts": 12,
+   "China new builds": 7,
+   "Congress and laws": 43,
+   "NRC decisions": 5,
+   "Energy Department": 38,
    "White House and executive orders": 32,
    "Tariffs and trade": 2,
-   "India": 29,
+   "India": 19,
    "South Korea": 86,
-   "Europe new builds": 62,
-   "France and UK": 15,
-   "Middle East": 53,
-   "Asia newcomers": 38,
-   "Canada SMRs": 8,
-   "Big tech power deals": 63,
-   "Iran": 56,
-   "North Korea": 62,
-   "War zones": 36,
-   "AUKUS and navies": 17,
+   "Europe new builds": 28,
+   "France and UK": 12,
+   "Middle East": 27,
+   "Asia newcomers": 20,
+   "Canada SMRs": 7,
+   "Big tech power deals": 29,
+   "Iran": 55,
+   "North Korea": 63,
+   "War zones": 37,
+   "AUKUS and navies": 25,
    "Weapons programs": 31,
-   "Stockpiles and reserves": 26,
-   "Sprott trust": 4,
-   "Uranium price": 24,
+   "Stockpiles and reserves": 29,
+   "Sprott trust": 3,
+   "Uranium price": 51,
    "US policy": 0,
-   "Lawsuits and investigations": 73,
-   "Workers and jobs": 32,
+   "Lawsuits and investigations": 33,
+   "Workers and jobs": 23,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 49,
    "Federal Register (uranium)": 11,
@@ -220733,9 +220769,9 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 07:04",
-  "total": 919,
-  "week": 601,
+  "updated": "2026-11-27 07:15",
+  "total": 923,
+  "week": 603,
   "places": {
    "South Korea": 53,
    "Uranium price": 51,
@@ -220752,60 +220788,60 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-27 06:36",
+   "at": "2026-11-27 07:15",
    "sources": {
     "Cigar Lake": 1,
     "McArthur River / Key Lake": 5,
-    "Athabasca Basin": 6,
+    "Athabasca Basin": 8,
     "Saskatchewan wildfires": 4,
-    "Rook I / Arrow": 8,
+    "Rook I / Arrow": 9,
     "Wheeler River / Phoenix": 7,
     "Port Hope / Blind River": 0,
     "Westinghouse": 9,
-    "Kazakhstan": 32,
-    "Niger": 8,
-    "Namibia": 29,
+    "Kazakhstan": 44,
+    "Niger": 9,
+    "Namibia": 30,
     "Russia supply": 1,
     "Piketon": 21,
-    "HALEU": 11,
-    "Wyoming ISR": 21,
+    "HALEU": 12,
+    "Wyoming ISR": 20,
     "South Texas ISR": 2,
     "White Mesa / Utah": 7,
-    "Rare earths (Energy Fuels)": 12,
+    "Rare earths (Energy Fuels)": 11,
     "Lynchburg / Erwin": 0,
     "Naval reactors": 11,
     "Crane / Three Mile Island": 4,
-    "Susquehanna": 5,
+    "Susquehanna": 4,
     "Comanche Peak": 4,
-    "PJM grid": 11,
-    "ERCOT grid": 12,
-    "Data-center nuclear deals": 10,
-    "Japan restarts": 9,
-    "China new builds": 10,
-    "Congress and laws": 41,
-    "NRC decisions": 8,
-    "Energy Department": 50,
+    "PJM grid": 6,
+    "ERCOT grid": 14,
+    "Data-center nuclear deals": 9,
+    "Japan restarts": 12,
+    "China new builds": 7,
+    "Congress and laws": 43,
+    "NRC decisions": 5,
+    "Energy Department": 38,
     "White House and executive orders": 32,
     "Tariffs and trade": 2,
-    "India": 29,
+    "India": 19,
     "South Korea": 86,
-    "Europe new builds": 62,
-    "France and UK": 15,
-    "Middle East": 53,
-    "Asia newcomers": 38,
-    "Canada SMRs": 8,
-    "Big tech power deals": 63,
-    "Iran": 56,
-    "North Korea": 62,
-    "War zones": 36,
-    "AUKUS and navies": 17,
+    "Europe new builds": 28,
+    "France and UK": 12,
+    "Middle East": 27,
+    "Asia newcomers": 20,
+    "Canada SMRs": 7,
+    "Big tech power deals": 29,
+    "Iran": 55,
+    "North Korea": 63,
+    "War zones": 37,
+    "AUKUS and navies": 25,
     "Weapons programs": 31,
-    "Stockpiles and reserves": 26,
-    "Sprott trust": 4,
-    "Uranium price": 24,
+    "Stockpiles and reserves": 29,
+    "Sprott trust": 3,
+    "Uranium price": 51,
     "US policy": 0,
-    "Lawsuits and investigations": 73,
-    "Workers and jobs": 32,
+    "Lawsuits and investigations": 33,
+    "Workers and jobs": 23,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 49,
     "Federal Register (uranium)": 11,
@@ -221372,8 +221408,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "fd337937e7471e2a",
   "b2362be41ae616f1",
+  "fd337937e7471e2a",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -221418,10 +221454,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "688d746cfc31b58f",
   "22ab37dfabeba433",
-  "f815e45da305cee7",
+  "688d746cfc31b58f",
   "85de31670d4daf9d",
+  "f815e45da305cee7",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -223856,7 +223892,7 @@
    }
   ]
  },
- "dossier_at": 1795779366.11062,
+ "dossier_at": 1795781710.2708995,
  "sector_prices": {
   "_at": 1795760734.0715742,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -223914,85 +223950,85 @@
    "name": "Cameco",
    "price": 61.56,
    "week_pct": -1.42,
-   "built": "2026-11-27 06:36"
+   "built": "2026-11-27 07:15"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 6.95,
    "week_pct": -4.46,
-   "built": "2026-11-27 06:36"
+   "built": "2026-11-27 07:15"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.69,
    "week_pct": -3.89,
-   "built": "2026-11-27 06:36"
+   "built": "2026-11-27 07:15"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.8,
    "week_pct": -1.64,
-   "built": "2026-11-27 06:36"
+   "built": "2026-11-27 07:15"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.2,
    "week_pct": -7.71,
-   "built": "2026-11-27 06:36"
+   "built": "2026-11-27 07:15"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 83.23,
    "week_pct": -9.3,
-   "built": "2026-11-27 06:36"
+   "built": "2026-11-27 07:15"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 113.49,
    "week_pct": -3.54,
-   "built": "2026-11-27 06:36"
+   "built": "2026-11-27 07:15"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 235.25,
    "week_pct": -10.46,
-   "built": "2026-11-27 06:38"
+   "built": "2026-11-27 07:15"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 121.32,
    "week_pct": -3.39,
-   "built": "2026-11-27 06:38"
+   "built": "2026-11-27 07:15"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 351.55,
    "week_pct": -2.4,
-   "built": "2026-11-27 06:38"
+   "built": "2026-11-27 07:15"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-27 06:38"
+   "built": "2026-11-27 07:15"
   }
  ],
- "heartbeat": "2026-11-27 07:03",
+ "heartbeat": "2026-11-27 07:14",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 395,
+ "_pushed_feed": 419,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -224432,18 +224468,18 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 60,
-   "used": 59,
+   "asked": 61,
+   "used": 60,
    "notes": {
     "SECTOR Reactors and power": 2,
     "CEG Places and operations": 26,
     "UEC Deals and contracts": 1,
     "UEC Places and operations": 12,
     "license_tracker": 4,
-    "LEU Business": 5,
+    "LEU Business": 6,
     "plants_now": 9,
     "LEU Deals and contracts": 11,
-    "LEU Places and operations": 14,
+    "LEU Places and operations": 15,
     "NRC license tracker": 1,
     "power_deals_and_fuel_policy": 2,
     "VST Places and operations": 7,
@@ -224452,7 +224488,7 @@
     "plants_now: fleet status and open outages": 1,
     "desk_notes: CEG Places and operations": 2,
     "desk_notes: UUUU Places and operations": 2,
-    "SECTOR Uranium market": 36,
+    "SECTOR Uranium market": 37,
     "TLN Places and operations": 3,
     "UUUU Places and operations": 10,
     "UEC Business": 2,
@@ -224467,7 +224503,8 @@
     "BWXT Places and operations": 1,
     "DNN Business": 1,
     "DNN Places and operations": 1,
-    "BWXT Business": 1
+    "BWXT Business": 1,
+    "CEG Deals and contracts": 1
    },
    "since": "2026-11-23"
   },
@@ -229026,6 +229063,14 @@
     "DNN",
     "UEC"
    ]
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "deal",
+   "title": "Has Nuclear Energy Trade Seen Its Bottom? What Jan Van Eck Sees In The Constellation-Google Deal",
+   "tickers": [
+    "CEG"
+   ]
   }
  ],
  "vp_skipped": [
@@ -231758,7 +231803,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 07:03",
+ "watchdog_last": "2026-11-27 07:14",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

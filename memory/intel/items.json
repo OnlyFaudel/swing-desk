@@ -29775,5 +29775,133 @@
 "rises",
 "september"
 ]
+},
+{
+"id": "316cacc50e86ad03",
+"date": "2026-11-25",
+"ts": 1795576860,
+"title": "Indonesia lines up US nuclear training, coal gasification but not the know-how",
+"summary": "",
+"outlet": "Yahoo Finance",
+"link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbUlOU0ZSd2QzZ1FqMXY4bW1HNHE2ZTFhQWRoLTR1RzFHU3hocG9CNFBfUXFvUFRON1UwOXowMzExMnF5bk5kTTRjOEU0YjdHWk5aeEZUdWdPZGp6VFIwXzFiQVpNd0FQdEdPWGJqd2NRYk5LUFFVSnlnU0gzb1JtYlNuTWxhd2JyVVBsNC1KQS1nT19Ia1Rv?oc=5",
+"place": "Asia newcomers",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.0,
+"score": 1.5,
+"echo_of": "01bd07bb33534fdf",
+"w": [
+"but",
+"coal",
+"gasification",
+"how",
+"indonesia",
+"know",
+"lines",
+"not",
+"nuclear",
+"training"
+]
+},
+{
+"id": "078f8b181a953e94",
+"date": "2026-11-25",
+"ts": 1795624906,
+"title": "Centrus Energy to Host Investor Day on December 7, 2026",
+"summary": "",
+"outlet": "Investing News Network",
+"link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxORklROXktd3lYdFJxYlhSbWZDOFUtYkVlWGh5SUJBREVfSkZUVm54YS03dTVsNVcySHlpZ3JpSTdDVGRBWlNDaUtoYmw3bGJtUXNJaEJ0WWEtT1pFQUJBWjR6Qm5oOS1reDBSNktTbG1nTzFrSUhvUGVVeTlYdHdsYWo5VXJNY0p6?oc=5",
+"place": "Piketon",
+"tickers": [
+"LEU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "52dee3d37e759da2",
+"w": [
+"2026",
+"centrus",
+"day",
+"december",
+"energy",
+"host",
+"investor"
+]
+},
+{
+"id": "bc278dad88ab3e28",
+"date": "2026-11-26",
+"ts": 1795709393,
+"title": "Has Nuclear Energy Trade Seen Its Bottom? What Jan Van Eck Sees In The Constellation-Google Deal",
+"summary": "",
+"outlet": "Stocktwits",
+"link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQb0FMMDF3U2dpZmY1Um53bXpkZENJV1NaUks1b3dBUDVTS1RaczVsdHpkaHZCN0N6aVNkc2JYQXNZWTFBajJTNlZmLWgxcjV3d0hkODZVeHRJYy15TndTWW81clhxLUI3bzhiRS1UNWxRN1B3b2I0cVo5OWFQeUVpLTVNZmQ0bFA0NWNKOENfMzc1dFB2TW1OS1RDbEJST1BxTmk0NEdsNkZEWElWQ1A3TW9pODIwT0pFRTJwMjdTc0hPNWM0RThKSVl4Sk91OEdFMGxTQVl4Z1JhYXoxblJhUXQ0eWVPRmNHMVFjMHlnYkc?oc=5",
+"place": "Big tech power deals",
+"tickers": [
+"CEG",
+"VST",
+"TLN",
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.83,
+"score": 4.16,
+"echo_of": null,
+"w": [
+"bottom",
+"constellation",
+"deal",
+"eck",
+"energy",
+"google",
+"jan",
+"nuclear",
+"seen",
+"sees",
+"trade",
+"van",
+"what"
+]
+},
+{
+"id": "331604bc2fbd5cdb",
+"date": "2026-11-27",
+"ts": 1795778820,
+"title": "F3 Uranium Corp. (TSXV:FUU) Rallies with Investor Focus on Athabasca Basin Uranium Exploration",
+"summary": "",
+"outlet": "kalkine.ca",
+"link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQzBVdF9BWFc3RFFMY0FGX1JERTYzQ1ZxOHlqXzNBN0tpcmxYSGYzeE9fYmhpMUhiUTVLdW4yU0JhMG1JcVIzOERZU1J1dVdVUExHX2JQbUtmY3VrSGRhRWIwRUJCVlhjUkRiOFVrM3U4ZDdTU1I1ekYtS2RGdmY2MklzWWZHMXJwQmxWS0FOWkhITVJnSDItZGhHZW9YVGdUSU56a0N3eS1OYnFiT0M5ZFl5a1pIbEhoMEJvQnBR?oc=5",
+"place": "Athabasca Basin",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.73,
+"score": 2.96,
+"echo_of": null,
+"w": [
+"athabasca",
+"basin",
+"exploration",
+"focus",
+"fuu",
+"investor",
+"rallies",
+"tsxv",
+"uranium"
+]
 }
 ]
