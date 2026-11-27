@@ -4408,18 +4408,6 @@
  "news_feed": [
   {
    "ticker": "CCJ",
-   "source": "Local intel: energynews.pro (Workers and jobs)",
-   "title": "Energy Fuels to restart White Mesa as US uranium production falls",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX3lwSzNWWnlvaVppTVJRSVhhQ18wRlZkd1NtMVhXZlpqSVZnWXEyYzlYUjZEdVRuMDByLW54OHRsUmNDaXMzdnFNMFlLRmdvS0lLcW9CdldaYll6QjFxY2FobXlpd3NvandUcEZRY0lWT3NNTUQ2cE9hZzJTXzktNjY0REE5V1h6eE5yWG5hRDllODhEcVE?oc=5",
-   "ts": 1795589345,
-   "materiality": 5,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "supply",
-   "why": "White Mesa restart reflects US supply tightness, helpful sector-wide, but mostly mill-level not Cameco-specific."
-  },
-  {
-   "ticker": "CCJ",
    "source": "Local intel: Kyiv Post (War zones)",
    "title": "Zaporizhzhia Nuclear Plant Loses External Power for 28th Time Since Russia\u2019s 2022 Invasion",
    "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5VYmk5N1JRRmxmOHVmc05jMi1xcm1TeEY5eEVLUk8yemRYR1FhXzNXVEtNQVVqTGdFYWVISUlLUW9PdlJGemRCTWRwWQ?oc=5",
@@ -7405,6 +7393,18 @@
    "direction": "neutral",
    "event_type": "supply",
    "why": "Kazatomprom reaffirming unchanged guidance is a non-event for CCJ's supply picture."
+  },
+  {
+   "ticker": "CEG",
+   "source": "Google News",
+   "title": "Constellation Energy beats earnings, raises 202... - Pluang",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdFJpc0h5OTF0dEYtT2RjUmZndU52NWxVdU1QTC1LR0QtTVV0RkU2XzhSZ3U0MXRFN0d6czNWRU5jcHNobGs1cW4yUXlxTlpiNnpHNmNjbUFLTEhLV0xGcDR5N0tQN1ZtcFdOZXZ2RTJ6Z3hFWFpkN2UzRHlfT01DdlFFT0tOOGg4?oc=5",
+   "ts": 1795788451,
+   "materiality": 5,
+   "novelty": "new",
+   "direction": "up",
+   "event_type": "earnings",
+   "why": "Earnings beat and guidance raise is real news, but a beat is often priced in fast."
   }
  ],
  "reviews": [
@@ -9167,16 +9167,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.08049,
+  "day_usd": 0.08089,
   "month": "2026-11",
-  "month_usd": 2.17468,
-  "total_usd": 2.17468,
+  "month_usd": 2.17508,
+  "total_usd": 2.17508,
   "by_role": {
    "macro": 0.21558,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.2527,
-   "scout": 0.24647,
+   "scout": 0.24687,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9436,7 +9436,7 @@
   "LEU": 83.23,
   "BWXT": 113.49,
   "CEG": 235.25,
-  "VST": 121.32,
+  "VST": 124.66,
   "TLN": 351.55,
   "AMD": 406.83,
   "SMR": 3.25,
@@ -9444,7 +9444,7 @@
   "SPY": 716.76,
   "SGOV": 100.68
  },
- "last_cycle": "2026-11-27 09:00 ET",
+ "last_cycle": "2026-11-27 09:12 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -9507,10 +9507,10 @@
   ]
  },
  "brakes": {
-  "equity": 1005.46,
-  "day_pct": 0.0,
-  "week_pct": 0.49,
-  "drawdown_pct": -4.64,
+  "equity": 1010.21,
+  "day_pct": 0.47,
+  "week_pct": 0.97,
+  "drawdown_pct": -4.19,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -58173,8 +58173,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "4ee30073db1990ac",
   "7cabb45f8b0c2778",
+  "4ee30073db1990ac",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -58216,8 +58216,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1acc6842cd4f6e64",
   "1715e61816aa5619",
+  "1acc6842cd4f6e64",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -58344,14 +58344,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "7c380c991c59f9ba",
   "1ed195cb4396cbe7",
+  "7c380c991c59f9ba",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -58469,6 +58469,7 @@
   "6b0fa55da5b71c74",
   "8868199eaca25050",
   "63e7ca0ff352dff7",
+  "1ba32eb74ecded03",
   "1468cb9f20cb9ca3",
   "991c698e5a396dd1",
   "97e9eff63229f754",
@@ -58669,6 +58670,7 @@
   "1e9ac2ee38a1003f",
   "5af6f5b9a2bf7623",
   "a43ea8518bf9236b",
+  "432bc29342a671c0",
   "ad40fc2d9e504d93",
   "bff980bdf8e71c8b",
   "38c360c66c8cdeee",
@@ -58929,10 +58931,9 @@
   "4abce8dfecf110ac",
   "5d22d1b6e3da5fb6",
   "16c52bc5bc8110db",
-  "46c5572fb4069bdf",
-  "1ba32eb74ecded03"
+  "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795787539.006358,
+ "news_slow_at": 1795788177.3651643,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -221308,12 +221309,12 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 09:01",
+  "updated": "2026-11-27 09:12",
   "total": 935,
-  "week": 598,
+  "week": 593,
   "places": {
    "South Korea": 53,
-   "Uranium price": 52,
+   "Uranium price": 51,
    "Kazakhstan": 38,
    "Weapons programs": 34,
    "Asia newcomers": 31,
@@ -221321,7 +221322,7 @@
    "AUKUS and navies": 30,
    "Europe new builds": 29,
    "Piketon": 24,
-   "World Nuclear News": 22,
+   "World Nuclear News": 21,
    "War zones": 20,
    "Rare earths (Energy Fuels)": 16
   },
@@ -221947,8 +221948,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "fd337937e7471e2a",
   "b2362be41ae616f1",
+  "fd337937e7471e2a",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -221994,10 +221995,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "688d746cfc31b58f",
   "22ab37dfabeba433",
-  "f815e45da305cee7",
+  "688d746cfc31b58f",
   "85de31670d4daf9d",
+  "f815e45da305cee7",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -224563,12 +224564,12 @@
    "built": "2026-11-27 08:47"
   }
  ],
- "heartbeat": "2026-11-27 09:00",
+ "heartbeat": "2026-11-27 09:12",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 424,
+ "_pushed_feed": 436,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -224804,8 +224805,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 454,
-   "used": 416,
+   "asked": 455,
+   "used": 417,
    "notes": {
     "TLN Deals and contracts": 20,
     "CCJ Deals and contracts": 78,
@@ -224813,7 +224814,7 @@
     "SECTOR Government and laws": 125,
     "UUUU Deals and contracts": 44,
     "SECTOR Countries": 129,
-    "CEG Deals and contracts": 57,
+    "CEG Deals and contracts": 58,
     "NXE Legal": 22,
     "NXE Deals and contracts": 19,
     "DNN Deals and contracts": 14,
@@ -232427,7 +232428,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 09:00",
+ "watchdog_last": "2026-11-27 09:12",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
