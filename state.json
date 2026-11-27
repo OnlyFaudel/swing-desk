@@ -671,7 +671,8 @@
   "gapshadow:2026-11-27": true,
   "gapbank:UUUU:2026-11-27": true,
   "questioner:2026-11-27:5": true,
-  "ev:961370b47f9f": true
+  "ev:961370b47f9f": true,
+  "questioner:2026-11-27:6": true
  },
  "benchmark": {
   "shares": {
@@ -10025,26 +10026,26 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.33132,
+  "day_usd": 0.41168,
   "month": "2026-11",
-  "month_usd": 2.4255,
-  "total_usd": 2.4255,
+  "month_usd": 2.50586,
+  "total_usd": 2.50586,
   "by_role": {
    "macro": 0.24318,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.32531,
-   "scout": 0.25419,
+   "scout": 0.25461,
    "review": 0.11073,
    "auditor": 0.02993,
    "strategist": 0.11417,
-   "pm": 0.37658,
+   "pm": 0.44865,
    "risk": 0.24636,
    "investigator": 0.38694,
    "postmortem": 0.00035,
    "researcher": 0.02341,
-   "engineer": 0.10571,
-   "questioner": 0.1653
+   "engineer": 0.10808,
+   "questioner": 0.1708
   }
  },
  "desk_log": [
@@ -10287,23 +10288,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 63.78,
-  "NXE": 7.33,
-  "UEC": 5.93,
+  "CCJ": 63.52,
+  "NXE": 7.3,
+  "UEC": 5.92,
   "DNN": 1.9,
-  "UUUU": 5.59,
-  "LEU": 85.7,
-  "BWXT": 116.45,
-  "CEG": 237.05,
-  "VST": 123.02,
-  "TLN": 358.99,
-  "AMD": 419.56,
-  "SMR": 3.54,
-  "NNE": 9.62,
-  "SPY": 727.4,
-  "SGOV": 100.7
+  "UUUU": 5.58,
+  "LEU": 85.22,
+  "BWXT": 116.0,
+  "CEG": 236.28,
+  "VST": 122.52,
+  "TLN": 357.38,
+  "AMD": 418.23,
+  "SMR": 3.5,
+  "NNE": 9.54,
+  "SPY": 726.65,
+  "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 11:51 ET",
+ "last_cycle": "2026-11-27 12:00 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -10366,10 +10367,10 @@
   ]
  },
  "brakes": {
-  "equity": 1046.45,
-  "day_pct": 4.08,
-  "week_pct": 4.59,
-  "drawdown_pct": -0.75,
+  "equity": 1041.94,
+  "day_pct": 3.63,
+  "week_pct": 4.14,
+  "drawdown_pct": -1.18,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -14799,6 +14800,34 @@
   [
    "2026-11-27 11:51",
    1046.45
+  ],
+  [
+   "2026-11-27 11:53",
+   1045.53
+  ],
+  [
+   "2026-11-27 11:54",
+   1045.94
+  ],
+  [
+   "2026-11-27 11:55",
+   1045.25
+  ],
+  [
+   "2026-11-27 11:56",
+   1043.55
+  ],
+  [
+   "2026-11-27 11:58",
+   1043.24
+  ],
+  [
+   "2026-11-27 11:59",
+   1043.16
+  ],
+  [
+   "2026-11-27 12:00",
+   1041.94
   ]
  ],
  "nowcast": {
@@ -57752,18 +57781,18 @@
  },
  "sync": {
   "pulse_up": false,
-  "basket_vs_avg_pct": -1.65,
+  "basket_vs_avg_pct": -1.72,
   "partners_pct": {
-   "CCJ": 4.35,
-   "NXE": 4.16,
-   "UEC": 4.5,
-   "DNN": 4.01,
-   "UUUU": 3.77,
-   "LEU": 4.88,
-   "BWXT": 4.81,
-   "CEG": 5.48,
-   "VST": 4.86,
-   "TLN": 4.83
+   "CCJ": 4.25,
+   "NXE": 4.09,
+   "UEC": 4.4,
+   "DNN": 3.92,
+   "UUUU": 3.7,
+   "LEU": 4.82,
+   "BWXT": 4.76,
+   "CEG": 5.4,
+   "VST": 4.77,
+   "TLN": 4.74
   },
   "mult": {
    "CCJ": 0.92,
@@ -57778,16 +57807,16 @@
    "TLN": 0.92
   },
   "own_pct": {
-   "CCJ": 6.54,
-   "NXE": 8.22,
-   "UEC": 5.15,
+   "CCJ": 6.57,
+   "NXE": 8.07,
+   "UEC": 5.24,
    "DNN": 9.57,
-   "UUUU": 11.69,
-   "LEU": 1.69,
-   "BWXT": 2.33,
-   "CEG": -3.65,
-   "VST": 1.91,
-   "TLN": 2.21
+   "UUUU": 11.59,
+   "LEU": 1.43,
+   "BWXT": 2.04,
+   "CEG": -3.75,
+   "VST": 1.94,
+   "TLN": 2.17
   },
   "series": {
    "CCJ": [
@@ -57929,8 +57958,8 @@
     0.732,
     0.7331,
     0.7607,
-    0.7557,
-    0.7562
+    0.756,
+    0.7563
    ],
    "NXE": [
     1.0,
@@ -58071,8 +58100,8 @@
     0.7976,
     0.7993,
     0.8338,
-    0.8407,
-    0.8401
+    0.8413,
+    0.839
    ],
    "UEC": [
     1.0,
@@ -58214,7 +58243,7 @@
     0.6918,
     0.7179,
     0.7228,
-    0.7204
+    0.721
    ],
    "DNN": [
     1.0,
@@ -58498,7 +58527,7 @@
     0.6159,
     0.6514,
     0.6635,
-    0.6615
+    0.6609
    ],
    "LEU": [
     1.0,
@@ -58640,7 +58669,7 @@
     0.7355,
     0.7461,
     0.7547,
-    0.7549
+    0.753
    ],
    "BWXT": [
     1.0,
@@ -58781,8 +58810,8 @@
     0.8197,
     0.8193,
     0.8333,
-    0.8363,
-    0.8396
+    0.8369,
+    0.8372
    ],
    "CEG": [
     1.0,
@@ -58924,7 +58953,7 @@
     0.8887,
     0.8804,
     0.8933,
-    0.8941
+    0.8932
    ],
    "VST": [
     1.0,
@@ -59065,8 +59094,8 @@
     0.8532,
     0.8552,
     0.8569,
-    0.8642,
-    0.8634
+    0.864,
+    0.8637
    ],
    "TLN": [
     1.0,
@@ -59208,7 +59237,7 @@
     0.9959,
     1.0033,
     1.0137,
-    1.013
+    1.0125
    ],
    "basket": [
     1.0,
@@ -59349,8 +59378,8 @@
     0.8088,
     0.8086,
     0.8249,
-    0.8317,
-    0.8315
+    0.8318,
+    0.8309
    ],
    "avg": [
     0.9766,
@@ -59495,7 +59524,7 @@
     0.8455
    ]
   },
-  "time": "2026-11-27 11:51"
+  "time": "2026-11-27 12:00"
  },
  "gap_flags": {},
  "inbox_seen": [
@@ -59508,8 +59537,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "7cabb45f8b0c2778",
   "4ee30073db1990ac",
+  "7cabb45f8b0c2778",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -59552,8 +59581,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1715e61816aa5619",
   "1acc6842cd4f6e64",
+  "1715e61816aa5619",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -59683,14 +59712,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "1ed195cb4396cbe7",
   "7c380c991c59f9ba",
+  "1ed195cb4396cbe7",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -60132,6 +60161,7 @@
   "bf78a7a4b7c697c4",
   "982258a10913aaf8",
   "a1266dd4e5f78432",
+  "12248c3fda706761",
   "17b21557a779a003",
   "bffbce0b54f324a7",
   "f16660c269a6613c",
@@ -60283,7 +60313,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795797986.2077587,
+ "news_slow_at": 1795798607.5554261,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -217512,6 +217542,33 @@
    ],
    "practice": false,
    "end": "10:43"
+  },
+  {
+   "id": "20261127120026669706",
+   "title": "The Questioner, Nov 27 12:00",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-27 12:00",
+   "msgs": [
+    {
+     "t": "12:00",
+     "who": "questioner",
+     "to": "engineer",
+     "text": "Salem 1 has been down 52 days, but it's refueling season and CEG's fleet is about 96% running, so a planned outage is routine. I'm not treating it as a signal unless someone can show it's an unplanned extension.",
+     "outcome": false,
+     "notes": "question: Is Salem 1's 52-day outage still on its planned refueling schedule, or has it been extended past the planned end date in any filing or NRC notice?\nwhy it might matter: An unplanned extension on a 25-unit owner is a real earnings hit; a planned refuel is noise. Right now the desk can't tell which it is.\nask: engineer\nkind: unexplained\nwhy: The reactor data shows Salem 1 as the only open outage among our owners, down since Oct 4, but the desk notes say planned refuel outages are normal this season and CEG's fleet is about 96% running. What's missing is whether this outage is still on its planned schedule.\nfiles read: plants, CEG Snapshot"
+    },
+    {
+     "t": "12:00",
+     "who": "engineer",
+     "to": "questioner",
+     "text": "Salem 1 has been out since Oct 4, now 52 days, which is long but falls inside normal refueling season, and CEG's fleet is about 96% running, so this looks like planned maintenance rather than trouble. I have no filing or NRC notice in the desk files showing a planned end date being pushed out, so I can't confirm an extension either way. I agree with the Questioner that a planned outage is routine and shouldn't move our stocks on its own.",
+     "outcome": false,
+     "notes": "verdict: irrelevant\naction: watch\nwatch date: 2026-11-27\nresearch test: Pull the Salem 1 entry on the NRC event reports and the owner's outage schedule and compare the planned end date against the current date; if the end date has moved, that would be the signal to re-rate CEG.\nwhy: The desk's plant data shows Salem 1 as an open refuel_or_long outage with no end date, in a season where planned outages are common, and CEG's 25-unit fleet is still 95.8% running. The files contain no filing or NRC notice giving a planned end date, so I can't tell whether it has been extended.\nfiles read: CEG Places and operations, CEG Business"
+    }
+   ],
+   "practice": false,
+   "end": "12:00"
   }
  ],
  "feed": [
@@ -223467,6 +223524,42 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-27 12:00",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Is Salem 1's 52-day outage still on its planned refueling schedule, or has it been extended past the planned end date in any filing or NRC notice? -> irrelevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:00",
+   "who": "pm",
+   "kind": "agent",
+   "title": null,
+   "text": "I'm leaving every strategy at the plain rule today (1.0), because I can't name a specific fact that justifies leaning either way. The market bounced (SPY +1.39%), but the S&P is still under its 200-day average, and the rebound trades we already hold are working, so I won't add risk on a single up day.\n\nWhy: I checked each setup against today's facts: SPY +1.39% means the panic trigger isn't live, and the S&P is still under its 200-day. Nothing concrete justified an override.",
+   "tickers": [],
+   "art": null,
+   "thread": null
+  },
+  {
+   "t": "2026-11-27 12:00",
+   "who": "pm",
+   "kind": "decision",
+   "title": null,
+   "text": "Today's stance on our rule strategies: I'm keeping every strategy at its normal size today. The market bounced, but we're still in a weak-trend regime and I don't see a specific reason to push harder or pull back. All strategies at normal size.",
+   "tickers": [],
+   "art": {
+    "big": "Daily stance",
+    "sub": "0 change(s) from the plain rules"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -224338,7 +224431,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 11:52",
+  "updated": "2026-11-27 12:00",
   "total": 956,
   "week": 589,
   "places": {
@@ -224977,8 +225070,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "b2362be41ae616f1",
   "fd337937e7471e2a",
+  "b2362be41ae616f1",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -225026,10 +225119,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "22ab37dfabeba433",
   "688d746cfc31b58f",
-  "85de31670d4daf9d",
+  "22ab37dfabeba433",
   "f815e45da305cee7",
+  "85de31670d4daf9d",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -225201,10 +225294,10 @@
   "710e26d86c88952c",
   "0c3ada20fae5f894",
   "09bd7b0e348df04b",
+  "ecc9cf8f7327ef77",
   "958910b51098bafe",
   "cf0b8d35ede4612a",
-  "53627f4c0e7162ee",
-  "ecc9cf8f7327ef77"
+  "53627f4c0e7162ee"
  ],
  "panic_log": [
   {
@@ -227605,12 +227698,12 @@
    "built": "2026-11-27 11:52"
   }
  ],
- "heartbeat": "2026-11-27 11:51",
+ "heartbeat": "2026-11-27 12:00",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 501,
+ "_pushed_feed": 504,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -227841,20 +227934,20 @@
   ]
  },
  "boss_watch_px": {
-  "BWXT": 116.45,
-  "TLN": 358.99
+  "BWXT": 116.0,
+  "TLN": 357.375
  },
  "notes_audit": {
   "scout": {
-   "asked": 471,
-   "used": 432,
+   "asked": 472,
+   "used": 433,
    "notes": {
     "TLN Deals and contracts": 20,
     "CCJ Deals and contracts": 80,
     "BWXT Deals and contracts": 56,
-    "SECTOR Government and laws": 131,
+    "SECTOR Government and laws": 132,
     "UUUU Deals and contracts": 44,
-    "SECTOR Countries": 134,
+    "SECTOR Countries": 135,
     "CEG Deals and contracts": 62,
     "NXE Legal": 23,
     "NXE Deals and contracts": 19,
@@ -228043,14 +228136,14 @@
    "since": "2026-11-23"
   },
   "pm": {
-   "asked": 79,
-   "used": 79,
+   "asked": 80,
+   "used": 80,
    "notes": {
     "BWXT Deals and contracts": 4,
     "BWXT Snapshot": 11,
     "BWXT Leadership and insiders": 2,
     "TLN Snapshot": 8,
-    "SECTOR Uranium market": 68,
+    "SECTOR Uranium market": 69,
     "BWXT Discoveries": 2,
     "UEC Snapshot": 14,
     "UEC Leadership and insiders": 1,
@@ -228086,11 +228179,11 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 77,
-   "used": 76,
+   "asked": 78,
+   "used": 77,
    "notes": {
     "SECTOR Reactors and power": 2,
-    "CEG Places and operations": 34,
+    "CEG Places and operations": 35,
     "UEC Deals and contracts": 1,
     "UEC Places and operations": 14,
     "license_tracker": 4,
@@ -228101,7 +228194,7 @@
     "NRC license tracker": 1,
     "power_deals_and_fuel_policy": 2,
     "VST Places and operations": 9,
-    "CEG Business": 1,
+    "CEG Business": 2,
     "NXE Places and operations": 5,
     "plants_now: fleet status and open outages": 1,
     "desk_notes: CEG Places and operations": 2,
@@ -228293,8 +228386,8 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 61,
-   "used": 61,
+   "asked": 62,
+   "used": 62,
    "notes": {
     "TLN Snapshot": 45,
     "TLN News": 41,
@@ -228310,7 +228403,7 @@
     "desk_lessons_from_our_mistakes": 7,
     "TLN Ownership and analysts": 4,
     "SECTOR Uranium market": 18,
-    "CEG Snapshot": 5,
+    "CEG Snapshot": 6,
     "uranium_price": 1,
     "PJM capacity auction": 1,
     "PJM auction": 1,
@@ -228321,7 +228414,7 @@
     "SECTOR Calendar": 1,
     "already_asked": 3,
     "Desk lessons": 1,
-    "plants": 1,
+    "plants": 2,
     "TLN earnings calendar": 1,
     "SECTOR Countries": 1,
     "TLN Calendar": 1,
@@ -228506,7 +228599,7 @@
    ],
    [
     "2026-11-27",
-    63.78
+    63.52
    ]
   ],
   "NXE": [
@@ -228628,7 +228721,7 @@
    ],
    [
     "2026-11-27",
-    7.33
+    7.3
    ]
   ],
   "UEC": [
@@ -228750,7 +228843,7 @@
    ],
    [
     "2026-11-27",
-    5.93
+    5.92
    ]
   ],
   "DNN": [
@@ -228994,7 +229087,7 @@
    ],
    [
     "2026-11-27",
-    5.59
+    5.58
    ]
   ],
   "LEU": [
@@ -229116,7 +229209,7 @@
    ],
    [
     "2026-11-27",
-    85.7
+    85.22
    ]
   ],
   "BWXT": [
@@ -229238,7 +229331,7 @@
    ],
    [
     "2026-11-27",
-    116.45
+    116.0
    ]
   ],
   "CEG": [
@@ -229360,7 +229453,7 @@
    ],
    [
     "2026-11-27",
-    237.05
+    236.28
    ]
   ],
   "VST": [
@@ -229482,7 +229575,7 @@
    ],
    [
     "2026-11-27",
-    123.02
+    122.52
    ]
   ],
   "TLN": [
@@ -229604,7 +229697,7 @@
    ],
    [
     "2026-11-27",
-    358.99
+    357.38
    ]
   ],
   "AMD": [
@@ -229726,7 +229819,7 @@
    ],
    [
     "2026-11-27",
-    419.56
+    418.23
    ]
   ],
   "SMR": [
@@ -229848,7 +229941,7 @@
    ],
    [
     "2026-11-27",
-    3.54
+    3.5
    ]
   ],
   "NNE": [
@@ -229970,7 +230063,7 @@
    ],
    [
     "2026-11-27",
-    9.62
+    9.54
    ]
   ]
  },
@@ -232797,6 +232890,15 @@
    "answer": "Salem 1 has been out since Oct 4 for 52 days, but this is refueling season and the fleet is about 96% running for CEG, so a planned outage is routine. Our files show Byron 2, Peach Bottom 2, and Dresden 3 all ran 25-29 days in the same season, so 52 days is long but not alarming. The desk has no schedule or expected-return date for Salem 1, so I can't confirm it's on plan, and I'd rather be honest about that gap than guess.",
    "verdict": "unsure",
    "action": "research"
+  },
+  {
+   "t": "2026-11-27 12:00",
+   "question": "Is Salem 1's 52-day outage still on its planned refueling schedule, or has it been extended past the planned end date in any filing or NRC notice?",
+   "kind": "unexplained",
+   "asked": "engineer",
+   "answer": "Salem 1 has been out since Oct 4, now 52 days, which is long but falls inside normal refueling season, and CEG's fleet is about 96% running, so this looks like planned maintenance rather than trouble. I have no filing or NRC notice in the desk files showing a planned end date being pushed out, so I can't confirm an extension either way. I agree with the Questioner that a planned outage is routine and shouldn't move our stocks on its own.",
+   "verdict": "irrelevant",
+   "action": "watch"
   }
  ],
  "reactor_view": {
@@ -236014,7 +236116,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 11:51",
+ "watchdog_last": "2026-11-27 12:00",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
@@ -236639,71 +236741,66 @@
  },
  "rule_errors": {},
  "prev_close": {
-  "_date": "2026-11-25",
-  "CCJ": 59.790000915527344,
-  "NXE": 6.829999923706055,
-  "UEC": 5.570000171661377,
-  "DNN": 1.7400000095367432,
-  "UUUU": 5.130000114440918,
-  "LEU": 84.04000091552734,
-  "BWXT": 113.13999938964844,
-  "CEG": 244.83999633789062,
-  "VST": 120.72000122070312,
-  "TLN": 347.67999267578125,
-  "SPY": 718.780029296875
+  "_date": "2026-11-27",
+  "CCJ": 61.54999923706055,
+  "NXE": 6.960000038146973,
+  "UEC": 5.690000057220459,
+  "DNN": 1.7899999618530273,
+  "UUUU": 5.210000038146973,
+  "LEU": 83.19000244140625,
+  "BWXT": 113.55000305175781,
+  "CEG": 235.27999877929688,
+  "VST": 121.31999969482422,
+  "TLN": 351.6099853515625,
+  "SPY": 716.7000122070312
  },
  "judgment": {
   "stance": {
-   "date": "2026-11-25",
+   "date": "2026-11-27",
    "setups": {
     "panic_rebound": {
      "mult": 1.0,
-     "reason": "S&P is only -0.41% today, so the trigger (S&P -2%) is not met; nothing to lean on."
+     "reason": "S&P was up today, so the panic trigger (S&P down 2%+) isn't met. Nothing to lean on."
     },
     "sharp_drop": {
      "mult": 1.0,
-     "reason": "Plain rule. Tier-2 names are already open (AMD, SMR, NNE), and the capped tail is the main risk, so I am not adding to it."
+     "reason": "Three sharp-drop lots are already open and winning. Any new signal is the plain rule. The speculative-name tail risk is already covered by the base-size rule."
     },
     "comeback": {
      "mult": 1.0,
-     "reason": "S&P is under its 200-day, so the setup is allowed, and the test results are positive in every cell. Nothing today argues for a change."
+     "reason": "The S&P is under its 200-day, so the setup is allowed, but nothing today specifically argues for changing size."
     },
     "ai_power": {
      "mult": 1.0,
-     "reason": "NVIDIA fell about 8% (a drop, not a 6%+ jump), so the rule should not trigger. The AI scare test is a practice-book idea only."
+     "reason": "No specific fact today changes the plain rule."
     },
     "fear_fade": {
      "mult": 1.0,
-     "reason": "No specific fact today to change the plain rule."
+     "reason": "No specific fact today changes the plain rule."
     },
     "thanksgiving": {
      "mult": 1.0,
-     "reason": "Already open and sells Friday. Small size, no new information."
+     "reason": "It exits today at the Black Friday close as planned. Most lots are up."
     },
     "earnings_pop": {
      "mult": 1.0,
-     "reason": "No earnings facts today."
+     "reason": "No specific fact today changes the plain rule."
     },
     "ah_dip": {
      "mult": 1.0,
-     "reason": "Plain rule; it already skips earnings nights."
+     "reason": "No specific fact today changes the plain rule."
     },
     "year_end": {
      "mult": 1.0,
-     "reason": "Not in season yet."
+     "reason": "Not in season yet. Plain rule."
     },
     "uranium_momentum": {
      "mult": 1.0,
-     "reason": "No new spot data. The Sprott trust is at a 17% discount and not issuing, so there is no extra reason to lean in."
+     "reason": "Spot uranium is weak and the Sprott trust trades at a 17% discount, so there is no extra reason to lean in. Plain rule."
     }
    },
-   "tickers": {
-    "CEG": {
-     "mult": 0.5,
-     "reason": "CEG is down 3.2% today and the power names are in an AI-power selloff. The power trio has historically been weak after Black Friday, and the Dec 15 PJM auction is a risk. I would not add to it."
-    }
-   },
-   "summary": "No rule is clearly triggered today, so I am leaving every strategy at its normal size. The only change is a smaller size on CEG, which is falling while AI-power stocks sell off and PJM auction risk looms."
+   "tickers": {},
+   "summary": "I'm keeping every strategy at its normal size today. The market bounced, but we're still in a weak-trend regime and I don't see a specific reason to push harder or pull back."
   }
  },
  "ah_watch": [
