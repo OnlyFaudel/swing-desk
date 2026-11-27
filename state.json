@@ -4408,18 +4408,6 @@
  "news_feed": [
   {
    "ticker": "BWXT",
-   "source": "Local intel: The Aviationist (Naval reactors)",
-   "title": "U.S. Navy Contracts Raytheon to Advance Development of Submarine-Launched Nuclear Cruise Missile",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdWRjbGVBeUtmZWtkOThOZ0tFb2k4aHBWR3VHTFp0cktORTNwdVkwRm94S0xDeDR0WHFya2lvVVJWa0ZwcElLQnM5RVVJc1Jrd09GbVRKeFFKejdBYjhoZ0twQUhKeERJQU00SmNpVlduMmZtRVdBcFJYY0NHT0JOcjRGbUVGVTVqbzlPT0RxWGVUaDRuSk9HRGl6UjM2dw?oc=5",
-   "ts": 1795613820,
-   "materiality": 6,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "contract_deal",
-   "why": "Navy contract to Raytheon for submarine nuclear cruise missile; BWXT's role unclear."
-  },
-  {
-   "ticker": "BWXT",
    "source": "Local intel: Interesting Engineering (Naval reactors)",
    "title": "Submarine-launched nuclear missile advances into new development phase for US Navy",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBjUk14QWJMYVhQMThwWmZjMFBRYmYyZVR6ZlF3eHFyS3BXNWFCRHVCZV9YdWFxRXlIMjlsZ0tPZ3FDYlk3VjBLSWMyMlNEaVVsUFdMZkhVSXFZcnpLYUxsMlI3ZDMzOEhLcHFFc2owTmNia19KMHc?oc=5",
@@ -7405,6 +7393,18 @@
    "direction": "up",
    "event_type": "policy_tariff",
    "why": "Saudi nuclear deal in Congress could add reactor demand, but it is only a Senate review, not a signed contract."
+  },
+  {
+   "ticker": "UEC",
+   "source": "Google News",
+   "title": "Uranium Energy (NYSE American:UEC) Climbs 7% Pre-Market Today off a 52-Week Low While Record Contract Prices Collide With Sector Turmoil - kalkine.ca",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxON2RYRE10c21ONlhod0hKblA2SFh4aDBXaXNaSWNkVFlIMlk4SFA3RlVSZU04NE9LWG0xZk14SnhUeXFSa09abFJYN09kOGhRNlFVX3ZEaDF5eWViRUF3UGpqdEtZQk4xcE1ORUViV1lfRTFzU1hMLVN3VVNTa2tfQU9MY3pCd2ZpSVFMaTFjdUxPWFU5TGNjVl9LRkxZS1JfTmhxSVFXM1pMdDl0TEppLVpjY1QzTTV0VFQySEJyT3BoTWZnV01fLVVMMURESUtEQnZaT1B0SGNidThOS1V5dHA3U1duU3RyaWtBSTVyWTI3bXJ2Q3c?oc=5",
+   "ts": 1795789140,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Price recap of a pre-market move; the 'record contract prices' angle is generic sector backdrop."
   }
  ],
  "reviews": [
@@ -9167,16 +9167,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.08195,
+  "day_usd": 0.08242,
   "month": "2026-11",
-  "month_usd": 2.17614,
-  "total_usd": 2.17614,
+  "month_usd": 2.17661,
+  "total_usd": 2.17661,
   "by_role": {
    "macro": 0.21558,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.2527,
-   "scout": 0.24793,
+   "scout": 0.2484,
    "review": 0.11017,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -9428,23 +9428,23 @@
  ],
  "broker": "alpaca-paper",
  "last_prices": {
-  "CCJ": 64.72,
-  "NXE": 6.95,
-  "UEC": 5.69,
-  "DNN": 1.8,
-  "UUUU": 5.2,
-  "LEU": 83.23,
-  "BWXT": 113.49,
-  "CEG": 235.25,
-  "VST": 121.32,
-  "TLN": 351.55,
-  "AMD": 406.83,
-  "SMR": 3.25,
-  "NNE": 8.85,
-  "SPY": 716.76,
-  "SGOV": 100.68
+  "CCJ": 64.18,
+  "NXE": 7.29,
+  "UEC": 5.97,
+  "DNN": 1.88,
+  "UUUU": 5.51,
+  "LEU": 87.06,
+  "BWXT": 116.78,
+  "CEG": 240.71,
+  "VST": 123.37,
+  "TLN": 357.89,
+  "AMD": 416.47,
+  "SMR": 3.39,
+  "NNE": 9.47,
+  "SPY": 725.05,
+  "SGOV": 100.7
  },
- "last_cycle": "2026-11-27 09:22 ET",
+ "last_cycle": "2026-11-27 09:31 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -9507,10 +9507,10 @@
   ]
  },
  "brakes": {
-  "equity": 1006.26,
-  "day_pct": 0.08,
-  "week_pct": 0.57,
-  "drawdown_pct": -4.57,
+  "equity": 1043.94,
+  "day_pct": 3.83,
+  "week_pct": 4.34,
+  "drawdown_pct": -0.99,
   "no_new_today": false,
   "no_new_week": false,
   "risk_mult": 1.0,
@@ -58417,6 +58417,7 @@
   "126369127a97f018",
   "ca2a5c0a1baa2527",
   "7baea97af7cc8870",
+  "bda020c3d80b2be8",
   "c5d6d278d6cc3a63",
   "15c5ededcaa0a513",
   "3cba9e411926e5e8",
@@ -58935,7 +58936,7 @@
   "16c52bc5bc8110db",
   "46c5572fb4069bdf"
  ],
- "news_slow_at": 1795788801.397104,
+ "news_slow_at": 1795789865.6155338,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -220436,6 +220437,21 @@
    ],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-27 09:31",
+   "who": "chief",
+   "kind": "alert",
+   "title": null,
+   "text": "Hawk alert: UUUU moved -2.9% in 1 min. Checking the news for a reason.",
+   "tickers": [
+    "UUUU"
+   ],
+   "art": {
+    "big": "UUUU moved -2.9% in 1 min",
+    "sub": "Live price alert. The team is checking the news."
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -221311,7 +221327,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 09:22",
+  "updated": "2026-11-27 09:31",
   "total": 940,
   "week": 597,
   "places": {
@@ -224568,7 +224584,7 @@
    "built": "2026-11-27 09:18"
   }
  ],
- "heartbeat": "2026-11-27 09:22",
+ "heartbeat": "2026-11-27 09:31",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -224809,13 +224825,13 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 457,
-   "used": 419,
+   "asked": 458,
+   "used": 420,
    "notes": {
     "TLN Deals and contracts": 20,
     "CCJ Deals and contracts": 79,
     "BWXT Deals and contracts": 56,
-    "SECTOR Government and laws": 126,
+    "SECTOR Government and laws": 127,
     "UUUU Deals and contracts": 44,
     "SECTOR Countries": 130,
     "CEG Deals and contracts": 59,
@@ -224824,7 +224840,7 @@
     "DNN Deals and contracts": 14,
     "BWXT Legal": 3,
     "LEU Deals and contracts": 44,
-    "UEC Deals and contracts": 6,
+    "UEC Deals and contracts": 7,
     "UUUU Legal": 25,
     "SECTOR Uranium market": 11,
     "CCJ Legal": 18,
@@ -225307,10 +225323,6 @@
  "spark": {
   "CCJ": [
    [
-    "2026-10-15",
-    83.23
-   ],
-   [
     "2026-10-16",
     81.52
    ],
@@ -225424,14 +225436,14 @@
    ],
    [
     "2026-11-25",
-    61.56
+    61.55
+   ],
+   [
+    "2026-11-27",
+    64.18
    ]
   ],
   "NXE": [
-   [
-    "2026-10-15",
-    8.56
-   ],
    [
     "2026-10-16",
     8.37
@@ -225546,14 +225558,14 @@
    ],
    [
     "2026-11-25",
-    6.95
+    6.96
+   ],
+   [
+    "2026-11-27",
+    7.29
    ]
   ],
   "UEC": [
-   [
-    "2026-10-15",
-    8.17
-   ],
    [
     "2026-10-16",
     7.91
@@ -225669,13 +225681,13 @@
    [
     "2026-11-25",
     5.69
+   ],
+   [
+    "2026-11-27",
+    5.97
    ]
   ],
   "DNN": [
-   [
-    "2026-10-15",
-    2.36
-   ],
    [
     "2026-10-16",
     2.28
@@ -225790,14 +225802,14 @@
    ],
    [
     "2026-11-25",
-    1.8
+    1.79
+   ],
+   [
+    "2026-11-27",
+    1.88
    ]
   ],
   "UUUU": [
-   [
-    "2026-10-15",
-    8.57
-   ],
    [
     "2026-10-16",
     8.47
@@ -225912,14 +225924,14 @@
    ],
    [
     "2026-11-25",
-    5.2
+    5.21
+   ],
+   [
+    "2026-11-27",
+    5.51
    ]
   ],
   "LEU": [
-   [
-    "2026-10-15",
-    127.01
-   ],
    [
     "2026-10-16",
     114.94
@@ -226034,14 +226046,14 @@
    ],
    [
     "2026-11-25",
-    83.23
+    83.19
+   ],
+   [
+    "2026-11-27",
+    87.06
    ]
   ],
   "BWXT": [
-   [
-    "2026-10-15",
-    136.89
-   ],
    [
     "2026-10-16",
     136.7
@@ -226156,14 +226168,14 @@
    ],
    [
     "2026-11-25",
-    113.49
+    113.55
+   ],
+   [
+    "2026-11-27",
+    116.78
    ]
   ],
   "CEG": [
-   [
-    "2026-10-15",
-    274.58
-   ],
    [
     "2026-10-16",
     270.96
@@ -226278,14 +226290,14 @@
    ],
    [
     "2026-11-25",
-    235.25
+    235.28
+   ],
+   [
+    "2026-11-27",
+    240.71
    ]
   ],
   "VST": [
-   [
-    "2026-10-15",
-    154.17
-   ],
    [
     "2026-10-16",
     152.02
@@ -226401,13 +226413,13 @@
    [
     "2026-11-25",
     121.32
+   ],
+   [
+    "2026-11-27",
+    123.37
    ]
   ],
   "TLN": [
-   [
-    "2026-10-15",
-    353.6
-   ],
    [
     "2026-10-16",
     354.81
@@ -226522,14 +226534,14 @@
    ],
    [
     "2026-11-25",
-    351.55
+    351.61
+   ],
+   [
+    "2026-11-27",
+    357.89
    ]
   ],
   "AMD": [
-   [
-    "2026-10-15",
-    562.23
-   ],
    [
     "2026-10-16",
     528.75
@@ -226644,14 +226656,14 @@
    ],
    [
     "2026-11-25",
-    406.83
+    406.03
+   ],
+   [
+    "2026-11-27",
+    416.47
    ]
   ],
   "SMR": [
-   [
-    "2026-10-15",
-    6.15
-   ],
    [
     "2026-10-16",
     5.83
@@ -226767,13 +226779,13 @@
    [
     "2026-11-25",
     3.25
+   ],
+   [
+    "2026-11-27",
+    3.39
    ]
   ],
   "NNE": [
-   [
-    "2026-10-15",
-    13.59
-   ],
    [
     "2026-10-16",
     12.88
@@ -226889,6 +226901,10 @@
    [
     "2026-11-25",
     8.85
+   ],
+   [
+    "2026-11-27",
+    9.47
    ]
   ]
  },
@@ -231951,14 +231967,9 @@
  "hawk_cool": {},
  "hawk_recent": [
   [
-   1795633796.9009871,
-   "LEU",
-   1
-  ],
-  [
-   1795633828.555374,
-   "UEC",
-   1
+   1795789865.5226762,
+   "UUUU",
+   -1
   ]
  ],
  "auto_log": [],
@@ -232432,7 +232443,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 09:22",
+ "watchdog_last": "2026-11-27 09:31",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
