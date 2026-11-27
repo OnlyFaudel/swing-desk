@@ -5776,18 +5776,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CEG",
-   "source": "Google News",
-   "title": "Constellation Energy Slides as AI-Power Trade Stays Under Pressure - Quiver Quantitative",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYXFlRGxlRVdURlpZczJnNDc4czNaV0NxeVJCT3N2WlB0MEdJTTFCaUQzQUhHNmtYa2xMajJ5bzZoZUU4cW80SU1fUHUzRU1GR3RFLTU1dU9EMUFMV045Y3BGYy01Y2NMVXdOTmpuYUdOX284V3h0NU1lVk9raTV2MmpaTXlYb3dBSEdyRDBIZUlNTURSXzY3QkpxeFM1bVpi?oc=5",
-   "ts": 1795623480,
-   "materiality": 3,
-   "novelty": "stale",
-   "direction": "down",
-   "event_type": "other",
-   "why": "Generic 'stock slides' recap of the AI-power trade; no new company-specific fact."
-  },
-  {
    "ticker": "LEU",
    "source": "World Nuclear News",
    "title": "Steam generators progress for Leningrad II and MBIR",
@@ -8774,6 +8762,18 @@
    "direction": "up",
    "event_type": "other",
    "why": "China new build is long-term demand, but a single unit start is not new news for CCJ"
+  },
+  {
+   "ticker": "DNN",
+   "source": "Google News: \"Denison Mines\"",
+   "title": "Is Denison Mines (TSX:DML) Steadily Advancing Its Uranium Project Pipeline? - Kalkine Media",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaW54d0t0cTQyRnVXaXJBSnprWFZRZ0E3cVlOMldicGFsX25CRHNWdTA0V3VlTTl3bkt1WXRUYVN5YTR1bVI5ZUR2TE1xRWd6dUxsYko4aDhzV1NtaU8zSEw3c3VEU3ExOUZzYk5SV283Ul93c0FFcXllQmlETFQ5SXhrOUFJU3o4V1dkaHAwZUV6dVdMOV96STJ4MFg4M2V0T19LN1RocWhWeElVRWp0blNSYw?oc=5",
+   "ts": 1795805040,
+   "materiality": 2,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic Kalkine Media pipeline piece on a Toronto-listed ticker; rehash, no new facts."
   }
  ],
  "reviews": [
@@ -10666,16 +10666,16 @@
  },
  "spend": {
   "day": "2026-11-27",
-  "day_usd": 0.48452,
+  "day_usd": 0.48495,
   "month": "2026-11",
-  "month_usd": 2.5787,
-  "total_usd": 2.5787,
+  "month_usd": 2.57913,
+  "total_usd": 2.57913,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.25797,
+   "scout": 0.2584,
    "review": 0.11073,
    "auditor": 0.02993,
    "strategist": 0.11417,
@@ -10946,7 +10946,7 @@
   "DNN": 1.91,
   "UUUU": 5.66,
   "LEU": 84.79,
-  "BWXT": 116.57,
+  "BWXT": 115.57,
   "CEG": 238.15,
   "VST": 122.35,
   "TLN": 359.64,
@@ -10956,7 +10956,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 13:40 ET",
+ "last_cycle": "2026-11-27 13:50 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -60377,8 +60377,8 @@
  ],
  "seen_news": [
   "bf9813326e0bd040",
-  "4ee30073db1990ac",
   "7cabb45f8b0c2778",
+  "4ee30073db1990ac",
   "bb6d0befac06c212",
   "8aff877e2dd1884c",
   "ed1aa0f23535adaa",
@@ -60421,8 +60421,8 @@
   "bfa4d042201cf513",
   "982ae178b039d112",
   "5152638d88885c07",
-  "1acc6842cd4f6e64",
   "1715e61816aa5619",
+  "1acc6842cd4f6e64",
   "608a6c7d81d54f47",
   "12bf832407de3c00",
   "801b088de23fdd5b",
@@ -60553,14 +60553,14 @@
   "e250b8758ee96ae8",
   "64586fb72f88087f",
   "c2d5142e019783ce",
-  "7c380c991c59f9ba",
   "1ed195cb4396cbe7",
+  "7c380c991c59f9ba",
   "717c47c79d590a65",
   "aa4831603d62a7e7",
-  "c988637e87af140a",
+  "fa17ed4285ac01d2",
   "078f8b181a953e94",
   "418a91931047cecc",
-  "fa17ed4285ac01d2",
+  "c988637e87af140a",
   "de98c29c1b6c2e5d",
   "0d77f1d2373bb03d",
   "c92f081a03df533b",
@@ -61157,9 +61157,10 @@
   "5d22d1b6e3da5fb6",
   "068e5507f464ca6e",
   "16c52bc5bc8110db",
-  "46c5572fb4069bdf"
+  "46c5572fb4069bdf",
+  "e901047b889cef66"
  ],
- "news_slow_at": 1795804832.2594097,
+ "news_slow_at": 1795805454.9969196,
  "officer": {
   "settled_cash": 82.44,
   "cash": 82.44,
@@ -226268,7 +226269,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 13:40",
+  "updated": "2026-11-27 13:50",
   "total": 967,
   "week": 590,
   "places": {
@@ -226907,8 +226908,8 @@
  "intel_handed": [
   "afd8290622043c62",
   "88e6a210eab92423",
-  "fd337937e7471e2a",
   "b2362be41ae616f1",
+  "fd337937e7471e2a",
   "6179af2df0235f8c",
   "4bcec70e5161a23d",
   "0d77f1d2373bb03d",
@@ -226956,10 +226957,10 @@
   "23df247dfa485e38",
   "7908d2b630649992",
   "c71238280e152d73",
-  "688d746cfc31b58f",
   "22ab37dfabeba433",
-  "f815e45da305cee7",
+  "688d746cfc31b58f",
   "85de31670d4daf9d",
+  "f815e45da305cee7",
   "32e6c78f5169b731",
   "dd57ba38f81c0a8f",
   "fe03861983913aba",
@@ -229538,7 +229539,7 @@
    "built": "2026-11-27 13:24"
   }
  ],
- "heartbeat": "2026-11-27 13:40",
+ "heartbeat": "2026-11-27 13:50",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -229779,8 +229780,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 480,
-   "used": 440,
+   "asked": 481,
+   "used": 441,
    "notes": {
     "TLN Deals and contracts": 21,
     "CCJ Deals and contracts": 81,
@@ -229791,7 +229792,7 @@
     "CEG Deals and contracts": 63,
     "NXE Legal": 23,
     "NXE Deals and contracts": 19,
-    "DNN Deals and contracts": 16,
+    "DNN Deals and contracts": 17,
     "BWXT Legal": 3,
     "LEU Deals and contracts": 47,
     "UEC Deals and contracts": 8,
@@ -231211,7 +231212,7 @@
    ],
    [
     "2026-11-27",
-    116.57
+    115.57
    ]
   ],
   "CEG": [
@@ -238369,7 +238370,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 13:40",
+ "watchdog_last": "2026-11-27 13:50",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
