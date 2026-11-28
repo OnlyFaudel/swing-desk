@@ -364,6 +364,21 @@
     "researcher",
     "exec"
    ]
+  },
+  {
+   "topic": "Is the Nov 25 SPY parking halt still in force? Any stale orders from the rejected sales? (ops status, 2026-11-27)",
+   "answer": "No. The halt was lifted at 15:52 on Nov 25 (ops events: reject 15:40, halt 15:40, resume 15:52) and ops.halted is False. Cause: the book held 0.110301 SPY while Alpaca held 0.110300646, so three sales asked for a millionth of a share too much and were rejected; nothing was filled or left open. Fix: broker.py now caps every sell at the quantity Alpaca actually holds. The rejected orders never existed at the broker, so there is nothing stale to cancel. Parking itself is fine: on Nov 27 nothing was parked only because $639 of the cash is sale proceeds that settle Monday Nov 30. Since the S&P closed under its 200-day average (725.93 vs 730.97), the next parking goes to T-bills (SGOV), not SSO. Don't ask about this halt again unless ops.halted is True.",
+   "roles": [
+    "pm",
+    "risk",
+    "macro",
+    "strategist",
+    "researcher",
+    "investigator",
+    "exec",
+    "level",
+    "questioner"
+   ]
   }
  ]
 }
