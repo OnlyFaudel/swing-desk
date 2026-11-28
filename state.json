@@ -948,7 +948,8 @@
   "weather:2026-11-28": true,
   "questioner:2026-11-28:4": true,
   "reactors:2026-11-28": true,
-  "plantrep:2026-11-28": true
+  "plantrep:2026-11-28": true,
+  "research:2026-11-28": true
  },
  "benchmark": {
   "shares": {
@@ -5836,30 +5837,6 @@
  },
  "news_feed": [
   {
-   "ticker": "DNN",
-   "source": "Google News: \"Denison Mines\"",
-   "title": "Denison Mines (TSX:DML) Flags Darby Progress, Is The 60% Undervalued View Too Optimistic? - Simply Wall St",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTVVMazB4WDQ3aVRpc0ZiQXNRU2pCVDNuMXlTU01DWWdRUmJNcnpfcmxKVU15MnNIeXBPaDhtNElKa19ScWprUmRoMjJvTThwT2tmZkl2T2RwUWNyNTFtVUZOU3pFTklyOWJlZVFJbzB2OUc0VEVPcXdzb2l2LXFjcUJYT1JQcWphM0M5OXo2Z0xwV1lUdnE5bklkUF9jQmE1MEhLeEdLZk5YZUZTRTdsLWQ5dEI2SmNubUUzMlZZWFhZNzRkdlZ5YS1GODNhZ9IB0wFBVV95cUxNX1o3bEN2djg5Zl9RVmNIallqcEhCVFp3V2oxUGtKVjFOYm5ING5tRnBGVVVFTDl2S2gwMXg4cHdHeC1JQnhyUVUwNUk1cU9XQWI5WkN4R0VLd3lHQUExWmUteFVER2RWc0dwbFpXb1NVSWJpOEtWRFIxSW9taV93SmJCTi1zZW1MZzZTei1pMXhnVC0tX3FtX0FEM0NGRG5hS0NjS1hUWGRyR3dlbnBXMzFmeHd5a0hUSWZCV21ITkJQQXVkT1p5Vk96TldFZUV3RHp3?oc=5",
-   "ts": 1795659107,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Simply Wall St valuation piece, opinion-style recap of Darby progress, nothing new."
-  },
-  {
-   "ticker": "BWXT",
-   "source": "Google News",
-   "title": "Westinghouse Awards AP1000 Contracts to BWXT Canada - Wisevoter",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNV0trb1V2M1NYOUs3aWJyMHNXeVJrSnA4bUdHUWpsaGU2N3pjSDE2ZkZVcTJyTHZEbWlZN3VLbGx4ck5LMFByaUI2ZnFuc0FOaGpDOG1pZ1pyR0g4ZkdPOHZsLVdVb1JtY3lhbGt2djFDWUdPSmVZdGg4TUpFNzVvYmZGNXJZMklIeWNWU1FKTlNERV9iR2lpdFRn?oc=5",
-   "ts": 1795657415,
-   "materiality": 7,
-   "novelty": "new",
-   "direction": "up",
-   "event_type": "contract_deal",
-   "why": "Westinghouse awarding AP1000 contracts to BWXT Canada is a concrete, new reactor-parts award."
-  },
-  {
    "ticker": "BWXT",
    "source": "Local intel: ANI News (Weapons programs)",
    "title": "Kim Jong Un calls tactical nuclear weapons deployment across multiple domains \"urgent\"; vows to expand nuclear arsenal",
@@ -8834,6 +8811,30 @@
    "direction": "neutral",
    "event_type": "war_geopolitics",
    "why": "IAEA ceasefire talks at Zaporizhzhia plant; a safety story, not uranium supply or demand."
+  },
+  {
+   "ticker": "VST",
+   "source": "Google News: Vistra nuclear",
+   "title": "Does Raised 2026 Outlook Change The Bull Case For Vistra Stock (VST)? - Simply Wall St",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZlpwTk9SWHRvdWd3RzFXblZyWnRKVTBSTndDWWlCUE5mcTI5ZG1RaGxVSjR5bTlMWlNJWkxFVEtUYi1JTG9BQ3pOXzN2R3pSLVdrQ2R0SDQ0Q1RmMDVtaURSa1ItQTg1TG9uYjBlYTVWRTNPNHE2dE0xc1Q0c3EwaElhSF9EYjhmRzUxVkhlMC1kSFQ4UHNIcFNvSUg1SXltdnB5a2FnZnNSN2J4LU5fTkpwRUxxZ0NSVmFkUnFIV2vSAcYBQVVfeXFMTjNjTGpRWDlXUlQtQWpNUW1JRDRvbXh1eEZZV0hrVnhmRmVPa2FYZjZqaXR5SGxmdHJXTW9wWmRkaUloNEtiV0JIbkFiXy1BUlAzNmFBNzdCWEphMWloMVZmTV9rR2pvbUhCdXVJMUN3b0ZiS2NXZHhPdUJTcWwxVFVlUDl0SWVfUnczNDR3Sm5XVUwxa1l5WWxNb1lnRTVZQzU0Vklmc2IwSHVQOU1kcFZXSTZLdFZRb0xKcGJ3Tm1zZ2taQ3F3?oc=5",
+   "ts": 1795875105,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "analyst",
+   "why": "Opinion piece on outlook; no new company information, just a rehash."
+  },
+  {
+   "ticker": "LEU",
+   "source": "Google News: \"Russian uranium\" ban OR waiver",
+   "title": "NRC Staff Back Orano's Tennessee Uranium Enrichment Plant - Wisevoter",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbGNGQ2l3MUFtOVVMTjA5UUdpdS1ncUtwUFctNUNIUl9LalEtcnBhTWNqbDZXb3V6V1pROFJKRUFHeGhqYjFxa3VwV3lta3FIYlFzcy01Y1c2MW4ycmhELVVDZDQ2NDdtU0ZTRlFFSl9UVWZtRWlOWFE1SUE4cjEwbF9LRWEza3ZqVnlCYVFkWQ?oc=5",
+   "ts": 1795805342,
+   "materiality": 4,
+   "novelty": "follow_up",
+   "direction": "neutral",
+   "event_type": "policy_tariff",
+   "why": "NRC staff review of Orano's plant is a step in a known process; modest read-through to enrichment supply."
   }
  ],
  "reviews": [
@@ -10965,16 +10966,16 @@
  },
  "spend": {
   "day": "2026-11-28",
-  "day_usd": 0.02965,
+  "day_usd": 0.03236,
   "month": "2026-11",
-  "month_usd": 2.86889,
-  "total_usd": 2.86889,
+  "month_usd": 2.8716,
+  "total_usd": 2.8716,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.27749,
+   "scout": 0.27799,
    "review": 0.23667,
    "auditor": 0.04723,
    "strategist": 0.18937,
@@ -10982,7 +10983,7 @@
    "risk": 0.26224,
    "investigator": 0.39755,
    "postmortem": 0.01905,
-   "researcher": 0.02986,
+   "researcher": 0.03207,
    "engineer": 0.11819,
    "questioner": 0.19366
   }
@@ -11255,7 +11256,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-28 09:01 ET",
+ "last_cycle": "2026-11-28 09:31 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -61499,9 +61500,11 @@
   "1e9ac2ee38a1003f",
   "8868199eaca25050",
   "0e6fc088c11522c8",
-  "12fc0c7a240e4fef"
+  "12fc0c7a240e4fef",
+  "05bc94867fde811d",
+  "65dac1a40800de8b"
  ],
- "news_slow_at": 1795874547.5889215,
+ "news_slow_at": 1795876362.2525768,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -219694,6 +219697,39 @@
    ],
    "practice": false,
    "end": "09:02"
+  },
+  {
+   "id": "20261128100406443478",
+   "title": "Research session Sat Nov 28",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-28 10:04",
+   "msgs": [
+    {
+     "t": "10:04",
+     "who": "chief",
+     "to": "researcher",
+     "text": "Research time. 9,888 practice trades on file, average +0.225R. Research Lead, what should we test? Ideas must be checkable on the practice trades.",
+     "outcome": false
+    },
+    {
+     "t": "10:04",
+     "who": "researcher",
+     "to": "risk",
+     "text": "Most of the owner's questions are already answered by the notes, so I'll spend this round on what's still open: the pattern that the 200-day trend matters for level fills, and BWXT's weakness. I'm proposing tests on features already in the practice-book columns, not new data. I agree with the Desk Chief that the basket gate must be enforced in code for every setup, but that's an engineering check, not a feature test.",
+     "outcome": false,
+     "notes": "feature: group_up\nop: ==\nvalue: False\nclaim: worse\nwhy: Already tested and rejected as a per-trade filter, so this would be a repeat. I'm not proposing it again. Left here only to show I checked it against already_tested.\nfeature: dist_avg_pct\nop: <\nvalue: -8\nclaim: worse\nwhy: Already in already_tested with a promising verdict; the -8% threshold was preset from the desk notes, so no new test is needed. Skipping.\nfeature: tk\nop: ==\nvalue: BWXT\nclaim: worse\nwhy: Already tested, not supported, and the notes say the existing gate already cancels most BWXT trades. Repeating it would add nothing. Skipping.\nwhy: Most owner questions are covered by existing notes and already-tested features, so I only propose tests that aren't already in already_tested. My ideas are mostly empty because nearly every obvious feature has been tested already, and I'd rather propose nothing than repeat a test.\nticke"
+    },
+    {
+     "t": "10:04",
+     "who": "chief",
+     "to": "team",
+     "text": "No new testable idea this time.",
+     "outcome": false
+    }
+   ],
+   "practice": false,
+   "end": "10:04"
   }
  ],
  "feed": [
@@ -227325,62 +227361,62 @@
    "lesson": "A panic_rebound buy must pass the basket-below-10-day-average block before entry, even when the stock looks oversold and the trade later wins."
   }
  ],
- "intel_at": 1795874497.9222727,
+ "intel_at": 1795876314.9996073,
  "intel_health": {
-  "at": "2026-11-28 09:02",
+  "at": "2026-11-28 09:32",
   "sources": {
    "Cigar Lake": 0,
    "McArthur River / Key Lake": 1,
-   "Athabasca Basin": 0,
-   "Saskatchewan wildfires": 0,
+   "Athabasca Basin": 9,
+   "Saskatchewan wildfires": 2,
    "Rook I / Arrow": 4,
    "Wheeler River / Phoenix": 5,
    "Port Hope / Blind River": 0,
    "Westinghouse": 7,
-   "Kazakhstan": 28,
+   "Kazakhstan": 47,
    "Niger": 7,
-   "Namibia": 22,
+   "Namibia": 17,
    "Russia supply": 3,
    "Piketon": 14,
    "HALEU": 10,
-   "Wyoming ISR": 14,
+   "Wyoming ISR": 13,
    "South Texas ISR": 1,
-   "White Mesa / Utah": 0,
+   "White Mesa / Utah": 8,
    "Rare earths (Energy Fuels)": 7,
    "Lynchburg / Erwin": 0,
    "Naval reactors": 10,
    "Crane / Three Mile Island": 3,
    "Susquehanna": 6,
    "Comanche Peak": 6,
-   "PJM grid": 8,
-   "ERCOT grid": 0,
-   "Data-center nuclear deals": 9,
+   "PJM grid": 7,
+   "ERCOT grid": 9,
+   "Data-center nuclear deals": 10,
    "Japan restarts": 11,
-   "China new builds": 0,
-   "Congress and laws": 27,
+   "China new builds": 4,
+   "Congress and laws": 38,
    "NRC decisions": 7,
-   "Energy Department": 29,
+   "Energy Department": 20,
    "White House and executive orders": 20,
    "Tariffs and trade": 4,
-   "India": 18,
+   "India": 21,
    "South Korea": 100,
-   "Europe new builds": 41,
-   "France and UK": 8,
-   "Middle East": 62,
-   "Asia newcomers": 0,
+   "Europe new builds": 42,
+   "France and UK": 7,
+   "Middle East": 63,
+   "Asia newcomers": 41,
    "Canada SMRs": 7,
-   "Big tech power deals": 50,
+   "Big tech power deals": 25,
    "Iran": 28,
-   "North Korea": 0,
-   "War zones": 33,
-   "AUKUS and navies": 20,
-   "Weapons programs": 30,
-   "Stockpiles and reserves": 0,
+   "North Korea": 76,
+   "War zones": 17,
+   "AUKUS and navies": 28,
+   "Weapons programs": 31,
+   "Stockpiles and reserves": 23,
    "Sprott trust": 3,
-   "Uranium price": 44,
+   "Uranium price": 24,
    "US policy": 0,
    "Lawsuits and investigations": 33,
-   "Workers and jobs": 24,
+   "Workers and jobs": 21,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 52,
    "Federal Register (uranium)": 10,
@@ -227390,7 +227426,7 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-28 09:02",
+  "updated": "2026-11-28 09:32",
   "total": 1032,
   "week": 597,
   "places": {
@@ -227409,60 +227445,60 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-28 09:02",
+   "at": "2026-11-28 09:32",
    "sources": {
     "Cigar Lake": 0,
     "McArthur River / Key Lake": 1,
-    "Athabasca Basin": 0,
-    "Saskatchewan wildfires": 0,
+    "Athabasca Basin": 9,
+    "Saskatchewan wildfires": 2,
     "Rook I / Arrow": 4,
     "Wheeler River / Phoenix": 5,
     "Port Hope / Blind River": 0,
     "Westinghouse": 7,
-    "Kazakhstan": 28,
+    "Kazakhstan": 47,
     "Niger": 7,
-    "Namibia": 22,
+    "Namibia": 17,
     "Russia supply": 3,
     "Piketon": 14,
     "HALEU": 10,
-    "Wyoming ISR": 14,
+    "Wyoming ISR": 13,
     "South Texas ISR": 1,
-    "White Mesa / Utah": 0,
+    "White Mesa / Utah": 8,
     "Rare earths (Energy Fuels)": 7,
     "Lynchburg / Erwin": 0,
     "Naval reactors": 10,
     "Crane / Three Mile Island": 3,
     "Susquehanna": 6,
     "Comanche Peak": 6,
-    "PJM grid": 8,
-    "ERCOT grid": 0,
-    "Data-center nuclear deals": 9,
+    "PJM grid": 7,
+    "ERCOT grid": 9,
+    "Data-center nuclear deals": 10,
     "Japan restarts": 11,
-    "China new builds": 0,
-    "Congress and laws": 27,
+    "China new builds": 4,
+    "Congress and laws": 38,
     "NRC decisions": 7,
-    "Energy Department": 29,
+    "Energy Department": 20,
     "White House and executive orders": 20,
     "Tariffs and trade": 4,
-    "India": 18,
+    "India": 21,
     "South Korea": 100,
-    "Europe new builds": 41,
-    "France and UK": 8,
-    "Middle East": 62,
-    "Asia newcomers": 0,
+    "Europe new builds": 42,
+    "France and UK": 7,
+    "Middle East": 63,
+    "Asia newcomers": 41,
     "Canada SMRs": 7,
-    "Big tech power deals": 50,
+    "Big tech power deals": 25,
     "Iran": 28,
-    "North Korea": 0,
-    "War zones": 33,
-    "AUKUS and navies": 20,
-    "Weapons programs": 30,
-    "Stockpiles and reserves": 0,
+    "North Korea": 76,
+    "War zones": 17,
+    "AUKUS and navies": 28,
+    "Weapons programs": 31,
+    "Stockpiles and reserves": 23,
     "Sprott trust": 3,
-    "Uranium price": 44,
+    "Uranium price": 24,
     "US policy": 0,
     "Lawsuits and investigations": 33,
-    "Workers and jobs": 24,
+    "Workers and jobs": 21,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 52,
     "Federal Register (uranium)": 10,
@@ -228089,10 +228125,11 @@
   "7fd6ad3664eaf535",
   "afd8290622043c62",
   "971d34934a9a192f",
-  "3c2851f76c7e4fb9",
   "133ace46214fa2bd",
-  "e350e3c2ce700f95",
+  "3c2851f76c7e4fb9",
+  "5b727c8ffe748b88",
   "9072aaac75f7221f",
+  "e350e3c2ce700f95",
   "da0462559a103d97",
   "7574e0b98bf014d1",
   "ed609e22ce9351ef",
@@ -228273,8 +228310,7 @@
   "0e9b00b62cdb9a3a",
   "7908d2b630649992",
   "31ce75ab9a1e9d20",
-  "0ba4e6ba0ec4c40f",
-  "5b727c8ffe748b88"
+  "0ba4e6ba0ec4c40f"
  ],
  "panic_log": [
   {
@@ -229085,7 +229121,7 @@
     "ticker": "CEG",
     "title": "Constellation Energy Raises Full-Year Earnings Guidance - Wisevoter",
     "type": "earnings",
-    "r0": null,
+    "r0": 1.2,
     "r5": null,
     "r20": null
    },
@@ -229094,7 +229130,7 @@
     "ticker": "CCJ",
     "title": "Indian startup SUK-M raises pre-seed funding to develop thorium-based nuclear reactor",
     "type": "intel_financing",
-    "r0": null,
+    "r0": 3.93,
     "r5": null,
     "r20": null
    },
@@ -229103,7 +229139,7 @@
     "ticker": "CEG",
     "title": "This Michigan nuclear plant was shut down and set to be dismantled; now it could become the first in US hi - The Economic Times",
     "type": "policy_tariff",
-    "r0": null,
+    "r0": 1.2,
     "r5": null,
     "r20": null
    },
@@ -229112,7 +229148,7 @@
     "ticker": "CCJ",
     "title": "IAEA seeks local ceasefire around Zaporizhzhia nuclear plant to repair power lines",
     "type": "intel_geopolitics",
-    "r0": null,
+    "r0": 3.93,
     "r5": null,
     "r20": null
    },
@@ -229121,7 +229157,7 @@
     "ticker": "CEG",
     "title": "IAEA seeks local ceasefire around Zaporizhzhia nuclear plant to repair power lines",
     "type": "intel_geopolitics",
-    "r0": null,
+    "r0": 1.2,
     "r5": null,
     "r20": null
    },
@@ -230673,7 +230709,7 @@
    }
   ]
  },
- "dossier_at": 1795874542.9353638,
+ "dossier_at": 1795876356.6571422,
  "sector_prices": {
   "_at": 1795872724.568439,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -230731,85 +230767,85 @@
    "name": "Cameco",
    "price": 63.56,
    "week_pct": 3.48,
-   "built": "2026-11-28 09:02"
+   "built": "2026-11-28 09:32"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 7.28,
    "week_pct": 5.05,
-   "built": "2026-11-28 09:02"
+   "built": "2026-11-28 09:32"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.93,
    "week_pct": 2.86,
-   "built": "2026-11-28 09:02"
+   "built": "2026-11-28 09:32"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.91,
    "week_pct": 5.8,
-   "built": "2026-11-28 09:02"
+   "built": "2026-11-28 09:32"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.66,
    "week_pct": 3.28,
-   "built": "2026-11-28 09:02"
+   "built": "2026-11-28 09:32"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.79,
    "week_pct": -5.47,
-   "built": "2026-11-28 09:02"
+   "built": "2026-11-28 09:32"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.57,
    "week_pct": -1.27,
-   "built": "2026-11-28 09:02"
+   "built": "2026-11-28 09:32"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 238.15,
    "week_pct": -5.51,
-   "built": "2026-11-28 09:02"
+   "built": "2026-11-28 09:32"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 122.35,
    "week_pct": -1.45,
-   "built": "2026-11-28 09:02"
+   "built": "2026-11-28 09:32"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 359.64,
    "week_pct": 1.05,
-   "built": "2026-11-28 09:02"
+   "built": "2026-11-28 09:32"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-28 09:02"
+   "built": "2026-11-28 09:32"
   }
  ],
- "heartbeat": "2026-11-28 09:01",
+ "heartbeat": "2026-11-28 10:02",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 535,
+ "_pushed_feed": 536,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -231045,8 +231081,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 524,
-   "used": 481,
+   "asked": 525,
+   "used": 482,
    "notes": {
     "TLN Deals and contracts": 22,
     "CCJ Deals and contracts": 86,
@@ -231059,14 +231095,14 @@
     "NXE Deals and contracts": 19,
     "DNN Deals and contracts": 18,
     "BWXT Legal": 3,
-    "LEU Deals and contracts": 47,
+    "LEU Deals and contracts": 48,
     "UEC Deals and contracts": 10,
     "UUUU Legal": 25,
     "SECTOR Uranium market": 11,
     "CCJ Legal": 18,
     "CEG Legal": 5,
-    "VST Deals and contracts": 40,
-    "LEU Legal": 1,
+    "VST Deals and contracts": 41,
+    "LEU Legal": 2,
     "VST Legal": 2,
     "TLN Legal": 2
    },
@@ -231563,11 +231599,11 @@
    "since": "2026-11-23"
   },
   "researcher": {
-   "asked": 12,
-   "used": 12,
+   "asked": 13,
+   "used": 13,
    "notes": {
-    "BWXT Deals and contracts": 3,
-    "BWXT Snapshot": 6,
+    "BWXT Deals and contracts": 4,
+    "BWXT Snapshot": 7,
     "BWXT Discoveries": 2,
     "BWXT Leadership and insiders": 2,
     "BWXT Ownership and analysts": 1,
@@ -231578,7 +231614,7 @@
     "TLN Leadership and insiders": 1,
     "CEG Leadership and insiders": 1,
     "CEG Snapshot": 5,
-    "SECTOR Uranium market": 6,
+    "SECTOR Uranium market": 7,
     "already_checked_facts: Patient Levels fills 200-day trend": 1,
     "SECTOR Plants": 1,
     "CEG Ownership and analysts": 1,
@@ -235015,6 +235051,16 @@
    "price": 238.15,
    "result": null,
    "why": "I checked the reactor tracker (Salem 1 open since Oct 4, 52 days, CEG fleet about 96% running) and the NRC paperwork in the files, and none of it states a revised return date. Because the files lack t"
+  },
+  {
+   "role": "researcher",
+   "ticker": "BWXT",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-28",
+   "price": 115.57,
+   "result": null,
+   "why": "Most owner questions are covered by existing notes and already-tested features, so I only propose tests that aren't already in already_tested. My ideas are mostly empty because nearly every obvious fe"
   }
  ],
  "after_sale": [
@@ -239750,8 +239796,8 @@
   ]
  },
  "discovery": {
-  "run_at": "2026-11-27 16:07",
-  "events": 47587,
+  "run_at": "2026-11-28 10:04",
+  "events": 47595,
   "tests_tonight": 378,
   "tests_ever": 426,
   "survivors": 9
@@ -239862,7 +239908,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-28 09:01",
+ "watchdog_last": "2026-11-28 09:31",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
