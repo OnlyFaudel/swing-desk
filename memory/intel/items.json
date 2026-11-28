@@ -31930,5 +31930,68 @@
 "kazatomprom",
 "transcript"
 ]
+},
+{
+"id": "bdc1786b3ff59421",
+"date": "2026-11-26",
+"ts": 1795709580,
+"title": "Uranium Stocks: Shares Swing as Price Holds Near $90",
+"summary": "",
+"outlet": "Gotrade",
+"link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE95N2pPZ2JRX0NhQW5heWlHVDd1T3RiVE1jSVJnMWlCcExyei01TlZwdVZLeFlCQndEcjFEa1BYNzBHTnpqNW5XMm9TVHpUSHpXbG5KTEdvbVlvQzdOWGN4VjdVajdwSW83MGF5c2x3clhVTzA?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.64,
+"score": 3.78,
+"echo_of": null,
+"w": [
+"holds",
+"near",
+"price",
+"shares",
+"stocks",
+"swing",
+"uranium"
+]
+},
+{
+"id": "58be8c815376eada",
+"date": "2026-11-28",
+"ts": 1795827643,
+"title": "From Critical Minerals To Nuclear Power: Is Indonesia Becoming A New Arena Of Energy Diplomacy? - OpEd",
+"summary": "",
+"outlet": "Eurasia Review",
+"link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOM2ZFMUhhU0ZuRFVaTVluWmVGWGlBLU9wQ3NoV2JaTWtlakhnaG4zUUpvWUhQMmthenUxclhtRy1HVFJxVzNxcDlwSkVlLTJqT0RxMlU3YTRET2R3YzJBOVVxdGY2aHQzaklSblhjWmZEMnZJbXhBVkZBUlFtemtweVF4OW1fV2RHcWRWeWRWeG5XdTNoVVFKUnFmR0RJbTl5V09DbjR4b0VrVFdOT3FnSmZxbDVjUlZNZXRwOWpBdXJNSDdzSnE0cnRhTVRiYVJCQ2xoNQ?oc=5",
+"place": "Asia newcomers",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.77,
+"score": 4.04,
+"echo_of": null,
+"w": [
+"arena",
+"becoming",
+"critical",
+"diplomacy",
+"energy",
+"indonesia",
+"minerals",
+"nuclear",
+"oped",
+"power"
+]
 }
 ]
