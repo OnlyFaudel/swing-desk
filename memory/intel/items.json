@@ -32367,5 +32367,43 @@
 "uranium",
 "wyoming"
 ]
+},
+{
+"id": "dfa34c657ff72732",
+"date": "2026-11-25",
+"ts": 1795588289,
+"title": "Nuclear Regulatory Commission approves small modular reactor at TVA\u2019s Clinch River site",
+"summary": "",
+"outlet": "Daily Energy Insider",
+"link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNS1BhUndHb2ZjdGdRVERfbzd3ZWJRRGxua2NxMmVTRFN0bWlMOEtLSE4taDhlR0htc2V2VXhRU0gxV1RRNlYtUFhYNUlyVGxJVEhSVUR5aEd0VjcyVm5fMWMxN05zTE0zaHU0bHFfRUNUSUtvUG1wcTJ6Zm50ZC13RWRsbGJGUEllWGpmZE9Fd2trNDA0b1RveFVzcUxpc2RQOWIxcElucmtpZlVaN2YwUzg4azFiT2VZYy0zckZxRU9kdGQ4eHg0Rg?oc=5",
+"place": "NRC decisions",
+"tickers": [
+"CEG",
+"VST",
+"TLN",
+"LEU",
+"BWXT"
+],
+"tags": [
+"regulation"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.71,
+"score": 5.42,
+"echo_of": null,
+"w": [
+"approves",
+"clinch",
+"commission",
+"modular",
+"nuclear",
+"reactor",
+"regulatory",
+"river",
+"site",
+"small",
+"tva"
+]
 }
 ]
