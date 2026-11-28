@@ -566,8 +566,8 @@
   ],
   "week": "2026-W48",
   "week_start": 1000.514157479616,
-  "day": "2026-11-27",
-  "day_start": 1005.4579269604731,
+  "day": "2026-11-28",
+  "day_start": 1040.8998757566399,
   "killed": false,
   "wash_flags": [
    {
@@ -937,7 +937,8 @@
   "nightwatch191:2026-11-27": true,
   "ahdip192:2026-11-27": true,
   "nightwatch192:2026-11-27": true,
-  "questioner:2026-11-27:10": true
+  "questioner:2026-11-27:10": true,
+  "catalysts2:2026-11-28": true
  },
  "benchmark": {
   "shares": {
@@ -5825,30 +5826,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CEG",
-   "source": "PR Newswire energy",
-   "title": "LS Power Completes Acquisition of 4.4 GW Natural Gas Generation Assets from Constellation",
-   "link": "https://www.prnewswire.com/news-releases/ls-power-completes-acquisition-of-4-4-gw-natural-gas-generation-assets-from-constellation-302950859.html",
-   "ts": 1795642680,
-   "materiality": 6,
-   "novelty": "new",
-   "direction": "down",
-   "event_type": "contract_deal",
-   "why": "Sells 4.4 GW of gas plants to LS Power; cash and asset-sale news, not nuclear demand."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Local intel: TRT World (War zones)",
-   "title": "IAEA condemns deadly drone strikes near Ukraine nuclear plant",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1NOWVjdXpXWFh5bG80U0FkRXBiU3FmT0kyaXBDVWQ5aVNEVnpUdnRrZlZSQy1MUkRNdXRTbFF0dWN4WTlGakZJTEFUSVhZbUd3OEo0dndzYVo?oc=5",
-   "ts": 1795622978,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "war_geopolitics",
-   "why": "Drone strikes near a plant are a safety story, not new uranium demand or supply."
-  },
-  {
    "ticker": "NXE",
    "source": "Google News: \"NexGen Energy\"",
    "title": "How Is NexGen (TSX:NXE) Growing the High-Grade Subdomain at Patterson Corridor East? - Kalkine Media",
@@ -8823,6 +8800,30 @@
    "direction": "neutral",
    "event_type": "other",
    "why": "Routine Form 4 filing by the CEO; no new information beyond the filing itself."
+  },
+  {
+   "ticker": "DNN",
+   "source": "Google News: \"Denison Mines\"",
+   "title": "Denison Mines (TSE:DML) Stock: Insider Patricia Mary Volker Buys 56,000 Shares - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcmNqT1pQbkozU18xZmpyX0VyNVNxTHk3VVJtR3lDT0FuU2dpSXdmRng4X3Y1OG1yZm1GZE1CVERXVFhYUTBQZlFfS3VMcWRsQXd3UUF6M0tWdkRlUk5ENVBaVjhwRzB1M2hnYXhrMDFVeVRKRl9YRUhKYUI1SnJRSlpNWGtYbDhJalBsaGlhNFhSWWYyTTZqVUpId0t5d2lHUG1mRE5KY1haOWYxWWp2Q2kzRThJVWNmVlJwaG5HVHdNdXdMVktacWJYNWVDY3hnVGc?oc=5",
+   "ts": 1795839333,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Insider buy is meaningful, but this is a MarketBeat rehash of a Canadian-listed (TSE:DML) filing, likely already public and priced in."
+  },
+  {
+   "ticker": "NXE",
+   "source": "Google News: \"NexGen Energy\"",
+   "title": "NexGen advances Rook I uranium project with key construction milestones and expanding high-grade deposits. - Pluang",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbWdvNklYa1BCUGdKdjFyd0xGZzBUUVpUS18xRUYxV1hWM25EelIyVnRBeVNRV1NBM2FzLUlMMHJYTVFVUVhJUkNzNUhUN25ndGR3ZnVBS0ktTkFPbkptLUN2aFcweFJaQkxFRkF0aHo3bFVJUlNJNVR4X2k3dDNGTWRFYkRSeDN2VFJV?oc=5",
+   "ts": 1795816146,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic promotional recap of Rook I milestones already known; no new fact."
   }
  ],
  "reviews": [
@@ -10953,17 +10954,17 @@
   "mode": "fixed"
  },
  "spend": {
-  "day": "2026-11-27",
-  "day_usd": 0.74457,
+  "day": "2026-11-28",
+  "day_usd": 0.00043,
   "month": "2026-11",
-  "month_usd": 2.83876,
-  "total_usd": 2.83876,
+  "month_usd": 2.83967,
+  "total_usd": 2.83967,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.27078,
+   "scout": 0.27169,
    "review": 0.23667,
    "auditor": 0.04723,
    "strategist": 0.18937,
@@ -11244,7 +11245,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-27 23:05 ET",
+ "last_cycle": "2026-11-28 00:27 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -11308,7 +11309,7 @@
  },
  "brakes": {
   "equity": 1040.9,
-  "day_pct": 3.52,
+  "day_pct": 0.0,
   "week_pct": 4.04,
   "drawdown_pct": -1.28,
   "no_new_today": false,
@@ -60673,6 +60674,7 @@
   "59ef25447c180fa9",
   "e7dbe4ad6ad7c861",
   "eb12d8083b06d4a8",
+  "4347786eda1336c0",
   "c7c9102172488d6c",
   "32d10c819f70dc10",
   "e408811995374b04",
@@ -61210,6 +61212,7 @@
   "21120ac1326f7c27",
   "5a5b812527feef00",
   "d7c07a39ed1d0a97",
+  "763ca6c6681f05c6",
   "87234f250d3b987f",
   "912ca4344a818db7",
   "9199257f37a8ba75",
@@ -61473,9 +61476,9 @@
   "8868199eaca25050",
   "0e6fc088c11522c8",
   "12fc0c7a240e4fef",
-  "763ca6c6681f05c6"
+  "9f449657aa18da32"
  ],
- "news_slow_at": 1795838759.6503007,
+ "news_slow_at": 1795843690.474632,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -227133,81 +227136,81 @@
    "lesson": "A panic_rebound buy must pass the basket-below-10-day-average block before entry, even when the stock looks oversold and the trade later wins."
   }
  ],
- "intel_at": 1795837537.4878273,
+ "intel_at": 1795843643.5730052,
  "intel_health": {
-  "at": "2026-11-27 22:46",
+  "at": "2026-11-28 00:28",
   "sources": {
    "Cigar Lake": 2,
    "McArthur River / Key Lake": 3,
-   "Athabasca Basin": 9,
+   "Athabasca Basin": 10,
    "Saskatchewan wildfires": 3,
    "Rook I / Arrow": 5,
    "Wheeler River / Phoenix": 7,
    "Port Hope / Blind River": 0,
    "Westinghouse": 8,
    "Kazakhstan": 39,
-   "Niger": 10,
-   "Namibia": 21,
+   "Niger": 11,
+   "Namibia": 19,
    "Russia supply": 2,
-   "Piketon": 16,
+   "Piketon": 15,
    "HALEU": 10,
    "Wyoming ISR": 26,
    "South Texas ISR": 2,
    "White Mesa / Utah": 8,
    "Rare earths (Energy Fuels)": 7,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 11,
-   "Crane / Three Mile Island": 4,
+   "Naval reactors": 12,
+   "Crane / Three Mile Island": 5,
    "Susquehanna": 4,
    "Comanche Peak": 4,
-   "PJM grid": 6,
-   "ERCOT grid": 10,
+   "PJM grid": 5,
+   "ERCOT grid": 9,
    "Data-center nuclear deals": 10,
    "Japan restarts": 12,
-   "China new builds": 0,
-   "Congress and laws": 24,
-   "NRC decisions": 0,
-   "Energy Department": 0,
+   "China new builds": 7,
+   "Congress and laws": 39,
+   "NRC decisions": 7,
+   "Energy Department": 26,
    "White House and executive orders": 19,
    "Tariffs and trade": 5,
-   "India": 31,
-   "South Korea": 97,
-   "Europe new builds": 59,
+   "India": 18,
+   "South Korea": 99,
+   "Europe new builds": 29,
    "France and UK": 11,
-   "Middle East": 29,
-   "Asia newcomers": 39,
+   "Middle East": 57,
+   "Asia newcomers": 26,
    "Canada SMRs": 8,
-   "Big tech power deals": 47,
-   "Iran": 52,
-   "North Korea": 75,
-   "War zones": 14,
-   "AUKUS and navies": 16,
+   "Big tech power deals": 28,
+   "Iran": 29,
+   "North Korea": 76,
+   "War zones": 36,
+   "AUKUS and navies": 24,
    "Weapons programs": 20,
-   "Stockpiles and reserves": 27,
-   "Sprott trust": 3,
+   "Stockpiles and reserves": 20,
+   "Sprott trust": 4,
    "Uranium price": 23,
    "US policy": 0,
-   "Lawsuits and investigations": 72,
-   "Workers and jobs": 25,
+   "Lawsuits and investigations": 33,
+   "Workers and jobs": 26,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 52,
-   "Federal Register (uranium)": 11,
+   "Federal Register (uranium)": 10,
    "Federal Register (nuclear)": 24,
    "NRC event reports": 3
   },
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-27 23:05",
-  "total": 997,
-  "week": 594,
+  "updated": "2026-11-28 00:28",
+  "total": 1001,
+  "week": 595,
   "places": {
    "South Korea": 57,
    "Uranium price": 54,
    "Kazakhstan": 43,
    "Workers and jobs": 32,
+   "Asia newcomers": 32,
    "Weapons programs": 30,
-   "Asia newcomers": 30,
    "AUKUS and navies": 29,
    "Piketon": 25,
    "Europe new builds": 25,
@@ -227217,63 +227220,63 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-27 22:46",
+   "at": "2026-11-28 00:28",
    "sources": {
     "Cigar Lake": 2,
     "McArthur River / Key Lake": 3,
-    "Athabasca Basin": 9,
+    "Athabasca Basin": 10,
     "Saskatchewan wildfires": 3,
     "Rook I / Arrow": 5,
     "Wheeler River / Phoenix": 7,
     "Port Hope / Blind River": 0,
     "Westinghouse": 8,
     "Kazakhstan": 39,
-    "Niger": 10,
-    "Namibia": 21,
+    "Niger": 11,
+    "Namibia": 19,
     "Russia supply": 2,
-    "Piketon": 16,
+    "Piketon": 15,
     "HALEU": 10,
     "Wyoming ISR": 26,
     "South Texas ISR": 2,
     "White Mesa / Utah": 8,
     "Rare earths (Energy Fuels)": 7,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 11,
-    "Crane / Three Mile Island": 4,
+    "Naval reactors": 12,
+    "Crane / Three Mile Island": 5,
     "Susquehanna": 4,
     "Comanche Peak": 4,
-    "PJM grid": 6,
-    "ERCOT grid": 10,
+    "PJM grid": 5,
+    "ERCOT grid": 9,
     "Data-center nuclear deals": 10,
     "Japan restarts": 12,
-    "China new builds": 0,
-    "Congress and laws": 24,
-    "NRC decisions": 0,
-    "Energy Department": 0,
+    "China new builds": 7,
+    "Congress and laws": 39,
+    "NRC decisions": 7,
+    "Energy Department": 26,
     "White House and executive orders": 19,
     "Tariffs and trade": 5,
-    "India": 31,
-    "South Korea": 97,
-    "Europe new builds": 59,
+    "India": 18,
+    "South Korea": 99,
+    "Europe new builds": 29,
     "France and UK": 11,
-    "Middle East": 29,
-    "Asia newcomers": 39,
+    "Middle East": 57,
+    "Asia newcomers": 26,
     "Canada SMRs": 8,
-    "Big tech power deals": 47,
-    "Iran": 52,
-    "North Korea": 75,
-    "War zones": 14,
-    "AUKUS and navies": 16,
+    "Big tech power deals": 28,
+    "Iran": 29,
+    "North Korea": 76,
+    "War zones": 36,
+    "AUKUS and navies": 24,
     "Weapons programs": 20,
-    "Stockpiles and reserves": 27,
-    "Sprott trust": 3,
+    "Stockpiles and reserves": 20,
+    "Sprott trust": 4,
     "Uranium price": 23,
     "US policy": 0,
-    "Lawsuits and investigations": 72,
-    "Workers and jobs": 25,
+    "Lawsuits and investigations": 33,
+    "Workers and jobs": 26,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 52,
-    "Federal Register (uranium)": 11,
+    "Federal Register (uranium)": 10,
     "Federal Register (nuclear)": 24,
     "NRC event reports": 3
    },
@@ -230462,7 +230465,7 @@
    }
   ]
  },
- "dossier_at": 1795837580.2586443,
+ "dossier_at": 1795843685.3422022,
  "sector_prices": {
   "_at": 1795828372.7045317,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -230520,80 +230523,80 @@
    "name": "Cameco",
    "price": 63.56,
    "week_pct": 3.48,
-   "built": "2026-11-27 22:46"
+   "built": "2026-11-28 00:28"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 7.28,
    "week_pct": 5.05,
-   "built": "2026-11-27 22:46"
+   "built": "2026-11-28 00:28"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.93,
    "week_pct": 2.86,
-   "built": "2026-11-27 22:46"
+   "built": "2026-11-28 00:28"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.91,
    "week_pct": 5.8,
-   "built": "2026-11-27 22:46"
+   "built": "2026-11-28 00:28"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.66,
    "week_pct": 3.28,
-   "built": "2026-11-27 22:46"
+   "built": "2026-11-28 00:28"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.79,
    "week_pct": -5.47,
-   "built": "2026-11-27 22:46"
+   "built": "2026-11-28 00:28"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.57,
    "week_pct": -1.27,
-   "built": "2026-11-27 22:46"
+   "built": "2026-11-28 00:28"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 238.15,
    "week_pct": -5.51,
-   "built": "2026-11-27 22:46"
+   "built": "2026-11-28 00:28"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 122.35,
    "week_pct": -1.45,
-   "built": "2026-11-27 22:46"
+   "built": "2026-11-28 00:28"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 359.64,
    "week_pct": 1.05,
-   "built": "2026-11-27 22:46"
+   "built": "2026-11-28 00:28"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-27 22:46"
+   "built": "2026-11-28 00:28"
   }
  ],
- "heartbeat": "2026-11-27 23:05",
+ "heartbeat": "2026-11-28 00:27",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -230834,8 +230837,8 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 510,
-   "used": 468,
+   "asked": 512,
+   "used": 470,
    "notes": {
     "TLN Deals and contracts": 21,
     "CCJ Deals and contracts": 84,
@@ -230844,9 +230847,9 @@
     "UUUU Deals and contracts": 47,
     "SECTOR Countries": 148,
     "CEG Deals and contracts": 70,
-    "NXE Legal": 24,
+    "NXE Legal": 25,
     "NXE Deals and contracts": 19,
-    "DNN Deals and contracts": 17,
+    "DNN Deals and contracts": 18,
     "BWXT Legal": 3,
     "LEU Deals and contracts": 47,
     "UEC Deals and contracts": 10,
@@ -234760,6 +234763,16 @@
    "price": 238.15,
    "result": null,
    "why": "I checked the already-answered list, the live order list (empty), and the recent headlines and outage data. Every candidate question I could form duplicates something answered this week, so I'm asking"
+  },
+  {
+   "role": "scout",
+   "ticker": "NXE",
+   "direction": "up",
+   "days": 3,
+   "date": "2026-11-28",
+   "price": 7.28,
+   "result": null,
+   "why": "Checked NXE Legal history: the CNSC license for Rook 1 was issued in March 2026, so this headline is a follow-up with no new information. Headline is a promotional aggregator piece, which scores 0-3 u"
   }
  ],
  "after_sale": [
@@ -234885,61 +234898,6 @@
   }
  ],
  "catalysts": [
-  {
-   "date": "2026-11-27",
-   "ticker": "CEG",
-   "what": "Black Friday half-day session; desk notes show power-trio weakness the Monday after in most years, so treat as a sentiment check, not a trade signal",
-   "kind": "reminder",
-   "by": "macro"
-  },
-  {
-   "date": "2026-11-27",
-   "ticker": "CEG",
-   "what": "Re-check whether the basket has reclaimed its 10-day average and whether the $236.82 zone still holds before any new setup.",
-   "kind": "reminder",
-   "by": "level"
-  },
-  {
-   "date": "2026-11-27",
-   "ticker": "CCJ",
-   "what": "Black Friday half-day session; historically weak Black Friday to Monday period for the power trio and our basket",
-   "kind": "reminder",
-   "by": "macro"
-  },
-  {
-   "date": "2026-11-27",
-   "ticker": "VST",
-   "what": "Thanksgiving-window auto trade exits; check whether the basket recovered above its 10-day average before any new VST buys.",
-   "kind": "reminder",
-   "by": "level"
-  },
-  {
-   "date": "2026-11-27",
-   "ticker": "LEU",
-   "what": "General Matter Paducah enrichment facility Federal Register notice: possible competitive read-through to Centrus enrichment demand, unconfirmed impact",
-   "kind": "reminder",
-   "by": "scout"
-  },
-  {
-   "date": "2026-11-27",
-   "ticker": "LEU",
-   "what": "Federal Register notice on General Matter Paducah enrichment facility; check for licensing steps that affect enrichment supply competition",
-   "kind": "reminder",
-   "by": "scout"
-  },
-  {
-   "date": "2026-11-27",
-   "ticker": "",
-   "what": "Questioner follow-up: The Federal Register notice on the General Matter Paducah enrichment facility could compete with Centrus (LEU), which is a major holding. Does this change LEU's enrichment outloo",
-   "kind": "reminder",
-   "by": "questioner"
-  },
-  {
-   "date": "2026-11-27",
-   "ticker": "",
-   "kind": "calendar",
-   "what": "Black Friday: market closes at 1 pm, volume about half of normal. Black Friday close -> Monday has been weak: S&P up only 40% of 30 years, our 10 -0.5%, power trio -1.7% (down 6 of 7 years since 2019)."
-  },
   {
    "date": "2026-11-30",
    "ticker": "BWXT",
@@ -235117,6 +235075,41 @@
   },
   {
    "date": "2026-11-30",
+   "ticker": "LEU",
+   "what": "General Matter Paducah enrichment facility Federal Register notice: check for licensing steps that could add competing enrichment supply",
+   "kind": "reminder",
+   "by": "engineer"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "LEU",
+   "what": "Patient Levels buy window expires; re-check basket vs 10-day average before any order. Also watch the General Matter Paducah enrichment filing (Federal Register, Nov 27) as a possible competitive read",
+   "kind": "reminder",
+   "by": "engineer"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "CEG",
+   "what": "Salem 1 (52-day outage since 2026-10-04): check for restart timing; a return to service is a minor positive for CEG.",
+   "kind": "reminder",
+   "by": "engineer"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "",
+   "what": "Patient Levels buy window expires; re-check whether the basket has reclaimed its 10-day average before any new setup.",
+   "kind": "reminder",
+   "by": "pm"
+  },
+  {
+   "date": "2026-11-30",
+   "ticker": "",
+   "what": "Recheck whether the SPY parking-sale halt has been cleared in writing and whether the broker shows any stale orders",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-11-30",
    "ticker": "",
    "kind": "calendar",
    "what": "Monday after Thanksgiving. Power trio over the next 2 weeks: -4.1% on average since 2019 (up 2 of 7 years); miners +1.5% (2008-25). Year-end bounce trades start Dec 18."
@@ -235241,6 +235234,13 @@
    "by": "scout"
   },
   {
+   "date": "2026-12-01",
+   "ticker": "LEU",
+   "what": "Panic-day trade sell date; Black Friday half-day liquidity may affect execution",
+   "kind": "reminder",
+   "by": "risk"
+  },
+  {
    "date": "2026-12-07",
    "ticker": "LEU",
    "what": "Centrus Energy Investor Day at American Centrifuge Plant; possible guidance and contract updates",
@@ -235288,6 +235288,13 @@
    "what": "Centrus Investor Day with business and financial outlook updates",
    "kind": "reminder",
    "by": "scout"
+  },
+  {
+   "date": "2026-12-07",
+   "ticker": "LEU",
+   "what": "Centrus Energy Investor Day; company-specific catalyst that could move the stock",
+   "kind": "reminder",
+   "by": "level"
   },
   {
    "date": "2026-12-08",
@@ -235345,6 +235352,27 @@
    "by": "level"
   },
   {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Uranium Energy Corp earnings; company-specific move risk for the miner",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Earnings; company-specific move risk, and the desk's history shows earnings can move UEC a lot",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-08",
+   "ticker": "UEC",
+   "what": "Earnings report",
+   "kind": "reminder",
+   "by": "strategist"
+  },
+  {
    "date": "2026-12-09",
    "ticker": "CCJ",
    "what": "FOMC rate decision; broad risk-off or risk-on move that can drive the uranium and nuclear names with it.",
@@ -235396,8 +235424,36 @@
   {
    "date": "2026-12-09",
    "ticker": "",
+   "what": "FOMC decision; a macro volatility event that could move the whole basket",
+   "kind": "reminder",
+   "by": "macro"
+  },
+  {
+   "date": "2026-12-09",
+   "ticker": "DNN",
+   "what": "FOMC decision; macro volatility could move DNN and the basket",
+   "kind": "reminder",
+   "by": "level"
+  },
+  {
+   "date": "2026-12-09",
+   "ticker": "CEG",
+   "what": "FOMC rate decision, which can move rate-sensitive power names",
+   "kind": "reminder",
+   "by": "strategist"
+  },
+  {
+   "date": "2026-12-09",
+   "ticker": "",
    "kind": "macro",
    "what": "Fed rate decision, 2 pm. Since 2019 our stocks averaged +0.6% on Fed days vs +0.1% normally (not a sure thing)"
+  },
+  {
+   "date": "2026-12-10",
+   "ticker": "LEU",
+   "what": "Centrus Energy Investor Day (Dec 7 per desk headlines; confirm date) \u2014 company-specific catalyst that could move the stock",
+   "kind": "reminder",
+   "by": "level"
   },
   {
    "date": "2026-12-15",
@@ -235521,8 +235577,29 @@
   {
    "date": "2026-12-15",
    "ticker": "",
+   "what": "Questioner follow-up: Is the PJM 2029/30 capacity-auction delay request still undecided as of today, and has anyone checked the FERC docket directly rather than news summaries? TLN's 9.6% move rests o",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "TLN",
+   "what": "PJM 2029/30 base residual capacity auction closes; determines Talen's earnings driver",
+   "kind": "reminder",
+   "by": "questioner"
+  },
+  {
+   "date": "2026-12-15",
+   "ticker": "",
    "kind": "calendar",
    "what": "PJM 2029/30 capacity auction closes (price floor and cap apply). Matters for TLN, VST, CEG. No FERC ruling found on the new delay request as of Nov 25; assume it goes ahead."
+  },
+  {
+   "date": "2026-12-18",
+   "ticker": "",
+   "what": "Monthly opex and quarterly expiration week; the desk's data shows a mild tilt toward weakness in the week after",
+   "kind": "reminder",
+   "by": "macro"
   },
   {
    "date": "2026-12-21",
@@ -235658,6 +235735,13 @@
    "by": "scout"
   },
   {
+   "date": "2026-12-31",
+   "ticker": "CCJ",
+   "what": "Congressional review outcome of the Trump-Saudi nuclear cooperation deal (Senate test on safeguards); a passed deal would support uranium demand.",
+   "kind": "reminder",
+   "by": "scout"
+  },
+  {
    "date": "2027-01-01",
    "ticker": "CCJ",
    "what": "Poland plans to sign first nuclear plant construction contract in early 2027 (European new-build demand)",
@@ -235691,6 +235775,13 @@
    "what": "Purepoint Dorado partner-backed 7,700 m drilling program begins (sector context only)",
    "kind": "reminder",
    "by": "scout"
+  },
+  {
+   "date": "2027-01-01",
+   "ticker": "LEU",
+   "what": "Russian enriched uranium waivers for Centrus expire after Jan 1 2028 under the US import ban; check whether Centrus still has Tenex supply lined up before then",
+   "kind": "reminder",
+   "by": "engineer"
   }
  ],
  "weather_view": {
@@ -239472,7 +239563,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-27 23:05",
+ "watchdog_last": "2026-11-28 00:27",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
