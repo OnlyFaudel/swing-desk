@@ -32914,5 +32914,102 @@
 "tln",
 "trust"
 ]
+},
+{
+"id": "9d7e413fedbf599a",
+"date": "2026-11-28",
+"ts": 1795863459,
+"title": "Uranium Mine Cleanup Lags Despite Senate Support",
+"summary": "",
+"outlet": "Wisevoter",
+"link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUEl1YVg2ZTdCM2lEanM4d29lVVdROVdDRzk1QkdDNldsdGJUUzN6UHZ6SE5jdUlIUkxkWWRPN1NDcTlodUo3eS0tcUhQQmZIT2JDTFg5RnI1eVRXbE9lUkJSSlJVR3FjRTFDMS1ycDdxRGlMWkNHSGZDcjFoelZVSjBiTC1rYWVEbVN6aGVNa2M?oc=5",
+"place": "Congress and laws",
+"tickers": [
+"CCJ",
+"LEU",
+"CEG",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.82,
+"score": 4.14,
+"echo_of": null,
+"w": [
+"cleanup",
+"despite",
+"lags",
+"mine",
+"senate",
+"support",
+"uranium"
+]
+},
+{
+"id": "e76f879d2bd68374",
+"date": "2026-11-28",
+"ts": 1795861638,
+"title": "U.S. Says IAEA Alone Can Negotiate Korea's Nuclear Submarine Safeguards",
+"summary": "",
+"outlet": "Seoul Economic Daily",
+"link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSWhCdGk1U1hNYk1mRXZ3QUlJSDlkSGNxemVSUUg3eXhBZ25uQzZueVVMRlR6UmNVSFl1WVNEZTFVTHZjdG1oTUhGbUdRZVl4QjJEaFhVd3d0bzdUcXo1d2xqSTBHMEJfaFZidWN4Vks5NGMxQXh5QkVQTnVxQmVNUXB6YzN4VEdTUmRvWDlpTUwyR3FMMHVLNU9TUm1Cdw?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"defense",
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.64,
+"score": 6.08,
+"echo_of": null,
+"w": [
+"alone",
+"can",
+"iaea",
+"korea",
+"negotiate",
+"nuclear",
+"safeguards",
+"submarine"
+]
+},
+{
+"id": "ad2582264e612103",
+"date": "2026-11-28",
+"ts": 1795864320,
+"title": "Kazatomprom's sales to China fall 13.3% in January-September",
+"summary": "",
+"outlet": "Trend News Agency",
+"link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBSWERjbVRhOXpiYnJDRWp6b3NQNDVTU01xbGxrY1FoSzN6VXpmWWt2SngxSHBVYjc4R0hCLTFuWEVqc0RYVURObWgyVlhMSXhBQTVxeWZCblBGeVN6SF9v?oc=5",
+"place": "Kazakhstan",
+"tickers": [
+"CCJ",
+"NXE",
+"UEC",
+"DNN"
+],
+"tags": [],
+"numbers": [
+"13.3%"
+],
+"local": true,
+"novelty": 0.67,
+"score": 4.34,
+"echo_of": null,
+"w": [
+"china",
+"fall",
+"january",
+"kazatomprom",
+"sales",
+"september"
+]
 }
 ]
