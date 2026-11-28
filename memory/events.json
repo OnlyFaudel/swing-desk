@@ -30887,5 +30887,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-28",
+"title": "US and China Clash Over South Korea's Nuclear-Powered Submarines; Washington Rejects Beijing's Interference",
+"type": "intel_defense",
+"source": "Intel: SBS \ub274\uc2a4",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "BWXT",
+"date": "2026-11-28",
+"title": "US and China Clash Over South Korea's Nuclear-Powered Submarines; Washington Rejects Beijing's Interference",
+"type": "intel_defense",
+"source": "Intel: SBS \ub274\uc2a4",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]

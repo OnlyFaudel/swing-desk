@@ -32751,5 +32751,74 @@
 "small",
 "which"
 ]
+},
+{
+"id": "7f2d5248b9364960",
+"date": "2026-11-28",
+"ts": 1795849200,
+"title": "US, China Clash at IAEA Over South Korea's Nuclear-Powered Submarine Push",
+"summary": "",
+"outlet": "SBS \ub274\uc2a4",
+"link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1FMFJHU001cERJRTlDd1VSaWFUYTNSM1o1UFZTMnByRDlTczctanlDZWJVWG02WFlRaFB2Z05mQ2wxbVpKZ3ZlUWRvUGp6NlZYRml6b21GRXVHX2tRcjJHb2szWURIQdIBZkFVX3lxTE1FMFJHU001cERJRTlDd1VSaWFUYTNSM1o1UFZTMnByRDlTczctanlDZWJVWG02WFlRaFB2Z05mQ2wxbVpKZ3ZlUWRvUGp6NlZYRml6b21GRXVHX2tRcjJHb2szWURIQQ?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"defense",
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 4.8,
+"echo_of": "ea6e804c63a31bf0",
+"w": [
+"china",
+"clash",
+"iaea",
+"korea",
+"nuclear",
+"powered",
+"push",
+"south",
+"submarine"
+]
+},
+{
+"id": "5135439e88f0ab01",
+"date": "2026-11-28",
+"ts": 1795853373,
+"title": "US and China Clash Over South Korea's Nuclear-Powered Submarines; Washington Rejects Beijing's Interference",
+"summary": "",
+"outlet": "SBS \ub274\uc2a4",
+"link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYXpCelZXRmRyUmtkcnRPbnNKVTRXZ3hmdmJwSlZ2ZUd0OW9taVExaFdhVkdINWxpZ2VqQ2NMRHd6QnNqMDh2WEQyQXJTdW1wN3pYOWVCeFl1b3pTRkhvLUNqSC1tTVhRQUdtZDhnMEZmMFlBeFlZa1ZuVFc3dVhYX1lZMFBfYUVzMTRaZDlsT3ZrN2JmWmdkbGJB0gFmQVVfeXFMTUUwUkdTTTVwRElFOUN3VVJpYVRhM1IzWjVQVlMycHJEOVNzNy1qeUNlYlVYbTZYWVFoUHZnTmZDbDFtWkpndmVRZG9Qano2VlhGaXpvbUZFdUdfa1FyMkdvazNZREhB?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"defense"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.57,
+"score": 4.64,
+"echo_of": null,
+"w": [
+"beijing",
+"china",
+"clash",
+"interference",
+"korea",
+"nuclear",
+"powered",
+"rejects",
+"south",
+"submarines",
+"washington"
+]
 }
 ]
