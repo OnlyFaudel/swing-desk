@@ -31040,5 +31040,39 @@
 "r60": null,
 "x5": null,
 "x20": null
+},
+{
+"ticker": "CCJ",
+"date": "2026-11-27",
+"title": "IAEA seeks local ceasefire around Zaporizhzhia nuclear plant to repair power lines",
+"type": "intel_geopolitics",
+"source": "Intel: \u0633\u0627\u0646\u0627",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
+},
+{
+"ticker": "CEG",
+"date": "2026-11-27",
+"title": "IAEA seeks local ceasefire around Zaporizhzhia nuclear plant to repair power lines",
+"type": "intel_geopolitics",
+"source": "Intel: \u0633\u0627\u0646\u0627",
+"materiality": null,
+"direction_called": null,
+"price": null,
+"r0": null,
+"r1": null,
+"r5": null,
+"r20": null,
+"r60": null,
+"x5": null,
+"x20": null
 }
 ]
