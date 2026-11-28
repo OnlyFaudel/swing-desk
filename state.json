@@ -949,7 +949,8 @@
   "questioner:2026-11-28:4": true,
   "reactors:2026-11-28": true,
   "plantrep:2026-11-28": true,
-  "research:2026-11-28": true
+  "research:2026-11-28": true,
+  "questioner:2026-11-28:5": true
  },
  "benchmark": {
   "shares": {
@@ -10966,10 +10967,10 @@
  },
  "spend": {
   "day": "2026-11-28",
-  "day_usd": 0.03236,
+  "day_usd": 0.04206,
   "month": "2026-11",
-  "month_usd": 2.8716,
-  "total_usd": 2.8716,
+  "month_usd": 2.8813,
+  "total_usd": 2.8813,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
@@ -10980,12 +10981,12 @@
    "auditor": 0.04723,
    "strategist": 0.18937,
    "pm": 0.45311,
-   "risk": 0.26224,
-   "investigator": 0.39755,
+   "risk": 0.26598,
+   "investigator": 0.40061,
    "postmortem": 0.01905,
    "researcher": 0.03207,
    "engineer": 0.11819,
-   "questioner": 0.19366
+   "questioner": 0.19656
   }
  },
  "desk_log": [
@@ -11256,7 +11257,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-28 09:31 ET",
+ "last_cycle": "2026-11-28 10:32 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -60768,6 +60769,7 @@
   "1acc6842cd4f6e64",
   "9d0cef749e9a05fd",
   "d87a1acbb5ff13ef",
+  "65dac1a40800de8b",
   "3459ed8af9ea8da9",
   "8aff877e2dd1884c",
   "12248c3fda706761",
@@ -61182,6 +61184,7 @@
   "95d12e5461204a04",
   "e87b1e4d61fe1cbd",
   "498180393c058995",
+  "05bc94867fde811d",
   "7f1ab1d7e538b600",
   "9ba787d9f4ab0369",
   "2d7effa483cf87a2",
@@ -61500,11 +61503,9 @@
   "1e9ac2ee38a1003f",
   "8868199eaca25050",
   "0e6fc088c11522c8",
-  "12fc0c7a240e4fef",
-  "05bc94867fde811d",
-  "65dac1a40800de8b"
+  "12fc0c7a240e4fef"
  ],
- "news_slow_at": 1795876362.2525768,
+ "news_slow_at": 1795880009.6282,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -219730,6 +219731,41 @@
    ],
    "practice": false,
    "end": "10:04"
+  },
+  {
+   "id": "20261128103229525677",
+   "title": "The Questioner, Nov 28 10:32",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-28 10:32",
+   "msgs": [
+    {
+     "t": "10:32",
+     "who": "questioner",
+     "to": "team",
+     "text": "Several rules and facts stand out, and one is a checkable question: the desk's notes say the Thanksgiving and panic_rebound buys skipped the basket-below-10-day-average gate, yet the basket gate is closed now and nothing is resting, so the real open question is whether the gate was enforced in code. I'd also like someone to confirm whether any PJM FERC ruling has issued, since TLN's 9.6% jump still rests on nothing confirmed.",
+     "outcome": false,
+     "notes": "question: The Thanksgiving and panic_rebound buys both broke the basket-below-10-day-average rule, and the lesson says the gate must come first. Can anyone show from code or logs that the gate is now enforced before any buy is placed, rather than relying on people remembering it?\nwhy it might matter: If the gate is a convention instead of a hard check, the same mistake can repeat on the next seasonal or setup trade even while the basket is falling.\nask: review\nkind: missed\nquestion: Has anyone checked the FERC docket directly, not news summaries, for a decision on the PJM 2029/30 delay request? The desk files show no ruling, but the Dec 15 auction date and TLN's 9.6% jump hinge on that answer.\nwhy it might matter: A ruling in either direction could move TLN, VST and CEG sharply before the auction, and our notes assume the auction goes ahead without having confirmed it.\nask: macro\nkind: u"
+    },
+    {
+     "t": "10:32",
+     "who": "investigator",
+     "to": "questioner",
+     "text": "I can't confirm from the desk files that the basket-below-10-day-average gate is enforced in code before every buy. The notes record the rule and the two violations, and the only other evidence is the lesson text and chat posts saying people should remember it. Right now the basket is below its 10-day average, so this matters for any buy the desk considers next.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: research\nresearch test: Read the order-placement path in broker.py and the setup/seasonal trade code and confirm there is a hard check on basket price versus its 10-day average that runs before any buy is sent. Then replay the Thanksgiving and panic_rebound trades through that check to confirm it would have blocked both; log the result in the desk notes.\nwhy: The lesson notes state the gate must come first, and the Thanksgiving and panic_rebound buys broke it, but nothing in the files shows a code-level check. Without that, the gate depends on people remembering it, which is what failed.\nfiles read: SECTOR Uranium market, desk_lessons_from_our_mistakes"
+    },
+    {
+     "t": "10:32",
+     "who": "risk",
+     "to": "team",
+     "text": "Is anyone sizing the level and panic trades as if the AI-era regime is guaranteed to last? The desk's own notes say yes, the buy-the-weakness rules lost in 2008-2018 and won in 2019-2026, and the level-buy tests show the 200-day-average effect appeared in the 2024-26 hourly data but not in the longer daily check. So our current sizing does lean on one era, and I'd like it smaller until the newer rules prove out, not sized on a regime we can't promise will last. Regime-change signals to watch: the buy-the-weakness rules losing money over a rolling window, and our stocks trading below their 200-day averages for weeks while level buys keep filling.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: research\nwatch date: 2026-12-31\nresearch test: Track level-buy and panic-rebound results split by whether the stock is above or below its 200-day average, and whether the basket is above or below its 10-day average, on a rolling 6-month window. Flag a regime shift if buy-the-weakness trades turn negative for two consecutive months, and cut size to half until they recover. Score the result against the 2008-18 vs 2019-26 split already in the notes.\nwhy: The desk files show the buy-the-weakness rules flipped between eras, and the 200-day-average edge held in the hourly 2024-26 data but not in the 2008-2026 daily stand-in. Nothing in the files promises the AI-era regime continues, so the recommended action is a rolling test with a clear trigger to shrink size.\nfiles read: SECTOR Uranium market, CCJ Discoveries, TLN Price behavior, CEG Discoveries"
+    }
+   ],
+   "practice": false,
+   "end": "10:32"
   }
  ],
  "feed": [
@@ -226374,6 +226410,19 @@
     "sub": "Reactors, mines and fuel, Nov 28"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-28 10:32",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: The Thanksgiving and panic_rebound buys both broke the basket-below-10-day-average rule, and the lesson says the gate must come first. Can anyone show from code or logs that the gate is now enforced before any buy is placed, rather than relying on people remembering it? -> relevant | The desk's own finding says buy-the-weakness rules lost in 2008-2018 and won in 2019-2026. Is anyone sizing the level and panic trades as if the AI-era regime is guaranteed to last, and what would tell us the regime has changed? -> relevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -227361,9 +227410,9 @@
    "lesson": "A panic_rebound buy must pass the basket-below-10-day-average block before entry, even when the stock looks oversold and the trade later wins."
   }
  ],
- "intel_at": 1795876314.9996073,
+ "intel_at": 1795879961.2461753,
  "intel_health": {
-  "at": "2026-11-28 09:32",
+  "at": "2026-11-28 10:33",
   "sources": {
    "Cigar Lake": 0,
    "McArthur River / Key Lake": 1,
@@ -227372,51 +227421,51 @@
    "Rook I / Arrow": 4,
    "Wheeler River / Phoenix": 5,
    "Port Hope / Blind River": 0,
-   "Westinghouse": 7,
-   "Kazakhstan": 47,
+   "Westinghouse": 6,
+   "Kazakhstan": 28,
    "Niger": 7,
    "Namibia": 17,
-   "Russia supply": 3,
-   "Piketon": 14,
+   "Russia supply": 4,
+   "Piketon": 15,
    "HALEU": 10,
    "Wyoming ISR": 13,
    "South Texas ISR": 1,
    "White Mesa / Utah": 8,
    "Rare earths (Energy Fuels)": 7,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 10,
+   "Naval reactors": 11,
    "Crane / Three Mile Island": 3,
    "Susquehanna": 6,
    "Comanche Peak": 6,
    "PJM grid": 7,
    "ERCOT grid": 9,
    "Data-center nuclear deals": 10,
-   "Japan restarts": 11,
-   "China new builds": 4,
-   "Congress and laws": 38,
+   "Japan restarts": 9,
+   "China new builds": 5,
+   "Congress and laws": 27,
    "NRC decisions": 7,
-   "Energy Department": 20,
+   "Energy Department": 21,
    "White House and executive orders": 20,
    "Tariffs and trade": 4,
-   "India": 21,
+   "India": 16,
    "South Korea": 100,
-   "Europe new builds": 42,
-   "France and UK": 7,
-   "Middle East": 63,
-   "Asia newcomers": 41,
+   "Europe new builds": 43,
+   "France and UK": 8,
+   "Middle East": 30,
+   "Asia newcomers": 25,
    "Canada SMRs": 7,
-   "Big tech power deals": 25,
-   "Iran": 28,
-   "North Korea": 76,
-   "War zones": 17,
+   "Big tech power deals": 50,
+   "Iran": 27,
+   "North Korea": 75,
+   "War zones": 15,
    "AUKUS and navies": 28,
    "Weapons programs": 31,
    "Stockpiles and reserves": 23,
    "Sprott trust": 3,
-   "Uranium price": 24,
+   "Uranium price": 43,
    "US policy": 0,
-   "Lawsuits and investigations": 33,
-   "Workers and jobs": 21,
+   "Lawsuits and investigations": 71,
+   "Workers and jobs": 22,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 52,
    "Federal Register (uranium)": 10,
@@ -227426,18 +227475,18 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-28 09:32",
-  "total": 1032,
-  "week": 597,
+  "updated": "2026-11-28 10:33",
+  "total": 1034,
+  "week": 595,
   "places": {
    "South Korea": 61,
-   "Uranium price": 54,
+   "Uranium price": 55,
    "Kazakhstan": 45,
    "Asia newcomers": 33,
    "Workers and jobs": 31,
    "AUKUS and navies": 31,
-   "Europe new builds": 25,
    "Weapons programs": 25,
+   "Europe new builds": 24,
    "World Nuclear News": 23,
    "Piketon": 22,
    "War zones": 19,
@@ -227445,7 +227494,7 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-28 09:32",
+   "at": "2026-11-28 10:33",
    "sources": {
     "Cigar Lake": 0,
     "McArthur River / Key Lake": 1,
@@ -227454,51 +227503,51 @@
     "Rook I / Arrow": 4,
     "Wheeler River / Phoenix": 5,
     "Port Hope / Blind River": 0,
-    "Westinghouse": 7,
-    "Kazakhstan": 47,
+    "Westinghouse": 6,
+    "Kazakhstan": 28,
     "Niger": 7,
     "Namibia": 17,
-    "Russia supply": 3,
-    "Piketon": 14,
+    "Russia supply": 4,
+    "Piketon": 15,
     "HALEU": 10,
     "Wyoming ISR": 13,
     "South Texas ISR": 1,
     "White Mesa / Utah": 8,
     "Rare earths (Energy Fuels)": 7,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 10,
+    "Naval reactors": 11,
     "Crane / Three Mile Island": 3,
     "Susquehanna": 6,
     "Comanche Peak": 6,
     "PJM grid": 7,
     "ERCOT grid": 9,
     "Data-center nuclear deals": 10,
-    "Japan restarts": 11,
-    "China new builds": 4,
-    "Congress and laws": 38,
+    "Japan restarts": 9,
+    "China new builds": 5,
+    "Congress and laws": 27,
     "NRC decisions": 7,
-    "Energy Department": 20,
+    "Energy Department": 21,
     "White House and executive orders": 20,
     "Tariffs and trade": 4,
-    "India": 21,
+    "India": 16,
     "South Korea": 100,
-    "Europe new builds": 42,
-    "France and UK": 7,
-    "Middle East": 63,
-    "Asia newcomers": 41,
+    "Europe new builds": 43,
+    "France and UK": 8,
+    "Middle East": 30,
+    "Asia newcomers": 25,
     "Canada SMRs": 7,
-    "Big tech power deals": 25,
-    "Iran": 28,
-    "North Korea": 76,
-    "War zones": 17,
+    "Big tech power deals": 50,
+    "Iran": 27,
+    "North Korea": 75,
+    "War zones": 15,
     "AUKUS and navies": 28,
     "Weapons programs": 31,
     "Stockpiles and reserves": 23,
     "Sprott trust": 3,
-    "Uranium price": 24,
+    "Uranium price": 43,
     "US policy": 0,
-    "Lawsuits and investigations": 33,
-    "Workers and jobs": 21,
+    "Lawsuits and investigations": 71,
+    "Workers and jobs": 22,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 52,
     "Federal Register (uranium)": 10,
@@ -227646,25 +227695,6 @@
     "numbers": [],
     "score": 7.3,
     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1NOWVjdXpXWFh5bG80U0FkRXBiU3FmT0kyaXBDVWQ5aVNEVnpUdnRrZlZSQy1MUkRNdXRTbFF0dWN4WTlGakZJTEFUSVhZbUd3OEo0dndzYVo?oc=5"
-   },
-   {
-    "date": "2026-11-21",
-    "title": "Energy Dominance, Measured in Exports: America\u2019s $50 Billion Nuclear Bet in Poland",
-    "outlet": "Energy News Beat",
-    "place": "Europe new builds",
-    "tickers": [
-     "CCJ",
-     "BWXT"
-    ],
-    "tags": [
-     "regulation",
-     "politics"
-    ],
-    "numbers": [
-     "$50 Billion"
-    ],
-    "score": 7.22,
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdk00SVRqT1A0Uk1tcFZIYk81SmJJckRVYlR0R2QyajFMSExkZWN2QVhDdjFFY3EwR3NJWnNvLTNmeXJ2RXFZQWlzZmVzNXJEVWZtc0ZmUVhiWVd1Z1RON0hBRDg1R2ZKN1FPeDhQVi1DYWZfbnRfZlhBeEc4OWFTWldIYmNuMjczRGliSDl5WmZEQ19EWXZnYjNtMlZfbmJVazBuUXNDX1hfejFlUEJ1bFFIMA?oc=5"
    },
    {
     "date": "2026-11-26",
@@ -228059,6 +228089,22 @@
     "numbers": [],
     "score": 6.4,
     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WUl9FMWFmLU8tT25pc2tvM09MN0dQUnRSVDJ6RlN6Wm8yOHl2QndyZUtNaHFkUUx1UW9la0hPOW9aYXY1b2d1U2JzOU85Q3NwVWtJTXpnOW8?oc=5"
+   },
+   {
+    "date": "2026-11-26",
+    "title": "N Korea's Kim warns US over AUKUS, touts nuclear status",
+    "outlet": "Eastern Riverina Chronicle",
+    "place": "AUKUS and navies",
+    "tickers": [
+     "BWXT"
+    ],
+    "tags": [
+     "defense",
+     "geopolitics"
+    ],
+    "numbers": [],
+    "score": 6.36,
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUkhJWUVIb1h2d2JjUzhQSTN2eF96SHk2QzVOTGJ1aWR1ODBFX1lLZkFIOGV1bzFhNU1mUW8xNDQzOWp4UVNVSHVaUC1YcWR3TUthendKNDM3UTY1TTdka0llbHA1ZXVJTUtERm01U1BiSXJKbmJaYmNwd0I1dHh4cW1Qc2pGbUFuZS04eHNGazV3dEpROTg5V3BRbmFQV3J0RUNNa0hZb19RcHlBTlhOU1Z3?oc=5"
    }
   ]
  },
@@ -228125,11 +228171,11 @@
   "7fd6ad3664eaf535",
   "afd8290622043c62",
   "971d34934a9a192f",
-  "133ace46214fa2bd",
   "3c2851f76c7e4fb9",
   "5b727c8ffe748b88",
-  "9072aaac75f7221f",
+  "133ace46214fa2bd",
   "e350e3c2ce700f95",
+  "9072aaac75f7221f",
   "da0462559a103d97",
   "7574e0b98bf014d1",
   "ed609e22ce9351ef",
@@ -229367,7 +229413,7 @@
   {
    "name": "auto_discovery",
    "trials": 426,
-   "verdict": "2026-11-27 16:07: the bot tested 378 event patterns on 47,587 events (older vs newer half, corrected for the number of tests). 9 hold up: price_3_down_days (miners) -> +1.12% vs the basket (or its normal trend) over the next 5 days (n=1065, up 55%); price_3_down_days (all our stocks) -> +1.10% vs the basket (or its normal trend) over the next 5 days (n=1515, up 55%); price_new_52w_high (miners) -> -1.31% vs the basket (or its normal trend) over the next 5 days (n=348, up 35%); offering_dilution (all our stocks) -> -4.46% vs the basket (or its normal trend) over the next 5 days (n=55, up 24%); price_new_52w_high (all our stocks) -> -0.85% vs the basket (or its normal trend) over the next 5 days (n=704, up 42%); offering_dilution (miners) -> -4.10% vs the basket (or its normal trend) over the next 5 days (n=44, up 25%)"
+   "verdict": "2026-11-28 10:04: the bot tested 378 event patterns on 47,595 events (older vs newer half, corrected for the number of tests). 9 hold up: price_3_down_days (miners) -> +1.12% vs the basket (or its normal trend) over the next 5 days (n=1065, up 55%); price_3_down_days (all our stocks) -> +1.10% vs the basket (or its normal trend) over the next 5 days (n=1515, up 55%); price_new_52w_high (miners) -> -1.31% vs the basket (or its normal trend) over the next 5 days (n=348, up 35%); offering_dilution (all our stocks) -> -4.46% vs the basket (or its normal trend) over the next 5 days (n=55, up 24%); price_new_52w_high (all our stocks) -> -0.86% vs the basket (or its normal trend) over the next 5 days (n=704, up 42%); offering_dilution (miners) -> -4.10% vs the basket (or its normal trend) over the next 5 days (n=44, up 25%)"
   },
   {
    "name": "macro_drivers",
@@ -230494,6 +230540,14 @@
   {
    "q": "Questioner: Pull the NRC event notifications and any license/Technical Specification extension requests for Salem 1 since Oct 4 2026, and compare the actual return date against the originally planned end date. Check whether the fleet running rate for CEG recovers toward 100% by Nov 30.",
    "date": "2026-11-28"
+  },
+  {
+   "q": "Questioner: Read the order-placement path in broker.py and the setup/seasonal trade code and confirm there is a hard check on basket price versus its 10-day average that runs before any buy is sent. Then replay the Thanksgiving and panic_rebound trades through that check to confirm it would have blocked both; log the result in the desk notes.",
+   "date": "2026-11-28"
+  },
+  {
+   "q": "Questioner: Track level-buy and panic-rebound results split by whether the stock is above or below its 200-day average, and whether the basket is above or below its 10-day average, on a rolling 6-month window. Flag a regime shift if buy-the-weakness trades turn negative for two consecutive months, and cut size to half until they recover. Score the result against the 2008-18 vs 2019-26 split already in the notes.",
+   "date": "2026-11-28"
   }
  ],
  "research_candidates": [
@@ -230709,7 +230763,7 @@
    }
   ]
  },
- "dossier_at": 1795876356.6571422,
+ "dossier_at": 1795880004.4368737,
  "sector_prices": {
   "_at": 1795872724.568439,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -230767,85 +230821,85 @@
    "name": "Cameco",
    "price": 63.56,
    "week_pct": 3.48,
-   "built": "2026-11-28 09:32"
+   "built": "2026-11-28 10:33"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 7.28,
    "week_pct": 5.05,
-   "built": "2026-11-28 09:32"
+   "built": "2026-11-28 10:33"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.93,
    "week_pct": 2.86,
-   "built": "2026-11-28 09:32"
+   "built": "2026-11-28 10:33"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.91,
    "week_pct": 5.8,
-   "built": "2026-11-28 09:32"
+   "built": "2026-11-28 10:33"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.66,
    "week_pct": 3.28,
-   "built": "2026-11-28 09:32"
+   "built": "2026-11-28 10:33"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.79,
    "week_pct": -5.47,
-   "built": "2026-11-28 09:32"
+   "built": "2026-11-28 10:33"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.57,
    "week_pct": -1.27,
-   "built": "2026-11-28 09:32"
+   "built": "2026-11-28 10:33"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 238.15,
    "week_pct": -5.51,
-   "built": "2026-11-28 09:32"
+   "built": "2026-11-28 10:33"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 122.35,
    "week_pct": -1.45,
-   "built": "2026-11-28 09:32"
+   "built": "2026-11-28 10:33"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 359.64,
    "week_pct": 1.05,
-   "built": "2026-11-28 09:32"
+   "built": "2026-11-28 10:33"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-28 09:32"
+   "built": "2026-11-28 10:33"
   }
  ],
- "heartbeat": "2026-11-28 10:02",
+ "heartbeat": "2026-11-28 10:32",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 536,
+ "_pushed_feed": 538,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -231215,8 +231269,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 102,
-   "used": 98,
+   "asked": 103,
+   "used": 99,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 5,
@@ -231224,7 +231278,7 @@
     "BWXT Leadership and insiders": 2,
     "UEC Snapshot": 11,
     "UEC Deals and contracts": 5,
-    "SECTOR Uranium market": 50,
+    "SECTOR Uranium market": 51,
     "TLN Snapshot": 19,
     "TLN What history says": 4,
     "CCJ Snapshot": 3,
@@ -231278,7 +231332,8 @@
     "recent_headlines": 1,
     "SECTOR Pulse": 1,
     "SPY parking halt (not in desk notes; open question)": 1,
-    "recently_canceled_orders": 1
+    "recently_canceled_orders": 1,
+    "desk_lessons_from_our_mistakes": 1
    },
    "since": "2026-11-23"
   },
@@ -231451,13 +231506,13 @@
    "since": "2026-11-23"
   },
   "risk": {
-   "asked": 121,
-   "used": 118,
+   "asked": 122,
+   "used": 119,
    "notes": {
     "BWXT Price behavior": 3,
     "CCJ Snapshot": 4,
     "BWXT Snapshot": 6,
-    "SECTOR Uranium market": 59,
+    "SECTOR Uranium market": 60,
     "TLN Snapshot": 39,
     "TLN Legal": 4,
     "BWXT Legal": 3,
@@ -231467,7 +231522,7 @@
     "UEC Leadership and insiders": 5,
     "CCJ Price behavior": 2,
     "SECTOR Rules the bot follows from its discoveries": 3,
-    "TLN Price behavior": 24,
+    "TLN Price behavior": 25,
     "TLN Discoveries": 3,
     "TLN Leadership and insiders": 15,
     "CEG Snapshot": 2,
@@ -231485,14 +231540,14 @@
     "desk_lessons_from_our_mistakes": 1,
     "VST Snapshot": 2,
     "Discoveries: can we catch a news move early (fast lane)": 1,
-    "CCJ Discoveries": 2,
+    "CCJ Discoveries": 3,
     "DNN Snapshot": 4,
     "DNN Leadership and insiders": 2,
     "DNN Discoveries": 3,
     "NXE Discoveries": 1,
     "sector_pulse": 1,
     "Desk lessons": 1,
-    "CEG Discoveries": 3,
+    "CEG Discoveries": 4,
     "already_checked_facts: recurring pattern buying weakness": 1,
     "How to read the team's own predictions": 1,
     "SECTOR basket gate": 1,
@@ -231543,11 +231598,11 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 68,
-   "used": 68,
+   "asked": 69,
+   "used": 69,
    "notes": {
-    "TLN Snapshot": 48,
-    "TLN News": 44,
+    "TLN Snapshot": 49,
+    "TLN News": 45,
     "coming_up": 9,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
@@ -231559,8 +231614,8 @@
     "SECTOR Market regime": 1,
     "desk_lessons_from_our_mistakes": 8,
     "TLN Ownership and analysts": 4,
-    "SECTOR Uranium market": 21,
-    "CEG Snapshot": 11,
+    "SECTOR Uranium market": 22,
+    "CEG Snapshot": 12,
     "uranium_price": 1,
     "PJM capacity auction": 1,
     "PJM auction": 1,
@@ -231593,7 +231648,7 @@
     "SECTOR Desk history": 1,
     "SECTOR Halt status": 1,
     "SECTOR Plant outages": 1,
-    "CEG Legal": 2,
+    "CEG Legal": 3,
     "CEG News": 1
    },
    "since": "2026-11-23"
@@ -235061,6 +235116,16 @@
    "price": 115.57,
    "result": null,
    "why": "Most owner questions are covered by existing notes and already-tested features, so I only propose tests that aren't already in already_tested. My ideas are mostly empty because nearly every obvious fe"
+  },
+  {
+   "role": "questioner",
+   "ticker": "CEG",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-28",
+   "price": 238.15,
+   "result": null,
+   "why": "The desk files show the basket gate was broken twice and the PJM delay is still unconfirmed, so I asked for a code-level check and a docket check. I put the regime question in a lower-priority ask bec"
   }
  ],
  "after_sale": [
@@ -236504,6 +236569,24 @@
    "answer": "I checked the General Matter Paducah scoping notice against the desk files. It is the first step of an environmental review for a planned enrichment plant, with no timeline or competing capacity figure in the notice that could affect Centrus (LEU) within the next year, so it's routine paperwork for us.",
    "verdict": "irrelevant",
    "action": "none"
+  },
+  {
+   "t": "2026-11-28 10:32",
+   "question": "The Thanksgiving and panic_rebound buys both broke the basket-below-10-day-average rule, and the lesson says the gate must come first. Can anyone show from code or logs that the gate is now enforced before any buy is placed, rather than relying on people remembering it?",
+   "kind": "missed",
+   "asked": "investigator",
+   "answer": "I can't confirm from the desk files that the basket-below-10-day-average gate is enforced in code before every buy. The notes record the rule and the two violations, and the only other evidence is the lesson text and chat posts saying people should remember it. Right now the basket is below its 10-day average, so this matters for any buy the desk considers next.",
+   "verdict": "relevant",
+   "action": "research"
+  },
+  {
+   "t": "2026-11-28 10:32",
+   "question": "The desk's own finding says buy-the-weakness rules lost in 2008-2018 and won in 2019-2026. Is anyone sizing the level and panic trades as if the AI-era regime is guaranteed to last, and what would tell us the regime has changed?",
+   "kind": "maybe_irrelevant",
+   "asked": "risk",
+   "answer": "Is anyone sizing the level and panic trades as if the AI-era regime is guaranteed to last? The desk's own notes say yes, the buy-the-weakness rules lost in 2008-2018 and won in 2019-2026, and the level-buy tests show the 200-day-average effect appeared in the 2024-26 hourly data but not in the longer daily check. So our current sizing does lean on one era, and I'd like it smaller until the newer rules prove out, not sized on a regime we can't promise will last. Regime-change signals to watch: the buy-the-weakness rules losing money over a rolling window, and our stocks trading below their 200-day averages for weeks while level buys keep filling.",
+   "verdict": "relevant",
+   "action": "research"
   }
  ],
  "reactor_view": {
@@ -239650,8 +239733,8 @@
   }
  ],
  "movers": {
-  "at": 1795867211.1862993,
-  "time": "2026-11-28 07:00",
+  "at": 1795879949.5237956,
+  "time": "2026-11-28 10:32",
   "list": [
    {
     "ticker": "LEU",
@@ -239908,7 +239991,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-28 09:31",
+ "watchdog_last": "2026-11-28 10:32",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

@@ -33413,5 +33413,66 @@
 "uec",
 "uranium"
 ]
+},
+{
+"id": "c5b6772742cf5c73",
+"date": "2026-11-26",
+"ts": 1795659960,
+"title": "Asia Nuclear Business Platform makes Vietnam debut",
+"summary": "",
+"outlet": "B\u00e1o C\u1ea7n Th\u01a1",
+"link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSEcxaVBxMXdpZnNFcGROV19RbmNSRzhSMTZXWm5VY2UtVHZUbTBydkVNS1Q0bUtqeVlNVXVERFNzT3h4amh3bnBtVlNXbWZMODBMWGp1VjdyaXJ1YUR3eHFJYjNLN2l0cDJOcV9LM1Nscjl6Q1RhbEJUNW9WZlltMjdhLVJtQk5xVDNpMXctSnFfUk9JbF9jOQ?oc=5",
+"place": "Asia newcomers",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 2.5,
+"echo_of": "16a1f0608ea32c74",
+"w": [
+"asia",
+"business",
+"debut",
+"makes",
+"nuclear",
+"platform",
+"vietnam"
+]
+},
+{
+"id": "e569a83298795b38",
+"date": "2026-11-26",
+"ts": 1795705880,
+"title": "How Junior Uranium Explorers Fund Drilling in a Weak Market",
+"summary": "",
+"outlet": "Discovery Alert",
+"link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSE82RHU0NWZiMVFRc09kdW02Qld3dV8zcHE2QVJ4dEhNT2FZVXE2WmwyeTN1cHZyVVlPRkdnTEN4cE9ma050R0NSelJsZmY4Mk9mbGNlWnBaZzlHcVBIaVJON3ZSZ3lqU0dQNlVCRkhxMUZfYnF3d3Z1cUFoN2hIdkNabE13b1JOWU03VmZjVEg1d0M1NUlJ?oc=5",
+"place": "Uranium price",
+"tickers": [
+"CCJ",
+"NXE",
+"DNN",
+"UEC",
+"UUUU"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.73,
+"score": 3.96,
+"echo_of": null,
+"w": [
+"drilling",
+"explorers",
+"fund",
+"how",
+"junior",
+"market",
+"uranium",
+"weak"
+]
 }
 ]
