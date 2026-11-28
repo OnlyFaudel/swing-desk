@@ -33011,5 +33011,111 @@
 "sales",
 "september"
 ]
+},
+{
+"id": "ca87fe1cda8a918d",
+"date": "2026-11-28",
+"ts": 1795860215,
+"title": "U.S.: \"IAEA Has Sole Authority Over Verification Talks on South Korean Nuclear Submarines\"... Rejects China's 'Member-State Consensus' Demand",
+"summary": "",
+"outlet": "\uc544\uc2dc\uc544\uacbd\uc81c",
+"link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE43YjdncGFHNDg5Nzk3S3lBeXU5Q3J1bUpVaWtyYURZdlFVQUNYYUU3dGxGLTZjdjd2UjUtVnVMbEVTS20zZl9XMFN6a29MbnZvQnlfOUpTR2lhbmYwWDNCYkx5ZlA?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"defense",
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.75,
+"score": 6.3,
+"echo_of": null,
+"w": [
+"authority",
+"china",
+"consensus",
+"demand",
+"iaea",
+"korean",
+"member",
+"nuclear",
+"rejects",
+"sole",
+"south",
+"state",
+"submarines",
+"talks",
+"verification"
+]
+},
+{
+"id": "fbe4bf86d2df5d95",
+"date": "2026-11-28",
+"ts": 1795865104,
+"title": "U.S. Rebuts China's Claim on South Korea's Nuclear Submarine Negotiations, Citing IAEA Authority",
+"summary": "",
+"outlet": "\uc7ac\uacbd\uc77c\ubcf4",
+"link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBkT2VLU2hka1QxMmduM2VwWF9wSGwtajUyNGlpY3JBYTZQWlR3M2R0RGNNelA2WnByOVZYM1ZaWkdfRWVINTR4SHpkaVpMV0gyN216T1RqMDhQbzNwelUtN2R3?oc=5",
+"place": "South Korea",
+"tickers": [
+"CCJ",
+"BWXT"
+],
+"tags": [
+"defense",
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.57,
+"score": 5.94,
+"echo_of": null,
+"w": [
+"authority",
+"china",
+"citing",
+"claim",
+"iaea",
+"korea",
+"negotiations",
+"nuclear",
+"rebuts",
+"south",
+"submarine"
+]
+},
+{
+"id": "eb2311d021a98010",
+"date": "2026-11-28",
+"ts": 1795865968,
+"title": "The Philippines is accelerating the development of nuclear power, aiming for electricity generation by 2038.",
+"summary": "",
+"outlet": "Vietnam.vn",
+"link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSHR5VldvMlJGZU1aUTh2dGFMaGgwSjVUeDlPa0ZCM0k1N3IxTjdCcS1CaDdrVk81RGlmc2E2d1BfNmtEZllhRk9wUThzN0lLYVhlNXA5U0lSZTVWYUFlQjRUb3dBUVNnRTJYVkRGYnIxVEJScWdINDRnVGdiaXZ6S0Uxd2V4N2pIVDNTR3dCWEV0a2N4MU5VTGpLVm14UVpxNWp1aGd6aw?oc=5",
+"place": "Asia newcomers",
+"tickers": [
+"CCJ"
+],
+"tags": [],
+"numbers": [],
+"local": true,
+"novelty": 0.75,
+"score": 4.0,
+"echo_of": null,
+"w": [
+"2038",
+"accelerating",
+"aiming",
+"development",
+"electricity",
+"generation",
+"nuclear",
+"philippines",
+"power"
+]
 }
 ]

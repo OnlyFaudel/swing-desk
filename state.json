@@ -940,7 +940,11 @@
   "questioner:2026-11-27:10": true,
   "catalysts2:2026-11-28": true,
   "ev:3aeb4d5036a5": true,
-  "ev:ebe014eb32a7": true
+  "ev:ebe014eb32a7": true,
+  "questioner:2026-11-28:3": true,
+  "uprice:2026-11-28": true,
+  "congress:2026-11-28": true,
+  "jobs:2026-11-28": true
  },
  "benchmark": {
   "shares": {
@@ -5828,30 +5832,6 @@
  },
  "news_feed": [
   {
-   "ticker": "CCJ",
-   "source": "Google News",
-   "title": "Cameco Corporation (CCJ) Stock Forecasts - Yahoo Finance",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQR09GMXNqUVhlanRPcmxwamxBa0tVbzRwVkg2X3RVckEya1hpem5laTJSYzFIMFVBejdzOE9ZejFJNS1hTlRGS2ZGSTB6R2hSZ1ZPLVp6SjRVR0ZpZzdYSGp2SFFfNjNldy1saDhXWHBERmpnWW5uNnc1aXA0aUlpU3pVVWZNY0FtQkc5ZF80NA?oc=5",
-   "ts": 1795648572,
-   "materiality": 1,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic Yahoo Finance forecast page title; no new company-specific information."
-  },
-  {
-   "ticker": "CEG",
-   "source": "Yahoo (VST, related to CEG)",
-   "title": "What Are Wall Street Analysts' Target Price for Vistra Corp. Stock?",
-   "link": "https://www.barchart.com/story/news/9006879/what-are-wall-street-analysts-target-price-for-vistra-corp-stock?.tsrc=rss",
-   "ts": 1795626461,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "analyst",
-   "why": "Generic 'what do analysts think' listicle with no new fact or price-target change."
-  },
-  {
    "ticker": "VST",
    "source": "Google News",
    "title": "Vistra Corp. (VST) Stock Forecasts - Yahoo Finance",
@@ -8826,6 +8806,30 @@
    "direction": "neutral",
    "event_type": "policy_tariff",
    "why": "Korea submarine safeguards talk is a diplomatic process with no direct uranium-supply effect yet."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: \uc544\uc2dc\uc544\uacbd\uc81c (South Korea)",
+   "title": "U.S.: \"IAEA Has Sole Authority Over Verification Talks on South Korean Nuclear Submarines\"... Rejects China's 'Member-State Consensus' Demand",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE43YjdncGFHNDg5Nzk3S3lBeXU5Q3J1bUpVaWtyYURZdlFVQUNYYUU3dGxGLTZjdjd2UjUtVnVMbEVTS20zZl9XMFN6a29MbnZvQnlfOUpTR2lhbmYwWDNCYkx5ZlA?oc=5",
+   "ts": 1795860215,
+   "materiality": 3,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "war_geopolitics",
+   "why": "Diplomatic dispute over South Korea's nuclear submarine verification; little direct uranium demand impact."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Local intel: \uc7ac\uacbd\uc77c\ubcf4 (South Korea)",
+   "title": "U.S. Rebuts China's Claim on South Korea's Nuclear Submarine Negotiations, Citing IAEA Authority",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBkT2VLU2hka1QxMmduM2VwWF9wSGwtajUyNGlpY3JBYTZQWlR3M2R0RGNNelA2WnByOVZYM1ZaWkdfRWVINTR4SHpkaVpMV0gyN216T1RqMDhQbzNwelUtN2R3?oc=5",
+   "ts": 1795865104,
+   "materiality": 3,
+   "novelty": "follow_up",
+   "direction": "neutral",
+   "event_type": "war_geopolitics",
+   "why": "Same South Korea submarine dispute rehashed by another outlet; no new uranium supply or demand facts."
   }
  ],
  "reviews": [
@@ -10957,26 +10961,26 @@
  },
  "spend": {
   "day": "2026-11-28",
-  "day_usd": 0.00419,
+  "day_usd": 0.01879,
   "month": "2026-11",
-  "month_usd": 2.84343,
-  "total_usd": 2.84343,
+  "month_usd": 2.85803,
+  "total_usd": 2.85803,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.27545,
+   "scout": 0.27598,
    "review": 0.23667,
    "auditor": 0.04723,
    "strategist": 0.18937,
    "pm": 0.45311,
    "risk": 0.26224,
-   "investigator": 0.39141,
+   "investigator": 0.3945,
    "postmortem": 0.01905,
    "researcher": 0.02986,
-   "engineer": 0.10979,
-   "questioner": 0.18478
+   "engineer": 0.11482,
+   "questioner": 0.19073
   }
  },
  "desk_log": [
@@ -11247,7 +11251,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-28 06:29 ET",
+ "last_cycle": "2026-11-28 07:00 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -61376,6 +61380,7 @@
   "4ed9b30682cbb480",
   "5bea644649122f78",
   "3d2ffec4f5d12080",
+  "ad2582264e612103",
   "a454f891b1c31853",
   "7ffa38b48cb85fdf",
   "8e86917f784be639",
@@ -61425,6 +61430,7 @@
   "ee1ba4440d7332de",
   "c527b52a6d387b5e",
   "b15e05abe9bd71a5",
+  "ccff2f7dd1edf939",
   "34a3177fd034165b",
   "d94f7a7a6e8a9559",
   "1468cb9f20cb9ca3",
@@ -61485,11 +61491,9 @@
   "1e9ac2ee38a1003f",
   "8868199eaca25050",
   "0e6fc088c11522c8",
-  "12fc0c7a240e4fef",
-  "ad2582264e612103",
-  "ccff2f7dd1edf939"
+  "12fc0c7a240e4fef"
  ],
- "news_slow_at": 1795865436.972932,
+ "news_slow_at": 1795867309.395454,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -219579,6 +219583,49 @@
    ],
    "practice": false,
    "end": "20:00"
+  },
+  {
+   "id": "20261128070011188370",
+   "title": "The Questioner, Nov 28 07:00",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-28 07:00",
+   "msgs": [
+    {
+     "t": "07:00",
+     "who": "questioner",
+     "to": "team",
+     "text": "Quick check before anything else: the desk's notes say the SPY parking halt was lifted on Nov 25 and ops.halted is False, so I won't re-raise it. The real open question I see is that the Talen 9.6% jump rests on a PJM auction-delay request with no FERC ruling in our files, and nobody has yet tied that move to a confirmed event.",
+     "outcome": false,
+     "notes": "question: Since the Dec 15 PJM 2029/30 auction is still on the calendar and no FERC ruling on the delay is in our files, what exactly caused TLN's 9.6% jump, and does anyone have a dated source for it?\nwhy it might matter: If the jump came from an unconfirmed regulator item, the move may reverse once the auction result or a real ruling lands, and our TLN exposure is sized as if the earnings driver were settled.\nask: news\nkind: unexplained\nquestion: The Thanksgiving and panic_rebound trades skipped the basket-below-10-day-average check, and the desk's own lesson says that gate must come first. Has anyone confirmed the gate is wired into the bot so a seasonal rule cannot bypass it next time?\nwhy it might matter: The desk wrote the lesson down twice but the notes don't show the code enforces it; if it doesn't, the same process mistake can recur silently.\nask: engineer\nkind: odd\nquestion: Sa"
+    },
+    {
+     "t": "07:00",
+     "who": "investigator",
+     "to": "questioner",
+     "text": "Nothing in our files ties TLN's 9.6% jump to a confirmed event. The PJM Dec 15 auction is still on the calendar and no FERC ruling on the delay request is on file, so the move rests on an unconfirmed regulatory item. I agree with the Questioner that our TLN exposure shouldn't be sized as if the earnings driver were settled.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: watch\nwatch date: 2026-12-15\nwhy: I checked the desk's PJM notes and the TLN snapshot: the 9.6% jump is not tied to any dated, confirmed source, and the auction result on Dec 15 is the first real resolution point. The rule of thumb in the notes (sell the release-day pop in power names, don't add into it) supports treating TLN as an unsettled driver until then.\nticker: TLN\ndirection: down\ndays: 5\nfiles read: TLN Snapshot, TLN Legal, CEG Filings and company events, already_checked_facts"
+    },
+    {
+     "t": "07:00",
+     "who": "engineer",
+     "to": "questioner",
+     "text": "The gate that blocks new buys when the basket is below its 10-day average is the rule the desk broke twice, and I can't confirm from these notes that the bot code actually enforces it. The notes record the lesson but never show a code check, so a seasonal rule could still skip it. I'd want the engineer to point to the exact line that runs before any order is placed.",
+     "outcome": false,
+     "notes": "verdict: relevant\naction: research\nresearch test: Engineer to show the code path: confirm the basket-vs-10-day-average check runs before order submission for every strategy, including seasonal rules (Thanksgiving run-up, panic_rebound). Then run a test: feed the bot a seasonal signal on a day the basket is below its 10-day average and confirm it places zero orders.\nwhy: The desk lessons note says the gate must come first, and the chief's review says the Thanksgiving and rebound buys skipped it, so the rule is real and it matters. The notes contain no evidence of code enforcement, so I can't confirm it's wired in, only that the lesson was written down twice.\nfiles read: LIVE_ORDERS_RIGHT_NOW, desk_lessons_from_our_mistakes"
+    },
+    {
+     "t": "07:00",
+     "who": "engineer",
+     "to": "questioner",
+     "text": "I checked the desk files for Salem 1 and the NRC log entries we have. The notes show the outage started Oct 4 and is still open at 52 days, but they record only the 'routine refueling' label and no NRC filing or extension notice past the planned end date. Refueling season is normal and CEG's fleet is about 96% running, so this is probably not a forced problem, but the 'routine' read is assumed rather than verified. Agreeing with the Questioner that it's a fair thing to ask, and I'd not change any CEG trade on it alone.",
+     "outcome": false,
+     "notes": "verdict: unsure\naction: research\nwatch date: 2026-11-30\nresearch test: Pull the NRC event notifications and any license/Technical Specification extension requests for Salem 1 since Oct 4 2026, and compare the actual return date against the originally planned end date. Check whether the fleet running rate for CEG recovers toward 100% by Nov 30.\nwhy: I checked the desk's reactor records: Salem 1 is the only open CEG outage, out 52 days, with a 96% CEG fleet running rate, which fits normal refueling season. The files contain no NRC extension notice or planned-end-date comparison, so I can't confirm the 'routine' read from our own data.\nfiles read: CEG Places and operations, CEG Business"
+    }
+   ],
+   "practice": false,
+   "end": "07:00"
   }
  ],
  "feed": [
@@ -226180,6 +226227,19 @@
    "tickers": [],
    "art": null,
    "thread": null
+  },
+  {
+   "t": "2026-11-28 07:00",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Since the Dec 15 PJM 2029/30 auction is still on the calendar and no FERC ruling on the delay is in our files, what exactly caused TLN's 9.6% jump, and does anyone have a dated source for it? -> relevant | The Thanksgiving and panic_rebound trades skipped the basket-below-10-day-average check, and the desk's own lesson says that gate must come first. Has anyone confirmed the gate is wired into the bot so a seasonal rule cannot bypass it next time? -> relevant | Salem 1 has been out 52 days, and the desk notes say a late return would be a weak signal for CEG. Has anyone checked the NRC event log for any extension beyond its planned end date, or is the 'routine refueling' read just assumed? -> unsure",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -227167,9 +227227,9 @@
    "lesson": "A panic_rebound buy must pass the basket-below-10-day-average block before entry, even when the stock looks oversold and the trade later wins."
   }
  ],
- "intel_at": 1795865387.6587067,
+ "intel_at": 1795867229.630334,
  "intel_health": {
-  "at": "2026-11-28 06:30",
+  "at": "2026-11-28 07:01",
   "sources": {
    "Cigar Lake": 1,
    "McArthur River / Key Lake": 2,
@@ -227179,50 +227239,50 @@
    "Wheeler River / Phoenix": 6,
    "Port Hope / Blind River": 0,
    "Westinghouse": 7,
-   "Kazakhstan": 31,
-   "Niger": 8,
-   "Namibia": 21,
+   "Kazakhstan": 29,
+   "Niger": 7,
+   "Namibia": 17,
    "Russia supply": 4,
    "Piketon": 15,
    "HALEU": 10,
-   "Wyoming ISR": 25,
-   "South Texas ISR": 1,
+   "Wyoming ISR": 23,
+   "South Texas ISR": 2,
    "White Mesa / Utah": 7,
    "Rare earths (Energy Fuels)": 7,
    "Lynchburg / Erwin": 0,
-   "Naval reactors": 10,
-   "Crane / Three Mile Island": 0,
-   "Susquehanna": 6,
+   "Naval reactors": 13,
+   "Crane / Three Mile Island": 3,
+   "Susquehanna": 5,
    "Comanche Peak": 4,
-   "PJM grid": 8,
-   "ERCOT grid": 11,
+   "PJM grid": 7,
+   "ERCOT grid": 10,
    "Data-center nuclear deals": 10,
    "Japan restarts": 9,
-   "China new builds": 5,
-   "Congress and laws": 36,
-   "NRC decisions": 6,
-   "Energy Department": 20,
+   "China new builds": 6,
+   "Congress and laws": 38,
+   "NRC decisions": 7,
+   "Energy Department": 29,
    "White House and executive orders": 19,
    "Tariffs and trade": 4,
-   "India": 25,
+   "India": 19,
    "South Korea": 100,
-   "Europe new builds": 48,
-   "France and UK": 10,
-   "Middle East": 60,
-   "Asia newcomers": 25,
-   "Canada SMRs": 6,
-   "Big tech power deals": 26,
+   "Europe new builds": 47,
+   "France and UK": 9,
+   "Middle East": 29,
+   "Asia newcomers": 26,
+   "Canada SMRs": 0,
+   "Big tech power deals": 51,
    "Iran": 28,
    "North Korea": 100,
    "War zones": 12,
-   "AUKUS and navies": 20,
-   "Weapons programs": 30,
-   "Stockpiles and reserves": 23,
+   "AUKUS and navies": 19,
+   "Weapons programs": 19,
+   "Stockpiles and reserves": 0,
    "Sprott trust": 4,
    "Uranium price": 49,
    "US policy": 0,
-   "Lawsuits and investigations": 72,
-   "Workers and jobs": 23,
+   "Lawsuits and investigations": 33,
+   "Workers and jobs": 22,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 52,
    "Federal Register (uranium)": 10,
@@ -227232,14 +227292,14 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-28 06:30",
-  "total": 1020,
-  "week": 596,
+  "updated": "2026-11-28 07:01",
+  "total": 1023,
+  "week": 599,
   "places": {
-   "South Korea": 60,
+   "South Korea": 62,
    "Uranium price": 54,
    "Kazakhstan": 45,
-   "Asia newcomers": 32,
+   "Asia newcomers": 33,
    "Workers and jobs": 31,
    "AUKUS and navies": 30,
    "Weapons programs": 26,
@@ -227251,7 +227311,7 @@
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-28 06:30",
+   "at": "2026-11-28 07:01",
    "sources": {
     "Cigar Lake": 1,
     "McArthur River / Key Lake": 2,
@@ -227261,50 +227321,50 @@
     "Wheeler River / Phoenix": 6,
     "Port Hope / Blind River": 0,
     "Westinghouse": 7,
-    "Kazakhstan": 31,
-    "Niger": 8,
-    "Namibia": 21,
+    "Kazakhstan": 29,
+    "Niger": 7,
+    "Namibia": 17,
     "Russia supply": 4,
     "Piketon": 15,
     "HALEU": 10,
-    "Wyoming ISR": 25,
-    "South Texas ISR": 1,
+    "Wyoming ISR": 23,
+    "South Texas ISR": 2,
     "White Mesa / Utah": 7,
     "Rare earths (Energy Fuels)": 7,
     "Lynchburg / Erwin": 0,
-    "Naval reactors": 10,
-    "Crane / Three Mile Island": 0,
-    "Susquehanna": 6,
+    "Naval reactors": 13,
+    "Crane / Three Mile Island": 3,
+    "Susquehanna": 5,
     "Comanche Peak": 4,
-    "PJM grid": 8,
-    "ERCOT grid": 11,
+    "PJM grid": 7,
+    "ERCOT grid": 10,
     "Data-center nuclear deals": 10,
     "Japan restarts": 9,
-    "China new builds": 5,
-    "Congress and laws": 36,
-    "NRC decisions": 6,
-    "Energy Department": 20,
+    "China new builds": 6,
+    "Congress and laws": 38,
+    "NRC decisions": 7,
+    "Energy Department": 29,
     "White House and executive orders": 19,
     "Tariffs and trade": 4,
-    "India": 25,
+    "India": 19,
     "South Korea": 100,
-    "Europe new builds": 48,
-    "France and UK": 10,
-    "Middle East": 60,
-    "Asia newcomers": 25,
-    "Canada SMRs": 6,
-    "Big tech power deals": 26,
+    "Europe new builds": 47,
+    "France and UK": 9,
+    "Middle East": 29,
+    "Asia newcomers": 26,
+    "Canada SMRs": 0,
+    "Big tech power deals": 51,
     "Iran": 28,
     "North Korea": 100,
     "War zones": 12,
-    "AUKUS and navies": 20,
-    "Weapons programs": 30,
-    "Stockpiles and reserves": 23,
+    "AUKUS and navies": 19,
+    "Weapons programs": 19,
+    "Stockpiles and reserves": 0,
     "Sprott trust": 4,
     "Uranium price": 49,
     "US policy": 0,
-    "Lawsuits and investigations": 72,
-    "Workers and jobs": 23,
+    "Lawsuits and investigations": 33,
+    "Workers and jobs": 22,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 52,
     "Federal Register (uranium)": 10,
@@ -227928,10 +227988,10 @@
   "7fd6ad3664eaf535",
   "afd8290622043c62",
   "971d34934a9a192f",
-  "133ace46214fa2bd",
   "3c2851f76c7e4fb9",
-  "9072aaac75f7221f",
+  "133ace46214fa2bd",
   "e350e3c2ce700f95",
+  "9072aaac75f7221f",
   "da0462559a103d97",
   "7574e0b98bf014d1",
   "ed609e22ce9351ef",
@@ -227972,6 +228032,7 @@
   "7f7a05be6b3ac1f5",
   "0d77f1d2373bb03d",
   "df371025b77dc13a",
+  "e76f879d2bd68374",
   "82aaff9e4512c732",
   "9e331cf926161f76",
   "97e5a70ea6902e58",
@@ -228110,7 +228171,8 @@
   "7908d2b630649992",
   "31ce75ab9a1e9d20",
   "0ba4e6ba0ec4c40f",
-  "e76f879d2bd68374"
+  "ca87fe1cda8a918d",
+  "fbe4bf86d2df5d95"
  ],
  "panic_log": [
   {
@@ -228151,7 +228213,7 @@
   }
  ],
  "memory_view": {
-  "events": 1821,
+  "events": 1825,
   "with_outcomes": 1337,
   "playbooks": {
    "acquisition": {
@@ -228739,42 +228801,6 @@
    {
     "date": "2026-11-27",
     "ticker": "CCJ",
-    "title": "From Sovereign Guarantees to Private Capital: Financing Vietnam\u2019s Nuclear Power Projects",
-    "type": "intel_financing",
-    "r0": 3.93,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-27",
-    "ticker": "CCJ",
-    "title": "IAEA seeks 9th cease-fire for repairs at Zaporizhzhia nuclear plant",
-    "type": "intel_disruption",
-    "r0": 3.93,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-27",
-    "ticker": "CEG",
-    "title": "IAEA seeks 9th cease-fire for repairs at Zaporizhzhia nuclear plant",
-    "type": "intel_disruption",
-    "r0": 1.2,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-27",
-    "ticker": "CCJ",
-    "title": "Vietnam\u2019s first nuclear power plants face delayed start",
-    "type": "intel_disruption",
-    "r0": 3.93,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-27",
-    "ticker": "CCJ",
     "title": "Kazatomprom releases accounts without auditor report as investigation continues",
     "type": "intel_legal",
     "r0": 3.93,
@@ -229082,6 +229108,42 @@
     "date": "2026-11-28",
     "ticker": "BWXT",
     "title": "U.S. Says IAEA Alone Can Negotiate Korea's Nuclear Submarine Safeguards",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-28",
+    "ticker": "CCJ",
+    "title": "U.S.: \"IAEA Has Sole Authority Over Verification Talks on South Korean Nuclear Submarines\"... Rejects China's 'Member-State Consensus' Demand",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-28",
+    "ticker": "BWXT",
+    "title": "U.S.: \"IAEA Has Sole Authority Over Verification Talks on South Korean Nuclear Submarines\"... Rejects China's 'Member-State Consensus' Demand",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-28",
+    "ticker": "CCJ",
+    "title": "U.S. Rebuts China's Claim on South Korea's Nuclear Submarine Negotiations, Citing IAEA Authority",
+    "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-28",
+    "ticker": "BWXT",
+    "title": "U.S. Rebuts China's Claim on South Korea's Nuclear Submarine Negotiations, Citing IAEA Authority",
     "type": "intel_defense",
     "r0": null,
     "r5": null,
@@ -230286,6 +230348,14 @@
   {
    "q": "Mistakes review fix: Add a hard code-level gate: no order of ANY setup (patient_level, panic_rebound, thanksgiving or other calendar rules) can open while the nuclear basket is below its 10-day average. Also reject any patient-level fill where the computed stop is under 0.5% from entry. Test: Replay the last 3-5 years of all setups with and without the gate. Adopt if the gated version has equal or better average return per trade and a smaller worst drawdown. Check specifically whether panic_rebound and Thanksgiving still earn money when blocked, because if the gate removes most of their profits, those rules need an explicit, tested exception rather than silently skipping the check.",
    "date": "2026-11-27"
+  },
+  {
+   "q": "Questioner: Engineer to show the code path: confirm the basket-vs-10-day-average check runs before order submission for every strategy, including seasonal rules (Thanksgiving run-up, panic_rebound). Then run a test: feed the bot a seasonal signal on a day the basket is below its 10-day average and confirm it places zero orders.",
+   "date": "2026-11-28"
+  },
+  {
+   "q": "Questioner: Pull the NRC event notifications and any license/Technical Specification extension requests for Salem 1 since Oct 4 2026, and compare the actual return date against the originally planned end date. Check whether the fleet running rate for CEG recovers toward 100% by Nov 30.",
+   "date": "2026-11-28"
   }
  ],
  "research_candidates": [
@@ -230501,7 +230571,7 @@
    }
   ]
  },
- "dossier_at": 1795865431.3686366,
+ "dossier_at": 1795867304.8361197,
  "sector_prices": {
   "_at": 1795850945.0853293,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
@@ -230559,80 +230629,80 @@
    "name": "Cameco",
    "price": 63.56,
    "week_pct": 3.48,
-   "built": "2026-11-28 06:30"
+   "built": "2026-11-28 07:01"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 7.28,
    "week_pct": 5.05,
-   "built": "2026-11-28 06:30"
+   "built": "2026-11-28 07:01"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.93,
    "week_pct": 2.86,
-   "built": "2026-11-28 06:30"
+   "built": "2026-11-28 07:01"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.91,
    "week_pct": 5.8,
-   "built": "2026-11-28 06:30"
+   "built": "2026-11-28 07:01"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.66,
    "week_pct": 3.28,
-   "built": "2026-11-28 06:30"
+   "built": "2026-11-28 07:01"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.79,
    "week_pct": -5.47,
-   "built": "2026-11-28 06:30"
+   "built": "2026-11-28 07:01"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.57,
    "week_pct": -1.27,
-   "built": "2026-11-28 06:30"
+   "built": "2026-11-28 07:01"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 238.15,
    "week_pct": -5.51,
-   "built": "2026-11-28 06:30"
+   "built": "2026-11-28 07:01"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 122.35,
    "week_pct": -1.45,
-   "built": "2026-11-28 06:30"
+   "built": "2026-11-28 07:01"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 359.64,
    "week_pct": 1.05,
-   "built": "2026-11-28 06:30"
+   "built": "2026-11-28 07:01"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-28 06:30"
+   "built": "2026-11-28 07:01"
   }
  ],
- "heartbeat": "2026-11-28 06:29",
+ "heartbeat": "2026-11-28 07:00",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
@@ -230728,7 +230798,7 @@
   "spot_minus_long_term": -6.45
  },
  "jobs_view": {
-  "as_of": "2026-11-27",
+  "as_of": "2026-11-28",
   "open_jobs_by_company": {
    "Oklo": 54,
    "Kairos Power": 85,
@@ -230739,7 +230809,7 @@
   },
   "sector_open_jobs": 396,
   "change_vs_30_days_ago": 3,
-  "days_tracked": 4,
+  "days_tracked": 5,
   "new_postings_30d_by_theme": {
    "licensing": 1,
    "manufacturing": 1
@@ -230873,15 +230943,15 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 520,
-   "used": 478,
+   "asked": 521,
+   "used": 479,
    "notes": {
     "TLN Deals and contracts": 22,
     "CCJ Deals and contracts": 85,
     "BWXT Deals and contracts": 58,
     "SECTOR Government and laws": 147,
     "UUUU Deals and contracts": 47,
-    "SECTOR Countries": 153,
+    "SECTOR Countries": 154,
     "CEG Deals and contracts": 71,
     "NXE Legal": 26,
     "NXE Deals and contracts": 19,
@@ -231007,8 +231077,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 100,
-   "used": 96,
+   "asked": 101,
+   "used": 97,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 5,
@@ -231017,7 +231087,7 @@
     "UEC Snapshot": 11,
     "UEC Deals and contracts": 5,
     "SECTOR Uranium market": 50,
-    "TLN Snapshot": 18,
+    "TLN Snapshot": 19,
     "TLN What history says": 4,
     "CCJ Snapshot": 3,
     "CCJ Deals and contracts": 1,
@@ -231036,7 +231106,7 @@
     "CEG Deals and contracts": 4,
     "CEG What history says": 2,
     "CEG Leadership and insiders": 1,
-    "CEG Filings and company events": 3,
+    "CEG Filings and company events": 4,
     "VST Snapshot": 2,
     "VST Deals and contracts": 1,
     "VST What history says": 2,
@@ -231051,7 +231121,7 @@
     "UUUU Legal": 14,
     "SECTOR Fuel policy": 1,
     "SECTOR pulse": 2,
-    "TLN Legal": 1,
+    "TLN Legal": 2,
     "VST Filings and company events": 1,
     "SECTOR Fast-lane checks": 1,
     "CCJ Legal": 1,
@@ -231059,7 +231129,7 @@
     "LIVE_ORDERS_RIGHT_NOW": 3,
     "open_positions": 1,
     "power_deals_and_fuel_policy": 1,
-    "already_checked_facts": 1,
+    "already_checked_facts": 2,
     "NXE What history says": 1,
     "NXE Deals and contracts": 1,
     "NXE Leadership and insiders": 1,
@@ -231119,11 +231189,11 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 79,
-   "used": 78,
+   "asked": 81,
+   "used": 80,
    "notes": {
     "SECTOR Reactors and power": 2,
-    "CEG Places and operations": 35,
+    "CEG Places and operations": 36,
     "UEC Deals and contracts": 1,
     "UEC Places and operations": 14,
     "license_tracker": 4,
@@ -231134,7 +231204,7 @@
     "NRC license tracker": 1,
     "power_deals_and_fuel_policy": 2,
     "VST Places and operations": 9,
-    "CEG Business": 2,
+    "CEG Business": 3,
     "NXE Places and operations": 5,
     "plants_now: fleet status and open outages": 1,
     "desk_notes: CEG Places and operations": 2,
@@ -231157,7 +231227,9 @@
     "BWXT Business": 1,
     "CEG Deals and contracts": 2,
     "SECTOR Plants now": 1,
-    "SECTOR Plant outages": 1
+    "SECTOR Plant outages": 1,
+    "LIVE_ORDERS_RIGHT_NOW": 1,
+    "desk_lessons_from_our_mistakes": 1
    },
    "since": "2026-11-23"
   },
@@ -231333,11 +231405,11 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 66,
-   "used": 66,
+   "asked": 67,
+   "used": 67,
    "notes": {
-    "TLN Snapshot": 46,
-    "TLN News": 42,
+    "TLN Snapshot": 47,
+    "TLN News": 43,
     "coming_up": 9,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
@@ -231347,10 +231419,10 @@
     "CCJ Legal": 2,
     "TLN Legal": 9,
     "SECTOR Market regime": 1,
-    "desk_lessons_from_our_mistakes": 7,
+    "desk_lessons_from_our_mistakes": 8,
     "TLN Ownership and analysts": 4,
     "SECTOR Uranium market": 20,
-    "CEG Snapshot": 9,
+    "CEG Snapshot": 10,
     "uranium_price": 1,
     "PJM capacity auction": 1,
     "PJM auction": 1,
@@ -231361,12 +231433,12 @@
     "SECTOR Calendar": 1,
     "already_asked": 3,
     "Desk lessons": 1,
-    "plants": 2,
+    "plants": 3,
     "TLN earnings calendar": 1,
     "SECTOR Countries": 1,
     "TLN Calendar": 1,
     "SECTOR Power regulation": 1,
-    "PJM 2029/30 capacity auction delay": 1,
+    "PJM 2029/30 capacity auction delay": 2,
     "BWXT Leadership and insiders": 1,
     "Black Friday / Thanksgiving calendar": 1,
     "calendar": 1,
@@ -231382,7 +231454,8 @@
     "coming_up Federal Register reminders": 1,
     "SECTOR Desk history": 1,
     "SECTOR Halt status": 1,
-    "SECTOR Plant outages": 1
+    "SECTOR Plant outages": 1,
+    "CEG Legal": 1
    },
    "since": "2026-11-23"
   },
@@ -234809,6 +234882,16 @@
    "price": 7.28,
    "result": null,
    "why": "Checked NXE Legal history: the CNSC license for Rook 1 was issued in March 2026, so this headline is a follow-up with no new information. Headline is a promotional aggregator piece, which scores 0-3 u"
+  },
+  {
+   "role": "investigator",
+   "ticker": "TLN",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-28",
+   "price": 359.64,
+   "result": null,
+   "why": "I checked the desk's PJM notes and the TLN snapshot: the 9.6% jump is not tied to any dated, confirmed source, and the auction result on Dec 15 is the first real resolution point. The rule of thumb in"
   }
  ],
  "after_sale": [
@@ -236207,6 +236290,33 @@
    "answer": "I checked the desk files on the SPY parking halt. Nothing in our notes names an owner who can lift it or describes a written clearance, and the only live-order record is empty with the recent cancels being TLN and BWXT, so I can't confirm there are no stale or partial fills from the three rejected sales. That matters because Black Friday is a half-day with thin volume, so I'd want a named owner and a written check of the broker before the next session. I agree with the Questioner that a halt with no owner tends to stay on indefinitely.",
    "verdict": "relevant",
    "action": "tell_owner"
+  },
+  {
+   "t": "2026-11-28 07:00",
+   "question": "Since the Dec 15 PJM 2029/30 auction is still on the calendar and no FERC ruling on the delay is in our files, what exactly caused TLN's 9.6% jump, and does anyone have a dated source for it?",
+   "kind": "unexplained",
+   "asked": "investigator",
+   "answer": "Nothing in our files ties TLN's 9.6% jump to a confirmed event. The PJM Dec 15 auction is still on the calendar and no FERC ruling on the delay request is on file, so the move rests on an unconfirmed regulatory item. I agree with the Questioner that our TLN exposure shouldn't be sized as if the earnings driver were settled.",
+   "verdict": "relevant",
+   "action": "watch"
+  },
+  {
+   "t": "2026-11-28 07:00",
+   "question": "The Thanksgiving and panic_rebound trades skipped the basket-below-10-day-average check, and the desk's own lesson says that gate must come first. Has anyone confirmed the gate is wired into the bot so a seasonal rule cannot bypass it next time?",
+   "kind": "odd",
+   "asked": "engineer",
+   "answer": "The gate that blocks new buys when the basket is below its 10-day average is the rule the desk broke twice, and I can't confirm from these notes that the bot code actually enforces it. The notes record the lesson but never show a code check, so a seasonal rule could still skip it. I'd want the engineer to point to the exact line that runs before any order is placed.",
+   "verdict": "relevant",
+   "action": "research"
+  },
+  {
+   "t": "2026-11-28 07:00",
+   "question": "Salem 1 has been out 52 days, and the desk notes say a late return would be a weak signal for CEG. Has anyone checked the NRC event log for any extension beyond its planned end date, or is the 'routine refueling' read just assumed?",
+   "kind": "maybe_irrelevant",
+   "asked": "engineer",
+   "answer": "I checked the desk files for Salem 1 and the NRC log entries we have. The notes show the outage started Oct 4 and is still open at 52 days, but they record only the 'routine refueling' label and no NRC filing or extension notice past the planned end date. Refueling season is normal and CEG's fleet is about 96% running, so this is probably not a forced problem, but the 'routine' read is assumed rather than verified. Agreeing with the Questioner that it's a fair thing to ask, and I'd not change any CEG trade on it alone.",
+   "verdict": "unsure",
+   "action": "research"
   }
  ],
  "reactor_view": {
@@ -239353,8 +239463,8 @@
   }
  ],
  "movers": {
-  "at": 1795820450.9221125,
-  "time": "2026-11-27 18:00",
+  "at": 1795867211.1862993,
+  "time": "2026-11-28 07:00",
   "list": [
    {
     "ticker": "LEU",
@@ -239611,7 +239721,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-28 06:29",
+ "watchdog_last": "2026-11-28 07:00",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",
