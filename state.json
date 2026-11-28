@@ -944,7 +944,10 @@
   "questioner:2026-11-28:3": true,
   "uprice:2026-11-28": true,
   "congress:2026-11-28": true,
-  "jobs:2026-11-28": true
+  "jobs:2026-11-28": true,
+  "weather:2026-11-28": true,
+  "questioner:2026-11-28:4": true,
+  "reactors:2026-11-28": true
  },
  "benchmark": {
   "shares": {
@@ -5832,66 +5835,6 @@
  },
  "news_feed": [
   {
-   "ticker": "VST",
-   "source": "Google News",
-   "title": "Vistra Corp. (VST) Stock Forecasts - Yahoo Finance",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNnFQQ21taWlGeW1GMlRUZzBIbUoxand0d3pwN1NkZjhFbVZOYVRqc3NTbnRnbG8wTTlySVMwcVFuckxGM1diU0NEc2cyWUxCMFdjcWd6RWxsSFItMUlIUFl0bWV1Zlo1eThyV19wSV9scGtzS2FXaHpNM3U2S0JBSzBLRnpCRy1PRE0tODE0QQ?oc=5",
-   "ts": 1795649373,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic Yahoo Finance forecast page title with no new company-specific information."
-  },
-  {
-   "ticker": "NXE",
-   "source": "Google News",
-   "title": "NexGen Energy (TSX:NXE): What Should Readers Watch As Markets Cool? - Kalkine Media",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWEd4dmZKdTR6VGU4ZUVyTnFPNlctOE12d09XRTY0b3FKNWdlTkROdDRwUnVFb2xxbklxNzFpRzZMdDhneUNKcVVqZWtpazJOdktuY1huVlNNdVRnNGNPSTdjR3Q4Q05rbklhNFllNFdSV29ZclQxNXB3QXgyMnQ5OFFJS3NqcFRtd2MzNXQ0WTRyRkhjS0RDNVV5WkN5VmhiQ2J5X2N3?oc=5",
-   "ts": 1795646220,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic market-cooling commentary, no new company-specific information."
-  },
-  {
-   "ticker": "NXE",
-   "source": "Google News: \"NexGen Energy\"",
-   "title": "NexGen Energy Releases Sixth Annual Sustainability Report Covering January to December 2025 - Kalkine",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOeDBKOEhqMkNvR3ZaaXZlQkZqMGdTTWZ0WlY2dTdCbk42SnY4S3YtYzRuRWNoWk1QaE9mQ18tdXhVZkJGNW5UY0lwa2tmLVp6clpCVTRqWlNSMWI0eUFObmpYNm9CSGhJR0xsajZYYy04NUNWOThPS3VpTnZnLWJORUVRWEhtYlREOFlBV2FvdEx5TGNOb2lmYWdOc2NIc19PSUFMUDJVZGRQX3dWamo5MTd4aEZuc1IzTXBrcjBBUVJzUTNUVDBPV3dUdmhYZw?oc=5",
-   "ts": 1795648502,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Routine annual sustainability report; no new financial or project information."
-  },
-  {
-   "ticker": "CCJ",
-   "source": "Google News: Kazatomprom",
-   "title": "Kazatomprom bribery probe: operational and project risk notes for mine planners - Geomechanics.io",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQ2poc3lhbkIxZmxUNHJKN3U2d3V3OWMzSG1hb2l1ZDdzejZqdy1RaWt0Z1RGWFlGaDBOX3lqZjJyMXpkcnRGTzJJb2NMY2l0YlRNbWx6QVZ5NWhPVVNYeUF0aHRuQk9XWkpkbUV4SldRLVlzbDVzZUgzbGVDRmdYdFFoWWFBZmhyakliX3EwZDM5ZnJwS25IT1ZrNXdGSk95SXh1eDVRc0JfakppOFJaVDlIc2lUX093Nm1B?oc=5",
-   "ts": 1795651255,
-   "materiality": 2,
-   "novelty": "stale",
-   "direction": "neutral",
-   "event_type": "other",
-   "why": "Generic Kazatomprom bribery-probe risk piece from a niche consultancy blog; no new fact on CCJ."
-  },
-  {
-   "ticker": "BWXT",
-   "source": "Local intel: SuaraGarut.ID (Weapons programs)",
-   "title": "Kim Jong Un Pushes Wider Tactical Nuclear Weapons Deployment",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE12S0Q2azRGN2U5czhWcGhHTHYwRDBTY3Boay1QZk5jV0FjT0dyeVJ6VUVZLUhtY01kZmpnaTRvQmk0RzVILTBxVWhTZVNJLU1XRFNZWHc3azFjOVpPU0tycFlJUEhnanFyQnpmSkJXa3M4Zw?oc=5",
-   "ts": 1795654864,
-   "materiality": 2,
-   "novelty": "new",
-   "direction": "neutral",
-   "event_type": "war_geopolitics",
-   "why": "North Korean leader pushing tactical nukes is geopolitical noise for BWXT's commercial nuclear business."
-  },
-  {
    "ticker": "CCJ",
    "source": "Local intel: Chosunbiz (Congress and laws)",
    "title": "Houthi attacks and US Congress cloud Saudi nuclear bid",
@@ -8830,6 +8773,66 @@
    "direction": "neutral",
    "event_type": "war_geopolitics",
    "why": "Same South Korea submarine dispute rehashed by another outlet; no new uranium supply or demand facts."
+  },
+  {
+   "ticker": "CCJ",
+   "source": "Google News",
+   "title": "700,068 Shares in Cameco Corporation $CCJ Bought by Greenwich Wealth Management LLC - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQVFUdzV3TmsxQkRuN3g0VEhyR2Zma1cyWVNGZThSOU9NeThSaTMzSmFyOFoteks0MV9Gc0ZWVFZtdU1ldzVyOEo4UUU1Q0ZyM255NHhOM3NieDIxdEdwMXhNUFBPNHNhVGpKTS1TYUdxb0pZLVdYTWNuUlRBdmZYRzBEN1JSclU5NmFGMy0wMktIM0hoQkRkd3ZPeEpRUE0zbm43WDJZNE9qZ0I5Q0w1Rk5HTElzZWphR2w4c0FqZ0huQmlQQmRxUG9iVFlIb1RNQ2ppUHB4bWwzdw?oc=5",
+   "ts": 1795870200,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Routine MarketBeat notice of an institutional stake; no new company information."
+  },
+  {
+   "ticker": "TLN",
+   "source": "Google News: \"Talen Energy\"",
+   "title": "Talen Energy Corporation $TLN Shares Newly Acquired by Troluce Capital Advisors LLC - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQaTRTUHhGUU9nU196SERPYkhmQnprRnBmajZIM3BnVFU1OVhHZDYxNk43dm02SUl3Zi0zRWYxX3JhaE9UNXY4elhCTlNYdjNKM3B2NnExbDJxUnkwcUx4V1ZXOEVtZzFoNHNHRDQtMXd4R05oSWlNalU3dlg3OW1GMEk2X2pjZlZybEFRMzc0Mk1mVXRPVmY3blhkSURlWGltUWM4LXJyVnlENXRhd0RGamVmWTlDRnpQMDhuWjVnRVlDMWdQSmJlcW5PS243RWlRQzB2NWVDczg4d3c?oc=5",
+   "ts": 1795870197,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Routine MarketBeat notice of a small fund's share purchase; no new company information."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Google News: \"BWX Technologies\"",
+   "title": "BWX Technologies, Inc. $BWXT Shares Newly Acquired by Troluce Capital Advisors LLC - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPenhDdzVLME9FenVXQkw1anRfUlpqeEg1ak52VXF5ZDZMSlp6dktOSkdaMUd1UmNiS0dodWZ4cGxwRVpkTDRibnRYdjh3c3ZHbTU2OExVbVN6ckZLQ0UzUnlQUWQ1MEdlcWpGcThIZG5lZ0RYMmF2SkUyZV9UY0RBVkhVcnZmcTdnR1R6X3lEaUk3bk9VVk1CWnVlRm1PWlNoVkdSU0tjVEZWN005VnZOQ0F0bmlDR1JsSTZsN29aZmRWTTVXUzJmNW1wa3lMRUtBT0hpdkpXYw?oc=5",
+   "ts": 1795870195,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Routine MarketBeat notice of an institutional stake; no new company information."
+  },
+  {
+   "ticker": "BWXT",
+   "source": "Local intel: Zona Militar (AUKUS and navies)",
+   "title": "\u00a38 billion deal aims to get Britain\u2019s nuclear submarine fleet back to sea faster",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTXBEaVVxMzBUM1BJcl9UalY2SVViMG41YlJ4OEc0Nm9PSjdfUDU2d1cxaGVWSWRqTDZjd2pMRG5JVk1ESFpwN3piSXY1Ql9POHVjQ09Ua2hheDJfOUlQdTdrc2RaanFLOFFReVhsakhvTHRUTl9aR0pEWmFnVzRzc0pYY3VVOTZYZXg5bnByaFpqSGVXTVdYYnU5RWN6UEk2TU9LM1dxX2h6ZjdzYlg0dl8zM3NsaTlfMkVYajRYWQ?oc=5",
+   "ts": 1795856700,
+   "materiality": 4,
+   "novelty": "follow_up",
+   "direction": "up",
+   "event_type": "contract_deal",
+   "why": "Large UK naval nuclear deal could help BWXT's submarine reactor work, but details unclear."
+  },
+  {
+   "ticker": "UEC",
+   "source": "Google News",
+   "title": "Uranium Energy Corp. (UEC) Options Chain - Yahoo! Finance Canada",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUHJiR0JjMjltYmVWX2Nwc2VQbTdHOXJWMzNXd3VIUVpBUk1Fa3JXQzJMb0VMbFk0RGx2bWZKc2tZaVNDNFRqMHZpb0E4Q0dYazdwM0Rzbk15dGtNb3lOeGt2NTJfdFNzVlhuV0g2ZUZFdERES0NLR0FscTJaZWlWSGxUT3Jvc2wzQXp5REpaUGs?oc=5",
+   "ts": 1795867322,
+   "materiality": 1,
+   "novelty": "stale",
+   "direction": "neutral",
+   "event_type": "other",
+   "why": "Generic options-chain page, no new company information."
   }
  ],
  "reviews": [
@@ -10961,26 +10964,26 @@
  },
  "spend": {
   "day": "2026-11-28",
-  "day_usd": 0.01879,
+  "day_usd": 0.02827,
   "month": "2026-11",
-  "month_usd": 2.85803,
-  "total_usd": 2.85803,
+  "month_usd": 2.86751,
+  "total_usd": 2.86751,
   "by_role": {
    "macro": 0.24898,
    "whale": 0.02631,
    "crowd": 0.01703,
    "level": 0.35215,
-   "scout": 0.27598,
+   "scout": 0.27701,
    "review": 0.23667,
    "auditor": 0.04723,
    "strategist": 0.18937,
    "pm": 0.45311,
    "risk": 0.26224,
-   "investigator": 0.3945,
+   "investigator": 0.39755,
    "postmortem": 0.01905,
    "researcher": 0.02986,
-   "engineer": 0.11482,
-   "questioner": 0.19073
+   "engineer": 0.11729,
+   "questioner": 0.19366
   }
  },
  "desk_log": [
@@ -11251,7 +11254,7 @@
   "SPY": 725.92,
   "SGOV": 100.71
  },
- "last_cycle": "2026-11-28 07:00 ET",
+ "last_cycle": "2026-11-28 08:31 ET",
  "ops": {
   "rejects": [
    1795639259.8065941,
@@ -61162,6 +61165,7 @@
   "6b0fa55da5b71c74",
   "5f159b11a32384bb",
   "e62333d1078d965b",
+  "f81caa44c0f7749a",
   "3154b03af559d946",
   "6d247b155bfa9a35",
   "c761d6e934cc1699",
@@ -61433,6 +61437,7 @@
   "ccff2f7dd1edf939",
   "34a3177fd034165b",
   "d94f7a7a6e8a9559",
+  "d501e1368580d687",
   "1468cb9f20cb9ca3",
   "0364072127de7058",
   "b4a8409648247199",
@@ -61469,6 +61474,7 @@
   "cf312da3056cac36",
   "4eac1671b4b9f9c4",
   "da48af2ddf551928",
+  "759db0bee26b4ac1",
   "9f1e3828f2663395",
   "f1f8a01f5b2d2080",
   "a00037110572bad0",
@@ -61491,9 +61497,10 @@
   "1e9ac2ee38a1003f",
   "8868199eaca25050",
   "0e6fc088c11522c8",
-  "12fc0c7a240e4fef"
+  "12fc0c7a240e4fef",
+  "e75ebd89e02e5848"
  ],
- "news_slow_at": 1795867309.395454,
+ "news_slow_at": 1795872724.698519,
  "officer": {
   "settled_cash": 82.44,
   "cash": 721.07,
@@ -219626,6 +219633,41 @@
    ],
    "practice": false,
    "end": "07:00"
+  },
+  {
+   "id": "20261128080043245169",
+   "title": "The Questioner, Nov 28 08:00",
+   "tickers": [],
+   "kind": "research",
+   "start": "2026-11-28 08:00",
+   "msgs": [
+    {
+     "t": "08:00",
+     "who": "questioner",
+     "to": "macro",
+     "text": "Several teammates keep repeating that the basket-below-10-day-average gate blocks buys, and the desk's own lesson says seasonal and rebound trades skipped it. Before anyone acts on Dec 15 PJM news for TLN, the open question is whether that event is actually confirmed on schedule, since the notes show only an unruled delay request. I'm asking Macro to say plainly whether they have a dated source for it.",
+     "outcome": false,
+     "notes": "question: Macro, the PJM 2029/30 auction is still on the calendar for Dec 15 and no FERC ruling on the delay is in our files. Do you have a dated primary source (FERC docket or PJM notice) confirming the auction schedule as of today?\nwhy it might matter: TLN's jump and our power-stock thesis hinge on this auction; if the date moved, the watch dates and the level setups on CEG and TLN are stale.\nask: macro\nkind: unexplained\nquestion: Engineer, Salem 1 has now been down 52 days. Is there any NRC event report or licensee notice showing its planned return date moved past Nov 30?\nwhy it might matter: A longer CEG outage would be a real earnings hit, and the desk's note calls a late return a weak signal, so we need the actual status, not an estimate.\nask: engineer\nkind: missed\nquestion: Investigator, the Federal Register lists a General Matter Paducah scoping notice. Does the scoping notice na"
+    },
+    {
+     "t": "08:00",
+     "who": "engineer",
+     "to": "questioner",
+     "text": "I checked the Salem 1 status in the desk files and found no NRC event report or licensee notice moving its return date past Nov 30. The only NRC paperwork in our files is routine (a Nine Mile Point environmental assessment and a license amendment notice), so I can't confirm the 52-day outage has been extended. This is still a real open question, so I'd keep it on the watch list rather than assume it's either fine or broken.",
+     "outcome": false,
+     "notes": "verdict: unsure\naction: watch\nwatch date: 2026-11-30\nresearch test: Pull the NRC event notification reports and the Salem 1 licensee status for the last two weeks and compare the stated return date against the original planned end date.\nwhy: I checked the reactor tracker (Salem 1 open since Oct 4, 52 days, CEG fleet about 96% running) and the NRC paperwork in the files, and none of it states a revised return date. Because the files lack the licensee's own return-date filing, I can't call the outage extended or on schedule.\nticker: CEG\ndirection: up\ndays: 5\nfiles read: CEG Places and operations, CEG Business"
+    },
+    {
+     "t": "08:00",
+     "who": "investigator",
+     "to": "questioner",
+     "text": "I checked the General Matter Paducah scoping notice against the desk files. It is the first step of an environmental review for a planned enrichment plant, with no timeline or competing capacity figure in the notice that could affect Centrus (LEU) within the next year, so it's routine paperwork for us.",
+     "outcome": false,
+     "notes": "verdict: irrelevant\naction: none\nwhy: The scoping notice starts an environmental impact statement for a plant that is years from operating, and the files show no capacity number or date that would change Centrus's near-term supply. Centrus's Russian-supply waivers and the 2028 waiver cutoff matter far more for LEU than this filing does.\nfiles read: LEU Legal, SECTOR Fuel policy"
+    }
+   ],
+   "practice": false,
+   "end": "08:00"
   }
  ],
  "feed": [
@@ -226240,6 +226282,19 @@
     "sub": "What nobody had noticed yet, checked"
    },
    "thread": null
+  },
+  {
+   "t": "2026-11-28 08:00",
+   "who": "questioner",
+   "kind": "learn",
+   "title": null,
+   "text": "Asked the team: Engineer, Salem 1 has now been down 52 days. Is there any NRC event report or licensee notice showing its planned return date moved past Nov 30? -> unsure | Investigator, the Federal Register lists a General Matter Paducah scoping notice. Does the scoping notice name a timeline or a competing capacity figure that could matter for Centrus (LEU) in the next year? -> irrelevant",
+   "tickers": [],
+   "art": {
+    "big": "The Questioner",
+    "sub": "What nobody had noticed yet, checked"
+   },
+   "thread": null
   }
  ],
  "feed_people": {
@@ -227227,61 +227282,61 @@
    "lesson": "A panic_rebound buy must pass the basket-below-10-day-average block before entry, even when the stock looks oversold and the trade later wins."
   }
  ],
- "intel_at": 1795867229.630334,
+ "intel_at": 1795872671.5010238,
  "intel_health": {
-  "at": "2026-11-28 07:01",
+  "at": "2026-11-28 08:31",
   "sources": {
-   "Cigar Lake": 1,
+   "Cigar Lake": 0,
    "McArthur River / Key Lake": 2,
    "Athabasca Basin": 9,
-   "Saskatchewan wildfires": 3,
+   "Saskatchewan wildfires": 0,
    "Rook I / Arrow": 4,
-   "Wheeler River / Phoenix": 6,
+   "Wheeler River / Phoenix": 0,
    "Port Hope / Blind River": 0,
    "Westinghouse": 7,
-   "Kazakhstan": 29,
+   "Kazakhstan": 46,
    "Niger": 7,
-   "Namibia": 17,
-   "Russia supply": 4,
-   "Piketon": 15,
+   "Namibia": 0,
+   "Russia supply": 3,
+   "Piketon": 14,
    "HALEU": 10,
-   "Wyoming ISR": 23,
-   "South Texas ISR": 2,
+   "Wyoming ISR": 24,
+   "South Texas ISR": 1,
    "White Mesa / Utah": 7,
-   "Rare earths (Energy Fuels)": 7,
+   "Rare earths (Energy Fuels)": 0,
    "Lynchburg / Erwin": 0,
    "Naval reactors": 13,
    "Crane / Three Mile Island": 3,
-   "Susquehanna": 5,
-   "Comanche Peak": 4,
-   "PJM grid": 7,
-   "ERCOT grid": 10,
+   "Susquehanna": 6,
+   "Comanche Peak": 0,
+   "PJM grid": 8,
+   "ERCOT grid": 9,
    "Data-center nuclear deals": 10,
-   "Japan restarts": 9,
-   "China new builds": 6,
-   "Congress and laws": 38,
+   "Japan restarts": 11,
+   "China new builds": 5,
+   "Congress and laws": 27,
    "NRC decisions": 7,
-   "Energy Department": 29,
-   "White House and executive orders": 19,
+   "Energy Department": 0,
+   "White House and executive orders": 20,
    "Tariffs and trade": 4,
-   "India": 19,
+   "India": 20,
    "South Korea": 100,
-   "Europe new builds": 47,
-   "France and UK": 9,
-   "Middle East": 29,
-   "Asia newcomers": 26,
-   "Canada SMRs": 0,
-   "Big tech power deals": 51,
-   "Iran": 28,
-   "North Korea": 100,
-   "War zones": 12,
-   "AUKUS and navies": 19,
+   "Europe new builds": 0,
+   "France and UK": 0,
+   "Middle East": 0,
+   "Asia newcomers": 40,
+   "Canada SMRs": 7,
+   "Big tech power deals": 50,
+   "Iran": 54,
+   "North Korea": 75,
+   "War zones": 17,
+   "AUKUS and navies": 20,
    "Weapons programs": 19,
-   "Stockpiles and reserves": 0,
-   "Sprott trust": 4,
-   "Uranium price": 49,
+   "Stockpiles and reserves": 18,
+   "Sprott trust": 3,
+   "Uranium price": 24,
    "US policy": 0,
-   "Lawsuits and investigations": 33,
+   "Lawsuits and investigations": 72,
    "Workers and jobs": 22,
    "CBC Saskatchewan": 20,
    "World Nuclear News": 52,
@@ -227292,78 +227347,78 @@
   "failed": []
  },
  "intel_view": {
-  "updated": "2026-11-28 07:01",
-  "total": 1023,
-  "week": 599,
+  "updated": "2026-11-28 08:31",
+  "total": 1027,
+  "week": 597,
   "places": {
-   "South Korea": 62,
+   "South Korea": 61,
    "Uranium price": 54,
    "Kazakhstan": 45,
    "Asia newcomers": 33,
    "Workers and jobs": 31,
-   "AUKUS and navies": 30,
-   "Weapons programs": 26,
+   "AUKUS and navies": 31,
    "Europe new builds": 25,
-   "Piketon": 24,
+   "Weapons programs": 25,
    "World Nuclear News": 23,
+   "Piketon": 22,
    "War zones": 18,
    "Westinghouse": 14
   },
   "bursts": [],
   "health": {
-   "at": "2026-11-28 07:01",
+   "at": "2026-11-28 08:31",
    "sources": {
-    "Cigar Lake": 1,
+    "Cigar Lake": 0,
     "McArthur River / Key Lake": 2,
     "Athabasca Basin": 9,
-    "Saskatchewan wildfires": 3,
+    "Saskatchewan wildfires": 0,
     "Rook I / Arrow": 4,
-    "Wheeler River / Phoenix": 6,
+    "Wheeler River / Phoenix": 0,
     "Port Hope / Blind River": 0,
     "Westinghouse": 7,
-    "Kazakhstan": 29,
+    "Kazakhstan": 46,
     "Niger": 7,
-    "Namibia": 17,
-    "Russia supply": 4,
-    "Piketon": 15,
+    "Namibia": 0,
+    "Russia supply": 3,
+    "Piketon": 14,
     "HALEU": 10,
-    "Wyoming ISR": 23,
-    "South Texas ISR": 2,
+    "Wyoming ISR": 24,
+    "South Texas ISR": 1,
     "White Mesa / Utah": 7,
-    "Rare earths (Energy Fuels)": 7,
+    "Rare earths (Energy Fuels)": 0,
     "Lynchburg / Erwin": 0,
     "Naval reactors": 13,
     "Crane / Three Mile Island": 3,
-    "Susquehanna": 5,
-    "Comanche Peak": 4,
-    "PJM grid": 7,
-    "ERCOT grid": 10,
+    "Susquehanna": 6,
+    "Comanche Peak": 0,
+    "PJM grid": 8,
+    "ERCOT grid": 9,
     "Data-center nuclear deals": 10,
-    "Japan restarts": 9,
-    "China new builds": 6,
-    "Congress and laws": 38,
+    "Japan restarts": 11,
+    "China new builds": 5,
+    "Congress and laws": 27,
     "NRC decisions": 7,
-    "Energy Department": 29,
-    "White House and executive orders": 19,
+    "Energy Department": 0,
+    "White House and executive orders": 20,
     "Tariffs and trade": 4,
-    "India": 19,
+    "India": 20,
     "South Korea": 100,
-    "Europe new builds": 47,
-    "France and UK": 9,
-    "Middle East": 29,
-    "Asia newcomers": 26,
-    "Canada SMRs": 0,
-    "Big tech power deals": 51,
-    "Iran": 28,
-    "North Korea": 100,
-    "War zones": 12,
-    "AUKUS and navies": 19,
+    "Europe new builds": 0,
+    "France and UK": 0,
+    "Middle East": 0,
+    "Asia newcomers": 40,
+    "Canada SMRs": 7,
+    "Big tech power deals": 50,
+    "Iran": 54,
+    "North Korea": 75,
+    "War zones": 17,
+    "AUKUS and navies": 20,
     "Weapons programs": 19,
-    "Stockpiles and reserves": 0,
-    "Sprott trust": 4,
-    "Uranium price": 49,
+    "Stockpiles and reserves": 18,
+    "Sprott trust": 3,
+    "Uranium price": 24,
     "US policy": 0,
-    "Lawsuits and investigations": 33,
+    "Lawsuits and investigations": 72,
     "Workers and jobs": 22,
     "CBC Saskatchewan": 20,
     "World Nuclear News": 52,
@@ -227566,6 +227621,24 @@
     "numbers": [],
     "score": 7.08,
     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVEdvOXBELVdMSy1FSFB3aGpkM1ZvTWNuZ0pHYWlLcGRFWnczYXJKMDNwamRkdUY2eHFYa0hoOGdhM1B3VHBtRkNKU3NrOHVuNGRYNXIxOHNjald1MVBDVDY5RWM0S1RkZWVJMFZLOHhmdWlPc2RWRG9Kb19KMlJ2NmpQZGVObFpiU0pNYkFkR3daRVVCTWpWMThqTFk0b3pJTmQ0WVVBcGRQb0tvTURwYlpoSjdkR3ZZdnZ4VWNPazE?oc=5"
+   },
+   {
+    "date": "2026-11-28",
+    "title": "\u00a38 billion deal aims to get Britain\u2019s nuclear submarine fleet back to sea faster",
+    "outlet": "Zona Militar",
+    "place": "AUKUS and navies",
+    "tickers": [
+     "BWXT"
+    ],
+    "tags": [
+     "regulation",
+     "defense"
+    ],
+    "numbers": [
+     "8 billion"
+    ],
+    "score": 7.06,
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTXBEaVVxMzBUM1BJcl9UalY2SVViMG41YlJ4OEc0Nm9PSjdfUDU2d1cxaGVWSWRqTDZjd2pMRG5JVk1ESFpwN3piSXY1Ql9POHVjQ09Ua2hheDJfOUlQdTdrc2RaanFLOFFReVhsakhvTHRUTl9aR0pEWmFnVzRzc0pYY3VVOTZYZXg5bnByaFpqSGVXTVdYYnU5RWN6UEk2TU9LM1dxX2h6ZjdzYlg0dl8zM3NsaTlfMkVYajRYWQ?oc=5"
    },
    {
     "date": "2026-11-24",
@@ -227907,22 +227980,6 @@
     "numbers": [],
     "score": 6.4,
     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WUl9FMWFmLU8tT25pc2tvM09MN0dQUnRSVDJ6RlN6Wm8yOHl2QndyZUtNaHFkUUx1UW9la0hPOW9aYXY1b2d1U2JzOU85Q3NwVWtJTXpnOW8?oc=5"
-   },
-   {
-    "date": "2026-11-26",
-    "title": "N Korea's Kim warns US over AUKUS, touts nuclear status",
-    "outlet": "Eastern Riverina Chronicle",
-    "place": "AUKUS and navies",
-    "tickers": [
-     "BWXT"
-    ],
-    "tags": [
-     "defense",
-     "geopolitics"
-    ],
-    "numbers": [],
-    "score": 6.36,
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUkhJWUVIb1h2d2JjUzhQSTN2eF96SHk2QzVOTGJ1aWR1ODBFX1lLZkFIOGV1bzFhNU1mUW8xNDQzOWp4UVNVSHVaUC1YcWR3TUthendKNDM3UTY1TTdka0llbHA1ZXVJTUtERm01U1BiSXJKbmJaYmNwd0I1dHh4cW1Qc2pGbUFuZS04eHNGazV3dEpROTg5V3BRbmFQV3J0RUNNa0hZb19RcHlBTlhOU1Z3?oc=5"
    }
   ]
  },
@@ -227948,6 +228005,7 @@
   "1b64307592daedc1",
   "fe223bd03cfc6370",
   "2cbfccb9c415890b",
+  "fbe4bf86d2df5d95",
   "6aea49b49aa5bae7",
   "ffdf4cb6e7b285b1",
   "8a28d1476a656cf6",
@@ -227988,10 +228046,10 @@
   "7fd6ad3664eaf535",
   "afd8290622043c62",
   "971d34934a9a192f",
-  "3c2851f76c7e4fb9",
   "133ace46214fa2bd",
-  "e350e3c2ce700f95",
+  "3c2851f76c7e4fb9",
   "9072aaac75f7221f",
+  "e350e3c2ce700f95",
   "da0462559a103d97",
   "7574e0b98bf014d1",
   "ed609e22ce9351ef",
@@ -228088,6 +228146,7 @@
   "0c3ada20fae5f894",
   "85595f527d301d07",
   "d53204586a89fe6b",
+  "ca87fe1cda8a918d",
   "e5d3e8f47385ea5b",
   "16c8e18d1a7e5d71",
   "ff034b5c87c95680",
@@ -228103,6 +228162,7 @@
   "b12a42fc746af1e7",
   "1b98e0407b6a3b44",
   "21888157b537cd9b",
+  "25d13825f35b9565",
   "36cbbee89c76a1f7",
   "1bc8a335514e5e60",
   "28eaa442b6a19a6f",
@@ -228170,9 +228230,7 @@
   "0e9b00b62cdb9a3a",
   "7908d2b630649992",
   "31ce75ab9a1e9d20",
-  "0ba4e6ba0ec4c40f",
-  "ca87fe1cda8a918d",
-  "fbe4bf86d2df5d95"
+  "0ba4e6ba0ec4c40f"
  ],
  "panic_log": [
   {
@@ -228213,7 +228271,7 @@
   }
  ],
  "memory_view": {
-  "events": 1825,
+  "events": 1826,
   "with_outcomes": 1337,
   "playbooks": {
    "acquisition": {
@@ -228800,15 +228858,6 @@
   "recent": [
    {
     "date": "2026-11-27",
-    "ticker": "CCJ",
-    "title": "Kazatomprom releases accounts without auditor report as investigation continues",
-    "type": "intel_legal",
-    "r0": 3.93,
-    "r5": null,
-    "r20": null
-   },
-   {
-    "date": "2026-11-27",
     "ticker": "NXE",
     "title": "Kazatomprom releases accounts without auditor report as investigation continues",
     "type": "intel_legal",
@@ -229145,6 +229194,15 @@
     "ticker": "BWXT",
     "title": "U.S. Rebuts China's Claim on South Korea's Nuclear Submarine Negotiations, Citing IAEA Authority",
     "type": "intel_defense",
+    "r0": null,
+    "r5": null,
+    "r20": null
+   },
+   {
+    "date": "2026-11-28",
+    "ticker": "BWXT",
+    "title": "\u00a38 billion deal aims to get Britain\u2019s nuclear submarine fleet back to sea faster",
+    "type": "intel_regulation",
     "r0": null,
     "r5": null,
     "r20": null
@@ -230571,9 +230629,9 @@
    }
   ]
  },
- "dossier_at": 1795867304.8361197,
+ "dossier_at": 1795872717.955039,
  "sector_prices": {
-  "_at": 1795850945.0853293,
+  "_at": 1795872724.568439,
   "Sprott Physical Uranium Trust (follows the uranium spot price)": {
    "last": 18.17,
    "day_pct": 2.59,
@@ -230629,85 +230687,85 @@
    "name": "Cameco",
    "price": 63.56,
    "week_pct": 3.48,
-   "built": "2026-11-28 07:01"
+   "built": "2026-11-28 08:31"
   },
   {
    "ticker": "NXE",
    "name": "NexGen Energy",
    "price": 7.28,
    "week_pct": 5.05,
-   "built": "2026-11-28 07:01"
+   "built": "2026-11-28 08:31"
   },
   {
    "ticker": "UEC",
    "name": "Uranium Energy Corp",
    "price": 5.93,
    "week_pct": 2.86,
-   "built": "2026-11-28 07:01"
+   "built": "2026-11-28 08:31"
   },
   {
    "ticker": "DNN",
    "name": "Denison Mines",
    "price": 1.91,
    "week_pct": 5.8,
-   "built": "2026-11-28 07:01"
+   "built": "2026-11-28 08:31"
   },
   {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "price": 5.66,
    "week_pct": 3.28,
-   "built": "2026-11-28 07:01"
+   "built": "2026-11-28 08:32"
   },
   {
    "ticker": "LEU",
    "name": "Centrus Energy",
    "price": 84.79,
    "week_pct": -5.47,
-   "built": "2026-11-28 07:01"
+   "built": "2026-11-28 08:32"
   },
   {
    "ticker": "BWXT",
    "name": "BWX Technologies",
    "price": 115.57,
    "week_pct": -1.27,
-   "built": "2026-11-28 07:01"
+   "built": "2026-11-28 08:32"
   },
   {
    "ticker": "CEG",
    "name": "Constellation Energy",
    "price": 238.15,
    "week_pct": -5.51,
-   "built": "2026-11-28 07:01"
+   "built": "2026-11-28 08:32"
   },
   {
    "ticker": "VST",
    "name": "Vistra",
    "price": 122.35,
    "week_pct": -1.45,
-   "built": "2026-11-28 07:01"
+   "built": "2026-11-28 08:32"
   },
   {
    "ticker": "TLN",
    "name": "Talen Energy",
    "price": 359.64,
    "week_pct": 1.05,
-   "built": "2026-11-28 07:01"
+   "built": "2026-11-28 08:32"
   },
   {
    "ticker": "SECTOR",
    "name": "The nuclear sector",
    "price": null,
    "week_pct": null,
-   "built": "2026-11-28 07:01"
+   "built": "2026-11-28 08:32"
   }
  ],
- "heartbeat": "2026-11-28 07:00",
+ "heartbeat": "2026-11-28 08:31",
  "boss_watch": {
   "BWXT": "2026-12-01",
   "TLN": "2026-12-01"
  },
- "_pushed_feed": 536,
+ "_pushed_feed": 535,
  "people_view": {
   "CCJ": {
    "ceo": "Mr. Timothy S. Gitzel",
@@ -230943,13 +231001,13 @@
  },
  "notes_audit": {
   "scout": {
-   "asked": 521,
-   "used": 479,
+   "asked": 523,
+   "used": 480,
    "notes": {
     "TLN Deals and contracts": 22,
     "CCJ Deals and contracts": 85,
-    "BWXT Deals and contracts": 58,
-    "SECTOR Government and laws": 147,
+    "BWXT Deals and contracts": 59,
+    "SECTOR Government and laws": 148,
     "UUUU Deals and contracts": 47,
     "SECTOR Countries": 154,
     "CEG Deals and contracts": 71,
@@ -231077,8 +231135,8 @@
    "since": "2026-11-23"
   },
   "investigator": {
-   "asked": 101,
-   "used": 97,
+   "asked": 102,
+   "used": 98,
    "notes": {
     "BWXT Deals and contracts": 3,
     "BWXT Snapshot": 5,
@@ -231098,7 +231156,7 @@
     "NXE Snapshot": 6,
     "NXE Filings and company events": 3,
     "LEU Snapshot": 14,
-    "LEU Legal": 12,
+    "LEU Legal": 13,
     "LEU Leadership and insiders": 1,
     "LEU What history says": 1,
     "LEU Deals and contracts": 2,
@@ -231119,7 +231177,7 @@
     "plants_now": 1,
     "UUUU Snapshot": 14,
     "UUUU Legal": 14,
-    "SECTOR Fuel policy": 1,
+    "SECTOR Fuel policy": 2,
     "SECTOR pulse": 2,
     "TLN Legal": 2,
     "VST Filings and company events": 1,
@@ -231189,11 +231247,11 @@
    "since": "2026-11-23"
   },
   "engineer": {
-   "asked": 81,
-   "used": 80,
+   "asked": 82,
+   "used": 81,
    "notes": {
     "SECTOR Reactors and power": 2,
-    "CEG Places and operations": 36,
+    "CEG Places and operations": 37,
     "UEC Deals and contracts": 1,
     "UEC Places and operations": 14,
     "license_tracker": 4,
@@ -231204,7 +231262,7 @@
     "NRC license tracker": 1,
     "power_deals_and_fuel_policy": 2,
     "VST Places and operations": 9,
-    "CEG Business": 3,
+    "CEG Business": 4,
     "NXE Places and operations": 5,
     "plants_now: fleet status and open outages": 1,
     "desk_notes: CEG Places and operations": 2,
@@ -231405,11 +231463,11 @@
    "since": "2026-11-23"
   },
   "questioner": {
-   "asked": 67,
-   "used": 67,
+   "asked": 68,
+   "used": 68,
    "notes": {
-    "TLN Snapshot": 47,
-    "TLN News": 43,
+    "TLN Snapshot": 48,
+    "TLN News": 44,
     "coming_up": 9,
     "BWXT Snapshot": 2,
     "BWXT News": 1,
@@ -231421,8 +231479,8 @@
     "SECTOR Market regime": 1,
     "desk_lessons_from_our_mistakes": 8,
     "TLN Ownership and analysts": 4,
-    "SECTOR Uranium market": 20,
-    "CEG Snapshot": 10,
+    "SECTOR Uranium market": 21,
+    "CEG Snapshot": 11,
     "uranium_price": 1,
     "PJM capacity auction": 1,
     "PJM auction": 1,
@@ -231455,7 +231513,8 @@
     "SECTOR Desk history": 1,
     "SECTOR Halt status": 1,
     "SECTOR Plant outages": 1,
-    "CEG Legal": 1
+    "CEG Legal": 2,
+    "CEG News": 1
    },
    "since": "2026-11-23"
   },
@@ -234892,6 +234951,26 @@
    "price": 359.64,
    "result": null,
    "why": "I checked the desk's PJM notes and the TLN snapshot: the 9.6% jump is not tied to any dated, confirmed source, and the auction result on Dec 15 is the first real resolution point. The rule of thumb in"
+  },
+  {
+   "role": "questioner",
+   "ticker": "TLN",
+   "direction": "down",
+   "days": 5,
+   "date": "2026-11-28",
+   "price": 359.64,
+   "result": null,
+   "why": "I checked the open PJM item against the desk files and found no FERC ruling or confirmed date change, which makes TLN's 9.6% jump unexplained. I also checked Salem 1's outage and the Paducah notice, w"
+  },
+  {
+   "role": "engineer",
+   "ticker": "CEG",
+   "direction": "up",
+   "days": 5,
+   "date": "2026-11-28",
+   "price": 238.15,
+   "result": null,
+   "why": "I checked the reactor tracker (Salem 1 open since Oct 4, 52 days, CEG fleet about 96% running) and the NRC paperwork in the files, and none of it states a revised return date. Because the files lack t"
   }
  ],
  "after_sale": [
@@ -235910,39 +235989,39 @@
    ],
    "next7": [
     {
-     "date": "2026-11-27",
-     "high_f": 66,
-     "low_f": 38
-    },
-    {
      "date": "2026-11-28",
-     "high_f": 71,
-     "low_f": 44
+     "high_f": 70,
+     "low_f": 45
     },
     {
      "date": "2026-11-29",
-     "high_f": 67,
-     "low_f": 56
+     "high_f": 63,
+     "low_f": 47
     },
     {
      "date": "2026-11-30",
      "high_f": 64,
-     "low_f": 51
+     "low_f": 50
     },
     {
      "date": "2026-12-01",
-     "high_f": 71,
-     "low_f": 52
+     "high_f": 72,
+     "low_f": 53
     },
     {
      "date": "2026-12-02",
-     "high_f": 75,
-     "low_f": 60
+     "high_f": 74,
+     "low_f": 61
     },
     {
      "date": "2026-12-03",
-     "high_f": 71,
-     "low_f": 63
+     "high_f": 75,
+     "low_f": 67
+    },
+    {
+     "date": "2026-12-04",
+     "high_f": 74,
+     "low_f": 64
     }
    ],
    "extremes": []
@@ -235955,39 +236034,39 @@
    ],
    "next7": [
     {
-     "date": "2026-11-27",
+     "date": "2026-11-28",
      "high_f": 50,
      "low_f": 37
     },
     {
-     "date": "2026-11-28",
-     "high_f": 48,
-     "low_f": 36
-    },
-    {
      "date": "2026-11-29",
-     "high_f": 50,
-     "low_f": 39
+     "high_f": 47,
+     "low_f": 34
     },
     {
      "date": "2026-11-30",
-     "high_f": 48,
-     "low_f": 36
+     "high_f": 50,
+     "low_f": 37
     },
     {
      "date": "2026-12-01",
-     "high_f": 45,
+     "high_f": 47,
      "low_f": 37
     },
     {
      "date": "2026-12-02",
-     "high_f": 51,
+     "high_f": 50,
      "low_f": 40
     },
     {
      "date": "2026-12-03",
-     "high_f": 54,
-     "low_f": 43
+     "high_f": 55,
+     "low_f": 44
+    },
+    {
+     "date": "2026-12-04",
+     "high_f": 53,
+     "low_f": 46
     }
    ],
    "extremes": []
@@ -236317,6 +236396,24 @@
    "answer": "I checked the desk files for Salem 1 and the NRC log entries we have. The notes show the outage started Oct 4 and is still open at 52 days, but they record only the 'routine refueling' label and no NRC filing or extension notice past the planned end date. Refueling season is normal and CEG's fleet is about 96% running, so this is probably not a forced problem, but the 'routine' read is assumed rather than verified. Agreeing with the Questioner that it's a fair thing to ask, and I'd not change any CEG trade on it alone.",
    "verdict": "unsure",
    "action": "research"
+  },
+  {
+   "t": "2026-11-28 08:00",
+   "question": "Engineer, Salem 1 has now been down 52 days. Is there any NRC event report or licensee notice showing its planned return date moved past Nov 30?",
+   "kind": "missed",
+   "asked": "engineer",
+   "answer": "I checked the Salem 1 status in the desk files and found no NRC event report or licensee notice moving its return date past Nov 30. The only NRC paperwork in our files is routine (a Nine Mile Point environmental assessment and a license amendment notice), so I can't confirm the 52-day outage has been extended. This is still a real open question, so I'd keep it on the watch list rather than assume it's either fine or broken.",
+   "verdict": "unsure",
+   "action": "watch"
+  },
+  {
+   "t": "2026-11-28 08:00",
+   "question": "Investigator, the Federal Register lists a General Matter Paducah scoping notice. Does the scoping notice name a timeline or a competing capacity figure that could matter for Centrus (LEU) in the next year?",
+   "kind": "maybe_irrelevant",
+   "asked": "investigator",
+   "answer": "I checked the General Matter Paducah scoping notice against the desk files. It is the first step of an environmental review for a planned enrichment plant, with no timeline or competing capacity figure in the notice that could affect Centrus (LEU) within the next year, so it's routine paperwork for us.",
+   "verdict": "irrelevant",
+   "action": "none"
   }
  ],
  "reactor_view": {
@@ -239721,7 +239818,7 @@
  },
  "watchdog": {},
  "watchdog_since": "2026-11-23 16:09",
- "watchdog_last": "2026-11-28 07:00",
+ "watchdog_last": "2026-11-28 08:31",
  "earnings_read": [
   "0001193125-26-439858",
   "0001062993-26-005762",

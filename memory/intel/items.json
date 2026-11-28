@@ -33117,5 +33117,144 @@
 "philippines",
 "power"
 ]
+},
+{
+"id": "4f93bf72a26c3df4",
+"date": "2026-11-26",
+"ts": 1795722814,
+"title": "IAEA in talks with Russia and Ukraine on ninth local ceasefire at Zaporizhzhia nuclear plant to repair power line",
+"summary": "",
+"outlet": "Cyprus Inform",
+"link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSGdMWmQ2NEh5TGFDVjVGUFIwM0NSLVpjZGpBeFVQOU5FdzZ3UWNpajgzaDUzaDdNZVcyNGVaSGozaGV5QnU0cXFvb1ZxRmhvUGlhd0xOQzFCeU9TbExkNnJKa2wzVS1tS1prTmpZSlZlaGhBaTI3SUwxSElfdS1FdzRBbU1EOWFVSEdhVTE0UlVWQzQwQmhaQ3htRE1XdXNPLWlENEUza2xicDhnSVFYaEJoZ25HdHFnYVh3OTRiZC1uWHp2eHFaMjg3Q0U5MGhyZHVVdWl0ZHdPU1REUzdHNDcydw?oc=5",
+"place": "War zones",
+"tickers": [
+"CCJ",
+"CEG"
+],
+"tags": [
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.4,
+"score": 4.6,
+"echo_of": "e01a72b12d468edc",
+"w": [
+"ceasefire",
+"iaea",
+"line",
+"local",
+"ninth",
+"nuclear",
+"plant",
+"power",
+"repair",
+"russia",
+"talks",
+"ukraine",
+"zaporizhzhia"
+]
+},
+{
+"id": "3855bc4af528424c",
+"date": "2026-11-27",
+"ts": 1795794100,
+"title": "IAEA seeks fresh local ceasefire for Zaporizhzhia power line repairs",
+"summary": "",
+"outlet": "World Nuclear News",
+"link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMm0zODB5WE9aekJoNFp1NTJrczBaazhKamdtejBaWjhiX2IwWll6UGo3U1lMa0lINlFUWFcwbXdlazJFcVZJeTJ5cEl3Y1RqS2lVOHFpQzgxMWZqdDR3Z240di12dHJZdnl1VEZwVWtxNzlTMGhrYldLMU9kRlh3RHkxYWNsaExlLXVXLVdTRUNPYV9Mc0duUGlOY1RRckY5SHZ6b0xyc1BtYi1z?oc=5",
+"place": "War zones",
+"tickers": [
+"CCJ",
+"CEG"
+],
+"tags": [
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 3.8,
+"echo_of": "d0ab837acd682126",
+"w": [
+"ceasefire",
+"fresh",
+"iaea",
+"line",
+"local",
+"power",
+"repairs",
+"seeks",
+"zaporizhzhia"
+]
+},
+{
+"id": "25d13825f35b9565",
+"date": "2026-11-28",
+"ts": 1795856700,
+"title": "\u00a38 billion deal aims to get Britain\u2019s nuclear submarine fleet back to sea faster",
+"summary": "",
+"outlet": "Zona Militar",
+"link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTXBEaVVxMzBUM1BJcl9UalY2SVViMG41YlJ4OEc0Nm9PSjdfUDU2d1cxaGVWSWRqTDZjd2pMRG5JVk1ESFpwN3piSXY1Ql9POHVjQ09Ua2hheDJfOUlQdTdrc2RaanFLOFFReVhsakhvTHRUTl9aR0pEWmFnVzRzc0pYY3VVOTZYZXg5bnByaFpqSGVXTVdYYnU5RWN6UEk2TU9LM1dxX2h6ZjdzYlg0dl8zM3NsaTlfMkVYajRYWQ?oc=5",
+"place": "AUKUS and navies",
+"tickers": [
+"BWXT"
+],
+"tags": [
+"regulation",
+"defense"
+],
+"numbers": [
+"8 billion"
+],
+"local": true,
+"novelty": 0.78,
+"score": 7.06,
+"echo_of": null,
+"w": [
+"aims",
+"back",
+"billion",
+"britain",
+"deal",
+"faster",
+"fleet",
+"get",
+"nuclear",
+"sea",
+"submarine"
+]
+},
+{
+"id": "d501e1368580d687",
+"date": "2026-11-28",
+"ts": 1795870197,
+"title": "Talen Energy Corporation $TLN Shares Newly Acquired by Troluce Capital Advisors LLC",
+"summary": "",
+"outlet": "MarketBeat",
+"link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQaTRTUHhGUU9nU196SERPYkhmQnprRnBmajZIM3BnVFU1OVhHZDYxNk43dm02SUl3Zi0zRWYxX3JhaE9UNXY4elhCTlNYdjNKM3B2NnExbDJxUnkwcUx4V1ZXOEVtZzFoNHNHRDQtMXd4R05oSWlNalU3dlg3OW1GMEk2X2pjZlZybEFRMzc0Mk1mVXRPVmY3blhkSURlWGltUWM4LXJyVnlENXRhd0RGamVmWTlDRnpQMDhuWjVnRVlDMWdQSmJlcW5PS243RWlRQzB2NWVDczg4d3c?oc=5",
+"place": "Susquehanna",
+"tickers": [
+"TLN"
+],
+"tags": [],
+"numbers": [],
+"local": false,
+"novelty": 0.6,
+"score": 2.7,
+"echo_of": null,
+"w": [
+"acquired",
+"advisors",
+"capital",
+"corporation",
+"energy",
+"llc",
+"newly",
+"shares",
+"talen",
+"tln",
+"troluce"
+]
 }
 ]
