@@ -31993,5 +31993,70 @@
 "oped",
 "power"
 ]
+},
+{
+"id": "f26b53ad07f72643",
+"date": "2026-11-27",
+"ts": 1795749476,
+"title": "IAEA working with Russia, Ukraine on ceasefire to repair power link at Zaporizhzhia nuclear plant",
+"summary": "",
+"outlet": "Business Recorder",
+"link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNSndzUVFxa1RTd2ZMUkd3R3F4Vk4tSnR4dkVIdFJpQVhwaktwbU82UWRZdWpLQ19OdzFHSnZLMThOR29uYnA0OTBxLVVzNXlmd3BUSkRlSXpBeTVYNjlROUF3aFRsb0FsVDdSM2REYndEeURWOXZFWE1KVU1GbXNZZG1QOVV3ZGtMS1hreGtLYzByZWJHYmhDd2tZd3FUclJQaWtrTmwtYVBVaWxMbk1mM2l2Q1kxTkY1TlltZWs1ZHBMRWZLU1hKTy1Wc3NyWTNRc0HSAVZBVV95cUxOOWNMZVExaVc4S1RtX2VROWpsa1VJdUQwdTR5ejZiYUJMbk5zNHNrc1lvUkdSRXNzcXRZS253bmt0bWpTZmRJOEFjVThLdkVoQWRZcWVRZw?oc=5",
+"place": "War zones",
+"tickers": [
+"CCJ",
+"CEG"
+],
+"tags": [
+"geopolitics"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.0,
+"score": 3.8,
+"echo_of": "e01a72b12d468edc",
+"w": [
+"ceasefire",
+"iaea",
+"link",
+"nuclear",
+"plant",
+"power",
+"repair",
+"russia",
+"ukraine",
+"working",
+"zaporizhzhia"
+]
+},
+{
+"id": "8224ad685d55b7f4",
+"date": "2026-11-25",
+"ts": 1795593600,
+"title": "Namibia\u2019s new uranium mine to triple country\u2019s output by 2017",
+"summary": "",
+"outlet": "Mining.com",
+"link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOOVAzVDQyZmY3bHRYdXB5X2FadkVqVm1uQm0tZjQtbHJKT3BPaUtmTUtqcld3X1ZVYjdlUTVkY3JMY3oxeC1fUzdzMmxWM0NzUzFrSndEc21oaU1BcVJNMjlnZkNOb0JXV21fWndVSmU4cGZNSTMxZ2Q4T3dEdnROVkZ6TQ?oc=5",
+"place": "Namibia",
+"tickers": [
+"CCJ"
+],
+"tags": [
+"production"
+],
+"numbers": [],
+"local": true,
+"novelty": 0.82,
+"score": 4.94,
+"echo_of": null,
+"w": [
+"2017",
+"country",
+"mine",
+"namibia",
+"output",
+"triple",
+"uranium"
+]
 }
 ]
